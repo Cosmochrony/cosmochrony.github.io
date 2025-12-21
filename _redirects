@@ -1,2 +1,5 @@
 /*.html /index_fr.html 301! Language=fr
+/*.html /index_it.html 301! Language=it
+/*.html /index_de.html 301! Language=de
+/*.html /index_es.html 301! Language=es
 /*.html /index.html 301! Language=en

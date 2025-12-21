@@ -1,0 +1,146 @@
+:root {
+  --bg: #0b1020;
+  --panel: rgba(255,255,255,0.06);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --faint: rgba(255,255,255,0.55);
+  --link: #7dd3fc;
+  --border: rgba(255,255,255,0.12);
+  --accent: #a78bfa;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --maxw: 980px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background:
+    radial-gradient(1100px 700px at 20% -10%, rgba(167,139,250,0.25), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(125,211,252,0.20), transparent 55%),
+    radial-gradient(900px 700px at 50% 110%, rgba(52,211,153,0.10), transparent 55%),
+    var(--bg);
+  line-height: 1.55;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header {
+  padding: 56px 20px 24px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.03), transparent);
+}
+.wrap { max-width: var(--maxw); margin: 0 auto; }
+.brand {
+  display: flex; gap: 14px; align-items: center;
+  margin-bottom: 18px;
+}
+.logo {
+  width: 44px; height: 44px; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(125,211,252,0.9), rgba(167,139,250,0.9));
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -0.02em;
+}
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: clamp(15px, 2vw, 18px);
+  max-width: 74ch;
+}
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  align-items: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.18); }
+.btn.primary {
+  background: linear-gradient(135deg, rgba(167,139,250,0.35), rgba(125,211,252,0.25));
+  border-color: rgba(167,139,250,0.35);
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  font-size: 13px;
+}
+main { padding: 22px 20px 64px; }
+section { margin-top: 18px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+}
+@media (max-width: 920px) {
+  .grid { grid-template-columns: 1fr; }
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 18px 38px rgba(0,0,0,0.18);
+}
+h2 { margin: 0 0 10px; font-size: 18px; }
+p { margin: 10px 0; color: var(--muted); }
+ul { margin: 10px 0 0 18px; color: var(--muted); }
+li { margin: 6px 0; }
+.note {
+  border-left: 3px solid rgba(251,191,36,0.7);
+  padding: 10px 12px;
+  background: rgba(251,191,36,0.08);
+  border-radius: 12px;
+  color: var(--muted);
+}
+.ok {
+  border-left: 3px solid rgba(52,211,153,0.8);
+  padding: 10px 12px;
+  background: rgba(52,211,153,0.08);
+  border-radius: 12px;
+  color: var(--muted);
+}
+code, pre, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.refs a { word-break: break-word; }
+footer {
+  border-top: 1px solid var(--border);
+  padding: 18px 20px 34px;
+  color: var(--faint);
+  background: rgba(255,255,255,0.02);
+}
+.small { font-size: 13px; color: var(--faint); }
+.kvs { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 10px; }
+.kv {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px dashed rgba(255,255,255,0.14);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.10);
+}
+.k { color: var(--faint); }
+.v { color: var(--muted); }

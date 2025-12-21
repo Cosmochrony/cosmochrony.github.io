@@ -1,0 +1,13 @@
+{
+  "name": "cosmochrony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "private": true,
+  "scripts": {
+    "deploy": "netlify deploy --prod"
+  },
+  "devDependencies": {
+    "netlify-cli": "^23.13.0"
+  }
+}

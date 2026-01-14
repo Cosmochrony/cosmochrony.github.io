@@ -107,7 +107,7 @@ section { margin-top: 18px; }
 }
 h2 { margin: 0 0 10px; font-size: 18px; }
 p { margin: 10px 0; color: var(--muted); }
-ul { margin: 10px 0 0 18px; color: var(--muted); }
+ul { color: var(--muted); }
 li { margin: 6px 0; }
 .note {
   border-left: 3px solid rgba(251,191,36,0.7);

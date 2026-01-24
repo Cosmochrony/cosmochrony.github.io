@@ -1,8 +1,8 @@
-export function redirectIfNot(pageLang) {
+export function redirectIfNot(pageLang, where = "index") {
   const lang = navigator.language.split("-")[0]
   if (lang !== pageLang) {
     const langSuffix = ["it", "es", "fr", "de"].includes(lang) ? `_${lang}` : ""
-    let redirect = `/index${langSuffix}.html`
+    let redirect = `${where}${langSuffix}.html`
     if (redirect !== window.location.pathname) {
       window.location.replace(redirect)
     }

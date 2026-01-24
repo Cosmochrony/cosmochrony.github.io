@@ -9,7 +9,7 @@
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Spectral Reconstruction of Spacetime Geometry"/>
   <meta property="og:description" content="An article within the Cosmochrony framework addressing emergent metric geometry from relational spectral data."/>
-  <meta property="og:type" content="article"/>
+  <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/spectral/"/>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -17,6 +17,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
       <div>
         <h1>Spectral Reconstruction of Spacetime Geometry</h1>
         <p class="subtitle">
@@ -25,45 +26,56 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="/index.html">Back to Cosmochrony overview</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Read the preprint (Zenodo DOI)</a>
+      <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Zenodo record</a>
+      <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation code</a>
+      <a class="btn subtle" href="/index.html">Back to Cosmochrony</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
+      <span class="pill">ORCID: <span class="mono">0009-0001-7697-7868</span></span>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <section class="card">
-    <h2>Article overview</h2>
-    <p>
-      This article develops a relational and spectral approach to the emergence of spacetime geometry.
-      Starting from abstract connectivity data encoded in Laplacian operators, it shows how effective notions
-      of distance, dimension, curvature, and metric structure can be reconstructed without assuming a background
-      manifold, coordinates, or fundamental geometric degrees of freedom.
-    </p>
-    <p>
-      The construction is intentionally kinematical. No gravitational dynamics or field equations are postulated.
-      Geometric quantities arise only as effective descriptors in regimes where the relational substrate admits
-      a stable and spectrally admissible continuum approximation.
-    </p>
-  </section>
   <section class="grid">
     <div class="card">
-      <h2>Key results</h2>
-      <ul>
-        <li>Definition of operational spectral distances derived from Laplacian eigenmodes.</li>
-        <li>Criteria for spectral admissibility and the emergence of continuum geometry.</li>
-        <li>Reconstruction of effective metric structure via local quadratic approximations.</li>
-        <li>Recovery of Schwarzschild-type geometry as a kinematical consistency limit.</li>
-        <li>Identification of robust spectral invariants constraining admissible geometries.</li>
-      </ul>
+      <h2>Overview</h2>
+      <p>
+        This article develops a relational and spectral approach to the emergence of spacetime geometry.
+        Starting from abstract connectivity data encoded in Laplacian operators, it shows how effective notions
+        of distance, dimension, curvature, and metric structure can be reconstructed without assuming a background
+        manifold, coordinates, or fundamental geometric degrees of freedom.
+      </p>
+      <p>
+        The construction is intentionally kinematical. No gravitational dynamics or field equations are postulated.
+        Geometric quantities arise only as effective descriptors in regimes where the relational substrate admits
+        a stable and spectrally admissible continuum approximation. In that projectable regime, standard geometric
+        observables can be treated as operational summaries of relational constraints rather than fundamental entities.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page is a structured summary and entry point. The authoritative technical
+        reference is the Zenodo preprint linked above. Code and numerical supplements are provided for reproducibility.
+      </div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau (Independent Researcher)</div></div>
         <div class="kv"><div class="k">Work type</div><div class="v">Preprint (Zenodo)</div></div>
         <div class="kv"><div class="k">License</div><div class="v">CC BY 4.0</div></div>
-        <div class="kv"><div class="k">Scope</div><div class="v">Emergent geometry only (no matter or dynamics)</div></div>
+        <div class="kv"><div class="k">Focus</div><div class="v">Emergent geometry from relational Laplacians</div></div>
+        <div class="kv"><div class="k">Scope</div><div class="v">Kinematical reconstruction (no matter or dynamics)</div></div>
       </div>
     </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Spectral proximity and distance:</strong> operational distances derived from Laplacian eigenmodes and kernels.</li>
+      <li><strong>Admissibility criteria:</strong> intrinsic spectral conditions delimiting when continuum geometry is meaningful.</li>
+      <li><strong>Local metric emergence:</strong> quadratic approximation of spectral distances yielding an effective metric tensor.</li>
+      <li><strong>Curvature as a collective descriptor:</strong> geometric quantities as summaries of relational coupling variations.</li>
+      <li><strong>Schwarzschild-type recovery:</strong> kinematical consistency limit for static spherically symmetric regimes.</li>
+    </ul>
   </section>
   <section class="card">
     <h2>Numerical and spectral supplements</h2>
@@ -73,17 +85,24 @@
     </p>
     <ul>
       <li>
-        Monte-Carlo convergence of a universal spectral ratio on S<sup>3</sup>.<br/>
-        <a href="https://github.com/Cosmochrony/simulation/spectral" rel="noopener">Simulation code (GitHub)</a>
+        Monte-Carlo convergence of a universal spectral ratio on S<sup>3</sup> (8/3 robustness check).<br/>
+        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation code and figure scripts</a>
       </li>
     </ul>
   </section>
   <section class="card">
+    <h2>How this connects to Cosmochrony</h2>
+    <p>
+      This article isolates the geometric reconstruction problem: how metric notions can arise from relational spectral data alone.
+      Within the broader Cosmochrony framework, it supports the claim that spacetime geometry is an effective encoding of microscopic
+      relational connectivity, accessed through spectral reconstruction in projectable regimes.
+    </p>
+  </section>
+  <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>.
-      Zenodo preprint.
-      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">DOI: 10.5281/zenodo.18356037</a>
+      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI:
+      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
     </p>
   </section>
 </main>

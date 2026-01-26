@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Reconstrucción espectral de la geometría del espacio-tiempo | Cosmochrony</title>
+  <meta name="description" content="Reconstrucción relacional y espectral de la geometría efectiva del espacio-tiempo sin asumir una variedad de fondo, coordenadas ni grados de libertad métricos fundamentales."/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/spectral/index_de.html"/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/spectral/index_it.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/spectral/"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/spectral/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Reconstrucción espectral de la geometría del espacio-tiempo"/>
+  <meta property="og:description" content="Un artículo dentro del marco Cosmochrony que aborda la geometría métrica emergente a partir de datos espectrales relacionales."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/spectral/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("es", "/spectral/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Reconstrucción espectral de la geometría del espacio-tiempo</h1>
+        <p class="subtitle">
+          Emergencia relacional y espectral de la estructura métrica efectiva sin postular un espacio-tiempo de fondo.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Leer el preprint (DOI de Zenodo)</a>
+      <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Registro en Zenodo</a>
+      <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Código de simulación</a>
+      <a class="btn subtle" href="/index.html">Volver a Cosmochrony</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
+      <span class="pill">ORCID: <span class="mono">0009-0001-7697-7868</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Visión general</h2>
+      <p>
+        Este artículo desarrolla un enfoque relacional y espectral para la emergencia de la geometría del espacio-tiempo.
+        Partiendo de datos abstractos de conectividad codificados en operadores de Laplace, muestra cómo nociones efectivas
+        de distancia, dimensión, curvatura y estructura métrica pueden reconstruirse sin asumir una variedad de fondo,
+        coordenadas ni grados de libertad geométricos fundamentales.
+      </p>
+      <p>
+        La construcción es intencionalmente cinemática. No se postulan dinámicas gravitatorias ni ecuaciones de campo.
+        Las magnitudes geométricas surgen únicamente como descriptores efectivos en regímenes donde el sustrato relacional
+        admite una aproximación continua estable y espectralmente admisible. En ese régimen proyectable, los observables
+        geométricos estándar pueden tratarse como resúmenes operativos de restricciones relacionales, y no como entidades
+        fundamentales.
+      </p>
+      <div class="note" role="note">
+        <strong>Declaración de alcance.</strong> Esta página es un resumen estructurado y un punto de entrada.
+        La referencia técnica autorizada es el preprint de Zenodo enlazado arriba. Se proporcionan código y suplementos
+        numéricos para garantizar la reproducibilidad.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Datos clave</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Autor</div><div class="v">Jérôme Beau (Investigador independiente)</div></div>
+        <div class="kv"><div class="k">Tipo de trabajo</div><div class="v">Preprint (Zenodo)</div></div>
+        <div class="kv"><div class="k">Licencia</div><div class="v">CC BY 4.0</div></div>
+        <div class="kv"><div class="k">Enfoque</div><div class="v">Geometría emergente a partir de laplacianos relacionales</div></div>
+        <div class="kv"><div class="k">Alcance</div><div class="v">Reconstrucción cinemática (sin materia ni dinámica)</div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contribuciones principales</h2>
+    <ul>
+      <li><strong>Proximidad y distancia espectrales:</strong> distancias operativas derivadas de autovectores y núcleos del laplaciano.</li>
+      <li><strong>Criterios de admisibilidad:</strong> condiciones espectrales intrínsecas que delimitan cuándo la geometría continua es significativa.</li>
+      <li><strong>Emergencia métrica local:</strong> aproximación cuadrática de distancias espectrales que da lugar a un tensor métrico efectivo.</li>
+      <li><strong>Curvatura como descriptor colectivo:</strong> cantidades geométricas como resúmenes de variaciones en el acoplamiento relacional.</li>
+      <li><strong>Recuperación de tipo Schwarzschild:</strong> límite de coherencia cinemática para regímenes estáticos con simetría esférica.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Suplementos numéricos y espectrales</h2>
+    <p>
+      Las ilustraciones numéricas se proporcionan como verificaciones de coherencia y robustez para determinadas afirmaciones espectrales.
+      No introducen postulados adicionales y no son necesarias para la estructura lógica del artículo.
+    </p>
+    <ul>
+      <li>
+        Convergencia Monte Carlo de una razón espectral universal en S<sup>3</sup> (verificación de robustez 8/3).<br/>
+        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Código de simulación y scripts de figuras</a>
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relación con Cosmochrony</h2>
+    <p>
+      Este artículo aísla el problema de la reconstrucción geométrica: cómo pueden surgir nociones métricas exclusivamente
+      a partir de datos espectrales relacionales. Dentro del marco más amplio de Cosmochrony, respalda la afirmación de que
+      la geometría del espacio-tiempo es una codificación efectiva de la conectividad relacional microscópica, accesible
+      mediante reconstrucción espectral en regímenes proyectables.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Referencias</h2>
+    <p>
+      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI:
+      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Distribuido bajo licencia CC BY 4.0.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>
+  const y=document.getElementById("y")
+  if(y)y.textContent=new Date().getFullYear()
+</script>
+</body>
+</html>

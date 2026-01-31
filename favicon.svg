@@ -3,6 +3,6 @@
     <path style="transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke;"
           transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
           d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
-    <ellipse style="paint-order: fill; stroke-width: 13px; fill: rgba(105, 105, 105, 0.77);"
+    <ellipse style="paint-order: fill; stroke-width: 13px; stroke: rgb(0, 0, 0); fill: rgba(255, 254, 254, 0.647);"
              cx="122.899" cy="123.911" rx="80.614" ry="80.614"/>
 </svg>

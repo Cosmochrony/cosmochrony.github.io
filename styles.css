@@ -71,7 +71,7 @@ header {
 }
 
 .logo {
-  width:min(60vmin, 44px);
+  width:min(60vmin, 6em);
   height:auto;
   display:block;
   color: var(--fg);

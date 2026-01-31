@@ -253,6 +253,7 @@ footer {
 
 .k {
   color: var(--faint);
+  word-break: break-word;
 }
 
 .v {

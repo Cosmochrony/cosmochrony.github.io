@@ -1,12 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 100 100"
-     fill="none">
-
-    <circle cx="50" cy="50" r="22"
-            stroke="black" stroke-width="8"/>
-
-    <circle cx="50" cy="50" r="36"
-            stroke="black" stroke-width="6"
-            stroke-dasharray="200 60"
-            stroke-linecap="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+    <path style="transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke;"
+          transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+          d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+    <ellipse style="paint-order: fill; stroke-width: 13px; fill: rgba(105, 105, 105, 0.77);"
+             cx="122.899" cy="123.911" rx="80.614" ry="80.614"/>
 </svg>

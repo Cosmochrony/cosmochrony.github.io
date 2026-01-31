@@ -25,7 +25,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <div class="logo" aria-hidden="true">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" role="img"
+          aria-label="Cosmochrony logo">
+          <path fill="currentColor"
+            style="transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse class="core" cx="122.899" cy="123.911" rx="80.614" ry="80.614"/>
+        </svg>
+      </div>
       <div>
         <h1>Cosmochrony</h1>
         <p class="subtitle">
@@ -34,11 +43,9 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.17957509" rel="noopener">Read the preprint (Zenodo DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/17957509" rel="noopener">Zenodo record</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.17957509" rel="noopener">Read the preprint
+        <span class="mono">DOI 10.5281/zenodo.17957509</span></a>
       <a class="btn" href="https://github.com/Cosmochrony" rel="noopener">GitHub Repository</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.17957509</span></span>
-      <span class="pill">ORCID: <span class="mono">0009-0001-7697-7868</span></span>
     </div>
   </div>
 </header>
@@ -65,9 +72,9 @@
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau (Independent Researcher)</div></div>
+        <div class="kv"><div class="k">Author</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a> (Independent Researcher)</div></div>
         <div class="kv"><div class="k">Work type</div><div class="v">Preprint (Zenodo)</div></div>
-        <div class="kv"><div class="k">License</div><div class="v">CC BY 4.0</div></div>
+        <div class="kv"><div class="k">License</div><div class="v"><a href="LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Core thesis</div><div class="v">Irreversible relaxation of <span class="mono">χ</span> yields time ordering and supports emergent spacetime descriptions</div></div>
         <div class="kv"><div class="k">Key mechanism</div><div class="v">Non-injective projection delimiting the validity of spacetime observables</div></div>
       </div>
@@ -120,6 +127,27 @@
     </ul>
   </section>
   <section class="card">
+    <h2>Interactive exploration</h2>
+    <p>
+      Discussion assistants built on the full set of published Cosmochrony articles
+      and documents.
+      They can answer readers’ questions, provide progressive explanations, and
+      clarify both conceptual and technical aspects of the framework.
+    </p>
+    <ul>
+      <li>
+        <a href="https://chatgpt.com/g/g-697ce59ff4148191b12b63c3f908207d-cosmochrony">
+          ChatGPT – Cosmochrony
+        </a>
+      </li>
+      <li>
+        <a href="https://gemini.google.com/gem/181YBmfo1ZAyQHXpWMW1QwSSzU6k_gBHU?usp=sharing">
+          Gemini – Cosmochrony
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="card">
     <h2>References</h2>
     <p>
       Jérôme Beau. <em>Cosmochrony: A Pre-geometric Framework for Emergent Spacetime, Dynamics, and Matter</em>. Zenodo. DOI:
@@ -130,7 +158,7 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © 2025-<span id="y"></span> Jérôme Beau. Licensed under CC BY 4.0.
+      © 2025-<span id="y"></span> Jérôme Beau. Licensed under <a href="LICENSE">CC BY 4.0</a>.
       <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>

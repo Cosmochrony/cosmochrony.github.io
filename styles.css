@@ -76,6 +76,10 @@ header {
   max-width: 10vw;
   display: block;
   color: var(--fg);
+
+  &:hover {
+    --comp: blue;
+  }
 }
 
 h1 {

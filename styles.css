@@ -16,6 +16,7 @@
   --bg: #ffffff;
   --fg: black;
   --comp: white;
+  --hover: #3c99c1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
     --bg: #0b1020;
     --fg: white;
     --comp: black;
+    --hover: blue;
   }
 }
 
@@ -78,7 +80,7 @@ header {
   color: var(--fg);
 
   &:hover {
-    --comp: blue;
+    --comp: var(--hover);
   }
 }
 

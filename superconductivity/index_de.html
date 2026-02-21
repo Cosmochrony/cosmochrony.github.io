@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://cosmochrony.org/supraleitung/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("de", "/superconductivity/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -24,7 +25,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" title="Zurück zu Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>Ein vereinheitlichter Realraum-Frustrationsmechanismus für Supraleitung</h1>
         <p class="subtitle">
@@ -33,9 +43,8 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">Preprint lesen (Zenodo-DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/18718224" rel="noopener">Zenodo-Eintrag</a>
-      <a class="btn subtle" href="/index.html">Zurück zu Cosmochrony</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">Preprint lesen
+        (Zenodo-DOI)</a> <a class="btn" href="https://zenodo.org/records/18718224" rel="noopener">Zenodo-Eintrag</a>
       <span class="pill">DOI: <span class="mono">10.5281/zenodo.18718224</span></span>
     </div>
   </div>
@@ -45,95 +54,102 @@
     <div class="card">
       <h2>Überblick</h2>
       <p>
-        Dieser Artikel schlägt eine strukturelle Interpretation der Supraleitung vor,
-        die auf projektiver Phasenverriegelung stabiler zusammengesetzter Konfigurationen
-        in einem faserbeschränkten geometrischen Rahmen basiert.
-        Anstatt eine spezifische Paarungswechselwirkung zu postulieren,
-        identifiziert der Mechanismus Supraleitung mit der Bildung von
-        w=2-Kompositen, die Realraum-Frustration minimieren und globale
-        Phasenkohärenz ermöglichen.
+        Dieser Artikel schlägt eine strukturelle Interpretation der Supraleitung vor, die auf projektiver
+        Phasenverriegelung stabiler zusammengesetzter Konfigurationen in einem faserbeschränkten geometrischen Rahmen
+        basiert. Anstatt eine spezifische Paarungswechselwirkung zu postulieren, identifiziert der Mechanismus
+        Supraleitung mit der Bildung von w=2-Kompositen, die Realraum-Frustration minimieren und globale Phasenkohärenz
+        ermöglichen.
       </p>
       <p>
-        Der Rahmen verbindet konventionelle und stark korrelierte Regime
-        in einer einheitlichen Beschreibung auf Grundlage von Symmetrie-
-        und Skalierungsbeschränkungen.
-        Die Symmetrie der Energielücke ergibt sich aus der Minimierung
-        eines Raccordement-Kostenfunktionals unter den Nebenbedingungen
-        der Gittergruppe und des dominanten Frustrationskanals.
+        Der Rahmen verbindet konventionelle und stark korrelierte Regime in einer einheitlichen Beschreibung auf
+        Grundlage von Symmetrie- und Skalierungsbeschränkungen. Die Symmetrie der Energielücke ergibt sich aus der
+        Minimierung eines Raccordement-Kostenfunktionals unter den Nebenbedingungen der Gittergruppe und des dominanten
+        Frustrationskanals.
       </p>
       <div class="note" role="note">
-        <strong>Geltungsbereich.</strong> Diese Seite bietet eine strukturierte Zusammenfassung.
-        Die maßgebliche technische Referenz ist das oben verlinkte Preprint.
+        <strong>Geltungsbereich.</strong> Diese Seite bietet eine strukturierte Zusammenfassung. Die maßgebliche
+        technische Referenz ist das oben verlinkte Preprint.
       </div>
     </div>
     <aside class="card">
       <h2>Kurzinformationen</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Autor</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Arbeitstyp</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">Lizenz</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Fokus</div><div class="v">Unkonventionelle Supraleitung</div></div>
-        <div class="kv"><div class="k">Ansatz</div><div class="v">Theoretisch, Symmetrie- und Skalierungsbeschränkungen</div></div>
+        <div class="kv">
+          <div class="k">Autor</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Arbeitstyp</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Lizenz</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Fokus</div>
+          <div class="v">Unkonventionelle Supraleitung</div>
+        </div>
+        <div class="kv">
+          <div class="k">Ansatz</div>
+          <div class="v">Theoretisch, Symmetrie- und Skalierungsbeschränkungen</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Zentrale Beiträge</h2>
     <ul>
-      <li><strong>Vereinheitlichter Mechanismus:</strong> Supraleitung als projektive Phasenverriegelung stabiler w=2-Komposite.</li>
-      <li><strong>Realraum-Ursprung:</strong> Paarung entsteht aus Frustrationsreduktion statt aus einem postulierten Wechselwirkungskern.</li>
-      <li><strong>Symmetrieauswahl:</strong> Lückensymmetrie durch geometrische Minimierung unter Gitterbeschränkungen bestimmt.</li>
+      <li><strong>Vereinheitlichter Mechanismus:</strong> Supraleitung als projektive Phasenverriegelung stabiler
+        w=2-Komposite.</li>
+      <li><strong>Realraum-Ursprung:</strong> Paarung entsteht aus Frustrationsreduktion statt aus einem postulierten
+        Wechselwirkungskern.</li>
+      <li><strong>Symmetrieauswahl:</strong> Lückensymmetrie durch geometrische Minimierung unter Gitterbeschränkungen
+        bestimmt.</li>
       <li><strong>Materialvorhersagen:</strong> d-Symmetrie (dx2–y2) in Cupraten und erweitertes s± in Nickelaten.</li>
-      <li><strong>Skalierung:</strong> Tc verknüpft mit delta, J und einem experimentell zugänglichen Frustrationsparameter rF.</li>
-      <li><strong>Falsifizierbarkeit:</strong> Tests über Symmetriebestimmung, Phasensteifigkeit, Störungsantwort und Druckabhängigkeit.</li>
+      <li><strong>Skalierung:</strong> Tc verknüpft mit delta, J und einem experimentell zugänglichen
+        Frustrationsparameter rF.</li>
+      <li><strong>Falsifizierbarkeit:</strong> Tests über Symmetriebestimmung, Phasensteifigkeit, Störungsantwort und
+        Druckabhängigkeit.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Konventionelles und stark korreliertes Regime</h2>
     <p>
-      In konventionellen Supraleitern stabilisiert eine vermittelte Bindung
-      die Kompositklasse, und der Rahmen reproduziert die London-Gleichungen
-      sowie die Ginzburg–Landau-Struktur als langwellige Konsequenzen
-      der Phasenverriegelung.
+      In konventionellen Supraleitern stabilisiert eine vermittelte Bindung die Kompositklasse, und der Rahmen
+      reproduziert die London-Gleichungen sowie die Ginzburg–Landau-Struktur als langwellige Konsequenzen der
+      Phasenverriegelung.
     </p>
     <p>
-      In stark korrelierten Materialien entsteht die Paarung aus der
-      Reduktion antiferromagnetischer Frustration, wodurch Amplituden-
-      und Phasenskalen natürlich getrennt werden und eine geometrische
-      Interpretation des Pseudogap-Phänomens möglich wird.
+      In stark korrelierten Materialien entsteht die Paarung aus der Reduktion antiferromagnetischer Frustration,
+      wodurch Amplituden- und Phasenskalen natürlich getrennt werden und eine geometrische Interpretation des
+      Pseudogap-Phänomens möglich wird.
     </p>
   </section>
   <section class="card">
     <h2>Nickelate: Symmetrie und experimentelle Tests</h2>
     <p>
-      Unendliche-Schicht-Nickelate zeigen im Vergleich zu Cupraten
-      eine reduzierte und teilweise isotropisierte Frustration.
-      Der Rahmen sagt daher eine erweiterte s±-Symmetrie
-      statt einer d-Symmetrie voraus.
+      Unendliche-Schicht-Nickelate zeigen im Vergleich zu Cupraten eine reduzierte und teilweise isotropisierte
+      Frustration. Der Rahmen sagt daher eine erweiterte s±-Symmetrie statt einer d-Symmetrie voraus.
     </p>
     <p>
-      Diese Vorhersage impliziert eine mittlere Empfindlichkeit
-      gegenüber nichtmagnetischen Störungen.
-      Die Druckabhängigkeit ist durch die messbare Entwicklung
-      von J(P) und rF(P) eingeschränkt.
-      Eine experimentelle Inkonsistenz würde den Mechanismus falsifizieren.
+      Diese Vorhersage impliziert eine mittlere Empfindlichkeit gegenüber nichtmagnetischen Störungen. Die
+      Druckabhängigkeit ist durch die messbare Entwicklung von J(P) und rF(P) eingeschränkt. Eine experimentelle
+      Inkonsistenz würde den Mechanismus falsifizieren.
     </p>
   </section>
   <section class="card">
     <h2>Bezug zum Cosmochrony-Programm</h2>
     <p>
-      Dieser Artikel befasst sich ausschließlich mit Supraleitung.
-      Allgemeinere strukturelle Motivationen werden in begleitenden Arbeiten
-      entwickelt, sind jedoch nicht erforderlich, um die hier präsentierten
-      Ergebnisse zu bewerten.
+      Dieser Artikel befasst sich ausschließlich mit Supraleitung. Allgemeinere strukturelle Motivationen werden in
+      begleitenden Arbeiten entwickelt, sind jedoch nicht erforderlich, um die hier präsentierten Ergebnisse zu
+      bewerten.
     </p>
   </section>
   <section class="card">
     <h2>Referenz</h2>
     <p>
-      Jérôme Beau.
-      <em>Ein vereinheitlichter Realraum-Frustrationsmechanismus für Supraleitung</em>.
-      Preprint, Zenodo.
+      Jérôme Beau. <em>Ein vereinheitlichter Realraum-Frustrationsmechanismus für Supraleitung</em>. Preprint, Zenodo.
       <a href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">10.5281/zenodo.18718224</a>
     </p>
   </section>
@@ -141,14 +157,14 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Lizenz <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Lizenz <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

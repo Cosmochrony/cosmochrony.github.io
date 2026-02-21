@@ -5,18 +5,21 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Spektrale Rekonstruktion der Raumzeitgeometrie | Cosmochrony</title>
-  <meta name="description" content="Relationale und spektrale Rekonstruktion der effektiven Raumzeitgeometrie ohne Annahme einer Hintergrundmannigfaltigkeit, von Koordinaten oder fundamentalen metrischen Freiheitsgraden."/>
+  <meta name="description"
+    content="Relationale und spektrale Rekonstruktion der effektiven Raumzeitgeometrie ohne Annahme einer Hintergrundmannigfaltigkeit, von Koordinaten oder fundamentalen metrischen Freiheitsgraden."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/spectral/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/spectral/index_es.html"/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/spectral/"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/spectral/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Spektrale Rekonstruktion der Raumzeitgeometrie"/>
-  <meta property="og:description" content="Ein Artikel im Rahmen von Cosmochrony zur emergenten metrischen Geometrie aus relationalen spektralen Daten."/>
+  <meta property="og:description"
+    content="Ein Artikel im Rahmen von Cosmochrony zur emergenten metrischen Geometrie aus relationalen spektralen Daten."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/spectral/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("de", "/spectral/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -25,20 +28,29 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" title="Zurück zu Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>Spektrale Rekonstruktion der Raumzeitgeometrie</h1>
         <p class="subtitle">
-          Relationale und spektrale Emergenz effektiver metrischer Strukturen ohne Postulierung einer Hintergrundraumzeit.
+          Relationale und spektrale Emergenz effektiver metrischer Strukturen ohne Postulierung einer
+          Hintergrundraumzeit.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Preprint lesen (Zenodo-DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Zenodo-Eintrag</a>
-      <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulationscode</a>
-      <a class="btn subtle" href="/index.html">Zurück zu Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Preprint lesen
+        (Zenodo-DOI)</a> <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Zenodo-Eintrag</a> <a
+      class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulationscode</a>
+       <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
     </div>
   </div>
 </header>
@@ -47,9 +59,9 @@
     <div class="card">
       <h2>Überblick</h2>
       <p>
-        Dieser Artikel entwickelt einen relationalen und spektralen Ansatz zur Emergenz der Raumzeitgeometrie.
-        Ausgehend von abstrakten Konnektivitätsdaten, die in Laplace-Operatoren kodiert sind, wird gezeigt, wie effektive
-        Begriffe von Abstand, Dimension, Krümmung und metrischer Struktur rekonstruiert werden können, ohne eine
+        Dieser Artikel entwickelt einen relationalen und spektralen Ansatz zur Emergenz der Raumzeitgeometrie. Ausgehend
+        von abstrakten Konnektivitätsdaten, die in Laplace-Operatoren kodiert sind, wird gezeigt, wie effektive Begriffe
+        von Abstand, Dimension, Krümmung und metrischer Struktur rekonstruiert werden können, ohne eine
         Hintergrundmannigfaltigkeit, Koordinaten oder fundamentale geometrische Freiheitsgrade anzunehmen.
       </p>
       <p>
@@ -60,42 +72,63 @@
         werden und nicht als fundamentale Entitäten.
       </p>
       <div class="note" role="note">
-        <strong>Geltungsbereich.</strong> Diese Seite ist eine strukturierte Zusammenfassung und ein Einstiegspunkt.
-        Die maßgebliche technische Referenz ist der oben verlinkte Zenodo-Preprint. Code und numerische Ergänzungen
-        werden zur Reproduzierbarkeit bereitgestellt.
+        <strong>Geltungsbereich.</strong> Diese Seite ist eine strukturierte Zusammenfassung und ein Einstiegspunkt. Die
+        maßgebliche technische Referenz ist der oben verlinkte Zenodo-Preprint. Code und numerische Ergänzungen werden
+        zur Reproduzierbarkeit bereitgestellt.
       </div>
     </div>
     <aside class="card">
       <h2>Kurzinfos</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Autor</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Arbeitstyp</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">Lizenz</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Fokus</div><div class="v">Emergente Geometrie aus relationalen Laplace-Operatoren</div></div>
-        <div class="kv"><div class="k">Umfang</div><div class="v">Kinematische Rekonstruktion (ohne Materie oder Dynamik)</div></div>
+        <div class="kv">
+          <div class="k">Autor</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Arbeitstyp</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Lizenz</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Fokus</div>
+          <div class="v">Emergente Geometrie aus relationalen Laplace-Operatoren</div>
+        </div>
+        <div class="kv">
+          <div class="k">Umfang</div>
+          <div class="v">Kinematische Rekonstruktion (ohne Materie oder Dynamik)</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Zentrale Beiträge</h2>
     <ul>
-      <li><strong>Spektrale Nähe und Distanz:</strong> operationale Abstände abgeleitet aus Eigenmoden und Kernen des Laplace-Operators.</li>
-      <li><strong>Zulässigkeitskriterien:</strong> intrinsische spektrale Bedingungen, die festlegen, wann Kontinuumsgeometrie sinnvoll ist.</li>
-      <li><strong>Lokale metrische Emergenz:</strong> quadratische Approximation spektraler Distanzen, die einen effektiven metrischen Tensor liefert.</li>
-      <li><strong>Krümmung als kollektiver Deskriptor:</strong> geometrische Größen als Zusammenfassungen variationsabhängiger relationaler Kopplungen.</li>
-      <li><strong>Schwarzschild-artige Wiedergewinnung:</strong> kinematischer Konsistenzgrenzfall für statische, sphärisch symmetrische Regime.</li>
+      <li><strong>Spektrale Nähe und Distanz:</strong> operationale Abstände abgeleitet aus Eigenmoden und Kernen des
+        Laplace-Operators.</li>
+      <li><strong>Zulässigkeitskriterien:</strong> intrinsische spektrale Bedingungen, die festlegen, wann
+        Kontinuumsgeometrie sinnvoll ist.</li>
+      <li><strong>Lokale metrische Emergenz:</strong> quadratische Approximation spektraler Distanzen, die einen
+        effektiven metrischen Tensor liefert.</li>
+      <li><strong>Krümmung als kollektiver Deskriptor:</strong> geometrische Größen als Zusammenfassungen
+        variationsabhängiger relationaler Kopplungen.</li>
+      <li><strong>Schwarzschild-artige Wiedergewinnung:</strong> kinematischer Konsistenzgrenzfall für statische,
+        sphärisch symmetrische Regime.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Numerische und spektrale Ergänzungen</h2>
     <p>
-      Numerische Illustrationen dienen als Konsistenz- und Robustheitsprüfungen ausgewählter spektraler Aussagen.
-      Sie führen keine zusätzlichen Postulate ein und sind für die logische Struktur des Artikels nicht erforderlich.
+      Numerische Illustrationen dienen als Konsistenz- und Robustheitsprüfungen ausgewählter spektraler Aussagen. Sie
+      führen keine zusätzlichen Postulate ein und sind für die logische Struktur des Artikels nicht erforderlich.
     </p>
     <ul>
       <li>
-        Monte-Carlo-Konvergenz eines universellen spektralen Verhältnisses auf S<sup>3</sup> (Robustheitsprüfung 8/3).<br/>
-        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulationscode und Abbildungsskripte</a>
+        Monte-Carlo-Konvergenz eines universellen spektralen Verhältnisses auf S<sup>3</sup> (Robustheitsprüfung
+        8/3).<br/> <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulationscode
+        und Abbildungsskripte</a>
       </li>
     </ul>
   </section>
@@ -104,29 +137,29 @@
     <p>
       Dieser Artikel isoliert das Problem der geometrischen Rekonstruktion: wie metrische Begriffe ausschließlich aus
       relationalen spektralen Daten entstehen können. Innerhalb des umfassenderen Cosmochrony-Rahmens stützt er die
-      Aussage, dass Raumzeitgeometrie eine effektive Kodierung mikroskopischer relationaler Konnektivität ist, zugänglich
-      durch spektrale Rekonstruktion in projizierbaren Regimen.
+      Aussage, dass Raumzeitgeometrie eine effektive Kodierung mikroskopischer relationaler Konnektivität ist,
+      zugänglich durch spektrale Rekonstruktion in projizierbaren Regimen.
     </p>
   </section>
   <section class="card">
     <h2>Referenzen</h2>
     <p>
-      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI:
-      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
+      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI: <a
+      href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Veröffentlicht unter der Lizenz <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Veröffentlicht unter der Lizenz <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

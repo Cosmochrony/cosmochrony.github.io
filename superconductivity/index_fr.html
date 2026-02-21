@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://cosmochrony.org/supraconductivite/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("fr", "/superconductivity/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -24,18 +25,27 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>Un mécanisme unifié de frustration réelle pour la supraconductivité</h1>
         <p class="subtitle">
-          Verrouillage de phase projectif et sélection de symétrie issus d’un principe de minimisation sous contraintes de réseau.
+          Verrouillage de phase projectif et sélection de symétrie issus d’un principe de minimisation sous contraintes
+          de réseau.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">Lire le préprint (DOI Zenodo)</a>
-      <a class="btn" href="https://zenodo.org/records/18718224" rel="noopener">Enregistrement Zenodo</a>
-      <a class="btn subtle" href="/index.html">Retour à Cosmochrony</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">Lire le préprint (DOI
+        Zenodo)</a> <a class="btn" href="https://zenodo.org/records/18718224" rel="noopener">Enregistrement Zenodo</a>
       <span class="pill">DOI : <span class="mono">10.5281/zenodo.18718224</span></span>
     </div>
   </div>
@@ -46,33 +56,45 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article propose une interprétation structurelle de la supraconductivité
-        fondée sur le verrouillage de phase projectif de configurations composites
-        stables dans un cadre géométrique contraint par une fibre.
-        Plutôt que de postuler une interaction d’appariement spécifique,
-        le mécanisme identifie la supraconductivité à la formation de composites
-        w=2 minimisant la frustration réelle et permettant une cohérence de phase globale.
+        Cet article propose une interprétation structurelle de la supraconductivité fondée sur le verrouillage de phase
+        projectif de configurations composites stables dans un cadre géométrique contraint par une fibre. Plutôt que de
+        postuler une interaction d’appariement spécifique, le mécanisme identifie la supraconductivité à la formation de
+        composites w=2 minimisant la frustration réelle et permettant une cohérence de phase globale.
       </p>
       <p>
-        Le cadre relie régimes conventionnels et fortement corrélés
-        au sein d’une description unifiée basée sur des contraintes.
-        La symétrie du gap est obtenue par minimisation d’un coût de raccordement
-        sous contraintes de réseau et canal de frustration dominant.
+        Le cadre relie régimes conventionnels et fortement corrélés au sein d’une description unifiée basée sur des
+        contraintes. La symétrie du gap est obtenue par minimisation d’un coût de raccordement sous contraintes de
+        réseau et canal de frustration dominant.
       </p>
       <div class="note" role="note">
-        <strong>Note de portée.</strong> Cette page fournit un résumé structuré.
-        La référence technique faisant autorité est le préprint lié ci-dessus.
+        <strong>Note de portée.</strong> Cette page fournit un résumé structuré. La référence technique faisant autorité
+        est le préprint lié ci-dessus.
       </div>
     </div>
 
     <aside class="card">
       <h2>Informations clés</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Auteur</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Préprint</div></div>
-        <div class="kv"><div class="k">Licence</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Thématique</div><div class="v">Supraconductivité non conventionnelle</div></div>
-        <div class="kv"><div class="k">Approche</div><div class="v">Théorique, contraintes de symétrie et lois d’échelle</div></div>
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Préprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">Supraconductivité non conventionnelle</div>
+        </div>
+        <div class="kv">
+          <div class="k">Approche</div>
+          <div class="v">Théorique, contraintes de symétrie et lois d’échelle</div>
+        </div>
       </div>
     </aside>
   </section>
@@ -80,59 +102,58 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Mécanisme unifié :</strong> interprétation de la supraconductivité comme verrouillage de phase projectif.</li>
-      <li><strong>Origine réelle :</strong> appariement issu de la réduction de frustration plutôt que d’un noyau d’interaction supposé.</li>
-      <li><strong>Sélection de symétrie :</strong> symétrie du gap déterminée par minimisation géométrique sous contraintes de réseau.</li>
-      <li><strong>Prédictions matérielles :</strong> onde d (dx2–y2) dans les cuprates, s± étendue dans les nickelates.</li>
+      <li><strong>Mécanisme unifié :</strong> interprétation de la supraconductivité comme verrouillage de phase
+        projectif.</li>
+      <li><strong>Origine réelle :</strong> appariement issu de la réduction de frustration plutôt que d’un noyau
+        d’interaction supposé.</li>
+      <li><strong>Sélection de symétrie :</strong> symétrie du gap déterminée par minimisation géométrique sous
+        contraintes de réseau.</li>
+      <li><strong>Prédictions matérielles :</strong> onde d (dx2–y2) dans les cuprates, s± étendue dans les nickelates.
+      </li>
       <li><strong>Loi d’échelle :</strong> Tc reliée à delta, J et à un proxy expérimental de frustration rF.</li>
-      <li><strong>Falsifiabilité :</strong> tests expérimentaux via symétrie, rigidité de phase, désordre et pression.</li>
+      <li><strong>Falsifiabilité :</strong> tests expérimentaux via symétrie, rigidité de phase, désordre et pression.
+      </li>
     </ul>
   </section>
 
   <section class="card">
     <h2>Régimes conventionnel et corrélé</h2>
     <p>
-      Dans les supraconducteurs conventionnels,
-      la stabilisation des composites est médiée par interaction bosonique,
-      et le formalisme reproduit les équations de London et la structure de Ginzburg–Landau.
+      Dans les supraconducteurs conventionnels, la stabilisation des composites est médiée par interaction bosonique, et
+      le formalisme reproduit les équations de London et la structure de Ginzburg–Landau.
     </p>
     <p>
-      Dans les systèmes fortement corrélés,
-      l’appariement émerge de la réduction de la frustration antiferromagnétique,
-      séparant naturellement échelles d’amplitude et de phase
-      et offrant une interprétation géométrique du pseudogap.
+      Dans les systèmes fortement corrélés, l’appariement émerge de la réduction de la frustration antiferromagnétique,
+      séparant naturellement échelles d’amplitude et de phase et offrant une interprétation géométrique du pseudogap.
     </p>
   </section>
 
   <section class="card">
     <h2>Nickelates : symétrie et tests expérimentaux</h2>
     <p>
-      Les nickelates à couche infinie présentent une frustration réduite et partiellement isotropisée.
-      Le cadre prédit alors une symétrie s± étendue plutôt qu’une symétrie d.
+      Les nickelates à couche infinie présentent une frustration réduite et partiellement isotropisée. Le cadre prédit
+      alors une symétrie s± étendue plutôt qu’une symétrie d.
     </p>
     <p>
-      Cette prédiction implique une sensibilité intermédiaire au désordre non magnétique.
-      La dépendance en pression est contrainte par l’évolution mesurable de J(P) et rF(P).
-      Une incompatibilité expérimentale invaliderait le mécanisme.
+      Cette prédiction implique une sensibilité intermédiaire au désordre non magnétique. La dépendance en pression est
+      contrainte par l’évolution mesurable de J(P) et rF(P). Une incompatibilité expérimentale invaliderait le
+      mécanisme.
     </p>
   </section>
 
   <section class="card">
     <h2>Relation au programme Cosmochrony</h2>
     <p>
-      Cet article se concentre exclusivement sur la supraconductivité.
-      Les motivations structurelles plus générales sont développées dans des travaux compagnons,
-      mais ne sont pas nécessaires pour évaluer les résultats présentés ici.
+      Cet article se concentre exclusivement sur la supraconductivité. Les motivations structurelles plus générales sont
+      développées dans des travaux compagnons, mais ne sont pas nécessaires pour évaluer les résultats présentés ici.
     </p>
   </section>
 
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau.
-      <em>Un mécanisme unifié de frustration réelle pour la supraconductivité</em>.
-      Préprint, Zenodo.
-      <a href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">10.5281/zenodo.18718224</a>
+      Jérôme Beau. <em>Un mécanisme unifié de frustration réelle pour la supraconductivité</em>. Préprint, Zenodo. <a
+      href="https://doi.org/10.5281/zenodo.18718224" rel="noopener">10.5281/zenodo.18718224</a>
     </p>
   </section>
 </main>
@@ -140,15 +161,15 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

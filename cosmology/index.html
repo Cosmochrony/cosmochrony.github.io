@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://cosmochrony.org/phenomenology/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/cosmology/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -24,7 +25,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension</h1>
         <p class="subtitle">
@@ -33,10 +43,9 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18452299" rel="noopener">Read the preprint (Zenodo DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/18452299" rel="noopener">Zenodo record</a>
-      <a class="btn subtle" href="/index.html">Back to Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18452299</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18452299" rel="noopener">Read the preprint (Zenodo
+        DOI)</a> <a class="btn" href="https://zenodo.org/records/18452299" rel="noopener">Zenodo record</a> <a
+      class="btn subtle" href="/index.html">Back to Cosmochrony</a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.18452299</span></span>
     </div>
   </div>
 </header>
@@ -45,39 +54,53 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article presents a phenomenological investigation of two long-standing
-        observational anomalies: flat galaxy rotation curves and the Hubble constant
-        tension.
-        Although usually treated separately, both phenomena probe gravitational
-        inference in low-density environments.
+        This article presents a phenomenological investigation of two long-standing observational anomalies: flat galaxy
+        rotation curves and the Hubble constant tension. Although usually treated separately, both phenomena probe
+        gravitational inference in low-density environments.
       </p>
       <p>
-        The analysis introduces a minimal effective framework in which the gravitational
-        response saturates below a characteristic scale.
-        The framework is explicitly restricted to late-time phenomenology and does not
-        modify early-universe physics or the global cosmological expansion history.
+        The analysis introduces a minimal effective framework in which the gravitational response saturates below a
+        characteristic scale. The framework is explicitly restricted to late-time phenomenology and does not modify
+        early-universe physics or the global cosmological expansion history.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page provides a structured summary.
-        The authoritative technical reference is the preprint linked above.
+        <strong>Scope statement.</strong> This page provides a structured summary. The authoritative technical reference
+        is the preprint linked above.
       </div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Galaxy dynamics and late-time cosmology</div></div>
-        <div class="kv"><div class="k">Scope</div><div class="v">Phenomenological and observational</div></div>
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Galaxy dynamics and late-time cosmology</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Phenomenological and observational</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Unified phenomenology:</strong> rotation curves and Hubble tension treated within a single effective framework.</li>
-      <li><strong>Low-density saturation:</strong> deviations arise from a bounded geometric response in diffuse environments.</li>
+      <li><strong>Unified phenomenology:</strong> rotation curves and Hubble tension treated within a single effective
+        framework.</li>
+      <li><strong>Low-density saturation:</strong> deviations arise from a bounded geometric response in diffuse
+        environments.</li>
       <li><strong>No halo-by-halo tuning:</strong> a single universal scale governs all systems.</li>
       <li><strong>Void sensitivity:</strong> cosmic voids identified as maximal probes of the saturated regime.</li>
       <li><strong>Falsifiability:</strong> clear observational signatures allowing confirmation or exclusion.</li>
@@ -86,47 +109,42 @@
   <section class="card">
     <h2>Ultra-diffuse galaxies</h2>
     <p>
-      Ultra-diffuse galaxies provide extreme tests of the framework.
-      In this regime, large apparent mass discrepancies arise as geometric threshold
-      effects rather than from extended distributions of unseen matter.
+      Ultra-diffuse galaxies provide extreme tests of the framework. In this regime, large apparent mass discrepancies
+      arise as geometric threshold effects rather than from extended distributions of unseen matter.
     </p>
     <p>
-      This leads to falsifiable predictions.
-      Independent mass tracers such as weak lensing or satellite dynamics should not
-      reveal massive extended halos in the deepest saturation regime.
-      A positive detection would directly falsify the model.
+      This leads to falsifiable predictions. Independent mass tracers such as weak lensing or satellite dynamics should
+      not reveal massive extended halos in the deepest saturation regime. A positive detection would directly falsify
+      the model.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      This article focuses exclusively on late-time observational consequences.
-      The broader theoretical motivations for bounded-response regimes are developed
-      in companion works, but are not required to follow or evaluate the present
+      This article focuses exclusively on late-time observational consequences. The broader theoretical motivations for
+      bounded-response regimes are developed in companion works, but are not required to follow or evaluate the present
       phenomenological analysis.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau.
-      <em>A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension</em>.
-      Preprint, Zenodo.
-      <a href="https://doi.org/10.5281/zenodo.18452299" rel="noopener">10.5281/zenodo.18452299</a>
+      Jérôme Beau. <em>A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension</em>. Preprint,
+      Zenodo. <a href="https://doi.org/10.5281/zenodo.18452299" rel="noopener">10.5281/zenodo.18452299</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

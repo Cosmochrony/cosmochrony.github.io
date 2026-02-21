@@ -15,6 +15,7 @@
   <meta property="og:url" content="https://cosmochrony.org/born-infeld/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/born-infeld/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -23,7 +24,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>Born–Infeld Geometry from Bounded Relaxation</h1>
         <p class="subtitle">
@@ -32,10 +42,9 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18407505" rel="noopener">Read the preprint (Zenodo DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/18407505" rel="noopener">Zenodo record</a>
-      <a class="btn subtle" href="/index.html">Back to Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18407505</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18407505" rel="noopener">Read the preprint (Zenodo
+        DOI)</a> <a class="btn" href="https://zenodo.org/records/18407505" rel="noopener">Zenodo record</a> <a
+      class="btn subtle" href="/index.html">Back to Cosmochrony</a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.18407505</span></span>
     </div>
   </div>
 </header>
@@ -44,28 +53,43 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article derives Born–Infeld-type dynamics as the unique local effective description compatible
-        with bounded propagation or relaxation flux in relational systems.
-        Quadratic actions allow unbounded gradients, whereas flux saturation enforces a non-linear structure.
+        This article derives Born–Infeld-type dynamics as the unique local effective description compatible with bounded
+        propagation or relaxation flux in relational systems. Quadratic actions allow unbounded gradients, whereas flux
+        saturation enforces a non-linear structure.
       </p>
       <p>
-        Starting from a weighted relational Laplacian with irreversible relaxation, the analysis shows that
-        bounded flux selects both the Born–Infeld action and a restricted class of admissible effective
-        geometries, including Minkowski space and the Schwarzschild exterior solution.
+        Starting from a weighted relational Laplacian with irreversible relaxation, the analysis shows that bounded flux
+        selects both the Born–Infeld action and a restricted class of admissible effective geometries, including
+        Minkowski space and the Schwarzschild exterior solution.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page is a structured entry point.
-        The Zenodo preprint is the authoritative technical reference.
+        <strong>Scope statement.</strong> This page is a structured entry point. The Zenodo preprint is the
+        authoritative technical reference.
       </div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Born–Infeld dynamics and emergent geometry</div></div>
-        <div class="kv"><div class="k">Scope</div><div class="v">Structural and operator-based analysis</div></div>
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Born–Infeld dynamics and emergent geometry</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Structural and operator-based analysis</div>
+        </div>
       </div>
     </aside>
   </section>
@@ -74,7 +98,8 @@
     <ul>
       <li><strong>Bounded relaxation:</strong> finite maximal flux as a minimal physical constraint.</li>
       <li><strong>Born–Infeld selection:</strong> unique non-linear completion compatible with saturation.</li>
-      <li><strong>Emergent metric:</strong> geometry reconstructed from the principal symbol of relational operators.</li>
+      <li><strong>Emergent metric:</strong> geometry reconstructed from the principal symbol of relational operators.
+      </li>
       <li><strong>Schwarzschild geometry:</strong> universal exterior solution from flux conservation.</li>
       <li><strong>Horizons:</strong> saturation-induced loss of projectability rather than physical singularities.</li>
     </ul>
@@ -82,40 +107,38 @@
   <section class="card">
     <h2>Conceptual scope</h2>
     <p>
-      The article does not modify Maxwell or Einstein dynamics by postulate.
-      It identifies the structural conditions under which non-linear electrodynamics and
-      curved spacetime geometry arise as effective descriptions of bounded relational relaxation.
+      The article does not modify Maxwell or Einstein dynamics by postulate. It identifies the structural conditions
+      under which non-linear electrodynamics and curved spacetime geometry arise as effective descriptions of bounded
+      relational relaxation.
     </p>
   </section>
   <section class="card">
     <h2>How this connects to Cosmochrony</h2>
     <p>
-      Within Cosmochrony, bounded relaxation provides the dynamical complement to
-      non-injective projection.
-      Together, they explain why effective descriptions exhibit both saturation phenomena
-      and regime-dependent breakdown of geometric projectability.
+      Within Cosmochrony, bounded relaxation provides the dynamical complement to non-injective projection. Together,
+      they explain why effective descriptions exhibit both saturation phenomena and regime-dependent breakdown of
+      geometric projectability.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <em>Bounded Relaxation and the Dynamical Selection of Spacetime Geometry</em>.
-      Zenodo. DOI:
-      <a href="https://doi.org/10.5281/zenodo.18407505" rel="noopener">10.5281/zenodo.18407505</a>
+      Jérôme Beau. <em>Bounded Relaxation and the Dynamical Selection of Spacetime Geometry</em>. Zenodo. DOI: <a
+      href="https://doi.org/10.5281/zenodo.18407505" rel="noopener">10.5281/zenodo.18407505</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

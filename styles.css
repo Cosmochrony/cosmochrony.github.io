@@ -19,6 +19,10 @@
   --hover: #3c99c1;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --link: #7dd3fc;

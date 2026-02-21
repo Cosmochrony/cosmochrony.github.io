@@ -5,14 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Bell Inequality Violations from Non-Injective Projection | Cosmochrony</title>
-  <meta name="description" content="Structural origin of Bell inequality violations from non-injective effective descriptions, without invoking dynamical nonlocality or hidden variables."/>
+  <meta name="description"
+    content="Structural origin of Bell inequality violations from non-injective effective descriptions, without invoking dynamical nonlocality or hidden variables."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Bell Inequality Violations from Non-Injective Projection"/>
-  <meta property="og:description" content="An article within the Cosmochrony framework addressing quantum correlations as a structural consequence of non-injective projection."/>
+  <meta property="og:description"
+    content="An article within the Cosmochrony framework addressing quantum correlations as a structural consequence of non-injective projection."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/bell/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/bell/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -21,7 +24,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <div class="logo" aria-hidden="true"></div>
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
       <div>
         <h1>Bell Inequality Violations from Non-Injective Projection</h1>
         <p class="subtitle">
@@ -30,10 +42,9 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">Read the preprint (Zenodo DOI)</a>
-      <a class="btn" href="https://zenodo.org/records/18371173" rel="noopener">Zenodo record</a>
-      <a class="btn subtle" href="/index.html">Back to Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18371173</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">Read the preprint (Zenodo
+        DOI)</a> <a class="btn" href="https://zenodo.org/records/18371173" rel="noopener">Zenodo record</a> <a
+      class="btn subtle" href="/index.html">Back to Cosmochrony</a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.18371173</span></span>
     </div>
   </div>
 </header>
@@ -42,84 +53,97 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article provides a structural reinterpretation of Bell inequality violations.
-        It shows that Bell-type correlations can arise generically from non-injective
-        mappings between underlying configurations and observable outcomes, without
-        invoking superluminal influences, retrocausality, or hidden-variable dynamics.
+        This article provides a structural reinterpretation of Bell inequality violations. It shows that Bell-type
+        correlations can arise generically from non-injective mappings between underlying configurations and observable
+        outcomes, without invoking superluminal influences, retrocausality, or hidden-variable dynamics.
       </p>
       <p>
-        The analysis is intentionally non-dynamical and focuses on the logical and
-        probabilistic structure of effective descriptions.
-        Violations of Bell inequalities are traced to the failure of probabilistic
-        factorization induced by non-injective projection, rather than to any breakdown
-        of locality at the underlying level.
+        The analysis is intentionally non-dynamical and focuses on the logical and probabilistic structure of effective
+        descriptions. Violations of Bell inequalities are traced to the failure of probabilistic factorization induced
+        by non-injective projection, rather than to any breakdown of locality at the underlying level.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page is a structured summary and entry point.
-        The authoritative technical reference is the Zenodo preprint linked above.
+        <strong>Scope statement.</strong> This page is a structured summary and entry point. The authoritative technical
+        reference is the Zenodo preprint linked above.
       </div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Quantum correlations and Bell inequalities</div></div>
-        <div class="kv"><div class="k">Scope</div><div class="v">Structural and probabilistic analysis</div></div>
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Quantum correlations and Bell inequalities</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Structural and probabilistic analysis</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Non-injective projection:</strong> identification of many-to-one mappings as a sufficient mechanism for Bell violations.</li>
-      <li><strong>Failure of factorization:</strong> structural obstruction to Bell-type probabilistic assumptions at the effective level.</li>
-      <li><strong>Locality preservation:</strong> Bell violations without superluminal dynamics or causal nonlocality.</li>
-      <li><strong>Effective descriptions:</strong> quantum correlations as consistency constraints of projected representations.</li>
-      <li><strong>Classical limit:</strong> recovery of factorizability when the projection becomes effectively injective.</li>
+      <li><strong>Non-injective projection:</strong> identification of many-to-one mappings as a sufficient mechanism
+        for Bell violations.</li>
+      <li><strong>Failure of factorization:</strong> structural obstruction to Bell-type probabilistic assumptions at
+        the effective level.</li>
+      <li><strong>Locality preservation:</strong> Bell violations without superluminal dynamics or causal nonlocality.
+      </li>
+      <li><strong>Effective descriptions:</strong> quantum correlations as consistency constraints of projected
+        representations.</li>
+      <li><strong>Classical limit:</strong> recovery of factorizability when the projection becomes effectively
+        injective.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Conceptual scope</h2>
     <p>
-      The article does not propose a modification of quantum mechanics, nor does it
-      introduce additional physical degrees of freedom.
-      Its purpose is to isolate a minimal and sufficient structural condition under
-      which Bell inequalities fail, clarifying what Bell-type experiments do and do
-      not constrain about the underlying description.
+      The article does not propose a modification of quantum mechanics, nor does it introduce additional physical
+      degrees of freedom. Its purpose is to isolate a minimal and sufficient structural condition under which Bell
+      inequalities fail, clarifying what Bell-type experiments do and do not constrain about the underlying description.
     </p>
   </section>
   <section class="card">
     <h2>How this connects to Cosmochrony</h2>
     <p>
-      Within the Cosmochrony framework, this article addresses the probabilistic and
-      logical consequences of non-injective projection.
-      It complements the spectral and geometric analysis by showing how quantum
-      correlations arise naturally at the effective level when observable descriptions
-      fail to capture the full underlying relational structure.
+      Within the Cosmochrony framework, this article addresses the probabilistic and logical consequences of
+      non-injective projection. It complements the spectral and geometric analysis by showing how quantum correlations
+      arise naturally at the effective level when observable descriptions fail to capture the full underlying relational
+      structure.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <em>Bell Inequality Violations from Non-Injective Projection</em>.
-      Zenodo. DOI:
-      <a href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">10.5281/zenodo.18371173</a>
+      Jérôme Beau. <em>Bell Inequality Violations from Non-Injective Projection</em>. Zenodo. DOI: <a
+      href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">10.5281/zenodo.18371173</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

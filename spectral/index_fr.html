@@ -59,8 +59,9 @@
       <h2>Présentation générale</h2>
       <p>
         Cet article développe une approche relationnelle et spectrale de l’émergence de la géométrie de l’espace-temps.
-        À partir de données de connectivité abstraites encodées dans des opérateurs de type Laplacien, il montre comment
-        des notions effectives de distance, de dimension, de courbure et de structure métrique peuvent être
+        À partir de données de connectivité abstraites encodées dans des <a
+        href="https://fr.wikipedia.org/wiki/Op%C3%A9rateur_laplacien">opérateurs de type Laplacien</a>, il montre
+        comment des notions effectives de distance, de dimension, de courbure et de structure métrique peuvent être
         reconstruites sans supposer de variété de fond, de système de coordonnées ou de degrés de liberté géométriques
         fondamentaux.
       </p>
@@ -105,14 +106,14 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Distances spectrales opérationnelles :</strong> définition de proximités issues des modes propres du
+      <li><strong>Distances spectrales opérationnelles :</strong> définition de proximités issues des modes propres du
         Laplacien.</li>
-      <li><strong>Admissibilité spectrale :</strong> critères intrinsèques délimitant les régimes où une géométrie
+      <li><strong>Admissibilité spectrale :</strong> critères intrinsèques délimitant les régimes où une géométrie
         continue est pertinente.</li>
-      <li><strong>Émergence locale de la métrique :</strong> approximation quadratique des distances spectrales.</li>
-      <li><strong>Courbure comme descripteur collectif :</strong> résumé géométrique de variations de couplage
+      <li><strong>Émergence locale de la métrique :</strong> approximation quadratique des distances spectrales.</li>
+      <li><strong>Courbure comme descripteur collectif :</strong> résumé géométrique de variations de couplage
         relationnel.</li>
-      <li><strong>Limite de type Schwarzschild :</strong> récupération cinématique dans des régimes statiques
+      <li><strong>Limite de type Schwarzschild :</strong> récupération cinématique dans des régimes statiques
         sphériquement symétriques.</li>
     </ul>
   </section>
@@ -125,7 +126,7 @@
     </p>
     <ul>
       <li>
-        Convergence Monte-Carlo d’un invariant spectral universel sur S<sup>3</sup> (rapport 8/3).<br/> <a
+        Convergence Monte-Carlo d’un invariant spectral universel sur $S^3$ (rapport 8/3).<br/> <a
         href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Code de simulation et scripts
         de figures</a>
       </li>
@@ -134,10 +135,10 @@
   <section class="card">
     <h2>Lien avec Cosmochrony</h2>
     <p>
-      Cet article isole le problème de la reconstruction géométrique : comment des notions métriques peuvent émerger à
-      partir de données spectrales relationnelles seules. Dans le cadre plus large de Cosmochrony, il étaye l’idée que
-      la géométrie de l’espace-temps constitue un encodage effectif de la connectivité relationnelle microscopique,
-      accessible par reconstruction spectrale dans des régimes projectables.
+      Cet article isole le problème de la reconstruction géométrique : comment des notions métriques peuvent émerger à
+      partir de données spectrales relationnelles seules. Dans le cadre plus large de <a href="/">Cosmochrony</a>, il
+      étaye l’idée que la géométrie de l’espace-temps constitue un encodage effectif de la connectivité relationnelle
+      microscopique, accessible par reconstruction spectrale dans des régimes projectables.
     </p>
   </section>
   <section class="card">
@@ -156,6 +157,8 @@
     </p>
   </div>
 </footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 <script>
   const y = document.getElementById("y")
   if (y) y.textContent = new Date().getFullYear()

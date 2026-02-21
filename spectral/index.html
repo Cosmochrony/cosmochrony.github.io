@@ -5,18 +5,21 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Spectral Reconstruction of Spacetime Geometry | Cosmochrony</title>
-  <meta name="description" content="Relational and spectral reconstruction of effective spacetime geometry without assuming a background manifold, coordinates, or fundamental metric degrees of freedom."/>
+  <meta name="description"
+    content="Relational and spectral reconstruction of effective spacetime geometry without assuming a background manifold, coordinates, or fundamental metric degrees of freedom."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/spectral/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/spectral/index_es.html"/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/spectral/index_de.html"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/spectral/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Spectral Reconstruction of Spacetime Geometry"/>
-  <meta property="og:description" content="An article within the Cosmochrony framework addressing emergent metric geometry from relational spectral data."/>
+  <meta property="og:description"
+    content="An article within the Cosmochrony framework addressing emergent metric geometry from relational spectral data."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/spectral/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/spectral/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -25,10 +28,14 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Back to Cosmochrony"  aria-hidden="true">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
-          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z" />
-          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
         </svg>
       </a>
       <div>
@@ -39,10 +46,10 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Read the preprint (Zenodo DOI)</a>
-      <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation code</a>
-      <a class="btn subtle" href="/index.html">Back to Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Read the preprint (Zenodo
+        DOI)</a> <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation
+      code</a> <a class="btn subtle" href="/index.html">Back to Cosmochrony</a> <span class="pill">DOI: <span
+      class="mono">10.5281/zenodo.18356037</span></span>
     </div>
   </div>
 </header>
@@ -51,15 +58,15 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article develops a relational and spectral approach to the emergence of spacetime geometry.
-        Starting from abstract connectivity data encoded in Laplacian operators, it shows how effective notions
-        of distance, dimension, curvature, and metric structure can be reconstructed without assuming a background
-        manifold, coordinates, or fundamental geometric degrees of freedom.
+        This article develops a relational and spectral approach to the emergence of spacetime geometry. Starting from
+        abstract connectivity data encoded in <a href="https://en.wikipedia.org/wiki/Laplace_operator">Laplacian
+        operators</a>, it shows how effective notions of distance, dimension, curvature, and metric structure can be
+        reconstructed without assuming a background manifold, coordinates, or fundamental geometric degrees of freedom.
       </p>
       <p>
         The construction is intentionally kinematical. No gravitational dynamics or field equations are postulated.
-        Geometric quantities arise only as effective descriptors in regimes where the relational substrate admits
-        a stable and spectrally admissible continuum approximation. In that projectable regime, standard geometric
+        Geometric quantities arise only as effective descriptors in regimes where the relational substrate admits a
+        stable and spectrally admissible continuum approximation. In that projectable regime, standard geometric
         observables can be treated as operational summaries of relational constraints rather than fundamental entities.
       </p>
       <div class="note" role="note">
@@ -70,64 +77,88 @@
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Emergent geometry from relational Laplacians</div></div>
-        <div class="kv"><div class="k">Scope</div><div class="v">Kinematical reconstruction (no matter or dynamics)</div></div>
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Emergent geometry from relational Laplacians</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Kinematical reconstruction (no matter or dynamics)</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Spectral proximity and distance:</strong> operational distances derived from Laplacian eigenmodes and kernels.</li>
-      <li><strong>Admissibility criteria:</strong> intrinsic spectral conditions delimiting when continuum geometry is meaningful.</li>
-      <li><strong>Local metric emergence:</strong> quadratic approximation of spectral distances yielding an effective metric tensor.</li>
-      <li><strong>Curvature as a collective descriptor:</strong> geometric quantities as summaries of relational coupling variations.</li>
-      <li><strong>Schwarzschild-type recovery:</strong> kinematical consistency limit for static spherically symmetric regimes.</li>
+      <li><strong>Spectral proximity and distance:</strong> operational distances derived from Laplacian eigenmodes and
+        kernels.</li>
+      <li><strong>Admissibility criteria:</strong> intrinsic spectral conditions delimiting when continuum geometry is
+        meaningful.</li>
+      <li><strong>Local metric emergence:</strong> quadratic approximation of spectral distances yielding an effective
+        metric tensor.</li>
+      <li><strong>Curvature as a collective descriptor:</strong> geometric quantities as summaries of relational
+        coupling variations.</li>
+      <li><strong>Schwarzschild-type recovery:</strong> kinematical consistency limit for static spherically symmetric
+        regimes.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Numerical and spectral supplements</h2>
     <p>
-      Numerical illustrations are provided as consistency and robustness checks for selected spectral claims.
-      They do not introduce additional postulates and are not required for the logical structure of the article.
+      Numerical illustrations are provided as consistency and robustness checks for selected spectral claims. They do
+      not introduce additional postulates and are not required for the logical structure of the article.
     </p>
     <ul>
       <li>
-        Monte-Carlo convergence of a universal spectral ratio on S<sup>3</sup> (8/3 robustness check).<br/>
-        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation code and figure scripts</a>
+        Monte-Carlo convergence of a universal spectral ratio on S<sup>3</sup> (8/3 robustness check).<br/> <a
+        href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Simulation code and figure
+        scripts</a>
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>How this connects to Cosmochrony</h2>
     <p>
-      This article isolates the geometric reconstruction problem: how metric notions can arise from relational spectral data alone.
-      Within the broader Cosmochrony framework, it supports the claim that spacetime geometry is an effective encoding of microscopic
-      relational connectivity, accessed through spectral reconstruction in projectable regimes.
+      This article isolates the geometric reconstruction problem: how metric notions can arise from relational spectral
+      data alone. Within the broader Cosmochrony framework, it supports the claim that spacetime geometry is an
+      effective encoding of microscopic relational connectivity, accessed through spectral reconstruction in projectable
+      regimes.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI:
-      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
+      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI: <a
+      href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

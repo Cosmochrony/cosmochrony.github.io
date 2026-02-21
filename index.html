@@ -23,6 +23,7 @@
   <meta property="og:url" content="https://cosmochrony.org/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/index")
   </script>
   <link rel="stylesheet" href="./styles.css"/>
@@ -33,25 +34,27 @@
     <div class="brand">
       <div class="logo" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
-          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z" />
-          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
         </svg>
       </div>
       <div>
         <h1>Cosmochrony</h1>
         <p class="subtitle">
-          A pre-geometric framework in which time ordering, spacetime geometry, and effective physics
-          emerge from the irreversible relaxation of a single relational substrate
-          <span class="mono">χ</span>, through a generally non-injective projection to effective
-          spacetime observables (<span class="mono">χ<sub>eff</sub></span>).
+          A pre-geometric framework in which time ordering, spacetime geometry, and effective physics emerge from the
+          irreversible relaxation of a single relational substrate $\chi$, through a generally non-injective projection
+          to effective spacetime observables ($\chi_{\text{eff}}$).
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.17957509" rel="noopener">
-        Read the preprint <div class="mono">DOI 10.5281/zenodo.17957509</div>
-      </a>
-      <a class="btn" href="https://github.com/Cosmochrony" rel="noopener">GitHub Repository</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.17957509" rel="noopener"> Read the preprint
+        <div class="mono">DOI 10.5281/zenodo.17957509</div>
+      </a> <a class="btn" href="https://github.com/Cosmochrony" rel="noopener">GitHub Repository</a>
     </div>
   </div>
 </header>
@@ -60,59 +63,49 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        Cosmochrony proposes a minimalist ontological starting point: a single relational substrate
-        <span class="mono">χ</span> whose dynamics are intrinsically irreversible. Time is not
-        introduced as an external parameter, but corresponds to a directed relaxation (ordering)
-        structure of <span class="mono">χ</span>.
+        Cosmochrony proposes a minimalist ontological starting point: a single relational substrate $\chi$ whose
+        dynamics are intrinsically irreversible. Time is not introduced as an external parameter, but corresponds to a
+        directed relaxation (ordering) structure of $\chi$.
       </p>
       <p>
-        A central distinction is drawn between the fundamental substrate <span class="mono">χ</span>
-        and effective spacetime-level descriptions, collectively denoted
-        <span class="mono">χ<sub>eff</sub></span>. These effective descriptors are meaningful only
-        in projectable regimes, where stable geometric and causal notions can be consistently
-        defined.
+        A central distinction is drawn between the fundamental substrate $\chi$ and effective spacetime-level
+        descriptions, collectively denoted $\chi_{\text{eff}}$. These effective descriptors are meaningful only in
+        projectable regimes, where stable geometric and causal notions can be consistently defined.
       </p>
       <p>
-        The projection from <span class="mono">χ</span> to effective observables is generally
-        <strong>non-injective</strong>: distinct underlying configurations may correspond to
-        operationally indistinguishable spacetime events or measurements. This introduces an
-        intrinsic distinction between what is <em>observable</em> and what is <em>resolvable</em>:
-        some structural degrees of freedom can be physically real while remaining irreconstructible
-        “under the hood” within <span class="mono">χ<sub>eff</sub></span>.
+        The projection from $\chi$ to effective observables is generally <strong>non-injective</strong>: distinct
+        underlying configurations may correspond to operationally indistinguishable spacetime events or measurements.
+        This introduces an intrinsic distinction between what is <em>observable</em> and what is <em>resolvable</em>:
+        some structural degrees of freedom can be physically real while remaining irreconstructible “under the hood”
+        within $\chi_{\text{eff}}$.
       </p>
       <p>
-        Spacetime geometry is treated as an effective encoding of relational connectivity. In
-        admissible regimes, spectral criteria and Laplacian-based reconstruction provide a concrete,
-        operational pathway from relational structure to emergent metric notions, while predicting
-        breakdown outside projectable domains.
+        Spacetime geometry is treated as an effective encoding of relational connectivity. In admissible regimes,
+        spectral criteria and Laplacian-based reconstruction provide a concrete, operational pathway from relational
+        structure to emergent metric notions, while predicting breakdown outside projectable domains.
       </p>
       <p>
-        Dynamical laws are not postulated at the substrate level, but arise from universal
-        structural constraints on relaxation and projection. In projectable regimes, the effective
-        action admits a Born–Infeld-like form, selected as a canonical encoding of bounded
-        relaxation fluxes and causal saturation. This action is not fundamental to
-        <span class="mono">χ</span>, but an auxiliary representation valid within effective
-        spacetime descriptions.
+        Dynamical laws are not postulated at the substrate level, but arise from universal structural constraints on
+        relaxation and projection. In projectable regimes, the effective action admits a Born–Infeld-like form, selected
+        as a canonical encoding of bounded relaxation fluxes and causal saturation. This action is not fundamental to
+        $\chi$, but an auxiliary representation valid within effective spacetime descriptions.
       </p>
       <p>
-        The framework further introduces a <strong>projective thermodynamics</strong>: irreversibility
-        and macroscopic arrows of time are tied not only to relaxation, but also to a projection
-        entropy associated with non-injective identification of underlying states. In this view,
-        effective heating, dissipation, and “thermodynamic” behavior can reflect projection
-        saturation and informational degeneracy, not merely microscopic agitation.
+        The framework further introduces a <strong>projective thermodynamics</strong>: irreversibility and macroscopic
+        arrows of time are tied not only to relaxation, but also to a projection entropy associated with non-injective
+        identification of underlying states. In this view, effective heating, dissipation, and “thermodynamic” behavior
+        can reflect projection saturation and informational degeneracy, not merely microscopic agitation.
       </p>
       <p>
-        Stable localized configurations of <span class="mono">χ</span> give rise to matter-like
-        excitations, while topological and relaxation constraints underpin effective interactions.
-        In particular, electric charge is interpreted as a chiral–torsional invariant of
-        relaxation fluxes, with admissibility constraints favoring neutral large-scale sectors and
+        Stable localized configurations of $\chi$ give rise to matter-like excitations, while topological and relaxation
+        constraints underpin effective interactions. In particular, electric charge is interpreted as a chiral–torsional
+        invariant of relaxation fluxes, with admissibility constraints favoring neutral large-scale sectors and
         pair-creation-like restoration mechanisms in extreme regimes.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This website provides a high-level presentation. The
-        authoritative technical reference is the preprint linked above. Statements here summarize
-        results, effective-limit constructions, and clearly labeled conjectural extensions, as in
-        the manuscript.
+        <strong>Scope statement.</strong> This website provides a high-level presentation. The authoritative technical
+        reference is the preprint linked above. Statements here summarize results, effective-limit constructions, and
+        clearly labeled conjectural extensions, as in the manuscript.
       </div>
     </div>
     <aside class="card">
@@ -124,27 +117,31 @@
             <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>
           </div>
         </div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div><div class="v"><a href="LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="LICENSE">CC BY 4.0</a></div>
+        </div>
         <div class="kv">
           <div class="k">Core thesis</div>
           <div class="v">
-            Irreversible relaxation of <span class="mono">χ</span> yields time ordering and supports
-            emergent spacetime descriptions
+            Irreversible relaxation of $\chi$ yields time ordering and supports emergent spacetime descriptions
           </div>
         </div>
         <div class="kv">
           <div class="k">Key mechanism</div>
           <div class="v">
-            Non-injective projection delimiting the validity and reconstructibility of spacetime
-            observables
+            Non-injective projection delimiting the validity and reconstructibility of spacetime observables
           </div>
         </div>
         <div class="kv">
           <div class="k">Recent advances</div>
           <div class="v">
-            Projective thermodynamics; observability vs resolvability; strengthened quantitative
-            program and regime diagnostics
+            Projective thermodynamics; observability vs resolvability; strengthened quantitative program and regime
+            diagnostics
           </div>
         </div>
       </div>
@@ -153,135 +150,129 @@
   <section class="card">
     <h2>Core statements (high level)</h2>
     <ul>
-      <li><strong>Single-substrate ontology:</strong> one pre-geometric relational entity
-        <span class="mono">χ</span>, not a field on spacetime.</li>
-      <li><strong>Projection hierarchy:</strong> spacetime quantities arise only in projectable
-        regimes via <span class="mono">χ<sub>eff</sub></span>.</li>
-      <li><strong>Intrinsic irreversibility:</strong> time ordering reflects directed relaxation,
-        not an external parameter.</li>
-      <li><strong>Non-injectivity:</strong> effective observables underdetermine the underlying
-        configuration; observability differs from resolvability.</li>
-      <li><strong>Projective thermodynamics:</strong> projection entropy and saturation constrain
-        effective macroscopic behavior and arrows of time.</li>
-      <li><strong>Derived dynamics:</strong> effective laws emerge from bounded relaxation and
-        saturation constraints (Born–Infeld-like encoding).</li>
-      <li><strong>Emergent geometry:</strong> metric notions arise as an operational encoding of
-        relational connectivity, accessible via spectral reconstruction in admissible regimes.</li>
+      <li><strong>Single-substrate ontology:</strong> one pre-geometric relational entity $\chi$, not a field on
+        spacetime.</li>
+      <li><strong>Projection hierarchy:</strong> spacetime quantities arise only in projectable regimes via
+        $\chi_{\text{eff}}$.</li>
+      <li><strong>Intrinsic irreversibility:</strong> time ordering reflects directed relaxation, not an external
+        parameter.</li>
+      <li><strong>Non-injectivity:</strong> effective observables underdetermine the underlying configuration;
+        observability differs from resolvability.</li>
+      <li><strong>Projective thermodynamics:</strong> projection entropy and saturation constrain effective macroscopic
+        behavior and arrows of time.</li>
+      <li><strong>Derived dynamics:</strong> effective laws emerge from bounded relaxation and saturation constraints
+        (Born–Infeld-like encoding).</li>
+      <li><strong>Emergent geometry:</strong> metric notions arise as an operational encoding of relational
+        connectivity, accessible via spectral reconstruction in admissible regimes.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Articles and technical notes</h2>
     <p>
-      The Cosmochrony framework is developed across a small set of focused articles addressing
-      distinct structural aspects. Together, they form a coherent pipeline from relational structure
-      to emergent geometry, effective dynamics, and late-time phenomenology.
+      The Cosmochrony framework is developed across a small set of focused articles addressing distinct structural
+      aspects. Together, they form a coherent pipeline from relational structure to emergent geometry, effective
+      dynamics, and late-time phenomenology.
     </p>
     <ol type="A" class="article-list">
       <li>
-        <a href="/spectral/" class="inline-link">Spectral Reconstruction of Spacetime Geometry</a><br/>
-        Relational and spectral derivation of effective metric geometry without postulating a
-        background manifold; regime diagnostics via spectral admissibility and breakdown criteria.
+        <a href="/spectral/" class="inline-link">Spectral Reconstruction of Spacetime Geometry</a><br/> Relational and
+        spectral derivation of effective metric geometry without postulating a background manifold; regime diagnostics
+        via spectral admissibility and breakdown criteria.
       </li>
       <li>
         <a href="/bell/" class="inline-link">Bell Inequality Violations from Non-Injective Projection</a><br/>
-        Structural origin of quantum correlations from non-injective effective descriptions,
-        without invoking dynamical nonlocality, retrocausality, or hidden-variable dynamics.
+        Structural origin of quantum correlations from non-injective effective descriptions, without invoking dynamical
+        nonlocality, retrocausality, or hidden-variable dynamics.
       </li>
       <li>
-        <a href="/born-infeld/" class="inline-link">Born–Infeld Geometry from Bounded Relaxation</a><br/>
-        Emergence of non-linear Born–Infeld-like encoding and effective spacetime geometry from
-        bounded relational relaxation and flux saturation in projectable regimes.
+        <a href="/born-infeld/" class="inline-link">Born–Infeld Geometry from Bounded Relaxation</a><br/> Emergence of
+        non-linear Born–Infeld-like encoding and effective spacetime geometry from bounded relational relaxation and
+        flux saturation in projectable regimes.
       </li>
       <li>
         <a href="/cosmology/" class="inline-link">Galaxy Rotation Curves and the Hubble Tension</a><br/>
-        Phenomenological study of late-time gravitational dynamics in low-density environments,
-        linking galaxy rotation curves and the Hubble tension through a common effective saturation
-        mechanism without invoking dark matter particles in this effective regime.
+        Phenomenological study of late-time gravitational dynamics in low-density environments, linking galaxy rotation
+        curves and the Hubble tension through a common effective saturation mechanism without invoking dark matter
+        particles in this effective regime.
       </li>
       <li>
         <a href="/sm-charge-mass/" class="inline-link">Charge, Mass, and Inertia as Saturated Responses</a><br/>
-        Structural and conceptual analysis of mass, electric charge, and inertia as distinct symmetry
-        classes of saturated effective response arising from non-injective relational descriptions,
-        fully consistent with Standard Model phenomenology and without modifying its dynamics.
+        Structural and conceptual analysis of mass, electric charge, and inertia as distinct symmetry classes of
+        saturated effective response arising from non-injective relational descriptions, fully consistent with Standard
+        Model phenomenology and without modifying its dynamics.
       </li>
       <li>
-        <a href="/schwinger-lamb/" class="inline-link">The Lamb Shift and the Schwinger Effect</a><br/>
-        Structural and interpretative analysis of the Lamb shift and Schwinger pair production as
-        consequences of finite spectral resolution and flux saturation arising from non-injective
-        relational descriptions, fully consistent with precision quantum electrodynamics and without
-        introducing a dynamical vacuum.
+        <a href="/schwinger-lamb/" class="inline-link">The Lamb Shift and the Schwinger Effect</a><br/> Structural and
+        interpretative analysis of the Lamb shift and Schwinger pair production as consequences of finite spectral
+        resolution and flux saturation arising from non-injective relational descriptions, fully consistent with
+        precision quantum electrodynamics and without introducing a dynamical vacuum.
       </li>
       <li>
-        <a href="/superconductivity/" class="inline-link">A Unified Real-Space Frustration Mechanism for Superconductivity</a><br/>
-        Structural analysis of superconductivity as projective phase locking of composite
-        configurations driven by real-space frustration minimization and lattice symmetry
-        constraints, predicting d-wave symmetry in cuprates and extended s± symmetry in
-        nickelates, with explicitly falsifiable scaling, disorder, and pressure signatures.
+        <a href="/superconductivity/" class="inline-link">A Unified Real-Space Frustration Mechanism for
+          Superconductivity</a><br/> Structural analysis of superconductivity as projective phase locking of composite
+        configurations driven by real-space frustration minimization and lattice symmetry constraints, predicting d-wave
+        symmetry in cuprates and extended s± symmetry in nickelates, with explicitly falsifiable scaling, disorder, and
+        pressure signatures.
       </li>
     </ol>
     <div class="note" role="note">
-      These pages provide structured summaries and links to the corresponding preprints, code
-      repositories, and numerical supplements. The authoritative technical content remains the
-      cited manuscripts.
+      These pages provide structured summaries and links to the corresponding preprints, code repositories, and
+      numerical supplements. The authoritative technical content remains the cited manuscripts.
     </div>
   </section>
   <section class="card">
     <h2>Quantitative program (selected targets)</h2>
     <p>
-      Cosmochrony emphasizes falsifiable, quantitative targets. The current program prioritizes
-      extracting effective parameters from structural constraints and comparing them to known
-      scales and anomalies, in domains where the framework yields sharp signatures.
+      Cosmochrony emphasizes falsifiable, quantitative targets. The current program prioritizes extracting effective
+      parameters from structural constraints and comparing them to known scales and anomalies, in domains where the
+      framework yields sharp signatures.
     </p>
     <ul>
-      <li><strong>Spectral invariants:</strong> robust eigenvalue hierarchies and spectral-dimension
-        stabilization in admissible regimes.</li>
-      <li><strong>Strong-field thresholds:</strong> deprojection/saturation signatures near
-        high-curvature regimes affecting effective propagation and observables.</li>
-      <li><strong>Cosmology:</strong> relaxation-driven effective expansion laws and quantitative
-        comparison to late/early-universe inference (including Hubble-like limits).</li>
-      <li><strong>Galactic dynamics:</strong> rotation-curve and lensing signatures from relaxation
-        constraints without adding matter components.</li>
-      <li><strong>QED-scale tests:</strong> bounded-relaxation corrections in regimes analogous to
-        vacuum polarization and pair-creation thresholds.</li>
+      <li><strong>Spectral invariants:</strong> robust eigenvalue hierarchies and spectral-dimension stabilization in
+        admissible regimes.</li>
+      <li><strong>Strong-field thresholds:</strong> deprojection/saturation signatures near high-curvature regimes
+        affecting effective propagation and observables.</li>
+      <li><strong>Cosmology:</strong> relaxation-driven effective expansion laws and quantitative comparison to
+        late/early-universe inference (including Hubble-like limits).</li>
+      <li><strong>Galactic dynamics:</strong> rotation-curve and lensing signatures from relaxation constraints without
+        adding matter components.</li>
+      <li><strong>QED-scale tests:</strong> bounded-relaxation corrections in regimes analogous to vacuum polarization
+        and pair-creation thresholds.</li>
     </ul>
     <div class="note" role="note">
-      The preprint provides the technical definitions and the precise status of each target
-      (derived, numerically supported, or conjectural).
+      The preprint provides the technical definitions and the precise status of each target (derived, numerically
+      supported, or conjectural).
     </div>
   </section>
   <section class="card">
     <h2>Interactive exploration</h2>
     <p>
-      Discussion assistants built on the full set of published Cosmochrony articles and documents.
-      They can answer readers’ questions, provide progressive explanations, and clarify both
-      conceptual and technical aspects of the framework.
+      Discussion assistants built on the full set of published Cosmochrony articles and documents. They can answer
+      readers’ questions, provide progressive explanations, and clarify both conceptual and technical aspects of the
+      framework.
     </p>
     <ul>
       <li>
-        <a href="https://chatgpt.com/g/g-697ce59ff4148191b12b63c3f908207d-cosmochrony">
-          ChatGPT – Cosmochrony
-        </a>
+        <a href="https://chatgpt.com/g/g-697ce59ff4148191b12b63c3f908207d-cosmochrony"> ChatGPT – Cosmochrony </a>
       </li>
       <li>
-        <a href="https://gemini.google.com/gem/181YBmfo1ZAyQHXpWMW1QwSSzU6k_gBHU?usp=sharing">
-          Gemini – Cosmochrony
-        </a>
+        <a href="https://gemini.google.com/gem/181YBmfo1ZAyQHXpWMW1QwSSzU6k_gBHU?usp=sharing"> Gemini – Cosmochrony </a>
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <i lang="en">Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics</i>.
-      Zenodo. DOI: <a href="https://doi.org/10.5281/zenodo.17957509" rel="noopener">10.5281/zenodo.17957509</a>
+      Jérôme Beau. <i lang="en">Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics</i>. Zenodo. DOI:
+      <a href="https://doi.org/10.5281/zenodo.17957509" rel="noopener">10.5281/zenodo.17957509</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © 2025-<span id="y"></span> Jérôme Beau. Licensed under <a href="LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © 2025-<span id="y"></span> Jérôme Beau. Licensed under <a href="LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

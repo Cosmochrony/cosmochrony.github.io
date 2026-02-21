@@ -5,18 +5,21 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Ricostruzione spettrale della geometria dello spazio-tempo | Cosmochrony</title>
-  <meta name="description" content="Ricostruzione relazionale e spettrale della geometria efficace dello spazio-tempo senza assumere una varietà di fondo, coordinate o gradi di libertà metrici fondamentali."/>
+  <meta name="description"
+    content="Ricostruzione relazionale e spettrale della geometria efficace dello spazio-tempo senza assumere una varietà di fondo, coordinate o gradi di libertà metrici fondamentali."/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/spectral/index_de.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/spectral/index_es.html"/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/spectral/"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/spectral/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Ricostruzione spettrale della geometria dello spazio-tempo"/>
-  <meta property="og:description" content="Un articolo nel quadro Cosmochrony che affronta la geometria metrica emergente a partire da dati spettrali relazionali."/>
+  <meta property="og:description"
+    content="Un articolo nel quadro Cosmochrony che affronta la geometria metrica emergente a partire da dati spettrali relazionali."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/spectral"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("it", "/spectral/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -25,13 +28,16 @@
 <header>
   <div class="wrap">
     <div class="brand">
-            <a class="logo" href="/" aria-hidden="true">
+      <a class="logo" href="/" title="Torna a Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
-          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z" />
-          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
         </svg>
-      </div>
-
+      </a>
       <div>
         <h1>Ricostruzione spettrale della geometria dello spazio-tempo</h1>
         <p class="subtitle">
@@ -40,11 +46,11 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Leggi il preprint (DOI Zenodo)</a>
-      <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Record Zenodo</a>
-      <a class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Codice di simulazione</a>
-      <a class="btn subtle" href="/index.html">Torna a Cosmochrony</a>
-      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18356037</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">Leggi il preprint (DOI
+        Zenodo)</a> <a class="btn" href="https://zenodo.org/records/18356037" rel="noopener">Record Zenodo</a> <a
+      class="btn" href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Codice di
+      simulazione</a> <a class="btn subtle" href="/index.html">Torna a Cosmochrony</a> <span class="pill">DOI: <span
+      class="mono">10.5281/zenodo.18356037</span></span>
     </div>
   </div>
 </header>
@@ -54,54 +60,75 @@
       <h2>Panoramica</h2>
       <p>
         Questo articolo sviluppa un approccio relazionale e spettrale all’emergenza della geometria dello spazio-tempo.
-        Partendo da dati di connettività astratti codificati in operatori di Laplace, mostra come nozioni efficaci
-        di distanza, dimensione, curvatura e struttura metrica possano essere ricostruite senza assumere una varietà
-        di fondo, coordinate o gradi di libertà geometrici fondamentali.
+        Partendo da dati di connettività astratti codificati in operatori di Laplace, mostra come nozioni efficaci di
+        distanza, dimensione, curvatura e struttura metrica possano essere ricostruite senza assumere una varietà di
+        fondo, coordinate o gradi di libertà geometrici fondamentali.
       </p>
       <p>
-        La costruzione è intenzionalmente cinematica. Non vengono postulate dinamiche gravitazionali né equazioni di campo.
-        Le quantità geometriche emergono solo come descrittori efficaci in regimi in cui il substrato relazionale ammette
-        un’approssimazione continua stabile e spettralmente ammissibile. In tale regime proiettabile, gli osservabili
-        geometrici standard possono essere trattati come sintesi operative di vincoli relazionali, piuttosto che come
-        entità fondamentali.
+        La costruzione è intenzionalmente cinematica. Non vengono postulate dinamiche gravitazionali né equazioni di
+        campo. Le quantità geometriche emergono solo come descrittori efficaci in regimi in cui il substrato relazionale
+        ammette un’approssimazione continua stabile e spettralmente ammissibile. In tale regime proiettabile, gli
+        osservabili geometrici standard possono essere trattati come sintesi operative di vincoli relazionali, piuttosto
+        che come entità fondamentali.
       </p>
       <div class="note" role="note">
-        <strong>Dichiarazione di ambito.</strong> Questa pagina è una sintesi strutturata e un punto di accesso.
-        Il riferimento tecnico autorevole è il preprint Zenodo collegato sopra. Codice e supplementi numerici sono
-        forniti per la riproducibilità.
+        <strong>Dichiarazione di ambito.</strong> Questa pagina è una sintesi strutturata e un punto di accesso. Il
+        riferimento tecnico autorevole è il preprint Zenodo collegato sopra. Codice e supplementi numerici sono forniti
+        per la riproducibilità.
       </div>
     </div>
     <aside class="card">
       <h2>Fatti rapidi</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Autore</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Tipo di lavoro</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">Licenza</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Geometria emergente da Laplaciani relazionali</div></div>
-        <div class="kv"><div class="k">Ambito</div><div class="v">Ricostruzione cinematica (senza materia o dinamica)</div></div>
+        <div class="kv">
+          <div class="k">Autore</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Tipo di lavoro</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licenza</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Geometria emergente da Laplaciani relazionali</div>
+        </div>
+        <div class="kv">
+          <div class="k">Ambito</div>
+          <div class="v">Ricostruzione cinematica (senza materia o dinamica)</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Contributi principali</h2>
     <ul>
-      <li><strong>Prossimità e distanza spettrali:</strong> distanze operative derivate da autovettori e kernel del Laplaciano.</li>
-      <li><strong>Criteri di ammissibilità:</strong> condizioni spettrali intrinseche che delimitano quando la geometria continua è significativa.</li>
-      <li><strong>Emergenza metrica locale:</strong> approssimazione quadratica delle distanze spettrali che produce un tensore metrico efficace.</li>
-      <li><strong>Curvatura come descrittore collettivo:</strong> quantità geometriche come sintesi delle variazioni di accoppiamento relazionale.</li>
-      <li><strong>Recupero di tipo Schwarzschild:</strong> limite di coerenza cinematica per regimi statici sfericamente simmetrici.</li>
+      <li><strong>Prossimità e distanza spettrali:</strong> distanze operative derivate da autovettori e kernel del
+        Laplaciano.</li>
+      <li><strong>Criteri di ammissibilità:</strong> condizioni spettrali intrinseche che delimitano quando la geometria
+        continua è significativa.</li>
+      <li><strong>Emergenza metrica locale:</strong> approssimazione quadratica delle distanze spettrali che produce un
+        tensore metrico efficace.</li>
+      <li><strong>Curvatura come descrittore collettivo:</strong> quantità geometriche come sintesi delle variazioni di
+        accoppiamento relazionale.</li>
+      <li><strong>Recupero di tipo Schwarzschild:</strong> limite di coerenza cinematica per regimi statici sfericamente
+        simmetrici.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Supplementi numerici e spettrali</h2>
     <p>
-      Le illustrazioni numeriche sono fornite come verifiche di coerenza e robustezza per specifiche affermazioni spettrali.
-      Non introducono postulati aggiuntivi e non sono necessarie per la struttura logica dell’articolo.
+      Le illustrazioni numeriche sono fornite come verifiche di coerenza e robustezza per specifiche affermazioni
+      spettrali. Non introducono postulati aggiuntivi e non sono necessarie per la struttura logica dell’articolo.
     </p>
     <ul>
       <li>
         Convergenza Monte Carlo di un rapporto spettrale universale su S<sup>3</sup> (verifica di robustezza 8/3).<br/>
-        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Codice di simulazione e script per le figure</a>
+        <a href="https://github.com/Cosmochrony/simulation/tree/main/spectral" rel="noopener">Codice di simulazione e
+          script per le figure</a>
       </li>
     </ul>
   </section>
@@ -117,22 +144,22 @@
   <section class="card">
     <h2>Riferimenti</h2>
     <p>
-      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI:
-      <a href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
+      Jérôme Beau. <em>Relational Reconstruction of Spacetime Geometry from Graph Laplacians</em>. Zenodo. DOI: <a
+      href="https://doi.org/10.5281/zenodo.18356037" rel="noopener">10.5281/zenodo.18356037</a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Distribuito con licenza <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Distribuito con licenza <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
 <script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
 </script>
 </body>
 </html>

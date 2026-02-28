@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Newtonian Potentials from Projective Entropy in Three Dimensions | Cosmochrony</title>
+  <title>Infrared Einstein Response from a Renormalized Spectral Entropy Functional | Cosmochrony</title>
   <meta name="description"
-    content="Operator-theoretic study showing how a Newtonian 1/r potential follows from projective entropy variation in 3D."/>
+    content="Covariant spectral-geometry study: the renormalized metric variation of a projective entropy functional yields an IR-dominant local Einstein response, with controlled higher-derivative, non-local, and anomaly terms."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Newtonian Potentials from Projective Entropy in Three Dimensions"/>
+  <meta property="og:title" content="Infrared Einstein Response from a Renormalized Spectral Entropy Functional"/>
   <meta property="og:description"
-    content="A minimal elliptic-operator framework where the 1/r profile arises from resolvent-mediated entropy response."/>
+    content="Minimal elliptic Laplace-type operator, zeta regularization, heat-kernel poles, and induced Einstein–Hilbert structure in the infrared."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/gravity/"/>
   <script type="module">
@@ -34,9 +34,10 @@
         </svg>
       </a>
       <div>
-        <h1>Newtonian Potentials from Projective Entropy in Three Dimensions</h1>
+        <h1>Infrared Einstein Response from a Renormalized Spectral Entropy Functional</h1>
         <p class="subtitle">
-          A minimal elliptic-operator mechanism yielding a Newtonian 1/r profile from resolvent-mediated entropy response.
+          A minimal spectral-geometry framework where the renormalized metric variation has an IR-dominant local
+          Einstein term, with explicit higher-derivative, non-local, and anomaly contributions.
         </p>
       </div>
     </div>
@@ -51,15 +52,17 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article investigates a minimal operator-theoretic route by which a Newtonian long-range potential can arise
-        from the first variation of a projective entropy functional.
-        The setting is purely spatial: a positive elliptic operator in three dimensions.
+        This article studies a covariant projective entropy functional defined by a minimal elliptic Laplace-type
+        operator on a four-dimensional Riemannian manifold.
+        The goal is to identify the leading local geometric content of the renormalized metric variation in a controlled
+        infrared regime, while keeping higher-derivative, non-local, and anomaly terms explicit.
       </p>
       <p>
         Defining the projective entropy as
-        $S_\Pi[A]=\tfrac12\log\det' A$, the weak-perturbation response reduces to a resolvent trace,
-        $\delta S_\Pi=\tfrac12\mathrm{Tr}(A^{-1}\delta A)$.
-        The spatial structure of the response is therefore governed by the Green kernel of $A$.
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, with $A_g=-\nabla_g^2$, the functional is regularized through the spectral zeta
+        function and renormalized by subtraction of heat-kernel poles.
+        The resulting renormalized spectral stress tensor admits a derivative-order decomposition whose leading local
+        two-derivative term is proportional to the Einstein tensor.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -83,11 +86,11 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Newtonian 1/r potential, elliptic operators, spectral variation</div>
+          <div class="v">Spectral determinants, heat kernel, induced Einstein–Hilbert term, IR hierarchy</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">Static, weak-perturbation regime (no relativistic dynamics)</div>
+          <div class="v">Elliptic, renormalized, weak-curvature infrared regime (no Lorentzian dynamics assumed)</div>
         </div>
       </div>
     </aside>
@@ -95,50 +98,58 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Projective entropy functional:</strong> $S_\Pi[A]=\tfrac12\log\det' A$ defined for positive elliptic $A$.</li>
-      <li><strong>Resolvent-controlled response:</strong> $\delta S_\Pi=\tfrac12\mathrm{Tr}(A^{-1}\delta A)$ in the weak regime.</li>
-      <li><strong>Newtonian 1/r profile:</strong> in 3D, Laplace-type Green kernels yield a universal $1/r$ decay.</li>
-      <li><strong>Numerical evidence:</strong> discrete 3D Laplacian simulations reproduce the predicted long-range response.</li>
-      <li><strong>Coherence threshold:</strong> sufficiently extended perturbations generate a macroscopic amplitude shift.</li>
+      <li><strong>Covariant spectral functional:</strong> $S_\Pi[g]=\tfrac12\log\det'(-\nabla_g^2)$ with ellipticity and
+        spectral well-posedness.</li>
+      <li><strong>Zeta regularization and pole structure:</strong> heat-kernel coefficients determine local counterterms,
+        including the Einstein–Hilbert sector.</li>
+      <li><strong>Renormalized metric variation:</strong> the variation decomposes into an Einstein term, cosmological
+        term, quadratic-curvature sector, non-local form factors, and anomaly contribution.</li>
+      <li><strong>Infrared dominance:</strong> for $R\,\ell_\chi^2\ll 1$, the local two-derivative Einstein response
+        dominates over four-derivative and non-local corrections.</li>
+      <li><strong>Induced Newton coupling:</strong> the effective gravitational coupling is set by the spectral cutoff
+        scale and follows the standard induced-gravity logic.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Weak perturbations and resolvent expansion</h2>
+    <h2>Renormalized spectral stress tensor</h2>
     <p>
-      The analysis is explicitly restricted to the weak-perturbation regime.
-      In this regime, the first-order expansion of the functional determinant provides a controlled approximation of the
-      entropy response in terms of the resolvent of $A$.
+      The renormalized metric variation defines a covariant spectral stress tensor
+      $\mathcal{T}^{\Pi,\mathrm{ren}}_{\mu\nu}=-\tfrac{2}{\sqrt{g}}\delta S_\Pi^{\mathrm{ren}}/\delta g^{\mu\nu}$.
+      In four dimensions, its structure can be organized by derivative order:
+      a local Einstein tensor term, local quadratic-curvature terms, non-local form factors, and a conformal anomaly
+      contribution.
     </p>
     <p>
-      This yields a direct link between operator perturbations and spatial response structure, without postulating a
-      fundamental interaction law at the outset.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Numerical verification</h2>
-    <p>
-      The mechanism is demonstrated on a discrete three-dimensional Laplacian with localized symmetric perturbations.
-      Simulations confirm: (i) the validity of the first-order resolvent approximation, (ii) a $1/r$ Green profile, and
-      (iii) a finite spatial coherence threshold required to produce a macroscopic response.
-    </p>
-    <p>
-      Compact perturbations alter the spectrum locally without generating a measurable long-range effect, whereas
-      sufficiently extended perturbations induce a coherent Newtonian amplitude shift.
+      The Einstein tensor arises from the counterterm associated with the $a_2$ heat-kernel pole, while the quadratic
+      sector originates from $a_4$ and yields Bach-like four-derivative structures upon variation.
     </p>
   </section>
   <section class="card">
-    <h2>Dimensional specificity</h2>
+    <h2>Infrared hierarchy</h2>
     <p>
-      The $1/r$ behavior is specific to three spatial dimensions.
-      In other dimensions, Laplace-type Green kernels decay differently, and the entropy variation would not reproduce a
-      Newtonian profile.
-      The result is therefore dimensionally constrained rather than universal across dimension.
+      In the weak-curvature regime, where dimensionless curvature invariants satisfy $R\,\ell_\chi^2\ll 1$, the
+      renormalized effective response admits a covariant derivative expansion.
+      Higher-derivative local terms and non-local form factors are suppressed by additional powers of $\ell_\chi^2$,
+      making the local two-derivative Einstein response the dominant infrared contribution.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Newtonian limit</h2>
+    <p>
+      The resolvent-based mechanism also recovers the familiar long-range Newtonian profile in the appropriate limit.
+      In three spatial dimensions, the Green kernel of a Laplace-type elliptic operator exhibits a universal $1/r$ decay.
+      Consequently, the weak-perturbation variation $\delta S_\Pi=\tfrac12\mathrm{Tr}(A^{-1}\delta A)$ inherits a
+      Newtonian spatial profile from resolvent structure.
+    </p>
+    <p>
+      Within the covariant setting, this behavior appears as the static, weak-field manifestation of the same spectral
+      framework whose renormalized metric variation yields the infrared-dominant Einstein response.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      This article focuses on a static operator-theoretic mechanism and numerical validation in three dimensions.
+      This article is formulated as a self-contained spectral-geometry analysis.
       It is compatible with broader Cosmochrony motivations, but it is intended to be readable and evaluable on its own,
       without requiring the full pre-geometric framework.
     </p>
@@ -146,7 +157,7 @@
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <i lang="en">Newtonian Potentials from Projective Entropy in Three Dimensions</i>.
+      Jérôme Beau. <i lang="en">Infrared Einstein Response from a Renormalized Spectral Entropy Functional</i>.
       Preprint. <a href="https://doi.org/10.5281/zenodo.18818721" rel="noopener">10.5281/zenodo.18818721</a>
     </p>
   </section>

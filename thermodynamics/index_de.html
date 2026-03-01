@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Lokale Spektrale Thermodynamik und die Einstein-Gleichung | Cosmochrony</title>
+  <meta name="description"
+    content="Lokale spektrale Thermodynamik: Die Lokalität des Wärme-Kerns definiert ein krümmungskorrigiertes spektrales Multiplikatorfeld, und die Einstein-Gleichung entsteht als Bedingung eines eingeschränkten spektralen Gleichgewichts im Infrarotregime."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Lokale Spektrale Thermodynamik und die Einstein-Gleichung als Spektrale Gleichgewichtsbedingung"/>
+  <meta property="og:description"
+    content="Lokalität des Wärme-Kerns, Seeley–DeWitt-Hierarchie, spektrales Erstes Gesetz als Kompatibilitätsbedingung und Einstein-Gleichung aus einem eingeschränkten spektralen Extremum."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/thermodynamics/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("de", "/thermodynamics/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Zurück zu Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Lokale Spektrale Thermodynamik und die Einstein-Gleichung</h1>
+        <p class="subtitle">
+          Ein spektral-geometrischer Rahmen, in dem ein krümmungskorrigiertes lokales
+          Multiplikatorfeld aus der Lokalität des Wärme-Kerns hervorgeht und die
+          Einstein-Gleichung als eingeschränkte spektrale Gleichgewichtsbedingung erscheint.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">Preprint lesen</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.XXXXXXX</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Überblick</h2>
+      <p>
+        Dieser Artikel entwickelt eine lokale thermodynamische Interpretation des
+        projektiven spektralen Entropiefunktionals
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, definiert durch einen minimalen
+        Laplace-Typ-Operator auf einer vierdimensionalen riemannschen Mannigfaltigkeit.
+        Der diagonale Wärme-Kern $K(x,x;t)$ definiert eine lokale spektrale
+        Energiedichte $u(x;t)=-\partial_t\log K(x,x;t)$, deren
+        Seeley–DeWitt-Entwicklung zu einem lokalen Multiplikatorfeld
+        $\beta(x)^{-1}=\beta_0^{-1}-\tfrac16 R(x)+O(\nabla^2R)$ führt.
+      </p>
+      <p>
+        Im infrarot-dominanten Regime $R\,\ell_\chi^2\ll1$ sind die metrische
+        Variation der renormierten spektralen Entropie und die Variation des
+        projizierten Materiefunktionals durch eine Kompatibilitätsidentität
+        $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi(x)$ verknüpft.
+        Das eingeschränkte Extremum von $S_\Pi$ bei festem Materiegehalt liefert
+        $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.
+      </p>
+      <div class="note" role="note">
+        <strong>Geltungsbereich.</strong> Diese Seite bietet eine strukturierte Zusammenfassung.
+        Die maßgebliche technische Referenz ist das oben verlinkte Preprint.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Kurzinformationen</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Autor</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Art</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Lizenz</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Schwerpunkt</div>
+          <div class="v">Wärme-Kern, spektrales Multiplikatorfeld, Variationsprinzip, induzierte Gravitation</div>
+        </div>
+        <div class="kv">
+          <div class="k">Rahmen</div>
+          <div class="v">Elliptischer riemannscher Kontext, infrarotes Niedrigkrümmungsregime</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Zentrale Beiträge</h2>
+    <ul>
+      <li><strong>Lokale spektrale Energiedichte:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ aus den diagonalen Wärme-Kern-Daten.</li>
+      <li><strong>Krümmungskorrigiertes Multiplikatorfeld:</strong> Der Koeffizient $a_2=\tfrac16R$ kontrolliert die führende geometrische Korrektur von $\beta(x)^{-1}$.</li>
+      <li><strong>Spektrales erstes Gesetz als Kompatibilitätsbedingung:</strong> $\delta S_\Pi=\int\beta^{-1}\delta E_\Pi$ gilt in führender Infrarotordnung genau dann, wenn die Einstein-Gleichung erfüllt ist.</li>
+      <li><strong>Spektrales Gleichgewichtsprinzip:</strong> Das Extremum von $S_\Pi$ bei festgehaltener projizierter Materie ergibt $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.</li>
+      <li><strong>Normierung von $8\pi G_N$:</strong> Der Faktor folgt allein aus der geometrischen Normierung $(16\pi G_N)^{-1}$ und dem Faktor $1/2$ in der Definition des Energie-Impuls-Tensors.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Lokales Multiplikatorfeld</h2>
+    <p>
+      Die Auswertung der spektralen Dichte bei einer Zulässigkeitsskala $t_*$ ergibt
+      $\beta(x)^{-1}=2/t_*-\tfrac16R(x)+O(\nabla^2R)$.
+      Der universelle Term $\beta_0^{-1}=2/t_*$ hängt von der spektralen
+      Auflösungsskala ab und stellt keine physikalische Temperatur dar.
+      Der Krümmungsterm ist kovariant und vollständig durch die
+      Seeley–DeWitt-Hierarchie bestimmt.
+    </p>
+    <p>
+      Die Wahl spektraler Einheiten mit $\beta_0^{-1}=1$ entspricht der Festlegung
+      $t_*=2$.
+      Dies ist eine Eichwahl der Zulässigkeitsskala ohne Einfluss auf die
+      induzierte Newton-Konstante.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Spektrales Gleichgewicht</h2>
+    <p>
+      Das eingeschränkte Funktional
+      $\mathcal{F}[g,\psi]=S_\Pi[g]-\beta_*^{-1}W_\Pi[g,\psi]$
+      wirkt als spektrale freie Energie.
+      Die Stationaritätsbedingung unter kompakten metrischen Variationen liefert
+      $\tfrac{1}{16\pi G_N}G_{\mu\nu}=\tfrac{\beta_*^{-1}}{2}T_{\mu\nu}$.
+      Für die kanonische Wahl $\beta_*^{-1}=1$ erhält man die Einstein-Gleichung.
+    </p>
+    <p>
+      Es werden weder Horizontstrukturen noch Rindler-Regionen oder
+      die Raychaudhuri-Gleichung vorausgesetzt.
+      Die Herleitung ist vollständig variational und spektral.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Bezug zur induzierten Gravitation</h2>
+    <p>
+      Der geometrische Koeffizient $(16\pi G_N)^{-1}$ entsteht aus der
+      Subtraktion des $a_2$-Pols im zeta-regulierten Determinanten.
+      Im Regime $R\,\ell_\chi^2\ll1$ sind höhere Seeley–DeWitt-Beiträge
+      unterdrückt, und der Einstein-Term dominiert die Infrarotantwort.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Bezug zum Cosmochrony-Programm</h2>
+    <p>
+      Dieser Artikel stellt eine eigenständige spektral-geometrische Analyse dar.
+      Er steht im Zusammenhang mit dem Cosmochrony-Programm über die
+      Zulässigkeitsskala $t_*$ und die Normierung der induzierten Gravitation,
+      kann jedoch unabhängig vom vollständigen prä-geometrischen Rahmen bewertet werden.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Referenz</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium Condition</i>.
+      Preprint. <a href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">10.5281/zenodo.XXXXXXX</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Lizenziert unter <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{ "[+]":[["$","$"]] }},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

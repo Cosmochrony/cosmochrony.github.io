@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Local Spectral Thermodynamics and the Einstein Equation | Cosmochrony</title>
+  <meta name="description"
+    content="Local spectral thermodynamics: heat-kernel locality defines a curvature-corrected spectral multiplier field, and Einstein’s equation emerges as a constrained extremum of spectral entropy in the infrared regime."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium Condition"/>
+  <meta property="og:description"
+    content="Heat-kernel locality, Seeley–DeWitt hierarchy, spectral first law as compatibility condition, and Einstein equation from a constrained spectral extremum."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/thermodynamics/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/thermodynamics/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Local Spectral Thermodynamics and the Einstein Equation</h1>
+        <p class="subtitle">
+          A spectral-geometry framework in which a curvature-corrected local multiplier field emerges from
+          heat-kernel locality, and Einstein’s equation arises as a constrained spectral equilibrium condition.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.XXXXXXX</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article develops a local thermodynamic interpretation of the projective spectral entropy functional
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, defined by a minimal Laplace-type operator on a four-dimensional
+        Riemannian manifold.
+        The diagonal heat kernel $K(x,x;t)$ defines a local spectral energy density
+        $u(x;t)=-\partial_t\log K(x,x;t)$ whose Seeley–DeWitt expansion yields a local multiplier field
+        $\beta(x)^{-1}=\beta_0^{-1}-\tfrac16 R(x)+O(\nabla^2R)$.
+      </p>
+      <p>
+        In the infrared-dominant regime $R\,\ell_\chi^2\ll1$, the metric variation of the renormalized spectral entropy
+        and the metric variation of the projected matter functional are related by a compatibility identity
+        $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi(x)$.
+        Imposing a constrained extremum of $S_\Pi$ at fixed projected matter content yields
+        $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarizes the structure and results.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Heat kernel locality, spectral multiplier field, variational equilibrium, induced gravity</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Elliptic Riemannian setting, weak-curvature infrared regime</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Local spectral energy density:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ defined from diagonal heat-kernel data.</li>
+      <li><strong>Curvature-corrected multiplier field:</strong> the $a_2=\tfrac16R$ coefficient controls the leading geometric correction to $\beta(x)^{-1}$.</li>
+      <li><strong>Spectral first law as compatibility condition:</strong> $\delta S_\Pi=\int\beta^{-1}\delta E_\Pi$ holds at leading infrared order if and only if Einstein’s equation is satisfied.</li>
+      <li><strong>Spectral equilibrium principle:</strong> extremizing $S_\Pi$ at fixed projected matter content yields $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.</li>
+      <li><strong>Normalization of $8\pi G_N$:</strong> the factor arises uniquely from the geometric normalization $(16\pi G_N)^{-1}$ and the stress-tensor definition factor $1/2$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Local multiplier field</h2>
+    <p>
+      Evaluating the spectral energy density at a fixed admissibility scale $t_*$ gives
+      $\beta(x)^{-1}=2/t_*-\tfrac16R(x)+O(\nabla^2R)$.
+      The universal term $\beta_0^{-1}=2/t_*$ depends on the spectral resolution scale and is not a physical
+      temperature.
+      The curvature term is covariant and entirely controlled by the Seeley–DeWitt hierarchy.
+    </p>
+    <p>
+      Choosing spectral units where $\beta_0^{-1}=1$ corresponds to fixing $t_*=2$.
+      This is a gauge choice in spectral resolution and does not affect the induced Newton coupling.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Spectral equilibrium</h2>
+    <p>
+      The constrained functional
+      $\mathcal{F}[g,\psi]=S_\Pi[g]-\beta_*^{-1}W_\Pi[g,\psi]$
+      defines a spectral analogue of free energy.
+      Stationarity under compactly supported metric variations gives
+      $\tfrac{1}{16\pi G_N}G_{\mu\nu}=\tfrac{\beta_*^{-1}}{2}T_{\mu\nu}$.
+      For the canonical choice $\beta_*^{-1}=1$, one recovers Einstein’s field equation.
+    </p>
+    <p>
+      No horizon structure, Rindler wedge, or Raychaudhuri equation is required.
+      The derivation is entirely variational and spectral.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to induced gravity</h2>
+    <p>
+      The geometric coefficient $(16\pi G_N)^{-1}$ originates from the $a_2$ pole subtraction in the
+      zeta-regularized determinant.
+      In the weak-curvature regime $R\,\ell_\chi^2\ll1$, higher Seeley–DeWitt coefficients contribute only
+      suppressed corrections, and the Einstein term dominates the infrared response.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      This article is formulated as a self-contained spectral-geometry analysis.
+      It connects to the broader Cosmochrony framework through the admissibility scale $t_*$ and the induced-gravity
+      normalization, but it is intended to be evaluable independently of the full pre-geometric program.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium Condition</i>.
+      Preprint. <a href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">10.5281/zenodo.XXXXXXX</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{ "[+]":[["$","$"]] }},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Thermodynamique Spectrale Locale et Équation d’Einstein | Cosmochrony</title>
+  <meta name="description"
+    content="Thermodynamique spectrale locale : la localité du noyau de chaleur définit un champ multiplicateur spectral corrigé par la courbure, et l’équation d’Einstein émerge comme condition d’équilibre spectral contraint dans le régime infrarouge."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Thermodynamique Spectrale Locale et Équation d’Einstein comme Condition d’Équilibre Spectral"/>
+  <meta property="og:description"
+    content="Localité du noyau de chaleur, hiérarchie de Seeley–DeWitt, première loi spectrale comme condition de compatibilité, et équation d’Einstein issue d’un extremum spectral contraint."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/thermodynamics/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/thermodynamics/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Thermodynamique Spectrale Locale et Équation d’Einstein</h1>
+        <p class="subtitle">
+          Un cadre de géométrie spectrale où un champ multiplicateur local corrigé par la courbure
+          émerge de la localité du noyau de chaleur, et où l’équation d’Einstein apparaît
+          comme condition d’équilibre spectral contraint.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">Lire le préprint</a>
+      <span class="pill">DOI&nbsp;: <span class="mono">10.5281/zenodo.XXXXXXX</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article développe une interprétation thermodynamique locale de la fonctionnelle
+        d’entropie spectrale projective $S_\Pi[g]=\tfrac12\log\det' A_g$, définie par un opérateur
+        de type laplacien minimal sur une variété riemannienne de dimension quatre.
+        Le noyau de chaleur diagonal $K(x,x;t)$ définit une densité d’énergie spectrale locale
+        $u(x;t)=-\partial_t\log K(x,x;t)$ dont le développement de Seeley–DeWitt conduit
+        à un champ multiplicateur local
+        $\beta(x)^{-1}=\beta_0^{-1}-\tfrac16 R(x)+O(\nabla^2R)$.
+      </p>
+      <p>
+        Dans le régime infrarouge dominant $R\,\ell_\chi^2\ll1$, la variation métrique de
+        l’entropie spectrale renormalisée et celle de la fonctionnelle de matière projetée
+        sont reliées par une identité de compatibilité
+        $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi(x)$.
+        L’extremum contraint de $S_\Pi$ à contenu de matière fixé conduit alors à
+        $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.
+      </p>
+      <div class="note" role="note">
+        <strong>Déclaration de portée.</strong> Cette page propose un résumé structuré.
+        La référence technique faisant autorité est le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">Noyau de chaleur, multiplicateur spectral, principe variationnel, gravité induite</div>
+        </div>
+        <div class="kv">
+          <div class="k">Cadre</div>
+          <div class="v">Contexte riemannien elliptique, régime infrarouge à faible courbure</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Densité d’énergie spectrale locale&nbsp;:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ définie à partir du noyau de chaleur diagonal.</li>
+      <li><strong>Champ multiplicateur corrigé par la courbure&nbsp;:</strong> le coefficient $a_2=\tfrac16R$ contrôle la correction géométrique dominante de $\beta(x)^{-1}$.</li>
+      <li><strong>Première loi spectrale comme condition de compatibilité&nbsp;:</strong> $\delta S_\Pi=\int\beta^{-1}\delta E_\Pi$ vaut à l’ordre infrarouge dominant si et seulement si l’équation d’Einstein est satisfaite.</li>
+      <li><strong>Principe d’équilibre spectral&nbsp;:</strong> l’extremum de $S_\Pi$ à matière projetée fixée donne $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.</li>
+      <li><strong>Normalisation de $8\pi G_N$&nbsp;:</strong> le facteur provient uniquement de la normalisation géométrique $(16\pi G_N)^{-1}$ et du facteur $1/2$ dans la définition du tenseur énergie-impulsion.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Champ multiplicateur local</h2>
+    <p>
+      L’évaluation de la densité spectrale à une échelle d’admissibilité $t_*$ donne
+      $\beta(x)^{-1}=2/t_*-\tfrac16R(x)+O(\nabla^2R)$.
+      Le terme universel $\beta_0^{-1}=2/t_*$ dépend de l’échelle de résolution spectrale
+      et ne correspond pas à une température physique.
+      Le terme en courbure est covariant et entièrement contrôlé par la hiérarchie
+      de Seeley–DeWitt.
+    </p>
+    <p>
+      Choisir des unités spectrales où $\beta_0^{-1}=1$ revient à fixer $t_*=2$.
+      Il s’agit d’un choix de jauge sur l’échelle d’admissibilité, sans effet
+      sur la constante de Newton induite.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Équilibre spectral</h2>
+    <p>
+      La fonctionnelle contrainte
+      $\mathcal{F}[g,\psi]=S_\Pi[g]-\beta_*^{-1}W_\Pi[g,\psi]$
+      joue le rôle d’une énergie libre spectrale.
+      La condition de stationnarité sous variations métriques à support compact
+      donne
+      $\tfrac{1}{16\pi G_N}G_{\mu\nu}=\tfrac{\beta_*^{-1}}{2}T_{\mu\nu}$.
+      Pour le choix canonique $\beta_*^{-1}=1$, on retrouve l’équation d’Einstein.
+    </p>
+    <p>
+      Aucune hypothèse de structure d’horizon, de coin de Rindler ou
+      d’équation de Raychaudhuri n’est requise.
+      La dérivation est entièrement variationnelle et spectrale.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Lien avec la gravité induite</h2>
+    <p>
+      Le coefficient géométrique $(16\pi G_N)^{-1}$ provient de la soustraction
+      du pôle $a_2$ dans le déterminant zêta-régularisé.
+      Dans le régime $R\,\ell_\chi^2\ll1$, les contributions d’ordre supérieur
+      de Seeley–DeWitt sont supprimées, et le terme d’Einstein domine
+      la réponse infrarouge.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Lien avec le programme Cosmochrony</h2>
+    <p>
+      Cet article constitue une analyse autonome de géométrie spectrale.
+      Il s’articule avec le programme Cosmochrony via l’échelle d’admissibilité
+      $t_*$ et la normalisation de gravité induite, mais peut être évalué
+      indépendamment du cadre pré-géométrique complet.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium Condition</i>.
+      Prépublication. <a href="https://doi.org/10.5281/zenodo.XXXXXXX" rel="noopener">10.5281/zenodo.XXXXXXX</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{ "[+]":[["$","$"]] }},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

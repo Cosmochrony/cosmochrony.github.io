@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Propagation causale et ondes gravitationnelles issues de la dynamique spectrale projective | Cosmochrony</title>
+  <meta name="description"
+    content="Complétion lorentzienne de l’entropie spectrale projective : noyau quadratique causal et retardé, deux polarisations TT du graviton en infrarouge, et correction de dispersion en k^4 fixée spectralement et testable par interférométrie."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Propagation causale et ondes gravitationnelles issues de la dynamique spectrale projective"/>
+  <meta property="og:description"
+    content="Action spectrale lorentzienne via Re log det' D_g ou Schwinger–Keldysh, théorème IR des modes TT, et correction de dispersion en k^4 fixée par les coefficients de Seeley–DeWitt."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/lorentz/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/lorentz/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Propagation causale et ondes gravitationnelles issues de la dynamique spectrale projective</h1>
+        <p class="subtitle">
+          Une complétion lorentzienne de l’entropie spectrale projective définissant un noyau retardé causal,
+          retrouvant deux polarisations TT du graviton en régime infrarouge, et prédisant une correction de dispersion
+          en $k^4$ fixée spectralement et testable par les données interférométriques.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18826644" rel="noopener">Lire le préprint</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.18826644</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Présentation</h2>
+      <p>
+        Cet article complète le cadre de géométrie spectrale elliptique par une dynamique lorentzienne et causale
+        des perturbations de la métrique effective. À partir de la fonctionnelle d’entropie spectrale projective
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, le papier introduit un opérateur normalement hyperbolique $D_g$ dont la
+        restriction spatiale reproduit l’opérateur elliptique $A_g$ sur des tranches de temps constant.
+      </p>
+      <p>
+        L’action spectrale lorentzienne est définie par
+        $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, ou de manière équivalente via une prescription
+        de Schwinger–Keldysh, de sorte que l’inverse intervenant dans $\delta^2 S_\Pi^{(L)}$ soit l’opérateur de Green
+        retardé $G_R$. Cela garantit un noyau quadratique réel et une propagation causale.
+      </p>
+      <div class="note" role="note">
+        <strong>Déclaration de portée.</strong> Cette page résume la structure et les résultats. La référence
+        technique faisant autorité est le préprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thème</div>
+          <div class="v">Complétion lorentzienne, noyau retardé, spectre TT, contraintes sur la dispersion des OG</div>
+        </div>
+        <div class="kv">
+          <div class="k">Cadre</div>
+          <div class="v">Espace-temps globalement hyperbolique, régime infrarouge à faible courbure, interprétation EFT</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Complétion lorentzienne :</strong> un opérateur hyperbolique $D_g$ dont le bloc spatial reproduit
+        l’opérateur elliptique $A_g$ dans une réduction quasi-statique $3+1$.</li>
+      <li><strong>Noyau quadratique causal :</strong> $S_\Pi^{(L)}=\tfrac12\,\mathrm{Re}\,\log\det' D_g$ (ou
+        Schwinger–Keldysh) implique un inverse retardé $G_R$ dans $\delta^2 S_\Pi^{(L)}$.</li>
+      <li><strong>Théorème de propagation infrarouge :</strong> pour $R\ell_\chi^2\ll1$ et
+        $\omega\ll\ell_\chi^{-1}$, exactement deux modes tensoriels TT d’hélicité $\pm2$ se propagent ; les secteurs
+        scalaire et vectoriel restent non dynamiques.</li>
+      <li><strong>Séparation des pôles ultraviolets :</strong> les termes à dérivées d’ordre supérieur génèrent un
+        pôle supplémentaire en $k^2\sim\ell_\chi^{-2}$ qui se découple dans la fenêtre infrarouge observable.</li>
+      <li><strong>Dispersion fixée spectralement :</strong>
+        $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ avec $\gamma=1/(180\zeta)$ et $\zeta=O(1)$ ;
+        dans le schéma spectral naturel, $\gamma=1/30$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Action spectrale lorentzienne</h2>
+    <p>
+      La complétion lorentzienne repose sur une prescription causale :
+      $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, formulée de manière équivalente sur un contour
+      de Schwinger–Keldysh, de sorte que les variations fonctionnelles impliquent l’opérateur de Green retardé $G_R$.
+      Ce choix rend le noyau quadratique réel et impose un support causal
+      $G_R(x,y)=0$ lorsque $x\notin J^+(y)$.
+    </p>
+    <p>
+      Dans une décomposition $3+1$, $\Box_g$ se réduit à $-\partial_t^2+\Delta_\gamma$ en régime quasi-statique,
+      et l’opérateur elliptique de la théorie riemannienne est retrouvé comme bloc spatial de l’opérateur lorentzien.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Spectre infrarouge et polarisations</h2>
+    <p>
+      En linéarisant $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ et en imposant la jauge harmonique, la décomposition SVT
+      montre que les composantes scalaires et vectorielles restent contraintes en infrarouge. Le secteur TT obéit à un
+      opérateur d’onde factorisé de la forme $c_{EH}\Box+\beta\Box^2$, donnant un pôle gravitationnel sans masse
+      standard et un pôle supplémentaire en $k^2\sim\ell_\chi^{-2}$. Pour
+      $\omega\ll\ell_\chi^{-1}$, seul le pôle sans masse est accessible, et le contenu en polarisations coïncide avec
+      celui de la relativité générale (deux modes d’hélicité $\pm2$).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Dispersion et contraintes observationnelles</h2>
+    <p>
+      Le secteur en carré de Weyl fixé par le coefficient de Seeley–DeWitt $a_4$ induit une correction universelle en
+      $k^4$ à la relation de dispersion :
+      $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ avec $\gamma=1/(180\zeta)$.
+      Cela se mappe directement sur la paramétrisation LVK
+      $\omega^2=c^2k^2+A_4k^4$, conduisant à la borne
+      $\ell_\chi\lesssim\sqrt{180\,\zeta\,A_4^{\mathrm{obs}}}$, et
+      $\ell_\chi\lesssim\sqrt{30\,A_4^{\mathrm{obs}}}$ dans le schéma naturel.
+    </p>
+    <p>
+      L’opérateur caractéristique reste luminal à l’ordre dominant, tandis que les déviations de vitesse de groupe
+      sont supprimées par un facteur $(k\ell_\chi)^2$ dans le régime observationnel.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Lien avec le programme Cosmochrony</h2>
+    <p>
+      Cet article est formulé comme une complétion autonome de l’approche par entropie spectrale. Il se relie au
+      programme Cosmochrony plus large par l’échelle pré-géométrique $\ell_\chi$ et la réponse d’Einstein en
+      infrarouge, mais il est conçu pour être évalué indépendamment de la construction complète du substrat.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Causal Propagation and Gravitational Waves from Projective Spectral Dynamics</i>.
+      Préprint. <a href="https://doi.org/10.5281/zenodo.18826644" rel="noopener">10.5281/zenodo.18826644</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

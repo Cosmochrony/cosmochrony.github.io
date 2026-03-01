@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Kausale Ausbreitung und Gravitationswellen aus projektiver Spektraldynamik | Cosmochrony</title>
+  <meta name="description"
+    content="Lorentzsche Vervollständigung der projektiven spektralen Entropie: kausaler retardierter quadratischer Kern, zwei TT-Polarisationen des Gravitons im Infrarotbereich und spektral fixierte k^4-Dispersionskorrektur, testbar mit interferometrischen Daten."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Kausale Ausbreitung und Gravitationswellen aus projektiver Spektraldynamik"/>
+  <meta property="og:description"
+    content="Lorentzsche Spektralwirkung via Re log det' D_g oder Schwinger–Keldysh, IR-Theorem für TT-Moden und k^4-Dispersionskorrektur bestimmt durch Seeley–DeWitt-Koeffizienten."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/lorentz/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("de", "/lorentz/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Zurück zu Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Kausale Ausbreitung und Gravitationswellen aus projektiver Spektraldynamik</h1>
+        <p class="subtitle">
+          Eine lorentzsche Vervollständigung der projektiven spektralen Entropie, die einen kausalen retardierten Kern
+          definiert, zwei TT-Polarisationen des Gravitons im Infrarotbereich reproduziert und eine spektral fixierte
+          $k^4$-Dispersionskorrektur vorhersagt, die mit interferometrischen Daten überprüfbar ist.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18826644" rel="noopener">Preprint lesen</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.18826644</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Überblick</h2>
+      <p>
+        Dieser Artikel ergänzt den elliptischen spektral-geometrischen Rahmen durch eine lorentzsche und kausale
+        Dynamik der Störungen der effektiven Metrik. Ausgehend vom projektiven spektralen Entropiefunktional
+        $S_\Pi[g]=\tfrac12\log\det' A_g$ wird ein normal hyperbolischer Operator $D_g$ eingeführt, dessen räumliche
+        Einschränkung den elliptischen Operator $A_g$ auf Zeitschnitten konstanter Zeit reproduziert.
+      </p>
+      <p>
+        Die lorentzsche Spektralwirkung wird definiert als
+        $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, beziehungsweise äquivalent über eine
+        Schwinger–Keldysh-Vorschrift, sodass der in $\delta^2 S_\Pi^{(L)}$ auftretende Inversoperator der
+        retardierte Green-Operator $G_R$ ist. Dies gewährleistet einen reellen quadratischen Kern und kausale
+        Ausbreitung.
+      </p>
+      <div class="note" role="note">
+        <strong>Geltungsbereich.</strong> Diese Seite fasst Struktur und Ergebnisse zusammen. Die maßgebliche
+        technische Referenz ist der oben verlinkte Preprint.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Schnelle Fakten</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Autor</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Art der Arbeit</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Lizenz</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Schwerpunkt</div>
+          <div class="v">Lorentzsche Vervollständigung, retardierter Kern, TT-Spektrum, Dispersionsgrenzen für GW</div>
+        </div>
+        <div class="kv">
+          <div class="k">Rahmen</div>
+          <div class="v">Global hyperbolische Raumzeit, schwach gekrümmtes IR-Regime, EFT-Interpretation</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Zentrale Beiträge</h2>
+    <ul>
+      <li><strong>Lorentzsche Vervollständigung:</strong> ein hyperbolischer Operator $D_g$, dessen räumlicher Block
+        den elliptischen Operator $A_g$ in einer quasi-statischen $3+1$-Reduktion reproduziert.</li>
+      <li><strong>Kausaler quadratischer Kern:</strong> $S_\Pi^{(L)}=\tfrac12\,\mathrm{Re}\,\log\det' D_g$
+        (oder Schwinger–Keldysh) impliziert einen retardierten Inversoperator $G_R$ in $\delta^2 S_\Pi^{(L)}$.</li>
+      <li><strong>Infrarot-Ausbreitungstheorem:</strong> für $R\ell_\chi^2\ll1$ und
+        $\omega\ll\ell_\chi^{-1}$ propagieren exakt zwei TT-Tensor-Moden mit Helizität $\pm2$; skalare und
+        vektorielle Sektoren bleiben nicht-dynamisch.</li>
+      <li><strong>Trennung ultravioletter Pole:</strong> höhere Ableitungsterme erzeugen einen zusätzlichen Pol bei
+        $k^2\sim\ell_\chi^{-2}$, der im beobachtbaren Infrarotfenster entkoppelt.</li>
+      <li><strong>Spektral fixierte Dispersion:</strong>
+        $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ mit $\gamma=1/(180\zeta)$ und $\zeta=O(1)$;
+        im natürlichen Spektralschema gilt $\gamma=1/30$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Lorentzsche Spektralwirkung</h2>
+    <p>
+      Die lorentzsche Vervollständigung beruht auf einer kausalen Vorschrift:
+      $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, äquivalent formuliert auf einem
+      Schwinger–Keldysh-Kontur, sodass funktionale Variationen den retardierten Green-Operator $G_R$ enthalten.
+      Diese Wahl macht den quadratischen Kern reell und erzwingt kausalen Träger
+      $G_R(x,y)=0$, wenn $x\notin J^+(y)$.
+    </p>
+    <p>
+      In einer $3+1$-Zerlegung reduziert sich $\Box_g$ im quasi-statischen Regime auf
+      $-\partial_t^2+\Delta_\gamma$, und der elliptische Operator der riemannschen Theorie erscheint als räumlicher
+      Block des lorentzschen Operators.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Infrarotspektrum und Polarisationen</h2>
+    <p>
+      Bei Linearisierung $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ und harmonischer Eichung zeigt die SVT-Zerlegung,
+      dass skalare und vektorielle Komponenten im Infrarot eingeschränkt bleiben. Der TT-Sektor erfüllt einen
+      faktorisierten Wellenoperator der Form $c_{EH}\Box+\beta\Box^2$, der einen masselosen Standard-Gravitationspol
+      und einen zusätzlichen Pol bei $k^2\sim\ell_\chi^{-2}$ erzeugt. Für
+      $\omega\ll\ell_\chi^{-1}$ ist nur der masselose Pol zugänglich, und der Polarisationsinhalt stimmt mit der
+      Allgemeinen Relativität überein (zwei Moden mit Helizität $\pm2$).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Dispersion und Beobachtungsgrenzen</h2>
+    <p>
+      Der durch den Seeley–DeWitt-Koeffizienten $a_4$ festgelegte Weyl-Quadrat-Sektor induziert eine universelle
+      $k^4$-Korrektur der Dispersionsrelation:
+      $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ mit $\gamma=1/(180\zeta)$.
+      Dies lässt sich direkt auf die LVK-Parametrisierung
+      $\omega^2=c^2k^2+A_4k^4$ abbilden und liefert die Schranke
+      $\ell_\chi\lesssim\sqrt{180\,\zeta\,A_4^{\mathrm{obs}}}$,
+      beziehungsweise $\ell_\chi\lesssim\sqrt{30\,A_4^{\mathrm{obs}}}$ im natürlichen Schema.
+    </p>
+    <p>
+      Der charakteristische Operator bleibt in führender Ordnung luminal, während Abweichungen der Gruppengeschwindigkeit
+      im Beobachtungsregime durch den Faktor $(k\ell_\chi)^2$ unterdrückt sind.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Bezug zum Cosmochrony-Programm</h2>
+    <p>
+      Dieser Artikel ist als eigenständige Vervollständigung des spektralen Entropieansatzes formuliert.
+      Er steht im Zusammenhang mit dem umfassenderen Cosmochrony-Programm über die prä-geometrische Skala
+      $\ell_\chi$ und die infrarote Einstein-Antwort, ist jedoch so konzipiert, dass er unabhängig von der vollständigen
+      Substratkonstruktion bewertet werden kann.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Referenz</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Causal Propagation and Gravitational Waves from Projective Spectral Dynamics</i>.
+      Preprint. <a href="https://doi.org/10.5281/zenodo.18826644" rel="noopener">10.5281/zenodo.18826644</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Lizenziert unter <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

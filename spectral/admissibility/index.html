@@ -71,9 +71,7 @@
     <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.</p>
   </div>
 </footer>
-<script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
-</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 </body>
 </html>

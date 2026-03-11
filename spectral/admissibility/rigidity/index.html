@@ -42,9 +42,7 @@
     <p class="small">© <span id="y"></span> Jérôme Beau</p>
   </div>
 </footer>
-<script>
-  const y=document.getElementById("y")
-  if(y)y.textContent=new Date().getFullYear()
-</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 </body>
 </html>

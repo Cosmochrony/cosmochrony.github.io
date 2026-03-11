@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spectral Admissibility Programme | Cosmochrony</title>
+  <meta name="description"
+    content="Overview of the spectral admissibility programme within Cosmochrony."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/spectral/admissibility/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/spectral/admissibility/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/spectral/admissibility/index_de.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/spectral/admissibility/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Spectral Admissibility Programme"/>
+  <meta property="og:description"
+    content="Overview of the spectral admissibility programme within Cosmochrony."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/spectral/admissibility/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/spectral/admissibility/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M637.098 395.203A136.402 136.402 0 1 1 500.695 258.801L500.695 395.203Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Spectral Admissibility Programme</h1>
+        <p class="subtitle">Structural constraints on relational spectral systems under bounded flux.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn subtle" href="/spectral/">Back to spectral geometry</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h2>Overview</h2>
+    <p>The spectral admissibility programme studies how relational systems constrained by bounded flux select admissible spectral configurations. It combines representation theory, spectral graph theory, and relational constraints to identify structurally stable regimes.</p>
+    <p>Within the Cosmochrony framework, this programme clarifies which relational structures remain compatible with bounded relaxation dynamics and how those constraints shape the admissible hierarchy of relational graphs.</p>
+  </section>
+  <section class="card">
+    <h2>Programme structure</h2>
+    <ul>
+      <li><strong>Spectral admissibility:</strong> bounds on the amplitude of individual spectral modes.</li>
+      <li><strong>Spectral capacity:</strong> global aggregation of admissible amplitudes across representation sectors.</li>
+      <li><strong>Spectral Gram rigidity:</strong> structural constraints on neutral generating sets in SU(2).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Research articles</h2>
+    <ul>
+      <li><a href="/spectral/admissibility/admissibility">Spectral Admissibility and Non-Abelian Mode Resilience</a></li>
+      <li><a href="/spectral/admissibility/capacity">Spectral Capacity Functional</a></li>
+      <li><a href="/spectral/admissibility/rigidity">Spectral Gram Rigidity</a></li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.</p>
+  </div>
+</footer>
+<script>
+  const y=document.getElementById("y")
+  if(y)y.textContent=new Date().getFullYear()
+</script>
+</body>
+</html>

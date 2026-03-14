@@ -348,9 +348,9 @@ footer {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.section-link:hover .section-link-pill,
-.section-link:focus-visible .section-link-pill,
-.section-link:focus .section-link-pill {
+a.section-link:hover .section-link-pill,
+a.section-link:focus-visible .section-link-pill,
+a.section-link:focus .section-link-pill {
   text-decoration: none;
   border-color: var(--link);
   color: var(--fg);
@@ -362,30 +362,35 @@ footer {
   background: rgba(60, 153, 193, 0.12);
 }
 
+.section-link.is-current {
+  cursor: default;
+  pointer-events: none;
+}
+
 .subtitle-hover {
   display: none;
 }
 
-body:has(.section-nav .section-link:hover) .subtitle-default,
-body:has(.section-nav .section-link:focus-visible) .subtitle-default,
-body:has(.section-nav .section-link:focus) .subtitle-default {
+body:has(.section-nav a.section-link:hover) .subtitle-default,
+body:has(.section-nav a.section-link:focus-visible) .subtitle-default,
+body:has(.section-nav a.section-link:focus) .subtitle-default {
   display: none;
 }
 
-body:has(.section-nav .section-link[data-section="science"]:hover) .subtitle[data-section="science"],
-body:has(.section-nav .section-link[data-section="science"]:focus-visible) .subtitle[data-section="science"],
-body:has(.section-nav .section-link[data-section="science"]:focus) .subtitle[data-section="science"] {
+body:has(.section-nav a.section-link[data-section="science"]:hover) .subtitle[data-section="science"],
+body:has(.section-nav a.section-link[data-section="science"]:focus-visible) .subtitle[data-section="science"],
+body:has(.section-nav a.section-link[data-section="science"]:focus) .subtitle[data-section="science"] {
   display: block;
 }
 
-body:has(.section-nav .section-link[data-section="popular"]:hover) .subtitle[data-section="popular"],
-body:has(.section-nav .section-link[data-section="popular"]:focus-visible) .subtitle[data-section="popular"],
-body:has(.section-nav .section-link[data-section="popular"]:focus) .subtitle[data-section="popular"] {
+body:has(.section-nav a.section-link[data-section="popular"]:hover) .subtitle[data-section="popular"],
+body:has(.section-nav a.section-link[data-section="popular"]:focus-visible) .subtitle[data-section="popular"],
+body:has(.section-nav a.section-link[data-section="popular"]:focus) .subtitle[data-section="popular"] {
   display: block;
 }
 
-body:has(.section-nav .section-link[data-section="philosophy"]:hover) .subtitle[data-section="philosophy"],
-body:has(.section-nav .section-link[data-section="philosophy"]:focus-visible) .subtitle[data-section="philosophy"],
-body:has(.section-nav .section-link[data-section="philosophy"]:focus) .subtitle[data-section="philosophy"] {
+body:has(.section-nav a.section-link[data-section="philosophy"]:hover) .subtitle[data-section="philosophy"],
+body:has(.section-nav a.section-link[data-section="philosophy"]:focus-visible) .subtitle[data-section="philosophy"],
+body:has(.section-nav a.section-link[data-section="philosophy"]:focus) .subtitle[data-section="philosophy"] {
   display: block;
 }

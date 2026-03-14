@@ -77,7 +77,7 @@ header {
 
 .logo {
   width: 100%;
-  min-width: 6em;
+  min-height: 6em;
   max-width: 10vw;
   display: block;
   color: var(--fg);
@@ -98,6 +98,7 @@ h1 {
   color: var(--muted);
   font-size: clamp(15px, 2vw, 18px);
   max-width: 74ch;
+  min-height: 7em;
 }
 
 .cta {
@@ -189,6 +190,11 @@ h2 {
   font-size: 18px;
 }
 
+h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
 p {
   margin: 10px 0;
   color: var(--muted);
@@ -262,4 +268,116 @@ footer {
 
 .v {
   color: var(--muted);
+}
+
+.scientific-lead {
+  border-color: var(--border-muted);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.01));
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+
+@media (max-width: 740px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trust-item {
+  border: 1px solid var(--border-muted);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 920px) {
+  .tracks {
+    grid-template-columns: 1fr;
+  }
+}
+
+.track {
+  display: block;
+  border: 1px solid var(--border-muted);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--fg);
+}
+
+.track:hover {
+  text-decoration: none;
+  border-color: var(--link);
+  background: rgba(60, 153, 193, 0.08);
+}
+
+.track p {
+  margin: 0;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+
+.section-link {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-muted);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section-link:hover {
+  text-decoration: none;
+  border-color: var(--link);
+  color: var(--fg);
+}
+
+.section-link.active {
+  color: var(--fg);
+  border-color: var(--link);
+  background: rgba(60, 153, 193, 0.12);
+}
+
+.subtitle-hover {
+  display: none;
+}
+
+body:has(.section-nav .section-link:hover) .subtitle-default,
+body:has(.section-nav .section-link:focus-visible) .subtitle-default,
+body:has(.section-nav .section-link:focus) .subtitle-default {
+  display: none;
+}
+
+body:has(.section-nav .section-link[data-section="science"]:hover) .subtitle[data-section="science"],
+body:has(.section-nav .section-link[data-section="science"]:focus-visible) .subtitle[data-section="science"],
+body:has(.section-nav .section-link[data-section="science"]:focus) .subtitle[data-section="science"] {
+  display: block;
+}
+
+body:has(.section-nav .section-link[data-section="popular"]:hover) .subtitle[data-section="popular"],
+body:has(.section-nav .section-link[data-section="popular"]:focus-visible) .subtitle[data-section="popular"],
+body:has(.section-nav .section-link[data-section="popular"]:focus) .subtitle[data-section="popular"] {
+  display: block;
+}
+
+body:has(.section-nav .section-link[data-section="philosophy"]:hover) .subtitle[data-section="philosophy"],
+body:has(.section-nav .section-link[data-section="philosophy"]:focus-visible) .subtitle[data-section="philosophy"],
+body:has(.section-nav .section-link[data-section="philosophy"]:focus) .subtitle[data-section="philosophy"] {
+  display: block;
 }

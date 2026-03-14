@@ -1,3 +1,29 @@
+/vulgarisation/* /popular/:splat 301
+/popularization/* /popular/:splat 301
+/philosophie/* /philosophy/:splat 301
+/science/graphiques/* /science/graphics/:splat 301
+/popularization/graphiques/* /popular/graphics/:splat 301
+/philosophy/graphiques/* /philosophy/graphics/:splat 301
+/philosophy/difference.html /philosophy/difference/ 301
+/philosophy/emergence.html /philosophy/emergence/ 301
+/philosophy/information-limit.html /philosophy/information-limit/ 301
+/philosophy/reflexivity.html /philosophy/reflexivity/ 301
+/philosophy/realism.html /philosophy/realism/ 301
+/bell/* /science/bell/:splat 301
+/born-infeld/* /science/born-infeld/:splat 301
+/cosmology/* /science/cosmology/:splat 301
+/gravity/* /science/gravity/:splat 301
+/lorentz/* /science/lorentz/:splat 301
+/schwinger-lamb/* /science/schwinger-lamb/:splat 301
+/sm-charge-mass/* /science/sm-charge-mass/:splat 301
+/spectral/* /science/spectral/:splat 301
+/superconductivity/* /science/superconductivity/:splat 301
+/thermodynamics/* /science/thermodynamics/:splat 301
+/index.html /science/index.html 301
+/index_de.html /science/index_de.html 301
+/index_es.html /science/index_es.html 301
+/index_it.html /science/index_it.html 301
+/index_fr.html /science/index_fr.html 301
 /*.html /index_fr.html 301! Language=fr
 /*.html /index_it.html 301! Language=it
 /*.html /index_de.html 301! Language=de

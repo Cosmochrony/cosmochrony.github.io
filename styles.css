@@ -329,11 +329,17 @@ footer {
 .section-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0;
   margin: 8px 0 16px;
 }
 
 .section-link {
+  display: inline-flex;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.section-link-pill {
   display: inline-block;
   padding: 7px 12px;
   border-radius: 999px;
@@ -342,13 +348,15 @@ footer {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.section-link:hover {
+.section-link:hover .section-link-pill,
+.section-link:focus-visible .section-link-pill,
+.section-link:focus .section-link-pill {
   text-decoration: none;
   border-color: var(--link);
   color: var(--fg);
 }
 
-.section-link.active {
+.section-link.active .section-link-pill {
   color: var(--fg);
   border-color: var(--link);
   background: rgba(60, 153, 193, 0.12);

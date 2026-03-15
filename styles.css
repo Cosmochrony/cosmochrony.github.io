@@ -81,6 +81,7 @@ header {
   max-width: 10vw;
   display: block;
   color: var(--fg);
+  align-content: center;
 
   &:hover {
     --comp: var(--hover);
@@ -99,6 +100,8 @@ h1 {
   font-size: clamp(15px, 2vw, 18px);
   max-width: 74ch;
   min-height: 7em;
+  max-height: 7em;
+  overflow: auto;
 }
 
 .cta {
@@ -359,7 +362,6 @@ footer {
 .section-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
   margin: 8px 0 16px;
 }
 

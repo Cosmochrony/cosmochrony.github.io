@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Resolution Saturation and Relaxation Graphs | Cosmochrony</title>
+  <meta name="description"
+    content="Analysis of asymptotic projective-resolution saturation on expander relaxation graphs and its consequences for spectral mass hierarchy."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Projective Resolution Saturation and Relaxation Graphs"/>
+  <meta property="og:description"
+    content="A spectral analysis showing how static projective thresholds limit hierarchy amplification and motivate a dynamical extension."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/relaxation/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral-relaxation/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Resolution Saturation and Relaxation Graphs</h1>
+        <p class="subtitle">Why static expander thresholds are not enough to generate large mass hierarchies.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19056975" rel="noopener">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article investigates the dynamical side of spectral stratigraphy: how the projective threshold
+        $\Lambda_{\mathrm{proj}}$ evolves along the relaxation cascade, and whether this evolution can amplify
+        small spectral separations into physically meaningful mass hierarchies.
+      </p>
+      <p>
+        The analysis derives the projective resolution from global coherence properties of the relaxation graph.
+        In expander families with spectral-isoperimetric saturation, the admissibility scale becomes controlled
+        by the algebraic connectivity of the relaxation graph itself.
+      </p>
+      <p>
+        Applying this framework to the Lubotzky--Phillips--Sarnak graph family shows that, at fixed prime $p$,
+        the spectral gap converges and the projective threshold becomes asymptotically static. In that regime,
+        the resulting hierarchy is too weak and the ordering of levels is incorrect.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis is
+        presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Dynamic projective thresholds and hierarchy amplification</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Spectral graph theory and relaxation dynamics</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Derived projective threshold:</strong> the projective resolution is related to the
+        isoperimetric capacity of the relaxation graph, with $\Lambda_{\mathrm{proj}} \asymp h(G)^2$.</li>
+      <li><strong>Expander reduction:</strong> for spectrally saturated expanders, this yields
+        $\Lambda_{\mathrm{proj}} \asymp \lambda_2$.</li>
+      <li><strong>LPS relaxation model:</strong> in the fixed-$p$ LPS family, the algebraic connectivity
+        approaches a constant, making the threshold asymptotically static.</li>
+      <li><strong>Negative numerical result:</strong> the resulting one-level mechanism produces only
+        order-unity hierarchies and gives the wrong level ordering.</li>
+      <li><strong>Structural diagnosis:</strong> the absence of a dynamical threshold
+        $\Lambda_{\mathrm{proj}}(n)$ is identified as the reason large hierarchies do not emerge in
+        the static regime.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article clarifies which part of the hierarchy problem is already solved by spectral stratigraphy and
+      which part still requires a dynamical mechanism.
+    </p>
+    <ul>
+      <li><strong>Representation structure</strong> determines the discrete spectral levels available for
+        stabilisation.</li>
+      <li><strong>Relaxation-graph coherence</strong> determines the projective threshold governing when those
+        levels become inaccessible.</li>
+      <li><strong>Static expander thresholds</strong> explain why hierarchy amplification fails in the present
+        regime.</li>
+    </ul>
+    <p>
+      Within this perspective, the paper is not a final hierarchy model but a diagnosis paper: it shows why a
+      static expander-based threshold cannot by itself account for the observed mass spectrum, and why a
+      genuinely dynamical $\Lambda_{\mathrm{proj}}(n)$ is the next necessary step.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      Spectral relaxation extends the spectral admissibility programme by addressing the missing dynamical link
+      between admissible sectors and observed mass hierarchies. Spectral admissibility determines which sectors
+      survive bounded flux, and spectral stratigraphy determines the discrete level structure of stabilisable
+      modes.
+    </p>
+    <p>
+      The present paper asks whether the relaxation cascade itself can amplify these discrete levels into large
+      physical hierarchies. Its conclusion is precise: not in the asymptotically static expander regime.
+      A dynamical projective threshold remains the key open ingredient.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19056975" rel="noopener"><i lang="en">Asymptotic Saturation of Projective
+      Resolution: Expander Relaxation Graphs</i>. Preprint, Zenodo.</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -7,13 +7,24 @@
   <title>Spectral Gram Rigidity | Cosmochrony</title>
   <meta name="description"
     content="Structural rigidity of neutral generating sets in SU(2) derived from Gram geometry."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Spectral Gram Rigidity"/>
+  <meta property="og:description"
+    content="Structural rigidity of neutral generating sets in SU(2) derived from Gram geometry."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/rigidity"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral-stratigraphy/index")
+  </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" aria-hidden="true">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
@@ -29,7 +40,8 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn subtle" href="/science/spectral/admissibility/">Programme overview</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18969867" rel="noopener">Read the preprint</a> <a
+      class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
     </div>
   </div>
 </header>
@@ -50,10 +62,18 @@
       <li>non-trivial Gram angles → binary polyhedral groups</li>
     </ul>
   </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.18969867" rel="noopener"><i lang="en">Pairwise Character
+      Geometry and the Classification of Neutral Generators in SU(2)</i>. Preprint, Zenodo.</a>
+    </p>
+  </section>
 </main>
 <footer>
   <div class="wrap">
-    <p class="small">© <span id="y"></span> Jérôme Beau</p>
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
   </div>
 </footer>
 <script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>

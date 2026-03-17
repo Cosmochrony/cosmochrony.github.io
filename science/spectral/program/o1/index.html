@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Resolution Dynamics on Variable-Valence Relaxation Graphs | Cosmochrony</title>
+  <meta name="description"
+    content="Analysis of variable-valence relaxation graphs showing how support contraction restores projective-threshold dynamics and the ordering of spectral generations."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Projective Resolution Dynamics on Variable-Valence Relaxation Graphs"/>
+  <meta property="og:description"
+    content="A spectral analysis showing how variable valence restores non-trivial projective dynamics and corrects the fixed-valence ordering inversion."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral-o1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Resolution Dynamics on Variable-Valence Relaxation Graphs</h1>
+        <p class="subtitle">
+          How growing relational valence restores projective dynamics and corrects the fixed-valence
+          inversion.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19069707" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article extends the spectral relaxation analysis by removing the fixed-valence
+        assumption imposed on the Lubotzky--Phillips--Sarnak relaxation graphs. The central question
+        is whether the asymptotic saturation of the projective threshold
+        $\Lambda_{\mathrm{proj}}(n)$ is a structural feature of the substrate or only an artefact of
+        holding the graph valence fixed along the cascade.
+      </p>
+      <p>
+        The answer is clear: once the effective valence is allowed to grow with cascade depth, the
+        Kesten--McKay spectral support contracts toward its midpoint. This produces an ordered exit
+        of the ADE eigenvalue levels and restores a genuinely dynamical projective regime.
+      </p>
+      <p>
+        In this variable-valence setting, the fixed-valence inversion identified in the previous paper
+        is corrected by support geometry alone. The result is a restored hierarchy ordering without
+        introducing any additional dynamical hypothesis beyond increasing relational valence along the
+        cascade.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Variable valence, support contraction, and ordering restoration</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Ramanujan graph families and projective-threshold dynamics</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Variable-valence regime:</strong> the paper studies LPS relaxation sequences in
+        which the effective valence parameter grows along the cascade, $p(n)\to\infty$.
+      </li>
+      <li>
+        <strong>Kesten--McKay contraction:</strong> as $p(n)$ increases, the spectral support
+        shrinks toward $\lambda=1$, replacing the fixed-valence saturation plateau with a moving
+        spectral window.
+      </li>
+      <li>
+        <strong>Ordered ADE exit:</strong> the ADE spectral levels leave the support in a fixed
+        geometric order determined by their distance from the midpoint.
+      </li>
+      <li>
+        <strong>Restored projective dynamics:</strong> the lower-bound dynamics of
+        $\Lambda_{\mathrm{proj}}(n)$ becomes non-trivial again once the valence is allowed to vary.
+      </li>
+      <li>
+        <strong>Ordering correction:</strong> the fixed-valence inversion is removed and the
+        effective mass ordering is restored by support-exit geometry itself.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article shows that the main failure of the fixed-valence relaxation model was not a defect
+      of spectral stratigraphy, but a defect of the graph regime used to realise the relaxation
+      cascade.
+    </p>
+    <ul>
+      <li>
+        <strong>Representation structure</strong> still determines the discrete ADE levels made
+        available by spectral stratigraphy.
+      </li>
+      <li>
+        <strong>Support geometry</strong> now determines when those levels cease to remain inside
+        the admissible spectral window.
+      </li>
+      <li>
+        <strong>Variable relational valence</strong> provides the minimal structural ingredient
+        needed to restore non-static threshold dynamics.
+      </li>
+    </ul>
+    <p>
+      Within this perspective, O1 is the correction paper to <em>Spectral Relaxation</em>: it shows
+      that the asymptotically static threshold was not fundamental, and that a growing-valence
+      cascade naturally recovers the physically expected ordering of generations.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O1 follows directly from the limitation identified in <em>Spectral Relaxation</em>. Spectral
+      admissibility determines which sectors can survive bounded flux, spectral stratigraphy
+      determines the discrete level structure, and spectral relaxation showed that a fixed-valence
+      expander regime cannot generate a viable hierarchy.
+    </p>
+    <p>
+      The present paper removes that obstruction. It establishes that allowing relational valence to
+      grow along the cascade restores a genuine projective dynamics and a correct ordering of
+      stabilisation events. The remaining open problem is no longer the sign of the hierarchy, but
+      its quantitative amplitude.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19069707" rel="noopener">
+        <i lang="en">Projective Resolution Dynamics on Variable-Valence Relaxation Graphs</i>.
+        Preprint, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

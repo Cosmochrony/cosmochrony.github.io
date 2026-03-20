@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Admissible Frontier Saturation and the Cascade Exponent | Cosmochrony</title>
+  <meta name="description"
+    content="Analysis of admissible frontier saturation showing why low-dimensional quotients
+    cannot explain the cascade exponent, and identifying matrix-level redundancy as the
+    remaining structural mechanism."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Admissible Frontier Saturation and the Cascade Exponent:
+    A Representation-Theoretic Obstruction and its Matrix-Level Refinement"/>
+  <meta property="og:description"
+    content="A spectral analysis showing that the smallness of the cascade exponent cannot come
+    from low-dimensional admissible quotients, but must arise from matrix-level dynamical
+    redundancy."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o5/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral-o5/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Admissible Frontier Saturation and the Cascade Exponent</h1>
+        <p class="subtitle">
+          How admissible frontier saturation isolates the missing mechanism behind the small
+          cascade exponent and relocates it to matrix-level dynamical redundancy.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article extends the spectral hierarchy programme by addressing the remaining gap
+        left open by O4: bounded flux constrains the cascade exponent only at the level of a
+        quadratic upper bound, while the phenomenological window required by O3 remains far
+        smaller.
+      </p>
+      <p>
+        The central question is therefore not whether the raw LPS frontier expands, since it
+        does, but which part of that frontier remains <em>admissibly productive</em> once one
+        filters out directions that add no genuinely new content in the admissible spectral
+        subspace. O5 introduces this notion explicitly and studies several candidate
+        definitions.
+      </p>
+      <p>
+        The main result is twofold. First, the vertex-based admissible frontier saturates
+        rapidly by representation-theoretic necessity, at scale $O(|\mathrm{Cl}(G)|)=O(q)$,
+        far below $|G|=O(q^3)$. Second, the paper shows that this low-dimensional saturation
+        is not yet the physical origin of the small exponent: the true mechanism must be a
+        matrix-level redundancy phenomenon, not a mere dimension bound.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Cascade exponent, admissible frontier, and matrix-level redundancy</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, admissible saturation, and
+            structural limits of low-dimensional quotients</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Admissible frontier concept:</strong> the paper introduces the admissible
+        frontier as the subset of the raw BFS boundary whose elements add genuinely new
+        directions in the admissible spectral subspace.
+      </li>
+      <li>
+        <strong>Representation-theoretic saturation theorem:</strong> the vertex-based admissible
+        span $\Pi_A(S)$ satisfies $\dim \Pi_A(S)\le \mathrm{rank}(M_{\mathrm{adm}})
+        \le |\mathrm{Cl}(G)|=O(q)$, so the corresponding admissible frontier vanishes after a
+        saturation scale $|S^*|=O(q)$.
+      </li>
+      <li>
+        <strong>Negative structural result for character-based refinements:</strong> transition
+        fingerprints based only on characters remain too coarse on LPS graphs and do not
+        produce the needed structural decay.
+      </li>
+      <li>
+        <strong>Negative structural result for fixed-dimensional proxies:</strong> small matrix
+        fingerprints can generate extinction of the admissible frontier, but only through a
+        $q$-independent ambient dimension effect, which disqualifies them as explanations of
+        the hierarchy.
+      </li>
+      <li>
+        <strong>First structurally valid matrix candidate:</strong> a Steinberg-based transition
+        fingerprint on $\mathbb{P}^1(\mathbb{F}_q)$ yields the first saturation scale that grows
+        with $q$, with $|S^*|/|G|\to 0$, thereby identifying the correct class of candidate
+        mechanisms.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article shows that the missing mechanism behind the small cascade exponent is not a
+      better Cheeger estimate, nor a simple representation-theoretic counting effect. The raw
+      combinatorial frontier of the LPS graph remains expansive, but the admissibly productive
+      part of that frontier can collapse much earlier.
+    </p>
+    <ul>
+      <li>
+        <strong>Vertex-based admissibility</strong> is too rigid: it saturates exactly, but too
+        early and for purely representation-theoretic reasons.
+      </li>
+      <li>
+        <strong>Character-based transition fingerprints</strong> are still too coarse: they fail
+        to resolve enough directional information to distinguish genuinely new admissible
+        channels.
+      </li>
+      <li>
+        <strong>Low-dimensional matrix proxies</strong> are too small: they produce extinction,
+        but only by filling a fixed ambient vector space.
+      </li>
+      <li>
+        <strong>Growing matrix spaces</strong> are the first structurally credible candidates:
+        they allow $q$-dependent saturation while keeping $|S^*|/|G| \to 0$.
+      </li>
+    </ul>
+    <p>
+      Within this perspective, O5 is not yet the derivation of $\beta^*$ itself.
+      It is the paper that isolates which mechanisms cannot explain it, proves the first
+      exact admissible-saturation theorem, and localises the remaining problem in a genuinely
+      dynamical matrix-level redundancy effect.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O5 follows directly from the open problem identified in O3 and sharpened by O4.
+      Spectral admissibility selects the relevant sectors, spectral capacity and Gram rigidity
+      constrain the admissible binary group structure, spectral stratigraphy fixes the
+      three-level ADE organisation, spectral relaxation and O1 restore the ordering by support
+      dynamics, O3 amplifies the hierarchy through dynamic valence growth, and O4 excludes
+      super-quadratic growth laws while leaving the smallness of the exponent unexplained.
+    </p>
+    <p>
+      The present paper does not close the cascade-exponent problem quantitatively.
+      Instead, it performs the next logically necessary step: it proves that low-dimensional
+      admissible quotients are insufficient, and shows that the remaining mechanism must live
+      in a transition-level matrix space of growing dimension. In that sense, O5 is the
+      obstruction-and-localisation paper of the programme, and it opens naturally toward O6.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="#" rel="noopener">
+        <i lang="en">Admissible Frontier Saturation and the Cascade Exponent:
+          A Representation-Theoretic Obstruction and its Matrix-Level Refinement</i>.
+        Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

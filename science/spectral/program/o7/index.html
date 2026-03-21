@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Capacity and the Continuum Limit of Admissible Redundancy | Cosmochrony</title>
+  <meta name="description"
+    content="A coarse-grained capacity framework linking discrete admissible redundancy to emergent
+    nonlinear projected dynamics, reinterpret­ing the cascade exponent through projective
+    capacity growth."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o7/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o7/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o7/index_de.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o7/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Projective Capacity and the Continuum Limit of Admissible Redundancy:
+    From Discrete Path Fingerprints to Nonlinear Projected Dynamics"/>
+  <meta property="og:description"
+    content="A bridge between discrete admissible redundancy and nonlinear projected dynamics through
+    coarse-grained projective capacity, occupancy, and saturation pressure."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o7/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o7/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Capacity and the Continuum Limit of Admissible Redundancy</h1>
+        <p class="subtitle">
+          Why fixed-dimensional redundancy mechanisms must be reformulated as a coarse-grained
+          projective capacity and how this yields the first bridge from discrete admissible
+          saturation to emergent nonlinear projected dynamics.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19167111" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral hierarchy programme after the obstruction proved in
+        <a href="../o6">O6</a>: no fingerprint based on a fixed finite-dimensional representation
+        can sustain the power-law redundancy decay needed to explain the cascade exponent.
+      </p>
+      <p>
+        O7 does not attempt to evade that no-go theorem by introducing another static encoding.
+        Instead, it changes the relevant observable. Exact redundancy is replaced by a
+        coarse-grained notion of <strong>projective capacity</strong>, built from the residual
+        novelty of admissible path fingerprints beyond exact span growth.
+      </p>
+      <p>
+        This shift yields a discrete notion of projective occupancy and saturation pressure,
+        providing the first explicit bridge between the discrete admissible redundancy programme
+        and the nonlinear Gross--Pitaevskii-type dynamics derived in Appendix B.14 of the white
+        paper.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Projective capacity, admissible redundancy, nonlinear projected dynamics</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, path fingerprints, coarse-graining,
+            projective occupancy, and saturation pressure
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Discrete projective capacity:</strong> introduction of a coarse-grained field
+        $\Sigma_n(x)$ built from the effective novelty of admissible $k$-step path fingerprints.
+      </li>
+      <li>
+        <strong>State law in a reduced filling model:</strong> exact derivation of
+        $R_n^{(k)}(x)\approx \Phi(\eta_n(x))$ with a monotone occupancy-dependent state function.
+      </li>
+      <li>
+        <strong>Capacity reinterpretation of the cascade exponent:</strong> $\beta$ is no longer
+        read as a static representation-theoretic quantity, but as an exponent governing capacity
+        growth and exhaustion along the cascade.
+      </li>
+      <li>
+        <strong>Projective capacity saturation mechanism:</strong> local depletion of $\Sigma_n(x)$
+        increases the effective coupling $g_n=\gamma/\Sigma_n$, generating a discrete saturation
+        pressure.
+      </li>
+      <li>
+        <strong>Continuum bridge:</strong> formal identification of the B.14 nonlinear term
+        $g|\psi|^2\psi$ as the continuum image of microscopic capacity exhaustion.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article shows that the obstruction identified in <a href="../o6">O6</a> is not the end
+      of the programme, but the signal that the wrong observable was being tracked. Exact
+      admissible redundancy saturates too abruptly to carry a meaningful scaling law. The correct
+      object is the residual novelty that remains after projection onto the already-spanned
+      admissible subspace.
+    </p>
+    <ul>
+      <li>
+        <strong>Fixed-dimensional fingerprints</strong> saturate at bounded depth and cannot
+        explain the cascade exponent.
+      </li>
+      <li>
+        <strong>Coarse-grained projective capacity</strong> captures how much admissible novelty
+        remains locally available.
+      </li>
+      <li>
+        <strong>Projective occupancy</strong> measures the filling fraction of this residual
+        capacity.
+      </li>
+      <li>
+        <strong>Nonlinear projected dynamics</strong> emerges when finite capacity feeds back on
+        the effective coupling.
+      </li>
+    </ul>
+    <p>
+      In this picture, the nonlinear term is not an additional phenomenological ingredient. It is
+      the macroscopic manifestation of finite projective capacity.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O7 follows the obstruction proved in <a href="../o6">O6</a>. Spectral admissibility,
+      capacity, rigidity, and stratigraphy define the spectral backbone of the theory.
+      <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth,
+      <a href="../o5">O5</a> isolates admissible redundancy structurally, and
+      <a href="../o6">O6</a> proves that no fixed finite-dimensional representation can generate
+      the required power-law regime.
+    </p>
+    <p>
+      The present paper performs the next necessary step: it reinterprets that obstruction as the
+      microscopic signature of projective capacity exhaustion and identifies the first consistent
+      discrete-to-continuum bridge toward the nonlinear projected dynamics of the white paper.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19167111" rel="noopener">
+        <i lang="en">Projective Capacity and the Continuum Limit of Admissible Redundancy:
+          From Discrete Path Fingerprints to Nonlinear Projected Dynamics</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

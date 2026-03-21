@@ -4,23 +4,24 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Spectral Admissibility | Cosmochrony</title>
+  <title>Spectral Admissibility under Bounded Flux | Cosmochrony</title>
   <meta name="description"
-    content="Spectral admissibility conditions for relational graphs under bounded flux constraints."/>
-  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/admissibility/index_it.html"/>
-  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/admissibility/index_es.html"/>
-  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/admissibility/index_de.html"/>
-  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/admissibility/index_fr.html"/>
+    content="Analysis of bounded-flux spectral selection on Cayley graphs of SU(2) subgroups, showing how
+    low-spin non-abelian sectors acquire the largest admissibility windows."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/admissibility/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/admissibility/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/admissibility/index_de.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/admissibility/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Spectral Admissibility"/>
+  <meta property="og:title" content="Spectral Admissibility under Bounded Flux"/>
   <meta property="og:description"
-    content="Spectral admissibility conditions for relational graphs under bounded flux constraints."/>
+    content="A spectral analysis showing how bounded relational flux favours low-spin non-abelian sectors
+    across the chain Q8, 2I, and LPS approximations to SU(2)."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/science/spectral/admissibility/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/admissibility/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-
-    redirectIfNot("en", "/science/spectral/admissibility/admissibility/index")
+    redirectIfNot("en", "/science/spectral/program/admissibility/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -28,44 +29,172 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" aria-hidden="true">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
-            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
             transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
-            d="M637.098 395.203A136.402 136.402 0 1 1 500.695 258.801L500.695 395.203Z"/>
-          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
-            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
         </svg>
       </a>
       <div>
-        <h1>Spectral Admissibility</h1>
-        <p class="subtitle">Modal amplitude bounds in relational Cayley graphs.</p>
+        <h1>Spectral Admissibility under Bounded Flux</h1>
+        <p class="subtitle">
+          How bounded relational capacity acts as a spectral filter and selects low-spin
+          non-abelian sectors.
+        </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn subtle" href="/science/spectral/program/">Programme overview</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18944985" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <section class="card">
-    <h2>Overview</h2>
-    <p>This work introduces spectral admissibility conditions governing relational systems evolving under bounded flux.
-      It shows that the Laplacian spectrum of a relational graph determines the maximal amplitude of each admissible
-      mode.</p>
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article develops the first explicit step of the spectral admissibility programme. Its
+        central question is whether a local bounded-flux constraint on a relational substrate can
+        select preferred spectral sectors without introducing any additional dynamical principle.
+      </p>
+      <p>
+        The answer is positive. On Cayley graphs built from SU(2)-type finite subgroups, the local
+        constraint $|\partial_t \chi_v| \le c_\chi$ induces an admissibility envelope
+        $A_n^{\max} = c_\chi/\sqrt{\lambda_n}$, so sectors with smaller Laplacian eigenvalue
+        acquire larger admissible effective amplitudes.
+      </p>
+      <p>
+        The paper establishes this mechanism explicitly on the quaternion group $Q_8$, then extends
+        it to the binary icosahedral group $2I$, and finally to the Lubotzky--Phillips--Sarnak
+        graph family approaching the SU(2) continuum. At every finite stage, the most admissible
+        sectors are the low-spin non-abelian ones.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Bounded flux, spectral filtering, and low-spin sector selection</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Q8, 2I, LPS graphs, and the SU(2) emergence thread</div>
+        </div>
+      </div>
+    </aside>
   </section>
   <section class="card">
-    <h2>Core result</h2>
-    <p>The admissible amplitude of a spectral mode with Laplacian eigenvalue λ is</p>
-    <p>$A^{max}=\frac{c_\chi}{\sqrt{\lambda}}$</p>
-    <p>This relation establishes a hierarchy of admissible spectral modes determined purely by the relational
-      Laplacian.</p>
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Admissibility envelope:</strong> the paper identifies the effective amplitude
+        $A_n = a_n \lVert \psi_n \rVert_\infty$ as the relevant local variable and derives the
+        universal bound $A_n^{\max} = c_\chi/\sqrt{\lambda_n}$.
+      </li>
+      <li>
+        <strong>Q8 result:</strong> on the Cayley graph $\Gamma(Q_8,\{\pm i,\pm j,\pm k\})$, the
+        quaternionic non-abelian sector carries the smallest non-trivial eigenvalue and therefore
+        the widest admissibility window.
+      </li>
+      <li>
+        <strong>Non-linear robustness:</strong> the weakly non-linear and exact one-mode DBI
+        analyses on $Q_8$ confirm that the same spectral envelope remains the true saturation
+        boundary.
+      </li>
+      <li>
+        <strong>2I hierarchy:</strong> on the binary icosahedral group, the admissibility structure
+        resolves into an explicit low-spin hierarchy, sharpening the separation already visible on
+        $Q_8$.
+      </li>
+      <li>
+        <strong>LPS extension:</strong> the mechanism extends to the Ramanujan LPS family, where the
+        spin-$1/2$ sector remains the most admissible for every finite $p$ examined.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article shows that bounded relational capacity does not merely impose a cut-off. It acts
+      as a genuine spectral selector.
+    </p>
+    <ul>
+      <li>
+        <strong>Local bounded flux</strong> translates into a mode-by-mode admissibility geometry in
+        the $(\lambda_n, A_n)$ plane.
+      </li>
+      <li>
+        <strong>Spectral position</strong> determines which sectors survive for the largest range of
+        effective amplitudes.
+      </li>
+      <li>
+        <strong>Non-abelian low-spin sectors</strong> are favoured because the generating sets have
+        stronger character coherence with them than with higher-spin sectors.
+      </li>
+    </ul>
+    <p>
+      Within this perspective, spectral admissibility is the first structural filter of the whole
+      programme: before any hierarchy of generations or masses can emerge, bounded flux already
+      selects which sectors remain dynamically resilient.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      This paper is the first concrete realisation of the spectral admissibility programme. It makes
+      explicit how bounded flux acts on the substrate spectrum and establishes that non-abelian
+      low-spin sectors are structurally preferred at finite resolution.
+    </p>
+    <p>
+      Later papers build on this result. Spectral capacity aggregates these admissibility windows at
+      the level of whole groups, spectral Gram rigidity classifies the neutral-generator structures
+      compatible with the mechanism, and spectral stratigraphy uses discrete spectral levels to
+      construct generation structure. This first paper provides the selection principle on which the
+      rest of the chain depends.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.18944985" rel="noopener">
+        <i lang="en">Spectral Admissibility under Bounded Flux: Non-Abelian Mode Selection on
+          Cayley Graphs of SU(2) Subgroups</i>. Preprint, Zenodo.
+      </a>
+    </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
-    <p class="small">© <span id="y"></span> Jérôme Beau</p>
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
   </div>
 </footer>
 <script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>

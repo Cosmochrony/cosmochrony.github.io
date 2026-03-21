@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Three-Step Path Fingerprints on LPS Graphs and the Capacity Growth Exponent | Cosmochrony</title>
+  <meta name="description"
+    content="A three-step permutation-path fingerprint on LPS Ramanujan graphs showing the first
+    q-growing pre-saturation window, escaping the O6 fixed-representation obstruction while
+    revealing a new geometric compression from exponential shell growth."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o8/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o8/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o8/index_de.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o8/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Three-Step Path Fingerprints on LPS Graphs and the Capacity Growth Exponent:
+    Geometric Compression Beyond the O6 No-Go"/>
+  <meta property="og:description"
+    content="The first q-growing path fingerprint in the O-series, revealing that even after the O6
+    algebraic obstruction is removed, exponential shell growth on LPS graphs compresses the
+    observable window to O(log q) BFS steps."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o8/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o8/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Three-Step Path Fingerprints on LPS Graphs and the Capacity Growth Exponent</h1>
+        <p class="subtitle">
+          Why the first q-growing path fingerprint escapes the O6 fixed-representation obstruction,
+          yet still fails to extract the target exponent on LPS graphs because exponential shell
+          growth geometrically compresses the observable window.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19101472" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after the reformulation
+        developed in <a href="../o7">O7</a>. While <a href="../o6">O6</a> proved that no fixed
+        finite-dimensional fingerprint can sustain the power-law regime required to explain the
+        cascade exponent, <a href="../o7">O7</a> identified the correct observable as the discrete
+        projective capacity $\Sigma_n$.
+      </p>
+      <p>
+        O8 performs the next necessary step: it introduces the first explicit
+        <strong>q-growing path fingerprint</strong>, namely a three-step permutation-path encoding
+        in ambient dimension $O(q^3)$, and tests whether this is sufficient to produce a
+        measurable pre-saturation regime for the capacity growth exponent $\delta$.
+      </p>
+      <p>
+        The answer is structurally sharp. The new fingerprint genuinely escapes the algebraic
+        obstruction of <a href="../o6">O6</a> and opens the first pre-saturation window growing as
+        $O(q^2)$ in vertex count. But on LPS Ramanujan graphs this window is compressed by
+        exponential shell growth into only $O(\log q)$ BFS steps, which is too short to support a
+        reliable exponent extraction.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Path fingerprints, projective capacity, geometric compression</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, permutation representations,
+            non-backtracking paths, rank growth, and pre-saturation windows
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Three-step permutation-path fingerprint:</strong> introduction of the fingerprint
+        $\pi_3(\gamma)=\rho_{\mathrm{perm}}(v_1)\otimes\rho_{\mathrm{perm}}(v_2)\otimes
+        \rho_{\mathrm{perm}}(v_3)$ for non-backtracking paths on $X_{p,q}$.
+      </li>
+      <li>
+        <strong>First q-growing admissible window:</strong> identification of an effective
+        pre-saturation window of order $O(q^2)$ in vertex count, the first growing window in the
+        O-series.
+      </li>
+      <li>
+        <strong>Escape from the O6 no-go:</strong> explicit demonstration that a growing
+        fingerprint space can evade the bounded-depth saturation universal for fixed
+        finite-dimensional representations.
+      </li>
+      <li>
+        <strong>Geometric compression mechanism:</strong> proof that exponential shell growth on
+        LPS graphs compresses the $O(q^2)$-vertex window into only $O(\log q)$ BFS steps.
+      </li>
+      <li>
+        <strong>New obstruction class:</strong> identification of a geometric, rather than
+        representation-theoretic, reason why the target exponent cannot be extracted on the LPS
+        family at accessible sizes.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article shows that escaping the algebraic obstruction of <a href="../o6">O6</a> is not
+      enough. A growing admissible state space is necessary, but not sufficient. Once the
+      fingerprint dimension grows with $q$, the decisive question becomes whether the underlying
+      graph geometry provides a long enough observable cascade.
+    </p>
+    <ul>
+      <li>
+        <strong>Fixed-dimensional fingerprints</strong> fail because they saturate at bounded BFS
+        depth.
+      </li>
+      <li>
+        <strong>Three-step path fingerprints</strong> avoid that algebraic no-go and continue to
+        generate new directions up to $O(q^2)$ vertices.
+      </li>
+      <li>
+        <strong>LPS shell growth</strong> is too rapid: the observable window in BFS depth remains
+        only logarithmic.
+      </li>
+      <li>
+        <strong>The obstruction is geometric</strong>: the graph family itself prevents reliable
+        exponent extraction, even though the fingerprint is structurally adequate.
+      </li>
+    </ul>
+    <p>
+      In this picture, the unresolved problem is no longer merely to enlarge the fingerprint. It
+      is to find a graph-growth regime in which a growing admissible state space unfolds over a
+      sufficiently long cascade.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O8 follows directly from <a href="../o7">O7</a>. Spectral admissibility, capacity, rigidity,
+      and stratigraphy define the spectral backbone of the theory. <a href="../o1">O1</a>
+      restores ordering through projective dynamics, <a href="../o3">O3</a> amplifies the
+      hierarchy via valence growth, <a href="../o4">O4</a> constrains the cascade exponent from
+      bounded relational flux, <a href="../o5">O5</a> localises the failure of vertex-level
+      mechanisms, <a href="../o6">O6</a> proves the no-go for fixed finite-dimensional
+      fingerprints, and <a href="../o7">O7</a> reformulates the relevant observable in terms of
+      projective capacity.
+    </p>
+    <p>
+      The present paper performs the first explicit test beyond that no-go. It shows that the
+      remaining obstruction is not algebraic but geometric: on LPS expanders, exponential shell
+      growth compresses the observable window before the asymptotic capacity-scaling regime can be
+      resolved.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19101472" rel="noopener">
+        <i lang="en">Three-Step Path Fingerprints on LPS Graphs and the Capacity Growth Exponent:
+          Testing $\delta\in[7.4,10.6]$ at Ambient Dimension $O(q^3)$</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

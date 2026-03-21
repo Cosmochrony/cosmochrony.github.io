@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Saturation de la frontière admissible et exposant de cascade | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse de la saturation de la frontière admissible montrant pourquoi les quotients de basse dimension ne peuvent pas expliquer l’exposant de cascade, et identifiant la redondance dynamique au niveau matriciel comme mécanisme structurel restant."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o5/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o5/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o5/index_de.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o5/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Saturation de la frontière admissible et exposant de cascade :
+    obstruction de théorie des représentations et raffinement au niveau matriciel"/>
+  <meta property="og:description"
+    content="Une analyse spectrale montrant que la petitesse de l’exposant de cascade ne peut pas provenir de quotients admissibles de basse dimension, mais doit résulter d’une redondance dynamique au niveau matriciel."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o5/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o5/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Saturation de la frontière admissible et exposant de cascade</h1>
+        <p class="subtitle">
+          Comment la saturation de la frontière admissible isole le mécanisme manquant derrière la
+          petitesse de l’exposant de cascade et le relocalise dans une redondance dynamique au niveau matriciel.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19120328" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article prolonge le programme spectral de hiérarchie en s’attaquant à l’écart
+        restant après O4 : le flux borné ne contraint l’exposant de cascade qu’au niveau
+        d’une borne supérieure quadratique, tandis que la fenêtre phénoménologique requise par O3
+        demeure bien plus petite.
+      </p>
+      <p>
+        La question centrale n’est donc pas de savoir si la frontière brute des graphes LPS
+        s’étend, car c’est bien le cas, mais quelle part de cette frontière reste
+        <em>admissiblement productive</em> une fois filtrées les directions n’ajoutant aucun
+        contenu réellement nouveau dans le sous-espace spectral admissible. O5 introduit
+        explicitement cette notion et en étudie plusieurs définitions candidates.
+      </p>
+      <p>
+        Le résultat principal est double. D’abord, la frontière admissible basée sur les sommets
+        sature rapidement par nécessité représentationnelle, à l’échelle
+        $O(|\mathrm{Cl}(G)|)=O(q)$, bien en deçà de $|G|=O(q^3)$. Ensuite, l’article montre que
+        cette saturation de basse dimension n’est pas encore l’origine physique du petit exposant :
+        le véritable mécanisme doit être un phénomène de redondance au niveau matriciel, et non
+        une simple borne dimensionnelle.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
+        complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Exposant de cascade, frontière admissible et redondance au niveau matriciel</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, saturation admissible et
+            limites structurelles des quotients de basse dimension</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Concept de frontière admissible :</strong> l’article introduit la frontière
+        admissible comme sous-ensemble de la frontière brute BFS dont les éléments ajoutent des
+        directions réellement nouvelles dans le sous-espace spectral admissible.
+      </li>
+      <li>
+        <strong>Théorème de saturation représentationnelle :</strong> l’enveloppe admissible basée
+        sur les sommets $\Pi_A(S)$ vérifie $\dim \Pi_A(S)\le \mathrm{rank}(M_{\mathrm{adm}})
+        \le |\mathrm{Cl}(G)|=O(q)$, de sorte que la frontière admissible correspondante
+        s’annule après une échelle de saturation $|S^*|=O(q)$.
+      </li>
+      <li>
+        <strong>Résultat négatif pour les raffinements par caractères :</strong> les empreintes de
+        transition fondées uniquement sur les caractères restent trop grossières sur les graphes LPS
+        et ne produisent pas la décroissance structurelle requise.
+      </li>
+      <li>
+        <strong>Résultat négatif pour les proxys de dimension fixe :</strong> de petites empreintes
+        matricielles peuvent provoquer l’extinction de la frontière admissible, mais seulement par
+        remplissage d’un espace ambiant de dimension indépendante de $q$, ce qui les disqualifie
+        comme explication de la hiérarchie.
+      </li>
+      <li>
+        <strong>Premier candidat matriciel structurellement valide :</strong> une empreinte de
+        transition fondée sur Steinberg sur $\mathbb{P}^1(\mathbb{F}_q)$ fournit la première
+        échelle de saturation croissant avec $q$, avec $|S^*|/|G|\to 0$, ce qui identifie la bonne
+        classe de mécanismes candidats.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’article montre que le mécanisme manquant derrière la petitesse de l’exposant de cascade
+      n’est ni une meilleure estimation de Cheeger, ni un simple effet de comptage
+      représentationnel. La frontière combinatoire brute du graphe LPS reste expansive, mais la
+      partie admissiblement productive de cette frontière peut s’effondrer bien plus tôt.
+    </p>
+    <ul>
+      <li>
+        <strong>L’admissibilité basée sur les sommets</strong> est trop rigide : elle sature
+        exactement, mais trop tôt et pour des raisons purement représentationnelles.
+      </li>
+      <li>
+        <strong>Les empreintes de transition fondées sur les caractères</strong> restent trop
+        grossières : elles ne résolvent pas assez d’information directionnelle pour distinguer les
+        canaux admissibles réellement nouveaux.
+      </li>
+      <li>
+        <strong>Les proxys matriciels de basse dimension</strong> sont trop petits : ils produisent
+        une extinction, mais seulement en remplissant un espace vectoriel ambiant fixe.
+      </li>
+      <li>
+        <strong>Les espaces matriciels croissants</strong> sont les premiers candidats
+        structurellement crédibles : ils permettent une saturation dépendant de $q$ tout en gardant
+        $|S^*|/|G| \to 0$.
+      </li>
+    </ul>
+    <p>
+      Dans cette perspective, O5 n’est pas encore la dérivation de $\beta^*$ lui-même.
+      C’est le papier qui isole les mécanismes incapables de l’expliquer, démontre le premier
+      théorème exact de saturation admissible, et localise le problème restant dans un effet
+      véritablement dynamique de redondance au niveau matriciel.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O5 suit directement le problème ouvert identifié dans O3 puis affiné par O4.
+      L’admissibilité spectrale sélectionne les secteurs pertinents, la capacité spectrale et la
+      rigidité de Gram contraignent la structure binaire admissible, la stratigraphie spectrale fixe
+      l’organisation ADE à trois niveaux, la relaxation spectrale et O1 restaurent l’ordre par la
+      dynamique du support, O3 amplifie la hiérarchie par croissance dynamique de la valence, et
+      O4 exclut les lois de croissance super-quadratiques tout en laissant inexpliquée la petitesse
+      de l’exposant.
+    </p>
+    <p>
+      Le présent article ne résout pas encore quantitativement le problème de l’exposant de
+      cascade.
+      Il accomplit cependant l’étape logiquement nécessaire suivante : il démontre que les quotients
+      admissibles de basse dimension sont insuffisants, et montre que le mécanisme restant doit
+      vivre dans un espace matriciel de niveau transition dont la dimension croît. En ce sens, O5
+      est le papier d’obstruction et de localisation du programme, et il ouvre naturellement vers O6.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19120328" rel="noopener">
+        <i lang="en">Admissible Frontier Saturation and the Cascade Exponent:
+          A Representation-Theoretic Obstruction and its Matrix-Level Refinement</i>.
+        Prépublication.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

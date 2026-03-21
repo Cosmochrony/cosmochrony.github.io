@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fonctionnelle de capacité spectrale et conjecture de maximalité binaire-polyédrique | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse de l’agrégation globale de l’admissibilité spectrale montrant pourquoi les fonctionnelles pénalisant les interférences sélectionnent les groupes binaires polyédriques, avec 2I comme cas optimal en valence 24."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/capacity/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/capacity/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/capacity/index_de.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/capacity/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Fonctionnelle de capacité spectrale et conjecture de maximalité binaire-polyédrique"/>
+  <meta property="og:description"
+    content="Une analyse spectrale montrant comment la pénalisation des interférences restaure l’avantage structurel de la chaîne binaire et sélectionne 2I en valence 24."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/capacity/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/capacity/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Fonctionnelle de capacité spectrale et conjecture de maximalité binaire-polyédrique</h1>
+        <p class="subtitle">
+          Comment l’agrégation globale des fenêtres d’admissibilité favorise la chaîne binaire
+          une fois les alignements constructifs correctement pénalisés.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18945273" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article développe la seconde étape du programme d’admissibilité spectrale. Le point de
+        départ est le résultat mono-mode de <em>Spectral Admissibility</em> : sur des graphes de
+        Cayley de sous-groupes finis de SU(2), un flux borné confère à chaque secteur irréductible
+        une fenêtre d’admissibilité proportionnelle à $1/\sqrt{\lambda_\rho}$, et le secteur
+        de spin-$1/2$ est localement le plus admissible.
+      </p>
+      <p>
+        La question centrale est de savoir si cet avantage subsiste globalement. Pour y répondre,
+        l’article introduit la fonctionnelle de capacité spectrale $C(G,S)$, agrégation pondérée
+        de Peter--Weyl de toutes les fenêtres d’admissibilité. Il montre ensuite que cette somme
+        naïve est biaisée par des alignements constructifs : certains secteurs apparaissent
+        artificiellement favorisés parce que le système générateur résonne avec eux.
+      </p>
+      <p>
+        Une fois cet artefact éliminé via les fonctionnelles pénalisées $C_0(G,S)$ et
+        $C_\alpha(G,S)$, la chaîne binaire réapparaît comme structure préférée. À valence $d=6$,
+        $Q_8$ est le cas neutre unique. À valence $d=24$, le groupe icosaédrique binaire $2I$
+        dépasse son analogue rotationnel $A_5$ et devient le candidat optimal.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse
+        technique complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Agrégation globale et optimalité binaire-polyédrique</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Capacité de Peter--Weyl, pénalisation des interférences, Q8 et 2I</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Fonctionnelle globale :</strong> définition de
+        $C(G,S)=\sum_{\rho,\lambda_\rho>0} (\dim\rho)^2/\sqrt{\lambda_\rho}$ comme agrégation
+        naturelle des fenêtres d’admissibilité.
+      </li>
+      <li>
+        <strong>Diagnostic des interférences :</strong> mise en évidence du biais dû aux secteurs
+        avec $\mu_\rho>0$, reflétant un alignement constructif.
+      </li>
+      <li>
+        <strong>Fonctionnelles pénalisées :</strong> introduction de $C_0$ et $C_\alpha$ pour
+        corriger cet effet et révéler la structure intrinsèque.
+      </li>
+      <li>
+        <strong>Cas $d=6$ :</strong> $Q_8$ est le seul groupe dont la capacité reste inchangée
+        après pénalisation.
+      </li>
+      <li>
+        <strong>Cas $d=24$ :</strong> la capacité pénalisée sélectionne $2I$ plutôt que $A_5$,
+        avec un avantage croissant selon la pénalisation.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’admissibilité globale ne se lit pas directement dans la seule douceur spectrale. Elle doit
+      distinguer préférence structurelle et résonance accidentelle.
+    </p>
+    <ul>
+      <li>
+        <strong>La multiplicité de Peter--Weyl</strong> fournit la pondération correcte.
+      </li>
+      <li>
+        <strong>L’alignement constructif</strong> peut biaiser les comparaisons naïves.
+      </li>
+      <li>
+        <strong>La pénalisation des interférences</strong> restaure l’avantage des groupes binaires.
+      </li>
+    </ul>
+    <p>
+      Dans cette perspective, la propriété de Ramanujan agit comme contrainte de cohérence
+      spectrale, évitant les compressions pathologiques.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      Cet article complète globalement <em>Spectral Admissibility</em>. Le premier papier identifie
+      les secteurs robustes ; celui-ci détermine quels groupes restent privilégiés après
+      agrégation.
+    </p>
+    <p>
+      Il établit que la chaîne binaire est sélectionnée structurellement une fois les interférences
+      corrigées. Cela prépare les étapes suivantes : rigidité de Gram, stratigraphie et hiérarchie.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.18945273" rel="noopener">
+        <i lang="en">Spectral Capacity Functional and the Binary-Polyhedral Maximality
+          Conjecture</i>. Prépublication, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

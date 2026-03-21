@@ -21,6 +21,7 @@
   <meta property="og:url" content="https://cosmochrony.org/science/spqectral/program/o6/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/science/spectral/program/o6/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -43,18 +44,14 @@
       <div>
         <h1>Matrix-Level Dynamic Redundancy and the Cascade Exponent</h1>
         <p class="subtitle">
-          Why no fixed finite-dimensional representation can produce the cascade exponent
-          and why the missing mechanism must involve depth-growing dynamical redundancy.
+          Why no fixed finite-dimensional representation can produce the cascade exponent and why the missing mechanism
+          must involve depth-growing dynamical redundancy.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
-        Read the preprint
-      </a>
-      <a class="btn subtle" href="/science/spectral/program/">
-        Back to Spectral Admissibility Programme
-      </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> Read the preprint </a> <a
+      class="btn subtle" href="/science/spectral/program/"> Back to Spectral Admissibility Programme </a>
     </div>
   </div>
 </header>
@@ -63,26 +60,24 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral hierarchy programme by addressing the mechanism
-        identified but not resolved in O5: matrix-level admissible redundancy as the possible
-        origin of the small cascade exponent.
+        This article continues the spectral hierarchy programme by addressing the mechanism identified but not resolved
+        in <a href="../o5">O5</a>: matrix-level admissible redundancy as the possible origin of the small cascade
+        exponent.
       </p>
       <p>
-        The key question is whether a sufficiently refined transition-level encoding can
-        produce a long pre-saturation regime in which the admissible frontier decays as a
-        power law. O6 provides the first explicit construction of such a matrix-level
-        fingerprint and tests it on LPS graphs.
+        The key question is whether a sufficiently refined transition-level encoding can produce a long pre-saturation
+        regime in which the admissible frontier decays as a power law. O6 provides the first explicit construction of
+        such a matrix-level fingerprint and tests it on LPS graphs.
       </p>
       <p>
-        The main result is negative but decisive. While matrix-level fingerprints can produce
-        $q$-dependent saturation scales, they still exhibit a bounded exploration depth that
-        prevents any genuine power-law regime from emerging. This reveals a structural
-        obstruction: the cascade exponent cannot arise from any fixed finite-dimensional
+        The main result is negative but decisive. While matrix-level fingerprints can produce $q$-dependent saturation
+        scales, they still exhibit a bounded exploration depth that prevents any genuine power-law regime from emerging.
+        This reveals a structural obstruction: the cascade exponent cannot arise from any fixed finite-dimensional
         representation.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page provides a structured overview. The complete
-        technical analysis is presented in the preprint linked above.
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis is
+        presented in the preprint linked above.
       </div>
     </div>
     <aside class="card">
@@ -106,8 +101,9 @@
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, matrix fingerprints,
-            redundancy dynamics, and bounded-depth saturation</div>
+          <div class="v">LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, matrix fingerprints, redundancy dynamics, and
+            bounded-depth saturation
+          </div>
         </div>
       </div>
     </aside>
@@ -116,86 +112,80 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>First matrix-level admissible fingerprint:</strong> introduction of a Steinberg-based
-        transition fingerprint acting on $\mathbb{P}^1(\mathbb{F}_q)$ with ambient dimension $O(q^2)$.
+        <strong>First matrix-level admissible fingerprint:</strong> introduction of a Steinberg-based transition
+        fingerprint acting on $\mathbb{P}^1(\mathbb{F}_q)$ with ambient dimension $O(q^2)$.
       </li>
       <li>
-        <strong>$q$-structural saturation:</strong> the admissible saturation scale grows with $q$,
-        with $|S^*|/|G| \to 0$, identifying the correct class of candidate mechanisms.
+        <strong>$q$-structural saturation:</strong> the admissible saturation scale grows with $q$, with $|S^*|/|G| \to
+        0$, identifying the correct class of candidate mechanisms.
       </li>
       <li>
-        <strong>Bounded-depth saturation:</strong> despite increasing dimension, saturation occurs at
-        a fixed BFS depth independent of $q$, preventing any extended pre-saturation regime.
+        <strong>Bounded-depth saturation:</strong> despite increasing dimension, saturation occurs at a fixed BFS depth
+        independent of $q$, preventing any extended pre-saturation regime.
       </li>
       <li>
-        <strong>No-go theorem:</strong> any fingerprint based on a fixed finite-dimensional
-        representation exhibits bounded-depth saturation and cannot generate a power-law decay
-        of the admissible frontier.
+        <strong>No-go theorem:</strong> any fingerprint based on a fixed finite-dimensional representation exhibits
+        bounded-depth saturation and cannot generate a power-law decay of the admissible frontier.
       </li>
       <li>
-        <strong>Separation of mechanisms:</strong> distinction between representation-theoretic
-        saturation (dimension-driven) and genuinely dynamical saturation (depth-driven).
+        <strong>Separation of mechanisms:</strong> distinction between representation-theoretic saturation
+        (dimension-driven) and genuinely dynamical saturation (depth-driven).
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The article shows that increasing the dimension of the representation is not sufficient
-      to explain the cascade exponent. Even at the matrix level, a fixed-dimensional encoding
-      explores only a bounded number of independent admissible directions.
+      The article shows that increasing the dimension of the representation is not sufficient to explain the cascade
+      exponent. Even at the matrix level, a fixed-dimensional encoding explores only a bounded number of independent
+      admissible directions.
     </p>
     <ul>
       <li>
         <strong>Vertex-level mechanisms</strong> fail due to early representation-theoretic saturation.
       </li>
       <li>
-        <strong>Matrix-level fingerprints</strong> improve structural resolution but still saturate
-        at bounded depth.
+        <strong>Matrix-level fingerprints</strong> improve structural resolution but still saturate at bounded depth.
       </li>
       <li>
-        <strong>Fixed-dimensional encodings</strong> cannot sustain a long enough regime to produce
-        $R_n \sim p(n)^{-\alpha}$.
+        <strong>Fixed-dimensional encodings</strong> cannot sustain a long enough regime to produce $R_n \sim
+        p(n)^{-\alpha}$.
       </li>
       <li>
         <strong>Depth, not dimension</strong> is the key missing ingredient.
       </li>
     </ul>
     <p>
-      The cascade exponent $\beta$ therefore cannot be interpreted as a static
-      representation-theoretic quantity. It must arise from a dynamical process in which the
-      effective space of admissible directions grows along the cascade.
+      The cascade exponent $\beta$ therefore cannot be interpreted as a static representation-theoretic quantity. It
+      must arise from a dynamical process in which the effective space of admissible directions grows along the cascade.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O6 follows from the structural localisation achieved in O5. Spectral admissibility,
-      capacity, rigidity, and stratigraphy fix the spectral backbone of the theory. O1 restores
-      ordering through projective dynamics, O3 amplifies the hierarchy via valence growth,
-      and O5 isolates matrix-level redundancy as the relevant mechanism.
+      O6 follows from the structural localisation achieved in <a href="../o5">O5</a>. Spectral admissibility, capacity,
+      rigidity, and stratigraphy fix the spectral backbone of the theory. <a href="../o1">O1</a> restores ordering
+      through projective dynamics, <a href="../o3">O3</a> amplifies the hierarchy via valence growth, and <a
+      href="../o5">O5</a> isolates matrix-level redundancy as the relevant mechanism.
     </p>
     <p>
-      The present paper performs the next necessary step: it proves that even matrix-level
-      mechanisms fail if they remain finite-dimensional. This establishes a general obstruction
-      and forces the next stage of the programme toward dynamically growing constructions.
+      The present paper performs the next necessary step: it proves that even matrix-level mechanisms fail if they
+      remain finite-dimensional. This establishes a general obstruction and forces the next stage of the programme
+      toward dynamically growing constructions.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
-        <i lang="en">Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent β</i>.
-        Preprint.
-      </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> <i lang="en">Matrix-Level Dynamic
+      Redundancy and the Structural Confinement of the Cascade Exponent β</i>. Preprint. </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
-    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY
-      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
   </div>
 </footer>
 <script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>

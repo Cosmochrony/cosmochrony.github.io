@@ -21,6 +21,7 @@
   <meta property="og:url" content="https://cosmochrony.org/science/spqectral/program/o6/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("fr", "/science/spectral/program/o6/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -43,19 +44,14 @@
       <div>
         <h1>Redondance dynamique au niveau matriciel et exposant de cascade</h1>
         <p class="subtitle">
-          Pourquoi aucune représentation finie de dimension fixe ne peut produire l’exposant de
-          cascade et pourquoi le mécanisme manquant doit impliquer une redondance dynamique croissant
-          avec la profondeur.
+          Pourquoi aucune représentation finie de dimension fixe ne peut produire l’exposant de cascade et pourquoi le
+          mécanisme manquant doit impliquer une redondance dynamique croissant avec la profondeur.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
-        Lire le préprint
-      </a>
-      <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
-      </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> Lire le préprint </a> <a
+      class="btn subtle" href="/science/spectral/program/"> Retour au programme d’admissibilité spectrale </a>
     </div>
   </div>
 </header>
@@ -64,26 +60,24 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article poursuit le programme spectral de hiérarchie en s’attaquant au mécanisme
-        identifié mais non résolu dans O5 : la redondance admissible au niveau matriciel comme
-        origine possible du petit exposant de cascade.
+        Cet article poursuit le programme spectral de hiérarchie en s’attaquant au mécanisme identifié, mais non résolu
+        dans <a href="../o5/index_fr.html">O5</a> : la redondance admissible au niveau matriciel comme origine possible
+        du petit exposant de cascade.
       </p>
       <p>
-        La question clé est de savoir si un encodage suffisamment raffiné au niveau des transitions
-        peut produire un long régime de pré-saturation dans lequel la frontière admissible décroît
-        comme une loi de puissance. O6 fournit la première construction explicite d’une telle
-        empreinte au niveau matriciel et la teste sur des graphes LPS.
+        La question clé est de savoir si un encodage suffisamment raffiné au niveau des transitions peut produire un
+        long régime de pré-saturation dans lequel la frontière admissible décroît comme une loi de puissance. O6 fournit
+        la première construction explicite d’une telle empreinte au niveau matriciel et la teste sur des graphes LPS.
       </p>
       <p>
-        Le résultat principal est négatif mais décisif. Bien que des empreintes matricielles puissent
-        produire des échelles de saturation dépendant de $q$, elles exhibent encore une profondeur
-        d’exploration bornée qui empêche l’émergence de tout véritable régime en loi de puissance.
-        Cela révèle une obstruction structurelle : l’exposant de cascade ne peut provenir d’aucune
-        représentation finie de dimension fixe.
+        Le résultat principal est négatif, mais décisif. Bien que des empreintes matricielles puissent produire des
+        échelles de saturation dépendant de $q$, elles exhibent encore une profondeur d’exploration bornée qui empêche
+        l’émergence de tout véritable régime en loi de puissance. Cela révèle une obstruction structurelle : l’exposant
+        de cascade ne peut provenir d’aucune représentation finie de dimension fixe.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
-        complète est présentée dans le préprint ci-dessus.
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique complète est
+        présentée dans le préprint ci-dessus.
       </div>
     </div>
     <aside class="card">
@@ -107,8 +101,9 @@
         </div>
         <div class="kv">
           <div class="k">Périmètre</div>
-          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes matricielles,
-            dynamique de redondance et saturation à profondeur bornée</div>
+          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes matricielles, dynamique de redondance
+            et saturation à profondeur bornée
+          </div>
         </div>
       </div>
     </aside>
@@ -117,92 +112,85 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Première empreinte admissible au niveau matriciel :</strong> introduction d’une
-        empreinte de transition fondée sur Steinberg agissant sur $\mathbb{P}^1(\mathbb{F}_q)$
-        avec une dimension ambiante en $O(q^2)$.
+        <strong>Première empreinte admissible au niveau matriciel :</strong> introduction d’une empreinte de transition
+        fondée sur Steinberg agissant sur $\mathbb{P}^1(\mathbb{F}_q)$ avec une dimension ambiante en $O(q^2)$.
       </li>
       <li>
-        <strong>Saturation structurelle en $q$ :</strong> l’échelle de saturation admissible croît
-        avec $q$, avec $|S^*|/|G| \to 0$, ce qui identifie la bonne classe de mécanismes
-        candidats.
+        <strong>Saturation structurelle en $q$ :</strong> l’échelle de saturation admissible croît avec $q$, avec
+        $|S^*|/|G| \to 0$, ce qui identifie la bonne classe de mécanismes candidats.
       </li>
       <li>
-        <strong>Saturation à profondeur bornée :</strong> malgré la dimension croissante, la
-        saturation se produit à une profondeur BFS fixe indépendante de $q$, empêchant tout régime
-        étendu de pré-saturation.
+        <strong>Saturation à profondeur bornée :</strong> malgré la dimension croissante, la saturation se produit à une
+        profondeur BFS fixe indépendante de $q$, empêchant tout régime étendu de pré-saturation.
       </li>
       <li>
-        <strong>Théorème d’impossibilité :</strong> toute empreinte fondée sur une représentation
-        finie de dimension fixe présente une saturation à profondeur bornée et ne peut générer
-        une décroissance en loi de puissance de la frontière admissible.
+        <strong>Théorème d’impossibilité :</strong> toute empreinte fondée sur une représentation finie de dimension
+        fixe présente une saturation à profondeur bornée et ne peut générer une décroissance en loi de puissance de la
+        frontière admissible.
       </li>
       <li>
-        <strong>Séparation des mécanismes :</strong> distinction entre saturation
-        représentationnelle (pilotée par la dimension) et saturation véritablement dynamique
-        (pilotée par la profondeur).
+        <strong>Séparation des mécanismes :</strong> distinction entre saturation représentationnelle (pilotée par la
+        dimension) et saturation véritablement dynamique (pilotée par la profondeur).
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’article montre qu’augmenter la dimension de la représentation ne suffit pas à expliquer
-      l’exposant de cascade. Même au niveau matriciel, un encodage de dimension fixe n’explore
-      qu’un nombre borné de directions admissibles indépendantes.
+      L’article montre qu’augmenter la dimension de la représentation ne suffit pas à expliquer l’exposant de cascade.
+      Même au niveau matriciel, un encodage de dimension fixe n’explore qu’un nombre borné de directions admissibles
+      indépendantes.
     </p>
     <ul>
       <li>
-        <strong>Les mécanismes au niveau des sommets</strong> échouent à cause d’une saturation
-        représentationnelle trop précoce.
+        <strong>Les mécanismes au niveau des sommets</strong> échouent à cause d’une saturation représentationnelle trop
+        précoce.
       </li>
       <li>
-        <strong>Les empreintes au niveau matriciel</strong> améliorent la résolution structurelle
-        mais saturent encore à profondeur bornée.
+        <strong>Les empreintes au niveau matriciel</strong> améliorent la résolution structurelle, mais saturent encore à
+        profondeur bornée.
       </li>
       <li>
-        <strong>Les encodages de dimension fixe</strong> ne peuvent soutenir un régime assez long
-        pour produire $R_n \sim p(n)^{-\alpha}$.
+        <strong>Les encodages de dimension fixe</strong> ne peuvent soutenir un régime assez long pour produire $R_n
+        \sim p(n)^{-\alpha}$.
       </li>
       <li>
         <strong>La profondeur, et non la dimension</strong>, est l’ingrédient manquant essentiel.
       </li>
     </ul>
     <p>
-      L’exposant de cascade $\beta$ ne peut donc pas être interprété comme une quantité statique
-      de théorie des représentations.
-      Il doit résulter d’un processus dynamique dans lequel l’espace effectif des directions
+      L’exposant de cascade $\beta$ ne peut donc pas être interprété comme une quantité statique de théorie des
+      représentations. Il doit résulter d’un processus dynamique dans lequel l’espace effectif des directions
       admissibles croît le long de la cascade.
     </p>
   </section>
   <section class="card">
     <h2>Relation avec le programme Cosmochrony</h2>
     <p>
-      O6 suit la localisation structurelle obtenue dans O5. L’admissibilité spectrale, la capacité,
-      la rigidité et la stratigraphie fixent l’ossature spectrale de la théorie. O1 restaure l’ordre
-      par la dynamique projective, O3 amplifie la hiérarchie par croissance de la valence, et O5
-      isole la redondance au niveau matriciel comme mécanisme pertinent.
+      O6 suit la localisation structurelle obtenue dans <a href="../o5/index_fr.html">O5</a>. L’admissibilité spectrale,
+      la capacité, la rigidité et la stratigraphie fixent l’ossature spectrale de la théorie. <a
+      href="../o1/index_fr.html">O1</a> restaure l’ordre par la dynamique projective, <a
+      href="../o3/index_fr.html">O3</a> amplifie la hiérarchie par croissance de la valence, et <a
+      href="../o5/index_fr.html">O5</a> isole la redondance au niveau matriciel comme mécanisme pertinent.
     </p>
     <p>
-      Le présent article accomplit l’étape nécessaire suivante : il démontre que même les mécanismes
-      au niveau matriciel échouent s’ils restent de dimension finie. Cela établit une obstruction
-      générale et force l’étape suivante du programme vers des constructions à croissance dynamique.
+      Le présent article accomplit l’étape nécessaire suivante : il démontre que même les mécanismes au niveau matriciel
+      échouent s’ils restent de dimension finie. Cela établit une obstruction générale et force l’étape suivante du
+      programme vers des constructions à croissance dynamique.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
-      Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
-        <i lang="en">Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent β</i>.
-        Prépublication.
-      </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> <i lang="en">Matrix-Level Dynamic
+      Redundancy and the Structural Confinement of the Cascade Exponent β</i>. Prépublication. </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
-    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY
-      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
   </div>
 </footer>
 <script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>

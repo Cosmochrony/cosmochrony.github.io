@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Capacité projective au-delà des expanseurs : graphes de relaxation à croissance
+    polynomiale et exposant de capacité | Cosmochrony</title>
+  <meta name="description"
+    content="Remplacement polynomial des graphes LPS montrant que l’échec de O8 était purement
+    géométrique : les graphes de Cayley de Heisenberg restaurent une fenêtre BFS polynomiale
+    permettant d’observer l’exposant de capacité."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o9/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o9/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o9/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o9/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Capacité projective au-delà des expanseurs : graphes de relaxation à croissance
+    polynomiale et exposant de capacité"/>
+  <meta property="og:description"
+    content="O9 résout l’obstruction géométrique identifiée en O8 en remplaçant les expanseurs LPS
+    par des graphes de Cayley de Heisenberg, montrant qu’une fenêtre en sommets O(q^2) s’étend
+    désormais sur une profondeur BFS polynomiale."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o9/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o9/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Capacité projective au-delà des expanseurs : graphes de relaxation à croissance
+          polynomiale et exposant de capacité</h1>
+        <p class="subtitle">
+          Pourquoi l’échec de O8 était purement géométrique : le remplacement des expanseurs LPS
+          par des graphes de Cayley de Heisenberg restaure une fenêtre BFS scalable et rend
+          l’extraction de l’exposant observable en principe.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19154517" rel="noopener">
+        Lire le preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après l’obstruction
+        géométrique identifiée dans <a href="../o8">O8</a>. Alors que <a href="../o8">O8</a>
+        montrait que le fingerprint de chemins à trois étapes échappe à l’obstruction de dimension
+        finie établie dans <a href="../o6">O6</a>, il établissait aussi que la croissance
+        exponentielle des couches sur les graphes LPS comprime toute la fenêtre de pré-saturation
+        en seulement $O(\log q)$ étapes BFS.
+      </p>
+      <p>
+        O9 réalise l’étape suivante : il remplace les expanseurs LPS par une famille de
+        <strong>graphes de Cayley à croissance polynomiale</strong>, en particulier le groupe de
+        Heisenberg discret $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, et y transporte le
+        fingerprint de O8 et le formalisme de capacité projective introduit en <a href="../o7">O7</a>.
+      </p>
+      <p>
+        Le résultat est décisif. L’obstruction mise en évidence en O8 est purement géométrique. Sur
+        les graphes de Heisenberg, une fenêtre en sommets $O(q^2)$ s’étend sur au moins
+        $\Omega(q^{1/2})$ étapes BFS, et en pratique $\Theta(q)$ étapes, fournissant un nombre
+        polynomial de points observables au lieu d’un nombre logarithmique.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue structurée. L’analyse technique complète
+        est présentée dans le preprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Capacité projective, croissance polynomiale, obstruction géométrique</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">
+            Graphes de Cayley de Heisenberg, croissance des boules, profondeur BFS,
+            fingerprints de chemins, compression de fenêtre et observabilité de la capacité
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Théorème de compression LPS :</strong> preuve qu’une fenêtre en sommets $O(q^2)$
+        sur les graphes LPS est parcourue en seulement $O(\log q)$ étapes BFS.
+      </li>
+      <li>
+        <strong>Remplacement à croissance polynomiale :</strong> introduction des graphes de
+        Cayley du groupe de Heisenberg comme cadre approprié pour l’extraction de l’exposant.
+      </li>
+      <li>
+        <strong>Théorème de profondeur de fenêtre :</strong> une fenêtre $O(q^2)$ correspond à
+        $\Omega(q^{1/2})$ étapes BFS, avec un diamètre effectif $\Theta(q)$.
+      </li>
+      <li>
+        <strong>Séparation géométrie/dynamique :</strong> la géométrie contrôle l’observabilité,
+        tandis que la dynamique projective reste universelle.
+      </li>
+      <li>
+        <strong>Validation numérique :</strong> BFS exact confirmant un diamètre $\Theta(q)$, une
+        convergence de $\hat{D}$ vers $4$, et des gains de fenêtre jusqu’à $5.4\times$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O9 montre que l’échec observé en <a href="../o8">O8</a> n’était pas dû à un manque de
+      complexité du fingerprint. Le fingerprint à trois étapes était déjà suffisant. Ce qui
+      échouait, c’était la géométrie du graphe utilisé pour l’observer.
+    </p>
+    <ul>
+      <li><strong>O6</strong> exclut les fingerprints de dimension finie.</li>
+      <li><strong>O8</strong> révèle une obstruction géométrique (croissance exponentielle).</li>
+      <li><strong>O9</strong> supprime cette obstruction via une géométrie polynomiale.</li>
+      <li>
+        <strong>Conclusion :</strong> le problème restant est l’extraction effective et la dérivation
+        de l’exposant $\delta$.
+      </li>
+    </ul>
+    <p>
+      Dans ce cadre, $\delta$ est une propriété de la dynamique projective elle-même, indépendante
+      du graphe, dès lors que celui-ci n’entrave pas son observation.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O9 prolonge directement <a href="../o8">O8</a>. Après l’admissibilité spectrale, la capacité,
+      la rigidité et la stratigraphie, <a href="../o1">O1</a> restaure l’ordre, <a href="../o3">O3</a>
+      amplifie la hiérarchie, <a href="../o4">O4</a> contraint l’exposant, <a href="../o5">O5</a>
+      localise l’obstruction, <a href="../o6">O6</a> établit le no-go matriciel,
+      <a href="../o7">O7</a> reformule en capacité, et <a href="../o8">O8</a> identifie
+      l’obstruction géométrique.
+    </p>
+    <p>
+      O9 résout cette obstruction et prépare <a href="../o10">O10</a>, dédié à l’extraction et à
+      la dérivation de $\delta$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19154517" rel="noopener">
+        <i lang="en">Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and
+          the Capacity Exponent</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

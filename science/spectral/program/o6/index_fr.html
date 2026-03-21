@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Redondance dynamique au niveau matriciel et exposant de cascade | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse au niveau matriciel montrant qu’aucune représentation finie de dimension fixe ne peut expliquer l’exposant de cascade, établissant une obstruction structurelle et identifiant comme nécessaire une redondance dynamique croissant avec la profondeur."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o6/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o6/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o6/index_de.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o6/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Redondance dynamique au niveau matriciel et exposant de cascade :
+    une obstruction de théorie des représentations"/>
+  <meta property="og:description"
+    content="Une analyse spectrale et matricielle démontrant que la saturation à profondeur bornée empêche tout encodage de dimension fixe de générer l’exposant de cascade, ce qui pointe vers des mécanismes de redondance à croissance dynamique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spqectral/program/o6/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o6/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Redondance dynamique au niveau matriciel et exposant de cascade</h1>
+        <p class="subtitle">
+          Pourquoi aucune représentation finie de dimension fixe ne peut produire l’exposant de
+          cascade et pourquoi le mécanisme manquant doit impliquer une redondance dynamique croissant
+          avec la profondeur.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme spectral de hiérarchie en s’attaquant au mécanisme
+        identifié mais non résolu dans O5 : la redondance admissible au niveau matriciel comme
+        origine possible du petit exposant de cascade.
+      </p>
+      <p>
+        La question clé est de savoir si un encodage suffisamment raffiné au niveau des transitions
+        peut produire un long régime de pré-saturation dans lequel la frontière admissible décroît
+        comme une loi de puissance. O6 fournit la première construction explicite d’une telle
+        empreinte au niveau matriciel et la teste sur des graphes LPS.
+      </p>
+      <p>
+        Le résultat principal est négatif mais décisif. Bien que des empreintes matricielles puissent
+        produire des échelles de saturation dépendant de $q$, elles exhibent encore une profondeur
+        d’exploration bornée qui empêche l’émergence de tout véritable régime en loi de puissance.
+        Cela révèle une obstruction structurelle : l’exposant de cascade ne peut provenir d’aucune
+        représentation finie de dimension fixe.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
+        complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Exposant de cascade, redondance au niveau matriciel et obstruction représentationnelle</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes matricielles,
+            dynamique de redondance et saturation à profondeur bornée</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Première empreinte admissible au niveau matriciel :</strong> introduction d’une
+        empreinte de transition fondée sur Steinberg agissant sur $\mathbb{P}^1(\mathbb{F}_q)$
+        avec une dimension ambiante en $O(q^2)$.
+      </li>
+      <li>
+        <strong>Saturation structurelle en $q$ :</strong> l’échelle de saturation admissible croît
+        avec $q$, avec $|S^*|/|G| \to 0$, ce qui identifie la bonne classe de mécanismes
+        candidats.
+      </li>
+      <li>
+        <strong>Saturation à profondeur bornée :</strong> malgré la dimension croissante, la
+        saturation se produit à une profondeur BFS fixe indépendante de $q$, empêchant tout régime
+        étendu de pré-saturation.
+      </li>
+      <li>
+        <strong>Théorème d’impossibilité :</strong> toute empreinte fondée sur une représentation
+        finie de dimension fixe présente une saturation à profondeur bornée et ne peut générer
+        une décroissance en loi de puissance de la frontière admissible.
+      </li>
+      <li>
+        <strong>Séparation des mécanismes :</strong> distinction entre saturation
+        représentationnelle (pilotée par la dimension) et saturation véritablement dynamique
+        (pilotée par la profondeur).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’article montre qu’augmenter la dimension de la représentation ne suffit pas à expliquer
+      l’exposant de cascade. Même au niveau matriciel, un encodage de dimension fixe n’explore
+      qu’un nombre borné de directions admissibles indépendantes.
+    </p>
+    <ul>
+      <li>
+        <strong>Les mécanismes au niveau des sommets</strong> échouent à cause d’une saturation
+        représentationnelle trop précoce.
+      </li>
+      <li>
+        <strong>Les empreintes au niveau matriciel</strong> améliorent la résolution structurelle
+        mais saturent encore à profondeur bornée.
+      </li>
+      <li>
+        <strong>Les encodages de dimension fixe</strong> ne peuvent soutenir un régime assez long
+        pour produire $R_n \sim p(n)^{-\alpha}$.
+      </li>
+      <li>
+        <strong>La profondeur, et non la dimension</strong>, est l’ingrédient manquant essentiel.
+      </li>
+    </ul>
+    <p>
+      L’exposant de cascade $\beta$ ne peut donc pas être interprété comme une quantité statique
+      de théorie des représentations.
+      Il doit résulter d’un processus dynamique dans lequel l’espace effectif des directions
+      admissibles croît le long de la cascade.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O6 suit la localisation structurelle obtenue dans O5. L’admissibilité spectrale, la capacité,
+      la rigidité et la stratigraphie fixent l’ossature spectrale de la théorie. O1 restaure l’ordre
+      par la dynamique projective, O3 amplifie la hiérarchie par croissance de la valence, et O5
+      isole la redondance au niveau matriciel comme mécanisme pertinent.
+    </p>
+    <p>
+      Le présent article accomplit l’étape nécessaire suivante : il démontre que même les mécanismes
+      au niveau matriciel échouent s’ils restent de dimension finie. Cela établit une obstruction
+      générale et force l’étape suivante du programme vers des constructions à croissance dynamique.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener">
+        <i lang="en">Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent β</i>.
+        Prépublication.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

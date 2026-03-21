@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rigidité de Gram spectrale et contraintes de générateurs neutres dans les sous-groupes de SU(2) | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse des contraintes de générateurs neutres montrant comment la rigidité de Gram restreint les ensembles de Cayley admissibles et sélectionne des configurations structurellement stables."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/rigidity/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/rigidity/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/rigidity/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/rigidity/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Rigidité de Gram spectrale et contraintes de générateurs neutres dans les sous-groupes de SU(2)"/>
+  <meta property="og:description"
+    content="Une analyse structurelle montrant comment les contraintes de neutralité imposent une rigidité géométrique aux graphes de Cayley admissibles."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/rigidity/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/rigidity/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Rigidité de Gram spectrale et contraintes de générateurs neutres dans les sous-groupes de SU(2)</h1>
+        <p class="subtitle">
+          Comment les contraintes de neutralité imposent une rigidité géométrique aux ensembles
+          générateurs et restreignent les graphes de Cayley admissibles.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18969867" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article développe la troisième étape du programme d’admissibilité spectrale. Après avoir
+        identifié les secteurs localement admissibles et les groupes globalement préférés, la question
+        devient : quels ensembles générateurs peuvent effectivement réaliser ces structures sous
+        contrainte de flux borné ?
+      </p>
+      <p>
+        Le papier montre que l’admissibilité impose des contraintes de neutralité sur les générateurs,
+        exprimées par l’annulation de certaines projections dans les secteurs de représentation.
+        Ces contraintes se traduisent en conditions géométriques sur la matrice de Gram associée.
+      </p>
+      <p>
+        Le résultat central est un phénomène de rigidité : une fois la neutralité imposée, l’espace des
+        ensembles générateurs admissibles se réduit à un nombre discret de configurations. De nombreuses
+        constructions de Cayley combinatoirement valides sont ainsi éliminées.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
+        complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Générateurs neutres et rigidité de Gram</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Sous-groupes de SU(2), graphes de Cayley, géométrie des générateurs</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Contraintes de neutralité :</strong> conditions d’annulation des projections sur
+        certains secteurs de représentation.
+      </li>
+      <li>
+        <strong>Formulation de Gram :</strong> traduction en contraintes algébriques sur la matrice
+        de Gram des générateurs.
+      </li>
+      <li>
+        <strong>Théorème de rigidité :</strong> les configurations admissibles forment un ensemble
+        discret.
+      </li>
+      <li>
+        <strong>Élimination structurelle :</strong> exclusion de nombreuses configurations pourtant
+        valides combinatoirement.
+      </li>
+      <li>
+        <strong>Compatibilité binaire :</strong> les solutions restantes s’alignent avec la chaîne
+        polyédrique binaire.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’admissibilité n’est pas seulement spectrale mais aussi géométrique : elle contraint la manière
+      dont la structure relationnelle peut être générée.
+    </p>
+    <ul>
+      <li>
+        <strong>Neutralité :</strong> suppression des directions dynamiquement instables.
+      </li>
+      <li>
+        <strong>Rigidité de Gram :</strong> cohérence géométrique imposée aux générateurs.
+      </li>
+      <li>
+        <strong>Solutions discrètes :</strong> disparition de la liberté continue.
+      </li>
+    </ul>
+    <p>
+      Le résultat est une forte réduction de l’espace des structures admissibles, qui deviennent des
+      objets hautement contraints.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      Cet article suit la capacité spectrale en abordant la question de la réalisabilité : étant donné
+      un groupe privilégié, quels ensembles générateurs peuvent effectivement l’implémenter ?
+    </p>
+    <p>
+      Il montre que la neutralité impose une rigidité forte, préparant l’étape suivante du programme :
+      la stratigraphie spectrale et l’émergence des générations.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.18969867" rel="noopener">
+        <i>Spectral Gram Rigidity and Neutral Generator Constraints in SU(2) Subgroups</i>.
+        Prépublication, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence
+      <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } },
+  svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

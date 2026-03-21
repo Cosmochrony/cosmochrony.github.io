@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dynamique de résolution projective sur graphes de relaxation à valence variable | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse de graphes de relaxation à valence variable montrant comment la contraction du support restaure la dynamique du seuil projectif et l’ordre des générations spectrales."/>
+  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o1/index_it.html"/>
+  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o1/index_es.html"/>
+  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o1/index_de.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o1/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Dynamique de résolution projective sur graphes de relaxation à valence variable"/>
+  <meta property="og:description"
+    content="Une analyse spectrale montrant comment la valence variable restaure une dynamique projective non triviale et corrige l’inversion d’ordre à valence fixe."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Dynamique de résolution projective sur graphes de relaxation à valence variable</h1>
+        <p class="subtitle">
+          Comment la croissance de la valence relationnelle restaure la dynamique projective et corrige
+          l’inversion à valence fixe.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19076319" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article étend l’analyse de la relaxation spectrale en supprimant l’hypothèse de valence
+        fixe imposée aux graphes de relaxation de Lubotzky--Phillips--Sarnak. La question centrale
+        est de savoir si la saturation asymptotique du seuil projectif
+        $\Lambda_{\mathrm{proj}}(n)$ est une propriété structurelle du substrat ou simplement un
+        artefact dû au maintien d’une valence constante le long de la cascade.
+      </p>
+      <p>
+        La réponse est claire : dès que la valence effective est autorisée à croître avec la profondeur
+        de la cascade, le support spectral de Kesten--McKay se contracte vers son point médian. Cela
+        produit une sortie ordonnée des niveaux propres ADE et restaure un régime projectif
+        véritablement dynamique.
+      </p>
+      <p>
+        Dans ce cadre à valence variable, l’inversion observée à valence fixe dans l’article précédent
+        est corrigée par la seule géométrie du support. Le résultat est un ordre hiérarchique restauré
+        sans introduire d’hypothèse dynamique supplémentaire, au-delà de la croissance de la valence
+        relationnelle le long de la cascade.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
+        complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Valence variable, contraction du support et restauration de l’ordre</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Familles de graphes de Ramanujan et dynamique du seuil projectif</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Régime à valence variable :</strong> l’article étudie des suites de relaxation LPS dans
+        lesquelles le paramètre de valence effective croît le long de la cascade, $p(n)\to\infty$.
+      </li>
+      <li>
+        <strong>Contraction de Kesten--McKay :</strong> lorsque $p(n)$ augmente, le support spectral
+        se resserre vers $\lambda=1$, remplaçant le plateau de saturation à valence fixe par une
+        fenêtre spectrale mobile.
+      </li>
+      <li>
+        <strong>Sortie ordonnée ADE :</strong> les niveaux spectraux ADE quittent le support selon un
+        ordre géométrique fixé par leur distance au point médian.
+      </li>
+      <li>
+        <strong>Dynamique projective restaurée :</strong> la dynamique de borne inférieure de
+        $\Lambda_{\mathrm{proj}}(n)$ redevient non triviale dès que la valence est autorisée à varier.
+      </li>
+      <li>
+        <strong>Correction de l’ordre :</strong> l’inversion à valence fixe disparaît et l’ordre des
+        masses effectives est restauré par la seule géométrie de sortie du support.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’article montre que la principale défaillance du modèle de relaxation à valence fixe n’était
+      pas un défaut de la stratigraphie spectrale, mais un défaut du régime de graphes utilisé pour
+      réaliser la cascade de relaxation.
+    </p>
+    <ul>
+      <li>
+        <strong>La structure de représentation</strong> continue de déterminer les niveaux ADE discrets
+        accessibles par stratigraphie spectrale.
+      </li>
+      <li>
+        <strong>La géométrie du support</strong> détermine désormais à quel moment ces niveaux cessent
+        de rester dans la fenêtre spectrale admissible.
+      </li>
+      <li>
+        <strong>La valence relationnelle variable</strong> constitue l’ingrédient structurel minimal
+        nécessaire pour restaurer une dynamique de seuil non statique.
+      </li>
+    </ul>
+    <p>
+      Dans cette perspective, O1 est l’article correctif de <em>Spectral Relaxation</em> : il montre
+      que le seuil asymptotiquement statique n’était pas fondamental et qu’une cascade à valence
+      croissante permet de retrouver naturellement l’ordre physique attendu des générations.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O1 découle directement de la limitation identifiée dans <em>Spectral Relaxation</em>.
+      L’admissibilité spectrale détermine quels secteurs peuvent survivre sous flux borné, la
+      stratigraphie spectrale détermine la structure discrète des niveaux, et la relaxation spectrale
+      a montré qu’un régime expanseur à valence fixe ne peut produire une hiérarchie viable.
+    </p>
+    <p>
+      Le présent article supprime cet obstacle. Il établit que permettre à la valence relationnelle de
+      croître le long de la cascade restaure une véritable dynamique projective ainsi qu’un ordre
+      correct des événements de stabilisation. Le problème ouvert restant n’est plus le signe de la
+      hiérarchie, mais son amplitude quantitative.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19076319" rel="noopener">
+        <i lang="en">Projective Resolution Dynamics on Variable-Valence Relaxation Graphs</i>.
+        Prépublication, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

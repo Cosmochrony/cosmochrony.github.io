@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Saturation de la résolution projective et graphes de relaxation | Cosmochrony</title>
+  <meta name="description"
+    content="Analyse de la saturation asymptotique de la résolution projective sur des graphes de relaxation expanseurs et de ses conséquences pour la hiérarchie de masse spectrale."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/relaxation/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/relaxation/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/relaxation/index_de.html"/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/relaxation/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Saturation de la résolution projective et graphes de relaxation"/>
+  <meta property="og:description"
+    content="Une analyse spectrale montrant comment des seuils projectifs statiques limitent l’amplification des hiérarchies et motivent une extension dynamique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/relaxation/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/relaxation/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Saturation de la résolution projective et graphes de relaxation</h1>
+        <p class="subtitle">
+          Pourquoi des seuils expanseurs statiques ne suffisent pas à générer de grandes hiérarchies de masse.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19056975" rel="noopener">
+        Lire le préprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article explore l’aspect dynamique de la stratigraphie spectrale : comment le seuil
+        projectif $\Lambda_{\mathrm{proj}}$ évolue le long de la cascade de relaxation, et si cette
+        évolution peut amplifier de faibles séparations spectrales en hiérarchies de masse
+        physiquement pertinentes.
+      </p>
+      <p>
+        L’analyse dérive la résolution projective à partir des propriétés globales de cohérence du
+        graphe de relaxation. Dans les familles expanseuses à saturation spectrale-isopérimétrique,
+        l’échelle d’admissibilité est contrôlée par la connectivité algébrique du graphe lui-même.
+      </p>
+      <p>
+        Appliqué à la famille de graphes de Lubotzky--Phillips--Sarnak, ce cadre montre que, à
+        premier fixé $p$, le gap spectral converge et le seuil projectif devient asymptotiquement
+        statique. Dans ce régime, la hiérarchie obtenue est trop faible et l’ordre des niveaux est
+        incorrect.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique
+        complète est présentée dans le préprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Seuils projectifs dynamiques et amplification des hiérarchies</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Théorie spectrale des graphes et dynamique de relaxation</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Seuil projectif dérivé :</strong> la résolution projective est reliée à la capacité
+        isopérimétrique du graphe, avec $\Lambda_{\mathrm{proj}} \asymp h(G)^2$.
+      </li>
+      <li>
+        <strong>Réduction expanseur :</strong> pour les expanseurs saturés spectralement,
+        $\Lambda_{\mathrm{proj}} \asymp \lambda_2$.
+      </li>
+      <li>
+        <strong>Modèle LPS :</strong> à $p$ fixé, la connectivité algébrique tend vers une constante,
+        rendant le seuil asymptotiquement statique.
+      </li>
+      <li>
+        <strong>Résultat numérique négatif :</strong> le mécanisme produit des hiérarchies d’ordre 1
+        et un mauvais ordre des niveaux.
+      </li>
+      <li>
+        <strong>Diagnostic structurel :</strong> l’absence de seuil dynamique
+        $\Lambda_{\mathrm{proj}}(n)$ empêche l’émergence de grandes hiérarchies.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’article clarifie quelle partie du problème des hiérarchies est déjà résolue et laquelle
+      nécessite encore un mécanisme dynamique.
+    </p>
+    <ul>
+      <li>
+        <strong>Structure de représentation :</strong> fixe les niveaux spectraux disponibles.
+      </li>
+      <li>
+        <strong>Cohérence du graphe :</strong> détermine le seuil projectif d’accessibilité.
+      </li>
+      <li>
+        <strong>Seuils statiques :</strong> expliquent l’échec de l’amplification des hiérarchies.
+      </li>
+    </ul>
+    <p>
+      Dans cette perspective, ce papier est un diagnostic : il montre pourquoi un seuil statique ne
+      suffit pas et pourquoi une dynamique $\Lambda_{\mathrm{proj}}(n)$ est nécessaire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      La relaxation spectrale étend le programme en introduisant le lien dynamique entre secteurs
+      admissibles et hiérarchies observées. L’admissibilité sélectionne les secteurs, la
+      stratigraphie structure les niveaux.
+    </p>
+    <p>
+      Ce travail montre que la cascade seule ne suffit pas en régime statique. Un seuil projectif
+      dynamique reste l’élément clé manquant.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19056975" rel="noopener">
+        <i lang="en">Asymptotic Saturation of Projective Resolution: Expander Relaxation Graphs</i>.
+        Prépublication, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence
+      <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } },
+  svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

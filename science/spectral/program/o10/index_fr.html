@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dynamique de capacité à croissance polynomiale à grand q : confirmation de la croissance des boules,
+    décroissance de capacité et feuille de route de la décomposition de Weil | Cosmochrony</title>
+  <meta name="description"
+    content="O10 réalise le premier calcul à grand q sur les graphes de Cayley de Heisenberg, confirme la croissance des boules, la déplétion projective et la loi d’état, et montre que les fingerprints TensorSketch denses constituent l’obstruction algorithmique finale à l’extraction de l’exposant de capacité."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Dynamique de capacité à croissance polynomiale à grand q : confirmation de la croissance des boules, décroissance de capacité et feuille de route de la décomposition de Weil"/>
+  <meta property="og:description"
+    content="O10 confirme à q = 101 que les graphes de Cayley de Heisenberg présentent le signal de capacité projective attendu à grande échelle, mais montre que les fingerprints TensorSketch denses nécessitent D >> q^4, rendant l’obstruction restante algorithmique plutôt que géométrique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o10/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/o10/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Dynamique de capacité à croissance polynomiale à grand q : confirmation de la croissance des boules,
+          décroissance de capacité et feuille de route de la décomposition de Weil</h1>
+        <p class="subtitle">
+          Le premier calcul à grand q sur les graphes de Cayley de Heisenberg confirme la déplétion projective et la loi
+          d’état <a href="../o7/index_fr.html">O7</a>, tout en montrant que les fingerprints TensorSketch denses
+          constituent l’obstruction algorithmique finale à une extraction fiable de l’exposant de capacité.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19161074">Lire la prépublication</a> <a
+      class="btn subtle"
+      href="/science/spectral/program/"> Retour au programme d’admissibilité spectrale </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après la réparation géométrique établie dans <a
+        href="../o9">O9</a>. Alors que <a href="../o9">O9</a> a démontré que les graphes de Cayley de Heisenberg à
+        croissance polynomiale suppriment l’obstruction de compression des coquilles identifiée dans <a
+        href="../o8">O8</a>, il restait ouvert le premier test réel à grande échelle du comportement de la capacité et
+        l’extraction de l’exposant $\delta$.
+      </p>
+      <p>
+        O10 réalise cette étape suivante au premier nombre premier de grande taille accessible computationnellement, $q
+        = 101$, sur le graphe de Cayley de $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, en utilisant le fingerprint à
+        chemins de permutation à trois pas avec une approximation TensorSketch dense.
+      </p>
+      <p>
+        Le résultat est mitigé, mais structurellement décisif. Trois signaux positifs sont confirmés à grande échelle :
+        la croissance des boules reste cohérente avec la loi de Bass–Guivarc’h, la capacité moyenne décroît
+        monotoniquement sur une fenêtre pré-saturation visible, et la loi d’état <a href="../o7/index_fr.html">O7</a>
+        reste valide. Le résultat négatif est tout aussi important : l’ajustement log-log ne fournit pas encore une
+        valeur fiable de $\delta$, non pas parce que le cadre de Heisenberg échoue, mais parce que le TensorSketch dense
+        reste mal aligné avec la structure irréductible du fingerprint.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique complète,
+        incluant le goulot d’étranglement du TensorSketch et la feuille de route des blocs de Weil, est présentée dans
+        le preprint ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Capacité projective, graphes de Heisenberg, obstruction algorithmique</div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Calcul à grand q, croissance polynomiale des boules, décroissance de capacité, loi d’état, goulot
+            d’étranglement TensorSketch et feuille de route des blocs de Weil
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Premier calcul à grand q :</strong> implémentation du fingerprint de capacité à chemins de permutation à
+        trois pas sur $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ à $q = 101$.
+      </li>
+      <li>
+        <strong>Confirmation de la croissance des boules :</strong> récupération numérique de l’expansion polynomiale
+        avec un exposant mesuré $\hat{D} = 3.05$, poursuivant la convergence vers la dimension homogène
+        $D_{\mathrm{hom}} = 4$.
+      </li>
+      <li>
+        <strong>Signal direct de déplétion projective :</strong> décroissance monotone de la capacité moyenne de
+        $23.5\%$ sur une fenêtre pré-saturation de $n^* = 13$ pas BFS.
+      </li>
+      <li>
+        <strong>Validation de la loi d’état à grande échelle :</strong> confirmation que $R_n^{(3)} \approx
+        \Phi(\bar{\eta}_n)$ reste valide à $q = 101$, étendant la vérification de O9 au-delà du régime de petit q.
+      </li>
+      <li>
+        <strong>Diagnostic d’obstruction algorithmique :</strong> démonstration que l’extraction fiable d’une loi de
+        puissance dans $|B_n| \leq q^2$ nécessiterait une dimension de sketch dense $D \gg q^4$, ce qui est
+        computationnellement impraticable.
+      </li>
+      <li>
+        <strong>Feuille de route des blocs de Weil :</strong> identification de la décomposition de
+        $\rho_{\mathrm{aff}}^{\otimes 3}$ en blocs de Weil de dimension $O(q)$ comme la voie correcte vers une
+        extraction tractable de $\delta$ dans l’étape suivante du programme.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O10 montre que le remplacement par Heisenberg introduit dans <a href="../o9">O9</a> n’est pas seulement
+      géométriquement pertinent, mais physiquement productif : à grande échelle, le signal projectif est bien présent.
+      La capacité diminue, la loi d’état subsiste, et le fond à croissance polynomiale se comporte comme attendu.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8/index_fr.html"><strong>O8</strong></a> a montré que la croissance exponentielle des coquilles sur
+        les graphes LPS compresse toute la fenêtre observable.
+      </li>
+      <li>
+        <a href="../o8/index_fr.html"><strong>O9</strong></a> a remplacé LPS par des graphes de Heisenberg à croissance
+        polynomiale, restaurant une fenêtre BFS extensible en principe.
+      </li>
+      <li>
+        <strong>O10</strong> confirme que cette fenêtre restaurée porte un signal projectif réel à grande échelle, mais
+        révèle aussi que le TensorSketch dense est une représentation computationnelle inadaptée pour extraire la pente
+        asymptotique.
+      </li>
+      <li>
+        <strong>Conclusion :</strong> l’obstruction restante n’est plus géométrique. Elle est représentationnelle et
+        algorithmique.
+      </li>
+    </ul>
+    <p>
+      Dans ce cadre, l’exposant de capacité $\delta$ reste une propriété de la dynamique projective sous-jacente plutôt
+      que d’une famille de graphes particulière. Mais sa mesure nécessite non seulement une géométrie non obstructive,
+      comme établi dans O9, mais aussi une représentation du fingerprint alignée avec la structure en blocs
+      irréductibles de l’action de Heisenberg.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O10 suit directement <a href="../o9/index_fr.html">O9</a>. L’admissibilité spectrale, la capacité, la rigidité et
+      la stratigraphie définissent l’ossature spectrale de la théorie. <a href="../o1/index_fr.html">O1</a> restaure
+      l’ordre via la dynamique projective, <a href="../o3/index_fr.html">O3</a> amplifie la hiérarchie via la croissance
+      de valence, <a
+      href="../o4/index_fr.html">O4</a> contraint l’exposant de cascade à partir du flux relationnel borné, <a
+      href="../o5/index_fr.html">O5</a> localise l’échec des mécanismes au niveau des sommets, <a href="../o6">O6</a>
+      établit le no-go pour les fingerprints de dimension finie, <a href="../o7/index_fr.html">O7</a> reformule
+      l’observable en termes de capacité projective, <a href="../o8">O8</a> identifie la compression géométrique sur les
+      graphes LPS, et <a href="../o9/index_fr.html">O9</a> supprime cette compression en passant à la géométrie de
+      Heisenberg à croissance polynomiale.
+    </p>
+    <p>
+      Le présent article réalise le premier test à grande échelle dans ce cadre réparé. Il confirme que le signal
+      projectif est mesurable, isole le dernier goulot d’étranglement lié au TensorSketch dense, et transmet à <a
+      href="../o11">O11</a> l’extraction de $\delta$ dans une représentation adaptée basée sur les blocs de Weil.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19161074" rel="noopener"> <i lang="en">Polynomial-Growth
+      Capacity Dynamics at Large q: Ball Growth Confirmation, Capacity Decay, and the Weil Decomposition Roadmap</i>.
+      Preprint. </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

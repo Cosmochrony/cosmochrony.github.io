@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Polynomial-Growth Capacity Dynamics at Large q: Ball Growth Confirmation, Capacity Decay, and the Weil
+    Decomposition Roadmap | Cosmochrony</title>
+  <meta name="description"
+    content="O10 performs the first large-q computation on Heisenberg Cayley graphs, confirms ball
+    growth, projective depletion, and the state law, and shows that dense TensorSketch
+    fingerprints remain the final algorithmic obstruction to extracting the capacity exponent."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o10/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Polynomial-Growth Capacity Dynamics at Large q: Ball Growth Confirmation, Capacity
+    Decay, and the Weil Decomposition Roadmap"/>
+  <meta property="og:description"
+    content="O10 confirms at q = 101 that Heisenberg Cayley graphs exhibit the expected large-q
+    projective-capacity signal, but shows that dense TensorSketch fingerprints require
+    D >> q^4, making the remaining obstruction algorithmic rather than geometric."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o10/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral/program/o10/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Polynomial-Growth Capacity Dynamics at Large q: Ball Growth Confirmation, Capacity Decay, and the Weil
+          Decomposition Roadmap</h1>
+        <p class="subtitle">
+          The first large-q computation on Heisenberg Cayley graphs confirms projective depletion and the <a
+          href="../o7">O7</a> state law, while showing that dense TensorSketch fingerprints remain the final algorithmic
+          obstruction to a reliable extraction of the capacity exponent.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19161074"> Read the preprint </a> <a
+      class="btn subtle" href="/science/spectral/program/"> Back to Spectral Admissibility Programme </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after the geometric repair established in <a
+        href="../o9">O9</a>. While <a href="../o9">O9</a> proved that polynomial-growth Heisenberg Cayley graphs remove
+        the shell-compression obstruction identified in <a href="../o8">O8</a>, it left open the first actual large-q
+        test of the capacity observable and the extraction of the exponent $\delta$.
+      </p>
+      <p>
+        O10 performs that next step at the first computationally accessible large prime, $q = 101$, on the Cayley graph
+        of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ using the $k=3$ permutation-path fingerprint together with a dense
+        TensorSketch approximation.
+      </p>
+      <p>
+        The result is mixed but structurally decisive. Three positive signals are confirmed at large scale: ball growth
+        remains consistent with the Bass--Guivarc'h law, the mean capacity decays monotonically over a visible
+        pre-saturation window, and the <a href="../o7">O7</a> state law remains valid. The negative result is equally
+        important: the log-log fit does not yet yield a reliable $\delta$, not because the Heisenberg setting fails, but
+        because the dense TensorSketch remains computationally misaligned with the irreducible structure of the
+        fingerprint.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis,
+        including the TensorSketch bottleneck and the Weil-block roadmap, is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Projective capacity, Heisenberg graphs, algorithmic obstruction</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            Large-q computation, polynomial ball growth, capacity decay, state law, TensorSketch bottleneck, and
+            Weil-block roadmap
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>First large-q computation:</strong> implementation of the $k=3$ permutation-path capacity fingerprint on
+        $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ at $q = 101$.
+      </li>
+      <li>
+        <strong>Ball-growth confirmation:</strong> numerical recovery of polynomial expansion with measured exponent
+        $\hat{D} = 3.05$, continuing the convergence toward the homogeneous dimension $D_{\mathrm{hom}} = 4$.
+      </li>
+      <li>
+        <strong>Direct projective depletion signal:</strong> monotone decay of the mean capacity by $23.5\%$ over a
+        pre-saturation window of $n^* = 13$ BFS steps.
+      </li>
+      <li>
+        <strong>State-law validation at large scale:</strong> confirmation that $R_n^{(3)} \approx \Phi(\bar{\eta}_n)$
+        still holds at $q = 101$, extending the O9 verification beyond the small-q regime.
+      </li>
+      <li>
+        <strong>Algorithmic obstruction diagnosis:</strong> proof that reliable power-law extraction within $|B_n| \leq
+        q^2$ would require a dense sketch dimension $D \gg q^4$, which is computationally impractical.
+      </li>
+      <li>
+        <strong>Weil-block roadmap:</strong> identification of the decomposition of $\rho_{\mathrm{aff}}^{\otimes 3}$
+        into $O(q)$-dimensional Weil blocks as the correct route toward a tractable extraction of $\delta$ in the next
+        step of the programme.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O10 shows that the Heisenberg replacement introduced in <a href="../o9">O9</a> is not merely geometrically elegant
+      but physically productive: at large $q$, the projective signal is genuinely present. The capacity decreases, the
+      state law survives, and the polynomial-growth background behaves as expected.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8"><strong>O8</strong></a> showed that exponential shell growth on LPS graphs geometrically
+        compresses the entire observable window.
+      </li>
+      <li>
+        <a href="../o9"><strong>O9</strong></a> replaced LPS by polynomial-growth Heisenberg graphs and restored a
+        scalable BFS window in principle.
+      </li>
+      <li>
+        <strong>O10</strong> confirms that this restored window carries a real projective signal at large $q$, but also
+        reveals that the dense TensorSketch is the wrong computational representation for extracting the asymptotic
+        slope.
+      </li>
+      <li>
+        <strong>Conclusion:</strong> the remaining obstruction is no longer geometric. It is representational and
+        algorithmic.
+      </li>
+    </ul>
+    <p>
+      In this picture, the capacity exponent $\delta$ remains a property of the underlying projective dynamics rather
+      than of a particular graph family. But measuring it requires not only a non-obstructive geometry, as established
+      by O9, but also a fingerprint representation aligned with the irreducible block structure of the Heisenberg
+      action.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O10 follows directly from <a href="../o9">O9</a>. Spectral admissibility, capacity, rigidity, and stratigraphy
+      define the spectral backbone of the theory. <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth, <a href="../o4">O4</a> constrains the cascade
+      exponent from bounded relational flux, <a href="../o5">O5</a> localises the failure of vertex-level mechanisms, <a
+      href="../o6">O6</a> proves the no-go for fixed finite-dimensional fingerprints, <a href="../o7">O7</a>
+      reformulates the observable in terms of projective capacity, <a href="../o8">O8</a> identifies geometric
+      compression on LPS graphs, and <a href="../o9">O9</a> removes that compression by moving to polynomial-growth
+      Heisenberg geometry.
+    </p>
+    <p>
+      The present paper performs the first large-q test in that repaired setting. It confirms that the projective signal
+      is measurable, isolates the final dense-sketch bottleneck, and hands off to <a href="../o11">O11</a> the
+      representation-adapted extraction of $\delta$ through Weil blocks.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19161074" rel="noopener"> <i lang="en">Polynomial-Growth
+      Capacity Dynamics at Large q: Ball Growth Confirmation, Capacity Decay, and the Weil Decomposition Roadmap</i>.
+      Preprint. </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

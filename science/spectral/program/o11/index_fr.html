@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Capacité projective par blocs de Weil sur graphes de Heisenberg :
+    extraction adaptée à la représentation de l’exposant de décroissance | Cosmochrony</title>
+  <meta name="description"
+    content="O11 remplace TensorSketch dense par un proxy bidimensionnel de type Weil sur les graphes
+    de Heisenberg, rétablit un observable adapté à la représentation et permet la première
+    extraction stable d’un exposant de décroissance de la capacité projective à grand q."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_de.html"/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o11/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Capacité projective par blocs de Weil sur graphes de Heisenberg :
+    extraction adaptée à la représentation de l’exposant de décroissance"/>
+  <meta property="og:description"
+    content="O11 introduit un proxy bidimensionnel de type Weil sur les graphes de Heisenberg,
+    met en évidence un régime de décroissance pré-saturation stable et extrait un exposant
+    convergent proche de 3.4 à grand q."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o11/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o11/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Capacité projective par blocs de Weil sur graphes de Heisenberg :
+          extraction adaptée à la représentation de l’exposant de décroissance</h1>
+        <p class="subtitle">
+          O11 remplace le verrou TensorSketch dense identifié en <a href="../o10">O10</a>
+          par un proxy bidimensionnel de type blocs de Weil, permettant la première extraction
+          stable d’un exposant de décroissance de la capacité projective sur graphes de Heisenberg.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19169987">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après le diagnostic
+        algorithmique établi en <a href="../o10">O10</a>. Alors que <a href="../o10">O10</a>
+        confirmait que les graphes de Cayley de Heisenberg à croissance polynomiale
+        restaurent une fenêtre de pré-saturation observable, il montrait également que les
+        fingerprints TensorSketch denses restent mal alignés avec la structure irréductible
+        de la dynamique projective.
+      </p>
+      <p>
+        O11 franchit l’étape suivante en remplaçant ce schéma dense par un proxy adapté à la
+        représentation, inspiré de la décomposition de Weil. La construction repose sur des
+        canaux de Fourier bidimensionnels génériques agissant sur les coordonnées
+        abélianisées $(a,b)$ des triplets d’extrémités dans
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, ainsi que sur un observable de capacité
+        incrémentale par bloc.
+      </p>
+      <p>
+        Le résultat est la première extraction stable à grand $q$ d’un exposant de décroissance
+        dans ce cadre. Pour $q \in \{101,151,211,307\}$, la capacité moyenne par bloc présente
+        une loi de décroissance nette en régime de pré-saturation, une faible variance
+        inter-canaux sur la fenêtre ajustée, et un exposant convergent proche de $3.4$ aux
+        plus grands premiers testés.
+      </p>
+      <div class="note" role="note">
+        <strong>Périmètre.</strong> Cette page propose une vue structurée. L’analyse technique
+        complète, incluant la définition incrémentale, les fenêtres d’ajustement et la relation
+        entre proxy bidimensionnel et projection de Weil exacte, est présentée dans le
+        preprint.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thème</div>
+          <div class="v">Capacité projective, graphes de Heisenberg, proxy de Weil</div>
+        </div>
+        <div class="kv">
+          <div class="k">Contenu</div>
+          <div class="v">
+            Rang incrémental, canaux de Fourier bidimensionnels, fenêtre de décroissance,
+            extraction d’exposant adaptée à la représentation
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Observable adapté à la représentation :</strong> remplacement du TensorSketch
+        dense par un proxy bidimensionnel indexé par des sextuplets génériques
+        $(\tau,\sigma) \in (\mathbb{Z}/q\mathbb{Z})^6$.
+      </li>
+      <li>
+        <strong>Définition incrémentale :</strong> introduction de
+        $\Sigma_n^{(\tau,\sigma)} = \Delta r_n^{(\tau,\sigma)} / |S_n|$,
+        mesurant la nouveauté effective apportée par chaque couche BFS.
+      </li>
+      <li>
+        <strong>Régime de décroissance stable :</strong> observation directe d’une fenêtre
+        log-log monotone sur tous les premiers testés.
+      </li>
+      <li>
+        <strong>Extraction multi-premiers :</strong> exposants
+        $\hat{\delta}_{\mathrm{cap}} = 5.78,\ 4.29,\ 3.33,\ 3.39$,
+        avec convergence à grand $q$.
+      </li>
+      <li>
+        <strong>Qualité des ajustements :</strong> régressions robustes avec $R^2 > 0.94$
+        et $R^2 = 0.987$ à $q = 307$.
+      </li>
+      <li>
+        <strong>Variance contrôlée :</strong> validation de la condition (B2) dans la fenêtre
+        utile, garantissant la cohérence inter-canaux.
+      </li>
+      <li>
+        <strong>Résultat clé :</strong> extraction d’un exposant de décroissance convergent
+        proche de $3.4$ au niveau proxy.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O11 montre que l’obstruction restante identifiée en <a href="../o10">O10</a> ne provient
+      pas du cadre de Heisenberg, mais du choix de représentation du fingerprint. Une fois
+      l’observable aligné avec la structure par blocs de la dynamique, le régime asymptotique
+      devient visible numériquement.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8"><strong>O8</strong></a> : compression géométrique sur graphes LPS.
+      </li>
+      <li>
+        <a href="../o9"><strong>O9</strong></a> : restauration d’une fenêtre via Heisenberg.
+      </li>
+      <li>
+        <a href="../o10"><strong>O10</strong></a> : obstruction algorithmique des sketches
+        denses.
+      </li>
+      <li>
+        <strong>O11</strong> : résolution par proxy adapté à la représentation.
+      </li>
+      <li>
+        <strong>Conclusion :</strong> la fenêtre observable est désormais ouverte à la fois
+        géométriquement et représentationnellement.
+      </li>
+    </ul>
+    <p>
+      L’exposant mesuré caractérise non pas une croissance cumulative, mais la vitesse à
+      laquelle les nouvelles couches BFS deviennent redondantes relativement au sous-espace
+      déjà exploré.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O11 suit directement <a href="../o10">O10</a> et complète la chaîne : O6 (no-go),
+      O7 (capacité), O8 (obstruction géométrique), O9 (réparation), O10 (obstruction
+      algorithmique), O11 (résolution par représentation adaptée).
+    </p>
+    <p>
+      Il constitue la première étape où l’exposant devient effectivement mesurable,
+      ouvrant la voie à une implémentation exacte des blocs de Weil (O12).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19169987">
+        <i>Weil-Block Projective Capacity on Heisenberg Graphs:
+          Representation-Adapted Extraction of the Decay Exponent</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

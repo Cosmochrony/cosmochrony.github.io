@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Weil-Block Projective Capacity on Heisenberg Graphs: Representation-Adapted
+    Extraction of the Decay Exponent | Cosmochrony</title>
+  <meta name="description"
+    content="O11 replaces dense TensorSketch by a bidimensional Weil-block proxy on Heisenberg
+    Cayley graphs, restores a representation-adapted observable, and yields the first stable
+    extraction of a projective-capacity decay exponent at large q."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o11/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Weil-Block Projective Capacity on Heisenberg Graphs: Representation-Adapted
+    Extraction of the Decay Exponent"/>
+  <meta property="og:description"
+    content="O11 introduces a bidimensional Fourier-character Weil-block proxy on Heisenberg
+    graphs, recovers a stable pre-saturation decay regime, and extracts a convergent decay
+    exponent near 3.4 at large q."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o11/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o11/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Weil-Block Projective Capacity on Heisenberg Graphs:
+          Representation-Adapted Extraction of the Decay Exponent</h1>
+        <p class="subtitle">
+          O11 replaces the dense TensorSketch bottleneck identified in <a href="../o10">O10</a>
+          by a bidimensional Fourier-character Weil-block proxy, yielding the first stable
+          extraction of a projective-capacity decay exponent on Heisenberg Cayley graphs.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19161074">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after the algorithmic
+        diagnosis established in <a href="../o10">O10</a>. While <a href="../o10">O10</a>
+        confirmed that polynomial-growth Heisenberg Cayley graphs restore a visible
+        pre-saturation window, it also showed that dense TensorSketch fingerprints remain
+        computationally misaligned with the irreducible structure of the projective dynamics.
+      </p>
+      <p>
+        O11 performs the next step by replacing the dense sketch with a representation-adapted
+        proxy inspired by the Weil decomposition. The construction uses generic bidimensional
+        Fourier-character channels acting on the abelianised $(a,b)$ coordinates of endpoint
+        triples in $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, together with an incremental
+        block-wise capacity observable.
+      </p>
+      <p>
+        The result is the first stable large-$q$ extraction of a decay exponent in this
+        framework. Across $q \in \{101,151,211,307\}$, the mean block capacity exhibits a
+        clear pre-saturation decay law, low inter-channel variance inside the fitted window,
+        and a convergent exponent near $3.4$ at the largest primes tested.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis, including the incremental observable, fitted windows, and the
+        relation between the bidimensional proxy and the exact Weil projection, is presented
+        in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Projective capacity, Heisenberg graphs, Weil-block proxy</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            Incremental rank, bidimensional Fourier-character channels, decay-window fitting,
+            and representation-adapted exponent extraction
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Representation-adapted observable:</strong> replacement of the dense
+        TensorSketch by a bidimensional Fourier-character proxy indexed by generic sextuples
+        $(\tau,\sigma) \in (\mathbb{Z}/q\mathbb{Z})^6$.
+      </li>
+      <li>
+        <strong>Incremental capacity definition:</strong> introduction of the block-wise
+        observable
+        $\Sigma_n^{(\tau,\sigma)} = \Delta r_n^{(\tau,\sigma)} / |S_n|$,
+        which measures the genuinely new proxy directions contributed by shell $S_n$.
+      </li>
+      <li>
+        <strong>Stable pre-saturation decay regime:</strong> direct numerical observation of a
+        monotone log-log decay window on Heisenberg Cayley graphs for all tested primes.
+      </li>
+      <li>
+        <strong>Cross-prime exponent extraction:</strong> fitted decay exponents
+        $\hat{\delta}_{\mathrm{cap}} = 5.78,\ 4.29,\ 3.33,\ 3.39$ for
+        $q = 101,\ 151,\ 211,\ 307$, with convergence at large $q$.
+      </li>
+      <li>
+        <strong>High-quality fits:</strong> robust regressions with $R^2 > 0.94$ for all runs
+        and $R^2 = 0.987$ at $q = 307$, showing that the decay window is structurally clean.
+      </li>
+      <li>
+        <strong>Controlled inter-channel variance:</strong> validation of the O11 condition
+        (B2), showing that generic channels remain coherent throughout the fitted window.
+      </li>
+      <li>
+        <strong>Quantitative outcome:</strong> extraction of a convergent proxy-level decay
+        exponent near $\hat{\delta}_{\mathrm{cap}} \approx 3.4$, together with a precise
+        diagnosis of why this value may still differ from the exact Weil result.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O11 shows that the remaining obstruction isolated in <a href="../o10">O10</a> is not a
+      failure of the Heisenberg setting itself, but of the fingerprint representation used to
+      probe it. Once the observable is aligned with the block structure of the dynamics, the
+      asymptotic regime becomes numerically visible.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8"><strong>O8</strong></a> showed that exponential shell growth on LPS
+        graphs geometrically compresses the observable window.
+      </li>
+      <li>
+        <a href="../o9"><strong>O9</strong></a> replaced LPS by polynomial-growth Heisenberg
+        graphs and restored a scalable BFS window.
+      </li>
+      <li>
+        <a href="../o10"><strong>O10</strong></a> confirmed the large-$q$ signal but proved
+        that dense TensorSketch fingerprints remain algorithmically misaligned.
+      </li>
+      <li>
+        <strong>O11</strong> replaces that dense encoding by a bidimensional Weil-block proxy
+        and recovers a stable decay law for the incremental capacity.
+      </li>
+      <li>
+        <strong>Conclusion:</strong> the observable window is now open both geometrically and
+        representationally, at least at the proxy level.
+      </li>
+    </ul>
+    <p>
+      In this picture, the fitted exponent is not a raw growth rate of cumulative span, but the
+      decay exponent governing how quickly new BFS shells become redundant relative to the proxy
+      subspace already generated. The key signal is therefore a law of diminishing novelty rather
+      than of direct accumulation.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O11 follows directly from <a href="../o10">O10</a>. Spectral admissibility, capacity,
+      rigidity, and stratigraphy define the spectral backbone of the theory.
+      <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth,
+      <a href="../o4">O4</a> constrains the cascade exponent from bounded relational flux,
+      <a href="../o5">O5</a> localises the failure of vertex-level mechanisms,
+      <a href="../o6">O6</a> proves the no-go for fixed finite-dimensional fingerprints,
+      <a href="../o7">O7</a> reformulates the observable in terms of projective capacity,
+      <a href="../o8">O8</a> identifies geometric compression on LPS graphs,
+      <a href="../o9">O9</a> removes that compression by moving to polynomial-growth
+      Heisenberg geometry, and <a href="../o10">O10</a> isolates the final dense-sketch
+      bottleneck at large $q$.
+    </p>
+    <p>
+      The present paper resolves that bottleneck at the proxy level. It shows that a
+      representation-adapted block-wise observable can be implemented efficiently, that the
+      resulting decay window is numerically stable, and that cross-prime fits converge toward a
+      coherent asymptotic exponent. In that sense, O11 is the first step of the programme where
+      the exponent becomes practically measurable rather than only structurally defined.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19161074" rel="noopener">
+        <i lang="en">Weil-Block Projective Capacity on Heisenberg Graphs:
+          Representation-Adapted Extraction of the Decay Exponent</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

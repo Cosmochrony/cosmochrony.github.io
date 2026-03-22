@@ -25,6 +25,7 @@
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o8/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("fr", "/science/spectral/program/o8/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -47,19 +48,15 @@
       <div>
         <h1>Empreintes de chemins à trois pas sur graphes LPS et exposant de croissance de capacité</h1>
         <p class="subtitle">
-          Pourquoi la première empreinte de chemins croissant avec q échappe à l’obstruction O6,
-          mais échoue encore à extraire l’exposant cible sur les graphes LPS en raison d’une
-          compression géométrique induite par la croissance exponentielle des couches.
+          Pourquoi la première empreinte de chemins croissant avec q échappe à l’obstruction O6, mais échoue encore à
+          extraire l’exposant cible sur les graphes LPS en raison d’une compression géométrique induite par la
+          croissance exponentielle des couches.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19151769" rel="noopener">
-        Lire la prépublication
-      </a>
-      <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
-      </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19151769" rel="noopener"> Lire la prépublication </a>
+      <a class="btn subtle" href="/science/spectral/program/"> Retour au programme d’admissibilité spectrale </a>
     </div>
   </div>
 </header>
@@ -68,28 +65,26 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article prolonge le programme d’admissibilité spectrale après la reformulation
-        introduite dans <a href="../o7">O7</a>. Alors que <a href="../o6">O6</a> a démontré qu’aucune
-        empreinte de dimension finie ne peut soutenir le régime en loi de puissance requis pour
-        expliquer l’exposant de cascade, <a href="../o7">O7</a> a identifié l’observable pertinente
-        comme étant la capacité projective discrète $\Sigma_n$.
+        Cet article prolonge le programme d’admissibilité spectrale après la reformulation introduite dans <a
+        href="../o7/index_fr.html">O7</a>. Alors que <a href="../o6/index_fr.html">O6</a> a démontré qu’aucune empreinte
+        de dimension finie ne peut soutenir le régime en loi de puissance requis pour expliquer l’exposant de cascade,
+        <a href="../o7/index_fr.html">O7</a> a identifié l’observable pertinente comme étant la capacité projective
+        discrète $\Sigma_n$.
       </p>
       <p>
-        O8 franchit l’étape suivante : il introduit la première
-        <strong>empreinte de chemins croissant avec q</strong>, basée sur des chemins à trois pas
-        en représentation de permutation de dimension $O(q^3)$, et teste si cela permet d’obtenir
-        une fenêtre de pré-saturation suffisamment longue pour mesurer l’exposant $\delta$.
+        O8 franchit l’étape suivante : il introduit la première <strong>empreinte de chemins croissant avec q</strong>,
+        basée sur des chemins à trois pas en représentation de permutation de dimension $O(q^3)$, et teste si cela
+        permet d’obtenir une fenêtre de pré-saturation suffisamment longue pour mesurer l’exposant $\delta$.
       </p>
       <p>
-        Le résultat est structurellement net. Cette nouvelle empreinte échappe effectivement à
-        l’obstruction algébrique de <a href="../o6">O6</a> et ouvre la première fenêtre de
-        pré-saturation croissant comme $O(q^2)$ en nombre de sommets. Mais sur les graphes LPS,
-        cette fenêtre est comprimée en seulement $O(\log q)$ pas BFS par la croissance
-        exponentielle des couches, ce qui empêche toute extraction fiable de l’exposant.
+        Le résultat est structurellement net. Cette nouvelle empreinte échappe effectivement à l’obstruction algébrique
+        de <a href="../o6/index_fr.html">O6</a> et ouvre la première fenêtre de pré-saturation croissant comme $O(q^2)$
+        en nombre de sommets. Mais sur les graphes LPS, cette fenêtre est comprimée en seulement $O(\log q)$ pas BFS par
+        la croissance exponentielle des couches, ce qui empêche toute extraction fiable de l’exposant.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page propose une vue structurée. L’analyse technique complète
-        est présentée dans le preprint ci-dessus.
+        <strong>Portée.</strong> Cette page propose une vue structurée. L’analyse technique complète est présentée dans
+        le preprint ci-dessus.
       </div>
     </div>
     <aside class="card">
@@ -114,8 +109,8 @@
         <div class="kv">
           <div class="k">Cadre</div>
           <div class="v">
-            Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, représentations de permutation,
-            chemins non rétrogrades, croissance du rang et fenêtres de pré-saturation
+            Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, représentations de permutation, chemins non rétrogrades,
+            croissance du rang et fenêtres de pré-saturation
           </div>
         </div>
       </div>
@@ -126,33 +121,33 @@
     <ul>
       <li>
         <strong>Empreinte de chemins à trois pas :</strong> construction de
-        $\pi_3(\gamma)=\rho_{\mathrm{perm}}(v_1)\otimes\rho_{\mathrm{perm}}(v_2)\otimes
-        \rho_{\mathrm{perm}}(v_3)$ pour des chemins non rétrogrades.
+        $\pi_3(\gamma)=\rho_{\mathrm{perm}}(v_1)\otimes\rho_{\mathrm{perm}}(v_2)\otimes \rho_{\mathrm{perm}}(v_3)$ pour
+        des chemins non rétrogrades.
       </li>
       <li>
-        <strong>Première fenêtre croissant avec q :</strong> mise en évidence d’une fenêtre de
-        pré-saturation en $O(q^2)$ en nombre de sommets.
+        <strong>Première fenêtre croissant avec q :</strong> mise en évidence d’une fenêtre de pré-saturation en
+        $O(q^2)$ en nombre de sommets.
       </li>
       <li>
-        <strong>Échappement au no-go O6 :</strong> démonstration qu’un espace d’état admissible
-        croissant peut dépasser la saturation à profondeur bornée.
+        <strong>Échappement au no-go <a href="../o6/index_fr.html">O6</a> :</strong> démonstration qu’un espace d’état
+        admissible croissant peut dépasser la saturation à profondeur bornée.
       </li>
       <li>
-        <strong>Mécanisme de compression géométrique :</strong> identification du rôle de la
-        croissance exponentielle des couches BFS dans la réduction de la fenêtre observable.
+        <strong>Mécanisme de compression géométrique :</strong> identification du rôle de la croissance exponentielle
+        des couches BFS dans la réduction de la fenêtre observable.
       </li>
       <li>
-        <strong>Nouvelle classe d’obstruction :</strong> mise en évidence d’une limite
-        géométrique indépendante des contraintes de représentation.
+        <strong>Nouvelle classe d’obstruction :</strong> mise en évidence d’une limite géométrique indépendante des
+        contraintes de représentation.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’article montre que lever l’obstruction de <a href="../o6">O6</a> ne suffit pas. Une
-      croissance de l’espace d’états admissibles est nécessaire, mais pas suffisante. Une fois
-      cette condition remplie, la limitation devient géométrique.
+      L’article montre que lever l’obstruction de <a href="../o6/index_fr.html">O6</a> ne suffit pas. Une croissance de
+      l’espace d’états admissibles est nécessaire, mais pas suffisante. Une fois cette condition remplie, la limitation
+      devient géométrique.
     </p>
     <ul>
       <li>
@@ -169,36 +164,32 @@
       </li>
     </ul>
     <p>
-      Le problème devient alors conjoint : il faut à la fois un espace d’états croissant et une
-      géométrie permettant une cascade suffisamment profonde.
+      Le problème devient alors conjoint : il faut à la fois un espace d’états croissant et une géométrie permettant une
+      cascade suffisamment profonde.
     </p>
   </section>
   <section class="card">
     <h2>Position dans le programme Cosmochrony</h2>
     <p>
-      O8 s’inscrit après <a href="../o7">O7</a>. Après les résultats de
-      <a href="../o1">O1</a>, <a href="../o3">O3</a>, <a href="../o4">O4</a>,
-      <a href="../o5">O5</a> et <a href="../o6">O6</a>, ce travail montre que
-      la prochaine étape ne consiste plus seulement à enrichir les empreintes,
-      mais à repenser la géométrie des graphes utilisés.
+      O8 s’inscrit après <a href="../o7/index_fr.html">O7</a>. Après les résultats de <a
+      href="../o1/index_fr.html">O1</a>, <a href="../o3/index_fr.html">O3</a>, <a href="../o4">O4</a>, <a
+      href="../o5/index_fr.html">O5</a> et <a href="../o6/index_fr.html">O6</a>, ce travail montre que la prochaine
+      étape ne consiste plus seulement à enrichir les empreintes, mais à repenser la géométrie des graphes utilisés.
     </p>
   </section>
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19151769" rel="noopener">
-        <i>Three-Step Path Fingerprints on LPS Graphs and the Capacity Growth Exponent</i>.
-        Preprint.
-      </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19151769" rel="noopener"> <i>Three-Step Path Fingerprints on
+      LPS Graphs and the Capacity Growth Exponent</i>. Preprint. </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

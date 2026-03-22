@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and the
-    Capacity Exponent | Cosmochrony</title>
+  <title>Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and the Capacity Exponent |
+    Cosmochrony</title>
   <meta name="description"
     content="A polynomial-growth replacement for LPS graphs showing that the O8 failure was purely
     geometric: Heisenberg Cayley graphs restore a polynomial BFS window for observing the
@@ -30,6 +30,7 @@
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o9/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("en", "/science/spectral/program/o9/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -50,22 +51,16 @@
         </svg>
       </a>
       <div>
-        <h1>Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and the
-          Capacity Exponent</h1>
+        <h1>Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and the Capacity Exponent</h1>
         <p class="subtitle">
-          Why the O8 failure was purely geometric: replacing LPS expanders with polynomial-growth
-          Heisenberg Cayley graphs restores a scalable BFS window and makes exponent extraction
-          observable in principle.
+          Why the <a href="../o8">O8</a> failure was purely geometric: replacing LPS expanders with polynomial-growth
+          Heisenberg Cayley graphs restores a scalable BFS window and makes exponent extraction observable in principle.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19154517" rel="noopener">
-        Read the preprint
-      </a>
-      <a class="btn subtle" href="/science/spectral/program/">
-        Back to Spectral Admissibility Programme
-      </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19154517" rel="noopener"> Read the preprint </a> <a
+      class="btn subtle" href="/science/spectral/program/"> Back to Spectral Admissibility Programme </a>
     </div>
   </div>
 </header>
@@ -74,27 +69,25 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral admissibility programme after the geometric
-        obstruction identified in <a href="../o8">O8</a>. While <a href="../o8">O8</a> showed that
-        the $k=3$ permutation-path fingerprint escapes the fixed finite-dimensional obstruction of
-        <a href="../o6">O6</a>, it also established that exponential shell growth on LPS graphs
-        compresses the entire pre-saturation window into only $O(\log q)$ BFS steps.
+        This article continues the spectral admissibility programme after the geometric obstruction identified in <a
+        href="../o8">O8</a>. While <a href="../o8">O8</a> showed that the $k=3$ permutation-path fingerprint escapes the
+        fixed finite-dimensional obstruction of <a href="../o6">O6</a>, it also established that exponential shell
+        growth on LPS graphs compresses the entire pre-saturation window into only $O(\log q)$ BFS steps.
       </p>
       <p>
-        O9 performs the next necessary step: it replaces LPS expanders with a family of
-        <strong>polynomial-growth Cayley graphs</strong>, namely the discrete Heisenberg group
-        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, and transports the O8 fingerprint and O7
-        projective-capacity framework to this new geometric setting.
-      </p>
+        O9 performs the next necessary step: it replaces LPS expanders with a family of <strong>polynomial-growth Cayley
+        graphs</strong>, namely the discrete Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, and transports
+        the <a href="../o8">O8</a> fingerprint and <a href="../o7">O7</a> projective-capacity framework to this new
+        geometric setting.</p>
       <p>
-        The result is structurally decisive. The obstruction identified in O8 is shown to be
-        purely geometric. On Heisenberg Cayley graphs, an $O(q^2)$ vertex window spans at least
-        $\Omega(q^{1/2})$ BFS steps, and in practice $\Theta(q)$ steps, giving polynomially many
-        observable points instead of only logarithmically many on LPS graphs.
+        The result is structurally decisive. The obstruction identified in <a href="../o8">O8</a> is shown to be purely
+        geometric. On Heisenberg Cayley graphs, an $O(q^2)$ vertex window spans at least $\Omega(q^{1/2})$ BFS steps,
+        and in practice $\Theta(q)$ steps, giving polynomially many observable points instead of only logarithmically
+        many on LPS graphs.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page provides a structured overview. The complete
-        technical analysis is presented in the preprint linked above.
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis is
+        presented in the preprint linked above.
       </div>
     </div>
     <aside class="card">
@@ -119,8 +112,8 @@
         <div class="kv">
           <div class="k">Scope</div>
           <div class="v">
-            Heisenberg Cayley graphs, shell growth, BFS depth, permutation-path fingerprints,
-            window compression, and capacity observability
+            Heisenberg Cayley graphs, shell growth, BFS depth, permutation-path fingerprints, window compression, and
+            capacity observability
           </div>
         </div>
       </div>
@@ -130,93 +123,86 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Formal LPS compression theorem:</strong> proof that an $O(q^2)$ vertex window on
-        LPS graphs is exhausted in only $O(\log q)$ BFS steps.
+        <strong>Formal LPS compression theorem:</strong> proof that an $O(q^2)$ vertex window on LPS graphs is exhausted
+        in only $O(\log q)$ BFS steps.
       </li>
       <li>
         <strong>Polynomial-growth replacement:</strong> introduction of
-        $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ as the correct discrete family
-        for probing the capacity exponent.
+        $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ as the correct discrete family for probing the
+        capacity exponent.
       </li>
       <li>
-        <strong>Window-Depth Theorem:</strong> proof that the same $O(q^2)$ vertex window now
-        spans $\Omega(q^{1/2})$ BFS steps, with actual diameter scaling as $\Theta(q)$.
+        <strong>Window-Depth Theorem:</strong> proof that the same $O(q^2)$ vertex window now spans $\Omega(q^{1/2})$
+        BFS steps, with actual diameter scaling as $\Theta(q)$.
       </li>
       <li>
-        <strong>Geometric separation:</strong> demonstration that graph geometry controls
-        observability, while projective dynamics and the fingerprint construction remain universal.
+        <strong>Geometric separation:</strong> demonstration that graph geometry controls observability, while
+        projective dynamics and the fingerprint construction remain universal.
       </li>
       <li>
-        <strong>Numerical validation:</strong> exact BFS confirms diameter $\Theta(q)$, effective
-        growth exponents $\hat{D}$ increasing toward $4$, and window-depth improvements up to
-        $5.4\times$ over LPS at $q=29$.
+        <strong>Numerical validation:</strong> exact BFS confirms diameter $\Theta(q)$, effective growth exponents
+        $\hat{D}$ increasing toward $4$, and window-depth improvements up to $5.4\times$ over LPS at $q=29$.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O9 shows that the failure of exponent extraction in <a href="../o8">O8</a> was not caused by
-      insufficient fingerprint complexity. The $k=3$ permutation-path fingerprint was already
-      structurally adequate. What failed was the geometry of the graph family used to measure it.
+      O9 shows that the failure of exponent extraction in <a href="../o8">O8</a> was not caused by insufficient
+      fingerprint complexity. The $k=3$ permutation-path fingerprint was already structurally adequate. What failed was
+      the geometry of the graph family used to measure it.
     </p>
     <ul>
       <li>
-        <strong>O6</strong> ruled out fixed finite-dimensional fingerprints for algebraic reasons.
+        <a href="../o6"><strong>O6</strong></a> ruled out fixed finite-dimensional fingerprints for algebraic reasons.
       </li>
       <li>
-        <strong>O8</strong> escaped that no-go but revealed a new obstruction: exponential shell
-        growth compresses the observable window.
+        <a href="../o8"><strong>O8</strong></a> escaped that no-go but revealed a new obstruction: exponential shell growth compresses the
+        observable window.
       </li>
       <li>
         <strong>O9</strong> removes that obstruction by moving to polynomial-growth geometry.
       </li>
       <li>
-        <strong>Conclusion:</strong> the remaining open problem is no longer geometric, but the
-        actual extraction and derivation of the asymptotic exponent $\delta$.
+        <strong>Conclusion:</strong> the remaining open problem is no longer geometric, but the actual extraction and
+        derivation of the asymptotic exponent $\delta$.
       </li>
     </ul>
     <p>
-      In this picture, $\delta$ is not a special property of LPS graphs or Heisenberg graphs as
-      such. It is a property of the underlying projective dynamics, provided the embedding graph
-      does not obstruct its measurement.
+      In this picture, $\delta$ is not a special property of LPS graphs or Heisenberg graphs as such. It is a property
+      of the underlying projective dynamics, provided the embedding graph does not obstruct its measurement.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O9 follows directly from <a href="../o8">O8</a>. Spectral admissibility, capacity, rigidity,
-      and stratigraphy define the spectral backbone of the theory. <a href="../o1">O1</a>
-      restores ordering through projective dynamics, <a href="../o3">O3</a> amplifies the
-      hierarchy via valence growth, <a href="../o4">O4</a> constrains the cascade exponent from
-      bounded relational flux, <a href="../o5">O5</a> localises the failure of vertex-level
-      mechanisms, <a href="../o6">O6</a> proves the no-go for fixed finite-dimensional
-      fingerprints, <a href="../o7">O7</a> reformulates the observable in terms of projective
-      capacity, and <a href="../o8">O8</a> identifies geometric compression on LPS graphs.
+      O9 follows directly from <a href="../o8">O8</a>. Spectral admissibility, capacity, rigidity, and stratigraphy
+      define the spectral backbone of the theory. <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth, <a href="../o4">O4</a> constrains the cascade
+      exponent from bounded relational flux, <a href="../o5">O5</a> localises the failure of vertex-level mechanisms, <a
+      href="../o6">O6</a> proves the no-go for fixed finite-dimensional fingerprints, <a href="../o7">O7</a>
+      reformulates the observable in terms of projective capacity, and <a href="../o8">O8</a> identifies geometric
+      compression on LPS graphs.
     </p>
     <p>
-      The present paper resolves that obstruction. It establishes polynomial-growth Cayley graphs
-      as the minimal discrete setting in which the capacity exponent becomes observable, and hands
-      off to <a href="../o10">O10</a> the tasks of extracting $\delta$ at larger $q$ and deriving
-      it from first principles.
+      The present paper resolves that obstruction. It establishes polynomial-growth Cayley graphs as the minimal
+      discrete setting in which the capacity exponent becomes observable, and hands off to <a href="../o10">O10</a> the
+      tasks of extracting $\delta$ at larger $q$ and deriving it from first principles.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19154517" rel="noopener">
-        <i lang="en">Projective Capacity Beyond Expanders: Polynomial-Growth Relaxation Graphs and
-          the Capacity Exponent</i>. Preprint.
-      </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19154517" rel="noopener"> <i lang="en">Projective Capacity
+      Beyond Expanders: Polynomial-Growth Relaxation Graphs and the Capacity Exponent</i>. Preprint. </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
-      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

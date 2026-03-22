@@ -21,6 +21,7 @@
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o7/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
+
     redirectIfNot("fr", "/science/spectral/program/o7/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -43,17 +44,15 @@
       <div>
         <h1>Capacité projective et limite continue de la redondance admissible</h1>
         <p class="subtitle">
-          Pourquoi les mécanismes de redondance de dimension finie doivent être reformulés en termes de capacité projective coarse-grainée, et comment cela établit le premier pont entre saturation admissible discrète et dynamique projetée non linéaire.
+          Pourquoi les mécanismes de redondance de dimension finie doivent être reformulés en termes de capacité
+          projective gros-grain, et comment cela établit le premier pont entre saturation admissible discrète et
+          dynamique projetée non linéaire.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19149774" rel="noopener">
-        Lire le préprint
-      </a>
-      <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme spectral
-      </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19149774" rel="noopener"> Lire le préprint </a> <a
+      class="btn subtle" href="/science/spectral/program/"> Retour au programme spectral </a>
     </div>
   </div>
 </header>
@@ -62,44 +61,72 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article prolonge le programme spectral après l’obstruction démontrée dans
-        <a href="../o6">O6</a> : aucune empreinte basée sur une représentation de dimension finie ne peut soutenir le régime en loi de puissance nécessaire pour expliquer l’exposant de cascade.
+        Cet article prolonge le programme spectral après l’obstruction démontrée dans <a
+        href="../o6/index_fr.html">O6</a> : aucune empreinte basée sur une représentation de dimension finie ne peut
+        soutenir le régime en loi de puissance nécessaire pour expliquer l’exposant de cascade.
       </p>
       <p>
-        O7 ne cherche pas à contourner ce résultat en introduisant un nouvel encodage statique. Il change l’observable pertinente. La redondance exacte est remplacée par une notion coarse-grainée de <strong>capacité projective</strong>, construite à partir de la nouveauté résiduelle des chemins admissibles.
+        O7 ne cherche pas à contourner ce résultat en introduisant un nouvel encodage statique. Il change l’observable
+        pertinente. La redondance exacte est remplacée par une notion coarse-grainée de <strong>capacité
+        projective</strong>, construite à partir de la nouveauté résiduelle des chemins admissibles.
       </p>
       <p>
-        Ce changement introduit une occupation projective discrète et une pression de saturation, fournissant le premier pont explicite entre la redondance admissible discrète et la dynamique non linéaire de type Gross–Pitaevskii dérivée en §B.14 du white paper.
+        Ce changement introduit une occupation projective discrète et une pression de saturation, fournissant le premier
+        pont explicite entre la redondance admissible discrète et la dynamique non linéaire de type Gross–Pitaevskii
+        dérivée en §B.14 du <a href="/science">white paper</a>.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page propose une vue structurée. L’analyse technique complète est disponible dans le préprint ci-dessus.
+        <strong>Portée.</strong> Cette page propose une vue structurée. L’analyse technique complète est disponible dans
+        le préprint ci-dessus.
       </div>
     </div>
     <aside class="card">
       <h2>Informations rapides</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Auteur</div><div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Préprint</div></div>
-        <div class="kv"><div class="k">Licence</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div><div class="v">Capacité projective, redondance admissible, dynamique non linéaire</div></div>
-        <div class="kv"><div class="k">Périmètre</div><div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes de chemins, coarse-graining, occupation projective</div></div>
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Préprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Capacité projective, redondance admissible, dynamique non linéaire</div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes de chemins, coarse-graining, occupation
+            projective
+          </div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Capacité projective discrète :</strong> champ $\Sigma_n(x)$ construit à partir de la nouveauté résiduelle des chemins admissibles.</li>
-      <li><strong>Loi d’état :</strong> $R_n^{(k)}(x)\approx \Phi(\eta_n(x))$ avec fonction monotone dépendant de l’occupation.</li>
-      <li><strong>Réinterprétation de β :</strong> exposant de croissance de la capacité projective le long de la cascade.</li>
-      <li><strong>Mécanisme de saturation :</strong> diminution de $\Sigma_n(x)$ → augmentation du couplage effectif.</li>
-      <li><strong>Pont vers le continu :</strong> lien formel avec la dynamique non linéaire de §B.14.</li>
+      <li><strong>Capacité projective discrète :</strong> champ $\Sigma_n(x)$ construit à partir de la nouveauté
+        résiduelle des chemins admissibles.</li>
+      <li><strong>Loi d’état :</strong> $R_n^{(k)}(x)\approx \Phi(\eta_n(x))$ avec fonction monotone dépendant de
+        l’occupation.</li>
+      <li><strong>Réinterprétation de β :</strong> exposant de croissance de la capacité projective le long de la
+        cascade.</li>
+      <li><strong>Mécanisme de saturation :</strong> diminution de $\Sigma_n(x)$ → augmentation du couplage effectif.
+      </li>
+      <li><strong>Pont vers le continu :</strong> lien formel avec la dynamique non linéaire de §B.14.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’obstruction de <a href="../o6">O6</a> indique que la redondance exacte n’est pas le bon observable. La capacité projective coarse-grainée capture la quantité de nouveauté encore disponible localement.
+      L’obstruction de <a href="../o6/index_fr.html">O6</a> indique que la redondance exacte n’est pas le bon
+      observable. La capacité projective coarse-grainée capture la quantité de nouveauté encore disponible localement.
     </p>
     <ul>
       <li>Les empreintes fixes saturent trop vite</li>
@@ -114,16 +141,15 @@
   <section class="card">
     <h2>Relation au programme</h2>
     <p>
-      O7 suit <a href="../o6">O6</a> et reformule son obstruction comme un signal structurel. Il établit le pont discret–continu et prépare les développements futurs (O8).
+      O7 suit <a href="../o6/index_fr.html">O6</a> et reformule son obstruction comme un signal structurel. Il établit
+      le pont discret–continu et prépare les développements futurs (<a href="../o8/index_fr.html">O8</a>).
     </p>
   </section>
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19149774" rel="noopener">
-        <i>Capacité projective et limite continue de la redondance admissible</i>. Préprint.
-      </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19149774" rel="noopener"> <i>Capacité projective et limite
+      continue de la redondance admissible</i>. Préprint. </a>
     </p>
   </section>
 </main>
@@ -132,7 +158,7 @@
     <p class="small">© <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.</p>
   </div>
 </footer>
-<script>MathJax={tex:{inlineMath:{"[+]":[["$","$"]]}},svg:{fontCache:"global"}}</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 </body>
 </html>

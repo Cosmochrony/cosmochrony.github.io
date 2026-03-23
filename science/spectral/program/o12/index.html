@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Exact Weil-Block Projective Capacity on Heisenberg Graphs:
+    Resolving the Final Obstruction to δ Extraction | Cosmochrony</title>
+  <meta name="description"
+    content="O12 replaces the O11 proxy by the exact Weil projection on Heisenberg Cayley graphs,
+    measures the exact projective-capacity decay exponent, confirms the exact/proxy regime
+    shift, and identifies the central coordinate γ as dynamically active."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Exact Weil-Block Projective Capacity on Heisenberg Graphs:
+    Resolving the Final Obstruction to δ Extraction"/>
+  <meta property="og:description"
+    content="O12 implements the exact Weil projection, measures an exact decay exponent around
+    4.4–4.8 at accessible primes, confirms Case B relative to the O11 proxy, and shows that
+    the central coordinate γ is dynamically active."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o12/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o12/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Exact Weil-Block Projective Capacity on Heisenberg Graphs:
+          Resolving the Final Obstruction to δ Extraction</h1>
+        <p class="subtitle">
+          O12 replaces the proxy construction of <a href="../o11">O11</a> by the exact Weil
+          projection, measures the exact decay exponent on Heisenberg Cayley graphs, and shows
+          that the central coordinate $\gamma$ is dynamically active in the capacity decay.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19194798">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after the proxy-level
+        extraction achieved in <a href="../o11">O11</a>. While <a href="../o11">O11</a>
+        established that a representation-adapted Weil-block proxy could recover a stable
+        decay regime on Heisenberg Cayley graphs, it left open the central question of whether
+        the <em>exact</em> Weil projection, retaining the central coordinate $\gamma$, would yield
+        the same exponent.
+      </p>
+      <p>
+        O12 answers that question by replacing the bidimensional proxy on the abelianised
+        $(a,b)$ coordinates with the exact irreducible Weil representation. The resulting
+        observable is the exact block-wise incremental projective capacity
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, measured inside generic Weil blocks
+        $H_c$ of dimension $q$.
+      </p>
+      <p>
+        The outcome is a clear exact/proxy regime shift. At the accessible primes
+        $q \in \{29,53,61\}$, the exact exponent is consistently found in the range
+        $\hat{\delta}_{\mathrm{exact}} \approx 4.4$--$4.8$, well above the O11 proxy value
+        $\hat{\delta}_{\mathrm{cap}} \approx 3.39$. The paper identifies this as
+        <strong>Case B</strong>: the exact Weil projection yields a steeper decay law than the
+        proxy, and the difference is traced to the dynamically active central phase.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis, including the exact block decomposition, the span-tracking algorithm,
+        the coherence observable $\ell_\gamma(n)$, and the quantitative tension with the
+        phenomenological $\beta^*$ target, is presented in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Exact Weil projection, Heisenberg graphs, projective capacity</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            Exact block-wise rank tracking, metaplectic phase, proxy/exact comparison,
+            and consequence for the cascade exponent
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Exact Weil-block observable:</strong> replacement of the O11 proxy by the full
+        irreducible Weil projection, retaining the central coordinate $\gamma$ and its phase
+        contribution $\psi_c(\gamma + bx)$.
+      </li>
+      <li>
+        <strong>Exact incremental capacity definition:</strong> introduction of the observable
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, measuring the genuinely new directions
+        contributed by shell $S_n$ inside an exact Weil block $H_c$.
+      </li>
+      <li>
+        <strong>First exact exponent extraction:</strong> fitted decay exponents
+        $\hat{\delta}_{\mathrm{exact}} = 4.83 \pm 0.24,\ 4.40,\ 4.57$ for
+        $q = 29,\ 53,\ 61$, with $R^2 > 0.98$ in all runs.
+      </li>
+      <li>
+        <strong>Exact/proxy regime shift:</strong> systematic confirmation that
+        $\hat{\delta}_{\mathrm{exact}} > \hat{\delta}_{\mathrm{cap}}$, establishing
+        Case B of the exact/proxy comparison.
+      </li>
+      <li>
+        <strong>Central-phase mechanism:</strong> introduction of the coherence observable
+        $\ell_\gamma(n)$, showing that the central coordinate is dynamically active over the
+        fitting window and contributes to the acceleration of exact-block saturation.
+      </li>
+      <li>
+        <strong>Qualified universality:</strong> mean-level power-law decay is confirmed, while
+        strict block-by-block universality is not, revealing a non-trivial exact-block
+        heterogeneity rather than a failure of the model.
+      </li>
+      <li>
+        <strong>Phenomenological tension:</strong> via
+        $\beta^* = 1 / (\delta + \tfrac{1}{2})$, the exact exponent implies
+        $\beta^* \approx 0.19$--$0.20$, outside the O3 target
+        $\beta^* \in (0.09, 0.13)$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O12 shows that the final ambiguity left by <a href="../o11">O11</a> is not a minor
+      correction but a structural one. The exact and proxy observables do not lie in the same
+      quantitative regime: once the central coordinate $\gamma$ is reinstated, the decay exponent
+      shifts upward by about one unit.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8"><strong>O8</strong></a> identified geometric compression on LPS graphs.
+      </li>
+      <li>
+        <a href="../o9"><strong>O9</strong></a> restored an observable BFS window by moving to
+        polynomial-growth Heisenberg geometry.
+      </li>
+      <li>
+        <a href="../o10"><strong>O10</strong></a> showed that dense fingerprints remain
+        algorithmically misaligned with the dynamics.
+      </li>
+      <li>
+        <a href="../o11"><strong>O11</strong></a> restored observability at the proxy level via
+        a bidimensional Weil-block construction on $(a,b)$.
+      </li>
+      <li>
+        <strong>O12</strong> closes the observable gap by measuring the decay law in the exact
+        irreducible representation and identifying the metaplectic phase as the mechanism behind
+        the exact/proxy discrepancy.
+      </li>
+    </ul>
+    <p>
+      In this picture, the relevant signal is still a law of diminishing novelty, but its exact
+      rate depends on the full non-commutative structure of the Heisenberg group. The central
+      coordinate is not a passive correction to the proxy dynamics: it changes the observed decay
+      class and therefore the inferred cascade exponent.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O12 follows directly from <a href="../o11">O11</a>. Spectral admissibility, capacity,
+      rigidity, and stratigraphy define the spectral backbone of the theory.
+      <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth,
+      <a href="../o4">O4</a> constrains the cascade exponent from bounded relational flux,
+      <a href="../o5">O5</a> localises the failure of vertex-level mechanisms,
+      <a href="../o6">O6</a> proves the no-go for fixed finite-dimensional fingerprints,
+      <a href="../o7">O7</a> reformulates the observable in terms of projective capacity,
+      <a href="../o8">O8</a> identifies geometric compression on LPS graphs,
+      <a href="../o9">O9</a> removes that compression by moving to polynomial-growth
+      Heisenberg geometry, <a href="../o10">O10</a> isolates the dense-sketch bottleneck,
+      and <a href="../o11">O11</a> restores observability at the proxy representation level.
+    </p>
+    <p>
+      The present paper moves from proxy to exact representation-level data. It confirms that
+      the exact observable is measurable, that it differs structurally from the O11 proxy, and
+      that the resulting exponent generates a real tension when propagated to the cascade exponent
+      $\beta^*$. In that sense, O12 is the first paper in the series where the programme becomes
+      quantitatively falsifiable at the exact representation level.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open problem</h2>
+    <p>
+      The exact measurement currently implies $\beta^* \approx 0.19$--$0.20$, outside the
+      target range $\beta^* \in (0.09, 0.13)$ inferred earlier from charged lepton mass ratios.
+      This incompatible outcome is reported explicitly and not removed by post hoc adjustment.
+    </p>
+    <p>
+      Three interpretations remain open: the accessible primes may still be too small to probe
+      the asymptotic regime; the structural relation between $\delta$ and $\beta^*$ may require
+      revision at the exact level; or the phenomenological target itself may need reconsideration.
+      The next step of the programme is therefore a larger-prime exact computation
+      (O12-O1), designed to decide between finite-size drift and genuine structural tension.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19194798" rel="noopener">
+        <i lang="en">Exact Weil-Block Projective Capacity on Heisenberg Graphs:
+          Resolving the Final Obstruction to δ Extraction</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

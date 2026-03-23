@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
+    résolution de la dernière obstruction à l'extraction de δ | Cosmochronie</title>
+  <meta name="description"
+    content="O12 remplace le proxy de O11 par la projection exacte de Weil sur des graphes de Cayley
+    de Heisenberg, mesure l'exposant exact de décroissance de la capacité projective, confirme
+    le décalage de régime exact/proxy et identifie la coordonnée centrale γ comme dynamiquement active."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o12/index_de.html"/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o12/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
+    résolution de la dernière obstruction à l'extraction de δ"/>
+  <meta property="og:description"
+    content="O12 implémente la projection exacte de Weil, mesure un exposant exact de décroissance
+    autour de 4,4–4,8 aux premiers accessibles, confirme le cas B par rapport au proxy de O11,
+    et montre que la coordonnée centrale γ est dynamiquement active."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o12/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o12/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
+          résolution de la dernière obstruction à l'extraction de δ</h1>
+        <p class="subtitle">
+          O12 remplace la construction proxy de <a href="../o11">O11</a> par la projection exacte
+          de Weil, mesure l'exposant exact de décroissance sur les graphes de Cayley de Heisenberg
+          et montre que la coordonnée centrale $\gamma$ est dynamiquement active dans la décroissance
+          de la capacité.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19194798">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Cet article poursuit le programme d'admissibilité spectrale après l'extraction au niveau
+        proxy obtenue dans <a href="../o11">O11</a>. Alors que <a href="../o11">O11</a>
+        avait établi qu'un proxy par blocs de Weil adapté à la représentation pouvait retrouver
+        un régime de décroissance stable sur des graphes de Cayley de Heisenberg, il laissait
+        ouverte la question centrale de savoir si la projection de Weil <em>exacte</em>, conservant
+        la coordonnée centrale $\gamma$, conduirait au même exposant.
+      </p>
+      <p>
+        O12 répond à cette question en remplaçant le proxy bidimensionnel sur les coordonnées
+        abélianisées $(a,b)$ par la représentation exacte irréductible de Weil. L'observable
+        obtenu est la capacité projective incrémentale exacte par bloc
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, mesurée à l'intérieur de blocs de Weil
+        génériques $H_c$ de dimension $q$.
+      </p>
+      <p>
+        Le résultat est un décalage net de régime entre observable exact et observable proxy.
+        Aux premiers accessibles $q \in \{29,53,61\}$, l'exposant exact est systématiquement trouvé
+        dans l'intervalle $\hat{\delta}_{\mathrm{exact}} \approx 4.4$--$4.8$, bien au-dessus de la
+        valeur proxy de O11, $\hat{\delta}_{\mathrm{cap}} \approx 3.39$. L'article identifie cela
+        comme le <strong>cas B</strong> : la projection exacte de Weil produit une loi de décroissance
+        plus raide que le proxy, et cette différence est attribuée au caractère dynamiquement actif
+        de la phase centrale.
+      </p>
+      <div class="note" role="note">
+        <strong>Note de portée.</strong> Cette page fournit un aperçu structuré. L'analyse technique
+        complète, incluant la décomposition exacte en blocs, l'algorithme de suivi du rang,
+        l'observable de cohérence $\ell_\gamma(n)$ et la tension quantitative avec la cible
+        phénoménologique sur $\beta^*$, est présentée dans le preprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Projection exacte de Weil, graphes de Heisenberg, capacité projective</div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Suivi exact du rang par bloc, phase métaplectique, comparaison proxy/exact
+            et conséquence pour l'exposant de cascade
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Observable exact par blocs de Weil :</strong> remplacement du proxy de O11 par la
+        projection exacte irréductible de Weil, qui conserve la coordonnée centrale $\gamma$
+        et sa contribution de phase $\psi_c(\gamma + bx)$.
+      </li>
+      <li>
+        <strong>Définition exacte de la capacité incrémentale :</strong> introduction de l'observable
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, qui mesure les directions réellement nouvelles
+        apportées par la coquille $S_n$ à l'intérieur d'un bloc exact de Weil $H_c$.
+      </li>
+      <li>
+        <strong>Première extraction exacte de l'exposant :</strong> exposants ajustés
+        $\hat{\delta}_{\mathrm{exact}} = 4.83 \pm 0.24,\ 4.40,\ 4.57$ pour
+        $q = 29,\ 53,\ 61$, avec $R^2 > 0.98$ dans tous les cas.
+      </li>
+      <li>
+        <strong>Décalage de régime exact/proxy :</strong> confirmation systématique que
+        $\hat{\delta}_{\mathrm{exact}} > \hat{\delta}_{\mathrm{cap}}$, ce qui établit
+        le cas B de la comparaison exact/proxy.
+      </li>
+      <li>
+        <strong>Mécanisme de phase centrale :</strong> introduction de l'observable de cohérence
+        $\ell_\gamma(n)$, montrant que la coordonnée centrale est dynamiquement active dans la
+        fenêtre d'ajustement et contribue à l'accélération de la saturation des blocs exacts.
+      </li>
+      <li>
+        <strong>Universalité qualifiée :</strong> une loi de puissance est confirmée au niveau de
+        la moyenne, tandis qu'une universalité stricte bloc par bloc n'est pas établie, révélant
+        une hétérogénéité exacte non triviale plutôt qu'un échec du modèle.
+      </li>
+      <li>
+        <strong>Tension phénoménologique :</strong> via
+        $\beta^* = 1 / (\delta + \tfrac{1}{2})$, l'exposant exact implique
+        $\beta^* \approx 0.19$--$0.20$, en dehors de la cible de O3
+        $\beta^* \in (0.09, 0.13)$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O12 montre que la dernière ambiguïté laissée ouverte par <a href="../o11">O11</a>
+      n'est pas une correction mineure mais une différence structurelle. Les observables exact
+      et proxy ne se situent pas dans le même régime quantitatif : une fois la coordonnée centrale
+      $\gamma$ réintroduite, l'exposant de décroissance se décale vers le haut d'environ une unité.
+    </p>
+    <ul>
+      <li>
+        <a href="../o8"><strong>O8</strong></a> a identifié la compression géométrique sur les graphes LPS.
+      </li>
+      <li>
+        <a href="../o9"><strong>O9</strong></a> a restauré une fenêtre BFS observable en passant
+        à une géométrie de Heisenberg à croissance polynomiale.
+      </li>
+      <li>
+        <a href="../o10"><strong>O10</strong></a> a montré que les fingerprints denses restaient
+        algorithmiquement mal alignés avec la dynamique.
+      </li>
+      <li>
+        <a href="../o11"><strong>O11</strong></a> a restauré l'observabilité au niveau proxy grâce
+        à une construction bidimensionnelle par blocs de Weil sur $(a,b)$.
+      </li>
+      <li>
+        <strong>O12</strong> ferme la lacune observable en mesurant la loi de décroissance dans la
+        représentation exacte irréductible et en identifiant la phase métaplectique comme mécanisme
+        derrière la divergence exact/proxy.
+      </li>
+    </ul>
+    <p>
+      Dans cette image, le signal pertinent reste une loi de nouveauté décroissante, mais son taux
+      exact dépend de la structure non commutative complète du groupe de Heisenberg. La coordonnée
+      centrale n'est pas une correction passive à la dynamique proxy : elle modifie la classe de
+      décroissance observée et, par conséquent, l'exposant de cascade inféré.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochronie</h2>
+    <p>
+      O12 suit directement <a href="../o11">O11</a>. Admissibilité spectrale, capacité,
+      rigidité et stratigraphie définissent l'ossature spectrale de la théorie.
+      <a href="../o1">O1</a> restaure l'ordre via la dynamique projective,
+      <a href="../o3">O3</a> amplifie la hiérarchie via la croissance de valence,
+      <a href="../o4">O4</a> contraint l'exposant de cascade par le flux relationnel borné,
+      <a href="../o5">O5</a> localise l'échec des mécanismes au niveau sommet,
+      <a href="../o6">O6</a> démontre le no-go pour les fingerprints de dimension finie fixe,
+      <a href="../o7">O7</a> reformule l'observable en termes de capacité projective,
+      <a href="../o8">O8</a> identifie la compression géométrique sur les graphes LPS,
+      <a href="../o9">O9</a> supprime cette compression en passant à la géométrie de Heisenberg
+      à croissance polynomiale, <a href="../o10">O10</a> isole le goulot d'étranglement des
+      sketches denses, et <a href="../o11">O11</a> restaure l'observabilité au niveau proxy de la représentation.
+    </p>
+    <p>
+      Le présent article passe du niveau proxy à des données exactes au niveau représentationnel.
+      Il confirme que l'observable exact est mesurable, qu'il diffère structurellement du proxy
+      de O11, et que l'exposant obtenu produit une tension réelle lorsqu'il est propagé vers
+      l'exposant de cascade $\beta^*$. En ce sens, O12 est le premier papier de la série où
+      le programme devient quantitativement falsifiable au niveau représentationnel exact.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et problème ouvert</h2>
+    <p>
+      La mesure exacte actuelle implique $\beta^* \approx 0.19$--$0.20$, en dehors de la plage
+      cible $\beta^* \in (0.09, 0.13)$ inférée plus tôt à partir des rapports de masse des leptons
+      chargés. Cette issue incompatible est rapportée explicitement et n'est pas supprimée par un
+      ajustement a posteriori.
+    </p>
+    <p>
+      Trois interprétations restent ouvertes : les premiers accessibles sont peut-être encore trop
+      petits pour sonder le régime asymptotique ; la relation structurelle entre $\delta$ et
+      $\beta^*$ peut nécessiter une révision au niveau exact ; ou bien la cible phénoménologique
+      elle-même peut devoir être reconsidérée. La prochaine étape du programme est donc un calcul
+      exact à plus grand premier (O12-O1), destiné à trancher entre dérive de taille finie et
+      tension structurelle authentique.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19194798" rel="noopener">
+        <i lang="en">Exact Weil-Block Projective Capacity on Heisenberg Graphs:
+          Resolving the Final Obstruction to δ Extraction</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

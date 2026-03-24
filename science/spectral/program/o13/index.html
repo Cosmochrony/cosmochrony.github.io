@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
+    Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension
+    | Cosmochrony</title>
+  <meta name="description"
+    content="O13 extends the exact Weil-block computation to larger primes, rules out the strong
+    finite-size explanation of the δ–β* tension, shows monotone decrease of the exact exponent
+    from q=61 onward, and identifies the remaining issue as structural rather than numerical."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_de.html"/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
+    Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension"/>
+  <meta property="og:description"
+    content="O13 extends the exact Weil-block computation to q=101,151,211, shows no upward drift
+    of the exact exponent toward the phenomenological target range, and reclassifies the
+    remaining δ–β* mismatch as a structural issue."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o13/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o13/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
+          Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension</h1>
+        <p class="subtitle">
+          O13 extends the exact Weil-block computation beyond <a href="../o12">O12</a>, shows
+          that the exact exponent does not drift upward at larger primes, and reclassifies the
+          remaining δ–β* mismatch as structural rather than numerical.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19210831">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after
+        <a href="../o12">O12</a>. While <a href="../o12">O12</a> established that the exact
+        Weil projection yields a larger decay exponent than the proxy observable of
+        <a href="../o11">O11</a>, it still left open the most natural interpretation of the
+        mismatch with the phenomenological target for $\beta^*$: a finite-size effect at the
+        accessible primes.
+      </p>
+      <p>
+        O13 tests that hypothesis directly by extending the exact computation to
+        $q \in \{101,151,211\}$, with the $q=211$ run treated as a robustness extension under
+        reduced BFS coverage. The observable remains the exact block-wise incremental projective
+        capacity
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$ measured inside generic irreducible Weil
+        blocks of dimension $q$.
+      </p>
+      <p>
+        The outcome is negative in a precise and scientifically useful sense: the exact exponent
+        does <em>not</em> drift upward toward the target range. Instead, the sequence
+        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ at
+        $q \in \{29,61,101,151,211\}$ decreases monotonically from $q=61$ onward, while the
+        measurement quality improves at the same time.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete
+        technical analysis, including the extended exact runs, the fit-window diagnostics, the
+        variance law $V_n^{\max}(q)$, and the requalification of the δ–β* tension, is presented
+        in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Exact Weil blocks, larger primes, asymptotic trend, δ–β* tension</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">
+            Extended exact extraction, variance reduction, finite-size test, and structural
+            reclassification of the exact/proxy mismatch
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Extended exact computation:</strong> O13 extends the exact Weil-block analysis of
+        <a href="../o12">O12</a> to $q = 101$ and $151$, with $q = 211$ added as a robustness
+        extension under reduced BFS coverage.
+      </li>
+      <li>
+        <strong>Absence of upward drift:</strong> the exact exponent sequence
+        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ shows a strict decrease
+        from $q = 61$ onward rather than any drift toward the phenomenological range
+        $[7.4,10.6]$.
+      </li>
+      <li>
+        <strong>Improving measurement quality:</strong> the fitting window grows from 4 to
+        11 points, the inter-block variance drops from $V_n^{\max}=5.20$ to $0.30$, and
+        $R^2 > 0.993$ throughout.
+      </li>
+      <li>
+        <strong>Block-by-block universality:</strong> condition (E2) is satisfied at
+        $q \geq 151$, so the extracted exponent becomes a property of individual exact blocks,
+        not merely of their average.
+      </li>
+      <li>
+        <strong>Variance scaling law:</strong> the peak inter-block variance follows the empirical
+        law $V_n^{\max}(q) \approx 754\,q^{-1.41}$, showing that block heterogeneity decays
+        rapidly as the prime grows.
+      </li>
+      <li>
+        <strong>Finite-size hypothesis rejected:</strong> the strong version of the O12
+        interpretation is ruled out: larger primes do not move the exact observable toward the
+        phenomenological target.
+      </li>
+      <li>
+        <strong>Structural mismatch isolated:</strong> the remaining problem is identified as the
+        exact-block relation $\delta \mapsto \beta^*$, not as a numerical or finite-size issue.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O13 shows that the tension identified in <a href="../o12">O12</a> survives precisely in
+      the regime where the measurement becomes cleaner. This is the decisive point: as the
+      fitting windows lengthen, the variance falls, and the exact exponent does not rise toward
+      the phenomenological target. On the contrary, it decreases.
+    </p>
+    <ul>
+      <li>
+        <a href="../o11"><strong>O11</strong></a> established the proxy-level Weil-block
+        observable and found a decay exponent around $\hat{\delta}_{\mathrm{cap}} \approx 3.39$.
+      </li>
+      <li>
+        <a href="../o12"><strong>O12</strong></a> replaced the proxy by the exact Weil
+        projection and revealed a regime shift to $\hat{\delta}_{\mathrm{exact}} \approx 4.3$--$4.8$.
+      </li>
+      <li>
+        <strong>O13</strong> tests whether that shift disappears at larger primes and shows that
+        it does not. The mismatch is therefore structural rather than numerical.
+      </li>
+    </ul>
+    <p>
+      In this picture, the central coordinate $\gamma$ is not a small correction to the proxy
+      dynamics. It remains dynamically active, affects the exact observable class, and forces a
+      revision of the proxy-level map from decay exponent to cascade exponent.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O13 follows directly from <a href="../o12">O12</a>. Spectral admissibility, capacity,
+      rigidity, and stratigraphy define the spectral backbone of the theory.
+      <a href="../o1">O1</a> restores ordering through projective dynamics,
+      <a href="../o3">O3</a> amplifies the hierarchy via valence growth,
+      <a href="../o4">O4</a> constrains the cascade exponent from bounded relational flux,
+      <a href="../o5">O5</a> localises the failure of vertex-level mechanisms,
+      <a href="../o6">O6</a> proves the no-go for fixed finite-dimensional fingerprints,
+      <a href="../o7">O7</a> reformulates the observable in terms of projective capacity,
+      <a href="../o8">O8</a> identifies geometric compression on LPS graphs,
+      <a href="../o9">O9</a> removes that compression by moving to polynomial-growth
+      Heisenberg geometry, <a href="../o10">O10</a> isolates the dense-sketch bottleneck,
+      <a href="../o11">O11</a> restores observability at the proxy representation level, and
+      <a href="../o12">O12</a> implements the exact Weil-block observable.
+    </p>
+    <p>
+      The present paper is the first in the series to falsify an explicit rescue hypothesis of the
+      exact-block regime. It does not merely extend the computation: it shows that the remaining
+      discrepancy with phenomenology is intrinsic to the exact observable and must now be
+      addressed at the structural level.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open problem</h2>
+    <p>
+      Propagated through the O7 relation
+      $\beta^* = 1 / (\delta + \tfrac{1}{2})$, the present data imply values around
+      $\beta^* \approx 0.19$ at $q=151$, $\beta^* \approx 0.24$ at $q=211$, and
+      $\beta^* \approx 0.24$--$0.26$ under log-linear extrapolation, all well above the target
+      window $\beta^* \in (0.09, 0.13)$.
+    </p>
+    <p>
+      O13 therefore closes the strong finite-size explanation and leaves a more precise open
+      problem: how must the structural relation $\delta \mapsto \beta^*$ be reformulated in the
+      exact-block setting, where the observable is normalised by $|S_n|$ and retains the central
+      phase through $\gamma$?
+    </p>
+    <p>
+      The next step of the programme is therefore not simply larger-prime numerics, but a
+      theoretical rederivation of the exact-block map from projective-capacity decay to the
+      cascade exponent. Larger primes remain useful as robustness checks, but they are no longer
+      the primary conceptual bottleneck.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19210831" rel="noopener">
+        <i lang="en">Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
+          Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension</i>.
+        Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

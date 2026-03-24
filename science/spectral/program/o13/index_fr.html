@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Stabilité asymptotique de la capacité projective exacte par blocs de Weil sur graphes
+    de Heisenberg : extension en q, réduction de variance et requalification de la tension
+    δ–β* | Cosmochrony</title>
+  <meta name="description"
+    content="O13 étend le calcul exact par blocs de Weil à des nombres premiers plus grands,
+    exclut l'explication forte par effet de taille finie de la tension δ–β*, met en évidence
+    une décroissance monotone de l'exposant exact à partir de q=61, et identifie un problème
+    structurel plutôt que numérique."/>
+  <link rel="alternate" hreflang="it"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_it.html"/>
+  <link rel="alternate" hreflang="es"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_es.html"/>
+  <link rel="alternate" hreflang="de"
+    href="https://cosmochrony.org/science/spectral/program/o13/index_de.html"/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o13/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Stabilité asymptotique de la capacité projective exacte par blocs de Weil sur
+    graphes de Heisenberg : extension en q, réduction de variance et requalification de la
+    tension δ–β*"/>
+  <meta property="og:description"
+    content="O13 étend le calcul exact par blocs de Weil à q=101,151,211, montre l'absence de
+    dérive ascendante de l'exposant exact vers la cible phénoménologique, et requalifie le
+    décalage δ–β* comme un problème structurel."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o13/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o13/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Stabilité asymptotique de la capacité projective exacte par blocs de Weil sur graphes
+          de Heisenberg : extension en q, réduction de variance et requalification de la tension
+          δ–β*</h1>
+        <p class="subtitle">
+          O13 prolonge le calcul exact par blocs de Weil au-delà de
+          <a href="../o12">O12</a>, montre que l'exposant exact ne dérive pas vers le haut à
+          grand q, et requalifie l'écart δ–β* restant comme un problème structurel plutôt que
+          numérique.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19210831">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Cet article poursuit le programme d'admissibilité spectrale après
+        <a href="../o12">O12</a>. Alors que <a href="../o12">O12</a> avait établi que la
+        projection exacte de Weil produit un exposant de décroissance plus élevé que
+        l'observable proxy de <a href="../o11">O11</a>, il restait encore l'interprétation la
+        plus naturelle du décalage avec la cible phénoménologique pour $\beta^*$ :
+        un effet de taille finie aux nombres premiers accessibles.
+      </p>
+      <p>
+        O13 teste directement cette hypothèse en étendant le calcul exact à
+        $q \in \{101,151,211\}$, le cas $q=211$ étant traité comme une extension de robustesse
+        avec couverture BFS réduite. L'observable reste la capacité projective incrémentale
+        exacte par bloc
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, mesurée à l'intérieur de blocs de Weil
+        irréductibles génériques de dimension $q$.
+      </p>
+      <p>
+        Le résultat est négatif au sens précis et utile du terme : l'exposant exact ne dérive
+        <em>pas</em> vers le haut en direction de la plage cible. Au contraire, la suite
+        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ pour
+        $q \in \{29,61,101,151,211\}$ décroît monotoniquement à partir de $q=61$, alors même
+        que la qualité de mesure s'améliore.
+      </p>
+      <div class="note" role="note">
+        <strong>Déclaration de portée.</strong> Cette page propose une vue structurée. L'analyse
+        technique complète, incluant les calculs exacts étendus, le diagnostic des fenêtres
+        d'ajustement, la loi de variance $V_n^{\max}(q)$ et la requalification de la tension
+        δ–β*, est présentée dans la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Blocs de Weil exacts, grands q, tendance asymptotique, tension δ–β*</div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Extraction exacte étendue, réduction de variance, test d'effet de taille finie et
+            requalification structurelle du décalage exact/proxy
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Extension du calcul exact :</strong> O13 étend l'analyse exacte par blocs de
+        Weil de <a href="../o12">O12</a> à $q = 101$ et $151$, avec $q = 211$ ajouté comme point
+        de robustesse sous couverture BFS réduite.
+      </li>
+      <li>
+        <strong>Absence de dérive vers le haut :</strong> la suite des exposants exacts
+        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ présente une décroissance
+        stricte à partir de $q = 61$, au lieu de toute dérive vers la plage phénoménologique
+        $[7.4,10.6]$.
+      </li>
+      <li>
+        <strong>Amélioration de la qualité de mesure :</strong> la fenêtre d'ajustement croît de
+        4 à 11 points, la variance inter-blocs chute de $V_n^{\max}=5.20$ à $0.30$, et
+        $R^2 > 0.993$ dans tous les cas.
+      </li>
+      <li>
+        <strong>Universalité bloc par bloc :</strong> la condition (E2) est satisfaite pour
+        $q \geq 151$, de sorte que l'exposant extrait devient une propriété des blocs exacts
+        individuels, et non plus seulement de leur moyenne.
+      </li>
+      <li>
+        <strong>Loi d'échelle de la variance :</strong> la variance inter-blocs maximale suit
+        empiriquement la loi $V_n^{\max}(q) \approx 754\,q^{-1.41}$, ce qui montre que
+        l'hétérogénéité entre blocs décroît rapidement lorsque le nombre premier augmente.
+      </li>
+      <li>
+        <strong>Hypothèse de taille finie rejetée :</strong> la version forte de l'interprétation
+        proposée dans O12 est exclue : les grands nombres premiers ne rapprochent pas
+        l'observable exact de la cible phénoménologique.
+      </li>
+      <li>
+        <strong>Décalage structurel isolé :</strong> le problème restant est maintenant la
+        relation exacte par blocs $\delta \mapsto \beta^*$, et non plus une difficulté
+        numérique ou un simple effet de taille finie.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O13 montre que la tension identifiée dans <a href="../o12">O12</a> subsiste précisément
+      dans le régime où la mesure devient plus propre. C'est le point décisif : lorsque les
+      fenêtres d'ajustement s'allongent, que la variance décroît et que les blocs deviennent
+      universels, l'exposant exact ne remonte pas vers la cible phénoménologique. Il baisse.
+    </p>
+    <ul>
+      <li>
+        <a href="../o11"><strong>O11</strong></a> a établi l'observable proxy par blocs de Weil
+        et trouvé un exposant d'environ $\hat{\delta}_{\mathrm{cap}} \approx 3.39$.
+      </li>
+      <li>
+        <a href="../o12"><strong>O12</strong></a> a remplacé ce proxy par la projection exacte
+        de Weil et révélé un changement de régime vers
+        $\hat{\delta}_{\mathrm{exact}} \approx 4.3$--$4.8$.
+      </li>
+      <li>
+        <strong>O13</strong> teste si ce décalage disparaît à grand q et montre que ce n'est
+        pas le cas. L'écart est donc structurel plutôt que numérique.
+      </li>
+    </ul>
+    <p>
+      Dans cette image, la coordonnée centrale $\gamma$ n'est pas une petite correction de la
+      dynamique proxy. Elle reste dynamiquement active, modifie la classe quantitative de
+      l'observable exact, et impose donc une révision de la carte proxy reliant l'exposant de
+      décroissance à l'exposant de cascade.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O13 suit directement <a href="../o12">O12</a>. L'admissibilité spectrale, la capacité,
+      la rigidité et la stratigraphie forment l'ossature spectrale de la théorie.
+      <a href="../o1">O1</a> rétablit l'ordre par dynamique projective,
+      <a href="../o3">O3</a> amplifie la hiérarchie via la croissance de valence,
+      <a href="../o4">O4</a> contraint l'exposant de cascade par le flux relationnel borné,
+      <a href="../o5">O5</a> localise l'échec des mécanismes au niveau des sommets,
+      <a href="../o6">O6</a> démontre le no-go pour les empreintes de dimension finie fixe,
+      <a href="../o7">O7</a> reformule l'observable en capacité projective,
+      <a href="../o8">O8</a> identifie la compression géométrique sur les graphes LPS,
+      <a href="../o9">O9</a> supprime cette compression en passant à la géométrie de Heisenberg
+      à croissance polynomiale, <a href="../o10">O10</a> isole le goulot d'étranglement des
+      représentations denses, <a href="../o11">O11</a> restaure l'observabilité au niveau
+      proxy, et <a href="../o12">O12</a> implémente l'observable exact par blocs de Weil.
+    </p>
+    <p>
+      Le présent article est le premier de la série à falsifier explicitement une hypothèse de
+      sauvetage du régime exact. Il ne se contente pas d'étendre le calcul : il montre que
+      l'écart restant avec la phénoménologie est intrinsèque à l'observable exact et doit
+      désormais être traité au niveau structurel.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et problème ouvert</h2>
+    <p>
+      Propagées à travers la relation O7
+      $\beta^* = 1 / (\delta + \tfrac{1}{2})$, les données présentes impliquent des valeurs
+      autour de $\beta^* \approx 0.19$ à $q=151$, $\beta^* \approx 0.24$ à $q=211$, et
+      $\beta^* \approx 0.24$--$0.26$ sous extrapolation log-linéaire, toutes bien au-dessus de
+      la fenêtre cible $\beta^* \in (0.09, 0.13)$.
+    </p>
+    <p>
+      O13 ferme donc l'explication forte par effet de taille finie et laisse un problème ouvert
+      plus précis : comment reformuler la relation structurelle $\delta \mapsto \beta^*$ dans
+      le cadre exact par blocs, où l'observable est normalisé par $|S_n|$ et conserve la phase
+      centrale portée par $\gamma$ ?
+    </p>
+    <p>
+      La prochaine étape du programme n'est donc plus simplement numérique à grand q, mais une
+      re-dérivation théorique de la carte exacte entre décroissance de capacité projective et
+      exposant de cascade. Les grands nombres premiers restent utiles comme tests de robustesse,
+      mais ils ne sont plus le verrou conceptuel principal.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19210831" rel="noopener">
+        <i lang="en">Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
+          Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension</i>.
+        Prépublication.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

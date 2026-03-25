@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mismatch de classe d’observable et relation corrigée δ→β* sur les graphes de Heisenberg :
+    normalisation par bloc, contribution de phase centrale et correspondance structurelle
+    | Cosmochrony</title>
+  <meta name="description"
+    content="O14 résout le mismatch structurel identifié par O13 en dérivant la relation exacte par
+    blocs corrigée entre δ et β*, en identifiant la normalisation par bloc comme correction
+    mesurable dominante, et en montrant en mode pipeline que l’écart restant est structurel."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Mismatch de classe d’observable et relation corrigée δ→β* sur les graphes de
+    Heisenberg : normalisation par bloc, contribution de phase centrale et correspondance
+    structurelle"/>
+  <meta property="og:description"
+    content="O14 résout la source S2 après O13 en dérivant la relation exacte par blocs corrigée
+    δ→β*, en identifiant la normalisation par bloc comme correction mesurable dominante, et en
+    clarifiant la distinction entre phase au niveau des shells et phase au niveau des blocs."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o14/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o14/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Mismatch de classe d’observable et relation corrigée δ→β* sur les graphes de
+          Heisenberg : normalisation par bloc, contribution de phase centrale et correspondance
+          structurelle</h1>
+        <p class="subtitle">
+          O14 résout le mismatch structurel isolé par <a href="../o13/index_fr.html">O13</a>,
+          dérive la relation exacte par blocs corrigée entre exposant de décroissance et exposant
+          de cascade, et montre en mode pipeline que la correction mesurable dominante est la
+          normalisation par bloc.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19226272">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o13/index_fr.html">O13</a>. Alors que
+        <a href="../o13/index_fr.html">O13</a> a écarté l’explication forte par taille finie de la
+        tension exacte δ–β*, il restait à expliquer le problème structurel résiduel, identifié
+        comme Source S2 : la dérivation au niveau proxy de l’application
+        $\delta \mapsto \beta^*$ ne s’applique pas telle quelle à l’observable exact par blocs de
+        Weil.
+      </p>
+      <p>
+        O14 traite directement cette question en identifiant le mismatch de classe d’observable
+        entre la capacité scalaire proxy de <a href="../o7/index_fr.html">O7</a> et la capacité
+        exacte par blocs $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$ mesurée dans
+        <a href="../o12/index_fr.html">O12</a> et <a href="../o13/index_fr.html">O13</a>. Ce
+        mismatch est décomposé en trois écarts structurels : hétérogénéité inter-blocs,
+        normalisation par bloc, et contribution de phase centrale.
+      </p>
+      <p>
+        L’article dérive ensuite une relation exacte par blocs corrigée
+        $\beta^* = 1 / (\delta_{\mathrm{eff}} + \tfrac{1}{2}) + \epsilon(q)$ et l’évalue à partir
+        des sorties réelles du pipeline BFS de O12/O13. Le résultat numérique principal est que la
+        correction dominante est la normalisation, tandis que la cohérence shell-level de la
+        coordonnée centrale reste élevée et que le biais de phase centrale inféré est négligeable
+        dans la fenêtre de fit.
+      </p>
+      <div class="note" role="note">
+        <strong>Champ de la page.</strong> Cette page donne une vue structurée. La dérivation
+        technique complète, la classe d’observable corrigée, le test numérique fondé sur le
+        pipeline et la distinction entre observables de phase au niveau des shells et des blocs
+        sont présentés dans le preprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Correction exacte par blocs, normalisation par bloc, phase centrale, relation δ→β*
+            corrigée
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Correspondance théorique après O13, test numérique via pipeline, et interprétation
+            structurelle de l’écart restant entre exact et proxy
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions centrales</h2>
+    <ul>
+      <li>
+        <strong>Mismatch de classe d’observable identifié :</strong> O14 montre que la dérivation
+        de O7 s’applique à un observable proxy scalaire, alors que l’observable exact de O12/O13
+        est une moyenne par blocs sur des représentations irréductibles de Weil de dimension
+        interne $q$.
+      </li>
+      <li>
+        <strong>Trois corrections structurelles :</strong> l’écart entre exact et proxy est
+        décomposé en hétérogénéité inter-blocs (A1), normalisation par $q$ (A2) et contribution
+        de phase centrale $\psi_c(\gamma + bx)$ (A3).
+      </li>
+      <li>
+        <strong>Relation structurelle corrigée :</strong> l’article dérive
+        $\beta^* = 1 / (\delta_{\mathrm{eff}} + \tfrac{1}{2}) + \epsilon(q)$ avec
+        $\delta_{\mathrm{eff}}(q) = \hat{\delta}_{\mathrm{exact}}(q) - \delta_\gamma(q)
+        - \eta \log q / \log n^*(q)$.
+      </li>
+      <li>
+        <strong>Exposant de normalisation par bloc :</strong> O14 identifie $\eta = 1/2$ comme
+        la valeur unique compatible avec le scaling des amplitudes de Weil, la multiplicité des
+        blocs et l’accumulation en racine carrée sous mélange de phase biaisé.
+      </li>
+      <li>
+        <strong>Test numérique fondé sur le pipeline :</strong> à partir des sorties BFS réelles
+        de O12/O13, l’article mesure $C(q)=\bar{\ell}_\gamma$, calcule la variance circulaire
+        associée et évalue l’exposant corrigé dans les vraies fenêtres de fit.
+      </li>
+      <li>
+        <strong>Correction mesurable dominante :</strong> la cohérence shell-level de la
+        coordonnée centrale reste élevée, donc le $\delta_\gamma$ inféré est négligeable en mode
+        pipeline, tandis que le terme de normalisation $\eta \log q / \log n_1$ domine.
+      </li>
+      <li>
+        <strong>Résultat structurel :</strong> même après correction, l’exposant effectif reste
+        sous le régime cible phénoménologique, ce qui soutient le scénario S2-B plutôt qu’un
+        rétablissement de la relation de O7 dans le cadre exact par blocs.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O14 ne revient pas sur la question de taille finie close par
+      <a href="../o13/index_fr.html">O13</a>. Il explique plutôt pourquoi l’exposant exact par
+      blocs de Weil et la relation structurelle de niveau proxy appartiennent à deux classes
+      d’observables différentes. C’est le pas conceptuel central de l’article.
+    </p>
+    <ul>
+      <li>
+        <a href="../o11/index_fr.html"><strong>O11</strong></a> a restauré un observable proxy
+        adapté à la représentation et extrait un exposant de décroissance au niveau proxy.
+      </li>
+      <li>
+        <a href="../o12/index_fr.html"><strong>O12</strong></a> a remplacé ce proxy par
+        l’observable exact de Weil et révélé un exposant de décroissance plus élevé.
+      </li>
+      <li>
+        <a href="../o13/index_fr.html"><strong>O13</strong></a> a montré que l’écart persiste et
+        n’est pas un artefact de taille finie.
+      </li>
+      <li>
+        <strong>O14</strong> dérive la correspondance exacte par blocs corrigée et montre que la
+        correction mesurable dominante est la normalisation par bloc, non une décohérence de phase
+        observable au niveau des shells.
+      </li>
+    </ul>
+    <p>
+      L’analyse du pipeline révèle aussi une distinction conceptuelle importante :
+      l’observable $\ell_\gamma(n)$ de O12 est shell-level, alors que le biais de phase qui entre
+      dans la correction de O14 agit au niveau des blocs, à l’intérieur des représentations de
+      Weil individuelles. Cette distinction est cruciale, car le pipeline actuel ne mesure
+      directement que le premier.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O14 suit directement <a href="../o13/index_fr.html">O13</a>. L’admissibilité spectrale, la
+      capacité, la rigidité et la stratigraphie définissent l’ossature spectrale de la théorie.
+      <a href="../o1/index_fr.html">O1</a> rétablit l’ordre via la dynamique projective,
+      <a href="../o3/index_fr.html">O3</a> amplifie la hiérarchie via la croissance de valence,
+      <a href="../o4/index_fr.html">O4</a> contraint l’exposant de cascade par le flux relationnel
+      borné, <a href="../o5/index_fr.html">O5</a> localise l’échec des mécanismes au niveau des
+      sommets, <a href="../o6/index_fr.html">O6</a> démontre le no-go pour les fingerprints
+      finis de dimension fixe, <a href="../o7/index_fr.html">O7</a> reformule l’observable en
+      termes de capacité projective, <a href="../o8/index_fr.html">O8</a> identifie la
+      compression géométrique sur les graphes LPS,
+      <a href="../o9/index_fr.html">O9</a> supprime cette compression en passant à la géométrie
+      de Heisenberg à croissance polynomiale,
+      <a href="../o10/index_fr.html">O10</a> isole le goulot d’étranglement lié au sketch dense,
+      <a href="../o11/index_fr.html">O11</a> rétablit l’observabilité au niveau proxy de la
+      représentation, <a href="../o12/index_fr.html">O12</a> implémente l’observable exact de
+      Weil par blocs, et <a href="../o13/index_fr.html">O13</a> ferme l’explication par taille
+      finie.
+    </p>
+    <p>
+      Le présent article est le pont structurel entre mesure exacte et interprétation
+      phénoménologique. Il n’ajoute pas de nouveaux intervalles de nombres premiers, mais
+      redérive l’application entre exposant de décroissance et exposant de cascade dans le seul
+      cadre désormais physiquement pertinent : le régime exact par blocs.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et problème ouvert</h2>
+    <p>
+      En mode pipeline, la cohérence shell-level mesurée vérifie
+      $C(q) \in [0.92,0.96]$, la variance circulaire associée reste faible, et la correction de
+      phase centrale inférée est négligeable devant l’exposant exact. En revanche, la correction
+      de normalisation $\eta \log q / \log n_1 \approx 1.00\text{--}1.06$ est grande et
+      directement mesurable dans les vraies fenêtres de fit de O12/O13.
+    </p>
+    <p>
+      L’exposant corrigé reste donc inférieur à $5.0$ pour tous les nombres premiers testés, et
+      les valeurs correspondantes de $\beta^*$ restent en dehors de la fenêtre phénoménologique
+      $\beta^* \in (0.09,0.13)$. O14 soutient ainsi le scénario S2-B : la seule correction de
+      classe d’observable ne suffit pas à rétablir la relation de niveau proxy dans le régime
+      exact.
+    </p>
+    <p>
+      Le problème ouvert restant est maintenant précisément localisé. Pour tester directement
+      l’ansatz de phase centrale, le programme doit extraire des observables de phase au niveau
+      des blocs avant l’orthogonalisation de Gram-Schmidt dans le pipeline O12. Des calculs sur
+      de plus grands nombres premiers restent utiles, mais le principal goulot d’étranglement
+      conceptuel est désormais l’observable de phase au niveau des blocs lui-même.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19226272" rel="noopener">
+        <i lang="en">Observable-Class Mismatch and the Corrected δ→β* Relation on Heisenberg
+          Graphs: Block Normalisation, Central-Phase Contribution, and Structural
+          Correspondence</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

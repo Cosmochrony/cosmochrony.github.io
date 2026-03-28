@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Admissibilité au niveau des fibres à partir des blocs de Weil conjugués :
+    dérivation structurelle de l’observable par paire | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O17 dérive l’observable par paire au niveau des fibres à partir de la structure des blocs de Weil conjugués, prouve l’égalité des exposants conjugués, et montre que le facteur r(c,q) est un artefact de normalisation plutôt qu’un invariant structurel."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o17/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Admissibilité au niveau des fibres à partir des blocs de Weil conjugués"/>
+  <meta property="og:description"
+    content="O17 ferme la lacune structurelle laissée par O16 en dérivant l’observable par paire à partir de la dynamique des blocs de Weil conjugués et en montrant que r(c,q) est un artefact de normalisation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o17/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o17/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour vers Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Admissibilité au niveau des fibres à partir des blocs de Weil conjugués :
+          dérivation structurelle de l’observable par paire
+        </h1>
+        <p class="subtitle">
+          O17 prolonge <a href="../o16/index_fr">O16</a> en dérivant l’observable au niveau
+          des fibres à partir de la structure des blocs de Weil conjugués, en prouvant
+          l’égalité des exposants $\delta_{q-c}=\delta_c$, et en montrant que $r(c,q)$
+          n’est qu’un artefact de normalisation.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary"
+        href="https://doi.org/10.5281/zenodo.19299611">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o16/index_fr">O16</a>. Alors que O16 identifiait l’observable correcte
+        dans le régime exact de Weil comme une observable par paire au niveau des fibres,
+        une question structurelle restait ouverte :
+        <strong>pourquoi les paires conjuguées définissent-elles la bonne classe d’observables ?</strong>
+      </p>
+      <p>
+        O17 répond à cette question en montrant que les blocs de Weil conjugués $(c,q-c)$
+        portent la même information dynamique. Au niveau de la redondance brute de
+        Gram&ndash;Schmidt, les deux blocs sont exactement identiques lorsque les supports
+        initiaux coïncident, et structurellement équivalents dans le cas général.
+      </p>
+      <p>
+        La conséquence centrale est que la seule quantité structurellement robuste est
+        l’égalité des exposants :
+        \[
+        \delta_{q-c} = \delta_c.
+        \]
+        L’observable au niveau des fibres introduite dans O16 n’est donc pas seulement
+        numériquement efficace, mais structurellement justifiée.
+      </p>
+      <p>
+        O17 montre aussi que le facteur
+        \[
+        r(c,q)=\frac{\sigma_{q-c}(n)}{\sigma_c(n)}
+        \]
+        n’est pas un invariant intrinsèque de la représentation. Il provient de la
+        normalisation interne du pipeline et n’a aucun effet sur les exposants asymptotiques.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée du résultat.</strong> Cette page résume le contenu structurel de O17 :
+        identité de la dynamique conjuguée, élimination de $r(c,q)$ comme faux invariant,
+        et dérivation de l’admissibilité au niveau des fibres à partir de la structure
+        non injective de Π.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Sujet</div>
+          <div class="v">
+            Admissibilité au niveau des fibres, blocs de Weil conjugués,
+            dynamique de Gram&ndash;Schmidt, artefacts de normalisation
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
+          <div class="v">
+            Dérivation structurelle de l’observable par paire, preuve de l’égalité
+            des exposants, et clarification du statut de $r(c,q)$
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions centrales</h2>
+    <ul>
+      <li>
+        <strong>Identité de la dynamique conjuguée :</strong>
+        les blocs de Weil conjugués portent une dynamique brute de redondance
+        Gram&ndash;Schmidt identique sous condition d’égalité des supports, et
+        structurellement équivalente en général.
+      </li>
+      <li>
+        <strong>Égalité des exposants :</strong>
+        $\rho_{q-c}=\overline{\rho_c}$ implique la relation structurelle exacte
+        $\delta_{q-c}=\delta_c$.
+      </li>
+      <li>
+        <strong>Normalisation clarifiée :</strong>
+        le facteur $r(c,q)$ dépend des paramètres de bloc et de la normalisation
+        du pipeline, non d’un invariant arithmétique intrinsèque.
+      </li>
+      <li>
+        <strong>Statut quasi-jauge de $r$ :</strong>
+        $r(c,q)$ varie avec la convention de mesure mais laisse inchangés
+        les exposants asymptotiques.
+      </li>
+      <li>
+        <strong>Observable au niveau des fibres justifiée :</strong>
+        l’admissibilité se définit sur les fibres de Π, non sur les blocs individuels,
+        de sorte que les paires conjuguées constituent la bonne classe d’observables.
+      </li>
+      <li>
+        <strong>Requalification de O14&ndash;O15 :</strong>
+        les articles précédents restent corrects au niveau bloc, mais les observables
+        au niveau bloc ne capturent qu’une demi-fibre d’information.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O17 n’introduit pas une nouvelle loi de croissance. Il clarifie au contraire
+      pourquoi l’observable introduite dans <a href="../o16/index_fr">O16</a>
+      est la bonne.
+    </p>
+    <ul>
+      <li><strong>O15 :</strong> les observables au niveau bloc ne peuvent pas retrouver l’exposant cible</li>
+      <li><strong>O16 :</strong> l’observable correcte est l’observable par paire conjuguée</li>
+      <li><strong>O17 :</strong> cette observable est imposée structurellement par Π et la dynamique conjuguée</li>
+    </ul>
+    <p>
+      Le déficit en $\delta$ observé auparavant se réinterprète donc comme une
+      <strong>mesure d’une demi-fibre</strong>. Le problème n’était pas une défaillance
+      de la dynamique, mais une mauvaise identification de la classe d’observables.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Lien avec le programme Cosmochrony</h2>
+    <p>
+      O17 achève la transition ouverte par <a href="../o16/index_fr">O16</a>,
+      passant d’une observable par paire numériquement efficace à une observable
+      structurellement dérivée. Il stabilise ainsi la hiérarchie des observables
+      du programme d’admissibilité spectrale.
+    </p>
+    <p>
+      Le programme se lit désormais ainsi :
+      O12&ndash;O13 (extraction exacte des blocs), O14 (mismatch d’observable),
+      O15 (échec de dérivation au niveau bloc), O16 (observable par paire identifiée),
+      O17 (observable par paire dérivée structurellement).
+    </p>
+    <p>
+      O17 ferme ainsi la lacune logique laissée par O16 : l’observable n’est plus
+      seulement efficace, elle est désormais justifiée par la structure de la
+      représentation et de la projection.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et problème ouvert</h2>
+    <p>
+      O17 établit que l’exposant physiquement pertinent se définit au niveau des fibres,
+      et que le seul invariant robuste pour les blocs conjugués est
+      \[
+      \delta_{q-c}=\delta_c.
+      \]
+    </p>
+    <p>
+      Une question principale reste toutefois ouverte : pourquoi la fibre minimale de Π
+      est-elle réalisée précisément par la conjugaison
+      \[
+      c \mapsto q-c ?
+      \]
+    </p>
+    <p>
+      O17 montre que cette identification est structurellement cohérente et fortement
+      étayée, mais une dérivation à partir des premiers principes de Π reste à établir.
+    </p>
+    <p>
+      Une direction secondaire consiste à construire une normalisation canonique de
+      $\sigma$, éliminant la dépendance résiduelle aux paramètres de bloc $(b_1,b_2)$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19299611">
+        <i>Fibre-Level Admissibility from Conjugate Weil Blocks:
+          Structural Derivation of the Pair Observable</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

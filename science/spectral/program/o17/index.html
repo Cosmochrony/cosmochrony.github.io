@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Fibre-Level Admissibility from Conjugate Weil Blocks:
+    Structural Derivation of the Pair Observable | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O17 derives the fibre-level pair observable from the structure of conjugate Weil blocks, proves equality of conjugate exponents, and shows that the factor r(c,q) is a normalisation artefact rather than a structural invariant."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o17/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Fibre-Level Admissibility from Conjugate Weil Blocks"/>
+  <meta property="og:description"
+    content="O17 closes the structural gap left by O16 by deriving the pair observable from conjugate Weil dynamics and showing that r(c,q) is a normalisation artefact."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o17/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o17/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Fibre-Level Admissibility from Conjugate Weil Blocks:
+          Structural Derivation of the Pair Observable
+        </h1>
+        <p class="subtitle">
+          O17 follows <a href="../o16">O16</a> by deriving the fibre-level observable
+          from the structure of conjugate Weil blocks, proving exponent equality
+          $\delta_{q-c}=\delta_c$, and showing that $r(c,q)$ is only a normalisation artefact.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary"
+        href="https://doi.org/10.5281/zenodo.19299611">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after
+        <a href="../o16">O16</a>. While O16 identified the correct observable in the
+        exact Weil regime as a fibre-level pair observable, it left open a structural
+        question: <strong>why do conjugate pairs define the correct observable class?</strong>
+      </p>
+      <p>
+        O17 answers this by showing that conjugate Weil blocks $(c,q-c)$ carry the same
+        dynamical information. At the level of raw Gram&ndash;Schmidt redundancy, the two
+        blocks are exactly identical when the initial supports coincide, and structurally
+        equivalent in general.
+      </p>
+      <p>
+        The central consequence is that the unique structurally robust quantity is the
+        equality of exponents:
+        \[
+        \delta_{q-c} = \delta_c.
+        \]
+        The fibre-level observable introduced in O16 is therefore not just numerically
+        successful, but structurally justified.
+      </p>
+      <p>
+        O17 also shows that the factor
+        \[
+        r(c,q)=\frac{\sigma_{q-c}(n)}{\sigma_c(n)}
+        \]
+        is not an intrinsic invariant of the representation. It comes from the internal
+        normalisation of the pipeline and has no effect on asymptotic exponents.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarises the structural content of O17:
+        identity of conjugate dynamics, elimination of $r(c,q)$ as a false invariant,
+        and derivation of fibre-level admissibility from the non-injective structure of Π.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Fibre-level admissibility, conjugate Weil blocks,
+            Gram&ndash;Schmidt dynamics, normalisation artefacts
+          </div></div>
+        <div class="kv"><div class="k">Scope</div>
+          <div class="v">
+            Structural derivation of the pair observable, proof of exponent equality,
+            and clarification of the status of $r(c,q)$
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Identity of conjugate dynamics:</strong>
+        conjugate Weil blocks carry identical raw Gram&ndash;Schmidt redundancy dynamics
+        under equal support, and structurally equivalent dynamics in general.
+      </li>
+      <li>
+        <strong>Exponent equality:</strong>
+        $\rho_{q-c}=\overline{\rho_c}$ implies the exact structural relation
+        $\delta_{q-c}=\delta_c$.
+      </li>
+      <li>
+        <strong>Normalisation clarified:</strong>
+        the factor $r(c,q)$ depends on block parameters and pipeline normalisation,
+        not on an intrinsic arithmetic invariant.
+      </li>
+      <li>
+        <strong>Gauge-like status of $r$:</strong>
+        $r(c,q)$ changes with the measurement convention but leaves
+        asymptotic exponents unchanged.
+      </li>
+      <li>
+        <strong>Fibre-level observable justified:</strong>
+        admissibility is defined on fibres of Π, not on individual blocks,
+        so conjugate pairs are the correct physical observable class.
+      </li>
+      <li>
+        <strong>Requalification of O14&ndash;O15:</strong>
+        the previous papers remain correct at block level, but block-level
+        observables capture only half-fibre information.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O17 does not introduce a new growth law. Instead, it clarifies why the observable
+      introduced in <a href="../o16">O16</a> is the correct one.
+    </p>
+    <ul>
+      <li><strong>O15:</strong> block-level observables cannot recover the target exponent</li>
+      <li><strong>O16:</strong> the correct observable is the conjugate-pair observable</li>
+      <li><strong>O17:</strong> this observable is structurally imposed by Π and conjugate dynamics</li>
+    </ul>
+    <p>
+      The earlier δ-deficit is therefore reinterpreted as a
+      <strong>half-fibre measurement</strong>. The issue was not a failure of dynamics,
+      but a misidentification of the observable class.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O17 completes the transition opened by <a href="../o16">O16</a> from an empirically
+      successful pair observable to a structurally derived one. It stabilises the observable
+      hierarchy of the spectral admissibility programme.
+    </p>
+    <p>
+      The programme now reads:
+      O12&ndash;O13 (exact block extraction), O14 (observable mismatch),
+      O15 (block-level derivation failure), O16 (pair observable identified),
+      O17 (pair observable structurally derived).
+    </p>
+    <p>
+      O17 therefore closes the logical gap left by O16: the observable is now not only
+      effective, but justified by the representation-theoretic and projection structure.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open problem</h2>
+    <p>
+      O17 establishes that the physically meaningful exponent is defined at the fibre level,
+      and that the only structurally robust conjugate-block invariant is
+      \[
+      \delta_{q-c}=\delta_c.
+      \]
+    </p>
+    <p>
+      However, one main open problem remains: why is the minimal fibre of Π realised
+      specifically by the conjugation
+      \[
+      c \mapsto q-c?
+      \]
+    </p>
+    <p>
+      O17 shows that this identification is structurally coherent and strongly supported,
+      but a derivation from first principles of Π remains to be established.
+    </p>
+    <p>
+      A secondary open direction is the construction of a canonical normalisation of
+      $\sigma$, eliminating the residual dependence on block parameters $(b_1,b_2)$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19299611">
+        <i>Fibre-Level Admissibility from Conjugate Weil Blocks:
+          Structural Derivation of the Pair Observable</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

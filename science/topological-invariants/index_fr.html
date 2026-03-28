@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Invariants topologiques des configurations admissibles :
+    quantification de la charge, absence de monopôles magnétiques,
+    et chiralité projective en Cosmochronie | Cosmochrony</title>
+  <meta name="description"
+    content="Cet article établit la couche topologique de la Cosmochronie :
+    quantification de la charge via π₁, exclusion structurelle des monopôles
+    magnétiques sur le modèle admissible canonique via π₂ = 0, et violation
+    de la parité comme chiralité projective."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/topological-invariants/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Invariants topologiques des configurations admissibles :
+    quantification de la charge, absence de monopôles magnétiques,
+    et chiralité projective en Cosmochronie"/>
+  <meta property="og:description"
+    content="Cet article identifie les invariants topologiques admissibles de la fibre
+    de projection, dérive la quantification de la charge à partir de π₁, exclut les
+    monopôles magnétiques isolés sur le modèle admissible canonique via π₂ = 0,
+    et interprète la violation de la parité comme une chiralité projective."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/topological-invariants/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/topological-invariants/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Invariants topologiques des configurations admissibles :
+          quantification de la charge, absence de monopôles magnétiques,
+          et chiralité projective en Cosmochronie</h1>
+        <p class="subtitle">
+          Cet article établit la couche topologique de la Cosmochronie : quantification de la
+          charge via l’enroulement de la fibre U(1), exclusion structurelle des monopôles
+          magnétiques isolés sur le modèle admissible canonique, et interprétation de la
+          violation de la parité comme une chiralité projective sous projection non injective.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19282962">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/">
+        Retour à la section Science
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Les travaux précédents en Cosmochronie ont établi la fibre de projection
+        $\Pi \cong S^3$, l’émergence de la structure de jauge U(1), la contrainte
+        d’admissibilité à flux borné, ainsi que le mécanisme dynamique reliant masse et
+        charge. Le présent article aborde une question différente : quels invariants
+        topologiques restent admissibles sous cette contrainte de projection, et quelles
+        conséquences physiques en découlent ?
+      </p>
+      <p>
+        La réponse est triple. Premièrement, la charge électrique est identifiée au nombre
+        d’enroulement de la fibre U(1), de sorte que la quantification de la charge découle
+        de $\pi_1(S^1)\cong\mathbb{Z}$. Deuxièmement, sur un modèle admissible canonique où
+        le flux borné élimine les régions polaires de la base de Hopf, la base devient
+        équivalente topologiquement à un anneau avec $\pi_2=0$, ce qui exclut les monopôles
+        magnétiques isolés comme excitations topologiques admissibles. Troisièmement, la
+        violation de la parité est interprétée comme une chiralité projective : la projection
+        non injective peut sélectionner une orientation d’une classe topologique plutôt que
+        sa conjuguée.
+      </p>
+      <p>
+        L’article précise explicitement son domaine de validité. Les résultats sur la charge
+        et sur l’absence de monopôles sont établis pour le modèle admissible canonique. Leur
+        extension à l’espace de configuration effectif complet $C_{\mathrm{eff}}$ reste une
+        question ouverte. De même, l’interprétation en termes d’interaction faible est
+        structurellement motivée, mais la dérivation complète du schéma V$-$A n’est pas encore
+        achevée.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page propose un aperçu structuré. Les définitions
+        précises de l’espace de configuration admissible, la réduction par flux borné de la
+        base de Hopf, l’exclusion topologique des monopôles, la notion de chiralité projective
+        et la distinction entre résultats démontrés et questions ouvertes sont détaillées dans
+        la prépublication.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thème</div>
+          <div class="v">
+            Invariants topologiques, quantification de la charge, monopôles magnétiques,
+            chiralité projective, violation de la parité
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Modèle admissible canonique pour la couche topologique de la Cosmochronie, avec
+            distinction explicite entre résultats établis et extensions ouvertes
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Charge comme invariant $\pi_1$ :</strong> la fibre U(1) supporte un nombre
+        d’enroulement entier identifié à la charge électrique, rendant la quantification
+        topologiquement nécessaire.
+      </li>
+      <li>
+        <strong>Modèle admissible canonique :</strong> la contrainte de flux borné transforme la
+        base de Hopf en un espace à $\pi_2=0$, éliminant les classes topologiques de type
+        monopôle.
+      </li>
+      <li>
+        <strong>Exclusion des monopôles :</strong> aucun monopôle magnétique isolé n’est
+        admissible topologiquement dans ce cadre.
+      </li>
+      <li>
+        <strong>Contraste avec le cadre standard :</strong> contrairement au modèle de Dirac et
+        de 't Hooft–Polyakov, où les monopôles sont permis topologiquement, leur absence est ici
+        structurelle.
+      </li>
+      <li>
+        <strong>Chiralité projective :</strong> la projection non injective introduit une
+        dépendance en orientation des invariants, fournissant un mécanisme de violation de la
+        parité.
+      </li>
+      <li>
+        <strong>Séparation topologie/spectre :</strong> la topologie détermine les invariants
+        possibles, tandis que la structure spectrale sélectionne ceux qui sont physiquement
+        réalisés.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      Trois phénomènes physiques sont unifiés sous un même principe structurel : la
+      quantification de la charge, l’absence de monopôles magnétiques et la violation de la
+      parité. Tous découlent de la structure topologique admissible sous projection.
+    </p>
+    <ul>
+      <li>
+        <strong>Électromagnétisme :</strong> porté par la fibre U(1) et quantifié par
+        enroulement.
+      </li>
+      <li>
+        <strong>Monopôles :</strong> exclus dans le modèle admissible canonique.
+      </li>
+      <li>
+        <strong>Interaction faible :</strong> interprétée comme sélection d’orientation via la
+        chiralité projective.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      Cet article complète le programme en ajoutant la couche topologique aux aspects déjà
+      développés : dynamique (flux borné et relaxation) et spectre (sélection admissible et
+      hiérarchie). Il fournit ainsi la classification des invariants qui sous-tendent ces deux
+      autres niveaux.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultats et questions ouvertes</h2>
+    <ul>
+      <li>Extension globale de $\pi_2=0$ à $C_{\mathrm{eff}}$</li>
+      <li>Dérivation complète de la chiralité maximale (V$-$A)</li>
+      <li>Interface topologique et spectrale des interactions faibles</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19282962">
+        <i>Invariants topologiques des configurations admissibles :
+          quantification de la charge, absence de monopôles magnétiques,
+          et chiralité projective en Cosmochronie</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

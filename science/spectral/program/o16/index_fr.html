@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Admissibilité de fibre et doublement de l’exposant dans le régime de Weil exact :
+    résolution du déficit δ via les observables de paires conjuguées | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O16 identifie l’observable dynamique correct dans le régime de Weil exact comme un observable de fibre, démontre le doublement δ → 2δ et résout le déficit δ sans modifier la loi de croissance O7."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o16/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Admissibilité de fibre et doublement de l’exposant dans le régime de Weil exact"/>
+  <meta property="og:description"
+    content="O16 résout le déficit δ identifié en O15 en introduisant les observables de fibre, en démontrant le doublement de l’exposant et en rétablissant la cohérence avec l’échelle phénoménologique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o16/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o16/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Admissibilité de fibre et doublement de l’exposant dans le régime de Weil exact :
+          résolution du déficit δ via les observables de paires conjuguées
+        </h1>
+        <p class="subtitle">
+          O16 identifie l’observable correct dans le régime de Weil exact après
+          <a href="../o15">O15</a>, en montrant que l’admissibilité est définie au niveau des fibres
+          et entraîne un doublement de l’exposant δ → 2δ.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary"
+        href="https://doi.org/10.5281/zenodo.19298427">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o15">O15</a>. Alors que O15 a établi que l’observable scalaire de
+        <a href="../o7">O7</a> ne se transfère pas au régime exact des blocs de Weil
+        et a localisé l’échec au niveau de l’équation de croissance, il restait
+        une question précise :
+        <strong>quel est l’observable dynamique correct&nbsp;?</strong>
+      </p>
+      <p>
+        O16 répond à cette question en identifiant une propriété structurelle de la projection Π :
+        <strong>la non-injectivité implique une admissibilité au niveau des fibres</strong>.
+        Chaque observable correspond non pas à un bloc de Weil isolé, mais à une paire
+        de blocs conjugués $(c, q-c)$.
+      </p>
+      <p>
+        L’observable correct n’est donc plus la moyenne de blocs
+        $\bar{\Sigma}_n$, mais un <strong>observable de paire</strong> défini sur les fibres :
+        \[
+        \sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n).
+        \]
+      </p>
+      <p>
+        Cela entraîne immédiatement un doublement de l’exposant :
+        \[
+        \delta_{\mathrm{pair}} = 2\,\delta_c \approx 7.4,
+        \]
+        ce qui résout le déficit δ identifié en O12–O15 sans modifier la loi de croissance O6/O7.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page donne une vue structurée du résultat.
+        La démonstration complète, la validation numérique et le statut épistémique
+        de l’interprétation en termes de fibres sont développés dans la prépublication.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Admissibilité de fibre, paires conjuguées, doublement de l’exposant,
+            observable exact
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Identification de l’observable dynamique correct dans le régime exact
+            et résolution du déficit δ sans modification de la loi de croissance
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Observable de fibre :</strong>
+        l’admissibilité est définie sur les fibres de Π, et non sur des blocs individuels.
+      </li>
+      <li>
+        <strong>Symétrie des blocs conjugués :</strong>
+        $\rho_{q-c} = \overline{\rho_c}$ implique une dynamique Gram–Schmidt identique
+        et $\delta_c = \delta_{q-c}$.
+      </li>
+      <li>
+        <strong>Doublement de l’exposant :</strong>
+        $\delta_{\mathrm{pair}} = 2\,\delta_c$ découle directement de la structure de fibre.
+      </li>
+      <li>
+        <strong>Résolution du déficit δ :</strong>
+        l’écart identifié en O12–O15 provient d’une mesure à une seule branche.
+      </li>
+      <li>
+        <strong>Borne spectrale inférieure :</strong>
+        $\delta_{\mathrm{pair}} \ge 7.4$ est une contrainte structurelle de la représentation.
+      </li>
+      <li>
+        <strong>Clarification de la normalisation :</strong>
+        le facteur $r(c,q)$ dépend du pipeline et n’est pas un invariant structurel.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O16 ne modifie pas la loi de croissance établie en <a href="../o6">O6</a> et
+      reformulée en <a href="../o7">O7</a>. Il montre que l’observable qui y entre
+      doit être redéfini.
+    </p>
+    <ul>
+      <li><strong>O15 :</strong> observable scalaire invalide</li>
+      <li><strong>O16 :</strong> observable correct = observable de fibre</li>
+    </ul>
+    <p>
+      Le déficit δ n’est donc pas un échec dynamique, mais une erreur d’identification
+      de l’admissibilité. La structure de Π impose directement l’observable correct.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O16 suit directement <a href="../o15">O15</a> et complète le passage des observables
+      scalaires aux observables exacts.
+    </p>
+    <p>
+      La chaîne devient :
+      O12–O13 (extraction exacte), O14 (mismatch d’observable),
+      O15 (échec de dérivation), O16 (observable correct).
+    </p>
+    <p>
+      O16 n’introduit ni nouvelle dynamique ni nouveaux domaines premiers.
+      Son rôle est structurel : identifier l’observable compatible avec Π.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et problème ouvert</h2>
+    <p>
+      O16 établit la borne inférieure :
+      \[
+      \delta_{\mathrm{pair}} \approx 7.4.
+      \]
+    </p>
+    <p>
+      Cependant, le spectre des paires s’étend au-delà de la plage phénoménologique
+      ($\delta > 10.6$). La borne supérieure n’est donc pas spectrale.
+    </p>
+    <p>
+      Les données indiquent qu’elle provient d’une
+      <strong>contrainte de cohérence dynamique</strong> sur la trajectoire complète $\sigma(n)$.
+    </p>
+    <p>
+      Le problème restant est donc :
+      quelle propriété globale de la relaxation sélectionne la fenêtre admissible&nbsp;?
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19298427">
+        <i>Admissibilité de fibre et doublement de l’exposant dans le régime de Weil exact</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

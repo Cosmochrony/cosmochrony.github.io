@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Minimal Fibre Structure of the Non-Injective Projection from Born–Infeld Indiscernability:
+    Derivation of the Parity Involution | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O18 derives the minimal fibre structure of the non-injective projection from
+    Born–Infeld indiscernability, proves that every fibre contains the parity involution
+    χ↦−χ, and identifies c↔q−c as its Weil-level realisation."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o18/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Minimal Fibre Structure of the Non-Injective Projection from Born–Infeld
+    Indiscernability"/>
+  <meta property="og:description"
+    content="O18 derives the parity involution χ↦−χ from the Born–Infeld structure and
+    identifies c↔q−c as its Weil-level realisation, closing the foundational gap left by O17."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o18/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o18/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Minimal Fibre Structure of the Non-Injective Projection from Born–Infeld
+          Indiscernability: Derivation of the Parity Involution
+        </h1>
+        <p class="subtitle">
+          O18 follows <a href="../o17">O17</a> by deriving the minimal fibre structure of Π from the
+          Born–Infeld framework, proving that every fibre contains the involution $\chi\mapsto-\chi$,
+          and identifying $c\leftrightarrow q-c$ as its Weil-level realisation.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19321413">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after <a href="../o17">O17</a>.
+        While O17 established that conjugate Weil blocks $(c,q-c)$ define the correct fibre-level
+        observable, it left open one foundational question:
+        <strong>why should the minimal fibre of Π be an involution at all?</strong>
+      </p>
+      <p>
+        O18 answers this at two levels. At the abstract level, it shows that the Born–Infeld
+        action is even in $\chi$, and defines a notion of BI-indiscernability based on equality of
+        effective responses under all BI-admissible perturbations. This implies that $\chi$ and
+        $-\chi$ are projectively indistinguishable.
+      </p>
+      <p>
+        The central consequence is that every fibre of Π contains the parity orbit
+        \[
+        \{\chi,-\chi\}.
+        \]
+        Under the explicit conditional hypothesis that no further effective symmetry is present,
+        this orbit is the minimal fibre.
+      </p>
+      <p>
+        O18 then turns to the Weil realisation on $G_q=\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and
+        identifies the abstract involution with the concrete conjugation
+        \[
+        c \mapsto q-c.
+        \]
+        The conjugate pair observable of O16–O17 is therefore no longer only structurally coherent:
+        it is derived from the Born–Infeld projection structure itself.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarises the structural content of O18:
+        parity of the Born–Infeld action, BI-indiscernability, conditional minimality of the parity
+        fibre, and identification of $c\leftrightarrow q-c$ as the Weil-level realisation.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Non-injective projection, Born–Infeld parity, fibre structure,
+            Weil realisation
+          </div></div>
+        <div class="kv"><div class="k">Scope</div>
+          <div class="v">
+            Derivation of the parity involution, conditional minimality of fibres,
+            and identification of $c\leftrightarrow q-c$
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Parity of the Born–Infeld action:</strong>
+        $S_{\mathrm{BI}}[\chi]$ depends only on $F^2=(D\chi)^2$, hence
+        \[
+        S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi].
+        \]
+      </li>
+      <li>
+        <strong>BI-indiscernability:</strong>
+        configurations are compared through their effective responses under all
+        BI-admissible perturbations, at fixed resolution scale.
+      </li>
+      <li>
+        <strong>Fibre constraint:</strong>
+        parity implies that every fibre contains the orbit
+        \[
+        \{\chi,-\chi\}.
+        \]
+      </li>
+      <li>
+        <strong>Conditional minimality:</strong>
+        if parity is the only global effective symmetry compatible with BI-admissible
+        observables, then the minimal fibre is exactly the two-element orbit
+        $\{\chi,-\chi\}$.
+      </li>
+      <li>
+        <strong>Weil-level realisation:</strong>
+        the abstract involution is realised concretely as
+        \[
+        c\leftrightarrow q-c,
+        \]
+        using the conjugation relation $\rho_{q-c}=\overline{\rho_c}$ and the norm-invariance
+        of Gram&ndash;Schmidt orthogonalisation.
+      </li>
+      <li>
+        <strong>Foundational closure of O16&ndash;O17:</strong>
+        the fibre identification used in the pair observable is now structurally derived,
+        not only motivated by representation-theoretic consistency.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O18 does not change the pair observable introduced in <a href="../o16">O16</a> and analysed in
+      <a href="../o17">O17</a>. Instead, it explains <strong>why this observable class is the correct
+      one</strong>.
+    </p>
+    <ul>
+      <li><strong>O16:</strong> the physically relevant observable is the conjugate-pair observable</li>
+      <li><strong>O17:</strong> conjugate Weil blocks carry identical dynamical information</li>
+      <li><strong>O18:</strong> the fibre structure itself is derived from Born–Infeld indiscernability</li>
+    </ul>
+    <p>
+      The pair observable is therefore justified at the level of the projection Π itself.
+      The earlier block-level mismatch is no longer only a matter of observable hierarchy:
+      it is traced back to the minimal non-injectivity forced by the effective action.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O18 connects the exact Weil analysis of the O-series to the more general Cosmochrony
+      framework. It imports the structural necessity of non-injective projection and the
+      Born–Infeld selection of the effective action, then uses them to derive the minimal
+      parity involution at the abstract level.
+    </p>
+    <p>
+      The programme now reads:
+      O12&ndash;O13 (exact block extraction), O14 (observable mismatch),
+      O15 (block-level derivation failure), O16 (pair observable identified),
+      O17 (pair dynamics derived), O18 (fibre structure derived).
+    </p>
+    <p>
+      O18 therefore closes the foundational gap left by O17: the observable hierarchy is now
+      not only dynamically and spectrally coherent, but anchored in the Born–Infeld projection
+      structure of the χ-framework.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open directions</h2>
+    <p>
+      O18 establishes that the minimal fibre structure of Π is governed by the parity involution
+      $\chi\mapsto-\chi$, and that in the Weil realisation this becomes
+      \[
+      c\mapsto q-c.
+      \]
+    </p>
+    <p>
+      The result is explicitly conditional: if additional global effective symmetries compatible
+      with BI-admissible observables exist in enriched frameworks, larger fibres may occur.
+      A general classification of such fibres remains open.
+    </p>
+    <p>
+      Three immediate follow-up directions are identified:
+    </p>
+    <ul>
+      <li>
+        <strong>O19:</strong> define a canonical normalisation of $\sigma$, independent of block
+        parameters $(b_1,b_2)$
+      </li>
+      <li>
+        <strong>O20:</strong> explain the dynamical selection of the phenomenological window
+        $[7.4,10.6]$
+      </li>
+      <li>
+        <strong>O21:</strong> derive the full fibre-level relation from $\delta_{\mathrm{pair}}$ to $\beta^*$
+        without pipeline conventions
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19321413">
+        <i>Minimal Fibre Structure of the Non-Injective Projection from Born–Infeld
+          Indiscernability: Derivation of the Parity Involution</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

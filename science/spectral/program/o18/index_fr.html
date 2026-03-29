@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Structure minimale des fibres de la projection non injective par indiscernabilité
+    Born–Infeld : dérivation de l’involution de parité | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O18 dérive la structure minimale des fibres de la projection non injective à partir
+    de l’indiscernabilité Born–Infeld, montre que chaque fibre contient l’involution de
+    parité χ↦−χ, et identifie c↔q−c comme sa réalisation au niveau de Weil."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o18/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Structure minimale des fibres de la projection non injective par
+    indiscernabilité Born–Infeld"/>
+  <meta property="og:description"
+    content="O18 dérive l’involution de parité χ↦−χ à partir de la structure Born–Infeld et
+    identifie c↔q−c comme sa réalisation au niveau de Weil, fermant le vide fondationnel
+    laissé par O17."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o18/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o18/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Structure minimale des fibres de la projection non injective par indiscernabilité
+          Born–Infeld : dérivation de l’involution de parité
+        </h1>
+        <p class="subtitle">
+          O18 poursuit <a href="../o17/index_fr.html">O17</a> en dérivant la structure minimale des
+          fibres de Π à partir du cadre Born–Infeld, en montrant que toute fibre contient
+          l’involution $\chi\mapsto-\chi$, et en identifiant $c\leftrightarrow q-c$ comme sa
+          réalisation au niveau de Weil.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19321413">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o17/index_fr.html">O17</a>. Alors que O17 établissait que les blocs de Weil
+        conjugués $(c,q-c)$ définissent la bonne observable au niveau des fibres, une question
+        fondationnelle restait ouverte :
+        <strong>pourquoi la fibre minimale de Π doit-elle être une involution&nbsp;?</strong>
+      </p>
+      <p>
+        O18 répond à cette question à deux niveaux. Au niveau abstrait, il montre que l’action
+        Born–Infeld est paire en $\chi$, puis définit une notion d’indiscernabilité BI à partir
+        de l’égalité des réponses effectives sous toutes les perturbations BI-admissibles. Cela
+        implique que $\chi$ et $-\chi$ sont projectivement indiscernables.
+      </p>
+      <p>
+        La conséquence centrale est que toute fibre de Π contient l’orbite de parité
+        \[
+        \{\chi,-\chi\}.
+        \]
+        Sous l’hypothèse conditionnelle explicite qu’aucune symétrie effective supplémentaire
+        n’intervient, cette orbite est la fibre minimale.
+      </p>
+      <p>
+        O18 passe ensuite à la réalisation de Weil sur
+        $G_q=\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ et identifie l’involution abstraite avec la
+        conjugaison concrète
+        \[
+        c \mapsto q-c.
+        \]
+        L’observable par paires conjuguées de O16–O17 n’est donc plus seulement structurellement
+        cohérente&nbsp;: elle est dérivée de la structure de projection Born–Infeld elle-même.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette page résume le contenu structurel de O18 :
+        parité de l’action Born–Infeld, indiscernabilité BI, minimalité conditionnelle de la
+        fibre de parité, et identification de $c\leftrightarrow q-c$ comme réalisation au niveau
+        de Weil.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Objet</div>
+          <div class="v">
+            Projection non injective, parité Born–Infeld,
+            structure des fibres, réalisation de Weil
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
+          <div class="v">
+            Dérivation de l’involution de parité, minimalité conditionnelle des fibres,
+            et identification de $c\leftrightarrow q-c$
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions centrales</h2>
+    <ul>
+      <li>
+        <strong>Parité de l’action Born–Infeld&nbsp;:</strong>
+        $S_{\mathrm{BI}}[\chi]$ ne dépend que de $F^2=(D\chi)^2$, donc
+        \[
+        S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi].
+        \]
+      </li>
+      <li>
+        <strong>Indiscernabilité BI&nbsp;:</strong>
+        les configurations sont comparées par leurs réponses effectives sous l’ensemble des
+        perturbations BI-admissibles, à échelle de résolution fixée.
+      </li>
+      <li>
+        <strong>Contrainte sur les fibres&nbsp;:</strong>
+        la parité implique que toute fibre contient l’orbite
+        \[
+        \{\chi,-\chi\}.
+        \]
+      </li>
+      <li>
+        <strong>Minimalité conditionnelle&nbsp;:</strong>
+        si la parité est l’unique symétrie effective globale compatible avec les observables
+        BI-admissibles, alors la fibre minimale est exactement l’orbite à deux éléments
+        $\{\chi,-\chi\}$.
+      </li>
+      <li>
+        <strong>Réalisation au niveau de Weil&nbsp;:</strong>
+        l’involution abstraite se réalise concrètement par
+        \[
+        c\leftrightarrow q-c,
+        \]
+        au moyen de la relation de conjugaison $\rho_{q-c}=\overline{\rho_c}$ et de l’invariance
+        de norme de l’orthogonalisation de Gram&ndash;Schmidt.
+      </li>
+      <li>
+        <strong>Fermeture fondationnelle de O16&ndash;O17&nbsp;:</strong>
+        l’identification des fibres utilisée dans l’observable par paires est maintenant dérivée
+        structurellement, et non plus seulement motivée par la cohérence représentationnelle.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O18 ne modifie pas l’observable par paires introduite dans <a href="../o16/index_fr.html">O16</a>
+      et analysée dans <a href="../o17/index_fr.html">O17</a>. Il explique plutôt
+      <strong>pourquoi cette classe d’observables est la bonne</strong>.
+    </p>
+    <ul>
+      <li><strong>O16&nbsp;:</strong> l’observable physiquement pertinente est l’observable par paire conjuguée</li>
+      <li><strong>O17&nbsp;:</strong> les blocs de Weil conjugués portent la même information dynamique</li>
+      <li><strong>O18&nbsp;:</strong> la structure même des fibres est dérivée de l’indiscernabilité Born–Infeld</li>
+    </ul>
+    <p>
+      L’observable par paires est donc justifiée au niveau de la projection Π elle-même.
+      Le décalage antérieur au niveau bloc n’est plus seulement une question de hiérarchie
+      d’observables&nbsp;: il est ramené à la non-injectivité minimale imposée par l’action effective.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      O18 relie l’analyse exacte de Weil de la série O au cadre plus général de Cosmochrony.
+      Il importe la nécessité structurelle de la projection non injective et la sélection
+      Born–Infeld de l’action effective, puis s’en sert pour dériver l’involution de parité
+      minimale au niveau abstrait.
+    </p>
+    <p>
+      Le programme se lit maintenant ainsi :
+      O12&ndash;O13 (extraction exacte au niveau bloc), O14 (mismatch d’observable),
+      O15 (échec de la dérivation au niveau bloc), O16 (observable par paires identifiée),
+      O17 (dynamique des paires dérivée), O18 (structure des fibres dérivée).
+    </p>
+    <p>
+      O18 ferme donc le vide fondationnel laissé par O17&nbsp;: la hiérarchie des observables
+      n’est plus seulement cohérente dynamiquement et spectralement, elle est ancrée dans
+      la structure de projection Born–Infeld du cadre χ.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <p>
+      O18 établit que la structure minimale des fibres de Π est gouvernée par l’involution
+      de parité $\chi\mapsto-\chi$, et que dans la réalisation de Weil cela devient
+      \[
+      c\mapsto q-c.
+      \]
+    </p>
+    <p>
+      Le résultat est explicitement conditionnel&nbsp;: si des symétries effectives globales
+      supplémentaires compatibles avec les observables BI-admissibles existent dans des cadres
+      enrichis, des fibres plus grandes peuvent apparaître. Une classification générale de ces
+      fibres reste ouverte.
+    </p>
+    <p>
+      Trois directions immédiates sont identifiées&nbsp;:
+    </p>
+    <ul>
+      <li>
+        <strong>O19&nbsp;:</strong> définir une normalisation canonique de $\sigma$, indépendante des
+        paramètres de bloc $(b_1,b_2)$
+      </li>
+      <li>
+        <strong>O20&nbsp;:</strong> expliquer la sélection dynamique de la fenêtre phénoménologique
+        $[7.4,10.6]$
+      </li>
+      <li>
+        <strong>O21&nbsp;:</strong> dériver la relation complète entre $\delta_{\mathrm{pair}}$ et $\beta^*$
+        au niveau des fibres, sans conventions de pipeline
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19321413">
+        <i>Minimal Fibre Structure of the Non-Injective Projection from Born–Infeld
+          Indiscernability: Derivation of the Parity Involution</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

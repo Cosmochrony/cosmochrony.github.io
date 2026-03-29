@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Normalisation canonique des observables de paires dans les blocs de Weil :
+    élimination de la dépendance au pipeline Gram–Schmidt | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O19 explicite la normalisation du pipeline Gram–Schmidt, classe le facteur
+    d’amplitude résiduel r(c,q) et construit un observable de paire canonique indépendant
+    des conventions de calcul."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o19/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Normalisation canonique des observables de paires dans les blocs de Weil"/>
+  <meta property="og:description"
+    content="O19 rend explicite la normalisation du pipeline Gram–Schmidt et définit un
+    observable de paire canonique indépendant des conventions numériques."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o19/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o19/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Normalisation canonique des observables de paires dans les blocs de Weil :
+          élimination de la dépendance au pipeline Gram–Schmidt
+        </h1>
+        <p class="subtitle">
+          O19 prolonge <a href="../o18">O18</a> en rendant explicite la normalisation du pipeline
+          Gram–Schmidt, en classant le facteur d’amplitude résiduel $r(c,q)$, et en construisant
+          un observable de paire canonique indépendant des conventions de calcul.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19323720">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après <a href="../o18">O18</a>.
+        Alors que O18 a fixé la classe correcte d’observables au niveau des fibres, un problème
+        subsistait :
+        <strong>l’amplitude de l’observable de paire dépendait encore de la normalisation implicite
+          du pipeline Gram&ndash;Schmidt de O12/O13.</strong>
+      </p>
+      <p>
+        O19 traite cette question sans modifier ni la classe d’observable ni l’exposant. Son rôle
+        est plus précis : supprimer la dernière dépendance aux conventions d’implémentation au
+        niveau de l’amplitude.
+      </p>
+      <p>
+        Le papier rend explicite le facteur de normalisation
+        \[
+        D(c,b_1,b_2,n),
+        \]
+        distingue le span cumulatif brut
+        \[
+        \Sigma^{(c)}(n)
+        \]
+        de l’observable normalisée
+        \[
+        \sigma_c(n),
+        \]
+        et identifie le facteur entier résiduel $r(c,q)$ comme un reste d’amplitude hérité du span
+        brut et propagé inchangé à l’observable.
+      </p>
+      <p>
+        La question centrale devient alors : $r(c,q)$ est-il un artefact de base, un invariant
+        d’instance, ou une combinaison des deux ?
+      </p>
+      <p>
+        O19 introduit deux tests pour trancher cette question : une variation de base par
+        transformations unitaires de $\mathbb{C}^q$, et une variation d’instance $(b_1,b_2)$ sous
+        convention fixée. La classification obtenue détermine la forme canonique de l’observable.
+      </p>
+      <div class="note" role="note">
+        <strong>Périmètre.</strong> Cette page résume O19 : normalisation explicite du pipeline,
+        distinction span/observable, classification de $r(c,q)$, et construction d’un observable
+        canonique au niveau de l’amplitude.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Normalisation canonique, observables de paires, Gram–Schmidt,
+            structure d’amplitude
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
+          <div class="v">
+            Classification du facteur résiduel et construction d’un observable canonique
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Normalisation explicite :</strong> introduction formelle de $D(c,b_1,b_2,n)$.</li>
+      <li><strong>Distinction span/observable :</strong> séparation de $\Sigma^{(c)}(n)$ et
+        $\sigma_c(n)$.</li>
+      <li><strong>Lemme d’invariance de phase :</strong> invariance sous phase globale et dépendance
+        uniquement à l’alignement.</li>
+      <li><strong>Tests P2/P3 :</strong> séparation des dépendances de base et d’instance.</li>
+      <li><strong>Classification :</strong> artefact de base, invariant d’instance ou cas mixte.</li>
+      <li><strong>Observable canonique :</strong> construction de
+        $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$.</li>
+      <li><strong>Stabilité de l’exposant :</strong> $\delta$ inchangé dans tous les cas.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O19 rend l’observable pleinement intrinsèque au niveau de l’amplitude. Le facteur $r(c,q)$
+      est isolé, classifié, et éliminé ou absorbé de manière canonique.
+    </p>
+    <p>
+      Trois niveaux sont maintenant clairement séparés :
+      $\Sigma^{(c)}(n)$, $\sigma_c(n)$ et $\delta_c$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Rôle dans le programme</h2>
+    <p>
+      O19 complète l’étape de normalisation :
+      O16–O18 définissent l’observable, O19 le rend canonique.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Perspectives</h2>
+    <ul>
+      <li><strong>O20 :</strong> sélection dynamique de la fenêtre $[7.4,10.6]$</li>
+      <li><strong>O21 :</strong> dérivation complète $\delta_{\mathrm{pair}}\to\beta^*$</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://doi.org/10.5281/zenodo.19323720">
+        Canonical Normalisation of Pair Observables in Weil Blocks
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Canonical Normalisation of Pair Observables in Weil Blocks:
+    Eliminating Pipeline Dependence in the Gram–Schmidt Span Tracker | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O19 makes explicit the Gram–Schmidt pipeline normalisation, classifies the residual
+    amplitude factor r(c,q), and constructs a canonical pair observable independent of
+    pipeline conventions."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o19/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Canonical Normalisation of Pair Observables in Weil Blocks:
+    Eliminating Pipeline Dependence in the Gram–Schmidt Span Tracker"/>
+  <meta property="og:description"
+    content="O19 makes explicit the residual normalisation of the Gram–Schmidt span tracker,
+    distinguishes raw span from normalised observable, and defines a canonical pair
+    observable independent of pipeline conventions."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o19/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o19/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Canonical Normalisation of Pair Observables in Weil Blocks:
+          Eliminating Pipeline Dependence in the Gram–Schmidt Span Tracker
+        </h1>
+        <p class="subtitle">
+          O19 follows <a href="../o18">O18</a> by making explicit the Gram–Schmidt pipeline
+          normalisation, classifying the residual amplitude factor $r(c,q)$, and constructing a
+          canonical pair observable independent of pipeline conventions.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19323720">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after <a href="../o18">O18</a>.
+        While O18 fixed the correct observable class at the fibre level, one residual problem
+        remained:
+        <strong>the amplitude of the pair observable still depended on the O12/O13
+          Gram&ndash;Schmidt pipeline normalisation.</strong>
+      </p>
+      <p>
+        O19 addresses this issue without modifying either the observable class or the exponent.
+        Its purpose is narrower and more precise: to remove the last layer of implementation
+        dependence at the amplitude level.
+      </p>
+      <p>
+        The paper makes explicit the previously implicit normalisation factor
+        \[
+        D(c,b_1,b_2,n),
+        \]
+        distinguishes the raw cumulative span
+        \[
+        \Sigma^{(c)}(n)
+        \]
+        from the normalised observable
+        \[
+        \sigma_c(n),
+        \]
+        and identifies the residual integer factor $r(c,q)$ as an amplitude-level remainder
+        inherited from the raw span and transmitted unchanged to the normalised observable.
+      </p>
+      <p>
+        The main structural question is then not whether $r(c,q)$ changes the scaling law, it
+        does not, but whether it is a pure basis artefact, a discrete block-instance invariant,
+        or a mixed quantity with both components.
+      </p>
+      <p>
+        O19 resolves this by introducing two tests: one varying the initial basis under unitary
+        changes of basis in $\mathbb{C}^q$, and one varying the block instance $(b_1,b_2)$ under a
+        fixed normalisation convention. The resulting classification determines how the canonical
+        pair observable must be defined.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarises the structural content of O19:
+        explicit normalisation of the Gram&ndash;Schmidt span tracker, separation of raw span and
+        normalised observable, classification of $r(c,q)$, and canonicalisation of the pair
+        observable at the amplitude level.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Canonical normalisation, pair observables, Gram&ndash;Schmidt span tracking,
+            amplitude structure
+          </div></div>
+        <div class="kv"><div class="k">Scope</div>
+          <div class="v">
+            Explicit normalisation, residual-factor classification, and canonical pair
+            observable construction
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Explicit pipeline normalisation:</strong>
+        the paper makes the previously implicit factor
+        \[
+        D(c,b_1,b_2,n)
+        \]
+        explicit in terms of residual Gram&ndash;Schmidt increments.
+      </li>
+      <li>
+        <strong>Span/observable separation:</strong>
+        it distinguishes the raw cumulative span $\Sigma^{(c)}(n)$ from the derived normalised
+        observable $\sigma_c(n)$, making clear where the residual factor originates and where the
+        asymptotic exponent is defined.
+      </li>
+      <li>
+        <strong>Phase-invariance lemma:</strong>
+        the Gram&ndash;Schmidt residual increment is invariant under global phase multiplication of
+        the seed vector, and under $U\in U(q)$ varies only when the relative orbit alignment
+        changes.
+      </li>
+      <li>
+        <strong>Basis test (P2):</strong>
+        O19 varies the initial basis through unitary transformations of $\mathbb{C}^q$ while
+        keeping the block instance fixed, in order to isolate a possible basis-dependent part of
+        $r(c,q)$.
+      </li>
+      <li>
+        <strong>Instance test (P3):</strong>
+        it varies the block instance $(b_1,b_2)$ under a fixed basis convention, in order to
+        isolate a possible instance-dependent part of $r(c,q)$.
+      </li>
+      <li>
+        <strong>Three-way classification:</strong>
+        the residual factor is classified as either a pure basis artefact, a discrete instance
+        invariant, or a mixed quantity admitting a decomposition
+        \[
+        r = r_{\mathrm{base}}\,r_{\mathrm{inst}}.
+        \]
+      </li>
+      <li>
+        <strong>Canonical observable:</strong>
+        depending on the dependence structure of $r(c,q)$, the paper constructs a canonical pair
+        observable
+        \[
+        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)
+        \]
+        that is independent of pipeline conventions.
+      </li>
+      <li>
+        <strong>Exponent stability:</strong>
+        all canonicalisations leave the asymptotic exponent unchanged; O19 modifies the amplitude
+        structure, not the scaling law.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O19 does not alter the fibre-level observable fixed by <a href="../o16">O16</a>,
+      <a href="../o17">O17</a>, and <a href="../o18">O18</a>. Instead, it makes that observable
+      fully intrinsic at the amplitude level.
+    </p>
+    <ul>
+      <li><strong>O16:</strong> the physically relevant observable is the conjugate-pair observable</li>
+      <li><strong>O17:</strong> conjugate Weil blocks carry identical dynamical information</li>
+      <li><strong>O18:</strong> the minimal fibre structure is derived from Born&ndash;Infeld
+        indiscernability</li>
+      <li><strong>O19:</strong> the residual pipeline normalisation is made explicit and removed
+        canonically</li>
+    </ul>
+    <p>
+      The conceptual gain is that the residual factor is no longer treated as a numerical nuisance.
+      It becomes a classified structural remainder of the Gram&ndash;Schmidt pipeline, whose
+      dependence on basis choice, block instance, or both is determined explicitly.
+    </p>
+    <p>
+      This yields a clean separation between three levels:
+      the raw span $\Sigma^{(c)}(n)$, the normalised observable $\sigma_c(n)$, and the asymptotic
+      exponent $\delta_c$.
+      The factor $r(c,q)$ originates at the span level, propagates to the observable level, and
+      does not affect the exponent.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O19 occupies a sharply delimited role in the O-series.
+      It does not revisit the fibre structure derived in O18 and does not yet address the
+      dynamical selection of the admissible exponent window.
+      Its role is to eliminate the last residual ambiguity still tied to the O12/O13 pipeline.
+    </p>
+    <p>
+      The programme now reads:
+      O12&ndash;O13 (exact block extraction), O14 (observable mismatch),
+      O15 (block-level derivation failure), O16 (pair observable identified),
+      O17 (pair dynamics derived), O18 (fibre structure derived),
+      O19 (canonical amplitude normalisation).
+    </p>
+    <p>
+      O19 therefore closes the normalisation step of the spectral admissibility programme.
+      After this paper, any remaining structure in the phenomenological window or in the
+      $\delta_{\mathrm{pair}}\to\beta^*$ relation can no longer be attributed to hidden pipeline
+      conventions at the observable level.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open directions</h2>
+    <p>
+      O19 establishes that the pair observable can be written in canonical form, with the
+      remaining amplitude structure made explicit and classified.
+      The observable class is unchanged, the exponent is unchanged, and the pipeline dependence is
+      no longer hidden.
+    </p>
+    <p>
+      The result is conditional only in the precise sense that the canonicalisation route depends
+      on which dependence structure is realised:
+      pure basis dependence, pure instance dependence, or a mixed decomposition.
+    </p>
+    <p>
+      Two immediate follow-up directions are identified:
+    </p>
+    <ul>
+      <li>
+        <strong>O20:</strong> explain the dynamical selection of the phenomenological window
+        $[7.4,10.6]$ through a persistence criterion
+      </li>
+      <li>
+        <strong>O21:</strong> derive the full fibre-level relation from $\delta_{\mathrm{pair}}$
+        to $\beta^*$ without pipeline conventions
+      </li>
+    </ul>
+    <p>
+      More broadly, a remaining open problem is to determine how much of the O19 normalisation
+      structure survives beyond the current Weil/Heisenberg setting.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19323720">
+        <i>Canonical Normalisation of Pair Observables in Weil Blocks:
+          Eliminating Pipeline Dependence in the Gram&ndash;Schmidt Span Tracker</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

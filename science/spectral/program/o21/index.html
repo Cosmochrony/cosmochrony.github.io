@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Intrinsic Saturation and the Canonical Observable:
+    A Parameter-Free Selection Criterion for the Capacity Exponent | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O21 derives an intrinsic, parameter-free persistence criterion by defining a canonical
+    crossing rank directly from the observable, eliminating external thresholds and fit parameters."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Intrinsic Saturation and the Canonical Observable:
+    A Parameter-Free Selection Criterion for the Capacity Exponent"/>
+  <meta property="og:description"
+    content="O21 replaces external thresholds by an intrinsic structural crossing condition,
+    yielding a fully parameter-free formulation of admissibility."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o21/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o21/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Intrinsic Saturation and the Canonical Observable:
+          A Parameter-Free Selection Criterion for the Capacity Exponent
+        </h1>
+        <p class="subtitle">
+          O21 follows <a href="../o20">O20</a> by removing the last external element of the
+          persistence criterion, defining an intrinsic crossing rank directly from the canonical
+          observable and eliminating all amplitude parameters.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19358961">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after
+        <a href="../o20">O20</a>. While O20 introduced a persistence criterion selecting the
+        admissible exponent window, it still relied on an external threshold and a fit parameter.
+      </p>
+      <p>
+        O21 removes this dependence entirely. Its central objective is:
+        <strong>to derive the persistence criterion intrinsically from the observable itself,
+          without introducing any external parameter.</strong>
+      </p>
+      <p>
+        The paper introduces a canonical observable crossing rank
+        \[
+        n_{3}^{\mathrm{obs}},
+        \]
+        defined directly from the canonical pair observable
+        \[
+        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n),
+        \]
+        without any amplitude normalisation or threshold input.
+      </p>
+      <p>
+        The key structural statement is that the saturation threshold is not external:
+        it is encoded in the observable through a canonical crossing condition.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarises the structural content of O21:
+        intrinsic crossing rank construction, elimination of external parameters,
+        scale-invariant admissibility, and geometric interpretation of saturation.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Intrinsic saturation, canonical observable, scale invariance,
+            parameter-free admissibility
+          </div></div>
+        <div class="kv"><div class="k">Scope</div>
+          <div class="v">
+            Intrinsic crossing condition, elimination of thresholds,
+            structural selection of the exponent
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Intrinsic crossing rank:</strong>
+        definition of a canonical rank
+        \[
+        n_{3}^{\mathrm{obs}}
+        \]
+        directly from the observable sequence, without amplitude parameters.
+      </li>
+      <li>
+        <strong>Elimination of external thresholds:</strong>
+        the saturation threshold \(\sigma_{\mathrm{BI}}\) is no longer postulated,
+        but encoded structurally in the observable.
+      </li>
+      <li>
+        <strong>Removal of fit parameter:</strong>
+        the parameter \(C\) of O20 disappears entirely from the formulation.
+      </li>
+      <li>
+        <strong>Scale invariance:</strong>
+        the construction is invariant under
+        \[
+        \sigma(n)\mapsto \alpha\,\sigma(n),
+        \]
+        ensuring independence from pipeline normalisation.
+      </li>
+      <li>
+        <strong>Geometric interpretation:</strong>
+        the intrinsic rank corresponds to a distinguished BFS shell,
+        reflecting alignment between decay and admissibility.
+      </li>
+      <li>
+        <strong>Structural exponent selection:</strong>
+        the exponent \(\delta_{\mathrm{pair}}\) is determined by compatibility
+        with the intrinsic crossing condition rather than a window constraint.
+      </li>
+      <li>
+        <strong>Restoration of the cascade relation:</strong>
+        under the cascade interpretation,
+        \[
+        \beta^* = \frac{1}{\delta_{\mathrm{pair}} + \frac{1}{2}},
+        \]
+        resolving the obstruction identified in O15.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O21 completes the transition from externally defined admissibility
+      to intrinsic structural selection.
+    </p>
+    <ul>
+      <li><strong>O20:</strong> admissibility via external threshold</li>
+      <li><strong>O21:</strong> admissibility encoded in the observable itself</li>
+    </ul>
+    <p>
+      The observable is no longer evaluated against a prescribed scale.
+      Instead, it carries within itself the signal of saturation through a
+      canonical crossing condition.
+    </p>
+    <p>
+      This yields a fully intrinsic formulation of the persistence criterion,
+      removing the last remaining ambiguity inherited from earlier stages
+      of the programme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O21 occupies a decisive position in the O-series.
+      It follows the canonicalisation of the observable in O19 and the
+      persistence criterion of O20, and removes their remaining external
+      dependencies.
+    </p>
+    <p>
+      The programme now reads:
+      O16 (pair observable), O17 (pair dynamics),
+      O18 (fibre structure), O19 (canonical normalisation),
+      O20 (persistence criterion), O21 (intrinsic persistence).
+    </p>
+    <p>
+      After O21, the admissibility condition is no longer defined
+      phenomenologically, but structurally.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open directions</h2>
+    <p>
+      O21 establishes a parameter-free formulation of admissibility.
+      The observable, its normalisation, and the persistence criterion
+      are now fully intrinsic.
+    </p>
+    <p>
+      Remaining directions include:
+    </p>
+    <ul>
+      <li>
+        <strong>Substrate-level derivation:</strong>
+        derive the intrinsic condition directly from χ-dynamics.
+      </li>
+      <li>
+        <strong>Universality:</strong>
+        test the intrinsic criterion beyond Heisenberg graphs.
+      </li>
+      <li>
+        <strong>Asymptotics:</strong>
+        determine the scaling of \(n_{3}^{\mathrm{obs}}\) at large \(q\).
+      </li>
+      <li>
+        <strong>Full cascade derivation:</strong>
+        establish the \(\delta_{\mathrm{pair}}\to\beta^*\) relation
+        without additional assumptions.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19358961">
+        <i>Intrinsic Saturation and the Canonical Observable:
+          A Parameter-Free Selection Criterion for the Capacity Exponent</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

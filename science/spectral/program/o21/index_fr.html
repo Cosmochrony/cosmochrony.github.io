@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Saturation intrinsèque et observable canonique : Un critère de sélection sans paramètre pour l’exposant de capacité
+    | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O21 dérive un critère de persistance intrinsèque et sans paramètre en définissant un rang de croisement canonique directement à partir de l’observable, éliminant seuils externes et paramètres d’ajustement."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o21/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Saturation intrinsèque et observable canonique :
+    Un critère de sélection sans paramètre pour l’exposant de capacité"/>
+  <meta property="og:description"
+    content="O21 remplace les seuils externes par une condition de croisement structurelle intrinsèque, aboutissant à une formulation entièrement sans paramètre de l’admissibilité."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/o21/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Saturation intrinsèque et observable canonique : Un critère de sélection sans paramètre pour l’exposant de
+          capacité
+        </h1>
+        <p class="subtitle">
+          O21 prolonge <a href="../o20/index_fr.html">O20</a> en supprimant le dernier élément externe du critère de
+          persistance, en définissant un rang de croisement intrinsèque directement à partir de l’observable canonique
+          et en éliminant tous les paramètres d’amplitude.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19358961">Lire le préprint</a> <a class="btn subtle"
+      href="/science/spectral/program/"> Retour au programme d’admissibilité spectrale </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article poursuit le programme d’admissibilité spectrale après <a href="../o20/index_fr.html">O20</a>. Alors
+        que O20 introduisait un critère de persistance sélectionnant une fenêtre d’exposants admissibles, celui-ci
+        dépendait encore d’un seuil externe et d’un paramètre d’ajustement.
+      </p>
+      <p>
+        O21 supprime entièrement cette dépendance. Son objectif central est : <strong>de dériver le critère de
+        persistance intrinsèquement à partir de l’observable elle-même, sans introduire de paramètre externe.</strong>
+      </p>
+      <p>
+        L’article introduit un rang de croisement canonique \[ n_{3}^{\mathrm{obs}}, \] défini directement à partir de
+        l’observable paire canonique \[ \sigma_{\mathrm{pair}}^{\mathrm{can}}(n), \] sans normalisation d’amplitude ni
+        seuil imposé.
+      </p>
+      <p>
+        L’énoncé structural clé est que le seuil de saturation n’est pas externe : il est encodé dans l’observable via
+        une condition de croisement canonique.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page résume le contenu structural de O21 : construction du rang intrinsèque,
+        élimination des paramètres externes, admissibilité invariante d’échelle et interprétation géométrique de la
+        saturation.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Saturation intrinsèque, observable canonique, invariance d’échelle, admissibilité sans paramètre
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">
+            Condition de croisement intrinsèque, élimination des seuils, sélection structurelle de l’exposant
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Rang de croisement intrinsèque :</strong> définition d’un rang canonique \[ n_{3}^{\mathrm{obs}} \]
+        directement à partir de la séquence observable.
+      </li>
+      <li>
+        <strong>Élimination des seuils externes :</strong> le seuil \(\sigma_{\mathrm{BI}}\) n’est plus postulé mais
+        encodé structurellement dans l’observable.
+      </li>
+      <li>
+        <strong>Suppression du paramètre d’ajustement :</strong> le paramètre \(C\) disparaît complètement.
+      </li>
+      <li>
+        <strong>Invariance d’échelle :</strong> la construction est invariante sous \[ \sigma(n)\mapsto
+        \alpha\,\sigma(n). \]
+      </li>
+      <li>
+        <strong>Interprétation géométrique :</strong> le rang correspond à une coquille distinguée de la BFS, traduisant
+        un alignement entre décroissance et admissibilité.
+      </li>
+      <li>
+        <strong>Sélection structurelle de l’exposant :</strong> \(\delta_{\mathrm{pair}}\) est déterminé par
+        compatibilité avec la condition intrinsèque.
+      </li>
+      <li>
+        <strong>Rétablissement de la relation de cascade :</strong> \[ \beta^* = \frac{1}{\delta_{\mathrm{pair}} +
+        \frac{1}{2}}. \]
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O21 achève la transition vers une admissibilité entièrement intrinsèque.
+    </p>
+    <ul>
+      <li><strong><a href="../o20/index_fr.html">O20</a> :</strong> admissibilité définie par un seuil externe</li>
+      <li><strong>O21 :</strong> admissibilité encodée dans l’observable</li>
+    </ul>
+    <p>
+      L’observable contient désormais lui-même le signal de saturation, sous la forme d’une condition de croisement
+      canonique.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O21 occupe une position décisive dans la série O. Il suit la canonisation de O19 et le critère de persistance de
+      <a href="../o20/index_fr.html">O20</a>, dont il supprime les dépendances externes.
+    </p>
+    <p>
+      Le programme devient : <a href="../o16/index_fr.html">O16</a>, <a href="../o17/index_fr.html">O17</a>, <a
+      href="../o18/index_fr.html">O18</a>, <a href="../o19/index_fr.html">O19</a>, <a
+      href="../o20/index_fr.html">O20</a>, O21 (persistance intrinsèque).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat et perspectives</h2>
+    <p>
+      O21 établit une admissibilité sans paramètre, entièrement intrinsèque.
+    </p>
+    <ul>
+      <li>Dérivation depuis la dynamique χ</li>
+      <li>Universalité</li>
+      <li>Asymptotique en grand \(q\)</li>
+      <li>Dérivation complète de la relation de cascade</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a
+      href="https://doi.org/10.5281/zenodo.19358961"> <i>Intrinsic Saturation and the Canonical Observable: A
+      Parameter-Free Selection Criterion for the Capacity Exponent</i>. </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

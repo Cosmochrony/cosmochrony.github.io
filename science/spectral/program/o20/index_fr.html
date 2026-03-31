@@ -5,27 +5,28 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Normalisation canonique des observables de paires dans les blocs de Weil :
-    élimination de la dépendance au pipeline Gram–Schmidt | Cosmochrony
+    Persistance projective et sous-spectre physique :
+    Un critère de sélection dynamique pour l’exposant de capacité | Cosmochrony
   </title>
   <meta name="description"
-    content="O19 explicite la normalisation du pipeline Gram–Schmidt, classe le facteur
-    d’amplitude résiduel r(c,q) et construit un observable de paire canonique indépendant
-    des conventions de calcul."/>
+    content="O20 introduit un critère d’admissibilité fondé sur la persistance pour l’observable paire canonique,
+    sélectionnant la fenêtre physique d’exposants via une condition de franchissement de seuil
+    liée à la saturation projective."/>
   <link rel="alternate" hreflang="en"
-    href="https://cosmochrony.org/science/spectral/program/o19/index.html"/>
+    href="https://cosmochrony.org/science/spectral/program/o20/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Normalisation canonique des observables de paires dans les blocs de Weil"/>
+    content="Persistance projective et sous-spectre physique :
+    Un critère de sélection dynamique pour l’exposant de capacité"/>
   <meta property="og:description"
-    content="O19 rend explicite la normalisation du pipeline Gram–Schmidt et définit un
-    observable de paire canonique indépendant des conventions numériques."/>
+    content="O20 formule un critère de persistance pour l’observable paire canonique,
+    sélectionnant la fenêtre physique d’exposants via une condition de franchissement de seuil."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
-    content="https://cosmochrony.org/science/spectral/program/o19/index_fr.html"/>
+    content="https://cosmochrony.org/science/spectral/program/o20/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("fr", "/science/spectral/program/o19/index_fr")
+    redirectIfNot("fr", "/science/spectral/program/o20/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -46,18 +47,18 @@
       </a>
       <div>
         <h1>
-          Normalisation canonique des observables de paires dans les blocs de Weil :
-          élimination de la dépendance au pipeline Gram–Schmidt
+          Persistance projective et sous-spectre physique :
+          Un critère de sélection dynamique pour l’exposant de capacité
         </h1>
         <p class="subtitle">
-          O19 prolonge <a href="../o18">O18</a> en rendant explicite la normalisation du pipeline
-          Gram–Schmidt, en classant le facteur d’amplitude résiduel $r(c,q)$, et en construisant
-          un observable de paire canonique indépendant des conventions de calcul.
+          O20 prolonge <a href="../o19">O19</a> en introduisant un critère d’admissibilité fondé
+          sur la persistance pour l’observable paire canonique, sélectionnant la fenêtre physique
+          des exposants via une condition de franchissement de seuil liée à la saturation projective.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19323720">Lire le preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19339888">Lire le préprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d’admissibilité spectrale
       </a>
@@ -69,46 +70,48 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après <a href="../o18">O18</a>.
-        Alors que O18 a fixé la classe correcte d’observables au niveau des fibres, un problème
-        subsistait :
-        <strong>l’amplitude de l’observable de paire dépendait encore de la normalisation implicite
-          du pipeline Gram&ndash;Schmidt de O12/O13.</strong>
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o19/index_fr.html">O19</a>. Alors que O19 a supprimé la dernière ambiguïté liée au pipeline
+        au niveau de l’amplitude, un problème structurel restait ouvert :
+        <strong>comment sélectionner la fenêtre d’exposants physiquement pertinente à partir de
+          l’observable canonique elle-même.</strong>
       </p>
       <p>
-        O19 traite cette question sans modifier ni la classe d’observable ni l’exposant. Son rôle
-        est plus précis : supprimer la dernière dépendance aux conventions d’implémentation au
-        niveau de l’amplitude.
+        O20 aborde cette question en introduisant un critère de persistance. Son rôle n’est ni de
+        modifier la classe d’observables, ni de changer l’exposant mesuré, mais de déterminer quels
+        exposants correspondent à un comportement physiquement admissible et persistant.
       </p>
       <p>
-        Le papier rend explicite le facteur de normalisation
+        L’article part de l’observable paire canonique
         \[
-        D(c,b_1,b_2,n),
+        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)
         \]
-        distingue le span cumulatif brut
+        établie dans <a href="../o19/index_fr.html">O19</a>, suppose un régime de décroissance en loi de puissance
         \[
-        \Sigma^{(c)}(n)
+        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)\sim C\,n^{-\delta_{\mathrm{pair}}},
         \]
-        de l’observable normalisée
-        \[
-        \sigma_c(n),
-        \]
-        et identifie le facteur entier résiduel $r(c,q)$ comme un reste d’amplitude hérité du span
-        brut et propagé inchangé à l’observable.
+        et formule une condition de franchissement de seuil exprimant le moment où l’observable
+        atteint une échelle effective de saturation projective.
       </p>
       <p>
-        La question centrale devient alors : $r(c,q)$ est-il un artefact de base, un invariant
-        d’instance, ou une combinaison des deux ?
+        Cela conduit à un rang de croisement
+        \[
+        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}},
+        \]
+        dont la variation définit un sous-spectre physique d’exposants admissibles.
       </p>
       <p>
-        O19 introduit deux tests pour trancher cette question : une variation de base par
-        transformations unitaires de $\mathbb{C}^q$, et une variation d’instance $(b_1,b_2)$ sous
-        convention fixée. La classification obtenue détermine la forme canonique de l’observable.
+        Le résultat structurel principal est que la condition de persistance sélectionne une
+        fenêtre non triviale d’exposants,
+        \[
+        \delta_{\mathrm{pair}}\in[7.4,10.6],
+        \]
+        reliant ainsi la dynamique observable au domaine phénoménologique cible du programme.
       </p>
       <div class="note" role="note">
-        <strong>Périmètre.</strong> Cette page résume O19 : normalisation explicite du pipeline,
-        distinction span/observable, classification de $r(c,q)$, et construction d’un observable
-        canonique au niveau de l’amplitude.
+        <strong>Portée.</strong> Cette page résume le contenu structural de O20 :
+        critère de persistance, condition de franchissement de seuil, sélection de la fenêtre
+        d’exposants, et identification des éléments encore externes du critère.
       </div>
     </div>
     <aside class="card">
@@ -116,17 +119,18 @@
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Normalisation canonique, observables de paires, Gram–Schmidt,
-            structure d’amplitude
+            Critère de persistance, observable canonique, sous-spectre admissible,
+            saturation projective
           </div></div>
         <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Classification du facteur résiduel et construction d’un observable canonique
+            Condition de franchissement de seuil, sélection d’exposants,
+            lien structurel avec la fenêtre phénoménologique
           </div></div>
       </div>
     </aside>
@@ -134,48 +138,98 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Normalisation explicite :</strong> introduction formelle de $D(c,b_1,b_2,n)$.</li>
-      <li><strong>Distinction span/observable :</strong> séparation de $\Sigma^{(c)}(n)$ et
-        $\sigma_c(n)$.</li>
-      <li><strong>Lemme d’invariance de phase :</strong> invariance sous phase globale et dépendance
-        uniquement à l’alignement.</li>
-      <li><strong>Tests P2/P3 :</strong> séparation des dépendances de base et d’instance.</li>
-      <li><strong>Classification :</strong> artefact de base, invariant d’instance ou cas mixte.</li>
-      <li><strong>Observable canonique :</strong> construction de
-        $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$.</li>
-      <li><strong>Stabilité de l’exposant :</strong> $\delta$ inchangé dans tous les cas.</li>
+      <li>
+        <strong>Critère de persistance :</strong>
+        l’admissibilité est formulée comme une condition de persistance de l’observable paire canonique.
+      </li>
+      <li>
+        <strong>Rang de franchissement :</strong>
+        introduction du rang
+        \[
+        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}}.
+        \]
+      </li>
+      <li>
+        <strong>Sous-spectre physique :</strong>
+        sélection de la fenêtre
+        \[
+        \delta_{\mathrm{pair}}\in[7.4,10.6].
+        \]
+      </li>
+      <li>
+        <strong>Sélection au niveau observable :</strong>
+        première utilisation de l’observable pour sélectionner structurellement les exposants.
+      </li>
+      <li>
+        <strong>Interprétation projective :</strong>
+        le seuil correspond à une saturation effective de type Born–Infeld.
+      </li>
+      <li>
+        <strong>Relation de cascade :</strong>
+        \[
+        \beta^*=\frac{1}{\delta_{\mathrm{pair}}+\frac{1}{2}}.
+        \]
+      </li>
+      <li>
+        <strong>Identification des limites :</strong>
+        dépendance à \(\sigma_{\mathrm{BI}}\) et au paramètre \(C\).
+      </li>
+      <li>
+        <strong>Transition structurelle :</strong>
+        passage de la canonisation à la sélection dynamique.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O19 rend l’observable pleinement intrinsèque au niveau de l’amplitude. Le facteur $r(c,q)$
-      est isolé, classifié, et éliminé ou absorbé de manière canonique.
+      O20 donne un rôle dynamique à l’observable canonique définie en O19.
     </p>
-    <p>
-      Trois niveaux sont maintenant clairement séparés :
-      $\Sigma^{(c)}(n)$, $\sigma_c(n)$ et $\delta_c$.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Rôle dans le programme</h2>
-    <p>
-      O19 complète l’étape de normalisation :
-      O16–O18 définissent l’observable, O19 le rend canonique.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Perspectives</h2>
     <ul>
-      <li><strong>O20 :</strong> sélection dynamique de la fenêtre $[7.4,10.6]$</li>
-      <li><strong>O21 :</strong> dérivation complète $\delta_{\mathrm{pair}}\to\beta^*$</li>
+      <li><strong><a href="../o19/index_fr.html">O19</a> :</strong> observable canonique</li>
+      <li><strong>O20 :</strong> admissibilité comme persistance</li>
+    </ul>
+    <p>
+      La fenêtre d’exposants devient le résultat d’une condition structurelle,
+      et non plus seulement une cible phénoménologique.
+    </p>
+    <p>
+      Cependant, le critère reste non intrinsèque : il dépend encore d’un seuil externe
+      et d’un paramètre d’amplitude.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O20 marque la transition vers l’admissibilité dynamique.
+    </p>
+    <p>
+      Le programme devient :
+      O16, O17, O18, O19, O20.
+    </p>
+    <p>
+      Le problème restant est désormais l’élimination des éléments externes du critère.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat et perspectives</h2>
+    <p>
+      O20 établit une sélection structurelle de la fenêtre $[7.4,10.6]$,
+      mais de manière encore conditionnelle.
+    </p>
+    <ul>
+      <li>O21 : critère intrinsèque sans paramètre</li>
+      <li>Dérivation depuis la dynamique χ</li>
+      <li>Universalité</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Référence</h2>
+    <h2>Références</h2>
     <p>
-      <a href="https://doi.org/10.5281/zenodo.19323720">
-        Canonical Normalisation of Pair Observables in Weil Blocks
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19339888">
+        <i>Persistance projective et sous-spectre physique :
+          Un critère de sélection dynamique pour l’exposant de capacité</i>.
       </a>
     </p>
   </section>
@@ -184,6 +238,7 @@
   <div class="wrap">
     <p class="small">
       © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

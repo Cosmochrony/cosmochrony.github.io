@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Alignement de coquille par verrouillage de projection :
+    un théorème d’admissibilité discrète sous saturation de Born–Infeld | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O22 démontre que l’alignement de coquille n’est pas une hypothèse géométrique externe,
+    mais une conséquence dérivée du verrouillage de projection entre le lieu continu de
+    saturation de Born–Infeld et le support discret des coquilles admissibles."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o22/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Alignement de coquille par verrouillage de projection :
+    un théorème d’admissibilité discrète sous saturation de Born–Infeld"/>
+  <meta property="og:description"
+    content="O22 dérive l’alignement de coquille à partir du verrouillage de projection, en
+    montrant que la saturation admissible n’a lieu que là où le lieu continu de Born–Infeld
+    rencontre le support discret des coquilles."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o22/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o22/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Alignement de coquille par verrouillage de projection :
+          un théorème d’admissibilité discrète sous saturation de Born–Infeld
+        </h1>
+        <p class="subtitle">
+          O22 suit <a href="../o21/index_fr.html">O21</a> en démontrant que l’alignement de
+          coquille n’est pas une hypothèse indépendante, mais une conséquence dérivée de
+          l’interaction entre le lieu continu de saturation de Born–Infeld et le support
+          discret de réalisation admissible sous la projection non injective.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19367375">Lire le préprint</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article prolonge le programme d’admissibilité spectrale après
+        <a href="../o21/index_fr.html">O21</a>. Alors que O21 supprimait les seuils externes et
+        les paramètres d’ajustement du critère de persistance, il reposait encore sur une
+        condition structurelle d’alignement de coquille.
+      </p>
+      <p>
+        O22 résout cette lacune restante. Son objectif central est le suivant :
+        <strong>démontrer que l’alignement de coquille découle nécessairement de la structure
+          d’admissibilité de Born–Infeld et du support observable discret induit par la
+          projection non injective \(\Pi\).</strong>
+      </p>
+      <p>
+        L’article introduit la notion de support des coquilles projectivement admissibles
+        \[
+        \mathbb{N}_q,
+        \]
+        et montre que le lieu continu de saturation de Born–Infeld
+        \[
+        L_{\mathrm{BI}}
+        \]
+        ne peut être physiquement réalisé qu’aux points où il rencontre ce support discret.
+      </p>
+      <p>
+        L’énoncé structurel clef est que la saturation n’est pas simplement un franchissement
+        continu de seuil : c’est un événement de réalisation admissible, et la réalisation
+        admissible est discrète.
+      </p>
+      <div class="note" role="note">
+        <strong>Déclaration de portée.</strong> Cette page résume le contenu structurel de O22 :
+        support discret d’admissibilité, lieu continu de saturation, verrouillage de
+        projection, dérivation de l’alignement de coquille, et séparation d’avec le problème
+        du choix de la coquille laissé à O23.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Préprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Verrouillage de projection, alignement de coquille,
+            admissibilité discrète, saturation de Born–Infeld
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
+          <div class="v">
+            Appariement continu/discret, support des coquilles admissibles,
+            dérivation théorématique de l’alignement de coquille
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Support discret d’admissibilité :</strong>
+        définition de l’ensemble des coquilles projectivement admissibles
+        \[
+        \mathbb{N}_q,
+        \]
+        avec une décomposition de l’espace observable
+        \[
+        O = \bigsqcup_{n \in \mathbb{N}_q} O_n.
+        \]
+      </li>
+      <li>
+        <strong>Lieu continu de saturation :</strong>
+        l’observable est traitée comme un échantillonnage discret d’une loi de décroissance
+        effective
+        \[
+        \tilde{\sigma}(t) \sim C\, t^{-\delta_{\mathrm{pair}}},
+        \]
+        de sorte que la condition de Born–Infeld définit une profondeur de saturation
+        candidate continue.
+      </li>
+      <li>
+        <strong>Théorème de verrouillage de projection :</strong>
+        la saturation admissible ne peut se produire que lorsque le lieu continu
+        \[
+        L_{\mathrm{BI}}
+        \]
+        rencontre le support discret des coquilles admissibles
+        \[
+        \mathbb{N}_q.
+        \]
+      </li>
+      <li>
+        <strong>Alignement de coquille dérivé :</strong>
+        la condition de coquille de O21 n’est plus postulée, mais retrouvée comme corollaire
+        du verrouillage de projection.
+      </li>
+      <li>
+        <strong>Chaîne de dérivation interne :</strong>
+        le résultat est obtenu entièrement à l’intérieur du cadre,
+        \[
+        c_\chi \to A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
+        \to L_{\mathrm{BI}} \to L_{\mathrm{BI}} \cap \mathbb{N}_q
+        \to n_{\mathrm{sat}} \in \mathbb{N}.
+        \]
+      </li>
+      <li>
+        <strong>Clarification logique :</strong>
+        O22 prouve que la saturation doit se produire sur une coquille, mais ne dérive pas
+        encore quelle coquille est sélectionnée.
+      </li>
+      <li>
+        <strong>Clôture fondatrice :</strong>
+        il s’agit de la première clôture au niveau théorématique du problème de l’alignement
+        de coquille dans la série O.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O22 modifie le statut logique de l’alignement de coquille.
+    </p>
+    <ul>
+      <li><strong>O21 :</strong> l’alignement de coquille est requis</li>
+      <li><strong>O22 :</strong> l’alignement de coquille est expliqué</li>
+    </ul>
+    <p>
+      L’apparente résonance entre la décroissance continue et la géométrie discrète BFS n’est
+      donc plus un principe primitif. Elle devient la signature observable du verrouillage de
+      projection.
+    </p>
+    <p>
+      L’idée centrale est que la saturation physique n’est pas seulement un franchissement de
+      valeur. C’est un événement de réalisation admissible contraint par le support discret de
+      \(\Pi\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O22 occupe une position décisive dans la série O. Il suit la construction intrinsèque du
+      rang de croisement de O21 et supprime l’hypothèse structurelle restante sur
+      l’alignement de coquille.
+    </p>
+    <p>
+      Le programme se lit désormais ainsi :
+      O16 (observable de paire), O17 (dynamique de paire),
+      O18 (structure de fibre), O19 (normalisation canonique),
+      O20 (critère de persistance), O21 (rang intrinsèque de saturation),
+      O22 (verrouillage de projection et alignement de coquille).
+    </p>
+    <p>
+      Après O22, la condition de coquille n’est plus conjecturale, mais dérivée de
+      l’interaction interne entre la saturation continue et le support admissible discret.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <p>
+      O22 établit que la saturation admissible doit avoir lieu sur une coquille. La condition
+      au niveau des coquilles est désormais structurellement interne et établie au niveau
+      théorématique.
+    </p>
+    <p>
+      Les directions restantes comprennent :
+    </p>
+    <ul>
+      <li>
+        <strong>Sélection de la coquille :</strong>
+        dériver quelle coquille est sélectionnée, et non seulement que la saturation doit en
+        rencontrer une.
+      </li>
+      <li>
+        <strong>Dérivation du seuil :</strong>
+        expliquer l’émergence de
+        \[
+        \Sigma_c(n_3)=3
+        \]
+        et le rôle privilégié du secteur stable tridimensionnel.
+      </li>
+      <li>
+        <strong>Asymptotiques en grand \(q\) :</strong>
+        déterminer comment le résidu de verrouillage se comporte lorsque \(q\) augmente.
+      </li>
+      <li>
+        <strong>Universalité :</strong>
+        tester le verrouillage de projection au-delà des graphes de Heisenberg.
+      </li>
+      <li>
+        <strong>Clôture complète du transfert :</strong>
+        achever la dérivation inconditionnelle de
+        \[
+        \delta_{\mathrm{pair}} \to \beta^*
+        \]
+        une fois la sélection de la coquille elle-même dérivée.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19367375">
+        <i>Shell-Alignment from Projection Locking:
+          A Discrete Admissibility Theorem under Born–Infeld Saturation</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

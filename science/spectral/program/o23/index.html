@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Three Stable Directions from Quaternionic Minimality:
+    Derivation of \(\Sigma_c(n_3)=3\) from Born–Infeld Fibre Admissibility | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O23 shows that the value \(\Sigma_c(n_3)=3\) is neither a spectral artefact nor
+    an external input, but the structural consequence of quaternionic minimality under
+    Born–Infeld fibre admissibility."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o23/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Three Stable Directions from Quaternionic Minimality:
+    Derivation of \(\Sigma_c(n_3)=3\) from Born–Infeld Fibre Admissibility"/>
+  <meta property="og:description"
+    content="O23 derives the threshold \(\Sigma_c(n_3)=3\) as an algebraic consequence of the
+    minimal admissible quaternionic structure, rather than as a geometric hypothesis or a
+    primitive spectral observation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o23/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o23/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Three Stable Directions from Quaternionic Minimality:
+          Derivation of \(\Sigma_c(n_3)=3\) from Born–Infeld Fibre Admissibility
+        </h1>
+        <p class="subtitle">
+          O23 follows <a href="../o22">O22</a> by showing that the value 3 of the observable
+          threshold is not an independent hypothesis, but the consequence of the minimal
+          algebraic structure compatible with Born–Infeld parity and the non-injective
+          projection.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19375136">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article continues the spectral admissibility programme after
+        <a href="../o22">O22</a>. While O22 proved that admissible saturation must occur on a
+        BFS shell, it remained to explain why the relevant threshold is specifically
+        three-dimensional.
+      </p>
+      <p>
+        The central objective of O23 is:
+        <strong>to prove that the threshold
+          \(\Sigma_c(n_3)=3\)
+          follows necessarily from Born–Infeld fibre admissibility through quaternionic
+          minimality, rather than from any external geometric hypothesis.</strong>
+      </p>
+      <p>
+        The paper shows that the admissible neutral sector can be neither abelian nor realised
+        in a non-associative algebra within the Weil framework. The Hurwitz classification then
+        forces the minimal admissible structure to be
+        \[
+        \mathbb{H},
+        \]
+        whose imaginary subspace
+        \[
+        \mathrm{Im}\,\mathbb{H}
+        \]
+        has real dimension 3.
+      </p>
+      <p>
+        The key structural statement is that stable directions do not arise from a prior
+        geometric postulate: they correspond to the three independent axes of the neutral
+        traceless subspace enforced by minimal quaternionic structure.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarises the structural content of O23:
+        exclusion lemmas, quaternionic minimality, derivation of
+        \(\dim \mathrm{Im}\,\mathbb{H}=3\), connection to
+        \(\Sigma_c(n_3)=3\), and spectral realisation via \(Q_8\) and binary ADE graphs.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Quaternionic minimality, fibre admissibility, stable directions,
+            spectral threshold
+          </div></div>
+        <div class="kv"><div class="k">Scope</div>
+          <div class="v">
+            Abelian and octonionic exclusion, \(\mathbb{H}\)-structure,
+            derivation of \(\Sigma_c(n_3)=3\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Exclusion of abelian realisations:</strong>
+        the admissible neutral sector cannot be supported by an abelian group in a faithful
+        irreducible representation of dimension 2.
+      </li>
+      <li>
+        <strong>Exclusion of non-associative realisations:</strong>
+        the Weil framework acts in
+        \[
+        \mathrm{End}(V),
+        \]
+        which is associative; octonions \(\mathbb{O}\) are therefore excluded in this setting.
+      </li>
+      <li>
+        <strong>Hurwitz classification constraint:</strong>
+        among
+        \[
+        \mathbb{R},\ \mathbb{C},\ \mathbb{H},
+        \]
+        only \(\mathbb{H}\) is both associative and non-commutative, and hence admissible.
+      </li>
+      <li>
+        <strong>Quaternionic minimality theorem:</strong>
+        the Hurwitz-to-\(\mathfrak{su}(2)\) bridge
+        shows that three independent neutral generators span
+        \[
+        \mathfrak{su}(2)\cong \mathrm{Im}\,\mathbb{H},
+        \]
+        yielding the three-dimensional stable sector.
+      </li>
+      <li>
+        <strong>Connection to the observable:</strong>
+        each independent axis of
+        \[
+        \mathrm{Im}\,\mathbb{H}
+        \]
+        contributes one independent neutral mode to the admissible Gram–Schmidt span, so
+        saturation occurs when the three directions have been realised.
+      </li>
+      <li>
+        <strong>Spectral realisation:</strong>
+        \(Q_8\) provides the minimal discrete prototype, and
+        the physically relevant binary ADE graphs realise this ``3'' as three non-trivial
+        spectral levels.
+      </li>
+      <li>
+        <strong>Foundational closure:</strong>
+        O23 removes the last remaining free structural
+        integer in the spectral admissibility pipeline.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O23 changes the logical status of the number 3 within the programme.
+    </p>
+    <ul>
+      <li><strong>O21:</strong> the threshold \(\Sigma_c(n_3)=3\) is used</li>
+      <li><strong>O23:</strong> the threshold \(\Sigma_c(n_3)=3\) is explained</li>
+    </ul>
+    <p>
+      The crucial point is that the emergence of three stable directions is not geometric in
+      origin, but algebraic. The number 3 is neither a spectral artefact nor a fitted input:
+      it is the dimension of the imaginary subspace of the minimal admissible algebra.
+    </p>
+    <p>
+      In other words, the programme moves:
+    </p>
+    <ul>
+      <li>from an observed threshold</li>
+      <li>to a structural necessity</li>
+      <li>from a spectral reading</li>
+      <li>to an algebraic derivation</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      O23 occupies a decisive position in the O-series. After the intrinsic construction of the
+      saturation rank in O21 and the derivation of shell locking in O22, O23 explains why the
+      privileged stable sector is three-dimensional.
+    </p>
+    <p>
+      The programme now reads:
+      O16 (pair observable), O17 (pair dynamics),
+      O18 (fibre structure), O19 (canonical normalisation),
+      O20 (persistence criterion), O21 (intrinsic saturation rank),
+      O22 (projection locking and shell condition),
+      O23 (derivation of the threshold dimension).
+    </p>
+    <p>
+      After O23, the observable threshold is no longer merely intrinsic and shell-realised: its
+      value 3 is itself derived from the internal structure of the framework.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current outcome and open directions</h2>
+    <p>
+      O23 establishes that
+      \[
+      \Sigma_c(n_3)=3
+      \]
+      is the observable signature of the neutral subspace
+      \[
+      \mathrm{Im}\,\mathbb{H}.
+      \]
+      The threshold problem is now structurally closed.
+    </p>
+    <p>
+      Remaining directions include:
+    </p>
+    <ul>
+      <li>
+        <strong>Effective shell selection:</strong>
+        determine the numerical value of \(n_3\), not only the value of the threshold.
+      </li>
+      <li>
+        <strong>Symmetry extensions:</strong>
+        analyse whether additional effective symmetries can enlarge
+        the fibre and modify the neutral sector.
+      </li>
+      <li>
+        <strong>Large-\(q\) asymptotics:</strong>
+        study the behaviour of the mechanism in the large-graph limit.
+      </li>
+      <li>
+        <strong>Universality:</strong>
+        test extension beyond SU(2)-type structures and Heisenberg graphs.
+      </li>
+      <li>
+        <strong>Full transfer closure:</strong>
+        complete the unconditional derivation of
+        \[
+        \delta_{\mathrm{pair}} \to \beta^*
+        \]
+        once the quantitative selection of \(n_3\) is itself derived.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19375136">
+        <i>Three Stable Directions from Quaternionic Minimality:
+          Derivation of \(\Sigma_c(n_3)=3\) from Born–Infeld Fibre Admissibility</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

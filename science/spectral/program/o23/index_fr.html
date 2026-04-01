@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Trois directions stables par minimalité quaternionique :
+    dérivation de \(\Sigma_c(n_3)=3\) à partir de l'admissibilité fibrée de Born–Infeld
+    | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O23 montre que la valeur \(\Sigma_c(n_3)=3\) n'est pas un artefact spectral
+    ni une donnée extérieure, mais la conséquence structurelle de la minimalité quaternionique
+    imposée par l'admissibilité fibrée de Born–Infeld."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o23/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Trois directions stables par minimalité quaternionique :
+    dérivation de \(\Sigma_c(n_3)=3\) à partir de l'admissibilité fibrée de Born–Infeld"/>
+  <meta property="og:description"
+    content="O23 dérive le seuil \(\Sigma_c(n_3)=3\) comme conséquence algébrique de la
+    structure quaternionique minimale admissible, et non comme hypothèse géométrique ou
+    observation spectrale primitive."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o23/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o23/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Trois directions stables par minimalité quaternionique :
+          dérivation de \(\Sigma_c(n_3)=3\) à partir de l'admissibilité fibrée de Born–Infeld
+        </h1>
+        <p class="subtitle">
+          O23 suit <a href="../o22/index_fr.html">O22</a> en montrant que la valeur 3 du seuil
+          observable n'est pas une hypothèse indépendante, mais la conséquence de la structure
+          algébrique minimale compatible avec la parité de Born–Infeld et la projection non
+          injective.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19375136">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Cet article prolonge le programme d'admissibilité spectrale après
+        <a href="../o22/index_fr.html">O22</a>. Alors que O22 a démontré que la saturation
+        admissible doit se produire sur une coquille BFS, il restait à expliquer pourquoi le
+        seuil pertinent est précisément tridimensionnel.
+      </p>
+      <p>
+        L'objectif central de O23 est :
+        <strong>d'établir que le seuil
+          \(\Sigma_c(n_3)=3\)
+          découle nécessairement de l'admissibilité fibrée de Born–Infeld, via la minimalité
+          quaternionique, et non d'une hypothèse géométrique extérieure.</strong>
+      </p>
+      <p>
+        Le papier montre que le secteur neutre admissible ne peut être ni abélien, ni réalisé
+        dans une algèbre non associative dans le cadre de Weil. La classification de Hurwitz
+        force alors la structure minimale admissible à être
+        \[
+        \mathbb{H},
+        \]
+        dont le sous-espace imaginaire
+        \[
+        \mathrm{Im}\,\mathbb{H}
+        \]
+        a dimension réelle 3.
+      </p>
+      <p>
+        L'énoncé structural clé est que les directions stables ne proviennent pas d'un postulat
+        géométrique préalable : elles correspondent aux trois axes indépendants du sous-espace
+        neutre traceless imposé par la structure quaternionique minimale.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette page résume le contenu structurel de O23 :
+        lemmes d'exclusion, minimalité quaternionique, dérivation de
+        \(\dim \mathrm{Im}\,\mathbb{H}=3\), lien avec
+        \(\Sigma_c(n_3)=3\), et réalisation spectrale via \(Q_8\) et les graphes ADE binaires.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Minimalité quaternionique, admissibilité fibrée, directions stables,
+            seuil spectral
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
+          <div class="v">
+            Exclusion abélienne et octonionique, structure \(\mathbb{H}\),
+            dérivation de \(\Sigma_c(n_3)=3\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Exclusion des réalisations abéliennes :</strong>
+        le secteur neutre admissible ne peut pas être porté par un groupe abélien dans une
+        représentation fidèle irréductible de dimension 2.
+      </li>
+      <li>
+        <strong>Exclusion des réalisations non associatives :</strong>
+        le cadre de Weil agit dans
+        \[
+        \mathrm{End}(V),
+        \]
+        qui est associatif ; les octonions \(\mathbb{O}\) sont donc exclus dans ce cadre.
+      </li>
+      <li>
+        <strong>Contrainte de classification de Hurwitz :</strong>
+        parmi
+        \[
+        \mathbb{R},\ \mathbb{C},\ \mathbb{H},
+        \]
+        seule \(\mathbb{H}\) est à la fois associative et non commutative, donc admissible.
+      </li>
+      <li>
+        <strong>Théorème de minimalité quaternionique :</strong>
+        le pont Hurwitz-vers-\(\mathfrak{su}(2)\)
+        montre que trois générateurs neutres indépendants engendrent
+        \[
+        \mathfrak{su}(2)\cong \mathrm{Im}\,\mathbb{H},
+        \]
+        d'où la tridimensionnalité du secteur stable.
+      </li>
+      <li>
+        <strong>Lien avec l'observable :</strong>
+        chaque axe indépendant de
+        \[
+        \mathrm{Im}\,\mathbb{H}
+        \]
+        contribue un mode neutre indépendant à l'étendue admissible de Gram–Schmidt, si bien que
+        la saturation se produit lorsque les trois directions ont été réalisées.
+      </li>
+      <li>
+        <strong>Réalisation spectrale :</strong>
+        \(Q_8\) fournit le prototype discret minimal, et les
+        graphes ADE binaires physiquement pertinents réalisent ce ``3'' sous forme de trois
+        niveaux spectraux non triviaux.
+      </li>
+      <li>
+        <strong>Clôture structurelle :</strong>
+        O23 supprime le dernier entier structurel libre de
+        la chaîne d'admissibilité spectrale.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O23 modifie le statut logique du nombre 3 dans le programme.
+    </p>
+    <ul>
+      <li><strong>O21 :</strong> le seuil \(\Sigma_c(n_3)=3\) est utilisé</li>
+      <li><strong>O23 :</strong> le seuil \(\Sigma_c(n_3)=3\) est expliqué</li>
+    </ul>
+    <p>
+      Le point essentiel est que l'émergence de trois directions stables n'est pas d'origine
+      géométrique, mais algébrique. Le nombre 3 n'est ni un artefact spectral ni une donnée
+      ajustée : il est la dimension du sous-espace imaginaire de l'algèbre minimale admissible.
+    </p>
+    <p>
+      Autrement dit, le programme passe :
+    </p>
+    <ul>
+      <li>d'un seuil observé</li>
+      <li>à une nécessité structurelle</li>
+      <li>d'une lecture spectrale</li>
+      <li>à une dérivation algébrique</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O23 occupe une position décisive dans la série O. Après la construction intrinsèque du
+      rang de saturation dans O21 et la dérivation du verrouillage sur coquille dans O22,
+      O23 explique pourquoi le secteur stable privilégié est tridimensionnel.
+    </p>
+    <p>
+      La séquence se lit désormais ainsi :
+      O16 (observable de paire), O17 (dynamique de paire),
+      O18 (structure de fibre), O19 (normalisation canonique),
+      O20 (critère de persistance), O21 (rang intrinsèque de saturation),
+      O22 (projection locking et condition de coquille),
+      O23 (dérivation de la dimension du seuil).
+    </p>
+    <p>
+      Après O23, le seuil observable n'est plus seulement intrinsèque et réalisé sur une
+      coquille : sa valeur 3 est elle-même dérivée de la structure interne du cadre.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <p>
+      O23 établit que
+      \[
+      \Sigma_c(n_3)=3
+      \]
+      est la signature observable du sous-espace neutre
+      \[
+      \mathrm{Im}\,\mathbb{H}.
+      \]
+      Le problème du seuil est désormais structurellement clos.
+    </p>
+    <p>
+      Les directions restantes incluent :
+    </p>
+    <ul>
+      <li>
+        <strong>Sélection effective de la coquille :</strong>
+        déterminer la valeur numérique de \(n_3\), et pas seulement la valeur du seuil.
+      </li>
+      <li>
+        <strong>Extensions de symétrie :</strong>
+        analyser si des symétries effectives supplémentaires
+        peuvent élargir la fibre et modifier le secteur neutre.
+      </li>
+      <li>
+        <strong>Asymptotiques en grand \(q\) :</strong>
+        étudier le comportement du mécanisme dans la
+        limite de grands graphes.
+      </li>
+      <li>
+        <strong>Universalité :</strong>
+        tester l'extension au-delà des structures de type SU(2) et des graphes
+        de Heisenberg.
+      </li>
+      <li>
+        <strong>Clôture complète du transfert :</strong>
+        achever la dérivation inconditionnelle de
+        \[
+        \delta_{\mathrm{pair}} \to \beta^*
+        \]
+        une fois la sélection quantitative de \(n_3\) elle-même dérivée.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19375136">
+        <i>Three Stable Directions from Quaternionic Minimality:
+          Derivation of \(\Sigma_c(n_3)=3\) from Born–Infeld Fibre Admissibility</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

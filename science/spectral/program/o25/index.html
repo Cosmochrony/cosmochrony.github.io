@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Systematic Pair-Level Campaign for \(\delta_{\mathrm{pair}}\):
+    Convergence, Inter-Pair Concentration, and Normalization Structure | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O25 provides the first systematic pair-level campaign for
+    \(\delta_{\mathrm{pair}}\), shows strong inter-pair concentration,
+    explains why direct extrapolation in \(q\) is structurally unreliable,
+    and identifies \(n_1(q)/q\) as the correct asymptotic variable."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o25/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Systematic Pair-Level Campaign for \(\delta_{\mathrm{pair}}\):
+    Convergence, Inter-Pair Concentration, and Normalization Structure"/>
+  <meta property="og:description"
+    content="O25 shows that the apparent drift of \(\delta_{\mathrm{pair}}\)
+    across primes is a finite-size normalization effect controlled by the
+    BFS window depth \(n_1(q)\), not a genuine asymptotic instability."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o25/index.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o25/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Systematic Pair-Level Campaign for \(\delta_{\mathrm{pair}}\):
+          Convergence, Inter-Pair Concentration, and Normalization Structure
+        </h1>
+        <p class="subtitle">
+          O25 extends <a href="../o24">O24</a> by providing the first full pair-level
+          numerical campaign for \(\delta_{\mathrm{pair}}\), showing that its apparent
+          variability across primes is not physical but a finite-size normalization effect
+          controlled by the BFS window depth.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19462132">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to the spectral admissibility programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This paper continues the spectral admissibility programme after
+        <a href="../o24">O24</a>. O24 established the structural closure of the chain
+        \[
+        c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
+        \]
+        with respect to the fibre structure of the non-injective projection \(\Pi\).
+        What remained open was the full numerical status of \(\delta_{\mathrm{pair}}\):
+        was the exponent stable across all conjugate pairs, and what controlled its
+        residual variation with \(q\)?
+      </p>
+      <p>
+        The central aim of O25 is:
+        <strong>to show that \(\delta_{\mathrm{pair}}\) is a structural invariant of the
+          Weil representation, and that its apparent drift across primes is caused by the
+          normalization structure of the observable, not by a breakdown of the admissible
+          mechanism.</strong>
+      </p>
+      <p>
+        The key observation is that direct extrapolation in \(q\) is structurally misleading.
+        The dominant finite-size correction is not controlled by \(q\) alone, but by the
+        BFS fitting-window depth
+        \[
+        n_1(q),
+        \]
+        whose ratio to \(q\) has not yet stabilized over the tested range. As a consequence,
+        multiple empirical asymptotic laws fit the same data equally well while predicting
+        incompatible limits.
+      </p>
+      <p>
+        O25 therefore performs a full pair-level campaign, measures the inter-pair
+        concentration of \(\delta_{\mathrm{pair}}\), and identifies
+        \[
+        n_1(q)/q
+        \]
+        as the correct asymptotic variable.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarizes the numerical and structural
+        content of O25: systematic pair-level computation, convergence of
+        \(\delta_{\mathrm{pair}}\), degeneracy of naive extrapolation, O14 normalization
+        correction, and identification of \(n_1(q)/q\) as the central open direction.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Pair-level convergence, inter-pair concentration, normalization structure,
+            asymptotic scaling
+          </div></div>
+        <div class="kv"><div class="k">Range</div>
+          <div class="v">
+            Full pair-level campaign for \(q \in \{29,61,101,151\}\), with
+            \(M=50\) block samples per pair
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main contributions</h2>
+    <ul>
+      <li>
+        <strong>First full pair-level campaign:</strong>
+        O25 computes \(\delta_{\mathrm{pair}}\) across all \((q-1)/2\) conjugate pairs
+        \((c,q-c)\) for each tested prime.
+      </li>
+      <li>
+        <strong>Inter-pair concentration:</strong>
+        the standard deviation decreases from \(0.54\) at \(q=29\) to \(0.14\) at
+        \(q=151\), showing that \(\delta_{\mathrm{pair}}\) is not a block-level fluctuation
+        but a structural invariant of the representation.
+      </li>
+      <li>
+        <strong>Extrapolation degeneracy:</strong>
+        fits of the form
+        \[
+        \delta_\infty+\frac{a}{\log q},\qquad
+        \delta_\infty+\frac{a}{(\log q)^2},\qquad
+        \delta_\infty+\frac{a}{q^\alpha}
+        \]
+        all describe the accessible data well, while yielding incompatible asymptotic limits.
+      </li>
+      <li>
+        <strong>Structural explanation:</strong>
+        the leading correction behaves as
+        \[
+        \frac{\log q}{\log n_1(q)} \approx 1,
+        \]
+        because \(n_1(q)=\Theta(q)\) at the level of scaling behaviour. The obstruction to
+        extrapolation is therefore structural, not statistical.
+      </li>
+      <li>
+        <strong>Normalization correction:</strong>
+        applying the O14 correction
+        \[
+        \delta_{\mathrm{corr}}(q)=
+        \delta_{\mathrm{pair}}(q)-\eta\frac{\log q}{\log n_1(q)}
+        \]
+        with \(\eta=1/2\) brings the corrected values into the admissible window
+        \([7.4,10.6]\) for all tested primes \(q \in \{61,101,151\}\).
+      </li>
+      <li>
+        <strong>Correct asymptotic variable:</strong>
+        O25 identifies
+        \[
+        n_1(q)/q
+        \]
+        rather than \(q\) itself as the quantity controlling convergence.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O25 changes the interpretation of the numerical drift observed in earlier stages of
+      the programme.
+    </p>
+    <ul>
+      <li><strong>Before O25:</strong> \(\delta_{\mathrm{pair}}\) seemed to drift with \(q\)</li>
+      <li><strong>After O25:</strong> the drift is explained as a finite-size normalization effect</li>
+    </ul>
+    <p>
+      The crucial point is that the measured observable depends on the BFS shell geometry
+      through the fitting window \([n_0,n_1]\). Since the ratio \(n_1(q)/q\) has not yet
+      stabilized over the accessible range, the observable remains pre-asymptotic even when
+      the numerical fits themselves look extremely good.
+    </p>
+    <p>
+      In other words, the paper shifts the asymptotic question:
+    </p>
+    <ul>
+      <li>from direct extrapolation in \(q\)</li>
+      <li>to analytical control of the internal window geometry</li>
+      <li>from a naive fit variable</li>
+      <li>to the structurally correct variable \(n_1(q)/q\)</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O25 occupies the numerical counterpart of O24 in the O-series. After the fibre-level
+      construction of the observable (O16–O19), the persistence and intrinsic saturation
+      framework (O20–O21), shell locking (O22), threshold derivation (O23), and rank
+      stability under non-injectivity (O24), O25 shows that the measured exponent behaves
+      exactly as expected once the normalization structure is taken into account.
+    </p>
+    <p>
+      The sequence now reads:
+      O16 (pair observable), O17 (pair dynamics), O18 (minimal fibre structure),
+      O19 (canonical normalization), O20 (persistence criterion),
+      O21 (intrinsic saturation rank), O22 (projection locking),
+      O23 (threshold dimension), O24 (rank stability),
+      O25 (full pair-level campaign and normalization structure).
+    </p>
+    <p>
+      After O25, the open problem is no longer whether \(\delta_{\mathrm{pair}}\) is stable,
+      but how the asymptotic ratio \(n_1(q)/q\) is determined analytically.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current result and open directions</h2>
+    <p>
+      O25 establishes that \(\delta_{\mathrm{pair}}\) is numerically robust and strongly
+      concentrated across conjugate pairs, and that naive extrapolation in \(q\) is not a
+      meaningful way to infer \(\delta_\infty\).
+    </p>
+    <p>
+      The following directions remain open:
+    </p>
+    <ul>
+      <li>
+        <strong>Asymptotic ratio \(n_1(q)/q\):</strong>
+        determine whether the ratio stabilizes,
+        and if so, to which constant \(\alpha\).
+      </li>
+      <li>
+        <strong>Next-to-leading corrections:</strong>
+        derive the subleading dependence of
+        \(\bar{\delta}_{\mathrm{pair}}(q)\) once \(n_1(q)=\alpha q+O(q^\beta)\) is known.
+      </li>
+      <li>
+        <strong>Validation of \(\eta=1/2\):</strong>
+        test within the exact O25 pipeline the O14
+        hypothesis used in the normalization correction.
+      </li>
+      <li>
+        <strong>Large-\(q\) campaign:</strong>
+        extend the systematic computation to \(q=211\)
+        and beyond.
+      </li>
+      <li>
+        <strong>Analytical completion:</strong>
+        determine \(\delta_\infty\) from the structure of
+        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\), rather than by numerical extrapolation.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Reference</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19462132">
+        <i>Systematic Pair-Level Campaign for \(\delta_{\mathrm{pair}}\):
+          Convergence, Inter-Pair Concentration, and Normalization Structure</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

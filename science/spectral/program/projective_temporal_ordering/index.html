@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Temporal Ordering | Cosmochrony</title>
+  <meta name="description"
+    content="Presentation page for the Cosmochrony article on projective temporal ordering, cumulative projected capacity, and the one-way activation property in the spectral admissibility cascade."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/temporal-ordering/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Projective Temporal Ordering and Cumulative Projected Capacity"/>
+  <meta property="og:description"
+    content="A structural proposal for emergent temporal ordering based on the monotone accumulation of projected spectral capacity under non-injective projection."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/temporal-ordering/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/projective_temporal_ordering/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Temporal Ordering</h1>
+        <p class="subtitle">
+          How temporal ordering can emerge from cumulative projected capacity rather than from a
+          fundamental time parameter.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19474639/" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article proposes a structural notion of temporal ordering within the Cosmochrony
+        framework. Its central claim is that the relevant observable along the admissibility
+        cascade is not the residual capacity $\sigma_{\mathrm{pair}}(n)$, which decays by
+        construction, but its complement
+        $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$, interpreted as cumulative
+        projected capacity.
+      </p>
+      <p>
+        The key numerical result is that $I(n)$ is strictly non-decreasing for every tested
+        conjugate pair and every tested prime $q \in \{29,61,101,151\}$. This monotonicity is
+        observed step by step along the BFS cascade, with no physically meaningful regression.
+      </p>
+      <p>
+        The paper interprets this behaviour as a <strong>projective temporal ordering</strong>:
+        time is not an evolution of the substrate $\chi$, but an ordering induced by the
+        accumulation of admissible spectral structure under a fixed non-injective projection
+        $\Pi$.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page presents the conceptual structure of the paper.
+        The complete technical definitions, numerical protocol, conjecture, and discussion are
+        given in the preprint.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Emergent time, cumulative capacity, and one-way activation</div>
+        </div>
+        <div class="kv">
+          <div class="k">Numerical scope</div>
+          <div class="v">All conjugate pairs for $q \in \{29,61,101,151\}$</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Correct temporal observable:</strong> the paper identifies
+        $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$ as the relevant cumulative
+        variable, rather than the decreasing residual observable $\sigma_{\mathrm{pair}}(n)$.
+      </li>
+      <li>
+        <strong>One-way activation:</strong> once spectral structure has been stably projected, it
+        is not lost at later BFS depths. This yields a structural form of irreversibility.
+      </li>
+      <li>
+        <strong>Projective ordering:</strong> temporal succession is defined as an ordering on
+        admissible projections, not as a fundamental dynamics on $\chi$.
+      </li>
+      <li>
+        <strong>Compatibility with O24:</strong> the ordering does not enlarge the observable rank.
+        It reorders admissible fibre selections within the fixed observable structure established
+        by the previous O-series results.
+      </li>
+      <li>
+        <strong>Formal conjecture:</strong> the paper states the one-way activation conjecture
+        $\sigma_{\mathrm{pair}}(n)\leq\sigma_{\mathrm{pair}}(n-1)$ and explains precisely what
+        remains to be proved analytically.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The article does not derive time from entropy, from a background metric, or from a
+      fundamental Hamiltonian flow. Instead, it shows that temporal ordering can be read from the
+      monotone accumulation of projected spectral structure.
+    </p>
+    <ul>
+      <li>
+        <strong>Non-injective projection</strong> creates fibres of admissible realizations for the
+        same effective state.
+      </li>
+      <li>
+        <strong>Successive admissible selections</strong> along the cascade generate a well-defined
+        ordering relation.
+      </li>
+      <li>
+        <strong>Cumulative projected capacity</strong> provides the monotone scalar that makes this
+        ordering explicit.
+      </li>
+    </ul>
+    <p>
+      In this perspective, the arrow of time is not assumed. It appears as a structural consequence
+      of admissible projection under finite relational capacity.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Why this matters in the programme</h2>
+    <p>
+      The spectral admissibility programme had already identified a fibre-level observable,
+      stabilised the observable rank, and clarified the admissible transfer chain through O23,
+      O24, and O25. This article adds the missing temporal layer.
+    </p>
+    <p>
+      It shows that the same projective structure that governs admissibility and saturation also
+      supports a candidate temporal ordering. In that sense, the paper does not merely add a new
+      numerical diagnostic. It extends the programme from spectral selection to the emergence of
+      ordered succession itself.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19474639" rel="noopener">
+        <i lang="en">Projective Temporal Ordering and Cumulative Projected Capacity:
+          Numerical Evidence from the Spectral Admissibility Cascade</i>. Preprint.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY
+      4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

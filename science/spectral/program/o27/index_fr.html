@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Rigidité quaternionique des morphismes admissibles | Cosmochronie
+  </title>
+  <meta name="description"
+    content="O27 démontre que tout morphisme admissible Φq,ρ factorise nécessairement par su(2),
+établissant la rigidité quaternionique, l'universalité du quotient admissible, et une
+interprétation représentationnelle canonique de l'observable de paire et de β*."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o27/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Rigidité quaternionique des morphismes admissibles"/>
+  <meta property="og:description"
+    content="O27 démontre que tout morphisme admissible factorise nécessairement par su(2),
+transformant le fil admissible SU(2) d'une structure candidate en théorème de rigidité."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o27/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o27/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Rigidité quaternionique des morphismes admissibles
+        </h1>
+        <p class="subtitle">
+          O27 prolonge <a href="../o26/index_fr.html">O26</a> en démontrant que tout
+          morphisme admissible \(\Phi_{q,\rho}\) factorise nécessairement par
+          \(\mathfrak{su}(2)\), transformant le fil quaternionique SU(2) d'un candidat
+          structurel en théorème de rigidité.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19488845">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Après <a href="../o26/index_fr.html">O26</a>, qui a établi une interprétation
+        quadratique de l'observable de paire \(\sigma_{\mathrm{pair}}\), la question
+        structurelle suivante devenait précise : existe-t-il un morphisme admissible
+        canonique \(\Phi_{q,\rho}: V_q \to V_\rho\), et sa structure cible est-elle
+        imposée de façon unique ?
+      </p>
+      <p>
+        L'objectif central de O27 est le suivant :
+        <strong>démontrer que tout morphisme admissible factorise nécessairement par
+          l'algèbre de Lie réelle de dimension trois \(\mathfrak{su}(2)\), identifiée
+          au secteur admissible quaternionique.</strong>
+      </p>
+      <p>
+        L'article introduit une définition formelle de la naturalité relativement à
+        l'admissibilité, démontre l'universalité du quotient admissible, élimine les
+        candidats non quaternioniques, et dérive la factorisation canonique
+        \(\Phi_{q,\rho} = \rho \circ \iota \circ \pi\).
+      </p>
+      <p>
+        Cela transforme le fil SU(2) d'un candidat admissible en structure cible
+        imposée de manière unique.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page résume la contribution structurelle de O27 :
+        naturalité définie par l'admissibilité, universalité du quotient, rigidité
+        quaternionique, factorisation canonique, et interprétation représentationnelle
+        de \(\beta^*\).
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Rigidité quaternionique, morphismes admissibles, su(2), factorisation
+            par quotient, théorie des représentations
+          </div></div>
+        <div class="kv"><div class="k">Objet central</div>
+          <div class="v">
+            \(\Phi_{q,\rho}: V_q \to V_\rho\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Naturalité formalisée :</strong>
+        l'admissibilité est traduite en invariance sous les endomorphismes admissibles.
+      </li>
+      <li>
+        <strong>Quotient admissible universel :</strong>
+        tout morphisme admissible factorise par
+        \(\pi: V_q \twoheadrightarrow H_{\mathrm{eff}}\).
+      </li>
+      <li>
+        <strong>Théorème de rigidité quaternionique :</strong>
+        la cible admissible intermédiaire est imposée de façon unique comme
+        \(\mathfrak{su}(2)\).
+      </li>
+      <li>
+        <strong>Construction canonique :</strong>
+        \(\Phi_{q,\rho} = \rho \circ \iota \circ \pi\), unique à équivalence unitaire près.
+      </li>
+      <li>
+        <strong>Sens représentationnel de \(\beta^*\) :</strong>
+        l'exposant de cascade admissible devient l'exposant de croissance de norme
+        dans le secteur non abélien admissible minimal.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O27 change le statut du fil SU(2), qui passe de la plausibilité à la nécessité.
+    </p>
+    <ul>
+      <li>
+        <strong>Avant O27 :</strong> le secteur quaternionique / SU(2) est le meilleur
+        candidat admissible
+      </li>
+      <li>
+        <strong>Après O27 :</strong> tout morphisme admissible est forcé de factoriser par
+        \(\mathfrak{su}(2)\)
+      </li>
+    </ul>
+    <p>
+      La chaîne conceptuelle est maintenant explicite :
+      émergence \(\to\) non-injectivité \(\to\) structure de paire \(\to\) forme
+      quadratique \(\to\) \(\mathfrak{su}(2)\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochronie</h2>
+    <p>
+      O27 suit <a href="../o26/index_fr.html">O26</a> en passant de l'interprétation
+      quadratique à la rigidité de la couche représentationnelle admissible.
+    </p>
+    <p>
+      La séquence se lit désormais ainsi :
+      O16–O19 (construction de paire et structure fibrée),
+      O20–O23 (persistance, verrouillage des shells, seuil, minimalité quaternionique),
+      O24 (stabilité du rang),
+      O25 (campagne numérique),
+      O26 (complétion quadratique),
+      O27 (rigidité quaternionique des morphismes admissibles).
+    </p>
+    <p>
+      Il s'agit du premier théorème montrant que la cible admissible non abélienne n'est
+      pas sélectionnée heuristiquement, mais imposée structurellement.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <ul>
+      <li>
+        <strong>Sélection du secteur irréductible :</strong>
+        déterminer quelle représentation irréductible \(V_\rho\) est réalisée par les
+        données de O25.
+      </li>
+      <li>
+        <strong>Dimension effective :</strong>
+        tester si le rang de covariance mesuré satisfait
+        \(r_{\mathrm{eff}} = d_\rho^2\).
+      </li>
+      <li>
+        <strong>Universalité :</strong>
+        vérifier la même sélection de secteur selon les nombres premiers et les paires
+        conjuguées.
+      </li>
+      <li>
+        <strong>Lien analytique :</strong>
+        dériver directement de l'admissibilité le secteur représentationnel réalisé.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19488845">
+        <i>Quaternionic Rigidity of Admissible Morphisms:
+          Every Admissible \(\Phi_{q,\rho}\) Necessarily Factors through
+          \(\mathfrak{su}(2)\)</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -429,3 +429,9 @@ body:has(.section-nav a.section-link[data-section="philosophy"]:focus-visible) .
 body:has(.section-nav a.section-link[data-section="philosophy"]:focus) .subtitle[data-section="philosophy"] {
   display: block;
 }
+
+.map {
+  width: 100%;
+  border: none;
+  height: 400px;
+}

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Calibration asymptotique de la fenêtre BFS et dimension effective de la trajectoire admissible | Cosmochronie
+  </title>
+  <meta name="description"
+    content="O28 calibre l’échelle asymptotique de la fenêtre BFS n1(q)/q et mesure la dimension effective de la trajectoire admissible, établissant une structure de rang 3 et identifiant l’écart représentationnel traité dans O29."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o28/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Calibration asymptotique de la fenêtre BFS et dimension effective de la trajectoire admissible"/>
+  <meta property="og:description"
+    content="O28 établit l’échelle asymptotique de la fenêtre BFS et mesure la dimension effective de la trajectoire admissible, révélant une structure de covariance de rang 3 et un écart représentationnel."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o28/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o28/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Calibration asymptotique de la fenêtre BFS et dimension effective de la trajectoire admissible
+        </h1>
+        <p class="subtitle">
+          O28 prolonge <a href="../o27">O27</a> en calibrant l’échelle asymptotique de la fenêtre BFS
+          et en mesurant la dimension effective de la trajectoire admissible,
+          établissant la structure de rang qui prépare le test représentationnel de <a href="../o29">O29</a>.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19767801">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Après que <a href="../o25">O25</a> a identifié le ratio \(n_1(q)/q\) comme variable
+        asymptotique clé et que <a href="../o26">O26</a> a introduit le test de dimension effective,
+        l’étape suivante devient concrète :
+        <strong>mesurer directement ces deux quantités à partir du pipeline spectral.</strong>
+      </p>
+      <p>
+        L’objectif central de O28 est :
+        <strong>de calibrer asymptotiquement la fenêtre BFS et de calculer la dimension
+          effective de la trajectoire admissible via l’opérateur de covariance.</strong>
+      </p>
+      <p>
+        L’article extrait \(n_1(q)\) à partir de fenêtres auto-calibrées, établit une loi
+        de croissance stable, et réalise le calcul de covariance dans l’espace de projection
+        admissible \(H_{\mathrm{eff}}\).
+      </p>
+      <p>
+        Cela met en évidence une structure de rang 3 pleinement saturée et isole précisément
+        l’obstacle au test représentationnel.
+      </p>
+      <div class="note" role="note">
+        <strong>Périmètre.</strong> Cette page résume la contribution structurelle de O28 :
+        calibration de la fenêtre BFS, échelle asymptotique, mesure du rang de covariance,
+        dimension effective et identification de l’écart représentationnel.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations rapides</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Thèmes</div>
+          <div class="v">
+            échelle BFS, dimension effective, opérateur de covariance,
+            trajectoire admissible, test représentationnel
+          </div></div>
+        <div class="kv"><div class="k">Objets centraux</div>
+          <div class="v">
+            \(n_1(q)\), \(C_c \in \mathrm{End}(H_{\mathrm{eff}})\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Calibration de la fenêtre BFS :</strong>
+        extraction de \(n_1(q)\) et mise en évidence d’une loi linéaire
+        \(n_1(q) \approx \hat{\alpha} q + \hat{\beta}\).
+      </li>
+      <li>
+        <strong>Variable asymptotique identifiée :</strong>
+        validation de \(n_1(q)/q\) comme paramètre d’échelle pertinent.
+      </li>
+      <li>
+        <strong>Calcul de dimension effective :</strong>
+        opérateur de covariance évalué dans \(H_{\mathrm{eff}}\).
+      </li>
+      <li>
+        <strong>Universalité du rang 3 :</strong>
+        \(r_{\mathrm{eff}} = 3\) pour tous les premiers et toutes les paires conjuguées.
+      </li>
+      <li>
+        <strong>Structure spectrale invariante :</strong>
+        \([1 : 1/2 : 1/2]\) pour tous les jeux de données.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      O28 clarifie la structure de la trajectoire admissible tout en révélant un écart.
+    </p>
+    <ul>
+      <li>
+        <strong>Observation :</strong> la trajectoire remplit un espace de dimension 3,
+        \(H_{\mathrm{eff}}\)
+      </li>
+      <li>
+        <strong>Attendu :</strong> la prédiction représentationnelle est
+        \(r_{\mathrm{eff}} = d_\rho^2 = 4\)
+      </li>
+    </ul>
+    <p>
+      Cet écart est structurel :
+      le test est effectué dans \(H_{\mathrm{eff}}\), et non dans l’espace de représentation
+      \(V_\rho\).
+    </p>
+    <p>
+      O28 n’invalide donc pas la structure SU(2), mais identifie l’étape manquante :
+      l’inclusion \(V_\rho \subset H_{\mathrm{eff}}\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme Cosmochronie</h2>
+    <p>
+      O28 suit <a href="../o27">O27</a> en passant de la rigidité représentationnelle
+      à la structure mesurée.
+    </p>
+    <p>
+      La séquence devient :
+      O16–O19 (construction des paires),
+      O20–O23 (stabilité et minimalité quaternionique),
+      O24 (stabilité du rang),
+      O25 (campagne numérique),
+      O26 (complétion quadratique),
+      O27 (rigidité),
+      O28 (calibration asymptotique et dimension effective).
+    </p>
+    <p>
+      Il constitue la dernière étape numérique avant l’identification représentationnelle.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et étape suivante</h2>
+    <ul>
+      <li>
+        <strong>Établi :</strong>
+        échelle asymptotique de \(n_1(q)\) et structure de covariance de rang 3 universelle.
+      </li>
+      <li>
+        <strong>Écart identifié :</strong>
+        \(H_{\mathrm{eff}} \neq V_\rho\).
+      </li>
+      <li>
+        <strong>Étape suivante :</strong>
+        restreindre l’opérateur de covariance à \(V_\rho\) et tester
+        \(r_{\mathrm{eff}} = d_\rho^2\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19767801">
+        <i>Asymptotic Calibration of the BFS Window and Effective Dimension of the
+          Admissible Trajectory</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

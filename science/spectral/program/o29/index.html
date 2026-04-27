@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Spin-1/2 Sector Identification via the Symmetric Rank Formula | Cosmochrony
+  </title>
+  <meta name="description"
+    content="O29 proves that the effective covariance rank is structurally constrained by Born–Infeld parity, forcing the observable into a symmetric subspace and enabling the unique identification of the spin-1/2 sector."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o29/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Spin-1/2 Sector Identification via the Symmetric Rank Formula"/>
+  <meta property="og:description"
+    content="O29 resolves the rank discrepancy observed in O28 by identifying the correct observable space and proving a symmetric rank constraint induced by Born–Infeld parity."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/o29/index.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o29/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Spin-1/2 Sector Identification via the Symmetric Rank Formula
+        </h1>
+        <p class="subtitle">
+          O29 resolves <a href="../o28">O28</a> by showing that the effective covariance
+          observable is structurally constrained by Born–Infeld parity, forcing it into
+          \(\mathrm{Sym}(V_\rho,\mathbb{C})\) and enabling the unique identification of
+          the spin-\(\tfrac{1}{2}\) sector.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19787221">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to the spectral admissibility programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        After <a href="../o26">O26</a> introduced a representation-theoretic interpretation
+        of the pair observable and <a href="../o28">O28</a> measured an effective rank
+        \(r_{\mathrm{eff}} = 3\), a discrepancy remained:
+        the expected value for the spin-\(\tfrac{1}{2}\) candidate was
+        \(d_\rho^2 = 4\).
+      </p>
+      <p>
+        The central aim of O29 is:
+        <strong>to prove that this discrepancy is not an artefact, but a structural
+          constraint induced by Born–Infeld parity.</strong>
+      </p>
+      <p>
+        The paper shows that conjugate-pair data are anti-linearly constrained,
+        forcing the covariance observable into the symmetric subspace
+        \(\mathrm{Sym}(V_\rho,\mathbb{C})\), and derives the resulting
+        symmetric rank formula.
+      </p>
+      <p>
+        This resolves the O28 result and completes the identification of the
+        representation sector.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarizes the structural contribution
+        of O29: symmetric constraint, rank reduction, observable correction,
+        and unique identification of the spin-\(\tfrac{1}{2}\) sector.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Covariance rank, symmetric constraint, Born–Infeld parity,
+            representation identification
+          </div></div>
+        <div class="kv"><div class="k">Core object</div>
+          <div class="v">
+            \(C_c \in \mathrm{End}(V_\rho)\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main contributions</h2>
+    <ul>
+      <li>
+        <strong>Symmetric constraint:</strong>
+        conjugate-pair outer products satisfy
+        \(M_j = w_j w_j^\top \in \mathrm{Sym}(V_\rho,\mathbb{C})\).
+      </li>
+      <li>
+        <strong>Structural origin:</strong>
+        the constraint is induced by anti-linear Born–Infeld parity.
+      </li>
+      <li>
+        <strong>Symmetric rank formula:</strong>
+        \(r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2\).
+      </li>
+      <li>
+        <strong>Observable correction:</strong>
+        the O26 target \(d_\rho^2\) is replaced by the accessible rank.
+      </li>
+      <li>
+        <strong>Sector identification:</strong>
+        \(r_{\mathrm{eff}} = 3 \Rightarrow d_\rho = 2\), uniquely selecting spin-\(\tfrac{1}{2}\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      O29 shifts the interpretation of the rank observable.
+    </p>
+    <ul>
+      <li>
+        <strong>Before O29:</strong> the rank deficit suggests an incomplete embedding
+      </li>
+      <li>
+        <strong>After O29:</strong> the rank reflects a structural restriction of the observable
+      </li>
+    </ul>
+    <p>
+      The key conceptual point is:
+      the observable does not probe the full operator space
+      \(\mathrm{End}(V_\rho)\), but only the symmetric subspace
+      selected by admissibility.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O29 follows <a href="../o27">O27</a> by resolving the representation identification
+      stage.
+    </p>
+    <p>
+      The sequence now reads:
+      O16–O23 (pair structure and admissibility),
+      O24 (rank stability),
+      O25 (numerical validation),
+      O26 (quadratic completion),
+      O27 (SU(2) rigidity),
+      O28 (rank observation),
+      O29 (structural explanation and identification).
+    </p>
+    <p>
+      It provides the missing link between numerical observation and representation theory.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current result and open directions</h2>
+    <ul>
+      <li>
+        <strong>Full observable:</strong>
+        design a protocol probing the full \(d_\rho^2\) space.
+      </li>
+      <li>
+        <strong>Analytical dimension:</strong>
+        derive \(\dim V_\rho = 2\) from admissibility.
+      </li>
+      <li>
+        <strong>Universality:</strong>
+        extend validation to larger primes.
+      </li>
+      <li>
+        <strong>Eigenvalue structure:</strong>
+        derive analytically the ratio \([1 : 1/2 : 1/2]\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Reference</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19787221">
+        <i>Spin-1/2 Sector Identification via the Symmetric Rank Formula:
+          Effective Dimension of the Admissible Covariance in End(Vρ)</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -4,20 +4,19 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Spectral Capacity Functional and the Binary-Polyhedral Maximality Conjecture | Cosmochrony</title>
+  <title>Spectral Capacity Functional and Binary-Polyhedral Maximality | Cosmochrony</title>
   <meta name="description"
-    content="Analysis of global spectral admissibility showing why interference-penalised capacity
-    functionals select binary polyhedral groups, with 2I emerging as the optimal valence-24 case."/>
+    content="Global spectral admissibility via Peter-Weyl capacity, interference penalisation,
+    binary-cover dominance for d=6,12,24, and the binary-polyhedral maximality conjecture."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/capacity/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/capacity/index_es.html"/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/capacity/index_de.html"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/capacity/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title"
-    content="Spectral Capacity Functional and the Binary-Polyhedral Maximality Conjecture"/>
+  <meta property="og:title" content="Spectral Capacity Functional and Binary-Polyhedral Maximality"/>
   <meta property="og:description"
-    content="A spectral analysis showing how interference-penalised capacity restores the structural
-    advantage of the binary chain and singles out 2I at valence 24."/>
+    content="A spectral admissibility paper proving binary-cover dominance for d=6,12,24 by
+    character-table computation and formulating the global binary-polyhedral maximality conjecture."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/capacity/"/>
   <script type="module">
@@ -43,8 +42,7 @@
       <div>
         <h1>Spectral Capacity Functional and the Binary-Polyhedral Maximality Conjecture</h1>
         <p class="subtitle">
-          How global aggregation of admissibility windows favours the binary polyhedral chain once
-          constructive alignment is properly penalised.
+          From local bounded-flux admissibility to a global ordering of finite group structures.
         </p>
       </div>
     </div>
@@ -63,28 +61,25 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article develops the second step of the spectral admissibility programme. The starting
-        point is the one-mode result of <em>Spectral Admissibility</em>: on Cayley graphs of finite
-        SU(2) subgroups, bounded flux gives each irreducible sector an admissibility window
-        proportional to $1/\sqrt{\lambda_\rho}$, and the spin-$1/2$ sector is always the most
-        admissible one locally.
+        This article develops the global layer of the spectral admissibility programme. The local
+        bounded-flux constraint assigns each irreducible sector an admissibility window proportional
+        to $1/\sqrt{\lambda_\rho}$. The spectral capacity functional aggregates those windows over
+        all representation sectors with Peter--Weyl multiplicities.
       </p>
       <p>
-        The central question of the present paper is whether this advantage remains true globally.
-        To answer it, the paper introduces the spectral capacity functional $C(G,S)$, a Peter--Weyl
-        weighted aggregate of all per-sector admissibility windows. It then shows that the naive
-        aggregate is contaminated by constructive alignment: sectors with $\mu_\rho>0$ can appear
-        artificially favoured simply because the generating set resonates with them.
+        The naive aggregate can be distorted by constructive alignment: sectors with
+        $\mu_\rho>0$ have artificially lowered Laplacian eigenvalues and therefore inflated
+        capacity. The paper introduces interference-penalised functionals $C_0$ and $C_\alpha$
+        as the global form of the no-premature-selection admissibility principle.
       </p>
       <p>
-        Once this artefact is removed through the penalised functionals $C_0(G,S)$ and
-        $C_\alpha(G,S)$, the binary chain re-emerges as the structurally preferred one. At valence
-        $d=6$, $Q_8$ is the unique exactly neutral case. At valence $d=24$, the binary icosahedral
-        group $2I$ overtakes its rotational competitor $A_5$ and becomes the preferred substrate.
+        The main theorem proves binary-cover dominance for the verified valences
+        $d \in \{6,12,24\}$ by explicit character-table computation. The general
+        binary-polyhedral maximality statement remains formulated as a precise conjecture.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page provides a structured overview. The complete
-        technical analysis is presented in the preprint linked above.
+        <strong>Status.</strong> The dominance result is algebraically proved for the verified
+        valences and conjectured in general.
       </div>
     </div>
     <aside class="card">
@@ -103,12 +98,12 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
         </div>
         <div class="kv">
-          <div class="k">Focus</div>
-          <div class="v">Global admissibility aggregation and binary-polyhedral optimality</div>
+          <div class="k">Main theorem</div>
+          <div class="v">Binary-cover dominance for $d=6,12,24$</div>
         </div>
         <div class="kv">
-          <div class="k">Scope</div>
-          <div class="v">Peter--Weyl capacity, interference penalisation, and Q8/2I comparisons</div>
+          <div class="k">Method</div>
+          <div class="v">Peter--Weyl capacity, character tables, fermionic surplus</div>
         </div>
       </div>
     </aside>
@@ -117,70 +112,83 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Global functional:</strong> the paper defines the spectral capacity
-        $C(G,S)=\sum_{\rho,\lambda_\rho>0} (\dim\rho)^2/\sqrt{\lambda_\rho}$ as the natural
-        Peter--Weyl aggregate of per-sector admissibility windows.
+        <strong>Global capacity functional:</strong> the paper defines
+        $C(G,S)=\sum_{\rho,\lambda_\rho>0}(\dim\rho)^2/\sqrt{\lambda_\rho}$
+        as the Peter--Weyl aggregate of local admissibility windows.
       </li>
       <li>
-        <strong>Interference diagnosis:</strong> it shows that the naive functional is inflated by
-        sectors with positive adjacency eigenvalue $\mu_\rho>0$, which reflect constructive
-        alignment rather than genuine admissibility.
+        <strong>Global form of A3:</strong> constructive alignment with $\mu_\rho>0$ is identified
+        as artificial spectral inflation, and the penalised functional $C_\alpha$ suppresses it.
       </li>
       <li>
-        <strong>Penalised variants:</strong> the hard-threshold capacity $C_0$ and the soft family
-        $C_\alpha$ are introduced to suppress this artificial enhancement and recover structural
-        preference.
+        <strong>Binary-cover dominance:</strong> for $d\in\{6,12,24\}$, the binary groups dominate
+        their canonical SO(3)-quotient competitors at the level of unnormalised $C_\alpha$.
       </li>
       <li>
-        <strong>Valence-$6$ comparison:</strong> among the main competitors at $d=6$, $Q_8$ is the
-        unique group for which the naive and penalised capacities coincide, because its non-trivial
-        sectors are all neutral or negatively aligned.
+        <strong>Bosonic identity:</strong> the bosonic sectors of a binary group reproduce exactly
+        the capacity of its SO(3) quotient.
       </li>
       <li>
-        <strong>Valence-$24$ result:</strong> at $d=24$, the penalised capacity selects $2I$ over
-        $A_5$, with the advantage increasing as the penalisation strengthens.
+        <strong>Fermionic surplus:</strong> the strict dominance comes entirely from positive
+        spinorial contributions unavailable in the SO(3) quotient.
+      </li>
+      <li>
+        <strong>Dicyclic exclusion:</strong> binary dihedral groups are excluded structurally through
+        anisotropic half-turn axis geometry and the adjoint identity $\widehat A_{\rm adj}=2M-I$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Verified maximality mechanism</h2>
+    <p>
+      The algebraic proof separates each binary group into bosonic and fermionic sectors. The
+      bosonic part descends to the SO(3) quotient and contributes exactly the same capacity.
+      The difference between the binary group and its quotient is therefore carried entirely by
+      the fermionic surplus.
+    </p>
+    <ul>
+      <li>
+        At $d=6$, $Q_8$ is fixed by Gram rigidity and is the unique orthogonal neutral case.
+      </li>
+      <li>
+        At $d=12$, $2O$ dominates $S_4$, with a constant fermionic surplus
+        $C_\alpha^{\mathrm{ferm}}(2O)=4\sqrt{3}$.
+      </li>
+      <li>
+        At $d=24$, $2I$ dominates $A_5$, with positive surplus
+        $C_\alpha^{\mathrm{ferm}}(2I)=24/\sqrt{18+6\alpha}+36/\sqrt{28}$.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The article shows that global admissibility cannot be read directly from raw spectral softness.
-      It must distinguish true structural preference from accidental resonance between a generating
-      set and a representation sector.
+      The result shows that global admissibility cannot be read from raw spectral softness alone.
+      A low eigenvalue caused by constructive alignment is not genuine admissibility; it is an
+      artefact of the generating-set representation.
     </p>
-    <ul>
-      <li>
-        <strong>Peter--Weyl multiplicity</strong> gives the correct weighting for aggregating local
-        admissibility windows into a group-level quantity.
-      </li>
-      <li>
-        <strong>Constructive alignment</strong> can make rotational competitors appear stronger than
-        they really are under bounded flux.
-      </li>
-      <li>
-        <strong>Interference penalisation</strong> restores the binary-polyhedral advantage and turns
-        local low-spin preference into a global selection principle.
-      </li>
-    </ul>
     <p>
-      Within this perspective, the Ramanujan property is not the direct maximiser of capacity. Its
-      role is instead to act as a spectral consistency condition, preventing pathological spectral
-      compression and protecting the spinorial hierarchy from accidental blow-up.
+      Penalisation restores the structural hierarchy: local bounded-flux admissibility, Heisenberg
+      structure, quaternionic minimality and SU(2) selection all point toward the same binary
+      polyhedral chain.
+    </p>
+    <p>
+      The Ramanujan property is not a direct maximiser of spectral capacity. Its role is to act
+      as a consistency condition, preventing pathological eigenvalue collapse and keeping the
+      capacity ordering structurally meaningful.
     </p>
   </section>
   <section class="card">
-    <h2>Relation to the Cosmochrony program</h2>
+    <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      This paper is the global completion of <em>Spectral Admissibility</em>. The first paper showed
-      which individual sectors are most robust under bounded flux. The present one asks which whole
-      groups remain preferred once those admissibility windows are aggregated across all sectors.
+      This paper globalises the one-mode spectral admissibility analysis. The earlier local result
+      identified which representation sectors are most robust under bounded flux; this work asks
+      which whole finite group structures remain favoured after all sectors are aggregated.
     </p>
     <p>
-      Its conclusion is that the binary polyhedral chain is not just locally favoured but globally
-      selected once constructive interference is accounted for correctly. This prepares the next step
-      of the programme, where neutral-generator geometry is analysed and the admissible subgroup
-      list is reduced structurally before generation counting and hierarchy construction.
+      The conclusion is that the admissibility principle is not only local. It induces a global
+      ordering on admissible group structures, with binary covers gaining a strict advantage from
+      spinorial sectors while preserving the bosonic capacity of their SO(3) quotients.
     </p>
   </section>
   <section class="card">

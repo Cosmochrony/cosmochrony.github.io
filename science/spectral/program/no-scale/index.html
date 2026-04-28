@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>No External Dimensional Scale at the Level of Admissibility | Cosmochrony</title>
+  <meta name="description"
+    content="This paper proves a Level-1 scale-rigidity result: no independent dimensional scale can be
+introduced into the admissibility structure without breaking spectral scaling, structural
+non-injectivity, or bounded admissibility closure."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/foundation/no-scale/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="No External Dimensional Scale at the Level of Admissibility"/>
+  <meta property="og:description"
+    content="A Level-1 no-scale rigidity theorem for admissibility: independent dimensional scales are
+excluded by A3-A4, BFS-consistent spectral scaling, and structural non-injectivity."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/foundation/no-scale/index.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/no-scale/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>No External Dimensional Scale at the Level of Admissibility</h1>
+        <p class="subtitle">
+          This note proves a Level-1 scale-rigidity theorem: the admissibility structure of
+          Foundation M cannot be deformed by an independent dimensional scale without
+          breaking spectral scaling, structural non-injectivity, or bounded admissibility closure.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19744767">Read the preprint</a>
+      <a class="btn subtle" href="/science/foundation/">Back to the foundation track</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The admissibility structure of Foundation M is built from a single primitive dimensional
+        scale, the Born-Infeld saturation scale \(c_\chi\), entering the admissibility bound
+        \(A_n \le c_\chi / \sqrt{\lambda_n}\).
+      </p>
+      <p>
+        The central question of this note is whether one can consistently deform this structure
+        by adding another dimensional parameter.
+      </p>
+      <p>
+        The answer is negative at Level 1:
+        <strong>any deformation that introduces an independent dimensional parameter breaks at
+          least one of BFS-consistent spectral scaling, structural non-injectivity, or bounded
+          admissibility closure.</strong>
+      </p>
+      <p>
+        The result supplies the structural backing for the exclusion of Reissner-Nordström and
+        Schwarzschild-de Sitter deformations used in Q6b.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> The paper proves a negative rigidity result. It does not
+        claim that all emergent scales are already fully determined as functionals of
+        \(c_\chi\); that stronger Level-2 statement remains open.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            admissibility, dimensional analysis, scale rigidity, non-injective projection
+          </div></div>
+        <div class="kv"><div class="k">Core scale</div>
+          <div class="v">\(c_\chi\)</div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main contributions</h2>
+    <ul>
+      <li>
+        <strong>Independent dimensional parameter defined:</strong>
+        a parameter is independent if its dimensions are not expressible as a rational
+        power of \([c_\chi]\).
+      </li>
+      <li>
+        <strong>Dimensionless parameters separated:</strong>
+        finite resolution parameters such as \(q\), and parameters entering only through
+        dimensionless ratios, are explicitly excluded from the no-scale obstruction.
+      </li>
+      <li>
+        <strong>Three-case rigidity proof:</strong>
+        global multiplicative, depth-dependent, and configuration-dependent deformations
+        are shown to be either trivial or inadmissible.
+      </li>
+      <li>
+        <strong>No additional dimensional field coupling:</strong>
+        any additional dynamical field carrying an independent dimensional coupling
+        introduces a forbidden scale into A3-A4.
+      </li>
+      <li>
+        <strong>Q6b support:</strong>
+        the result supplies the structural basis for excluding \(Q\)- and
+        \(\Lambda\)-type deformations in the Schwarzschild exterior argument.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>The rigidity mechanism</h2>
+    <p>
+      The proof distinguishes three possible deformations of the admissibility bound.
+    </p>
+    <ul>
+      <li>
+        <strong>Global deformation:</strong>
+        if the new parameter is dimensional, the admissibility bound becomes ill-typed;
+        if it is dimensionless, it is absorbed into \(c_\chi\).
+      </li>
+      <li>
+        <strong>Depth-dependent deformation:</strong>
+        a factor \(\Phi(\lambda,n)\) changes the effective pair observable
+        \(\sigma_{\mathrm{pair}}(n)\), breaking the power-law scaling needed for the
+        Q5a Mosco limit.
+      </li>
+      <li>
+        <strong>Configuration-dependent deformation:</strong>
+        a factor \(\Phi(\lambda,\omega)\) discriminates within projection fibres and
+        induces a partial injectivisation, contradicting structural non-injectivity.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The result should be read as a Level-1 rigidity theorem.
+    </p>
+    <p>
+      It does not forbid emergent scales. It forbids independent dimensional scales being
+      inserted into the admissibility axioms.
+    </p>
+    <p>
+      Derived quantities such as \(\delta_{\mathrm{pair}}\), \(\beta^*\), mass ratios, or spectral
+      thresholds remain admissible precisely insofar as they arise as outputs of the spectral
+      admissibility cascade rather than as additional inputs.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to Q6b</h2>
+    <p>
+      Q6b derives effective spacetime geometry from the admissibility operator and uses
+      flux conservation to select the Schwarzschild exterior solution.
+    </p>
+    <p>
+      Reissner-Nordström and Schwarzschild-de Sitter geometries require, respectively,
+      an independent electromagnetic charge scale \(Q\) or an independent cosmological
+      scale \(\Lambda\).
+    </p>
+    <p>
+      The no-scale theorem supplies the structural reason why these deformations do not
+      belong to the admissible exterior class of Q6b: they require dimensional input not
+      present in A3-A4.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the foundation track. It complements the axiomatic paper
+      Foundation M, the structural non-injectivity theorem ENI, and the Q-series papers
+      deriving gauge and spacetime structure from admissible non-injective projection.
+    </p>
+    <p>
+      Its role is not to add new physics, but to restrict the admissible space of extensions:
+      any downstream construction must respect the absence of independent dimensional
+      scales at the admissibility level.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Open directions</h2>
+    <ul>
+      <li>
+        <strong>Level 2:</strong>
+        determine whether all emergent scales are functionals of \(c_\chi\) and of the
+        spectral cascade without free parameters or unfixed initial conditions.
+      </li>
+      <li>
+        <strong>Effective scales:</strong>
+        classify which observed scales arise as cascade outputs rather than primitive inputs.
+      </li>
+      <li>
+        <strong>Gauge and matter sectors:</strong>
+        analyse how dimensionless couplings and effective masses fit into the no-scale
+        classification.
+      </li>
+      <li>
+        <strong>Cosmology:</strong>
+        clarify the status of effective cosmological parameters as derived quantities or
+        forbidden independent inputs.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Reference</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19744767">
+        <i>No External Dimensional Scale at the Level of Admissibility</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

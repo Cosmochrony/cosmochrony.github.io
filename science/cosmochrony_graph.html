@@ -900,16 +900,23 @@
       url: ZEN + "19616444",
       tags: ["QM", "SM"],
       title: "Q2 — Quantum beyond Spin-½",
-      desc: "Spin-3/2 structure on 2I; SU(2) as stable admissibility fixed point. Born rule and Tsirelson bound derived without new postulates."
+      desc: "Spin-3/2 structure on 2I; SU(2) as stable admissibility fixed point. Born rule and Tsirelson bound derived without new postulates. General-j extension proved in Q3."
+    },
+    {
+      id: "Q3", lbl: "Q3", s: "proved", b: "III", key: "Beau2026q3",
+      url: ZEN + "19979535",
+      tags: ["QM"],
+      title: "Q3 — Universal Spin-j Singlet",
+      desc: "Closes the Q2 open step. BI indiscernibility forces proto-state invariance under diagonal 2I-action; Schur's lemma on CG decomposition χ_{2j+1}⊗χ_{2j+1}=⊕χ_{2J+1} uniquely identifies proto-state as singlet |Ω_j⟩. Universal correlator E(â,b̂)=−j(j+1)/3·(â·b̂) and Born rule derived for all j∈{½,1,3/2,2,5/2}."
     },
     {
       id: "Q5a", lbl: "Q5a", s: "structural", b: "III", key: "Beau2026q5a",
       url: BASE + "spectral/program/q5/a",
       tags: ["spt", "QM"],
       title: "Q5a — Large-q Operator Limit (v2.0)",
-      desc: "Mosco convergence (conditional on [H2] only): E_q → L_Π = −A∂²_x on L²(ℝ). " +
+      desc: "Mosco convergence E_q → L_Π = −A∂²_x on L²(ℝ). " +
         "v2.0: [H1] not needed in full generality (holds on admissible low-frequency sector). " +
-        "[H-E1] and [C] proved by Q5a-O2. Sole open hypothesis: [H2] (generator convergence)."
+        "[H-E1] and [C] proved by Q5a-O2. [H2] proved by H2 paper. All hypotheses verified on admissible sector."
     },
     {
       id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III",
@@ -993,7 +1000,18 @@
       desc: "a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
         "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
         "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
-        "After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only."
+        "After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only — proved by H2 paper."
+    },
+    {
+      id: "H2", lbl: "H2", s: "proved", b: "III", key: "Beau2026h2",
+      url: ZEN + "19962051",
+      tags: ["spt", "emer"],
+      title: "H2 — Hypothesis [H2] Proved",
+      desc: "Strong convergence X̂_q → x and P̂_q → −i∂_x on Heis₃(ℤ/qℤ). " +
+        "Proof: quantitative Poisson aliasing lemma (rate O(q⁻¹)), discrete Sobolev identity (centered difference), " +
+        "quasi-isometry of sinc embedding. " +
+        "Closes last open hypothesis of Q5a Theorem 7.1; all hypotheses now verified unconditionally on admissible sector. " +
+        "Quasi-isometry bound O(q⁻¹) also provides the quantitative input for Q5a-O5 (identification of A in terms of c_BI)."
     },
     {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
@@ -1090,7 +1108,7 @@
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
-    { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
+    { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
       t: "Q5b",
       sp: 1
@@ -1100,6 +1118,7 @@
     { f: "Q9", t: "Q10" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
+    { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
@@ -1152,6 +1171,7 @@
     PTO: { x: 6 * X, y: 7 * Y },
     Q1: { x: 10 * X, y: 3 * Y },
     Q2: { x: 10 * X, y: 4 * Y },
+    Q3: { x: 11 * X, y: 4 * Y },
     Q5a: { x: 10 * X, y: 5 * Y },
     Q5aO2: { x: 11 * X, y: 5 * Y },
     Q5b: { x: 10 * X, y: 6 * Y },
@@ -1163,6 +1183,7 @@
     Q10: { x: 11 * X, y: 10 * Y },
     U1: { x: 10 * X, y: 11 * Y },
     W1: { x: 11 * X, y: 11 * Y },
+    H2: { x: 12 * X, y: 11 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
@@ -1276,7 +1297,7 @@
 
     bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
     bgRect(-X, Y, 9 * X + NW, 5 * Y + NH, "var(--branch2)", "Branch II: O-series")
-    bgRect(10 * X - 6, 3 * Y - 6, NW + 12, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
+    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
 
     /* edges */

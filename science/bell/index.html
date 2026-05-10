@@ -4,18 +4,17 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bell Inequality Violations from Non-Injective Projection | Cosmochrony</title>
+  <title>Breakdown of Bell Factorization from Non-Injective Projection | Cosmochrony</title>
   <meta name="description"
-    content="Structural origin of Bell inequality violations from non-injective effective descriptions, without invoking dynamical nonlocality or hidden variables."/>
+    content="Bell factorizability as a structural constraint on effective descriptions, and how it breaks down under non-injective projection."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Bell Inequality Violations from Non-Injective Projection"/>
+  <meta property="og:title" content="Breakdown of Bell Factorization from Non-Injective Projection"/>
   <meta property="og:description"
-    content="An article within the Cosmochrony framework addressing quantum correlations as a structural consequence of non-injective projection."/>
+    content="A structural account of Bell non-factorizability from non-injective effective descriptions."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/bell/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-
     redirectIfNot("en", "/science/bell/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
@@ -30,20 +29,24 @@
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
             transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
             d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
-          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
-            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
         </svg>
       </a>
       <div>
-        <h1>Bell Inequality Violations from Non-Injective Projection</h1>
+        <h1>Breakdown of Bell Factorization from Non-Injective Projection</h1>
         <p class="subtitle">
-          Quantum correlations as structural features of effective descriptions, without dynamical nonlocality.
+          Bell non-factorizability as a structural feature of effective descriptions.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">Read the preprint (Zenodo
-        DOI)</a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.18371173</span></span>
+      <a class="btn primary" href="https://doi.org/10.3390/quantum8020044" rel="noopener">
+        Read the article
+      </a>
+      <a class="btn secondary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">
+        Read the preprint
+      </a>
     </div>
   </div>
 </header>
@@ -52,19 +55,24 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article provides a structural reinterpretation of <a href="https://en.wikipedia.org/wiki/Bell%27s_theorem">Bell
-        inequality</a> violations. It shows that Bell-type correlations can arise generically from non-injective
-        mappings between underlying configurations and observable outcomes, without invoking superluminal influences,
-        retrocausality, or hidden-variable dynamics.
+        This article studies the structural status of Bell-type factorizability. It argues that the
+        standard Bell factorization assumption need not apply when observable outcomes arise from
+        a non-injective projection of an underlying configuration space.
       </p>
       <p>
-        The analysis is intentionally non-dynamical and focuses on the logical and probabilistic structure of effective
-        descriptions. Violations of Bell inequalities are traced to the failure of probabilistic factorization induced
-        by non-injective projection, rather than to any breakdown of locality at the underlying level.
+        The central point is not that Bell's theorem is contradicted, nor that quantum mechanics is
+        modified. Rather, Bell inequalities constrain effective descriptions that admit a jointly
+        factorizable completion. Non-injective projection defines a class of effective descriptions in
+        which this condition can fail.
+      </p>
+      <p>
+        In this setting, Bell-type correlations are traced to information loss under projection:
+        observable outcomes correspond to equivalence classes of underlying configurations, not to
+        independently assignable local variables.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page is a structured summary and entry point. The authoritative technical
-        reference is the Zenodo preprint linked above.
+        <strong>Scope statement.</strong> This page is a structured summary and entry point. The
+        authoritative technical reference is the article or preprint linked above.
       </div>
     </div>
     <aside class="card">
@@ -76,7 +84,7 @@
         </div>
         <div class="kv">
           <div class="k">Work type</div>
-          <div class="v">Preprint</div>
+          <div class="v">Research article</div>
         </div>
         <div class="kv">
           <div class="k">License</div>
@@ -84,7 +92,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Quantum correlations and Bell inequalities</div>
+          <div class="v">Bell factorization and quantum correlations</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
@@ -96,48 +104,78 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Non-injective projection:</strong> identification of many-to-one mappings as a sufficient mechanism
-        for Bell violations.</li>
-      <li><strong>Failure of factorization:</strong> structural obstruction to Bell-type probabilistic assumptions at
-        the effective level.</li>
-      <li><strong>Locality preservation:</strong> Bell violations without superluminal dynamics or causal nonlocality.
+      <li>
+        <strong>Non-injective projection:</strong> identification of many-to-one effective
+        descriptions as a structural source of non-factorizability.
       </li>
-      <li><strong>Effective descriptions:</strong> quantum correlations as consistency constraints of projected
-        representations.</li>
-      <li><strong>Classical limit:</strong> recovery of factorizability when the projection becomes effectively
-        injective.</li>
+      <li>
+        <strong>Bell factorization:</strong> clarification that Bell inequalities constrain
+        descriptions admitting a jointly factorizable completion.
+      </li>
+      <li>
+        <strong>No dynamical nonlocality:</strong> the mechanism does not require superluminal
+        dynamics, retrocausality, or hidden causal influences.
+      </li>
+      <li>
+        <strong>Toy-model role:</strong> the explicit model isolates the structural origin of the
+        violation and is not intended to reproduce quantum correlations quantitatively.
+      </li>
+      <li>
+        <strong>Classical limit:</strong> approximate factorizability is recovered when the
+        effective projection becomes approximately injective.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Conceptual scope</h2>
     <p>
-      The article does not propose a modification of quantum mechanics, nor does it introduce additional physical
-      degrees of freedom. Its purpose is to isolate a minimal and sufficient structural condition under which Bell
-      inequalities fail, clarifying what Bell-type experiments do and do not constrain about the underlying description.
+      The article does not propose a modification of quantum mechanics, introduce additional
+      physical degrees of freedom, or claim that Bell's theorem is wrong. Its purpose is to isolate
+      a sufficient structural condition under which Bell-type factorizability fails at the effective
+      level.
+    </p>
+    <p>
+      The analysis preserves operational no-signalling and statistical independence of measurement
+      settings. It also clarifies why non-factorizability does not by itself imply causal nonlocality.
     </p>
   </section>
   <section class="card">
-    <h2>How this connects to Cosmochrony</h2>
+    <h2>Position within Cosmochrony</h2>
     <p>
-      Within the Cosmochrony framework, this article addresses the probabilistic and logical consequences of
-      non-injective projection. It complements the spectral and geometric analysis by showing how quantum correlations
-      arise naturally at the effective level when observable descriptions fail to capture the full underlying relational
-      structure.
+      Within the broader Cosmochrony programme, non-injectivity is not introduced as an ad hoc
+      modelling device. It is treated as a structural consequence of genuinely emergent effective
+      descriptions: an effective level that is not merely a relabelling of the underlying level cannot
+      remain fully injective.
+    </p>
+    <p>
+      The Bell paper applies this principle to the probabilistic structure of quantum correlations.
+      It shows how the loss of microstate-level distinguishability induced by projection obstructs
+      the factorized representation assumed in Bell-type arguments.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to quantum mechanics</h2>
+    <p>
+      The article does not derive the full quantitative structure of quantum mechanics. It identifies
+      a structural reason why classical Bell factorizability may fail for projected effective
+      descriptions. The quantitative quantum structure is addressed in companion work on
+      admissibility, phase coherence, SU(2) correlations, and the Born rule.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <em>Bell Inequality Violations from Non-Injective Projection</em>. Zenodo. DOI: <a
-      href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">10.5281/zenodo.18371173</a>
+      Beau, J. <i lang="en">Breakdown of Bell Factorization from Non-Injective Effective Descriptions</i>. Quantum Rep.
+      2026, 8, 44. <a href="https://doi.org/10.3390/quantum8020044" rel="noopener">
+      https://doi.org/10.3390/quantum8020044 </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
-      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

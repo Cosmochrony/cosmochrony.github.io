@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+    [H-color] | Cosmochrony</title>
+  <meta name="description"
+    content="O32 tests Hypothesis [H-color] (triplet co-admissibility) numerically on primes
+    q ≡ 1 mod 3. Normalised ratios R pass the threshold R ≤ 3 for q ∈ {151, 211}, confirming
+    [H-color] numerically; analytical proof remains open."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+    [H-color]"/>
+  <meta property="og:description"
+    content="O32 tests [H-color] for q ∈ {61,151,211} (test) and q ∈ {29,101} (control).
+    All test primes pass R ≤ 3; δ_tri ≈ 3δ_c at sub-percent level; C_color has rank 1.
+    Analytical proof of [H-color] remains open."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o32/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+          [H-color]</h1>
+        <p class="subtitle">
+          O32 tests the colour triplet co-admissibility hypothesis [H-color] from
+          <a href="../o31">O31</a> numerically on test primes $q \equiv 1 \pmod{3}$ and
+          control primes. All test primes pass the co-admissibility threshold, confirming
+          [H-color] for $q \in \{151, 211\}$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        O32 provides the numerical validation of Hypothesis [H-color] from
+        <a href="../o31">O31</a>: the claim that colour triplets
+        $\{c_1, c_2, c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$ with
+        $c_1+c_2+c_3 \equiv 0 \pmod{q}$ are co-admissible on the Heisenberg graph.
+      </p>
+      <p>
+        The test is conducted on primes $q \equiv 1 \pmod{3}$ (test primes: $q \in \{61, 151, 211\}$)
+        and control primes $q \in \{29, 101\}$. The combined noise floor is
+        $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$. Normalised ratios $R$ quantify the
+        spectral overlap of the co-admissible triplet against the noise baseline.
+      </p>
+      <p>
+        Results: $R = 0.90$ for $q=61$ (1/4 triplets valid), $R = 0.19$ for $q=151$ (4/4 triplets),
+        $R = 0.42$ for $q=211$ (4/4 triplets). All test primes satisfy the threshold $R \leq 3$.
+        Additionally, $\delta_\mathrm{tri} \approx 3\delta_c$ at sub-percent level, and the
+        colour covariance $C_\mathrm{color}$ has numerical rank 1 in all cases.
+      </p>
+      <div class="note" role="note">
+        <strong>Status.</strong> [H-color] is numerically confirmed for $q \in \{151, 211\}$.
+        The $q=307$ computation is in progress. Analytical proof of [H-color] remains open.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Structurally motivated ([H-color] numerically confirmed for
+            q ∈ {151, 211}; analytical proof open)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v"><a href="../o31">O31</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Q6a, Q12</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Numerical results</h2>
+    <ul>
+      <li>
+        <strong>Test primes ($q \equiv 1 \pmod{3}$):</strong> $q \in \{61, 151, 211\}$.
+        Control primes: $q \in \{29, 101\}$. Combined noise floor
+        $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+      </li>
+      <li>
+        <strong>$q = 61$:</strong> $R = 0.90$, 1 out of 4 tested triplets satisfy the
+        co-admissibility criterion. Passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 151$:</strong> $R = 0.19$, 4 out of 4 triplets valid. Clear confirmation
+        of [H-color]; passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 211$:</strong> $R = 0.42$, 4 out of 4 triplets valid. Consistent
+        with $q=151$; passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>Triplet exponent:</strong> $\delta_\mathrm{tri} \approx 3\delta_c$ at
+        sub-percent level across all test primes, consistent with the triplet being a
+        threefold composite of single-colour admissibility.
+      </li>
+      <li>
+        <strong>Colour covariance rank:</strong> the matrix $C_\mathrm{color}$ has numerical
+        rank 1 in all tested cases, supporting the SU(3) identification of O31.
+      </li>
+      <li>
+        <strong>$q = 307$:</strong> computation in progress.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The passing of all test primes $R \leq 3$ provides numerical support for [H-color].
+      The most conclusive results are for $q = 151$ and $q = 211$, where all four tested
+      triplets satisfy the co-admissibility criterion and the normalised ratio $R$ is well
+      below the threshold.
+    </p>
+    <p>
+      The result $\delta_\mathrm{tri} \approx 3\delta_c$ is structurally expected: if the
+      three colour charges $c_1, c_2, c_3$ are co-admissible, their joint projective capacity
+      decay should be the product of the three individual decays. The sub-percent agreement
+      with this prediction validates the factorisation structure.
+    </p>
+    <p>
+      The rank-1 numerical structure of $C_\mathrm{color}$ is consistent with the SU(3)
+      identification from O31: the co-admissible triplet has a one-dimensional admissible
+      covariance, corresponding to the single complex direction preserved by the SU(3) action.
+    </p>
+    <p>
+      The partial result for $q = 61$ (1/4 triplets valid) may reflect finite-size effects
+      at smaller primes or a genuine distinction between triplets at this prime. The larger
+      primes $q = 151$ and $q = 211$ show full triplet co-admissibility.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O32 is the numerical companion to <a href="../o31">O31</a>. Together, they provide
+      the theoretical framework and numerical evidence for the emergence of the SU(3) colour
+      gauge group from admissibility constraints on the Heisenberg graph.
+    </p>
+    <p>
+      The confirmation of [H-color] feeds directly into Q6a (Standard Model gauge structure)
+      and Q12 (Yang–Mills dynamics from projective spectral entropy), where the SU(3) group
+      is used as an input. The conditional status of these downstream results lifts partially
+      as [H-color] is numerically confirmed; full unconditional status requires the analytical
+      proof of [H-color], which remains open.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Open direction</h2>
+    <p>
+      The primary open problem is the analytical proof of [H-color]: showing, from the
+      structure of the Weil representation and the metaplectic automorphism, that colour
+      triplets satisfying $c_1+c_2+c_3 \equiv 0$ are necessarily co-admissible in the
+      large-$q$ limit. The numerical evidence from O32 provides strong motivation for this
+      proof.
+    </p>
+    <p>
+      The computation for $q = 307$ (in progress) will extend the numerical evidence to a
+      larger prime in the same congruence class, further testing the stability of the
+      results.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
+        <i>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+        [H-color]</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.20145607
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

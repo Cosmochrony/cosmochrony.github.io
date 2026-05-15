@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Stabilisation des poids de la forme de Dirichlet admissible : démonstration de l'hypothèse [H-w] depuis l'universalité spectrale | Cosmochrony
+  </title>
+  <meta name="description"
+    content="W1 démontre l'hypothèse [H-w] : les poids d'admissibilité convergent, a_q(s) → A > 0.
+    C'est une conséquence structurelle de l'invariance de fibre des observables admissibles,
+    rendue quantitative par U1. Après W1, les hypothèses ouvertes de Q5a se réduisent à trois."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/w1/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Stabilisation des poids de la forme de Dirichlet admissible : démonstration de [H-w] depuis l'universalité spectrale"/>
+  <meta property="og:description"
+    content="W1 démontre [H-w] : les poids d'admissibilité se stabilisent, a_q(s) → A > 0, comme
+    conséquence structurelle de l'invariance de fibre rendue quantitative par U1. Réduit les
+    hypothèses ouvertes de Q5a à trois : [H1], [H-E1] et [C]."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/w1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/w1/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Stabilisation des poids de la forme de Dirichlet admissible : démonstration de [H-w] depuis l'universalité spectrale
+        </h1>
+        <p class="subtitle">
+          W1 démontre que les poids d'admissibilité se stabilisent : $a_q(s) \to A > 0$ quand
+          $q \to \infty$. C'est une conséquence structurelle de l'invariance de fibre des
+          observables admissibles, rendue quantitative par U1.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19886319">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        La forme de Dirichlet admissible sur le graphe de Heisenberg est pondérée : chaque
+        arête porte un poids $a_q(s)$ encodant l'intensité locale d'admissibilité à la couche
+        BFS $s$ pour le premier $q$. L'hypothèse [H-w] affirme que ces poids convergent vers
+        une limite positive : $a_q(s) \to A > 0$ quand $q \to \infty$.
+      </p>
+      <p>
+        W1 démontre [H-w] en traçant son origine jusqu'à l'invariance de fibre des observables
+        admissibles. Les observables $O = \mathrm{Im}\,\Pi$ sont invariantes sous la fibre de
+        projection par définition. Cette invariance, combinée au taux d'universalité quantitatif
+        de U1, force la stabilisation des poids.
+      </p>
+      <p>
+        Avant W1, le cadre Q5a comportait plusieurs hypothèses ouvertes. Après la démonstration
+        de [H-w] par W1, les hypothèses restantes se réduisent à trois : [H1], [H-E1] et [C].
+        Les deux dernières sont ensuite traitées par Q5a-O2 et H2.
+      </p>
+      <div class="note">
+        <strong>Statut.</strong> Démontré.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">
+            Poids de la forme de Dirichlet, admissibilité, invariance de fibre, universalité spectrale
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">
+            [H-w] démontré — les poids se stabilisent : $a_q(s) \to A > 0$ depuis l'invariance de fibre admissible
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">U1, Q5a</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Q5a-O2, H2</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Démonstration de [H-w] :</strong> l'hypothèse sur les poids d'admissibilité est
+        établie rigoureusement à partir des propriétés structurelles de la projection $\Pi$ et
+        du théorème d'universalité U1.
+      </li>
+      <li>
+        <strong>L'invariance de fibre comme source structurelle :</strong> l'observation clé
+        est que les observables admissibles $O = \mathrm{Im}\,\Pi$ sont par construction
+        invariantes sous la fibre. Cette invariance se propage aux poids de la forme de
+        Dirichlet, empêchant leur effondrement vers zéro ou leur divergence.
+      </li>
+      <li>
+        <strong>Borne quantitative depuis U1 :</strong> le taux explicite $\varepsilon(q) = O(q^{-1/2})$
+        de U1 transforme l'argument qualitatif d'invariance de fibre en un énoncé de convergence
+        quantitatif avec contrôle explicite des erreurs.
+      </li>
+      <li>
+        <strong>Réduction des hypothèses ouvertes :</strong> après W1, la liste des hypothèses
+        de Q5a est réduite de quatre à trois éléments ouverts : [H1], [H-E1] et [C]. Cela
+        représente un progrès mesurable dans la fermeture du cadre d'admissibilité.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>La forme de Dirichlet admissible</h2>
+    <p>
+      La forme de Dirichlet encode la structure de diffusion sur le graphe de Heisenberg
+      compatible avec l'admissibilité spectrale. Sa fonction de poids $a_q(s)$ mesure
+      l'intensité de couplage effective à la distance BFS $s$ pour le premier $q$.
+    </p>
+    <p>
+      Si les poids ne se stabilisaient pas, deux pathologies surgiraient :
+    </p>
+    <ul>
+      <li>
+        <strong>Effondrement ($a_q(s) \to 0$) :</strong> la forme de Dirichlet dégénèrerait,
+        perdant ses propriétés de diffusion et brisant le lien entre le graphe de Heisenberg
+        discret et la géométrie continue de Carnot–Carathéodory.
+      </li>
+      <li>
+        <strong>Divergence ($a_q(s) \to \infty$) :</strong> la forme ne définirait plus un
+        opérateur normalisé, empêchant le passage à une limite spectrale bien définie.
+      </li>
+    </ul>
+    <p>
+      [H-w] exclut les deux pathologies, garantissant que la forme de Dirichlet reste
+      non dégénérée et bornée quand $q \to \infty$.
+    </p>
+    <div class="note">
+      <strong>Lien avec les observables.</strong> La stabilisation des poids en $A > 0$
+      signifie que la forme de Dirichlet effective sur la géométrie émergente possède un
+      coefficient de diffusion bien défini et non trivial — prérequis pour que la théorie
+      spectrale continue entre en contact avec les grandeurs géométriques dérivées dans Q10 et Q11.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      W1, avec U1, forme l'ossature analytique du cluster d'émergence métrique. Tandis que U1
+      contrôle la convergence des énergies d'empreinte, W1 contrôle la convergence des poids
+      de la forme de Dirichlet. Ensemble, ils garantissent que les données spectrales discrètes
+      sur les graphes de Heisenberg définissent une limite continue bien comportée.
+    </p>
+    <p>
+      Les hypothèses ouvertes restantes [H1], [H-E1] et [C] concernent différents aspects du
+      cadre d'admissibilité : ellipticité, non-dégénérescence énergétique et compatibilité.
+      Leur résolution (Q5a-O2, H2) complète le fondement rigoureux du cadre Q5a.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau.
+      <i>Weight Stabilisation of the Admissible Dirichlet Form: Proof of Hypothesis [H-w] from Spectral Universality</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.19886319">doi:10.5281/zenodo.19886319</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Co-admissibilité des triplets de couleur sur Heis₃(Z/qZ) : test numérique de
+    l'hypothèse [H-color] | Cosmochronie</title>
+  <meta name="description"
+    content="O32 teste numériquement l'hypothèse [H-color] (co-admissibilité des triplets)
+    sur des premiers q ≡ 1 mod 3. Les ratios normalisés R passent le seuil R ≤ 3 pour
+    q ∈ {151, 211}, confirmant [H-color] numériquement ; la preuve analytique reste ouverte."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o32/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Co-admissibilité des triplets de couleur sur Heis₃(Z/qZ) : test numérique
+    de l'hypothèse [H-color]"/>
+  <meta property="og:description"
+    content="O32 teste [H-color] pour q ∈ {61,151,211} (test) et q ∈ {29,101} (contrôle).
+    Tous les premiers de test passent R ≤ 3 ; δ_tri ≈ 3δ_c au niveau sous-pourcent ;
+    C_color est de rang numérique 1. La preuve analytique reste ouverte."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o32/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Co-admissibilité des triplets de couleur sur Heis₃(Z/qZ) : test numérique de
+          l'hypothèse [H-color]</h1>
+        <p class="subtitle">
+          O32 teste numériquement l'hypothèse de co-admissibilité des triplets de couleur
+          [H-color] de <a href="../o31">O31</a> sur des premiers de test $q \equiv 1 \pmod{3}$
+          et des premiers de contrôle. Tous les premiers de test passent le seuil de
+          co-admissibilité, confirmant [H-color] pour $q \in \{151, 211\}$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        O32 fournit la validation numérique de l'hypothèse [H-color] de
+        <a href="../o31">O31</a> : la claim que les triplets de couleur
+        $\{c_1, c_2, c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$ avec
+        $c_1+c_2+c_3 \equiv 0 \pmod{q}$ sont co-admissibles sur le graphe de Heisenberg.
+      </p>
+      <p>
+        Le test est conduit sur des premiers $q \equiv 1 \pmod{3}$ (premiers de test :
+        $q \in \{61, 151, 211\}$) et des premiers de contrôle $q \in \{29, 101\}$.
+        Le plancher de bruit combiné est $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+        Les ratios normalisés $R$ quantifient le recouvrement spectral du triplet co-admissible
+        contre la référence de bruit.
+      </p>
+      <p>
+        Résultats : $R = 0.90$ pour $q=61$ (1/4 triplets valides), $R = 0.19$ pour $q=151$
+        (4/4 triplets), $R = 0.42$ pour $q=211$ (4/4 triplets). Tous les premiers de test
+        satisfont le seuil $R \leq 3$. De plus, $\delta_\mathrm{tri} \approx 3\delta_c$ au
+        niveau sous-pourcent, et la covariance de couleur $C_\mathrm{color}$ est de rang
+        numérique 1 dans tous les cas.
+      </p>
+      <div class="note" role="note">
+        <strong>Statut.</strong> [H-color] est confirmée numériquement pour $q \in \{151, 211\}$.
+        Le calcul pour $q=307$ est en cours. La preuve analytique de [H-color] reste ouverte.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Structurellement motivé ([H-color] numériquement confirmée pour
+            q ∈ {151, 211} ; preuve analytique ouverte)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v"><a href="../o31">O31</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Q6a, Q12</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats numériques</h2>
+    <ul>
+      <li>
+        <strong>Premiers de test ($q \equiv 1 \pmod{3}$) :</strong> $q \in \{61, 151, 211\}$.
+        Premiers de contrôle : $q \in \{29, 101\}$. Plancher de bruit combiné
+        $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+      </li>
+      <li>
+        <strong>$q = 61$ :</strong> $R = 0.90$, 1 triplet sur 4 testés satisfait le critère
+        de co-admissibilité. Passe $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 151$ :</strong> $R = 0.19$, 4 triplets sur 4 valides. Confirmation
+        claire de [H-color] ; passe $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 211$ :</strong> $R = 0.42$, 4 triplets sur 4 valides. Cohérent avec
+        $q=151$ ; passe $R \leq 3$.
+      </li>
+      <li>
+        <strong>Exposant du triplet :</strong> $\delta_\mathrm{tri} \approx 3\delta_c$ au
+        niveau sous-pourcent pour tous les premiers de test, cohérent avec le triplet comme
+        composite triple de l'admissibilité à couleur unique.
+      </li>
+      <li>
+        <strong>Rang de la covariance de couleur :</strong> la matrice $C_\mathrm{color}$ est
+        de rang numérique 1 dans tous les cas testés, soutenant l'identification SU(3) de O31.
+      </li>
+      <li>
+        <strong>$q = 307$ :</strong> calcul en cours.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      Le passage de tous les premiers de test $R \leq 3$ fournit un soutien numérique à
+      [H-color]. Les résultats les plus concluants sont pour $q = 151$ et $q = 211$, où les
+      quatre triplets testés satisfont le critère de co-admissibilité et le ratio normalisé
+      $R$ est bien en dessous du seuil.
+    </p>
+    <p>
+      Le résultat $\delta_\mathrm{tri} \approx 3\delta_c$ est structurellement attendu : si
+      les trois charges de couleur $c_1, c_2, c_3$ sont co-admissibles, la décroissance de
+      leur capacité projective conjointe devrait être le produit des trois décroissances
+      individuelles. L'accord au niveau sous-pourcent avec cette prédiction valide la
+      structure de factorisation.
+    </p>
+    <p>
+      La structure numérique de rang 1 de $C_\mathrm{color}$ est cohérente avec
+      l'identification SU(3) d'O31 : le triplet co-admissible a une covariance admissible
+      unidimensionnelle, correspondant à la direction complexe unique préservée par l'action
+      de SU(3).
+    </p>
+    <p>
+      Le résultat partiel pour $q = 61$ (1/4 triplets valides) peut refléter des effets de
+      taille finie aux premiers plus petits, ou une distinction réelle entre triplets à ce
+      premier. Les premiers plus grands $q = 151$ et $q = 211$ montrent une co-admissibilité
+      complète des triplets.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochronie</h2>
+    <p>
+      O32 est le compagnon numérique de <a href="../o31">O31</a>. Ensemble, ils fournissent
+      le cadre théorique et les preuves numériques pour l'émergence du groupe de jauge de
+      couleur SU(3) à partir des contraintes d'admissibilité sur le graphe de Heisenberg.
+    </p>
+    <p>
+      La confirmation de [H-color] alimente directement Q6a (structure de jauge du Modèle
+      Standard) et Q12 (dynamique de Yang–Mills par entropie spectrale projective), où le
+      groupe SU(3) est utilisé comme entrée. Le statut conditionnel de ces résultats en aval
+      se lève partiellement avec la confirmation numérique de [H-color] ; un statut
+      inconditionnel complet requiert la preuve analytique de [H-color], qui reste ouverte.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Direction ouverte</h2>
+    <p>
+      Le problème ouvert principal est la preuve analytique de [H-color] : montrer, à partir
+      de la structure de la représentation de Weil et de l'automorphisme métaplectique, que
+      les triplets de couleur satisfaisant $c_1+c_2+c_3 \equiv 0$ sont nécessairement
+      co-admissibles dans la limite des grands $q$. Les preuves numériques d'O32 fournissent
+      une forte motivation pour cette preuve.
+    </p>
+    <p>
+      Le calcul pour $q = 307$ (en cours) étendra les preuves numériques à un premier plus
+      grand dans la même classe de congruence, testant davantage la stabilité des résultats.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
+        <i lang="en">Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of
+        Hypothesis [H-color]</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.20145607
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Weight Stabilisation of the Admissible Dirichlet Form: Proof of Hypothesis [H-w] from Spectral Universality | Cosmochrony
+  </title>
+  <meta name="description"
+    content="W1 proves Hypothesis [H-w]: the admissibility weights converge, a_q(s) → A > 0.
+    This is a structural consequence of the fibre-invariance of admissible observables, made
+    quantitative by U1. After W1, the open Q5a hypotheses reduce to [H1], [H-E1], and [C]."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/w1/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Weight Stabilisation of the Admissible Dirichlet Form: Proof of Hypothesis [H-w] from Spectral Universality"/>
+  <meta property="og:description"
+    content="W1 proves [H-w]: admissibility weights stabilise, a_q(s) → A > 0, as a structural
+    consequence of fibre-invariance made quantitative by U1. This reduces the open Q5a hypotheses
+    to three: [H1], [H-E1], and [C]."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/w1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral/program/w1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Weight Stabilisation of the Admissible Dirichlet Form: Proof of Hypothesis [H-w] from Spectral Universality
+        </h1>
+        <p class="subtitle">
+          W1 proves that admissibility weights stabilise: $a_q(s) \to A > 0$ as $q \to \infty$.
+          This is a structural consequence of fibre-invariance of admissible observables,
+          made quantitative by U1, and reduces the open Q5a hypotheses to three.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19886319">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The admissible Dirichlet form on the Heisenberg graph is weighted: each edge carries a
+        weight $a_q(s)$ encoding the local admissibility strength at BFS shell $s$ and prime $q$.
+        Hypothesis [H-w] asserts that these weights converge to a positive limit:
+        $a_q(s) \to A > 0$ as $q \to \infty$.
+      </p>
+      <p>
+        W1 proves [H-w] by tracing its origin to the fibre-invariance of admissible observables.
+        The observables $O = \mathrm{Im}\,\Pi$ are invariant under the projection fibre by
+        definition. This invariance, combined with the quantitative universality rate from U1,
+        forces the weights to stabilise.
+      </p>
+      <p>
+        Before W1, the Q5a framework had several open hypotheses. After W1 proves [H-w], the
+        remaining open hypotheses reduce to three: [H1], [H-E1], and [C]. The latter two are
+        subsequently addressed by Q5a-O2 and H2.
+      </p>
+      <div class="note">
+        <strong>Status.</strong> Proved.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Dirichlet form weights, admissibility, fibre-invariance, spectral universality
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Key result</div>
+          <div class="v">
+            [H-w] proved — Dirichlet form weights stabilise: $a_q(s) \to A > 0$ from admissibility fibre-invariance
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v">U1, Q5a</div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Q5a-O2, H2</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Proof of [H-w]:</strong> the admissibility weight hypothesis is established
+        rigorously from the structural properties of the projection $\Pi$ and the universality
+        theorem U1.
+      </li>
+      <li>
+        <strong>Fibre-invariance as the structural source:</strong> the key observation is that
+        admissible observables $O = \mathrm{Im}\,\Pi$ are by construction fibre-invariant. This
+        invariance propagates to the Dirichlet form weights, preventing their collapse to zero
+        or divergence.
+      </li>
+      <li>
+        <strong>Quantitative bound from U1:</strong> the explicit rate $\varepsilon(q) = O(q^{-1/2})$
+        from U1 turns the qualitative fibre-invariance argument into a quantitative convergence
+        statement with explicit error control.
+      </li>
+      <li>
+        <strong>Reduction of open hypotheses:</strong> after W1, the Q5a hypothesis list is
+        reduced from four to three open items: [H1], [H-E1], and [C]. This represents measurable
+        progress in closing the admissibility framework.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>The admissible Dirichlet form</h2>
+    <p>
+      The Dirichlet form encodes the diffusion structure on the Heisenberg graph compatible with
+      spectral admissibility. Its weight function $a_q(s)$ measures the effective coupling
+      strength at BFS distance $s$ for prime $q$.
+    </p>
+      <p>
+      If the weights failed to stabilise, two pathologies would arise:
+    </p>
+    <ul>
+      <li>
+        <strong>Collapse ($a_q(s) \to 0$):</strong> the Dirichlet form would degenerate,
+        losing its diffusion properties and breaking the connection between the discrete
+        Heisenberg graph and the continuous Carnot–Carathéodory geometry.
+      </li>
+      <li>
+        <strong>Divergence ($a_q(s) \to \infty$):</strong> the form would fail to define a
+        normalised operator, preventing the passage to a well-defined spectral limit.
+      </li>
+    </ul>
+    <p>
+      [H-w] rules out both pathologies, ensuring that the Dirichlet form remains non-degenerate
+      and bounded as $q \to \infty$.
+    </p>
+    <div class="note">
+      <strong>Relation to observables.</strong> The stabilisation of weights at $A > 0$ means
+      that the effective Dirichlet form on the emergent geometry has a well-defined, non-trivial
+      diffusion coefficient — a prerequisite for the continuous spectral theory to make contact
+      with the geometric quantities derived in Q10 and Q11.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      W1, together with U1, forms the analytical backbone of the metric emergence cluster.
+      While U1 controls the convergence of fingerprint energies, W1 controls the convergence
+      of the Dirichlet form weights. Together, they ensure that the discrete spectral data on
+      Heisenberg graphs defines a well-behaved continuum limit.
+    </p>
+    <p>
+      The remaining open hypotheses [H1], [H-E1], and [C] concern different aspects of the
+      admissibility framework: ellipticity, energy non-degeneracy, and compatibility. Their
+      resolution (Q5a-O2, H2) completes the rigorous foundation of the Q5a framework.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <i>Weight Stabilisation of the Admissible Dirichlet Form: Proof of Hypothesis [H-w] from Spectral Universality</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.19886319">doi:10.5281/zenodo.19886319</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

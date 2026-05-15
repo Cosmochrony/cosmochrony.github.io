@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2}) | Cosmochrony
+  </title>
+  <meta name="description"
+    content="U1 proves Hypothesis [U] (uniform spectral universality of Weil fingerprint energies)
+    with explicit convergence rate ε(q) = O(q^{-1/2}), using a Weil-generator Lipschitz bound
+    combined with BFS–Carnot–Carathéodory convergence."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/u1/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})"/>
+  <meta property="og:description"
+    content="U1 proves [U] with rate ε(q) = O(q^{-1/2}) via Weil-generator Lipschitz bound and
+    BFS–Carnot–Carathéodory convergence. This foundational result enables Q10, W1, and O30."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/u1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral/program/u1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})
+        </h1>
+        <p class="subtitle">
+          U1 proves Hypothesis [U] — uniform spectral universality of Weil fingerprint energies
+          — with explicit convergence rate $\varepsilon(q) = O(q^{-1/2})$, using a
+          Weil-generator Lipschitz bound combined with BFS–Carnot–Carathéodory convergence.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19881146">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        Hypothesis [U] — the uniform spectral universality of Weil fingerprint energies — is a
+        foundational assumption for several results in the geometric emergence cluster. It
+        asserts that, as the prime $q$ grows, the fingerprint energies of the Weil representation
+        on Heisenberg graphs converge uniformly, independently of the character.
+      </p>
+      <p>
+        U1 upgrades [U] from a working hypothesis to a proved theorem. The proof combines two
+        ingredients:
+      </p>
+      <ul>
+        <li>
+          A <strong>Weil-generator Lipschitz bound</strong>: the Weil generators act with
+          bounded Lipschitz constant on the space of fingerprint energies, controlling how
+          fast energies can vary as the character changes.
+        </li>
+        <li>
+          <strong>BFS–Carnot–Carathéodory convergence</strong>: BFS distance on the Heisenberg
+          graph converges to the Carnot–Carathéodory metric, providing the geometric substrate
+          for the uniformity argument.
+        </li>
+      </ul>
+      <p>
+        The result is a quantitative rate $\varepsilon(q) = O(q^{-1/2})$ for the deviation
+        from universality.
+      </p>
+      <div class="note">
+        <strong>Status.</strong> Proved.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Spectral universality, Weil fingerprint energies, Lipschitz bound,
+            BFS–Carnot–Carathéodory convergence
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Key result</div>
+          <div class="v">
+            $\varepsilon(q) = O(q^{-1/2})$ for Weil fingerprint energy universality; [U] proved
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v">Q5a</div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Q10, W1, O30</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Proof of [U]:</strong> hypothesis [U] is proved rigorously, converting a
+        working assumption into a theorem with explicit quantitative control.
+      </li>
+      <li>
+        <strong>Weil-generator Lipschitz bound:</strong> the Weil generators satisfy a Lipschitz
+        condition on fingerprint energy space, bounding character-to-character variation.
+      </li>
+      <li>
+        <strong>BFS–Carnot–Carathéodory convergence:</strong> as $q \to \infty$, the BFS
+        graph metric on the Heisenberg group converges to the sub-Riemannian
+        Carnot–Carathéodory distance, providing the geometric backbone of the universality proof.
+      </li>
+      <li>
+        <strong>Explicit rate $O(q^{-1/2})$:</strong> the convergence rate is not merely
+        qualitative but quantified, enabling downstream applications (Q10, W1) to bound
+        error terms explicitly.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Foundational role in the geometric emergence cluster</h2>
+    <p>
+      U1 is a hub paper: its proof of [U] with explicit rate unlocks three downstream results
+      simultaneously:
+    </p>
+    <ul>
+      <li>
+        <strong>Q10 (su(2)-isotropy):</strong> uses [U] to force character-independence of the
+        large-$q$ effective quadratic form, establishing $A_H = 2$.
+      </li>
+      <li>
+        <strong>W1 (Dirichlet form stabilisation):</strong> uses [U] to prove hypothesis [H-w],
+        showing that admissibility weights $a_q(s)$ converge to a positive limit.
+      </li>
+      <li>
+        <strong>O30 (equatorial correction):</strong> uses the rate $O(q^{-1/2})$ to bound
+        the equatorial correction to the spectral admissibility constraint.
+      </li>
+    </ul>
+    <div class="note">
+      <strong>Before U1.</strong> [U] was a standing hypothesis. After U1, it is a theorem,
+      and all results conditional on [U] become unconditional (subject only to Q5a hypotheses).
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      U1 resolves one of the key open hypotheses in the Q5a admissibility framework. Before U1,
+      several steps in the metric emergence chain (Q10, W1) were conditional on [U]. After U1,
+      those steps are fully justified.
+    </p>
+    <p>
+      The proof method — Lipschitz bounds on Weil generators combined with geometric convergence
+      to a sub-Riemannian limit — is characteristic of the Cosmochrony approach: structural
+      properties of the Heisenberg group provide the analytic control needed to pass from
+      discrete spectral data to continuous geometric structures.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <i>Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.19881146">doi:10.5281/zenodo.19881146</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

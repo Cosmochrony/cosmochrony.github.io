@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
+    sinc quantitatif, convergence des générateurs et contrôle de l'aliasing | Cosmochronie</title>
+  <meta name="description"
+    content="H2 prouve la dernière hypothèse ouverte du théorème de convergence de Mosco de Q5a :
+    la convergence en opérateur fort X̂_q → x et P̂_q → −i∂_x sur L²(R). Après H2, toutes les
+    hypothèses de Q5a sont vérifiées inconditionnellement."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/h2/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
+    sinc quantitatif, convergence des générateurs et contrôle de l'aliasing"/>
+  <meta property="og:description"
+    content="H2 prouve [H2] : X̂_q → x et P̂_q → −i∂_x en topologie d'opérateur forte sur L²(R),
+    via un lemme d'aliasing de Poisson quantitatif et une identité de Sobolev discrète. Clôt toutes
+    les hypothèses du théorème de convergence de Mosco de Q5a."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/h2/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/h2/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
+          sinc quantitatif, convergence des générateurs et contrôle de l'aliasing</h1>
+        <p class="subtitle">
+          H2 prouve la dernière hypothèse ouverte du théorème de convergence de Mosco de Q5a :
+          la convergence en opérateur fort $\hat{X}_q \to x$ et $\hat{P}_q \to -i\partial_x$
+          sur $L^2(\mathbb{R})$, via un lemme d'aliasing de Poisson quantitatif et une identité
+          de Sobolev discrète.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19962051">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Le théorème de convergence de Mosco de Q5a établit que les représentations de Weil
+        $\rho_c^{(q)}$ sur le groupe de Heisenberg fini $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+        convergent vers la représentation de Schrödinger standard du groupe de Heisenberg
+        continu lorsque $q \to \infty$, au sens de Mosco sur $L^2(\mathbb{R})$.
+      </p>
+      <p>
+        H2 clôt la dernière hypothèse ouverte de ce théorème. L'hypothèse [H2] affirme la
+        convergence en opérateur fort des générateurs de Weil redimensionnés : les opérateurs
+        de position et d'impulsion discrets $\hat{X}_q$ et $\hat{P}_q$ convergent vers leurs
+        homologues continus $x$ et $-i\partial_x$ en topologie d'opérateur forte sur
+        $L^2(\mathbb{R})$.
+      </p>
+      <p>
+        La preuve combine deux ingrédients principaux : un lemme d'aliasing de Poisson
+        quantitatif contrôlant l'erreur $L^2$ introduite par l'aliasing périodique dans
+        le plongement de Fourier discret, et une identité de Sobolev discrète qui relie
+        l'action de $\hat{P}_q$ à une dérivée aux différences finies dont la limite forte
+        est $-i\partial_x$.
+      </p>
+      <div class="note" role="note">
+        <strong>Conséquence clé.</strong> Après H2, toutes les hypothèses du théorème de
+        convergence de Mosco de Q5a sont vérifiées inconditionnellement sur le secteur
+        admissible. La convergence de la représentation de Weil vers la mécanique de
+        Schrödinger est désormais complète.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Prouvé</div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">$\hat{X}_q \to x$ et $\hat{P}_q \to -i\partial_x$ inconditionnellement ;
+            toutes les hypothèses de Q5a désormais vérifiées</div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">Q5a, W1</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Clôt la convergence de Mosco de Q5a</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Preuve de [H2] :</strong> convergence en opérateur fort $\hat{X}_q \to x$ et
+        $\hat{P}_q \to -i\partial_x$ en topologie d'opérateur forte sur $L^2(\mathbb{R})$,
+        inconditionnellement sur le secteur admissible.
+      </li>
+      <li>
+        <strong>Lemme d'aliasing de Poisson quantitatif :</strong> borne d'erreur $L^2$
+        explicite pour l'aliasing périodique introduit par le plongement de fonctions
+        discrètes dans $L^2(\mathbb{R})$ via interpolation sinc. L'erreur est contrôlée
+        uniformément dans la limite $q \to \infty$.
+      </li>
+      <li>
+        <strong>Identité de Sobolev discrète :</strong> identité algébrique reliant l'action
+        de l'opérateur d'impulsion discret $\hat{P}_q$ à une dérivée aux différences finies,
+        permettant d'identifier la limite forte comme $-i\partial_x$.
+      </li>
+      <li>
+        <strong>Plongement sinc quantitatif :</strong> contrôle précis du plongement par
+        interpolation sinc $\ell^2(\mathbb{Z}/q\mathbb{Z}) \hookrightarrow L^2(\mathbb{R})$
+        avec des taux de convergence explicites.
+      </li>
+      <li>
+        <strong>Complétion de Q5a :</strong> H2 clôt la dernière hypothèse ouverte du
+        théorème de convergence de Mosco de Q5a, établissant que la convergence discret-vers-continu
+        de la représentation de Weil est entièrement prouvée.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Le programme de convergence de Mosco de Q5a</h2>
+    <p>
+      Le théorème de convergence de Mosco de Q5a est le résultat central connectant la
+      représentation de Weil discrète sur le groupe de Heisenberg fini à la représentation
+      de Schrödinger continue. Il assure que, quand le premier $q \to \infty$, la mécanique
+      quantique discrète sur $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converge vers la
+      mécanique quantique standard sur $L^2(\mathbb{R})$.
+    </p>
+    <p>
+      Cette convergence est le fondement mathématique de la claim que la mécanique quantique
+      n'est pas postulée dans le cadre Cosmochronie mais émerge comme la limite à grande
+      échelle de la projection admissible sur le substrat de Heisenberg.
+    </p>
+    <p>
+      L'hypothèse [H2] était la dernière condition ouverte restante. La preuve fournie dans
+      H2 utilise le plongement par interpolation sinc — qui associe des fonctions discrètes
+      finies à des fonctions à bande limitée dans $L^2(\mathbb{R})$ — et montre que sous
+      ce plongement, les générateurs discrets convergent fortement vers leurs homologues continus.
+    </p>
+    <p>
+      Le lemme d'aliasing de Poisson est l'outil technique clé : il fournit un contrôle
+      quantitatif de l'erreur d'aliasing qui apparaît quand un signal discret périodique est
+      plongé dans le $L^2(\mathbb{R})$ non périodique. L'identité de Sobolev discrète traduit
+      ensuite la convergence forte du quotient différentiel en convergence forte de la dérivée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochronie</h2>
+    <p>
+      H2 complète le programme de cohérence semiclassique pour la représentation de Weil. Le
+      théorème Q5a, désormais entièrement prouvé, est l'un des résultats structurels centraux
+      du cadre Cosmochronie : il établit que le substrat de Heisenberg fini donne naissance
+      à la mécanique quantique continue dans la limite admissible à grande échelle.
+    </p>
+    <p>
+      L'article W1 a fourni le cadre analytique (représentation de Weil sur le groupe de
+      Heisenberg infini) utilisé comme cible de la convergence. Q5a a formulé le théorème
+      de convergence de Mosco et vérifié toutes les hypothèses sauf [H2]. H2 clôt le programme.
+    </p>
+    <p>
+      Le résultat renforce la claim fondatrice du programme : l'algèbre de Heisenberg
+      $[\hat{X}, \hat{P}] = i\hbar$ n'est pas postulée mais émerge des contraintes
+      d'admissibilité sur le substrat discret, comme la limite à grand $q$ des générateurs
+      structurels $\hat{X}_q$ et $\hat{P}_q$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19962051" rel="noopener">
+        <i lang="en">Semiclassical Consistency of the Weil Representation on Heis₃(Z/qZ):
+        Quantitative Sinc Embedding, Generator Convergence, and Aliasing Control</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.19962051
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Synthèse spectrale jauge–gravité | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q13 résout le problème variationnel joint δ_{g,𝒜} S_Π = 0 et dérive le système couplé
+    Einstein–Yang–Mills, le ratio de hiérarchie jauge–gravité, et la complétion jointe
+    Eddington–Born–Infeld depuis un seul fonctionnel spectral."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/q13/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Synthèse spectrale jauge–gravité : équations Einstein–Yang–Mills jointes,
+    complétion Born–Infeld et ratio de hiérarchie depuis l'entropie spectrale projective"/>
+  <meta property="og:description"
+    content="Q13 complète la trilogie jauge–gravité en dérivant le système Einstein–Yang–Mills couplé
+    depuis la variation jointe de S_Π[g,𝒜], et obtient le ratio G_N g_YM² ∼ ℓ_sp²/(dim V)·[log(Λ/μ)]⁻¹
+    comme conséquence structurelle de la stratification spectrale."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/q13/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/q13/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Synthèse spectrale jauge–gravité
+        </h1>
+        <p class="subtitle">
+          Q13 résout le problème variationnel joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ et dérive
+          le système couplé Einstein–Yang–Mills, le ratio de hiérarchie jauge–gravité, et la
+          complétion jointe Eddington–Born–Infeld depuis le fonctionnel spectral unique
+          $S_\Pi[g,\mathcal{A}]$, complétant la trilogie avec le papier Gravité et Q12.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20209859">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Le papier Gravité et Q12 ont établi, indépendamment, que le fonctionnel d'entropie
+        spectrale projective $S_\Pi[g,\mathcal{A}] = \tfrac{1}{2}\log\det' \mathcal{A}_{g,\mathcal{A}}$
+        produit le tenseur d'Einstein comme réponse horizontale $a_2$ et les équations de Yang–Mills
+        comme réponse verticale $a_4$.
+      </p>
+      <p>
+        Q13 réalise la <em>synthèse</em> jauge–gravité : il résout le problème variationnel joint
+        $\delta_{g,\mathcal{A}} S_\Pi = 0$, couplant les deux secteurs en un système dynamique
+        unique. La variation métrique du coefficient $a_4$ donne le tenseur d'énergie-impulsion
+        de Yang–Mills comme source pour la gravité ; la variation de jauge de $a_2$ est nulle par
+        le lemme de découplage horizontal–vertical.
+      </p>
+      <p>
+        Le résultat est le système Einstein–Yang–Mills dérivé depuis un unique fonctionnel, avec
+        la hiérarchie jauge–gravité apparaissant comme conséquence structurelle inévitable de la
+        différence d'ordre de Seeley–DeWitt entre les deux secteurs.
+      </p>
+      <div class="note">
+        <strong>Message central.</strong> Gravité et dynamique de jauge ne sont pas unifiées en
+        élargissant le groupe de symétrie, mais sont <em>stratifiées par l'ordre de Seeley–DeWitt</em>
+        au sein de l'opérateur unique $\mathcal{A}_{g,\mathcal{A}}$ :
+        $a_2 \to$ gravité, $a_4 \to$ jauge, $a_6 \to$ couplage mixte.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">
+            Synthèse Einstein–Yang–Mills, hiérarchie jauge–gravité,
+            stratification de Seeley–DeWitt, complétion Born–Infeld
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">
+            $\delta_{g,\mathcal{A}} S_\Pi = 0 \implies$ système EYM couplé +
+            $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot[\log(\Lambda/\mu)]^{-1}$
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">Papier Gravité, Q12, Q6a, Q11, papier Born–Infeld</div>
+        </div>
+        <div class="kv">
+          <div class="k">Trilogie</div>
+          <div class="v">Gravité → Q12 → Q13</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Équations Einstein–Yang–Mills jointes (Théorème) :</strong> le principe
+        variationnel joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ donne le système couplé :
+        \begin{align*}
+          G_{\mu\nu} &= 8\pi G_N\, T^{\mathrm{YM}}_{\mu\nu} + \mathcal{O}(a_6),\\
+          D_\mu F^{a\mu\nu} &= 0 + \mathcal{O}(a_6),
+        \end{align*}
+        où $T^{\mathrm{YM}}_{\mu\nu}$ provient de la dépendance métrique du coefficient $a_4$.
+        Les deux secteurs sont découplés à l'ordre dominant par le lemme de découplage
+        horizontal–vertical.
+      </li>
+      <li>
+        <strong>Couplage croisé jauge–gravité à l'ordre $a_6$ (Théorème) :</strong> le
+        coefficient de Seeley–DeWitt $a_6$ contient le terme mixte
+        $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$, supprimé par $\ell_{\mathrm{sp}}^2 \ll 1$
+        et pertinent seulement près de la coupure spectrale.
+      </li>
+      <li>
+        <strong>Complétion jointe Eddington–Born–Infeld (Théorème) :</strong> la même borne de
+        saturation $c_\chi$ qui régularise le secteur gravitationnel s'étend au fonctionnel joint,
+        produisant un régulateur non linéaire unifié qui retrouve les complétions BI sectorielles
+        comme cas limites. Une ambiguïté tensorielle résiduelle dans $\Xi_{\mu\nu}$ affecte
+        uniquement les termes sous-dominants.
+      </li>
+      <li>
+        <strong>Ratio de hiérarchie jauge–gravité (Proposition) :</strong>
+        \[
+          G_N g_{\mathrm{YM}}^2
+          \;\sim\;
+          \frac{\ell_{\mathrm{sp}}^2}{\dim V}
+          \cdot\Bigl[\log\frac{\Lambda}{\mu}\Bigr]^{-1}
+          \;\ll\; 1,
+        \]
+        sans ajustement fin. La suppression a deux origines indépendantes : l'échelle UV
+        $\ell_{\mathrm{sp}}^2$, et la différence entre les divergences UV quadratique ($a_2$)
+        et logarithmique ($a_4$).
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>La stratification spectrale comme principe organisationnel</h2>
+    <p>
+      La contribution conceptuelle centrale de Q13 — et de la trilogie dans son ensemble —
+      est l'identification de la <em>stratification spectrale</em> comme le bon principe
+      organisationnel pour l'unification de la gravité et des interactions de jauge.
+    </p>
+    <p>
+      Dans l'unification groupe-théorique conventionnelle, on demande : <em>quel groupe de
+      symétrie $G_{\mathrm{unif}}$ contient à la fois les degrés de liberté de jauge et
+      gravitationnels ?</em> La difficulté à trouver un tel groupe est traitée comme
+      l'obstacle central.
+    </p>
+    <p>
+      Le présent cadre remplace cette question par : <em>à quel ordre de Seeley–DeWitt
+      l'opérateur admissible $\mathcal{A}_{g,\mathcal{A}}$ répond-il à la variation ?</em>
+      Gravité et dynamique de jauge émergent du même opérateur à des niveaux spectraux
+      différents, non de représentations différentes d'un groupe commun. La hiérarchie
+      $G_N g_{\mathrm{YM}}^2 \ll 1$ est une sortie directe de la stratification spectrale,
+      non une entrée nécessitant un ajustement fin.
+    </p>
+    <div class="note">
+      <strong>Principe de stratification spectrale.</strong>
+      $a_2 \to \text{gravité Einstein (UV quadratique)}$,
+      $a_4 \to \text{dynamique de jauge Yang–Mills (UV logarithmique)}$,
+      $a_6 \to \text{couplage croisé jauge–gravité (supprimé par } \ell_{\mathrm{sp}}^2)$.
+      Le type d'une interaction fondamentale est déterminé par l'ordre de Seeley–DeWitt
+      auquel la projection admissible répond.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Q13 clôt la trilogie de synthèse jauge–gravité :
+    </p>
+    <ul>
+      <li>
+        <strong>Papier Gravité :</strong>
+        $\delta_g S_\Pi = 0 \implies G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$
+        (variation horizontale, coefficient $a_2$)
+      </li>
+      <li>
+        <strong>Q12 :</strong>
+        $\delta_{\mathcal{A}} S_\Pi = 0 \implies D_\mu F^{a\mu\nu} = 0$
+        (variation verticale, coefficient $a_4$)
+      </li>
+      <li>
+        <strong>Q13 :</strong>
+        $\delta_{g,\mathcal{A}} S_\Pi = 0 \implies$ système EYM couplé + ratio de hiérarchie +
+        complétion EBI jointe
+      </li>
+    </ul>
+    <p>
+      Le groupe de jauge $G_\Pi$ est hérité de Q6a/O31. Le secteur SU(3) conserve le statut
+      conditionnel [H-color] (confirmé numériquement pour $q \in \{61, 151, 211\}$ ;
+      preuve analytique ouverte). Tous les résultats principaux de Q13 sont indépendants de
+      [H-color] ; la conditionnalité affecte uniquement la valeur de $\dim V$ dans le ratio de
+      hiérarchie.
+    </p>
+    <p>
+      La continuation naturelle du programme est le traitement de la matière fermionique et de
+      la chiralité, où le principe de stratification spectrale prédit l'existence d'un niveau
+      spectral dédié portant la structure spinorielle.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Perspectives ouvertes</h2>
+    <ul>
+      <li>
+        <strong>Ambiguïté tensorielle EBI :</strong> la forme précise de $\Xi_{\mu\nu}$ dans le
+        fonctionnel EBI joint n'est pas uniquement fixée au niveau de Q13 et affecte seulement
+        les corrections sous-dominantes.
+      </li>
+      <li>
+        <strong>Coefficients $a_6$ numériques :</strong> les valeurs $\gamma_1, \gamma_2, \ldots$
+        dans le coefficient $a_6$ dépendent de l'opérateur admissible spécifique et nécessitent
+        un calcul explicite.
+      </li>
+      <li>
+        <strong>Continuation lorentzienne du fonctionnel EBI joint :</strong> le secteur
+        géométrique est étendu dans Q5b ; l'extension au secteur de jauge reste ouverte.
+      </li>
+      <li>
+        <strong>Courants de matière :</strong> extension du système variationnel joint pour
+        inclure les courants de matière projetée $J^{a\nu}$.
+      </li>
+      <li>
+        <strong>Unicité de Yang–Mills SU(3) :</strong> montrer que la dynamique de jauge SU(3)
+        émerge uniquement de la structure de co-admissibilité des triplets de couleur, sans
+        supposer le groupe comme donnée (O31 §9.2, conditionnel sur [H-color]).
+      </li>
+      <li>
+        <strong>Matière fermionique :</strong> identifier le niveau de Seeley–DeWitt dédié
+        portant la structure spinorielle et dériver la dynamique de type Dirac depuis la
+        projection admissible.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau,
+      <i>Gauge–Gravity Spectral Synthesis: Joint Einstein–Yang–Mills Equations,
+      Born–Infeld Completion, and the Hierarchy Ratio from Projective Spectral Entropy</i>,
+      2026.
+      <a href="https://doi.org/10.5281/zenodo.20209859">doi:10.5281/zenodo.20209859</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

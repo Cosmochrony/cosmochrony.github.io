@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Matière fermionique et chiralité par admissibilité de Dirac projective | Cosmochrony</title>
+  <meta name="description"
+    content="Le module de Weil admissible engendre, par son relèvement métaplectique, un fibré spinoriel reproduisant la structure électrofaible ; l'opérateur de Dirac projeté impose la chiralité V−A et contraint l'hypercharge par annulation des anomalies ; l'invariant de saturation σ_c=3 produit trois générations de fermions."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Matière fermionique et chiralité par admissibilité de Dirac projective"/>
+  <meta property="og:description"
+    content="Fermions, structure électrofaible, chiralité et trois générations dérivés de l'admissibilité projective non injective sans champs de matière externes."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/q14/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/q14/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Matière fermionique et chiralité par admissibilité de Dirac projective</h1>
+        <p class="subtitle">
+          Fibré spinoriel électrofaible, chiralité V−A et multiplicité à trois générations
+          dérivés du module de Weil admissible de la projection non injective — sans champs de matière externes.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20218410" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20218410</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Cet article étend la synthèse gauge–gravité spectrale de Q12–Q13 au secteur fermionique.
+        Les fermions ne sont pas postulés comme des champs de matière externes.
+        Ils émergent comme la face spinorielle du module de Weil déjà requis par l'admissibilité non injective,
+        une fois que sa structure métaplectique est complexifiée par la métrique lorentzienne établie
+        dans la branche géométrique du programme.
+      </p>
+      <p>
+        Trois résultats structurels indépendants sont démontrés : le module de Weil admissible induit un fibré
+        spinoriel admissible dont les secteurs tensoriels reproduisent la structure électrofaible
+        $\operatorname{SU}(2)_L \times U(1)_Y$ ; l'opérateur de Dirac projeté possède un endomorphisme
+        canonique $E_\Pi$ imposant la chiralité $V-A$ et contraignant l'hypercharge à satisfaire l'annulation
+        des anomalies ; et l'invariant de saturation $\sigma_c(n_3) = 3$ fournit un facteur à trois générations
+        $\mathbb{C}^3_{\mathrm{gen}}$ invariant de jauge.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est la prépublication indiquée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Prépublication</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thèmes</div>
+          <div class="v">Fibré spinoriel admissible, opérateur de Dirac projeté, chiralité, rigidité de l'hypercharge, trois générations</div>
+        </div>
+        <div class="kv">
+          <div class="k">Cadre</div>
+          <div class="v">Extension fermionique de la synthèse gauge–gravité Q12–Q13 ; secteur couleur conditionnel [H-color]</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Fibré spinoriel admissible :</strong> Le module de Weil $V_\rho$, par son relèvement métaplectique
+        et la complexification $\mathfrak{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$,
+        induit un fibré spinoriel admissible $S_\Pi$ dont les secteurs tensoriel symétrique et déterminant
+        reproduisent la structure de fibré électrofaible $\operatorname{SU}(2)_L \times U(1)_Y$.</li>
+      <li><strong>Chiralité V−A issue de $E_\Pi$ :</strong> L'opérateur de Dirac projeté $\mathcal{D}_{\Pi,g,A}$
+        contient un endomorphisme canonique d'ordre zéro $E_\Pi$ — le résidu spectral interne de la projection
+        non injective. Sous le relèvement spinoriel de la parité BI, $E_\Pi$ est left-admissible et impose
+        la structure chirale $V-A$ observée dans les interactions faibles.</li>
+      <li><strong>Rigidité de l'hypercharge :</strong> Le coefficient de Seeley–DeWitt $a_4$ pondéré par
+        $\gamma_5$ de $\mathcal{D}_{\Pi,g,A}^2$ impose des contraintes de trace d'annulation des anomalies
+        sur les poids d'hypercharge. Les assignations d'hypercharge ne sont donc pas des paramètres libres
+        mais des données de cohérence spectrale.</li>
+      <li><strong>Multiplicité à trois générations :</strong> L'invariant de saturation admissible
+        $\sigma_c(n_3) = 3$ admet une lecture de multiplicité spinorielle, distincte de sa lecture géométrique
+        comme trois directions spatiales, produisant un facteur invariant de jauge à trois générations
+        $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\operatorname{SU}(2)} \oplus Y)$.</li>
+      <li><strong>Secteur couleur :</strong> Le secteur quark couplé à la couleur s'obtient par produit tensoriel
+        avec un module couleur $V_{\mathrm{color}}$, conditionnel à l'hypothèse [H-color].</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Fibré électrofaible issu du module de Weil</h2>
+    <p>
+      Le module de Weil $V_\rho$ n'est pas une construction auxiliaire : c'est la représentation canonique
+      imposée par l'admissibilité non injective. Sa structure algébrique de Lie métaplectique, une fois
+      complexifiée par la métrique lorentzienne, fournit les données d'un fibré spinoriel $S_\Pi$ dont la
+      décomposition tensorielle contient un secteur doublet $\operatorname{SU}(2)$ et une droite déterminant
+      $U(1)$, reproduisant la structure de jauge électrofaible $\operatorname{SU}(2)_L \times U(1)_Y$
+      sans hypothèse supplémentaire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résidu spectral et sélection chirale</h2>
+    <p>
+      L'endomorphisme $E_\Pi$ entrant dans l'opérateur de Dirac projeté est une conséquence directe de la
+      non-injectivité. Lorsque la projection $\Pi$ est non injective, la dégénérescence de la fibre génère
+      un terme interne d'ordre zéro dans l'opérateur de Dirac relevé. Ce terme, $E_\Pi$, est le résidu
+      spectral de la projection et ne peut être supprimé sans rompre l'admissibilité.
+    </p>
+    <p>
+      Sous le relèvement spinoriel de la parité BI — la symétrie discrète sélectionnée par la borne
+      d'admissibilité Born–Infeld — $E_\Pi$ est left-admissible. L'opérateur de Dirac résultant se couple
+      différemment aux spineurs de chiralité gauche et droite, produisant la structure $V-A$ du secteur
+      faible du Modèle Standard comme une conséquence structurelle, non comme une donnée d'entrée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Hypercharge par annulation des anomalies</h2>
+    <p>
+      Le coefficient de Seeley–DeWitt $a_4$ pondéré par $\gamma_5$ de l'opérateur de Dirac au carré
+      encode l'anomalie gravitationnelle. Exiger que ce coefficient s'annule — cohérence spectrale du
+      secteur fermionique — impose des contraintes de trace linéaires sur les assignations d'hypercharge
+      des multiplets de fermions. Ces contraintes reproduisent les conditions standard d'annulation
+      des anomalies du Modèle Standard et déterminent l'hypercharge à une normalisation globale près.
+    </p>
+    <p>
+      L'hypercharge n'est donc pas un paramètre libre de la théorie mais une donnée de cohérence spectrale
+      contrainte par le même principe d'admissibilité qui régit les secteurs géométrique et de jauge.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Trois générations issues de $\sigma_c = 3$</h2>
+    <p>
+      L'invariant de saturation $\sigma_c(n_3) = 3$ avait été identifié précédemment comme une borne
+      structurelle sur le nombre de directions spatiales indépendantes dans la géométrie projective
+      admissible. Ce même entier admet une lecture spinorielle indépendante comme multiplicité d'un
+      sous-espace invariant de jauge dans le secteur fermionique. Cela produit un facteur à trois
+      générations $\mathbb{C}^3_{\mathrm{gen}}$ sans introduire de nouveau paramètre entier. La structure
+      triple générationnelle du Modèle Standard est une conséquence du même invariant de saturation qui
+      fixe la dimension spatiale.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      Q14 clôt l'arc matière–géométrie de la Q-série. Q12 a dérivé la dynamique de Yang–Mills par la
+      variation du noyau de chaleur vertical de la fonctionnelle spectrale admissible. Q13 a synthétisé
+      ces résultats avec le secteur gravitationnel, établissant les équations jointes Einstein–Yang–Mills
+      et le rapport de hiérarchie. Q14 ajoute le contenu en matière fermionique : fibré spinoriel,
+      chiralité, rigidité de l'hypercharge et multiplicité générationnelle — le tout à partir du même
+      cadre d'admissibilité.
+    </p>
+    <p>
+      Ensemble, Q12–Q14 montrent que les champs de jauge bosoniques et gravitationnels et les champs
+      de matière fermionique du Modèle Standard émergent d'une source structurelle unique : la contrainte
+      d'admissibilité par projection non injective sur le module de Weil.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau. <i>Fermionic Matter and Chirality from Projective Dirac Admissibility</i>.
+      <a href="https://doi.org/10.5281/zenodo.20218410" rel="noopener">10.5281/zenodo.20218410</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

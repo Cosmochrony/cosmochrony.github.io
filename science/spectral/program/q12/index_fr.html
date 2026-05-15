@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Dynamique de Yang–Mills depuis l'entropie spectrale projective | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q12 dérive la dynamique de Yang–Mills depuis la variation verticale de l'entropie
+    spectrale projective, établissant que gravité (a₂) et dynamique de jauge (a₄) sont séparées
+    par l'ordre spectral dans la hiérarchie de Seeley–DeWitt plutôt que par un groupe de symétrie
+    manquant."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/q12/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Dynamique de Yang–Mills depuis l'entropie spectrale projective :
+    Variation verticale du noyau de la chaleur sur la fibre admissible"/>
+  <meta property="og:description"
+    content="Q12 montre que la variation verticale de S_Π[g,A] par rapport à la connexion
+    admissible donne les équations de Yang–Mills, tandis que la hiérarchie UV spectrale
+    (quadratique pour la gravité, logarithmique pour la jauge) émerge sans ajustement fin."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/q12/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/q12/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Dynamique de Yang–Mills depuis l'entropie spectrale projective
+        </h1>
+        <p class="subtitle">
+          Q12 effectue la variation verticale de l'entropie spectrale projective
+          $S_\Pi[g,\mathcal{A}]$ et dérive les équations de Yang–Mills à partir du coefficient
+          de Seeley–DeWitt $a_4$, complétant la dérivation spectrale des deux types
+          d'interactions fondamentales depuis un unique fonctionnel.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20189137">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Le papier Gravité a montré que la variation <em>horizontale</em> du fonctionnel d'entropie
+        spectrale projective \[ S_\Pi[g] = \tfrac{1}{2}\log\det' A_g \] par rapport à la métrique
+        de base produit le tenseur d'Einstein comme réponse infrarouge dominante, via le coefficient
+        de Seeley–DeWitt $a_2$.
+      </p>
+      <p>
+        Q12 réalise la variation <em>verticale</em> complémentaire. L'opérateur $A_g$ est étendu en
+        \[ A_{g,\mathcal{A}} = -(\nabla^{\mathcal{A}})^2 + E \] sur le fibré vectoriel associé à la
+        fibre principale admissible $P_{G_\Pi}(M, G_\Pi)$, et le coefficient de Seeley–DeWitt $a_4$
+        est calculé.
+      </p>
+      <p>
+        Le fonctionnel étendu $S_\Pi[g,\mathcal{A}]$ contient le terme de Yang–Mills renormalisé avec
+        un couplage logarithmique, et sa variation verticale donne les équations de Yang–Mills
+        $D_\mu F^{a\mu\nu} = 0$ dans le secteur sans courant.
+      </p>
+      <div class="note">
+        <strong>Message central.</strong> $a_2 \to \text{Einstein}$, $a_4 \to \text{Yang–Mills}$,
+        depuis le fonctionnel unique $S_\Pi[g,\mathcal{A}]$.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">
+            Dynamique de Yang–Mills, développement du noyau de la chaleur,
+            coefficients de Seeley–DeWitt, hiérarchie jauge–gravité
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">
+            $\delta_{\mathcal{A}} S_\Pi = 0 \implies D_\mu F^{a\mu\nu} = 0$
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">Papier Gravité, Q6a, Q11</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Q13 (Synthèse spectrale jauge–gravité)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Extension au fibré vectoriel :</strong> l'opérateur spectral $A_g$ est relevé en
+        $A_{g,\mathcal{A}}$ sur le fibré associé, incorporant la connexion de jauge admissible
+        $\mathcal{A}$ issue de Q6a/O31.
+      </li>
+      <li>
+        <strong>Coefficient $a_4$ et terme de Yang–Mills :</strong>
+        \[
+          a_4(A_{g,\mathcal{A}})\big|_{\mathrm{jauge}}
+          = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
+        \]
+        donnant $g_{\mathrm{YM}}^{-2} \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$ comme couplage induit.
+      </li>
+      <li>
+        <strong>Variation verticale et équations de Yang–Mills :</strong>
+        $\delta_{\mathcal{A}} S_\Pi[g,\mathcal{A}] = 0$ donne $D_\mu F^{a\mu\nu} = 0$
+        (démontré pour la dérivation de $a_4$ étant donné $G_\Pi$).
+      </li>
+      <li>
+        <strong>Hiérarchie UV sans ajustement fin :</strong> la constante de Newton
+        $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ est quadratique en la coupure UV, tandis que le
+        couplage de jauge est logarithmique. Les deux partagent la même échelle spectrale ;
+        la hiérarchie jauge–gravité $G_N g_{\mathrm{YM}}^2 \ll 1$ suit comme conséquence structurelle
+        du développement de Seeley–DeWitt.
+      </li>
+      <li>
+        <strong>Découplage horizontal–vertical :</strong> un lemme de découplage garantit que les
+        secteurs Einstein ($a_2$) et Yang–Mills ($a_4$) sont indépendants — aucune variation croisée
+        ne les mélange.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>La stratification spectrale comme principe organisationnel</h2>
+    <p>
+      Au-delà de la dérivation technique, Q12 identifie un principe conceptuel qui distingue
+      l'approche Cosmochrony des schémas d'unification conventionnels.
+    </p>
+    <p>
+      Dans l'unification groupe-théorique standard, gravité et interactions de jauge sont cherchées
+      au même niveau algébrique — différentes représentations d'un groupe commun
+      $G_{\mathrm{unif}}$. Leur combinaison nécessite de trouver une symétrie suffisamment grande
+      pour accueillir les deux.
+    </p>
+    <p>
+      Le présent cadre suggère une image différente : gravité et dynamique de jauge sont séparées par
+      la <em>direction géométrique</em> (variation horizontale vs. verticale sur le fibré admissible)
+      et par l'<em>ordre spectral</em> ($a_2$ vs. $a_4$ dans la hiérarchie de Seeley–DeWitt). Leurs
+      comportements UV distincts — divergence quadratique pour la gravité, logarithmique pour la
+      jauge — sont des conséquences structurelles de cette séparation, et non des données empiriques
+      indépendantes.
+    </p>
+    <div class="note">
+      <strong>Implication pour l'unification.</strong> La difficulté d'incorporer la gravité dans le
+      cadre du Modèle Standard pourrait refléter une différence d'ordre dans la hiérarchie de
+      Seeley–DeWitt plutôt que l'absence d'un groupe de symétrie commun. L'espace organisationnel
+      naturel pour l'unification dans ce cadre est spectral et variationnel, non principalement
+      groupe-théorique.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Q12 est le pendant vertical du papier Gravité et clôt la dérivation spectrale des deux types
+      d'équations de champ classiques connues depuis un unique principe variationnel :
+    </p>
+    <ul>
+      <li>
+        <strong>Papier Gravité :</strong>
+        $\delta_g S_\Pi = 0 \implies G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$
+      </li>
+      <li>
+        <strong>Q12 :</strong>
+        $\delta_{\mathcal{A}} S_\Pi = 0 \implies D_\mu F^{a\mu\nu} = 0$
+      </li>
+    </ul>
+    <p>
+      Le groupe de jauge $G_\Pi$ est hérité de Q6a/O31. Le secteur SU(3) porte le statut
+      conditionnel [H-color] de O31/O32 (confirmé numériquement pour
+      $q \in \{61, 151, 211\}$ ; preuve analytique ouverte).
+    </p>
+    <p>
+      Le problème variationnel joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ (équations couplées
+      Einstein–Yang–Mills), le ratio précis $G_N g_{\mathrm{YM}}^2$, et la complétion
+      Born–Infeld du secteur de jauge sont reportés à Q13.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Perspectives ouvertes</h2>
+    <ul>
+      <li>
+        <strong>Synthèse jauge–gravité (Q13) :</strong> équations du mouvement couplées, ratio
+        hiérarchique, complétion Born–Infeld et couplage aux courants de matière projetée.
+      </li>
+      <li>
+        <strong>Unicité de SU(3) :</strong> montrer que la dynamique de jauge SU(3) émerge
+        uniquement de la structure de co-admissibilité des triplets de couleur, sans supposer le
+        groupe comme donnée (O31 §9.2).
+      </li>
+      <li>
+        <strong>Secteur de matière :</strong> étendre la variation verticale pour inclure les
+        courants de matière projetée $J^{a\nu}$.
+      </li>
+      <li>
+        <strong>Stratification spectrale au-delà de l'ordre 4 :</strong> déterminer si les
+        coefficients $a_6$, $a_8$ produisent des secteurs d'interaction supplémentaires ou
+        restent supprimés.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau,
+      <i>Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation on
+      the Admissible Fibre</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20189137">doi:10.5281/zenodo.20189137</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

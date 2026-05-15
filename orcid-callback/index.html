@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <title>ORCID Authorization | Cosmochrony</title>
+  <style>
+    body { font-family: monospace; max-width: 600px; margin: 4rem auto; padding: 0 1rem; }
+    h1 { font-size: 1.2rem; }
+    #code-box {
+      display: block; width: 100%; box-sizing: border-box;
+      font-size: 1rem; padding: .6rem .8rem; margin: 1rem 0;
+      border: 2px solid #333; border-radius: 4px;
+      background: #f5f5f5; cursor: text;
+    }
+    #error { color: #c00; }
+    #copy-btn {
+      padding: .4rem 1rem; font-size: .9rem; cursor: pointer;
+      border: 1px solid #333; border-radius: 4px; background: #333; color: #fff;
+    }
+    #copy-btn:active { opacity: .7; }
+    .note { font-size: .85rem; color: #555; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>ORCID Authorization</h1>
+  <div id="content">
+    <p>Authorization code:</p>
+    <input id="code-box" type="text" readonly/>
+    <button id="copy-btn" onclick="copyCode()">Copy</button>
+    <p>Paste this code into the terminal where <code>zenodo_publish.py --orcid-auth</code> is waiting.</p>
+    <p class="note">You may close this tab afterwards.</p>
+    <p id="error" hidden></p>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error");
+    const box = document.getElementById("code-box");
+    const err = document.getElementById("error");
+    if (code) {
+      box.value = code;
+      box.select();
+    } else if (error) {
+      box.hidden = true;
+      document.getElementById("copy-btn").hidden = true;
+      err.hidden = false;
+      err.textContent = "Authorization failed: " + (params.get("error_description") || error);
+    } else {
+      box.hidden = true;
+      document.getElementById("copy-btn").hidden = true;
+      err.hidden = false;
+      err.textContent = "No authorization code found in URL.";
+    }
+    function copyCode() {
+      navigator.clipboard.writeText(box.value).then(() => {
+        document.getElementById("copy-btn").textContent = "Copied!";
+      });
+    }
+  </script>
+</body>
+</html>

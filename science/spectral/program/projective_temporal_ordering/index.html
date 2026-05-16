@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19474639/" rel="noopener">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20236498/" rel="noopener">
         Read the preprint
       </a>
       <a class="btn subtle" href="/science/spectral/program/">
@@ -67,7 +67,7 @@
       </p>
       <p>
         The key numerical result is that $I(n)$ is strictly non-decreasing for every tested
-        conjugate pair and every tested prime $q \in \{29,61,101,151\}$. This monotonicity is
+        conjugate pair and every tested prime $q \in \{29,61,101,151,211\}$. This monotonicity is
         observed step by step along the BFS cascade, with no physically meaningful regression.
       </p>
       <p>
@@ -103,7 +103,7 @@
         </div>
         <div class="kv">
           <div class="k">Numerical scope</div>
-          <div class="v">All conjugate pairs for $q \in \{29,61,101,151\}$</div>
+          <div class="v">All conjugate pairs for $q \in \{29,61,101,151,211\}$</div>
         </div>
       </div>
     </aside>
@@ -134,7 +134,31 @@
         $\sigma_{\mathrm{pair}}(n)\leq\sigma_{\mathrm{pair}}(n-1)$ and explains precisely what
         remains to be proved analytically.
       </li>
+      <li>
+        <strong>State machine structure (Remark):</strong> the admissible cascade carries the
+        structure of an oriented state machine — nodes are admissible projections, edges are
+        admissible transitions, and branching weights play the role of quantum probabilities.
+        The index $n$ acquires its temporal meaning entirely from the orientation of the
+        admissibility graph, not from any background parameter.
+      </li>
+      <li>
+        <strong>First transition guaranteed:</strong> by projective incompleteness (Foundation,
+        Corollary to Theorem 5.4), every admissible \(\Pi_0\) leaves a non-trivial residue —
+        so the first transition $U_0 \to U_1$ is a structural necessity, not a postulate.
+      </li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>Open question</h2>
+    <p>
+      Whether the characteristic shell $n^*(q)$ — at which $\sigma_{\mathrm{pair}}$
+      changes regime — coincides with the locking depth $n_c(q)$ at which the BFS admissibility
+      structure transitions from a locally dominated regime to a universally dominated one.
+      A positive answer would connect the spectral ordering of this paper to the effective
+      geometry results of Q10 (where $A_H(q) \to 2$ as $q \to \infty$), and would allow
+      $n_c(q)$ to be derived analytically from the admissibility structure of
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+    </p>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
@@ -180,7 +204,7 @@
     <h2>References</h2>
     <p>
       Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19474639" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20236498" rel="noopener">
         <i lang="en">Projective Temporal Ordering and Cumulative Projected Capacity:
           Numerical Evidence from the Spectral Admissibility Cascade</i>. Preprint.
       </a>

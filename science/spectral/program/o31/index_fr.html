@@ -156,9 +156,22 @@
         de co-admissibilité distincte.
       </li>
       <li>
-        <strong>Universalité dans la limite des grands $q$ :</strong> l'universalité U1 implique
-        $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$, établissant que l'identification est
-        indépendante du système générateur dans la limite des grands $q$.
+        <strong>Résultat à deux niveaux :</strong> (i) exact pour le graphe adapté aux couleurs
+        $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$ (argument métaplectique) ;
+        (ii) $O(q^{-1/2})$ pour tout système générateur, y compris $\mathcal{S}_q$, par
+        l'universalité U1. L'ensemble $\mathcal{S}_q^{(3)}$ est le système générateur canonique
+        pour le secteur de couleur : la plus petite extension de $\mathcal{S}_q$ fermée sous
+        $\phi_\omega$.
+      </li>
+      <li>
+        <strong>Isospectralité par torsion du générateur (Théorème 5.3, prouvé) :</strong>
+        pour tout $c \in (\mathbb{Z}/q\mathbb{Z})^*$, les opérateurs de Markov
+        $\rho_c(P_{\mathcal{S}_q})$ et $\rho_c(P_{\phi_\omega(\mathcal{S}_q)})$ sont
+        unitairement conjugués, donc isospectraux. Confirmé à la précision machine pour tous
+        les $q \leq 157$ avec $q \equiv 1 \pmod{3}$.
+        Cependant, $\operatorname{spec}(\rho_c) \neq \operatorname{spec}(\rho_{\omega c})$ en
+        général : [H-color] sur le graphe standard ne peut pas être prouvé par égalité globale
+        des spectres ; la capacité BFS est un observable strictement plus fin.
       </li>
     </ul>
   </section>
@@ -183,6 +196,42 @@
       que les trois représentations de Weil $\rho_{c_1}$, $\rho_{c_2}$, $\rho_{c_3}$ satisfont
       conjointement les contraintes d'admissibilité. C'est la claim ouverte principale dont le
       test numérique est effectué dans <a href="../o32">O32</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Non-injectivité locale vs relationnelle (Section 6)</h2>
+    <p>
+      O31 fournit une unification conceptuelle des trois facteurs de jauge du Modèle Standard en
+      les classifiant selon le <em>type</em> de non-injectivité de la projection
+      $\Pi: \Omega \to \mathcal{O}$ :
+    </p>
+    <ul>
+      <li>
+        <strong>U(1) — non-injectivité de phase.</strong> L'orbite complète U(1)
+        $\{e^{i\theta}\chi\}$ est contenue dans chaque fibre BI-indiscernable. U(1) agit dans
+        un seul secteur de caractère ; c'est la symétrie d'une fibre individuelle sous rotation
+        de phase globale.
+      </li>
+      <li>
+        <strong>SU(2) — non-injectivité corrélée minimale.</strong> La parité $\mathbb{Z}_2$
+        $\chi \leftrightarrow -\chi$ identifie exactement deux secteurs ($c$ et $q-c$) en une
+        seule fibre. L'espace effectif $V_\rho \cong \mathbb{C}^2$ et le groupe de jauge SU(2)
+        proviennent de la symétrie de cette fibre à deux éléments. Il s'agit d'une
+        non-injectivité <em>locale</em> : forcée par une seule étape de projection.
+      </li>
+      <li>
+        <strong>SU(3) — non-injectivité corrélée relationnelle.</strong> L'orbite $\mathbb{Z}_3$
+        de couleur $\{c, \omega c, \omega^2 c\}$ identifie trois secteurs en une seule fibre.
+        L'espace effectif $\tilde{V}_\mathrm{color} \cong \mathbb{C}^3$ et le groupe SU(3)
+        proviennent de la symétrie de cette fibre à trois éléments. Il s'agit d'une
+        non-injectivité <em>relationnelle</em> : les trois secteurs sont co-admissibles par une
+        corrélation $\mathbb{Z}_3$, pas par une involution unique.
+      </li>
+    </ul>
+    <p>
+      La hiérarchie de jauge U(1) ⊂ SU(2) ⊂ SU(3) en complexité correspond exactement à la
+      hiérarchie 1 → 2 → 3 de la taille de l'orbite de fibre BI-admissible minimale.
+      La non-factorisabilité (Foundation M, Axiome A3) est l'origine structurelle uniforme.
     </p>
   </section>
   <section class="card">

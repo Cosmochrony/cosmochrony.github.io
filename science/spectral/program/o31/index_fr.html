@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20030491">Lire la prépublication</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20247746">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d'admissibilité spectrale
       </a>
@@ -89,8 +89,10 @@
       </p>
       <div class="note" role="note">
         <strong>Statut.</strong> Les résultats principaux (existence des triplets, dégénérescence
-        spectrale, unicité de SU(3)) sont prouvés. La conclusion globale est structurellement
-        motivée, conditionnelle à [H-color].
+        spectrale, unicité de SU(3), et égalité inconditionnelle des rangs sectoriels de couleur)
+        sont prouvés. [H-color] est prouvé au niveau des rangs sectoriels BFS ; l'égalité du
+        fonctionnel de capacité complet est confirmée numériquement par O32 et reste ouverte
+        analytiquement.
       </div>
     </div>
     <aside class="card">
@@ -173,6 +175,21 @@
         général : [H-color] sur le graphe standard ne peut pas être prouvé par égalité globale
         des spectres ; la capacité BFS est un observable strictement plus fin.
       </li>
+      <li>
+        <strong>Symétrie de Vandermonde intra-coset (Lemme, prouvé) :</strong> le lemme de Schur
+        force le centre de Heisenberg à agir comme un scalaire dans chaque représentation
+        irréductible $\rho_{c_i}$. La matrice de phase du triplet $(\lambda_j^k)_{j,k}$ avec
+        $\lambda_j = e^{2\pi i c_j/q}$ est Vandermonde avec déterminant non nul (les $c_1, c_2,
+        c_3$ étant deux à deux distincts). Chaque coset horizontal $(a,b)$ contribue donc
+        exactement une direction indépendante à chaque sommand de couleur $V_{c_i}$.
+      </li>
+      <li>
+        <strong>Égalité inconditionnelle des rangs sectoriels de couleur (Proposition, prouvé) :</strong>
+        $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$ pour toutes les profondeurs BFS $n$ et
+        tout vecteur initial, inconditionnellement sur le graphe standard. Prouve [H-color] au
+        niveau des rangs sectoriels BFS. Le mécanisme algébrique (Schur + Vandermonde) est
+        indépendant de toute propriété spectrale globale de $\rho_c(P_{\mathcal{S}_q})$.
+      </li>
     </ul>
   </section>
   <section class="card">
@@ -196,6 +213,40 @@
       que les trois représentations de Weil $\rho_{c_1}$, $\rho_{c_2}$, $\rho_{c_3}$ satisfont
       conjointement les contraintes d'admissibilité. C'est la claim ouverte principale dont le
       test numérique est effectué dans <a href="../o32">O32</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Mécanisme algébrique : symétrie de Vandermonde et égalité inconditionnelle des rangs</h2>
+    <p>
+      L'obstruction spectrale (Théorème 5.3) montre que [H-color] ne peut pas être prouvé par
+      égalité globale des spectres de Markov. O31 identifie le mécanisme algébrique correct.
+    </p>
+    <p>
+      L'irréductibilité de la représentation de Weil force le centre de Heisenberg à agir comme
+      un scalaire dans chaque secteur de couleur $V_{c_i}$ (lemme de Schur). Pour tout coset
+      horizontal $(a,b)$ fixé et trois valeurs centrales distinctes $z_0, z_1, z_2$, les vecteurs
+      BFS correspondants dans $V_{c_1} \oplus V_{c_2} \oplus V_{c_3}$ s'assemblent en la matrice
+      de phase Vandermonde
+      \[
+        V = (\lambda_j^k)_{j,k}, \quad \lambda_j = e^{2\pi i c_j / q},
+      \]
+      dont le déterminant $\det V = \prod_{j > k}(\lambda_j - \lambda_k) \neq 0$ puisque
+      $c_1, c_2, c_3$ sont deux à deux distincts modulo $q$. Chaque coset horizontal contribue
+      donc exactement <em>une</em> direction indépendante à chacun des $V_{c_1}$, $V_{c_2}$,
+      $V_{c_3}$, symétriquement.
+    </p>
+    <p>
+      La Proposition résultante (Égalité des rangs sectoriels de couleur) est inconditionnelle :
+      pour toute profondeur BFS $n$ et tout vecteur initial, $r_c(n) = r_{\omega c}(n) =
+      r_{\omega^2 c}(n)$, où $r_{c_i}(n)$ compte les directions indépendantes dans $V_{c_i}$
+      atteintes à la profondeur $n$. Ce rang sectoriel est égal au nombre de cosets horizontaux
+      distincts atteints — une quantité purement combinatoire, indépendante de $c_i$.
+    </p>
+    <p>
+      Ceci prouve [H-color] au niveau des rangs sectoriels BFS. La campagne numérique d'O32
+      (confirmant $\sigma_c(n) = \sigma_{\omega c}(n)$ dans le fonctionnel de capacité complet)
+      est cohérente avec ce résultat algébrique et étend les preuves à l'observable empreinte
+      complète.
     </p>
   </section>
   <section class="card">
@@ -258,11 +309,11 @@
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20030491" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20247746" rel="noopener">
         <i lang="en">SU(3) from Colour Triplet Co-admissibility: Towards the Complete Standard
         Model Gauge Group</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20030491
+      doi:10.5281/zenodo.20247746
     </p>
   </section>
 </main>

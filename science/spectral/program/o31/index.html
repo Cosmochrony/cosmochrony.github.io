@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20030491">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20247746">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Back to Spectral Admissibility Programme
       </a>
@@ -87,8 +87,9 @@
       </p>
       <div class="note" role="note">
         <strong>Status.</strong> The core results (existence of triplets, spectral degeneracy,
-        SU(3) uniqueness) are proved. The overall conclusion is structurally motivated,
-        conditional on [H-color].
+        SU(3) uniqueness, and unconditional colour sector rank equality) are proved.
+        [H-color] is proved at the BFS sector rank level; the full capacity functional equality
+        is confirmed numerically by O32 and remains open analytically.
       </div>
     </div>
     <aside class="card">
@@ -168,6 +169,21 @@
         general: [H-color] on the standard graph cannot be proved via global spectrum equality;
         the BFS capacity is a strictly finer observable.
       </li>
+      <li>
+        <strong>Intra-coset Vandermonde symmetry (Lemma, proved):</strong> Schur's lemma forces
+        the Heisenberg centre to act as a scalar in each irreducible representation $\rho_{c_i}$.
+        The triplet phase matrix $(\lambda_j^k)_{j,k}$ with $\lambda_j = e^{2\pi i c_j/q}$ is
+        Vandermonde with non-zero determinant (since $c_1, c_2, c_3$ are pairwise distinct).
+        Each horizontal coset $(a,b)$ therefore contributes exactly one independent direction to
+        each colour summand $V_{c_i}$.
+      </li>
+      <li>
+        <strong>Colour sector rank equality (Proposition, proved unconditionally):</strong>
+        $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$ for all BFS depths $n$ and any seed,
+        unconditionally on the standard graph. This proves [H-color] at the level of BFS sector
+        ranks. The algebraic mechanism (Schur's lemma + Vandermonde invertibility) is independent
+        of any global Markov spectral property.
+      </li>
     </ul>
   </section>
   <section class="card">
@@ -190,6 +206,40 @@
       all three Weil representations $\rho_{c_1}$, $\rho_{c_2}$, $\rho_{c_3}$ jointly satisfy
       the admissibility constraints. This is the key open claim whose numerical testing is
       carried out in <a href="../o32">O32</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Algebraic mechanism: Vandermonde symmetry and unconditional rank equality</h2>
+    <p>
+      The Spectral obstruction (Theorem 5.3) shows that [H-color] cannot be proved via global
+      Markov-spectrum equality. O31 identifies the correct algebraic mechanism.
+    </p>
+    <p>
+      The irreducibility of the Weil representation forces the Heisenberg centre to act as a
+      scalar in each colour sector $V_{c_i}$ (Schur's lemma). For any fixed horizontal coset
+      $(a,b)$ and three distinct central values $z_0, z_1, z_2$, the corresponding BFS vectors
+      in $V_{c_1} \oplus V_{c_2} \oplus V_{c_3}$ assemble into the Vandermonde phase matrix
+      \[
+        V = (\lambda_j^k)_{j,k}, \quad \lambda_j = e^{2\pi i c_j / q},
+      \]
+      whose determinant $\det V = \prod_{j > k}(\lambda_j - \lambda_k) \neq 0$ since
+      $c_1, c_2, c_3$ are pairwise distinct modulo $q$. Each horizontal coset therefore
+      contributes exactly <em>one</em> independent direction to each of $V_{c_1}$, $V_{c_2}$,
+      $V_{c_3}$, symmetrically.
+    </p>
+    <p>
+      The resulting Proposition (Colour sector rank equality) is unconditional: for every BFS
+      depth $n$ and any seed, $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$, where $r_{c_i}(n)$
+      counts the independent directions in $V_{c_i}$ reached at depth $n$. Since the sector rank
+      equals the number of distinct horizontal cosets reached — a purely combinatorial,
+      $c_i$-independent quantity — the equality holds without any appeal to Markov spectral
+      properties.
+    </p>
+    <p>
+      This proves [H-color] at the BFS sector rank level. The O32 numerical campaign
+      (confirming $\sigma_c(n) = \sigma_{\omega c}(n)$ in the full capacity functional)
+      is consistent with this algebraic result and extends the evidence to the complete
+      fingerprint observable.
     </p>
   </section>
   <section class="card">
@@ -251,11 +301,11 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20030491" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20247746" rel="noopener">
         <i>SU(3) from Colour Triplet Co-admissibility: Towards the Complete Standard Model
         Gauge Group</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20030491
+      doi:10.5281/zenodo.20247746
     </p>
   </section>
 </main>

@@ -8,18 +8,19 @@
     Géométrie d'espace-temps effective depuis la projection non-injective admissible | Cosmochrony
   </title>
   <meta name="description"
-    content="Q6b dérive la géométrie lorentzienne effective depuis le filtre d'admissibilité appliqué
-    au substrat relationnel, fournissant le cadre géométrique dans lequel les champs de jauge de
-    Q6a se propagent. N'hérite que des hypothèses de Q5a ; [H-lift] fermé par Q9."/>
+    content="Q6b dérive la métrique lorentzienne effective g^μν = diag(−2,2,2,2) depuis le filtre
+    d'admissibilité Π_q, prouve la métrique de Schwarzschild par conservation du flux, et ferme
+    la chaîne géométrique Π_q → L_eff → g^μν → G_μν. [H-lift] fermé par Q9."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/q6/b/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Géométrie d'espace-temps effective depuis la projection non-injective admissible"/>
   <meta property="og:description"
-    content="Q6b dérive la géométrie lorentzienne effective depuis le filtre d'admissibilité Pi_q
-    appliqué au substrat relationnel. N'hérite que des hypothèses de Q5a ([H-lift] fermé par Q9).
-    Fournit le cadre géométrique dans lequel les champs de jauge de Q6a se propagent."/>
+    content="Q6b dérive la métrique lorentzienne effective depuis le filtre d'admissibilité Π_q,
+    prouve la métrique de Schwarzschild par conservation du flux, établit les équations d'Einstein
+    comme conditions de cohérence, et ferme la chaîne Π_q → L_eff → g^μν → G_μν.
+    [H-lift] fermé par Q9."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/q6/b/"/>
@@ -50,14 +51,15 @@
           Géométrie d'espace-temps effective depuis la projection non-injective admissible
         </h1>
         <p class="subtitle">
-          Q6b dérive la géométrie lorentzienne effective depuis le filtre d'admissibilité $\Pi_q$
-          appliqué au substrat relationnel, n'héritant que des hypothèses de Q5a et fournissant
-          le cadre géométrique dans lequel les champs de jauge de Q6a se propagent.
+          Q6b dérive la métrique lorentzienne effective $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$
+          depuis le filtre d'admissibilité $\Pi_q$, prouve la métrique de Schwarzschild par
+          conservation du flux, et ferme la chaîne géométrique
+          $\Pi_q \to \mathcal{L}_\Pi \to g^{\mu\nu} \to G_{\mu\nu}$.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19744005">Lire le preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20257944">Lire le preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
     </div>
   </div>
@@ -69,25 +71,24 @@
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Q6b est le pendant géométrique de Q6a. Tandis que Q6a identifie le groupe de jauge $G_\Pi$
+        Q6b est le pendant géométrique de Q6a. Tandis que Q6a dérive le groupe de jauge $G_\Pi$
         depuis les invariants de fibre de la projection non-injective, Q6b analyse la structure
         géométrique de base — la variété lorentzienne effective sur laquelle ces champs de jauge
-        se propagent.
+        se propagent — et ferme la chaîne géométrique depuis le filtre d'admissibilité jusqu'au
+        tenseur d'Einstein.
       </p>
       <p>
-        La géométrie effective est dérivée directement du filtre d'admissibilité $\Pi_q$ appliqué
-        au substrat relationnel, sans hypothèses additionnelles au-delà de celles de Q5a. La
-        convergence de Mosco établie dans Q5a fournit le fondement d'analyse fonctionnelle, et
-        l'hypothèse [H-lift] est fermée inconditionnellement par Q9.
-      </p>
-      <p>
-        Q6b synthétise la sortie géométrique du programme de stratification BFS dans un cadre adapté
-        au couplage aux champs de jauge, faisant le pont entre Q5a/Q5b et les papiers ultérieurs
-        de la série Q.
+        En partant de la chaîne Q5a–Q5b (convergence de Mosco → opérateur effectif
+        $\mathcal{L}_{\mathrm{eff}}$ → métrique lorentzienne depuis le symbole principal), Q6b
+        identifie la métrique explicitement comme $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, établit
+        la métrique de Schwarzschild par conservation du flux, et montre que les équations
+        d'Einstein émergent comme conditions de cohérence de la fonctionnelle d'entropie spectrale.
       </p>
       <div class="note">
-        <strong>Rôle clé.</strong> Q6b fournit le fond géométrique lorentzien pour la propagation
-        des champs de jauge, complétant la paire Q5–Q6 qui soutient conjointement Q7 à Q12.
+        <strong>[H-lift] fermé.</strong> L'hypothèse [H-lift], précédemment héritée de Q5b, a été
+        prouvée inconditionnellement dans Q9 par suppression du générateur à la vitesse
+        $O(q^{-1/2})$. Tous les résultats géométriques de Q6b sont donc inconditionnels
+        vis-à-vis de [H-lift].
       </div>
     </div>
     <aside class="card">
@@ -104,21 +105,22 @@
         <div class="kv">
           <div class="k">Thématique</div>
           <div class="v">
-            Géométrie lorentzienne effective, filtre d'admissibilité, convergence de Mosco,
-            couplage jauge–géométrie
+            Géométrie lorentzienne effective, Schwarzschild par conservation du flux, équations
+            d'Einstein comme conditions de cohérence, complétion de co-métrique, propagation
+            Hamilton–Jacobi
           </div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Motivé structurellement, conditionnel à Q5a</div>
+          <div class="v">Motivé structurellement, conditionnel à Q5a ; [H-lift] inconditionnel (Q9)</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
-          <div class="v">Q5a (convergence de Mosco), Q6a</div>
+          <div class="v">Q5a (convergence de Mosco), Q5b (extraction géométrique), Q6a</div>
         </div>
         <div class="kv">
           <div class="k">Alimente</div>
-          <div class="v">Q7, Q11</div>
+          <div class="v">Q7, Q8–Q11 (co-métrique), Q12, Q13</div>
         </div>
       </div>
     </aside>
@@ -128,30 +130,49 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Géométrie effective depuis le filtre d'admissibilité :</strong> le filtre
-        d'admissibilité $\Pi_q$ sélectionne depuis le substrat relationnel les degrés de liberté
-        compatibles avec l'admissibilité spectrale, et Q6b montre que la structure effective
-        résultante porte une métrique lorentzienne.
+        <strong>Métrique effective de signature lorentzienne :</strong> le filtre d'admissibilité
+        $\Pi_q$ sélectionne des degrés de liberté dont la limite continue porte une métrique de
+        signature $(-,+,+,+)$, dérivée du symbole principal de $\mathcal{L}_{\mathrm{eff}}$
+        (Q5b Théorèmes 5.2 et 6.1).
       </li>
       <li>
-        <strong>Héritage de Q5a seulement :</strong> contrairement à Q5b qui dépend de l'analyse
-        BFS de O23–O29, Q6b n'hérite des hypothèses que de Q5a (convergence de Mosco de l'opérateur
-        effectif). Cela rend le statut conditionnel de Q6b plus minimal.
+        <strong>Co-métrique entièrement déterminée :</strong> en combinant Q6b avec Q8 (rigidité
+        de Casimir : $A_z = 2$), Q10 (universalité spectrale : $A_H = 2$), et Q11 (rigidité de
+        Casimir temporelle : $A_\tau = 2$), la co-métrique effective est entièrement explicite :
+        $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
       </li>
       <li>
-        <strong>[H-lift] fermé par Q9 :</strong> l'hypothèse [H-lift] que Q6b hérite de Q5a est
-        prouvée inconditionnellement dans Q9, de sorte que la géométrie de Q6b est également
-        inconditionnelle vis-à-vis de [H-lift].
+        <strong>Métrique de Schwarzschild par conservation du flux :</strong> en présence d'un
+        obstacle stationnaire localisé à symétrie sphérique, la conservation du flux à travers
+        les sphères admissibles force la solution extérieure stationnaire unique à être la
+        métrique de Schwarzschild. L'unicité suit de la borne d'admissibilité Born–Infeld, et
+        non de la seule symétrie.
       </li>
       <li>
-        <strong>Cadre de propagation des champs de jauge :</strong> Q6b établit le cadre géométrique
-        — le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$ — dans lequel les champs de jauge
-        identifiés dans Q6a se propagent. C'est l'entrée géométrique requise par Q12.
+        <strong>Horizon comme dégénérescence de projection :</strong> l'horizon de Schwarzschild
+        $r = r_s$ est le lieu où le symbole principal $\sigma_2(\mathcal{L}_{\mathrm{eff}})$
+        devient dégénéré. La structure admissible sous-jacente reste régulière.
       </li>
       <li>
-        <strong>Pont vers Q5b :</strong> tandis que Q5b dérive la métrique lorentzienne plate depuis
-        la stratification BFS, Q6b fournit l'analyse géométrique effective plus large qui traite
-        directement le filtre d'admissibilité. Les deux papiers sont complémentaires.
+        <strong>Structure de propagation Hamilton–Jacobi :</strong> une fois $g^{\mu\nu}$
+        reconstruit, l'équation eikonale $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$
+        est l'équation de Hamilton–Jacobi pour la propagation sans masse dans la géométrie
+        effective (reformulation effective, pas une couche primitive).
+      </li>
+      <li>
+        <strong>Équations d'Einstein comme conditions de cohérence :</strong> via la fonctionnelle
+        d'entropie spectrale $S_\Pi[g] = \frac{1}{2}\log\det'\mathcal{L}_\Pi$, la variation
+        métrique renormalisée produit $G_{\mu\nu}$ à l'ordre infrarouge à deux dérivées
+        (papier Gravité). Les équations d'Einstein émergent comme conditions de cohérence,
+        pas comme lois microscopiques.
+      </li>
+      <li>
+        <strong>Fermeture de la chaîne :</strong> Q6b fournit le maillon central de la chaîne
+        géométrique
+        $\Pi_q \xrightarrow{\text{Q5a}} \mathcal{L}_\Pi \xrightarrow{\text{Q5b}} g^{\mu\nu}
+        \xrightarrow{\text{Gravité}} G_{\mu\nu}$,
+        identifiant la métrique extraite du symbole de Q5b avec celle entrant dans l'argument
+        variationnel du papier Gravité.
       </li>
     </ul>
   </section>
@@ -164,49 +185,86 @@
       d'admissibilité spectrale. Q6b analyse la structure géométrique de l'image de ce filtre.
     </p>
     <p>
-      Le résultat clé est que l'image porte une métrique lorentzienne, héritée de l'asymétrie entre
-      les directions centrale et horizontale dans le groupe de Heisenberg, telle qu'établie plus
-      concrètement dans Q5b via la stratification BFS. Q6b fournit la formulation plus abstraite
-      utile pour le couplage aux champs de jauge.
+      L'opérateur effectif $\mathcal{L}_{\mathrm{eff}}$ sur
+      $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ possède un symbole principal
+      $\sigma_2(\mathcal{L}_{\mathrm{eff}}) = A^{\mu\nu}(x)\xi_\mu\xi_\nu$ dont la partie
+      non dégénérée définit le tenseur métrique effectif $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
+      Les Théorèmes 5.2 et 6.1 de Q5b établissent la signature lorentzienne $(-,+,+,+)$ depuis
+      l'asymétrie entre les directions centrale et horizontale dans le groupe de Heisenberg.
     </p>
     <p>
-      La convergence de Mosco de Q5a assure que l'opérateur effectif $L_\mathrm{eff}$ converge
-      dans le sens d'analyse fonctionnelle approprié quand $q \to \infty$, donnant une géométrie
-      limite bien définie. C'est le résultat de continuité crucial qui justifie le passage du
-      discret (fini-$q$) au continu (limite géométrique).
+      La convergence de Mosco de Q5a assure que $\mathcal{L}_{\mathrm{eff}}$ converge dans le
+      sens d'analyse fonctionnelle approprié quand $q \to \infty$, donnant une géométrie limite
+      bien définie. Les papiers ultérieurs (Q8, Q10, Q11) fixent les coefficients à
+      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, produisant une détermination structurelle de la
+      constante de Newton $G_N$ via le papier Gravité.
     </p>
     <div class="note">
       <strong>Complémentarité avec Q5b.</strong> Q5b dérive la métrique lorentzienne
-      combinatoirement depuis la stratification BFS ; Q6b la dérive analytiquement depuis le filtre
-      d'admissibilité. Les deux donnent la même signature lorentzienne et sont mutuellement
+      combinatoirement depuis la stratification BFS ; Q6b la dérive analytiquement depuis le
+      filtre d'admissibilité. Les deux donnent la même signature lorentzienne et sont mutuellement
       cohérents.
     </div>
+  </section>
+
+  <section class="card">
+    <h2>Géométrie de Schwarzschild et horizon</h2>
+    <p>
+      La géométrie effective de Q6b est définie dans des régimes homogènes et quasi-isotropes.
+      En présence d'un obstacle stationnaire localisé à symétrie sphérique, la structure
+      d'admissibilité sélectionne une métrique extérieure spécifique via un argument d'unicité
+      fondé sur la conservation du flux.
+    </p>
+    <p>
+      L'équation de conservation du flux
+      $\frac{1}{r^2}\frac{d}{dr}\!\left(r^2 A^r(r)\frac{d\Phi}{dr}\right) = 0$
+      force $\Phi(r) = \Phi_0 - C/r$, ce qui se traduit via la correspondance opérateur–métrique
+      en les coefficients de la métrique de Schwarzschild $g_{tt} = -f(r)$, $g_{rr} = f(r)^{-1}$
+      avec $f(r) = 1 - r_s/r$.
+    </p>
+    <p>
+      L'unicité suit des contraintes combinées de conservation du flux et de la borne
+      d'admissibilité Born–Infeld, qui exclut toute échelle dimensionnelle additionnelle (pas de
+      constante cosmologique, pas de charge) dans le cadre de la présente construction.
+    </p>
+    <p>
+      L'horizon de Schwarzschild en $r = r_s$ est interprété comme le lieu où le symbole
+      principal $\sigma_2(\mathcal{L}_{\mathrm{eff}})$ devient dégénéré. Le substrat admissible
+      sous-jacent reste régulier ; seule la géométrie effective projetée rencontre une dégénérescence.
+    </p>
   </section>
 
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
       Q6b occupe l'interface entre le programme géométrique (Q5a, Q5b) et le programme dynamique
-      (Q7–Q12). Son rôle est de fournir le cadre géométrique effectif que supposent les papiers
+      (Q7–Q13). Son rôle est de fournir le cadre géométrique effectif que supposent les papiers
       ultérieurs :
     </p>
     <ul>
       <li>
         <strong>Q7 :</strong> utilise la géométrie effective de Q6b pour étudier le problème du
-        pont spatial.
+        pont spatial entre $H_{\mathrm{eff}}$ et les trois directions horizontales de
+        $\mathrm{Heis}_3$.
       </li>
       <li>
-        <strong>Q11 :</strong> utilise le cadre géométrique de Q6b pour la complétion des
-        coefficients de co-métrique.
+        <strong>Q8–Q11 :</strong> fixent les coefficients de co-métrique ($A_z$, $A_H$, $A_\tau$),
+        complétant $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$ et produisant une détermination
+        structurelle de la constante de Newton $G_N$ via le papier Gravité.
       </li>
       <li>
-        <strong>Q12 :</strong> le fibré principal admissible de Q6b est le cadre géométrique pour
-        la variation verticale qui donne les équations de Yang–Mills.
+        <strong>Q12 :</strong> le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$ établi par Q6b
+        est le cadre géométrique pour la variation verticale qui donne les équations de Yang–Mills.
+      </li>
+      <li>
+        <strong>Q13 :</strong> traite la rétroaction couplée Einstein–Yang–Mills entre les champs
+        de jauge de Q6a et la géométrie effective de Q6b.
       </li>
     </ul>
     <p>
       Ensemble Q5b et Q6b constituent le fondement géométrique complet de la série Q : Q5b fournit
-      la dérivation par stratification BFS, Q6b fournit la dérivation par filtre d'admissibilité.
+      la dérivation par stratification BFS, Q6b fournit la dérivation par filtre d'admissibilité
+      et connecte au tenseur d'Einstein.
     </p>
   </section>
 
@@ -214,17 +272,20 @@
     <h2>Perspectives ouvertes</h2>
     <ul>
       <li>
-        <strong>Géométrie effective courbe :</strong> Q6b établit la structure lorentzienne locale ;
-        la géométrie effective globale courbe pertinente pour le papier Gravité nécessite une
-        analyse complémentaire.
+        <strong>Fermeture des hypothèses Q5a :</strong> des preuves rigoureuses de H1, H-w,
+        H-E1 et de la Conjecture C dans Q5a supprimerait toute la conditionnalité restante des
+        résultats géométriques de Q6b.
+      </li>
+      <li>
+        <strong>Rigidité sans échelle :</strong> l'exclusion des échelles dimensionnelles
+        additionnelles dans l'argument d'unicité de Schwarzschild (Remarque 3.3) repose sur une
+        affirmation structurelle concernant la borne Born–Infeld $c_\chi$. La rendre rigoureuse
+        requiert de montrer qu'aucun paramètre dimensionnel indépendant violant la fermeture A3–A4
+        ne peut apparaître dans la structure d'admissibilité.
       </li>
       <li>
         <strong>Couplage à la matière :</strong> l'extension du cadre de géométrie effective pour
         inclure les champs de matière projetée est reportée à des travaux futurs.
-      </li>
-      <li>
-        <strong>Rétroaction jauge–géométrie :</strong> comment les champs de jauge de Q6a modifient
-        la géométrie effective de Q6b (le problème couplé Einstein–Yang–Mills) est traité dans Q13.
       </li>
     </ul>
   </section>
@@ -232,9 +293,9 @@
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau.
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <i>Effective Spacetime Geometry from Admissible Non-Injective Projection</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.19744005">doi:10.5281/zenodo.19744005</a>
+      <a href="https://doi.org/10.5281/zenodo.20257944">doi:10.5281/zenodo.20257944</a>
     </p>
   </section>
 

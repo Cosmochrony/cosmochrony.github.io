@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Lire la prépublication</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20259893">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d'admissibilité spectrale
       </a>
@@ -88,7 +88,9 @@
       </p>
       <div class="note" role="note">
         <strong>Statut.</strong> [H-color] est confirmée numériquement pour $q \in \{151, 211\}$.
-        Le calcul pour $q=307$ est en cours. La preuve analytique de [H-color] reste ouverte.
+        $H_\mathrm{color,eff}$ (égalité des exposants de capacité en espérance dans la limite $q\to\infty$)
+        est prouvée analytiquement via la Proposition avg-hcolor. La preuve ponctuelle à $q$ fixé reste ouverte.
+        Le calcul pour $q=307$ est en cours.
       </div>
     </div>
     <aside class="card">
@@ -109,7 +111,7 @@
         <div class="kv">
           <div class="k">Statut</div>
           <div class="v">Structurellement motivé ([H-color] numériquement confirmée pour
-            q ∈ {151, 211} ; preuve analytique ouverte)</div>
+            q ∈ {151, 211} ; H_color,eff analytiquement prouvée en espérance ; preuve ponctuelle ouverte)</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -238,28 +240,55 @@
     </p>
   </section>
   <section class="card">
+    <h2>Précision analytique (v1.3+)</h2>
+    <p>
+      O32 prouve également analytiquement (Proposition avg-hcolor) que pour les profils de
+      capacité moyennés par blocs :
+      \[
+        \mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1}),
+      \]
+      et de même pour $\omega^2 c$. Cela établit $H_{\mathrm{color,eff}}$ — l'égalité des
+      exposants de capacité en espérance — dans la limite $q \to \infty$.
+    </p>
+    <p>
+      L'argument procède en montrant que la distribution de fréquences de l'empreinte BFS
+      pour les blocs $c$ et $\omega c$ ne diffère que par un décalage de la fréquence
+      distinguée ($c B_1 \mapsto \omega c B_1$), ce qui préserve la cardinalité des nouvelles
+      fréquences distinctes à chaque profondeur BFS. La correction $O(q^{-1})$ provient du
+      surplus de probabilité sur la fréquence distinguée, accumulé sur une fenêtre de rang de
+      taille $O(q)$.
+    </p>
+    <p>
+      La décroissance observée $R_\mathrm{var} \propto q^{-1}$ (facteur 5 de $q=61$ à $q=151$)
+      est interprétée comme le biais de modulation à $q$ fini prédit par cet argument. Trois
+      niveaux de l'hypothèse de couleur sont désormais distingués : ponctuel
+      ($H_\mathrm{color,ptwise}$, numérique), en espérance ($H_\mathrm{color,eff}$,
+      analytique), et global ($H_\mathrm{color}$, ouvert).
+    </p>
+  </section>
+  <section class="card">
     <h2>Direction ouverte</h2>
     <p>
-      Le problème ouvert principal est la preuve analytique de [H-color] : montrer, à partir
-      de la structure de la représentation de Weil et de l'automorphisme métaplectique, que
-      les triplets de couleur satisfaisant $c_1+c_2+c_3 \equiv 0$ sont nécessairement
-      co-admissibles dans la limite des grands $q$. Les preuves numériques d'O32 fournissent
-      une forte motivation pour cette preuve.
+      Le problème ouvert principal est la preuve analytique ponctuelle de [H-color] à $q$ fini
+      fixé : montrer que chaque profil de capacité individuel $\sigma_{c_i}(n)$ est égal aux
+      autres, et pas seulement leurs moyennes par blocs. Le résultat au niveau de l'espérance
+      (Proposition avg-hcolor) établit déjà la limite des grands $q$ ; le défi restant est le
+      contrôle à $q$ fini des fluctuations autour de la valeur attendue.
     </p>
     <p>
       Le calcul pour $q = 307$ (en cours) étendra les preuves numériques à un premier plus
-      grand dans la même classe de congruence, testant davantage la stabilité des résultats.
+      grand, testant davantage la prédiction de mise à l'échelle $R_\mathrm{var} \propto q^{-1}$.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20259893" rel="noopener">
         <i lang="en">Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of
         Hypothesis [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20145607
+      doi:10.5281/zenodo.20259893
     </p>
   </section>
 </main>

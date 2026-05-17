@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20259893">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Back to Spectral Admissibility Programme
       </a>
@@ -86,7 +86,9 @@
       </p>
       <div class="note" role="note">
         <strong>Status.</strong> [H-color] is numerically confirmed for $q \in \{151, 211\}$.
-        The $q=307$ computation is in progress. Analytical proof of [H-color] remains open.
+        $H_\mathrm{color,eff}$ (equality of capacity exponents in the $q\to\infty$ limit) is
+        analytically established via Proposition avg-hcolor. Pointwise proof at fixed $q$ remains open.
+        The $q=307$ computation is in progress.
       </div>
     </div>
     <aside class="card">
@@ -107,7 +109,7 @@
         <div class="kv">
           <div class="k">Status</div>
           <div class="v">Structurally motivated ([H-color] numerically confirmed for
-            q ∈ {151, 211}; analytical proof open)</div>
+            q ∈ {151, 211}; H_color,eff analytically proved in expectation; pointwise proof open)</div>
         </div>
         <div class="kv">
           <div class="k">Depends on</div>
@@ -230,29 +232,54 @@
     </p>
   </section>
   <section class="card">
+    <h2>Analytical sharpening (v1.3+)</h2>
+    <p>
+      O32 additionally proves analytically (Proposition avg-hcolor) that for block-averaged
+      capacity profiles:
+      \[
+        \mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1}),
+      \]
+      and similarly for $\omega^2 c$. This establishes $H_{\mathrm{color,eff}}$ — equality of
+      capacity exponents in expectation — in the $q \to \infty$ limit.
+    </p>
+    <p>
+      The argument proceeds by showing that the BFS fingerprint frequency distribution for
+      $c$ and $\omega c$ blocks differs only by a shift of the distinguished frequency
+      ($c B_1 \mapsto \omega c B_1$), which preserves the cardinality of new distinct
+      frequencies at every BFS depth. The $O(q^{-1})$ correction arises from the excess
+      probability on the distinguished frequency, accumulated over a rank window of size $O(q)$.
+    </p>
+    <p>
+      The observed decrease $R_\mathrm{var} \propto q^{-1}$ (factor 5 from $q=61$ to $q=151$)
+      is interpreted as the finite-$q$ modulation bias predicted by this argument. Three levels
+      of the colour hypothesis are now distinguished: pointwise ($H_\mathrm{color,ptwise}$,
+      numerical), in expectation ($H_\mathrm{color,eff}$, analytical), and global
+      ($H_\mathrm{color}$, open).
+    </p>
+  </section>
+  <section class="card">
     <h2>Open direction</h2>
     <p>
-      The primary open problem is the analytical proof of [H-color]: showing, from the
-      structure of the Weil representation and the metaplectic automorphism, that colour
-      triplets satisfying $c_1+c_2+c_3 \equiv 0$ are necessarily co-admissible in the
-      large-$q$ limit. The numerical evidence from O32 provides strong motivation for this
-      proof.
+      The primary open problem is the pointwise analytical proof of [H-color] at fixed finite
+      $q$: showing that each individual capacity profile $\sigma_{c_i}(n)$ equals the others,
+      not just their block averages. The expectation-level result (Proposition avg-hcolor)
+      already establishes the large-$q$ limit; the remaining challenge is the finite-$q$
+      control of fluctuations around the expected value.
     </p>
     <p>
       The computation for $q = 307$ (in progress) will extend the numerical evidence to a
-      larger prime in the same congruence class, further testing the stability of the
-      results.
+      larger prime, further testing the $R_\mathrm{var} \propto q^{-1}$ scaling prediction.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20259893" rel="noopener">
         <i>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
         [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20145607
+      doi:10.5281/zenodo.20259893
     </p>
   </section>
 </main>

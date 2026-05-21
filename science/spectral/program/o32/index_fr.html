@@ -8,7 +8,7 @@
     l'hypothèse [H-color] | Cosmochronie</title>
   <meta name="description"
     content="O32 teste numériquement l'hypothèse [H-color] (co-admissibilité des triplets)
-    sur des premiers q ≡ 1 mod 3. Les ratios normalisés R passent le seuil R ≤ 1 pour
+    sur des premiers q ≡ 1 mod 3. Les ratios normalisés R passent le seuil R ≤ 3 pour
     q ∈ {151, 211, 307}, confirmant [H-color] numériquement sur le jeu à quatre premiers
     {61, 151, 211, 307} ; la preuve analytique reste ouverte."/>
   <link rel="alternate" hreflang="en"
@@ -19,7 +19,7 @@
     de l'hypothèse [H-color]"/>
   <meta property="og:description"
     content="O32 teste [H-color] pour q ∈ {61,151,211,307} (test) et q ∈ {29,101} (contrôle).
-    Tous les premiers de test passent R ≤ 1 ; δ_tri ≈ 3δ_c au niveau sous-pourcent ;
+    Tous les premiers de test passent R ≤ 3 ; δ_tri ≈ 3δ_c au niveau sous-pourcent ;
     C_color est de rang numérique 1. La preuve analytique reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20332769">Lire la prépublication</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333304">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d'admissibilité spectrale
       </a>
@@ -77,20 +77,20 @@
       <p>
         Le test est conduit sur des premiers $q \equiv 1 \pmod{3}$ (premiers de test :
         $q \in \{61, 151, 211, 307\}$) et des premiers de contrôle $q \in \{29, 101\}$.
-        Le plancher de bruit combiné est $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+        Le plancher de bruit combiné est $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$.
         Les ratios normalisés $R$ quantifient le recouvrement spectral du triplet co-admissible
         contre la référence de bruit.
       </p>
       <p>
-        Résultats : $R = 0.90$ pour $q=61$ (1/4 triplets valides), $R = 0.19$ pour $q=151$
-        (4/4 triplets), $R = 0.42$ pour $q=211$ (4/4 triplets), $R = 0.31$ pour $q=307$
-        (4/4 triplets). Tous les premiers de test satisfont le seuil $R \leq 1$. De plus,
+        Résultats : $R = 2.1$ pour $q=61$ (1/4 triplets valides), $R = 0.4$ pour $q=151$
+        (4/4 triplets), $R = 1.0$ pour $q=211$ (4/4 triplets), $R = 0.7$ pour $q=307$
+        (4/4 triplets). Tous les premiers de test satisfont le seuil $R \leq 3$. De plus,
         $\delta_\mathrm{tri} \approx 3\delta_c$ au niveau sous-pourcent, et la covariance de
         couleur $C_\mathrm{color}$ est de rang numérique 1 dans tous les cas.
       </p>
       <div class="note" role="note">
         <strong>Statut.</strong> [H-color] est confirmée numériquement pour
-        $q \in \{151, 211, 307\}$ (4/4 triplets chacun) ; à $q = 307$, $R = 0.31$ avec
+        $q \in \{151, 211, 307\}$ (4/4 triplets chacun) ; à $q = 307$, $R = 0.7$ avec
         $\delta_\mathrm{tri} = 12.355 \approx 3\delta_c$ (écart 1.5\%). Le jeu de données
         à quatre premiers $q \in \{61, 151, 211, 307\}$ est complet.
         $H_\mathrm{color,eff}$ (égalité des exposants de capacité en espérance dans la limite
@@ -136,18 +136,18 @@
       <li>
         <strong>Premiers de test ($q \equiv 1 \pmod{3}$) :</strong>
         $q \in \{61, 151, 211, 307\}$. Premiers de contrôle : $q \in \{29, 101\}$. Plancher
-        de bruit combiné $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+        de bruit combiné $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$.
       </li>
       <li>
-        <strong>$q = 61$ :</strong> $R = 0.90$, 1 triplet sur 4 testés satisfait le critère
+        <strong>$q = 61$ :</strong> $R = 2.1$, 1 triplet sur 4 testés satisfait le critère
         de co-admissibilité. Passe $R \leq 3$.
       </li>
       <li>
-        <strong>$q = 151$ :</strong> $R = 0.19$, 4 triplets sur 4 valides. Confirmation
+        <strong>$q = 151$ :</strong> $R = 0.4$, 4 triplets sur 4 valides. Confirmation
         claire de [H-color] ; passe $R \leq 3$.
       </li>
       <li>
-        <strong>$q = 211$ :</strong> $R = 0.42$, 4 triplets sur 4 valides. Cohérent avec
+        <strong>$q = 211$ :</strong> $R = 1.0$, 4 triplets sur 4 valides. Cohérent avec
         $q=151$ ; passe $R \leq 3$.
       </li>
       <li>
@@ -160,7 +160,7 @@
         de rang numérique 1 dans tous les cas testés, soutenant l'identification SU(3) de O31.
       </li>
       <li>
-        <strong>$q = 307$ :</strong> 4/4 triplets, $R = 0.31$ (bien en dessous du seuil 1),
+        <strong>$q = 307$ :</strong> 4/4 triplets, $R = 0.7$ (bien en dessous du seuil $R \leq 3$),
         $\delta_\mathrm{tri} = 12.355 \approx 3\delta_c$ (écart 1.5\%). Jeu de données à
         quatre premiers complet.
       </li>
@@ -284,7 +284,7 @@
       contrôle à $q$ fini des fluctuations autour de la valeur attendue.
     </p>
     <p>
-      Le calcul terminé à $q = 307$ ($R = 0.31$, 4/4 triplets,
+      Le calcul terminé à $q = 307$ ($R = 0.7$, 4/4 triplets,
       $R_\mathrm{var} = 1.17\times10^{-3}$) étend les preuves numériques à un premier plus
       grand et reste cohérent avec la prédiction de mise à l'échelle
       $R_\mathrm{var} \propto q^{-1}$.
@@ -294,11 +294,11 @@
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20332769" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20333304" rel="noopener">
         <i lang="en">Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of
         Hypothesis [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20332769
+      doi:10.5281/zenodo.20333304
     </p>
   </section>
 </main>

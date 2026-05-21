@@ -8,7 +8,7 @@
     [H-color] | Cosmochrony</title>
   <meta name="description"
     content="O32 tests Hypothesis [H-color] (triplet co-admissibility) numerically on primes
-    q ≡ 1 mod 3. Normalised ratios R pass the threshold R ≤ 1 for q ∈ {151, 211, 307},
+    q ≡ 1 mod 3. Normalised ratios R pass the threshold R ≤ 3 for q ∈ {151, 211, 307},
     confirming [H-color] numerically across the four-prime dataset {61, 151, 211, 307};
     analytical proof remains open."/>
   <link rel="alternate" hreflang="fr"
@@ -19,7 +19,7 @@
     [H-color]"/>
   <meta property="og:description"
     content="O32 tests [H-color] for q ∈ {61,151,211,307} (test) and q ∈ {29,101} (control).
-    All test primes pass R ≤ 1; δ_tri ≈ 3δ_c at sub-percent level; C_color has rank 1.
+    All test primes pass R ≤ 3; δ_tri ≈ 3δ_c at sub-percent level; C_color has rank 1.
     Analytical proof of [H-color] remains open."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/"/>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20332769">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333304">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Back to Spectral Admissibility Programme
       </a>
@@ -77,19 +77,19 @@
       <p>
         The test is conducted on primes $q \equiv 1 \pmod{3}$ (test primes:
         $q \in \{61, 151, 211, 307\}$) and control primes $q \in \{29, 101\}$. The combined
-        noise floor is $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$. Normalised ratios $R$
+        noise floor is $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$. Normalised ratios $R$
         quantify the spectral overlap of the co-admissible triplet against the noise baseline.
       </p>
       <p>
-        Results: $R = 0.90$ for $q=61$ (1/4 triplets valid), $R = 0.19$ for $q=151$
-        (4/4 triplets), $R = 0.42$ for $q=211$ (4/4 triplets), $R = 0.31$ for $q=307$
-        (4/4 triplets). All test primes satisfy the threshold $R \leq 1$. Additionally,
+        Results: $R = 2.1$ for $q=61$ (1/4 triplets valid), $R = 0.4$ for $q=151$
+        (4/4 triplets), $R = 1.0$ for $q=211$ (4/4 triplets), $R = 0.7$ for $q=307$
+        (4/4 triplets). All test primes satisfy the threshold $R \leq 3$. Additionally,
         $\delta_\mathrm{tri} \approx 3\delta_c$ at sub-percent level, and the colour
         covariance $C_\mathrm{color}$ has numerical rank 1 in all cases.
       </p>
       <div class="note" role="note">
         <strong>Status.</strong> [H-color] is numerically confirmed for $q \in \{151, 211, 307\}$
-        (4/4 triplets each); at $q = 307$, $R = 0.31$ with $\delta_\mathrm{tri} = 12.355
+        (4/4 triplets each); at $q = 307$, $R = 0.7$ with $\delta_\mathrm{tri} = 12.355
         \approx 3\delta_c$ (deviation 1.5\%). The four-prime dataset
         $q \in \{61, 151, 211, 307\}$ is complete. $H_\mathrm{color,eff}$ (equality of capacity
         exponents in the $q\to\infty$ limit) is analytically established via Proposition
@@ -134,18 +134,18 @@
       <li>
         <strong>Test primes ($q \equiv 1 \pmod{3}$):</strong> $q \in \{61, 151, 211, 307\}$.
         Control primes: $q \in \{29, 101\}$. Combined noise floor
-        $\mathrm{ctrl\_ref} = 3.81 \times 10^{-3}$.
+        $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$.
       </li>
       <li>
-        <strong>$q = 61$:</strong> $R = 0.90$, 1 out of 4 tested triplets satisfy the
+        <strong>$q = 61$:</strong> $R = 2.1$, 1 out of 4 tested triplets satisfy the
         co-admissibility criterion. Passes $R \leq 3$.
       </li>
       <li>
-        <strong>$q = 151$:</strong> $R = 0.19$, 4 out of 4 triplets valid. Clear confirmation
+        <strong>$q = 151$:</strong> $R = 0.4$, 4 out of 4 triplets valid. Clear confirmation
         of [H-color]; passes $R \leq 3$.
       </li>
       <li>
-        <strong>$q = 211$:</strong> $R = 0.42$, 4 out of 4 triplets valid. Consistent
+        <strong>$q = 211$:</strong> $R = 1.0$, 4 out of 4 triplets valid. Consistent
         with $q=151$; passes $R \leq 3$.
       </li>
       <li>
@@ -158,7 +158,7 @@
         rank 1 in all tested cases, supporting the SU(3) identification of O31.
       </li>
       <li>
-        <strong>$q = 307$:</strong> 4/4 triplets, $R = 0.31$ (well below the threshold 1),
+        <strong>$q = 307$:</strong> 4/4 triplets, $R = 0.7$ (well below the threshold $R \leq 3$),
         $\delta_\mathrm{tri} = 12.355 \approx 3\delta_c$ (deviation 1.5\%). Four-prime
         dataset complete.
       </li>
@@ -275,7 +275,7 @@
       control of fluctuations around the expected value.
     </p>
     <p>
-      The completed computation at $q = 307$ ($R = 0.31$, 4/4 triplets,
+      The completed computation at $q = 307$ ($R = 0.7$, 4/4 triplets,
       $R_\mathrm{var} = 1.17\times10^{-3}$) extends the numerical evidence to a larger
       prime and is consistent with the predicted $R_\mathrm{var} \propto q^{-1}$ scaling.
     </p>
@@ -284,11 +284,11 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20332769" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20333304" rel="noopener">
         <i>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
         [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20332769
+      doi:10.5281/zenodo.20333304
     </p>
   </section>
 </main>

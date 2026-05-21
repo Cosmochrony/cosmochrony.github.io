@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Corrections à q fini de l'identification capacité-Carnot | Cosmochrony</title>
+  <meta name="description"
+    content="Ferme LC-O3 : l'identité quadratique Lorentz-capacité B² + (Fτ)² = 1 est exacte pour tout n ; l'identification parabolique de Carnot n'est valable que pour n ≤ (q-1)/2 et asymptotiquement quand m/q → 0. La déviation Δ_q(n) = 4m²/q² est explicite."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Corrections à q fini de l'identification capacité-Carnot"/>
+  <meta property="og:description"
+    content="Ferme LC-O3 : identité quadratique exacte ; identification de Carnot corrigée par Δ_q(n) = 4m²/q² au-delà de la pré-saturation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc-o3/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/lc-o3/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Corrections à $q$ fini de l'identification capacité-Carnot</h1>
+        <p class="subtitle">
+          Ferme le problème ouvert LC-O3 (Section 7.2 de <a href="/science/temporal-projection/index_fr.html">TempProj</a>)
+          par une séparation précise : l'identité quadratique Lorentz-capacité
+          $B_n^2 + (F^\tau_n)^2 = 1$ est exacte pour tout $n$ et ne reçoit aucune correction ;
+          l'identification parabolique de Carnot-Carathéodory est corrigée par
+          $\Delta_q(n) = 4m^2/q^2$ au-delà de la pré-saturation $n \leq (q-1)/2$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20334072" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20334072</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Le sous-programme Lorentz-capacité dérive le résidu temporel
+        $F^\tau_n = \sqrt{1 - B_n^2}$ du budget borné de capacité Born-Infeld de la cascade
+        d'admissibilité sur $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. La note
+        <a href="/science/lorentz-capacity/index_fr.html">N</a> et le papier du résidu temporel
+        <a href="/science/temporal-projection/index_fr.html">TempProj</a> ont établi l'identité
+        quadratique $B_n^2 + (F^\tau_n)^2 = 1$, fermant la dilatation temporelle et l'identification
+        du facteur de Lorentz.
+      </p>
+      <p>
+        Le problème ouvert restant, énoncé en Section 7.2 de TempProj, était le statut de la loi
+        quadratique et de l'identification parabolique de Carnot-Carathéodory près de la frontière
+        de saturation à $q$ fini $n \simeq q/2$. Le présent article ferme ce problème en séparant
+        deux énoncés que la formulation initiale confondait.
+      </p>
+      <div class="note" role="note">
+        <strong>Capacité vs identification de Carnot.</strong> LC-O3 est une correction à
+        <em>l'approximation de Carnot</em>, <em>pas</em> à la loi de capacité. L'identité
+        quadratique $B_n^2 + (F^\tau_n)^2 = 1$ est inconditionnelle une fois que $B_n$ est la
+        charge exacte du tore à $q$ fini. Seul le comptage parabolique non replié
+        $B_n^{\mathrm{parab}}$ dévie du comptage du tore après repliement cyclique au-delà de la
+        frontière de saturation.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Document de travail</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thème</div>
+          <div class="v">saturation à $q$ fini, identification de Carnot, comptage exact du tore</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Prouvé (ferme LC-O3)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultat principal</h2>
+    <p>
+      En posant $R := (q-1)/2$ et $n = R + m$, le comptage exact du tore des points de la cascade
+      d'admissibilité à profondeur $n$ est
+    </p>
+    <p style="text-align:center">
+      $B_n^{\mathrm{torus}} = \dfrac{q(2m+1) + 2R^2 - 2m^2}{q^2}.$
+    </p>
+    <p>
+      La déviation par rapport à la formule parabolique non repliée de Carnot
+      $B_n^{\mathrm{parab}} = (2n^2 + 2n + 1)/q^2$ est explicite :
+    </p>
+    <p style="text-align:center">
+      $\Delta_q(n) := B_n^{\mathrm{parab}} - B_n^{\mathrm{torus}} = \dfrac{4 m^2}{q^2}.$
+    </p>
+    <p>
+      L'identité quadratique Lorentz-capacité reste valable pour tout $n$ :
+    </p>
+    <p style="text-align:center">
+      $B_n^2 + (F^\tau_n)^2 = 1, \qquad F^\tau_n := \sqrt{1 - B_n^2}.$
+    </p>
+    <p>
+      Dans le régime macroscopique replié $n/q \to \alpha > 1/2$, la correction converge vers
+      $\Delta_q(n) \to 4(\alpha - 1/2)^2 > 0$ et l'identification parabolique n'est <em>pas</em>
+      asymptotiquement valide. Dans le régime de pré-saturation ($n \leq R$) et dans la couche
+      sous-linéaire ($m/q \to 0$), la correction s'annule et l'identification de Carnot est
+      exactement récupérée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Contributions clés</h2>
+    <ul>
+      <li><strong>L'identité quadratique de capacité est inconditionnelle.</strong> Elle vaut pour
+        tout $n$ une fois que $B_n$ est la charge exacte du tore, par la définition même
+        $F^\tau_n = \sqrt{1 - B_n^2}$ fournie par l'application de résidu temporel de TempProj.</li>
+      <li><strong>L'identification de Carnot a un domaine de validité précis.</strong> Exacte pour
+        $n \leq (q-1)/2$ (pas de repliement cyclique) ; asymptotiquement valide dans tout
+        voisinage sous-linéaire de la frontière de repliement.</li>
+      <li><strong>Correction en régime replié finie et explicite.</strong>
+        $\Delta_q(n) = 4m^2/q^2$ est sous forme close, et la formule parabolique dépasse même $1$
+        (devient non physique) pour $m$ suffisamment grand à $q$ fixé.</li>
+      <li><strong>Fermeture du sous-programme Lorentz-capacité.</strong> Avec LC-O1, LC-O2-O1 et
+        LC-O3 maintenant résolus, dilatation temporelle, cône de lumière, transformations de
+        Lorentz et contraction des longueurs, pont gravitationnel capacité-métrique et domaine de
+        validité de la saturation à $q$ fini sont tous établis.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Dépendances</h2>
+    <ul>
+      <li><strong>N</strong> (<code>Beau2026n</code>) : factorisation de Weil
+        $\Sigma^{\mathrm{tot}}_n = 1 - B_n$.</li>
+      <li><strong>TempProj</strong> (<code>Beau2026tp</code>) : application du résidu temporel
+        $F^\tau_n = \sqrt{1 - B_n^2}$ ; énoncé de LC-O3 (Section 7.2).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Finite-$q$ Corrections to the Carnot Capacity Identification</i>.
+      Prépublication, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20334072" rel="noopener">10.5281/zenodo.20334072</a>
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme Cosmochrony</h2>
+    <p>
+      LCo3 est l'un des trois articles de fermeture du sous-programme Capacité de Lorentz, avec
+      <a href="/science/lc-o1/index_fr.html">LCo1</a> (LC-O1, transformations de Lorentz et
+      contraction des longueurs) et <a href="/science/lc-o2-o1/index_fr.html">LCIIo1</a>
+      (LC-O2-O1, pont capacité-métrique). Avec ces trois fermetures, la chaîne LorentzCapacity
+      &rarr; TempProj &rarr; LCII atteint un sous-programme complet.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

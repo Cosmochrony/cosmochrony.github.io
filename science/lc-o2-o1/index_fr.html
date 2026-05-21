@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fermeture spectrale locale du pont capacité-métrique | Cosmochrony</title>
+  <meta name="description"
+    content="Ferme le problème ouvert LC-O2-O1 : dérive le rayon local de capacité Born-Infeld R(x) directement à partir de l'occupance spectrale ε(x), sans importer les équations d'Einstein. L'identité R(x)² = 1-ε(x) = -2g^ττ(x) découle de la réduction SU(2)-Schur sur Sym²(V_ρ) et de l'identification symbolique principale."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Fermeture spectrale locale du pont capacité-métrique"/>
+  <meta property="og:description"
+    content="Ferme LC-O2-O1 : R(x)² = 1-ε(x) = -2g^ττ(x) dérivé purement des données d'admissibilité locales, sans équation d'Einstein."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc-o2-o1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/lc-o2-o1/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Fermeture spectrale locale du pont capacité-métrique</h1>
+        <p class="subtitle">
+          Ferme le problème ouvert LC-O2-O1 de <a href="/science/lc-o2/index_fr.html">LCII</a>. En définissant
+          l'occupance locale $\epsilon(x)$ comme une norme quadratique sur le secteur de rang trois
+          $\mathrm{Sym}^{2}(V_{\rho})$, l'équivariance $\mathrm{SU}(2)$ du poids d'admissibilité impose
+          $A_\tau(x) = 2\bigl(1-\epsilon(x)\bigr)$, et l'identification symbolique principale donne
+          $g^{\tau\tau}(x) = -A_\tau(x)/4$. D'où
+          $R(x)^{2} = 1-\epsilon(x) = -2g^{\tau\tau}(x)$, sans aucune équation d'Einstein importée.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">à paraître</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        L'article <a href="/science/lc-o2/index_fr.html">LCII</a> a introduit le rayon local de capacité
+        Born-Infeld $R(x)$ sur deux versants : côté capacité, $R(x)^{2} = 1 - \epsilon(x)$ à partir d'un
+        champ local d'occupance spectrale ; côté métrique, $R(x)^{2} = -2g^{\tau\tau}(x)$ via la composante
+        temporelle de la co-métrique. Leur équivalence a été énoncée dans LCII (Remarque 3.2, Section 7.3)
+        comme un pont analytique ouvert : elle ne pouvait être vérifiée qu'en passant par les équations
+        d'Einstein importées de la branche <a href="/science/gravity/index_fr.html">Gravité</a>.
+      </p>
+      <p>
+        Le présent article ferme ce pont purement spectralement, à partir des seules données
+        d'admissibilité locales. La preuve procède en deux étapes : (i) une réduction du poids
+        d'admissibilité local découlant de l'équivariance $\mathrm{SU}(2)$ via le lemme de Schur ;
+        (ii) la reconstruction locale de la métrique effective par le symbole principal. La chaîne
+        $\epsilon(x) \mapsto A_\tau(x) \mapsto g^{\tau\tau}(x)$ est fermée sans recourir à l'équation
+        d'Einstein.
+      </p>
+      <div class="note" role="note">
+        <strong>Cadre de validité.</strong> L'identité $\epsilon(x) = 1 + 2g^{\tau\tau}(x)$ est une identité
+        d'admissibilité spectrale, et non une identification phénoménologique entre densité de matière et
+        courbure métrique. Elle dépend essentiellement du fait que $\epsilon(x)$ soit une occupance
+        quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$ -- et non une densité scalaire additive arbitraire.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note technique</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Thème</div>
+          <div class="v">pont capacité-métrique, admissibilité spectrale, dilatation temporelle gravitationnelle</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Prouvé (ferme LC-O2-O1)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultat principal</h2>
+    <p>
+      Le rayon local de capacité et le rayon métrique coïncident :
+    </p>
+    <p style="text-align:center">
+      $R(x)^{2} = 1 - \epsilon(x) = -2\,g^{\tau\tau}(x)$,
+    </p>
+    <p style="text-align:center">
+      ou de manière équivalente $\epsilon(x) = 1 + 2\,g^{\tau\tau}(x)$.
+    </p>
+    <p>
+      La preuve procède en deux identifications indépendantes.
+    </p>
+    <h3>Étape 1 -- Réduction locale du poids d'admissibilité (Lemme)</h3>
+    <p>
+      On définit $\epsilon(x)$ comme une occupance quadratique sur le secteur de rang trois
+      $H_{\mathrm{eff}}(x) \simeq \mathrm{Sym}^{2}(V_{\rho})$, muni de sa norme quadratique
+      $\mathrm{SU}(2)$-invariante. Les parties occupée et libre se décomposent orthogonalement :
+    </p>
+    <p style="text-align:center">
+      $C_{\mathrm{max}}(x) = C_{\mathrm{occ}}(x) \oplus C_{\mathrm{free}}(x)$,
+    </p>
+    <p>
+      d'où $\|C_{\mathrm{free}}\|^{2}/\|C_{\mathrm{max}}\|^{2} = 1 - \epsilon(x)$. Comme
+      $\mathrm{Sym}^{2}(V_{\rho})$ est irréductible sous $\mathrm{SU}(2)$ et que le poids d'admissibilité
+      $\mathrm{Ad}$ est $\mathrm{SU}(2)$-équivariant, le lemme de Schur impose
+      $\mathrm{Ad} = \lambda\cdot\mathrm{Id}$, donc les traces partielles sont proportionnelles aux normes
+      des sous-espaces. D'où :
+    </p>
+    <p style="text-align:center">
+      $A_\tau(x) = A_\tau^{\infty} \cdot (1 - \epsilon(x)) = 2\,(1 - \epsilon(x))$.
+    </p>
+    <h3>Étape 2 -- Identification par symbole principal</h3>
+    <p>
+      La métrique effective est reconstruite localement à partir du symbole principal de
+      $L_{\mathrm{eff}}$. Avec la normalisation en espace plat $A_\tau^{\infty} = 2$ et
+      $g^{\tau\tau,\infty} = -\tfrac{1}{2}$ (issue de
+      <a href="/science/spectral/program/q11/">Q11</a>) :
+    </p>
+    <p style="text-align:center">
+      $g^{\tau\tau}(x) = -\,A_\tau(x)/4$.
+    </p>
+    <p>
+      Combinaison : $-2g^{\tau\tau}(x) = A_\tau(x)/2 = 1 - \epsilon(x) = R(x)^{2}$. Le pont est fermé.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Contributions clés</h2>
+    <ul>
+      <li><strong>Ferme LC-O2-O1 :</strong> élève la Remarque 3.2 de
+        <a href="/science/lc-o2/index_fr.html">LCII</a> du statut de postulat ouvert à celui de théorème.</li>
+      <li><strong>Sans équation d'Einstein :</strong> l'identité capacité-métrique est dérivée purement
+        à partir des données d'admissibilité locales.</li>
+      <li><strong>L'occupance quadratique est essentielle :</strong> le lemme de Schur ne s'applique que
+        parce que $\epsilon(x)$ est une norme quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$, et non un
+        scalaire additif.</li>
+      <li><strong>Réinterprétation de la dilatation temporelle gravitationnelle :</strong> près d'une
+        source massive, le budget de capacité est plus occupé, le rayon résiduel
+        $R(x) = \sqrt{1-\epsilon(x)} &lt; 1$ ralentit les horloges locales, en accord avec le décalage
+        gravitationnel standard.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Structure</h2>
+    <ol>
+      <li><strong>Introduction</strong> -- énoncé du problème ouvert issu de LCII.</li>
+      <li><strong>Occupance locale quadratique</strong> -- définition de $\epsilon(x)$ comme norme
+        quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$.</li>
+      <li><strong>Réduction locale du poids d'admissibilité</strong> -- Lemme :
+        $A_\tau(x) = 2(1-\epsilon(x))$ via la réduction $\mathrm{SU}(2)$-Schur.</li>
+      <li><strong>Identification par symbole principal</strong> -- identification locale
+        $g^{\tau\tau}(x) = -A_\tau(x)/4$.</li>
+      <li><strong>Fermeture spectrale du pont capacité-métrique</strong> -- Théorème et Corollaire
+        (élévation de la Remarque 3.2 de LCII).</li>
+      <li><strong>Discussion</strong> -- rôle de la définition quadratique ; vérification de
+        consistance Schwarzschild en régime de champ faible.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Dépendances</h2>
+    <ul>
+      <li><a href="/science/lc-o2/index_fr.html"><strong>LCII</strong></a> : origine du problème ouvert
+        (Remarque 3.2, Section 7.3) ; cadre de la chute fibre à fibre.</li>
+      <li><strong>W1</strong> : argument de réduction du poids d'admissibilité ; version locale appliquée
+        ici.</li>
+      <li><strong>Q5b</strong> : reconstruction de la métrique effective par symbole principal.</li>
+      <li><a href="/science/spectral/program/q11/"><strong>Q11</strong></a> : normalisation en espace plat
+        $A_\tau^{\infty} = 2$ et $g^{\tau\tau,\infty} = -\tfrac{1}{2}$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Local Spectral Closure of the Capacity-Metric Bridge</i>.
+      Prépublication, 2026. DOI à paraître.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme Cosmochrony</h2>
+    <p>
+      LCIIo1 est le quatrième article du sous-programme Capacité de Lorentz. Il ferme le pont analytique
+      laissé ouvert par <a href="/science/lc-o2/index_fr.html">LCII</a>, complétant la chaîne
+      LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1. Le résultat montre que $\epsilon(x)$ et
+      $g^{\tau\tau}(x)$ ne sont pas des champs indépendants : ce sont deux lectures de la même donnée
+      d'admissibilité locale. La dilatation temporelle gravitationnelle devient ainsi une conséquence
+      dérivée de l'occupance spectrale locale, et non une structure métrique importée.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

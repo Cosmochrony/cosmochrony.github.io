@@ -457,6 +457,12 @@
       opacity: .9;
     }
 
+    .edge.syn {
+      stroke-width: .5;
+      opacity: .28;
+      stroke-dasharray: 3 3;
+    }
+
     /* ── Smooth SVG pan/zoom transition ── */
     #mg {
       transition: transform .45s cubic-bezier(.4, 0, .2, 1);
@@ -913,6 +919,16 @@
         "Four-prime dataset q∈{61,151,211,307} complete (ctrl_ref=1.657×10⁻³, criterion R≤3)."
     },
     {
+      id: "SpANote", lbl: "SpAdm-Note", s: "structural", b: "II", key: "Beau2026a1note",
+      url: BASE + "spectral/program",
+      tags: ["QM", "BI", "SM"],
+      title: "Spectral Admissibility Sub-Programme (Presentation Note)",
+      desc:
+        "Synthesis and entry point of the spectral admissibility sub-programme: from the Born–Infeld bounded-flux constraint on the Weil representation of Heis₃(Z/qZ) to the cascade exponent β*≈0.126. " +
+        "Maps the five precursor papers (SpAdm, SpCap, SpGram, 3Gen, SpRel) and the O-series O1–O32 into the single chain c_χ → δ_pair → β*, recording each result as proved, structural, numerical, or open. " +
+        "Open deliverables: pointwise proof of [H-color]; numerical campaign at q=401."
+    },
+    {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
@@ -942,7 +958,7 @@
     },
     {
       id: "Q5a", lbl: "Q5a", s: "structural", b: "III", key: "Beau2026q5a",
-      url: BASE + "spectral/program/q5/a",
+      url: BASE + "emergent-geometry/q5/a",
       tags: ["spt", "QM"],
       title: "Q5a — Large-q Operator Limit (v2.0)",
       desc: "Mosco convergence E_q → L_Π = −A∂²_x on L²(ℝ). " +
@@ -951,7 +967,7 @@
     },
     {
       id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III",
-      url: BASE + "spectral/program/q5/a/o2",
+      url: BASE + "emergent-geometry/q5/a/o2",
       tags: ["spt", "spec"],
       title: "Q5a-O2 — Spectral Atomicity & Mosco Closure",
       desc: "Admissible sector spectrally atomic: ran(Π_q^(c)) = span{e_0, e_{ξ_c}, e_{q−ξ_c}}, ξ_c/q → ω_c ≠ 0. " +
@@ -1055,6 +1071,16 @@
         "[U] (proved in U1) forces T to be asymptotically SU(2)-equivariant. " +
         "Schur's lemma + Q8 normalisation: A_τ = C_{su(2)} = 2. " +
         "The effective co-metric is uniquely determined: g^{μν} = 2η^{μν}, no free parameter."
+    },
+    {
+      id: "EGNote", lbl: "EG-Note", s: "structural", b: "III", key: "Beau2026egnote",
+      url: BASE + "emergent-geometry",
+      tags: ["spt", "emer"],
+      title: "Emergent Geometry Sub-Programme (Presentation Note)",
+      desc:
+        "Synthesis and entry point of the emergent geometry sub-programme: how the admissible Weil–Heisenberg fibre gives rise to an effective four-dimensional Lorentzian geometry. " +
+        "Maps the twelve constituent papers (Q5a, Q5a-O2, Q5b, Q6b, Q7–Q11, U1, W1, H2) into the chain Π_q → L_eff → g^{μν} = 2η^{μν}, with all four metric coefficients fixed by the su(2)-Casimir on Sym²(V_ρ). " +
+        "Open: finite-q equivariant bridge; [H1] on the full L² space."
     },
     {
       id: "Q12", lbl: "Q12", s: "structural", b: "III", key: "Beau2026q12",
@@ -1237,6 +1263,13 @@
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O29", t: "O30", sp: 1 },
     { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
+    { f: "SpA", t: "SpANote", syn: 1 }, { f: "SpCap", t: "SpANote", syn: 1 }, { f: "SpG", t: "SpANote", syn: 1 }, { f: "ThGn", t: "SpANote", syn: 1 }, { f: "SpR", t: "SpANote", syn: 1 },
+    { f: "O1", t: "SpANote", syn: 1 }, { f: "O3", t: "SpANote", syn: 1 }, { f: "O4", t: "SpANote", syn: 1 }, { f: "O5", t: "SpANote", syn: 1 }, { f: "O6", t: "SpANote", syn: 1 }, { f: "O7", t: "SpANote", syn: 1 }, { f: "O8", t: "SpANote", syn: 1 },
+    { f: "O9", t: "SpANote", syn: 1 }, { f: "O10", t: "SpANote", syn: 1 }, { f: "O11", t: "SpANote", syn: 1 }, { f: "O12", t: "SpANote", syn: 1 }, { f: "O13", t: "SpANote", syn: 1 }, { f: "O14", t: "SpANote", syn: 1 }, { f: "O15", t: "SpANote", syn: 1 },
+    { f: "O16", t: "SpANote", syn: 1 }, { f: "O17", t: "SpANote", syn: 1 }, { f: "O18", t: "SpANote", syn: 1 }, { f: "O19", t: "SpANote", syn: 1 }, { f: "O20", t: "SpANote", syn: 1 }, { f: "O21", t: "SpANote", syn: 1 }, { f: "O22", t: "SpANote", syn: 1 }, { f: "O23", t: "SpANote", syn: 1 }, { f: "O24", t: "SpANote", syn: 1 },
+    { f: "O25", t: "SpANote", syn: 1 }, { f: "O26", t: "SpANote", syn: 1 }, { f: "O27", t: "SpANote", syn: 1 }, { f: "O28", t: "SpANote", syn: 1 }, { f: "O29", t: "SpANote", syn: 1 }, { f: "O30", t: "SpANote", syn: 1 }, { f: "O31", t: "SpANote", syn: 1 }, { f: "O32", t: "SpANote", syn: 1 },
+    { f: "Q5a", t: "EGNote", syn: 1 }, { f: "Q5aO2", t: "EGNote", syn: 1 }, { f: "Q5b", t: "EGNote", syn: 1 }, { f: "Q6b", t: "EGNote", syn: 1 }, { f: "Q7", t: "EGNote", syn: 1 }, { f: "Q8", t: "EGNote", syn: 1 },
+    { f: "Q9", t: "EGNote", syn: 1 }, { f: "Q10", t: "EGNote", syn: 1 }, { f: "Q11", t: "EGNote", syn: 1 }, { f: "U1", t: "EGNote", syn: 1 }, { f: "W1", t: "EGNote", syn: 1 }, { f: "H2", t: "EGNote", syn: 1 },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
@@ -1310,6 +1343,7 @@
     O30: { x: 8 * X, y: 8 * Y },
     O31: { x: 8 * X, y: 9 * Y },
     O32: { x: 8 * X, y: 10 * Y },
+    SpANote:  { x: 2 * X, y: 13 * Y },
     PTO:      { x: 6 * X, y: 7 * Y },
     LorCap:   { x: 6 * X, y: 8 * Y },
     TempProj: { x: 6 * X, y: 9 * Y },
@@ -1334,6 +1368,7 @@
     W1: { x: 11 * X, y: 11 * Y },
     H2: { x: 12 * X, y: 11 * Y },
     Q11: { x: 11 * X, y: 12 * Y },
+    EGNote: { x: 13 * X, y: 12 * Y },
     Q12: { x: 9 * X, y: 13 * Y },
     Q13: { x: 9 * X, y: 14 * Y },
     Q14: { x: 9 * X, y: 15 * Y },
@@ -1464,7 +1499,7 @@
       const el = document.createElementNS(ns, "path")
       const dx = x2 - x1, dy = y2 - y1
       el.setAttribute("d", `M${x1} ${y1} C${x1 + dx * .25} ${y1 + dy * .1},${x2 - dx * .25} ${y2 - dy * .1},${x2} ${y2}`)
-      el.setAttribute("class", e.sp ? "edge spine" : "edge")
+      el.setAttribute("class", e.sp ? "edge spine" : (e.syn ? "edge syn" : "edge"))
       el.setAttribute("marker-end", e.sp ? "url(#arr-sp)" : "url(#arr)")
       el.setAttribute("data-f", e.f)
       el.setAttribute("data-t", e.t)

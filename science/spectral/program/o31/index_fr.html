@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SU(3) par co-admissibilité des triplets de couleur : vers le groupe de jauge
+    complet du Modèle Standard | Cosmochronie</title>
+  <meta name="description"
+    content="O31 fournit le cadre structurel pour l'identification de SU(3) à partir de la
+    co-admissibilité des triplets de couleur sur Heis₃(Z/qZ). Prouve que l'automorphisme
+    métaplectique force la dégénérescence spectrale et que le groupe de symétrie du triplet
+    co-admissible est exactement SU(3)."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o31/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="SU(3) par co-admissibilité des triplets de couleur : vers le groupe de jauge
+    complet du Modèle Standard"/>
+  <meta property="og:description"
+    content="O31 définit les triplets de couleur dans (Z/qZ)*, prouve que l'automorphisme
+    métaplectique force la dégénérescence spectrale σ_c = σ_{ωc}, et montre que G_SM =
+    SU(3)×SU(2)×U(1) est un composite de trois points fixes d'admissibilité."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o31/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o31/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>SU(3) par co-admissibilité des triplets de couleur : vers le groupe de jauge
+          complet du Modèle Standard</h1>
+        <p class="subtitle">
+          O31 fournit le cadre structurel pour l'identification de SU(3) : des triplets de
+          couleur $\{c_1,c_2,c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$ avec
+          $c_1+c_2+c_3 \equiv 0$ forcent la dégénérescence spectrale via l'automorphisme
+          métaplectique, et le groupe de symétrie du triplet co-admissible est exactement SU(3).
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333303">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        O31 construit le cadre structurel pour dériver le groupe de jauge SU(3) à partir des
+        contraintes d'admissibilité sur le graphe de Heisenberg
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. Il commence par écarter l'approche directe :
+        l'argument de Hurwitz de <a href="../o23">O23</a> ne peut pas produire directement
+        $d_\rho = 3$, de sorte qu'un nouveau mécanisme est nécessaire.
+      </p>
+      <p>
+        Le mécanisme introduit est la co-admissibilité des triplets de couleur. Un triplet de
+        couleur est un ensemble $\{c_1, c_2, c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$
+        satisfaisant la contrainte $c_1 + c_2 + c_3 \equiv 0 \pmod{q}$. L'article prouve que
+        de tels triplets existent si et seulement si $q \equiv 1 \pmod{3}$.
+      </p>
+      <p>
+        L'automorphisme métaplectique $\phi_\omega(a,b,z) = (\omega a, \omega^{-1} b, z)$
+        force alors la dégénérescence spectrale $\sigma_c(n) = \sigma_{\omega c}(n)$ pour
+        toutes les coquilles BFS sur le graphe de Cayley adapté aux couleurs (Théorème 4.4).
+        Conditionnellement à l'hypothèse de co-admissibilité [H-color], le groupe de symétrie
+        du triplet co-admissible est exactement SU(3).
+      </p>
+      <div class="note" role="note">
+        <strong>Statut.</strong> Les résultats principaux (existence des triplets, dégénérescence
+        spectrale, unicité de SU(3), et égalité inconditionnelle des rangs sectoriels de couleur)
+        sont prouvés. [H-color] est prouvé au niveau des rangs sectoriels BFS ; l'égalité du
+        fonctionnel de capacité complet est confirmée numériquement par O32 et reste ouverte
+        analytiquement.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Structurellement motivé ; conditionnel à [H-color]</div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Co-admissibilité des triplets de couleur, automorphisme métaplectique,
+            identification de SU(3)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v"><a href="../o32">O32</a> (test numérique), Q6a, Q12</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Exclusion de la voie Hurwitz directe :</strong> preuve que l'argument de Hurwitz
+        de O23 ne peut pas produire directement $d_\rho = 3$, établissant que l'identification
+        de SU(3) nécessite un nouveau mécanisme structurel.
+      </li>
+      <li>
+        <strong>Définition et existence des triplets de couleur :</strong> définition des
+        triplets $\{c_1,c_2,c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$ avec
+        $c_1+c_2+c_3 \equiv 0 \pmod{q}$ ; preuve que de tels triplets existent si et
+        seulement si $q \equiv 1 \pmod{3}$.
+      </li>
+      <li>
+        <strong>Dégénérescence spectrale métaplectique (Théorème 4.4) :</strong> l'automorphisme
+        $\phi_\omega(a,b,z) = (\omega a, \omega^{-1}b, z)$ force
+        $\sigma_c(n) = \sigma_{\omega c}(n)$ pour toutes les coquilles $n$ sur le graphe de
+        Cayley adapté aux couleurs (prouvé).
+      </li>
+      <li>
+        <strong>Unicité de SU(3) :</strong> conditionnellement à [H-color], le groupe de
+        symétrie du triplet de couleur co-admissible est exactement SU(3) ; U(3), SO(3),
+        U(2) et $G_2$ sont exclus (prouvé).
+      </li>
+      <li>
+        <strong>Groupe de jauge du Modèle Standard comme composite :</strong> le groupe de jauge
+        $G_\mathrm{SM} = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ découle
+        comme composite de trois points fixes d'admissibilité, chacun issu d'une contrainte
+        de co-admissibilité distincte.
+      </li>
+      <li>
+        <strong>Résultat à deux niveaux :</strong> (i) exact pour le graphe adapté aux couleurs
+        $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$ (argument métaplectique) ;
+        (ii) $O(q^{-1/2})$ pour tout système générateur, y compris $\mathcal{S}_q$, par
+        l'universalité U1. L'ensemble $\mathcal{S}_q^{(3)}$ est le système générateur canonique
+        pour le secteur de couleur : la plus petite extension de $\mathcal{S}_q$ fermée sous
+        $\phi_\omega$.
+      </li>
+      <li>
+        <strong>Isospectralité par torsion du générateur (Théorème 5.3, prouvé) :</strong>
+        pour tout $c \in (\mathbb{Z}/q\mathbb{Z})^*$, les opérateurs de Markov
+        $\rho_c(P_{\mathcal{S}_q})$ et $\rho_c(P_{\phi_\omega(\mathcal{S}_q)})$ sont
+        unitairement conjugués, donc isospectraux. Confirmé à la précision machine pour tous
+        les $q \leq 157$ avec $q \equiv 1 \pmod{3}$.
+        Cependant, $\operatorname{spec}(\rho_c) \neq \operatorname{spec}(\rho_{\omega c})$ en
+        général : [H-color] sur le graphe standard ne peut pas être prouvé par égalité globale
+        des spectres ; la capacité BFS est un observable strictement plus fin.
+      </li>
+      <li>
+        <strong>Symétrie de Vandermonde intra-coset (Lemme, prouvé) :</strong> le lemme de Schur
+        force le centre de Heisenberg à agir comme un scalaire dans chaque représentation
+        irréductible $\rho_{c_i}$. La matrice de phase du triplet $(\lambda_j^k)_{j,k}$ avec
+        $\lambda_j = e^{2\pi i c_j/q}$ est Vandermonde avec déterminant non nul (les $c_1, c_2,
+        c_3$ étant deux à deux distincts). Chaque coset horizontal $(a,b)$ contribue donc
+        exactement une direction indépendante à chaque sommand de couleur $V_{c_i}$.
+      </li>
+      <li>
+        <strong>Égalité inconditionnelle des rangs sectoriels de couleur (Proposition, prouvé) :</strong>
+        $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$ pour toutes les profondeurs BFS $n$ et
+        tout vecteur initial, inconditionnellement sur le graphe standard. Prouve [H-color] au
+        niveau des rangs sectoriels BFS. Le mécanisme algébrique (Schur + Vandermonde) est
+        indépendant de toute propriété spectrale globale de $\rho_c(P_{\mathcal{S}_q})$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Le mécanisme des triplets de couleur</h2>
+    <p>
+      L'idée clé d'O31 est que la contrainte de groupe $c_1 + c_2 + c_3 \equiv 0$ n'est pas
+      seulement une condition algébrique mais encode une symétrie structurelle de la représentation
+      de Weil. L'automorphisme métaplectique $\phi_\omega$ agit sur le groupe de Heisenberg par
+      un redimensionnement des coordonnées $(a,b)$ par une racine cubique de l'unité, tout en
+      préservant la direction centrale.
+    </p>
+    <p>
+      Le Théorème 4.4 montre que cet automorphisme force la dégénérescence spectrale sur le
+      graphe de Cayley adapté aux couleurs : les comptages de coquilles BFS $\sigma_c(n)$ sont
+      invariants sous $c \mapsto \omega c$. C'est précisément cette dégénérescence spectrale qui
+      contraint le groupe de symétrie du triplet à être SU(3) plutôt que des groupes plus grands
+      comme U(3) ou $G_2$.
+    </p>
+    <p>
+      L'hypothèse [H-color] affirme que le triplet de couleur est co-admissible, c'est-à-dire
+      que les trois représentations de Weil $\rho_{c_1}$, $\rho_{c_2}$, $\rho_{c_3}$ satisfont
+      conjointement les contraintes d'admissibilité. C'est la claim ouverte principale dont le
+      test numérique est effectué dans <a href="../o32">O32</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Mécanisme algébrique : symétrie de Vandermonde et égalité inconditionnelle des rangs</h2>
+    <p>
+      L'obstruction spectrale (Théorème 5.3) montre que [H-color] ne peut pas être prouvé par
+      égalité globale des spectres de Markov. O31 identifie le mécanisme algébrique correct.
+    </p>
+    <p>
+      L'irréductibilité de la représentation de Weil force le centre de Heisenberg à agir comme
+      un scalaire dans chaque secteur de couleur $V_{c_i}$ (lemme de Schur). Pour tout coset
+      horizontal $(a,b)$ fixé et trois valeurs centrales distinctes $z_0, z_1, z_2$, les vecteurs
+      BFS correspondants dans $V_{c_1} \oplus V_{c_2} \oplus V_{c_3}$ s'assemblent en la matrice
+      de phase Vandermonde
+      \[
+        V = (\lambda_j^k)_{j,k}, \quad \lambda_j = e^{2\pi i c_j / q},
+      \]
+      dont le déterminant $\det V = \prod_{j > k}(\lambda_j - \lambda_k) \neq 0$ puisque
+      $c_1, c_2, c_3$ sont deux à deux distincts modulo $q$. Chaque coset horizontal contribue
+      donc exactement <em>une</em> direction indépendante à chacun des $V_{c_1}$, $V_{c_2}$,
+      $V_{c_3}$, symétriquement.
+    </p>
+    <p>
+      La Proposition résultante (Égalité des rangs sectoriels de couleur) est inconditionnelle :
+      pour toute profondeur BFS $n$ et tout vecteur initial, $r_c(n) = r_{\omega c}(n) =
+      r_{\omega^2 c}(n)$, où $r_{c_i}(n)$ compte les directions indépendantes dans $V_{c_i}$
+      atteintes à la profondeur $n$. Ce rang sectoriel est égal au nombre de cosets horizontaux
+      distincts atteints — une quantité purement combinatoire, indépendante de $c_i$.
+    </p>
+    <p>
+      Ceci prouve [H-color] au niveau des rangs sectoriels BFS. La campagne numérique d'O32
+      (confirmant $\sigma_c(n) = \sigma_{\omega c}(n)$ dans le fonctionnel de capacité complet)
+      est cohérente avec ce résultat algébrique et étend les preuves à l'observable empreinte
+      complète.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Non-injectivité locale vs relationnelle (Section 6)</h2>
+    <p>
+      O31 fournit une unification conceptuelle des trois facteurs de jauge du Modèle Standard en
+      les classifiant selon le <em>type</em> de non-injectivité de la projection
+      $\Pi: \Omega \to \mathcal{O}$ :
+    </p>
+    <ul>
+      <li>
+        <strong>U(1) — non-injectivité de phase.</strong> L'orbite complète U(1)
+        $\{e^{i\theta}\chi\}$ est contenue dans chaque fibre BI-indiscernable. U(1) agit dans
+        un seul secteur de caractère ; c'est la symétrie d'une fibre individuelle sous rotation
+        de phase globale.
+      </li>
+      <li>
+        <strong>SU(2) — non-injectivité corrélée minimale.</strong> La parité $\mathbb{Z}_2$
+        $\chi \leftrightarrow -\chi$ identifie exactement deux secteurs ($c$ et $q-c$) en une
+        seule fibre. L'espace effectif $V_\rho \cong \mathbb{C}^2$ et le groupe de jauge SU(2)
+        proviennent de la symétrie de cette fibre à deux éléments. Il s'agit d'une
+        non-injectivité <em>locale</em> : forcée par une seule étape de projection.
+      </li>
+      <li>
+        <strong>SU(3) — non-injectivité corrélée relationnelle.</strong> L'orbite $\mathbb{Z}_3$
+        de couleur $\{c, \omega c, \omega^2 c\}$ identifie trois secteurs en une seule fibre.
+        L'espace effectif $\tilde{V}_\mathrm{color} \cong \mathbb{C}^3$ et le groupe SU(3)
+        proviennent de la symétrie de cette fibre à trois éléments. Il s'agit d'une
+        non-injectivité <em>relationnelle</em> : les trois secteurs sont co-admissibles par une
+        corrélation $\mathbb{Z}_3$, pas par une involution unique.
+      </li>
+    </ul>
+    <p>
+      La hiérarchie de jauge U(1) ⊂ SU(2) ⊂ SU(3) en complexité correspond exactement à la
+      hiérarchie 1 → 2 → 3 de la taille de l'orbite de fibre BI-admissible minimale.
+      La non-factorisabilité (Foundation M, Axiome A3) est l'origine structurelle uniforme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochronie</h2>
+    <p>
+      O31 est le fondement théorique pour l'émergence du groupe de jauge de couleur SU(3) à
+      partir des contraintes d'admissibilité. Conjointement avec les résultats antérieurs sur
+      SU(2) et U(1) (Q6a), il fournit une voie vers le groupe de jauge complet du Modèle
+      Standard comme composite de trois structures d'admissibilité.
+    </p>
+    <p>
+      Le résultat de dégénérescence spectrale métaplectique connecte la contrainte de groupe
+      sur les charges de couleur à la géométrie spectrale du graphe de Cayley de Heisenberg,
+      fournissant une réalisation concrète du principe de non-injectivité au niveau de la
+      symétrie de jauge.
+    </p>
+    <p>
+      La vérification numérique de [H-color] est fournie par <a href="../o32">O32</a>. La
+      dynamique de jauge pour SU(3) est dérivée dans Q12 via la variation verticale de
+      l'entropie spectrale projective.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.20333303" rel="noopener">
+        <i lang="en">SU(3) from Colour Triplet Co-admissibility: Towards the Complete Standard
+        Model Gauge Group</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.20333303
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

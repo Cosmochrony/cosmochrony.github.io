@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Ordonnancement temporel projectif | Cosmochrony</title>
   <meta name="description"
-    content="Page de présentation de l'article de Cosmochrony sur l'ordonnancement temporel projectif,
+    content="Page de présentation de l'article de Cosmochrony sur l'ordre temporel projectif,
     la capacité projetée cumulative et la propriété de one-way activation dans la cascade
     d'admissibilité spectrale."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/temporal-ordering/"/>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19474639" rel="noopener">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20236498" rel="noopener">
         Lire la prépublication
       </a>
       <a class="btn subtle" href="/science/spectral/program/">
@@ -61,7 +61,7 @@
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Cet article propose une notion structurelle d'ordonnancement temporel dans le cadre de
+        Cet article propose une notion structurelle d'ordre temporel dans le cadre de
         Cosmochrony. Son idée centrale est que l'observable pertinent le long de la cascade
         d'admissibilité n'est pas la capacité résiduelle $\sigma_{\mathrm{pair}}(n)$, qui décroît
         par construction, mais son complément
@@ -71,11 +71,11 @@
       <p>
         Le résultat numérique principal est que $I(n)$ est strictement non décroissante pour chaque
         paire conjuguée testée et pour chaque nombre premier testé
-        $q \in \{29,61,101,151\}$. Cette monotonie est observée pas à pas le long de la cascade BFS,
+        $q \in \{29,61,101,151,211\}$. Cette monotonie est observée pas à pas le long de la cascade BFS,
         sans aucune régression physiquement significative.
       </p>
       <p>
-        L'article interprète ce comportement comme un <strong>ordonnancement temporel
+        L'article interprète ce comportement comme un <strong>ordre temporel
         projectif</strong> : le temps n'est pas une évolution du substrat $\chi$, mais un ordre
         induit par l'accumulation de structure spectrale admissible sous une projection non injective
         fixe $\Pi$.
@@ -107,7 +107,7 @@
         </div>
         <div class="kv">
           <div class="k">Portée numérique</div>
-          <div class="v">Toutes les paires conjuguées pour $q \in \{29,61,101,151\}$</div>
+          <div class="v">Toutes les paires conjuguées pour $q \in \{29,61,101,151,211\}$</div>
         </div>
       </div>
     </aside>
@@ -131,7 +131,7 @@
         les projections admissibles, et non comme une dynamique fondamentale sur $\chi$.
       </li>
       <li>
-        <strong>Compatibilité avec O24 :</strong> l'ordonnancement n'élargit pas le rang observable.
+        <strong>Compatibilité avec O24 :</strong> l'ordre n'élargit pas le rang observable.
         Il réordonne les sélections admissibles dans les fibres à l'intérieur de la structure
         observable fixée par les résultats antérieurs de la série O.
       </li>
@@ -140,7 +140,32 @@
         $\sigma_{\mathrm{pair}}(n)\leq\sigma_{\mathrm{pair}}(n-1)$ et précise exactement ce qu'il
         reste à démontrer analytiquement.
       </li>
+      <li>
+        <strong>Structure de machine à états (Remarque) :</strong> la cascade admissible porte la
+        structure d'une machine à états orientée — les nœuds sont des projections admissibles, les
+        arêtes sont des transitions admissibles, et les poids de branchement jouent le rôle des
+        probabilités quantiques. L'indice $n$ acquiert son sens temporel entièrement depuis
+        l'orientation du graphe d'admissibilité, sans paramètre de fond.
+      </li>
+      <li>
+        <strong>Première transition garantie :</strong> par l'incomplétude projective (Foundation,
+        Corollaire du Théorème 5.4), toute projection admissible \(\Pi_0\) laisse un résidu
+        non trivial — la première transition $U_0 \to U_1$ est donc une nécessité structurelle,
+        non un postulat.
+      </li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>Question ouverte</h2>
+    <p>
+      Si l'enveloppe caractéristique $n^*(q)$ — à laquelle $\sigma_{\mathrm{pair}}$ change de
+      régime — coïncide avec la profondeur de verrouillage $n_c(q)$ à laquelle la structure
+      d'admissibilité BFS passe d'un régime localement dominé à un régime universellement dominé.
+      Une réponse positive connecterait l'ordre spectral de ce papier aux résultats de
+      géométrie effective de Q10 (où $A_H(q) \to 2$ quand $q \to \infty$), et permettrait de
+      dériver $n_c(q)$ analytiquement depuis la structure d'admissibilité de
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+    </p>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
@@ -186,7 +211,7 @@
     <h2>Référence</h2>
     <p>
       Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.19474639" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20236498" rel="noopener">
         <i lang="en">Projective Temporal Ordering and Cumulative Projected Capacity:
           Numerical Evidence from the Spectral Admissibility Cascade</i>. Preprint.
       </a>

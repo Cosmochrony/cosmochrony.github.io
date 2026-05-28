@@ -4,19 +4,19 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Spectral Admissibility Programme | Cosmochrony</title>
+  <title>The Spectral Admissibility Sub-Programme | Cosmochrony</title>
   <meta name="description"
-    content="Overview of the spectral admissibility programme within Cosmochrony."/>
-  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/admissibility/index_it.html"/>
-  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/admissibility/index_es.html"/>
-  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/admissibility/index_de.html"/>
-  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/admissibility/index_fr.html"/>
+    content="Synthesis and hub of the spectral admissibility sub-programme: from the Born-Infeld bounded-flux
+    constraint on the Weil representation of Heis_3(Z/qZ) to the cascade exponent beta* = 0.126. Five precursor
+    papers and thirty-two O-series papers, one closed derivation chain."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Spectral Admissibility Programme"/>
+  <meta property="og:title" content="The Spectral Admissibility Sub-Programme"/>
   <meta property="og:description"
-    content="Overview of the spectral admissibility programme within Cosmochrony."/>
+    content="Which spectral sectors of the Weil representation survive the Born-Infeld bounded-flux constraint? The
+    sub-programme answers it and derives the cascade exponent beta* = 0.126. Presentation note and paper hub."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/science/spectral/admissibility/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
 
@@ -39,8 +39,13 @@
         </svg>
       </a>
       <div>
-        <h1>Spectral Admissibility Programme</h1>
-        <p class="subtitle">Structural constraints on relational spectral systems under bounded flux.</p>
+        <h1>The Spectral Admissibility Sub-Programme</h1>
+        <p class="subtitle">
+          Which spectral sectors of the Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ survive the
+          Born–Infeld bounded-flux constraint? This sub-programme — the computational engine of the Cosmochrony
+          corpus — answers that question and derives the cascade exponent $\beta^* \approx 0.126$ from structural
+          constraints alone. This page is its synthesis and the hub to all its papers.
+        </p>
       </div>
     </div>
     <nav class="section-nav" aria-label="Sections">
@@ -52,16 +57,89 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="card">
-    <h2>Overview</h2>
-    <p>The spectral admissibility programme studies how relational systems constrained by bounded flux select admissible
-      spectral configurations. It combines representation theory, spectral graph theory, and relational constraints to
-      identify structurally stable regimes.</p>
-    <p>Within the Cosmochrony framework, this programme clarifies which relational structures remain compatible with
-      bounded relaxation dynamics and how those constraints shape the admissible hierarchy of relational graphs.</p>
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The spectral admissibility sub-programme answers a single central question. The non-injective projection
+        $\Pi$ acts on the Weil representation of the Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
+        decomposed into irreducible blocks $V_c$ indexed by characters $c\in(\mathbb{Z}/q\mathbb{Z})^\times$. The
+        Born–Infeld saturation constraint bounds the projective flux carried by each mode,
+        $A_n \le A_n^{\max} = c_\chi/\sqrt{\lambda_n}$, so the question is: <em>which combinations of Weil sectors
+        remain admissible, and what capacity exponent $\delta_{\mathrm{pair}}$ do they carry?</em>
+      </p>
+      <p>
+        The sub-programme occupies a pivotal position in the Cosmochrony corpus: it is the <strong>computational
+        engine</strong>. It takes the algebraic output of the foundational branch (the Weil representation and its
+        decomposition) and produces the two inputs the emergence branch depends on — the admissible
+        spin-$\tfrac12$ sector with its thread $Q_8\subset 2I\subset SU(2)$, and the cascade exponent
+        $\beta^*\approx 0.126$ matching the charged-lepton window $\beta^*\in(0.09,0.13)$ from
+        $m_e:m_\mu:m_\tau$.
+      </p>
+      <div class="note" role="note">
+        <strong>This page is a structured entry point, not a summary of results.</strong> The sub-programme spans
+        over thirty papers written across successive obstruction identifications and resolutions; the
+        <em>Spectral Admissibility Presentation Note</em> maps them, records the status of every result as proved,
+        structural, numerical, or open, and is synthesised here.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Synthesis (presentation note, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">5 precursor papers + O1–O32; capacity exponent, lepton hierarchy, $SU(2)$ thread, $SU(3)$ colour</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">$SU(2)$ sector analytically closed; numerically closed for $q\le 307$; $SU(3)$ conditional on [H-color]</div>
+        </div>
+        <div class="kv">
+          <div class="k">DOI</div>
+          <div class="v"><a href="https://doi.org/10.5281/zenodo.20402946" rel="noopener">10.5281/zenodo.20402946</a></div>
+        </div>
+      </div>
+      <p style="margin-top:1em">
+        <a class="btn primary" href="https://doi.org/10.5281/zenodo.20402946" rel="noopener">
+          Read the synthesis note</a>
+      </p>
+    </aside>
   </section>
   <section class="card">
-    <h2>Programme structure</h2>
+    <h2>The structural chain</h2>
+    <p style="text-align:center">
+      $\underbrace{c_\chi}_{\text{BI saturation}}
+      \;\Longrightarrow\;
+      \underbrace{A_n^{\max} = c_\chi/\sqrt{\lambda_n}}_{\text{admissibility envelope}}
+      \;\Longrightarrow\;
+      \underbrace{\sigma^{\mathrm{can}}_{\mathrm{pair}}(n)}_{\text{pair capacity}}
+      \;\Longrightarrow\;
+      \underbrace{\delta_{\mathrm{pair}}}_{\text{capacity exponent}}
+      \;\Longrightarrow\;
+      \underbrace{\beta^* \approx 0.126}_{\text{cascade exponent}}.$
+    </p>
+    <p>
+      Each arrow is a distinct analytical or numerical sub-problem, resolved at a different stage of the
+      sub-programme. The chain is <em>unconditional</em> with respect to the fibre structure of $\Pi$ (closed in
+      O24 via the Verticality Lemma): no free parameter is adjusted to produce $\beta^*$, via the structural
+      relation $\beta^*\approx 1/(\delta_{\mathrm{pair}}+\tfrac12)$. The sole remaining conditionality concerns the
+      $SU(3)$ colour sector and the hypothesis [H-color].
+    </p>
+  </section>
+  <section class="card">
+    <h2>Papers of the sub-programme</h2>
     <ol>
       <li><a href="admissibility"><strong>Spectral admissibility</strong></a>: bounds on the amplitude of individual
         spectral modes.</li>
@@ -185,16 +263,66 @@
         \(\Phi_{q,\rho} = \rho \circ \iota \circ \pi\), and thereby turning the
         \(Q_8 \subset 2I \subset SU(2)\) thread from a structural candidate into a
         rigidity theorem with a representation-theoretic interpretation of \(\beta^*\).</li>
+      <li><a href="o28"><strong>O28</strong></a>: asymptotic calibration of the BFS window
+        and effective dimension of the admissible trajectory, establishing the correct
+        asymptotic variable \(n_1(q)/q\) and closing the normalization analysis of the
+        O-series capacity campaign.</li>
+      <li><a href="o29"><strong>O29</strong></a>: spin-\(\tfrac{1}{2}\) sector identification
+        via the symmetric rank formula — the Born–Infeld parity constraint forces every outer
+        product \(M_j\) into the complex symmetric subspace \(\mathrm{Sym}(V_\rho,\mathbb{C})\),
+        yielding covariance rank \(r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2\); the unique positive
+        inversion at \(r_{\mathrm{eff}} = 3\) gives \(d_\rho = 2\), confirming spin-\(\tfrac{1}{2}\)
+        universally across \(q \in \{61,101,151,211\}\).</li>
+      <li><a href="o30"><strong>O30</strong></a>: analytical derivation of the eigenvalue ratio
+        \([1:\tfrac{1}{2}:\tfrac{1}{2}]\) in \(\mathrm{Sym}^2(V_\rho)\) — the Born–Infeld parity
+        anti-linearity forces the equatorial constraint \(|\alpha_j|=|\beta_j|\), the covariance
+        diagonalises under single-harmonic phase decorrelation, and the factor of~2 is the squared
+        symmetric-tensor normalisation coefficient; correction \(O(q^{-1/2})\) from U1.</li>
+      <li><a href="o31"><strong>O31</strong></a>: structural framework for the SU(3) identification
+        via colour triplet co-admissibility — defines the colour triplet \(\{c_1,c_2,c_3\}\) with
+        \(c_1+c_2+c_3\equiv 0\pmod{q}\), proves the metaplectic automorphism forces
+        \(\sigma_c(n)=\sigma_{\omega c}(n)\), and establishes \(G_{\mathrm{SM}} =
+        \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)\) as a composite of three
+        admissibility fixed points, conditional on [H-color].</li>
+      <li><a href="o32"><strong>O32</strong></a>: numerical test of hypothesis [H-color] on
+        \(q\in\{61,151,211\}\) — all test primes pass \(R\leq 3\),
+        \(\delta_{\mathrm{tri}}\approx 3\delta_c\) at sub-percent level, and
+        \(C_{\mathrm{color}}\) has numerical rank 1 in all cases; [H-color] numerically confirmed
+        for \(q\in\{151,211\}\); analytical proof open.</li>
     </ol>
     <p>Q-series:</p>
     <ol>
+      <li><a href="q1"><strong>Q1</strong></a>: phase coherence as a structural consequence of
+        projective admissibility — proves that any admissible transition preserves Born–Infeld
+        indiscernibility of conjugate Weil blocks, deriving the singlet correlator
+        \(E(\hat{a},\hat{b})=-\hat{a}\cdot\hat{b}\) and the Tsirelson bound from admissibility
+        alone, without postulating quantum mechanics.</li>
+      <li><a href="q2"><strong>Q2</strong></a>: quantum structure beyond spin-\(\tfrac{1}{2}\)
+        — on the binary icosahedral group \(2I\), spin-\(\tfrac{1}{2}\) and spin-\(\tfrac{3}{2}\)
+        sectors share eigenvalue \(\lambda=18\) (co-admissibility); Born rule, singlet correlator,
+        and Tsirelson bound derived for spin-\(\tfrac{3}{2}\); \(\mathrm{SU}(2)\) established as
+        the stable fixed point of the admissibility flow.</li>
+      <li><a href="q3"><strong>Q3</strong></a>: universal spin-\(j\) singlet from admissibility
+        — Born–Infeld indiscernibility forces the bipartite proto-state to be the singlet
+        \(|\Omega_j\rangle\) by Schur's lemma; universal correlator
+        \(E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})\) proved for all
+        5 admissible sectors \(j\in\{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}\) of \(2I\).</li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li><a href="q7"><strong>Q7</strong></a>: structural bridge between the admissible
+      <li>
+        <a href="/science/emergent-geometry/q5/a/"><strong>Q5a</strong></a>: large-\(q\) Mosco convergence of the admissibility
+        forms \(\mathcal{E}_q\) on \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) to the continuum
+        limit \(L_\Pi = -A\partial_x^2\) on \(L^2(\mathbb{R})\);
+        <a href="/science/emergent-geometry/q5/b/"><strong>Q5b</strong></a>: BFS shell stratification of \(\mathrm{Heis}_3(\mathbb{R})\)
+        producing a four-dimensional Lorentzian spacetime with temporal direction identified with
+        BFS depth; [H-lift] proved by Q9.</li>
+      <li>
+        <a href="q6/a"><strong>Q6a</strong></a>: gauge structure from admissible non-injective
+        projection — \(\mathrm{U}(1)\) and \(\mathrm{SU}(2)\) as admissibility fixed points,
+        \(G_{\mathrm{SM}}=\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)\) as a composite
+        (conditional on [H-color]);
+        <a href="/science/emergent-geometry/q6/b/"><strong>Q6b</strong></a>: effective Lorentzian geometry from the admissibility
+        filter \(\Pi_q\), inheriting Q5a hypotheses only.</li>
+      <li><a href="/science/emergent-geometry/q7/"><strong>Q7</strong></a>: structural bridge between the admissible
         three-dimensional sector \(H_{\mathrm{eff}} \simeq \mathbb{C}^3\) and the spatial
         three-dimensional sector of the emergent Lorentzian geometry, proving that any
         identification is uniquely constrained by representation theory (via
@@ -202,7 +330,77 @@
         the problem to a single spectral criterion on \(\sigma_2(L_{\mathrm{eff}})\), with
         the absence of cross terms established analytically and the remaining condition
         \(A_H = A_z\) governing asymptotic isotropy.</li>
+      <li><a href="/science/emergent-geometry/q8/"><strong>Q8</strong></a>: sub-principal symbol of the effective operator
+        forces \(A_Z = C_{\mathfrak{su}(2)} = 2\) unconditionally under Q5a via Casimir rigidity,
+        independently of the spatial bridge problem.</li>
+      <li><a href="/science/emergent-geometry/q9/"><strong>Q9</strong></a>: proof of hypothesis [H-lift] — the modulation
+        generator is suppressed at rate \(O(q^{-1/2})\), and \(A_H > 0\) follows by coercivity
+        independently of the bridge; closes the main conditionality of Q5b.</li>
+      <li><a href="/science/emergent-geometry/q10/"><strong>Q10</strong></a>: asymptotic \(\mathfrak{su}(2)\)-isotropy of the
+        effective quadratic form — character-independence of the large-\(q\) limit forces isotropy
+        under [U]; the unique isotropic form is the Casimir with value 2, giving \(A_H\to 2\).</li>
+      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a>: temporal Casimir rigidity closes Q5b open
+        problem O3 — Schur rigidity forces \(A_\tau=2\), closing the co-metric
+        \(g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}\); completes the full
+        derivation chain Q5a\(\to\)Q5b\(\to\cdots\to\)Q11.</li>
+      <li><a href="q12"><strong>Q12</strong></a>: Yang–Mills dynamics from the vertical variation
+        of the projective spectral entropy \(S_\Pi[g,\mathcal{A}]\), deriving the Yang–Mills
+        equations from the Seeley–DeWitt coefficient \(a_4\); establishes that gravity (\(a_2\))
+        and gauge dynamics (\(a_4\)) are separated by geometric direction and spectral order
+        rather than by a missing symmetry group.</li>
+      <li><a href="q13"><strong>Q13</strong></a>: gauge–gravity spectral synthesis — solves the
+        joint variational problem \(\delta_{g,\mathcal{A}} S_\Pi = 0\) and derives the coupled
+        Einstein–Yang–Mills system; computes the \(a_6\) cross-coupling
+        \(R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}\); constructs the Eddington–Born–Infeld
+        joint completion; obtains the hierarchy ratio
+        \(G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot[\log(\Lambda/\mu)]^{-1}\)
+        without fine-tuning as a structural consequence of spectral stratification.</li>
     </ol>
+    <p>Supporting papers:</p>
+    <ul>
+      <li><a href="/science/emergent-geometry/u1/"><strong>U1</strong></a>: uniform spectral universality for Weil fingerprint
+        energies — proves hypothesis [U] with rate \(\varepsilon(q)=O(q^{-1/2})\) via Weil-generator
+        Lipschitz bound and BFS–Carnot–Carathéodory convergence; used by Q10, W1, O30.</li>
+      <li><a href="/science/emergent-geometry/w1/"><strong>W1</strong></a>: weight stabilisation of the admissible Dirichlet
+        form — proves [H-w] (convergence \(a_q(s)\to A>0\)) as a structural consequence of
+        fibre-invariance of admissible observables, made quantitative by U1; reduces open Q5a
+        hypotheses to [H1], [H-E1], [C].</li>
+      <li><a href="/science/emergent-geometry/h2/"><strong>H2</strong></a>: semiclassical consistency of the Weil representation
+        — proves [H2] (strong convergence \(\hat{X}_q\to x\), \(\hat{P}_q\to -i\partial_x\)) via
+        a quantitative Poisson aliasing lemma and discrete Sobolev identity; closes all Q5a
+        Mosco convergence hypotheses unconditionally.</li>
+      <li><a href="heisenberg-structure"><strong>Heisenberg structure</strong></a>: non-factorisability
+        and emergence of Heisenberg structure — admissibility constraints force a non-Abelian
+        relational group structure uniquely identified as \(\mathrm{Heis}_3\) when the admissible
+        dimension is three; structural explanation for \([X,P]=i\hbar\).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Inputs and outputs</h2>
+    <p>
+      <strong>Upstream inputs.</strong> The sub-programme takes from the foundational branch the fact that
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation are <em>theorems</em> of the axioms
+      (not postulates), the Born–Infeld saturation functional with constant $c_\chi$, the structural necessity of
+      non-injectivity, and the no-scale principle making $c_\chi$ the only dimensionful parameter. No result from
+      the emergence branch is an input.
+    </p>
+    <p>
+      <strong>Outputs.</strong> The cascade exponent $\beta^*\approx 0.126$ (consumed by the lepton-hierarchy and
+      charge–mass papers); the admissibility thread $Q_8\subset 2I\subset SU(2)$ and the spin-$\tfrac12$ sector
+      $V_\rho\cong\mathbb{C}^2$ (consumed by the quantum and geometric sub-programmes); the threshold
+      $\Sigma_c(n_3)=3$ with $\mathrm{Im}\,\mathbb{H}\cong\mathfrak{su}(2)$; and the conditional $SU(3)$
+      co-admissible colour triplet.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status</h2>
+    <p>
+      The sub-programme is <strong>analytically closed for the $SU(2)$ sector</strong> and
+      <strong>numerically closed for $q\in\{29,61,101,151,211,307\}$</strong>. Two open deliverables define its
+      current boundary: the pointwise proof of hypothesis [H-color] (three of four levels already established
+      analytically in O31–O32), and the extension of the numerical campaign to $q=401$. The extension to $SU(3)$
+      is conditional on [H-color], whose analytical proof remains an open problem in Hecke spectral theory.
+    </p>
   </section>
 </main>
 <footer>

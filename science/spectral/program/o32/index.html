@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+    [H-color] | Cosmochrony</title>
+  <meta name="description"
+    content="O32 tests Hypothesis [H-color] (triplet co-admissibility) numerically on primes
+    q ≡ 1 mod 3. Normalised ratios R pass the threshold R ≤ 3 for q ∈ {151, 211, 307},
+    confirming [H-color] numerically across the four-prime dataset {61, 151, 211, 307};
+    analytical proof remains open."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+    [H-color]"/>
+  <meta property="og:description"
+    content="O32 tests [H-color] for q ∈ {61,151,211,307} (test) and q ∈ {29,101} (control).
+    All test primes pass R ≤ 3; δ_tri ≈ 3δ_c at sub-percent level; C_color has rank 1.
+    Analytical proof of [H-color] remains open."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o32/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+          [H-color]</h1>
+        <p class="subtitle">
+          O32 tests the colour triplet co-admissibility hypothesis [H-color] from
+          <a href="../o31">O31</a> numerically on test primes $q \equiv 1 \pmod{3}$ and
+          control primes. All test primes pass the co-admissibility threshold, confirming
+          [H-color] for $q \in \{151, 211, 307\}$. The four-prime dataset
+          $q \in \{61, 151, 211, 307\}$ is complete.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333304">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        O32 provides the numerical validation of Hypothesis [H-color] from
+        <a href="../o31">O31</a>: the claim that colour triplets
+        $\{c_1, c_2, c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$ with
+        $c_1+c_2+c_3 \equiv 0 \pmod{q}$ are co-admissible on the Heisenberg graph.
+      </p>
+      <p>
+        The test is conducted on primes $q \equiv 1 \pmod{3}$ (test primes:
+        $q \in \{61, 151, 211, 307\}$) and control primes $q \in \{29, 101\}$. The combined
+        noise floor is $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$. Normalised ratios $R$
+        quantify the spectral overlap of the co-admissible triplet against the noise baseline.
+      </p>
+      <p>
+        Results: $R = 2.1$ for $q=61$ (1/4 triplets valid), $R = 0.4$ for $q=151$
+        (4/4 triplets), $R = 1.0$ for $q=211$ (4/4 triplets), $R = 0.7$ for $q=307$
+        (4/4 triplets). All test primes satisfy the threshold $R \leq 3$. Additionally,
+        $\delta_\mathrm{tri} \approx 3\delta_c$ at sub-percent level, and the colour
+        covariance $C_\mathrm{color}$ has numerical rank 1 in all cases.
+      </p>
+      <div class="note" role="note">
+        <strong>Status.</strong> [H-color] is numerically confirmed for $q \in \{151, 211, 307\}$
+        (4/4 triplets each); at $q = 307$, $R = 0.7$ with $\delta_\mathrm{tri} = 12.355
+        \approx 3\delta_c$ (deviation 1.5\%). The four-prime dataset
+        $q \in \{61, 151, 211, 307\}$ is complete. $H_\mathrm{color,eff}$ (equality of capacity
+        exponents in the $q\to\infty$ limit) is analytically established via Proposition
+        avg-hcolor. Pointwise proof at fixed $q$ remains open.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Structurally motivated ([H-color] numerically confirmed for
+            q ∈ {151, 211, 307} — four-prime dataset complete; H_color,eff analytically
+            proved in expectation; pointwise proof open)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v"><a href="../o31">O31</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Q6a, Q12</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Numerical results</h2>
+    <ul>
+      <li>
+        <strong>Test primes ($q \equiv 1 \pmod{3}$):</strong> $q \in \{61, 151, 211, 307\}$.
+        Control primes: $q \in \{29, 101\}$. Combined noise floor
+        $\mathrm{ctrl\_ref} = 1.657 \times 10^{-3}$.
+      </li>
+      <li>
+        <strong>$q = 61$:</strong> $R = 2.1$, 1 out of 4 tested triplets satisfy the
+        co-admissibility criterion. Passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 151$:</strong> $R = 0.4$, 4 out of 4 triplets valid. Clear confirmation
+        of [H-color]; passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>$q = 211$:</strong> $R = 1.0$, 4 out of 4 triplets valid. Consistent
+        with $q=151$; passes $R \leq 3$.
+      </li>
+      <li>
+        <strong>Triplet exponent:</strong> $\delta_\mathrm{tri} \approx 3\delta_c$ at
+        sub-percent level across all test primes, consistent with the triplet being a
+        threefold composite of single-colour admissibility.
+      </li>
+      <li>
+        <strong>Colour covariance rank:</strong> the matrix $C_\mathrm{color}$ has numerical
+        rank 1 in all tested cases, supporting the SU(3) identification of O31.
+      </li>
+      <li>
+        <strong>$q = 307$:</strong> 4/4 triplets, $R = 0.7$ (well below the threshold $R \leq 3$),
+        $\delta_\mathrm{tri} = 12.355 \approx 3\delta_c$ (deviation 1.5\%). Four-prime
+        dataset complete.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The passing of all test primes $R \leq 3$ provides numerical support for [H-color].
+      The most conclusive results are for $q = 151$ and $q = 211$, where all four tested
+      triplets satisfy the co-admissibility criterion and the normalised ratio $R$ is well
+      below the threshold.
+    </p>
+    <p>
+      The result $\delta_\mathrm{tri} \approx 3\delta_c$ is structurally expected: if the
+      three colour charges $c_1, c_2, c_3$ are co-admissible, their joint projective capacity
+      decay should be the product of the three individual decays. The sub-percent agreement
+      with this prediction validates the factorisation structure.
+    </p>
+    <p>
+      The rank-1 numerical structure of $C_\mathrm{color}$ is consistent with the SU(3)
+      identification from O31: the co-admissible triplet has a one-dimensional admissible
+      covariance, corresponding to the single complex direction preserved by the SU(3) action.
+    </p>
+    <p>
+      The partial result for $q = 61$ (1/4 triplets valid) may reflect finite-size effects
+      at smaller primes or a genuine distinction between triplets at this prime. The larger
+      primes $q = 151$ and $q = 211$ show full triplet co-admissibility.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Spectral obstruction and the limits of the Markov approach</h2>
+    <p>
+      O31v2 establishes an exact result for the standard graph that has direct consequences
+      for how [H-color] can be proved analytically. The generator-twist isospectrality
+      theorem (O31 Theorem 5.3) shows that, for every $c \in (\mathbb{Z}/q\mathbb{Z})^*$,
+      the Markov operators $\rho_c(P_{S_q})$ and $\rho_c(P_{\phi_\omega(S_q)})$ are
+      unitarily conjugate, hence isospectral.
+    </p>
+    <p>
+      However, this isospectrality does <em>not</em> extend across distinct central
+      characters: the spectra of $\rho_c(P_{S_q})$ and $\rho_{\omega c}(P_{S_q})$ are
+      generically distinct ($\max|\Delta\lambda| \approx 0.3$–$0.4$, same order as
+      non-triplet pairs), confirmed for all $q \leq 157$ with $q \equiv 1 \pmod{3}$.
+      <strong>[H-color] on the standard graph cannot be derived from global
+      Markov-spectrum equality</strong>: the BFS capacity is a strictly finer observable,
+      and any analytical proof must act directly on the rank structure of the BFS walk.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Physical interpretation: colour charges and quark structure</h2>
+    <p>
+      Each element $c_i$ of a valid colour triplet simultaneously belongs to a conjugate
+      pair $\{c_i, q-c_i\}$ (carrying spin-½, $d_\rho = 2$, from O29) and a colour triplet
+      (SU(3) fixed point from O31). An individual sector $c_i$ therefore carries spin-½ and
+      one colour charge: the minimal quantum-number content of a quark.
+    </p>
+    <p>
+      The sum-zero constraint $c_1 + c_2 + c_3 \equiv 0 \pmod{q}$, derived from the
+      $\mathbb{Z}_3$ orbit structure, is the discrete analogue of baryon colour-neutrality.
+      The confirmation of [H-color] is thus a necessary step toward identifying individual
+      admissible sectors as colour-charge carriers and colour triplets as the pre-image
+      structure of colour-neutral baryons.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O32 is the numerical companion to <a href="../o31">O31</a>. Together, they provide
+      the theoretical framework and numerical evidence for the emergence of the SU(3) colour
+      gauge group from admissibility constraints on the Heisenberg graph.
+    </p>
+    <p>
+      The confirmation of [H-color] feeds directly into Q6a (Standard Model gauge structure)
+      and Q12 (Yang–Mills dynamics from projective spectral entropy), where the SU(3) group
+      is used as an input. The conditional status of these downstream results lifts partially
+      as [H-color] is numerically confirmed; full unconditional status requires the analytical
+      proof of [H-color], which remains open.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Analytical sharpening (v1.3+)</h2>
+    <p>
+      O32 additionally proves analytically (Proposition avg-hcolor) that for block-averaged
+      capacity profiles:
+      \[
+        \mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1}),
+      \]
+      and similarly for $\omega^2 c$. This establishes $H_{\mathrm{color,eff}}$ — equality of
+      capacity exponents in expectation — in the $q \to \infty$ limit.
+    </p>
+    <p>
+      The argument proceeds by showing that the BFS fingerprint frequency distribution for
+      $c$ and $\omega c$ blocks differs only by a shift of the distinguished frequency
+      ($c B_1 \mapsto \omega c B_1$), which preserves the cardinality of new distinct
+      frequencies at every BFS depth. The $O(q^{-1})$ correction arises from the excess
+      probability on the distinguished frequency, accumulated over a rank window of size $O(q)$.
+    </p>
+    <p>
+      The observed decrease $R_\mathrm{var} \propto q^{-1}$ (factor 5 from $q=61$ to $q=151$)
+      is interpreted as the finite-$q$ modulation bias predicted by this argument. Three levels
+      of the colour hypothesis are now distinguished: pointwise ($H_\mathrm{color,ptwise}$,
+      numerical), in expectation ($H_\mathrm{color,eff}$, analytical), and global
+      ($H_\mathrm{color}$, open).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Open direction</h2>
+    <p>
+      The primary open problem is the pointwise analytical proof of [H-color] at fixed finite
+      $q$: showing that each individual capacity profile $\sigma_{c_i}(n)$ equals the others,
+      not just their block averages. The expectation-level result (Proposition avg-hcolor)
+      already establishes the large-$q$ limit; the remaining challenge is the finite-$q$
+      control of fluctuations around the expected value.
+    </p>
+    <p>
+      The completed computation at $q = 307$ ($R = 0.7$, 4/4 triplets,
+      $R_\mathrm{var} = 1.17\times10^{-3}$) extends the numerical evidence to a larger
+      prime and is consistent with the predicted $R_\mathrm{var} \propto q^{-1}$ scaling.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.20333304" rel="noopener">
+        <i>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
+        [H-color]</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.20333304
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Finite-q Corrections to the Carnot Capacity Identification | Cosmochrony</title>
+  <meta name="description"
+    content="Closes LC-O3: the quadratic Lorentz-capacity identity B² + (Fτ)² = 1 is exact for every n, while the parabolic Carnot identification holds only for n ≤ (q-1)/2 and asymptotically when m/q → 0. The deviation Δ_q(n) = 4m²/q² is closed-form."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Finite-q Corrections to the Carnot Capacity Identification"/>
+  <meta property="og:description"
+    content="Closes LC-O3: quadratic identity exact; Carnot identification corrected by Δ_q(n) = 4m²/q² outside pre-saturation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o3/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/lc/lc-o3/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Finite-$q$ Corrections to the Carnot Capacity Identification</h1>
+        <p class="subtitle">
+          Closes the open problem LC-O3 (Section 7.2 of <a href="/science/lc/temporal-projection/">TempProj</a>)
+          by a precise separation: the quadratic Lorentz-capacity identity $B_n^2 + (F^\tau_n)^2 = 1$
+          is exact for every $n$ and receives no correction; the parabolic
+          Carnot-Carathéodory identification is corrected by $\Delta_q(n) = 4m^2/q^2$
+          outside the pre-saturation regime $n \leq (q-1)/2$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20334072" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20334072</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The Lorentz-capacity sub-programme derives the temporal residual
+        $F^\tau_n = \sqrt{1 - B_n^2}$ from the bounded Born-Infeld capacity budget of the
+        admissibility cascade on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. The note
+        <a href="/science/lc/lorentz-capacity/">N</a> and the temporal residual paper
+        <a href="/science/lc/temporal-projection/">TempProj</a> established the quadratic identity
+        $B_n^2 + (F^\tau_n)^2 = 1$, closing time dilation and the Lorentz factor identification.
+      </p>
+      <p>
+        The remaining open problem, stated in Section 7.2 of TempProj, was the status of the
+        quadratic law and of the parabolic Carnot-Carathéodory identification near the finite-$q$
+        saturation boundary $n \simeq q/2$. The present paper closes this problem by separating
+        two statements that the original wording conflated.
+      </p>
+      <div class="note" role="note">
+        <strong>Capacity vs Carnot identification.</strong> LC-O3 is a correction to the
+        <em>Carnot approximation</em>, <em>not</em> to the capacity law. The quadratic identity
+        $B_n^2 + (F^\tau_n)^2 = 1$ is unconditional once $B_n$ is the exact finite-$q$ torus load.
+        Only the unfolded parabolic count $B_n^{\mathrm{parab}}$ deviates from the cyclically
+        folded torus count after the saturation boundary.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">finite-$q$ saturation, Carnot identification, exact torus count</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Proved (closes LC-O3)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main result</h2>
+    <p>
+      Setting $R := (q-1)/2$ and $n = R + m$, the exact torus count of admissibility cascade points
+      at depth $n$ is
+    </p>
+    <p style="text-align:center">
+      $B_n^{\mathrm{torus}} = \dfrac{q(2m+1) + 2R^2 - 2m^2}{q^2}.$
+    </p>
+    <p>
+      The deviation from the unfolded parabolic Carnot formula
+      $B_n^{\mathrm{parab}} = (2n^2 + 2n + 1)/q^2$ is closed-form:
+    </p>
+    <p style="text-align:center">
+      $\Delta_q(n) := B_n^{\mathrm{parab}} - B_n^{\mathrm{torus}} = \dfrac{4 m^2}{q^2}.$
+    </p>
+    <p>
+      The quadratic Lorentz-capacity identity holds for every $n$:
+    </p>
+    <p style="text-align:center">
+      $B_n^2 + (F^\tau_n)^2 = 1, \qquad F^\tau_n := \sqrt{1 - B_n^2}.$
+    </p>
+    <p>
+      In the macroscopic folded regime $n/q \to \alpha > 1/2$, the correction converges to
+      $\Delta_q(n) \to 4(\alpha - 1/2)^2 > 0$ and the parabolic identification is <em>not</em>
+      asymptotically valid. In the pre-saturation regime ($n \leq R$) and in the sublinear boundary
+      layer ($m/q \to 0$), the correction vanishes and the Carnot identification is exactly recovered.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Key features</h2>
+    <ul>
+      <li><strong>The quadratic capacity identity is unconditional.</strong> It holds for every $n$
+        once $B_n$ is the exact torus load, by the very definition $F^\tau_n = \sqrt{1 - B_n^2}$
+        supplied by the temporal residual map of TempProj.</li>
+      <li><strong>The Carnot identification has a precise domain of validity.</strong> Exact for
+        $n \leq (q-1)/2$ (no cyclic folding); asymptotically valid in any sublinear neighbourhood
+        of the folding boundary.</li>
+      <li><strong>Folded-regime correction is finite and explicit.</strong>
+        $\Delta_q(n) = 4m^2/q^2$ is closed-form, and the parabolic formula even exceeds $1$
+        (becomes unphysical) for sufficiently large $m$ at fixed $q$.</li>
+      <li><strong>Closure of the Lorentz-capacity sub-programme.</strong> With LC-O1, LC-O2-O1,
+        and LC-O3 now resolved, time dilation, the light cone, Lorentz transformations and length
+        contraction, the gravitational capacity-metric bridge, and the finite-$q$ saturation domain
+        of validity are all established.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Dependencies</h2>
+    <ul>
+      <li><strong>N</strong> (<code>Beau2026n</code>): Weil factorisation
+        $\Sigma^{\mathrm{tot}}_n = 1 - B_n$.</li>
+      <li><strong>TempProj</strong> (<code>Beau2026tp</code>): temporal residual map
+        $F^\tau_n = \sqrt{1 - B_n^2}$; statement of LC-O3 (Section 7.2).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Finite-$q$ Corrections to the Carnot Capacity Identification</i>.
+      Preprint, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20334072" rel="noopener">10.5281/zenodo.20334072</a>
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      LCo3 is one of the three closure papers of the Lorentz Capacity sub-programme, alongside
+      <a href="/science/lc/lc-o1/">LCo1</a> (LC-O1, Lorentz transformations and length contraction) and
+      <a href="/science/lc/lc-o2-o1/">LCIIo1</a> (LC-O2-O1, capacity-metric bridge). With these three
+      closures, the chain LorentzCapacity &rarr; TempProj &rarr; LCII reaches a complete
+      sub-programme.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

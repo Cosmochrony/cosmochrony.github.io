@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Born–Infeld Parity Forces an Equatorial Admissible Fibre: Analytical Derivation
+    of the [1:½:½] Eigenvalue Ratio in Sym²(V_ρ) | Cosmochrony</title>
+  <meta name="description"
+    content="O30 analytically derives the eigenvalue ratio λ₁/λ₂ = 2 (spectral ratio [1:½:½])
+    in the admissible covariance on Sym²(V_ρ). The Born–Infeld parity anti-linearity forces an
+    equatorial constraint on trajectory vectors, producing the exact [1:½:½] spectral ratio."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o30/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Born–Infeld Parity Forces an Equatorial Admissible Fibre: Analytical Derivation
+    of the [1:½:½] Eigenvalue Ratio in Sym²(V_ρ)"/>
+  <meta property="og:description"
+    content="O30 proves that Born–Infeld parity anti-linearity forces the equatorial constraint
+    |α_j| = |β_j| on trajectory vectors, yielding the exact covariance diag(1/4, 1/2, 1/4)
+    and spectral ratio [1:½:½] in Sym²(V_ρ)."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o30/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o30/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Born–Infeld Parity Forces an Equatorial Admissible Fibre: Analytical Derivation
+          of the [1:½:½] Eigenvalue Ratio in Sym²(V_ρ)</h1>
+        <p class="subtitle">
+          O30 analytically derives the eigenvalue ratio $\lambda_1/\lambda_2 = 2$ (spectral ratio
+          [1:½:½]) in the admissible covariance on $\mathrm{Sym}^2(V_\rho)$, proving that
+          Born–Infeld parity anti-linearity forces every trajectory vector to the equatorial
+          sphere $|\alpha_j| = |\beta_j|$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20014707">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        O30 closes an open direction from <a href="../o29">O29</a> §7.4 by providing a fully
+        analytical derivation of the spectral ratio [1:½:½] in the admissible covariance
+        $C_c$ on $\mathrm{Sym}^2(V_\rho)$.
+      </p>
+      <p>
+        The central mechanism is the Born–Infeld parity anti-linearity
+        $\rho_{q-c} = \bar{\rho}_c$, which acts on the Weil representation. This constraint
+        forces every admissible trajectory vector $w_j = \pi_c(v_j) \in V_\rho \cong \mathbb{C}^2$
+        to satisfy the equatorial condition $|\alpha_j| = |\beta_j|$: the vectors are confined
+        to an equatorial $S^1 \subset S^3$ inside $V_\rho$.
+      </p>
+      <p>
+        In this equatorial regime, the central component $\sqrt{2}\,\alpha_j\beta_j$ of
+        $\mathrm{vec}(M_j)$ becomes phase-independent (phases cancel exactly), while diagonal
+        components oscillate as $e^{\pm 2i\varphi_j}$. Under single-harmonic phase decorrelation,
+        the covariance diagonalises exactly as
+        $C_c = \langle r_j^4 \rangle \cdot \mathrm{diag}(1/4,\, 1/2,\, 1/4)$,
+        yielding the spectral ratio [1:½:½].
+      </p>
+      <div class="note" role="note">
+        <strong>Status.</strong> The result is proved. The correction to the equatorial condition
+        is $O(q^{-1/2})$ from <a href="../u1">U1</a>, confirming the identification is
+        asymptotically exact.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Proved</div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Born–Infeld parity, equatorial constraint, Sym²(V_ρ) covariance,
+            spectral ratio [1:½:½]</div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v"><a href="../o18">O18</a>, <a href="../o29">O29</a>, U1</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Equatorial constraint from Born–Infeld parity:</strong> proof that the
+        anti-linearity $\rho_{q-c} = \bar{\rho}_c$ forces $|\alpha_j| = |\beta_j|$ for every
+        admissible trajectory vector $w_j \in V_\rho \cong \mathbb{C}^2$, confining the fibre
+        to an equatorial $S^1 \subset S^3$.
+      </li>
+      <li>
+        <strong>Phase cancellation in the central component:</strong> in the equatorial regime,
+        $\sqrt{2}\,\alpha_j\beta_j = \tfrac{r_j^2}{\sqrt{2}} e^{i(\varphi_j^+ + \varphi_j^-)}$
+        with phases summing to zero at the equatorial locus, making the off-diagonal entry
+        of $\mathrm{vec}(M_j)$ phase-independent.
+      </li>
+      <li>
+        <strong>Exact covariance diagonalisation:</strong> under single-harmonic phase
+        decorrelation,
+        $C_c = \langle r_j^4 \rangle \cdot \mathrm{diag}(1/4,\, 1/2,\, 1/4)$
+        exactly, with spectral ratio [1:½:½].
+      </li>
+      <li>
+        <strong>Structural origin of the factor 2:</strong> the eigenvalue ratio $\lambda_1/\lambda_2 = 2$
+        is traced to the normalisation coefficient $1/\sqrt{2}$ in the symmetric tensor
+        basis vector $e_0 = (v_+ \otimes v_- + v_- \otimes v_+)/\sqrt{2}$ of $\mathrm{Sym}^2(V_\rho)$.
+      </li>
+      <li>
+        <strong>Asymptotic correction control:</strong> the deviation from the equatorial
+        condition is $O(q^{-1/2})$ by U1 universality, establishing that the exact ratio
+        [1:½:½] is approached in the large-$q$ limit.
+      </li>
+      <li>
+        <strong>Closure of O28–O29 §7.4:</strong> this paper completes the derivation left
+        open in <a href="../o29">O29</a> by providing the analytical identification of the
+        equatorial mechanism.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>The equatorial mechanism</h2>
+    <p>
+      The Born–Infeld parity anti-linearity $\rho_{q-c} = \bar{\rho}_c$ is a structural
+      symmetry of the Weil representation on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+      Its action on trajectory vectors $w_j = \pi_c(v_j)$ forces the moduli of the two
+      complex components $\alpha_j$ and $\beta_j$ to be equal: $|\alpha_j| = |\beta_j| = r_j/\sqrt{2}$.
+    </p>
+    <p>
+      This equatorial constraint has a precise geometric meaning: the trajectory vectors
+      are confined to the intersection of the unit sphere $S^3 \subset \mathbb{C}^2$ with
+      the hyperplane $|\alpha| = |\beta|$, which is an equatorial $S^1$. The fibred structure
+      of the admissible covariance is thus constrained to this lower-dimensional locus.
+    </p>
+    <p>
+      The key consequence is that the cross term $\sqrt{2}\,\alpha_j\beta_j$ — which forms
+      the central component of $\mathrm{vec}(M_j)$ — becomes phase-independent: at the
+      equatorial locus, the phases $\varphi_j^+$ and $\varphi_j^-$ cancel exactly, leaving
+      only the modulus $r_j^2/\sqrt{2}$. The diagonal terms, by contrast, carry oscillatory
+      phases $e^{\pm 2i\varphi_j}$ that average to zero under phase decorrelation.
+    </p>
+    <p>
+      The result is the exact covariance
+      $C_c = \langle r_j^4 \rangle \cdot \mathrm{diag}(1/4,\, 1/2,\, 1/4)$, with
+      eigenvalue ratio 2:1 between the central and diagonal components.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O30 closes the analytical gap identified in <a href="../o29">O29</a> §7.4 regarding the
+      spectral ratio [1:½:½]. The result connects Born–Infeld parity — a structural symmetry
+      of the Weil representation first identified in <a href="../o18">O18</a> — directly to
+      the spectral geometry of the admissible fibre.
+    </p>
+    <p>
+      The equatorial constraint is a concrete realisation of the non-injectivity principle:
+      the Born–Infeld anti-linearity reduces the admissible fibre from the full $S^3$ to an
+      equatorial $S^1$, encoding a structural selection at the level of the Weil representation.
+      This selection produces a definite spectral ratio [1:½:½] that is not put in by hand
+      but derived from the symmetry of the projection.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.20014707" rel="noopener">
+        <i>Born–Infeld Parity Forces an Equatorial Admissible Fibre: Analytical Derivation
+        of the [1:½:½] Eigenvalue Ratio in Sym²(V_ρ)</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.20014707
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

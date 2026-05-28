@@ -19,6 +19,13 @@
 /spectral/* /science/spectral/:splat 301
 /superconductivity/* /science/superconductivity/:splat 301
 /thermodynamics/* /science/thermodynamics/:splat 301
+# Lorentz-capacity (LC) sub-programme regrouped under /science/lc/
+/science/lorentz-capacity/* /science/lc/lorentz-capacity/:splat 301
+/science/temporal-projection/* /science/lc/temporal-projection/:splat 301
+/science/lc-o1/* /science/lc/lc-o1/:splat 301
+/science/lc-o2-o1/* /science/lc/lc-o2-o1/:splat 301
+/science/lc-o2/* /science/lc/lc-o2/:splat 301
+/science/lc-o3/* /science/lc/lc-o3/:splat 301
 /index.html /science/index.html 301
 /index_de.html /science/index_de.html 301
 /index_es.html /science/index_es.html 301

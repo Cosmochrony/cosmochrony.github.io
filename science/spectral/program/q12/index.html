@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Yang–Mills Dynamics from Projective Spectral Entropy | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q12 derives Yang–Mills dynamics from the vertical variation of the projective spectral
+    entropy functional, establishing that gravity (a₂) and gauge dynamics (a₄) are separated by
+    spectral order in the Seeley–DeWitt hierarchy rather than by a missing symmetry group."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/q12/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation
+    on the Admissible Fibre"/>
+  <meta property="og:description"
+    content="Q12 shows that the vertical variation of S_Π[g,A] with respect to the admissible
+    connection yields the Yang–Mills equations, while the spectral UV hierarchy (quadratic for
+    gravity, logarithmic for gauge) emerges without fine-tuning."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/q12/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral/program/q12/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Yang–Mills Dynamics from Projective Spectral Entropy
+        </h1>
+        <p class="subtitle">
+          Q12 carries out the vertical variation of the projective spectral entropy
+          $S_\Pi[g,\mathcal{A}]$ and derives the Yang–Mills equations from the
+          Seeley–DeWitt coefficient $a_4$, completing the spectral derivation of both
+          fundamental interaction types from a single functional.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20261952">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The Gravity paper showed that the <em>horizontal</em> variation of the projective spectral
+        entropy functional \[ S_\Pi[g] = \tfrac{1}{2}\log\det' A_g \] with respect to the base metric
+        produces the Einstein tensor as the infrared-dominant response, via the Seeley–DeWitt
+        coefficient $a_2$.
+      </p>
+      <p>
+        Q12 carries out the complementary <em>vertical</em> variation. The operator $A_g$ is extended
+        to \[ A_{g,\mathcal{A}} = -(\nabla^{\mathcal{A}})^2 + E \] on the associated vector bundle of
+        the admissible principal fibre $P_{G_\Pi}(M, G_\Pi)$, and the Seeley–DeWitt coefficient $a_4$
+        is computed.
+      </p>
+      <p>
+        The extended functional $S_\Pi[g,\mathcal{A}]$ contains the renormalized Yang–Mills term with
+        logarithmic coupling, and its vertical variation yields the Yang–Mills equations
+        $D_\mu F^{a\mu\nu} = 0$ in the current-free sector.
+      </p>
+      <div class="note">
+        <strong>Central message.</strong> $a_2 \to \text{Einstein}$, $a_4 \to \text{Yang–Mills}$,
+        from the single functional $S_\Pi[g,\mathcal{A}]$.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">
+            Yang–Mills dynamics, heat-kernel expansion, Seeley–DeWitt coefficients,
+            gauge–gravity hierarchy
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Key result</div>
+          <div class="v">
+            $\delta_{\mathcal{A}} S_\Pi = 0 \implies D_\mu F^{a\mu\nu} = 0$
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v">Gravity paper, Q6a, Q11</div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Q13 (Gauge–Gravity Spectral Synthesis)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li>
+        <strong>Extension to vector bundle:</strong> the spectral operator $A_g$ is lifted to
+        $A_{g,\mathcal{A}}$ on the associated bundle, incorporating the admissible gauge connection
+        $\mathcal{A}$ from Q6a/O31.
+      </li>
+      <li>
+        <strong>$a_4$ coefficient and Yang–Mills term:</strong>
+        \[
+          a_4(A_{g,\mathcal{A}})\big|_{\mathrm{gauge}}
+          = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
+        \]
+        yielding $g_{\mathrm{YM}}^{-2} \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$ as induced coupling.
+      </li>
+      <li>
+        <strong>Vertical variation yields Yang–Mills equations:</strong>
+        $\delta_{\mathcal{A}} S_\Pi[g,\mathcal{A}] = 0$ gives $D_\mu F^{a\mu\nu} = 0$
+        (proved for the $a_4$ derivation given $G_\Pi$).
+      </li>
+      <li>
+        <strong>UV hierarchy without fine-tuning:</strong> Newton's constant $G_N^{-1} \sim
+        \ell_{\mathrm{sp}}^{-2}$ is quadratic in the UV cutoff, while the gauge coupling is
+        logarithmic. Both share the same spectral scale; the gauge–gravity hierarchy
+        $G_N g_{\mathrm{YM}}^2 \ll 1$ follows as a structural consequence of the Seeley–DeWitt
+        expansion.
+      </li>
+      <li>
+        <strong>Horizontal–vertical decoupling:</strong> a decoupling lemma guarantees that the
+        Einstein ($a_2$) and Yang–Mills ($a_4$) sectors are independent — no cross-variation mixes them.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Spectral stratification as an organisational principle</h2>
+    <p>
+      Beyond the technical derivation, Q12 identifies a conceptual principle that distinguishes the
+      Cosmochrony approach from conventional unification schemes.
+    </p>
+    <p>
+      In standard group-theoretic unification, gravity and gauge interactions are sought at the same
+      algebraic level — different representations of a common group $G_{\mathrm{unif}}$. Their
+      combination requires finding a symmetry large enough to accommodate both.
+    </p>
+    <p>
+      The present framework suggests a different picture: gravity and gauge dynamics are separated by
+      <em>geometric direction</em> (horizontal vs. vertical variation on the admissible bundle) and
+      by <em>spectral order</em> ($a_2$ vs. $a_4$ in the Seeley–DeWitt hierarchy). Their distinct
+      UV behaviours — quadratic divergence for gravity, logarithmic for gauge — are structural
+      consequences of this separation, not independent empirical inputs.
+    </p>
+    <div class="note">
+      <strong>Implication for unification.</strong> The difficulty of incorporating gravity into the
+      Standard Model framework may reflect a difference of Seeley–DeWitt order rather than the
+      absence of a common symmetry group. The natural organisational space for unification in this
+      framework is spectral and variational, not primarily group-theoretic.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      Q12 is the vertical counterpart to the Gravity paper and closes the spectral derivation of
+      both known classical field equations from a single variational principle:
+    </p>
+    <ul>
+      <li>
+        <strong>Gravity paper:</strong> $\delta_g S_\Pi = 0 \implies G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$
+      </li>
+      <li>
+        <strong>Q12:</strong> $\delta_{\mathcal{A}} S_\Pi = 0 \implies D_\mu F^{a\mu\nu} = 0$
+      </li>
+    </ul>
+    <p>
+      The gauge group $G_\Pi$ is inherited from Q6a/O31. The SU(3) sector is unconditional at
+      the effective level: $[H\text{-color}]_{\mathrm{eff}}$ (equality of capacity exponents
+      $\delta_c = \delta_{\omega c} = \delta_{\omega^2 c}$) is proved analytically in O31/O32
+      via intra-coset Vandermonde symmetry and the modulation-frequency argument.
+    </p>
+    <p>
+      The joint variational problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ (coupled Einstein–Yang–Mills
+      equations), the precise ratio $G_N g_{\mathrm{YM}}^2$, and the Eddington–Born–Infeld joint
+      completion are carried out in <a href="/science/spectral/program/q13/">Q13</a>.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Open directions</h2>
+    <ul>
+      <li>
+        <strong>SU(3) Yang–Mills uniqueness (Q13 + O31):</strong> prove that the SU(3) gauge
+        dynamics emerge uniquely from the colour triplet co-admissibility structure, without
+        inputting the group as data.
+      </li>
+      <li>
+        <strong>SU(3) uniqueness:</strong> prove that the SU(3) gauge dynamics emerge uniquely from
+        the colour triplet co-admissibility structure, without inputting the group as data (O31 §9.2).
+      </li>
+      <li>
+        <strong>Matter sector:</strong> extend the vertical variation to include projected matter
+        currents $J^{a\nu}$.
+      </li>
+      <li>
+        <strong>Spectral stratification beyond order 4:</strong> investigate whether higher
+        Seeley–DeWitt coefficients $a_6$, $a_8$ produce further interaction sectors or remain
+        suppressed.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <i>Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation on
+      the Admissible Fibre</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20261952">doi:10.5281/zenodo.20261952</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

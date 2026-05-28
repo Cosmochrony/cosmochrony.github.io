@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Local Spectral Closure of the Capacity-Metric Bridge | Cosmochrony</title>
+  <meta name="description"
+    content="Closes the open problem LC-O2-O1: derives the local Born-Infeld capacity radius R(x) directly from spectral occupancy ε(x), without importing the Einstein equations. Identity R(x)² = 1-ε(x) = -2g^ττ(x) follows from SU(2)-Schur reduction on Sym²(V_ρ) and the principal-symbol identification."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Local Spectral Closure of the Capacity-Metric Bridge"/>
+  <meta property="og:description"
+    content="Closes LC-O2-O1: R(x)² = 1-ε(x) = -2g^ττ(x) derived purely from local admissibility data, with no Einstein equation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o2-o1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/lc/lc-o2-o1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Local Spectral Closure of the Capacity-Metric Bridge</h1>
+        <p class="subtitle">
+          Closes the open problem LC-O2-O1 of <a href="/science/lc/lc-o2/">LCII</a>. Defining the local occupancy
+          $\epsilon(x)$ as a quadratic norm on the rank-three sector $\mathrm{Sym}^{2}(V_{\rho})$, the
+          $\mathrm{SU}(2)$-equivariance of the admissibility weight forces
+          $A_\tau(x) = 2\bigl(1-\epsilon(x)\bigr)$, and the principal-symbol identification yields
+          $g^{\tau\tau}(x) = -A_\tau(x)/4$. Hence
+          $R(x)^{2} = 1-\epsilon(x) = -2g^{\tau\tau}(x)$, with no Einstein equation imported.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">to appear</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The paper <a href="/science/lc/lc-o2/">LCII</a> introduced the local Born-Infeld capacity radius $R(x)$
+        on two sides: on the capacity side, $R(x)^{2} = 1 - \epsilon(x)$ from a local spectral occupancy
+        field; on the metric side, $R(x)^{2} = -2g^{\tau\tau}(x)$ from the temporal co-metric component.
+        Their equivalence was stated in LCII (Remark 3.2, Section 7.3) as an open analytic bridge: it
+        could only be verified through the Einstein equations imported from the
+        <a href="/science/gravity/">Gravity</a> branch.
+      </p>
+      <p>
+        The present paper closes this bridge purely spectrally, from local admissibility data alone.
+        The proof proceeds through two steps: (i) a local admissibility-weight reduction that follows
+        from $\mathrm{SU}(2)$-equivariance via Schur's lemma; (ii) the local principal-symbol
+        reconstruction of the effective metric. The chain
+        $\epsilon(x) \mapsto A_\tau(x) \mapsto g^{\tau\tau}(x)$ is closed without importing the
+        Einstein equation.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> The bridge identity $\epsilon(x) = 1 + 2g^{\tau\tau}(x)$ is a
+        spectral admissibility identity, not a phenomenological identification between matter density and
+        metric curvature. It depends essentially on $\epsilon(x)$ being a quadratic occupancy in
+        $\mathrm{Sym}^{2}(V_{\rho})$ -- not an arbitrary additive scalar density.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Technical note</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">capacity-metric bridge, spectral admissibility, gravitational time dilation</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Proved (closes LC-O2-O1)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main result</h2>
+    <p>
+      The local capacity radius and the metric radius coincide:
+    </p>
+    <p style="text-align:center">
+      $R(x)^{2} = 1 - \epsilon(x) = -2\,g^{\tau\tau}(x)$,
+    </p>
+    <p style="text-align:center">
+      equivalently $\epsilon(x) = 1 + 2\,g^{\tau\tau}(x)$.
+    </p>
+    <p>
+      The proof proceeds through two independent identifications.
+    </p>
+    <h3>Step 1 -- Local admissibility-weight reduction (Lemma)</h3>
+    <p>
+      Define $\epsilon(x)$ as a quadratic occupancy on the rank-three sector
+      $H_{\mathrm{eff}}(x) \simeq \mathrm{Sym}^{2}(V_{\rho})$, equipped with its
+      $\mathrm{SU}(2)$-invariant quadratic norm. The occupied and free parts decompose orthogonally:
+    </p>
+    <p style="text-align:center">
+      $C_{\mathrm{max}}(x) = C_{\mathrm{occ}}(x) \oplus C_{\mathrm{free}}(x)$,
+    </p>
+    <p>
+      so $\|C_{\mathrm{free}}\|^{2}/\|C_{\mathrm{max}}\|^{2} = 1 - \epsilon(x)$. Since
+      $\mathrm{Sym}^{2}(V_{\rho})$ is irreducible under $\mathrm{SU}(2)$ and the admissibility weight
+      $\mathrm{Ad}$ is $\mathrm{SU}(2)$-equivariant, Schur's lemma forces $\mathrm{Ad} = \lambda\cdot\mathrm{Id}$,
+      so partial traces are proportional to subspace norms. Hence:
+    </p>
+    <p style="text-align:center">
+      $A_\tau(x) = A_\tau^{\infty} \cdot (1 - \epsilon(x)) = 2\,(1 - \epsilon(x))$.
+    </p>
+    <h3>Step 2 -- Principal-symbol identification</h3>
+    <p>
+      The effective metric is reconstructed locally from the principal symbol of $L_{\mathrm{eff}}$.
+      With the flat-space normalisation $A_\tau^{\infty} = 2$ and $g^{\tau\tau,\infty} = -\tfrac{1}{2}$
+      (from <a href="/science/emergent-geometry/q11/">Q11</a>):
+    </p>
+    <p style="text-align:center">
+      $g^{\tau\tau}(x) = -\,A_\tau(x)/4$.
+    </p>
+    <p>
+      Combining: $-2g^{\tau\tau}(x) = A_\tau(x)/2 = 1 - \epsilon(x) = R(x)^{2}$. The bridge is closed.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Key contributions</h2>
+    <ul>
+      <li><strong>Closes LC-O2-O1:</strong> upgrades Remark 3.2 of <a href="/science/lc/lc-o2/">LCII</a> from
+        open postulate to theorem.</li>
+      <li><strong>No Einstein equation:</strong> the capacity-metric identity is derived purely from
+        local admissibility data.</li>
+      <li><strong>Quadratic occupancy is essential:</strong> Schur's lemma applies only because
+        $\epsilon(x)$ is a quadratic norm on $\mathrm{Sym}^{2}(V_{\rho})$, not an additive scalar.</li>
+      <li><strong>Gravitational time dilation reinterpreted:</strong> near a mass source the capacity
+        budget is more occupied, the residual radius $R(x) = \sqrt{1-\epsilon(x)} &lt; 1$ slows local
+        clocks, consistently with the standard gravitational redshift.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Structure</h2>
+    <ol>
+      <li><strong>Introduction</strong> -- statement of the open problem from LCII.</li>
+      <li><strong>Quadratic local occupancy</strong> -- definition of $\epsilon(x)$ as a quadratic norm
+        on $\mathrm{Sym}^{2}(V_{\rho})$.</li>
+      <li><strong>Local admissibility-weight reduction</strong> -- Lemma:
+        $A_\tau(x) = 2(1-\epsilon(x))$ via $\mathrm{SU}(2)$-Schur reduction.</li>
+      <li><strong>Principal-symbol identification</strong> -- local identification
+        $g^{\tau\tau}(x) = -A_\tau(x)/4$.</li>
+      <li><strong>Spectral closure of the capacity-metric bridge</strong> -- Theorem and Corollary
+        (upgrade of LCII Remark 3.2).</li>
+      <li><strong>Discussion</strong> -- role of the quadratic definition; Schwarzschild consistency
+        check in the weak-field regime.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Dependencies</h2>
+    <ul>
+      <li><a href="/science/lc/lc-o2/"><strong>LCII</strong></a>: source of the open problem (Remark 3.2,
+        Section 7.3); fibrewise capacity lapse framework.</li>
+      <li><strong>W1</strong>: admissibility-weight reduction argument; local version applied here.</li>
+      <li><strong>Q5b</strong>: principal-symbol reconstruction of the effective metric.</li>
+      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a>: flat-space normalisation
+        $A_\tau^{\infty} = 2$ and $g^{\tau\tau,\infty} = -\tfrac{1}{2}$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Local Spectral Closure of the Capacity-Metric Bridge</i>.
+      Preprint, 2026. DOI to appear.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      LCIIo1 is the fourth paper of the Lorentz Capacity sub-programme. It closes the analytic bridge
+      left open by <a href="/science/lc/lc-o2/">LCII</a>, completing the chain
+      LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1. The result shows that $\epsilon(x)$
+      and $g^{\tau\tau}(x)$ are not independent fields: they are two readings of the same local
+      admissibility datum. Gravitational time dilation thereby becomes a derived consequence of local
+      spectral occupancy, not an imported metric structure.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

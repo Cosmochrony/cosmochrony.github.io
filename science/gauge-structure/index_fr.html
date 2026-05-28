@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le sous-programme de structure de jauge | Cosmochrony</title>
+  <meta name="description"
+    content="Quels groupes de symétrie interne sont préservés comme invariants de la projection non injective
+    admissible ? Le groupe de jauge G_Π = SU(3) × SU(2) × U(1) est une conséquence forcée de l’admissibilité, non un
+    postulat. Douze articles constituants, trois secteurs, une identification."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/gauge-structure/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le sous-programme de structure de jauge"/>
+  <meta property="og:description"
+    content="L’invariance de jauge n’est pas postulée : elle est la symétrie fibre résiduelle de la projection non
+    injective. Le groupe de jauge du Modèle Standard émerge comme conséquence forcée de l’admissibilité. Note de
+    présentation et hub des articles du sous-programme de structure de jauge."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/gauge-structure/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/gauge-structure/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le sous-programme de structure de jauge</h1>
+        <p class="subtitle">
+          Quels groupes de symétrie interne sont préservés comme invariants de la projection non injective
+          admissible ? En Cosmochronie, l’invariance de jauge n’est pas postulée : elle est la symétrie fibre
+          résiduelle de la projection $\Pi: \chi \to O$. Le groupe de jauge du Modèle Standard
+          $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ est une conséquence forcée de la
+          structure d’admissibilité, non une donnée d’entrée. Cette page en est la synthèse et le hub vers tous ses
+          articles.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20435029" rel="noopener">
+        Lire la note de synthèse</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20435029</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Le sous-programme de structure de jauge répond à une unique question centrale. La projection non injective
+        $\Pi: \chi \to O$ sélectionne les configurations admissibles dans le substrat relationnel ; sa fibre
+        $\Pi^{-1}(O_n)$ porte une structure interne : <em>quels groupes de symétrie interne sont préservés comme
+        invariants de la projection admissible, et pourquoi sont-ils précisément $\mathrm{U}(1)$, $\mathrm{SU}(2)$ et
+        $\mathrm{SU}(3)$ ?</em>
+      </p>
+      <p>
+        On définit $G_\Pi$ comme le groupe des symétries fibre de $\Pi$ qui préservent les contraintes
+        d’admissibilité. Le sous-programme établit
+        $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ : le groupe de jauge du Modèle Standard
+        est une <strong>conséquence forcée</strong> de l’admissibilité, non un postulat séparé. Le sous-programme se
+        situe à l’intersection de la branche fondationnelle (primitive axiomatique et structure de fibre) et de la
+        branche d’admissibilité spectrale (représentation de Weil, co-admissibilité). Il couvre uniquement
+        l’identification du groupe de jauge ; la dérivation de la dynamique de Yang–Mills relève du sous-programme
+        de stratification spectrale jauge–gravité.
+      </p>
+      <div class="note" role="note">
+        <strong>Trois secteurs, trois mécanismes.</strong> $\mathrm{U}(1)$ provient de la fibre de phase de Hopf de
+        $\Pi \simeq S^3$ ; la quantification de la charge découle de $\pi_1(S^1) \cong \mathbb{Z}$. $\mathrm{SU}(2)$
+        provient de la minimalité quaternionique de l’algèbre admissible et du théorème de rigidité de O27 ; il est
+        clos analytiquement. $\mathrm{SU}(3)$ provient de la co-admissibilité métaplectique des triplets de couleur
+        de blocs de Weil ; il est inconditionnel sur le graphe adapté aux couleurs et démontré à trois niveaux
+        analytiques ($[\mathrm{H\text{-}color}]_{\mathrm{rank}}$, $[\mathrm{H\text{-}color}]_{\mathrm{avg}}$,
+        $[\mathrm{H\text{-}color}]_{\mathrm{eff}}$) sur le graphe standard.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Synthèse (note de présentation, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Périmètre</div>
+          <div class="v">12 articles (Foundation, TopologicalInvariants, SMchargemass, O23, O27–O32, Q6a, Q7, Q12) ; identification de $\mathrm{U}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$</div>
+        </div>
+        <div class="kv">
+          <div class="k">État</div>
+          <div class="v">Identification du groupe de jauge close aux niveaux $\mathrm{U}(1)$ et $\mathrm{SU}(2)$ ; $\mathrm{SU}(3)$ inconditionnel sur le graphe adapté et à trois niveaux analytiques sur le graphe standard ; ouvert : [H-color] ponctuel, $\pi_2(\mathcal{C}_{\mathrm{eff}})=0$ en général, $V-A$ depuis l’admissibilité</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>La chaîne structurelle</h2>
+    <p style="text-align:center">
+      $\Pi \simeq S^3
+      \;\Longrightarrow\;
+      S^1 \hookrightarrow S^3 \to S^2
+      \;\Longrightarrow\;
+      \mathrm{U}(1)
+      \;\Longrightarrow\;
+      \mathfrak{su}(2) \text{ depuis } \operatorname{Im}\mathbb{H}
+      \;\Longrightarrow\;
+      \mathrm{SU}(2)
+      \;\Longrightarrow\;
+      \mathrm{SU}(3).$
+    </p>
+    <p>
+      Trois facteurs proviennent de mécanismes structurels distincts : la symétrie de phase $\mathrm{U}(1)$ de la
+      fibre de Hopf, dont le nombre d’enroulement $w \in \pi_1(S^1) \cong \mathbb{Z}$ est l’origine topologique de
+      la charge électrique ($q_{\mathrm{eff}} = w \cdot e$) ; la rigidité $\mathrm{SU}(2)$ forcée par $\mathbb{H}$
+      comme algèbre associative non commutative minimale admissible, avec
+      $\dim_\mathbb{R} \operatorname{Im}\mathbb{H} = 3$ donnant trois directions internes et le théorème de rigidité
+      O27 forçant tout morphisme admissible à se factoriser à travers $\mathfrak{su}(2)$ ; et la symétrie
+      $\mathrm{SU}(3)$ des triplets de couleur co-admissibles $\{V_c, V_{\omega c}, V_{\omega^2 c}\}$ pour
+      $q \equiv 1 \pmod 3$, établie de façon inconditionnelle sur le graphe de Cayley adapté aux couleurs (O31) et
+      aux niveaux du rang, moyenné et exposant effectif sur le graphe standard (O31–O32).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Articles du sous-programme</h2>
+    <p><strong>Fibre de phase $\mathrm{U}(1)$ et quantification de la charge.</strong></p>
+    <ul>
+      <li><a href="/science/foundation/"><strong>Foundation</strong></a> — identifie la fibre de projection
+        $\Pi^{-1}(O_n)$ avec la représentation de Weil $V_\rho$ de $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, porteuse
+        d’une structure symplectique (et donc de phase) canonique.</li>
+      <li><a href="/science/topological-invariants/"><strong>TopologicalInvariants</strong></a> — classifie les
+        invariants d’homotopie admissibles de la fibre de projection. Charge électrique
+        $q_{\mathrm{eff}} = w \cdot e$ depuis $\pi_1(S^1) \cong \mathbb{Z}$ ; absence de monopôles magnétiques depuis
+        $\pi_2(\mathcal{C}_{\mathrm{adm}}) = 0$ sur le modèle canonique ; chiralité projective comme dépendance
+        d’orientation de l’admissibilité.</li>
+      <li><a href="/science/sm-charge-mass/"><strong>SMchargemass</strong></a> — interprète masse, charge et inertie
+        comme classes de symétrie distinctes d’un unique mécanisme de réponse bornée ; invariance de jauge
+        $\mathrm{U}(1)$ locale comme liberté de phase résiduelle de la description projetée.</li>
+    </ul>
+    <p><strong>Admissibilité quaternionique $\mathrm{SU}(2)$.</strong></p>
+    <ul>
+      <li><a href="/science/spectral/program/o23/"><strong>O23</strong></a> — $\mathbb{H}$ est l’algèbre associative
+        non commutative minimale admissible ; $\dim_\mathbb{R} \operatorname{Im}\mathbb{H} = 3$ dérive le seuil
+        $\Sigma_c(n_3) = 3$ au lieu de le postuler.</li>
+      <li><a href="/science/spectral/program/o27/"><strong>O27</strong></a> — théorème de rigidité quaternionique :
+        tout morphisme admissible $\Phi_{q,\rho}$ se factorise à travers $\mathfrak{su}(2)$, démontré
+        inconditionnellement.</li>
+      <li><a href="/science/spectral/program/o28/"><strong>O28</strong></a> — calibration asymptotique : la covariance
+        $\mathcal{C}_c$ est de rang 3 avec structure invariante des valeurs propres
+        $[1 : \tfrac12 : \tfrac12]$.</li>
+      <li><a href="/science/spectral/program/o29/"><strong>O29</strong></a> — secteur de spin $\tfrac12$ identifié
+        via la formule du rang symétrique ; solution unique $d_\rho = 2$ confirmée pour
+        $q \in \{61, 101, 151\}$.</li>
+      <li><a href="/science/spectral/program/o30/"><strong>O30</strong></a> — dérivation analytique du rapport
+        invariant des valeurs propres $\lambda_1/\lambda_2 = 2$ depuis la contrainte fibre équatoriale.</li>
+      <li><a href="/science/emergent-geometry/q7/"><strong>Q7</strong></a> —
+        $H_{\mathrm{eff}} = \mathrm{Sym}^2(V_\rho)$ est l’unique $\mathfrak{su}(2)$-module irréductible de dimension
+        3 ; les structures $\mathfrak{su}(2)$ spatiale et interne sont verrouillées au niveau de la théorie des
+        représentations.</li>
+    </ul>
+    <p><strong>Charges de jauge et structure de fibré admissible.</strong></p>
+    <ul>
+      <li><a href="/science/spectral/program/q6/a/"><strong>Q6a</strong></a> — fibré principal admissible complet
+        $P_{G_\Pi}(M, G_\Pi)$ avec $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ ; charges de
+        jauge comme invariants d’holonomie de la connexion admissible.</li>
+      <li><a href="/science/spectral/program/q12/"><strong>Q12</strong></a> — décomposition base–fibre et lemme de
+        découplage horizontal–vertical : le secteur de jauge $a_4$ et le secteur gravitationnel $a_2$ sont
+        indépendants à l’ordre dominant ; le groupe de jauge est pris en entrée depuis Q6a et la série O.</li>
+    </ul>
+    <p><strong>Co-admissibilité du triplet de couleur $\mathrm{SU}(3)$.</strong></p>
+    <ul>
+      <li><a href="/science/spectral/program/o31/"><strong>O31</strong></a> — l’entrelacement métaplectique force la
+        co-admissibilité des triplets de manière inconditionnelle sur le graphe de Cayley adapté aux couleurs ; la
+        voie spectrale vers $[\mathrm{H\text{-}color}]$ sur le graphe standard est close ; $\mathrm{SU}(3)$ identifié
+        comme symétrie des triplets co-admissibles $\{V_c, V_{\omega c}, V_{\omega^2 c}\}$.</li>
+      <li><a href="/science/spectral/program/o32/"><strong>O32</strong></a> — $[\mathrm{H\text{-}color}]$ clos aux
+        niveaux du rang, moyenné et exposant effectif ; passage numérique pour
+        $q \in \{61, 151, 211, 307\}$ ; égalité ponctuelle des profils à $q$ fini analytiquement ouverte.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Entrées et sorties</h2>
+    <p>
+      <strong>Entrées amont.</strong> La représentation de Weil $V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ comme
+      théorème de la branche fondationnelle ; la contrainte de flux borné de Born–Infeld ; la non-injectivité comme
+      nécessité structurelle (ENI) ; et, depuis le sous-programme d’admissibilité spectrale (Note de présentation 1),
+      le secteur admissible de spin $\tfrac12$, le seuil $\Sigma_c(n_3) = 3$ et
+      $\operatorname{Im}\mathbb{H} \cong \mathfrak{su}(2)$. Depuis le sous-programme d’émergence géométrique (Note de
+      présentation 2), la variété de base effective $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ sur laquelle
+      le fibré principal est défini.
+    </p>
+    <p>
+      <strong>Sorties.</strong> Le groupe de jauge $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ ;
+      le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$ ; la quantification de la charge
+      $q_{\mathrm{eff}} = w \cdot e$ avec l’absence de monopôles magnétiques sur le modèle canonique ; $d_\rho = 2$
+      et la clôture $\mathfrak{su}(2)$ ; $\mathrm{SU}(3)$ au niveau
+      $[\mathrm{H\text{-}color}]_{\mathrm{eff}}$ dans la limite $q \to \infty$ ; la chiralité projective —
+      consommés par Q12, Q13, Q14 et le sous-programme de stratification jauge–gravité.
+    </p>
+  </section>
+  <section class="card">
+    <h2>État</h2>
+    <p>
+      L’identification du groupe de jauge est <strong>close aux niveaux $\mathrm{U}(1)$ et $\mathrm{SU}(2)$</strong>
+      (analytiquement, via la fibre de phase de Hopf et le théorème de rigidité O27). Le secteur $\mathrm{SU}(3)$ est
+      établi de manière inconditionnelle sur le graphe adapté aux couleurs (O31) et aux niveaux du rang, moyenné et
+      exposant effectif sur le graphe standard (O31–O32). Trois éléments restent ouverts : l’égalité ponctuelle des
+      profils à $q$ fini $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ sur le graphe standard, dont la voie
+      spectrale est close (O31) et qui requiert un mécanisme au niveau du rang BFS ; l’extension de l’exclusion
+      topologique des monopôles magnétiques ($\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$) au-delà du modèle canonique ;
+      et la dérivation de la structure spécifique $V - A$ du courant d’interaction faible depuis les données
+      d’admissibilité. Cette note ne dérive pas la dynamique de Yang–Mills — celle-ci relève du sous-programme de
+      stratification spectrale jauge–gravité (Note de présentation 8).
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

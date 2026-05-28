@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spektrale Mobilität und der Lorentz-Faktor aus projektiver Kapazitätssättigung | Cosmochrony</title>
+  <meta name="description"
+    content="Der O7-Sättigungsparameter konvergiert unter dem Born–Infeld-Zulässigkeitsbudget zur relativistischen Mobilität βγ. Der inverse Lorentz-Faktor entsteht als Restkapazitätsprofil der zulässigen Spektralkaskade."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Spektrale Mobilität und der Lorentz-Faktor aus projektiver Kapazitätssättigung"/>
+  <meta property="og:description"
+    content="η_n^τ → βγ und Φ(η_n^τ) → 1/γ unter dem Born–Infeld-Budget und quadratischer Normierung der O7-Observablen."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc/lorentz-capacity/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("de", "/science/lc/lorentz-capacity/index_de")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Zurück zu Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Spektrale Mobilität und der Lorentz-Faktor aus projektiver Kapazitätssättigung</h1>
+        <p class="subtitle">
+          Herleitung der relativistischen Mobilität $\beta\gamma$ und des inversen Lorentz-Faktors $1/\gamma$
+          aus dem O7-Sättigungsparameter $\eta_n^{\mathrm{O7}}$ unter dem Born–Infeld-Zulässigkeitsbudget.
+          Der Lorentz-Faktor ist kein externes kinematisches Postulat: er entsteht aus dem
+          Besetzt-über-Residual-Kapazitätsverhältnis der zulässigen Spektralkaskade.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20299014" rel="noopener">Preprint lesen</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20299014</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Überblick</h2>
+      <p>
+        Der O7-Sättigungsparameter $\eta_n^{\mathrm{O7}}$ ist in O7 als das Verhältnis der kumulierten
+        besetzten projektiven Kapazität zur residuellen Grenzneuheit definiert. Eine analytische
+        Faktorisierung zeigt, dass die Zentralkoordinate $c$ der Heisenberg-Gruppe nur eine globale Phase
+        zu Weil-Darstellungen beiträgt und für den Fingerabdruckbereich unsichtbar ist. Dies erzwingt,
+        dass das O7-Gesamtresidual $\Sigma_n^{\mathrm{tot}}$ dem linearen Füllungsgesetz
+        $B_n + \Sigma_n^{\mathrm{tot}} = 1$ genügt, numerisch bestätigt für $q \in \{7, 11, 13\}$.
+      </p>
+      <p>
+        Das lineare Gesetz ergibt für sich allein nicht den Lorentz-Faktor. Unter dem Born–Infeld-Budget
+        $dI_\tau^2 + dI_{\mathrm{space}}^2 = c_{\mathrm{BI}}^2\,dn^2$ ist die erforderliche Struktur
+        ein temporal projiziertes Residual $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$,
+        das die quadratische Normierung $B_n^2 + (\Sigma_n^\tau)^2 \to 1$ erfüllt.
+      </p>
+      <div class="note" role="note">
+        <strong>Umfang.</strong> Abschnitte 1–3 und 5 sind vollständig etabliert. Abschnitt 4
+        (Konstruktion von $\mathcal{P}_\tau^{\mathrm{Q5b}}$) ist in <a href="/science/lc/temporal-projection/">TempProj</a> geschlossen.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Kurzinfos</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Autor</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Typ</div>
+          <div class="v">Technische Notiz (in Vorbereitung)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Lizenz</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Themen</div>
+          <div class="v">O7-Sättigung, Lorentz-Faktor, Born–Infeld-Budget, temporale Projektion</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Lorentz-Kapazität-Unterprogramm geschlossen (P_τ^Q5b in TempProj konstruiert)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Hauptergebnis</h2>
+    <p>
+      Unter dem Born–Infeld-Zulässigkeitsbudget und quadratischer Normierung der O7-Observablen:
+    </p>
+    <p style="text-align:center">
+      $\eta_n^{\tau} \longrightarrow \beta\gamma, \qquad
+      \Phi\!\left(\eta_n^{\tau}\right) = \dfrac{1}{\sqrt{1+(\eta_n^{\tau})^2}}
+      \longrightarrow \dfrac{1}{\gamma}.$
+    </p>
+    <p>
+      Der inverse Lorentz-Faktor ist das Restkapazitätsprofil der zulässigen Spektralkaskade. Der
+      Lorentz-Faktor ist kein externes kinematisches Postulat; er entsteht aus dem
+      Besetzt-über-Residual-Kapazitätsverhältnis unter einem begrenzten projektiven Budget.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Wichtige Beiträge</h2>
+    <ul>
+      <li><strong>Zentralphasenfaktorisierung:</strong> $\omega_q(a,b,c) = e^{2\pi ic/q}\omega_q(a,b,0)$;
+        das O7-Gesamtresidual erfüllt $B_n + \Sigma_n^{\mathrm{tot}} = 1$ (bewiesen und numerisch bestätigt).</li>
+      <li><strong>Algebraisches BI-Ziel:</strong> rein algebraische Herleitung, dass $\Phi(\eta) = 1/\gamma$
+        unter dem BI-Budget (bewiesen).</li>
+      <li><strong>Unzulänglichkeit des linearen Gesetzes:</strong> quadratische Normierung erforderlich (bewiesen).</li>
+      <li><strong>Lorentz-Konvergenz:</strong> $\eta_n^\tau \to \beta\gamma$ bedingt bewiesen;
+        Konstruktion von $\mathcal{P}_\tau^{\mathrm{Q5b}}$ in <a href="/science/lc/temporal-projection/">TempProj</a> geschlossen.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Abhängigkeiten</h2>
+    <ul>
+      <li><strong>O7</strong>: Definition von $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n$.</li>
+      <li><strong>Born–Infeld-Artikel</strong>: Mobilitätsbudget $c_{\mathrm{BI}}$.</li>
+      <li><strong>Q5b</strong>: BFS-zu-Carnot–Carathéodory-Konvergenz.</li>
+      <li><strong>Q11</strong>: Ko-Metrik-Abschluss, der $g^{\mu\nu} = 2\eta^{\mu\nu}$ fixiert.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Lizenziert unter <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

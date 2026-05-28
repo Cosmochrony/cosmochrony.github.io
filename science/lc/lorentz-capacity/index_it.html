@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mobilità spettrale e fattore di Lorentz dalla saturazione di capacità proiettiva | Cosmochrony</title>
+  <meta name="description"
+    content="Il parametro di saturazione O7 converge alla mobilità relativistica βγ sotto il budget di ammissibilità Born–Infeld. Il fattore di Lorentz inverso emerge come profilo di capacità residua della cascata spettrale ammissibile."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Mobilità spettrale e fattore di Lorentz dalla saturazione di capacità proiettiva"/>
+  <meta property="og:description"
+    content="η_n^τ → βγ e Φ(η_n^τ) → 1/γ sotto il budget Born–Infeld e la normalizzazione quadratica degli osservabili O7."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc/lorentz-capacity/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("it", "/science/lc/lorentz-capacity/index_it")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Torna a Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Mobilità spettrale e fattore di Lorentz dalla saturazione di capacità proiettiva</h1>
+        <p class="subtitle">
+          Derivazione della mobilità relativistica $\beta\gamma$ e del fattore di Lorentz inverso $1/\gamma$ dal
+          parametro di saturazione O7 $\eta_n^{\mathrm{O7}}$ sotto il budget di ammissibilità Born–Infeld.
+          Il fattore di Lorentz non è un postulato cinematico esterno: emerge dal rapporto
+          capacità-occupata-su-residua della cascata spettrale ammissibile.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20299014" rel="noopener">Leggi il preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20299014</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Panoramica</h2>
+      <p>
+        Il parametro di saturazione O7 $\eta_n^{\mathrm{O7}}$ è definito in O7 come il rapporto della capacità
+        proiettiva occupata cumulata alla novità di frontiera residua. Una fattorizzazione analitica chiave mostra
+        che la coordinata centrale $c$ del gruppo di Heisenberg contribuisce solo una fase globale alle
+        rappresentazioni di Weil ed è invisibile per l'ampiezza dell'impronta. Questo costringe il residuo totale
+        O7 $\Sigma_n^{\mathrm{tot}}$ a soddisfare la legge di riempimento lineare
+        $B_n + \Sigma_n^{\mathrm{tot}} = 1$, confermata numericamente per $q \in \{7, 11, 13\}$.
+      </p>
+      <p>
+        La legge lineare non produce da sola il fattore di Lorentz. Sotto il budget Born–Infeld
+        $dI_\tau^2 + dI_{\mathrm{space}}^2 = c_{\mathrm{BI}}^2\,dn^2$, la struttura richiesta è un residuo
+        proiettato temporalmente $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$
+        che soddisfa la normalizzazione quadratica $B_n^2 + (\Sigma_n^\tau)^2 \to 1$.
+      </p>
+      <div class="note" role="note">
+        <strong>Portata.</strong> Le sezioni 1–3 e 5 sono pienamente stabilite. La sezione 4 (costruzione di
+        $\mathcal{P}_\tau^{\mathrm{Q5b}}$) è chiusa in <a href="/science/lc/temporal-projection/">TempProj</a>.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Dati chiave</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Autore</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Tipo</div>
+          <div class="v">Nota tecnica (in preparazione)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licenza</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Temi</div>
+          <div class="v">Saturazione O7, fattore di Lorentz, budget Born–Infeld, proiezione temporale</div>
+        </div>
+        <div class="kv">
+          <div class="k">Stato</div>
+          <div class="v">Sottoprogramma Lorentz-capacità chiuso (P_τ^Q5b costruito in TempProj)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Risultato principale</h2>
+    <p>
+      Sotto il budget di ammissibilità Born–Infeld e una normalizzazione quadratica degli osservabili O7:
+    </p>
+    <p style="text-align:center">
+      $\eta_n^{\tau} \longrightarrow \beta\gamma, \qquad
+      \Phi\!\left(\eta_n^{\tau}\right) = \dfrac{1}{\sqrt{1+(\eta_n^{\tau})^2}}
+      \longrightarrow \dfrac{1}{\gamma}.$
+    </p>
+    <p>
+      Il fattore di Lorentz inverso è il profilo di capacità residua della cascata spettrale ammissibile.
+      Il fattore di Lorentz non è un postulato cinematico esterno; emerge dal rapporto
+      capacità-occupata-su-residua sotto un budget proiettivo limitato.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Contributi chiave</h2>
+    <ul>
+      <li><strong>Fattorizzazione di fase centrale:</strong> $\omega_q(a,b,c) = e^{2\pi ic/q}\omega_q(a,b,0)$;
+        il residuo totale O7 soddisfa $B_n + \Sigma_n^{\mathrm{tot}} = 1$ (dimostrato e confermato numericamente).</li>
+      <li><strong>Obiettivo BI algebrico:</strong> derivazione puramente algebrica che $\Phi(\eta) = 1/\gamma$
+        sotto il budget BI (dimostrato).</li>
+      <li><strong>Insufficienza della legge lineare:</strong> è richiesta la normalizzazione quadratica (dimostrato).</li>
+      <li><strong>Convergenza di Lorentz:</strong> $\eta_n^\tau \to \beta\gamma$ dimostrato
+        condizionalmente; costruzione di $\mathcal{P}_\tau^{\mathrm{Q5b}}$ chiusa in <a href="/science/lc/temporal-projection/">TempProj</a>.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Dipendenze</h2>
+    <ul>
+      <li><strong>O7</strong>: definizione di $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n$.</li>
+      <li><strong>Articolo Born–Infeld</strong>: budget di mobilità $c_{\mathrm{BI}}$.</li>
+      <li><strong>Q5b</strong>: convergenza BFS a Carnot–Carathéodory.</li>
+      <li><strong>Q11</strong>: chiusura della co-metrica che fissa $g^{\mu\nu} = 2\eta^{\mu\nu}$.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Con licenza <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

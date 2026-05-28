@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fibrewise Born–Infeld Capacity Lapse and Gravitational Time Dilation | Cosmochrony</title>
+  <meta name="description"
+    content="Extends the temporal residual map to non-homogeneous regimes. Establishes a unified capacity arbitration: special-relativistic and gravitational time dilation are two facets of the same Born–Infeld trade-off, separated in the product R(x)/γ."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Fibrewise Born–Infeld Capacity Lapse and Gravitational Time Dilation"/>
+  <meta property="og:description"
+    content="Extends the temporal residual map to non-homogeneous regimes. Establishes a unified capacity arbitration: special-relativistic and gravitational time dilation are two facets of the same Born–Infeld trade-off, separated in the product R(x)/γ."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o2/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/lc/lc-o2/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Fibrewise Born–Infeld Capacity Lapse and Gravitational Time Dilation</h1>
+        <p class="subtitle">
+          Extends TempProj to non-homogeneous fibrewise regimes. A localised spectral occupancy $\epsilon(x)$
+          reduces the local Born–Infeld capacity radius to $R(x)^2 = 1-\epsilon(x)$. The fibrewise temporal
+          residual map factorises as $R(x)\sqrt{f(x,n)(2-f(x,n))}$. Gravitational time dilation
+          $d\tau/dn|_x = R(x)/\gamma$ emerges from the local capacity budget.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20317235" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20317235</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The paper TempProj constructed the temporal residual map $\mathcal{P}_\tau^{\mathrm{Q5b}}$ in the
+        homogeneous (flat-space) regime where the Born–Infeld capacity radius is globally $R = 1$. The present
+        paper extends this construction to non-homogeneous regimes, where a localised spectral occupancy
+        $\epsilon(x)$ is present in the fibre over position $x$.
+      </p>
+      <p>
+        The key structural result is that a localised spectral occupancy reduces the local BI capacity radius
+        to $R(x)^2 = 1 - \epsilon(x)$. The fibrewise temporal residual map factorises cleanly as
+        $R(x)\sqrt{f(x,n)(2-f(x,n))}$, where $R(x)$ carries all local physics and the second factor is the
+        universal Lorentzian structure from TempProj. Gravitational time dilation $d\tau/dn|_x = R(x)/\gamma$
+        emerges directly from the local capacity budget, and the metric identification $R(x)^2 = -2g_{\tau\tau}(x)$
+        connects the framework to the Gravity paper.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> The fibrewise extension is structural: it imports the metric from the
+        Gravity paper and does not independently derive Einstein's equations. The homogeneous case $R(x) \equiv 1$
+        reduces exactly to TempProj as a corollary.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Technical note</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">gravitational time dilation, fibrewise capacity, non-homogeneous extension</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Structural (imports metric from Gravity paper)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Conceptual interpretation: unified capacity arbitration</h2>
+    <p>
+      The Born–Infeld budget is a local capacity arbitration principle. Both types of relativistic time
+      dilation are manifestations of the same trade-off, separated in the product:
+    </p>
+    <p style="text-align:center">
+      $\dfrac{d\tau}{dn}\bigg|_x = R(x)\cdot\dfrac{1}{\gamma}$
+    </p>
+    <ul>
+      <li>The factor $1/\gamma$ measures the capacity diverted into spatial mobility (kinematic time dilation).</li>
+      <li>The factor $R(x)$ measures the capacity already depleted by the local spectral configuration (gravitational time dilation).</li>
+    </ul>
+    <p>
+      In this reading, curvature is the effective metric expression of local projective-capacity depletion.
+      Special-relativistic time dilation is the homogeneous capacity trade-off; gravitational time dilation
+      is its fibrewise generalisation.
+    </p>
+    <div class="note" role="note">
+      <strong>Epistemic boundary.</strong> The present result does not derive Einstein's equations.
+      It gives the fibrewise capacity interpretation of the metric lapse once the effective metric
+      is supplied by the infrared Einstein response. The open problem LC-O2-O1 -- deriving
+      $\epsilon(x) = 1 - R(x)^2 = 1 + 2g_{\tau\tau}(x)$ within the capacity-flow language without
+      importing the Einstein equations -- is closed by the companion paper
+      <a href="/science/lc/lc-o2-o1/">LCIIo1</a>.
+    </div>
+  </section>
+  <section class="card">
+    <h2>Main result</h2>
+    <p>
+      The fibrewise temporal residual map is:
+    </p>
+    <p style="text-align:center">
+      $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n) = R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)}$
+    </p>
+    <p>
+      with $R(x)^2 = -2g_{\tau\tau}(x)$. Gravitational time dilation: $d\tau/dn|_x = R(x)/\gamma$.
+      In the weak-field regime: $R(x) \approx 1 + \Phi_N(x)/c^2$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Key contributions</h2>
+    <ul>
+      <li><strong>Fibrewise extension:</strong> the homogeneous case $R(x) \equiv 1$ reduces to TempProj (corollary).</li>
+      <li><strong>Clean factorisation:</strong> $R(x)$ carries all local physics; $\sqrt{f(2-f)}$ is the universal Lorentzian structure.</li>
+      <li><strong>Gravitational time dilation:</strong> identified as position-dependence of the temporal residual capacity.</li>
+      <li><strong>Metric identification:</strong> $R(x)^2 = -2g_{\tau\tau}(x)$ connects fibrewise capacity to the spacetime metric.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Structure</h2>
+    <ol>
+      <li><strong>The homogeneous baseline</strong> — recap of TempProj and the flat-space formula.</li>
+      <li><strong>Fibrewise spectral occupancy</strong> — definition of $\epsilon(x)$ and reduction of the local BI radius.</li>
+      <li><strong>Construction of the fibrewise map</strong> — derivation of $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}$ from the local capacity budget.</li>
+      <li><strong>Factorisation theorem</strong> — proof that the map factorises as $R(x) \times$ (universal Lorentzian factor).</li>
+      <li><strong>Gravitational time dilation</strong> — emergence of $d\tau/dn|_x = R(x)/\gamma$ from the local budget.</li>
+      <li><strong>Metric identification and weak-field limit</strong> — connection to the Gravity paper and Newtonian potential.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Dependencies</h2>
+    <ul>
+      <li><strong>TempProj</strong>: homogeneous temporal residual map (flat-space baseline).</li>
+      <li><strong>LorentzCapacity</strong>: algebraic BI target and the O7 saturation framework.</li>
+      <li><strong>Q5b</strong>: BFS-to-Carnot–Carathéodory convergence; Lorentzian temporal splitting.</li>
+      <li><strong>Q11</strong>: co-metric closure fixing the Lorentzian signature $g^{\mu\nu} = 2\eta^{\mu\nu}$.</li>
+      <li><strong>Gravity paper (H)</strong>: metric $g_{\tau\tau}(x)$ imported for the identification $R(x)^2 = -2g_{\tau\tau}(x)$.</li>
+      <li><strong>Born–Infeld paper</strong>: mobility budget $c_{\mathrm{BI}}$ and the capacity-flow sphere.</li>
+      <li><strong>Foundation</strong>: fibre structure of the substrate and the spectral occupancy concept.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Fibrewise Born–Infeld Capacity Lapse and Gravitational Time Dilation</i>.
+      Preprint. <a href="https://doi.org/10.5281/zenodo.20317235" rel="noopener">10.5281/zenodo.20317235</a>
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      LCII is the third paper of the Lorentz Capacity sub-programme. It extends the flat-space result of TempProj
+      to curved-space regimes, connecting the spectral capacity framework to gravitational time dilation from the
+      Gravity paper. The clean factorisation $R(x) \times \sqrt{f(2-f)}$ reveals that gravitational and kinematic
+      time dilation arise from independent mechanisms within the same capacity budget: $R(x)$ from local spectral
+      occupancy, and $\sqrt{f(2-f)}$ from Lorentzian filling. Together, the three papers LorentzCapacity,
+      TempProj, and LCII form a complete derivation of relativistic time dilation from the projective capacity
+      framework.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

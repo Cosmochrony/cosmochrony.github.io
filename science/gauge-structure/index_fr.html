@@ -83,9 +83,10 @@
         $\Pi \simeq S^3$ ; la quantification de la charge découle de $\pi_1(S^1) \cong \mathbb{Z}$. $\mathrm{SU}(2)$
         provient de la minimalité quaternionique de l’algèbre admissible et du théorème de rigidité de O27 ; il est
         clos analytiquement. $\mathrm{SU}(3)$ provient de la co-admissibilité métaplectique des triplets de couleur
-        de blocs de Weil ; il est inconditionnel sur le graphe adapté aux couleurs et démontré à trois niveaux
+        de blocs de Weil ; il est inconditionnel sur le graphe adapté aux couleurs et démontré aux quatre niveaux
         analytiques ($[\mathrm{H\text{-}color}]_{\mathrm{rank}}$, $[\mathrm{H\text{-}color}]_{\mathrm{avg}}$,
-        $[\mathrm{H\text{-}color}]_{\mathrm{eff}}$) sur le graphe standard.
+        $[\mathrm{H\text{-}color}]_{\mathrm{eff}}$, $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$) sur le graphe
+        standard, le dernier via la Proposition 4.23 de O31 v1.5 (structure d'empreinte BI à fréquence unique).
       </div>
     </div>
     <aside class="card">
@@ -109,7 +110,7 @@
         </div>
         <div class="kv">
           <div class="k">État</div>
-          <div class="v">Identification du groupe de jauge close aux niveaux $\mathrm{U}(1)$ et $\mathrm{SU}(2)$ ; $\mathrm{SU}(3)$ inconditionnel sur le graphe adapté et à trois niveaux analytiques sur le graphe standard ; ouvert : [H-color] ponctuel, $\pi_2(\mathcal{C}_{\mathrm{eff}})=0$ en général, $V-A$ depuis l’admissibilité</div>
+          <div class="v">Identification du groupe de jauge close aux trois niveaux ($\mathrm{U}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$) ; $\mathrm{SU}(3)$ inconditionnel sur le graphe adapté et aux quatre niveaux analytiques (rang, moyenné, effectif, ponctuel) sur le graphe standard via l'empreinte BI à fréquence unique de O31 v1.5 ; ouvert : $\pi_2(\mathcal{C}_{\mathrm{eff}})=0$ en général, $V-A$ depuis l’admissibilité</div>
         </div>
       </div>
     </aside>
@@ -195,7 +196,9 @@
         comme symétrie des triplets co-admissibles $\{V_c, V_{\omega c}, V_{\omega^2 c}\}$.</li>
       <li><a href="/science/spectral/program/o32/"><strong>O32</strong></a> — $[\mathrm{H\text{-}color}]$ clos aux
         niveaux du rang, moyenné et exposant effectif ; passage numérique pour
-        $q \in \{61, 151, 211, 307\}$ ; égalité ponctuelle des profils à $q$ fini analytiquement ouverte.</li>
+        $q \in \{61, 151, 211, 307\}$ ; égalité ponctuelle des profils à $q$ fini désormais prouvée analytiquement
+        par O31 v1.5 (empreinte BI à fréquence unique), le $R_{\mathrm{var}}$ résiduel étant réinterprété comme
+        empreinte d'échantillonnage fini des tirages auxiliaires.</li>
     </ul>
   </section>
   <section class="card">
@@ -213,24 +216,24 @@
       <strong>Sorties.</strong> Le groupe de jauge $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ ;
       le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$ ; la quantification de la charge
       $q_{\mathrm{eff}} = w \cdot e$ avec l’absence de monopôles magnétiques sur le modèle canonique ; $d_\rho = 2$
-      et la clôture $\mathfrak{su}(2)$ ; $\mathrm{SU}(3)$ au niveau
-      $[\mathrm{H\text{-}color}]_{\mathrm{eff}}$ dans la limite $q \to \infty$ ; la chiralité projective —
-      consommés par Q12, Q13, Q14 et le sous-programme de stratification jauge–gravité.
+      et la clôture $\mathfrak{su}(2)$ ; $\mathrm{SU}(3)$ inconditionnel sur le graphe standard via
+      $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ (O31 v1.5, empreinte BI à fréquence unique) ; la chiralité
+      projective — consommés par Q12, Q13, Q14 et le sous-programme de stratification jauge–gravité.
     </p>
   </section>
   <section class="card">
     <h2>État</h2>
     <p>
-      L’identification du groupe de jauge est <strong>close aux niveaux $\mathrm{U}(1)$ et $\mathrm{SU}(2)$</strong>
-      (analytiquement, via la fibre de phase de Hopf et le théorème de rigidité O27). Le secteur $\mathrm{SU}(3)$ est
-      établi de manière inconditionnelle sur le graphe adapté aux couleurs (O31) et aux niveaux du rang, moyenné et
-      exposant effectif sur le graphe standard (O31–O32). Trois éléments restent ouverts : l’égalité ponctuelle des
-      profils à $q$ fini $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ sur le graphe standard, dont la voie
-      spectrale est close (O31) et qui requiert un mécanisme au niveau du rang BFS ; l’extension de l’exclusion
-      topologique des monopôles magnétiques ($\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$) au-delà du modèle canonique ;
-      et la dérivation de la structure spécifique $V - A$ du courant d’interaction faible depuis les données
-      d’admissibilité. Cette note ne dérive pas la dynamique de Yang–Mills — celle-ci relève du sous-programme de
-      stratification spectrale jauge–gravité (Note de présentation 8).
+      L’identification du groupe de jauge est <strong>close aux trois niveaux ($\mathrm{U}(1)$, $\mathrm{SU}(2)$,
+      $\mathrm{SU}(3)$)</strong> : $\mathrm{U}(1)$ et $\mathrm{SU}(2)$ analytiquement, via la fibre de phase de Hopf
+      et le théorème de rigidité O27 ; $\mathrm{SU}(3)$ inconditionnellement sur le graphe adapté aux couleurs (O31)
+      et aux quatre niveaux analytiques (rang, moyenné, exposant effectif, ponctuel) sur le graphe standard
+      (O31 v1.5–O32), le dernier via la Proposition 4.23 de O31 (structure d'empreinte BI à fréquence unique). Deux
+      éléments restent ouverts : l’extension de l’exclusion topologique des monopôles magnétiques
+      ($\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$) au-delà du modèle canonique ; et la dérivation de la structure
+      spécifique $V - A$ du courant d’interaction faible depuis les données d’admissibilité. Cette note ne dérive pas
+      la dynamique de Yang–Mills — celle-ci relève du sous-programme de stratification spectrale jauge–gravité
+      (Note de présentation 8).
     </p>
   </section>
 </main>

@@ -8,9 +8,9 @@
     [H-color] | Cosmochrony</title>
   <meta name="description"
     content="O32 tests Hypothesis [H-color] (triplet co-admissibility) numerically on primes
-    q ≡ 1 mod 3. Normalised ratios R pass the threshold R ≤ 3 for q ∈ {151, 211, 307},
-    confirming [H-color] numerically across the four-prime dataset {61, 151, 211, 307};
-    analytical proof remains open."/>
+    q ≡ 1 mod 3. Four-prime dataset {61, 151, 211, 307} uniformly passes R ≤ 3. Pointwise
+    [H-color] now exact via O31 v1.5 single-frequency BI fingerprint; residual R_var is
+    finite-sample auxiliary-draw footprint."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
@@ -20,7 +20,7 @@
   <meta property="og:description"
     content="O32 tests [H-color] for q ∈ {61,151,211,307} (test) and q ∈ {29,101} (control).
     All test primes pass R ≤ 3; δ_tri ≈ 3δ_c at sub-percent level; C_color has rank 1.
-    Analytical proof of [H-color] remains open."/>
+    Pointwise [H-color] now exact analytically via O31 v1.5 single-frequency BI fingerprint."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/"/>
   <script type="module">
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333304">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Back to Spectral Admissibility Programme
       </a>
@@ -88,12 +88,16 @@
         covariance $C_\mathrm{color}$ has numerical rank 1 in all cases.
       </p>
       <div class="note" role="note">
-        <strong>Status.</strong> [H-color] is numerically confirmed for $q \in \{151, 211, 307\}$
-        (4/4 triplets each); at $q = 307$, $R = 0.7$ with $\delta_\mathrm{tri} = 12.355
-        \approx 3\delta_c$ (deviation 1.5\%). The four-prime dataset
-        $q \in \{61, 151, 211, 307\}$ is complete. $H_\mathrm{color,eff}$ (equality of capacity
-        exponents in the $q\to\infty$ limit) is analytically established via Proposition
-        avg-hcolor. Pointwise proof at fixed $q$ remains open.
+        <strong>Status (v1.5).</strong> [H-color] is numerically confirmed for $q \in \{151,
+        211, 307\}$ (4/4 triplets each); at $q = 307$, $R = 0.7$ with $\delta_\mathrm{tri}
+        = 12.355 \approx 3\delta_c$ (deviation 1.5\%). The four-prime dataset
+        $q \in \{61, 151, 211, 307\}$ is complete. Two analytical results are now in place:
+        (i) $H_\mathrm{color,eff}$ (equality of capacity exponents in the $q\to\infty$ limit)
+        via Proposition avg-hcolor; (ii) <em>pointwise</em> $H_\mathrm{color}$ on the standard
+        graph at finite $q$, via the single-frequency BI fingerprint mechanism established in
+        the companion paper O31 v1.5. The residual $R_\mathrm{var}$ reported here is therefore
+        the finite-sample footprint of independent auxiliary draws, not a breaking of
+        co-admissibility.
       </div>
     </div>
     <aside class="card">
@@ -113,9 +117,9 @@
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Structurally motivated ([H-color] numerically confirmed for
-            q ∈ {151, 211, 307} — four-prime dataset complete; H_color,eff analytically
-            proved in expectation; pointwise proof open)</div>
+          <div class="v">Numerically confirmed (four-prime dataset $\{61, 151, 211, 307\}$);
+            pointwise [H-color] now exact analytically via O31 v1.5; $H_\mathrm{color,eff}$
+            analytically proved in expectation</div>
         </div>
         <div class="kv">
           <div class="k">Depends on</div>
@@ -266,29 +270,32 @@
     </p>
   </section>
   <section class="card">
-    <h2>Open direction</h2>
+    <h2>Pointwise [H-color] from O31 v1.5</h2>
     <p>
-      The primary open problem is the pointwise analytical proof of [H-color] at fixed finite
-      $q$: showing that each individual capacity profile $\sigma_{c_i}(n)$ equals the others,
-      not just their block averages. The expectation-level result (Proposition avg-hcolor)
-      already establishes the large-$q$ limit; the remaining challenge is the finite-$q$
-      control of fluctuations around the expected value.
+      The previously open pointwise analytical proof of [H-color] at fixed finite $q$ has been
+      resolved in the companion paper O31 v1.5. Each Born–Infeld fingerprint vector is shown to
+      be a single additive character of frequency $B = c_1 b_1 + c_2 b_2 + c_3 b_3$
+      (Lemma single-frequency). The capacity observable $\sigma_c(n)$ is therefore a count of
+      distinct frequencies, and the orbit dilation $B \mapsto \omega B$ preserves it exactly
+      (Proposition hcolor-frequency).
     </p>
     <p>
-      The completed computation at $q = 307$ ($R = 0.7$, 4/4 triplets,
-      $R_\mathrm{var} = 1.17\times10^{-3}$) extends the numerical evidence to a larger
-      prime and is consistent with the predicted $R_\mathrm{var} \propto q^{-1}$ scaling.
+      The residual inter-triplet variance $R_\mathrm{var}$ measured here is reinterpreted as
+      the finite-sample footprint of independent auxiliary draws, with expected
+      $R_\mathrm{var} \propto q^{-1}$ scaling — consistent with the observed factor 5 decrease
+      from $q=61$ to $q=151$. The completed $q = 307$ datapoint ($R = 0.7$, 4/4 triplets,
+      $R_\mathrm{var} = 1.17\times10^{-3}$) confirms this scaling.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20333304" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
         <i>Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis
         [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20333304
+      doi:10.5281/zenodo.20145607
     </p>
   </section>
 </main>

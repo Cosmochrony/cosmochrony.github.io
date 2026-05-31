@@ -8,9 +8,10 @@
     l'hypothèse [H-color] | Cosmochronie</title>
   <meta name="description"
     content="O32 teste numériquement l'hypothèse [H-color] (co-admissibilité des triplets)
-    sur des premiers q ≡ 1 mod 3. Les ratios normalisés R passent le seuil R ≤ 3 pour
-    q ∈ {151, 211, 307}, confirmant [H-color] numériquement sur le jeu à quatre premiers
-    {61, 151, 211, 307} ; la preuve analytique reste ouverte."/>
+    sur des premiers q ≡ 1 mod 3. Le jeu à quatre premiers {61, 151, 211, 307} passe
+    uniformément R ≤ 3. La [H-color] ponctuelle est désormais exacte via O31 v1.5
+    (empreinte BI à fréquence unique) ; le R_var résiduel est l'empreinte d'échantillonnage
+    fini des tirages auxiliaires."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o32/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -20,7 +21,8 @@
   <meta property="og:description"
     content="O32 teste [H-color] pour q ∈ {61,151,211,307} (test) et q ∈ {29,101} (contrôle).
     Tous les premiers de test passent R ≤ 3 ; δ_tri ≈ 3δ_c au niveau sous-pourcent ;
-    C_color est de rang numérique 1. La preuve analytique reste ouverte."/>
+    C_color est de rang numérique 1. La [H-color] ponctuelle est désormais exacte
+    analytiquement via le mécanisme à fréquence unique de O31 v1.5."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
   <script type="module">
@@ -57,7 +59,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333304">Lire la prépublication</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d'admissibilité spectrale
       </a>
@@ -89,13 +91,17 @@
         couleur $C_\mathrm{color}$ est de rang numérique 1 dans tous les cas.
       </p>
       <div class="note" role="note">
-        <strong>Statut.</strong> [H-color] est confirmée numériquement pour
+        <strong>Statut (v1.5).</strong> [H-color] est confirmée numériquement pour
         $q \in \{151, 211, 307\}$ (4/4 triplets chacun) ; à $q = 307$, $R = 0.7$ avec
         $\delta_\mathrm{tri} = 12.355 \approx 3\delta_c$ (écart 1.5\%). Le jeu de données
-        à quatre premiers $q \in \{61, 151, 211, 307\}$ est complet.
-        $H_\mathrm{color,eff}$ (égalité des exposants de capacité en espérance dans la limite
-        $q\to\infty$) est prouvée analytiquement via la Proposition avg-hcolor. La preuve
-        ponctuelle à $q$ fixé reste ouverte.
+        à quatre premiers $q \in \{61, 151, 211, 307\}$ est complet. Deux résultats
+        analytiques sont désormais établis : (i) $H_\mathrm{color,eff}$ (égalité des exposants
+        de capacité en espérance dans la limite $q\to\infty$) via la Proposition avg-hcolor ;
+        (ii) $H_\mathrm{color}$ <em>point par point</em> sur le graphe standard à $q$ fini,
+        via le mécanisme d'empreinte BI à fréquence unique établi dans l'article compagnon
+        O31 v1.5. Le $R_\mathrm{var}$ résiduel rapporté ici est donc l'empreinte
+        d'échantillonnage fini des tirages auxiliaires indépendants, et non une rupture de
+        co-admissibilité.
       </div>
     </div>
     <aside class="card">
@@ -115,9 +121,9 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Structurellement motivé ([H-color] numériquement confirmée pour
-            q ∈ {151, 211, 307} — jeu à quatre premiers complet ; H_color,eff
-            analytiquement prouvée en espérance ; preuve ponctuelle ouverte)</div>
+          <div class="v">Confirmée numériquement (jeu à quatre premiers $\{61, 151, 211, 307\}$) ;
+            [H-color] ponctuelle désormais exacte analytiquement via O31 v1.5 ;
+            $H_\mathrm{color,eff}$ prouvée analytiquement en espérance</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -275,30 +281,33 @@
     </p>
   </section>
   <section class="card">
-    <h2>Direction ouverte</h2>
+    <h2>[H-color] ponctuelle par O31 v1.5</h2>
     <p>
-      Le problème ouvert principal est la preuve analytique ponctuelle de [H-color] à $q$ fini
-      fixé : montrer que chaque profil de capacité individuel $\sigma_{c_i}(n)$ est égal aux
-      autres, et pas seulement leurs moyennes par blocs. Le résultat au niveau de l'espérance
-      (Proposition avg-hcolor) établit déjà la limite des grands $q$ ; le défi restant est le
-      contrôle à $q$ fini des fluctuations autour de la valeur attendue.
+      La preuve analytique ponctuelle de [H-color] à $q$ fini fixé, précédemment ouverte, a été
+      résolue dans l'article compagnon O31 v1.5. Chaque vecteur d'empreinte Born–Infeld est
+      montré comme étant un caractère additif unique de fréquence
+      $B = c_1 b_1 + c_2 b_2 + c_3 b_3$ (Lemme single-frequency). L'observable de capacité
+      $\sigma_c(n)$ est donc un comptage de fréquences distinctes, et la dilatation d'orbite
+      $B \mapsto \omega B$ la préserve exactement (Proposition hcolor-frequency).
     </p>
     <p>
-      Le calcul terminé à $q = 307$ ($R = 0.7$, 4/4 triplets,
-      $R_\mathrm{var} = 1.17\times10^{-3}$) étend les preuves numériques à un premier plus
-      grand et reste cohérent avec la prédiction de mise à l'échelle
-      $R_\mathrm{var} \propto q^{-1}$.
+      La variance inter-triplet résiduelle $R_\mathrm{var}$ mesurée ici est réinterprétée
+      comme l'empreinte d'échantillonnage fini des tirages auxiliaires indépendants, avec une
+      mise à l'échelle attendue $R_\mathrm{var} \propto q^{-1}$ — cohérente avec la
+      décroissance par facteur 5 observée de $q=61$ à $q=151$. Le point $q = 307$
+      ($R = 0.7$, 4/4 triplets, $R_\mathrm{var} = 1.17\times10^{-3}$) confirme cette mise à
+      l'échelle.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20333304" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener">
         <i lang="en">Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of
         Hypothesis [H-color]</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20333304
+      doi:10.5281/zenodo.20145607
     </p>
   </section>
 </main>

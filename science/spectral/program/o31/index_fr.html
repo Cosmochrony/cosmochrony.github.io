@@ -7,10 +7,10 @@
   <title>SU(3) par co-admissibilité des triplets de couleur : vers le groupe de jauge
     complet du Modèle Standard | Cosmochronie</title>
   <meta name="description"
-    content="O31 fournit le cadre structurel pour l'identification de SU(3) à partir de la
-    co-admissibilité des triplets de couleur sur Heis₃(Z/qZ). Prouve que l'automorphisme
-    métaplectique force la dégénérescence spectrale et que le groupe de symétrie du triplet
-    co-admissible est exactement SU(3)."/>
+    content="O31 établit l'identification de SU(3) à partir de la co-admissibilité des triplets
+    de couleur sur Heis₃(Z/qZ). [H-color] est désormais prouvée analytiquement point par point
+    sur le graphe standard à q fini via le mécanisme à fréquence unique des empreintes BI,
+    rendant SU(3) inconditionnel pour le graphe standard."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o31/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -18,9 +18,10 @@
     content="SU(3) par co-admissibilité des triplets de couleur : vers le groupe de jauge
     complet du Modèle Standard"/>
   <meta property="og:description"
-    content="O31 définit les triplets de couleur dans (Z/qZ)*, prouve que l'automorphisme
-    métaplectique force la dégénérescence spectrale σ_c = σ_{ωc}, et montre que G_SM =
-    SU(3)×SU(2)×U(1) est un composite de trois points fixes d'admissibilité."/>
+    content="O31 définit les triplets de couleur dans (Z/qZ)*, prouve [H-color] analytiquement
+    point par point sur le graphe standard via les empreintes BI à fréquence unique, et montre
+    que G_SM = SU(3)×SU(2)×U(1) découle inconditionnellement comme composite de trois points
+    fixes d'admissibilité."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o31/index_fr.html"/>
   <script type="module">
@@ -56,7 +57,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20333303">Lire la prépublication</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20030491">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Retour au programme d'admissibilité spectrale
       </a>
@@ -88,11 +89,15 @@
         du triplet co-admissible est exactement SU(3).
       </p>
       <div class="note" role="note">
-        <strong>Statut.</strong> Les résultats principaux (existence des triplets, dégénérescence
-        spectrale, unicité de SU(3), et égalité inconditionnelle des rangs sectoriels de couleur)
-        sont prouvés. [H-color] est prouvé au niveau des rangs sectoriels BFS ; l'égalité du
-        fonctionnel de capacité complet est confirmée numériquement par O32 et reste ouverte
-        analytiquement.
+        <strong>Statut (v1.5).</strong> Les résultats principaux (existence des triplets,
+        dégénérescence spectrale, unicité de SU(3), égalité des rangs sectoriels de couleur, et
+        [H-color] point par point sur le graphe standard) sont prouvés inconditionnellement.
+        Chaque vecteur d'empreinte Born–Infeld est un caractère additif unique de fréquence
+        $B = c_1 b_1 + c_2 b_2 + c_3 b_3$, donc l'observable de capacité $\sigma_c(n)$ compte
+        des fréquences distinctes et la dilatation d'orbite $B \mapsto \omega B$ la préserve
+        exactement. SU(3) et le composite du Modèle Standard
+        $G_\mathrm{SM} = \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ tiennent donc
+        inconditionnellement sur le graphe standard.
       </div>
     </div>
     <aside class="card">
@@ -112,7 +117,7 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Structurellement motivé ; conditionnel à [H-color]</div>
+          <div class="v">Prouvé ; SU(3) inconditionnel sur le graphe standard (v1.5)</div>
         </div>
         <div class="kv">
           <div class="k">Focus</div>
@@ -147,9 +152,19 @@
         Cayley adapté aux couleurs (prouvé).
       </li>
       <li>
-        <strong>Unicité de SU(3) :</strong> conditionnellement à [H-color], le groupe de
-        symétrie du triplet de couleur co-admissible est exactement SU(3) ; U(3), SO(3),
-        U(2) et $G_2$ sont exclus (prouvé).
+        <strong>Unicité de SU(3) :</strong> le groupe de symétrie du triplet de couleur
+        co-admissible est exactement SU(3) ; U(3), SO(3), U(2) et $G_2$ sont exclus (prouvé).
+        Combiné avec la preuve analytique de [H-color] sur le graphe standard (v1.5),
+        l'identification est inconditionnelle.
+      </li>
+      <li>
+        <strong>Empreinte Born–Infeld à fréquence unique (Lemme, prouvé, v1.5) :</strong> chaque
+        vecteur d'empreinte Born–Infeld est un caractère additif unique de fréquence
+        $B = c_1 b_1 + c_2 b_2 + c_3 b_3$. L'observable de capacité $\sigma_c(n)$ est donc un
+        comptage de fréquences distinctes, et la dilatation d'orbite $B \mapsto \omega B$ la
+        préserve exactement. Ceci établit [H-color] point par point sur le graphe standard à
+        $q$ fini, rendant l'identification de SU(3) — et avec elle le composite du Modèle
+        Standard — inconditionnelle.
       </li>
       <li>
         <strong>Groupe de jauge du Modèle Standard comme composite :</strong> le groupe de jauge
@@ -309,11 +324,11 @@
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.20333303" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.20030491" rel="noopener">
         <i lang="en">SU(3) from Colour Triplet Co-admissibility: Towards the Complete Standard
         Model Gauge Group</i>. Preprint.
       </a>
-      doi:10.5281/zenodo.20333303
+      doi:10.5281/zenodo.20030491
     </p>
   </section>
 </main>

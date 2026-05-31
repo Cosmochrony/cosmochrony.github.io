@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Perte d’information projective et effacement de fibre | Cosmochrony</title>
+  <meta name="description"
+    content="Un théorème d’effacement de fibre reliant le résultat no-go ENI à la hiérarchie spectrale BFS : sous une hypothèse de suffisance structurelle, l’information résiduelle de fibre est monotone décroissante sous coarse-graining admissible."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/fibre-erasure/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Perte d’information projective et effacement de fibre dans la projection non injective admissible"/>
+  <meta property="og:description"
+    content="Une fonctionnelle d’information monotone pour la hiérarchie de coarse-graining BFS, reliant ENI au programme d’admissibilité spectrale par l’inégalité de traitement de l’information."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fibre-erasure/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/fibre-erasure/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Perte d’information projective et effacement de fibre</h1>
+        <p class="subtitle">
+          Une hiérarchie d’information monotone reliant le résultat no-go ENI à la cascade spectrale BFS.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20466459" rel="noopener">
+        Lire la prépublication
+      </a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.20466459</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Cet article établit un <em>théorème d’effacement de fibre</em> pour la hiérarchie de
+        <em>coarse-graining</em> admissible du programme spectral de Cosmochrony. L’application
+        non injective \(\Pi : \Omega \to \mathcal{O}\) définit une fonctionnelle d’information
+        de fibre résiduelle \(I(c;\sigma(\ell))\), où \(c\) est l’étiquette de fibre d’un bloc
+        de Weil et \(\sigma_c(\ell)\) est le profil de capacité BFS à la profondeur de
+        coarse-graining \(\ell\). Sous l’hypothèse de suffisance structurelle [H-suff],
+        l’inégalité de traitement de l’information implique que cette fonctionnelle est
+        décroissante en \(\ell\) : l’information de fibre est effacée, non créée, sous
+        coarse-graining admissible.
+      </p>
+      <p>
+        Le résultat est une réalisation quantitative du théorème no-go ENI. La non-injectivité
+        de \(\Pi\) force une perte d’information projective, et l’inégalité de traitement de
+        l’information rend cette perte monotone et mesurable le long de l’axe de résolution BFS.
+        La variance inter-secteurs \(\mathrm{Var}_c(\sigma_c(\ell))\) sert de quantité calculable
+        ; sa restriction aux triplets de couleur \(\mathrm{SU}(3)\) se relie directement à la
+        campagne [H-color] de la série O.
+      </p>
+      <div class="note" role="note">
+        <strong>Note de portée.</strong> Cette page propose un résumé structuré. La référence
+        technique faisant autorité est la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type de travail</div>
+          <div class="v">Document de travail</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Monotone d’information, coarse-graining, inégalité de traitement de l’information, capacité BFS</div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">Théorème conditionnel (preuve au niveau du rang + évidence numérique au niveau de la capacité)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Fonctionnelle d’information monotone.</strong> Une fonctionnelle d’information
+        de fibre résiduelle \(I(c;\sigma(\ell))\) est définie pour la hiérarchie de
+        coarse-graining BFS et démontrée, sous [H-suff] et [H-sg], décroissante en \(\ell\)
+        (Théorème 4.1).</li>
+      <li><strong>Résultat inconditionnel au niveau du rang.</strong> Au niveau de l’observable
+        de rang BFS, l’étiquette de fibre est effacée identiquement par le lemme de Schur
+        (Proposition 3.6). La propriété de semigroupe [H-sg] devient en outre redondante à ce
+        niveau (Corollaire 3.7).</li>
+      <li><strong>Évidence numérique au niveau de la capacité.</strong> Des tests de Spearman
+        par permutation sur les données de capacité BFS pour \(q \in \{61, 151, 211\}\) ne
+        détectent aucune dépendance significative à l’étiquette de fibre dans les résidus
+        pas-à-pas, fournissant un appui numérique direct à [H-suff].</li>
+      <li><strong>Équilibre d’effacement de fibre.</strong> La condition
+        \(I(c;\sigma(\ell)) = 0\) identifie un profil de point fixe \(\sigma^*\) approché
+        dans la limite thermodynamique \(q \to \infty\) avec des corrections en
+        \(\mathrm{O}(q^{-1/2})\).</li>
+      <li><strong>Désambiguïsation à trois axes.</strong> L’axe de coarse-graining \(\ell\),
+        l’axe thermodynamique \(q \to \infty\), et l’axe temporel de cascade \(n\) (PTO) sont
+        structurellement orthogonaux et portent chacun leur propre fonctionnelle d’information.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Mise au point</h2>
+    <p>
+      Ce résultat n’est <strong>pas</strong> un théorème \(c\). Il ne compte pas les degrés de
+      liberté effectifs. C’est un énoncé quantitatif de perte d’information attaché à
+      l’étiquette de fibre de Weil sous coarse-graining. Un énoncé de type théorème \(c\)
+      exigerait un principe de comptage supplémentaire pour les degrés de liberté effectifs,
+      ce qui n’est pas établi ici et est listé comme problème ouvert [O-2].
+    </p>
+  </section>
+  <section class="card">
+    <h2>Ce que le théorème établit et n’établit pas</h2>
+    <p>
+      Établit, sous [H-suff] et [H-sg] : une fonctionnelle d’information monotone pour la
+      hiérarchie de coarse-graining BFS ; sa non-croissance par incrément de profondeur ;
+      l’identification de \(I(c;\sigma(\ell)) = 0\) comme la condition d’équilibre
+      d’effacement de fibre.
+    </p>
+    <p>
+      N’établit pas : un théorème \(c\) ; la forme pleine au niveau de la capacité de [H-suff]
+      (prouvée au niveau du rang ; résidu ponctuel de Born–Infeld ouvert sous [O-1a\('\)]) ;
+      la forme pleine au niveau de la capacité de [H-sg] (prouvée au niveau du rang et y
+      redondante ; résidu au niveau de la capacité ouvert sous [O-1b]).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      L’effacement de fibre occupe une position de pivot dans le programme. Il prend en entrée
+      le théorème no-go ENI (qui établit \(S_\Pi > 0\) mais n’ordonne pas la perte d’information
+      à travers les résolutions) et le programme d’admissibilité spectrale (qui fournit la
+      hiérarchie opérationnelle \(\sigma_c(\ell)\)), et les relie en traduisant l’entropie de
+      projection ENI en la fonctionnelle d’information opérationnelle \(I(c;\sigma(\ell))\).
+      Avec l’article PTO, qui traite l’axe temporel \(n\) orthogonal, il constitue
+      l’architecture informationnelle de la cascade d’admissibilité.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projective Information Loss and Fibre Erasure in Admissible Non-Injective Projection</i>.
+      Document de travail, Zenodo.
+      <a href="https://doi.org/10.5281/zenodo.20466459" rel="noopener">10.5281/zenodo.20466459</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[["$","$"]]}},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Information Loss and Fibre Erasure | Cosmochrony</title>
+  <meta name="description"
+    content="A fibre-erasure theorem connecting the ENI no-go result with the BFS spectral hierarchy: under a structural sufficiency hypothesis, residual fibre information is monotone non-increasing under admissible coarse-graining."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/fibre-erasure/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Projective Information Loss and Fibre Erasure in Admissible Non-Injective Projection"/>
+  <meta property="og:description"
+    content="A monotone information functional for the BFS coarse-graining hierarchy, connecting ENI to the spectral admissibility programme via the data-processing inequality."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fibre-erasure/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fibre-erasure/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Information Loss and Fibre Erasure</h1>
+        <p class="subtitle">
+          A monotone information hierarchy connecting the ENI no-go result to the BFS spectral cascade.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20466459" rel="noopener">
+        Read the preprint
+      </a> <span class="pill">DOI: <span class="mono">10.5281/zenodo.20466459</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This article establishes a <em>fibre-erasure theorem</em> for the admissible coarse-graining
+        hierarchy of the Cosmochrony spectral programme. The non-injective projection
+        \(\Pi : \Omega \to \mathcal{O}\) defines a residual fibre-information functional
+        \(I(c;\sigma(\ell))\), where \(c\) is a Weil-block fibre label and \(\sigma_c(\ell)\) is
+        the BFS capacity profile at coarse-graining depth \(\ell\). Conditional on a structural
+        sufficiency hypothesis [H-suff], the data-processing inequality implies that this
+        functional is non-increasing in \(\ell\): fibre information is erased, not created,
+        under admissible coarse-graining.
+      </p>
+      <p>
+        The result is a quantitative realisation of the ENI no-go theorem. Non-injectivity of
+        \(\Pi\) forces projective information loss, and the data-processing inequality makes this
+        loss monotone and measurable along the BFS resolution axis. The inter-sector variance
+        \(\mathrm{Var}_c(\sigma_c(\ell))\) serves as a computable proxy; its restriction to
+        \(\mathrm{SU}(3)\) colour-triplets connects directly to the [H-color] campaign of the
+        O-series.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary. The authoritative technical
+        reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Information monotone, coarse-graining, data-processing inequality, BFS capacity</div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">Conditional theorem (rank-level proof + capacity-level numerical evidence)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Monotone information functional.</strong> A residual fibre-information functional
+        \(I(c;\sigma(\ell))\) is defined for the BFS coarse-graining hierarchy and shown,
+        conditional on [H-suff] and [H-sg], to be non-increasing in \(\ell\) (Theorem 4.1).</li>
+      <li><strong>Rank-level unconditional result.</strong> At the BFS rank observable, the fibre
+        label is erased identically by Schur's lemma (Proposition 3.6). The semigroup property
+        [H-sg] is moreover redundant at this level (Corollary 3.7).</li>
+      <li><strong>Capacity-level numerical evidence.</strong> Permutation-based Spearman tests on
+        BFS capacity data for \(q \in \{61, 151, 211\}\) detect no significant fibre-label
+        dependence in step-by-step residuals, providing direct numerical support for [H-suff].</li>
+      <li><strong>Fibre-erasure equilibrium.</strong> The condition \(I(c;\sigma(\ell)) = 0\)
+        identifies a fixed-point profile \(\sigma^*\) approached in the thermodynamic limit
+        \(q \to \infty\) with \(\mathrm{O}(q^{-1/2})\) corrections.</li>
+      <li><strong>Three-axis disambiguation.</strong> The coarse-graining axis \(\ell\), the
+        thermodynamic axis \(q \to \infty\), and the temporal cascade axis \(n\) (PTO) are
+        structurally orthogonal and each carry their own information functional.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Strict disclaimer</h2>
+    <p>
+      This result is <strong>not</strong> a \(c\)-theorem. It does not count effective degrees of
+      freedom. It is a quantitative information-loss statement attached to the Weil-fibre label
+      under coarse-graining. A \(c\)-theorem-type statement would require an additional counting
+      principle for effective degrees of freedom, which is not established here and is listed as
+      open problem [O-2].
+    </p>
+  </section>
+  <section class="card">
+    <h2>What the theorem does and does not establish</h2>
+    <p>
+      Establishes, conditional on [H-suff] and [H-sg]: a monotone information functional for the
+      BFS coarse-graining hierarchy; its non-increase under depth-increment; the identification of
+      \(I(c;\sigma(\ell)) = 0\) as the fibre-erasure equilibrium.
+    </p>
+    <p>
+      Does not establish: a \(c\)-theorem; the full capacity-level form of [H-suff] (proved at the
+      rank level; pointwise Born–Infeld residue open as [O-1a\('\)]); the full capacity-level form
+      of [H-sg] (proved at the rank level and there redundant; capacity-level residue open as
+      [O-1b]).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      Fibre Erasure occupies a hub position in the programme. It takes as input the ENI no-go
+      theorem (which establishes \(S_\Pi > 0\) but does not order information loss across
+      resolutions) and the spectral admissibility programme (which provides the operational
+      hierarchy \(\sigma_c(\ell)\)), and connects them by translating the ENI projection entropy
+      into the operational information functional \(I(c;\sigma(\ell))\). Together with the PTO
+      paper, which handles the orthogonal temporal axis \(n\), it constitutes the
+      information-theoretic architecture of the admissibility cascade.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projective Information Loss and Fibre Erasure in Admissible Non-Injective Projection</i>.
+      Working paper, Zenodo.
+      <a href="https://doi.org/10.5281/zenodo.20466459" rel="noopener">10.5281/zenodo.20466459</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[["$","$"]]}},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

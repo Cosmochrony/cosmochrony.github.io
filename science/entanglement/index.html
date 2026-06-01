@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Entanglement Sub-Programme | Cosmochrony</title>
+  <meta name="description"
+    content="Entanglement as the infra-projectable invariant of a non-decomposable joint fibre of the non-injective projection: a residual Gram–Schmidt rank along the spectral admissibility cascade."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="The Entanglement Sub-Programme"/>
+  <meta property="og:description"
+    content="Entanglement entropy of a closed conjugate Weil pair as the logarithm of the residual fibre-level rank along the spectral admissibility cascade."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/entanglement/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/entanglement/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>The Entanglement Sub-Programme</h1>
+        <p class="subtitle">
+          Entanglement as the residual rank of the spectral admissibility cascade.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20498835" rel="noopener">
+        Read the presentation note
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        In the Cosmochrony framework, quantum states arise as equivalence classes of
+        $\chi$-configurations under the non-injective projection $\Pi$. Composite systems inherit a
+        fibre structure in which sub-system configurations are not independently labelled at the
+        $\chi$-level. Entanglement is then not an added postulate: it is the
+        <strong>infra-projectable invariant of a non-decomposable joint fibre of $\Pi$</strong>.
+      </p>
+      <p>
+        The presentation note locates entanglement <em>inside</em> the spectral admissibility cascade.
+        For a closed conjugate Weil pair $\{c, q-c\}$ on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
+        the reduced entropy on the residual fibre-level support of the Gram&ndash;Schmidt span of
+        Weil fingerprints is exactly
+        $$ S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n), $$
+        the logarithm of the residual Gram&ndash;Schmidt rank, with no surviving spectral weighting.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page is an entry point to the sub-programme. The
+        authoritative technical reference is the presentation note linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Sub-programme presentation note</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Entanglement, conjugate Weil pairs, residual rank</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20498835">10.5281/zenodo.20498835</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li>
+        <strong>Closed conjugate pair.</strong> Born&ndash;Infeld parity binds $\{c, q-c\}$ into a
+        single infra-projectable object via $V_{q-c} \simeq \overline{V_c}$, with diagonal Schmidt
+        pairing $e_j \leftrightarrow \overline{e_j}$.
+      </li>
+      <li>
+        <strong>Flat Schmidt spectrum.</strong> Admitted Weil fingerprint directions are mutually
+        orthogonal ($w_j = 1$, verified for $q \in \{29, 61, 101, 151\}$), so the reduced spectrum
+        on the residual support is uniform.
+      </li>
+      <li>
+        <strong>Residual-rank entropy.</strong>
+        $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ with
+        $r_{\mathrm{pair}}(n) = R_\infty - R(n)$; the admissibility-weight deficit is identically
+        zero.
+      </li>
+      <li>
+        <strong>Structural monotonicity.</strong> $S_{\mathrm{ent}}$ is non-increasing in $n$:
+        residual entanglement is maximal at the earliest admissible stage and decreases as
+        independent fingerprint directions stabilise into the projected span.
+      </li>
+      <li>
+        <strong>Mass hierarchy as downstream trace.</strong> The projected mass hierarchy follows the
+        pair-capacity exponent $\delta_{\mathrm{pair}}$, not an independent dynamical input.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Status of claims</h2>
+    <p>
+      The reduction $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ is <em>derived</em>,
+      conditional on the orthogonality of admitted Weil fingerprints
+      (<em>numerically established</em> for $q \in \{29, 61, 101, 151\}$;
+      analytic proof for all $q$ <em>open</em>). The monotonicity of $S_{\mathrm{ent}}$ is
+      <em>structural</em> (Gram&ndash;Schmidt). The capacity-level one-way activation
+      $\Delta I(n) \geq 0$ is <em>numerically established</em> in the projective temporal ordering
+      analysis; a general analytic proof remains <em>open</em>. The purity of the conjugate pair
+      rests on Born&ndash;Infeld parity and is the standing structural assumption.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position within Cosmochrony</h2>
+    <p>
+      The sub-programme sits alongside the foundational papers: it relies on the projective
+      formalism stated in the white-paper and the Foundation paper; it inherits the
+      <a href="/science/bell/">Bell-correlation derivation</a> as its canonical empirical anchor;
+      and it imports the conjugate Weil pair, Born&ndash;Infeld parity, and the pair-capacity
+      observable $\sigma^{\mathrm{can}}_{\mathrm{pair}}$ from the
+      <a href="/science/spectral/program/">O-series spectral admissibility sub-programme</a>.
+    </p>
+    <p>
+      Locality at the projected level is preserved in the same way the Tsirelson bound is reached
+      without superluminal signalling: a fully infra-projectable invariant has no position in the
+      projected temporal ordering. Entanglement is, in this sense, the
+      <em>not-yet-time-ordered sector of the cascade</em>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Numerical deliverable</h2>
+    <p>
+      For $q \in \{61, 151, 211, 307\}$, the residual rank trajectory $r_{\mathrm{pair}}(n)$ is
+      reconstructed from the cumulative capacity profiles of the systematic pair campaign. The task
+      is to measure the <strong>contraction law</strong> of $r_{\mathrm{pair}}(n)$ and compare its
+      scaling exponent with the pair-capacity exponent $\delta_{\mathrm{pair}}$. Agreement would
+      mean the entanglement trajectory and the capacity law share the same spectral engine; a gap
+      would mark a genuine separation between residual rank contraction and shell-wise capacity
+      decay.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Beau, J. <i lang="en">Residual-Rank Entanglement of Conjugate Weil Pairs in the Spectral
+      Admissibility Cascade</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20498835" rel="noopener">
+        https://doi.org/10.5281/zenodo.20498835
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le sous-programme intrication | Cosmochronie</title>
+  <meta name="description"
+    content="L'intrication comme invariant infra-projetable d'une fibre jointe non décomposable de la projection non injective&nbsp;: un rang résiduel de Gram&ndash;Schmidt le long de la cascade d'admissibilité spectrale."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le sous-programme intrication"/>
+  <meta property="og:description"
+    content="Entropie d'intrication d'une paire de Weil conjuguée fermée comme logarithme du rang fibre-par-fibre résiduel le long de la cascade d'admissibilité spectrale."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/entanglement/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/fr/science/entanglement/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/fr/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le sous-programme intrication</h1>
+        <p class="subtitle">
+          L'intrication comme rang résiduel de la cascade d'admissibilité spectrale.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20498835" rel="noopener">
+        Lire la note de présentation
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Dans le cadre de la Cosmochronie, les états quantiques apparaissent comme classes
+        d'équivalence de configurations $\chi$ sous l'application non injective $\Pi$. Les systèmes
+        composés héritent d'une structure fibrée dans laquelle les configurations des sous-systèmes
+        ne sont pas étiquetées indépendamment au niveau $\chi$. L'intrication n'est alors pas un
+        postulat ajouté&nbsp;: c'est
+        <strong>l'invariant infra-projetable d'une fibre jointe non décomposable de
+        $\Pi$</strong>.
+      </p>
+      <p>
+        La note de présentation situe l'intrication <em>à l'intérieur</em> de la cascade
+        d'admissibilité spectrale. Pour une paire de Weil conjuguée fermée $\{c, q-c\}$ sur
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, l'entropie réduite sur le support fibre-par-fibre
+        résiduel du sous-espace engendré par Gram&ndash;Schmidt des empreintes de Weil vaut
+        exactement
+        $$ S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n), $$
+        le logarithme du rang résiduel de Gram&ndash;Schmidt, sans pondération spectrale résiduelle.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page est un point d'entrée vers le sous-programme. La
+        référence technique faisant foi est la note de présentation citée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note de présentation de sous-programme</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Intrication, paires de Weil conjuguées, rang résiduel</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20498835">10.5281/zenodo.20498835</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li>
+        <strong>Paire conjuguée fermée.</strong> La parité de Born&ndash;Infeld lie $\{c, q-c\}$ en
+        un unique objet infra-projetable via $V_{q-c} \simeq \overline{V_c}$, avec appariement de
+        Schmidt diagonal $e_j \leftrightarrow \overline{e_j}$.
+      </li>
+      <li>
+        <strong>Spectre de Schmidt plat.</strong> Les directions d'empreintes de Weil admises sont
+        mutuellement orthogonales ($w_j = 1$, vérifié pour $q \in \{29, 61, 101, 151\}$)&nbsp;: le
+        spectre réduit sur le support résiduel est uniforme.
+      </li>
+      <li>
+        <strong>Entropie de rang résiduel.</strong>
+        $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ avec
+        $r_{\mathrm{pair}}(n) = R_\infty - R(n)$&nbsp;; le déficit de poids d'admissibilité est
+        identiquement nul.
+      </li>
+      <li>
+        <strong>Monotonie structurelle.</strong> $S_{\mathrm{ent}}$ est décroissante en $n$&nbsp;:
+        l'intrication résiduelle est maximale au stade admissible le plus précoce et décroît à
+        mesure que les directions d'empreintes indépendantes se stabilisent dans le sous-espace
+        projeté.
+      </li>
+      <li>
+        <strong>Hiérarchie de masse comme trace en aval.</strong> La hiérarchie de masse projetée
+        suit l'exposant de capacité par paire $\delta_{\mathrm{pair}}$, et non un apport dynamique
+        indépendant.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Statut des énoncés</h2>
+    <p>
+      La réduction $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ est <em>dérivée</em>,
+      conditionnelle à l'orthogonalité des empreintes de Weil admises
+      (<em>établie numériquement</em> pour $q \in \{29, 61, 101, 151\}$&nbsp;; preuve analytique
+      pour tout $q$ <em>ouverte</em>). La monotonie de $S_{\mathrm{ent}}$ est <em>structurelle</em>
+      (Gram&ndash;Schmidt). L'activation unidirectionnelle au niveau de la capacité
+      $\Delta I(n) \geq 0$ est <em>établie numériquement</em> dans l'analyse de l'ordre temporel
+      projectif&nbsp;; une preuve analytique générale reste <em>ouverte</em>. La pureté de la paire
+      conjuguée repose sur la parité de Born&ndash;Infeld et constitue l'hypothèse structurelle de
+      la construction.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans la Cosmochronie</h2>
+    <p>
+      Le sous-programme se situe à côté des papiers fondateurs&nbsp;: il s'appuie sur le formalisme
+      projectif énoncé dans le livre blanc et le papier Foundation&nbsp;; il hérite de la
+      <a href="/fr/science/bell/">dérivation des corrélations de Bell</a> comme ancrage empirique
+      canonique&nbsp;; et il importe la paire de Weil conjuguée, la parité de Born&ndash;Infeld et
+      l'observable de capacité par paire $\sigma^{\mathrm{can}}_{\mathrm{pair}}$ depuis le
+      <a href="/fr/science/spectral/program/">sous-programme d'admissibilité spectrale (série O)</a>.
+    </p>
+    <p>
+      La localité au niveau projeté est préservée de la même manière que la borne de Tsirelson est
+      atteinte sans signalisation supraluminique&nbsp;: un invariant pleinement infra-projetable
+      n'a pas de position dans l'ordre temporel projeté. L'intrication est, en ce sens,
+      <em>le secteur non-encore-ordonné-temporellement de la cascade</em>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Livrable numérique</h2>
+    <p>
+      Pour $q \in \{61, 151, 211, 307\}$, la trajectoire de rang résiduel $r_{\mathrm{pair}}(n)$ est
+      reconstruite à partir des profils de capacité cumulée de la campagne systématique sur les
+      paires. La tâche est de mesurer la <strong>loi de contraction</strong> de
+      $r_{\mathrm{pair}}(n)$ et de comparer son exposant d'échelle à l'exposant de capacité par
+      paire $\delta_{\mathrm{pair}}$. Une concordance signifierait que la trajectoire d'intrication
+      et la loi de capacité partagent le même moteur spectral&nbsp;; un écart marquerait une
+      séparation effective entre la contraction du rang résiduel et la décroissance par couche de
+      la capacité.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Beau, J. <i lang="en">Residual-Rank Entanglement of Conjugate Weil Pairs in the Spectral
+      Admissibility Cascade</i>. Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20498835" rel="noopener">
+        https://doi.org/10.5281/zenodo.20498835
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licencié sous <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

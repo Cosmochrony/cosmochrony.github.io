@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Intrication E2 — Deux entropies d'intrication | Cosmochronie</title>
+  <meta name="description"
+    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée&nbsp;: le secteur admissible de paire (log 2, derrière Bell–Tsirelson) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée"/>
+  <meta property="og:description"
+    content="Séparer l'entropie de la paire admissible log 2 de l'entropie de rang résiduel complet log r_pair(n)."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/entanglement/e2/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/fr/science/entanglement/e2/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/fr/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée</h1>
+        <p class="subtitle">
+          Le secteur admissible de paire ($\log 2$) et le rang résiduel complet sont des objets
+          différents.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20499440" rel="noopener">
+        Lire la prépublication
+      </a>
+      <a class="btn secondary" href="/fr/science/entanglement/">
+        Retour au sous-programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        La <a href="/fr/science/entanglement/">note d'intrication</a> compagnon et le papier
+        d'orthogonalité <a href="/fr/science/entanglement/e1/">E1</a> établissent des résultats
+        sur l'intrication de la paire de Weil conjuguée fermée $\{c, q-c\}$. Une lecture attentive
+        montre que <strong>deux entropies d'intrication véritablement différentes</strong> sont
+        en jeu, attachées à deux projections différentes de la paire.
+      </p>
+      <p>
+        Les confondre produit une tension apparente entre un $\log 2$ inconditionnel et un
+        $\log r_{\mathrm{pair}}(n)$ dépendant de la profondeur. La séparation n'est pas
+        cosmétique&nbsp;: les deux objets vivent sur des projections de rang différent, ont des
+        rôles physiques différents et un statut épistémique différent.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Ce papier sépare les deux entropies et fixe la stratification
+        épistémique. La référence technique faisant foi est la prépublication citée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Constituant de sous-programme (E2)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Entropie de paire admissible, rang résiduel, singulet, Tsirelson</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20499440">10.5281/zenodo.20499440</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Deux objets distincts</h2>
+    <ul>
+      <li>
+        <strong>Secteur admissible de paire.</strong> La projection admissible de rang 3 $\Pi_q$
+        est spectralement atomique (O21 proposition 4.1)&nbsp;:
+        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$. Le lemme de
+        moyenne nulle retire $e_0$, laissant la paire de parité de Born&ndash;Infeld de dimension
+        deux $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
+      </li>
+      <li>
+        <strong>Support fibre-par-fibre résiduel complet.</strong> La base complète de
+        Gram&ndash;Schmidt est une matrice unitaire $q \times q$ dont les lignes engendrent
+        $\mathbb{C}^q$ à saturation&nbsp;; le rang résiduel est
+        $r_{\mathrm{pair}}(n) = R_\infty - R(n)$ avec $R_\infty = q$. C'est l'objet de la note
+        d'intrication. <em>Ce n'est pas la projection admissible théorique.</em>
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Résultat 1 — Entropie de paire admissible</h2>
+    <p>
+      Le proto-état sur $\mathcal{A}_c \otimes \mathcal{A}_c$ est le singulet de
+      spin-$\tfrac12$&nbsp;:
+      $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
+      |q-\xi_c\rangle \otimes |\xi_c\rangle \bigr), $$
+      son état réduit est $\rho^{\mathrm{adm}}_c = \tfrac12 \mathbf{1}_2$, et
+      $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
+    </p>
+    <p>
+      La preuve utilise l'atomicité spectrale (O21), le lemme de moyenne nulle, et
+      l'identification du singulet par indiscernabilité de Born&ndash;Infeld de Q3 (théorème 4.1)
+      appliquée à la décomposition de Clebsch&ndash;Gordan $V_{1/2} \otimes V_{1/2} = V_0 \oplus
+      V_1$. L'énoncé est <strong>inconditionnel</strong> pour les blocs canoniques généraux,
+      relativement aux théorèmes amont cités.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat 2 — Entropie de rang résiduel complet</h2>
+    <p>
+      L'énoncé de rang résiduel $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ a un statut
+      stratifié&nbsp;:
+    </p>
+    <ul>
+      <li>
+        <strong>Blocs à caractère unique appariés.</strong> Prouvé inconditionnellement par E1
+        (théorème 7)&nbsp;: les supports de Fourier à signes inversés
+        $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ identifient canoniquement les modes
+        résiduels et produisent un état résiduel maximalement intriqué.
+      </li>
+      <li>
+        <strong>Blocs canoniques échantillonnés indépendamment.</strong> L'identification littérale
+        mode par mode n'est pas automatique. O17 fournit l'égalité des dimensions
+        résiduelles&nbsp;; l'orthogonalité d'admission universelle (E1 théorème 4) fournit des
+        bases résiduelles orthonormées. Ensemble, ils ne fixent pas l'état joint ni ne forcent
+        une marginale plate.
+      </li>
+      <li>
+        <strong>Pont conditionnel $[\mathrm{H}_{\mathrm{res}}]$.</strong> Sous l'indiscernabilité
+        d'admissibilité résiduelle — aucun invariant porté par les générateurs admissibles ne
+        distingue les directions d'empreintes résiduelles — l'état réduit est
+        $\rho_c^{\mathrm{res}}(n) = r_{\mathrm{pair}}(n)^{-1} \mathbf{1}_{r_{\mathrm{pair}}(n)}$
+        et $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ pour les blocs canoniques généraux.
+      </li>
+      <li>
+        <strong>Dilatation métaplectique exclue.</strong> La dilatation
+        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ de O30 agit entre blocs (reliant $c$
+        à $\omega c$), pas à l'intérieur du support résiduel d'un bloc unique. Elle ne peut pas
+        rendre les modes résiduels indiscernables au niveau de l'admissibilité et n'est donc pas
+        un pont pour $[\mathrm{H}_{\mathrm{res}}]$.
+      </li>
+    </ul>
+    <p>
+      $[\mathrm{H}_{\mathrm{res}}]$ a un statut parallèle aux hypothèses conditionnelles
+      $[\mathrm{H\text{-}color}]$ et $[\mathrm{H\text{-}ext}]$ ailleurs dans le programme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Secteur Bell&ndash;Tsirelson</h2>
+    <p>
+      L'intrication que les expériences CHSH mesurent est portée par le singulet de
+      spin-$\tfrac12$. Par le théorème d'entropie de paire admissible, c'est exactement le
+      secteur admissible de paire avec $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$. Le corrélateur
+      du singulet $E(\hat a, \hat b) = -\hat a \cdot \hat b$ et la borne inconditionnelle de
+      Tsirelson $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ sont dérivés de la même structure admissible
+      dans Q1 (théorème 2.14, corollaire 2.16). L'entropie de paire admissible est donc
+      l'entropie d'intrication de l'état derrière ces résultats.
+    </p>
+    <p>
+      L'entropie de rang résiduel complet est une observable plus fine au niveau du pipeline qui
+      suit la contraction du sous-espace de Gram&ndash;Schmidt vers la saturation. Ce
+      <strong>n'est pas</strong> la quantité mesurée par une expérience de Bell, et elle ne
+      doit pas être identifiée à l'entropie du singulet. Les deux coïncident uniquement dans le
+      cas dégénéré $r_{\mathrm{pair}}(n) = 2$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Constituant du <a href="/fr/science/entanglement/">sous-programme intrication</a>.
+      S'appuie sur E1 (orthogonalité et spectre plat pour blocs appariés), O21 (atomicité
+      spectrale + moyenne nulle), O17 (égalité des dimensions résiduelles), O30 (dilatation
+      métaplectique, exclue), Q3 (identification du singulet) et Q1 (borne de Tsirelson).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Beau, J. <i lang="en">Two Entanglement Entropies of the Conjugate Weil Pair: the Admissible
+      Pair Sector and the Full Residual Rank</i>. Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20499440" rel="noopener">
+        https://doi.org/10.5281/zenodo.20499440
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licencié sous <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

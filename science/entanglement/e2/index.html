@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Entanglement E2 — Two Entanglement Entropies | Cosmochrony</title>
+  <meta name="description"
+    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, behind Bell–Tsirelson) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair"/>
+  <meta property="og:description"
+    content="Separating the admissible pair entropy log 2 from the full residual-rank entropy log r_pair(n)."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/entanglement/e2/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/entanglement/e2/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair</h1>
+        <p class="subtitle">
+          The admissible pair sector ($\log 2$) and the full residual rank are different objects.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20499440" rel="noopener">
+        Read the preprint
+      </a>
+      <a class="btn secondary" href="/science/entanglement/">
+        Back to the sub-programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The companion <a href="/science/entanglement/">entanglement-note</a> and the orthogonality
+        paper <a href="/science/entanglement/e1/">E1</a> establish results about the entanglement
+        of the closed conjugate Weil pair $\{c, q-c\}$. A careful reading shows that
+        <strong>two genuinely different entanglement entropies</strong> are in play, attached to
+        two different projections of the pair.
+      </p>
+      <p>
+        Conflating them produces an apparent tension between an unconditional $\log 2$ and a
+        depth-dependent $\log r_{\mathrm{pair}}(n)$. The separation is not cosmetic: the two
+        objects live on projections of different rank, have different physical roles, and have
+        different epistemic status.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope.</strong> This paper separates the two entropies and fixes the epistemic
+        stratification. The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Sub-programme constituent (E2)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Admissible pair entropy, residual rank, singlet, Tsirelson</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20499440">10.5281/zenodo.20499440</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Two distinct objects</h2>
+    <ul>
+      <li>
+        <strong>Admissible pair sector.</strong> The rank-3 admissible projection $\Pi_q$ is
+        spectrally atomic (O21 Proposition 4.1):
+        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$. The mean-zero
+        lemma removes $e_0$, leaving the two-dimensional Born&ndash;Infeld parity pair
+        $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
+      </li>
+      <li>
+        <strong>Full residual fibre-level support.</strong> The full Gram&ndash;Schmidt basis is a
+        unitary $q \times q$ matrix whose rows span $\mathbb{C}^q$ at saturation; the residual
+        rank is $r_{\mathrm{pair}}(n) = R_\infty - R(n)$ with $R_\infty = q$. This is the object
+        of the entanglement-note. <em>It is not the theoretical admissible projection.</em>
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Core result 1 — Admissible pair entropy</h2>
+    <p>
+      The proto-state on $\mathcal{A}_c \otimes \mathcal{A}_c$ is the spin-$\tfrac12$ singlet
+      $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
+      |q-\xi_c\rangle \otimes |\xi_c\rangle \bigr), $$
+      its reduced state is $\rho^{\mathrm{adm}}_c = \tfrac12 \mathbf{1}_2$, and
+      $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
+    </p>
+    <p>
+      The proof uses spectral atomicity (O21), the mean-zero lemma, and the Born&ndash;Infeld
+      indiscernibility singlet identification of Q3 (Theorem 4.1) applied to the
+      Clebsch&ndash;Gordan decomposition $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. The
+      statement is <strong>unconditional</strong> for general canonical blocks, relative to the
+      cited upstream theorems.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Core result 2 — Full residual-rank entropy</h2>
+    <p>
+      The residual-rank statement $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ has a
+      stratified status:
+    </p>
+    <ul>
+      <li>
+        <strong>Matched single-character blocks.</strong> Proved unconditionally by E1
+        (Theorem 7): the sign-reflected Fourier supports
+        $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ canonically identify the residual
+        modes and yield a maximally entangled residual state.
+      </li>
+      <li>
+        <strong>Independently sampled canonical blocks.</strong> The literal mode-by-mode
+        identification is not automatic. O17 gives equality of residual dimensions; universal
+        admission orthogonality (E1 Theorem 4) gives orthonormal residual bases. Together they
+        do not fix the joint state or force a flat marginal.
+      </li>
+      <li>
+        <strong>Conditional bridge $[\mathrm{H}_{\mathrm{res}}]$.</strong> Under residual
+        admissibility indiscernibility — no invariant carried by the admissible generators
+        distinguishes the residual fingerprint directions — the reduced state is
+        $\rho_c^{\mathrm{res}}(n) = r_{\mathrm{pair}}(n)^{-1} \mathbf{1}_{r_{\mathrm{pair}}(n)}$
+        and $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ for general canonical blocks.
+      </li>
+      <li>
+        <strong>Metaplectic dilation excluded.</strong> The dilation
+        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ of O30 acts between blocks (relating
+        $c$ to $\omega c$), not within the residual support of a single block. It cannot make the
+        residual modes admissibility-indiscernible and is therefore not a bridge for
+        $[\mathrm{H}_{\mathrm{res}}]$.
+      </li>
+    </ul>
+    <p>
+      $[\mathrm{H}_{\mathrm{res}}]$ has a status parallel to the conditional hypotheses
+      $[\mathrm{H\text{-}color}]$ and $[\mathrm{H\text{-}ext}]$ elsewhere in the programme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Bell&ndash;Tsirelson sector</h2>
+    <p>
+      The entanglement that CHSH experiments measure is carried by the spin-$\tfrac12$ singlet.
+      By the admissible pair entropy theorem, this is exactly the admissible pair sector with
+      $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$. The singlet correlator
+      $E(\hat a, \hat b) = -\hat a \cdot \hat b$ and the unconditional Tsirelson bound
+      $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ are derived from the same admissible structure in Q1
+      (Theorem 2.14, Corollary 2.16). The admissible pair entropy is therefore the entanglement
+      entropy of the state behind those results.
+    </p>
+    <p>
+      The full residual-rank entropy is a finer pipeline-level observable that tracks the
+      contraction of the Gram&ndash;Schmidt span toward saturation. It is <strong>not</strong> the
+      quantity measured by a Bell experiment, and it should not be identified with the singlet
+      entropy. The two coincide only in the degenerate case $r_{\mathrm{pair}}(n) = 2$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position in the programme</h2>
+    <p>
+      Constituent of the <a href="/science/entanglement/">entanglement sub-programme</a>. Builds
+      on E1 (orthogonality and matched-block flat spectrum), O21 (spectral atomicity + mean-zero),
+      O17 (equal residual dimensions), O30 (metaplectic dilation, excluded), Q3 (singlet
+      identification), and Q1 (Tsirelson bound).
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Beau, J. <i lang="en">Two Entanglement Entropies of the Conjugate Weil Pair: the Admissible
+      Pair Sector and the Full Residual Rank</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20499440" rel="noopener">
+        https://doi.org/10.5281/zenodo.20499440
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

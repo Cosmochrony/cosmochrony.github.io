@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Intrication E1 — Orthogonalité des empreintes de Weil | Cosmochronie</title>
+  <meta name="description"
+    content="Preuve analytique que l'empreinte de Weil à k=3 sur Heis_3(Z/qZ) est un mode de Fourier discret, élevant l'hypothèse numérique w_j=1 de la note d'intrication au rang d'identité algébrique exacte."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Intrication E1 — Orthogonalité des empreintes de Weil"/>
+  <meta property="og:description"
+    content="Orthogonalité d'admission universelle et spectre de Schmidt plat des paires de Weil conjuguées appariées."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/entanglement/e1/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/fr/science/entanglement/e1/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/fr/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Intrication E1 — Orthogonalité des empreintes de Weil</h1>
+        <p class="subtitle">
+          Le spectre de Schmidt plat des paires de Weil conjuguées est une identité algébrique.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20499309" rel="noopener">
+        Lire la prépublication
+      </a>
+      <a class="btn secondary" href="/fr/science/entanglement/">
+        Retour au sous-programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        La <a href="/fr/science/entanglement/">note d'intrication</a> compagnon a établi
+        numériquement que le résidu d'admission normalisé de Gram&ndash;Schmidt satisfait
+        $w_j = 1$ pour chaque direction d'empreinte de Weil admise sur
+        $q \in \{29, 61, 101, 151\}$ et plusieurs blocs génériques. L'égalité restait un
+        renforcement analytique ouvert.
+      </p>
+      <p>
+        Ce papier la clôt par calcul explicite. L'empreinte de Weil à $k=3$ de
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ pour tout bloc $(c_1, c_2, c_3)$ se factorise
+        comme une phase globale fois un unique mode de Fourier discret à la fréquence
+        $$ A = c_1 b_1 + c_2 b_2 + c_3 b_3 \bmod q. $$
+        Comme les modes de Fourier distincts sont orthogonaux, toute empreinte nouvellement admise
+        est déjà orthogonale au sous-espace courant, et $w_j = 1$ est une
+        <strong>identité algébrique exacte</strong> &mdash; non un accident numérique.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Le résultat élève l'hypothèse numérique centrale de la note
+        d'intrication au rang de théorème (pour les blocs à caractère unique appariés). La
+        référence technique faisant foi est la prépublication citée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Constituant de sous-programme (E1)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Empreintes de Weil, modes de Fourier, spectre de Schmidt</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20499309">10.5281/zenodo.20499309</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li>
+        <strong>Empreinte comme mode de Fourier (lemme).</strong> $\mathbf{f}_t = \frac{e^{2\pi i
+        B/q}}{q} \cdot e^{2\pi i A t/q}$, avec $A = c_1 b_1 + c_2 b_2 + c_3 b_3 \bmod q$ et une
+        phase $B$ indépendante de $t$.
+      </li>
+      <li>
+        <strong>Orthogonalité d'admission universelle (théorème 1).</strong> Pour toute empreinte
+        $\mathbf{f}$ à profondeur $n$ linéairement indépendante du sous-espace antérieur
+        $\mathcal{V}_{n-1}$,
+        $$ w_j = \frac{\|w^{\mathrm{GS}}_j\|}{\|\mathbf{f}\|} = 1 \quad \text{exactement}. $$
+        Le procédé de Gram&ndash;Schmidt produit un sous-ensemble orthonormé de la base de Fourier
+        de $\mathbb{C}^q$ et sature au rang $q$.
+      </li>
+      <li>
+        <strong>Symétrie des fréquences conjuguées.</strong> Pour des blocs appariés à caractère
+        unique $(c, 0, 0)$ et $(q-c, 0, 0)$, $A^{(q-c)} = -A^{(c)} \bmod q$ et
+        $V^{(q-c)}_n = \overline{V^{(c)}_n}$.
+      </li>
+      <li>
+        <strong>Spectre de Schmidt plat (théorème 2).</strong> La fibre bipartite résiduelle porte
+        l'état maximalement intriqué
+        $$ |\Omega^{\mathrm{res}}_n\rangle = \frac{1}{\sqrt{r_{\mathrm{pair}}(n)}} \sum_{A \in
+        S_c^{\mathrm{res}}(n)} |\hat e_A\rangle \otimes |\hat e_{-A}\rangle, $$
+        et l'entropie réduite vaut $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ &mdash;
+        dérivée analytiquement, pas seulement par l'annulation observée d'un déficit
+        d'admissibilité.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Mise à jour épistémique pour la note compagnon</h2>
+    <p>
+      Deux items précédemment listés comme ouverts dans la
+      <a href="/fr/science/entanglement/">note d'intrication</a> sont à présent résolus&nbsp;:
+    </p>
+    <ul>
+      <li>
+        <strong>Preuve analytique de $w_j = 1$.</strong> Précédemment numérique
+        ($q \in \{29, 61, 101, 151\}$)&nbsp;; à présent prouvée (théorème 1).
+      </li>
+      <li>
+        <strong>Pureté de la paire conjuguée.</strong> Précédemment hypothèse structurelle&nbsp;;
+        à présent dérivée de la structure des modes de Fourier et de la conjugaison
+        $\rho_{q-c} = \overline{\rho_c}$ pour les blocs appariés (théorème 2).
+      </li>
+    </ul>
+    <p>
+      <strong>Item restant ouvert.</strong> L'argument de pureté pour blocs appariés ne s'étend
+      pas automatiquement aux blocs échantillonnés indépendamment de l'observable canonique de
+      paire O25. L'identité de comptage de O17 garantit l'égalité des rangs à chaque couche, mais
+      l'identification littérale des partenaires de Schmidt
+      $\hat e_A \leftrightarrow \hat e_{-A}$ requiert soit un choix canonique des paramètres de
+      bloc, soit un argument structurel supplémentaire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Mécanisme</h2>
+    <p>
+      La source algébrique de l'orthogonalité d'admission est la <strong>dépendance linéaire en
+      $t$ de la phase de Weil</strong> dans la formule de la représentation de
+      Schrödinger&nbsp;: $(\rho_c(a, b, \gamma) v_0)_t \propto e^{2\pi i c (\gamma + b(t-a))/q}$.
+      La linéarité en $t$ produit un mode de Fourier pur après le produit élément par élément de
+      trois actions de Weil à un pas&nbsp;; l'orthogonalité des modes de Fourier distincts sur
+      $\mathbb{Z}/q\mathbb{Z}$ impose alors $w_j = 1$.
+    </p>
+    <p>
+      Le résultat est une propriété de la représentation de Weil elle-même, pas du pipeline
+      spectral.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Constituant du <a href="/fr/science/entanglement/">sous-programme intrication</a>. Dépend de
+      la machinerie de capacité projective des blocs de Weil de O11 et O12, et utilise l'identité
+      de comptage de O17 pour délimiter la question ouverte d'appariement de Schmidt pour les
+      blocs généraux.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Beau, J. <i lang="en">Weil Fingerprint Orthogonality and the Flat Schmidt Spectrum of
+      Conjugate Pairs</i>. Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20499309" rel="noopener">
+        https://doi.org/10.5281/zenodo.20499309
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licencié sous <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

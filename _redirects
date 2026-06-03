@@ -10,15 +10,20 @@
 /philosophy/reflexivity.html /philosophy/reflexivity/ 301
 /philosophy/realism.html /philosophy/realism/ 301
 /bell/* /science/bell/:splat 301
-/born-infeld/* /science/born-infeld/:splat 301
+/born-infeld/* /science/spectral-gravity/born-infeld/:splat 301
 /cosmology/* /science/cosmology/:splat 301
-/gravity/* /science/gravity/:splat 301
-/lorentz/* /science/lorentz/:splat 301
+/gravity/* /science/spectral-gravity/gravity/:splat 301
+/lorentz/* /science/spectral-gravity/lorentz/:splat 301
 /schwinger-lamb/* /science/schwinger-lamb/:splat 301
 /sm-charge-mass/* /science/sm-charge-mass/:splat 301
 /spectral/* /science/spectral/:splat 301
 /superconductivity/* /science/superconductivity/:splat 301
-/thermodynamics/* /science/thermodynamics/:splat 301
+/thermodynamics/* /science/spectral-gravity/thermodynamics/:splat 301
+# Spectral gravity sub-programme regrouped under /science/spectral-gravity/
+/science/born-infeld/* /science/spectral-gravity/born-infeld/:splat 301
+/science/gravity/* /science/spectral-gravity/gravity/:splat 301
+/science/lorentz/* /science/spectral-gravity/lorentz/:splat 301
+/science/thermodynamics/* /science/spectral-gravity/thermodynamics/:splat 301
 # Lorentz-capacity (LC) sub-programme regrouped under /science/lc/
 /science/lorentz-capacity/* /science/lc/lorentz-capacity/:splat 301
 /science/temporal-projection/* /science/lc/temporal-projection/:splat 301

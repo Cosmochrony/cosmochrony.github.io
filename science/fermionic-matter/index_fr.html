@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le sous-programme matière fermionique | Cosmochronie</title>
+  <meta name="description"
+    content="Fermions, chiralité, hypercharge et trois générations comme face spinorielle du module de Weil admissible après complexification lorentzienne — non comme postulats externes."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le sous-programme matière fermionique"/>
+  <meta property="og:description"
+    content="Face spinorielle du module de Weil admissible : SU(2)_L × U(1)_Y depuis les foncteurs tensoriels, chiralité V–A et rigidité d'hypercharge depuis l'endomorphisme projectif, trois générations depuis σ_c(n3) = 3."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le sous-programme matière fermionique</h1>
+        <p class="subtitle">
+          Les fermions comme face spinorielle du module de Weil admissible.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20562665" rel="noopener">
+        Lire la note de présentation
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        La stratification spectrale bosonique ($a_2 \to$ gravité, $a_4 \to$ Yang–Mills) dérive
+        le secteur bosonique du Modèle Standard à partir de la même fonctionnelle spectrale
+        admissible. Les fermions, la chiralité, l'hypercharge et la structure à trois générations
+        ne sont pas couverts par cette synthèse bosonique. Le sous-programme matière fermionique
+        répond&nbsp;: ces structures émergent-elles également comme conséquences forcées de la
+        fibre de Weil admissible, ou doivent-elles être ajoutées comme postulats supplémentaires&nbsp;?
+      </p>
+      <p>
+        La réponse établie par Q14 est&nbsp;: <strong>elles sont forcées</strong>. Les fermions
+        émergent comme la face spinorielle du module de Weil $V_\rho$ après complexification
+        lorentzienne de son relèvement métaplectique. La chiralité et la structure $V-A$
+        émergent de l'endomorphisme projectif $E_\Pi$ de l'opérateur de Dirac projeté
+        (conditionnel à l'Hypothèse&nbsp;3.5). L'hypercharge est fixée par l'annulation
+        d'anomalie spectrale. Trois générations émergent d'une lecture multiplicité spinorielle
+        du même invariant de rang trois $\sigma_c(n_3) = 3$ qui donne les trois directions
+        spatiales dans la branche géométrique.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Ce sous-programme ferme l'<em>identification</em> du
+        secteur fermionique (fibré spinoriel, chiralité, nombres quantiques d'hypercharge,
+        facteur de génération). Il ne dérive pas le spectre de masses, les couplages de Yukawa,
+        ni les matrices de mélange CKM/PMNS. Ceux-ci requièrent la construction explicite de
+        $E_\Pi$.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note de présentation de sous-programme (Note&nbsp;6)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Fibré spinoriel, $V-A$, hypercharge, trois générations</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Working paper (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20562665">10.5281/zenodo.20562665</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Chaîne structurelle</h2>
+    <p>
+      $$
+        \Pi \Rightarrow F_n \simeq V_\rho
+        \;\Rightarrow\;
+        \mathrm{Mp}(2,\mathbb{R})
+        \;\Rightarrow\;
+        \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})
+        \;\rightsquigarrow\;
+        \mathrm{Spin}(3,1) \simeq \mathrm{SL}(2,\mathbb{C})
+        \;\Rightarrow\;
+        \mathcal{S}_\Pi.
+      $$
+    </p>
+    <p>Puis&nbsp;:</p>
+    <ul>
+      <li>$\mathrm{Sym}^2(\mathcal{S}_\Pi) \Rightarrow \mathrm{ad}_\mathbb{C}(P_\Pi)$ — le
+        secteur $\mathrm{SU}(2)_L$.</li>
+      <li>$\wedge^2(\mathcal{S}_\Pi) = L_Y$ — le secteur $\mathrm{U}(1)_Y$.</li>
+      <li>$E_\Pi$ admissible-à-gauche — la structure chirale $V-A$ (conditionnelle à
+        l'Hypothèse&nbsp;3.5).</li>
+      <li>$\sigma_c(n_3) = 3 \to C^3_{\mathrm{gen}}$ — trois générations comme facteur
+        gauge-singulet.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux (Q14)</h2>
+    <ul>
+      <li>
+        <strong>Théorème A (fibré électrofaible spinoriel, inconditionnel).</strong> Le module
+        de Weil admissible $V_\rho$ induit, via le relèvement métaplectique et la
+        complexification lorentzienne forcée par $g^{\mu\nu} = 2\eta^{\mu\nu}$, un fibré
+        spinoriel admissible $\mathcal{S}_\Pi$ dont les foncteurs tensoriels satisfont
+        $\mathrm{Sym}^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ et
+        $\wedge^2(\mathcal{S}_\Pi) = L_Y$. Après sélection de la forme réelle compacte, ceci
+        définit la donnée de fibré électrofaible $\mathrm{SU}(2)_L \times \mathrm{U}(1)_Y$ sans
+        entrée supplémentaire.
+      </li>
+      <li>
+        <strong>Théorème B ($V-A$ et hypercharge, conditionnel à Hyp.&nbsp;3.5).</strong>
+        L'opérateur de Dirac projeté satisfait une identité de type Lichnerowicz
+        $D^2_{\Pi,g,A} = -(\nabla^{S,A})^2 + R/4 + \tfrac{1}{2}\gamma^\mu\gamma^\nu F^a_{\mu\nu} T^a_R + E_\Pi$.
+        Sous l'Hypothèse&nbsp;3.5, $E_\Pi$ est admissible à gauche ($P_R E_\Pi P_R = 0$),
+        donnant la structure $V-A$. L'invariance $\mathrm{U}(1)_Y$ de la fonctionnelle spectrale
+        projetée impose $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ — la condition
+        de trace d'annulation d'anomalie. L'hypercharge devient une donnée de cohérence
+        spectrale, non un paramètre libre.
+      </li>
+      <li>
+        <strong>Théorème C (trois générations, inconditionnel).</strong> L'invariant de
+        saturation $\sigma_c(n_3) = 3$ admet deux lectures fonctorialement distinctes du même
+        invariant admissible de rang trois&nbsp;: une lecture géométrique (trois directions
+        spatiales) et une lecture spinorielle donnant un espace de génération gauge-singulet
+        $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$. L'identité
+        $\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$ est établie explicitement.
+      </li>
+      <li>
+        <strong>Secteur de couleur (conditionnel à [H-color]).</strong> Le secteur quark
+        couleur-couplé $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ est obtenu par
+        tensorisation. Le statut hérite $[\mathrm{H\text{-}color}]$ des Notes&nbsp;1 et&nbsp;3.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Articles constitutifs</h2>
+    <ul>
+      <li>
+        <a href="/science/fermionic-matter/q14/index_fr.html" class="inline-link">Q14 — Matière
+        fermionique et chiralité depuis l'admissibilité de Dirac projectif</a>. Seul article
+        constitutif du sous-programme.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Position dans la Cosmochronie</h2>
+    <p>
+      Le sous-programme matière fermionique siège au sommet de la Branche&nbsp;III. C'est le
+      premier article de la série Q qui dépend simultanément de toutes les couches en amont du
+      programme&nbsp;:
+    </p>
+    <ul>
+      <li>la structure de fibre de Weil admissible
+        (<a href="/science/spectral/index_fr.html" class="inline-link">Note&nbsp;1</a> et
+        <a href="/science/non-injective/index_fr.html" class="inline-link">Note&nbsp;5</a>)&nbsp;;</li>
+      <li>la géométrie lorentzienne fermée
+        (<a href="/science/emergent-geometry/index_fr.html" class="inline-link">Note&nbsp;2</a>)&nbsp;;</li>
+      <li>le fibré de jauge
+        (<a href="/science/gauge-structure/index_fr.html" class="inline-link">Note&nbsp;3</a>)&nbsp;;</li>
+      <li>la synthèse jauge–gravité (Q13, à être résumée dans la Note de présentation&nbsp;8).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Livrables ouverts</h2>
+    <ul>
+      <li>
+        <strong>Dérivation de l'Hypothèse&nbsp;3.5 depuis A1–A4.</strong> Le relèvement
+        spinoriel de la parité BI ($c \leftrightarrow q-c$, prouvée au niveau scalaire de Weil
+        par O18 et BornInfeld) en endomorphisme anti-linéaire de $\mathcal{S}_\Pi$ envoyant les
+        modes chiraux droits vers des directions non admissibles est actuellement la seule
+        entrée non axiomatique du Théorème&nbsp;B et des résultats $V-A$ / hypercharge.
+      </li>
+      <li>
+        <strong>$E_\Pi$ explicite et secteur de Yukawa.</strong> Le spectre de masses des
+        leptons chargés et des quarks, et les matrices de mélange CKM/PMNS, requièrent la
+        construction spectrale explicite de $E_\Pi$ comme opérateur sur l'espace de Hilbert
+        admissible, puis l'intégration du lagrangien de Yukawa projeté $\mathcal{L}_Y$ et
+        l'extraction de la matrice de masse depuis les valeurs propres de $E_\Pi^2$.
+      </li>
+      <li>
+        <strong>Contenu en matière complet en signature lorentzienne.</strong>
+        $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$
+        avec couplages de jauge explicites et structure de Yukawa à trois générations.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Beau, J. <i lang="en">The Fermionic Matter Sub-Programme: Presentation Note 6</i>.
+      Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20562665" rel="noopener">
+        https://doi.org/10.5281/zenodo.20562665
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

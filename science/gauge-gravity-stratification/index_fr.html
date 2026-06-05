@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le sous-programme de stratification jauge–gravité | Cosmochrony</title>
+  <meta name="description"
+    content="Pourquoi la gravité et Yang–Mills découlent-elles de la même fonctionnelle admissible,
+    à des ordres de Seeley–DeWitt distincts ? Le sous-programme de stratification jauge–gravité
+    répond via le principe de stratification spectrale $a_2 \to$ gravité, $a_4 \to$ jauge,
+    $a_6 \to$ mixte. Deux articles constituants."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/gauge-gravity-stratification/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le sous-programme de stratification jauge–gravité"/>
+  <meta property="og:description"
+    content="Gravité et dynamique de jauge ne sont pas unifiées par élargissement du groupe de
+    symétrie : elles sont stratifiées par ordre de Seeley–DeWitt à l'intérieur de la même
+    fonctionnelle spectrale admissible $S_\Pi[g, A]$. Note de présentation et hub des articles."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/gauge-gravity-stratification/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/gauge-gravity-stratification/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le sous-programme de stratification jauge–gravité</h1>
+        <p class="subtitle">
+          La même fonctionnelle spectrale admissible
+          $S_\Pi[g, A] = \tfrac{1}{2}\log\det' A_{g, A}$, étendue pour inclure la connexion de
+          jauge admissible, produit-elle la dynamique de Yang–Mills aux côtés de la gravité
+          d'Einstein ? En Cosmochronie, oui — et à des ordres de Seeley–DeWitt distincts. Cette
+          page en est la synthèse et le hub vers tous ses articles.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20563349" rel="noopener">
+        Lire la note de synthèse</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20563349</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Le sous-programme de gravité spectrale (Note de présentation 4) dérive le tenseur
+        d'Einstein comme la réponse $a_2$ dominante infrarouge de la variation métrique horizontale
+        de $S_\Pi[g]$. Le sous-programme de structure de jauge (Note de présentation 3) identifie
+        le groupe de jauge $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ et
+        construit le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$. <em>La même fonctionnelle,
+        étendue pour inclure la connexion de jauge admissible, produit-elle la dynamique de
+        Yang–Mills — et si oui, à quel ordre spectral ?</em>
+      </p>
+      <p>
+        La réponse est <strong>oui</strong>, et l'ordre est $a_4$. Gravité et dynamique de jauge
+        découlent de la même fonctionnelle par variation dans des directions orthogonales —
+        horizontale (métrique) et verticale (connexion de jauge) — à des ordres de Seeley–DeWitt
+        différents. La question classique <em>« quelle symétrie unifie gravité et jauge ? »</em>
+        est remplacée par <em>« à quel ordre spectral l'application non injective admissible
+        répond-elle ? »</em>. C'est le <strong>principe de stratification spectrale</strong> :
+        $a_2 \to$ gravité, $a_4 \to$ Yang–Mills, $a_6 \to$ mélange jauge–gravité. Les équations
+        de Yang–Mills $D_\mu F^{a\mu\nu} = 0$ découlent de la variation verticale $a_4$ (Q12) ;
+        le système couplé Einstein–Yang–Mills, le couplage croisé
+        $a_6$ $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$, la complétion conjointe
+        d'Eddington–Born–Infeld et la hiérarchie structurelle $G_N g_{\mathrm{YM}}^2 \ll 1$
+        découlent tous de Q13.
+      </p>
+      <div class="note" role="note">
+        <strong>Stratification, et non unification.</strong> La petitesse structurelle de
+        $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/\dim V \cdot [\log(\Lambda/\mu)]^{-1}$
+        est doublement supprimée (quadratiquement en $\ell_{\mathrm{sp}}^2$, logarithmiquement en
+        $\log(\Lambda/\mu)$) et ne requiert aucun ajustement fin. La difficulté à réconcilier la
+        gravité avec le Modèle standard de jauge pourrait refléter une différence d'<em>ordre
+        spectral</em> plutôt que l'absence d'un groupe de symétrie commun $G_{\mathrm{unif}}$.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Synthèse (note de présentation, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">2 articles (Q12 — partagé avec la Note 3 — et Q13) ; Yang–Mills depuis
+            $a_4$, Einstein–Yang–Mills couplé, couplage croisé $a_6$, complétion EBI conjointe
+            (cond.\ à [H-ext]), rapport hiérarchique structurel</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Secteur bosonique dynamique clos structurellement ; complétion EBI
+            conjointe conditionnelle à [H-ext] ; ouverts : normalisation $a_6$, dérivation de
+            [H-ext], équations couplées avec courants de matière fermionique (Note 6)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>La chaîne de stratification spectrale</h2>
+    <p style="text-align:center">
+      $\underbrace{a_2 \to G_{\mu\nu}}_{\text{horizontale } \delta_g}
+      \;\Big|\;
+      \underbrace{a_4 \to D_\mu F^{a\mu\nu} = 0}_{\text{verticale } \delta_A}
+      \;\Big|\;
+      \underbrace{a_6 \to R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}}_{\text{mixte (structurelle)}}$
+    </p>
+    <p>
+      Quatre étapes conceptuelles depuis la seule fonctionnelle
+      $S_\Pi[g, A] = \tfrac{1}{2}\log\det' A_{g, A}$ : extension de l'opérateur au secteur de jauge
+      avec découplage horizontal–vertical (Q12 Lemme 1, prouvé) ; équations de Yang–Mills depuis
+      la variation verticale $a_4$ (Q12 Théorème 1, structurel étant donné $G_\Pi$) ; système
+      couplé Einstein–Yang–Mills depuis la variation conjointe (Q13 Théorème 3.2, structurel) ;
+      rapport hiérarchique structurel $G_N g_{\mathrm{YM}}^2 \ll 1$ depuis l'expansion de
+      Seeley–DeWitt sans ajustement fin (Q13 Proposition 6.1).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Articles du sous-programme</h2>
+    <p><strong>Yang–Mills depuis la variation verticale $a_4$.</strong></p>
+    <ul>
+      <li><a href="/science/gauge-structure/q12/index_fr.html"><strong>Q12</strong></a> — étend le
+        laplacien $A_g$ à $A_{g, A} = -(\nabla^A)^2 + E$ sur le fibré vectoriel associé de
+        $P_{G_\Pi}(M, G_\Pi)$. Résultats : $a_4 \supset \tfrac{1}{12}\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$
+        (noyau de chaleur, prouvé) ; découplage horizontal–vertical (Lemme 1, prouvé) ; équations
+        de Yang–Mills $D_\mu F^{a\mu\nu} = 0$ depuis $\delta_A S_\Pi = 0$ (Théorème 1, structurel
+        étant donné $G_\Pi$) ; hiérarchie UV $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ vs.
+        $g_{\mathrm{YM}}^{-2} \sim \log(\Lambda/\mu)$. Q12 est partagé avec le
+        <a href="/science/gauge-structure/index_fr.html">sous-programme de structure de jauge</a>
+        (Note de présentation 3), qui en utilise la composante d'identification du groupe de jauge.</li>
+    </ul>
+    <p><strong>Système conjoint Einstein–Yang–Mills et hiérarchie.</strong></p>
+    <ul>
+      <li><a href="/science/gauge-gravity-stratification/q13/index_fr.html"><strong>Q13</strong></a>
+        — achève la trilogie (Gravity 3.0, Q12, Q13) en résolvant le problème variationnel conjoint
+        $\delta_{g, A} S_\Pi = 0$. Résultats : système couplé Einstein–Yang–Mills
+        $G_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$ avec
+        $8\pi G_N = c_{\mathrm{YM}} / c_{\mathrm{EH}}$ (Théorème 3.2, structurel) ; couplage croisé
+        $a_6$ jauge–gravité $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (Théorème 4.1,
+        structurel, normalisation ouverte) ; complétion conjointe d'Eddington–Born–Infeld
+        $\mathcal{S}^{\mathrm{EBI}} \propto \int[\sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R_{\mu\nu} +
+        \ell_{\mathrm{sp}}^2 F_{\mu\nu})} - \sqrt{-g}]$ (Théorème 5.3, conditionnel à [H-ext]) ;
+        hiérarchie structurelle $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/\dim V \cdot
+        [\log(\Lambda/\mu)]^{-1} \ll 1$ (Proposition 6.1).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Entrées et sorties</h2>
+    <p>
+      <strong>Entrées amont.</strong> La fonctionnelle d'entropie spectrale $S_\Pi[g]$ et son
+      secteur Einstein $a_2$ depuis le sous-programme de gravité spectrale (Note de présentation 4,
+      Gravity 3.0) ; le fibré principal admissible $P_{G_\Pi}(M, G_\Pi)$ et le groupe de jauge
+      $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ depuis le sous-programme
+      de structure de jauge (Note de présentation 3, Q6a/Q12) ; la variété de base lorentzienne
+      effective $(M, g^{\mu\nu} = 2\eta^{\mu\nu})$ depuis le sous-programme d'émergence géométrique
+      (Note de présentation 2, Q5b–Q11) ; l'échelle de longueur spectrale $\ell_{\mathrm{sp}}$ et
+      la constante de saturation BI $c_\chi$ (Branche I) ; la conditionnalité [H-ext] héritée du
+      secteur gravitationnel (Gravity 3.0).
+    </p>
+    <p>
+      <strong>Sorties.</strong> Équations de Yang–Mills $D_\mu F^{a\mu\nu} = 0$ dans le secteur
+      sans courant (phénoménologie SM) ; couplé $G_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$
+      (phénoménologie des ondes gravitationnelles, Q13) ; couplage croisé $a_6$ identifié (futurs
+      tests de précision) ; fonctionnelle EBI conjointe (applications astrophysiques,
+      conditionnelle à [H-ext]) ; rapport hiérarchique structurel $G_N g_{\mathrm{YM}}^2 \ll 1$
+      (problème de hiérarchie) ; prédiction spectrale que la structure fermionique doit apparaître
+      à un niveau spectral dédié de type Dirac — motivation structurelle directe du
+      <a href="/science/fermionic-matter/index_fr.html">sous-programme de matière fermionique</a>
+      (Note de présentation 6, Q14).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut</h2>
+    <p>
+      Le secteur bosonique dynamique est <strong>clos structurellement</strong>. La dérivation
+      $a_4$ de Yang–Mills par noyau de chaleur (Q12 §4) et le découplage horizontal–vertical
+      Lemme 1 sont <strong>prouvés inconditionnellement</strong>. Les équations de Yang–Mills
+      (Q12 Théorème 1), la hiérarchie UV (Q12 §6), le système couplé Einstein–Yang–Mills
+      (Q13 Théorème 3.2), le couplage croisé $a_6$ (Q13 Théorème 4.1, avec normalisation
+      ouverte), le rapport hiérarchique structurel $G_N g_{\mathrm{YM}}^2 \ll 1$
+      (Q13 Proposition 6.1) et le principe de stratification spectrale sont structurels. La
+      complétion conjointe d'Eddington–Born–Infeld (Q13 Théorème 5.3) est
+      <strong>conditionnelle à l'Hypothèse [H-ext]</strong> (extensivité de cohérence admissible).
+      Selon O31 Proposition 4.23, le groupe de jauge
+      $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ est une entrée
+      <em>inconditionnelle</em> au niveau ponctuel, donc la dérivation $a_4$ de Yang–Mills tient
+      inconditionnellement pour le groupe de jauge complet du Modèle standard. Trois éléments
+      restent ouverts : la normalisation phénoménologique de $a_6$, la preuve analytique de
+      [H-ext], et les équations couplées avec courants de matière fermionique de la Note 6 (Q14).
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

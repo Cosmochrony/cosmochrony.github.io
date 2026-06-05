@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le sous-programme de structure quantique | Cosmochrony</title>
+  <meta name="description"
+    content="La mécanique quantique découle-t-elle de la seule admissibilité ? Le sous-programme de structure quantique
+    dérive la cohérence de phase, le corrélateur singulet, la borne de Tsirelson et la règle de Born à partir des
+    contraintes d’admissibilité A1–A4, sans importer aucun postulat quantique. Quatre articles constituants, six
+    étapes structurelles, une fonctionnelle."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/quantum-structure/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le sous-programme de structure quantique"/>
+  <meta property="og:description"
+    content="La mécanique quantique n’est pas postulée : la cohérence de phase, le corrélateur singulet
+    $E = -\hat{a}\cdot\hat{b}$, la borne de Tsirelson $2\sqrt{2}$ et la règle de Born sont forcées par l’admissibilité
+    du secteur SU(2) sur le groupe binaire icosaédral. Note de présentation et hub des articles du sous-programme de
+    structure quantique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/quantum-structure/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/quantum-structure/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le sous-programme de structure quantique</h1>
+        <p class="subtitle">
+          Les structures de la mécanique quantique — amplitudes complexes, règle de Born, corrélateur singulet,
+          corrélations de type Bell — découlent-elles de la seule admissibilité, ou doivent-elles être postulées
+          séparément ? En Cosmochronie, les axiomes d’admissibilité A1–A4 sur le groupe binaire icosaédral $2I$ et la
+          représentation de Weil $V_\rho$ les <em>forcent</em>. Cette page en est la synthèse et le hub vers tous ses
+          articles.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20562949" rel="noopener">
+        Lire la note de synthèse</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20562949</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Les axiomes d’admissibilité A1–A4 forcent la fibre admissible $F_n \simeq V_\rho$ de structure de Heisenberg
+        (Note 5) et le fil d’admissibilité $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le secteur spin-$\tfrac{1}{2}$
+        identifié comme le secteur physiquement admissible (Note 1). <em>Les structures de la mécanique quantique
+        découlent-elles déjà de cet ensemble ?</em>
+      </p>
+      <p>
+        Le sous-programme de structure quantique répond <strong>oui</strong>, en six étapes structurelles. La cohérence
+        de phase est forcée par l’indiscernabilité binaire-icosaédrale des blocs de Weil conjugués (Q1). Le corrélateur
+        singulet $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ découle de quatre entrées établies indépendamment :
+        linéarité des observables $\mathfrak{su}(2)$ (O23), bilinéarité depuis les amplitudes cohérentes (Q1),
+        invariance par rotation depuis la saturation isotrope (O23), et normalisation unitaire depuis l’involution de
+        parité (O18) — aucun postulat quantique n’est invoqué à aucune étape. La borne de Tsirelson
+        $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ en est alors un corollaire structurel ; la règle de Born est l’unique
+        affectation probabiliste compatible avec le corrélateur dérivé (Q1 Théorème 2.18, sans recourir au théorème de
+        Gleason). $\mathrm{SU}(2)$ est sélectionné comme l’unique point fixe stable du flot d’admissibilité dans la
+        limite LPS (Q2 Théorème 8.6), et tous les résultats s’étendent à la généralisation universelle spin-$j$ pour
+        les cinq secteurs admissibles de $2I$ (Q3). La factorisabilité de Bell ne s’applique <em>pas</em> dans les
+        descriptions effectives non injectives (article Bell, publié dans <em>Quantum Reports</em>).
+      </p>
+      <div class="note" role="note">
+        <strong>La première physique du corpus.</strong> Avant la géométrie de l’espace-temps, avant la structure de
+        jauge, avant la gravité, les contraintes d’admissibilité forcent déjà les corrélations quantiques. Le
+        sous-programme est clos dans le secteur $\mathrm{SU}(2)$ ; le problème ouvert principal est l’extension de la
+        règle de Born aux observables arbitraires au-delà du secteur de parité de O18.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Synthèse (note de présentation, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">4 articles (Q1, Q2, Q3, Bell) ; cohérence de phase, corrélateur singulet, borne de Tsirelson,
+            règle de Born, corrélateur universel spin-$j$, non-applicabilité de Bell — tous dans le secteur
+            $\mathrm{SU}(2)$ de $2I$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Secteur $\mathrm{SU}(2)$ clos (six étapes prouvées) ; article Bell publié dans
+            <em>Quantum Reports</em> ; ouverts : règle de Born pour observables arbitraires, flot d’admissibilité au-delà
+            de $\mathrm{SU}(2)$, intrication multipartite</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>La chaîne structurelle</h2>
+    <p style="text-align:center">
+      $F_n \simeq V_\rho,\;\text{indisc. BI}
+      \;\Longrightarrow\;
+      \text{cohérence de phase}
+      \;\Longrightarrow\;
+      E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}
+      \;\Longrightarrow\;
+      |S_{\mathrm{CHSH}}| \leq 2\sqrt{2}
+      \;\Longrightarrow\;
+      \text{règle de Born}
+      \;\Longrightarrow\;
+      \mathrm{SU}(2)\text{ point fixe}
+      \;\Longrightarrow\;
+      E = -\tfrac{j(j+1)}{3}\hat{a}\cdot\hat{b}.$
+    </p>
+    <p>
+      Six étapes conceptuellement distinctes couvrent trois articles constituants : cohérence de phase, corrélateur
+      singulet, borne de Tsirelson et règle de Born au spin-$\tfrac{1}{2}$ (Q1) ; co-admissibilité
+      $\lambda_{1/2} = \lambda_{3/2} = 18$ et $\mathrm{SU}(2)$ comme unique point fixe stable du flot d’admissibilité
+      (Q2) ; proto-état comme singulet, corrélateur universel et règle de Born sectorielle pour les cinq secteurs
+      admissibles $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ de $2I$ (Q3). L’article Bell établit que
+      l’hypothèse standard de factorisabilité de Bell échoue structurellement dans toute description effective non
+      injective.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Articles du sous-programme</h2>
+    <p><strong>Cohérence de phase, corrélateur singulet, Tsirelson, règle de Born au spin-$\tfrac{1}{2}$.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q1/index_fr.html"><strong>Q1</strong></a> — cohérence de phase depuis
+        l’indiscernabilité BI des blocs de Weil conjugués (Théorème 2.7, prouvé) ; signature observable
+        $\mathrm{rang}\,W^{(c)}_n = 0$ comme témoin falsifiable de cohérence (Corollaire 2.9 ; numériquement confirmé
+        pour $q = 29$ sur les quatre paires conjuguées) ; corrélateur singulet
+        $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ à partir de quatre entrées structurelles (Théorème 2.14, prouvé) ;
+        borne de Tsirelson $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ comme corollaire structurel (Corollaire 2.16,
+        inconditionnel) ; règle de Born comme unique affectation probabiliste compatible avec le corrélateur dérivé
+        (Théorème 2.18, prouvé — sans théorème de Gleason).</li>
+    </ul>
+    <p><strong>Co-admissibilité et $\mathrm{SU}(2)$ comme point fixe stable.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q2/index_fr.html"><strong>Q2</strong></a> — co-admissibilité
+        $\lambda_{1/2} = \lambda_{3/2} = 18$ des spin-$\tfrac{1}{2}$ et spin-$\tfrac{3}{2}$ sur $2I$ (prouvée) ;
+        structure quantique répliquée pour le secteur $\chi_4$ avec corrélateur
+        $E = -\tfrac{5}{4}\hat{a}\cdot\hat{b}$ (prouvé) ; le flot d’admissibilité sélectionne $j = \tfrac{1}{2}$ comme
+        unique point fixe stable dans la limite LPS à grand $p$ (Théorème 8.6, prouvé), récupérant le corrélateur
+        standard $E = -\hat{a}\cdot\hat{b}$ et la borne de Tsirelson standard $2\sqrt{2}$ comme valeurs physiquement
+        réalisées.</li>
+    </ul>
+    <p><strong>Secteur quantique spin-$j$ universel.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q3/index_fr.html"><strong>Q3</strong></a> — le proto-état est le singulet
+        $|\Omega_j\rangle$ pour tout $j$ admissible (Théorème 4.1, prouvé via Schur sur la décomposition de
+        Clebsch–Gordan) ; corrélateur universel
+        $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}(\hat{a}\cdot\hat{b})$ pour les cinq secteurs admissibles de $2I$
+        (Théorème 5.2, prouvé) ; règle de Born pour tout $j$ admissible (Corollaire 6.1, prouvé). Clôt le secteur
+        quantique $\mathrm{SU}(2)$ et complète la dérivation structurelle initiée par Q1.</li>
+    </ul>
+    <p><strong>Non-applicabilité de Bell dans les cadres non injectifs.</strong></p>
+    <ul>
+      <li><a href="/science/bell/index_fr.html"><strong>Article Bell</strong></a> — prouve que l’hypothèse standard de
+        factorisabilité de Bell échoue structurellement dans tout cadre où les résultats d’observables apparaissent
+        comme classes d’équivalence de configurations sous-jacentes sous une application non injective. La preuve
+        n’utilise que la non-injectivité de $\Pi$ et la complétude informationnelle (E2 d’ENI) ; aucune variable
+        cachée, aucune dynamique non locale, aucune modification de la mécanique quantique. Publié dans
+        <em>Quantum Reports</em> (MDPI, 2026) — le seul article peer-reviewé du sous-programme.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Entrées et sorties</h2>
+    <p>
+      <strong>Entrées amont.</strong> La fibre admissible $F_n \simeq V_\rho$ avec commutateur non trivial
+      $[X,Y] = Z$ depuis la note Heisenberg-structure et le foundation paper (Note 5) ; le fil d’admissibilité
+      $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le spin-$\tfrac{1}{2}$ identifié comme secteur minimal admissible
+      (Note 1, O29) ; $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ avec trois directions isotropes et saturation
+      isotrope $M \propto I$ (O23) ; involution de parité $c \leftrightarrow q-c$ et amplitudes unitaires à saturation
+      (O18, O22) ; indiscernabilité BI des blocs de Weil conjugués (BornInfeld) ; non-injectivité comme nécessité
+      structurelle ($\mathcal{S}_\Pi > 0$) pour l’argument Bell (ENI).
+    </p>
+    <p>
+      <strong>Sorties.</strong> Cohérence de phase et structure d’amplitudes cohérentes (consommées par la Note 6
+      fermions et la série Q) ; $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ dans le secteur spin-$\tfrac{1}{2}$ et sa
+      généralisation universelle spin-$j$ (consommées par la phénoménologie quantique et les applications) ; borne de
+      Tsirelson $2\sqrt{2}$ (applications fondationnelles) ; règle de Born dans le secteur $\mathrm{SU}(2)$ (mesures
+      quantiques) ; $\mathrm{SU}(2)$ comme point fixe stable (réinjecté dans la Note 1 et la Note 3 structure de jauge) ;
+      signature falsifiable $\mathrm{rang}\,W^{(c)}_n = 0$ (validation de la série O) ; non-applicabilité structurelle
+      de la factorisabilité de Bell (fondements de la mécanique quantique).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut</h2>
+    <p>
+      Le sous-programme est <strong>clos dans le secteur $\mathrm{SU}(2)$</strong> : les six étapes de la chaîne
+      structurelle sont prouvées. Cohérence de phase (Q1 Théorème 2.7), corrélateur singulet (Q1 Théorème 2.14), borne
+      de Tsirelson (Q1 Corollaire 2.16) et règle de Born au spin-$\tfrac{1}{2}$ (Q1 Théorème 2.18) sont
+      inconditionnels. Co-admissibilité $\lambda_{1/2} = \lambda_{3/2} = 18$ et $\mathrm{SU}(2)$ comme unique point
+      fixe stable du flot d’admissibilité (Q2 Théorème 8.6) sont prouvés. L’identification du proto-état (Q3 Théorème
+      4.1), le corrélateur universel spin-$j$ (Q3 Théorème 5.2) et la règle de Born sectorielle (Q3 Corollaire 6.1)
+      étendent le programme aux cinq secteurs admissibles de $2I$. La non-applicabilité de la factorisabilité de Bell
+      est publiée dans <em>Quantum Reports</em>. Numériquement : $\mathrm{rang}\,W^{(c)}_n = 0$ confirmé pour
+      $q = 29$ sur les quatre paires conjuguées dans tout le régime admissible ; l’extension à
+      $q \in \{61, 101, 151, 211, 307, 401\}$ est identifiée comme cible de validation systématique. Deux livrables
+      opérationnels restent ouverts : la règle de Born pour les observables générales au-delà de $\mathrm{SU}(2)$, et
+      la validation numérique sur toute la plage primaire.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

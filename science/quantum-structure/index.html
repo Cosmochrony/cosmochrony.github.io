@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Quantum Structure Sub-Programme | Cosmochrony</title>
+  <meta name="description"
+    content="Does quantum mechanics follow from admissibility alone? The quantum structure sub-programme derives
+    phase coherence, the singlet correlator, the Tsirelson bound, and the Born rule from the admissibility constraints
+    A1–A4, without importing any quantum postulate. Four constituent papers, six structural steps, one functional."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/quantum-structure/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="The Quantum Structure Sub-Programme"/>
+  <meta property="og:description"
+    content="Quantum mechanics is not postulated: phase coherence, the singlet correlator $E = -\hat{a}\cdot\hat{b}$,
+    the Tsirelson bound $2\sqrt{2}$, and the Born rule are forced by the admissibility of the SU(2) sector on the
+    binary icosahedral group. Presentation note and paper hub for the quantum structure sub-programme."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/quantum-structure/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/quantum-structure/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>The Quantum Structure Sub-Programme</h1>
+        <p class="subtitle">
+          Do the structures of quantum mechanics — complex amplitudes, Born rule, singlet correlator, Bell-type
+          correlations — follow from admissibility alone, or must they be separately postulated? In Cosmochrony, the
+          admissibility axioms A1–A4 on the binary icosahedral group $2I$ and the Weil representation $V_\rho$
+          <em>force</em> them. This page is the synthesis and the hub to all its papers.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20562949" rel="noopener">
+        Read the synthesis note</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20562949</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The admissibility axioms A1–A4 force the admissible fibre $F_n \simeq V_\rho$ with Heisenberg structure (Note 5)
+        and the admissibility thread $Q_8 \subset 2I \subset \mathrm{SU}(2)$ with the spin-$\tfrac{1}{2}$ sector
+        identified as the physically admissible sector (Note 1). <em>Do the structures of quantum mechanics already
+        follow from this much?</em>
+      </p>
+      <p>
+        The quantum structure sub-programme answers <strong>yes</strong>, in six structural steps. Phase coherence is
+        forced by the binary-icosahedral indiscernibility of conjugate Weil blocks (Q1). The singlet correlator
+        $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ follows from four independently established inputs: linearity of
+        $\mathfrak{su}(2)$ observables (O23), bilinearity from coherent amplitudes (Q1), rotation invariance from
+        isotropic saturation (O23), and unit normalisation from the parity involution (O18) — no quantum postulate is
+        invoked at any step. The Tsirelson bound $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ is then a structural corollary;
+        the Born rule is the unique probability assignment compatible with the derived correlator (Q1 Theorem 2.18, no
+        Gleason theorem needed). $\mathrm{SU}(2)$ is selected as the unique stable fixed point of the admissibility
+        flow in the LPS limit (Q2 Theorem 8.6), and all results extend to the universal spin-$j$ generalisation for
+        the five admissible sectors of $2I$ (Q3). Bell factorizability does <em>not</em> apply in non-injective
+        effective descriptions (Bell paper, published in <em>Quantum Reports</em>).
+      </p>
+      <div class="note" role="note">
+        <strong>The first physics of the corpus.</strong> Before spacetime geometry, before gauge structure, before
+        gravity, the admissibility constraints already force quantum correlations. The sub-programme is closed within
+        the $\mathrm{SU}(2)$ sector; the primary open problem is the extension of the Born rule to arbitrary
+        observables beyond the parity sector of O18.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Synthesis (presentation note, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">4 papers (Q1, Q2, Q3, Bell); phase coherence, singlet correlator, Tsirelson bound, Born rule,
+            universal spin-$j$ correlator, Bell non-applicability — all within the $\mathrm{SU}(2)$ sector of $2I$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">$\mathrm{SU}(2)$ sector closed (all six steps proved); Bell paper published in
+            <em>Quantum Reports</em>; open: Born rule for arbitrary observables, admissibility flow beyond
+            $\mathrm{SU}(2)$, multipartite entanglement</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>The structural chain</h2>
+    <p style="text-align:center">
+      $F_n \simeq V_\rho,\;\text{BI indisc.}
+      \;\Longrightarrow\;
+      \text{phase coherence}
+      \;\Longrightarrow\;
+      E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}
+      \;\Longrightarrow\;
+      |S_{\mathrm{CHSH}}| \leq 2\sqrt{2}
+      \;\Longrightarrow\;
+      \text{Born rule}
+      \;\Longrightarrow\;
+      \mathrm{SU}(2)\text{ fixed point}
+      \;\Longrightarrow\;
+      E = -\tfrac{j(j+1)}{3}\hat{a}\cdot\hat{b}.$
+    </p>
+    <p>
+      Six conceptually distinct steps span three constituent papers: phase coherence, singlet correlator, Tsirelson
+      bound, and Born rule at spin-$\tfrac{1}{2}$ (Q1); co-admissibility $\lambda_{1/2} = \lambda_{3/2} = 18$ and
+      $\mathrm{SU}(2)$ as the unique stable fixed point of the admissibility flow (Q2); proto-state as the singlet,
+      universal correlator, and sectorwise Born rule for all five admissible sectors $j \in \{\tfrac{1}{2}, 1,
+      \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ of $2I$ (Q3). The Bell paper establishes that the standard Bell factorizability
+      assumption fails structurally in any non-injective effective description.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Papers of the sub-programme</h2>
+    <p><strong>Phase coherence, singlet correlator, Tsirelson, Born rule at spin-$\tfrac{1}{2}$.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q1/"><strong>Q1</strong></a> — phase coherence from BI indiscernibility
+        of conjugate Weil blocks (Theorem 2.7, proved); observable rank signature $\mathrm{rank}\,W^{(c)}_n = 0$ as a
+        falsifiable coherence witness (Corollary 2.9; numerically confirmed for $q = 29$ across all four conjugate
+        pairs); singlet correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ from four structural inputs
+        (Theorem 2.14, proved); Tsirelson bound $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ as a structural corollary
+        (Corollary 2.16, unconditional); Born rule as the unique probability assignment compatible with the derived
+        correlator (Theorem 2.18, proved — no Gleason theorem).</li>
+    </ul>
+    <p><strong>Co-admissibility and $\mathrm{SU}(2)$ as stable fixed point.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q2/"><strong>Q2</strong></a> — co-admissibility
+        $\lambda_{1/2} = \lambda_{3/2} = 18$ of spin-$\tfrac{1}{2}$ and spin-$\tfrac{3}{2}$ on $2I$ (proved); quantum
+        structure replicated for the $\chi_4$ sector with correlator
+        $E = -\tfrac{5}{4}\hat{a}\cdot\hat{b}$ (proved); admissibility flow selects $j = \tfrac{1}{2}$ as the unique
+        stable fixed point in the large-$p$ LPS limit (Theorem 8.6, proved), recovering the standard correlator
+        $E = -\hat{a}\cdot\hat{b}$ and the standard Tsirelson bound $2\sqrt{2}$ as the physically realised values.</li>
+    </ul>
+    <p><strong>Universal spin-$j$ quantum sector.</strong></p>
+    <ul>
+      <li><a href="/science/quantum-structure/q3/"><strong>Q3</strong></a> — proto-state is the singlet
+        $|\Omega_j\rangle$ for all admissible $j$ (Theorem 4.1, proved via Schur on the Clebsch–Gordan decomposition);
+        universal correlator $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}(\hat{a}\cdot\hat{b})$ for all five admissible
+        sectors of $2I$ (Theorem 5.2, proved); Born rule for all admissible $j$ (Corollary 6.1, proved). Closes the
+        $\mathrm{SU}(2)$ quantum sector and completes the structural derivation initiated in Q1.</li>
+    </ul>
+    <p><strong>Bell non-applicability in non-injective frameworks.</strong></p>
+    <ul>
+      <li><a href="/science/bell/"><strong>Bell paper</strong></a> — proves that the standard Bell factorizability
+        assumption fails structurally in any framework where observable outcomes arise as equivalence classes of
+        underlying configurations under a non-injective map. The proof uses only non-injectivity of $\Pi$ and
+        informational completeness (E2 of ENI); no hidden variable, no non-local dynamics, no modification of quantum
+        mechanics. Published in <em>Quantum Reports</em> (MDPI, 2026) — the only peer-reviewed paper of the
+        sub-programme.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Inputs and outputs</h2>
+    <p>
+      <strong>Upstream inputs.</strong> The admissible fibre $F_n \simeq V_\rho$ with non-trivial commutator
+      $[X,Y] = Z$ from the Heisenberg-structure note and the foundation paper (Note 5); the admissibility thread
+      $Q_8 \subset 2I \subset \mathrm{SU}(2)$ with spin-$\tfrac{1}{2}$ identified as the minimal admissible sector
+      (Note 1, O29); $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ with three isotropic directions and isotropic
+      saturation $M \propto I$ (O23); parity involution $c \leftrightarrow q-c$ and unit-norm amplitudes at saturation
+      (O18, O22); BI indiscernibility of conjugate Weil blocks (BornInfeld); non-injectivity as a structural necessity
+      ($\mathcal{S}_\Pi > 0$) for the Bell argument (ENI).
+    </p>
+    <p>
+      <strong>Outputs.</strong> Phase coherence and coherent amplitude structure (consumed by Note 6 fermions and the
+      Q-series); $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ in the spin-$\tfrac{1}{2}$ sector and its universal
+      spin-$j$ generalisation (consumed by quantum phenomenology and applications); Tsirelson bound $2\sqrt{2}$
+      (foundations applications); Born rule in the $\mathrm{SU}(2)$ sector (quantum measurements); $\mathrm{SU}(2)$
+      as stable fixed point (feeds back into Note 1 and Note 3 gauge structure); the rank-$W^{(c)}_n = 0$ falsifiable
+      signature (O-series validation); structural non-applicability of Bell factorizability (quantum foundations).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status</h2>
+    <p>
+      The sub-programme is <strong>closed within the $\mathrm{SU}(2)$ sector</strong>: all six steps of the structural
+      chain are proved. Phase coherence (Q1 Theorem 2.7), the singlet correlator (Q1 Theorem 2.14), the Tsirelson
+      bound (Q1 Corollary 2.16), and the Born rule at spin-$\tfrac{1}{2}$ (Q1 Theorem 2.18) are unconditional.
+      Co-admissibility $\lambda_{1/2} = \lambda_{3/2} = 18$ and $\mathrm{SU}(2)$ as the unique stable fixed point of
+      the admissibility flow (Q2 Theorem 8.6) are proved. The proto-state identification (Q3 Theorem 4.1), the
+      universal spin-$j$ correlator (Q3 Theorem 5.2), and the sectorwise Born rule (Q3 Corollary 6.1) extend the
+      programme to all five admissible sectors of $2I$. Bell factorizability non-applicability is published in
+      <em>Quantum Reports</em>. Numerically: $\mathrm{rank}\,W^{(c)}_n = 0$ confirmed for $q = 29$ across all four
+      conjugate pairs throughout the admissible regime; extension to $q \in \{61, 101, 151, 211, 307, 401\}$ is
+      identified as the systematic validation target. Two operational deliverables remain open: the Born rule for
+      general observables beyond $\mathrm{SU}(2)$, and the numerical validation across the full prime range.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

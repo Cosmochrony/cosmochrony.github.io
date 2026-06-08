@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le résidu projectif comme complément de Schur | Cosmochronie</title>
+  <meta name="description"
+    content="Met le résidu projectif E_Pi sous la forme du complément de Schur des directions spinorielles éliminées par la projection non injective ; réduit le coefficient de splitting générationnel u au défaut d'équivariance chirale antiunitaire du locking A4."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le résidu projectif comme complément de Schur"/>
+  <meta property="og:description"
+    content="Forme de Schur du résidu projectif ; localisation du splitting générationnel u dans le défaut d'équivariance chirale antiunitaire ; séparation fini/lorentzien ; verrouillage des conventions Seeley–DeWitt."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/projective-residue-schur/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/projective-residue-schur/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le résidu projectif comme complément de Schur</h1>
+        <p class="subtitle">
+          Réduction du coefficient de splitting inter-générationnel $u$ au défaut d'équivariance
+          chirale antiunitaire de l'axiome de locking A4.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20601040" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20601040</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Le sous-programme matière fermionique de Cosmochronie localise le splitting de masse à
+        trois générations dans la partie $J_3$-impaire de l'endomorphisme projectif au carré
+        $E_\Pi^2$ restreint au triplet de générations gauge-singulet $C^3_{\mathrm{gen}}$,
+        paramétré par un seul nombre réel $u$ via $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1,
+        \tfrac{1}{2} + u, \tfrac{1}{2} - u)$. Le secteur pair est déjà clos par la parité
+        Born–Infeld.
+      </p>
+      <p>
+        Cette note fixe le statut structurel de $u$ avant toute construction explicite de
+        $E_\Pi$. Trois résultats précis sont obtenus&nbsp;: une forme universelle Feshbach/Schur
+        pour $E_\Pi$, une réduction en blocs chiraux qui localise $u$ dans un défaut
+        d'équivariance antiunitaire, et un théorème de séparation fini/lorentzien isolant $u$
+        comme donnée lorentzienne.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Working paper (prépublication)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Forme de Schur de $E_\Pi$, localisation de $u$, séparation fini/lorentzien, stratification A4</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Working paper (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20601040">10.5281/zenodo.20601040</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li><strong>Forme de Schur du résidu projectif.</strong> Sous compatibilité de symbole,
+        $E_\Pi = -\Pi_S \, D_{g,A}\,(1 - P)\,D_{g,A}\,\Pi_S^{*} = -M^{\dagger} M$ avec
+        $P = \Pi_S^{*}\Pi_S$. Ainsi $E_\Pi$ est semi-défini négatif, d'ordre zéro, et s'annule
+        dans la limite injective $P = 1$.</li>
+      <li><strong>Réduction en blocs chiraux.</strong> Décomposer $D_{g,A}$ et $1 - P$ dans le
+        splitting chiral $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$ donne les blocs
+        diagonaux $E_{LL} = -\Pi_S \mathcal{D}^{-}\pi_{RR}\mathcal{D}^{+}\Pi_S^{*}$ et
+        $E_{RR} = -\Pi_S \mathcal{D}^{+}\pi_{LL}\mathcal{D}^{-}\Pi_S^{*}$. L'admissibilité à
+        gauche $P_R E_\Pi P_R = 0$ de Q14 est équivalente à $\pi_{LL} = 0$.</li>
+      <li><strong>Localisation de $u$.</strong> Le splitting $u$ est contrôlé par la composante
+        $\mathcal{D}^{\pm}$-transportée et projetée sur les générations du défaut
+        d'équivariance chirale antiunitaire
+        $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$, non par une
+        différence naïve de blocs.</li>
+      <li><strong>Stratification axiomatique.</strong> La non-injectivité minimale
+        $c \leftrightarrow q - c$ est chiralement symétrique, donc $u = 0$ au niveau des
+        axiomes A1–A3. Un $u$ non nul requiert une brisure de symétrie chirale qui ne peut
+        prendre origine que dans l'axiome de locking de projection A4.</li>
+      <li><strong>Verrouillage des conventions Seeley–DeWitt.</strong> Sur le gauge-singlet
+        $C^3_{\mathrm{gen}}$ et la métrique effective plate, la définition opérateur de $u$
+        égale le coefficient spectral entrant dans l'amplitude effective&nbsp;; le facteur de
+        normalisation commun $a_4$ s'annule dans le rapport $(\tfrac12 + u)/(\tfrac12 - u)$.</li>
+      <li><strong>Pas de label chiral fini.</strong> La chiralité $\gamma_5$ existe à cause de
+        la clôture lorentzienne $g^{\mu\nu} = 2\eta^{\mu\nu}$. Une arête de cascade est une
+        translation de Heisenberg, non un élément symplectique, donc elle ne porte aucun
+        relèvement métaplectique canonique&nbsp;; $u$ ne peut être extrait d'aucune observable
+        front finie.</li>
+      <li><strong>Séparation fini/lorentzien.</strong> Le locking de projection fini est
+        $J_\Pi$-équivariant pour $q$ premier impair, donc $u_{\mathrm{fin}} = 0$. Un splitting
+        générationnel non nul ne peut surgir que dans la complétion lorentzienne de la
+        saturation Born–Infeld.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>La forme de complément de Schur</h2>
+    <p>
+      Le carré projeté de Dirac $D^2_{\Pi,g,A} = \Pi_S D_{g,A} P D_{g,A} \Pi_S^{*}$ est la
+      réduction de Feshbach du carré relevé le long du secteur éliminé $1 - P$. Soustraire le
+      bloc de Lichnerowicz reproduit par $\Pi_S D_{g,A}^2 \Pi_S^{*}$ laisse
+      $E_\Pi = -\Pi_S D_{g,A}(1 - P)D_{g,A}\Pi_S^{*}$, le complément de Schur des directions
+      éliminées. Ceci rend précis l'énoncé de Q14 selon lequel $E_\Pi$ n'est pas une donnée
+      Dirac finie postulée mais est induit par la projection non injective elle-même.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Le défaut d'équivariance antiunitaire</h2>
+    <p>
+      Le relèvement spinoriel Born–Infeld $J_\Pi$ échange les sous-fibrés chiraux via
+      $J_\Pi P_L = P_R J_\Pi$. L'équivariance du projecteur de locking $[P, J_\Pi] = 0$ impose
+      sur les blocs chiraux diagonaux non pas l'égalité naïve mais l'équivalence transportée et
+      complexe-conjuguée $\pi_{LL} = \tau\,\overline{\pi_{RR}}\,\tau^{-1}$. L'obstruction
+      pertinente à $u = 0$ est donc le défaut antiunitaire
+      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$,
+      réduit à $\pi_{LL} - \tau \pi_{RR} \tau^{-1}$ sur la structure réelle fixée par
+      $J_\Pi^{(2)}$ sur le triplet des générations.
+    </p>
+    <p>
+      L'échec de l'équivariance $J_\Pi$ au locking de projection est une condition nécessaire
+      mais non suffisante pour $u \neq 0$&nbsp;: le commutateur peut être supporté en dehors du
+      triplet des générations, ou dans des composantes qui ne survivent pas au transport Dirac
+      ni à la projection finale sur $C^3_{\mathrm{gen}}$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Séparation fini/lorentzien</h2>
+    <p>
+      Les deux constituants de l'axiome A4 sont $J_\Pi$-invariants à $q$ fini&nbsp;: la condition
+      de saturation Born–Infeld continue est la parité elle-même, et le support de couche
+      discret est une union d'orbites de la parité sans point fixe $c = 0$ pour $q$ premier
+      impair. La branche locked finie est donc $J_\Pi$-équivariante et $u_{\mathrm{fin}} = 0$.
+    </p>
+    <p>
+      En paramétrisant la déformation $J_\Pi$-impaire par $s$ (ouverte seulement par la
+      complexification lorentzienne), la symétrie $J_\Pi$ de la fonctionnelle de saturation
+      lorentzienne $\mathcal{B}$ donne $\mathcal{B}(s) = \mathcal{B}(-s)$, donc $s = 0$ est
+      automatiquement stationnaire. Le caractère du locking est alors fixé par la courbure
+      chirale $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$&nbsp;: positive stabilise la branche
+      $J_\Pi$-équivariante ($u = 0$)&nbsp;; négative entraîne une paire saturée
+      $J_\Pi$-conjuguée $\pm s_*$ et $u \neq 0$. Le cas marginal $\mu_\chi^2 = 0$ est décidé par
+      le premier coefficient pair non nul de $\mathcal{B}(s)$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut et livrable ouvert</h2>
+    <p>
+      <strong>Établi.</strong> La forme de Schur de $E_\Pi$, la réduction en blocs chiraux, la
+      stratification sur les axiomes Cosmochronie, le verrouillage des conventions
+      Seeley–DeWitt, le résultat no-go d'accès fini à la chiralité, et la séparation
+      fini/lorentzien.
+    </p>
+    <p>
+      <strong>Ouvert.</strong> La magnitude $|u|$ est réduite au problème lorentzien A4&nbsp;:
+      définir la fonctionnelle Born–Infeld saturée $\mathcal{B}(s)$ le long du module
+      $J_\Pi$-impair et calculer la courbure chirale $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$,
+      avec le cas marginal gouverné par le premier coefficient pair non nul. C'est le dernier
+      verrou conceptuel avant la construction explicite de $E_\Pi$ comme complément de Schur
+      avec un bloc éliminé $J_\Pi$-impair lorentzien.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochronie</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
+      matière fermionique</a> (Note de présentation 6). Elle raffine le livrable ouvert de Q14
+      sur le splitting inter-générationnel en réduisant la magnitude $|u|$ à une unique question
+      lorentzienne au niveau A4, et identifie les observables front des notes compagnonnes
+      oriented-frontier et angular-amplitude comme contrôles nuls plutôt que porteurs de $u$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Projective Residue as a Schur Complement: Reduction of the
+      Generation Split to the Chiral Asymmetry of Projection Locking</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20601040" rel="noopener">10.5281/zenodo.20601040</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

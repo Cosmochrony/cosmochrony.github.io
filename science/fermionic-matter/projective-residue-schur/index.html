@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Projective Residue as a Schur Complement | Cosmochrony</title>
+  <meta name="description"
+    content="Exhibits the projective endomorphism E_Pi as the Schur complement of the spinorial directions eliminated by non-injective projection; reduces the generation split coefficient u to the antiunitary chiral equivariance defect of A4 projection locking."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="The Projective Residue as a Schur Complement"/>
+  <meta property="og:description"
+    content="Schur complement form of E_Pi; localisation of the generation split u in the antiunitary chiral equivariance defect; finite/Lorentzian separation; Seeley-DeWitt lock."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projective-residue-schur/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/projective-residue-schur/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>The Projective Residue as a Schur Complement</h1>
+        <p class="subtitle">
+          Reduction of the inter-generation split coefficient $u$ to the antiunitary chiral equivariance
+          defect of the projection-locking axiom A4.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20601040" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20601040</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The fermionic sub-programme of Cosmochrony locates the three-generation mass split in the
+        $J_3$-odd part of the squared projective endomorphism $E_\Pi^2$ restricted to the
+        gauge-singlet generation triplet $C^3_{\mathrm{gen}}$, parametrised by a single real number
+        $u$ through $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac{1}{2} + u,
+        \tfrac{1}{2} - u)$. The even sector is already closed by Born–Infeld parity.
+      </p>
+      <p>
+        This note fixes the structural status of $u$ before any explicit construction of $E_\Pi$.
+        Three sharp results are obtained: a universal Feshbach/Schur form for $E_\Pi$, a chiral
+        block reduction that localises $u$ in an antiunitary equivariance defect, and a
+        finite/Lorentzian separation theorem isolating $u$ as a Lorentzian datum.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Schur complement form of $E_\Pi$, localisation of $u$, finite/Lorentzian separation, A4 stratification</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20601040">10.5281/zenodo.20601040</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li><strong>Schur form of the projective residue.</strong> Under symbol-compatibility,
+        $E_\Pi = -\Pi_S \, D_{g,A}\,(1 - P)\,D_{g,A}\,\Pi_S^{*} = -M^{\dagger} M$ with
+        $P = \Pi_S^{*}\Pi_S$. Hence $E_\Pi$ is negative semi-definite, zero-order, and vanishes
+        in the injective limit $P = 1$.</li>
+      <li><strong>Chiral block reduction.</strong> Decomposing $D_{g,A}$ and $1 - P$ in the chiral
+        splitting $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$ gives diagonal blocks
+        $E_{LL} = -\Pi_S \mathcal{D}^{-}\pi_{RR}\mathcal{D}^{+}\Pi_S^{*}$ and
+        $E_{RR} = -\Pi_S \mathcal{D}^{+}\pi_{LL}\mathcal{D}^{-}\Pi_S^{*}$. The left-admissibility
+        $P_R E_\Pi P_R = 0$ of Q14 is equivalent to $\pi_{LL} = 0$.</li>
+      <li><strong>Localisation of $u$.</strong> The split $u$ is controlled by the
+        $\mathcal{D}^{\pm}$-transported, generation-projected component of the antiunitary chiral
+        equivariance defect $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$,
+        not by a naive block difference.</li>
+      <li><strong>Axiomatic stratification.</strong> The minimal non-injectivity
+        $c \leftrightarrow q - c$ is chirally symmetric, so $u = 0$ at the level of axioms A1–A3.
+        A non-zero $u$ requires a chiral symmetry-breaking that can originate only in the
+        projection-locking axiom A4.</li>
+      <li><strong>Seeley–DeWitt convention lock.</strong> On the gauge-singlet $C^3_{\mathrm{gen}}$
+        and the flat effective metric, the operator-level definition of $u$ equals the spectral
+        coefficient that enters the effective amplitude; the common $a_4$ normalisation factor
+        cancels in the ratio $(\tfrac12 + u)/(\tfrac12 - u)$.</li>
+      <li><strong>No finite chiral label.</strong> Chirality $\gamma_5$ exists because of the
+        Lorentzian closure $g^{\mu\nu} = 2\eta^{\mu\nu}$. A cascade edge is a Heisenberg
+        translation, not a symplectic element, so it carries no canonical metaplectic lift; $u$
+        cannot be extracted from any finite front observable.</li>
+      <li><strong>Finite/Lorentzian separation.</strong> Finite projection locking is
+        $J_\Pi$-equivariant for $q$ an odd prime, hence $u_{\mathrm{fin}} = 0$. A non-zero
+        generation split can arise only in the Lorentzian completion of the Born–Infeld saturation.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>The Schur complement form</h2>
+    <p>
+      The projected Dirac square $D^2_{\Pi,g,A} = \Pi_S D_{g,A} P D_{g,A} \Pi_S^{*}$ is the
+      Feshbach reduction of the lifted square along the eliminated sector $1 - P$. Subtracting
+      the Lichnerowicz block reproduced by $\Pi_S D_{g,A}^2 \Pi_S^{*}$ leaves
+      $E_\Pi = -\Pi_S D_{g,A}(1 - P)D_{g,A}\Pi_S^{*}$, the Schur complement of the eliminated
+      directions. This makes precise the statement of Q14 that $E_\Pi$ is not a postulated finite
+      Dirac datum but is induced by the non-injective projection itself.
+    </p>
+  </section>
+  <section class="card">
+    <h2>The antiunitary equivariance defect</h2>
+    <p>
+      The Born–Infeld spinorial lift $J_\Pi$ exchanges the chiral subbundles via
+      $J_\Pi P_L = P_R J_\Pi$. Equivariance of the locking projector $[P, J_\Pi] = 0$ forces on
+      the diagonal chiral blocks the transported, complex-conjugated equivalence
+      $\pi_{LL} = \tau\,\overline{\pi_{RR}}\,\tau^{-1}$. The relevant obstruction to $u = 0$ is
+      therefore the antiunitary defect
+      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$,
+      reduced to $\pi_{LL} - \tau \pi_{RR} \tau^{-1}$ on the real structure fixed by $J_\Pi^{(2)}$
+      on the generation triplet.
+    </p>
+    <p>
+      A failure of $J_\Pi$-equivariance at projection locking is a necessary but not sufficient
+      condition for $u \neq 0$: the commutator may be supported outside the generation triplet,
+      or in components that do not survive the Dirac transport and the final projection to
+      $C^3_{\mathrm{gen}}$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Finite/Lorentzian separation</h2>
+    <p>
+      Both constituents of axiom A4 are $J_\Pi$-invariant at finite $q$: the continuous
+      Born–Infeld saturation condition is parity itself, and the discrete shell support is a
+      union of parity orbits with no $c = 0$ fixed point for $q$ an odd prime. The finite locked
+      branch is therefore $J_\Pi$-equivariant and $u_{\mathrm{fin}} = 0$.
+    </p>
+    <p>
+      Parametrising the $J_\Pi$-odd deformation by $s$ (opened only by Lorentzian
+      complexification), $J_\Pi$ symmetry of the Lorentzian saturation functional $\mathcal{B}$
+      gives $\mathcal{B}(s) = \mathcal{B}(-s)$, so $s = 0$ is automatically stationary. The
+      locking character is then fixed by the chiral curvature
+      $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$: positive stabilises the $J_\Pi$-equivariant
+      branch ($u = 0$); negative drives a $J_\Pi$-conjugate saturated pair $\pm s_*$ and
+      $u \neq 0$. The marginal case $\mu_\chi^2 = 0$ is decided by the leading non-vanishing even
+      coefficient of $\mathcal{B}(s)$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status and open deliverable</h2>
+    <p>
+      <strong>Established.</strong> The Schur form of $E_\Pi$, the chiral block reduction, the
+      stratification on the Cosmochrony axioms, the Seeley–DeWitt convention lock, the no-go
+      result for finite-fibre access to chirality, and the finite/Lorentzian separation.
+    </p>
+    <p>
+      <strong>Open.</strong> The magnitude $|u|$ is reduced to the Lorentzian A4 problem:
+      define the saturated Born–Infeld functional $\mathcal{B}(s)$ along the $J_\Pi$-odd modulus
+      and compute the chiral curvature $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$, with the
+      marginal case governed by the leading non-vanishing even coefficient. This is the last
+      conceptual lock before the explicit construction of $E_\Pi$ as the Schur complement with a
+      Lorentzian $J_\Pi$-odd eliminated block.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a> (Presentation Note 6). It refines the Q14 open deliverable on the
+      inter-generation splitting by reducing the magnitude $|u|$ to a single Lorentzian
+      A4-level question, and identifies the front observables of the companion oriented-frontier
+      and angular-amplitude notes as null controls rather than carriers of $u$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Projective Residue as a Schur Complement: Reduction of the
+      Generation Split to the Chiral Asymmetry of Projection Locking</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20601040" rel="noopener">10.5281/zenodo.20601040</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

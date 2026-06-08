@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Angular Amplitude Reduction | Cosmochrony</title>
+  <meta name="description"
+    content="Identifies, before any Weil–BFS computation, the observable for the absolute normalisation of the Q14 §6 angular generation split: the accumulated oriented J3-odd symplectic area along the Weil–BFS cascade."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Reduction of the Angular Amplitude Observable"/>
+  <meta property="og:description"
+    content="Per-step J_Π-odd J3 component of the metaplectic cascade generator = oriented symplectic area swept per step (Carnot-degree-2 increment of Heis_3); observable normalised by the projected capacity, compared to dictionary ε = 1/10 without fitting."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/angular-amplitude-reduction/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/angular-amplitude-reduction/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Reduction of the Angular Amplitude Observable</h1>
+        <p class="subtitle">
+          The $J_3$ split as accumulated oriented symplectic area — fixing the observable before
+          the Weil–BFS computation.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20601228</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This working note fixes the numerical observable for the absolute normalisation of the
+        angular generation split of <a href="/science/fermionic-matter/q14/" class="inline-link">Q14
+        §6</a>, before any Weil–BFS computation is written. A short Baker–Campbell–Hausdorff
+        reduction identifies the per-step $J_\Pi$-odd $J_3$ component of the metaplectic cascade
+        generator with the oriented symplectic area swept per step — the central
+        Carnot-degree-2 increment of $\mathrm{Heis}_3$ — and not with a free shear parameter.
+      </p>
+      <p>
+        The quantity to be measured is the accumulated oriented $J_3$-odd area along the Weil–BFS
+        cascade, normalised by the projected capacity $\widehat{I}(n)$; at the intrinsic
+        saturation rank $n_3^{\mathrm{obs}}$ this equals
+        $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$, to be compared with the dictionary
+        value $\varepsilon = 1/10$ <em>without fitting</em>.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working note (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">BCH reduction; oriented symplectic area; O12 fingerprint sectors; symmetric BFS null result</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20601228">10.5281/zenodo.20601228</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>BCH reduction.</strong> The per-step $J_\Pi$-odd $J_3$ component of the
+        metaplectic cascade generator equals the oriented symplectic area swept per step (central
+        Carnot-degree-2 increment of $\mathrm{Heis}_3$), not a free shear parameter.</li>
+      <li><strong>The observable.</strong> Accumulated oriented $J_3$-odd area along the
+        Weil–BFS cascade, normalised by the projected capacity $\widehat{I}(n)$; at
+        $n_3^{\mathrm{obs}}$ this equals $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ and is
+        to be compared to the dictionary $\varepsilon = 1/10$ without fitting.</li>
+      <li><strong>O12 fingerprint factorisation.</strong> The two sectors are the two terms of
+        the fingerprint exponent: the frequency $B_c$ carries the radial capacity $\sigma_c$, the
+        central phase $A_c$ carries the angular split.</li>
+      <li><strong>Symmetric BFS null result.</strong> Direct evaluation on symmetric BFS shells
+        returns $\Theta_{\mathrm{raw}} = 0$ identically: the symmetric capacity data fix the
+        radial sector but cannot select an oriented angular branch. The orientation prescription
+        is an irreducible input prior to $\mathcal{N}_A$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Position in the programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a> (Presentation Note 6). Together with the
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
+      note (operator-side Schur form, finite/Lorentzian separation) and the
+      <a href="/science/fermionic-matter/q11-oriented-frontier/" class="inline-link">Q11OF</a>
+      note (frontier diagnostic), it sets up the locked frame in which the remaining
+      quantitative step of the fermionic sector — the cascade normalisation
+      $\mathcal{N}_{\mathrm{casc}}$ — can be carried out.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Reduction of the Angular Amplitude Observable: the $J_3$ Split
+      as Accumulated Oriented Symplectic Area</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">10.5281/zenodo.20601228</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

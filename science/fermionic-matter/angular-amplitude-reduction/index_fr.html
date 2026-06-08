@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Réduction de l'amplitude angulaire | Cosmochronie</title>
+  <meta name="description"
+    content="Identifie, avant tout calcul Weil–BFS, l'observable mesurant la normalisation absolue du splitting générationnel angulaire de Q14 §6 : l'aire symplectique J3-impaire orientée accumulée le long de la cascade Weil–BFS."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Réduction de l'observable d'amplitude angulaire"/>
+  <meta property="og:description"
+    content="La composante J_Π-impaire J3 par pas du générateur de cascade métaplectique = l'aire symplectique orientée balayée par pas (incrément central de degré-2 Carnot de Heis_3) ; observable normalisée par la capacité projetée, comparée au dictionnaire ε = 1/10 sans ajustement."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/angular-amplitude-reduction/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/angular-amplitude-reduction/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Réduction de l'observable d'amplitude angulaire</h1>
+        <p class="subtitle">
+          Le splitting $J_3$ comme aire symplectique orientée accumulée — fixer l'observable
+          avant le calcul Weil–BFS.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20601228</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Cette note de travail fixe l'observable numérique pour la normalisation absolue du
+        splitting générationnel angulaire de <a href="/science/fermionic-matter/q14/index_fr.html"
+        class="inline-link">Q14 §6</a>, avant tout calcul Weil–BFS. Une courte réduction
+        Baker–Campbell–Hausdorff identifie la composante $J_\Pi$-impaire $J_3$ par pas du
+        générateur de cascade métaplectique à l'aire symplectique orientée balayée par pas — l'
+        incrément central de degré-2 Carnot de $\mathrm{Heis}_3$ — et non à un paramètre de
+        cisaillement libre.
+      </p>
+      <p>
+        La quantité à mesurer est l'aire $J_3$-impaire orientée accumulée le long de la cascade
+        Weil–BFS, normalisée par la capacité projetée $\widehat{I}(n)$&nbsp;; au rang de
+        saturation intrinsèque $n_3^{\mathrm{obs}}$ ceci égale
+        $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$, à comparer à la valeur du dictionnaire
+        $\varepsilon = 1/10$ <em>sans ajustement</em>.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note de travail (prépublication)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Réduction BCH&nbsp;; aire symplectique orientée&nbsp;; secteurs de l'empreinte O12&nbsp;; résultat nul BFS symétrique</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Working paper (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20601228">10.5281/zenodo.20601228</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Réduction BCH.</strong> La composante $J_\Pi$-impaire $J_3$ par pas du
+        générateur de cascade métaplectique égale l'aire symplectique orientée balayée par pas
+        (incrément central de degré-2 Carnot de $\mathrm{Heis}_3$), non un paramètre de
+        cisaillement libre.</li>
+      <li><strong>L'observable.</strong> Aire $J_3$-impaire orientée accumulée le long de la
+        cascade Weil–BFS, normalisée par la capacité projetée $\widehat{I}(n)$&nbsp;; au
+        $n_3^{\mathrm{obs}}$ ceci égale $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ et est
+        à comparer au dictionnaire $\varepsilon = 1/10$ sans ajustement.</li>
+      <li><strong>Factorisation par l'empreinte O12.</strong> Les deux secteurs sont les deux
+        termes de l'exposant d'empreinte&nbsp;: la fréquence $B_c$ porte la capacité radiale
+        $\sigma_c$, la phase centrale $A_c$ porte le splitting angulaire.</li>
+      <li><strong>Résultat nul BFS symétrique.</strong> Une évaluation directe sur les couches
+        BFS symétriques renvoie $\Theta_{\mathrm{raw}} = 0$ identiquement&nbsp;: les données de
+        capacité symétrique fixent le secteur radial mais ne peuvent sélectionner une branche
+        angulaire orientée. La prescription d'orientation est une entrée irréductible précédant
+        $\mathcal{N}_A$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
+      matière fermionique</a> (Note de présentation 6). Avec la note
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">PRS</a>
+      (forme de Schur côté opérateur, séparation fini/lorentzien) et la note
+      <a href="/science/fermionic-matter/q11-oriented-frontier/index_fr.html" class="inline-link">Q11OF</a>
+      (diagnostic frontière), elle établit le cadre verrouillé dans lequel l'étape quantitative
+      restante du secteur fermionique — la normalisation de cascade
+      $\mathcal{N}_{\mathrm{casc}}$ — peut être menée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Reduction of the Angular Amplitude Observable: the $J_3$ Split
+      as Accumulated Oriented Symplectic Area</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">10.5281/zenodo.20601228</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>L'observable de frontière orientée | Cosmochronie</title>
+  <meta name="description"
+    content="Diagnostic récursif Q11 pour le splitting générationnel angulaire : observable de transfert frontière sur les arêtes sortantes orientées de la cascade BFS, remplaçant l'observable brute de couche qui s'annule identiquement."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="L'observable de frontière orientée"/>
+  <meta property="og:description"
+    content="L'obstruction par capacité symétrique fait s'annuler l'observable brute de couche ; le remplacement honnête est une observable de transfert frontière sur les arêtes sortantes orientées, avec le cocycle de Heisenberg comme incrément central et la flèche récursive comme orientation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/q11-oriented-frontier/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/q11-oriented-frontier/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>L'observable de frontière orientée</h1>
+        <p class="subtitle">
+          Un diagnostic récursif Q11 pour le splitting générationnel angulaire — fixer
+          l'existence du signal de cascade avant toute valeur d'amplitude.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20601245" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20601245</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        L'obstruction par capacité symétrique établit que l'observable brute de couche du
+        splitting générationnel angulaire s'annule identiquement, $\Theta_{\mathrm{raw}} = 0$&nbsp;:
+        sur une couche BFS symétrique l'involution $g \mapsto g^{-1}$ apparie des phases
+        centrales opposées et efface la composante $J_\Pi$-impaire orientée avant que la
+        récursion radiale ne puisse agir.
+      </p>
+      <p>
+        Cette note définit le remplacement honnête&nbsp;: une <strong>observable de transfert
+        frontière</strong> attachée aux arêtes sortantes orientées $g \to gs$ de la cascade, dont
+        l'incrément central est le cocycle de Heisenberg $a(g)\, s_b$ — le pendant discret du
+        terme de Baker–Campbell–Hausdorff $\tfrac{1}{2}[X, Y]$ et donc du $J_3$ dynamique.
+        L'orientation est la flèche récursive $\partial_\tau = \log g$ de l'origine de projection
+        vers la profondeur BFS croissante, non un poids extrait.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette note teste seulement si la récursion produit un
+        signal orienté non nul et sans biais. Aucune normalisation $\mathcal{N}_A$, aucune
+        valeur de dictionnaire, aucun $\varepsilon$ n'entre.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note de travail (prépublication)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Transfert frontière&nbsp;; cocycle de Heisenberg&nbsp;; orientation récursive&nbsp;; contrôle anti-biais</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Working paper (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20601245">10.5281/zenodo.20601245</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Obstruction par capacité symétrique.</strong> L'involution $g \mapsto g^{-1}$
+        apparie des phases centrales opposées sur les couches BFS symétriques, effaçant la
+        composante $J_\Pi$-impaire orientée&nbsp;; l'observable brute de couche s'annule
+        identiquement.</li>
+      <li><strong>L'observable de transfert frontière.</strong> Attachée aux arêtes sortantes
+        orientées $g \to gs$ de la cascade, avec incrément central donné par le cocycle de
+        Heisenberg $a(g)\, s_b$ — le pendant discret du terme BCH $\tfrac{1}{2}[X, Y]$ et donc
+        du $J_3$ dynamique.</li>
+      <li><strong>Orientation récursive.</strong> L'orientation est la flèche récursive
+        $\partial_\tau = \log g$ de l'origine de projection vers la profondeur BFS croissante,
+        non un poids extrait.</li>
+      <li><strong>Test d'existence avant amplitude.</strong> Le premier test est
+        $\langle \Delta A_c \rangle_{\partial^+ S_m} \neq 0$, qui peut échouer sous ré-appariement
+        de frontière résiduel. Le contrôle anti-biais discriminant est l'annulation
+        frontière-symétrisée
+        $\langle \Delta A_c \rangle_{\partial^+ S_m \cup \partial^- S_m} = 0$.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html"
+      class="inline-link">sous-programme matière fermionique</a> (Note de présentation 6). Elle
+      fournit le protocole de falsification pour l'existence récursive du signal de cascade
+      $J_3$-impair sous-jacent au mécanisme de splitting inter-générationnel de
+      <a href="/science/fermionic-matter/q14/index_fr.html" class="inline-link">Q14 §6</a>. Avec
+      la note
+      <a href="/science/fermionic-matter/angular-amplitude-reduction/index_fr.html"
+      class="inline-link">AAR</a> (réduction BCH&nbsp;; observable à mesurer) et la note
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
+      class="inline-link">PRS</a> (forme de Schur côté opérateur), elle complète le cadre
+      diagnostique dans lequel l'étape quantitative restante du secteur fermionique peut être
+      menée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Oriented Frontier Observable: a Recursive Q11 Diagnostic for
+      the Angular Generation Split</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20601245" rel="noopener">10.5281/zenodo.20601245</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

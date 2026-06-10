@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>La marge de saturation Born–Infeld du module chiral | Cosmochronie</title>
+  <meta name="description"
+    content="Compagnon de PRS : définit la fonctionnelle lorentzienne de saturation Born–Infeld le long du module J_Π-impair, signe verrouillé par le rôle d'admissibilité A4 ; réduit l'existence et la stabilité du splitting générationnel à un genre lorentzien de la 2-forme de polarisation chirale."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="La marge de saturation Born–Infeld du module chiral"/>
+  <meta property="og:description"
+    content="Lemme d'antisymétrie ; fonctionnelle de saturation Born–Infeld B_sat(s) à signe verrouillé ; réduction au genre μ_χ = (1/2) P_χ_μν P_χ^μν de la seconde variation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/a4-note/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/a4-note/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>La marge de saturation Born–Infeld du module chiral</h1>
+        <p class="subtitle">
+          Structure antisymétrique et réduction du splitting générationnel à un genre lorentzien.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20633931" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20633931</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Cette note est la compagnonne de la
+        <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
+        class="inline-link">réduction par complément de Schur du résidu projectif</a> (PRS) et
+        traite le premier de ses livrables ouverts&nbsp;: la définition de la fonctionnelle
+        lorentzienne de saturation $\mathcal{B}_{\mathrm{sat}}(s)$ le long du module
+        $J_\Pi$-impair qui contrôle le coefficient de splitting à trois générations $u$.
+      </p>
+      <p>
+        Trois résultats sont établis&nbsp;: un lemme d'antisymétrie forçant la variable de
+        module à être une 2-forme chirale antisymétrique, une définition à signe verrouillé de
+        $\mathcal{B}_{\mathrm{sat}}(s)$, et une réduction au genre de la seconde variation à un
+        invariant lorentzien de la polarisation chirale.
+      </p>
+      <div class="note" role="note">
+        <strong>Énoncé de portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits rapides</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Working paper (prépublication)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Lemme d'antisymétrie&nbsp;; marge de saturation Born–Infeld&nbsp;; signe verrouillé par admissibilité A4&nbsp;; réduction au genre</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Working paper (DOI conceptuel <a
+            href="https://doi.org/10.5281/zenodo.20633931">10.5281/zenodo.20633931</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Lemme d'antisymétrie.</strong> Le module générationnel est $J_\Pi$-impair, et
+        le carré symétrique $M = F_\chi F_\chi$ est $J_\Pi$-pair dès sa naissance, donc il ne
+        peut porter ni le module orienté ni le choix spontané de branche $V-A$. La variable de
+        module primaire doit par conséquent être une 2-forme chirale antisymétrique
+        $F_{\chi,\mu\nu}(s)$.</li>
+      <li><strong>Fonctionnelle de saturation à signe verrouillé.</strong>
+        $\mathcal{B}_{\mathrm{sat}}(s)$ est définie comme la marge de saturation déterminantale
+        de Born–Infeld de cette 2-forme, le signe global étant fixé par le rôle d'admissibilité
+        de $\mathcal{B}_{\mathrm{sat}}$ (verrouillage de projection&nbsp;; l'axiome A4
+        sélectionne les minima saturés), <em>et non</em> par appariement à un développement
+        Maxwell en champ faible. Ceci neutralise le piège de convention sur le signe qui ferait
+        sinon du signe du splitting un choix libre.</li>
+      <li><strong>Réduction au genre.</strong> La seconde variation se réduit à
+        $\mu_\chi := \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2}\,P_{\chi,\mu\nu} P_\chi^{\mu\nu}$,
+        donc l'existence et la stabilité du splitting sont gouvernées entièrement par le genre
+        lorentzien de la polarisation chirale $P_\chi$ dans la métrique effective
+        $g^{\mu\nu} = 2\eta^{\mu\nu}$.</li>
+      <li><strong>Transversalité de Schur.</strong> L'identification du décalage du projecteur
+        de Schur avec le module de saturation Born–Infeld sur le lieu A4 est ramenée à une
+        coïncidence tangentielle, conditionnelle uniquement à la transversalité de Schur&nbsp;;
+        le calcul du genre lorentzien est délibérément différé.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Pourquoi l'antisymétrie est forcée</h2>
+    <p>
+      Le module générationnel $s$ paramètre la déformation $J_\Pi$-impaire du bloc éliminé
+      verrouillé. Tout carré symétrique tel que $F_\chi F_\chi$ est automatiquement
+      $J_\Pi$-pair, donc aveugle à l'orientation qui distingue les deux branches saturées
+      $\pm s_*$. Le module doit donc entrer par la partie antisymétrique — une 2-forme
+      $F_{\chi,\mu\nu}(s)$ — pour que le choix spontané de branche $V-A$ soit représentable.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Verrouiller le signe de $\mathcal{B}_{\mathrm{sat}}$</h2>
+    <p>
+      Un appariement Maxwell en champ faible ne fixerait que la magnitude relative de
+      $\mathcal{B}_{\mathrm{sat}}$ et laisserait son signe global indéterminé — or le signe de
+      $\mu_\chi$ contrôle si A4 sélectionne la branche symétrique ($u = 0$) ou la paire
+      $J_\Pi$-conjuguée ($u \neq 0$). La note fixe le signe structurellement&nbsp;: il est
+      dicté par le rôle d'admissibilité de $\mathcal{B}_{\mathrm{sat}}$ comme fonctionnelle de
+      verrouillage de projection dont les minima saturés sont la sélection A4, non par un
+      appariement externe. Ceci retire la dernière liberté de convention du livrable PRS.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html"
+      class="inline-link">sous-programme matière fermionique</a> (Note de présentation 6). Elle
+      est la compagnonne directe de
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
+      class="inline-link">PRS</a> et discharge son premier livrable ouvert. La question
+      quantitative restante — le calcul de la courbure chirale $\mu_\chi$ — est ainsi réduite
+      à une unique question de genre lorentzien sur la 2-forme de polarisation chirale
+      $P_\chi$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Born–Infeld Saturation Margin of the Chiral Modulus:
+      Antisymmetric Structure and the Reduction of the Generation Split to a Lorentzian
+      Genus</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20633931" rel="noopener">10.5281/zenodo.20633931</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

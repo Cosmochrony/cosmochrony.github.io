@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Born–Infeld Saturation Margin of the Chiral Modulus | Cosmochrony</title>
+  <meta name="description"
+    content="Companion to PRS: defines the Lorentzian Born–Infeld saturation functional along the J_Π-odd modulus, with sign locked by the A4 admissibility role; reduces the generation split existence and stability to a Lorentzian genus of the chiral polarisation two-form."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="The Born–Infeld Saturation Margin of the Chiral Modulus"/>
+  <meta property="og:description"
+    content="Antisymmetry lemma; sign-locked Born–Infeld saturation functional B_sat(s); genus reduction μ_χ = (1/2) P_χ_μν P_χ^μν of the second variation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/a4-note/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/a4-note/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>The Born–Infeld Saturation Margin of the Chiral Modulus</h1>
+        <p class="subtitle">
+          Antisymmetric structure and the reduction of the generation split to a Lorentzian
+          genus.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20633931" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20633931</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This note is the companion of the
+        <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Projective
+        Residue Schur reduction</a> (PRS) and takes up the first of its open deliverables: the
+        definition of the Lorentzian saturation functional $\mathcal{B}_{\mathrm{sat}}(s)$ along
+        the $J_\Pi$-odd modulus that controls the three-generation split coefficient $u$.
+      </p>
+      <p>
+        Three results are established: an antisymmetry lemma forcing the modulus variable to be
+        an antisymmetric chiral two-form, a sign-locked definition of
+        $\mathcal{B}_{\mathrm{sat}}(s)$, and a genus reduction of the second variation to a
+        Lorentzian invariant of the chiral polarisation.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Antisymmetry lemma; Born–Infeld saturation margin; sign lock by A4 admissibility; genus reduction</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20633931">10.5281/zenodo.20633931</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Antisymmetry lemma.</strong> The generation modulus is $J_\Pi$-odd, and the
+        symmetric square $M = F_\chi F_\chi$ is $J_\Pi$-even from birth, so it cannot carry the
+        oriented modulus or the spontaneous $V-A$ branch choice. The primary modulus variable
+        must therefore be an antisymmetric chiral two-form $F_{\chi,\mu\nu}(s)$.</li>
+      <li><strong>Sign-locked saturation functional.</strong> $\mathcal{B}_{\mathrm{sat}}(s)$
+        is defined as the Born–Infeld determinantal saturation margin of this two-form, with
+        the overall sign fixed by the admissibility role of $\mathcal{B}_{\mathrm{sat}}$
+        (projection locking; axiom A4 selects saturated minima), <em>not</em> by matching a
+        Maxwell weak-field expansion. This neutralises the convention sign-trap that would
+        otherwise make the split sign a free choice.</li>
+      <li><strong>Genus reduction.</strong> The second variation reduces to
+        $\mu_\chi := \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2}\,P_{\chi,\mu\nu} P_\chi^{\mu\nu}$,
+        so the existence and stability of the split are governed entirely by the Lorentzian
+        genus of the chiral polarisation $P_\chi$ in the effective metric
+        $g^{\mu\nu} = 2\eta^{\mu\nu}$.</li>
+      <li><strong>Schur transversality.</strong> The identification of the Schur projector
+        tilt with the Born–Infeld saturation modulus on the A4 locus is discharged to a
+        tangential coincidence, conditional only on Schur transversality; the Lorentzian
+        genus computation is deliberately deferred.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Why antisymmetry is forced</h2>
+    <p>
+      The generation modulus $s$ parametrises the $J_\Pi$-odd deformation of the locked
+      eliminated block. Any symmetric square such as $F_\chi F_\chi$ is automatically
+      $J_\Pi$-even, hence blind to the orientation that distinguishes the two saturated
+      branches $\pm s_*$. The modulus must therefore enter through the antisymmetric part — a
+      two-form $F_{\chi,\mu\nu}(s)$ — for the spontaneous $V-A$ branch choice to be
+      representable at all.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Locking the sign of $\mathcal{B}_{\mathrm{sat}}$</h2>
+    <p>
+      A Maxwell weak-field matching would only fix the relative magnitude of
+      $\mathcal{B}_{\mathrm{sat}}$ and leave its overall sign undetermined — and the sign of
+      $\mu_\chi$ controls whether A4 selects the symmetric branch ($u = 0$) or the
+      $J_\Pi$-conjugate pair ($u \neq 0$). The note fixes the sign structurally: it is dictated
+      by the admissibility role of $\mathcal{B}_{\mathrm{sat}}$ as the projection-locking
+      functional whose saturated minima are the A4 selection, not by any external matching.
+      This removes the only remaining convention freedom from the PRS deliverable.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position in the programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a> (Presentation Note 6). It is the direct companion of
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
+      and discharges its first open deliverable. The remaining quantitative question — the
+      computation of the chiral curvature $\mu_\chi$ — is thereby reduced to a single
+      Lorentzian genus question on the chiral polarisation two-form $P_\chi$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Born–Infeld Saturation Margin of the Chiral Modulus:
+      Antisymmetric Structure and the Reduction of the Generation Split to a Lorentzian
+      Genus</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20633931" rel="noopener">10.5281/zenodo.20633931</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

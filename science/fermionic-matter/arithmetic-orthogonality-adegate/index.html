@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Arithmetic Orthogonality of the ADE Case-Selection Gate | Cosmochrony</title>
+  <meta name="description"
+    content="Companion note isolating the exact logical status of the generation-split value ε = 1/10: a theorem modulo the ADE case-selection gate, whose first-principles derivation is obstructed by an arithmetic orthogonality between Born–Infeld parity (complex conjugation, fixing √5) and the Galois action √5 → −√5 required to select the central-lift class over the √5-locus. The two sit in distinct direct factors of the Galois group of the compositum, so parity non-injectivity is not a partial version of the required action — it is orthogonal to it. The single open point is the type-rigidity of the recursive non-injectivity tower."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Arithmetic Orthogonality of the ADE Case-Selection Gate"/>
+  <meta property="og:description"
+    content="Conditional ADE split (ε = 1/10 forced once the case is selected); arithmetic orthogonality between Born–Infeld parity and the √5 Galois action; type-rigidity as the single open point."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/arithmetic-orthogonality-adegate/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/arithmetic-orthogonality-adegate/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Arithmetic Orthogonality of the ADE Case-Selection Gate</h1>
+        <p class="subtitle">
+          The exact logical status of $\varepsilon = 1/10$: theorem modulo the gate, gate orthogonal to
+          the available foundations.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20693084" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20693084</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The generation-split value $\varepsilon = 1/10$ is often presented as a derived prediction of
+        the spectral stratigraphy of the corpus. This note draws the line precisely between what is
+        forced and what is selected.
+      </p>
+      <p>
+        First, $\varepsilon = 1/10$ is a <strong>theorem modulo the ADE case-selection gate</strong>:
+        once a case is selected whose class-complete spectrum carries the external level ratio
+        $3{:}2$, the generation-deficit normal form forces $\varepsilon = 1/10$ and the common scale
+        $\kappa = 5/12$ algebraically, with no further input.
+      </p>
+      <p>
+        Second, the first-principles status of $\varepsilon$ is therefore exactly the first-principles
+        status of the gate. The note characterises the obstruction to deriving the gate as an
+        <strong>arithmetic orthogonality</strong>: the selection of the $\sqrt{5}$-locus carrying the
+        $3{:}2$ ratio requires the nontrivial element of
+        $\mathrm{Gal}(\mathbb{Q}(\sqrt{5})/\mathbb{Q})$, the action
+        $\sqrt{5} \mapsto -\sqrt{5}$. The only field automorphism supplied by the foundations is the
+        Born–Infeld parity $c \mapsto q - c$ — the restriction of complex conjugation
+        $\zeta_q \mapsto \zeta_q^{-1}$ — which fixes $\sqrt{5}$.
+      </p>
+      <p>
+        In the compositum $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ the two actions lie in distinct direct
+        factors of the Galois group, hence are arithmetically orthogonal. Parity non-injectivity is
+        not a partial version of the required action — it is orthogonal to it.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary. The authoritative
+        technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Logical status of $\varepsilon = 1/10$; arithmetic orthogonality; ADE case-selection gate; type-rigidity</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20693084">10.5281/zenodo.20693084</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Conditional ADE split (Theorem).</strong> If the gate selects the central-lift class
+        over the $\sqrt{5}$-locus (the parity class over the $A_5$ five-cycle locus, whose
+        class-complete Cayley spectrum has $|\lambda_3 - 1|/|\lambda_1 - 1| = 3/2$), then the
+        generation-deficit normal form forces $\varepsilon = 1/10$ and $\kappa = 5/12$ algebraically.
+        The lemma is general and case-independent: all of the first-principles content lives in the
+        upstream selection of the case.</li>
+      <li><strong>Arithmetic organising lemma.</strong> The selection of the $\sqrt{5}$-locus that
+        carries the $3{:}2$ ratio requires the nontrivial element of
+        $\mathrm{Gal}(\mathbb{Q}(\sqrt{5})/\mathbb{Q})$. The available foundations supply only the
+        Born–Infeld parity, the restriction of complex conjugation, which fixes $\sqrt{5}$ pointwise.</li>
+      <li><strong>Central-lift tie-break and negative theorem.</strong> In the compositum
+        $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ the two actions lie in distinct direct factors of the
+        Galois group — they are arithmetically orthogonal. The gate cannot be discharged from the
+        present axioms without an additional arithmetic principle at the spin stratum, unless a
+        type-rigidity property of the recursive non-injectivity tower is established.</li>
+      <li><strong>Type-rigidity along the tower (single open point).</strong> The recursive
+        non-injectivity theorem of ENI guarantees that each stratum of a tower of genuinely distinct
+        emergent levels carries its own non-injectivity, but it constrains existence, not arithmetic
+        type. Whether every recursive stratum above the base inherits the parity type — rather than
+        introducing an action in the $\sqrt{5}$ factor — is open. A proof direction is indicated, but
+        not concluded.</li>
+      <li><strong>Downstream consequence.</strong> Observable masses route through the explicit
+        operator $E_\Pi$ and the Yukawa sector regardless of how the gate is resolved.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>What this note settles, and what it does not</h2>
+    <p>
+      <strong>Settled.</strong> The value $\varepsilon = 1/10$ is forced — by elementary algebra on
+      the generation-deficit normal form — as soon as the case-selection gate produces the external
+      $3{:}2$ ratio. The common scale $\kappa = 5/12$ follows on the same step. Nothing about the
+      generation count, the spin frame, or the Lorentzian structure adds further constraints to this
+      conditional statement.
+    </p>
+    <p>
+      <strong>Not settled.</strong> The gate itself. The selection of the $\sqrt{5}$-locus is an
+      arithmetic act requiring a specific Galois action that the present foundations do not supply.
+      Calling $\varepsilon = 1/10$ a derived prediction therefore conflates a theorem modulo the gate
+      with a discharge of the gate.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position in the programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a> (Presentation Note 6). It complements the
+      <a href="/science/fermionic-matter/a4-note/" class="inline-link">A4-Note</a> (which fixes the
+      amplitude mechanism as Born–Infeld saturation on the corpus-derived real cascade) and the
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
+      reduction by locating where the residual quantitative content of the split value comes from
+      — and why it is not yet a first-principles output.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Arithmetic Orthogonality of the ADE Case-Selection Gate</i>. Working
+      paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20693084" rel="noopener">10.5281/zenodo.20693084</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

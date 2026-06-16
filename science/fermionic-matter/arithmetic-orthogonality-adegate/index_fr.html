@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Orthogonalité arithmétique de la porte de sélection ADE | Cosmochronie</title>
   <meta name="description"
-    content="Note compagnonne isolant le statut logique exact de la valeur du splitting générationnel ε = 1/10 : un théorème modulo la porte de sélection du cas ADE, dont la dérivation de premiers principes est obstruée par une orthogonalité arithmétique entre la parité Born–Infeld (conjugaison complexe, fixant √5) et l'action de Galois √5 → −√5 nécessaire pour sélectionner la classe de relèvement central sur le lieu √5. Les deux résident dans des facteurs directs distincts du groupe de Galois du compositum, donc la non-injectivité de parité n'est pas une version partielle de l'action requise — elle lui est orthogonale. Le point ouvert unique est la rigidité de type de la tour récursive de non-injectivité."/>
+    content="Note compagnonne isolant le statut logique exact de la valeur du splitting générationnel ε = 1/10 : un théorème modulo la porte de sélection du cas ADE, dont la dérivation de premiers principes est obstruée par une orthogonalité arithmétique entre la parité Born–Infeld (conjugaison complexe, fixant √5) et l'action de Galois √5 → −√5 nécessaire pour sélectionner le lieu √5. Un audit de table de caractères borné du groupe binaire icosaédrique 2I ≅ SL(2,5) établit la rigidité de type au niveau du strate de spin dont la porte a besoin : chaque opération disponible dans la construction actuelle du corpus fixe √5, donc le groupe engendré réside dans le sous-groupe fixant √5 de Gal(K_q/Q) et ne peut fabriquer l'automorphisme extérieur. Le no-go pour la porte ADE est donc unconditional dans la construction actuelle ; seule la rigidité de type abstraite sur la tour complète reste ouverte, et elle est plus large que ce que la porte requiert."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Orthogonalité arithmétique de la porte de sélection ADE"/>
   <meta property="og:description"
-    content="Split ADE conditionnel (ε = 1/10 forcé une fois le cas sélectionné) ; orthogonalité arithmétique entre la parité Born–Infeld et l'action de Galois √5 ; rigidité de type comme unique point ouvert."/>
+    content="Split ADE conditionnel (ε = 1/10 forcé une fois le cas sélectionné) ; orthogonalité arithmétique entre la parité Born–Infeld et l'action de Galois √5 ; rigidité de type au strate de spin démontrée par audit de table de caractères de 2I ; rigidité de type sur la tour complète ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/arithmetic-orthogonality-adegate/"/>
   <script type="module">
@@ -37,8 +37,8 @@
       <div>
         <h1>Orthogonalité arithmétique de la porte de sélection ADE</h1>
         <p class="subtitle">
-          Statut logique exact de $\varepsilon = 1/10$&nbsp;: théorème modulo la porte, porte
-          orthogonale aux fondations disponibles.
+          $\varepsilon = 1/10$ est un théorème modulo la porte&nbsp;; la porte est un no-go pour
+          la construction actuelle du corpus, par audit de la table de caractères de $2I$.
         </p>
       </div>
     </div>
@@ -127,18 +127,30 @@
         $\mathrm{Gal}(\mathbb{Q}(\sqrt{5})/\mathbb{Q})$. Les fondations disponibles ne fournissent
         que la parité Born–Infeld, restriction de la conjugaison complexe, qui fixe $\sqrt{5}$
         ponctuellement.</li>
-      <li><strong>Départage du relèvement central et théorème négatif.</strong> Dans le compositum
-        $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ les deux actions résident dans des facteurs directs
-        distincts du groupe de Galois — elles sont arithmétiquement orthogonales. La porte ne peut
-        être déchargée à partir des axiomes actuels sans un principe arithmétique supplémentaire au
-        niveau du strate de spin, à moins qu'une propriété de rigidité de type de la tour récursive
-        de non-injectivité ne soit établie.</li>
-      <li><strong>Rigidité de type le long de la tour (unique point ouvert).</strong> Le théorème de
-        non-injectivité récursive d'ENI garantit que chaque strate d'une tour de niveaux émergents
-        génuinement distincts porte sa propre non-injectivité, mais il contraint l'existence, non le
-        type arithmétique. Le fait que chaque strate récursive au-dessus de la base hérite du type
-        de parité — plutôt que d'introduire une action dans le facteur $\sqrt{5}$ — est ouvert. Une
-        direction de preuve est indiquée, mais non conclue.</li>
+      <li><strong>Départage du relèvement central et théorème négatif (unconditional).</strong>
+        Dans le compositum $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ les deux actions résident dans
+        des facteurs directs distincts du groupe de Galois — elles sont arithmétiquement
+        orthogonales. Pour la construction actuelle du corpus le no-go est unconditional&nbsp;:
+        par la Proposition (rigidité de type au strate de spin), les opérations disponibles au
+        strate de spin — conjugaisons internes, $-I$, $R_b = W(-I)$, $J_\Pi$, foncteurs
+        tensoriels de $\mathrm{Rep}(2I)$, projection de Schur, verrouillage A4 — fixent chacune
+        $\mathbb{Q}(\sqrt{5})$ ponctuellement. Leur groupe engendré réside dans le sous-groupe
+        fixant $\sqrt{5}$ de $\mathrm{Gal}(K_q/\mathbb{Q})$, et par fermeture ne peut fabriquer
+        l'automorphisme extérieur qui réalise $\sqrt{5} \mapsto -\sqrt{5}$.</li>
+      <li><strong>Rigidité de type au strate de spin (Proposition, prouvée).</strong> Établie par
+        un audit borné et reproductible de la table de caractères de $2I \cong \mathrm{SL}(2,5)$
+        : structure des classes de conjugaison reconstruite depuis le groupe, table de
+        caractères récupérée par diagonalisation simultanée des matrices de somme de classes,
+        validée par l'orthogonalité, action de chaque opération du strate de spin sur
+        $\mathrm{Irr}(2I)$ vérifiée explicitement. L'action de Galois
+        $\sqrt{5} \mapsto -\sqrt{5}$ induit la permutation $(2\,2')(3\,3')$&nbsp;; aucune des
+        opérations disponibles ne la réalise.</li>
+      <li><strong>Rigidité de type sur la tour complète (Lemme, ouvert).</strong> Le fait que
+        chaque strate récursive concevable au-dessus de la base hérite du type de parité —
+        plutôt que d'introduire une action dans le facteur $\sqrt{5}$ — est ouvert. Une
+        direction de preuve par monotonie d'entropie est indiquée. Cette généralisation
+        abstraite est plus large que ce que la porte ADE requiert, et le Théorème (négatif) n'en
+        dépend pas.</li>
       <li><strong>Conséquence en aval.</strong> Les masses observables transitent par l'opérateur
         explicite $E_\Pi$ et le secteur de Yukawa, indépendamment de la manière dont la porte est
         résolue.</li>
@@ -149,15 +161,23 @@
     <p>
       <strong>Réglé.</strong> La valeur $\varepsilon = 1/10$ est forcée — par une algèbre élémentaire
       sur la forme normale du déficit de génération — dès que la porte de sélection du cas produit le
-      rapport externe $3{:}2$. L'échelle commune $\kappa = 5/12$ suit dans le même mouvement. Rien
-      sur le compte de générations, le repère de spin ou la structure lorentzienne n'ajoute de
-      contrainte supplémentaire à cet énoncé conditionnel.
+      rapport externe $3{:}2$. L'échelle commune $\kappa = 5/12$ suit dans le même mouvement.
     </p>
     <p>
-      <strong>Non réglé.</strong> La porte elle-même. La sélection du lieu $\sqrt{5}$ est un acte
-      arithmétique requérant une action de Galois spécifique que les fondations actuelles ne
-      fournissent pas. Appeler $\varepsilon = 1/10$ une prédiction dérivée confond donc un théorème
-      modulo la porte avec une décharge de la porte.
+      <strong>Réglé (cette version).</strong> Pour la construction actuelle du corpus, la porte est
+      désormais un no-go&nbsp;: par fermeture du sous-groupe fixant $\sqrt{5}$ du groupe de Galois,
+      aucune itération, relèvement central, projection de Schur ou verrouillage A4 construit à
+      partir des opérations disponibles au strate de spin ne peut fabriquer l'automorphisme
+      extérieur que le lieu $\sqrt{5}$ requiert. L'obstruction est un argument de fermeture, non un
+      calcul non résolu.
+    </p>
+    <p>
+      <strong>Non réglé.</strong> La rigidité de type abstraite sur la tour complète&nbsp;: le fait
+      qu'aucune autre construction, plus riche, ne puisse fournir au niveau d'une strate récursive
+      une non-injectivité agissant sur le facteur $\sqrt{5}$. La non-injectivité récursive d'ENI
+      contraint l'existence, non le type arithmétique&nbsp;; un argument d'héritage de type est
+      indiqué mais non conclu. Ceci est plus large que ce que la porte ADE requiert, et le théorème
+      négatif n'en dépend pas.
     </p>
   </section>
   <section class="card">

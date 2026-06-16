@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Arithmetic Orthogonality of the ADE Case-Selection Gate | Cosmochrony</title>
   <meta name="description"
-    content="Companion note isolating the exact logical status of the generation-split value ε = 1/10: a theorem modulo the ADE case-selection gate, whose first-principles derivation is obstructed by an arithmetic orthogonality between Born–Infeld parity (complex conjugation, fixing √5) and the Galois action √5 → −√5 required to select the central-lift class over the √5-locus. The two sit in distinct direct factors of the Galois group of the compositum, so parity non-injectivity is not a partial version of the required action — it is orthogonal to it. The single open point is the type-rigidity of the recursive non-injectivity tower."/>
+    content="Companion note isolating the exact logical status of the generation-split value ε = 1/10: a theorem modulo the ADE case-selection gate, whose first-principles derivation is obstructed by an arithmetic orthogonality between Born–Infeld parity (complex conjugation, fixing √5) and the Galois action √5 → −√5 required to select the central-lift class over the √5-locus. A bounded character-table audit of the binary icosahedral group 2I ≅ SL(2,5) establishes the spin-stratum type-rigidity the gate needs: every operation available in the present corpus construction fixes √5, so the generated group lies in the √5-fixing subgroup of Gal(K_q/Q) and cannot manufacture the outer automorphism. The no-go for the ADE gate is therefore unconditional in the present construction; only the abstract full-tower type-rigidity remains open, and it is broader than the gate requires."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Arithmetic Orthogonality of the ADE Case-Selection Gate"/>
   <meta property="og:description"
-    content="Conditional ADE split (ε = 1/10 forced once the case is selected); arithmetic orthogonality between Born–Infeld parity and the √5 Galois action; type-rigidity as the single open point."/>
+    content="Conditional ADE split (ε = 1/10 forced once the case is selected); arithmetic orthogonality between Born–Infeld parity and the √5 Galois action; spin-stratum type-rigidity proved by character-table audit of 2I; full-tower type-rigidity open."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/arithmetic-orthogonality-adegate/"/>
   <script type="module">
@@ -36,8 +36,8 @@
       <div>
         <h1>Arithmetic Orthogonality of the ADE Case-Selection Gate</h1>
         <p class="subtitle">
-          The exact logical status of $\varepsilon = 1/10$: theorem modulo the gate, gate orthogonal to
-          the available foundations.
+          $\varepsilon = 1/10$ is a theorem modulo the gate; the gate is a no-go for the present
+          corpus construction, by a character-table audit of $2I$.
         </p>
       </div>
     </div>
@@ -122,17 +122,27 @@
         carries the $3{:}2$ ratio requires the nontrivial element of
         $\mathrm{Gal}(\mathbb{Q}(\sqrt{5})/\mathbb{Q})$. The available foundations supply only the
         Born–Infeld parity, the restriction of complex conjugation, which fixes $\sqrt{5}$ pointwise.</li>
-      <li><strong>Central-lift tie-break and negative theorem.</strong> In the compositum
-        $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ the two actions lie in distinct direct factors of the
-        Galois group — they are arithmetically orthogonal. The gate cannot be discharged from the
-        present axioms without an additional arithmetic principle at the spin stratum, unless a
-        type-rigidity property of the recursive non-injectivity tower is established.</li>
-      <li><strong>Type-rigidity along the tower (single open point).</strong> The recursive
-        non-injectivity theorem of ENI guarantees that each stratum of a tower of genuinely distinct
-        emergent levels carries its own non-injectivity, but it constrains existence, not arithmetic
-        type. Whether every recursive stratum above the base inherits the parity type — rather than
-        introducing an action in the $\sqrt{5}$ factor — is open. A proof direction is indicated, but
-        not concluded.</li>
+      <li><strong>Central-lift tie-break and negative theorem (unconditional).</strong> In the
+        compositum $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$ the two actions lie in distinct direct
+        factors of the Galois group — they are arithmetically orthogonal. For the present corpus
+        construction the no-go is unconditional: by Proposition (spin-stratum type-rigidity), the
+        operations available at the spin stratum — inner conjugations, $-I$, $R_b = W(-I)$,
+        $J_\Pi$, tensor functors of $\mathrm{Rep}(2I)$, Schur projection, A4 locking — each fix
+        $\mathbb{Q}(\sqrt{5})$ pointwise. Their generated group lies in the $\sqrt{5}$-fixing
+        subgroup of $\mathrm{Gal}(K_q/\mathbb{Q})$, and by closure cannot manufacture the outer
+        automorphism that realises $\sqrt{5} \mapsto -\sqrt{5}$.</li>
+      <li><strong>Spin-stratum type-rigidity (Proposition, proved).</strong> Established by a
+        bounded, reproducible character-table audit of $2I \cong \mathrm{SL}(2,5)$: the
+        conjugacy-class structure is reconstructed from the group, the character table
+        recovered by simultaneous diagonalisation of the class-sum matrices, validated against
+        orthogonality, and the action of each spin-stratum operation on $\mathrm{Irr}(2I)$ is
+        checked explicitly. The Galois action $\sqrt{5} \mapsto -\sqrt{5}$ induces the
+        permutation $(2\,2')(3\,3')$; none of the available operations realises it.</li>
+      <li><strong>Full-tower type-rigidity (Lemma, open).</strong> Whether every conceivable
+        recursive stratum above the base inherits the parity type, rather than introducing an
+        action in the $\sqrt{5}$ factor, is open. A proof direction via entropy-monotonicity is
+        indicated. This abstract generalisation is broader than the ADE gate requires, and
+        Theorem (negative) does not depend on it.</li>
       <li><strong>Downstream consequence.</strong> Observable masses route through the explicit
         operator $E_\Pi$ and the Yukawa sector regardless of how the gate is resolved.</li>
     </ul>
@@ -142,15 +152,21 @@
     <p>
       <strong>Settled.</strong> The value $\varepsilon = 1/10$ is forced — by elementary algebra on
       the generation-deficit normal form — as soon as the case-selection gate produces the external
-      $3{:}2$ ratio. The common scale $\kappa = 5/12$ follows on the same step. Nothing about the
-      generation count, the spin frame, or the Lorentzian structure adds further constraints to this
-      conditional statement.
+      $3{:}2$ ratio. The common scale $\kappa = 5/12$ follows on the same step.
     </p>
     <p>
-      <strong>Not settled.</strong> The gate itself. The selection of the $\sqrt{5}$-locus is an
-      arithmetic act requiring a specific Galois action that the present foundations do not supply.
-      Calling $\varepsilon = 1/10$ a derived prediction therefore conflates a theorem modulo the gate
-      with a discharge of the gate.
+      <strong>Settled (this version).</strong> For the present corpus construction, the gate is now
+      a no-go: by closure of the $\sqrt{5}$-fixing subgroup of the Galois group, no iteration,
+      central lift, Schur projection, or A4 locking built from the available spin-stratum
+      operations can manufacture the outer automorphism that the $\sqrt{5}$-locus requires. The
+      obstruction is a closure argument, not an unresolved computation.
+    </p>
+    <p>
+      <strong>Not settled.</strong> The abstract full-tower type-rigidity: whether some other,
+      richer construction could supply at a recursive stratum a non-injectivity acting on the
+      $\sqrt{5}$ factor. ENI's recursive non-injectivity constrains existence, not arithmetic type;
+      a type-inheritance argument is indicated but not concluded. This is broader than the ADE gate
+      requires, and the negative theorem does not depend on it.
     </p>
   </section>
   <section class="card">

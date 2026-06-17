@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Chiral Orientation of the Directed Heisenberg Frontier | Cosmochrony</title>
+  <meta name="description"
+    content="Companion note resolving the chiral weight σ_L deferred by Q11OF: a parity argument closes the false route σ_L = f(T(e)) — arrow inversion and the residual reflection φ both send T → −T, so every function of T has equal arrow- and φ-parity, whereas the admissible weight is arrow-even and φ-odd. The resolution: σ_L is the Weyl representation type 2 vs 2̄ (group inversion preserves it, complex conjugation exchanges it). In the inherited Heisenberg central-phase lift the edge phase is the linear cyclotomic character ζ_q^{ΔA_c}, giving ρ_χ = 1 and N_A = θ_max ≠ 0 in that lift. The residual open point is an additional spin-Galois phase outside the central character — the same arithmetic orthogonality that governs the ADE gate."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Chiral Orientation of the Directed Heisenberg Frontier"/>
+  <meta property="og:description"
+    content="σ_L is the Weyl representation type, not a function of the cascade generator T(e); inherited central-phase lift gives N_A = θ_max ≠ 0; residual open point is a Galois-spin phase orthogonal to ζ_q."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/chiral-orientation-frontier/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/chiral-orientation-frontier/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Chiral Orientation of the Directed Heisenberg Frontier</h1>
+        <p class="subtitle">
+          $\sigma_L$ as a Weyl representation type, not a function of the cascade generator;
+          $\mathcal{N}_A = \theta_{\max} \neq 0$ in the inherited central-phase lift.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20735907" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20735907</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The Q11 oriented-frontier diagnostic produces two computable quantities — the raw cocycle
+        average $\langle \Delta A_c \rangle_{\partial^+} = 0$ and the maximal-locking bound
+        $\theta_{\max} = \langle (2\pi/q)\,|\Delta A_c| \rangle_{\partial^+}$ — and one missing
+        datum: the chiral weight $\sigma_L \in \{\pm 1\}$ that turns the bound into an amplitude
+        through $\Theta_\chi = \langle \sigma_L\,(2\pi/q)\,\Delta A_c \rangle_{\partial^+}$, with
+        $|\Theta_\chi| \le \theta_{\max}$.
+      </p>
+      <p>
+        The frontier backend does not supply $\sigma_L$: it is the surviving stub of the
+        Lorentzian chiral lift. This note proves $\sigma_L$ <em>cannot</em> be any function of
+        the real cascade generator $T(e)$ — edge inversion and the residual reflection $\varphi$
+        both act as $T \mapsto -T$, so every $f(T)$ has equal arrow- and $\varphi$-parity, whereas
+        $\sigma_L$ must be arrow-even and $\varphi$-odd. The resolution is that $\sigma_L$ is
+        the <strong>Weyl representation type</strong>, $\mathbf{2}$ versus $\bar{\mathbf{2}}$:
+        group inversion preserves the representation (arrow-even) while complex conjugation
+        exchanges it ($\varphi$-odd).
+      </p>
+      <p>
+        In the inherited Heisenberg central-phase lift the chiral phase is the linear cyclotomic
+        character $\omega_\chi(e) = \zeta_q^{\Delta A_c(e)}$ — no Gauss, Maslov or $\sqrt{5}$
+        component. On the nonzero-cocycle support the natural branch satisfies
+        $\sigma_L(e) = \operatorname{sign} \Im\,\zeta_q^{\Delta A_c(e)} = \operatorname{sign}
+        \Delta A_c(e)$, giving outgoing-frontier overlap $\rho_\chi = 1$ and promoting the bound
+        to $\mathcal{N}_A = \theta_{\max} \neq 0$. This establishes $[\mathrm{H\text{-}orient}]$
+        in the inherited central-phase lift, not unconditionally.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary. The
+        authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Chiral weight as Weyl representation type; inherited central-phase lift; frontier amplitude datum</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20735907">10.5281/zenodo.20735907</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <ul>
+      <li><strong>Parity obstruction: $\sigma_L \neq f(T(e))$.</strong> Edge inversion
+        $U(e^{-1}) = U(e)^{-1}$ and the residual reflection $\varphi = R_b \circ J_\Pi$ both send
+        the $J_\Pi$-odd cascade generator $T(e) \mapsto -T(e)$, so every function of $T$ has
+        equal arrow- and $\varphi$-parity; the admissible $\sigma_L$ is arrow-even and $\varphi$-odd.
+        The global identification $\sigma_L = \operatorname{sign} \Delta A_c$ on all directed
+        edges is therefore excluded — it makes $\sigma_L$ arrow-odd and breaks the reversal
+        control $\Theta_\chi^{(\partial^+)^{-1}} = -\Theta_\chi^{\partial^+}$.</li>
+      <li><strong>Resolution: Weyl representation type.</strong> The chiral weight $\sigma_L$ is
+        the representation label $\mathbf{2}$ versus $\bar{\mathbf{2}}$. Group inversion
+        preserves the representation (arrow-even) and complex conjugation exchanges it
+        ($\varphi$-odd) — the unique label distinguished by the conjugation that separates
+        $\varphi$ from arrow inversion. For a real lift the representation is self-conjugate and
+        the chiral contrast vanishes, matching the chiral symmetry of the real cascade.</li>
+      <li><strong>Inherited Heisenberg central-phase lift.</strong> The edge phase is the linear
+        cyclotomic character $\omega_\chi(e) = \zeta_q^{\Delta A_c(e)}$, with no Gauss, Maslov,
+        or $\sqrt{5}$ component. On the nonzero-cocycle support, the natural branch yields
+        $\sigma_L(e) = \operatorname{sign} \Delta A_c(e)$ <em>locally</em>, the global
+        $\sigma_L$ being the representation label that survives the arrow/$\varphi$ parity
+        constraints. Outgoing-frontier overlap $\rho_\chi = 1$;
+        $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-invariant on $q \in \{61, 101, 151\}$.</li>
+      <li><strong>$[\mathrm{H\text{-}orient}]$ closed conditionally.</strong> The result
+        establishes the frontier amplitude datum in the inherited Heisenberg central-phase lift.
+        Not unconditionally: the only remaining obstruction is an additional spin-Galois phase
+        outside the central character, in particular a $\sqrt{5}$ or ADE-spin factor orthogonal
+        to $\zeta_q$ — the same arithmetic orthogonality that governs the ADE gate
+        (cf. <a href="/science/fermionic-matter/arithmetic-orthogonality-adegate/"
+        class="inline-link">AOG-Note</a>).</li>
+      <li><strong>Numerical validation of the backend.</strong> Raw average exactly zero,
+        symmetrised anti-bias control exactly zero, $\theta_{\max} \cdot q$ stable on
+        $q \in \{61, 101, 151\}$. Backend and bound validated; $\sigma_L$ itself is supplied
+        only by the chiral lift, not by the backend.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>What this note settles, and what it does not</h2>
+    <p>
+      <strong>Settled.</strong> The chiral weight $\sigma_L$ cannot be a function of $T(e)$; it
+      is the Weyl representation type. In the inherited central-phase lift the frontier
+      amplitude datum $\mathcal{N}_A = \theta_{\max}$ is non-zero and $q$-invariant.
+    </p>
+    <p>
+      <strong>Conditional.</strong> The result holds in the inherited Heisenberg central-phase
+      lift. An additional spin-Galois phase outside this central character — a $\sqrt{5}$ or
+      ADE-spin factor orthogonal to $\zeta_q$ — would reopen the question. This is the same
+      arithmetic-orthogonality obstruction characterised in AOG-Note.
+    </p>
+    <p>
+      <strong>Not derived here.</strong> The split $u \neq 0$ itself. That conclusion still
+      requires the Schur transport of the polarisation onto the $J_\Pi$-odd generation sector
+      (cf. PRS, A4-Note). CHO supplies the frontier amplitude datum; it does not bypass the
+      operator step.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position in the programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a> (Presentation Note 6). It closes the chiral-weight question left
+      open by the
+      <a href="/science/fermionic-matter/q11-oriented-frontier/" class="inline-link">Q11 oriented-frontier
+      diagnostic</a> and connects with the
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
+      reduction (Schur transport), the
+      <a href="/science/fermionic-matter/a4-note/" class="inline-link">A4-Note</a> (Born–Infeld
+      saturation mechanism for the amplitude), and the
+      <a href="/science/fermionic-matter/arithmetic-orthogonality-adegate/" class="inline-link">AOG-Note</a>
+      (arithmetic orthogonality of the ADE gate — the residual open point of CHO is the same
+      Galois-orthogonality obstruction).
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Chiral Orientation of the Directed Heisenberg Frontier</i>.
+      Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20735907" rel="noopener">10.5281/zenodo.20735907</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

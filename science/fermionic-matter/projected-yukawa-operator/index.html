@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projected Yukawa Operator and Chiral Polar Factor | Cosmochrony</title>
+  <meta name="description"
+    content="The second mass-sector step: the squared Yukawa observable H_Pi = Y_Pi^dag Y_Pi is fixed by E_Pi^2|gen, but the Yukawa morphism is determined only up to a chiral polar factor U_Pi. A partial no-go, not a mass result."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Projected Yukawa Operator and Chiral Polar Factor"/>
+  <meta property="og:description"
+    content="E_Pi^2 fixes the squared Yukawa levels, not the morphism: Y_Pi = U_Pi H_Pi^{1/2}, with the chiral polar factor U_Pi (orientation and mixing phase) free. Front 3b closed as squared-Yukawa levels, not mixing."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/projected-yukawa-operator/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projected Yukawa Operator and Chiral Polar Factor</h1>
+        <p class="subtitle">
+          The squared observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$ and the undetermined chiral polar map $U_\Pi$
+          — $E_\Pi^2$ fixes the squared Yukawa levels, not the morphism.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20767498</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This companion note takes the second step of the mass-sector frontier of the
+        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a>, and draws
+        a sharp negative conclusion at its entry. The
+        <a href="/science/fermionic-matter/projected-yukawa-line/" class="inline-link">line note</a> fixed the
+        determinant line $L_Y = \wedge^2(\mathcal{S}_\Pi)$ as the Yukawa coupling line and the generation
+        levels from $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$. Here we ask
+        whether the squared residue determines the Yukawa morphism itself, and show that it does not.
+      </p>
+      <p>
+        The squared residue is hermitian on a single chirality, while $Y_\Pi$ ties the two chiralities; the
+        chiral connecting datum is therefore invisible to $E_\Pi^2$. What survives is the hermitian square
+        $H_\Pi = Y_\Pi^\dagger Y_\Pi$; the morphism is then free up to a unitary chiral polar factor.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Squared Yukawa observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$, chiral polar ambiguity $Y_\Pi = U_\Pi H_\Pi^{1/2}$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.20767498">10.5281/zenodo.20767498</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li><strong>Squared Yukawa observable.</strong> The generation-level observable of the Schur-residue
+        sector is the positive hermitian square $H_\Pi := Y_\Pi^\dagger Y_\Pi$, with
+        $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\,\{1, \tfrac12+u, \tfrac12-u\}$. Thus
+        $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ determines the squared Yukawa levels, not the morphism itself.</li>
+      <li><strong>Chiral polar ambiguity (partial no-go).</strong> By polar decomposition $Y_\Pi = U_\Pi
+        H_\Pi^{1/2}$, where $U_\Pi$ is a unitary chiral map on the support of $H_\Pi$. Since $H_\Pi$ is blind
+        to any right-carrier unitary ($Y_\Pi \mapsto V Y_\Pi$ leaves $Y_\Pi^\dagger Y_\Pi$ unchanged), the
+        squared residue does not fix $Y_\Pi$.</li>
+      <li><strong>What lives in $U_\Pi$.</strong> The chiral orientation and the complex mixing phase reside
+        in $U_\Pi$. The positive Yukawa norm $\lambda_Y$ is a <em>separate</em> scale of $H_\Pi$ — a unitary
+        cannot carry it — and is also invisible to the dimensionless level operator $E_\Pi^2$.</li>
+      <li><strong>Sign of $u$.</strong> In an oriented $J_3$-labelled basis $(e_0, e_+, e_-)$ the level
+        operator already sees the relative sign of $u$; without that orientation choice the exchange
+        $e_+ \leftrightarrow e_-$ sends $u \mapsto -u$ and leaves the unordered squared spectrum unchanged.
+        The open datum is the physical orientation branch, not a scalar visible to $E_\Pi^2$ alone.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Diagonal CP-real branch</h2>
+    <p>
+      The CP-even real reduction imposes $v = 0$ (no off-diagonal mixing for phase-free data). In the present
+      language this is the branch $U_\Pi = \mathbf{1}$, where the Yukawa operator is the positive root itself,
+      $Y_\Pi = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$, real and diagonal with no
+      mixing. This is a choice of branch, not a derived fact: a non-trivial $U_\Pi$ injects off-diagonal and
+      complex structure that $E_\Pi^2$ cannot register, and its first-principles origin is the complex
+      metaplectic phase of the Lorentzian completion.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status and open deliverable</h2>
+    <p>
+      <strong>Established.</strong> The squared observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$ with
+      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, and the polar
+      decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$. Both are structural and unconditional given the carrier
+      identifications of the Schur reduction, the Born–Infeld even-sector closure, and the line note. All
+      operator identities are verified by exact symbolic computation.
+    </p>
+    <p>
+      <strong>Open.</strong> The chiral polar factor $U_\Pi$ (chiral orientation and complex mixing phase),
+      the separate positive norm $\lambda_Y$, and hence the absolute masses, the generation mixing, and the
+      CP structure. Front 3b is closed as a squared-Yukawa-levels result, not a mixing result: $E_\Pi^2$ can
+      close $H_\Pi = Y_\Pi^\dagger Y_\Pi$ but cannot close $Y_\Pi$ unless $U_\Pi$ is fixed.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic matter
+      sub-programme</a>. It follows the <a href="/science/fermionic-matter/projected-yukawa-line/"
+      class="inline-link">projected Yukawa line note</a>, using the squared-residue normal form of the
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Schur reduction</a>
+      ($E_\Pi = -M^\dagger M$ negative semi-definite) and the Born–Infeld even-sector closure. The chiral
+      polar factor $U_\Pi$ — the mixing and the chiral orientation — is the next downstream frontier, to be
+      derived or constrained from the complex metaplectic phase.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projected Yukawa Operator and Chiral Polar Factor</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">10.5281/zenodo.20767498</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

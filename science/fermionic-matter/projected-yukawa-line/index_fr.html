@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ligne de Yukawa projetée et assignation des niveaux générationnels | Cosmochronie</title>
+  <meta name="description"
+    content="Ferme la première étape du secteur de Yukawa : la ligne déterminantielle functorielle L_Y = wedge^2(S_Pi) et l'assignation des niveaux générationnels depuis E_Pi^2|gen = diag(1, 1/2+u, 1/2-u), sans dériver de valeurs de masse."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Ligne de Yukawa projetée et assignation des niveaux générationnels"/>
+  <meta property="og:description"
+    content="La ligne déterminantielle wedge^2(S_Pi) est la ligne de couplage de Yukawa functorielle, invisible à SU(2)_L et porteuse du poids U(1)_Y ; E_Pi^2|gen ordonne les trois niveaux générationnels. La masse vient après."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/projected-yukawa-line/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/projected-yukawa-line/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Ligne de Yukawa projetée et assignation des niveaux générationnels</h1>
+        <p class="subtitle">
+          Clôture functorielle de la ligne déterminantielle $L_Y = \wedge^2(\mathcal{S}_\Pi)$ et ordre spectral
+          sur le triplet de génération $C^3_{\mathrm{gen}}$ — la ligne de Yukawa et les niveaux, pas les masses.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20767265" rel="noopener">Lire le preprint</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20767265</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Cette note compagnonne ouvre le front du secteur de masse du
+        <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme matière
+        fermionique</a> et n'en ferme que la première étape. Elle ne dérive pas les masses des trois
+        générations, les couplages de Yukawa, ni le mélange. Elle isole deux résultats structurels que le
+        porteur spinoriel admissible détermine déjà, et les sépare nettement de la normalisation de masse qui
+        n'en découle pas encore.
+      </p>
+      <p>
+        Le verrou de méthode est énoncé une fois et tenu partout&nbsp;: la ligne déterminantielle $L_Y$ fixe la
+        ligne de couplage, le résidu projectif carré $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ fixe les niveaux
+        générationnels, et la masse vient après.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant foi est le preprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits en bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Document de travail (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Objet</div>
+          <div class="v">Ligne de Yukawa functorielle $L_Y = \wedge^2(\mathcal{S}_\Pi)$, assignation des niveaux depuis $E_\Pi^2|_{C^3_{\mathrm{gen}}}$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI de concept <a
+            href="https://doi.org/10.5281/zenodo.20767265">10.5281/zenodo.20767265</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li><strong>Ligne de Yukawa projetée.</strong> Sur le fibré spinoriel admissible de rang deux
+        $\mathcal{S}_\Pi$, la ligne déterminantielle $L_Y = \wedge^2(\mathcal{S}_\Pi)$ est l'unique ligne
+        functorielle du porteur. Pour tout $g \in \mathrm{SL}(2,\mathbb{C})$ son action induite sur la ligne
+        est $\det(g) = 1$, donc $L_Y$ est invisible au secteur adjoint $\mathrm{SU}(2)_L$
+        $\mathrm{Sym}^2(\mathcal{S}_\Pi)$&nbsp;; un générateur abélien diagonal agit par la trace, donc $L_Y$
+        porte le poids $\mathrm{U}(1)_Y$.</li>
+      <li><strong>Secteur de Yukawa intrinsèque.</strong> Le secteur de Yukawa projeté n'est donc pas un fibré
+        de matière externe, mais le secteur ligne-déterminantielle de la clôture functorielle spinorielle
+        admissible — la moitié abélienne de la même clôture dont la moitié symétrique est le secteur de jauge
+        non abélien.</li>
+      <li><strong>Assignation des niveaux générationnels.</strong> Sur le triplet singlet de jauge
+        $C^3_{\mathrm{gen}} = \mathrm{span}(e_0, e_+, e_-)$, le résidu carré prend la forme normale fermée
+        $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, dont les déficits de
+        sortie $\{0, \tfrac12 - u, \tfrac12 + u\}$ ordonnent les trois niveaux générationnels&nbsp;: $e_0$ le
+        plus léger (central, non sortant), $e_-$ le plus lourd pour $u > 0$.</li>
+      <li><strong>Des niveaux, pas des masses.</strong> Le rapport de niveaux $(\tfrac12 + u)/(\tfrac12 - u)$
+        est invariant d'échelle, donc la structure de niveaux sans dimension est fixée par le seul coefficient
+        de splitting $u$&nbsp;; l'échelle absolue ne l'est pas. L'application
+        $e_0, e_+, e_- \mapsto$ trois niveaux ordonnés est fixée avant toute identification avec les
+        $e, \mu, \tau$ physiques.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Séparation d'avec l'opérateur de Yukawa</h2>
+    <p>
+      La ligne $L_Y$ est la donnée de poids du couplage de Yukawa, non la matrice de masse. La matrice de masse
+      est un objet distinct, un morphisme projeté
+      $Y_\Pi : \mathcal{S}_{L,\Pi} \otimes L_Y \to \mathcal{S}_{R,\Pi}$, ou son avatar spectral après
+      compression par $E_\Pi$. Fermer la ligne de couplage ne ferme pas l'opérateur&nbsp;: la norme de $Y_\Pi$,
+      l'orientation (le signe) du coefficient de splitting $u$, et la phase de mélange métaplectique complexe
+      sont des données ouvertes en aval, et aucune n'est fournie ici.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut et livrable ouvert</h2>
+    <p>
+      <strong>Établi.</strong> La ligne de Yukawa functorielle $L_Y = \wedge^2(\mathcal{S}_\Pi)$, invisible à
+      l'adjoint $\mathrm{SU}(2)_L$ et porteuse du poids abélien, et l'assignation des niveaux générationnels
+      depuis $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ via les déficits de sortie. Les deux sont structurels et
+      inconditionnels étant données les identifications du porteur de Q14, PRS et la clôture du secteur pair
+      Born–Infeld. Toutes les identités de théorie des représentations et spectrales sont vérifiées par calcul
+      symbolique exact.
+    </p>
+    <p>
+      <strong>Ouvert.</strong> L'opérateur de Yukawa projeté $Y_\Pi$, sa norme, le signe de $u$, et la phase de
+      mélange complexe — donc les masses absolues, les rapports de masse au-delà de la structure de niveaux
+      sans dimension, et le mélange générationnel. Le Front 3a est clos comme résultat structurel&nbsp;: la
+      ligne de Yukawa et l'ordre générationnel, pas les valeurs de masse.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochronie</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
+      matière fermionique</a>. Elle consolide la moitié $\wedge^2$ du Théorème A de
+      <a href="/science/fermionic-matter/q14/index_fr.html" class="inline-link">Q14</a> comme ligne de couplage
+      de Yukawa, et l'ordre par déficit de sortie du même article, avec la forme normale du résidu carré de la
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction
+      de Schur</a> et la clôture du secteur pair Born–Infeld utilisée dans la
+      <a href="/science/fermionic-matter/a4-note/index_fr.html" class="inline-link">note de marge de
+      saturation</a>. L'opérateur de Yukawa projeté, la normalisation de masse et le mélange restent le front
+      ouvert en aval.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projected Yukawa Line and Generation-Level Assignment</i>. Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20767265" rel="noopener">10.5281/zenodo.20767265</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

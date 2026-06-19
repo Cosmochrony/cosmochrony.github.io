@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le jet contraint du bloc éliminé lorentzien et le générateur chiral | Cosmochronie</title>
+  <meta name="description"
+    content="Contraint le jet du bloc éliminé 1-P(s) de la réduction de Schur et identifie le générateur chiral comme le taux infinitésimal du défaut d'équivariance chirale transporté, réduisant la valeur du splitting générationnel à une cible de normalisation unique."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le jet contraint du bloc éliminé lorentzien et le générateur chiral"/>
+  <meta property="og:description"
+    content="Le jet projecteur du bloc éliminé force une tangente de Grassmann chirale ; le générateur chiral est identifié au taux du défaut d'équivariance transporté, ne laissant que la normalisation de sa dérivée en s."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/eliminated-block-jet/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/eliminated-block-jet/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le jet contraint du bloc éliminé lorentzien et le générateur chiral</h1>
+        <p class="subtitle">
+          Fixer la forme structurelle du bloc éliminé $1 - P(s)$ et identifier le générateur chiral
+          comme le taux infinitésimal du défaut d'équivariance chirale transporté.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20763532" rel="noopener">Lire le préprint</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20763532</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        Cette note compagne se place logiquement entre la <a href="/science/fermionic-matter/projective-residue-schur/"
+        class="inline-link">réduction de Schur</a> du résidu projectif et l'identification physique du
+        générateur chiral. La réduction de Schur écrit l'endomorphisme projectif sous la forme
+        $E_\Pi = -\Pi_S\,D\,(1 - P)\,D\,\Pi_S^{*}$, de sorte que le bloc éliminé $1 - P$ contrôle le
+        coefficient de splitting à trois générations $u$ ; la valeur absolue $|u|$, le secteur de Yukawa
+        et le spectre de masse restent en aval.
+      </p>
+      <p>
+        En écrivant la famille de projecteurs auto-adjoints comme un jet
+        $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$ le long du module $J_\Pi$-impair $s$, les contraintes
+        de projecteur imposent une forme contrainte, et le générateur chiral est identifié — non comme un
+        nouveau sélecteur, mais comme le défaut d'équivariance transporté infinitésimal. Le splitting
+        $u \neq 0$ est admissible avec $|u|$ laissé entièrement libre.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est le préprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Document de travail (préprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Sujet</div>
+          <div class="v">Jet contraint de $1 - P(s)$, tangente de Grassmann chirale, identification du générateur chiral</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI de concept <a
+            href="https://doi.org/10.5281/zenodo.20763532">10.5281/zenodo.20763532</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li><strong>Jet contraint.</strong> Pour la famille de projecteurs auto-adjoints, les contraintes
+        de projecteur forcent le coefficient du premier ordre à être une tangente de Grassmann purement
+        hors-diagonale, $Q_1 = [A, Q_0]$ avec $Q_0 Q_1 Q_0 = 0 = (1 - Q_0) Q_1 (1 - Q_0)$, et fixent les
+        blocs diagonaux de $Q_2$ à $Q_1^2$ avec des signes opposés.</li>
+      <li><strong>Source chirale.</strong> En décomposant le générateur par parité, $A = A_+ + A_-$, la
+        partie qui source le splitting est $\Pi_{J_\Pi\text{-impair}} Q_1 = [A_-, Q_0]$. Le splitting est
+        mort si et seulement si $[A_-, Q_0] = 0$, et non simplement si $Q_1 = 0$ : un générateur purement
+        $J_\Pi$-pair ne source rien.</li>
+      <li><strong>Source du splitting.</strong> La propagation de parité gradue le jet du résidu $E_0$
+        pair, $E_1$ impair, $E_2$ pair, donc $u(s) = s\,\langle J_3, \{E_0, E_1\}\rangle /
+        \langle J_3, J_3\rangle + O(s^3)$. Pour des données sans phase, le coefficient de mélange $v$
+        s'annule identiquement ; un $v$ non nul exige une phase métaplectique complexe.</li>
+      <li><strong>Identification du générateur chiral.</strong> Comme la parité de Born–Infeld
+        antiunitaire échange les chiralités, la partie $J_\Pi$-impaire du bloc éliminé a une composante
+        chirale-diagonale égale au défaut d'équivariance transporté :
+        $[\Pi_{J_\Pi\text{-impair}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ et, le long du module,
+        $[\Pi_{J_\Pi\text{-impair}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. Le générateur
+        $A_-$ est donc le taux infinitésimal du défaut chiral transporté, pas un nouveau sélecteur.</li>
+      <li><strong>Cible unique restante.</strong> La question de la valeur est réduite à un seul objet :
+        la normalisation admissible de $\partial_s\Delta_\chi(P)|_0$. La magnitude $|u|$ reste liée au
+        dictionnaire ; aucun objet du dictionnaire de valeur n'entre dans la construction.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Le jet contraint</h2>
+    <p>
+      Pour chaque valeur du module $J_\Pi$-impair $s$ ouvert par la complexification lorentzienne, le bloc
+      éliminé $1 - P(s)$ est un projecteur auto-adjoint. En engendrant la famille par conjugaison,
+      $1 - P(s) = U(s) Q_0 U(s)^{\dagger}$ avec $U = \exp(sA)$, le contenu ordre par ordre de
+      $(1-P)^2 = 1-P$ force $Q_1 = [A, Q_0]$ à être purement hors-diagonale par rapport à $Q_0$ et fixe les
+      blocs diagonaux de $Q_2 = \tfrac12[A,[A,Q_0]]$ à $Q_1^2$ avec des signes opposés. Le point de base
+      fini $Q_0$ est $J_\Pi$-pair, donc $u(0) = 0$ : le splitting est une donnée lorentzienne, pas une
+      donnée de fibre finie.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Le générateur chiral</h2>
+    <p>
+      Dans la décomposition chirale $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$, la parité de
+      Born–Infeld $J_\Pi$ échange les chiralités. Par conséquent la partie $J_\Pi$-impaire du bloc éliminé
+      a un bloc diagonal gauche égal à la moitié du défaut d'équivariance transporté
+      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$ de la réduction de Schur. Le
+      coefficient du premier ordre porte donc $\tfrac12\partial_s\Delta_\chi(P)|_0$, identifiant le
+      générateur chiral $A_-$ au taux infinitésimal du défaut transporté. Via la formule de la source du
+      splitting, le porteur de $u$ est exactement $\partial_s\Delta_\chi(P)|_0$, habillé par le transport
+      $\mathcal{D}^{\pm}$ et projeté sur le triplet de générations comme dans la localisation de la
+      réduction de Schur.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut et livrable ouvert</h2>
+    <p>
+      <strong>Établi.</strong> La forme contrainte du jet du bloc éliminé, le caractère de Grassmann
+      hors-diagonal de $Q_1$, les blocs diagonaux de $Q_2$ de signes opposés, l'annulation du mélange sans
+      phase, et l'identification du générateur chiral au taux du défaut d'équivariance transporté. Toutes
+      les identités sont vérifiées par calcul symbolique et rationnel exact.
+    </p>
+    <p>
+      <strong>Ouvert.</strong> La magnitude $|u|$ est maintenant réduite à une cible unique : la
+      normalisation admissible de $\partial_s\Delta_\chi(P)|_0$ (le taux de défaut chiral de niveau A4 qui
+      porte la magnitude du splitting). Le taux de défaut est le porteur structurel unique ; sa valeur
+      absolue n'est pas normalisée ici et reste liée au dictionnaire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochronie</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/" class="inline-link">sous-programme
+      matière fermionique</a>. Elle prend en charge le premier livrable ouvert de la
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">réduction de Schur
+      du résidu projectif</a> — le bloc éliminé lorentzien explicite $1 - P(s)$ — et identifie le
+      générateur chiral au moyen du défaut d'équivariance transporté de cette réduction et du signe de
+      genre électrique $\mu_\chi^2 < 0$ établi dans la <a href="/science/fermionic-matter/a4-note/"
+      class="inline-link">note sur la marge de saturation de Born–Infeld</a>. La valeur absolue $|u|$, le
+      secteur de Yukawa et le spectre de masse restent des questions en aval, liées au dictionnaire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Constrained Jet of the Lorentzian Eliminated Block and the Chiral
+      Generator</i>. Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20763532" rel="noopener">10.5281/zenodo.20763532</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

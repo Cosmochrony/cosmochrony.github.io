@@ -10,7 +10,7 @@
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Opérateur de Yukawa projeté et facteur polaire chiral"/>
   <meta property="og:description"
-    content="E_Pi^2 fixe les niveaux carrés de Yukawa, pas le morphisme : Y_Pi = U_Pi H_Pi^{1/2}, le facteur polaire chiral U_Pi (orientation et phase de mélange) restant libre. Front 3b clos comme niveaux carrés, pas comme mélange."/>
+    content="E_Pi^2 fixe les niveaux carrés de Yukawa, pas le morphisme : Y_Pi = U_Pi H_Pi^{1/2}. Le Front 3c caractérise U_Pi comme une classe de rephasage (3 angles de mélange + 1 phase de Jarlskog), triviale sur la cascade réelle dérivée ; le mélange exige une phase métaplectique complexe."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/projected-yukawa-operator/"/>
   <script type="module">
@@ -133,19 +133,47 @@
     </p>
   </section>
   <section class="card">
+    <h2>Classe polaire (Front 3c)</h2>
+    <p>
+      Le facteur polaire $U_\Pi$ n'est pas une observable canonique mais une <em>classe de rephasage</em>, le
+      double quotient $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$&nbsp;: les niveaux de génération distincts
+      épinglent chaque porteur chiral à sa base propre de niveau à une phase diagonale près, de sorte que les
+      changements de base chiraux admissibles sont des rephasages diagonaux $U_\Pi \mapsto V_R U_\Pi V_L^{-1}$.
+      Ses invariants de rephasage sont les modules $|(U_\Pi)_{ij}|$ et une phase de Jarlskog — trois angles de
+      mélange et une phase CP.
+    </p>
+    <p>
+      <strong>Non-trivialité.</strong> La classe quitte l'identité si et seulement si le générateur métaplectique
+      a une composante transverse (hors-diagonale) non nulle&nbsp;; les détecteurs sont les modules hors-diagonaux
+      et l'invariant de Jarlskog, d'ordre dominant $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. Sur la cascade
+      réelle dérivée cette composante transverse est absente ($v = 0$), donc $[U_\Pi] = [I]$ et <em>aucun mélange
+      physique</em> n'est produit à ce strate. Une classe non triviale exige une vraie phase métaplectique
+      complexe, non dérivée ici, et ne devient une matrice de mélange physique que relativement à un second
+      secteur fermionique. Toutes les identités sont vérifiées par calcul symbolique exact.
+    </p>
+  </section>
+  <section class="card">
     <h2>Statut et livrable ouvert</h2>
     <p>
       <strong>Établi.</strong> L'observable carrée $H_\Pi = Y_\Pi^\dagger Y_\Pi$ avec
-      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, et la
-      décomposition polaire $Y_\Pi = U_\Pi H_\Pi^{1/2}$. Les deux sont structurels et inconditionnels étant
-      données les identifications du porteur de la réduction de Schur, la clôture du secteur pair Born–Infeld,
-      et la note de ligne. Toutes les identités d'opérateurs sont vérifiées par calcul symbolique exact.
+      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, la
+      décomposition polaire $Y_\Pi = U_\Pi H_\Pi^{1/2}$, et la caractérisation en classe polaire
+      $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$ avec son critère de non-trivialité par composante
+      transverse. Tous sont structurels et inconditionnels étant données les identifications du porteur de la
+      réduction de Schur, la clôture du secteur pair Born–Infeld, et la note de ligne, et sont vérifiés par
+      calcul symbolique exact.
     </p>
     <p>
-      <strong>Ouvert.</strong> Le facteur polaire chiral $U_\Pi$ (orientation chirale et phase de mélange
-      complexe), la norme positive séparée $\lambda_Y$, et donc les masses absolues, le mélange générationnel
-      et la structure CP. Le Front 3b est clos comme résultat de niveaux carrés, pas de mélange&nbsp;: $E_\Pi^2$
-      peut clore $H_\Pi = Y_\Pi^\dagger Y_\Pi$ mais ne peut pas clore $Y_\Pi$ tant que $U_\Pi$ n'est pas fixé.
+      <strong>Conditionnel.</strong> Sur la cascade réelle dérivée le canal transverse est absent ($v = 0$),
+      donc $[U_\Pi] = [I]$ et aucun mélange n'est produit à ce strate.
+    </p>
+    <p>
+      <strong>Ouvert.</strong> La norme positive séparée $\lambda_Y$ et une classe polaire non triviale
+      $[U_\Pi] \neq [I]$ — qui exige une vraie phase métaplectique complexe, conditionnelle à une phase et un
+      ordre non prescrits — et donc les masses absolues, le mélange générationnel et la structure CP. Le Front 3b
+      est clos comme résultat de niveaux carrés et le Front 3c caractérise la classe polaire&nbsp;: $E_\Pi^2$ peut
+      clore $H_\Pi = Y_\Pi^\dagger Y_\Pi$ mais ne peut pas clore $Y_\Pi$ tant que la classe $[U_\Pi]$ n'est pas
+      fixée.
     </p>
   </section>
   <section class="card">
@@ -156,8 +184,10 @@
       class="inline-link">note de ligne de Yukawa projetée</a>, en utilisant la forme normale du résidu carré de
       la <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction
       de Schur</a> ($E_\Pi = -M^\dagger M$ négatif semi-défini) et la clôture du secteur pair Born–Infeld. Le
-      facteur polaire chiral $U_\Pi$ — le mélange et l'orientation chirale — est le prochain front en aval, à
-      dériver ou contraindre depuis la phase métaplectique complexe.
+      facteur polaire chiral $U_\Pi$ est désormais caractérisé comme une classe de rephasage dont la
+      non-trivialité est la donnée métaplectique transverse, s'effondrant sur l'identité sur la cascade réelle
+      dérivée&nbsp;; une matrice de mélange physique reste le prochain front en aval, exigeant une vraie phase
+      métaplectique complexe et un second secteur.
     </p>
   </section>
   <section class="card">

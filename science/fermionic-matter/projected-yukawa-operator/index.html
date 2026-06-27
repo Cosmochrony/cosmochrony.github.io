@@ -10,7 +10,7 @@
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Projected Yukawa Operator and Chiral Polar Factor"/>
   <meta property="og:description"
-    content="E_Pi^2 fixes the squared Yukawa levels, not the morphism: Y_Pi = U_Pi H_Pi^{1/2}, with the chiral polar factor U_Pi (orientation and mixing phase) free. Front 3b closed as squared-Yukawa levels, not mixing."/>
+    content="E_Pi^2 fixes the squared Yukawa levels, not the morphism: Y_Pi = U_Pi H_Pi^{1/2}. Front 3c characterises U_Pi as a rephasing class (3 mixing angles + 1 Jarlskog phase), trivial on the derived real cascade; mixing needs a complex metaplectic phase."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/"/>
   <script type="module">
@@ -129,19 +129,44 @@
     </p>
   </section>
   <section class="card">
+    <h2>Polar class (Front 3c)</h2>
+    <p>
+      The polar factor $U_\Pi$ is not a canonical observable but a <em>rephasing class</em>, the double
+      quotient $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$: the distinct generation levels pin each chiral
+      carrier to its level eigenbasis up to a diagonal phase, so the admissible chiral basis changes are
+      diagonal rephasings $U_\Pi \mapsto V_R U_\Pi V_L^{-1}$. Its rephasing invariants are the moduli
+      $|(U_\Pi)_{ij}|$ and a Jarlskog phase — three mixing angles and one CP phase.
+    </p>
+    <p>
+      <strong>Non-triviality.</strong> The class moves off the identity iff the metaplectic generator has a
+      non-zero transverse (off-diagonal) component; the detectors are the off-diagonal moduli and the Jarlskog
+      invariant, whose leading order is $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. On the derived real cascade
+      that transverse component is absent ($v = 0$), so $[U_\Pi] = [I]$ and <em>no physical mixing</em> is
+      produced at this stratum. A non-trivial class needs a genuine complex metaplectic phase, not derived
+      here, and becomes a physical mixing matrix only relative to a second fermionic sector. All identities are
+      verified by exact symbolic computation.
+    </p>
+  </section>
+  <section class="card">
     <h2>Status and open deliverable</h2>
     <p>
       <strong>Established.</strong> The squared observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$ with
-      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, and the polar
-      decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$. Both are structural and unconditional given the carrier
-      identifications of the Schur reduction, the Born–Infeld even-sector closure, and the line note. All
-      operator identities are verified by exact symbolic computation.
+      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, the polar
+      decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$, and the polar-class characterisation
+      $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$ with its transverse-component non-triviality criterion.
+      All are structural and unconditional given the carrier identifications of the Schur reduction, the
+      Born–Infeld even-sector closure, and the line note, and are verified by exact symbolic computation.
     </p>
     <p>
-      <strong>Open.</strong> The chiral polar factor $U_\Pi$ (chiral orientation and complex mixing phase),
-      the separate positive norm $\lambda_Y$, and hence the absolute masses, the generation mixing, and the
-      CP structure. Front 3b is closed as a squared-Yukawa-levels result, not a mixing result: $E_\Pi^2$ can
-      close $H_\Pi = Y_\Pi^\dagger Y_\Pi$ but cannot close $Y_\Pi$ unless $U_\Pi$ is fixed.
+      <strong>Conditional.</strong> On the derived real cascade the transverse channel is absent ($v = 0$), so
+      $[U_\Pi] = [I]$ and no mixing is produced at this stratum.
+    </p>
+    <p>
+      <strong>Open.</strong> The separate positive norm $\lambda_Y$ and a non-trivial polar class
+      $[U_\Pi] \neq [I]$ — which requires a genuine complex metaplectic phase, conditional on an unprescribed
+      phase and ordering — and hence the absolute masses, the generation mixing, and the CP structure. Front 3b
+      is closed as a squared-Yukawa-levels result and Front 3c characterises the polar class; $E_\Pi^2$ can
+      close $H_\Pi = Y_\Pi^\dagger Y_\Pi$ but cannot close $Y_\Pi$ unless the class $[U_\Pi]$ is fixed.
     </p>
   </section>
   <section class="card">
@@ -152,8 +177,9 @@
       class="inline-link">projected Yukawa line note</a>, using the squared-residue normal form of the
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Schur reduction</a>
       ($E_\Pi = -M^\dagger M$ negative semi-definite) and the Born–Infeld even-sector closure. The chiral
-      polar factor $U_\Pi$ — the mixing and the chiral orientation — is the next downstream frontier, to be
-      derived or constrained from the complex metaplectic phase.
+      polar factor $U_\Pi$ is now characterised as a rephasing class whose non-triviality is the transverse
+      metaplectic datum, collapsing to the identity on the derived real cascade; a physical mixing matrix
+      remains the next downstream frontier, requiring a genuine complex metaplectic phase and a second sector.
     </p>
   </section>
   <section class="card">

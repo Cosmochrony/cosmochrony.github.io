@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Spin-Stratum Type-Rigidity: Orthogonality of the ADE Gate and Closure of the Chiral Lift | Cosmochrony</title>
   <meta name="description"
-    content="A single spin-stratum type-rigidity cuts two ways. First, it makes the ADE case-selection gate a no-go: the generation-split value ε = 1/10 is a theorem modulo the gate, whose first-principles derivation is obstructed by an arithmetic orthogonality between Born–Infeld parity (complex conjugation, fixing √5) and the Galois action √5 → −√5 required to select the √5-locus. A bounded character-table audit of the binary icosahedral group 2I ≅ SL(2,5) shows every operation available in the present corpus construction fixes √5, so the generated group lies in the √5-fixing subgroup of Gal(K_q/Q) and cannot manufacture the outer automorphism. Second, the same rigidity closes the chiral orientation note: the Lorentzian chiral lift induces no action on √5, so [H-orient] holds and N_A ≠ 0 unconditionally within the present spin stratum. For the gate the rigidity is fatal; for the chiral lift it is the closure. Only the abstract full-tower type-rigidity remains open."/>
+    content="A single spin-stratum type-rigidity cuts two ways. First, it makes the ADE case-selection gate a no-go: the generation-split value ε = 1/10 is a theorem modulo the gate, whose first-principles derivation is obstructed by an arithmetic orthogonality between Born–Infeld parity (complex conjugation, fixing √5) and the Galois action √5 → −√5 required to select the √5-locus. A bounded character-table audit of the binary icosahedral group 2I ≅ SL(2,5) shows every operation available in the present corpus construction fixes √5, so the generated group lies in the √5-fixing subgroup of Gal(K_q/Q) and cannot manufacture the outer automorphism. Second, the same rigidity closes the chiral orientation note: the Lorentzian chiral lift induces no action on √5, so [H-orient] holds and N_A ≠ 0 unconditionally within the present spin stratum. For the gate the rigidity is fatal; for the chiral lift it is the closure. The abstract full-tower type-rigidity is established for admissible fibre operations: the Galois exchange √5 → −√5 does not preserve the binary-icosahedral carrier, so a finite recursive tower of carrier-preserving admissible identifications preserves the arithmetic type (a scope hypothesis, not an absolute impossibility of external character-table equivalence)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Spin-Stratum Type-Rigidity: Orthogonality of the ADE Gate and Closure of the Chiral Lift"/>
   <meta property="og:description"
-    content="One spin-stratum type-rigidity, two opposite cuts: the ADE gate is a no-go (ε = 1/10 forced once the case is selected; arithmetic orthogonality in Q(ζ_q,√5), proved by a character-table audit of 2I), and the chiral lift is closed (no √5 action, [H-orient] and N_A ≠ 0 unconditional in the present spin stratum). Full-tower type-rigidity open."/>
+    content="One spin-stratum type-rigidity, two opposite cuts: the ADE gate is a no-go (ε = 1/10 forced once the case is selected; arithmetic orthogonality in Q(ζ_q,√5), proved by a character-table audit of 2I), and the chiral lift is closed (no √5 action, [H-orient] and N_A ≠ 0 unconditional in the present spin stratum). Full-tower type-rigidity established for admissible fibre operations."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/arithmetic-orthogonality-adegate/"/>
   <script type="module">
@@ -149,11 +149,19 @@
         orthogonality, and the action of each spin-stratum operation on $\mathrm{Irr}(2I)$ is
         checked explicitly. The Galois action $\sqrt{5} \mapsto -\sqrt{5}$ induces the
         permutation $(2\,2')(3\,3')$; none of the available operations realises it.</li>
-      <li><strong>Full-tower type-rigidity (Lemma, open).</strong> Whether every conceivable
-        recursive stratum above the base inherits the parity type, rather than introducing an
-        action in the $\sqrt{5}$ factor, is open. A proof direction via entropy-monotonicity is
-        indicated. This abstract generalisation is broader than the ADE gate requires, and
-        Theorem (negative) does not depend on it.</li>
+      <li><strong>Full-tower type-rigidity (Lemma, Proposition, Corollary; established for admissible
+        fibre operations).</strong> Whether every conceivable recursive stratum above the base
+        inherits the parity type is settled in the corpus notion of an admissible fibre operation.
+        The correct invariant is the Galois-module type of the fibre identification, not its entropy
+        (which records only the multiplicity of identifications). A realisation audit shows the
+        horizontal Galois exchange $\sqrt{5} \mapsto -\sqrt{5}$ does <em>not</em> preserve the
+        binary-icosahedral carrier — it maps $2I$ onto its opposite-chirality copy, exchanging
+        $2 \leftrightarrow 2'$ — whereas the Born–Infeld parity (complex conjugation) preserves the
+        carrier and fixes $\sqrt{5}$. Hence every carrier-preserving admissible fibre identification
+        is vertical, and a finite recursive tower preserves the binary-icosahedral arithmetic type.
+        This is a scope hypothesis on what counts as an admissible operation, not an absolute
+        impossibility of any external equivalence of character tables; the negative theorem does not
+        depend on it.</li>
       <li><strong>Chiral-lift corollary (Corollaries, proved).</strong> The same spin-stratum
         type-rigidity cuts the opposite way for the Lorentzian chiral lift of the ordered cascade
         step. The boost is Galois-internal (it extends the spin-stratum action only by the central
@@ -192,11 +200,18 @@
       the chiral closure are opposite cuts of one spin-stratum type-rigidity.
     </p>
     <p>
-      <strong>Not settled.</strong> The abstract full-tower type-rigidity: whether some other,
-      richer construction could supply at a recursive stratum a non-injectivity acting on the
-      $\sqrt{5}$ factor. ENI's recursive non-injectivity constrains existence, not arithmetic type;
-      a type-inheritance argument is indicated but not concluded. This is broader than the ADE gate
-      requires, and the negative theorem does not depend on it.
+      <strong>Settled (this version), in a precise sense.</strong> The abstract full-tower
+      type-rigidity is established for admissible fibre operations. ENI's recursive non-injectivity
+      constrains existence, not arithmetic type; the correct invariant is the Galois-module type of
+      the fibre identification. A realisation audit shows the horizontal exchange
+      $\sqrt{5} \mapsto -\sqrt{5}$ does not preserve the binary-icosahedral carrier, whereas every
+      admissible (carrier-preserving) identification does and fixes $\sqrt{5}$, so a finite recursive
+      tower preserves the arithmetic type. The former open dependency lock is thus replaced by a
+      scope hypothesis — carrier-preserving admissible fibre operation — not a closure by fiat: the
+      result does not assert that no external equivalence of abstract character tables exists, only
+      that the horizontal Galois exchange is not realised by an admissible operation preserving the
+      binary-icosahedral carrier. This is broader than the ADE gate requires, and the negative
+      theorem does not depend on it.
     </p>
   </section>
   <section class="card">

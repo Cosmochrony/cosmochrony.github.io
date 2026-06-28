@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>L'information de Fisher quantique comme témoin spectral d'intrication | Cosmochronie</title>
+  <meta name="description"
+    content="La croissance sans échelle de la densité d'information de Fisher quantique dans un métal étrange réduite aux données spectrales projectives : une propriété du substrat de Heisenberg nilpotent complet (d_s≈4, f_Q∼T^−1), marginale pour le seul secteur w=2."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="L'information de Fisher quantique comme témoin spectral d'intrication"/>
+  <meta property="og:description"
+    content="La croissance sans échelle du QFI comme propriété du substrat nilpotent complet, et non d'un composite isolé ; fermeture thermique dérivée de la réponse de noyau de la chaleur ; adoucissement Born–Infeld de l'exposant."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/condensed-matter/quantum-fisher/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/condensed-matter/quantum-fisher/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>L'information de Fisher quantique comme témoin spectral d'intrication</h1>
+        <p class="subtitle">
+          Le gap de stabilité projective et l'origine de la croissance sans échelle.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21001565" rel="noopener">
+        Lire la note
+        <div class="mono">DOI 10.5281/zenodo.21001565</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Une expérience récente de diffusion inélastique de neutrons sur le métal étrange à fermions lourds
+        $\mathrm{Ce}_3\mathrm{Pd}_{20}\mathrm{Si}_6$ rapporte une augmentation sans échelle de la densité
+        d'information de Fisher quantique (QFI) lors de la formation de l'état de métal étrange, témoignant d'une
+        forte intrication multipartite. Cette note demande si le cadre de projection non injective reproduit cette
+        signature, et isole la condition structurelle exacte qui la contrôle.
+      </p>
+      <p>
+        Par réponse linéaire, la densité de QFI se réduit à une intégrale pondérée de la partie imaginaire de la
+        susceptibilité dynamique, dont le comportement infrarouge est fixé par le gap de stabilité projective
+        $\Delta_\Pi$ et le poids spectral de bord de l'opérateur de stabilité projective $L_\Pi$. Il en résulte une
+        dichotomie nette : un gap fini force la saturation de la densité de QFI, tandis qu'un gap qui se ferme avec
+        une dimension spectrale de bord $d_s > 2$ force une croissance en loi de puissance $f_Q(T)\sim T^{1-a}$ avec
+        $a = d_s/2$.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page est un point d'entrée. La référence technique fait foi est la note liée
+        ci-dessus. La note teste si le type d'infrarouge observé est compatible avec les données spectrales
+        projectives ; elle ne dérive pas un modèle microscopique de destruction Kondo du matériau.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note compagne de matière condensée</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Sujet</div>
+          <div class="v">Information de Fisher quantique, métaux étranges, dimension spectrale</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Prépublication (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21001565">10.5281/zenodo.21001565</a>)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Sous-programme</div>
+          <div class="v"><a href="/science/condensed-matter/">Matière condensée</a></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li>
+        <strong>Dichotomie spectrale.</strong> La croissance sans échelle du QFI équivaut à deux énoncés spectraux
+        sur $L_\Pi$ : le gap se ferme, et la densité d'états de bord est anomale avec un exposant $a > 1$ (sinon la
+        croissance est au plus marginale).
+      </li>
+      <li>
+        <strong>Le secteur isolé est marginal.</strong> Le secteur d'enroulement $w=2$ se réduit à l'opérateur
+        d'almost-Mathieu (Harper) critique au flux $2/q$ ; son gap se ferme comme $\Delta_\Pi\sim q^{-1}$ mais sa
+        dimension spectrale de bord est $d_s\to 2$, donnant $a\to 1$ &mdash; la frontière marginale, d'où une
+        croissance seulement logarithmique.
+      </li>
+      <li>
+        <strong>Le substrat complet est en loi de puissance.</strong> Le substrat de Cayley complet de
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, de dimension de croissance homogène $D=4$, a une dimension
+        spectrale de bord $d_s\approx 4$, donnant $a\approx 2$ et $f_Q(T)\sim T^{-1}$, une véritable loi de puissance.
+        Une décomposition exacte en blocs (une bande de tore abélien plus $q-1$ bandes de Harper décalées)
+        reconstruit $d_s=4$ par empilement de bandes.
+      </li>
+      <li>
+        <strong>Origine structurelle.</strong> La signature d'intrication sans échelle est une propriété du
+        <em>substrat nilpotent complet</em> et non d'un secteur d'enroulement isolé &mdash; cohérent avec
+        l'intrication mesurée, multipartite, de profondeur au moins neuf.
+      </li>
+      <li>
+        <strong>Fermeture thermique dérivée.</strong> La fermeture requise $\Delta_\Pi(T)=\tfrac{d_s}{2}T$ découle de
+        l'identification, par le noyau de la chaleur, de l'échelle de diffusion avec l'inverse de la température ; le
+        plateau de la trace de retour $u(t)\,t\to d_s/2$ est confirmé numériquement (médiane $2{,}07, 2{,}04, 2{,}03$
+        à $q=61,101,151$).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Statut des affirmations</h2>
+    <p>
+      La réduction de la densité de QFI aux données spectrales projectives est <em>structurelle</em>, conditionnelle
+      à une forme de réponse relaxationnelle et à un poids de matrice plat (consignés comme entrées). La marginalité
+      du secteur $w=2$ et la loi de puissance du substrat complet sont <em>numériques</em> (diagonalisation exacte et
+      assemblage exact par blocs jusqu'à $q=151$). La fermeture thermique $\Delta_\Pi(T)=\tfrac{d_s}{2}T$ est
+      <em>dérivée</em>. L'exposant prédit est du bon ordre mais plus raide que l'observé ($\alpha_{\mathrm{th}}=1$
+      contre $\alpha_{\mathrm{exp}}\approx 0{,}7$) ; la correction de réponse bornée de Born&ndash;Infeld est montrée
+      <em>numériquement</em> l'adoucir, avec un croisement stable en taille à une saturation partielle du substrat
+      $\langle S\rangle\approx 0{,}21$, tandis que l'exposant asymptotique reste <em>ouvert</em>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Un nouveau témoin spectral</h2>
+    <p>
+      Le cadre contient déjà deux témoins d'intrication, dont aucun n'est le QFI : l'entropie de projection $S_\Pi$,
+      qui borne les violations de Bell&ndash;CHSH, et l'observable d'intrication effective
+      $E_{\mathrm{eff}}(C)=\Delta_\Pi(C)(1-C^\nu)$. Cette dernière est proportionnelle à $\Delta_\Pi$ et donc
+      <em>s'annule</em> lorsque le gap se ferme, alors que la densité de QFI <em>diverge</em> lorsque le gap se ferme
+      pour $a>1$. Le QFI est donc un témoin spectral réellement nouveau, complémentaire du
+      <a href="/science/entanglement/">sous-programme intrication</a> : il compte la profondeur de corrélation
+      multipartite de l'état stationnaire, qui croît lorsque le gap de stabilité projective se ferme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Reproductibilité</h2>
+    <p>
+      Les cinq figures sont produites par des scripts Python autonomes (diagonalisation exacte et assemblage exact
+      par blocs) : le secteur $w=2$ marginal, la densité d'états de bord du substrat complet, la convergence en $q$
+      et l'empilement de bandes, la fermeture thermique planckienne, et l'adoucissement Born&ndash;Infeld sur quatre
+      tailles de système. Le plateau de fermeture thermique et le croisement Born&ndash;Infeld se reproduisent aux
+      chiffres rapportés.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Beau, J. <i lang="en">Quantum Fisher Information as a Spectral Entanglement Witness: the Projective Stability
+      Gap and the Origin of Scale-Free Growth</i>. Prépublication, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21001565" rel="noopener">https://doi.org/10.5281/zenodo.21001565</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

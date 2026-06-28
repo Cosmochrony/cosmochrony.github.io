@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quantum Fisher Information as a Spectral Entanglement Witness | Cosmochrony</title>
+  <meta name="description"
+    content="The scale-free growth of the quantum Fisher information density in a strange metal reduced to projective spectral data: a property of the full nilpotent Heisenberg substrate (d_s≈4, f_Q∼T^−1), marginal for the single w=2 sector."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Quantum Fisher Information as a Spectral Entanglement Witness"/>
+  <meta property="og:description"
+    content="Scale-free QFI growth as a property of the full nilpotent substrate, not of any isolated composite; thermal closure derived from the heat-kernel response; Born–Infeld softening of the exponent."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/condensed-matter/quantum-fisher/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/condensed-matter/quantum-fisher/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
+            cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Quantum Fisher Information as a Spectral Entanglement Witness</h1>
+        <p class="subtitle">
+          The projective stability gap and the origin of scale-free growth.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21001565" rel="noopener">
+        Read the note
+        <div class="mono">DOI 10.5281/zenodo.21001565</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        A recent inelastic-neutron-scattering experiment on the heavy-fermion strange metal
+        $\mathrm{Ce}_3\mathrm{Pd}_{20}\mathrm{Si}_6$ reports a scale-free increase of the quantum Fisher information
+        (QFI) density as the strange-metal state forms, witnessing high multipartite entanglement. This note asks
+        whether the non-injective projection framework reproduces this signature, and isolates the exact structural
+        condition that controls it.
+      </p>
+      <p>
+        Using linear response, the QFI density reduces to a weighted integral of the imaginary part of the dynamical
+        susceptibility, whose infrared behaviour is fixed by the projective stability gap $\Delta_\Pi$ and the edge
+        spectral weight of the projective stability operator $L_\Pi$. This yields a clean dichotomy: a finite gap
+        forces the QFI density to saturate, whereas a gap that closes with edge spectral dimension $d_s > 2$ forces
+        power-law growth $f_Q(T)\sim T^{1-a}$ with $a = d_s/2$.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page is an entry point. The authoritative technical reference is the
+        note linked above. The note tests whether the observed infrared type is compatible with the projective
+        spectral data; it does not derive a microscopic Kondo-destruction model of the material.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Condensed-matter companion note</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Quantum Fisher information, strange metals, spectral dimension</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Preprint (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21001565">10.5281/zenodo.21001565</a>)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Sub-programme</div>
+          <div class="v"><a href="/science/condensed-matter/">Condensed Matter</a></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li>
+        <strong>Spectral dichotomy.</strong> Scale-free QFI growth is equivalent to two spectral statements about
+        $L_\Pi$: the gap closes, and the edge density of states is anomalous with exponent $a > 1$ (otherwise growth
+        is at most marginal).
+      </li>
+      <li>
+        <strong>Single sector is marginal.</strong> The winding sector $w=2$ reduces to the critical almost-Mathieu
+        (Harper) operator at flux $2/q$; its gap closes as $\Delta_\Pi\sim q^{-1}$ but its edge spectral dimension is
+        $d_s\to 2$, giving $a\to 1$ &mdash; the marginal boundary, hence only logarithmic growth.
+      </li>
+      <li>
+        <strong>Full substrate is power-law.</strong> The full Cayley substrate of
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, of homogeneous growth dimension $D=4$, has edge spectral dimension
+        $d_s\approx 4$, giving $a\approx 2$ and $f_Q(T)\sim T^{-1}$, a genuine power law. An exact block decomposition
+        (one abelian torus band plus $q-1$ staggered Harper bands) reconstructs $d_s=4$ by band stacking.
+      </li>
+      <li>
+        <strong>Structural origin.</strong> The scale-free entanglement signature is a property of the
+        <em>full nilpotent substrate</em> and not of any isolated winding sector &mdash; consistent with the measured
+        entanglement being multipartite, of depth at least nine.
+      </li>
+      <li>
+        <strong>Thermal closure derived.</strong> The required closure $\Delta_\Pi(T)=\tfrac{d_s}{2}T$ follows from
+        the framework's heat-kernel identification of the diffusion scale with inverse temperature; the trace-return
+        plateau $u(t)\,t\to d_s/2$ is confirmed numerically (median $2.07, 2.04, 2.03$ at $q=61,101,151$).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Status of claims</h2>
+    <p>
+      The reduction of the QFI density to the projective spectral data is <em>structural</em>, conditional on a
+      relaxational response form and on a flat matrix-element weight (recorded as inputs). The marginality of the
+      $w=2$ sector and the power-law of the full substrate are <em>numerical</em> (exact diagonalisation and exact
+      block assembly to $q=151$). The thermal closure $\Delta_\Pi(T)=\tfrac{d_s}{2}T$ is <em>derived</em>. The
+      predicted exponent is of the right order but steeper than observed ($\alpha_{\mathrm{th}}=1$ versus
+      $\alpha_{\mathrm{exp}}\approx 0.7$); the Born&ndash;Infeld bounded-response correction is shown
+      <em>numerically</em> to soften it, with a size-stable crossing at a partial substrate saturation
+      $\langle S\rangle\approx 0.21$, while the asymptotic exponent remains <em>open</em>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>A new spectral witness</h2>
+    <p>
+      The framework already contains two entanglement witnesses, neither of which is the QFI: the projection entropy
+      $S_\Pi$, which bounds Bell&ndash;CHSH violations, and the effective entanglement observable
+      $E_{\mathrm{eff}}(C)=\Delta_\Pi(C)(1-C^\nu)$. The latter is proportional to $\Delta_\Pi$ and therefore
+      <em>vanishes</em> as the gap closes, whereas the QFI density <em>diverges</em> as the gap closes when $a>1$.
+      The QFI is thus a genuinely new spectral witness in the framework, complementary to the
+      <a href="/science/entanglement/">entanglement sub-programme</a>: it counts the multipartite correlation depth
+      of the steady state, which grows as the projective stability gap closes.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Reproducibility</h2>
+    <p>
+      The five figures are produced by self-contained Python scripts (exact diagonalisation and exact block
+      assembly): the marginal $w=2$ sector, the full-substrate edge density of states, the $q$-convergence and band
+      stacking, the Planckian thermal closure, and the Born&ndash;Infeld softening across four system sizes. The
+      thermal-closure plateau and the Born&ndash;Infeld crossing reproduce to the reported digits.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Beau, J. <i lang="en">Quantum Fisher Information as a Spectral Entanglement Witness: the Projective Stability
+      Gap and the Origin of Scale-Free Growth</i>. Preprint, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21001565" rel="noopener">https://doi.org/10.5281/zenodo.21001565</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

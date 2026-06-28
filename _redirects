@@ -41,3 +41,5 @@
 /*.html /index_de.html 301! Language=de
 /*.html /index_es.html 301! Language=es
 /*.html /index.html 301! Language=en
+/condensed-matter/* /science/condensed-matter/:splat 301
+/quantum-fisher/* /science/condensed-matter/quantum-fisher/:splat 301

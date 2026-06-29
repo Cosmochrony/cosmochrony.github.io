@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Couverture critique et le problème de la profondeur de saturation | Cosmochrony
+  </title>
+  <meta name="description"
+    content="La note Couverture critique réduit le problème de la profondeur de saturation BFS d’O25–O28 à un seul observable, la couverture critique x1(q)=|B_n1|/q^2, via l’identité exacte n1=(x1/C_Heis)^(1/4)·racine(q) ; elle établit n1(q)/q→0 et exclut le scénario de couverture constante."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/critical-coverage/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Couverture critique et le problème de la profondeur de saturation"/>
+  <meta property="og:description"
+    content="Réduit le problème de la profondeur de saturation BFS à la loi asymptotique d’un seul observable de couverture x1(q), établissant une croissance sous-linéaire n1(q)/q→0 et excluant le scénario en √q pur."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/critical-coverage/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/critical-coverage/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Couverture critique et le problème de la profondeur de saturation
+        </h1>
+        <p class="subtitle">
+          Une note compagne d’<a href="../o28">O28</a> qui reformule l’asymptotique de la
+          profondeur de fenêtre BFS autour d’un seul observable, la couverture critique
+          \(x_1(q)\), la profondeur de saturation \(n_1(q)\) devenant une quantité dérivée.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21049163">Lire la note</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        La profondeur de saturation auto-calibrée \(n_1(q)\) de l’exploration en largeur de
+        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) était la variable asymptotique ouverte centrale
+        d’<a href="../o25">O25</a>–<a href="../o28">O28</a>. Cette note établit deux points.
+      </p>
+      <p>
+        <strong>La profondeur n’est pas un temps de remplissage d’espace vectoriel.</strong> Au bord
+        de la fenêtre, le rang cumulé des empreintes de Weil est loin d’être plein (p.&nbsp;ex.
+        \(137/307\) à \(q=307\)) : \(n_1\) est la profondeur où les nouvelles directions gagnées par
+        sommet exploré passent sous un seuil fixe — un arrêt de nouveauté marginale, et non
+        l’achèvement d’une base.
+      </p>
+      <p>
+        <strong>L’asymptotique se réduit à un seul observable.</strong> Avec la croissance de boule
+        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\)) et le gap spectral diffusif
+        \(\lambda_2\approx 4\pi^2/q^2\), l’identité exacte
+        \[ n_1(q)=\left(\frac{x_1(q)}{C_{\mathrm{Heis}}}\right)^{1/4}\sqrt{q},\qquad
+           x_1(q)=\frac{|B_{n_1}|}{q^2}, \]
+        condense tout le contenu asymptotique de \(n_1\) sur la <strong>couverture critique</strong>
+        \(x_1(q)\). La question « quelle est la loi de \(n_1\)&nbsp;? » devient « quelle est la loi de
+        \(x_1(q)\)&nbsp;? ».
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> C’est une note de cadrage : elle établit la réduction et le résultat
+        model-free \(n_1(q)/q\to 0\), exclut le scénario de couverture constante, et énonce le
+        programme analytique ouvert pour \(x_1(q)\). Elle ne dérive pas encore cette loi.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits clés</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Document de travail</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Thèmes</div>
+          <div class="v">
+            couverture critique, profondeur de saturation BFS, nouveauté marginale,
+            gap spectral, asymptotique de profondeur
+          </div></div>
+        <div class="kv"><div class="k">Objets centraux</div>
+          <div class="v">
+            \(x_1(q)=|B_{n_1}|/q^2\), \(n_1(q)\), \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\)
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Points principaux</h2>
+    <ul>
+      <li>
+        <strong>Reformulation en nouveauté marginale :</strong>
+        \(n_1\) est le croisement de la densité de capacité
+        \(\sigma(n)=\Delta r(n)/|S_n|\) sous un seuil fixe, pas un compte de rang.
+      </li>
+      <li>
+        <strong>Réduction exacte :</strong>
+        \(n_1(q)=(x_1(q)/C_{\mathrm{Heis}})^{1/4}\sqrt{q}\) ; la loi asymptotique de \(n_1\) est
+        littéralement celle de \(x_1(q)\).
+      </li>
+      <li>
+        <strong>Deux entrées robustes :</strong>
+        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\), \(C_{\mathrm{Heis}}\approx 0.427\)) et
+        \(\lambda_2\approx 4\pi^2/q^2\) (gap diffusif du tore d’abélianisation).
+      </li>
+      <li>
+        <strong>Résultat model-free :</strong>
+        \(n_1(q)/q\to 0\) — la loi linéaire est exclue hors-échantillon (jusqu’à \(q=601\)).
+      </li>
+      <li>
+        <strong>Couverture constante exclue :</strong>
+        \(x_1\) chute \(0.61\to 0.15\) sur \(q=101\to 601\), écartant le scénario en \(\sqrt{q}\)
+        pur ; les lectures survivantes sont sous-\(\sqrt{q}\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Le problème ouvert</h2>
+    <p>
+      En admettant l’ansatz d’échelle de couverture \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\), le critère de
+      fenêtre \(\sigma(n_1)=\varepsilon_{\mathrm{sat}}\) devient
+      \[ \Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q, \]
+      un seuil fixe contre un \(1/q\) explicite. Cette unique tension est le front mathématique : elle
+      force \(x_1\) à décroître avec \(q\) et gouverne si cette décroissance est logarithmique ou une
+      puissance résiduelle.
+    </p>
+    <p>
+      Le livrable ouvert est une loi structurelle pour \(x_1(q)\), dérivée d’une estimation
+      shellwise Weil–BFS contrôlée par \(\lambda_2\), dont la loi de profondeur \(n_1(q)\) est un
+      corollaire. La même machinerie est le pont vers les profondeurs par génération \(n_g\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      La note est compagne d’<a href="../o28">O28</a> au sein du sous-programme d’admissibilité
+      spectrale. Elle maintient O28 limité à sa conclusion robuste et model-free
+      (\(n_1(q)/q\to 0\)) tout en portant séparément la reformulation plus analytique — la réduction
+      à \(x_1(q)\).
+    </p>
+    <p>
+      Elle dépend d’<a href="../o9">O9</a> (croissance de Heisenberg, \(D=4\)),
+      d’<a href="../o25">O25</a> et <a href="../o28">O28</a> (les mesures de profondeur de
+      saturation), et du gap spectral diffusif du graphe de Cayley de Heisenberg.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.21049163">
+        <i lang="en">Critical Coverage and the Saturation Depth Problem</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

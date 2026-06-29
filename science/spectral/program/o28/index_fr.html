@@ -75,9 +75,13 @@ paint-order: stroke; stroke: currentColor;"
           effective de la trajectoire admissible via l’opérateur de covariance.</strong>
       </p>
       <p>
-        L’article extrait \(n_1(q)\) à partir de fenêtres auto-calibrées, établit une loi
-        de croissance stable, et réalise le calcul de covariance dans l’espace de projection
-        admissible \(H_{\mathrm{eff}}\).
+        L’article extrait \(n_1(q)\) à partir de fenêtres auto-calibrées et réalise le calcul de
+        covariance dans l’espace de projection admissible \(H_{\mathrm{eff}}\). Une extension
+        hors-échantillon (jusqu’à \(q=601\)) montre que la profondeur de fenêtre croît de manière
+        <strong>sous-linéaire</strong> : la loi linéaire échoue hors-échantillon et
+        \(n_1(q)/q \to 0\) (seule l’hypothèse d’échelle linéaire est exclue ; la loi asymptotique est
+        reformulée autour de la couverture critique \(x_1(q)\) dans la
+        <a href="../critical-coverage">note Couverture critique</a>).
       </p>
       <p>
         Cela met en évidence une structure de rang 3 pleinement saturée et isole précisément
@@ -114,8 +118,9 @@ paint-order: stroke; stroke: currentColor;"
     <ul>
       <li>
         <strong>Calibration de la fenêtre BFS :</strong>
-        extraction de \(n_1(q)\) et mise en évidence d’une loi linéaire
-        \(n_1(q) \approx \hat{\alpha} q + \hat{\beta}\).
+        extraction de \(n_1(q)\) ; la loi linéaire \(n_1(q) \approx \hat{\alpha} q + \hat{\beta}\)
+        calibrée sur \(q\le 211\) échoue hors-échantillon (jusqu’à \(q=601\)), donnant
+        \(n_1(q)/q \to 0\).
       </li>
       <li>
         <strong>Variable asymptotique identifiée :</strong>

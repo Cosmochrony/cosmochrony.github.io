@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Charged-Lepton Koide Relation as a Unit-Dispersion Constraint | Cosmochrony</title>
+  <meta name="description"
+    content="The Koide relation is exactly unit relative dispersion of the square-root masses: Q_l = (1 + CV^2)/3, so Q_l = 2/3 iff CV(sqrt m) = 1 (standard deviation equal to mean). A scale-free target invariant separating the dispersion constraint from the hierarchy phase; an open maximum-entropy test."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Charged-Lepton Koide Relation as a Unit-Dispersion Constraint"/>
+  <meta property="og:description"
+    content="Koide iff CV(sqrt m) = 1 (std = mean). The committed cascade ladder under-disperses (CV <= 1/sqrt2), so it cannot reach it; a maximum-entropy reading is recorded as an open test. A target invariant, not a mass formula."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/koide-unit-dispersion/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/koide-unit-dispersion/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Charged-Lepton Koide Relation as a Unit-Dispersion Constraint</h1>
+        <p class="subtitle">
+          $Q_\ell = (1 + \mathrm{CV}(r_\ell)^2)/3$ — the Koide relation is equivalent to unit relative dispersion
+          of the square-root masses, $\mathrm{CV}(\sqrt m) = 1$ (standard deviation equal to mean).
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21109812" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.21109812</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This source note fixes the phenomenological target of the charged-lepton mass sector of the
+        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a> as a single
+        scale-free invariant. Writing the square-root mass vector
+        $r_\ell = (\sqrt{m_e}, \sqrt{m_\mu}, \sqrt{m_\tau})$, the Koide quotient is exactly
+        $Q_\ell = (1 + \mathrm{CV}(r_\ell)^2)/3$ with $\mathrm{CV} = \sigma_r/\bar r$, so that
+        $Q_\ell = 2/3 \iff \mathrm{CV}(r_\ell) = 1$: the square-root masses have standard deviation equal to
+        their mean.
+      </p>
+      <p>
+        This is sharper than “why $3477$” or “why $45^\circ$”, and it separates the intrinsic dispersion content
+        of Koide from the hierarchy. The note does not derive the masses; it isolates a target invariant, and
+        records where the projective cascade under-shoots it and what an entropic derivation would require.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Koide as unit coefficient of variation of $\sqrt m$; a mass-sector target invariant</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21109812">10.5281/zenodo.21109812</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core result</h2>
+    <ul>
+      <li><strong>Unit-dispersion identity.</strong> With mean $\bar r$ and standard deviation $\sigma_r$ of the
+        three components of $r_\ell$, $Q_\ell = (1 + \mathrm{CV}(r_\ell)^2)/3$ exactly, so
+        $Q_\ell = 2/3 \iff \mathrm{CV}(r_\ell) = 1 \iff \sigma_r = \bar r$.</li>
+      <li><strong>Data.</strong> For the pole masses, $\bar r = 17.716$ and $\sigma_r = 17.715$, so
+        $\mathrm{CV}(r_\ell) = 0.99999$ and $Q_\ell = 0.666661$: the square-root mass vector has unit relative
+        dispersion to five digits.</li>
+      <li><strong>One-number dictionary.</strong> $Q$ is monotone in $\mathrm{CV}$: $\mathrm{CV} = 0$ is
+        degenerate ($Q = 1/3$), $\mathrm{CV} = 1/\sqrt2$ is the $Z_2$-ladder value ($Q = 1/2$), and
+        $\mathrm{CV} = 1$ is Koide ($Q = 2/3$).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Dispersion versus hierarchy</h2>
+    <p>
+      The relation fixes only the relative dispersion; it does not say which generation is light. In the cyclic
+      parametrisation $r_g = \bar r\,(1 + \sqrt2\,\cos(\delta + 2\pi g/3))$, the condition $Q_\ell = 2/3$ fixes
+      the amplitude $\sqrt2$ for every phase $\delta$, while $\delta$ places the generations relative to the nodes
+      of the square-root profile (zeros of $1 + \sqrt2\cos\phi$ at $135^\circ, 225^\circ$). The large hierarchy
+      arises when one generation lies near a node — for the observed masses the electron sits about $2.6^\circ$
+      from the $135^\circ$ node, so $\sqrt{m_e}$ is nearly annulled by interference. The two targets are therefore
+      distinct: $\mathrm{CV}(\sqrt m) = 1$ (Koide, scale-free), and the node placement of $\delta$ (the concrete
+      hierarchy), the latter being the harder, exponentially sensitive residue.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Cascade-ladder obstruction</h2>
+    <p>
+      The projected generation levels form the pinned ladder $(1, \tfrac12 + u, \tfrac12 - u)$, with the top fixed
+      at $1$ and the lower pair centred at $\tfrac12$. Its dispersion is bounded: $\mathrm{CV} \le 1/\sqrt2$ and
+      $Q \le 1/2$, with equality only at the singular endpoint $(1,1,0)$. The committed Yukawa carrier
+      $H_\Pi^{1/2} = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$ gives, at the dictionary
+      value $u = 1/10$, a square-root mass coefficient of variation $\mathrm{CV}(r_\ell) \in [0.09, 0.37]$, far
+      below unity, and the single overall norm $\lambda_Y$ cancels in $\mathrm{CV}$. So the maximum-entropy
+      carrier of $\mathrm{CV} = 1$ cannot be the square root of the projected level ladder.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Maximum-entropy reading (open test)</h2>
+    <p>
+      Unit coefficient of variation, $\sigma_r = \bar r$, is the signature of the exponential — the maximum-entropy
+      distribution on $\mathbb{R}_+$ at fixed mean. The crux is not the existence of an entropy but the constraint:
+      only a first-moment condition on $\sqrt m$ gives $\mathrm{CV} = 1$. Fixing instead the natural quadratic norm
+      $\langle m \rangle$ gives the half-normal value $\mathrm{CV} = 0.756$; fixing the support gives the uniform
+      value $\mathrm{CV} = 0.577$. Reaching $\mathrm{CV} = 1$ requires fixing the <em>linear</em> sum
+      $\langle \sqrt m \rangle$ alone. A structural hook would make this natural: the non-injective pushforward
+      combines fibre content linearly, $\nu(o) = \sum_{\text{fibre}} \mu$, so if $\sqrt m$ is that linearly summed
+      fibre content, its total is the conserved datum and the first-moment constraint is forced.
+    </p>
+    <p>
+      <strong>The true lock.</strong> Even granting the constraint, $\mathrm{CV} = 1$ is a property of the
+      continuous exponential; three discrete masses do not inherit it. Maximising the entropy of the three discrete
+      weights at fixed sum gives the uniform distribution — equal square-root masses, $\mathrm{CV} = 0$, the
+      degenerate case. Natural three-point realisations of the exponential are recipe-dependent and none is pinned
+      at unity (tercile means $\approx 0.81$, quantiles $\approx 0.76$, sample coefficient of variation of three
+      draws $\approx 0.65$). The genuine open problem is therefore whether a forced underlying continuous
+      generation coordinate has the three generations as forced realisations whose discrete coefficient of
+      variation is exactly $1$. Absent such a bridge, unit dispersion is a target invariant, not a derivation.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status</h2>
+    <p>
+      <strong>Exact.</strong> The identity $Q_\ell = (1 + \mathrm{CV}(r_\ell)^2)/3$ and the equivalence
+      $Q_\ell = 2/3 \iff \mathrm{CV}(r_\ell) = 1$.
+    </p>
+    <p>
+      <strong>Obstruction.</strong> The pinned cascade ladder has $\mathrm{CV} \le 1/\sqrt2$, and the committed
+      Yukawa carrier gives $\mathrm{CV}(r_\ell) \in [0.09, 0.37]$; the observed unit dispersion is reached by no
+      presently named mechanism of the projective cascade.
+    </p>
+    <p>
+      <strong>Open.</strong> The maximum-entropy route, whose crux is a first-moment constraint on $\sqrt m$ and a
+      forced discrete-to-continuous bridge; and, harder still, the concrete hierarchy — the node placement fixed by
+      the phase $\delta$ — which is where the genuine residue of the charged-lepton hierarchy remains.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic matter
+      sub-programme</a>. It is downstream of the
+      <a href="/science/fermionic-matter/projected-yukawa-line/" class="inline-link">projected Yukawa line</a> and
+      <a href="/science/fermionic-matter/projected-yukawa-operator/" class="inline-link">operator</a> notes, whose
+      level ladder it shows to under-disperse, and it points the entropic reading at the projection entropy of the
+      non-injective projection. The mass target it isolates is not fixed by the projected Yukawa line itself; it is
+      recorded here separately as the unit-dispersion Koide target.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">The Charged-Lepton Koide Relation as a Unit-Dispersion Constraint</i>. Working
+      paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21109812" rel="noopener">10.5281/zenodo.21109812</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

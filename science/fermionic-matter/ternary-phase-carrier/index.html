@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ternary Phase Carrier: Colour, Generations, and Koide Dispersion | Cosmochrony</title>
+  <meta name="description"
+    content="A speculative carrier hypothesis: one complex three-phase carrier z_g = S + A e^{i(delta+2 pi g/3)} whose pure-phase part sums to zero (colour-neutral) and whose real part is the square-root mass profile. The singlet amplitude S is the master dial linking confinement, generation masses, and the Koide unit dispersion. Not a derivation."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Ternary Phase Carrier: Colour, Generations, and Koide Dispersion"/>
+  <meta property="og:description"
+    content="One three-phase carrier read two ways: sum-zero pure phase (confined colour) and real offset (masses). S=0 colour, S=||doublet|| Koide equipartition (CV=1), delta near a node the hierarchy. A speculative bridge with an explicit construction charge sheet."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/ternary-phase-carrier/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/ternary-phase-carrier/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Ternary Phase Carrier: Colour, Generations, and Koide Dispersion</h1>
+        <p class="subtitle">
+          One complex three-phase carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$ read two ways: sum-zero pure
+          phase (confined colour) and real offset (masses), with the singlet amplitude $S$ as the master dial.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21115977" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.21115977</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This note records a single carrier hypothesis that would relate three otherwise separate facts of the
+        <a href="/science/fermionic-matter/" class="inline-link">fermionic sector</a>: the non-observability of
+        individual colours in the confined regime, the appearance of three massive generations, and the
+        unit-dispersion (Koide) shape of the charged-lepton square-root masses. The proposal is one complex
+        three-phase carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$, $g = 0,1,2$, read in two ways.
+      </p>
+      <p>
+        Its pure-phase part sums to zero over the three cube-root phases ($1 + \omega + \omega^2 = 0$), a
+        collective and exact cancellation identified with a colour-neutral class; its real part $S + A\cos(\delta +
+        2\pi g/3)$ is the square-root mass profile of the
+        <a href="/science/fermionic-matter/koide-unit-dispersion/" class="inline-link">unit-dispersion note</a>.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This is a <em>speculative bridge</em>, not a derivation. It does not
+        derive the Standard-Model charge assignments, anomaly cancellation, or the charged-lepton masses. The
+        authoritative reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">One three-phase carrier linking confinement, generations, and Koide dispersion</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper, speculative bridge (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21115977">10.5281/zenodo.21115977</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>The singlet amplitude as the master dial</h2>
+    <p>
+      Reading the carrier through the singlet (democratic) amplitude $S$ organises the three facts as three
+      settings of one dial together with one phase.
+    </p>
+    <table class="data">
+      <thead><tr><th>regime</th><th>carrier reading</th><th>phenomenon</th></tr></thead>
+      <tbody>
+        <tr><td>$S = 0$</td><td>pure phase, $\sum_g e^{i\phi_g} = 0$</td><td>colour-neutral (confined)</td></tr>
+        <tr><td>$S \neq 0$</td><td>real offset, positive values</td><td>massive sector opens</td></tr>
+        <tr><td>$S = \lVert\text{doublet}\rVert$</td><td>singlet–doublet equipartition</td><td>Koide dispersion ($\mathrm{CV}=1$)</td></tr>
+        <tr><td>$\delta$ near a node</td><td>one real amplitude annulled</td><td>hierarchy (light electron)</td></tr>
+      </tbody>
+    </table>
+    <p>
+      For three cosines $120^\circ$ apart, $\langle\cos^2\rangle = 1/2$, so the oscillating component has effective
+      norm $A/\sqrt2$; equality of the differentiating and democratic norms, $A/\sqrt2 = S$, is the single
+      condition $\mathrm{CV}(r) = 1$, the unit-dispersion form of Koide (angle $45^\circ$ to the democratic axis).
+      The whole hypothesis compresses to one sentence: colour is the pure-phase sum-zero regime, mass is the
+      real-offset singlet-balanced regime, hierarchy is the residual phase placement relative to a node.
+    </p>
+  </section>
+  <section class="card">
+    <h2>A candidate admissibility filter</h2>
+    <p>
+      Decomposing the real profile into its democratic and differentiating parts gives
+      $\lVert r_{\mathrm{dbl}}\rVert / \lVert r_{\mathrm{sing}}\rVert = \mathrm{CV}(r)$, so the Koide value is the
+      balanced condition $\lVert r_{\mathrm{dbl}}\rVert = \lVert r_{\mathrm{sing}}\rVert$. This is <em>not</em> a
+      positivity edge (the continuous envelope is positive only up to $\mathrm{CV} = 1/\sqrt2$, and the positive
+      cone reaches $\mathrm{CV} = \sqrt2$; the Koide value lies strictly between). The candidate filter is a
+      discrete capacity balance, $\lVert r_{\mathrm{dbl}}\rVert \le \lVert r_{\mathrm{sing}}\rVert$, saturated at
+      $\mathrm{CV} = 1$: the differentiating generation doublet may spend at most the capacity carried by the
+      democratic singlet. The open question is which projective capacity or entropy principle forbids the excess;
+      until such an object is exhibited, the filter is a structured open test.
+    </p>
+  </section>
+  <section class="card">
+    <h2>The construction charge sheet</h2>
+    <p>
+      A carrier hypothesis of this kind is a front of construction, not a result. The leptons are <em>not</em> to
+      be read as hidden coloured composites: they are observed as exact colour singlets and pointlike. The safe
+      statement is that the lepton sector retains a projective trace of the ternary carrier while its colour
+      component is exactly neutralised in the observable. Any realisation must discharge, at least:
+    </p>
+    <ol>
+      <li>produce an <em>exact</em> colour singlet (the sum-zero regime, not an approximate one);</li>
+      <li>keep three <em>discernible</em> generations after neutralisation;</li>
+      <li>reproduce the leptons' weak isospin and hypercharge assignments;</li>
+      <li>preserve gauge-anomaly cancellation generation by generation;</li>
+      <li>explain the selection rule: why the quark regime keeps an observable colour residue while the lepton
+        regime cancels it exactly.</li>
+    </ol>
+    <p>
+      Items 4 and 5 are where the real work sits. In particular the colour-to-generation breaking the carrier would
+      require along the neutralisation route is the one already shown closed in the corpus by the exact colour
+      degeneracy and the forgetful colour projection: the breaking must come from elsewhere.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status</h2>
+    <p>
+      The carrier's exact pure-phase sum-zero and the coincidence of its real part with the square-root mass
+      profile are exact algebra. The organisation of colour, mass, and Koide dispersion as three settings of the
+      singlet dial $S$ plus one phase $\delta$ is a <em>reading</em>, internally consistent and economical, but not
+      derived. This note does not fix the equipartition value $A = \sqrt2\,S$, does not fix the node phase
+      $\delta$, and does not derive the Standard-Model quantum numbers or anomaly cancellation. Whether the
+      projection entropy of the non-injective map, or a related variational principle, forces the balanced setting
+      of the dial is the same open test recorded for the
+      <a href="/science/fermionic-matter/koide-unit-dispersion/" class="inline-link">unit-dispersion target</a>,
+      now phrased on the carrier. The working conclusion is only that the three facts <em>can</em> be written as
+      one carrier read three ways — a candidate bridge, held at the level of a speculative outlook.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic matter
+      sub-programme</a>. It combines the confined colour triplet of the non-injective colour projection with the
+      square-root mass profile of the
+      <a href="/science/fermionic-matter/koide-unit-dispersion/" class="inline-link">unit-dispersion note</a>,
+      proposing them as two regimes of one three-phase carrier. It is kept separate from the clean unit-dispersion
+      result precisely because it is broader and speculative.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Ternary Phase Carrier: Colour Confinement, Generation Splitting, and Koide
+      Dispersion</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21115977" rel="noopener">10.5281/zenodo.21115977</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

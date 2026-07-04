@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projective Trajectory Branching and the de Sitter Limit | Cosmochrony</title>
+  <meta name="description"
+    content="Heisenberg balls grow polynomially, yet the number of projectively distinguishable histories grows exponentially: the canonical channel counts them by the Pell recurrence, with rate log(1+sqrt(2)). A structural, matter-independent de Sitter-like component."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Projective Trajectory Branching and the de Sitter Limit"/>
+  <meta property="og:description"
+    content="Exponential growth survives the LPS-to-Heisenberg transfer only at the level of projectively distinguishable histories: exact Pell count, rate h_b = log(1+sqrt(2)), proved for a generic probe and verified exactly at q=211."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/cosmology/trajectory-branching/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/cosmology/trajectory-branching/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Projective Trajectory Branching and the de Sitter Limit</h1>
+        <p class="subtitle">
+          Heisenberg state volumes grow polynomially, yet projectively distinguishable histories grow
+          exponentially: the canonical channel counts them by the Pell recurrence, with rate
+          $h_b = \log(1+\sqrt{2})$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21197757" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.21197757</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The historical de Sitter solution shows that accelerated expansion can be a property of geometry itself
+        rather than a consequence of matter content. This note identifies the projective analogue of that
+        statement inside the spectral admissibility cascade. The result does <em>not</em> claim that Heisenberg
+        balls grow exponentially — they do not: their growth is polynomial of degree four (Bass–Guivarc'h). The
+        exponential component survives the transfer from LPS expander graphs to the Heisenberg substrate only
+        after replacing endpoint counting by the counting of <em>projectively distinguishable trajectories</em>.
+      </p>
+      <p>
+        For the canonical channel compatible with the exact Weil-block pipeline, the distinguishable-history
+        count is pinned exactly: it is the Pell count $N(n) = 2N(n-1) + N(n-2) = 3, 7, 17, 41, 99, \ldots$, with
+        asymptotic rate $h_b = \log(1+\sqrt{2})$, proved for a generic probe and verified exactly on the sampled
+        multi-prime campaign.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Working paper (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Exponential growth of projectively distinguishable histories on a polynomial-growth
+            substrate; Pell rate $\log(1+\sqrt2)$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21197757">10.5281/zenodo.21197757</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li><strong>Endpoint no-go (proved).</strong> Any distinguishability notion that is a function of the final
+        Heisenberg element — including its central register, which stores only the level-two term of the path
+        signature — has polynomial growth and zero exponential rate. Acceleration cannot be driven by state
+        counting.</li>
+      <li><strong>The $b$-only theorem (proved).</strong> The canonical residual channel of the Weil-block
+        pipeline is Fourier-aligned: residual norms are invariant under translation and under the central phase,
+        so a single path's profile depends only on the abelian shadow $b_1,\dots,b_n$ of the trajectory. The
+        central charge is unconditionally erased from mono-path norms — the precise content of the erased
+        fibre.</li>
+      <li><strong>The Pell rate (proved, generic probe).</strong> Distinct $b$-shadows induce distinct profiles
+        for every probe outside a finite union of proper hypersurfaces, so the distinguishable-history count
+        equals the Pell count, $N(n)=2N(n-1)+N(n-2)$, and $h_b=\log(1+\sqrt2)\approx 0.8814$.</li>
+      <li><strong>Exact numerical witness.</strong> At $q=211$, over $10^5$ sampled trajectories, profiles and
+        $b$-sequences match one-to-one at machine precision at every depth, and the measured entropy rate
+        converges to the proved ceiling at fine resolution.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>The full-history channel (open front)</h2>
+    <p>
+      A self-consistent variant replaces the pipeline basis by a Gabor system built from the same generic
+      reference state. Its rank grows deterministically as the abelian disk count $2k^2+2k+1$ at every shell —
+      the full-spark behaviour of generic Gabor systems in prime dimension — and the channel then carries the
+      full $(a,b)$-shadow, which determines the entire word. The measured rate transiently approaches the full
+      non-backtracking entropy $\log 3$ and then <em>genuinely compresses</em> before finite-size saturation:
+      profiles merge while the alphabet stays rich. This compression profile is the natural candidate for an
+      evolving effective equation of state $w(n)$, but its cosmological use remains conditional on a canonical
+      identification of the full-history projective observable. It is retained as an open front, not a deposited
+      mechanism.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Cosmological status</h2>
+    <p>
+      The corrected transfer statement is structural: the LPS $\to$ Heisenberg transition does not kill the
+      two-regime expansion mechanism, it relocates it. Endpoint volumes are polynomial; non-backtracking
+      histories are exponentially redundant; endpoint-based compression collapses; projective distinguishability
+      escapes the no-go; and the canonical channel pins the surviving rate at $h_b=\log(1+\sqrt2)$. In the
+      de Sitter reading, the accelerated component is not a negative-pressure substance but the positive entropy
+      rate of admissible projection histories — expansion as a property of the projective dynamics itself,
+      independent of matter content. The early window, where profiles are still projectively degenerate,
+      reproduces the decelerated regime of the two-regime model before branching takes over.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      The note answers the transfer question left open by the
+      <a href="/science/spectral/" class="inline-link">spectral relaxation paper</a>, which proposed the
+      two-regime expansion model on LPS expanders and deferred its formalisation to the cosmological branch. It
+      builds directly on the exact Weil-block pipeline of the admissibility sub-programme and supplies the
+      structural bridge to the <a href="/science/cosmology/" class="inline-link">cosmology paper</a>: a
+      de Sitter-like asymptotic component that does not rely on dark energy as a substance. The evolving
+      equation-of-state question is deliberately left with the full-history compression front.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projective Trajectory Branching and the de Sitter Limit</i>. Working paper,
+      2026.
+      <a href="https://doi.org/10.5281/zenodo.21197757" rel="noopener">10.5281/zenodo.21197757</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Branchement projectif des trajectoires et limite de Sitter | Cosmochronie</title>
+  <meta name="description"
+    content="Les boules de Heisenberg croissent polynomialement, mais le nombre d'histoires projectivement distinguables croît exponentiellement : le canal canonique les compte par la récurrence de Pell, au taux log(1+racine(2)). Une composante de type de Sitter, structurelle et indépendante de la matière."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Branchement projectif des trajectoires et limite de Sitter"/>
+  <meta property="og:description"
+    content="La croissance exponentielle survit au transfert LPS vers Heisenberg uniquement au niveau des histoires projectivement distinguables : comptage de Pell exact, taux h_b = log(1+racine(2)), prouvé pour une sonde générique et vérifié exactement à q=211."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/cosmology/trajectory-branching/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/cosmology/trajectory-branching/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Branchement projectif des trajectoires et limite de Sitter</h1>
+        <p class="subtitle">
+          Les volumes d'états de Heisenberg croissent polynomialement, mais les histoires projectivement
+          distinguables croissent exponentiellement : le canal canonique les compte par la récurrence de Pell,
+          au taux $h_b = \log(1+\sqrt{2})$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21197757" rel="noopener">Lire le preprint</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.21197757</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        La solution historique de de Sitter montre qu'une expansion accélérée peut être une propriété de la
+        géométrie elle-même plutôt qu'une conséquence du contenu matériel. Cette note identifie l'analogue
+        projectif de cet énoncé au sein de la cascade d'admissibilité spectrale. Le résultat n'affirme
+        <em>pas</em> que les boules de Heisenberg croissent exponentiellement — elles ne le font pas : leur
+        croissance est polynomiale de degré quatre (Bass–Guivarc'h). La composante exponentielle survit au
+        transfert des graphes expanseurs LPS vers le substrat de Heisenberg uniquement lorsque le comptage des
+        extrémités est remplacé par le comptage des <em>trajectoires projectivement distinguables</em>.
+      </p>
+      <p>
+        Pour le canal canonique compatible avec le pipeline de Weil exact, le comptage des histoires
+        distinguables est épinglé exactement : c'est le comptage de Pell
+        $N(n) = 2N(n-1) + N(n-2) = 3, 7, 17, 41, 99, \ldots$, de taux asymptotique
+        $h_b = \log(1+\sqrt{2})$, prouvé pour une sonde générique et vérifié exactement sur la campagne
+        multi-premiers échantillonnée.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est le preprint lié ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Document de travail (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Objet</div>
+          <div class="v">Croissance exponentielle des histoires projectivement distinguables sur un substrat à
+            croissance polynomiale ; taux de Pell $\log(1+\sqrt2)$</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI concept <a
+            href="https://doi.org/10.5281/zenodo.21197757">10.5281/zenodo.21197757</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats centraux</h2>
+    <ul>
+      <li><strong>No-go des extrémités (prouvé).</strong> Toute notion de distinguabilité fonction de l'élément
+        de Heisenberg final — y compris son registre central, qui ne mémorise que le terme de niveau deux de la
+        signature du chemin — a une croissance polynomiale et un taux exponentiel nul. L'accélération ne peut
+        pas être portée par le comptage d'états.</li>
+      <li><strong>Le théorème b-only (prouvé).</strong> Le canal résiduel canonique du pipeline de Weil est
+        aligné Fourier : les normes résiduelles sont invariantes par translation et par la phase centrale, donc
+        le profil d'un chemin isolé ne dépend que de l'ombre abélienne $b_1,\dots,b_n$ de la trajectoire. La
+        charge centrale est inconditionnellement effacée des normes mono-chemin — le contenu précis de la fibre
+        effacée.</li>
+      <li><strong>Le taux de Pell (prouvé, sonde générique).</strong> Des ombres $b$ distinctes induisent des
+        profils distincts pour toute sonde hors d'une union finie d'hypersurfaces propres, donc le comptage des
+        histoires distinguables égale le comptage de Pell, $N(n)=2N(n-1)+N(n-2)$, et
+        $h_b=\log(1+\sqrt2)\approx 0{,}8814$.</li>
+      <li><strong>Témoin numérique exact.</strong> À $q=211$, sur $10^5$ trajectoires échantillonnées, profils
+        et $b$-séquences se correspondent un à un à précision machine à toutes les profondeurs, et le taux
+        d'entropie mesuré converge vers le plafond prouvé à résolution fine.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Le canal pleine-histoire (front ouvert)</h2>
+    <p>
+      Une variante auto-cohérente remplace la base du pipeline par un système de Gabor construit sur le même
+      état de référence générique. Son rang croît de façon déterministe comme le comptage de disque abélien
+      $2k^2+2k+1$ à chaque shell — le comportement full spark des systèmes de Gabor génériques en dimension
+      première — et le canal porte alors l'ombre $(a,b)$ complète, qui détermine le mot entier. Le taux mesuré
+      approche transitoirement l'entropie non-rebroussante complète $\log 3$ puis <em>compresse
+      authentiquement</em> avant la saturation de taille finie : les profils fusionnent alors que l'alphabet
+      reste riche. Ce profil de compression est le candidat naturel pour une équation d'état effective
+      évolutive $w(n)$, mais son usage cosmologique reste conditionné à une identification canonique de
+      l'observable projective pleine-histoire. Il est conservé comme front ouvert, pas comme mécanisme déposé.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Statut cosmologique</h2>
+    <p>
+      L'énoncé de transfert corrigé est structurel : la transition LPS $\to$ Heisenberg ne tue pas le mécanisme
+      d'expansion à deux régimes, elle le déplace. Les volumes d'extrémités sont polynomiaux ; les histoires
+      non-rebroussantes sont exponentiellement redondantes ; la compression par extrémités s'effondre ; la
+      distinguabilité projective échappe au no-go ; et le canal canonique épingle le taux survivant à
+      $h_b=\log(1+\sqrt2)$. Dans la lecture de Sitter, la composante accélérée n'est pas une substance à
+      pression négative mais le taux d'entropie positif des histoires de projection admissibles — l'expansion
+      comme propriété de la dynamique projective elle-même, indépendante du contenu matériel. La fenêtre
+      précoce, où les profils sont encore projectivement dégénérés, reproduit le régime décéléré du modèle à
+      deux régimes avant que le branchement ne prenne le relais.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Place dans le programme Cosmochronie</h2>
+    <p>
+      La note répond à la question de transfert laissée ouverte par
+      l'<a href="/science/spectral/" class="inline-link">article de relaxation spectrale</a>, qui proposait le
+      modèle d'expansion à deux régimes sur les expanseurs LPS et en déférait la formalisation à la branche
+      cosmologique. Elle s'appuie directement sur le pipeline de Weil exact du sous-programme d'admissibilité
+      et fournit le pont structurel vers l'<a href="/science/cosmology/" class="inline-link">article de
+      cosmologie</a> : une composante asymptotique de type de Sitter qui ne repose pas sur une énergie noire
+      substantielle. La question de l'équation d'état évolutive est délibérément laissée au front de
+      compression pleine-histoire.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projective Trajectory Branching and the de Sitter Limit</i>. Document de
+      travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21197757" rel="noopener">10.5281/zenodo.21197757</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

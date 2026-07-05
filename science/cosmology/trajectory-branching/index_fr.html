@@ -123,7 +123,7 @@
     </ul>
   </section>
   <section class="card">
-    <h2>Le canal pleine-histoire : compression prouvée (v1.1.0)</h2>
+    <h2>Le canal pleine-histoire : compression prouvée et comptage exact (v1.2.0)</h2>
     <p>
       Une variante auto-cohérente remplace la base du pipeline par un système de Gabor construit sur le même
       état de référence générique. Son rang croît de façon déterministe comme le comptage de disque abélien
@@ -131,12 +131,17 @@
       génériques en dimension première. La version 1.1.0 fait passer ce canal d'un profil mesuré à un
       théorème : le span de Gabor épuise le disque abélien $\ell^1$ shell par shell, de sorte qu'une
       trajectoire ne garde un symbole non nul que tant que son ombre abélienne s'éloigne — un seul pas
-      rentrant efface le profil définitivement (<em>mort géodésique</em>). Pour une sonde générique, le
-      comptage d'histoires distinguables est encadré entre $2^n$ et $2^{n+2}$ : le canal porte une entropie
+      rentrant efface le profil définitivement (<em>mort géodésique</em>). Le canal porte une entropie
       symbolique positive et exactement épinglée $\log 2$, strictement sous le taux canonique
-      $\log(1+\sqrt2)$. La compression projective n'est plus seulement observée ; elle a un taux analytique.
-      Le profil de compression à $n$ fini reste le candidat naturel pour une équation d'état effective
-      évolutive $w(n)$, conditionné à une identification canonique de l'observable projective pleine-histoire.
+      $\log(1+\sqrt2)$. La version 1.2.0 fait du comptage lui-même un théorème : pour une sonde générique,
+      le nombre d'histoires distinguables vaut exactement $2^{n+2}-4n-1$. Le dernier pas de séparation — les
+      paires miroir à $|b|$ égal — est fermé en prouvant la non-annulation générique d'un coefficient mixte
+      à deux ancres (un jet hermitien au point orthogonal d'un domaine de moments d'ancres), combinée à une
+      rigidité de Klein des géodésiques sortantes : le miroir $b$ est la seule dégénérescence générique de
+      l'enregistrement projectif des histoires. La compression projective n'est plus seulement observée ;
+      elle est exactement dénombrée. Le profil de compression à $n$ fini reste le candidat naturel pour une
+      équation d'état effective évolutive $w(n)$, conditionné à une identification canonique de l'observable
+      projective pleine-histoire.
     </p>
   </section>
   <section class="card">

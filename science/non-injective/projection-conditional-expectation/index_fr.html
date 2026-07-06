@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>La projection comme espérance conditionnelle et le plafond de capacité | Cosmochrony</title>
+  <meta name="description"
+    content="L'action de la projection non injective sur les amplitudes est dérivée comme l'espérance conditionnelle sur le registre des histoires distinguables, donnant une suppression stricte de la puissance d'ensemble et le plafond de capacité (N-1)/N sans paramètre."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/non-injective/projection-conditional-expectation/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="La projection comme espérance conditionnelle et le plafond de capacité"/>
+  <meta property="og:description"
+    content="Sous quatre hypothèses graduées, la projection agit sur les amplitudes comme une espérance conditionnelle ; un argument débit-distorsion borne alors la puissance retenue d'un mode porté par N histoires distinguables par (N-1)/N."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/projection-conditional-expectation/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/non-injective/projection-conditional-expectation/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>La projection comme espérance conditionnelle et le plafond de capacité</h1>
+        <p class="subtitle">
+          Comment la projection non injective assigne les valeurs observées, et pourquoi peu d'histoires
+          distinguables signifie moins de puissance aux grands angles — pas seulement plus de dispersion.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21227547" rel="noopener">
+        Lire la note
+      </a> <span class="pill">DOI : <span class="mono">10.5281/zenodo.21227547</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Cette courte note structurelle répond à une question laissée ouverte par la note de capacité des bas
+        multipôles : pourquoi un mode porté par seulement $N$ histoires projectives distinguables porte-t-il
+        moins de puissance d'ensemble, plutôt que simplement une variance cosmique plus grande ?
+      </p>
+      <p>
+        La réponse est un théorème de noyau de projection. Sous quatre hypothèses graduées individuellement
+        contre le corpus — invariance de fibre (forcée par le critère d'émergence d'ENI), fixité du contenu
+        déjà résolu, linéarité (le transfert structurel porteur), et non-amplification — l'action de la
+        projection non injective sur les amplitudes de mode est exactement l'espérance conditionnelle sur la
+        sigma-algèbre engendrée par le registre des histoires distinguables. Deux caractérisations classiques
+        indépendantes (projections contractives sur un espace de Hilbert ; opérateurs de moyenne) donnent le
+        même noyau, et la sélection dégradée par distorsion minimale donne le même opérateur.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré. La référence technique faisant
+        autorité est la note liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note de résultat</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Sujets</div>
+          <div class="v">Noyau de projection, espérance conditionnelle, débit–distorsion, puissance des bas
+            multipôles</div>
+        </div>
+        <div class="kv">
+          <div class="k">Portée</div>
+          <div class="v">Dérivation structurelle avec conséquences prouvées sous hypothèses</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Noyau de projection :</strong> sous les quatre hypothèses graduées, l'assignation des
+        amplitudes est l'espérance conditionnelle sur la sigma-algèbre du registre distinguable, par deux
+        routes classiques indépendantes (projections contractives ; opérateurs de moyenne de
+        Moy–Rota–Douglas).</li>
+      <li><strong>Robustesse :</strong> la médiane de fibre montre que l'hypothèse de linéarité est réellement
+        porteuse, et le repli par distorsion minimale laisse l'opérateur inchangé — seul le statut épistémique
+        du principe de sélection peut être dégradé.</li>
+      <li><strong>Théorème entropie–puissance :</strong> par la loi de la variance totale, la puissance
+        d'ensemble projetée est la puissance du substrat moins la variance intra-fibre effacée — suppression
+        stricte dès que les fibres sont non triviales, répondant structurellement à l'objection de la variance
+        cosmique.</li>
+      <li><strong>Plafond de capacité :</strong> un argument débit–distorsion borne la puissance retenue d'un
+        mode gaussien complexe porté par $N$ histoires distinguables par $(N-1)/N$ — sans paramètre ajustable
+        et sans échelle de résolution.</li>
+      <li><strong>Identification :</strong> le plafond coïncide identiquement avec l'enveloppe de Bessel que la
+        note de capacité avait trouvée empiriquement préférée, sans ajustement, face au spectre TT des bas
+        multipôles de Planck — la faisant passer d'heuristique d'estimateur à borne informationnelle.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Ce qui est prouvé et ce qui est interprétatif</h2>
+    <p>
+      Le théorème de noyau, le théorème de suppression et le plafond sont des mathématiques, sous leurs
+      hypothèses. Les hypothèses elles-mêmes sont graduées : l'invariance de fibre est forcée par le critère
+      d'émergence, la fixité en est voisine, la linéarité et la non-amplification sont structurelles, le
+      transfert de linéarité étant identifié comme l'unique étape porteuse. Les identifications cosmologiques
+      — support par mode, indépendance entre modes, dictionnaire rang–temps — restent conditionnelles et
+      appartiennent aux papiers consommateurs. La lecture de la proximité des données de Planck au plafond
+      comme saturation de capacité est explicitement étiquetée interprétation.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Place dans le programme Cosmochrony</h2>
+    <p>
+      La note appartient au sous-programme des fondations non injectives : elle prend en entrée le critère
+      d'émergence d'ENI et les comptages prouvés d'histoires distinguables de la note de branchement de
+      trajectoires, et fournit le convertisseur comptage–puissance consommé par la note de capacité des bas
+      multipôles, par la branche cosmologique, et par toute extraction d'une équation d'état évolutive depuis
+      la compression des histoires complètes.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Projection as Conditional Expectation and the Capacity Ceiling</i>.
+      Note de résultat, Zenodo.
+      <a href="https://doi.org/10.5281/zenodo.21227547" rel="noopener">10.5281/zenodo.21227547</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[["$","$"]]}},svg:{fontCache:"global"}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

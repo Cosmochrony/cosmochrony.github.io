@@ -102,13 +102,16 @@
         paire engendrée par les projecteurs déposés et la dynamique de Harper.
       </p>
       <div class="note" role="note">
-        <strong>Statut (v1.0).</strong> Papier mathématique. Les résultats de somme fermée,
-        d'espacement, de stabilisateur, de symboles de Weyl, de Hecke, de Harper, de mélange
-        et de clôture par parité sont démontrés. La classification du stabilisateur est
-        affinée par un crible de divisibilité ($|A_K|\mid\gcd(q-1,|K|-1)$) et par des familles
-        exactes uniformes $C_4$ ($a^2=-1$) et $C_6$ ($a^2+a+1=0$) ; la complétude de ces deux
-        ordres exceptionnels est vérifiée exhaustivement jusqu'à $q=73$ et par un audit exact
-        échantillonné jusqu'à $q=499$, mais reste une question ouverte formulée précisément.
+        <strong>Statut (v1.1).</strong> Papier mathématique. Les résultats de somme fermée,
+        d'espacement, de stabilisateur, de rigidité, de symboles de Weyl, de Hecke, de Harper,
+        de mélange et de clôture par parité sont démontrés. Un lemme inconditionnel de
+        presque-périodicité montre que tout stabilisateur multiplicatif a un défaut additif
+        exactement $2m$, et un argument de correspondance des runs avec descente diophantienne
+        démontre le théorème de rigidité $A_K=\{\pm1\}$ dès que chaque run et chaque gap de
+        l'ensemble de modes dépasse le nombre de runs $m$. Les familles exactes uniformes
+        $C_4$ ($a^2=-1$), $C_6$ ($a^2+a+1=0$) et $C_4$ près de la saturation ($2w^2+2w+1=0$,
+        complément à quatre points) peuplent le régime dégénéré résiduel, seul endroit où la
+        complétude des ordres exceptionnels reste ouverte.
       </div>
     </div>
     <aside class="card">
@@ -128,8 +131,9 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Noyau exact démontré ; complétude des familles exceptionnelles
-            $C_4$/$C_6$ ouverte ; critère uniforme pour $\Delta_{\theta,c}(K)\ne0$ ouvert</div>
+          <div class="v">Noyau exact démontré ; théorème de rigidité $A_K=\{\pm1\}$ hors du
+            régime dégénéré de frontière (v1.1) ; complétude ouverte seulement dans ce
+            régime ; critère uniforme pour $\Delta_{\theta,c}(K)\ne0$ ouvert</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -163,6 +167,22 @@
         $A_K=\{\pm1\}$ ; des familles exceptionnelles exactes donnent $C_4$ (via $a^2=-1$) et
         $C_6$ (via $a^2+a+1=0$), les extensions vers $C_8$ et $C_{18}$ étant exclues
         analytiquement.
+      </li>
+      <li>
+        <strong>Rigidité additive (v1.1) :</strong> tout $a\in A_K$ satisfait
+        $|K\,\Delta\,(K+a)|=2m$ (presque-périodicité inconditionnelle) ; si chaque run et
+        chaque gap de $K$ dépasse le nombre de runs $m$, une permutation de correspondance
+        des runs donne $ma\equiv t$, $0&lt;|t|\le m$, et une descente diophantienne force
+        $A_K=\{\pm1\}$. Les stabilisateurs exceptionnels sont ainsi confinés au régime
+        dégénéré de frontière.
+      </li>
+      <li>
+        <strong>Famille $C_4$ près de la saturation (v1.1) :</strong> un complément à quatre
+        points $K^c=\{w,w{+}1,-w{-}1,-w\}$ porte $A_K\cong C_4$ exactement lorsque
+        $2w^2+2w+1\equiv0\pmod q$ (résoluble ssi $q\equiv1\pmod4$), de générateur
+        $(w{+}1)/w$ ; réalisée par des blocs déposés à $q=73,109,173$. Pour tout
+        $|K^c|=4$, $|A_K|$ divise quatre et le cas d'ordre quatre est une orbite libre
+        unique.
       </li>
       <li>
         <strong>Porteur de Mackey interne :</strong>
@@ -257,8 +277,9 @@
   <section class="card">
     <h2>Questions ouvertes</h2>
     <ul>
-      <li>Démontrer ou réfuter que $C_2$, $C_4$, $C_6$ épuisent les stabilisateurs
-        multiplicatifs $A_K$ des ensembles de modes propres à neuf centres de même rayon.</li>
+      <li>Classifier le régime dégénéré de frontière (un run ou un gap de longueur au plus
+        $m$) : démontrer ou réfuter que les ordres exceptionnels $C_4$ et $C_6$ l'épuisent.
+        Hors de ce régime, $A_K=\{\pm1\}$ est démontré (v1.1).</li>
       <li>Trouver un critère arithmétique uniforme pour $\Delta_{\theta,c}(K)\ne0$.</li>
       <li>Déterminer la distribution asymptotique des profondeurs poreuses.</li>
     </ul>

@@ -10,8 +10,8 @@
     content="O33 donne l'arithmétique exacte de la filtration de Fourier à trois caractères
     d'O12 : ensemble somme cyclique fermé, critère de porosité par parité des espacements,
     stabilisateur de Weil complet via A_K, doublets de Mackey–Hecke M₂(C) internes,
-    séparation de Harper universelle 1±q^(−1/2), déterminant de mélange cyclotomique et
-    protection par parité du secteur impair."/>
+    séparation de Harper universelle 1±q^(−1/2), critère de mélange de frontière
+    complètement résolu et protection par parité du secteur impair."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o33/"/>
   <meta name="robots" content="index,follow"/>
@@ -21,7 +21,7 @@
   <meta property="og:description"
     content="Ensemble somme fermé pour la filtration O12 ; stabilisateur complet via A_K avec
     familles exceptionnelles uniformes C₄ et C₆ ; doublets de multiplicité M₂(C) canoniques ;
-    séparation de Harper 1±q^(−1/2) ; critère de mélange cyclotomique exact ; secteur impair
+    séparation de Harper 1±q^(−1/2) ; critère de mélange complètement résolu ; secteur impair
     protégé par parité."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o33/index_fr.html"/>
@@ -55,7 +55,7 @@
           critère de porosité par parité des espacements, stabilisateur de Weil complet via le
           groupe multiplicatif $A_K$, doublets de Mackey–Hecke $M_2(\mathbb{C})$ canoniques
           dans $\mathrm{End}(V_\rho)$, séparation de Harper universelle $1\pm q^{-1/2}$, et
-          critère cyclotomique exact pour le mélange induit par la frontière.
+          critère arithmétique complètement résolu pour le mélange induit par la frontière.
         </p>
       </div>
     </div>
@@ -96,13 +96,15 @@
         paires canoniques de multiplicité deux, de commutant de Hecke $M_2(\mathbb{C})$
         complet. L'opérateur de Harper fini oriente chaque doublet avec la séparation
         normalisée universelle $1\pm q^{-1/2}$, et le résidu du secteur éliminé fournit un
-        second axe exactement lorsque un déterminant de phase cyclotomique explicite
-        $\Delta_{\theta,c}(K)$ est non nul. Le secteur impair des symboles de Weyl est un
+        second axe exactement lorsque la courte somme de caractères de frontière
+        $C_\theta(K)$ est non nulle : un théorème de séparation galoisienne (v1.3) élimine le
+        déterminant de phase cyclotomique, et les zéros de $C_\theta(K)$ sont complètement
+        classifiés sur au plus quatre paires de trous. Le secteur impair des symboles de Weyl est un
         réservoir de doublets purs pour $q\equiv1\pmod4$, exactement protégé par l'algèbre
         paire engendrée par les projecteurs déposés et la dynamique de Harper.
       </p>
       <div class="note" role="note">
-        <strong>Statut (v1.1).</strong> Papier mathématique. Les résultats de somme fermée,
+        <strong>Statut (v1.3).</strong> Papier mathématique. Les résultats de somme fermée,
         d'espacement, de stabilisateur, de rigidité, de symboles de Weyl, de Hecke, de Harper,
         de mélange et de clôture par parité sont démontrés. Un lemme inconditionnel de
         presque-périodicité montre que tout stabilisateur multiplicatif a un défaut additif
@@ -111,7 +113,10 @@
         l'ensemble de modes dépasse le nombre de runs $m$. Les familles exactes uniformes
         $C_4$ ($a^2=-1$), $C_6$ ($a^2+a+1=0$) et $C_4$ près de la saturation ($2w^2+2w+1=0$,
         complément à quatre points) peuplent le régime dégénéré résiduel, seul endroit où la
-        complétude des ordres exceptionnels reste ouverte.
+        complétude des ordres exceptionnels reste ouverte. Depuis la v1.3, le critère de
+        mélange est fermé : un théorème de séparation galoisienne le réduit à
+        $C_\theta(K)\ne0$, et le lieu d'annulation est complètement classifié en mécanismes
+        de paire antipodale, de triplet cubique et de double paire.
       </div>
     </div>
     <aside class="card">
@@ -133,7 +138,7 @@
           <div class="k">Statut</div>
           <div class="v">Noyau exact démontré ; théorème de rigidité $A_K=\{\pm1\}$ hors du
             régime dégénéré de frontière (v1.1) ; complétude ouverte seulement dans ce
-            régime ; critère uniforme pour $\Delta_{\theta,c}(K)\ne0$ ouvert</div>
+            régime ; critère de mélange complètement résolu (v1.3)</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -210,6 +215,20 @@
         $\mathfrak{su}(2)$ canonique s'ensuit.
       </li>
       <li>
+        <strong>Séparation galoisienne (v1.3) :</strong>
+        $\Delta_{\theta,c}(K)\ne0\iff C_\theta(K)\ne0$ pour tout caractère d'ordre supérieur
+        à deux : les automorphismes cyclotomiques fixant $\zeta_{q-1}$ et déplaçant $\zeta_q$
+        rendent impossible tout alignement de phase non trivial.
+      </li>
+      <li>
+        <strong>Classification complète des zéros (v1.3) :</strong> les paires de trous sont
+        géométriquement bornées par quatre, et $C_\theta(K)=0$ survient exactement par une
+        paire antipodale $\theta(h_1/h_2)=-1$, un triplet cubique (rapports égaux aux deux
+        racines cubiques primitives) ou une double paire antipodale ; chaque mécanisme est une
+        condition de caractère explicite sur des fonctions rationnelles des paramètres du
+        bloc.
+      </li>
+      <li>
         <strong>Protection par parité :</strong> l'algèbre étoilée unitale engendrée par les
         projecteurs déposés et la dynamique de Harper est paire et a une projection
         exactement nulle sur le secteur impair $\mathcal{D}_-$, lui-même réservoir de doublets
@@ -230,11 +249,16 @@
       Les audits du stabilisateur ne trouvent que les ordres deux, quatre et six :
       exhaustivement pour tous les premiers $13\le q\le73$, et sur 12 234 survivants du crible
       de divisibilité d'un audit exact échantillonné jusqu'à $q=499$. Les familles uniformes
-      $C_4$ et $C_6$ sont vérifiées pour chaque premier applicable jusqu'à $q=997$. Parmi
-      1 186 cas poreux du balayage, exactement 50 présentent des annulations cyclotomiques
-      exactes de la somme de caractères de frontière $C_\theta(K)$ : la porosité seule
-      n'implique donc pas le mélange ; le non-alignement exact du déterminant de phase est
-      certifié pour les huit cas déposés.
+      $C_4$ et $C_6$ sont vérifiées pour chaque premier applicable jusqu'à $q=997$.
+    </p>
+    <p>
+      La classification des zéros (v1.3) est vérifiée par deux calculs exacts indépendants sur
+      chaque instance : exhaustivement sur tous les blocs normalisés et profondeurs
+      pré-saturation pour $7\le q\le73$, puis par balayage échantillonné jusqu'à $q=311$, soit
+      31 166 cas poreux et 1 069 192 tests de zéro exacts sans aucun désaccord. Les zéros se
+      répartissent en 3 620 facteurs à paire antipodale, 1 030 à triplet cubique et six à
+      double paire ; la porosité seule n'implique donc pas le mélange, mais chaque mécanisme
+      d'échec est désormais classifié.
     </p>
   </section>
   <section class="card">
@@ -280,7 +304,6 @@
       <li>Classifier le régime dégénéré de frontière (un run ou un gap de longueur au plus
         $m$) : démontrer ou réfuter que les ordres exceptionnels $C_4$ et $C_6$ l'épuisent.
         Hors de ce régime, $A_K=\{\pm1\}$ est démontré (v1.1).</li>
-      <li>Trouver un critère arithmétique uniforme pour $\Delta_{\theta,c}(K)\ne0$.</li>
       <li>Déterminer la distribution asymptotique des profondeurs poreuses.</li>
     </ul>
   </section>

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Doublets arithmétiques de Mackey–Hecke dans les filtrations de Weil finies |
+    Cosmochrony</title>
+  <meta name="description"
+    content="O33 donne l'arithmétique exacte de la filtration de Fourier à trois caractères
+    d'O12 : ensemble somme cyclique fermé, critère de porosité par parité des espacements,
+    stabilisateur de Weil complet via A_K, doublets de Mackey–Hecke M₂(C) internes,
+    séparation de Harper universelle 1±q^(−1/2), déterminant de mélange cyclotomique et
+    protection par parité du secteur impair."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o33/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Doublets arithmétiques de Mackey–Hecke dans les filtrations de Weil finies :
+    mélange induit par la frontière et protection par parité"/>
+  <meta property="og:description"
+    content="Ensemble somme fermé pour la filtration O12 ; stabilisateur complet via A_K avec
+    familles exceptionnelles uniformes C₄ et C₆ ; doublets de multiplicité M₂(C) canoniques ;
+    séparation de Harper 1±q^(−1/2) ; critère de mélange cyclotomique exact ; secteur impair
+    protégé par parité."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o33/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/o33/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/index_fr.html" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Doublets arithmétiques de Mackey–Hecke dans les filtrations de Weil finies :
+          mélange induit par la frontière et protection par parité</h1>
+        <p class="subtitle">
+          O33 rend exacte l'arithmétique de la filtration cumulative
+          d'<a href="../o12/index_fr.html">O12</a> : ensemble somme cyclique fermé $K_n$,
+          critère de porosité par parité des espacements, stabilisateur de Weil complet via le
+          groupe multiplicatif $A_K$, doublets de Mackey–Hecke $M_2(\mathbb{C})$ canoniques
+          dans $\mathrm{End}(V_\rho)$, séparation de Harper universelle $1\pm q^{-1/2}$, et
+          critère cyclotomique exact pour le mélange induit par la frontière.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21360722">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Le calcul d'admissibilité spectrale d'<a href="../o12/index_fr.html">O12</a> filtre le
+        module de Weil fini par profondeur BFS au moyen d'empreintes de Heisenberg à trois
+        caractères. O33 démontre que cette filtration est une filtration en coordonnées de
+        Fourier dont l'ensemble de modes cumulatif a la forme additive fermée
+        \[
+          K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\},
+        \]
+        union d'au plus neuf intervalles cycliques de même rayon centrés sur une grille somme
+        $3\times3$.
+      </p>
+      <p>
+        Trois conséquences exactes en découlent. La porosité de frontière (un trou encadré
+        d'un seul site) survient précisément lorsqu'un espacement pair $\delta$ des centres
+        vaut $2n+4$. Le stabilisateur complet d'un espace propre de la filtration dans
+        $\mathrm{SL}(2,\mathbb{F}_q)$ est le groupe unipotent inférieur étendu par le groupe
+        de symétrie multiplicative $A_K=\{a:aK=K\}$. Et la quantification de Weyl réalise le
+        porteur induit de Mackey de façon interne, comme facteur direct de
+        $\mathrm{End}(V_\rho)\cong\mathbf{1}\oplus\mathcal{D}_+\oplus\mathcal{D}_-$.
+      </p>
+      <p>
+        Les constituants génériques de la série principale du secteur pair apparaissent en
+        paires canoniques de multiplicité deux, de commutant de Hecke $M_2(\mathbb{C})$
+        complet. L'opérateur de Harper fini oriente chaque doublet avec la séparation
+        normalisée universelle $1\pm q^{-1/2}$, et le résidu du secteur éliminé fournit un
+        second axe exactement lorsque un déterminant de phase cyclotomique explicite
+        $\Delta_{\theta,c}(K)$ est non nul. Le secteur impair des symboles de Weyl est un
+        réservoir de doublets purs pour $q\equiv1\pmod4$, exactement protégé par l'algèbre
+        paire engendrée par les projecteurs déposés et la dynamique de Harper.
+      </p>
+      <div class="note" role="note">
+        <strong>Statut (v1.0).</strong> Papier mathématique. Les résultats de somme fermée,
+        d'espacement, de stabilisateur, de symboles de Weyl, de Hecke, de Harper, de mélange
+        et de clôture par parité sont démontrés. La classification du stabilisateur est
+        affinée par un crible de divisibilité ($|A_K|\mid\gcd(q-1,|K|-1)$) et par des familles
+        exactes uniformes $C_4$ ($a^2=-1$) et $C_6$ ($a^2+a+1=0$) ; la complétude de ces deux
+        ordres exceptionnels est vérifiée exhaustivement jusqu'à $q=73$ et par un audit exact
+        échantillonné jusqu'à $q=499$, mais reste une question ouverte formulée précisément.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Noyau exact démontré ; complétude des familles exceptionnelles
+            $C_4$/$C_6$ ouverte ; critère uniforme pour $\Delta_{\theta,c}(K)\ne0$ ouvert</div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v"><a href="../o12/index_fr.html">O12</a>,
+            <a href="../projective_temporal_ordering/index_fr.html">PTO</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Fronts doublets du secteur fermionique (conditionnés)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li>
+        <strong>Formule fermée des modes :</strong> l'ensemble de modes cumulatif à profondeur
+        $n$ est la somme cyclique $K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\}$ ; en
+        particulier $K_n=-K_n$.
+      </li>
+      <li>
+        <strong>Critère de parité des espacements :</strong> avant saturation, un trou encadré
+        existe si et seulement si un espacement cyclique des neuf centres vaut $2n+4$ ; un
+        espacement impair n'en produit jamais.
+      </li>
+      <li>
+        <strong>Stabilisateur de Weil complet :</strong>
+        $\mathrm{Stab}(W_K)=\{\left(\begin{smallmatrix}a&amp;0\\t&amp;a^{-1}\end{smallmatrix}\right):
+        t\in\mathbb{F}_q,\ a\in A_K\}$, d'ordre $q|A_K|$. La valeur générique est
+        $A_K=\{\pm1\}$ ; des familles exceptionnelles exactes donnent $C_4$ (via $a^2=-1$) et
+        $C_6$ (via $a^2+a+1=0$), les extensions vers $C_8$ et $C_{18}$ étant exclues
+        analytiquement.
+      </li>
+      <li>
+        <strong>Porteur de Mackey interne :</strong>
+        $\mathrm{End}(V_\rho)\cong\mathbf{1}\oplus\mathcal{D}_+\oplus\mathcal{D}_-$ comme
+        module de conjugaison sous $\mathrm{SL}(2,\mathbb{F}_q)$ ; le porteur induit
+        appartient déjà à l'algèbre d'opérateurs bosonique, sans ajout externe.
+      </li>
+      <li>
+        <strong>Doublets de Hecke :</strong> les paires génériques de série principale
+        $\{\theta,\theta^{-1}\}$ portent des espaces de multiplicité canoniques
+        $\mathbb{C}^2$ de commutant $M_2(\mathbb{C})$ complet ; le commutant du secteur pair
+        vaut $\mathbb{C}^4\oplus M_2(\mathbb{C})^{(q-5)/4}$ pour $q\equiv1\pmod4$ et
+        $\mathbb{C}^2\oplus M_2(\mathbb{C})^{(q-3)/4}$ pour $q\equiv3\pmod4$.
+      </li>
+      <li>
+        <strong>Séparation de Harper universelle :</strong> l'opérateur de Harper fini a une
+        densité réduite non scalaire dans chaque doublet générique, de valeurs propres
+        normalisées $1\pm q^{-1/2}$ fixées par une somme de Gauss.
+      </li>
+      <li>
+        <strong>Critère de mélange exact :</strong> le résidu $E_K=-P_KT_c(1-P_K)T_cP_K$
+        fournit un second axe dans le facteur $\theta$ si et seulement si le déterminant de
+        phase cyclotomique $\Delta_{\theta,c}(K)=C_\theta(K)\overline{\tau_{\theta,c}}
+        -\overline{C_\theta(K)}\tau_{\theta,c}$ est non nul ; un repère
+        $\mathfrak{su}(2)$ canonique s'ensuit.
+      </li>
+      <li>
+        <strong>Protection par parité :</strong> l'algèbre étoilée unitale engendrée par les
+        projecteurs déposés et la dynamique de Harper est paire et a une projection
+        exactement nulle sur le secteur impair $\mathcal{D}_-$, lui-même réservoir de doublets
+        purs pour $q\equiv1\pmod4$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Exceptions arithmétiques et certification computationnelle</h2>
+    <p>
+      Les formules exactes sont gardées par trois couches d'audit : énumération BFS directe à
+      $q=29$ et sur les huit cas déposés de la série O ; balayage échantillonné de 1 170 blocs
+      et 19 153 cas de profondeur pré-saturation sur 40 nombres premiers jusqu'à 307, sans
+      aucun échec du critère d'espacement ; audit exhaustif normalisé à
+      $q\in\{13,17,29,31,37,41,43,53\}$.
+    </p>
+    <p>
+      Les audits du stabilisateur ne trouvent que les ordres deux, quatre et six :
+      exhaustivement pour tous les premiers $13\le q\le73$, et sur 12 234 survivants du crible
+      de divisibilité d'un audit exact échantillonné jusqu'à $q=499$. Les familles uniformes
+      $C_4$ et $C_6$ sont vérifiées pour chaque premier applicable jusqu'à $q=997$. Parmi
+      1 186 cas poreux du balayage, exactement 50 présentent des annulations cyclotomiques
+      exactes de la somme de caractères de frontière $C_\theta(K)$ : la porosité seule
+      n'implique donc pas le mélange ; le non-alignement exact du déterminant de phase est
+      certifié pour les huit cas déposés.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Interprétation (calibrée)</h2>
+    <p>
+      La structure démontrée est une architecture d'opérateurs graduée par parité : un secteur
+      pair portant une séparation finie universelle, des repères de mélange arithmétiques
+      indexés par la filtration et une cinématique de masse au carré à deux niveaux ; et un
+      secteur impair de doublets protégés. Il est structurellement tentant de comparer le
+      secteur pair à une brisure de symétrie bosonique et le secteur protégé à une donnée
+      chirale manquante — cette comparaison est purement interprétative.
+    </p>
+    <p>
+      Le papier ne dérive ni masses de Dirac, ni échelle absolue, ni générations du Modèle
+      Standard, ni hypercharge, ni mécanisme de Higgs du secteur de matière. Le résidu $E_K$
+      reste de type $-M^*M$, et l'échelle de séparation $q^{-1/2}$ tend vers zéro quand
+      $q\to\infty$ sans prescription d'échelle séparée. Un doublet de multiplicité dans une
+      algèbre d'opérateurs n'est pas en soi un doublet d'isospin faible de matière
+      fermionique.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochrony</h2>
+    <p>
+      O33 est l'achèvement arithmétique de la filtration d'<a href="../o12/index_fr.html">O12</a>
+      et n'utilise la perspective d'ordre radial de
+      l'<a href="../projective_temporal_ordering/index_fr.html">ordre temporel projectif</a>
+      que pour énoncer ce que la classe d'opérateurs déposée ne peut pas faire : la frontière
+      dirigée n'oriente pas les paires de générateurs, si bien que le relèvement impair de
+      Harper reste hors de l'algèbre paire déposée.
+    </p>
+    <p>
+      En aval, les doublets $M_2(\mathbb{C})$ canoniques, l'orientation de Harper et le
+      réservoir impair protégé sont les objets exacts sur lesquels sont conditionnés les
+      fronts doublets du secteur fermionique ; leur transport vers un porteur de matière exige
+      une structure nouvelle (représentation ambiante doublée et donnée chirale impaire) que
+      le papier laisse explicitement ouverte.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Questions ouvertes</h2>
+    <ul>
+      <li>Démontrer ou réfuter que $C_2$, $C_4$, $C_6$ épuisent les stabilisateurs
+        multiplicatifs $A_K$ des ensembles de modes propres à neuf centres de même rayon.</li>
+      <li>Trouver un critère arithmétique uniforme pour $\Delta_{\theta,c}(K)\ne0$.</li>
+      <li>Déterminer la distribution asymptotique des profondeurs poreuses.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.21360722" rel="noopener">
+        <i>Arithmetic Mackey–Hecke Doublets in Finite Weil Filtrations: Boundary-Induced
+        Mixing and Parity Protection</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.21360722
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

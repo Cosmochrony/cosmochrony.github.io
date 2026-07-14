@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Arithmetic Mackey–Hecke Doublets in Finite Weil Filtrations | Cosmochrony</title>
+  <meta name="description"
+    content="O33 gives the exact arithmetic of the O12 three-character Fourier filtration:
+    closed cyclic sumset, spacing-parity porosity criterion, complete Weil stabiliser through
+    A_K, internal Mackey–Hecke M₂(C) doublets, universal Harper split 1±q^(−1/2), cyclotomic
+    mixing determinant, and parity protection of the odd Weyl-symbol sector."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/o33/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Arithmetic Mackey–Hecke Doublets in Finite Weil Filtrations:
+    Boundary-Induced Mixing and Parity Protection"/>
+  <meta property="og:description"
+    content="Exact closed sumset for the O12 filtration; complete stabiliser through A_K with
+    uniform C₄ and C₆ exceptional families; canonical M₂(C) multiplicity doublets; Harper
+    split 1±q^(−1/2); exact cyclotomic mixing criterion; parity-protected odd sector."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o33/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/o33/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Arithmetic Mackey–Hecke Doublets in Finite Weil Filtrations:
+          Boundary-Induced Mixing and Parity Protection</h1>
+        <p class="subtitle">
+          O33 turns the cumulative <a href="../o12">O12</a> filtration into exact arithmetic:
+          a closed cyclic sumset $K_n$, a spacing-parity porosity criterion, the complete Weil
+          stabiliser through the multiplicative group $A_K$, canonical Mackey–Hecke
+          $M_2(\mathbb{C})$ doublets inside $\mathrm{End}(V_\rho)$, the universal Harper split
+          $1\pm q^{-1/2}$, and an exact cyclotomic criterion for boundary-induced mixing.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21360722">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The <a href="../o12">O12</a> spectral-admissibility computation filters the finite Weil
+        module by BFS depth using three-character Heisenberg fingerprints. O33 proves that this
+        filtration is a Fourier coordinate filtration whose cumulative mode set has the closed
+        additive form
+        \[
+          K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\},
+        \]
+        a union of at most nine cyclic intervals of equal radius centred on a $3\times3$
+        sumset grid.
+      </p>
+      <p>
+        Three exact consequences follow. Boundary porosity (a one-site flanked hole) occurs
+        precisely when an even centre spacing $\delta$ equals $2n+4$. The full stabiliser of a
+        proper filtration space in $\mathrm{SL}(2,\mathbb{F}_q)$ is the lower unipotent group
+        extended by the multiplicative symmetry group $A_K=\{a:aK=K\}$. And Weyl quantisation
+        realises the induced Mackey carrier internally as a direct summand of
+        $\mathrm{End}(V_\rho)\cong\mathbf{1}\oplus\mathcal{D}_+\oplus\mathcal{D}_-$.
+      </p>
+      <p>
+        Generic principal-series constituents of the even sector occur in canonical
+        multiplicity-two pairs with full Hecke commutant $M_2(\mathbb{C})$. The finite Harper
+        operator orients every such doublet with the universal normalised split
+        $1\pm q^{-1/2}$, and the eliminated-sector residue supplies a second axis exactly when
+        an explicit cyclotomic phase determinant $\Delta_{\theta,c}(K)$ is non-zero. The odd
+        Weyl-symbol sector is a pure doublet reservoir for $q\equiv1\pmod4$, exactly protected
+        by the parity-even algebra generated by the deposited projectors and Harper dynamics.
+      </p>
+      <div class="note" role="note">
+        <strong>Status (v1.0).</strong> Mathematics-first paper. The sumset, spacing,
+        stabiliser, Weyl-symbol, Hecke, Harper, mixing, and parity-closure results are proved.
+        The stabiliser classification is sharpened by an orbit-divisibility sieve
+        ($|A_K|\mid\gcd(q-1,|K|-1)$) and by uniform exact $C_4$ ($a^2=-1$) and $C_6$
+        ($a^2+a+1=0$) families; completeness of these two exceptional orders is supported
+        exhaustively through $q=73$ and by a seeded exact audit through $q=499$, but remains a
+        precisely stated open question.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Exact core proved; completeness of the $C_4$/$C_6$ exceptional
+            stabiliser families open; uniform criterion for $\Delta_{\theta,c}(K)\ne0$ open</div>
+        </div>
+        <div class="kv">
+          <div class="k">Depends on</div>
+          <div class="v"><a href="../o12">O12</a>,
+            <a href="../projective_temporal_ordering">PTO</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Feeds into</div>
+          <div class="v">Fermionic-matter doublet fronts (gated)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main results</h2>
+    <ul>
+      <li>
+        <strong>Closed mode-set formula:</strong> the cumulative depth-$n$ mode set is the
+        cyclic sumset $K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\}$; in particular
+        $K_n=-K_n$.
+      </li>
+      <li>
+        <strong>Spacing-parity criterion:</strong> before saturation, a flanked hole exists
+        iff some cyclic spacing of the nine-point centre set equals $2n+4$; odd spacings never
+        produce one.
+      </li>
+      <li>
+        <strong>Complete Weil stabiliser:</strong>
+        $\mathrm{Stab}(W_K)=\{\left(\begin{smallmatrix}a&amp;0\\t&amp;a^{-1}\end{smallmatrix}\right):
+        t\in\mathbb{F}_q,\ a\in A_K\}$, of order $q|A_K|$. The generic value is
+        $A_K=\{\pm1\}$; exact exceptional families give $C_4$ (from $a^2=-1$) and $C_6$
+        (from $a^2+a+1=0$), with enlargements to $C_8$ and $C_{18}$ excluded analytically.
+      </li>
+      <li>
+        <strong>Internal Mackey carrier:</strong>
+        $\mathrm{End}(V_\rho)\cong\mathbf{1}\oplus\mathcal{D}_+\oplus\mathcal{D}_-$ as a
+        conjugation $\mathrm{SL}(2,\mathbb{F}_q)$-module; the induced carrier is already part
+        of the bosonic operator algebra, not an external addition.
+      </li>
+      <li>
+        <strong>Hecke doublets:</strong> generic principal-series pairs
+        $\{\theta,\theta^{-1}\}$ carry canonical multiplicity spaces $\mathbb{C}^2$ with full
+        commutant $M_2(\mathbb{C})$; the even-sector commutant is
+        $\mathbb{C}^4\oplus M_2(\mathbb{C})^{(q-5)/4}$ for $q\equiv1\pmod4$ and
+        $\mathbb{C}^2\oplus M_2(\mathbb{C})^{(q-3)/4}$ for $q\equiv3\pmod4$.
+      </li>
+      <li>
+        <strong>Universal Harper split:</strong> the finite Harper operator has non-scalar
+        reduced density in every generic doublet, with normalised eigenvalues
+        $1\pm q^{-1/2}$ set by a Gauss sum.
+      </li>
+      <li>
+        <strong>Exact mixing criterion:</strong> the residue $E_K=-P_KT_c(1-P_K)T_cP_K$
+        supplies a second axis in the $\theta$ factor iff the cyclotomic phase determinant
+        $\Delta_{\theta,c}(K)=C_\theta(K)\overline{\tau_{\theta,c}}
+        -\overline{C_\theta(K)}\tau_{\theta,c}$ is non-zero; a canonical
+        $\mathfrak{su}(2)$ frame then follows.
+      </li>
+      <li>
+        <strong>Parity protection:</strong> the unital star-algebra generated by the deposited
+        projectors and Harper dynamics is parity-even and has exactly zero projection onto the
+        odd sector $\mathcal{D}_-$, which is itself a pure doublet reservoir for
+        $q\equiv1\pmod4$.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Arithmetic exceptions and computational certification</h2>
+    <p>
+      The exact formulas are guarded by three audit layers: direct BFS enumeration at $q=29$
+      and the eight deposited O-series cases; a seeded sweep of 1,170 blocks and 19,153
+      pre-saturation depth cases over 40 primes through 307 with no spacing failure; and an
+      exhaustive normalised audit at $q\in\{13,17,29,31,37,41,43,53\}$.
+    </p>
+    <p>
+      The stabiliser audits find only the orders two, four, and six: exhaustively for all
+      primes $13\le q\le73$, and in 12,234 divisor-sieve survivors of a seeded exact audit
+      through $q=499$. The uniform $C_4$ and $C_6$ families are verified for every applicable
+      prime through $q=997$. Among 1,186 porous sweep cases, exactly 50 exhibit exact
+      cyclotomic vanishings of the boundary character sum $C_\theta(K)$, so porosity alone
+      does not imply mixing; exact non-alignment of the phase determinant is certified for the
+      eight deposited cases.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Interpretation (calibrated)</h2>
+    <p>
+      The proved structure is a parity-graded operator architecture: an even sector carrying a
+      universal finite split, arithmetic mixing frames indexed by the filtration, and
+      two-level mass-square kinematics; and an odd sector of protected doublets. It is
+      structurally tempting to compare the even sector with bosonic symmetry breaking and the
+      protected sector with a missing chiral datum — that comparison is interpretive only.
+    </p>
+    <p>
+      The paper derives no Dirac masses, no absolute scale, no Standard-Model generations, no
+      hypercharge, and no matter-sector Higgs mechanism. The residue $E_K$ remains of
+      $-M^*M$ type, and the splitting scale $q^{-1/2}$ vanishes as $q\to\infty$ without a
+      separate scaling prescription. A multiplicity doublet in an operator algebra is not by
+      itself a weak-isospin doublet of fermionic matter.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      O33 is the arithmetic completion of the <a href="../o12">O12</a> filtration and uses the
+      radial ordering perspective of
+      <a href="../projective_temporal_ordering">projective temporal ordering</a> only to state
+      what the deposited operator class cannot do: the directed frontier does not orient
+      generator pairs, so the odd Harper lift stays outside the deposited even algebra.
+    </p>
+    <p>
+      Downstream, the canonical $M_2(\mathbb{C})$ doublets, the Harper orientation, and the
+      parity-protected odd reservoir are the exact objects on which the fermionic-matter
+      doublet fronts are gated; transporting them to a matter carrier requires new structure
+      (an ambient doubled representation and a chiral odd datum) that the paper explicitly
+      leaves open.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Open questions</h2>
+    <ul>
+      <li>Prove or refute that $C_2$, $C_4$, $C_6$ exhaust the multiplicative stabilisers
+        $A_K$ of proper equal-radius nine-centre mode sets.</li>
+      <li>Find a uniform arithmetic criterion for $\Delta_{\theta,c}(K)\ne0$.</li>
+      <li>Determine the asymptotic distribution of porous depths.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.21360722" rel="noopener">
+        <i>Arithmetic Mackey–Hecke Doublets in Finite Weil Filtrations: Boundary-Induced
+        Mixing and Parity Protection</i>. Preprint.
+      </a>
+      doi:10.5281/zenodo.21360722
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

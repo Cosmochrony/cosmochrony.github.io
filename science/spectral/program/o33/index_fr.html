@@ -11,7 +11,9 @@
     d'O12 : ensemble somme cyclique fermé, critère de porosité par parité des espacements,
     stabilisateur de Weil complet via A_K, doublets de Mackey–Hecke M₂(C) internes,
     séparation de Harper universelle 1±q^(−1/2), critère de mélange de frontière
-    complètement résolu et protection par parité du secteur impair."/>
+    complètement résolu, protection par parité du secteur impair, mécanismes dégénérés
+    raffinés en boîtes gaussiennes et processus ponctuel asymptotique exact des profondeurs
+    poreuses."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o33/"/>
   <meta name="robots" content="index,follow"/>
@@ -104,7 +106,7 @@
         paire engendrée par les projecteurs déposés et la dynamique de Harper.
       </p>
       <div class="note" role="note">
-        <strong>Statut (v1.3).</strong> Papier mathématique. Les résultats de somme fermée,
+        <strong>Statut (v1.4).</strong> Papier mathématique. Les résultats de somme fermée,
         d'espacement, de stabilisateur, de rigidité, de symboles de Weyl, de Hecke, de Harper,
         de mélange et de clôture par parité sont démontrés. Un lemme inconditionnel de
         presque-périodicité montre que tout stabilisateur multiplicatif a un défaut additif
@@ -116,7 +118,13 @@
         complétude des ordres exceptionnels reste ouverte. Depuis la v1.3, le critère de
         mélange est fermé : un théorème de séparation galoisienne le réduit à
         $C_\theta(K)\ne0$, et le lieu d'annulation est complètement classifié en mécanismes
-        de paire antipodale, de triplet cubique et de double paire.
+        de paire antipodale, de triplet cubique et de double paire. Depuis la v1.4, le régime
+        dégénéré est décrit mécaniquement — le carré de profondeur zéro s'étend en une famille
+        uniforme infinie de boîtes gaussiennes $Q_r(i)$, et un audit exhaustif jusqu'à
+        $q=151$ classe les $75$ ensembles exceptionnels en trois mécanismes raffinés sans
+        ordre au-delà de six — et les profondeurs poreuses d'un bloc uniforme convergent vers
+        un processus ponctuel limite explicite de loi de comptage $(3/20,7/24,9/40,5/24,1/8)$
+        et de moyenne $28/15$.
       </div>
     </div>
     <aside class="card">
@@ -137,8 +145,9 @@
         <div class="kv">
           <div class="k">Statut</div>
           <div class="v">Noyau exact démontré ; théorème de rigidité $A_K=\{\pm1\}$ hors du
-            régime dégénéré de frontière (v1.1) ; complétude ouverte seulement dans ce
-            régime ; critère de mélange complètement résolu (v1.3)</div>
+            régime dégénéré de frontière (v1.1) ; critère de mélange complètement résolu
+            (v1.3) ; mécanismes dégénérés raffinés et asymptotique des profondeurs poreuses
+            démontrée (v1.4) ; complétude des mécanismes raffinés ouverte</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -188,6 +197,26 @@
         $(w{+}1)/w$ ; réalisée par des blocs déposés à $q=73,109,173$. Pour tout
         $|K^c|=4$, $|A_K|$ divise quatre et le cas d'ordre quatre est une orbite libre
         unique.
+      </li>
+      <li>
+        <strong>Mécanisme des boîtes gaussiennes (v1.4) :</strong> pour $i^2=-1$ et
+        $q&gt;8r^2$, la boîte $Q_r(i)=\{x+iy:|x|,|y|\le r\}$ est propre avec
+        $C_4\subseteq A_K$ et est réalisée par des blocs admissibles à la profondeur $r-1$
+        pour $r\le4$ ; près de la saturation, les boîtes enroulées avec $q&lt;8r^2$ sont
+        certifiées individuellement par l'audit. La lecture d'exhaustion antérieure des
+        énoncés de familles est retirée, et l'affirmation fausse selon laquelle tous les
+        compléments à quatre points audités seraient adjacents est corrigée : à $q=37$
+        l'orbite $\{3,18,19,34\}$ a une paire adjacente et deux gaps singletons, et les trois
+        profils de gaps centralement symétriques apparaissent tous.
+      </li>
+      <li>
+        <strong>Loi asymptotique de porosité (v1.4) :</strong> les profondeurs poreuses d'un
+        bloc admissible uniforme convergent vers un processus ponctuel limite explicite ; le
+        nombre de profondeurs poreuses vaut $0,\ldots,4$ avec probabilités
+        $(3/20,7/24,9/40,5/24,1/8)$, sa moyenne est $28/15$, l'intensité est affine par
+        morceaux avec ruptures en $1/10,1/8,1/6$, et la profondeur normalisée moyenne
+        conditionnelle vaut $491/10080$ ; le calcul exact polyédral-rationnel est certifié
+        par machine via un script archivé dans le dépôt du papier.
       </li>
       <li>
         <strong>Porteur de Mackey interne :</strong>
@@ -260,6 +289,17 @@
       double paire ; la porosité seule n'implique donc pas le mélange, mais chaque mécanisme
       d'échec est désormais classifié.
     </p>
+    <p>
+      Le régime dégénéré (v1.4) est audité exhaustivement jusqu'à $q=151$, les ensembles
+      exceptionnels étant dédupliqués comme ensembles exacts : $75$ ensembles, $62$ d'ordre
+      quatre et $13$ d'ordre six, classés sans reste en $52$ boîtes gaussiennes, $10$ orbites
+      à quatre points hors boîtes et $13$ ensembles d'Eisenstein $C_6$ ; des recherches
+      ciblées d'ordre huit à $q=193,241,257$ couvrent 4 540 161 cas pré-saturation et n'en
+      trouvent aucun. Le kill-switch pré-enregistré original a tiré sur sa branche mécanisme
+      (les boîtes gaussiennes) ; le kill-switch résiduel, reformulé après raffinage, est
+      resté silencieux. La loi asymptotique est certifiée par machine via le script exact
+      archivé et confirmée par des énumérations exactes à $q=4001$ et $q=8009$.
+    </p>
   </section>
   <section class="card">
     <h2>Interprétation (calibrée)</h2>
@@ -301,10 +341,13 @@
   <section class="card">
     <h2>Questions ouvertes</h2>
     <ul>
-      <li>Classifier le régime dégénéré de frontière (un run ou un gap de longueur au plus
-        $m$) : démontrer ou réfuter que les ordres exceptionnels $C_4$ et $C_6$ l'épuisent.
-        Hors de ce régime, $A_K=\{\pm1\}$ est démontré (v1.1).</li>
-      <li>Déterminer la distribution asymptotique des profondeurs poreuses.</li>
+      <li>Démontrer ou réfuter que les trois mécanismes raffinés (boîtes gaussiennes, orbites
+        libres à quatre points, ensembles d'Eisenstein $C_6$) et les ordres $C_4$ et $C_6$
+        épuisent le régime dégénéré de frontière pour tout premier impair. Hors de ce régime,
+        $A_K=\{\pm1\}$ est démontré (v1.1) ; jusqu'à $q=151$, l'audit ne trouve rien d'autre
+        (v1.4).</li>
+      <li>Démontrer $A_K=\langle i\rangle$ exactement pour les boîtes gaussiennes avec
+        $r\ge2$ (seule l'inclusion est démontrée uniformément).</li>
     </ul>
   </section>
   <section class="card">

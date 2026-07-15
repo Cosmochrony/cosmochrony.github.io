@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spin as a Transformation Class of Rotating Wave Modes | Cosmochrony</title>
+  <meta name="description"
+    content="Conceptual audit of the rotating-wave reading of spin: photon helicity, the transformation-law criterion, the 4-pi interferometric periodicity, univalence as a rule on the observable algebra, and what the Cosmochrony fermionic sub-programme still has to construct."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Spin as a Transformation Class of Rotating Wave Modes"/>
+  <meta property="og:description"
+    content="Relative phase, axial weight, SU(2) representation, univalence: the stratified structure behind the rotating-wave reading of spin, and its consequences for the fermionic-matter sub-programme."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/spin-rotation-note/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/fermionic-matter/spin-rotation-note/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Spin as a Transformation Class of Rotating Wave Modes</h1>
+        <p class="subtitle">
+          Companion conceptual audit: the rotating-wave reading of spin, the univalence grading,
+          and what the fermionic sub-programme still has to construct.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21380026" rel="noopener">Read the preprint</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.21380026</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The note examines the hypothesis that the wave function is a combination of rotating and
+        non-rotating wave modes, spin expressing the rotation of these components rather than the
+        rotation of a particle-like object. For the photon the hypothesis is nearly literal; a
+        scalar counterexample shows that the rotation of components is not sufficient, and that
+        spin is fixed by the way the components transform under rotations of physical space.
+      </p>
+      <p>
+        The resulting hierarchy is: the relative phase is a measurable coordinate within a sector,
+        the weight $m$ is an axial winding degree, the spin $j$ labels the irreducible
+        representation of $SU(2)$, and univalence $(-1)^{2j}$ separates superselection sectors as
+        a rule on the algebra of observables.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured summary.
+        The authoritative technical reference is the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Companion conceptual note (preprint)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Focus</div>
+          <div class="v">Rotating wave modes, helicity, spinor sign, univalence, superluminal objection, Cosmochrony carrier</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Working paper (concept DOI <a
+            href="https://doi.org/10.5281/zenodo.21380026">10.5281/zenodo.21380026</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core results</h2>
+    <ul>
+      <li><strong>Photon literalness.</strong> For circularly polarized light the rotating-wave
+        language is physically pertinent: the transverse field components rotate, the angular
+        momentum is mechanically measurable (Beth 1936), and the Riemann–Silberstein combinations
+        $\mathbf{F}_\pm = \mathbf{E} \pm ic\mathbf{B}$ separate the helicity sectors after
+        complexification and restriction to positive-frequency components.</li>
+      <li><strong>Transformation-law criterion.</strong> A complex scalar wave rotates in its
+        internal plane yet carries spin zero: rotation of components is not sufficient. Spin is
+        fixed by $\Psi(\mathbf{x}) \mapsto D^{(j)}(R)\,\Psi(R^{-1}\mathbf{x})$ — the internal
+        rotation counts only insofar as its plane is geometrically coupled to physical space.</li>
+      <li><strong>Weights versus representations.</strong> The axial winding intuition is rigorous
+        for the weight $m$ (the $U(1)$ character $e^{-im\alpha}$), but the values of $j$ arise from
+        the highest-weight theory of $SU(2)$, not from the $\mathbb{Z}_2$ topology of $SO(3)$
+        alone.</li>
+      <li><strong>Interferometric spinor sign.</strong> The $4\pi$ periodicity of neutron
+        interference (Rauch et al., Werner et al., 1975) shows that the transformation class of
+        the state under rotations is physical, while the rotation phase is unobservable in
+        isolation.</li>
+      <li><strong>Univalence as an observable-algebra rule.</strong> The Wick–Wightman–Wigner rule
+        does not forbid writing boson–fermion vector sums; it states that no admissible observable
+        measures their relative phase, making such superpositions operationally equivalent to
+        mixtures.</li>
+      <li><strong>Superluminal objection dissolved.</strong> The historical objection constrains
+        rigid bodies at the classical electron radius, not internal rotations of wave components;
+        the Belinfante–Ohanian energy-flow reading on the Compton scale removes the need for a
+        surface velocity, its literal hydrodynamic interpretation requiring a separate causal
+        analysis.</li>
+      <li><strong>Ontological constraint.</strong> Any rotational ontology of spin must involve a
+        relational, extended, or topologically attached wave configuration (belt trick,
+        orientation-entanglement, skyrmions under Finkelstein–Rubinstein quantization), never a
+        point particle endowed with a mere internal axis.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Implications for the Cosmochrony programme</h2>
+    <ul>
+      <li><strong>Established.</strong> The admissibility construction selects
+        $V_\rho \simeq \mathbb{C}^2$, with $\operatorname{Sym}^2(V_\rho) = V_1$ and
+        $\wedge^2(V_\rho) = V_0$.</li>
+      <li><strong>Exact algebraic consequence.</strong> The central element acts on
+        $V_\rho^{\otimes n}$ as $(-1)^n$; conditional on the Lorentz-spin identification of
+        $V_\rho$, this tensor grading becomes the physical univalence grading.</li>
+      <li><strong>Correction.</strong> In Q7, $e_0$ is the spin-weight $m = 0$ within the $j = 1$
+        module, not a $j = 0$ state; the genuine singlet is $\wedge^2(V_\rho)$.</li>
+      <li><strong>Diagnostic.</strong> Lorentzian spin and the weak doublet must act on distinct
+        tensor factors.</li>
+      <li><strong>Open.</strong> The representational problem — constructing the full
+        $\operatorname{Spin}(3)$ action with $\rho_{\mathrm{rot}}(-I) = (-1)^n$ — which a
+        one-parameter evolution cannot solve; and the stronger dynamical problem — whether the
+        cascade canonically traces an axial one-parameter orbit, with axis and angle relation both
+        derived.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
+      matter sub-programme</a>. Upstream, it takes from O29 / Q7 the admissible module
+      $V_\rho \simeq \mathbb{C}^2$; downstream, it types the open front of Q14 and its companions
+      by separating the rotational representation problem from its possible dynamical realization
+      by the projected cascade.
+    </p>
+  </section>
+  <section class="card">
+    <h2>References</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Spin as a Transformation Class of Rotating Wave Modes</i>.
+      Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21380026" rel="noopener">10.5281/zenodo.21380026</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

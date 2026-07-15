@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Le spin comme classe de transformation de modes ondulatoires tournants | Cosmochronie</title>
+  <meta name="description"
+    content="Audit conceptuel de la lecture ondulatoire du spin : hélicité du photon, critère de loi de transformation, périodicité interférométrique 4-pi, univalence comme règle sur l'algèbre des observables, et ce que le sous-programme fermionique de Cosmochronie doit encore construire."/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Le spin comme classe de transformation de modes ondulatoires tournants"/>
+  <meta property="og:description"
+    content="Phase relative, poids axial, représentation SU(2), univalence : la structure stratifiée derrière la lecture ondulatoire du spin, et ses conséquences pour le sous-programme matière fermionique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/spin-rotation-note/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/fermionic-matter/spin-rotation-note/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Le spin comme classe de transformation de modes ondulatoires tournants</h1>
+        <p class="subtitle">
+          Note conceptuelle compagnon : la lecture ondulatoire du spin, la graduation d'univalence,
+          et ce que le sous-programme fermionique doit encore construire.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21380026" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.21380026</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Aperçu</h2>
+      <p>
+        La note examine l'hypothèse selon laquelle la fonction d'onde est une combinaison de modes
+        ondulatoires tournants et non tournants, le spin exprimant la rotation de ces composantes
+        plutôt que la rotation d'un objet de type particule. Pour le photon l'hypothèse est
+        presque littérale ; un contre-exemple scalaire montre que la rotation des composantes ne
+        suffit pas : le spin est fixé par la manière dont les composantes se transforment sous les
+        rotations de l'espace physique.
+      </p>
+      <p>
+        La hiérarchie qui en résulte : la phase relative est une coordonnée mesurable au sein d'un
+        secteur, le poids $m$ est un degré d'enroulement axial, le spin $j$ étiquette la
+        représentation irréductible de $SU(2)$, et l'univalence $(-1)^{2j}$ sépare les secteurs de
+        supersélection comme règle sur l'algèbre des observables.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit un résumé structuré.
+        La référence technique faisant autorité est la prépublication liée ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>En bref</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Note conceptuelle compagnon (prépublication)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Sujets</div>
+          <div class="v">Modes ondulatoires tournants, hélicité, signe spinoriel, univalence, objection supraluminique, carrier Cosmochronie</div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Document de travail (DOI concept <a
+            href="https://doi.org/10.5281/zenodo.21380026">10.5281/zenodo.21380026</a>)</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Résultats principaux</h2>
+    <ul>
+      <li><strong>Littéralité pour le photon.</strong> Pour la lumière polarisée circulairement,
+        le langage des ondes tournantes est physiquement pertinent : les composantes transversales
+        du champ tournent, le moment cinétique est mécaniquement mesurable (Beth 1936), et les
+        combinaisons de Riemann–Silberstein $\mathbf{F}_\pm = \mathbf{E} \pm ic\mathbf{B}$
+        séparent les secteurs d'hélicité après complexification et restriction aux fréquences
+        positives.</li>
+      <li><strong>Critère de loi de transformation.</strong> Une onde scalaire complexe tourne
+        dans son plan interne et porte pourtant un spin nul : la rotation des composantes ne
+        suffit pas. Le spin est fixé par
+        $\Psi(\mathbf{x}) \mapsto D^{(j)}(R)\,\Psi(R^{-1}\mathbf{x})$ — la rotation interne ne
+        compte que si son plan est géométriquement couplé à l'espace physique.</li>
+      <li><strong>Poids contre représentations.</strong> L'intuition d'enroulement est rigoureuse
+        pour le poids $m$ (caractère $U(1)$ $e^{-im\alpha}$), mais les valeurs de $j$ proviennent
+        de la théorie des plus hauts poids de $SU(2)$, pas de la seule topologie $\mathbb{Z}_2$ de
+        $SO(3)$.</li>
+      <li><strong>Signe spinoriel interférométrique.</strong> La périodicité $4\pi$ de
+        l'interférométrie neutronique (Rauch et al., Werner et al., 1975) montre que la classe de
+        transformation de l'état sous les rotations est physique, la phase de rotation restant
+        inobservable isolément.</li>
+      <li><strong>L'univalence comme règle sur les observables.</strong> La règle de
+        Wick–Wightman–Wigner n'interdit pas d'écrire des sommes vectorielles boson–fermion ; elle
+        énonce qu'aucune observable admissible ne mesure leur phase relative, rendant ces
+        superpositions opérationnellement équivalentes à des mélanges.</li>
+      <li><strong>Objection supraluminique dissoute.</strong> L'objection historique contraint les
+        corps rigides au rayon classique de l'électron, pas les rotations internes de composantes
+        ondulatoires ; la lecture en flux d'énergie de Belinfante–Ohanian à l'échelle de Compton
+        supprime le besoin d'une vitesse de surface, son interprétation hydrodynamique littérale
+        demandant une analyse causale séparée.</li>
+      <li><strong>Contrainte ontologique.</strong> Toute ontologie rotationnelle du spin doit
+        mettre en jeu une configuration ondulatoire relationnelle, étendue ou topologiquement
+        attachée (belt trick, orientation-entanglement, skyrmions sous quantification de
+        Finkelstein–Rubinstein), jamais une particule ponctuelle munie d'un simple axe interne.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Implications pour le programme Cosmochronie</h2>
+    <ul>
+      <li><strong>Acquis.</strong> La construction d'admissibilité sélectionne
+        $V_\rho \simeq \mathbb{C}^2$, avec $\operatorname{Sym}^2(V_\rho) = V_1$ et
+        $\wedge^2(V_\rho) = V_0$.</li>
+      <li><strong>Conséquence algébrique exacte.</strong> L'élément central agit sur
+        $V_\rho^{\otimes n}$ par $(-1)^n$ ; conditionnellement à l'identification Lorentz-spin de
+        $V_\rho$, cette graduation tensorielle devient la graduation physique d'univalence.</li>
+      <li><strong>Correction.</strong> Dans Q7, $e_0$ est le poids de spin $m = 0$ du module
+        $j = 1$, pas un état $j = 0$ ; le singulet véritable est $\wedge^2(V_\rho)$.</li>
+      <li><strong>Diagnostic.</strong> Le spin lorentzien et le doublet faible doivent agir sur
+        des facteurs tensoriels distincts.</li>
+      <li><strong>Ouvert.</strong> Le problème représentationnel — construire l'action complète de
+        $\operatorname{Spin}(3)$ avec $\rho_{\mathrm{rot}}(-I) = (-1)^n$ — qu'une évolution à un
+        paramètre ne peut résoudre ; et le problème dynamique, plus fort — la cascade trace-t-elle
+        canoniquement une orbite axiale à un paramètre, avec axe et relation angulaire tous deux
+        dérivés.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Relation au programme Cosmochronie</h2>
+    <p>
+      Cette note appartient au <a href="/science/fermionic-matter/" class="inline-link">sous-programme
+      matière fermionique</a>. En amont, elle reprend de O29 / Q7 le module admissible
+      $V_\rho \simeq \mathbb{C}^2$ ; en aval, elle type le front ouvert de Q14 et de ses
+      compagnons en séparant le problème de représentation rotationnelle de sa possible
+      réalisation dynamique par la cascade projetée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Spin as a Transformation Class of Rotating Wave Modes</i>.
+      Document de travail, 2026.
+      <a href="https://doi.org/10.5281/zenodo.21380026" rel="noopener">10.5281/zenodo.21380026</a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+<script>
+  const y = document.getElementById("y")
+  if (y) y.textContent = new Date().getFullYear()
+</script>
+</body>
+</html>

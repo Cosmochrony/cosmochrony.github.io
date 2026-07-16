@@ -7,8 +7,8 @@
   <title>Le sous-programme de gravité spectrale | Cosmochrony</title>
   <meta name="description"
     content="Pourquoi les équations d’Einstein découlent-elles de la fonctionnelle d’entropie spectrale projective ?
-    Le secteur gravitationnel émerge comme la réponse infrarouge $a_2$ de S_Π[g], avec des complétions causale et
-    ultraviolette de Born–Infeld. Quatre articles constituants, quatre étapes, une fonctionnelle."/>
+    Le secteur gravitationnel émerge comme la réponse infrarouge $a_2$ de S_Π[g], avec une complétion ultraviolette
+    de Born–Infeld. Quatre articles constituants, une fonctionnelle."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral-gravity/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Le sous-programme de gravité spectrale"/>
@@ -72,21 +72,22 @@
         $a_2$ de la variation métrique renormalisée ; les équations de champ
         $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ sont retrouvées comme condition
         d’Euler–Lagrange d’un principe variationnel conditionnel, étant donné des coefficients renormalisés fournis ;
-        la construction est ensuite complétée causalement en signature lorentzienne et complétée dans l’ultraviolet par
-        une action de Born–Infeld inspirée d’Eddington. Cette note couvre le secteur gravitationnel en l’absence de
+        la construction est complétée dans l’ultraviolet par une action de Born–Infeld inspirée d’Eddington, tandis
+        que sa contrepartie lorentzienne demeure un problème ouvert. Cette note couvre le secteur gravitationnel en l’absence de
         matière ; la stratification jauge–gravité conjointe appartient à la Note de présentation 8.
       </p>
       <div class="note" role="note">
         <strong>Quatre étapes, une fonctionnelle.</strong> $\mathcal{S}_\Pi[g]$ est la seule donnée d’entrée. Le
-        secteur $a_2$ donne le tenseur d’Einstein, mais <em>pas</em> la constante de Newton : Gravity v3.3 sépare le
-        cutoff en temps propre de la régularisation zêta et montre que le coefficient fini
+        secteur $a_2$ donne le tenseur d’Einstein, mais <em>pas</em> la constante de Newton : le cutoff en temps
+        propre est séparé de la régularisation zêta, et le coefficient fini
         $c_{\mathrm{EH}}^{\mathrm{ren}}$, son signe, et donc $G_N > 0$, sont des données d’ajustement, non des
-        prédictions. Thermodynamics v2.0 retire le multiplicateur spectral $\beta(x)^{-1}$ et le premier principe
-        spectral antérieurs : la quantité de noyau de la chaleur $u \sim L^{-2}$ est une échelle de valeurs propres, non
-        une température. Ce qui subsiste est un couplage variationnel conditionnel (sans horizon, sans wedge de
+        prédictions. La quantité de noyau de la chaleur $u \sim L^{-2}$ est une échelle de valeurs propres, non
+        une température : aucun premier principe local ne découle du seul noyau de la chaleur. Ce que la
+        stationnarité spectrale établit est un couplage variationnel conditionnel (sans horizon, sans wedge de
         Rindler, sans théorème de Raychaudhuri) ; le lire comme un <em>équilibre</em> est une interprétation, non un
-        résultat. La complétion lorentzienne propage deux modes transverses-sans-trace d’hélicité $\pm 2$ avec une
-        correction universelle en $k^4$, $\gamma = 1/30$ dans le schéma spectral naturel. La complétion UV est
+        résultat. En signature lorentzienne, le noyau transverse-sans-trace est <em>posé</em>, non dérivé — une
+        contrepartie lorentzienne de $\mathcal{S}_\Pi$ requiert une construction in-in sur un chemin temporel fermé,
+        laquelle est ouverte — et, sous ce postulat, la branche sans masse est non déformée. La complétion UV est
         l’action de Born–Infeld inspirée d’Eddington,
         conditionnelle à l’hypothèse [H-ext] et à un terme d’Einstein fourni (Gravity Théorème 1).
       </div>
@@ -108,15 +109,15 @@
         </div>
         <div class="kv">
           <div class="k">Portée</div>
-          <div class="v">4 articles (Gravity 3.3, Thermodynamics 2.0, Lorentz/CausalPropagation, BornInfeld) ; réponse
-            d’Einstein $a_2$ dans l’IR sans matière ; complétion lorentzienne ; complétion UV de Born–Infeld</div>
+          <div class="v">4 articles (Gravity, Thermodynamics, Lorentz, BornInfeld) ; réponse
+            d’Einstein $a_2$ dans l’IR sans matière ; troncature lorentzienne ; complétion UV de Born–Infeld</div>
         </div>
         <div class="kv">
           <div class="k">État</div>
           <div class="v">Secteur IR sans matière conditionnel à des coefficients renormalisés fournis ; résultat
             tensoriel BI conditionnel à [H-ext] et à un terme d’Einstein fourni ; ouverts : signe et magnitude de
-            $c_{\mathrm{EH}}^{\mathrm{ren}}$, le pont thermodynamique, la stationnarité lorentzienne au-delà de la
-            linéarisation, équations couplées $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ avec matière explicite</div>
+            $c_{\mathrm{EH}}^{\mathrm{ren}}$, le pont thermodynamique, la construction lorentzienne in-in,
+            équations couplées $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ avec matière explicite</div>
         </div>
       </div>
     </aside>
@@ -130,28 +131,30 @@
       \;\Longrightarrow\;
       G_{\mu\nu} + \Lambda_{\mathrm{ren}}\,g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}
       \;\Longrightarrow\;
-      \omega^2 = c^2 k^2 - \gamma\,\ell_{\mathrm{sp}}^2 k^4
-      \;\Longrightarrow\;
       \sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R)}.$
     </p>
     <p>
-      Quatre étapes proviennent d’articles constituants distincts : la hiérarchie IR à partir du coefficient $a_2$ du
+      Les étapes proviennent d’articles constituants distincts : la hiérarchie IR à partir du coefficient $a_2$ du
       noyau de la chaleur de $\mathcal{S}_\Pi$, contrôlée par le rapport
-      $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ des coefficients renormalisés (Gravity 3.3) ; le
+      $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ des coefficients renormalisés (Gravity) ; le
       couplage Einstein–matière comme condition d’Euler–Lagrange de la stationnarité de
       $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$, étant donné des coefficients renormalisés fournis
-      (Thermodynamics 2.0) ; la complétion lorentzienne de Schwinger–Keldysh avec deux modes
-      gravitons TT d’hélicité $\pm 2$ et la correction de dispersion $\gamma = 1/30$ (Lorentz/CausalPropagation) ;
-      et l’action de Born–Infeld inspirée d’Eddington comme complétion UV tensorielle admissible sous les
-      conditions (C1)–(C5), conditionnelle à l’hypothèse [H-ext] et à un terme d’Einstein fourni (Gravity Théorème 1,
-      BornInfeld).
+      (Thermodynamics) ; et l’action de Born–Infeld inspirée d’Eddington comme complétion UV tensorielle admissible
+      sous les conditions (C1)–(C5), conditionnelle à l’hypothèse [H-ext] et à un terme d’Einstein fourni (Gravity
+      Théorème 1, BornInfeld).
+    </p>
+    <p>
+      La chaîne est riemannienne de bout en bout. Une contrepartie lorentzienne de $\mathcal{S}_\Pi$ n’est pas
+      disponible : l’obtenir requiert une construction in-in sur un chemin temporel fermé, laquelle est ouverte.
+      Lorentz analyse un noyau local à quatre dérivées <em>posé</em> et en tire un résultat négatif (voir
+      ci-dessous) : le maillon lorentzien de cette chaîne est donc un problème ouvert, non une étape acquise.
     </p>
   </section>
   <section class="card">
     <h2>Articles du sous-programme</h2>
     <p><strong>Conditions d’un secteur d’Einstein infrarouge.</strong></p>
     <ul>
-      <li><a href="/science/spectral-gravity/gravity/index_fr.html"><strong>Gravity 3.3</strong></a> — <em>Conditions
+      <li><a href="/science/spectral-gravity/gravity/index_fr.html"><strong>Gravity</strong></a> — <em>Conditions
         pour un secteur d’Einstein infrarouge à partir de la géométrie spectrale.</em> Établit
         $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ sur une variété riemannienne quadridimensionnelle et dérive
         la variation métrique renormalisée, en séparant strictement le cutoff en temps propre
@@ -166,36 +169,43 @@
         régime conditionnel $G_N = O(\ell_{\mathrm{sp}}^2)$ ne subsiste que si le coefficient ajusté est dominé par le
         cutoff <em>et</em> positif ; théorème tensoriel BI sous (C1)–(C5), conditionnel à [H-ext] et à un terme
         d’Einstein fourni ; nécessité structurelle de la projection non injective pour $\mathcal{S}_\Pi > 0$.
-        <strong>Retiré en v3.3 :</strong> l’affirmation antérieure $G_N \sim 16\pi^2\ell_{\mathrm{sp}}^2$, qui ne
-        découlait pas algébriquement, et l’unicité inconditionnelle de la complétion de Born–Infeld.</li>
+        La complétion de Born–Infeld n’est pas inconditionnellement unique, et aucune relation algébrique ne fixe
+        $G_N$ à partir de $\ell_{\mathrm{sp}}$ seul.</li>
     </ul>
     <p><strong>Couplage Einstein–matière à partir de la stationnarité spectrale.</strong></p>
     <ul>
-      <li><a href="/science/spectral-gravity/thermodynamics/index_fr.html"><strong>Thermodynamics 2.0</strong></a> —
+      <li><a href="/science/spectral-gravity/thermodynamics/index_fr.html"><strong>Thermodynamics</strong></a> —
         <em>Couplage Einstein–matière à partir de la stationnarité spectrale : un résultat variationnel conditionnel
         et le pont thermodynamique ouvert.</em> Résultats : étant donné des coefficients renormalisés fournis, la
         stationnarité de $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$ donne
-        $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ — noter le terme cosmologique
-        $\Lambda_{\mathrm{ren}}$, omis par les versions antérieures — sans invoquer d’horizon, de wedge de Rindler ni
+        $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ — incluant le terme cosmologique
+        $\Lambda_{\mathrm{ren}}$ — sans invoquer d’horizon, de wedge de Rindler ni
         de théorème de Raychaudhuri. La quantité de noyau de la chaleur $u = -\partial_t\log K \sim L^{-2}$ est une
         <em>échelle de valeurs propres</em>, non une température (une température est en $L^{-1}$ en unités
         naturelles) : aucun premier principe local ne découle du seul noyau de la chaleur. Lire cette stationnarité
         comme un <em>équilibre</em> est une interprétation au niveau du programme, non un résultat.
-        <strong>Retiré en v2.0 :</strong> le principe d’équilibre spectral, le premier principe spectral
-        $\delta\mathcal{S}_\Pi = \int\beta^{-1}\delta E_\Pi$ et le champ multiplicateur
-        $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x)$. Le pont vers la thermodynamique reste ouvert : il requiert
+        Le pont vers la thermodynamique est ouvert : il requiert
         une une-forme de chaleur, une notion d’énergie et un théorème d’intégrabilité de
         Carathéodory–Jauch–Roberts.</li>
     </ul>
-    <p><strong>Complétion causale et ondes gravitationnelles.</strong></p>
+    <p><strong>La troncature lorentzienne : un résultat négatif.</strong></p>
     <ul>
-      <li><a href="/science/spectral-gravity/lorentz/index_fr.html"><strong>Lorentz / CausalPropagation</strong></a>
-        — construit la complétion lorentzienne par prescription de Schwinger–Keldysh. Résultats : noyau quadratique
-        réel et retardé ; deux modes gravitons transverses-sans-trace d’hélicité $\pm 2$ dans le régime
-        $R\ell_{\mathrm{sp}}^2 \ll 1$, $\omega \ll \ell_{\mathrm{sp}}^{-1}$ (secteurs scalaire et vectoriel non
-        dynamiques) ; relation de dispersion $\omega^2 = c^2 k^2 - \gamma \ell_{\mathrm{sp}}^2 k^4$ avec
-        $\gamma = 1/(180\zeta) = 1/30$ dans le schéma spectral naturel ; borne sur $\ell_{\mathrm{sp}}$ à partir des
-        catalogues d’ondes gravitationnelles.</li>
+      <li><a href="/science/spectral-gravity/lorentz/index_fr.html"><strong>Lorentz</strong></a>
+        — <em>Absence de dispersion quartique du graviton dans la troncature locale covariante à quatre
+        dérivées.</em> Le noyau lorentzien local transverse-sans-trace
+        $\mathcal{O}_{\mathrm{TT}} = \Box(c_{\mathrm{EH}} + \beta\Box)$ est <strong>posé, non dérivé</strong> : une
+        contrepartie lorentzienne de $\mathcal{S}_\Pi$ requiert une construction in-in sur un chemin temporel fermé,
+        laquelle est ouverte ; tout énoncé ci-dessous est donc conditionnel à ce postulat. Résultats : pour
+        $c_{\mathrm{EH}} \neq 0$, le noyau est la <em>somme directe</em>
+        $\ker\Box \oplus \ker(c_{\mathrm{EH}} + \beta\Box)$, et le terme sans masse vérifie exactement
+        $\omega^2 = |\vec k|^2$, sans correction à aucun ordre en $|\vec k|$. Donc $A_4 = 0$ sur la branche sans
+        masse, il n’existe aucune application $A_4 \leftrightarrow \ell_{\mathrm{sp}}$, et aucune borne sur
+        $\ell_{\mathrm{sp}}$ ne repose sur cette identification. Pour $\beta \neq 0$, un pôle d’hélicité $2$ de
+        résidu opposé — un fantôme, indépendamment du signe de $c_{\mathrm{EH}}/\beta$ — siège à la masse carrée
+        signée $m_2^2 = -c_{\mathrm{EH}}^{\mathrm{ren}}/\beta^{\mathrm{ren}}$, donnée d’ajustement non liée à
+        $\ell_{\mathrm{sp}}$. La ressemblance avec la gravité quadratique est une <em>comparaison</em> : le
+        multiplet massif de spin $2$ à cinq polarisations n’est pas établi, et le secteur $R^2$ laisse un scalaire
+        massif non exclu. <strong>État : ouvert.</strong></li>
     </ul>
     <p><strong>Complétion UV de Born–Infeld.</strong></p>
     <ul>
@@ -223,9 +233,7 @@
       T_{\mu\nu}^{(\Pi)}$ dans l’IR sans matière, conditionnelles à des coefficients renormalisés fournis ; le régime
       conditionnel $G_N = O(\ell_{\mathrm{sp}}^2)$, valable seulement si le $c_{\mathrm{EH}}^{\mathrm{ren}}$ ajusté est
       dominé par le cutoff et positif ; l’action de Born–Infeld inspirée d’Eddington conditionnelle à [H-ext] et à un
-      terme d’Einstein fourni ; deux modes gravitons transverses-sans-trace d’hélicité
-      $\pm 2$ ; la dispersion $\omega^2 = c^2 k^2 - \gamma \ell_{\mathrm{sp}}^2 k^4$ avec $\gamma = 1/30$ ; la borne
-      sur $\ell_{\mathrm{sp}}$ à partir des données d’ondes gravitationnelles ; la stratification spectrale
+      terme d’Einstein fourni ; la stratification spectrale
       $a_2 \to$ gravité, $a_4 \to$ jauge — consommées par Q12, Q13, le sous-programme de stratification jauge–gravité
       (Note 8) et les applications cosmologiques/phénoménologiques.
     </p>
@@ -236,10 +244,12 @@
       La gravité dans l’infrarouge sans matière est <strong>conditionnellement établie</strong>, non close : le terme
       d’Einstein $a_2$ domine sous $R\,L_4^2 \ll 1$, la hiérarchie étant fixée par le rapport
       $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ des coefficients renormalisés plutôt que par
-      $\ell_{\mathrm{sp}}$ seul (Gravity 3.3) ; le couplage Einstein–matière est retrouvé comme condition
+      $\ell_{\mathrm{sp}}$ seul (Gravity) ; le couplage Einstein–matière est retrouvé comme condition
       d’Euler–Lagrange de la stationnarité de $\Gamma_\Pi$, <strong>étant donné des coefficients renormalisés
-      fournis</strong> (Thermodynamics 2.0) ; deux modes TT d’hélicité $\pm 2$ avec dispersion
-      $\gamma = 1/30$ sont dérivés en signature lorentzienne (Lorentz/CausalPropagation §3). L’unicité BI scalaire et
+      fournis</strong> (Thermodynamics). Le secteur lorentzien est <strong>ouvert</strong> : son noyau
+      transverse-sans-trace est posé plutôt que dérivé et, sous ce postulat, la branche sans masse est non
+      déformée ; le sous-programme ne fournit donc ni prédiction d’ondes gravitationnelles ni prise
+      observationnelle sur $\ell_{\mathrm{sp}}$ (Lorentz). L’unicité BI scalaire et
       l’involution de parité sont <strong>prouvées inconditionnellement</strong> (BornInfeld), de même que
       l’identification du porteur spectral et la réduction BI scalaire (Gravity Lemmes 2–3). Le théorème
       tensoriel BI (Gravity Théorème 1) est <strong>conditionnel à l’hypothèse [H-ext]</strong> (extensivité de la
@@ -247,7 +257,9 @@
       ouverts : le signe et la magnitude de $c_{\mathrm{EH}}^{\mathrm{ren}}$, qui sont des données d’ajustement plutôt
       que des prédictions du déterminant ; le pont thermodynamique, qui requiert une une-forme de chaleur, une notion
       d’énergie et un théorème d’intégrabilité de Carathéodory–Jauch–Roberts ; la preuve analytique de [H-ext] ;
-      la stationnarité lorentzienne d’Einstein complète au-delà de la linéarisation ; et les équations couplées
+      la construction in-in sur chemin temporel fermé qui donnerait une contrepartie lorentzienne de
+      $\mathcal{S}_\Pi$, ainsi que les secteurs scalaire et vectoriel et la stationnarité lorentzienne d’Einstein
+      complète au-delà de la linéarisation ; et les équations couplées
       $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ avec matière explicite, en attente du sous-programme de matière fermionique
       (Note 6). Cette note ne traite pas de la dynamique de Yang–Mills — celle-ci appartient au sous-programme de
       stratification jauge–gravité (Note de présentation 8).

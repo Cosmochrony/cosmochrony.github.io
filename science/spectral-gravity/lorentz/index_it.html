@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Propagazione causale e onde gravitazionali dalla dinamica spettrale proiettiva | Cosmochrony</title>
+  <title>Nessuna dispersione quartica del gravitone dal troncamento covariante locale a quattro derivate | Cosmochrony</title>
   <meta name="description"
-    content="Completamento lorentziano dell’entropia spettrale proiettiva: nucleo quadratico causale e ritardato, due polarizzazioni TT del gravitone in infrarosso e correzione di dispersione in k^4 fissata spettralmente e testabile con dati interferometrici."/>
+    content="Un risultato negativo su un nucleo postulato: il nucleo trasverso a traccia nulla covariante locale a quattro derivate non deforma la dispersione del gravitone. Lo spazio delle soluzioni è una somma diretta, l’addendo privo di massa soddisfa omega^2 = |k|^2 esattamente, e nessun coefficiente quartico viene indotto."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Propagazione causale e onde gravitazionali dalla dinamica spettrale proiettiva"/>
+    content="Nessuna dispersione quartica del gravitone dal troncamento covariante locale a quattro derivate"/>
   <meta property="og:description"
-    content="Azione spettrale lorentziana via Re log det' D_g o Schwinger–Keldysh, teorema IR sui modi TT e correzione di dispersione in k^4 fissata dai coefficienti di Seeley–DeWitt."/>
+    content="Sotto il nucleo postulato O_TT = c_EH Box + beta Box^2, lo spazio delle soluzioni è la somma diretta ker Box (+) ker(c_EH + beta Box); l’addendo privo di massa soddisfa omega^2 = |k|^2 senza correzione ad alcun ordine."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/lorentz/"/>
   <script type="module">
@@ -35,11 +35,11 @@
         </svg>
       </a>
       <div>
-        <h1>Propagazione causale e onde gravitazionali dalla dinamica spettrale proiettiva</h1>
+        <h1>Nessuna dispersione quartica del gravitone dal troncamento covariante locale a quattro derivate</h1>
         <p class="subtitle">
-          Un completamento lorentziano dell’entropia spettrale proiettiva che definisce un nucleo ritardato causale,
-          recupera due polarizzazioni TT del gravitone nel regime infrarosso e predice una correzione di dispersione
-          in $k^4$ fissata spettralmente e verificabile con dati interferometrici.
+          Un risultato negativo su un nucleo postulato: se il nucleo lorentziano trasverso a traccia nulla locale è
+          $\Box(c_{\mathrm{EH}} + \beta\Box)$, allora lo spazio delle soluzioni è una somma diretta il cui addendo privo
+          di massa soddisfa $\omega^2 = |\vec k|^2$ senza correzione ad alcun ordine in $|\vec k|$.
         </p>
       </div>
     </div>
@@ -52,22 +52,22 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Panoramica</h2>
+      <h2>Presentazione</h2>
       <p>
-        Questo articolo completa il quadro di geometria spettrale ellittica con una dinamica lorentziana e causale
-        delle perturbazioni della metrica effettiva. A partire dalla funzionale di entropia spettrale proiettiva
-        $S_\Pi[g]=\tfrac12\log\det' A_g$, il lavoro introduce un operatore normalmente iperbolico $D_g$ la cui
-        restrizione spaziale riproduce l’operatore ellittico $A_g$ su ipersuperfici a tempo costante.
+        Questa nota risolve una questione riguardo a un nucleo postulato: il nucleo trasverso a traccia nulla covariante
+        locale a quattro derivate $\mathcal{O}_{\mathrm{TT}} = c_{\mathrm{EH}}\Box + \beta\Box^2$ deforma la dispersione
+        del gravitone? Non la deforma.
       </p>
       <p>
-        L’azione spettrale lorentziana è definita come
-        $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, oppure in modo equivalente tramite una prescrizione
-        di Schwinger–Keldysh, così che l’inverso che compare in $\delta^2 S_\Pi^{(L)}$ sia l’operatore di Green
-        ritardato $G_R$. Ciò garantisce un nucleo quadratico reale e una propagazione causale.
+        Il nucleo è un’ipotesi, non una conseguenza dell’azione spettrale proiettiva. Tale azione assegna a una metrica
+        <em>riemanniana</em> il funzionale rinormalizzato $S_\Pi[g] = \tfrac12\log\det{}'A_g$, e una sua controparte
+        lorentziana non è disponibile: ottenerla richiede una costruzione in-in su un cammino temporale chiuso, il che è
+        aperto. Il nucleo lorentziano trasverso a traccia nulla è pertanto postulato, e ogni enunciato qui è
+        condizionale a tale postulato.
       </p>
       <div class="note" role="note">
-        <strong>Dichiarazione di ambito.</strong> Questa pagina riassume struttura e risultati. Il riferimento tecnico
-        autorevole è il preprint collegato sopra.
+        <strong>Ambito.</strong> Questa pagina riassume la struttura e i risultati. Il riferimento tecnico che fa fede è
+        il preprint collegato sopra.
       </div>
     </div>
     <aside class="card">
@@ -87,11 +87,13 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Completamento lorentziano, nucleo ritardato, spettro TT, vincoli sulla dispersione delle OG</div>
+          <div class="v">Troncamento postulato a quattro derivate, struttura delle soluzioni in somma diretta, contenuto
+            di poli, dati di raccordo</div>
         </div>
         <div class="kv">
           <div class="k">Ambito</div>
-          <div class="v">Spaziotempo globalmente iperbolico, regime infrarosso a bassa curvatura, interpretazione EFT</div>
+          <div class="v">Un risultato negativo su un troncamento, condizionale al nucleo postulato — e il suo ambito è
+            esattamente questo</div>
         </div>
       </div>
     </aside>
@@ -99,97 +101,222 @@
   <section class="card">
     <h2>Contributi principali</h2>
     <ul>
-      <li><strong>Completamento lorentziano:</strong> un operatore iperbolico $D_g$ il cui blocco spaziale riproduce
-        l’operatore ellittico $A_g$ in una riduzione quasi-statica $3+1$.</li>
-      <li><strong>Nucleo quadratico causale:</strong> $S_\Pi^{(L)}=\tfrac12\,\mathrm{Re}\,\log\det' D_g$ (o
-        Schwinger–Keldysh) implica un inverso ritardato $G_R$ in $\delta^2 S_\Pi^{(L)}$.</li>
-      <li><strong>Teorema di propagazione infrarossa:</strong> per $R\ell_\chi^2\ll1$ e
-        $\omega\ll\ell_\chi^{-1}$, si propagano esattamente due modi tensoriali TT di elicità $\pm2$; i settori
-        scalare e vettoriale restano non dinamici.</li>
-      <li><strong>Separazione dei poli ultravioletti:</strong> i termini a derivate superiori generano un polo
-        addizionale a $k^2\sim\ell_\chi^{-2}$ che si disaccoppia nella finestra infrarossa osservabile.</li>
-      <li><strong>Dispersione fissata spettralmente:</strong>
-        $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ con $\gamma=1/(180\zeta)$ e $\zeta=O(1)$;
-        nello schema spettrale naturale, $\gamma=1/30$.</li>
-      <li><strong>Settore vettoriale sorgente:</strong> una densità di impulso proiettata $T^{(\Pi)}_{0i}$ trasforma il
-        settore vettoriale in un vincolo gravitomagnetico ellittico, fissando il potenziale di trascinamento del
-        sistema di riferimento $g_{0i}$ come nella relatività generale linearizzata (condizionale a $T^{(\Pi)}_{0i}$).</li>
+      <li><strong>Un nucleo postulato, enunciato come tale:</strong> i risultati hanno la forma <em>se</em> il nucleo
+        lorentziano trasverso a traccia nulla locale è $\Box(c_{\mathrm{EH}} + \beta\Box)$, <em>allora</em> seguono le
+        conclusioni. Non sono enunciati su $S_\Pi$ stesso, né sul nucleo rinormalizzato completo.</li>
+      <li><strong>Struttura delle soluzioni in somma diretta:</strong> per $c_{\mathrm{EH}} \neq 0$ i due fattori sono
+        coprimi e $\ker\mathcal{O}_{\mathrm{TT}} = \ker\Box \oplus \ker(c_{\mathrm{EH}} + \beta\Box)$, una somma diretta
+        e non un’unione.</li>
+      <li><strong>Settore privo di massa non deformato:</strong> l’addendo privo di massa soddisfa
+        $\omega^2 = |\vec k|^2$ esattamente, senza correzione ad alcun ordine in $|\vec k|$.</li>
+      <li><strong>Nessun coefficiente quartico, quindi nessun limite di scala tramite $\alpha = 4$:</strong> $A_4 = 0$
+        sul ramo privo di massa, dunque non esiste alcuna applicazione di un coefficiente quartico su $\ell_\chi$, e
+        ogni limite su $\ell_\chi$ che poggi su tale identificazione non regge.</li>
+      <li><strong>Contenuto di poli:</strong> per $\beta \neq 0$, un polo di elicità $2$ in
+        $m_2^2 = -c_{\mathrm{EH}}/\beta$ porta un residuo opposto a quello del polo privo di massa — un carattere
+        fantasma indipendente dal segno di $c_{\mathrm{EH}}/\beta$.</li>
+      <li><strong>Un confine tracciato esplicitamente:</strong> i valori finiti di $c_{\mathrm{EH}}^{\mathrm{ren}}$ e
+        $\beta^{\mathrm{ren}}$, il quadrato di massa con segno, e la sorte di uno scalare proveniente da $R^2$ sono dati
+        di raccordo forniti dall’esterno del troncamento.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Azione spettrale lorentziana</h2>
+    <h2>L’operatore considerato</h2>
     <p>
-      Il completamento lorentziano adotta una prescrizione causale:
-      $S_\Pi^{(L)}[g]=\tfrac12\,\mathrm{Re}\,\log\det' D_g$, formulata in modo equivalente su un contorno
-      di Schwinger–Keldysh, così che le variazioni funzionali coinvolgano l’operatore di Green ritardato $G_R$.
-      Questa scelta rende reale il nucleo quadratico e impone il supporto causale
-      $G_R(x,y)=0$ quando $x\notin J^+(y)$.
+      Si assuma che, linearizzato attorno allo spaziotempo di Minkowski e ristretto al settore trasverso a traccia
+      nulla, il nucleo quadratico lorentziano locale troncato a quattro derivate sia
+      $$\mathcal{O}_{\mathrm{TT}} = c_{\mathrm{EH}}\Box + \beta\Box^2 ,$$
+      con $c_{\mathrm{EH}}$ e $\beta$ costanti reali, scartando i fattori di forma non locali e tutti i termini di
+      ordine $\Box^3$ e superiore. La differenza tra questo troncamento e il nucleo rinormalizzato completo conta
+      ovunque i termini scartati non siano trascurabili — in particolare nell’ultravioletto.
     </p>
     <p>
-      In una decomposizione $3+1$, $\Box_g$ si riduce a $-\partial_t^2+\Delta_\gamma$ in regime quasi-statico,
-      e l’operatore ellittico della teoria riemanniana è recuperato come blocco spaziale dell’operatore lorentziano.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Spettro infrarosso e polarizzazioni</h2>
-    <p>
-      Linearizzando $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ e imponendo la gauge armonica, la decomposizione SVT
-      mostra che le componenti scalari e vettoriali restano vincolate in infrarosso. Il settore TT soddisfa un
-      operatore d’onda fattorizzato della forma $c_{EH}\Box+\beta\Box^2$, che produce un polo gravitazionale
-      massless standard e un polo addizionale a $k^2\sim\ell_\chi^{-2}$. Per
-      $\omega\ll\ell_\chi^{-1}$ è accessibile solo il polo massless, e il contenuto di polarizzazione coincide con
-      quello della relatività generale (due modi di elicità $\pm2$).
+      <strong>Convenzioni.</strong> Segnatura $(-,+,+,+)$ e unità con $c = 1$. Per un’onda piana $e^{ik\cdot x}$ con
+      $k^\mu = (\omega, \vec k)$ si ha $\Box \to -k^2$, dove $k^2 = -\omega^2 + |\vec k|^2$.
     </p>
   </section>
   <section class="card">
-    <h2>Gravitomagnetismo e settore vettoriale sorgente</h2>
+    <h2>Struttura delle soluzioni: una somma diretta</h2>
     <p>
-      Il teorema di propagazione classifica il settore vettoriale $h_{0i}$ come non dinamico nel vuoto, non come
-      assente: non appena viene fornita una densità di impulso proiettata $T^{(\Pi)}_{0i}$, l’equazione di campo in
-      gauge armonica $\Box\bar h_{0i}=-16\pi G_N T^{(\Pi)}_{0i}$ lo trasforma in un vincolo. Nel limite stazionario è
-      un’equazione di Poisson vettoriale $\nabla^2 A^{\mathrm g}_i=4\pi G_N j^{\mathrm g}_i$, strutturalmente identica
-      alla magnetostatica, che fissa il potenziale di trascinamento del sistema di riferimento $g_{0i}$ e la precessione
-      di Lense–Thirring esattamente come nella relatività generale linearizzata, senza grado di libertà propagante
-      aggiuntivo.
+      Si scriva $P = \Box$ e $Q = c_{\mathrm{EH}} + \beta\Box$, così che $\mathcal{O}_{\mathrm{TT}} = PQ = QP$. Sia
+      $\mathcal{V}$ un qualsiasi spazio vettoriale complesso di campi tensoriali trasversi a traccia nulla su cui $\Box$
+      agisce e che è stabile sotto la sua azione — campi lisci o distribuzioni temperate, indifferentemente.
+      L’argomento è algebrico e non usa alcuna proprietà di $\mathcal{V}$ oltre la stabilità.
     </p>
     <p>
-      Mantenendo l’operatore sottodominante $\beta\Box^2$ si aggiunge una correzione a corto raggio
-      $\sim\ell_\chi^2\nabla^4$ che condivide il rapporto di Seeley–DeWitt della dispersione tensoriale in $k^4$ —
-      l’unico punto in cui il settore gravitomagnetico potrebbe portare un’impronta propria del quadro anziché
-      riprodurre la relatività generale. Il risultato è strutturale e condizionale a $T^{(\Pi)}_{0i}$: la riduzione a
-      valle è chiusa, mentre la costruzione dai primi principi di $T^{(\Pi)}_{0i}$ a partire da configurazioni di
-      materia proiettata in movimento resta aperta, in attesa del settore di materia fermionica e accoppiata.
+      Per $c_{\mathrm{EH}} \neq 0$ i due fattori sono coprimi, per l’identità di Bézout
+      $$Q - \beta P = c_{\mathrm{EH}} ,$$
+      una costante non nulla. Lo spazio delle soluzioni è allora la somma diretta
+      $$\ker\mathcal{O}_{\mathrm{TT}} = \ker\Box \,\oplus\, \ker(c_{\mathrm{EH}} + \beta\Box) ,$$
+      e la decomposizione di ogni $h^{\mathrm{TT}}$ come $h^{\mathrm{TT}} = h_0 + h_m$ con $h_0 \in \ker P$ e
+      $h_m \in \ker Q$ è unica. Se inoltre $\beta \neq 0$, allora $\ker Q$ è caratterizzato da
+      $\Box h_m = -(c_{\mathrm{EH}}/\beta)\,h_m$.
+    </p>
+    <p>
+      <strong>Il nucleo non è un’unione.</strong> Siano $c_{\mathrm{EH}} \neq 0$ e $\beta \neq 0$, e si supponga che
+      <em>sia</em> $\ker P \neq \{0\}$ <em>sia</em> $\ker Q \neq \{0\}$ in $\mathcal{V}$. Queste sono ipotesi su
+      $\mathcal{V}$, non conseguenze di $c_{\mathrm{EH}} \neq 0$ e $\beta \neq 0$: uno spazio stabile può non contenere
+      alcuna soluzione dell’una o dell’altra equazione di fattore. Valgono nelle distribuzioni temperate, dove $\ker P$
+      porta le onde piane con $k^2 = 0$ e $\ker Q$ quelle con $k^2 = c_{\mathrm{EH}}/\beta$. Allora il nucleo è
+      strettamente più grande di $\ker P \cup \ker Q$: dati $h_0 \in \ker P$ e $h_m \in \ker Q$ non nulli, la somma
+      $h_0 + h_m$ risolve $\mathcal{O}_{\mathrm{TT}} h = 0$ pur non soddisfacendo nessuna delle due equazioni di
+      fattore, poiché $\Box(h_0+h_m) = -(c_{\mathrm{EH}}/\beta)h_m \neq 0$ e
+      $(c_{\mathrm{EH}} + \beta\Box)(h_0+h_m) = c_{\mathrm{EH}} h_0 \neq 0$. Una soluzione generica è una
+      sovrapposizione dei due settori, non un membro di uno di essi.
+    </p>
+    <p>
+      Nessuna delle due ipotesi segue dall’altra, e ciascuna viene meno su uno spazio ammissibile con $\beta \neq 0$
+      fissato. Sia $\ker P$ sia $\ker Q$ sono stabili sotto $\Box$, dunque ciascuno è una scelta ammissibile di
+      $\mathcal{V}$, e su ciascuno l’operatore degenera: su $\mathcal{V} = \ker P$, l’operatore $\Box$ agisce come $0$,
+      così $Q$ agisce come $c_{\mathrm{EH}} I$ ed è invertibile, dando $\ker Q = \{0\}$; su $\mathcal{V} = \ker Q$,
+      l’operatore $\Box$ agisce come $-(c_{\mathrm{EH}}/\beta) I$ ed è invertibile, dando $\ker P = \{0\}$. In entrambi
+      i casi l’unione coincide con il nucleo e l’inclusione stretta viene meno. La strettezza è dunque un enunciato su
+      uno spazio che contiene entrambi i settori, e non sull’operatore soltanto.
+    </p>
+    <p>
+      <strong>Caso degenere.</strong> Se $c_{\mathrm{EH}} = 0$ l’identità di Bézout viene meno e la decomposizione non è
+      disponibile: $\mathcal{O}_{\mathrm{TT}} = \beta\Box^2$, e $\ker\Box^2$ contiene soluzioni generalizzate annullate
+      da $\Box^2$ ma non da $\Box$.
     </p>
   </section>
   <section class="card">
-    <h2>Dispersione e vincoli osservativi</h2>
+    <h2>Assenza di dispersione quartica del gravitone</h2>
     <p>
-      Il settore in quadrato di Weyl fissato dal coefficiente di Seeley–DeWitt $a_4$ induce una correzione universale
-      in $k^4$ alla relazione di dispersione:
-      $\omega^2=c^2k^2-\gamma\ell_\chi^2k^4+O(k^6)$ con $\gamma=1/(180\zeta)$.
-      Questo si mappa direttamente sulla parametrizzazione LVK
-      $\omega^2=c^2k^2+A_4k^4$, fornendo il vincolo
-      $\ell_\chi\lesssim\sqrt{180\,\zeta\,A_4^{\mathrm{obs}}}$, e
-      $\ell_\chi\lesssim\sqrt{30\,A_4^{\mathrm{obs}}}$ nello schema naturale.
+      Per $c_{\mathrm{EH}} \neq 0$ l’addendo privo di massa appartiene a $\ker\Box$ per costruzione, e $\ker\Box$ non
+      dipende da $\beta$. Quindi per onde piane $h_0 \sim e^{ik\cdot x}$,
+      $$\omega^2 = |\vec k|^2 ,$$
+      senza correzione ad alcun ordine in $|\vec k|$.
     </p>
     <p>
-      L’operatore caratteristico rimane luminale all’ordine dominante, mentre le deviazioni della velocità di gruppo
-      sono soppresse da un fattore $(k\ell_\chi)^2$ nel regime osservativo.
+      Una relazione che deformasse la dispersione priva di massa all’ordine quartico descriverebbe un unico ramo. Il
+      nucleo non possiede alcun ramo di questo tipo. Sviluppare $(c_{\mathrm{EH}} + \beta z)^{-1}$ in potenze di $z$
+      attorno a $z = 0$ genera una serie di termini analitici nell’origine — termini di contatto, nello spazio delle
+      posizioni — aggiunti al polo privo di massa; ciò non sposta tale polo, la cui posizione è lo zero di $\Box$ e non
+      dipende da $\beta$. Leggere la serie risultante come una relazione di dispersione deformata scambia uno sfondo
+      analitico per uno spostamento del polo.
+    </p>
+    <p>
+      I cataloghi di onde gravitazionali testano la dispersione modificata tramite la relazione fenomenologica
+      $$E^2 = p^2c^2 + A_\alpha\,p^\alpha c^\alpha ,$$
+      vincolando $A_\alpha$ per una gamma di esponenti $\alpha$. Il caso $\alpha = 4$ è ciò che popolerebbe una
+      deformazione quartica del ramo privo di massa; il caso $\alpha = 0$ corrisponde invece a un termine di massa, così
+      che la parametrizzazione non è cieca ai rami massivi. Sotto il troncamento con $c_{\mathrm{EH}} \neq 0$, il
+      settore privo di massa non deformato dà $A_4 = 0$ sul ramo privo di massa. Non esiste dunque alcuna applicazione
+      di un coefficiente quartico sulla scala pre-geometrica $\ell_\chi$, e ogni limite su $\ell_\chi$ ottenuto
+      identificando un limite interferometrico su $A_4$ con un coefficiente spettrale quartico non regge.
+    </p>
+    <p>
+      <strong>Ciò che <em>non</em> viene affermato.</strong> Questo non dice che tali dati non possano vincolare questo
+      quadro. Il settore $\alpha = 0$ riguarda i rami massivi, e il polo della sezione seguente è uno di essi. Farne un
+      vincolo effettivo richiederebbe la sua massa, il suo accoppiamento al rivelatore e la sua eccitazione nella
+      sorgente — nulla di ciò è fornito qui. Il risultato negativo riguarda unicamente la via $A_4$.
+    </p>
+    <p>
+      <strong>Nessuna affermazione sulla velocità di fronte.</strong> La relazione $\omega^2 = |\vec k|^2$ è un
+      enunciato sul troncamento, non sui fronti di segnale. Una velocità di fronte è governata dal comportamento a
+      grandi $k$ del nucleo completo, precisamente là dove i termini non locali e $\mathcal{O}(\Box^3)$ scartati non
+      sono trascurabili. Nessun enunciato sulla propagazione dei fronti è fatto qui, in nessuna direzione.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Contenuto di poli</h2>
+    <p>
+      Scrivendo $z$ per l’immagine nello spazio degli impulsi di $\Box$, il propagatore trasverso a traccia nulla è, per
+      $c_{\mathrm{EH}} \neq 0$ <em>e</em> $\beta \neq 0$ — le frazioni parziali qui sotto dividono per $\beta$ —
+      $$\frac{1}{z(c_{\mathrm{EH}} + \beta z)}
+      = \frac{1}{c_{\mathrm{EH}}\,z} \;-\; \frac{1}{c_{\mathrm{EH}}\,(z + c_{\mathrm{EH}}/\beta)} .$$
+      Ne seguono due fatti, e sono indipendenti l’uno dall’altro. Primo, il <strong>carattere fantasma</strong>: i due
+      residui hanno segni opposti, qualunque siano i segni di $c_{\mathrm{EH}}$ e $\beta$, così che il secondo polo è un
+      fantasma rispetto a quello privo di massa — ciò non dipende da $c_{\mathrm{EH}}/\beta$. Secondo, il
+      <strong>carattere tachionico</strong>: il secondo polo si trova in $z = -c_{\mathrm{EH}}/\beta$, così che il segno
+      di $c_{\mathrm{EH}}/\beta$ fissa il segno del quadrato di massa corrispondente, e con esso se il modo è
+      tachionico. È una questione distinta, con una risposta distinta.
+    </p>
+    <p>
+      Per $\beta \neq 0$ il secondo polo si trova in $k^2 = c_{\mathrm{EH}}/\beta$, cioè in
+      $$m_2^2 = -\,\frac{c_{\mathrm{EH}}}{\beta} ,$$
+      nelle convenzioni sopra. Ciò assomiglia al contenuto di poli della gravità quadratica, dove un gravitone privo di
+      massa è accompagnato da un fantasma massivo di spin $2$ (Stelle 1977; Calmet–Capozziello–Pryer 2017). La
+      somiglianza è un confronto e non un’identificazione: il calcolo trasverso a traccia nulla stabilisce un polo di
+      elicità $2$ con residuo opposto, mentre il multipletto massivo di spin $2$ è un enunciato su tutte e cinque le
+      polarizzazioni. I settori scalare e vettoriale non sono trattati qui, così che la struttura completa del
+      multipletto non è stabilita.
+    </p>
+    <p>
+      <strong>Il settore scalare non è risolto.</strong> L’$a_4$ minimale porta un settore $R^2$ accanto a $C^2$.
+      Nell’azione efficace al secondo ordine in curvatura ciò sostiene genericamente uno scalare massivo oltre al modo
+      massivo di spin $2$. Escluderlo richiede una condizione di raccordo sul coefficiente di $R^2$, così che il
+      contenuto di modi del troncamento non è qui pienamente determinato.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Che cosa sono i dati di raccordo</h2>
+    <p>
+      Il coefficiente di Seeley–DeWitt $a_4$ controlla un contributo logaritmico al flusso degli accoppiamenti a quattro
+      derivate. Non fissa il valore finito di $\beta^{\mathrm{ren}}$.
+    </p>
+    <p>
+      La normalizzazione e il segno di $\tfrac12\log\det{}'A_g$ non sono in questione: sono fissati dalla definizione
+      del funzionale. Ciò che lascia $\beta^{\mathrm{ren}}$ indeterminato sono le parti finite dei controtermini, il
+      contenuto completo di operatori, la continuazione alla segnatura lorentziana e la condizione di rinormalizzazione.
+      Un’identificazione $\beta = -2\alpha_C$ letta sulla parte di Weyl al quadrato di $a_4$ non ne fornisce nessuno, e
+      non è una determinazione di $\beta^{\mathrm{ren}}$. Lo stesso vale per $c_{\mathrm{EH}}^{\mathrm{ren}}$. Di
+      conseguenza il quadrato di massa con segno
+      $$m_2^2 = -\,\frac{c_{\mathrm{EH}}^{\mathrm{ren}}}{\beta^{\mathrm{ren}}}$$
+      — equivalentemente la scala del polo $|c_{\mathrm{EH}}^{\mathrm{ren}}/\beta^{\mathrm{ren}}|$ insieme al suo segno
+      — è un dato di raccordo, e non è derivabilmente legato a $\ell_\chi$.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Problemi aperti</h2>
+    <ul>
+      <li><strong>La costruzione in-in.</strong> Un’azione efficace di Schwinger–Keldysh si costruisce a partire da
+        configurazioni di campo raddoppiate su un cammino temporale chiuso, con i rami accoppiati dalla condizione al
+        bordo nel punto di inversione. Sostituire un operatore di Green ritardato ad $A_g^{-1}$ in un hessiano ordinario
+        a campo singolo non è quella costruzione e non ne segue. Se l’azione spettrale proiettiva ammetta una
+        formulazione su cammino temporale chiuso, e se la forma quadratica che ne risulterebbe concordi con il
+        troncamento, è aperto.</li>
+      <li><strong>Il settore vettoriale.</strong> L’equazione vettoriale linearizzata porta un termine
+        $\Box\bar h_{0i}$, dunque una derivata temporale seconda che la gauge armonica non elimina. Solo sotto
+        un’ipotesi di stazionarietà si riduce a un vincolo ellittico. Una derivazione dal sistema lineare completo con
+        proiettori di spin, e la sorte della correzione a quattro derivate al suo interno, sono aperte.</li>
+      <li><strong>Oltre il troncamento.</strong> Il troncamento scarta i fattori di forma non locali e i termini
+        $\mathcal{O}(\Box^3)$. Se l’assenza di dispersione quartica del gravitone sopravviva alla loro inclusione non è
+        affrontato qui.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Stato interpretativo</h2>
+    <p>
+      Nel suo settore trasverso a traccia nulla, il nucleo postulato assomiglia alla gravità quadratica. È allettante
+      leggere tale somiglianza come un sostegno alla costruzione spettrale; la lettura è disponibile ma debole, poiché
+      qualsiasi costruzione che generi settori $C^2$ e $R^2$ le assomiglierebbe altrettanto — e la somiglianza è qui
+      stabilita solo per un polo di elicità $2$, non per il contenuto completo di modi. L’enunciato difendibile è più
+      stretto: il nucleo postulato è compatibile con la struttura infrarossa nota e non predice, al di là di essa, nulla
+      di attualmente osservabile.
+    </p>
+    <p>
+      Ciò che questa nota apporta è un confine. Diversi ingredienti mancano prima che le onde gravitazionali possano
+      mettere alla prova questo quadro, e non sono intercambiabili: una costruzione lorentziana da cui il nucleo segua
+      effettivamente, anziché essere postulato; una condizione di rinormalizzazione che fissi $m_2^2$; l’accoppiamento
+      di quel modo a un rivelatore e la sua eccitazione in una sorgente; e un trattamento dei settori scalare e
+      vettoriale sufficiente a risolvere il contenuto di modi. Nominarli è ciò che li rende affrontabili, e nessuno di
+      essi è fornito qui.
     </p>
   </section>
   <section class="card">
     <h2>Relazione con il programma Cosmochrony</h2>
     <p>
-      Questo articolo è formulato come un completamento autonomo dell’approccio basato sull’entropia spettrale.
-      Si collega al programma Cosmochrony più ampio attraverso la scala pre-geometrica $\ell_\chi$ e la risposta
-      di Einstein in infrarosso, ma è concepito per essere valutato indipendentemente dalla costruzione completa
-      del substrato.
+      Questo articolo è il papero III del sotto-programma di gravità spettrale. Si collega al più ampio programma
+      Cosmochrony attraverso la scala pre-geometrica $\ell_\chi$ e l’azione spettrale proiettiva, e rimuove una presa
+      interferometrica putativa su $\ell_\chi$ isolando al contempo ciò che una genuina richiederebbe — a cominciare da
+      una costruzione lorentziana da cui il nucleo segua effettivamente.
     </p>
   </section>
   <section class="card">
     <h2>Riferimento</h2>
     <p>
-      Jérôme Beau. <i lang="en">Causal Propagation and Gravitational Waves from Projective Spectral Dynamics</i>.
+      Jérôme Beau. <i lang="en">No Quartic Graviton Dispersion from the Local Covariant Four-Derivative Truncation</i>.
       Preprint. <a href="https://doi.org/10.5281/zenodo.18826644" rel="noopener">10.5281/zenodo.18826644</a>
     </p>
   </section>

@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Termodinámica Espectral Local y Ecuación de Einstein | Cosmochrony</title>
+  <title>Acoplamiento Einstein–materia a partir de la estacionariedad espectral | Cosmochrony</title>
   <meta name="description"
-    content="Termodinámica espectral local: la localidad del núcleo de calor define un campo multiplicador espectral corregido por la curvatura, y la ecuación de Einstein emerge como condición de equilibrio espectral restringido en el régimen infrarrojo."/>
+    content="Un resultado variacional condicional: dada una respuesta métrica infrarroja renormalizada y una funcional de materia, la estacionariedad espectral produce la ecuación de Einstein. La lectura termodinámica afirmada en versiones anteriores queda retirada: el núcleo de calor por sí solo no proporciona ni temperatura ni primera ley."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Termodinámica Espectral Local y Ecuación de Einstein como Condición de Equilibrio Espectral"/>
+    content="Acoplamiento Einstein–materia a partir de la estacionariedad espectral: un resultado variacional condicional y el puente termodinámico abierto"/>
   <meta property="og:description"
-    content="Localidad del núcleo de calor, jerarquía de Seeley–DeWitt, primera ley espectral como condición de compatibilidad y ecuación de Einstein obtenida a partir de un extremo espectral restringido."/>
+    content="La versión 2.0 separa lo establecido — un acoplamiento variacional condicional — de una interpretación termodinámica que no lo está. La magnitud u del núcleo de calor es una escala de valores propios, no una temperatura."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/thermodynamics/"/>
   <script type="module">
@@ -36,11 +36,10 @@
         </svg>
       </a>
       <div>
-        <h1>Termodinámica Espectral Local y Ecuación de Einstein</h1>
+        <h1>Acoplamiento Einstein–materia a partir de la estacionariedad espectral</h1>
         <p class="subtitle">
-          Un marco de geometría espectral en el que un campo multiplicador local corregido por la curvatura emerge de la
-          localidad del núcleo de calor, y la ecuación de Einstein aparece como condición de equilibrio espectral
-          restringido.
+          Un resultado variacional condicional, y una exposición explícita del puente termodinámico que sigue abierto.
+          La versión 2.0 retira las identificaciones termodinámicas afirmadas hasta la versión 1.1.
         </p>
       </div>
     </div>
@@ -55,21 +54,24 @@
     <div class="card">
       <h2>Resumen</h2>
       <p>
-        Este artículo desarrolla una interpretación termodinámica local del funcional de entropía espectral proyectiva
-        $S_\Pi[g]=\tfrac12\log\det' A_g$, definido por un operador de tipo laplaciano mínimo sobre una variedad
-        riemanniana de cuatro dimensiones. El núcleo de calor diagonal $K(x,x;t)$ define una densidad de energía
-        espectral local $u(x;t)=-\partial_t\log K(x,x;t)$ cuyo desarrollo de Seeley–DeWitt conduce a un campo
-        multiplicador local $\beta(x)^{-1}=\beta_0^{-1}-\tfrac16 R(x)+O(\nabla^2R)$.
+        Este artículo separa un resultado variacional condicional de una interpretación termodinámica que aún no está
+        establecida. Sea $S_\Pi^{\mathrm{ren}}[g]=\tfrac12\log\det'(A_g/\mu^2)$ la funcional espectral proyectiva
+        renormalizada. Suponiendo una respuesta métrica infrarroja renormalizada y una funcional de materia efectiva
+        $W_\Pi[g,\psi]$, la estacionariedad de $\Gamma_\Pi=S_\Pi^{\mathrm{ren}}-W_\Pi$ produce
+      </p>
+      <p style="text-align: center;">
+        $G_{\mu\nu}+\Lambda_{\mathrm{ren}}g_{\mu\nu}=8\pi G_N T^{(\Pi)}_{\mu\nu}$
       </p>
       <p>
-        En el régimen infrarrojo dominante $R\,\ell_\chi^2\ll1$, la variación métrica de la entropía espectral
-        renormalizada y la de la funcional de materia proyectada están relacionadas por una identidad de compatibilidad
-        $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi(x)$. El extremo restringido de $S_\Pi$ con contenido de materia fijo
-        conduce a $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.
+        al orden dominante en derivadas. El factor $8\pi G_N$ es el cociente entre el factor $\tfrac12$ de la variación
+        de materia y el coeficiente geométrico $(16\pi G_N)^{-1}$: una consecuencia de los convenios, no una predicción
+        independiente del acoplamiento.
       </p>
       <div class="note" role="note">
-        <strong>Alcance.</strong> Esta página ofrece un resumen estructurado. La referencia técnica autoritativa es el
-        preprint enlazado arriba.
+        <strong>Lo que retira la versión 2.0.</strong> Las versiones hasta la 1.1 describían un campo multiplicador
+        local $\beta(x)^{-1}$, una primera ley espectral y la ecuación de Einstein como condición de equilibrio
+        espectral. Esas identificaciones quedan retiradas. El núcleo de calor por sí solo no proporciona ni temperatura
+        ni primera ley.
       </div>
     </div>
     <aside class="card">
@@ -89,11 +91,13 @@
         </div>
         <div class="kv">
           <div class="k">Enfoque</div>
-          <div class="v">Núcleo de calor, multiplicador espectral, principio variacional, gravedad inducida</div>
+          <div class="v">Determinante espectral, núcleo de calor, acoplamiento variacional condicional, integrabilidad
+            termodinámica</div>
         </div>
         <div class="kv">
           <div class="k">Marco</div>
-          <div class="v">Contexto riemanniano elíptico, régimen infrarrojo de baja curvatura</div>
+          <div class="v">Contexto riemanniano elíptico, régimen infrarrojo de curvatura débil; coeficientes
+            suministrados, no derivados</div>
         </div>
       </div>
     </aside>
@@ -101,67 +105,90 @@
   <section class="card">
     <h2>Aportaciones principales</h2>
     <ul>
-      <li><strong>Densidad de energía espectral local:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ definida a partir del
-        núcleo de calor diagonal.</li>
-      <li><strong>Campo multiplicador corregido por la curvatura:</strong> el coeficiente $a_2=\tfrac16R$ controla la
-        corrección geométrica dominante de $\beta(x)^{-1}$.</li>
-      <li><strong>Primera ley espectral como condición de compatibilidad:</strong> $\delta S_\Pi=\int\beta^{-1}\delta
-        E_\Pi$ vale en el orden infrarrojo dominante si y solo si se satisface la ecuación de Einstein.</li>
-      <li><strong>Principio de equilibrio espectral:</strong> el extremo de $S_\Pi$ con materia proyectada fija produce
-        $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.</li>
-      <li><strong>Normalización de $8\pi G_N$:</strong> el factor surge únicamente de la normalización geométrica
-        $(16\pi G_N)^{-1}$ y del factor $1/2$ en la definición del tensor energía-momento.</li>
+      <li><strong>Acoplamiento variacional condicional:</strong> dada una respuesta métrica infrarroja renormalizada y
+        una funcional de materia, la estacionariedad de $\Gamma_\Pi$ produce la ecuación de Einstein con término
+        cosmológico. El resultado queda demostrado <em>dados</em> los coeficientes suministrados.</li>
+      <li><strong>Auditoría dimensional de la magnitud del núcleo de calor:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$
+        tiene dimensión $L^{-2}$ — una escala de valores propios — con
+        $u=2/t-R/6+O(t\mathcal{R}^2,t\nabla^2R)$.</li>
+      <li><strong>Una respuesta espectral adimensional:</strong> la forma normalizada $b(x;t)=t\,u(x;t)/2=1-tR/12+\cdots$
+        está bien definida y es covariante.</li>
+      <li><strong>Ni temperatura ni primera ley:</strong> ni $u$ ni $b$ son una temperatura, una temperatura inversa o
+        una densidad de energía sin una aplicación de calibración adicional. En consecuencia, del núcleo de calor por sí
+        solo no se sigue ninguna primera ley local.</li>
+      <li><strong>El puente se nombra, no se cruza:</strong> una compleción termodinámica requiere una 1-forma de calor
+        definida de manera independiente, una noción física de energía y un teorema de integrabilidad.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Campo multiplicador local</h2>
+    <h2>Por qué $u$ no es una temperatura</h2>
     <p>
-      Evaluar la densidad espectral en una escala de admisibilidad $t_*$ da
-      $\beta(x)^{-1}=2/t_*-\tfrac16R(x)+O(\nabla^2R)$. El término universal $\beta_0^{-1}=2/t_*$ depende de la escala de
-      resolución espectral y no representa una temperatura física. El término de curvatura es covariante y está
-      completamente controlado por la jerarquía de Seeley–DeWitt.
+      Para un laplaciano $A_g\sim L^{-2}$, el parámetro de calor es un parámetro de difusión con $t\sim L^2$, de modo
+      que $u=-\partial_t\log K\sim L^{-2}$: la misma dimensión que la curvatura escalar $R$. En unidades naturales una
+      temperatura física, como una energía, tiene dimensión $L^{-1}$.
     </p>
     <p>
-      Elegir unidades espectrales en las que $\beta_0^{-1}=1$ equivale a fijar $t_*=2$. Se trata de una elección de
-      gauge en la escala de admisibilidad, sin efecto sobre la constante de Newton inducida.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Equilibrio espectral</h2>
-    <p>
-      La funcional restringida $\mathcal{F}[g,\psi]=S_\Pi[g]-\vartheta_*^{-1}W_\Pi[g,\psi]$ actúa como una energía libre
-      espectral. La condición de estacionariedad bajo variaciones métricas de soporte compacto produce $\tfrac{1}{16\pi
-      G_N}G_{\mu\nu}=\tfrac{\vartheta_*^{-1}}{2}T_{\mu\nu}$. Para la elección canónica $\vartheta_*^{-1}=1$, se recupera la
-      ecuación de Einstein.
-    </p>
-    <p>
-      No se requiere ninguna estructura de horizonte, región de Rindler ni ecuación de Raychaudhuri. La derivación es
-      completamente variacional y espectral.
+      La magnitud $u$ es, por tanto, una escala de valores propios, no una escala térmica. Leerla como una temperatura
+      no es cuestión de un factor omitido ni de un exponente mal etiquetado: es una identificación que el núcleo de
+      calor no autoriza. La expresión anterior $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi$ no sobrevive a esta
+      auditoría.
     </p>
   </section>
   <section class="card">
-    <h2>Relación con la gravedad inducida</h2>
+    <h2>El puente termodinámico abierto</h2>
     <p>
-      El coeficiente geométrico $(16\pi G_N)^{-1}$ proviene de la sustracción del polo $a_2$ en el <a
-      href="https://es.wikipedia.org/wiki/Regularizaci%C3%B3n_de_la_funci%C3%B3n_zeta">determinante regularizado
-      mediante función zeta</a>. En el régimen $R\,\ell_\chi^2\ll1$, las contribuciones de orden superior de
-      Seeley–DeWitt están suprimidas y el término de Einstein domina la respuesta infrarroja.
+      Establecer una termodinámica genuina requiere, por este orden: una 1-forma de calor $\xi_{\mathrm{sp}}$ definida
+      de manera independiente sobre el espacio de configuraciones; una noción física de energía; y un teorema de
+      integrabilidad que muestre que $\ker\xi_{\mathrm{sp}}$ es plano y, por tanto, que $\delta Q=T\,\mathrm{d}S$ se
+      cumple localmente.
+    </p>
+    <p>
+      Este es el criterio clásico de <a href="https://es.wikipedia.org/wiki/Constantin_Carath%C3%A9odory">Carathéodory</a>,
+      retomado por Jauch y dotado de una forma geométrica moderna por Bryan W. Roberts, quien muestra que el calor define
+      una conexión de gauge sobre un fibrado de líneas por encima de las configuraciones de trabajo: la anulación de la
+      curvatura equivale a la existencia local de funciones de entropía y temperatura, mientras que el equilibrio global
+      todavía puede fallar mediante un análogo térmico de la fase geométrica. Ese criterio convierte una reserva
+      terminológica en una prueba matemática precisa, una que este artículo aún no supera y que no pretende superar.
     </p>
   </section>
   <section class="card">
-    <h2>Relación con el programa Cosmochrony</h2>
+    <h2>Relación con el artículo sobre gravedad</h2>
     <p>
-      Este artículo constituye un análisis autónomo de geometría espectral. Se vincula con el programa Cosmochrony
-      mediante la escala de admisibilidad $t_*$ y la normalización de gravedad inducida, pero puede evaluarse
-      independientemente del marco pregeométrico completo.
+      La respuesta métrica infrarroja renormalizada que aquí se supone la suministra el artículo complementario sobre
+      gravedad, que separa los sectores de corte espectral y de función zeta e identifica el coeficiente de Einstein
+      finito $c_{\mathrm{EH}}^{\mathrm{ren}}$ como un dato de ajuste y no como una predicción. El carácter condicional
+      del presente resultado se sigue directamente: lo que allí se suministra, aquí se supone.
+    </p>
+    <p>
+      No se requiere ninguna estructura de horizonte, <a
+      href="https://en.wikipedia.org/wiki/Rindler_coordinates">cuña de Rindler</a> ni <a
+      href="https://en.wikipedia.org/wiki/Raychaudhuri_equation">ecuación de Raychaudhuri</a>. La derivación es
+      enteramente variacional y espectral.
     </p>
   </section>
   <section class="card">
-    <h2>Referencia</h2>
+    <h2>Estatus interpretativo</h2>
     <p>
-      Jérôme Beau. <i lang="en">Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium
-      Condition</i>. Preprint. <a href="https://doi.org/10.5281/zenodo.18825655"
+      El contenido condicional es un acoplamiento variacional entre una funcional geométrica renormalizada y la materia.
+      Leer esa estacionariedad como <em>equilibrio</em> sigue siendo una interpretación a nivel de programa, no un
+      resultado de este artículo: la palabra conlleva compromisos termodinámicos que la construcción todavía no gana.
+    </p>
+    <p>
+      Se trata de un estrechamiento deliberado. Una afirmación más débil que resiste el escrutinio vale más para el
+      programa que una más fuerte que no lo resiste, y nombrar con precisión el eslabón que falta es lo que lo hace
+      abordable.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Referencias</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Einstein–Matter Coupling from Spectral Stationarity: A Conditional Variational Result
+      and the Open Thermodynamic Bridge</i>. Preprint. <a href="https://doi.org/10.5281/zenodo.18825655"
       rel="noopener">10.5281/zenodo.18825655</a>
+    </p>
+    <p>
+      B. W. Roberts. <i lang="en">Heat as a Gauge Connection</i>. <a href="https://arxiv.org/abs/2503.08753"
+      rel="noopener">arXiv:2503.08753</a>
     </p>
   </section>
 </main>

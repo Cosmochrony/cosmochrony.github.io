@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Infrared Einstein Response from a Renormalized Spectral Entropy Functional | Cosmochrony</title>
+  <title>Conditions for an Infrared Einstein Sector from Spectral Geometry | Cosmochrony</title>
   <meta name="description"
-    content="Covariant spectral-geometry study: the renormalized metric variation of a projective entropy functional yields an IR-dominant local Einstein response, with controlled higher-derivative, non-local, and anomaly terms."/>
+    content="Covariant spectral-geometry study: which conditions let a Laplace-type operator support a local infrared Einstein sector. Cutoff and zeta regularization are kept strictly separate, and the finite Newton coupling is identified as a matching datum, not a prediction."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Infrared Einstein Response from a Renormalized Spectral Entropy Functional"/>
+  <meta property="og:title" content="Conditions for an Infrared Einstein Sector from Spectral Geometry"/>
   <meta property="og:description"
-    content="Minimal elliptic Laplace-type operator, zeta regularization, heat-kernel poles, and induced Einstein–Hilbert structure in the infrared."/>
+    content="Proper-time cutoff carries the power-sensitive terms; zeta regularization carries the finite and logarithmic dependence. The sign and value of the gravitational coupling remain matching data."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/gravity/"/>
   <script type="module">
@@ -34,10 +34,11 @@
         </svg>
       </a>
       <div>
-        <h1>Infrared Einstein Response from a Renormalized Spectral Entropy Functional</h1>
+        <h1>Conditions for an Infrared Einstein Sector from Spectral Geometry</h1>
         <p class="subtitle">
-          A minimal spectral-geometry framework where the renormalized metric variation has an IR-dominant local
-          Einstein term, with explicit higher-derivative, non-local, and anomaly contributions.
+          A minimal spectral-geometry framework that separates what the determinant fixes — the allowed local
+          structures and their cutoff sensitivities — from what it does not: the finite value and sign of the
+          gravitational coupling.
         </p>
       </div>
     </div>
@@ -52,18 +53,24 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article studies a covariant projective entropy functional defined by a minimal elliptic Laplace-type
-        operator on a four-dimensional Riemannian manifold.
-        The goal is to identify the leading local geometric content of the renormalized metric variation in a controlled
-        infrared regime, while keeping higher-derivative, non-local, and anomaly terms explicit.
+        This article asks under which conditions a minimal elliptic Laplace-type operator on a four-dimensional
+        Riemannian manifold can support a local infrared Einstein sector — and, just as importantly, which parts of
+        gravity such an operator does <em>not</em> determine.
       </p>
       <p>
         Defining the projective entropy as
-        $S_\Pi[g]=\tfrac12\log\det' A_g$, with $A_g=-\nabla_g^2$, the functional is regularized through the spectral zeta
-        function and renormalized by subtraction of heat-kernel poles.
-        The resulting renormalized spectral stress tensor admits a derivative-order decomposition whose leading local
-        two-derivative term is proportional to the Einstein tensor.
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, with $A_g=-\nabla_g^2$, version 3.3 separates two regularization statements
+        that must not be conflated. A physical proper-time cutoff $\Lambda=\ell_{\mathrm{sp}}^{-1}$ carries the
+        power-sensitive local terms $a_0\Lambda^4$ and $a_2\Lambda^2$; zeta regularization carries the finite
+        determinant and the logarithmic scale dependence, governed in four dimensions by $a_4=\zeta_A(0)$.
       </p>
+      <div class="note" role="note">
+        <strong>What is not claimed.</strong> One minimal scalar contributes
+        $\Delta c_{\mathrm{EH}}^{\Lambda}=-\Lambda^2/[12(4\pi)^2]$ to the Einstein–Hilbert coefficient — a
+        <em>negative</em> value. The finite renormalized coefficient, its sign, and hence a positive Newton constant
+        are matching data fixed by a renormalization condition and the complete operator content. They are not
+        predicted by this determinant alone.
+      </div>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
         The authoritative technical reference is the preprint linked above.
@@ -86,7 +93,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Spectral determinants, heat kernel, induced Einstein–Hilbert term, IR hierarchy</div>
+          <div class="v">Spectral determinants, heat kernel, cutoff/zeta separation, renormalization matching, IR hierarchy</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
@@ -100,16 +107,19 @@
     <ul>
       <li><strong>Covariant spectral functional:</strong> $S_\Pi[g]=\tfrac12\log\det'(-\nabla_g^2)$ with ellipticity and
         spectral well-posedness.</li>
-      <li><strong>Zeta regularization and pole structure:</strong> heat-kernel coefficients determine local counterterms,
-        including the Einstein–Hilbert sector.</li>
-      <li><strong>Renormalized metric variation:</strong> the variation decomposes into an Einstein term, cosmological
-        term, quadratic-curvature sector, non-local form factors, and anomaly contribution.</li>
-      <li><strong>Infrared dominance:</strong> for $R\,\ell_{\mathrm{sp}}^2\ll 1$, the local two-derivative Einstein response
-        dominates over four-derivative and non-local corrections.</li>
-      <li><strong>Induced Newton coupling:</strong> the effective gravitational coupling scales as $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$
-        and follows the standard induced-gravity logic.</li>
-      <li><strong>Born–Infeld ultraviolet completion:</strong> the UV completion is uniquely determined (under coherence extensivity)
-        to be of determinantal Born–Infeld form, providing the complete effective geometric action.</li>
+      <li><strong>Separation of regularization schemes:</strong> a proper-time cutoff carries $a_0\Lambda^4$ and
+        $a_2\Lambda^2$; zeta regularization carries the finite and logarithmic dependence, governed by
+        $a_4=\zeta_A(0)$. The two answer different questions and must not be merged.</li>
+      <li><strong>Renormalized metric variation:</strong> once the coefficients are supplied, the variation decomposes
+        into Einstein, cosmological, higher-derivative, and non-local sectors.</li>
+      <li><strong>Infrared dominance:</strong> the local two-derivative Einstein term dominates when
+        $R\,L_4^2\ll 1$, with $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ set by the ratio of
+        renormalized coefficients — not by $\ell_{\mathrm{sp}}$ alone.</li>
+      <li><strong>The Newton coupling is a matching datum:</strong> the cutoff fixes the magnitude of the
+        one-operator contribution, which is negative. The sign and finite value of $c_{\mathrm{EH}}^{\mathrm{ren}}$
+        depend on the complete operator content and a renormalization condition; the observed $G_N$ is not derived here.</li>
+      <li><strong>Born–Infeld ultraviolet completion:</strong> under the separate coherence-extensivity hypothesis, the
+        tensorial completion of a <em>supplied</em> Einstein infrared term remains of determinantal Born–Infeld form.</li>
     </ul>
   </section>
   <section class="card">
@@ -118,42 +128,43 @@
       The renormalized metric variation defines a covariant spectral stress tensor
       $\mathcal{T}^{\Pi,\mathrm{ren}}_{\mu\nu}=-\tfrac{2}{\sqrt{g}}\delta S_\Pi^{\mathrm{ren}}/\delta g^{\mu\nu}$.
       In four dimensions, its structure can be organized by derivative order:
-      a local Einstein tensor term, local quadratic-curvature terms, non-local form factors, and a conformal anomaly
-      contribution.
+      a local Einstein tensor term, a cosmological term, local quadratic-curvature terms, and non-local form factors.
     </p>
     <p>
-      The Einstein tensor arises from the counterterm associated with the $a_2$ heat-kernel pole, while the quadratic
-      sector originates from $a_4$ and yields Bach-like four-derivative structures upon variation.
+      The Einstein tensor arises from the $a_2$ sector, while the quadratic sector originates from $a_4$ and yields
+      Bach-like four-derivative structures upon variation. For the minimal operator these are the same terms: the
+      logarithmic variation of $a_4$ already belongs to the local four-derivative sector, so no separate anomaly tensor
+      is counted alongside it.
     </p>
   </section>
   <section class="card">
     <h2>Infrared hierarchy</h2>
     <p>
-      In the weak-curvature regime, where dimensionless curvature invariants satisfy $R\,\ell_{\mathrm{sp}}^2\ll 1$, the
-      renormalized effective response admits a covariant derivative expansion.
-      Higher-derivative local terms and non-local form factors are suppressed by additional powers of $\ell_{\mathrm{sp}}^2$,
-      making the local two-derivative Einstein response the dominant infrared contribution.
+      In the weak-curvature regime the renormalized effective response admits a covariant derivative expansion.
+      The hierarchy is controlled by the <em>ratio of renormalized coefficients</em> rather than by
+      $\ell_{\mathrm{sp}}$ on its own: writing $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$, the local
+      two-derivative Einstein response dominates over four-derivative and non-local corrections when $R\,L_4^2\ll 1$.
     </p>
   </section>
   <section class="card">
     <h2>Born–Infeld ultraviolet completion</h2>
     <p>
-      The paper establishes that the ultraviolet completion of the infrared Einstein sector is uniquely determined
-      under a coherence extensivity hypothesis.
-      The complete effective action takes the determinantal Born–Infeld form
+      Under a separate coherence-extensivity hypothesis, the tensorial completion of a <em>supplied</em> Einstein
+      infrared term remains of determinantal Born–Infeld form
     </p>
     <p style="text-align: center;">
       $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$,
     </p>
     <p>
-      an Eddington-inspired structure where Einstein gravity appears as the universal two-derivative infrared sector
-      and the Born–Infeld extension provides the unique admissible spectral ultraviolet completion.
-      This result does not rely on a specific microscopic model but follows from general properties of the
-      renormalized spectral functional.
+      an Eddington-inspired structure in which Einstein gravity appears as the two-derivative infrared sector.
+      The statement is conditional on the hypothesis and on the supplied Einstein term; it does not rely on a specific
+      microscopic model.
     </p>
     <p>
-      The induced Newton coupling scales parametrically as $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$, up to scheme-dependent
-      numerical factors.
+      If the complete matched coefficient happens to be dominated by cutoff contributions <em>and</em> is positive, then
+      dimensional scaling gives $G_N=O(\ell_{\mathrm{sp}}^2)$ with a field-content-dependent loop factor. That is a
+      conditional matching regime, not a derivation: neither the sign nor the numerical coefficient follows from the
+      single minimal scalar determinant.
     </p>
   </section>
   <section class="card">
@@ -181,7 +192,7 @@
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <i lang="en">Infrared Einstein Response from a Renormalized Spectral Entropy Functional</i>.
+      Jérôme Beau. <i lang="en">Conditions for an Infrared Einstein Sector from Spectral Geometry</i>.
       <a href="https://doi.org/10.5281/zenodo.18818721" rel="noopener">10.5281/zenodo.18818721</a>
     </p>
   </section>

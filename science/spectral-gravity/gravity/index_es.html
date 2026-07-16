@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Respuesta de Einstein infrarroja a partir de un funcional entrópico espectral renormalizado | Cosmochrony</title>
+  <title>Condiciones para un sector de Einstein infrarrojo a partir de la geometría espectral | Cosmochrony</title>
   <meta name="description"
-    content="Estudio covariante de geometría espectral: la variación métrica renormalizada de un funcional de entropía proyectiva produce una respuesta local tipo Einstein dominante en el régimen infrarrojo, con términos de orden superior, no locales y de anomalía controlados."/>
+    content="Estudio covariante de geometría espectral: qué condiciones permiten que un operador de tipo Laplace sostenga un sector de Einstein infrarrojo local. La regularización por corte y la regularización zeta se mantienen estrictamente separadas, y el acoplamiento newtoniano finito se identifica como un dato de ajuste, no como una predicción."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Respuesta de Einstein infrarroja a partir de un funcional entrópico espectral renormalizado"/>
+  <meta property="og:title" content="Condiciones para un sector de Einstein infrarrojo a partir de la geometría espectral"/>
   <meta property="og:description"
-    content="Operador elíptico mínimo de tipo Laplace, regularización zeta, polos del núcleo de calor y estructura inducida tipo Einstein–Hilbert en el infrarrojo."/>
+    content="El corte en tiempo propio porta los términos sensibles a potencias; la regularización zeta porta la dependencia finita y logarítmica. El signo y el valor del acoplamiento gravitacional siguen siendo datos de ajuste."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/gravity/"/>
   <script type="module">
@@ -34,10 +34,11 @@
         </svg>
       </a>
       <div>
-        <h1>Respuesta de Einstein infrarroja a partir de un funcional entrópico espectral renormalizado</h1>
+        <h1>Condiciones para un sector de Einstein infrarrojo a partir de la geometría espectral</h1>
         <p class="subtitle">
-          Marco mínimo de geometría espectral en el que la variación métrica renormalizada posee un término local tipo
-          Einstein dominante en el infrarrojo, con contribuciones explícitas de orden superior, no locales y de anomalía.
+          Un marco mínimo de geometría espectral que separa lo que el determinante fija — las estructuras locales
+          admisibles y sus sensibilidades al corte — de lo que no fija: el valor finito y el signo del acoplamiento
+          gravitacional.
         </p>
       </div>
     </div>
@@ -52,18 +53,25 @@
     <div class="card">
       <h2>Resumen</h2>
       <p>
-        Este artículo estudia un funcional de entropía proyectiva covariante definido mediante un operador elíptico
-        mínimo de tipo Laplace sobre una variedad riemanniana de cuatro dimensiones.
-        El objetivo es identificar el contenido geométrico local dominante de la variación métrica renormalizada en un
-        régimen infrarrojo controlado, manteniendo explícitos los términos de orden superior, no locales y de anomalía.
+        Este artículo pregunta bajo qué condiciones un operador elíptico mínimo de tipo Laplace sobre una variedad
+        riemanniana de cuatro dimensiones puede sostener un sector de Einstein infrarrojo local — y, con igual
+        importancia, qué partes de la gravedad <em>no</em> determina tal operador.
       </p>
       <p>
         Definiendo la entropía proyectiva como
-        $S_\Pi[g]=\tfrac12\log\det' A_g$, con $A_g=-\nabla_g^2$, el funcional se regulariza mediante la función zeta
-        espectral y se renormaliza por sustracción de los polos del núcleo de calor.
-        El tensor de energía espectral renormalizado resultante admite una descomposición por orden en derivadas cuyo
-        término local dominante de dos derivadas es proporcional al tensor de Einstein.
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, con $A_g=-\nabla_g^2$, la versión 3.3 separa dos enunciados de
+        regularización que no deben confundirse. Un corte físico en tiempo propio $\Lambda=\ell_{\mathrm{sp}}^{-1}$
+        porta los términos locales sensibles a potencias $a_0\Lambda^4$ y $a_2\Lambda^2$; la regularización zeta porta
+        el determinante finito y la dependencia logarítmica de escala, gobernada en cuatro dimensiones por
+        $a_4=\zeta_A(0)$.
       </p>
+      <div class="note" role="note">
+        <strong>Lo que no se afirma.</strong> Un único escalar mínimo contribuye
+        $\Delta c_{\mathrm{EH}}^{\Lambda}=-\Lambda^2/[12(4\pi)^2]$ al coeficiente de Einstein–Hilbert: un valor
+        <em>negativo</em>. El coeficiente renormalizado finito, su signo y, por tanto, una constante de Newton
+        positiva son datos de ajuste fijados por una condición de renormalización y por el contenido completo de
+        operadores. No están predichos por este determinante por sí solo.
+      </div>
       <div class="note" role="note">
         <strong>Declaración de alcance.</strong> Esta página ofrece un resumen estructurado.
         La referencia técnica autorizada es el preprint enlazado arriba.
@@ -86,7 +94,7 @@
         </div>
         <div class="kv">
           <div class="k">Enfoque</div>
-          <div class="v">Determinantes espectrales, núcleo de calor, término inducido tipo Einstein–Hilbert, jerarquía IR</div>
+          <div class="v">Determinantes espectrales, núcleo de calor, separación corte/zeta, ajuste por renormalización, jerarquía IR</div>
         </div>
         <div class="kv">
           <div class="k">Alcance</div>
@@ -100,17 +108,21 @@
     <ul>
       <li><strong>Funcional espectral covariante:</strong> $S_\Pi[g]=\tfrac12\log\det'(-\nabla_g^2)$ con elipticidad y
         buena definición espectral.</li>
-      <li><strong>Regularización zeta y estructura de polos:</strong> los coeficientes del núcleo de calor determinan
-        los contraterminos locales, incluido el sector Einstein–Hilbert.</li>
-      <li><strong>Variación métrica renormalizada:</strong> la variación se descompone en término de Einstein, término
-        cosmológico, sector cuadrático en curvatura, factores no locales y contribución de anomalía.</li>
-      <li><strong>Dominancia infrarroja:</strong> para $R\,\ell_{\mathrm{sp}}^2\ll 1$, la respuesta local de dos derivadas domina
-        sobre las correcciones de cuatro derivadas y no locales.</li>
-      <li><strong>Acoplamiento newtoniano inducido:</strong> el acoplamiento gravitacional efectivo escala como
-        $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$ y sigue la lógica estándar de la gravedad inducida.</li>
-      <li><strong>Completitud Born–Infeld ultravioleta:</strong> la completitud UV está únicamente determinada (bajo
-        hipótesis de coherencia extensiva) en forma Born–Infeld determinantal, proporcionando la acción geométrica
-        efectiva completa.</li>
+      <li><strong>Separación de los esquemas de regularización:</strong> un corte en tiempo propio porta
+        $a_0\Lambda^4$ y $a_2\Lambda^2$; la regularización zeta porta la dependencia finita y logarítmica, gobernada
+        por $a_4=\zeta_A(0)$. Ambos responden a preguntas distintas y no deben fusionarse.</li>
+      <li><strong>Variación métrica renormalizada:</strong> una vez suministrados los coeficientes, la variación se
+        descompone en sectores de Einstein, cosmológico, de derivadas superiores y no local.</li>
+      <li><strong>Dominancia infrarroja:</strong> el término local de Einstein de dos derivadas domina cuando
+        $R\,L_4^2\ll 1$, con $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ fijado por el cociente de
+        coeficientes renormalizados — y no por $\ell_{\mathrm{sp}}$ por sí solo.</li>
+      <li><strong>El acoplamiento newtoniano es un dato de ajuste:</strong> el corte fija la magnitud de la
+        contribución de un solo operador, que es negativa. El signo y el valor finito de
+        $c_{\mathrm{EH}}^{\mathrm{ren}}$ dependen del contenido completo de operadores y de una condición de
+        renormalización; el $G_N$ observado no se deriva aquí.</li>
+      <li><strong>Completitud Born–Infeld ultravioleta:</strong> bajo la hipótesis separada de coherencia extensiva,
+        la completitud tensorial de un término de Einstein infrarrojo <em>suministrado</em> conserva la forma
+        Born–Infeld determinantal.</li>
     </ul>
   </section>
   <section class="card">
@@ -119,42 +131,45 @@
       La variación métrica renormalizada define un tensor espectral covariante
       $\mathcal{T}^{\Pi,\mathrm{ren}}_{\mu\nu}=-\tfrac{2}{\sqrt{g}}\delta S_\Pi^{\mathrm{ren}}/\delta g^{\mu\nu}$.
       En cuatro dimensiones, su estructura puede organizarse por orden en derivadas:
-      un término local tipo Einstein, términos cuadráticos en curvatura, factores no locales y una contribución de anomalía conforme.
+      un término local tipo Einstein, un término cosmológico, términos locales cuadráticos en curvatura y factores de
+      forma no locales.
     </p>
     <p>
-      El tensor de Einstein surge del contratermino asociado al polo $a_2$ del núcleo de calor, mientras que el sector
-      cuadrático procede de $a_4$ y produce estructuras tipo Bach de cuatro derivadas tras la variación.
+      El tensor de Einstein surge del sector $a_2$, mientras que el sector cuadrático procede de $a_4$ y produce
+      estructuras tipo Bach de cuatro derivadas tras la variación. Para el operador mínimo se trata de los mismos
+      términos: la variación logarítmica de $a_4$ ya pertenece al sector local de cuatro derivadas, de modo que no se
+      contabiliza ningún tensor de anomalía aparte.
     </p>
   </section>
   <section class="card">
     <h2>Jerarquía infrarroja</h2>
     <p>
-      En el régimen de curvatura débil, donde los invariantes adimensionales satisfacen $R\,\ell_{\mathrm{sp}}^2\ll 1$, la
-      respuesta efectiva renormalizada admite una expansión covariante en derivadas.
-      Los términos locales de orden superior y los factores no locales están suprimidos por potencias adicionales de
-      $\ell_{\mathrm{sp}}^2$, lo que hace que la respuesta local tipo Einstein de dos derivadas sea dominante en el infrarrojo.
+      En el régimen de curvatura débil, la respuesta efectiva renormalizada admite una expansión covariante en
+      derivadas. La jerarquía está controlada por el <em>cociente de coeficientes renormalizados</em> y no por
+      $\ell_{\mathrm{sp}}$ por sí solo: escribiendo
+      $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$, la respuesta local de Einstein de dos derivadas
+      domina sobre las correcciones de cuatro derivadas y no locales cuando $R\,L_4^2\ll 1$.
     </p>
   </section>
   <section class="card">
     <h2>Completitud Born–Infeld ultravioleta</h2>
     <p>
-      El artículo establece que la completitud ultravioleta del sector infrarrojo de Einstein está
-      únicamente determinada bajo una hipótesis de coherencia extensiva.
-      La acción efectiva completa toma la forma Born–Infeld determinantal
+      Bajo una hipótesis separada de coherencia extensiva, la completitud tensorial de un término de Einstein
+      infrarrojo <em>suministrado</em> conserva la forma Born–Infeld determinantal
     </p>
     <p style="text-align: center;">
       $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$,
     </p>
     <p>
-      una estructura de inspiración eddingtoniana donde la gravedad de Einstein aparece como el sector
-      infrarrojo universal de dos derivadas y la extensión Born–Infeld proporciona la completitud espectral
-      ultravioleta admisible única.
-      Este resultado no depende de un modelo microscópico específico sino que se deriva de las propiedades
-      generales del funcional espectral renormalizado.
+      una estructura de inspiración eddingtoniana en la que la gravedad de Einstein aparece como el sector infrarrojo
+      de dos derivadas. El enunciado está condicionado a la hipótesis y al término de Einstein suministrado; no
+      depende de un modelo microscópico específico.
     </p>
     <p>
-      El acoplamiento newtoniano inducido escala paramétricamente como $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$,
-      salvo factores numéricos dependientes del esquema.
+      Si el coeficiente ajustado completo resulta estar dominado por contribuciones del corte <em>y</em> es positivo,
+      el escalamiento dimensional da $G_N=O(\ell_{\mathrm{sp}}^2)$ con un factor de lazo dependiente del contenido de
+      campos. Se trata de un régimen de ajuste condicional, no de una derivación: ni el signo ni el coeficiente
+      numérico se siguen del determinante de un único escalar mínimo.
     </p>
   </section>
   <section class="card">
@@ -183,7 +198,7 @@
   <section class="card">
     <h2>Referencias</h2>
     <p>
-      Jérôme Beau. <i lang="en">Infrared Einstein Response from a Renormalized Spectral Entropy Functional</i>.
+      Jérôme Beau. <i lang="en">Conditions for an Infrared Einstein Sector from Spectral Geometry</i>.
       <a href="https://doi.org/10.5281/zenodo.18818721" rel="noopener">10.5281/zenodo.18818721</a>
     </p>
   </section>

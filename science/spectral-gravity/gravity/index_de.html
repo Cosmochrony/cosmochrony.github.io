@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Infrarote Einstein-Antwort aus einem renormalisierten spektralen Entropiefunktional | Cosmochrony</title>
+  <title>Bedingungen für einen infraroten Einstein-Sektor aus der Spektralgeometrie | Cosmochrony</title>
   <meta name="description"
-    content="Kovariante spektralgeometrische Untersuchung: Die renormalisierte metrische Variation eines projektiven Entropiefunktionals liefert eine infrarot-dominante lokale Einstein-Antwort mit kontrollierten höherordentlichen, nichtlokalen und Anomalietermen."/>
+    content="Kovariante spektralgeometrische Untersuchung: unter welchen Bedingungen ein Laplace-artiger Operator einen lokalen infraroten Einstein-Sektor tragen kann. Cutoff- und Zeta-Regularisierung werden strikt getrennt gehalten, und die endliche Newton-Kopplung wird als Anpassungsgröße identifiziert, nicht als Vorhersage."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Infrarote Einstein-Antwort aus einem renormalisierten spektralen Entropiefunktional"/>
+  <meta property="og:title" content="Bedingungen für einen infraroten Einstein-Sektor aus der Spektralgeometrie"/>
   <meta property="og:description"
-    content="Minimaler elliptischer Laplace-Operator, Zeta-Regularisierung, Heat-Kernel-Pole und induzierte Einstein–Hilbert-Struktur im Infrarotbereich."/>
+    content="Der Eigenzeit-Cutoff trägt die potenzsensitiven Terme; die Zeta-Regularisierung trägt die endliche und logarithmische Abhängigkeit. Vorzeichen und Wert der Gravitationskopplung bleiben Anpassungsgrößen."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/gravity/"/>
   <script type="module">
@@ -34,11 +34,11 @@
         </svg>
       </a>
       <div>
-        <h1>Infrarote Einstein-Antwort aus einem renormalisierten spektralen Entropiefunktional</h1>
+        <h1>Bedingungen für einen infraroten Einstein-Sektor aus der Spektralgeometrie</h1>
         <p class="subtitle">
-          Minimaler spektralgeometrischer Rahmen, in dem die renormalisierte metrische Variation einen
-          infrarot-dominanten lokalen Einstein-Term besitzt, mit expliziten höherordentlichen,
-          nichtlokalen und Anomalie-Beiträgen.
+          Ein minimaler spektralgeometrischer Rahmen, der trennt, was die Determinante festlegt — die zulässigen
+          lokalen Strukturen und ihre Cutoff-Sensitivitäten — von dem, was sie nicht festlegt: den endlichen Wert
+          und das Vorzeichen der Gravitationskopplung.
         </p>
       </div>
     </div>
@@ -53,19 +53,25 @@
     <div class="card">
       <h2>Überblick</h2>
       <p>
-        Dieser Artikel untersucht ein kovariantes projektives Entropiefunktional, das durch einen minimalen
-        elliptischen Laplace-Operator auf einer vierdimensionalen Riemannschen Mannigfaltigkeit definiert ist.
-        Ziel ist es, den führenden lokalen geometrischen Beitrag der renormalisierten metrischen Variation
-        im kontrollierten Infrarot-Regime zu identifizieren und dabei höherordentliche,
-        nichtlokale und Anomalieterme explizit zu berücksichtigen.
+        Dieser Artikel fragt, unter welchen Bedingungen ein minimaler elliptischer Laplace-artiger Operator auf einer
+        vierdimensionalen Riemannschen Mannigfaltigkeit einen lokalen infraroten Einstein-Sektor tragen kann — und,
+        ebenso wichtig, welche Anteile der Gravitation ein solcher Operator <em>nicht</em> festlegt.
       </p>
       <p>
-        Mit der Definition
-        $S_\Pi[g]=\tfrac12\log\det' A_g$, wobei $A_g=-\nabla_g^2$, wird das Funktional
-        mittels spektraler Zeta-Funktion regularisiert und durch Subtraktion der Heat-Kernel-Pole renormalisiert.
-        Der resultierende renormalisierte spektrale Spannungstensor besitzt eine Ableitungsordnungs-Zerlegung,
-        deren führender lokaler Zweitableitungs-Term proportional zum Einstein-Tensor ist.
+        Mit der Definition der projektiven Entropie als
+        $S_\Pi[g]=\tfrac12\log\det' A_g$, wobei $A_g=-\nabla_g^2$, trennt Version 3.3 zwei
+        Regularisierungsaussagen, die nicht vermengt werden dürfen. Ein physikalischer Eigenzeit-Cutoff
+        $\Lambda=\ell_{\mathrm{sp}}^{-1}$ trägt die potenzsensitiven lokalen Terme $a_0\Lambda^4$ und $a_2\Lambda^2$;
+        die Zeta-Regularisierung trägt die endliche Determinante und die logarithmische Skalenabhängigkeit, die in
+        vier Dimensionen durch $a_4=\zeta_A(0)$ bestimmt wird.
       </p>
+      <div class="note" role="note">
+        <strong>Was nicht behauptet wird.</strong> Ein einzelnes minimales Skalarfeld liefert den Beitrag
+        $\Delta c_{\mathrm{EH}}^{\Lambda}=-\Lambda^2/[12(4\pi)^2]$ zum Einstein–Hilbert-Koeffizienten — einen
+        <em>negativen</em> Wert. Der endliche renormalisierte Koeffizient, sein Vorzeichen und damit eine positive
+        Newton-Konstante sind Anpassungsgrößen, die durch eine Renormierungsbedingung und den vollständigen
+        Operatorinhalt festgelegt werden. Sie werden von dieser Determinante allein nicht vorhergesagt.
+      </div>
       <div class="note" role="note">
         <strong>Hinweis zum Umfang.</strong> Diese Seite bietet eine strukturierte Zusammenfassung.
         Die maßgebliche technische Referenz ist das oben verlinkte Preprint.
@@ -88,7 +94,7 @@
         </div>
         <div class="kv">
           <div class="k">Schwerpunkt</div>
-          <div class="v">Spektraldeterminanten, Heat Kernel, induzierter Einstein–Hilbert-Term, IR-Hierarchie</div>
+          <div class="v">Spektraldeterminanten, Heat Kernel, Trennung von Cutoff und Zeta, Renormierungsanpassung, IR-Hierarchie</div>
         </div>
         <div class="kv">
           <div class="k">Geltungsbereich</div>
@@ -100,36 +106,70 @@
   <section class="card">
     <h2>Zentrale Beiträge</h2>
     <ul>
-      <li><strong>Kovariantes Spektralfunktional:</strong> $S_\Pi[g]=\tfrac12\log\det'(-\nabla_g^2)$ mit Elliptizität und spektraler Wohldefiniertheit.</li>
-      <li><strong>Zeta-Regularisierung und Polstruktur:</strong> Heat-Kernel-Koeffizienten bestimmen lokale Gegenterme einschließlich des Einstein–Hilbert-Sektors.</li>
-      <li><strong>Renormalisierte metrische Variation:</strong> Zerlegung in Einstein-Term, kosmologischen Term, quadratische Krümmungsterme, nichtlokale Formfaktoren und Anomaliebeitrag.</li>
-      <li><strong>Infrarot-Dominanz:</strong> Für $R\,\ell_{\mathrm{sp}}^2\ll 1$ dominiert der lokale Zweitableitungs-Einstein-Term gegenüber höherordentlichen und nichtlokalen Korrekturen.</li>
-      <li><strong>Induzierte Newton-Kopplung:</strong> Die effektive Gravitationskopplung skaliert als
-        $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$ und folgt der Logik induzierter Gravitation.</li>
-      <li><strong>Born–Infeld-UV-Vervollständigung:</strong> Die UV-Vervollständigung ist (unter Kohärenz-Extensivitätshypothese)
-        eindeutig als determinantale Born–Infeld-Form bestimmt und liefert die vollständige effektive geometrische Wirkung.</li>
+      <li><strong>Kovariantes Spektralfunktional:</strong> $S_\Pi[g]=\tfrac12\log\det'(-\nabla_g^2)$ mit Elliptizität und
+        spektraler Wohldefiniertheit.</li>
+      <li><strong>Trennung der Regularisierungsschemata:</strong> ein Eigenzeit-Cutoff trägt $a_0\Lambda^4$ und
+        $a_2\Lambda^2$; die Zeta-Regularisierung trägt die endliche und logarithmische Abhängigkeit, bestimmt durch
+        $a_4=\zeta_A(0)$. Beide beantworten verschiedene Fragen und dürfen nicht zusammengeführt werden.</li>
+      <li><strong>Renormalisierte metrische Variation:</strong> sobald die Koeffizienten vorgegeben sind, zerfällt die
+        Variation in Einstein-, kosmologischen, höherordentlichen und nichtlokalen Sektor.</li>
+      <li><strong>Infrarot-Dominanz:</strong> der lokale Zweitableitungs-Einstein-Term dominiert, wenn
+        $R\,L_4^2\ll 1$, wobei $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ durch das Verhältnis der
+        renormalisierten Koeffizienten festgelegt wird — nicht durch $\ell_{\mathrm{sp}}$ allein.</li>
+      <li><strong>Die Newton-Kopplung ist eine Anpassungsgröße:</strong> der Cutoff legt die Größenordnung des
+        Ein-Operator-Beitrags fest, der negativ ist. Vorzeichen und endlicher Wert von
+        $c_{\mathrm{EH}}^{\mathrm{ren}}$ hängen vom vollständigen Operatorinhalt und einer Renormierungsbedingung ab;
+        das beobachtete $G_N$ wird hier nicht hergeleitet.</li>
+      <li><strong>Born–Infeld-UV-Vervollständigung:</strong> unter der gesonderten Kohärenz-Extensivitätshypothese
+        bleibt die tensorielle Vervollständigung eines <em>vorgegebenen</em> Einstein-Infrarot-Terms von
+        determinantaler Born–Infeld-Form.</li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>Renormalisierter spektraler Spannungstensor</h2>
+    <p>
+      Die renormalisierte metrische Variation definiert einen kovarianten spektralen Spannungstensor
+      $\mathcal{T}^{\Pi,\mathrm{ren}}_{\mu\nu}=-\tfrac{2}{\sqrt{g}}\delta S_\Pi^{\mathrm{ren}}/\delta g^{\mu\nu}$.
+      In vier Dimensionen lässt sich seine Struktur nach Ableitungsordnung gliedern:
+      ein lokaler Einstein-Tensor-Term, ein kosmologischer Term, lokale quadratische Krümmungsterme und nichtlokale
+      Formfaktoren.
+    </p>
+    <p>
+      Der Einstein-Tensor entsteht aus dem $a_2$-Sektor, während der quadratische Sektor von $a_4$ herrührt und unter
+      Variation Bach-artige Viertableitungs-Strukturen liefert. Für den minimalen Operator handelt es sich um dieselben
+      Terme: die logarithmische Variation von $a_4$ gehört bereits zum lokalen Viertableitungs-Sektor, sodass daneben
+      kein separater Anomalietensor gezählt wird.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Infrarot-Hierarchie</h2>
+    <p>
+      Im Regime schwacher Krümmung besitzt die renormalisierte effektive Antwort eine kovariante Ableitungsentwicklung.
+      Die Hierarchie wird durch das <em>Verhältnis der renormalisierten Koeffizienten</em> kontrolliert und nicht durch
+      $\ell_{\mathrm{sp}}$ allein: mit $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ dominiert die
+      lokale Zweitableitungs-Einstein-Antwort gegenüber Viertableitungs- und nichtlokalen Korrekturen, wenn
+      $R\,L_4^2\ll 1$.
+    </p>
   </section>
   <section class="card">
     <h2>Born–Infeld-Ultraviolett-Vervollständigung</h2>
     <p>
-      Der Artikel zeigt, dass die Ultraviolett-Vervollständigung des Infrarot-Einstein-Sektors
-      unter einer Kohärenz-Extensivitätshypothese eindeutig bestimmt ist.
-      Die vollständige effektive Wirkung nimmt die determinantale Born–Infeld-Form an
+      Unter einer gesonderten Kohärenz-Extensivitätshypothese bleibt die tensorielle Vervollständigung eines
+      <em>vorgegebenen</em> Einstein-Infrarot-Terms von determinantaler Born–Infeld-Form
     </p>
     <p style="text-align: center;">
       $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$,
     </p>
     <p>
-      eine Eddington-inspirierte Struktur, in der Einstein-Gravitation als universeller
-      Zweitableitungs-Infrarot-Sektor erscheint und die Born–Infeld-Erweiterung die einzigartige
-      zulässige spektrale Ultraviolett-Vervollständigung liefert.
-      Dieses Resultat beruht nicht auf einem spezifischen mikroskopischen Modell, sondern folgt
-      aus allgemeinen Eigenschaften des renormalisierten Spektralfunktionals.
+      eine Eddington-inspirierte Struktur, in der die Einstein-Gravitation als Zweitableitungs-Infrarot-Sektor
+      erscheint. Die Aussage ist an die Hypothese und an den vorgegebenen Einstein-Term gebunden; sie beruht nicht auf
+      einem spezifischen mikroskopischen Modell.
     </p>
     <p>
-      Die induzierte Newton-Kopplung skaliert parametrisch als $G_N\sim 16\pi^2\ell_{\mathrm{sp}}^2$,
-      bis auf Schema-abhängige numerische Faktoren.
+      Falls der vollständige angepasste Koeffizient von Cutoff-Beiträgen dominiert wird <em>und</em> positiv ist,
+      liefert dimensionale Skalierung $G_N=O(\ell_{\mathrm{sp}}^2)$ mit einem vom Feldinhalt abhängigen Schleifenfaktor.
+      Das ist ein bedingtes Anpassungsregime, keine Herleitung: weder das Vorzeichen noch der numerische Koeffizient
+      folgt aus der Determinante des einzelnen minimalen Skalarfelds.
     </p>
   </section>
   <section class="card">
@@ -137,15 +177,15 @@
     <p>
       Der resolvent-basierte Mechanismus reproduziert im geeigneten Grenzfall auch das bekannte newtonsche
       Langreichweitenprofil.
-      In drei Raumdimensionen besitzt der Green-Kernel eines elliptischen Laplace-Operators
+      In drei Raumdimensionen besitzt der Green-Kernel eines elliptischen Laplace-artigen Operators
       einen universellen $1/r$-Abfall.
       Entsprechend erbt die schwache Variationsform
       $\delta S_\Pi=\tfrac12\mathrm{Tr}(A^{-1}\delta A)$
-      dieses newtonsche Verhalten.
+      dieses newtonsche Raumprofil aus der Resolventenstruktur.
     </p>
     <p>
-      Im kovarianten Rahmen erscheint dies als statische Schwachfeld-Grenze derselben spektralen Struktur,
-      deren renormalisierte metrische Variation die infrarot-dominante Einstein-Antwort und die
+      Im kovarianten Rahmen erscheint dies als statische Schwachfeld-Manifestation desselben spektralen Rahmens,
+      dessen renormalisierte metrische Variation die infrarot-dominante Einstein-Antwort und die
       Born–Infeld-UV-Vervollständigung liefert.
     </p>
   </section>
@@ -160,7 +200,7 @@
   <section class="card">
     <h2>Referenz</h2>
     <p>
-      Jérôme Beau. <i>Infrared Einstein Response from a Renormalized Spectral Entropy Functional</i>.
+      Jérôme Beau. <i lang="en">Conditions for an Infrared Einstein Sector from Spectral Geometry</i>.
       <a href="https://doi.org/10.5281/zenodo.18818721" rel="noopener">10.5281/zenodo.18818721</a>
     </p>
   </section>

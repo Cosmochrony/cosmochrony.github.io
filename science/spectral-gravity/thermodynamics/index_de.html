@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Lokale Spektrale Thermodynamik und die Einstein-Gleichung | Cosmochrony</title>
+  <title>Einstein–Materie-Kopplung aus spektraler Stationarität | Cosmochrony</title>
   <meta name="description"
-    content="Lokale spektrale Thermodynamik: Die Lokalität des Wärme-Kerns definiert ein krümmungskorrigiertes spektrales Multiplikatorfeld, und die Einstein-Gleichung entsteht als Bedingung eines eingeschränkten spektralen Gleichgewichts im Infrarotregime."/>
+    content="Ein bedingtes Variationsergebnis: Bei gegebener renormierter infraroter metrischer Antwort und einem Materiefunktional liefert spektrale Stationarität die Einstein-Gleichung. Die in früheren Versionen behauptete thermodynamische Lesart wird zurückgezogen — der Wärme-Kern allein liefert weder eine Temperatur noch ein erstes Gesetz."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Lokale Spektrale Thermodynamik und die Einstein-Gleichung als Spektrale Gleichgewichtsbedingung"/>
+    content="Einstein–Materie-Kopplung aus spektraler Stationarität: Ein bedingtes Variationsergebnis und die offene thermodynamische Brücke"/>
   <meta property="og:description"
-    content="Lokalität des Wärme-Kerns, Seeley–DeWitt-Hierarchie, spektrales Erstes Gesetz als Kompatibilitätsbedingung und Einstein-Gleichung aus einem eingeschränkten spektralen Extremum."/>
+    content="Version 2.0 trennt das Gesicherte — eine bedingte Variationskopplung — von einer thermodynamischen Interpretation, die es nicht ist. Die Wärme-Kern-Größe u ist eine Eigenwertskala, keine Temperatur."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral-gravity/thermodynamics/"/>
   <script type="module">
@@ -36,11 +36,10 @@
         </svg>
       </a>
       <div>
-        <h1>Lokale Spektrale Thermodynamik und die Einstein-Gleichung</h1>
+        <h1>Einstein–Materie-Kopplung aus spektraler Stationarität</h1>
         <p class="subtitle">
-          Ein spektral-geometrischer Rahmen, in dem ein krümmungskorrigiertes lokales Multiplikatorfeld aus der
-          Lokalität des Wärme-Kerns hervorgeht und die Einstein-Gleichung als eingeschränkte spektrale
-          Gleichgewichtsbedingung erscheint.
+          Ein bedingtes Variationsergebnis und eine explizite Darstellung der thermodynamischen Brücke, die offen
+          bleibt. Version 2.0 zieht die bis Version 1.1 behaupteten thermodynamischen Identifikationen zurück.
         </p>
       </div>
     </div>
@@ -55,21 +54,24 @@
     <div class="card">
       <h2>Überblick</h2>
       <p>
-        Dieser Artikel entwickelt eine lokale thermodynamische Interpretation des projektiven spektralen
-        Entropiefunktionals $S_\Pi[g]=\tfrac12\log\det' A_g$, definiert durch einen minimalen Laplace-Typ-Operator auf
-        einer vierdimensionalen riemannschen Mannigfaltigkeit. Der diagonale Wärme-Kern $K(x,x;t)$ definiert eine lokale
-        spektrale Energiedichte $u(x;t)=-\partial_t\log K(x,x;t)$, deren Seeley–DeWitt-Entwicklung zu einem lokalen
-        Multiplikatorfeld $\beta(x)^{-1}=\beta_0^{-1}-\tfrac16 R(x)+O(\nabla^2R)$ führt.
+        Dieser Artikel trennt ein bedingtes Variationsergebnis von einer thermodynamischen Interpretation, die noch
+        nicht gesichert ist. Sei $S_\Pi^{\mathrm{ren}}[g]=\tfrac12\log\det'(A_g/\mu^2)$ das renormierte projektive
+        spektrale Funktional. Unter der Annahme einer renormierten infraroten metrischen Antwort und eines effektiven
+        Materiefunktionals $W_\Pi[g,\psi]$ liefert die Stationarität von $\Gamma_\Pi=S_\Pi^{\mathrm{ren}}-W_\Pi$
+      </p>
+      <p style="text-align: center;">
+        $G_{\mu\nu}+\Lambda_{\mathrm{ren}}g_{\mu\nu}=8\pi G_N T^{(\Pi)}_{\mu\nu}$
       </p>
       <p>
-        Im infrarot-dominanten Regime $R\,\ell_\chi^2\ll1$ sind die metrische Variation der renormierten spektralen
-        Entropie und die Variation des projizierten Materiefunktionals durch eine Kompatibilitätsidentität $\delta
-        S_\Pi=\int\beta(x)^{-1}\delta E_\Pi(x)$ verknüpft. Das eingeschränkte Extremum von $S_\Pi$ bei festem
-        Materiegehalt liefert $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.
+        in führender Ableitungsordnung. Der Faktor $8\pi G_N$ ist das Verhältnis zwischen dem Variationsfaktor
+        $\tfrac12$ der Materie und dem geometrischen Koeffizienten $(16\pi G_N)^{-1}$ — eine Folge der Konventionen und
+        keine unabhängige Vorhersage der Kopplung.
       </p>
       <div class="note" role="note">
-        <strong>Geltungsbereich.</strong> Diese Seite bietet eine strukturierte Zusammenfassung. Die maßgebliche
-        technische Referenz ist das oben verlinkte Preprint.
+        <strong>Was Version 2.0 zurückzieht.</strong> Die Versionen bis 1.1 beschrieben ein lokales Multiplikatorfeld
+        $\beta(x)^{-1}$, ein spektrales erstes Gesetz und die Einstein-Gleichung als spektrale Gleichgewichtsbedingung.
+        Diese Identifikationen werden zurückgezogen. Der Wärme-Kern allein liefert weder eine Temperatur noch ein erstes
+        Gesetz.
       </div>
     </div>
     <aside class="card">
@@ -89,11 +91,13 @@
         </div>
         <div class="kv">
           <div class="k">Schwerpunkt</div>
-          <div class="v">Wärme-Kern, spektrales Multiplikatorfeld, Variationsprinzip, induzierte Gravitation</div>
+          <div class="v">Spektrale Determinante, Wärme-Kern, bedingte Variationskopplung, thermodynamische
+            Integrabilität</div>
         </div>
         <div class="kv">
           <div class="k">Rahmen</div>
-          <div class="v">Elliptischer riemannscher Kontext, infrarotes Niedrigkrümmungsregime</div>
+          <div class="v">Elliptischer riemannscher Kontext, infrarotes Regime schwacher Krümmung; Koeffizienten
+            vorgegeben, nicht hergeleitet</div>
         </div>
       </div>
     </aside>
@@ -101,69 +105,90 @@
   <section class="card">
     <h2>Zentrale Beiträge</h2>
     <ul>
-      <li><strong>Lokale spektrale Energiedichte:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ aus den diagonalen
-        Wärme-Kern-Daten.</li>
-      <li><strong>Krümmungskorrigiertes Multiplikatorfeld:</strong> Der Koeffizient $a_2=\tfrac16R$ kontrolliert die
-        führende geometrische Korrektur von $\beta(x)^{-1}$.</li>
-      <li><strong>Spektrales erstes Gesetz als Kompatibilitätsbedingung:</strong> $\delta S_\Pi=\int\beta^{-1}\delta
-        E_\Pi$ gilt in führender Infrarotordnung genau dann, wenn die Einstein-Gleichung erfüllt ist.</li>
-      <li><strong>Spektrales Gleichgewichtsprinzip:</strong> Das Extremum von $S_\Pi$ bei festgehaltener projizierter
-        Materie ergibt $G_{\mu\nu}=8\pi G_N T_{\mu\nu}$.</li>
-      <li><strong>Normierung von $8\pi G_N$:</strong> Der Faktor folgt allein aus der geometrischen Normierung $(16\pi
-        G_N)^{-1}$ und dem Faktor $1/2$ in der Definition des Energie-Impuls-Tensors.</li>
+      <li><strong>Bedingte Variationskopplung:</strong> Bei gegebener renormierter infraroter metrischer Antwort und
+        einem Materiefunktional liefert die Stationarität von $\Gamma_\Pi$ die Einstein-Gleichung mit kosmologischem
+        Term. Das Ergebnis ist <em>unter Voraussetzung</em> der vorgegebenen Koeffizienten bewiesen.</li>
+      <li><strong>Dimensionsprüfung der Wärme-Kern-Größe:</strong> $u(x;t)=-\partial_t\log K(x,x;t)$ trägt die Dimension
+        $L^{-2}$ — eine Eigenwertskala — mit $u=2/t-R/6+O(t\mathcal{R}^2,t\nabla^2R)$.</li>
+      <li><strong>Eine dimensionslose spektrale Antwort:</strong> Die normierte Form $b(x;t)=t\,u(x;t)/2=1-tR/12+\cdots$
+        ist wohldefiniert und kovariant.</li>
+      <li><strong>Keine Temperatur, kein erstes Gesetz:</strong> Weder $u$ noch $b$ ist ohne eine zusätzliche
+        Kalibrierungsabbildung eine Temperatur, eine inverse Temperatur oder eine Energiedichte. Folglich ergibt sich aus
+        dem Wärme-Kern allein kein lokales erstes Gesetz.</li>
+      <li><strong>Die Brücke wird benannt, nicht überschritten:</strong> Eine thermodynamische Vervollständigung
+        erfordert eine unabhängig definierte Wärme-Einsform, einen physikalischen Energiebegriff und einen
+        Integrabilitätssatz.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Lokales Multiplikatorfeld</h2>
+    <h2>Warum $u$ keine Temperatur ist</h2>
     <p>
-      Die Auswertung der spektralen Dichte bei einer Zulässigkeitsskala $t_*$ ergibt
-      $\beta(x)^{-1}=2/t_*-\tfrac16R(x)+O(\nabla^2R)$. Der universelle Term $\beta_0^{-1}=2/t_*$ hängt von der
-      spektralen Auflösungsskala ab und stellt keine physikalische Temperatur dar. Der Krümmungsterm ist kovariant und
-      vollständig durch die Seeley–DeWitt-Hierarchie bestimmt.
+      Für einen Laplace-Operator $A_g\sim L^{-2}$ ist der Wärmeparameter ein Diffusionsparameter mit $t\sim L^2$, also
+      $u=-\partial_t\log K\sim L^{-2}$ — dieselbe Dimension wie die Skalarkrümmung $R$. In natürlichen Einheiten trägt
+      eine physikalische Temperatur, wie eine Energie, die Dimension $L^{-1}$.
     </p>
     <p>
-      Die Wahl spektraler Einheiten mit $\beta_0^{-1}=1$ entspricht der Festlegung $t_*=2$. Dies ist eine Eichwahl der
-      Zulässigkeitsskala ohne Einfluss auf die induzierte Newton-Konstante.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Spektrales Gleichgewicht</h2>
-    <p>
-      Das eingeschränkte Funktional $\mathcal{F}[g,\psi]=S_\Pi[g]-\vartheta_*^{-1}W_\Pi[g,\psi]$ wirkt als spektrale freie
-      Energie. Die Stationaritätsbedingung unter kompakten metrischen Variationen liefert $\tfrac{1}{16\pi
-      G_N}G_{\mu\nu}=\tfrac{\vartheta_*^{-1}}{2}T_{\mu\nu}$. Für die kanonische Wahl $\vartheta_*^{-1}=1$ erhält man die
-      Einstein-Gleichung.
-    </p>
-    <p>
-      Es werden weder Horizontstrukturen noch <a
-      href="https://de.wikipedia.org/wiki/Hyperbelbewegung#Rindler-Koordinaten">Rindler-Regionen</a> oder die <a
-      href="https://de.wikipedia.org/wiki/Raychaudhuri-Gleichung">Raychaudhuri-Gleichung vorausgesetzt</a>. Die
-      Herleitung ist vollständig variational und spektral.
+      Die Größe $u$ ist daher eine Eigenwertskala, keine thermische. Sie als Temperatur zu lesen, ist keine Frage eines
+      fehlenden Faktors oder eines falsch bezeichneten Exponenten: Es ist eine Identifikation, die der Wärme-Kern nicht
+      zulässt. Der frühere Ausdruck $\delta S_\Pi=\int\beta(x)^{-1}\delta E_\Pi$ übersteht diese Prüfung nicht.
     </p>
   </section>
   <section class="card">
-    <h2>Bezug zur induzierten Gravitation</h2>
+    <h2>Die offene thermodynamische Brücke</h2>
     <p>
-      Der geometrische Koeffizient $(16\pi G_N)^{-1}$ entsteht aus der Subtraktion des $a_2$-Pols im <a
-      href="https://de.wikipedia.org/wiki/Zetafunktions-Regularisierung">zeta-regulierten Determinanten</a>. Im Regime
-      $R\,\ell_\chi^2\ll1$ sind höhere Seeley–DeWitt-Beiträge unterdrückt, und der Einstein-Term dominiert die
-      Infrarotantwort.
+      Eine echte Thermodynamik zu begründen erfordert der Reihe nach: eine unabhängig definierte Wärme-Einsform
+      $\xi_{\mathrm{sp}}$ auf dem Konfigurationsraum; einen physikalischen Energiebegriff; und einen Integrabilitätssatz,
+      der zeigt, dass $\ker\xi_{\mathrm{sp}}$ flach ist und somit $\delta Q=T\,\mathrm{d}S$ lokal gilt.
+    </p>
+    <p>
+      Dies ist das klassische Kriterium von <a href="https://de.wikipedia.org/wiki/Constantin_Carath%C3%A9odory">Carathéodory</a>,
+      von Jauch wieder aufgegriffen und von Bryan W. Roberts in eine moderne geometrische Form gebracht: Er zeigt, dass
+      Wärme einen Eichzusammenhang auf einem Geradenbündel über den Arbeitskonfigurationen definiert. Verschwindende
+      Krümmung ist äquivalent zur lokalen Existenz von Entropie- und Temperaturfunktionen, während ein globales
+      Gleichgewicht durch ein thermisches Analogon der geometrischen Phase dennoch scheitern kann. Dieses Kriterium
+      verwandelt einen terminologischen Vorbehalt in einen präzisen mathematischen Test — einen, den dieser Artikel noch
+      nicht besteht und zu bestehen auch nicht beansprucht.
     </p>
   </section>
   <section class="card">
-    <h2>Bezug zum Cosmochrony-Programm</h2>
+    <h2>Bezug zum Gravitationsartikel</h2>
     <p>
-      Dieser Artikel stellt eine eigenständige spektral-geometrische Analyse dar. Er steht im Zusammenhang mit dem
-      Cosmochrony-Programm über die Zulässigkeitsskala $t_*$ und die Normierung der induzierten Gravitation, kann jedoch
-      unabhängig vom vollständigen prä-geometrischen Rahmen bewertet werden.
+      Die hier angenommene renormierte infrarote metrische Antwort wird vom begleitenden Gravitationsartikel geliefert,
+      der den spektralen Cutoff-Sektor vom Zeta-Sektor trennt und den endlichen Einstein-Koeffizienten
+      $c_{\mathrm{EH}}^{\mathrm{ren}}$ als Anpassungsdatum und nicht als Vorhersage identifiziert. Der bedingte Charakter
+      des vorliegenden Ergebnisses folgt unmittelbar daraus: Was dort geliefert wird, wird hier vorausgesetzt.
+    </p>
+    <p>
+      Es werden weder Horizontstrukturen, <a
+      href="https://de.wikipedia.org/wiki/Hyperbelbewegung#Rindler-Koordinaten">Rindler-Regionen</a> noch die <a
+      href="https://de.wikipedia.org/wiki/Raychaudhuri-Gleichung">Raychaudhuri-Gleichung</a> benötigt. Die Herleitung
+      ist vollständig variational und spektral.
     </p>
   </section>
   <section class="card">
-    <h2>Referenz</h2>
+    <h2>Interpretativer Status</h2>
     <p>
-      Jérôme Beau. <i lang="en">Local Spectral Thermodynamics and the Einstein Equation as a Spectral Equilibrium
-      Condition</i>. Preprint. <a href="https://doi.org/10.5281/zenodo.18825655"
+      Der bedingte Gehalt ist eine Variationskopplung zwischen einem renormierten geometrischen Funktional und der
+      Materie. Diese Stationarität als <em>Gleichgewicht</em> zu lesen, bleibt eine Interpretation auf Programmebene und
+      ist kein Ergebnis dieses Artikels: Das Wort trägt thermodynamische Verpflichtungen, die die Konstruktion noch nicht
+      einlöst.
+    </p>
+    <p>
+      Dies ist eine bewusste Einengung. Eine schwächere Behauptung, die der Prüfung standhält, ist für das Programm mehr
+      wert als eine stärkere, die es nicht tut, und das fehlende Glied präzise zu benennen, macht es überhaupt erst
+      angehbar.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Referenzen</h2>
+    <p>
+      Jérôme Beau. <i lang="en">Einstein–Matter Coupling from Spectral Stationarity: A Conditional Variational Result
+      and the Open Thermodynamic Bridge</i>. Preprint. <a href="https://doi.org/10.5281/zenodo.18825655"
       rel="noopener">10.5281/zenodo.18825655</a>
+    </p>
+    <p>
+      B. W. Roberts. <i lang="en">Heat as a Gauge Connection</i>. <a href="https://arxiv.org/abs/2503.08753"
+      rel="noopener">arXiv:2503.08753</a>
     </p>
   </section>
 </main>

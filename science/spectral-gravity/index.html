@@ -66,21 +66,26 @@
       <p>
         The spectral gravity sub-programme answers this in four stages built on a single functional, the projective
         spectral entropy $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ associated with the minimal admissible
-        Laplace-type operator $A_g = -\nabla_g^2$. The Einstein tensor arises as the infrared $a_2$ pole of the
-        renormalized metric variation; the field equations $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ are recovered as
-        the Euler–Lagrange condition of a spectral equilibrium principle; the construction is then causally completed
+        Laplace-type operator $A_g = -\nabla_g^2$. The Einstein tensor arises as the infrared $a_2$ response of the
+        renormalized metric variation; the field equations $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N
+        T_{\mu\nu}^{(\Pi)}$ are recovered as the Euler–Lagrange condition of a conditional variational principle, given
+        supplied renormalized coefficients; the construction is then causally completed
         in Lorentzian signature and ultraviolet-completed by an Eddington-inspired Born–Infeld action. This note
         covers the gravitational sector in the absence of matter; the joint gauge–gravity stratification belongs to
         Presentation Note 8.
       </p>
       <div class="note" role="note">
-        <strong>Four stages, one functional.</strong> $\mathcal{S}_\Pi[g]$ is the only input. The $a_2$ pole gives the
-        Einstein tensor with induced Newton constant $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$. The local spectral
-        multiplier $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R)$ reformulates the field equations
-        as a spectral equilibrium condition (no horizon, no Rindler wedge, no Raychaudhuri theorem required). The
+        <strong>Four stages, one functional.</strong> $\mathcal{S}_\Pi[g]$ is the only input. The $a_2$ sector gives the
+        Einstein tensor, but <em>not</em> the Newton constant: Gravity v3.3 separates the proper-time cutoff from zeta
+        regularization and shows that the finite coefficient $c_{\mathrm{EH}}^{\mathrm{ren}}$, its sign, and hence
+        $G_N > 0$ are matching data, not predictions. Thermodynamics v2.0 withdraws the earlier spectral multiplier
+        $\beta(x)^{-1}$ and the spectral first law: the heat-kernel quantity $u \sim L^{-2}$ is an eigenvalue scale, not
+        a temperature. What survives is a conditional variational coupling (no horizon, no Rindler wedge, no
+        Raychaudhuri theorem required); reading it as <em>equilibrium</em> is an interpretation, not a result. The
         Lorentzian completion propagates two transverse-traceless helicity-$\pm 2$ modes with a universal
-        $k^4$ correction $\gamma = 1/30$ in the natural spectral scheme. The unique UV completion is the
-        Eddington-inspired Born–Infeld action, conditional on Hypothesis [H-ext] (Gravity Theorem 1).
+        $k^4$ correction $\gamma = 1/30$ in the natural spectral scheme. The UV completion is the Eddington-inspired
+        Born–Infeld action, conditional on Hypothesis
+        [H-ext] and on a supplied Einstein term (Gravity Theorem 1).
       </div>
     </div>
     <aside class="card">
@@ -100,14 +105,15 @@
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">4 papers (Gravity 3.0, Thermodynamics, Lorentz/CausalPropagation, BornInfeld); $a_2$ Einstein
-            response in the matter-free IR; Lorentzian completion; Born–Infeld UV completion</div>
+          <div class="v">4 papers (Gravity 3.3, Thermodynamics 2.0, Lorentz/CausalPropagation, BornInfeld); $a_2$
+            Einstein response in the matter-free IR; Lorentzian completion; Born–Infeld UV completion</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Matter-free IR sector closed structurally; BI tensorial uniqueness conditional on [H-ext];
-            open: Lorentzian Einstein equilibrium beyond linearisation, coupled $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$
-            with explicit matter</div>
+          <div class="v">Matter-free IR sector conditional on supplied renormalized coefficients; BI tensorial result
+            conditional on [H-ext] and a supplied Einstein term; open: $c_{\mathrm{EH}}^{\mathrm{ren}}$ sign and
+            magnitude, the thermodynamic bridge, Lorentzian stationarity beyond linearisation, coupled
+            $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ with explicit matter</div>
         </div>
       </div>
     </aside>
@@ -117,43 +123,61 @@
     <p style="text-align:center">
       $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g
       \;\Longrightarrow\;
-      \delta_g\mathcal{S}_\Pi \ni c_{\mathrm{EH}}\, G_{\mu\nu}
+      \delta_g\mathcal{S}_\Pi \ni c_{\mathrm{EH}}^{\mathrm{ren}}\, G_{\mu\nu}
       \;\Longrightarrow\;
-      G_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}
+      G_{\mu\nu} + \Lambda_{\mathrm{ren}}\,g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}
       \;\Longrightarrow\;
       \omega^2 = c^2 k^2 - \gamma\,\ell_{\mathrm{sp}}^2 k^4
       \;\Longrightarrow\;
       \sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R)}.$
     </p>
     <p>
-      Four stages arise from distinct constituent papers: the IR hierarchy and induced Newton constant from the
-      heat-kernel $a_2$ coefficient of $\mathcal{S}_\Pi$ (Gravity 3.0); the local spectral multiplier field and the
-      Einstein equation as the Euler–Lagrange condition of a spectral equilibrium principle (Thermodynamics); the
-      Schwinger–Keldysh Lorentzian completion with two helicity-$\pm 2$ TT graviton modes and the $\gamma = 1/30$
-      dispersion correction (Lorentz/CausalPropagation); and the Eddington-inspired Born–Infeld action as the unique
-      admissible tensorial UV completion under conditions (C1)–(C5) and Hypothesis [H-ext] (Gravity Theorem 1,
-      BornInfeld).
+      Four stages arise from distinct constituent papers: the IR hierarchy from the heat-kernel $a_2$ coefficient of
+      $\mathcal{S}_\Pi$, controlled by the ratio $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ of
+      renormalized coefficients (Gravity 3.3); the Einstein–matter coupling as the Euler–Lagrange condition of the
+      stationarity of $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$, given supplied renormalized coefficients
+      (Thermodynamics 2.0); the Schwinger–Keldysh Lorentzian completion with two helicity-$\pm 2$ TT graviton modes and
+      the $\gamma = 1/30$ dispersion correction (Lorentz/CausalPropagation); and the Eddington-inspired Born–Infeld
+      action as an admissible tensorial UV completion under conditions (C1)–(C5), conditional on Hypothesis [H-ext] and
+      on a supplied Einstein term (Gravity Theorem 1, BornInfeld).
     </p>
   </section>
   <section class="card">
     <h2>Papers of the sub-programme</h2>
-    <p><strong>IR Einstein response and induced Newton constant.</strong></p>
+    <p><strong>Conditions for an IR Einstein sector.</strong></p>
     <ul>
-      <li><a href="/science/spectral-gravity/gravity/"><strong>Gravity 3.0</strong></a> — establishes
+      <li><a href="/science/spectral-gravity/gravity/"><strong>Gravity 3.3</strong></a> — <em>Conditions for an
+        Infrared Einstein Sector from Spectral Geometry.</em> Establishes
         $\mathcal{S}_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ on a four-dimensional Riemannian manifold and derives the
-        renormalized metric variation. Results: IR hierarchy with the $a_2$ Einstein term infrared-dominant in
-        $R\ell_{\mathrm{sp}}^2 \ll 1$ (structural); induced Newton constant $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$
-        (structural); BI tensorial uniqueness theorem under (C1)–(C5) and [H-ext] (conditional); structural necessity
-        of non-injective projection for $\mathcal{S}_\Pi > 0$.</li>
+        renormalized metric variation, strictly separating the proper-time cutoff $\Lambda = \ell_{\mathrm{sp}}^{-1}$
+        (which carries the $a_0\Lambda^4$ and $a_2\Lambda^2$ divergences) from zeta regularization (which carries the
+        finite determinant and the logarithmic dependence, governed in $d = 4$ by $a_4 = \zeta_A(0)$). Results: a
+        single minimal scalar contributes $\Delta c_{\mathrm{EH}}^\Lambda = -\Lambda^2/[12(4\pi)^2]$, which is
+        <em>negative</em>; the finite renormalized coefficient $c_{\mathrm{EH}}^{\mathrm{ren}}$, its sign, and hence
+        $G_N > 0$ are <strong>matching data</strong> — fixed by a renormalization condition and by the complete
+        operator content, not predicted by the determinant; the IR hierarchy is set by the ratio of renormalized
+        coefficients, $R\,L_4^2 \ll 1$ with $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$; a
+        conditional regime $G_N = O(\ell_{\mathrm{sp}}^2)$ survives only if the matched coefficient is
+        cutoff-dominated <em>and</em> positive; BI tensorial theorem under (C1)–(C5), conditional on [H-ext] and on a
+        supplied Einstein term; structural necessity of non-injective projection for $\mathcal{S}_\Pi > 0$.
+        <strong>Retracted in v3.3:</strong> the earlier claim $G_N \sim 16\pi^2\ell_{\mathrm{sp}}^2$, which did not
+        follow algebraically, and the unconditional uniqueness of the Born–Infeld completion.</li>
     </ul>
-    <p><strong>Spectral equilibrium and the Einstein equation.</strong></p>
+    <p><strong>Einstein–matter coupling from spectral stationarity.</strong></p>
     <ul>
-      <li><a href="/science/spectral-gravity/thermodynamics/"><strong>Thermodynamics</strong></a> — develops the local
-        thermodynamic interpretation of $\mathcal{S}_\Pi[g]$. Results: local spectral multiplier
-        $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R)$ from the diagonal heat kernel; spectral
-        first law $\delta\mathcal{S}_\Pi = \int \beta^{-1}\delta E_\Pi$ as a consequence of the Seeley–DeWitt
-        hierarchy; Einstein equation $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ as the Euler–Lagrange condition of a
-        spectral equilibrium principle, with no horizon, Rindler wedge, or Raychaudhuri theorem invoked.</li>
+      <li><a href="/science/spectral-gravity/thermodynamics/"><strong>Thermodynamics 2.0</strong></a> —
+        <em>Einstein–Matter Coupling from Spectral Stationarity: A Conditional Variational Result and the Open
+        Thermodynamic Bridge.</em> Results: given supplied renormalized coefficients, stationarity of
+        $\Gamma_\Pi = \mathcal{S}_\Pi^{\mathrm{ren}} - W_\Pi$ yields
+        $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ — note the cosmological term
+        $\Lambda_{\mathrm{ren}}$, omitted by earlier versions — with no horizon, Rindler wedge, or Raychaudhuri
+        theorem invoked. The heat-kernel quantity $u = -\partial_t\log K \sim L^{-2}$ is an <em>eigenvalue scale</em>,
+        not a temperature (a temperature is $L^{-1}$ in natural units), so no local first law follows from the heat
+        kernel alone. Reading the stationarity as <em>equilibrium</em> is a programme-level interpretation, not a
+        result. <strong>Retracted in v2.0:</strong> the spectral equilibrium principle, the spectral first law
+        $\delta\mathcal{S}_\Pi = \int\beta^{-1}\delta E_\Pi$, and the multiplier field
+        $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x)$. The bridge to thermodynamics remains open: it requires a
+        heat one-form, an energy notion, and a Carathéodory–Jauch–Roberts integrability theorem.</li>
     </ul>
     <p><strong>Causal completion and gravitational waves.</strong></p>
     <ul>
@@ -185,9 +209,11 @@
       BornInfeld and O18.
     </p>
     <p>
-      <strong>Outputs.</strong> The Einstein equations $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}^{(\Pi)}$ in the matter-free
-      IR; induced Newton constant $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$; the Eddington-inspired Born–Infeld action
-      conditional on [H-ext]; two helicity-$\pm 2$ transverse-traceless graviton modes; the $\omega^2 = c^2 k^2 -
+      <strong>Outputs.</strong> The Einstein equations $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N
+      T_{\mu\nu}^{(\Pi)}$ in the matter-free IR, conditional on supplied renormalized coefficients; the conditional
+      regime $G_N = O(\ell_{\mathrm{sp}}^2)$, holding only if the matched $c_{\mathrm{EH}}^{\mathrm{ren}}$ is
+      cutoff-dominated and positive; the Eddington-inspired Born–Infeld action conditional on [H-ext] and on a
+      supplied Einstein term; two helicity-$\pm 2$ transverse-traceless graviton modes; the $\omega^2 = c^2 k^2 -
       \gamma \ell_{\mathrm{sp}}^2 k^4$ dispersion with $\gamma = 1/30$; bound on $\ell_{\mathrm{sp}}$ from GW data;
       the $a_2 \to$ gravity, $a_4 \to$ gauge spectral stratification — consumed by Q12, Q13, the gauge–gravity
       stratification sub-programme (Note 8), and cosmological/phenomenological applications.
@@ -196,14 +222,20 @@
   <section class="card">
     <h2>Status</h2>
     <p>
-      Gravity in the matter-free infrared is <strong>closed structurally</strong>: the $a_2$ Einstein term dominates
-      under $R\ell_{\mathrm{sp}}^2 \ll 1$ (Gravity 3.0 §4.5); the Einstein equation is recovered as a spectral
-      equilibrium condition (Thermodynamics Theorem 4.3); two TT helicity-$\pm 2$ modes with $\gamma = 1/30$
+      Gravity in the matter-free infrared is <strong>conditionally established</strong>, not closed: the $a_2$
+      Einstein term dominates under $R\,L_4^2 \ll 1$, the hierarchy being set by the ratio
+      $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ of renormalized coefficients rather than by
+      $\ell_{\mathrm{sp}}$ alone (Gravity 3.3); the Einstein–matter coupling is recovered as the Euler–Lagrange
+      condition of the stationarity of $\Gamma_\Pi$, <strong>given supplied renormalized coefficients</strong>
+      (Thermodynamics 2.0); two TT helicity-$\pm 2$ modes with $\gamma = 1/30$
       dispersion are derived in Lorentzian signature (Lorentz/CausalPropagation §3). Scalar BI uniqueness and the
       parity involution are <strong>proved unconditionally</strong> (BornInfeld), as are the spectral carrier
-      identification and the scalar BI reduction (Gravity Lemmas 2–3). The tensorial BI uniqueness theorem (Gravity
+      identification and the scalar BI reduction (Gravity Lemmas 2–3). The tensorial BI theorem (Gravity
       Theorem 1) is <strong>conditional on Hypothesis [H-ext]</strong> (admissible coherence extensivity, Lemma 1
-      only). Three items remain open: the analytical proof of [H-ext]; the full Lorentzian Einstein equilibrium
+      only) <strong>and on a supplied Einstein term</strong>. Items remain open: the sign and magnitude of
+      $c_{\mathrm{EH}}^{\mathrm{ren}}$, which are matching data rather than predictions of the determinant; the
+      thermodynamic bridge, which requires a heat one-form, an energy notion, and a Carathéodory–Jauch–Roberts
+      integrability theorem; the analytical proof of [H-ext]; the full Lorentzian Einstein stationarity
       beyond linearisation; and the coupled $G_{\mu\nu} = 8\pi G_N T_{\mu\nu}$ with explicit matter, pending the
       Fermionic Matter Sub-Programme (Note 6). This note does not address Yang–Mills dynamics — that belongs to the
       gauge–gravity stratification sub-programme (Presentation Note 8).

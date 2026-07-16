@@ -37,7 +37,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/index_fr.html" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -106,7 +106,7 @@
         paire engendrée par les projecteurs déposés et la dynamique de Harper.
       </p>
       <div class="note" role="note">
-        <strong>Statut (v1.4).</strong> Papier mathématique. Les résultats de somme fermée,
+        <strong>Statut (v1.5).</strong> Papier mathématique. Les résultats de somme fermée,
         d'espacement, de stabilisateur, de rigidité, de symboles de Weyl, de Hecke, de Harper,
         de mélange et de clôture par parité sont démontrés. Un lemme inconditionnel de
         presque-périodicité montre que tout stabilisateur multiplicatif a un défaut additif
@@ -124,7 +124,13 @@
         $q=151$ classe les $75$ ensembles exceptionnels en trois mécanismes raffinés sans
         ordre au-delà de six — et les profondeurs poreuses d'un bloc uniforme convergent vers
         un processus ponctuel limite explicite de loi de comptage $(3/20,7/24,9/40,5/24,1/8)$
-        et de moyenne $28/15$.
+        et de moyenne $28/15$. Depuis la v1.5, la valeur exacte du stabilisateur est démontrée
+        dans deux de ces trois mécanismes : un argument de quatrième moment donne
+        $A_{Q_r(i)}=\langle i\rangle\cong C_4$ pour <em>toute</em> boîte gaussienne propre,
+        directe ou enroulée, et toute orbite libre de complément à quatre points a le même
+        stabilisateur exact. La complétude des trois mécanismes, ainsi qu'une identification
+        uniforme du niveau d'autocorrélation maximal des ensembles d'Eisenstein $C_6$,
+        restent ouvertes.
       </div>
     </div>
     <aside class="card">
@@ -147,7 +153,9 @@
           <div class="v">Noyau exact démontré ; théorème de rigidité $A_K=\{\pm1\}$ hors du
             régime dégénéré de frontière (v1.1) ; critère de mélange complètement résolu
             (v1.3) ; mécanismes dégénérés raffinés et asymptotique des profondeurs poreuses
-            démontrée (v1.4) ; complétude des mécanismes raffinés ouverte</div>
+            démontrée (v1.4) ; stabilisateur exact $C_4$ démontré pour toute boîte gaussienne
+            propre et toute orbite libre de complément à quatre points (v1.5) ; complétude
+            des mécanismes raffinés ouverte</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -199,11 +207,13 @@
         unique.
       </li>
       <li>
-        <strong>Mécanisme des boîtes gaussiennes (v1.4) :</strong> pour $i^2=-1$ et
-        $q&gt;8r^2$, la boîte $Q_r(i)=\{x+iy:|x|,|y|\le r\}$ est propre avec
+        <strong>Mécanisme des boîtes gaussiennes (v1.4, stabilisateur exact v1.5) :</strong>
+        pour $i^2=-1$ et $q&gt;8r^2$, la boîte $Q_r(i)=\{x+iy:|x|,|y|\le r\}$ est propre avec
         $C_4\subseteq A_K$ et est réalisée par des blocs admissibles à la profondeur $r-1$
-        pour $r\le4$ ; près de la saturation, les boîtes enroulées avec $q&lt;8r^2$ sont
-        certifiées individuellement par l'audit. La lecture d'exhaustion antérieure des
+        pour $r\le4$ ; près de la saturation, des boîtes enroulées avec $q&lt;8r^2$
+        apparaissent également. Un théorème de quatrième moment (v1.5) démontre
+        $A_{Q_r(i)}=\langle i\rangle$ exactement pour toute boîte propre, directe ou
+        enroulée : aucun cas ne reste à certifier individuellement. La lecture d'exhaustion antérieure des
         énoncés de familles est retirée, et l'affirmation fausse selon laquelle tous les
         compléments à quatre points audités seraient adjacents est corrigée : à $q=37$
         l'orbite $\{3,18,19,34\}$ a une paire adjacente et deux gaps singletons, et les trois
@@ -345,9 +355,11 @@
         libres à quatre points, ensembles d'Eisenstein $C_6$) et les ordres $C_4$ et $C_6$
         épuisent le régime dégénéré de frontière pour tout premier impair. Hors de ce régime,
         $A_K=\{\pm1\}$ est démontré (v1.1) ; jusqu'à $q=151$, l'audit ne trouve rien d'autre
-        (v1.4).</li>
-      <li>Démontrer $A_K=\langle i\rangle$ exactement pour les boîtes gaussiennes avec
-        $r\ge2$ (seule l'inclusion est démontrée uniformément).</li>
+        (v1.4). Les groupes d'unités des entiers de Gauss et d'Eisenstein constituent un
+        principe organisateur pour cette question, non un théorème de complétude.</li>
+      <li>Démontrer uniformément que le niveau d'autocorrélation maximal des ensembles
+        d'Eisenstein $C_6$ vaut $\{\pm1,\pm\omega,\pm\omega^2\}$ ; la valeur du stabilisateur
+        elle-même est démontrée, seule l'identification du niveau est certifiée par audit.</li>
     </ul>
   </section>
   <section class="card">

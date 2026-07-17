@@ -18,9 +18,9 @@
     content="Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation
     on the Admissible Fibre"/>
   <meta property="og:description"
-    content="Q12 shows that the vertical variation of S_Π[g,A] with respect to the admissible
-    connection yields the Yang–Mills equations, while the spectral UV hierarchy (quadratic for
-    gravity, logarithmic for gauge) emerges without fine-tuning."/>
+    content="Q12 shows that the vertical variation of S_Π[g,A] at fixed metric yields the local
+    Yang–Mills equations. The two sectors differ in UV divergence degree (quadratic for gravity,
+    logarithmic for gauge); the physical couplings g_YM and G_N remain renormalized matching data."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/gauge-structure/q12/"/>
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20261952">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20189137">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
     </div>
   </div>
@@ -107,7 +107,7 @@
           <div class="k">Focus</div>
           <div class="v">
             Yang–Mills dynamics, heat-kernel expansion, Seeley–DeWitt coefficients,
-            gauge–gravity hierarchy
+            Dynkin index, induced gauge coupling
           </div>
         </div>
         <div class="kv">
@@ -137,12 +137,15 @@
         $\mathcal{A}$ from Q6a/O31.
       </li>
       <li>
-        <strong>$a_4$ coefficient and Yang–Mills term:</strong>
+        <strong>$a_4$ coefficient and Yang–Mills term:</strong> isolating the gauge component
+        $\Omega^{\mathrm{gauge}}_{\mu\nu} = F_{\mu\nu}$ of the total bundle curvature,
         \[
           a_4(A_{g,\mathcal{A}})\big|_{\mathrm{gauge}}
-          = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
+          = \int \frac{1}{12}\,\mathrm{tr}_\rho(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
         \]
-        yielding $g_{\mathrm{YM}}^{-2} \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$ as induced coupling.
+        with the overall $(4\pi)^{-2}$ carried once by the heat-kernel prefactor. The induced
+        logarithmic running of $g_{\mathrm{YM}}^{-2}$ has coefficient $I_\rho/(12\cdot 16\pi^2)$ —
+        depending on the representation through the Dynkin index $I_\rho$, hence <em>not universal</em>.
       </li>
       <li>
         <strong>Vertical variation yields Yang–Mills equations:</strong>
@@ -150,15 +153,18 @@
         (proved for the $a_4$ derivation given $G_\Pi$).
       </li>
       <li>
-        <strong>UV hierarchy without fine-tuning:</strong> Newton's constant $G_N^{-1} \sim
-        \ell_{\mathrm{sp}}^{-2}$ is quadratic in the UV cutoff, while the gauge coupling is
-        logarithmic. Both share the same spectral scale; the gauge–gravity hierarchy
-        $G_N g_{\mathrm{YM}}^2 \ll 1$ follows as a structural consequence of the Seeley–DeWitt
-        expansion.
+        <strong>Difference in UV divergence degree:</strong> the Einstein term diverges
+        quadratically (order $a_2$) and the Yang–Mills term logarithmically (order $a_4$). This
+        difference is structural; the physical couplings $g_{\mathrm{YM}}$ and $G_N$ are
+        <em>renormalized matching data</em>, and only the logarithmic running is computed. No
+        predictive formula for $G_N$ and no tuning-free hierarchy is claimed (consistent with
+        Gravity&nbsp;3.3).
       </li>
       <li>
-        <strong>Horizontal–vertical decoupling:</strong> a decoupling lemma guarantees that the
-        Einstein ($a_2$) and Yang–Mills ($a_4$) sectors are independent — no cross-variation mixes them.
+        <strong>Vertical variation at fixed metric:</strong> at fixed base metric, the vertical
+        variation isolates the Yang–Mills sector. Full horizontal–vertical decoupling does
+        <em>not</em> hold: the metric variation of $F^2$ is the Yang–Mills energy–momentum tensor
+        $T^{\mathrm{YM}}_{\mu\nu}$, an $a_4$-order back-reaction deferred to Q13.
       </li>
     </ul>
   </section>
@@ -247,7 +253,7 @@
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <i>Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation on
       the Admissible Fibre</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20261952">doi:10.5281/zenodo.20261952</a>
+      <a href="https://doi.org/10.5281/zenodo.20189137">doi:10.5281/zenodo.20189137</a>
     </p>
   </section>
 

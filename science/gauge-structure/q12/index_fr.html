@@ -19,9 +19,10 @@
     content="Dynamique de Yang–Mills depuis l'entropie spectrale projective :
     Variation verticale du noyau de la chaleur sur la fibre admissible"/>
   <meta property="og:description"
-    content="Q12 montre que la variation verticale de S_Π[g,A] par rapport à la connexion
-    admissible donne les équations de Yang–Mills, tandis que la hiérarchie UV spectrale
-    (quadratique pour la gravité, logarithmique pour la jauge) émerge sans ajustement fin."/>
+    content="Q12 montre que la variation verticale de S_Π[g,A] à métrique fixée donne les équations
+    de Yang–Mills locales. Les deux secteurs diffèrent par le degré de divergence UV (quadratique pour
+    la gravité, logarithmique pour la jauge) ; les couplages physiques g_YM et G_N restent des données
+    renormalisées de matching."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/gauge-structure/q12/"/>
@@ -60,7 +61,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20261952">Lire le preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20189137">Lire le preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
     </div>
   </div>
@@ -108,7 +109,7 @@
           <div class="k">Thématique</div>
           <div class="v">
             Dynamique de Yang–Mills, développement du noyau de la chaleur,
-            coefficients de Seeley–DeWitt, hiérarchie jauge–gravité
+            coefficients de Seeley–DeWitt, indice de Dynkin, couplage de jauge induit
           </div>
         </div>
         <div class="kv">
@@ -138,12 +139,16 @@
         $\mathcal{A}$ issue de Q6a/O31.
       </li>
       <li>
-        <strong>Coefficient $a_4$ et terme de Yang–Mills :</strong>
+        <strong>Coefficient $a_4$ et terme de Yang–Mills :</strong> en isolant la composante de jauge
+        $\Omega^{\mathrm{gauge}}_{\mu\nu} = F_{\mu\nu}$ de la courbure totale du fibré,
         \[
           a_4(A_{g,\mathcal{A}})\big|_{\mathrm{jauge}}
-          = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
+          = \int \frac{1}{12}\,\mathrm{tr}_\rho(F_{\mu\nu}F^{\mu\nu})\sqrt{g}\,\mathrm{d}^4x,
         \]
-        donnant $g_{\mathrm{YM}}^{-2} \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$ comme couplage induit.
+        le facteur global $(4\pi)^{-2}$ étant porté une seule fois par le préfacteur du noyau de la
+        chaleur. Le running logarithmique induit de $g_{\mathrm{YM}}^{-2}$ a pour coefficient
+        $I_\rho/(12\cdot 16\pi^2)$ — dépendant de la représentation via l'indice de Dynkin $I_\rho$,
+        donc <em>non universel</em>.
       </li>
       <li>
         <strong>Variation verticale et équations de Yang–Mills :</strong>
@@ -151,16 +156,18 @@
         (démontré pour la dérivation de $a_4$ étant donné $G_\Pi$).
       </li>
       <li>
-        <strong>Hiérarchie UV sans ajustement fin :</strong> la constante de Newton
-        $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ est quadratique en la coupure UV, tandis que le
-        couplage de jauge est logarithmique. Les deux partagent la même échelle spectrale ;
-        la hiérarchie jauge–gravité $G_N g_{\mathrm{YM}}^2 \ll 1$ suit comme conséquence structurelle
-        du développement de Seeley–DeWitt.
+        <strong>Différence de degré de divergence UV :</strong> le terme d'Einstein diverge
+        quadratiquement (ordre $a_2$) et le terme de Yang–Mills logarithmiquement (ordre $a_4$).
+        Cette différence est structurelle ; les couplages physiques $g_{\mathrm{YM}}$ et $G_N$ sont
+        des <em>données renormalisées de matching</em>, et seul le running logarithmique est calculé.
+        Aucune formule prédictive de $G_N$ ni hiérarchie sans ajustement n'est revendiquée (conforme
+        à Gravité&nbsp;3.3).
       </li>
       <li>
-        <strong>Découplage horizontal–vertical :</strong> un lemme de découplage garantit que les
-        secteurs Einstein ($a_2$) et Yang–Mills ($a_4$) sont indépendants — aucune variation croisée
-        ne les mélange.
+        <strong>Variation verticale à métrique fixée :</strong> à métrique de base fixée, la variation
+        verticale isole le secteur de Yang–Mills. Le découplage horizontal–vertical complet n'est
+        <em>pas</em> valable : la variation métrique de $F^2$ est le tenseur d'énergie–impulsion de
+        Yang–Mills $T^{\mathrm{YM}}_{\mu\nu}$, une back-réaction d'ordre $a_4$ renvoyée à Q13.
       </li>
     </ul>
   </section>
@@ -255,7 +262,7 @@
       Jérôme Beau,
       <i>Yang–Mills Dynamics from Projective Spectral Entropy: Vertical Heat-Kernel Variation on
       the Admissible Fibre</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20261952">doi:10.5281/zenodo.20261952</a>
+      <a href="https://doi.org/10.5281/zenodo.20189137">doi:10.5281/zenodo.20189137</a>
     </p>
   </section>
 

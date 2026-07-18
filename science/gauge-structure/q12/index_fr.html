@@ -147,8 +147,9 @@
         \]
         le facteur global $(4\pi)^{-2}$ étant porté une seule fois par le préfacteur du noyau de la
         chaleur. Le running logarithmique induit de $g_{\mathrm{YM}}^{-2}$ a pour coefficient
-        $I_\rho/(12\cdot 16\pi^2)$ — dépendant de la représentation via l'indice de Dynkin $I_\rho$,
-        donc <em>non universel</em>.
+        $I_\rho/(3\cdot 16\pi^2)$ — le terme d'entropie porte $I_\rho/(12\cdot 16\pi^2)$ pour
+        $\int F^2$, qui se matche à $(4g_{\mathrm{YM}}^2)^{-1}$ et non à $g_{\mathrm{YM}}^{-2}$ —
+        dépendant de la représentation via l'indice de Dynkin $I_\rho$, donc <em>non universel</em>.
       </li>
       <li>
         <strong>Variation verticale et équations de Yang–Mills :</strong>
@@ -156,9 +157,11 @@
         (démontré pour la dérivation de $a_4$ étant donné $G_\Pi$).
       </li>
       <li>
-        <strong>Différence de degré de divergence UV :</strong> le terme d'Einstein diverge
-        quadratiquement (ordre $a_2$) et le terme de Yang–Mills logarithmiquement (ordre $a_4$).
-        Cette différence est structurelle ; les couplages physiques $g_{\mathrm{YM}}$ et $G_N$ sont
+        <strong>Différence de degré de divergence UV :</strong> dans un cutoff en temps propre,
+        le terme d'Einstein diverge quadratiquement (ordre $a_2$) et le terme de Yang–Mills
+        logarithmiquement (ordre $a_4$). Cette différence est structurelle <em>dans ce schéma</em>
+        et n'est pas indépendante du schéma — le déterminant régularisé par fonction zêta ne porte
+        aucune divergence de puissance. Les couplages physiques $g_{\mathrm{YM}}$ et $G_N$ sont
         des <em>données renormalisées de matching</em>, et seul le running logarithmique est calculé.
         Aucune formule prédictive de $G_N$ ni hiérarchie sans ajustement n'est revendiquée (conforme
         à Gravité&nbsp;3.3).
@@ -167,7 +170,7 @@
         <strong>Variation verticale à métrique fixée :</strong> à métrique de base fixée, la variation
         verticale isole le secteur de Yang–Mills. Le découplage horizontal–vertical complet n'est
         <em>pas</em> valable : la variation métrique de $F^2$ est le tenseur d'énergie–impulsion de
-        Yang–Mills $T^{\mathrm{YM}}_{\mu\nu}$, une back-réaction d'ordre $a_4$ renvoyée à Q13.
+        Yang–Mills $T^{\mathrm{YM}}_{\mu\nu}$, une back-réaction d'ordre $a_4$ traitée dans Q13.
       </li>
     </ul>
   </section>
@@ -204,8 +207,9 @@
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
-      Q12 est le pendant vertical du papier Gravité et clôt la dérivation spectrale des deux types
-      d'équations de champ classiques connues depuis un unique principe variationnel :
+      Q12 est le pendant vertical du papier Gravité. Chaque secteur découle du même fonctionnel
+      par variation dans une direction différente ; joindre les deux variations, et le système
+      conditionnel qui en résulte, relève de Q13 :
     </p>
     <ul>
       <li>
@@ -225,9 +229,11 @@
       l'empreinte Born–Infeld.
     </p>
     <p>
-      Le problème variationnel joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ (équations couplées
-      Einstein–Yang–Mills), le ratio précis $G_N g_{\mathrm{YM}}^2$, et la complétion jointe
-      Eddington–Born–Infeld sont traités dans <a href="/science/gauge-gravity-stratification/q13/">Q13</a>.
+      La variation jointe — le système Einstein–Yang–Mills <em>conditionnel</em> et la
+      back-réaction $T^{\mathrm{YM}}_{\mu\nu}$ d'ordre $a_4$ — est traitée dans
+      <a href="/science/gauge-gravity-stratification/q13/index_fr.html">Q13</a>, où les couplages
+      restent de même des données de matching renormalisées indépendantes : aucune valeur numérique
+      de $G_N g_{\mathrm{YM}}^2$ n'en découle.
     </p>
   </section>
 
@@ -235,14 +241,9 @@
     <h2>Perspectives ouvertes</h2>
     <ul>
       <li>
-        <strong>Unicité de Yang–Mills SU(3) (Q13 + O31) :</strong> montrer que la dynamique de
-        jauge SU(3) émerge uniquement de la structure de co-admissibilité des triplets de couleur,
-        sans supposer le groupe comme donnée.
-      </li>
-      <li>
-        <strong>Unicité de SU(3) :</strong> montrer que la dynamique de jauge SU(3) émerge
-        uniquement de la structure de co-admissibilité des triplets de couleur, sans supposer le
-        groupe comme donnée (O31 §9.2).
+        <strong>Unicité de Yang–Mills SU(3) :</strong> montrer que la dynamique de jauge SU(3)
+        émerge uniquement de la structure de co-admissibilité des triplets de couleur, sans
+        supposer le groupe comme donnée (O31 §9.2).
       </li>
       <li>
         <strong>Secteur de matière :</strong> étendre la variation verticale pour inclure les

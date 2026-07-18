@@ -8,19 +8,19 @@
     Gauge–Gravity Spectral Synthesis | Cosmochrony
   </title>
   <meta name="description"
-    content="Q13 solves the joint variational problem δ_{g,𝒜} S_Π = 0 and derives the coupled
-    Einstein–Yang–Mills system, the gauge–gravity hierarchy ratio, and the Eddington–Born–Infeld
-    joint completion from a single spectral functional."/>
+    content="Q13 varies a single matched renormalized local action with respect to both the metric
+    and the connection, obtaining a conditional Einstein–Yang–Mills system in which the couplings
+    are independent renormalization data rather than predictions."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/gauge-gravity-stratification/q13/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Gauge–Gravity Spectral Synthesis: Joint Einstein–Yang–Mills Equations,
-    Born–Infeld Completion, and the Hierarchy Ratio from Projective Spectral Entropy"/>
+    content="Gauge–Gravity Spectral Synthesis: A Conditional Einstein–Yang–Mills System
+    from Projective Spectral Entropy"/>
   <meta property="og:description"
-    content="Q13 completes the gauge–gravity trilogy by deriving the coupled Einstein–Yang–Mills
-    system from the joint variation of S_Π[g,𝒜], and obtains the hierarchy ratio
-    G_N g_YM² ∼ ℓ_sp²/(dim V)·[log(Λ/μ)]⁻¹ as a structural consequence of spectral stratification."/>
+    content="Q13 joins the metric and connection variations of a common matched action: the
+    connection variation gives the Yang–Mills equation and the metric variation of the same
+    tr_ρ(F²) term gives its energy–momentum tensor. G_N and g_YM remain independent matching data."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/gauge-gravity-stratification/q13/"/>
@@ -51,15 +51,15 @@
           Gauge–Gravity Spectral Synthesis
         </h1>
         <p class="subtitle">
-          Q13 solves the joint variational problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ and
-          derives the coupled Einstein–Yang–Mills system, the gauge–gravity hierarchy ratio,
-          and the Eddington–Born–Infeld joint completion from the single spectral functional
-          $S_\Pi[g,\mathcal{A}]$, completing the trilogy with the Gravity paper and Q12.
+          Q13 varies a single matched renormalized local action with respect to both the metric
+          and the connection, obtaining a <em>conditional</em> Einstein–Yang–Mills system in which
+          $G_N$ and $g_{\mathrm{YM}}$ are independent renormalization data rather than
+          predictions — completing the trilogy with the Gravity paper and Q12.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20262079">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20209859">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
     </div>
   </div>
@@ -77,20 +77,28 @@
         as the vertical $a_4$ response.
       </p>
       <p>
-        Q13 carries out the gauge–gravity <em>synthesis</em>: it solves the joint variational problem
-        $\delta_{g,\mathcal{A}} S_\Pi = 0$, coupling the two sectors into a single dynamical system.
-        The metric variation of the $a_4$ coefficient yields the Yang–Mills stress tensor as a source
-        for gravity; the gauge variation of $a_2$ is zero by horizontal–vertical decoupling.
+        Q13 joins the two variations within a single renormalized local action. Varying it with
+        respect to the connection at fixed metric gives $D_\mu F^{a\mu\nu} = 0$; varying the same
+        $\mathrm{tr}_\rho(F^2)$ term with respect to the metric gives its energy–momentum tensor,
+        through
+        $(1/\sqrt{g})\,\delta\!\int\!\sqrt{g}\,\mathrm{tr}_\rho(F^2)/\delta g^{\mu\nu}
+        = 2\tau_{\mu\nu}$.
       </p>
       <p>
-        The result is the Einstein–Yang–Mills system derived from a single functional, with the
-        gauge–gravity hierarchy appearing as an inescapable structural consequence of the difference
-        in Seeley–DeWitt order between the two sectors.
+        The resulting Einstein–Yang–Mills system is <em>conditional</em>: since
+        $\mathrm{tr}_\rho(F^2) = I_\rho F^a F^a$, canonical matching fixes the products
+        $c_{\mathrm{EH}} = 1/(16\pi G_N)$ and $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$, and the
+        equation then holds <em>by definition</em> of $T^{\mathrm{YM}}$, with
+        $8\pi G_N = 1/(2c_{\mathrm{EH}})$ depending on the Einstein coefficient alone. Nothing
+        predicts a coupling: $G_N$, $g_{\mathrm{YM}}$ and the cosmological coefficient are
+        independent renormalized matching data. The derivation is Euclidean.
       </p>
       <div class="note">
-        <strong>Central message.</strong> Gravity and gauge dynamics are not unified by enlarging the
-        symmetry group, but are <em>stratified by Seeley–DeWitt order</em> within the single operator
-        $\mathcal{A}_{g,\mathcal{A}}$: $a_2 \to$ gravity, $a_4 \to$ gauge, $a_6 \to$ mixed coupling.
+        <strong>Central message.</strong> One matched local action supplies both field equations.
+        Within a proper-time cutoff the spectral expansion fixes the <em>degree of ultraviolet
+        divergence</em> of each sector — quadratic at $a_2$, logarithmic at $a_4$ — and not the
+        finite couplings. This divergence contrast is scheme-dependent: the zeta-regularized
+        determinant carries no power divergences.
       </div>
     </div>
     <aside class="card">
@@ -107,20 +115,20 @@
         <div class="kv">
           <div class="k">Focus</div>
           <div class="v">
-            Einstein–Yang–Mills synthesis, gauge–gravity hierarchy,
-            Seeley–DeWitt stratification, Born–Infeld completion
+            Einstein–Yang–Mills synthesis, Yang–Mills stress tensor,
+            renormalization matching, Seeley–DeWitt stratification
           </div>
         </div>
         <div class="kv">
           <div class="k">Key result</div>
           <div class="v">
-            $\delta_{g,\mathcal{A}} S_\Pi = 0 \implies$ coupled EYM system +
-            $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot[\log(\Lambda/\mu)]^{-1}$
+            $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0 \implies$ conditional EYM system, with
+            $8\pi G_N = 1/(2c_{\mathrm{EH}})$ fixed by matching
           </div>
         </div>
         <div class="kv">
           <div class="k">Depends on</div>
-          <div class="v">Gravity paper, Q12, Q6a, Q11, Born–Infeld paper</div>
+          <div class="v">Gravity paper, Q12, Q6a, Q11</div>
         </div>
         <div class="kv">
           <div class="k">Trilogy</div>
@@ -134,38 +142,38 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Joint Einstein–Yang–Mills equations (Theorem):</strong> the joint variational
-        principle $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields the coupled system:
-        \begin{align*}
-          G_{\mu\nu} &= 8\pi G_N\, T^{\mathrm{YM}}_{\mu\nu} + \mathcal{O}(a_6),\\
-          D_\mu F^{a\mu\nu} &= 0 + \mathcal{O}(a_6),
-        \end{align*}
-        where $T^{\mathrm{YM}}_{\mu\nu}$ arises from the metric dependence of the $a_4$ coefficient.
-        The two sectors are decoupled at leading order by the horizontal–vertical decoupling lemma.
-      </li>
-      <li>
-        <strong>$a_6$ gauge–gravity cross-coupling (Theorem):</strong> the $a_6$ Seeley–DeWitt
-        coefficient contains the mixed term $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$,
-        suppressed by $\ell_{\mathrm{sp}}^2 \ll 1$ and relevant only near the spectral cutoff.
-      </li>
-      <li>
-        <strong>Eddington–Born–Infeld joint completion (Theorem):</strong> the same $c_\chi$
-        saturation bound that regulates the gravitational sector extends to the joint functional,
-        producing a unified non-linear regulator that recovers both sector-specific BI completions
-        as limits. A residual tensorial ambiguity in $\Xi_{\mu\nu}$ affects only subleading terms.
-      </li>
-      <li>
-        <strong>Gauge–gravity hierarchy ratio (Proposition):</strong>
+        <strong>Metric variation of the gauge kinetic term (Lemma):</strong> with
+        $\tau_{\mu\nu} = \mathrm{tr}_\rho(F_{\mu\rho}F_\nu{}^\rho - \tfrac14 g_{\mu\nu}F^2)$,
         \[
-          G_N g_{\mathrm{YM}}^2
-          \;\sim\;
-          \frac{\ell_{\mathrm{sp}}^2}{\dim V}
-          \cdot\Bigl[\log\frac{\Lambda}{\mu}\Bigr]^{-1}
-          \;\ll\; 1,
+          \frac{1}{\sqrt{g}}\frac{\delta}{\delta g^{\mu\nu}}
+          \int\sqrt{g}\,\mathrm{tr}_\rho(F^2)\,d^4x \;=\; 2\,\tau_{\mu\nu},
         \]
-        without fine-tuning. The suppression has two independent origins: the UV scale
-        $\ell_{\mathrm{sp}}^2$, and the difference between quadratic ($a_2$) and logarithmic ($a_4$)
-        UV divergences.
+        using only that $F_{\mu\nu}$ with indices down is metric-independent.
+      </li>
+      <li>
+        <strong>Conditional Einstein–Yang–Mills system (Theorem):</strong> joint stationarity of
+        the matched action gives
+        \begin{align*}
+          G_{\mu\nu} + \Lambda_{\mathrm{eff}}\,g_{\mu\nu} &= 8\pi G_N\, T^{\mathrm{YM}}_{\mu\nu},\\
+          D_\mu F^{a\mu\nu} &= 0,
+        \end{align*}
+        the second from the fixed-metric connection variation. The cosmological $a_0$ term does
+        contribute to the metric equation and is retained as $\Lambda_{\mathrm{ren}}$.
+      </li>
+      <li>
+        <strong>The normalisation is matching, not prediction:</strong> $T^{\mathrm{YM}}$ already
+        carries $g_{\mathrm{YM}}^{-2}$ through $c_F I_\rho$, so the gravitational coupling enters
+        only via $8\pi G_N = 1/(2c_{\mathrm{EH}})$. $G_N$, $g_{\mathrm{YM}}$,
+        $\Lambda_{\mathrm{ren}}$ and the dimension-six coefficients are independent renormalized
+        data, so the ratio $G_N g_{\mathrm{YM}}^2$ is not an output of the construction.
+      </li>
+      <li>
+        <strong>$a_6$ inventory (not a computation):</strong> a representative spanning list of the
+        gauge–gravity invariants that can occur at order $a_6$, modulo integrations by parts and
+        Bianchi identities. In four dimensions $a_6$ produces no ultraviolet divergence; the
+        pure-gauge invariant at this order is $\mathrm{tr}_\rho(F^3)$; the listed structures are
+        interrelated, so no unique cross-term is singled out and no $a_6$ correction to the
+        equations of motion is asserted.
       </li>
     </ul>
   </section>
@@ -186,16 +194,15 @@
       The present framework replaces this question with: <em>at what Seeley–DeWitt order does the
       admissible operator $\mathcal{A}_{g,\mathcal{A}}$ respond to variation?</em>
       Gravity and gauge dynamics arise from the same operator at different spectral levels, not from
-      different representations of a common group. The hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is
-      a direct output of the spectral stratification, not an input requiring fine-tuning.
+      different representations of a common group.
     </p>
     <div class="note">
-      <strong>Spectral stratification principle.</strong>
-      $a_2 \to \text{Einstein gravity (quadratic UV)}$,
-      $a_4 \to \text{Yang–Mills gauge dynamics (logarithmic UV)}$,
-      $a_6 \to \text{gauge–gravity cross-coupling (suppressed by } \ell_{\mathrm{sp}}^2)$.
+      <strong>Spectral stratification principle</strong> (interpretive outlook, not a theorem).
+      $a_2 \to \text{Einstein gravity}$, $a_4 \to \text{Yang–Mills gauge dynamics}$.
       The type of a fundamental interaction is determined by the Seeley–DeWitt order at which the
-      admissible projection responds.
+      admissible projection responds. This reading rests on the qualitative separation of spectral
+      orders, not on any quantitative claim about the couplings: no numerical value for
+      $G_N g_{\mathrm{YM}}^2$ follows from it.
     </div>
   </section>
 
@@ -214,16 +221,17 @@
         (vertical variation, $a_4$ coefficient)
       </li>
       <li>
-        <strong>Q13:</strong> $\delta_{g,\mathcal{A}} S_\Pi = 0 \implies$ coupled EYM system +
-        hierarchy ratio + EBI joint completion
+        <strong>Q13:</strong> $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0 \implies$ conditional
+        coupled EYM system, with the couplings as matching data
       </li>
     </ul>
     <p>
       The gauge group $G_\Pi$ is inherited from Q6a/O31. The SU(3) sector is unconditional at
       the pointwise level: $[H\text{-color}]_{\mathrm{pointwise}}$ (exact equality at finite $q$)
       is proved analytically in O31 v1.5 (Proposition 4.23) via the single-frequency BI
-      fingerprint structure. All main results of Q13 are independent of this result; the only
-      sensitivity is in the value of $\dim V$ in the hierarchy ratio.
+      fingerprint structure. All main results of Q13 are independent of this result; it enters
+      only through the representation $\rho$ in which $\mathrm{tr}_\rho$ and the Dynkin index
+      $I_\rho$ are taken.
     </p>
     <p>
       The natural continuation of the programme is the treatment of fermionic matter and chirality,
@@ -236,17 +244,27 @@
     <h2>Open directions</h2>
     <ul>
       <li>
-        <strong>EBI tensor ambiguity:</strong> the precise form of $\Xi_{\mu\nu}$ in the joint EBI
-        functional is not uniquely fixed at the level of Q13 and affects only subleading corrections.
+        <strong>Non-linear completion:</strong> whether the admissibility saturation bound induces
+        a well-defined non-linear completion of the joint functional is open. Any construction must
+        be checked for dimensional homogeneity of its matrix argument and for the semidefinite sign
+        structure of $F_{\mu\rho}F^\rho{}_\nu$, both of which constrain the admissible determinant
+        forms severely.
       </li>
       <li>
-        <strong>Numerical $a_6$ coefficients:</strong> the values $\gamma_1, \gamma_2, \ldots$ in
-        the $a_6$ coefficient depend on the specific admissible operator and require explicit
-        computation.
+        <strong>Quantitative $a_6$ coefficients:</strong> not computed here; they require an
+        explicit Seeley–DeWitt computation for the admissible operator, or independent matching,
+        after reduction of the spanning list to a minimal independent set.
       </li>
       <li>
-        <strong>Lorentzian continuation of the joint EBI functional:</strong> the geometric sector
-        is extended in Q5b; the gauge sector extension remains open.
+        <strong>Matching data and the coupling ratio:</strong> whether the admissibility structure
+        constrains any combination of $G_N$, $g_{\mathrm{YM}}$, $\Lambda_{\mathrm{ren}}$ — in
+        particular the ratio $G_N g_{\mathrm{YM}}^2$ — is open.
+      </li>
+      <li>
+        <strong>Lorentzian continuation:</strong> the derivation is Euclidean and
+        $T^{\mathrm{YM}}$ is defined by a variational convention; the gauge-sector continuation,
+        including the relative sign between curvature and source and the positivity of the gauge
+        energy density, remains open.
       </li>
       <li>
         <strong>Matter currents:</strong> extension of the joint variational system to include
@@ -268,9 +286,9 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Gauge–Gravity Spectral Synthesis: Joint Einstein–Yang–Mills Equations,
-      Born–Infeld Completion, and the Hierarchy Ratio from Projective Spectral Entropy</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20262079">doi:10.5281/zenodo.20262079</a>
+      <i>Gauge–Gravity Spectral Synthesis: A Conditional Einstein–Yang–Mills System
+      from Projective Spectral Entropy</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20209859">doi:10.5281/zenodo.20209859</a>
     </p>
   </section>
 

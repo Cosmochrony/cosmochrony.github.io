@@ -76,16 +76,15 @@
         spectral order does the admissible projection respond?"</em>. This is the
         <strong>spectral stratification principle</strong>: $a_2 \to$ gravity,
         $a_4 \to$ Yang–Mills, $a_6 \to$ gauge–gravity mixing. The Yang–Mills equations
-        $D_\mu F^{a\mu\nu} = 0$ follow from the $a_4$ vertical variation (Q12); the coupled
-        Einstein–Yang–Mills system, the $a_6$ cross-coupling
-        $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$, the Eddington–Born–Infeld joint completion,
-        and the structural hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ all follow from Q13.
+        $D_\mu F^{a\mu\nu} = 0$ follow from the $a_4$ vertical variation (Q12); the conditional
+        coupled Einstein–Yang–Mills system follows from the joint variation (Q13), with the
+        couplings entering as independent renormalization data.
       </p>
       <div class="note" role="note">
-        <strong>Stratification, not unification.</strong> The structural smallness of
-        $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/\dim V \cdot [\log(\Lambda/\mu)]^{-1}$
-        is doubly suppressed (quadratically in $\ell_{\mathrm{sp}}^2$, logarithmically in
-        $\log(\Lambda/\mu)$) and requires no fine-tuning. The difficulty of reconciling gravity
+        <strong>Stratification, not unification.</strong> What the expansion fixes is the
+        difference in ultraviolet divergence degree between the sectors — quadratic at $a_2$,
+        logarithmic at $a_4$, within a proper-time cutoff — and not the finite couplings, which
+        remain renormalization data. The difficulty of reconciling gravity
         with the gauge-theoretic Standard Model may reflect a difference of <em>spectral order</em>
         rather than the absence of a common symmetry group $G_{\mathrm{unif}}$.
       </div>
@@ -108,14 +107,14 @@
         <div class="kv">
           <div class="k">Scope</div>
           <div class="v">2 papers (Q12 — shared with Note 3 — and Q13); Yang–Mills from $a_4$,
-            coupled Einstein–Yang–Mills, $a_6$ cross-coupling, EBI joint completion (cond. on
-            [H-ext]), structural hierarchy ratio</div>
+            conditional coupled Einstein–Yang–Mills, $a_6$ invariant inventory, couplings as
+            renormalization matching data</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Bosonic dynamical sector closed structurally; EBI joint completion
-            conditional on [H-ext]; open: $a_6$ normalisation, derivation of [H-ext], coupled
-            equations with fermionic matter currents (Note 6)</div>
+          <div class="v">Bosonic dynamical sector closed conditionally on matching; open:
+            non-linear completion, $a_6$ coefficients, whether admissibility constrains the
+            couplings, Lorentzian continuation of the gauge sector, fermionic matter (Note 6)</div>
         </div>
       </div>
     </aside>
@@ -127,16 +126,17 @@
       \;\Big|\;
       \underbrace{a_4 \to D_\mu F^{a\mu\nu} = 0}_{\text{vertical } \delta_A}
       \;\Big|\;
-      \underbrace{a_6 \to R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}}_{\text{mixed (structural)}}$
+      \underbrace{a_6 \to \text{mixed invariants}}_{\text{inventory only}}$
     </p>
     <p>
       Four conceptual stages from the single functional
       $S_\Pi[g, A] = \tfrac{1}{2}\log\det' A_{g, A}$: extension of the operator to the gauge sector
-      with horizontal–vertical decoupling (Q12 Lemma 1, proved); Yang–Mills equations from the
-      vertical $a_4$ variation (Q12 Theorem 1, structural given $G_\Pi$); coupled
-      Einstein–Yang–Mills system from the joint variation (Q13 Theorem 3.2, structural); structural
-      hierarchy ratio $G_N g_{\mathrm{YM}}^2 \ll 1$ from the Seeley–DeWitt expansion without
-      fine-tuning (Q13 Proposition 6.1).
+      with fixed-metric isolation of the gauge sector (Q12 Lemma 1; full horizontal–vertical
+      decoupling does not hold, the metric variation of $F^2$ being the $a_4$ back-reaction
+      $T^{\mathrm{YM}}$); Yang–Mills equations from the vertical $a_4$ variation (Q12 Theorem 1,
+      structural given $G_\Pi$); conditional coupled Einstein–Yang–Mills system from the joint
+      variation (Q13), with $G_N$, $g_{\mathrm{YM}}$ and the cosmological coefficient as
+      independent renormalization matching data rather than predictions.
     </p>
   </section>
   <section class="card">
@@ -159,15 +159,15 @@
     <ul>
       <li><a href="/science/gauge-gravity-stratification/q13/"><strong>Q13</strong></a> — completes
         the trilogy (Gravity 3.0, Q12, Q13) by solving the joint variational problem
-        $\delta_{g, A} S_\Pi = 0$. Results: coupled Einstein–Yang–Mills system
-        $G_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$ with
-        $8\pi G_N = c_{\mathrm{YM}} / c_{\mathrm{EH}}$ (Theorem 3.2, structural); $a_6$
-        gauge–gravity cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$
-        (Theorem 4.1, structural, normalisation open); Eddington–Born–Infeld joint completion
-        $\mathcal{S}^{\mathrm{EBI}} \propto \int[\sqrt{-\det(g + \ell_{\mathrm{sp}}^2 R_{\mu\nu} +
-        \ell_{\mathrm{sp}}^2 F_{\mu\nu})} - \sqrt{-g}]$ (Theorem 5.3, conditional on [H-ext]);
-        structural hierarchy $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/\dim V \cdot
-        [\log(\Lambda/\mu)]^{-1} \ll 1$ (Proposition 6.1).</li>
+        $\delta_{g, A} S^{\mathrm{ren}} = 0$ for a single matched local action. Results: the
+        metric variation of the gauge kinetic term is $2\tau_{\mu\nu}$ (Lemma); the conditional
+        coupled system $G_{\mu\nu} + \Lambda_{\mathrm{eff}} g_{\mu\nu} =
+        8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$ with $D_\mu F^{a\mu\nu} = 0$ (Theorem), where
+        canonical matching fixes $c_{\mathrm{EH}} = 1/(16\pi G_N)$ and
+        $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$ so that $8\pi G_N = 1/(2c_{\mathrm{EH}})$; and an
+        inventory of the $a_6$ invariants, modulo integrations by parts and Bianchi identities,
+        with no unique cross-term and no $a_6$ correction asserted. The derivation is
+        Euclidean.</li>
     </ul>
   </section>
   <section class="card">
@@ -180,15 +180,14 @@
       sub-programme (Presentation Note 3, Q6a/Q12); the effective Lorentzian base manifold
       $(M, g^{\mu\nu} = 2\eta^{\mu\nu})$ from the emergent geometry sub-programme (Presentation
       Note 2, Q5b–Q11); the spectral length scale $\ell_{\mathrm{sp}}$ and BI saturation constant
-      $c_\chi$ (Branch I); the conditionality [H-ext] inherited from the gravitational sector
-      (Gravity 3.0).
+      $c_\chi$ (Branch I); and the renormalized matching data ($G_N$, $g_{\mathrm{YM}}$, the
+      cosmological coefficient) supplied from outside the expansion.
     </p>
     <p>
       <strong>Outputs.</strong> Yang–Mills equations $D_\mu F^{a\mu\nu} = 0$ in the current-free
-      sector (SM phenomenology); the coupled $G_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$
-      (gravitational-wave phenomenology, Q13); the $a_6$ cross-coupling identified (future
-      precision tests); the joint EBI functional (astrophysical applications, conditional on
-      [H-ext]); the structural hierarchy ratio $G_N g_{\mathrm{YM}}^2 \ll 1$ (hierarchy problem);
+      sector (SM phenomenology); the conditional coupled
+      $G_{\mu\nu} + \Lambda_{\mathrm{eff}} g_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$ (Q13);
+      an inventory of the $a_6$ invariants (future precision tests, coefficients not determined);
       the spectral prediction that fermionic structure should appear at a dedicated Dirac-type
       spectral level — the direct structural motivation for the
       <a href="/science/fermionic-matter/">fermionic matter sub-programme</a> (Presentation
@@ -198,20 +197,21 @@
   <section class="card">
     <h2>Status</h2>
     <p>
-      The bosonic dynamical sector is <strong>closed structurally</strong>. The $a_4$
-      heat-kernel derivation of Yang–Mills (Q12 §4) and the horizontal–vertical decoupling
-      Lemma 1 are <strong>proved unconditionally</strong>. The Yang–Mills equations
-      (Q12 Theorem 1), the UV hierarchy (Q12 §6), the coupled Einstein–Yang–Mills system
-      (Q13 Theorem 3.2), the $a_6$ cross-coupling (Q13 Theorem 4.1, with normalisation open),
-      the structural hierarchy ratio $G_N g_{\mathrm{YM}}^2 \ll 1$ (Q13 Proposition 6.1), and
-      the spectral stratification principle are structural. The Eddington–Born–Infeld joint
-      completion (Q13 Theorem 5.3) is <strong>conditional on Hypothesis [H-ext]</strong>
-      (admissible coherence extensivity). Per O31 Proposition 4.23, the gauge group
+      The bosonic dynamical sector is <strong>closed conditionally on matching</strong>. The $a_4$
+      heat-kernel derivation of Yang–Mills (Q12) is <strong>proved</strong>, as is the metric
+      variation giving $2\tau_{\mu\nu}$ (Q13). The fixed-metric vertical variation isolates the
+      gauge sector (Q12 Lemma 1), but full horizontal–vertical decoupling does <em>not</em> hold.
+      The coupled Einstein–Yang–Mills system (Q13) is <strong>conditional on the matched
+      coefficients</strong>: $G_N$, $g_{\mathrm{YM}}$ and the cosmological coefficient are
+      independent renormalization data, so no numerical value for $G_N g_{\mathrm{YM}}^2$ is
+      claimed. The $a_6$ sector is an <strong>inventory only</strong>, and no non-linear
+      completion of the joint functional is asserted. Per O31 Proposition 4.23, the gauge group
       $G_\Pi = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$ is an
       <em>unconditional</em> input at the pointwise level, so the $a_4$ Yang–Mills derivation
-      holds unconditionally for the full Standard Model gauge group. Three items remain open:
-      the $a_6$ phenomenological normalisation, the analytical proof of [H-ext], and the
-      coupled equations with fermionic matter currents from Note 6 (Q14).
+      holds unconditionally for the full Standard Model gauge group. Open items: the $a_6$
+      coefficients, whether admissibility constrains any combination of the matching data, a
+      non-linear completion of the joint functional, the Lorentzian continuation of the gauge
+      sector, and the coupled equations with fermionic matter currents from Note 6 (Q14).
     </p>
   </section>
 </main>

@@ -5,17 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Limite en grand-q de la fibre admissible : convergence représentationnelle et opératorielle | Cosmochrony
+    Filtration de Fourier canonique et obstruction à une limite continue spatiale | Cosmochrony
   </title>
   <meta name="description"
-    content="Q5a établit la limite opératorielle en grand-q de la fibre admissible, en réduisant le problème à la coercivité et à la compacité spectrale (Mosco), et montre que H1 n’est pas nécessaire en général."/>
+    content="Q5a 3.0 identifie exactement la filtration canonique de la fibre admissible comme fenêtre de Fourier torique croissante, prouve que la forme d'admissibilité publiée converge vers la forme nulle, et prouve un no-go de normalisation : Q5 reste ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q5a/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Limite en grand-q de la fibre admissible : convergence représentationnelle et opératorielle"/>
+    content="Filtration de Fourier canonique et obstruction à une limite continue spatiale"/>
   <meta property="og:description"
-    content="Q5a formule la limite grand-q dans Hilb et C*-Alg, prouve H1 dans le régime basse fréquence admissible, et réduit la convergence de Mosco à la coercivité et à la compacité spectrale."/>
+    content="Q5a 3.0 : identification exacte de la filtration canonique, théorème de forme nulle, no-go de normalisation, et limite de Dirichlet conditionnelle en fenêtre duale. La question du continuum spatial Q5 reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q5a/index_fr.html"/>
@@ -31,7 +31,8 @@
     <div class="brand">
       <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
-          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
 paint-order: stroke; stroke: currentColor;"
             transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
             d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
@@ -41,19 +42,19 @@ paint-order: stroke; stroke: currentColor;"
       </a>
       <div>
         <h1>
-          Limite en grand-\(q\) de la fibre admissible :
-          convergence représentationnelle et opératorielle
+          Filtration de Fourier canonique et obstruction à une limite continue spatiale
         </h1>
         <p class="subtitle">
-          Q5a prolonge les résultats de Foundation et de la structure de Heisenberg en
-          formulant la limite \(q\to\infty\) de \(F_n \simeq V_\rho\) comme un problème
-          de convergence dans les espaces de Hilbert et les algèbres d’opérateurs.
+          Ce vers quoi la fibre admissible converge — et ne converge pas : la version 3.0 de
+          Q5a identifie exactement la filtration canonique et prouve que, sous la
+          normalisation publiée, aucun opérateur de continuum spatial n'émerge. Q5 reste
+          ouverte.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19915951">Lire le preprint</a>
-      <a class="btn subtle" href="/science/spectral/program/">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19642369">Lire l'article</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
         Retour au programme de géométrie spectrale
       </a>
     </div>
@@ -62,101 +63,217 @@ paint-order: stroke; stroke: currentColor;"
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Le papier Foundation établit que la fibre admissible \(F_n\) porte la représentation
-        de Weil \(V_\rho\) du groupe de Heisenberg fini
-        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\).
-        Q5a aborde la question suivante :
-        <strong>comment cette structure discrète converge vers une théorie continue lorsque \(q\to\infty\).</strong>
+        L'article Foundation établit que la fibre admissible porte la représentation de Weil
+        de \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) à caractère central non trivial fixé,
+        et définit la filtration canonique de la fibre comme les espaces engendrés par
+        l'orbite \(\Omega_n = \mathrm{span}\{\rho(g)v_0 : g \in B_n\}\) sur les boules en
+        largeur d'abord du graphe de Cayley.
+        La version 3.0 de Q5a identifie exactement cette filtration et détermine ce vers quoi
+        elle converge — et ne converge pas.
       </p>
       <p>
-        Le papier évite toute identification directe \(\mathbb{Z}/q\mathbb{Z}\to\mathbb{R}\).
-        La limite est formulée dans \(\mathrm{Hilb}\) et les \(C^*\)-algèbres,
-        via des plongements, des formes et des opérateurs.
+        <strong>La réponse est négative dans la direction espérée par Q5, et exacte.</strong>
+        Avec le vecteur initial du pipeline, l'étage de filtration est précisément la fenêtre
+        de Fourier torique \(\mathrm{span}\{e^{2\pi i b x/q} : |b| \le n\}\) : l'admissibilité,
+        telle que publiée, organise la fibre par <em>fréquence</em>, non par position.
+        La forme d'admissibilité publiée converge vers la forme nulle sur cette filtration, et
+        aucune normalisation scalaire commune ne produit un opérateur différentiel torique non
+        trivial.
       </p>
-      <p>
-        Le résultat central est une convergence de Mosco conditionnelle des formes
-        \(\mathcal{E}_q\) vers un opérateur limite
-        \(L_\Pi=-A\partial_x^2\).
-      </p>
-      <p>
-        Q5a montre également que l’hypothèse \([H1]\) n’est pas nécessaire en général :
-        dans le régime admissible, les profils sont confinés aux basses fréquences,
-        où le plongement sinc est canonique.
-      </p>
+      <div class="note" role="note">
+        <strong>Révision de statut.</strong> La version 3.0 retire la dérivation antérieure
+        d'un opérateur limite \(-A\partial_x^2\) sur \(L^2(\mathbb{R})\) (versions jusqu'à
+        2.1) et la résolution formelle revendiquée de Q5. L'existence d'un opérateur limite
+        spatial est désormais l'hypothèse explicite, non établie, [H-L] consommée par
+        <a href="../b/index_fr.html">Q5b</a> (version 2.0). Q5 est ouverte.
+      </div>
     </div>
     <aside class="card">
-      <h2>Informations rapides</h2>
+      <h2>En bref</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Auteur</div><div class="v">Jérôme Beau</div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">Programme</div><div class="v">Q-series</div></div>
-        <div class="kv"><div class="k">Objet</div>
-          <div class="v">Limite grand-\(q\), convergence opératorielle</div></div>
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Document de travail (v3.0)</div></div>
+        <div class="kv"><div class="k">Programme</div>
+          <div class="v">Série Q, programme de géométrie spectrale</div></div>
+        <div class="kv"><div class="k">Sujets</div>
+          <div class="v">
+            Filtration canonique, fenêtres de Fourier, théorème de forme nulle,
+            no-go de normalisation, éclatement dual
+          </div></div>
+        <div class="kv"><div class="k">Objets centraux</div>
+          <div class="v">
+            \(\Omega_n\), \(n_1(q)\), \(x_1(q)\), \(\mathcal{E}_q\)
+          </div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
       </div>
     </aside>
   </section>
   <section class="card">
     <h2>Résultats principaux</h2>
     <ul>
-      <li><strong>Limite Hilbert :</strong> \(C_q \to L^2(\mathbb{R})\)</li>
-      <li><strong>Convergence des générateurs :</strong> Weil → métaplectique</li>
-      <li><strong>Convergence de Mosco :</strong> \(\mathcal{E}_q \to \mathcal{E}\)</li>
-      <li><strong>Opérateur limite :</strong> \(L_\Pi=-A\partial_x^2\)</li>
+      <li>
+        <strong>Identification exacte (prouvée) :</strong>
+        avec le vecteur initial du pipeline \(v_0\) (l'état uniforme), l'étage de la
+        filtration canonique est exactement la fenêtre de Fourier torique
+        \(\Omega_n = \mathrm{span}\{e_b : |b| \le n\}\), de dimension \(\min(2n+1, q)\).
+        Chaque mode torique fixé est capturé dès que la profondeur de saturation publiée
+        \(n_1(q)\) dépasse son indice ; les profils équilibrés (à l'échelle de la ligne) sont
+        rejetés à tous les premiers mesurés.
+      </li>
+      <li>
+        <strong>Théorème de forme nulle (prouvé) :</strong>
+        avec le préfacteur publié \(q^{-2}\) et des poids bornés, la forme d'admissibilité
+        tend vers zéro uniformément sur les parties bornées en norme de la filtration ; sa
+        limite de Mosco est la forme nulle.
+      </li>
+      <li>
+        <strong>No-go de normalisation (prouvé sous [H-depth] et le comportement mesuré des
+        poids) :</strong>
+        si la profondeur de saturation diverge et si les poids de modulation et de translation
+        ont des limites finies strictement positives, alors toute normalisation scalaire
+        commune \(\alpha_q\,\mathcal{E}_q\) donne, sur les cibles toriques, soit la forme
+        nulle, soit une forme de multiplication bornée sans terme dérivé, soit la forme
+        dégénérée \(+\infty\) hors de zéro. Aucun choix ne produit un opérateur différentiel
+        torique non trivial.
+      </li>
+      <li>
+        <strong>Limite en fenêtre duale (conditionnelle) :</strong>
+        sous l'éclatement fréquentiel \(u = b/n_1(q)\), la forme renormalisée converge vers
+        une forme quadratique de Dirichlet sur \(L^2([-1,1])\) dans la variable
+        <em>fréquentielle</em> renormalisée, avec un terme de potentiel contrôlé par la
+        couverture critique \(x_1(q)\).
+        C'est un énoncé dans l'espace dual ; il ne produit pas de continuum spatial.
+      </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Statut des hypothèses</h2>
-    <table>
-      <tr><th>Hypothèse</th><th>Statut</th></tr>
-      <tr><td>H1</td><td>Résolue (basses fréquences)</td></tr>
-      <tr><td>H2</td><td>Ouverte</td></tr>
-      <tr><td>H-E1</td><td>Ouverte</td></tr>
-      <tr><td>C</td><td>Ouverte (cœur du problème)</td></tr>
-    </table>
-  </section>
-  <section class="card">
-    <h2>Interprétation</h2>
+    <h2>Ce qui est retiré</h2>
     <p>
-      La limite continue n’est pas une densification de points,
-      mais une convergence fonctionnelle des formes d’admissibilité.
+      Les versions de Q5a jusqu'à 2.1 revendiquaient, conditionnellement à un ensemble
+      d'hypothèses analytiques, une limite inductive hilbertienne, une convergence
+      représentationnelle des générateurs de Weil renormalisés, et une convergence de Mosco
+      des formes d'admissibilité vers un opérateur du second ordre
+      \(L_\Pi = -A\partial_x^2\) sur \(L^2(\mathbb{R})\).
+      La version 3.0 retire ce cadre : l'identification exacte de la filtration montre que
+      les espaces admissibles sont des fenêtres fréquentielles, et le théorème de forme nulle
+      et le no-go de normalisation excluent toute voie dérivée menant de la forme publiée à un
+      opérateur différentiel spatial.
     </p>
     <p>
-      Le continuum émerge de propriétés de coercivité et de compacité,
-      non d’une structure géométrique préalable.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Position dans le programme</h2>
-    <ul>
-      <li>Foundation : axiomes</li>
-      <li>O-series : structure spectrale</li>
-      <li>Q5a : convergence opératorielle</li>
-      <li>Q5b : géométrie émergente</li>
-    </ul>
-  </section>
-  <section class="card">
-    <h2>Problème ouvert</h2>
-    <p>
-      La preuve de la compacité spectrale (tightness) reste le verrou analytique final.
+      Les articles en aval consomment le cadre retiré sous des formes révisées :
+      <a href="../b/index_fr.html">Q5b</a> (2.0) conditionne chaque résultat métrique à
+      l'hypothèse explicite [H-L] ; <a href="../../q9/index_fr.html">Q9</a> (1.1) gèle le
+      cadre en [H-F] et prouve l'implication [H-F] \(\Rightarrow\) [H-lift] ;
+      <a href="../../q11/index_fr.html">Q11</a> (1.1) conserve son contenu algébrique avec la
+      lecture métrique conditionnelle à [H-L].
     </p>
   </section>
   <section class="card">
-    <h2>Reference</h2>
+    <h2>Statut des énoncés</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Énoncé</th>
+            <th>Contenu</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Identification</td>
+            <td>\(\Omega_n\) est exactement la fenêtre de Fourier \(|b| \le n\)</td>
+            <td>Prouvé</td>
+          </tr>
+          <tr>
+            <td>Forme nulle</td>
+            <td>La forme publiée \(\to 0\) au taux \(q^{-2}\)</td>
+            <td>Prouvé</td>
+          </tr>
+          <tr>
+            <td>No-go</td>
+            <td>Aucune normalisation scalaire commune ne donne un opérateur différentiel torique</td>
+            <td>Prouvé sous [H-depth] + poids mesurés</td>
+          </tr>
+          <tr>
+            <td>Limite en fenêtre duale</td>
+            <td>Forme de Dirichlet dans la variable fréquentielle renormalisée</td>
+            <td>Conditionnel (limite sous-suite de \(x_1\))</td>
+          </tr>
+          <tr>
+            <td>[H-depth]</td>
+            <td>\(n_1(q) \to \infty\)</td>
+            <td>Hypothèse ; soutenue numériquement</td>
+          </tr>
+          <tr>
+            <td>\(x_1(q) \sim q^{-0{,}76}\)</td>
+            <td>Décroissance de la couverture critique</td>
+            <td>Ajustement numérique, pas une loi</td>
+          </tr>
+          <tr>
+            <td>Q5 (continuum spatial)</td>
+            <td>Émergence d'un opérateur spatial sur \(L^2\)</td>
+            <td>Ouvert</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Interprétation conceptuelle</h2>
+    <p>
+      La lecture structurelle est que l'admissibilité, telle que publiée, organise la fibre
+      par fréquence plutôt que par position : l'objet émergent est une fenêtre de Fourier
+      croissante, non une ligne spatiale discrétisée.
+      Les modes toriques fixés n'exigent que la <em>profondeur</em> (\(n_1 \ge |m|\), vraie à
+      terme à chaque premier mesuré), tandis que les profils équilibrés exigeraient que la
+      bande passante physique \(n_1 h = \sqrt{2\pi}\,(x_1/C_{\mathrm{Heis}})^{1/4}\) reste
+      minorée — ce que contredisent les données publiées de couverture critique.
+    </p>
+    <p>
+      Savoir si un continuum spatial peut émerger de cette structure est exactement le contenu
+      ouvert de Q5.
+      La seule voie conditionnelle identifiée — un opérateur de type oscillateur dans la
+      variable fréquentielle renormalisée — exigerait que la couverture critique \(x_1(q)\)
+      reste minorée par une constante strictement positive, question interne au corpus liée au
+      programme ouvert de la <a href="/science/spectral/program/index_fr.html">note CC</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Place dans le programme Cosmochrony</h2>
+    <p>
+      Q5a se situe à l'interface discret-continu du sous-programme de géométrie émergente.
+      La version 3.0 remplace l'ancien échafaudage analytique par des énoncés exacts à \(q\)
+      fini : la filtration est connue en forme close, et l'obstruction à une limite spatiale
+      est un théorème plutôt qu'une difficulté.
+    </p>
+    <p>
+      La chaîne pertinente est désormais :
+      Foundation établit la fibre admissible et sa filtration canonique ;
+      Q5a 3.0 identifie la filtration et prouve l'obstruction ;
+      l'entrée de limite spatiale de Q5b, Q6b et des articles de coefficients métriques est
+      l'hypothèse explicite [H-L] ; établir ou remplacer [H-L] est le contenu ouvert de Q5.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19642369">
-        <i lang="en">Large-q Limit of the Admissible Fibre: Representational and Operator Convergence</i>.
+        <i lang="en">Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit</i>.
       </a>
-      Q5a of the Cosmochrony Spectral Geometry Programme, 2026.
+      Q5a du programme de géométrie spectrale Cosmochrony, version 3.0, 2026.
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
       <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>

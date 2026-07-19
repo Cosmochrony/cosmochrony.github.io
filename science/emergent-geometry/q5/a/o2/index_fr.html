@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Atomicité spectrale du secteur admissible | Cosmochronie</title>
+  <meta name="description"
+    content="Q5a-O2 démontre l’atomicité spectrale du secteur admissible et ferme les hypothèses [H-E1] et [C] sans recourir aux inégalités de Nash."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Atomicité spectrale du secteur admissible"/>
+  <meta property="og:description"
+    content="Q5a-O2 montre que le secteur admissible est engendré par trois modes de Fourier purs par paire conjuguée, assurant coercivité et compacité sans inégalités de Nash."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/emergent-geometry/q5/a/o2/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Atomicité spectrale du secteur admissible</h1>
+        <p class="subtitle">
+          Q5a-O2 complète <a href="..">Q5a</a> en montrant que le secteur admissible est fini,
+          atomique et spectralement rigide.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19915951">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d’admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        Q5a établissait un cadre limite pour le secteur admissible
+        \(\mathrm{ran}(\Pi_q)\), laissant ouvertes deux hypothèses analytiques
+        centrales : coercivité et compacité de Mosco.
+      </p>
+      <p>
+        Q5a-O2 identifie la structure manquante :
+        <strong>la projection admissible est spectralement atomique.</strong>
+      </p>
+      <p>
+        Pour chaque paire conjuguée \((c,q-c)\), le secteur admissible est engendré par :
+      </p>
+      <p>
+        \[
+        \mathrm{ran}(\Pi_q^{(c)}) =
+        \mathrm{span}\{e_0,\ e_{\xi_c^{(q)}},\ e_{q-\xi_c^{(q)}}\}.
+        \]
+      </p>
+      <p>
+        avec \(\xi_c^{(q)}/q \to \omega_c \neq 0\).
+      </p>
+      <div class="note">
+        <strong>Portée.</strong>
+        Cette page résume Q5a-O2 : atomicité spectrale, coercivité,
+        compacité de Mosco, et remplacement des arguments analytiques
+        par une structure finie.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Faits clés</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            atomicité spectrale, compacité de Mosco, coercivité,
+            projection admissible
+          </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li><strong>Atomicité spectrale :</strong> chaque direction admissible est un mode de Fourier pur</li>
+      <li><strong>Structure en 3 modes :</strong> \(\{e_0,e_{\xi_c},e_{q-\xi_c}\}\)</li>
+      <li><strong>Sélection de fréquence macroscopique :</strong> \(\xi_c/q \to \omega_c\)</li>
+      <li><strong>Coercivité :</strong> \(\mathcal{E}_q(f,f) \ge c q^{-1}\|f\|^2\)</li>
+      <li><strong>Compacité :</strong> obtenue par dimension finie</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      La projection admissible agit comme un filtre spectral :
+      elle réduit le spectre de Fourier complet à un ensemble fini d’atomes.
+    </p>
+    <p>
+      L’admissibilité n’est donc pas une contrainte quantitative,
+      mais un mécanisme structurel sélectionnant les degrés de liberté pertinents.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Q5a-O2 clôt le volet analytique de Q5a et s’articule avec :
+    </p>
+    <ul>
+      <li>O23 : minimalité quaternionique (\(\Sigma=3\))</li>
+      <li>O28 : dimension effective \(=3\)</li>
+      <li>Q5a : cadre limite</li>
+      <li>Q5b : interprétation géométrique</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Conclusion</h2>
+    <p>
+      Le secteur admissible possède une structure spectrale intrinsèquement
+      finie. Cette réduction suggère que la dynamique limite est gouvernée
+      par un système spectral de dimension finie.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19915951">
+        <i lang="en">Spectral Atomicity of the Admissible Sector:
+          Scaled Coercivity and Mosco Compactness without Nash Inequalities</i>.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

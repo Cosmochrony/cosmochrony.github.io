@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q5b dérive une géométrie d'espace-temps lorentzienne à quatre dimensions depuis la
+    stratification en coques BFS de Heis_3(R), identifiant la direction temporelle avec la profondeur
+    BFS et les trois directions spatiales avec le secteur admissible horizontal H_eff ≃ C^3."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/emergent-geometry/q5/b/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions"/>
+  <meta property="og:description"
+    content="Q5b dérive une géométrie 4D lorentzienne depuis la stratification BFS de Heis_3(R).
+    La direction temporelle est identifiée à la profondeur BFS ; les trois directions spatiales à
+    H_eff ≃ C^3. L'hypothèse [H-lift] est prouvée inconditionnellement par Q9."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/emergent-geometry/q5/b/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/emergent-geometry/q5/b/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions
+        </h1>
+        <p class="subtitle">
+          Q5b dérive une géométrie d'espace-temps lorentzienne à quatre dimensions depuis la
+          stratification en coques BFS de $\mathrm{Heis}_3(\mathbb{R})$, identifiant la direction
+          temporelle avec la profondeur BFS et les trois directions spatiales avec le secteur
+          admissible horizontal $H_\mathrm{eff} \simeq \mathbb{C}^3$.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20277381">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        Q5b aborde une question centrale du programme Cosmochrony : comment un espace-temps
+        lorentzien à quatre dimensions émerge-t-il du substrat relationnel ? La réponse réside dans
+        la structure combinatoire du groupe de Heisenberg lui-même.
+      </p>
+      <p>
+        La stratification en coques BFS (Breadth-First Search) de $\mathrm{Heis}_3(\mathbb{R})$
+        induit une décomposition naturelle de la structure tangente en une direction privilégiée —
+        la profondeur BFS, identifiée comme direction temporelle — et trois directions horizontales
+        formant le secteur admissible $H_\mathrm{eff} \simeq \mathbb{C}^3$.
+      </p>
+      <p>
+        De cette stratification, une quadri-vitesse émerge naturellement, et la co-métrique prend
+        la signature lorentzienne $\mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$. Le coefficient
+        de co-métrique temporel $A_\tau$ est identifié par Q11.
+      </p>
+      <div class="note">
+        <strong>Résultat central.</strong> La stratification BFS de $\mathrm{Heis}_3(\mathbb{R})$
+        donne une géométrie lorentzienne 4D avec métrique
+        $\mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">
+            Stratification en coques BFS, géométrie lorentzienne, émergence de l'espace-temps,
+            groupe de Heisenberg
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">
+            Stratification BFS de $\mathrm{Heis}_3(\mathbb{R})$ $\to$ métrique lorentzienne 4D
+            $\mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Entièrement prouvé : toutes les questions ouvertes fermées (Q9 ferme O1, Q10+Q11 ferment O3 ; métrique $g^{\mu\nu}=2\,\eta^{\mu\nu}$ inconditionnelle)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">Q5a, O23–O29</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Q7, Q8, Q9, Q10, Q11, Q12</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Direction temporelle depuis la profondeur BFS :</strong> la fonction de profondeur
+        BFS sur $\mathrm{Heis}_3(\mathbb{R})$ définit un feuilletage temporel canonique, avec les
+        ensembles de niveau servant d'hypersurfaces spatiales. Cela fournit une origine purement
+        combinatoire à la flèche du temps.
+      </li>
+      <li>
+        <strong>Secteur spatial depuis l'admissibilité horizontale :</strong> les trois directions
+        spatiales sont identifiées avec le secteur admissible horizontal
+        $H_\mathrm{eff} \simeq \mathbb{C}^3$, héritant des contraintes d'admissibilité de la
+        série O (O23–O29).
+      </li>
+      <li>
+        <strong>Quadri-vitesse depuis la stratification :</strong> la stratification BFS génère un
+        champ de vecteurs quadri-vitesse naturel, avec la composante temporelle fixée par le gradient
+        de profondeur et les composantes spatiales par la projection horizontale.
+      </li>
+      <li>
+        <strong>Signature lorentzienne :</strong> la co-métrique $\mathrm{diag}(-2,2,2,2)$ émerge
+        de l'asymétrie entre la direction de profondeur BFS et les trois directions admissibles
+        horizontales, avec le coefficient de co-métrique temporel $A_\tau$ identifié séparément
+        dans Q11.
+      </li>
+      <li>
+        <strong>[H-lift] fermé par Q9 :</strong> l'hypothèse de relèvement [H-lift] (Q5b-O1),
+        anciennement conditionnelle, est prouvée inconditionnellement par Q9 via la suppression
+        du générateur de modulation, levant le statut conditionnel principal de Q5b.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Stratification BFS et espace-temps</h2>
+    <p>
+      La stratification en coques BFS fournit un nouveau mécanisme d'émergence de la géométrie
+      lorentzienne, genuinement différent des approches existantes. Plutôt que de postuler une
+      variété d'espace-temps et d'imposer une métrique, la structure géométrique découle des
+      propriétés combinatoires du groupe de Heisenberg sous exploration BFS.
+    </p>
+    <p>
+      L'idée clé est que le groupe de Heisenberg $\mathrm{Heis}_3(\mathbb{R})$ présente une
+      asymétrie intrinsèque : la direction centrale (correspondant à la profondeur BFS) se comporte
+      différemment des directions horizontales sous le filtre d'admissibilité. Cette asymétrie est
+      précisément l'origine de la signature lorentzienne.
+    </p>
+    <p>
+      Les trois directions horizontales correspondent aux coordonnées spatiales de l'espace de
+      Minkowski, tandis que la profondeur BFS fournit la coordonnée temporelle. La co-métrique
+      résultante $\mathrm{diag}(-2,2,2,2)$ est proportionnelle à la métrique de Minkowski
+      $\eta^{\mu\nu}$.
+    </p>
+    <div class="note">
+      <strong>Observation structurelle.</strong> La décomposition 1+3 des dimensions d'espace-temps
+      n'est pas imposée mais dérivée de la structure interne de $\mathrm{Heis}_3(\mathbb{R})$ :
+      une direction centrale (profondeur BFS) plus trois directions horizontales
+      ($H_\mathrm{eff} \simeq \mathbb{C}^3$).
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Q5b occupe une position centrale dans le graphe de dépendances de la série Q. C'est le
+      fondement géométrique sur lequel Q7–Q12 s'appuient :
+    </p>
+    <ul>
+      <li>
+        <strong>Q7 :</strong> étudie le problème du pont spatial — comment les trois coefficients
+        horizontaux sont reliés entre eux.
+      </li>
+      <li>
+        <strong>Q8 :</strong> établit $A_Z = 2$ inconditionnellement via la rigidité de Casimir,
+        en utilisant Q5b comme entrée.
+      </li>
+      <li>
+        <strong>Q9 :</strong> prouve [H-lift], fermant la principale conditionnalité de Q5b.
+      </li>
+      <li>
+        <strong>Q10–Q11 :</strong> complètent la détermination des coefficients métriques.
+      </li>
+      <li>
+        <strong>Q12 :</strong> utilise la géométrie lorentzienne de Q5b comme variété de base pour
+        la dynamique de Yang–Mills.
+      </li>
+    </ul>
+    <p>
+      Les papiers de la série O, O23–O29, fournissent l'analyse d'admissibilité du secteur
+      horizontal dont dépend Q5b. Les résultats sont utilisés directement pour identifier
+      $H_\mathrm{eff} \simeq \mathbb{C}^3$.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Perspectives ouvertes</h2>
+    <ul>
+      <li>
+        <strong>Géométrie courbe :</strong> Q5b établit le cas lorentzien plat ; l'extension à
+        une géométrie effective courbe (pertinente pour le papier Gravité) nécessite une analyse
+        complémentaire.
+      </li>
+      <li>
+        <strong>Champs de matière sur le feuilletage BFS :</strong> la définition des champs
+        quantiques sur l'espace-temps émergent en termes de stratification BFS reste ouverte.
+      </li>
+    </ul>
+    <div class="note">
+      <strong>Toutes les questions auxiliaires fermées.</strong> Q5b-O1 ([H-lift], Q9), Q5b-O2
+      ($A_z=2$, Q8) et Q5b-O3 ($A_H=2$ via Q10, $A_\tau=2$ via Q11) sont entièrement résolues.
+      La co-métrique $g^{\mu\nu}=2\,\eta^{\mu\nu}$ est déterminée de manière unique, sans paramètre libre.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau.
+      <i>BFS Shell Stratification and the Emergence of Four-Dimensional Lorentzian Geometry</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20277381">doi:10.5281/zenodo.20277381</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

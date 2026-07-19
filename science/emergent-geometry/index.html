@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Emergent Geometry Sub-Programme | Cosmochrony</title>
+  <meta name="description"
+    content="How does the admissible Weil-Heisenberg fibre give rise to an effective four-dimensional Lorentzian
+    geometry? From the admissibility filter on the Weil representation of Heis_3(Z/qZ) to the effective metric
+    g = 2η. Twelve papers, one chain."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/emergent-geometry/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="The Emergent Geometry Sub-Programme"/>
+  <meta property="og:description"
+    content="Spacetime is not postulated: the effective Lorentzian metric g = 2η is a forced consequence of
+    admissibility. Presentation note and paper hub for the geometric emergence sub-programme."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/emergent-geometry/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/emergent-geometry/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>The Emergent Geometry Sub-Programme</h1>
+        <p class="subtitle">
+          How does the admissible Weil–Heisenberg fibre give rise to an effective four-dimensional Lorentzian
+          geometry? In Cosmochrony, spacetime is not postulated: the effective metric
+          $g^{\mu\nu} = 2\eta^{\mu\nu}$ is a forced consequence of the admissibility filter $\Pi_q$ acting on the
+          Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. This page is the synthesis and the hub to
+          all its papers.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20417961" rel="noopener">
+        Read the synthesis note</a>
+      <span class="pill">DOI: <span class="mono">10.5281/zenodo.20417961</span></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The emergent geometry sub-programme answers a single central question. The admissibility filter $\Pi_q$
+        acts on the Weil representation $V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ of
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, selecting admissible modes under the Born–Infeld bounded-flux
+        constraint: <em>what effective geometry is selected in the large-$q$ limit, and what determines its metric
+        coefficients?</em>
+      </p>
+      <p>
+        The sub-programme removes the postulate of a background spacetime: the effective Lorentzian metric is a
+        forced consequence of admissibility, not an input. It sits at the interface between the foundational branch
+        (the Weil representation and the Born–Infeld constraint) and the physical branch (gravity, gauge, fermions),
+        which all depend on a derived effective spacetime. This note concerns the <strong>reconstruction</strong> of
+        the metric only — its dynamics, the Einstein equations, belong to the spectral gravity sub-programme.
+      </p>
+      <div class="note" role="note">
+        <strong>All four metric coefficients equal 2.</strong> The spatial, vertical, horizontal, and temporal
+        entries are governed by a single representation-theoretic datum: the eigenvalue of the
+        $\mathfrak{su}(2)$-Casimir on the spin-1 module $\mathrm{Sym}^2(V_\rho)$. The conformal factor is not a choice
+        of units; after absorbing it, the effective metric is exactly Minkowski.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Work type</div>
+          <div class="v">Synthesis (presentation note, working paper)</div>
+        </div>
+        <div class="kv">
+          <div class="k">License</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
+        </div>
+        <div class="kv">
+          <div class="k">Scope</div>
+          <div class="v">12 papers (Q5a, Q5a-O2, Q5b, Q6b, Q7–Q11, U1, W1, H2); effective metric, Lorentzian signature, Carnot geometry</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Metric reconstruction closed in the $q\to\infty$ limit; open: finite-$q$ bridge and [H1] on full $L^2$</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>The structural chain</h2>
+    <p style="text-align:center">
+      $\Pi_q
+      \;\Longrightarrow\;
+      V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})
+      \;\Longrightarrow\;
+      \mathrm{Heis}_3(\mathbb{R})
+      \;\Longrightarrow\;
+      L_{\mathrm{eff}}
+      \;\Longrightarrow\;
+      g^{\mu\nu}
+      \;\Longrightarrow\;
+      g^{\mu\nu} = 2\eta^{\mu\nu}.$
+    </p>
+    <p>
+      Five conceptually distinct stages, each resolved by a distinct group of papers: the discrete-to-continuum
+      Mosco limit to the one-dimensional shadow $L_\Pi = -A\partial_x^2$ (Q5a, Q5a-O2, H2); the dimensional
+      promotion via Carnot geometry and the Bass–Guivarc'h homogeneous dimension $D_{\mathrm{hom}} = 4$ (Q5b); the
+      metric extraction and Lorentzian signature $(-,+,+,+)$ from the principal symbol of $L_{\mathrm{eff}}$ (Q5b,
+      made unconditional by Q9); the determination of the coefficients $A_Z = A_H = 2$ by Casimir rigidity and
+      spectral universality (Q7, Q8, Q10, U1); and the closure $A_\tau = 2 \Rightarrow g^{\mu\nu} = 2\eta^{\mu\nu}$
+      (Q11, W1).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Papers of the sub-programme</h2>
+    <p><strong>Discrete-to-continuum limit.</strong></p>
+    <ul>
+      <li><a href="/science/emergent-geometry/q5/a/"><strong>Q5a</strong></a> — Mosco convergence of the
+        admissibility Dirichlet forms to the one-dimensional shadow $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$.</li>
+      <li><a href="/science/emergent-geometry/q5/a/o2/"><strong>Q5a-O2</strong></a> — spectral atomicity of the
+        admissible sector closes the open hypotheses [H-E1] and Conjecture [C].</li>
+      <li><a href="/science/emergent-geometry/h2/"><strong>H2</strong></a> — strong convergence of the rescaled Weil
+        generators ([H2]) via a Poisson aliasing lemma and a discrete Sobolev identity.</li>
+    </ul>
+    <p><strong>Dimensional promotion, metric extraction and signature.</strong></p>
+    <ul>
+      <li><a href="/science/emergent-geometry/q5/b/"><strong>Q5b</strong></a> — Carnot convergence of BFS shells,
+        homogeneous dimension $D_{\mathrm{hom}} = 4$, metric extraction $g^{\mu\nu} \propto A_{\mu\nu}$, and
+        Lorentzian signature $(-,+,+,+)$.</li>
+      <li><a href="/science/emergent-geometry/q9/"><strong>Q9</strong></a> — proves [H-lift] as a theorem, making the
+        Q5b metric extraction unconditional.</li>
+    </ul>
+    <p><strong>Coefficient determination ($A = 2$).</strong></p>
+    <ul>
+      <li><a href="/science/emergent-geometry/q7/"><strong>Q7</strong></a> — identifies
+        $H_{\mathrm{eff}} = \mathrm{Sym}^2(V_\rho)$ as the unique irreducible 3D $\mathfrak{su}(2)$-module; bridge
+        rigidity and no-cross-terms.</li>
+      <li><a href="/science/emergent-geometry/q8/"><strong>Q8</strong></a> — $A_Z = C_{\mathfrak{su}(2)} = 2$
+        (vertical direction) by Casimir rigidity, with no free normalisation.</li>
+      <li><a href="/science/emergent-geometry/q10/"><strong>Q10</strong></a> — $A_H \to 2$ under spectral
+        universality [U]; $\mathfrak{su}(2)$-isotropy of the effective form.</li>
+      <li><a href="/science/emergent-geometry/u1/"><strong>U1</strong></a> — proves spectral universality [U] with
+        rate $\varepsilon(q) = O(q^{-1/2})$.</li>
+    </ul>
+    <p><strong>Metric closure and integrative output.</strong></p>
+    <ul>
+      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a> — $A_\tau = 2$ by temporal Casimir
+        rigidity, giving $g^{\mu\nu} = 2\eta^{\mu\nu}$.</li>
+      <li><a href="/science/emergent-geometry/w1/"><strong>W1</strong></a> — closes [H-w] (admissibility weight
+        convergence) as a consequence of fibre-invariance.</li>
+      <li><a href="/science/emergent-geometry/q6/b/"><strong>Q6b</strong></a> — integrative output: assembles
+        $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$; Schwarzschild exterior and the Einstein
+        equations as consistency conditions.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Inputs and outputs</h2>
+    <p>
+      <strong>Upstream inputs.</strong> The Weil representation $V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ as a
+      theorem of the foundational branch; the Born–Infeld bounded-flux constraint
+      $A_n \le c_\chi/\sqrt{\lambda_n}$; and, from the spectral admissibility sub-programme (Presentation Note 1),
+      the spin-$\tfrac12$ sector $V_\rho \cong \mathbb{C}^2$ with $\Sigma_c(n_3) = 3$ and
+      $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$.
+    </p>
+    <p>
+      <strong>Outputs.</strong> The effective Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ and signature
+      $(-,+,+,+)$; the effective operator $L_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$;
+      the three spatial directions as the image of $\mathrm{Im}\,\mathbb{H}$; and the Schwarzschild exterior and
+      Einstein equations (via Q6b) — consumed by the gravity, gauge and fermionic papers of Branch III.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Status</h2>
+    <p>
+      The metric reconstruction is <strong>closed in the $q \to \infty$ limit</strong>: the signature is forced by
+      elimination, and all four coefficients equal the $\mathfrak{su}(2)$-Casimir value 2. Two items remain open:
+      the existence of an explicit finite-$q$ equivariant bridge
+      $\phi_q: \mathrm{Sym}^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$ (no published result depends on it), and
+      hypothesis [H1] on the full $L^2$ space (closed on the admissible sector by Q5a-O2). This note does not address
+      the dynamics of $g^{\mu\nu}$ — the Einstein equations are the subject of the spectral gravity sub-programme.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>. <a
+      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

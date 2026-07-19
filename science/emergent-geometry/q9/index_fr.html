@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q9 prouve l'hypothèse [H-lift] comme théorème. Le générateur de modulation est supprimé
+    au taux O(q^{-1/2}), et A_H > 0 suit par coercivité indépendamment du problème du pont spatial.
+    Cela ferme le statut conditionnel principal de Q5b."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/emergent-geometry/q9/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur"/>
+  <meta property="og:description"
+    content="Q9 prouve [H-lift] comme théorème : générateur de modulation supprimé à O(q^{-1/2}),
+    A_H > 0 par coercivité. Ferme le statut conditionnel de Q5b, rendant la dérivation de la
+    géométrie lorentzienne 4D inconditionnelle."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/emergent-geometry/q9/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/emergent-geometry/q9/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur
+        </h1>
+        <p class="subtitle">
+          Q9 prouve l'Hypothèse [H-lift] comme théorème : le générateur de modulation est supprimé
+          au taux $\mathcal{O}(q^{-1/2})$, et $A_H > 0$ suit par coercivité, indépendamment
+          du problème du pont spatial. Cela ferme le statut conditionnel principal de Q5b.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19880574">Lire le preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d'ensemble</h2>
+      <p>
+        L'Hypothèse [H-lift] a été introduite dans Q5b comme hypothèse conditionnelle : que le
+        secteur cinétique horizontal de l'opérateur effectif $L_\mathrm{eff}$ peut être relevé
+        pour produire une contribution définie positive $A_H > 0$ à la co-métrique. La dérivation
+        de la géométrie lorentzienne 4D de Q5b était conditionnelle à cette hypothèse.
+      </p>
+      <p>
+        Q9 lève cette conditionnalité en prouvant [H-lift] comme théorème. Le mécanisme clé est la
+        suppression du générateur de modulation : quand $q \to \infty$, le générateur qui pourrait
+        entraver le relèvement est supprimé au taux $\mathcal{O}(q^{-1/2})$. Une fois cet obstacle
+        levé, la coercivité de la forme effective implique immédiatement $A_H > 0$.
+      </p>
+      <p>
+        La preuve est indépendante du problème du pont spatial étudié dans Q7. Q9 établit
+        $A_H > 0$ inconditionnellement ; Q7 détermine ensuite les valeurs spécifiques de
+        $A_{H_1}$, $A_{H_2}$, $A_{H_3}$.
+      </p>
+      <div class="note">
+        <strong>Résultat central.</strong> [H-lift] prouvé ; générateur de modulation supprimé à
+        $\mathcal{O}(q^{-1/2})$ ; $A_H > 0$ par coercivité.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v">Jérôme Beau</div>
+        </div>
+        <div class="kv">
+          <div class="k">Type</div>
+          <div class="v">Preprint</div>
+        </div>
+        <div class="kv">
+          <div class="k">Thématique</div>
+          <div class="v">
+            Preuve de [H-lift], suppression du générateur de modulation, coercivité, secteur cinétique
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Résultat clé</div>
+          <div class="v">
+            [H-lift] prouvé ; générateur de modulation supprimé à $\mathcal{O}(q^{-1/2})$
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Prouvé, sous Q5a</div>
+        </div>
+        <div class="kv">
+          <div class="k">Dépend de</div>
+          <div class="v">Q5a, Q5b</div>
+        </div>
+        <div class="kv">
+          <div class="k">Alimente</div>
+          <div class="v">Q10</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <ul>
+      <li>
+        <strong>Théorème de suppression du générateur :</strong> le générateur de modulation $M_q$
+        de la représentation de Weil satisfait $\|M_q\| = \mathcal{O}(q^{-1/2})$ quand
+        $q \to \infty$. Ceci est prouvé depuis la structure matricielle explicite de la
+        représentation de Weil au premier $q$.
+      </li>
+      <li>
+        <strong>Coercivité de la forme effective :</strong> une fois le générateur de modulation
+        montré supprimé, la forme quadratique effective $\langle L_\mathrm{eff} u, u \rangle$ est
+        coercive dans les directions horizontales. La coercivité implique immédiatement $A_H > 0$.
+      </li>
+      <li>
+        <strong>[H-lift] comme théorème :</strong> la combinaison de la suppression du générateur
+        et de la coercivité constitue une preuve de [H-lift]. L'hypothèse est maintenant un
+        théorème, inconditionnel dans le cadre de Q5a.
+      </li>
+      <li>
+        <strong>Indépendance du pont spatial :</strong> Q9 prouve $A_H > 0$ sans déterminer les
+        valeurs individuelles $A_{H_1}$, $A_{H_2}$, $A_{H_3}$. La positivité du secteur horizontal
+        est établie séparément de la question d'égalité des coefficients traitée dans Q7.
+      </li>
+      <li>
+        <strong>Fermeture des conditions de Q5b :</strong> avec [H-lift] prouvé, la dérivation de
+        la géométrie lorentzienne 4D de Q5b est maintenant inconditionnelle vis-à-vis de [H-lift].
+        Les conditions restantes sur Q5b sont héritées de Q5a (convergence de Mosco) seulement.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Suppression du générateur de modulation</h2>
+    <p>
+      Le générateur de modulation $M_q$ est un élément spécifique de la représentation de Weil
+      qui encode la structure modulaire du corps fini $\mathbb{F}_q$. Il apparaît dans la
+      décomposition de $L_\mathrm{eff}$ et pourrait potentiellement contribuer un terme négatif
+      à la forme quadratique, entravant la coercivité.
+    </p>
+    <p>
+      Le résultat quantitatif clé de Q9 est que $\|M_q\| = \mathcal{O}(q^{-1/2})$. Ceci suit des
+      matrices explicites de la représentation de Weil : le générateur de modulation au premier $q$
+      implique des caractères d'ordre $q$, et leurs annulations donnent la suppression en $q^{-1/2}$
+      via des estimées de sommes de Gauss.
+    </p>
+    <p>
+      Quand $q \to \infty$ (la limite continue pertinente pour la géométrie effective), la
+      contribution du générateur de modulation s'annule, et la forme effective est coercive dans
+      les directions horizontales. C'est le mécanisme qui prouve [H-lift].
+    </p>
+    <div class="note">
+      <strong>Borne quantitative.</strong> Le taux $\mathcal{O}(q^{-1/2})$ est optimal : il
+      correspond à la borne des sommes de Gauss et ne peut être amélioré en général. La suppression
+      est suffisante pour que l'argument de coercivité fonctionne.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Position dans le programme</h2>
+    <p>
+      Q9 est un papier pivot dans la série Q : il ferme la dernière hypothèse conditionnelle
+      majeure qui affectait Q5b et tous les papiers en aval :
+    </p>
+    <ul>
+      <li>
+        <strong>Q5b :</strong> la géométrie lorentzienne 4D est maintenant inconditionnelle
+        vis-à-vis de [H-lift] (les conditions de Q5a restent).
+      </li>
+      <li>
+        <strong>Q6b :</strong> la dérivation de la géométrie effective hérite de la fermeture
+        inconditionnelle de [H-lift] de Q9.
+      </li>
+      <li>
+        <strong>Q8 :</strong> le résultat $A_Z = 2$ était déjà inconditionnel ; Q9 le complète
+        en rendant $A_H > 0$ inconditionnel également.
+      </li>
+      <li>
+        <strong>Q10 :</strong> utilise le $A_H > 0$ inconditionnel de Q9 comme entrée pour la
+        détermination complète de la métrique.
+      </li>
+    </ul>
+    <p>
+      Avec Q9, la structure logique de la série Q devient plus claire : Q5a fournit la convergence
+      de Mosco fondamentale ; tous les résultats suivants (Q5b à Q12) ne dépendent que de Q5a,
+      sans hypothèses conditionnelles additionnelles.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Perspectives ouvertes</h2>
+    <ul>
+      <li>
+        <strong>Valeurs exactes de $A_H$ (Q7, Q10, Q11) :</strong> Q9 établit $A_H > 0$ ; les
+        valeurs exactes $A_{H_1} = A_{H_2} = A_{H_3} = 2$ (conjecturées depuis Q5b) sont à
+        établir par Q7/Q10/Q11.
+      </li>
+      <li>
+        <strong>Suppression du générateur à $q$ fini :</strong> la borne $\mathcal{O}(q^{-1/2})$
+        est un énoncé limite ; les corrections précises à $q$ fini sont pertinentes pour la
+        vérification numérique.
+      </li>
+      <li>
+        <strong>Extension à d'autres représentations :</strong> si une suppression analogue du
+        générateur vaut pour des représentations de Weil de spin supérieur ou autres est une
+        question ouverte avec des implications potentielles pour le secteur de matière.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Référence</h2>
+    <p>
+      Jérôme Beau.
+      <i>Proof of the Lifting Hypothesis [H-lift]: Kinetic-Sector Identification via Generator
+      Suppression</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.19880574">doi:10.5281/zenodo.19880574</a>
+    </p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

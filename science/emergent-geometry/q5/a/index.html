@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Large-q Limit of the Admissible Fibre: Representational and Operator Convergence | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Q5a establishes the large-q operator-theoretic continuum limit of the admissible fibre, reducing the problem to coercivity and Mosco tightness while showing that H1 is not needed in full generality."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/emergent-geometry/q5a/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Large-q Limit of the Admissible Fibre: Representational and Operator Convergence"/>
+  <meta property="og:description"
+    content="Q5a formulates the large-q limit in Hilb and C*-Alg, proves the relevant embedding result in the admissible low-frequency sector, and reduces Mosco convergence to coercivity and spectral tightness."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/emergent-geometry/q5a/index.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/emergent-geometry/q5/a/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+          Large-q Limit of the Admissible Fibre: Representational and Operator Convergence
+        </h1>
+        <p class="subtitle">
+          Q5a extends the Foundation and Heisenberg-structure papers by formulating the
+          large-\(q\) limit of \(F_n \simeq V_\rho\) as a Hilbert-space and operator-algebra
+          convergence problem, not as a pointwise limit of finite sets.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19915951">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program">
+        Back to the spectral geometry programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The Foundation paper establishes that the admissible fibre \(F_n\) carries the Weil
+        representation \(V_\rho\) of \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) on
+        \(L^2(\mathbb{Z}/q\mathbb{Z})\).
+        Q5a addresses the next question:
+        <strong>how this discrete structure approaches a continuum operator theory as \(q\to\infty\).</strong>
+      </p>
+      <p>
+        The paper deliberately avoids any set-level identification
+        \(\mathbb{Z}/q\mathbb{Z}\to\mathbb{R}\).
+        Instead, it formulates the limit in the category of Hilbert spaces and operator
+        algebras, where the relevant objects are embeddings, forms, generators, and resolvents.
+      </p>
+      <p>
+        The central output is a conditional Mosco convergence theorem for the admissibility
+        forms \(\mathcal{E}_q\), with limiting operator \(L_\Pi=-A\partial_x^2\) on \(L^2(\mathbb{R})\).
+      </p>
+      <p>
+        Q5a also removes a potential structural obstruction: the full Weil-block embedding
+        hypothesis \([H1]\) is not needed in full generality, because admissibility confines the
+        relevant profiles to a low-frequency sector where the sinc embedding is canonical.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page summarizes the contribution of Q5a:
+        Hilbert inductive limit, representational convergence, Mosco convergence, empirical
+        spectral tightness, and the logical neutralisation of the full \([H1]\) embedding issue.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Programme</div>
+          <div class="v">Q-series, spectral geometry programme</div></div>
+        <div class="kv"><div class="k">Focus</div>
+          <div class="v">
+            Large-\(q\) limit, Hilbert embeddings, Weil generators,
+            Mosco convergence, spectral tightness
+          </div></div>
+        <div class="kv"><div class="k">Core objects</div>
+          <div class="v">
+            \(C_q\), \(V_\rho\), \(\Pi_q\), \(\mathcal{E}_q\), \(L_\Pi\)
+          </div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Main contributions</h2>
+    <ul>
+      <li>
+        <strong>Categorical clarification:</strong>
+        the continuum limit is formulated in \(\mathrm{Hilb}\) and \(C^*\)-algebras,
+        not as a pointwise map from a finite set to \(\mathbb{R}\).
+      </li>
+      <li>
+        <strong>Hilbert limit:</strong>
+        \(C_q=L^2(\mathbb{Z}/q\mathbb{Z})\) embeds into \(L^2(\mathbb{R})\) through
+        the sinc/WSK construction, giving the correct additive Hilbert limit.
+      </li>
+      <li>
+        <strong>Low-frequency resolution of \([H1]\):</strong>
+        full Weil-block compatibility remains a representation-theoretic refinement, but it is
+        not required in the admissible sector relevant to \(T1\)-\(T3\).
+      </li>
+      <li>
+        <strong>Representational convergence:</strong>
+        the rescaled Weil generators \(\widehat{X}_q,\widehat{P}_q\) are stated to
+        converge to the metaplectic generators \(x\) and \(-i\partial_x\), conditional on \([H2]\).
+      </li>
+      <li>
+        <strong>Mosco programme:</strong>
+        the admissibility forms \(\mathcal{E}_q\) converge conditionally to the Dirichlet form
+        \(\mathcal{E}(f,g)=A\int_{\mathbb{R}}\partial_xf\,\partial_xg\,dx\).
+      </li>
+      <li>
+        <strong>Empirical tightness:</strong>
+        the spectral tail test gives
+        \(\mathcal{E}_q(q/3)/\|f_q\|^2<2.1\times 10^{-5}\)
+        for all tested primes \(q\in\{29,61,101,151\}\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>The three convergence statements</h2>
+    <p>
+      Q5a decomposes the large-\(q\) problem into three logically separated convergence
+      statements.
+    </p>
+    <ul>
+      <li>
+        <strong>\(T1\): Hilbert inductive limit.</strong>
+        The spaces \(C_q\) form a directed Hilbert system whose continuum completion is
+        \(L^2(\mathbb{R})\), with \(\mathcal{S}(\mathbb{R})\) as dense test space.
+      </li>
+      <li>
+        <strong>\(T2\): representational convergence.</strong>
+        The rescaled finite Weil generators converge, on the test domain, to the standard
+        metaplectic generators of \(\mathrm{Heis}_3(\mathbb{R})\).
+      </li>
+      <li>
+        <strong>\(T3\): Mosco convergence.</strong>
+        The rescaled admissibility forms \(\mathcal{E}_q\) converge to a closed Dirichlet
+        form on \(L^2(\mathbb{R})\), whose self-adjoint operator is \(L_\Pi=-A\partial_x^2\).
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Status of the hypotheses</h2>
+    <p>
+      A central purpose of Q5a is to separate proved structure, conditional input, numerical
+      support, and open analytic work.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Label</th>
+            <th>Content</th>
+            <th>Status in Q5a</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>\([H\text{-}\Pi1]\)</td>
+            <td>\(\Pi_q\) orthogonal and parity-compatible</td>
+            <td>Proved in the O-series</td>
+          </tr>
+          <tr>
+            <td>\([H\text{-}\Pi2]\)</td>
+            <td>Shell locality, \(n_*(q)\to\infty\)</td>
+            <td>Structurally proved from BFS analysis</td>
+          </tr>
+          <tr>
+            <td>\([H1]\)</td>
+            <td>Weil-block-compatible embeddings</td>
+            <td>Proved on the admissible low-frequency sector</td>
+          </tr>
+          <tr>
+            <td>\([H2]\)</td>
+            <td>Strong convergence of rescaled generators</td>
+            <td>Open; primary representational target</td>
+          </tr>
+          <tr>
+            <td>\([H\text{-}w]\)</td>
+            <td>Admissibility weights \(a_q(s)\to A>0\)</td>
+            <td>Hypothesis; supported by O-series data</td>
+          </tr>
+          <tr>
+            <td>\([H\text{-}E1]\)</td>
+            <td>Uniform Poincaré/coercivity estimate</td>
+            <td>Hypothesis; accessible analytic target</td>
+          </tr>
+          <tr>
+            <td>\([C]\)</td>
+            <td>Mosco tightness / no spectral escape</td>
+            <td>Quantitatively confirmed; proof open</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Why \([H1]\) is no longer a structural obstruction</h2>
+    <p>
+      The full embedding hypothesis asks for compatibility not only with additive Hilbert
+      structure but also with the multiplicative Weil-block decomposition.
+      Q5a shows that this full requirement is not needed for the continuum-limit problem
+      addressed by \(T1\)-\(T3\).
+    </p>
+    <p>
+      The reason is spectral:
+      admissible test vectors are confined by the projection \(\Pi_q\) to a low-frequency
+      sector \(|\xi|\lesssim 1\ll q\).
+      In this regime the sinc embedding is canonical, and the distinction between full
+      Weil-block compatibility and additive band-limited convergence becomes invisible.
+    </p>
+    <p>
+      Thus \([H1]\) remains an algebraic refinement in full generality, but not a logical
+      prerequisite for the Mosco compactness problem.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Conjecture C: spectral tightness</h2>
+    <p>
+      The core analytic difficulty is the liminf side of Mosco convergence.
+      It is equivalent to showing that energy-bounded admissible sequences cannot send
+      spectral mass to the high-frequency boundary \(|\xi|\sim q\).
+    </p>
+    <p>
+      In Q5a this is formulated as:
+      for every \(\varepsilon>0\), there exists \(R>0\) such that
+    </p>
+    <p>
+      \[
+        \sup_q \sum_{|\xi|>R} |\widehat{f}_q(\xi)|^2 < \varepsilon .
+      \]
+    </p>
+    <p>
+      Numerically, the tested admissible profiles satisfy a much stronger finite-\(q\)
+      criterion at \(R=q/3\), with spectral tail mass below \(2.1\times 10^{-5}\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Conceptual interpretation</h2>
+    <p>
+      Q5a changes the meaning of the continuum limit.
+      The continuum is not obtained by making a finite set of points denser.
+      It is obtained because admissibility forms become coercive and compact enough to
+      force precompactness of spectral profiles.
+    </p>
+    <p>
+      In this sense, the limiting operator \(L_\Pi\) is not imposed externally.
+      It is read off from the stability properties of the admissible projection.
+    </p>
+    <p>
+      The one-dimensional operator \(L_\Pi=-A\partial_x^2\) is not claimed to be the full
+      spacetime geometry.
+      It is the operator-theoretic shadow of the homogeneous four-dimensional
+      Heisenberg structure; the extraction of the effective Lorentzian geometry is the role
+      of <a href="../q5b">Q5b</a>.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony programme</h2>
+    <p>
+      Q5a sits at the point where the finite admissible fibre becomes an operator-theoretic
+      continuum object.
+    </p>
+    <p>
+      The relevant chain is:
+      Foundation establishes admissible non-injective transitions;
+      HeisenbergStructure identifies \(F_n\simeq V_\rho\);
+      Q5a formulates the large-\(q\) Hilbert and operator limit;
+      Q5b extracts the four-dimensional Lorentzian geometry;
+      Q7 and later papers analyse the bridge between admissible dimension and spatial dimension.
+    </p>
+    <p>
+      This makes Q5a the analytic bridge between the discrete O-series pipeline and the
+      continuous geometric Q-series.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Current result and next step</h2>
+    <ul>
+      <li>
+        <strong>Established:</strong>
+        the Hilbert limit is controlled by the sinc embedding, and \([H1]\) is proved in
+        the admissible low-frequency sector.
+      </li>
+      <li>
+        <strong>Conditionally established:</strong>
+        representational convergence and Mosco convergence follow from the stated analytic
+        hypotheses.
+      </li>
+      <li>
+        <strong>Numerically supported:</strong>
+        spectral tightness is strongly supported by the high-frequency tail test.
+      </li>
+      <li>
+        <strong>Remaining core:</strong>
+        prove uniform coercivity \([H\text{-}E1]\) and spectral tightness \([C]\), or replace
+        them with a sharper structural theorem for admissible Fourier atomicity.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Reference</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19642369">
+        <i lang="en">Large-q Limit of the Admissible Fibre: Representational and Operator Convergence</i>.
+      </a>
+      Q5a of the Cosmochrony Spectral Geometry Programme, 2026.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

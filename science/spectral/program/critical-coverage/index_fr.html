@@ -5,17 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Couverture critique et le problème de la profondeur de saturation | Cosmochrony
+    Couverture critique en inverse du carré et profondeur de saturation constante | Cosmochrony
   </title>
   <meta name="description"
-    content="La note Couverture critique réduit le problème de la profondeur de saturation BFS d’O25–O28 à un seul observable, la couverture critique x1(q)=|B_n1|/q^2, via l’identité exacte n1=(x1/C_Heis)^(1/4)·racine(q) ; elle établit n1(q)/q→0 et exclut le scénario de couverture constante."/>
+    content="Un théorème d’intervalle exact montre que chaque fingerprint Weil-BFS est un caractère de Fourier : le rang cumulé est un cardinal de somme d’ensembles, plafonné à 18 par couche. La profondeur de saturation converge vers la constante 22 et la couverture critique suit x1(q) ~ q^-2, avec bornes déterministes pour tout premier q >= 311."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/critical-coverage/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Couverture critique et le problème de la profondeur de saturation"/>
+    content="Couverture critique en inverse du carré et profondeur de saturation constante"/>
   <meta property="og:description"
-    content="Réduit le problème de la profondeur de saturation BFS à la loi asymptotique d’un seul observable de couverture x1(q), établissant une croissance sous-linéaire n1(q)/q→0 et excluant le scénario en √q pur."/>
+    content="Théorème d’intervalle exact pour la nouveauté Weil-BFS sur les graphes de Heisenberg : la profondeur de saturation converge vers 22 et la couverture critique décroît en inverse du carré exact."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/critical-coverage/index_fr.html"/>
@@ -42,18 +42,18 @@ paint-order: stroke; stroke: currentColor;"
       </a>
       <div>
         <h1>
-          Couverture critique et le problème de la profondeur de saturation
+          Couverture critique en inverse du carré et profondeur de saturation constante
         </h1>
         <p class="subtitle">
-          Une note compagne d’<a href="../o28">O28</a> qui reformule l’asymptotique de la
-          profondeur de fenêtre BFS autour d’un seul observable, la couverture critique
-          \(x_1(q)\), la profondeur de saturation \(n_1(q)\) devenant une quantité dérivée.
+          Un théorème d’intervalle exact pour la nouveauté Weil–BFS sur les graphes de
+          Heisenberg : la profondeur de saturation \(n_1(q)\) converge vers la constante
+          \(22\), et la couverture critique \(x_1(q)\) décroît en inverse du carré exact.
         </p>
       </div>
     </div>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.21049163">Lire la note</a>
-      <a class="btn subtle" href="/science/spectral/program/">
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">
         Retour au programme d’admissibilité spectrale
       </a>
     </div>
@@ -65,34 +65,39 @@ paint-order: stroke; stroke: currentColor;"
       <h2>Vue d’ensemble</h2>
       <p>
         La profondeur de saturation auto-calibrée \(n_1(q)\) de l’exploration en largeur de
-        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) était la variable asymptotique ouverte centrale
-        d’<a href="../o25">O25</a>–<a href="../o28">O28</a>. Cette note établit deux points.
+        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) — la variable asymptotique centrale de la
+        calibration de fenêtre d’<a href="../o25/index_fr.html">O25</a>–<a
+        href="../o28/index_fr.html">O28</a> — est déterminée complètement par une réduction
+        algébrique exacte.
       </p>
       <p>
-        <strong>La profondeur n’est pas un temps de remplissage d’espace vectoriel.</strong> Au bord
-        de la fenêtre, le rang cumulé des empreintes de Weil est loin d’être plein (p.&nbsp;ex.
-        \(137/307\) à \(q=307\)) : \(n_1\) est la profondeur où les nouvelles directions gagnées par
-        sommet exploré passent sous un seuil fixe — un arrêt de nouveauté marginale, et non
-        l’achèvement d’une base.
+        <strong>Les fingerprints sont des caractères de Fourier.</strong> Chaque fingerprint de
+        Weil à trois pas est un multiple scalaire non nul d’un unique caractère de Fourier, de
+        sorte que le rang de Gram–Schmidt cumulé est exactement un cardinal de somme d’ensembles,
+        \[ r_c(n)=\bigl|\,T'_c + C\,I_{n+1}\,\bigr|, \qquad
+           T'_c=\{(c_2+c_3)\eta_2+c_3\eta_3 : \eta_i\in\{-1,0,1\}\}, \]
+        avec \(C=c_1+c_2+c_3\) et \(I_m\) la réduction de \([-m,m]\).
+        La nouveauté par couche obéit au plafond déterministe universel
+        \(\Delta r_c(n)\le 2|T'_c|\le 18\), avec une classification complète des résonances de
+        bloc qui l’abaissent.
       </p>
       <p>
-        <strong>L’asymptotique se réduit à un seul observable.</strong> Avec la croissance de boule
-        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\)) et le gap spectral diffusif
-        \(\lambda_2\approx 4\pi^2/q^2\), l’identité exacte
-        \[ n_1(q)=\left(\frac{x_1(q)}{C_{\mathrm{Heis}}}\right)^{1/4}\sqrt{q},\qquad
-           x_1(q)=\frac{|B_{n_1}|}{q^2}, \]
-        condense tout le contenu asymptotique de \(n_1\) sur la <strong>couverture critique</strong>
-        \(x_1(q)\). La question « quelle est la loi de \(n_1\)&nbsp;? » devient « quelle est la loi de
-        \(x_1(q)\)&nbsp;? ».
+        <strong>Les sphères exactes décident du croisement.</strong> Les comptages exacts de
+        sphères du groupe de Heisenberg discret infini donnent le croisement strict du seuil,
+        \(s_{22}=16\,934 < 18/\varepsilon_{\mathrm{sat}} = 18\,000 < s_{23}=19\,412\) : la
+        profondeur limite est \(n_*(10^{-3})=22\) et la constante de couverture limite est
+        \(|B_{22}|=99\,689\).
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> C’est une note de cadrage : elle établit la réduction et le résultat
-        model-free \(n_1(q)/q\to 0\), exclut le scénario de couverture constante, et énonce le
-        programme analytique ouvert pour \(x_1(q)\). Elle ne dérive pas encore cette loi.
+        <strong>Portée.</strong> Les bornes déterministes valent pour tout premier
+        \(q\ge 311\) et toute suite de blocs admissible ; la convergence \(n_1(q)\to 22\) est
+        probabiliste, sous échantillonnage uniforme de blocs génériques. Le résultat est
+        purement spectral : il n’implique ni mécanisme de hiérarchie de masse ni existence d’une
+        limite spatiale.
       </div>
     </div>
     <aside class="card">
-      <h2>Faits clés</h2>
+      <h2>Repères</h2>
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
@@ -101,73 +106,85 @@ paint-order: stroke; stroke: currentColor;"
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Thèmes</div>
           <div class="v">
-            couverture critique, profondeur de saturation BFS, nouveauté marginale,
-            gap spectral, asymptotique de profondeur
+            couverture critique, profondeur de saturation BFS, théorème d’intervalle, croissance
+            de sommes d’ensembles, représentation de Weil
           </div></div>
-        <div class="kv"><div class="k">Objets centraux</div>
+        <div class="kv"><div class="k">Résultats clés</div>
           <div class="v">
-            \(x_1(q)=|B_{n_1}|/q^2\), \(n_1(q)\), \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\)
+            \(r_c(n)=|T'_c+C I_{n+1}|\), \(\Delta r_c(n)\le 18\), \(n_1(q)\to 22\),
+            \(x_1(q)\asymp q^{-2}\)
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Points principaux</h2>
+    <h2>Résultats principaux</h2>
     <ul>
       <li>
-        <strong>Reformulation en nouveauté marginale :</strong>
-        \(n_1\) est le croisement de la densité de capacité
-        \(\sigma(n)=\Delta r(n)/|S_n|\) sous un seuil fixe, pas un compte de rang.
+        <strong>Théorème d’intervalle exact :</strong>
+        le rang cumulé est le cardinal de somme d’ensembles \(r_c(n)=|T'_c+C\,I_{n+1}|\), pour
+        tout premier \(q\), tout bloc avec \(C\ne 0\) et toute profondeur.
       </li>
       <li>
-        <strong>Réduction exacte :</strong>
-        \(n_1(q)=(x_1(q)/C_{\mathrm{Heis}})^{1/4}\sqrt{q}\) ; la loi asymptotique de \(n_1\) est
-        littéralement celle de \(x_1(q)\).
+        <strong>Plafond universel et résonances :</strong>
+        \(2\le\Delta r_c(n)\le 2|T'_c|\le 18\) avant saturation ; les résonances de bloc
+        \(t'-t=C\,m\) s’activent à la profondeur \(\lceil (m-1)/2\rceil\) et expliquent les blocs
+        lents observés dans le pipeline d’<a href="../o25/index_fr.html">O25</a>.
       </li>
       <li>
-        <strong>Deux entrées robustes :</strong>
-        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\), \(C_{\mathrm{Heis}}\approx 0.427\)) et
-        \(\lambda_2\approx 4\pi^2/q^2\) (gap diffusif du tore d’abélianisation).
+        <strong>Bornes déterministes :</strong>
+        pour tout premier \(q\ge 311\), \(n_1(q)\le 22\) et
+        \(5/q^2\le x_1(q)\le 99\,689/q^2\) — les scénarios de bord positif et logarithmique sont
+        exclus sans aucun ingrédient probabiliste.
       </li>
       <li>
-        <strong>Résultat model-free :</strong>
-        \(n_1(q)/q\to 0\) — la loi linéaire est exclue hors-échantillon (jusqu’à \(q=601\)).
+        <strong>Convergence en probabilité :</strong>
+        sous échantillonnage uniforme de blocs génériques, \(n_1(q)\to 22\) et
+        \(q^2 x_1(q)\to |B_{22}|=99\,689\).
       </li>
       <li>
-        <strong>Couverture constante exclue :</strong>
-        \(x_1\) chute \(0.61\to 0.15\) sur \(q=101\to 601\), écartant le scénario en \(\sqrt{q}\)
-        pur ; les lectures survivantes sont sous-\(\sqrt{q}\).
+        <strong>Régime transitoire :</strong>
+        les profondeurs mesurées (\(14\) à \(q=211\), \(19\) à \(q=601\)) s’expliquent par les
+        déficits de résonance ; leur ombre est l’exposant effectif observé \(\approx -0{,}76\),
+        en route vers l’asymptote exacte \(-2\).
+      </li>
+      <li>
+        <strong>Fermeture de fenêtre :</strong>
+        la fenêtre d’ajustement auto-calibrée implémentée \([n_0,n_1]\) est déterministiquement
+        vide pour \(q > 4\cdot 22^4 = 937\,024\).
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Le problème ouvert</h2>
+    <h2>Pourquoi la route du repliement de couverture échoue</h2>
     <p>
-      En admettant l’ansatz d’échelle de couverture \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\), le critère de
-      fenêtre \(\sigma(n_1)=\varepsilon_{\mathrm{sat}}\) devient
-      \[ \Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q, \]
-      un seuil fixe contre un \(1/q\) explicite. Cette unique tension est le front mathématique : elle
-      force \(x_1\) à décroître avec \(q\) et gouverne si cette décroissance est logarithmique ou une
-      puissance résiduelle.
-    </p>
-    <p>
-      Le livrable ouvert est une loi structurelle pour \(x_1(q)\), dérivée d’une estimation
-      shellwise Weil–BFS contrôlée par \(\lambda_2\), dont la loi de profondeur \(n_1(q)\) est un
-      corollaire. La même machinerie est le pont vers les profondeurs par génération \(n_g\).
+      Une route structurelle naturelle poserait le repliement d’échelle
+      \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\) et résoudrait l’équation de front
+      \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\).
+      Le théorème d’intervalle montre que ce repliement est dégénéré au voisinage du front de
+      seuil : à couverture fixée le rang est \(O(\sqrt q)=o(q)\), donc \(\Phi\equiv 0\) sur ce
+      régime.
+      La loi de \(x_1\) est combinatoire — croissance d’intervalles contre comptages exacts de
+      sphères — et non diffusive : le trou spectral \(\lambda_2\) n’entre jamais dans la
+      dynamique du rang.
     </p>
   </section>
   <section class="card">
     <h2>Relation au programme Cosmochrony</h2>
     <p>
-      La note est compagne d’<a href="../o28">O28</a> au sein du sous-programme d’admissibilité
-      spectrale. Elle maintient O28 limité à sa conclusion robuste et model-free
-      (\(n_1(q)/q\to 0\)) tout en portant séparément la reformulation plus analytique — la réduction
-      à \(x_1(q)\).
+      La note est compagne d’<a href="../o28/index_fr.html">O28</a> au sein du sous-programme
+      d’admissibilité spectrale : elle résout l’asymptotique de la profondeur de saturation
+      qu’O28 avait établie sous-linéaire, et explique les valeurs transitoires mesurées.
+      Elle dépend d’<a href="../o9/index_fr.html">O9</a> (croissance de Heisenberg, \(D=4\)),
+      d’<a href="../o12/index_fr.html">O12</a> (la construction des blocs de Weil) et
+      d’<a href="../o25/index_fr.html">O25</a>–<a href="../o28/index_fr.html">O28</a> (les
+      mesures de profondeur de saturation).
     </p>
     <p>
-      Elle dépend d’<a href="../o9">O9</a> (croissance de Heisenberg, \(D=4\)),
-      d’<a href="../o25">O25</a> et <a href="../o28">O28</a> (les mesures de profondeur de
-      saturation), et du gap spectral diffusif du graphe de Cayley de Heisenberg.
+      Dans la limite duale à fenêtre de la filtration de Fourier canonique
+      (<a href="/science/emergent-geometry/q5/a/index_fr.html">Q5a</a>), le coefficient de
+      potentiel \(\lambda=\lim x_1/C_{\mathrm{Heis}}\) s’annule : cette limite ne porte aucun
+      potentiel d’oscillateur.
     </p>
   </section>
   <section class="card">
@@ -175,7 +192,8 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.21049163">
-        <i lang="en">Critical Coverage and the Saturation Depth Problem</i>.
+        <i lang="en">Inverse-Square Critical Coverage and Constant Saturation Depth from an Exact
+        Interval Theorem</i>.
       </a>
     </p>
   </section>

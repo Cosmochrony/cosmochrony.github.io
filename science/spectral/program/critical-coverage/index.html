@@ -5,17 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Critical Coverage and the Saturation Depth Problem | Cosmochrony
+    Inverse-Square Critical Coverage and Constant Saturation Depth | Cosmochrony
   </title>
   <meta name="description"
-    content="The Critical Coverage note reduces the BFS saturation-depth problem of O25–O28 to a single observable, the critical coverage x1(q)=|B_n1|/q^2, via the exact identity n1=(x1/C_Heis)^(1/4)·sqrt(q); it establishes n1(q)/q→0 and excludes the constant-coverage scenario."/>
+    content="An exact interval theorem shows that every Weil-BFS fingerprint is a Fourier character, so the cumulative rank is a sumset cardinality with universal shellwise ceiling 18. The saturation depth converges to the constant 22 and the critical coverage obeys x1(q) ~ q^-2, deterministically bounded for every prime q >= 311."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/critical-coverage/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Critical Coverage and the Saturation Depth Problem"/>
+    content="Inverse-Square Critical Coverage and Constant Saturation Depth"/>
   <meta property="og:description"
-    content="Reduces the BFS saturation-depth problem to the asymptotic law of a single coverage observable x1(q), establishing sub-linear growth n1(q)/q→0 and excluding the clean √q scenario."/>
+    content="Exact interval theorem for Weil-BFS novelty on Heisenberg graphs: the saturation depth converges to 22 and the critical coverage decays as an exact inverse square."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/critical-coverage/index.html"/>
@@ -42,12 +42,12 @@ paint-order: stroke; stroke: currentColor;"
       </a>
       <div>
         <h1>
-          Critical Coverage and the Saturation Depth Problem
+          Inverse-Square Critical Coverage and Constant Saturation Depth
         </h1>
         <p class="subtitle">
-          A companion note to <a href="../o28">O28</a> that reframes the BFS window-depth
-          asymptotics around a single observable, the critical coverage \(x_1(q)\), with the
-          saturation depth \(n_1(q)\) as a derived quantity.
+          An exact interval theorem for Weil–BFS novelty on Heisenberg graphs: the saturation
+          depth \(n_1(q)\) converges to the constant \(22\), and the critical coverage
+          \(x_1(q)\) decays as an exact inverse square.
         </p>
       </div>
     </div>
@@ -65,29 +65,33 @@ paint-order: stroke; stroke: currentColor;"
       <h2>Overview</h2>
       <p>
         The auto-calibrated saturation depth \(n_1(q)\) of the breadth-first exploration of
-        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) was the central open asymptotic variable of
-        <a href="../o25">O25</a>–<a href="../o28">O28</a>. This note makes two points.
+        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) — the central asymptotic variable of the
+        <a href="../o25">O25</a>–<a href="../o28">O28</a> window calibration — is determined
+        completely by an exact algebraic reduction.
       </p>
       <p>
-        <strong>The depth is not a vector-space filling time.</strong> At the window edge the
-        cumulative Weil-fingerprint rank is far from full (e.g. \(137/307\) at \(q=307\)), so
-        \(n_1\) is the depth at which the new directions gained per explored vertex drop below a
-        fixed threshold — a stop of marginal novelty, not the completion of a basis.
+        <strong>Fingerprints are Fourier characters.</strong> Every implemented three-step Weil
+        fingerprint is a non-zero scalar multiple of a single Fourier character, so the cumulative
+        Gram–Schmidt rank is exactly a sumset cardinality,
+        \[ r_c(n)=\bigl|\,T'_c + C\,I_{n+1}\,\bigr|, \qquad
+           T'_c=\{(c_2+c_3)\eta_2+c_3\eta_3 : \eta_i\in\{-1,0,1\}\}, \]
+        with \(C=c_1+c_2+c_3\) and \(I_m\) the reduction of \([-m,m]\).
+        The shellwise novelty obeys the universal deterministic ceiling
+        \(\Delta r_c(n)\le 2|T'_c|\le 18\), with a complete classification of the block resonances
+        that lower it.
       </p>
       <p>
-        <strong>The asymptotics reduce to one observable.</strong> With the ball growth
-        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\)) and the diffusive spectral gap
-        \(\lambda_2\approx 4\pi^2/q^2\), the exact identity
-        \[ n_1(q)=\left(\frac{x_1(q)}{C_{\mathrm{Heis}}}\right)^{1/4}\sqrt{q},\qquad
-           x_1(q)=\frac{|B_{n_1}|}{q^2}, \]
-        collapses the whole asymptotic content of \(n_1\) onto the <strong>critical coverage</strong>
-        \(x_1(q)\). The question ``what is the law of \(n_1\)?'' becomes ``what is the law of
-        \(x_1(q)\)?''.
+        <strong>Exact spheres decide the crossing.</strong> Exact sphere counts of the infinite
+        discrete Heisenberg group give the strict threshold crossing
+        \(s_{22}=16{,}934 < 18/\varepsilon_{\mathrm{sat}} = 18{,}000 < s_{23}=19{,}412\), so the
+        limiting depth is \(n_*(10^{-3})=22\) and the limiting coverage constant is
+        \(|B_{22}|=99{,}689\).
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This is a framing note: it establishes the reduction and
-        the model-free result \(n_1(q)/q\to 0\), excludes the constant-coverage scenario, and states
-        the open analytical programme for \(x_1(q)\). It does not yet derive that law.
+        <strong>Scope statement.</strong> The deterministic bounds hold for every prime
+        \(q\ge 311\) and every admissible block sequence; the convergence \(n_1(q)\to 22\) is
+        probabilistic, under uniform generic block sampling. The result is spectral only: no
+        mass-hierarchy mechanism and no spatial-limit existence claim follows from it.
       </div>
     </div>
     <aside class="card">
@@ -100,73 +104,82 @@ paint-order: stroke; stroke: currentColor;"
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            critical coverage, BFS saturation depth, marginal novelty,
-            spectral gap, window-depth asymptotics
+            critical coverage, BFS saturation depth, interval theorem, sumset growth,
+            Weil representation
           </div></div>
-        <div class="kv"><div class="k">Core objects</div>
+        <div class="kv"><div class="k">Core results</div>
           <div class="v">
-            \(x_1(q)=|B_{n_1}|/q^2\), \(n_1(q)\), \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\)
+            \(r_c(n)=|T'_c+C I_{n+1}|\), \(\Delta r_c(n)\le 18\), \(n_1(q)\to 22\),
+            \(x_1(q)\asymp q^{-2}\)
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Main points</h2>
+    <h2>Main results</h2>
     <ul>
       <li>
-        <strong>Marginal-novelty reformulation:</strong>
-        \(n_1\) is the crossing of the capacity-novelty density
-        \(\sigma(n)=\Delta r(n)/|S_n|\) below a fixed threshold, not a rank count.
+        <strong>Exact interval theorem:</strong>
+        the cumulative rank is the sumset cardinality \(r_c(n)=|T'_c+C\,I_{n+1}|\) for every
+        prime \(q\), every block with \(C\ne 0\), and every depth.
       </li>
       <li>
-        <strong>Exact reduction:</strong>
-        \(n_1(q)=(x_1(q)/C_{\mathrm{Heis}})^{1/4}\sqrt{q}\), so the asymptotic law of \(n_1\) is
-        literally the asymptotic law of \(x_1(q)\).
+        <strong>Universal ceiling and resonances:</strong>
+        \(2\le\Delta r_c(n)\le 2|T'_c|\le 18\) before saturation; block resonances
+        \(t'-t=C\,m\) activate at depth \(\lceil (m-1)/2\rceil\) and explain the slow blocks seen
+        in the <a href="../o25">O25</a> pipeline.
       </li>
       <li>
-        <strong>Two robust inputs:</strong>
-        \(|B_n|\sim C_{\mathrm{Heis}}\,n^4\) (\(D=4\), \(C_{\mathrm{Heis}}\approx 0.427\)) and
-        \(\lambda_2\approx 4\pi^2/q^2\) (diffusive gap of the abelianisation torus).
+        <strong>Deterministic bounds:</strong>
+        for every prime \(q\ge 311\), \(n_1(q)\le 22\) and
+        \(5/q^2\le x_1(q)\le 99{,}689/q^2\) — the positive-edge and logarithmic scenarios are
+        excluded without probabilistic input.
       </li>
       <li>
-        <strong>Model-free result:</strong>
-        \(n_1(q)/q\to 0\) — the linear law is excluded out of sample (to \(q=601\)).
+        <strong>Convergence in probability:</strong>
+        under uniform generic block sampling, \(n_1(q)\to 22\) and
+        \(q^2 x_1(q)\to |B_{22}|=99{,}689\).
       </li>
       <li>
-        <strong>Constant coverage excluded:</strong>
-        \(x_1\) falls \(0.61\to 0.15\) over \(q=101\to 601\), ruling out the clean \(\sqrt{q}\)
-        scenario; the surviving readings are sub-\(\sqrt{q}\).
+        <strong>Transitional regime:</strong>
+        the measured depths (\(14\) at \(q=211\), \(19\) at \(q=601\)) are explained by resonance
+        deficits; their shadow is the observed effective exponent \(\approx -0.76\), en route to
+        the exact asymptotic \(-2\).
+      </li>
+      <li>
+        <strong>Window closure:</strong>
+        the implemented auto-calibrated fitting window \([n_0,n_1]\) is deterministically empty
+        for \(q > 4\cdot 22^4 = 937{,}024\).
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>The open problem</h2>
+    <h2>Why the coverage-collapse route fails</h2>
     <p>
-      Granting the coverage-scaling ansatz \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\), the window criterion
-      \(\sigma(n_1)=\varepsilon_{\mathrm{sat}}\) becomes
-      \[ \Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q, \]
-      a fixed threshold against an explicit \(1/q\). This single tension is the mathematical front: it
-      forces \(x_1\) to decrease with \(q\) and governs whether that decrease is logarithmic or a
-      residual power.
-    </p>
-    <p>
-      The open deliverable is a structural law for \(x_1(q)\), derived from a shellwise Weil–BFS
-      novelty estimate controlled by \(\lambda_2\), of which the depth law \(n_1(q)\) is a corollary.
-      The same machinery is the bridge to the per-generation depths \(n_g\).
+      A natural structural route would posit the scaling collapse
+      \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\) and solve the front equation
+      \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\).
+      The interval theorem shows this collapse is degenerate near the threshold front: at fixed
+      coverage the rank is \(O(\sqrt q)=o(q)\), so \(\Phi\equiv 0\) there.
+      The law of \(x_1\) is combinatorial — interval growth against exact sphere counts — not
+      diffusive: the spectral gap \(\lambda_2\) never enters the rank dynamics.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
       The note is a companion to <a href="../o28">O28</a> within the spectral admissibility
-      sub-programme. It keeps O28 limited to its robust, model-free conclusion
-      (\(n_1(q)/q\to 0\)) while carrying the more analytical reframing — the reduction to
-      \(x_1(q)\) — separately.
+      sub-programme: it resolves the saturation-depth asymptotics that O28 established as
+      sub-linear, and explains the measured transitional values.
+      It depends on <a href="../o9">O9</a> (Heisenberg growth, \(D=4\)),
+      <a href="../o12">O12</a> (the Weil-block construction), and
+      <a href="../o25">O25</a>–<a href="../o28">O28</a> (the saturation-depth measurements).
     </p>
     <p>
-      It depends on <a href="../o9">O9</a> (Heisenberg growth, \(D=4\)), <a href="../o25">O25</a>
-      and <a href="../o28">O28</a> (the saturation-depth measurements), and the diffusive spectral
-      gap of the Heisenberg Cayley graph.
+      In the dual-window limit of the canonical Fourier filtration
+      (<a href="/science/emergent-geometry/q5/a/">Q5a</a>), the potential coefficient
+      \(\lambda=\lim x_1/C_{\mathrm{Heis}}\) vanishes: that limit carries no oscillator
+      potential.
     </p>
   </section>
   <section class="card">
@@ -174,7 +187,8 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.21049163">
-        <i lang="en">Critical Coverage and the Saturation Depth Problem</i>.
+        <i lang="en">Inverse-Square Critical Coverage and Constant Saturation Depth from an Exact
+        Interval Theorem</i>.
       </a>
     </p>
   </section>

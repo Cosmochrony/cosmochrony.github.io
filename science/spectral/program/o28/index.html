@@ -77,10 +77,11 @@ paint-order: stroke; stroke: currentColor;"
       <p>
         The paper extracts \(n_1(q)\) from auto-calibrated windows and performs the covariance
         computation in the admissible projection space \(H_{\mathrm{eff}}\). An out-of-sample
-        extension (to \(q=601\)) shows the window depth grows <strong>sub-linearly</strong>:
-        the linear law fails out of sample and \(n_1(q)/q \to 0\) (only the linear scaling
-        hypothesis is excluded; the asymptotic law is reframed around the critical coverage
-        \(x_1(q)\) in the <a href="../critical-coverage">Critical Coverage note</a>).
+        extension (to \(q=601\)) makes the calibrated linear extrapolation fail (overprediction up
+        to \(+88\%\)). The exact law is the interval theorem of the
+        <a href="../critical-coverage">Critical Coverage note</a>: \(n_1(q)\to 22\) in probability,
+        with critical coverage \(x_1(q)\asymp q^{-2}\); O28's out-of-sample values are the
+        transitional-regime data of that law.
       </p>
       <p>
         This reveals a fully saturated rank-3 structure and isolates the precise obstruction
@@ -118,11 +119,13 @@ paint-order: stroke; stroke: currentColor;"
       <li>
         <strong>BFS window calibration:</strong>
         extraction of \(n_1(q)\); the linear law \(n_1(q) \approx \hat{\alpha} q + \hat{\beta}\)
-        calibrated on \(q\le 211\) fails out of sample (to \(q=601\)), giving \(n_1(q)/q \to 0\).
+        calibrated on \(q\le 211\) fails out of sample (to \(q=601\), overprediction up to
+        \(+88\%\)).
       </li>
       <li>
-        <strong>Asymptotic variable identified:</strong>
-        validation of \(n_1(q)/q\) as the correct scaling parameter.
+        <strong>Exact law (Critical Coverage note):</strong>
+        \(n_1(q)\to 22\) in probability and \(x_1(q)=|B_{n_1}|/q^2\asymp q^{-2}\); O28's
+        measured depths are the transitional-regime data of that theorem.
       </li>
       <li>
         <strong>Effective-dimension computation:</strong>

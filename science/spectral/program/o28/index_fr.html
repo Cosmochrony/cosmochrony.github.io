@@ -77,11 +77,11 @@ paint-order: stroke; stroke: currentColor;"
       <p>
         L’article extrait \(n_1(q)\) à partir de fenêtres auto-calibrées et réalise le calcul de
         covariance dans l’espace de projection admissible \(H_{\mathrm{eff}}\). Une extension
-        hors-échantillon (jusqu’à \(q=601\)) montre que la profondeur de fenêtre croît de manière
-        <strong>sous-linéaire</strong> : la loi linéaire échoue hors-échantillon et
-        \(n_1(q)/q \to 0\) (seule l’hypothèse d’échelle linéaire est exclue ; la loi asymptotique est
-        reformulée autour de la couverture critique \(x_1(q)\) dans la
-        <a href="../critical-coverage">note Couverture critique</a>).
+        hors-échantillon (jusqu’à \(q=601\)) met en échec l’extrapolation linéaire calibrée
+        (surprédiction jusqu’à \(+88\,\%\)). La loi exacte est le théorème d’intervalle de la
+        <a href="../critical-coverage/index_fr.html">note Couverture critique</a> :
+        \(n_1(q)\to 22\) en probabilité, avec couverture critique \(x_1(q)\asymp q^{-2}\) ; les
+        valeurs hors-échantillon d’O28 sont les données du régime transitoire de cette loi.
       </p>
       <p>
         Cela met en évidence une structure de rang 3 pleinement saturée et isole précisément
@@ -119,12 +119,13 @@ paint-order: stroke; stroke: currentColor;"
       <li>
         <strong>Calibration de la fenêtre BFS :</strong>
         extraction de \(n_1(q)\) ; la loi linéaire \(n_1(q) \approx \hat{\alpha} q + \hat{\beta}\)
-        calibrée sur \(q\le 211\) échoue hors-échantillon (jusqu’à \(q=601\)), donnant
-        \(n_1(q)/q \to 0\).
+        calibrée sur \(q\le 211\) échoue hors-échantillon (jusqu’à \(q=601\), surprédiction
+        jusqu’à \(+88\,\%\)).
       </li>
       <li>
-        <strong>Variable asymptotique identifiée :</strong>
-        validation de \(n_1(q)/q\) comme paramètre d’échelle pertinent.
+        <strong>Loi exacte (note Couverture critique) :</strong>
+        \(n_1(q)\to 22\) en probabilité et \(x_1(q)=|B_{n_1}|/q^2\asymp q^{-2}\) ; les
+        profondeurs mesurées d’O28 sont les données du régime transitoire de ce théorème.
       </li>
       <li>
         <strong>Calcul de dimension effective :</strong>

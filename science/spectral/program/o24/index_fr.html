@@ -1,35 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Vertical Non-Injectivity and the Stability of the Observable Rank:
-    Closing the Unconditional Transfer \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)
+    Non-injectivité verticale et stabilité du rang observable :
+    clôture du transfert inconditionnel \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)
     | Cosmochrony
   </title>
   <meta name="description"
-    content="O24 shows that the size of the fibres of the non-injective projection does not
-    affect the admissibility mechanism: what matters is the stability of
-    \(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}}\), whose rank is fixed to 3 by
-    quaternionic maximality."/>
-  <link rel="alternate" hreflang="fr"
-    href="https://cosmochrony.org/science/spectral/program/o24/index_fr.html"/>
+    content="O24 montre que la taille des fibres de la projection non injective n'affecte
+    pas le mécanisme admissible : seule compte la stabilité du rang de
+    \(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}}\), fixé à 3 par la maximalité quaternionique."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/o24/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Vertical Non-Injectivity and the Stability of the Observable Rank:
-    Closing the Unconditional Transfer \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)"/>
+    content="Non-injectivité verticale et stabilité du rang observable :
+    clôture du transfert inconditionnel \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)"/>
   <meta property="og:description"
-    content="O24 replaces the strong minimal-fibre condition by a verticality condition:
-    non-injectivity may increase microscopic multiplicity, but cannot enlarge the admissible
-    observable rank."/>
+    content="O24 remplace la condition forte de fibre minimale par une condition de
+    verticalité : la non-injectivité peut augmenter la multiplicité microscopique,
+    mais ne peut pas accroître le rang observable admissible."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
-    content="https://cosmochrony.org/science/spectral/program/o24/"/>
+    content="https://cosmochrony.org/science/spectral/program/o24/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("en", "/science/spectral/program/o24/index")
+    redirectIfNot("fr", "/science/spectral/program/o24/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -37,7 +36,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -50,20 +49,21 @@
       </a>
       <div>
         <h1>
-          Vertical Non-Injectivity and the Stability of the Observable Rank:
-          Closing the Unconditional Transfer \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)
+          Non-injectivité verticale et stabilité du rang observable :
+          clôture du transfert inconditionnel \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\)
         </h1>
         <p class="subtitle">
-          O24 follows <a href="../o23">O23</a> by showing that the size of the fibres of
-          \(\Pi\) is not physically relevant: what governs the admissibility mechanism is the
-          rank of the observable image, not the microscopic multiplicity of its preimages.
+          O24 prolonge <a href="../o23">O23</a> en montrant que la taille des fibres de la
+          projection \(\Pi\) n'est pas physiquement pertinente : ce qui gouverne le mécanisme
+          admissible est le rang de l'image observable, non la multiplicité microscopique des
+          préimages.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19386580">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19386580">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
-        Back to Spectral Admissibility Programme
+        Retour au programme d'admissibilité spectrale
       </a>
     </div>
   </div>
@@ -71,222 +71,222 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Overview</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        This article continues the spectral admissibility programme after
-        <a href="../o23">O23</a>. O22 showed that admissible saturation must occur on a BFS
-        shell, and O23 showed that the relevant threshold is
+        Cet article poursuit le programme d'admissibilité spectrale après
+        <a href="../o23">O23</a>. O22 avait montré que la saturation admissible doit se produire
+        sur une shell BFS, et O23 avait montré que le seuil pertinent vaut
         \[
         \Sigma_c(n_3)=3.
         \]
-        The remaining question was whether the mechanism still depended on the strong fibre
-        condition inherited from O18.
+        Restait à éliminer la dernière condition structurelle héritée de O18 : fallait-il
+        encore supposer que les fibres de \(\Pi\) sont minimales ?
       </p>
       <p>
-        The central objective of O24 is:
-        <strong>to prove that the mechanism does not depend on the cardinality of the fibres of
-          \(\Pi\), but only on the stability of the rank of
-          \(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}}\), fixed to 3 by the quaternionic
-          maximality established in O23.</strong>
+        L'objectif central de O24 est :
+        <strong>de montrer que le mécanisme ne dépend pas de la cardinalité des fibres de
+          \(\Pi\), mais seulement de la stabilité du rang de
+          \(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}}\), fixé à 3 par la maximalité
+          quaternionique de O23.</strong>
       </p>
       <p>
-        The paper introduces a clean distinction between the two structural levels of the
-        projection:
+        Le papier introduit une distinction nette entre deux niveaux de la projection :
         \[
         \ker \Pi,
         \]
-        which encodes microscopic multiplicity and projection residuals, and
+        qui encode la multiplicité microscopique et les résidus de projection, et
         \[
         \mathrm{Im}\,\Pi,
         \]
-        which encodes the effective observable structure. A larger fibre may increase
-        fluctuations, but it cannot create new admissible directions as long as every
-        Born&ndash;Infeld-admissible symmetry acts vertically.
+        qui encode la structure observable effective. Une fibre plus grande peut accroître
+        les fluctuations, mais ne peut pas créer de nouvelles directions admissibles tant que
+        toute symétrie compatible avec Born&ndash;Infeld agit verticalement.
       </p>
       <p>
-        The key structural statement is therefore a rank-rigidity theorem:
-        non-injectivity may increase microscopic degeneracy, but it cannot enlarge the
-        admissible observable structure.
+        Le résultat clé est donc un théorème de rigidité du rang observable :
+        la non-injectivité peut augmenter la dégénérescence microscopique, mais elle ne peut
+        pas agrandir la structure admissible observable.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural content of O24:
-        rank&ndash;kernel decoupling, the verticality lemma, exclusion of transversal actions,
-        observable rank stability, and the unconditional closure of the chain
-        \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\).
+        <strong>Énoncé de portée.</strong> Cette page résume le contenu structurel de O24 :
+        découplage rang&ndash;noyau, lemme de verticalité, exclusion des actions transversales,
+        stabilité du rang observable, et clôture de la chaîne
+        \(c_\chi \to \delta_{\mathrm{pair}} \to \beta^*\), inconditionnelle vis-à-vis de la
+        structure des fibres de \(\Pi\).
       </div>
     </div>
     <aside class="card">
-      <h2>Quick facts</h2>
+      <h2>Faits rapides</h2>
       <div class="kvs">
-        <div class="kv"><div class="k">Author</div>
+        <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">License</div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Vertical non-injectivity, rank rigidity, fibre-level admissibility,
-            observable stability
+            Non-injectivité verticale, rigidité du rang, admissibilité fibre-niveau,
+            stabilité de l'observable
           </div></div>
-        <div class="kv"><div class="k">Scope</div>
+        <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Rank&ndash;kernel decoupling, verticality lemma, exclusion of transversal
-            symmetries, unconditional transfer
+            Découplage rang&ndash;noyau, lemme de verticalité, exclusion des symétries
+            transversales, transfert inconditionnel vis-à-vis de la structure des fibres de \(\Pi\)
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Core contributions</h2>
+    <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Rank&ndash;kernel decoupling:</strong>
-        the real rank of
+        <strong>Découplage rang&ndash;noyau :</strong>
+        le rang réel de
         \[
         \mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}}
         \]
-        is independent of the cardinality of
+        est indépendant de la cardinalité de
         \[
         \ker \Pi.
         \]
       </li>
       <li>
-        <strong>Verticality lemma:</strong>
-        every symmetry of \(S_{\mathrm{BI}}\) compatible with
-        admissibility preserves the admissible sector and therefore cannot generate new
-        admissible directions beyond those already allowed by O23.
+        <strong>Lemme de verticalité :</strong>
+        toute symétrie de \(S_{\mathrm{BI}}\) compatible avec l'admissibilité préserve le
+        secteur admissible et ne peut donc pas produire de nouvelle direction admissible au-delà
+        de celles déjà autorisées par O23.
       </li>
       <li>
-        <strong>Exclusion of transversal actions:</strong>
-        any transversal action would generate
-        a fourth independent direction in the neutral traceless sector, contradicting
-        quaternionic maximality.
+        <strong>Exclusion des actions transversales :</strong>
+        toute action transversale créerait une
+        quatrième direction indépendante dans le secteur neutre traceless, ce qui contredirait la
+        maximalité quaternionique.
       </li>
       <li>
-        <strong>Observable rank stability theorem:</strong>
-        the admissible observable sector
-        therefore satisfies
+        <strong>Stabilité du rang observable :</strong>
+        le secteur admissible observable conserve donc
+        le rang
         \[
         \dim_{\mathbb{R}}(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}})=3
         \]
-        independently of fibre size.
+        indépendamment de la taille des fibres.
       </li>
       <li>
-        <strong>Physical reinterpretation of fibre structure:</strong>
-        larger fibres mean more
-        microscopic multiplicity and more projection noise, not more physical directions.
+        <strong>Réinterprétation physique des fibres :</strong>
+        des fibres plus grandes signifient plus
+        de multiplicité microscopique et de bruit projectif, non plus de directions physiques.
       </li>
       <li>
-        <strong>Foundational closure:</strong>
-        O24 replaces the strong O18 condition
-        ``parity is the only symmetry'' by the correct condition of verticality, and proves
-        it rather than assuming it.
+        <strong>Clôture fondationnelle :</strong>
+        O24 remplace la condition forte de O18
+        ``la parité est la seule symétrie'' par la condition correcte de verticalité, qui est
+        démontrée plutôt que postulée.
       </li>
       <li>
-        <strong>Consequence for the admissibility chain:</strong>
-        the transfer
+        <strong>Conséquence pour la chaîne admissible :</strong>
+        le transfert
         \[
         c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
         \]
-        is now structurally unconditional with respect to fibre structure.
+        est désormais établi inconditionnellement du point de vue de la structure des fibres.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Interpretation</h2>
+    <h2>Interprétation</h2>
     <p>
-      O24 changes the logical status of the last structural condition inherited from O18.
+      O24 modifie le statut logique du dernier verrou laissé par O18.
     </p>
     <ul>
-      <li><strong>O18:</strong> fibres must be minimal to protect the observable</li>
-      <li><strong>O24:</strong> fibre size is irrelevant as long as observable rank is rigid</li>
+      <li><strong>O18 :</strong> il faut des fibres minimales pour protéger l'observable</li>
+      <li><strong>O24 :</strong> la taille des fibres est sans effet si le rang observable est rigide</li>
     </ul>
     <p>
-      The crucial point is that non-injectivity is not itself a threat to the programme.
-      What matters is not how many microscopic configurations project to the same observable,
-      but whether any admissible symmetry can add a new independent direction in the
-      observable sector.
+      Le point crucial est que la non-injectivité n'est pas en elle-même un danger pour le
+      programme. Ce qui importe n'est pas le nombre de configurations microscopiques projetées
+      sur un même observable, mais le fait qu'aucune symétrie admissible ne puisse ajouter une
+      nouvelle direction indépendante dans le secteur observable.
     </p>
     <p>
-      In other words, the programme moves:
+      Autrement dit, le programme passe :
     </p>
     <ul>
-      <li>from a condition on fibres</li>
-      <li>to an invariant of the image</li>
-      <li>from preimage minimality</li>
-      <li>to observable rank rigidity</li>
+      <li>d'une hypothèse sur les fibres</li>
+      <li>à un invariant sur l'image</li>
+      <li>d'une minimalité de préimage</li>
+      <li>à une rigidité de rang observable</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Relation to the Cosmochrony program</h2>
+    <h2>Relation au programme Cosmochrony</h2>
     <p>
-      O24 occupies a decisive position in the O-series. After the construction of the fibre-level
-      observable (O16&ndash;O19), the persistence and intrinsic saturation criterion (O20&ndash;O21),
-      shell locking (O22), and the derivation of the threshold dimension (O23), O24 shows that
-      none of this depends on a strong assumption about minimal fibres.
+      O24 occupe une position décisive dans la série O. Après la construction de l'observable
+      fibre-niveau (O16&ndash;O19), le critère de persistance et de saturation intrinsèque
+      (O20&ndash;O21), le verrouillage sur shell (O22) et la dérivation du seuil 3 (O23),
+      O24 montre que tout cela ne dépend pas d'une hypothèse forte sur la petitesse des fibres.
     </p>
     <p>
-      The programme now reads:
-      O16 (pair observable), O17 (pair dynamics),
-      O18 (minimal fibre structure), O19 (canonical normalisation),
-      O20 (persistence criterion), O21 (intrinsic saturation rank),
-      O22 (projection locking and shell condition),
-      O23 (derivation of the threshold dimension),
-      O24 (rank stability under non-injectivity).
+      La séquence s'écrit désormais :
+      O16 (observable paire), O17 (dynamique paire),
+      O18 (structure minimale des fibres), O19 (normalisation canonique),
+      O20 (critère de persistance), O21 (rang de saturation intrinsèque),
+      O22 (verrouillage projectif sur shell),
+      O23 (dérivation de la dimension seuil),
+      O24 (stabilité du rang sous non-injectivité).
     </p>
     <p>
-      After O24, the structural chain is closed:
-      the observable is fixed, the shell is derived, the threshold is explained, and the
-      residual dependence on fine fibre structure is removed.
+      Après O24, la chaîne structurelle du programme est close :
+      l'observable est fixé, la shell est dérivée, le seuil est expliqué, et la dépendance
+      résiduelle à la structure fine des fibres est éliminée.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open directions</h2>
+    <h2>Résultat actuel et directions ouvertes</h2>
     <p>
-      O24 establishes that
+      O24 établit que
       \[
       \dim_{\mathbb{R}}(\mathrm{Im}\,\Pi \cap \mathcal{N}_{\mathrm{trl}})=3
       \]
-      remains true regardless of the cardinality of admissible fibres. The structural
-      dependence on fibre size is now closed.
+      demeure vrai quelle que soit la cardinalité des fibres admissibles. Le problème
+      structurel de dépendance aux fibres est donc clos.
     </p>
     <p>
-      Remaining directions include:
+      Restent ouvertes les directions suivantes :
     </p>
     <ul>
       <li>
-        <strong>Large-\(q\) numerical campaign:</strong>
-        quantitatively confirm the shell-alignment
-        prediction across multiple conjugate pairs.
+        <strong>Campagne numérique à grand \(q\) :</strong>
+        confirmer quantitativement la prédiction
+        de shell-alignment sur plusieurs paires conjuguées.
       </li>
       <li>
-        <strong>Effective shell selection:</strong>
-        derive not only the threshold value, but the
-        actually selected shell \(n_3\).
+        <strong>Sélection effective de \(n_3\) :</strong>
+        dériver non seulement la valeur du seuil,
+        mais la shell effectivement sélectionnée.
       </li>
       <li>
-        <strong>Symmetry extensions:</strong>
-        test whether enriched frameworks preserve
-        verticality and rank rigidity.
+        <strong>Extensions de symétrie :</strong>
+        tester si des cadres enrichis conservent la
+        verticalité et la rigidité du rang.
       </li>
       <li>
-        <strong>Asymptotic regime:</strong>
-        study the behaviour of the admissible structure
-        in the large-graph limit.
+        <strong>Régime asymptotique :</strong>
+        étudier le comportement de la structure
+        admissible dans la limite des grands graphes.
       </li>
       <li>
-        <strong>Full phenomenological validation:</strong>
-        further consolidate the quantitative
-        transfer
+        <strong>Validation phénoménologique complète :</strong>
+        consolider quantitativement le
+        transfert
         \[
         \delta_{\mathrm{pair}} \to \beta^*
         \]
-        in the extended numerical regime.
+        dans le régime numérique étendu.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>References</h2>
+    <h2>Référence</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19386580">
@@ -299,7 +299,7 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
       <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>

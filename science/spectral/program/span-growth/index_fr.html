@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    La décroissance de capacité détermine l'universalité de la croissance du span
+    sur les graphes de Heisenberg | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Classification à trois branches de la croissance du span cumulé sur la cascade de Heisenberg : croissance, logarithmique, saturation ; la frontière racine-carrée de la loi d'exposant de cascade est propre aux expanseurs."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/spectral/program/span-growth/"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="La décroissance de capacité détermine l'universalité de la croissance du span sur les graphes de Heisenberg"/>
+  <meta property="og:description"
+    content="L'identité d'incrément exacte et les sphères exactes D=4 forcent une loi de croissance du span à trois branches ; la loi d'exposant de cascade en +1/2 est propre aux expanseurs."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/span-growth/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/spectral/program/span-growth/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+        La décroissance de capacité détermine l'universalité de la croissance du
+        span sur les graphes de Heisenberg
+      </h1>
+        <p class="subtitle">
+          Une classification à trois branches de la croissance du span cumulé, et la
+          dépendance au substrat de la loi d'exposant de cascade.
+        </p>
+        <p>
+          Sur un unique BFS de Heisenberg, l'identité d'incrément exacte et les sphères
+          polynomiales exactes (dimension homogène \(D=4\)) forcent une classification
+          complète de la croissance du span ne dépendant que de \((\delta_c, D)\) ; la
+          frontière racine-carrée de la loi d'exposant de cascade est identifiée comme
+          propre aux expanseurs.
+        </p>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21480521">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h2>Résultat central</h2>
+    <p>
+      Sur un unique BFS de Heisenberg, le span cumulé \(r(n)\) obéit à l'identité
+      d'incrément exacte \(\Delta r(n)=\sigma_c(n)\,|S_n|\), et les sphères exactes
+      croissent polynomialement avec la dimension homogène \(D=4\) (Bass–Guivarc'h).
+      La sommation asymptotique force une classification à trois branches ne dépendant que de
+      \((\delta_c, D)\) :
+    </p>
+    <ul>
+      <li>\(\delta_c &lt; D\) : croissance polynomiale \(r(n)\sim n^{D-\delta_c}\) —
+        l'application capacité–croissance de Heisenberg est
+        \(\beta_{\mathrm{Heis}} = D-\delta_c\) sur cette branche ;</li>
+      <li>\(\delta_c = D\) : croissance logarithmique \(r(n)\sim \log n\) (branche
+        marginale) ;</li>
+      <li>\(\delta_c &gt; D\) : saturation \(r_\infty - r(n)\sim n^{-(\delta_c-D)}\),
+        strictement pour \(\delta_c &gt; D\).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Deux corollaires analytiques</h2>
+    <ul>
+      <li><strong>Pas de proportionnalité valence–exploration.</strong> \(r/|B_n| \to 0\)
+        pour tout \(\delta_c &gt; 0\) : l'hypothèse de fermeture de l'équation de
+        croissance côté expanseurs ne se transpose pas à ce substrat.</li>
+      <li><strong>Pas de frontière racine-carrée uniforme.</strong> Puisque
+        \(r(n)\le|B_n|\), toute constante uniforme dans \(\Delta r \le c\,\sigma_c\sqrt{r}\)
+        doit dépasser \(|S_n|/\sqrt{|B_n|}\asymp n^{D/2-1}\), qui diverge pour toute dimension
+        de croissance polynomiale \(D &gt; 2\) — le \(\tfrac12\) additif de la loi d'exposant
+        de cascade \(\beta = 1/(\delta+\tfrac12)\) est propre aux expanseurs.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Statut et questions ouvertes</h2>
+    <p>
+      Le théorème de classification et les deux corollaires sont démontrés sous des
+      hypothèses de loi de puissance explicites ; les exposants numériques sont des
+      mesures à fenêtre finie sur les données de production (\(q \le 211\)).
+      Les exposants effectifs de fenêtre se placent près de la frontière marginale
+      \(\delta_c \approx D\) — consigné comme observation sur les exposants effectifs de
+      fenêtre, la branche asymptotique restant ouverte.
+      L'exposant polynomial du span est distinct du taux exponentiel par couche \(\beta^*\) de la
+      factorisation de masse du Yukawa projeté ; tout usage maintenu de la forme
+      \(1/(\delta+\tfrac12)\) avec des exposants mesurés sur Heisenberg repose sur une
+      identification à deux substrats, à énoncer comme hypothèse.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

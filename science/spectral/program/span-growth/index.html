@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>
+    Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs
+    | Cosmochrony
+  </title>
+  <meta name="description"
+    content="Three-branch classification of the cumulative fingerprint span on the Heisenberg cascade: growth, logarithmic, saturation; the square-root frontier of the cascade-exponent law is expander-specific."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/spectral/program/span-growth/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title"
+    content="Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs"/>
+  <meta property="og:description"
+    content="The exact increment identity and the exact D=4 spheres force a three-branch span-growth law; the +1/2 cascade-exponent law is expander-specific."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/spectral/program/span-growth/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/spectral/program/span-growth/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>
+        Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs
+      </h1>
+        <p class="subtitle">
+          A three-branch classification of the cumulative fingerprint span, and the substrate
+          dependence of the cascade-exponent law.
+        </p>
+        <p>
+          On a single Heisenberg BFS, the exact increment identity and the exact polynomial spheres
+          (homogeneous dimension \(D=4\)) force a complete span-growth classification depending only
+          on \((\delta_c, D)\); the square-root frontier of the cascade-exponent law is identified
+          as expander-specific.
+        </p>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21480521">Read the preprint</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Back to Spectral Admissibility Programme
+      </a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h2>Core result</h2>
+    <p>
+      On a single Heisenberg BFS, the cumulative fingerprint span \(r(n)\) obeys the exact increment
+      identity \(\Delta r(n)=\sigma_c(n)\,|S_n|\), and the exact spheres grow polynomially with
+      homogeneous dimension \(D=4\) (Bass–Guivarc'h).
+      Asymptotic summation forces a three-branch classification depending only on \((\delta_c, D)\):
+    </p>
+    <ul>
+      <li>\(\delta_c &lt; D\): polynomial growth \(r(n)\sim n^{D-\delta_c}\) — the Heisenberg
+        capacity-to-growth map is \(\beta_{\mathrm{Heis}} = D-\delta_c\) on this branch;</li>
+      <li>\(\delta_c = D\): logarithmic growth \(r(n)\sim \log n\) (marginal branch);</li>
+      <li>\(\delta_c &gt; D\): saturation \(r_\infty - r(n)\sim n^{-(\delta_c-D)}\), strictly for
+        \(\delta_c &gt; D\).</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Two analytic corollaries</h2>
+    <ul>
+      <li><strong>No valence–exploration proportionality.</strong> \(r/|B_n| \to 0\) for every
+        \(\delta_c &gt; 0\): the closure hypothesis of the expander-side growth equation does not
+        transpose to this substrate.</li>
+      <li><strong>No uniform square-root frontier.</strong> Since \(r(n)\le|B_n|\), any uniform
+        constant in \(\Delta r \le c\,\sigma_c\sqrt{r}\) must exceed
+        \(|S_n|/\sqrt{|B_n|}\asymp n^{D/2-1}\), which diverges for every polynomial growth dimension
+        \(D &gt; 2\) — the additive \(\tfrac12\) of the cascade-exponent law
+        \(\beta = 1/(\delta+\tfrac12)\) is expander-specific.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Status and open questions</h2>
+    <p>
+      The classification theorem and both corollaries are proved under explicit power-law hypotheses; the
+      numerical exponents are finite-window measurements on the production data (\(q \le 211\)).
+      The window-effective exponents sit near the marginal boundary \(\delta_c \approx D\) —
+      recorded as an observation about window-effective exponents, with the asymptotic branch left open.
+      The polynomial span exponent is distinct from the exponential per-shell rate \(\beta^*\) of the
+      projected-Yukawa mass factorisation; any continued use of the \(1/(\delta+\tfrac12)\) form with
+      Heisenberg-measured exponents rests on a two-substrate identification, to be stated as a hypothesis.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

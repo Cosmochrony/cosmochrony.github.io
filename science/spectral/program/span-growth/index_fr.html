@@ -5,18 +5,18 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    La décroissance de capacité détermine l'universalité de la croissance du span
-    sur les graphes de Heisenberg | Cosmochrony
+    Croissance native du span à partir de la décroissance de capacité et échec du transfert
+    capacité–taux sur Heisenberg | Cosmochrony
   </title>
   <meta name="description"
-    content="Classification à trois branches de la croissance du span cumulé sur la cascade de Heisenberg : croissance, logarithmique, saturation ; la frontière racine-carrée de la loi d'exposant de cascade est propre aux expanseurs."/>
+    content="Identité exacte de croissance native du span, loi à fenêtre finie pour les rangs entiers et no-go à trois volets pour le transfert capacité–taux de la chaîne O4–O7."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/span-growth/"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="La décroissance de capacité détermine l'universalité de la croissance du span sur les graphes de Heisenberg"/>
+    content="Croissance native du span à partir de la décroissance de capacité et échec du transfert capacité–taux sur Heisenberg"/>
   <meta property="og:description"
-    content="L'identité d'incrément exacte et les sphères exactes D=4 forcent une loi de croissance du span à trois branches ; la loi d'exposant de cascade en +1/2 est propre aux expanseurs."/>
+    content="L'identité exacte donne une classification abstraite en poids réels et une loi rigoureuse à fenêtre finie pour les rangs entiers ; le transfert capacité–taux publié n'a pas de dérivation native sur Heisenberg pour les objets définis dans le corpus."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/span-growth/index_fr.html"/>
@@ -43,19 +43,18 @@
       </a>
       <div>
         <h1>
-        La décroissance de capacité détermine l'universalité de la croissance du
-        span sur les graphes de Heisenberg
+        Croissance native du span à partir de la décroissance de capacité et échec du
+        transfert capacité–taux sur Heisenberg
       </h1>
         <p class="subtitle">
-          Une classification à trois branches de la croissance du span cumulé, et la
-          dépendance au substrat de la loi d'exposant de cascade.
+          Une loi exacte de croissance native et un no-go calibré pour le transfert capacité–taux publié.
         </p>
         <p>
-          Sur un unique BFS de Heisenberg, l'identité d'incrément exacte et les sphères
-          polynomiales exactes (dimension homogène \(D=4\)) forcent une classification
-          complète de la croissance du span ne dépendant que de \((\delta_c, D)\) ; la
-          frontière racine-carrée de la loi d'exposant de cascade est identifiée comme
-          propre aux expanseurs.
+          Sur un graphe de Cayley de Heisenberg fixe, l'identité exacte
+          \(\Delta r(n)=\sigma_c(n)|S_n|\) détermine la croissance native du span. La version 2.0
+          sépare un théorème abstrait pour des poids réels de la loi rigoureuse à fenêtre finie
+          disponible pour les rangs entiers, et montre pourquoi la conversion O4–O7
+          \(1/(\delta_{\mathrm{pair}}+\tfrac12)\) n'est pas dérivée sur ce substrat.
         </p>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.21480521">Lire la prépublication</a>
@@ -67,53 +66,66 @@
 </header>
 <main class="wrap">
   <section class="card">
-    <h2>Résultat central</h2>
+    <h2>Loi native et portée</h2>
     <p>
-      Sur un unique BFS de Heisenberg, le span cumulé \(r(n)\) obéit à l'identité
-      d'incrément exacte \(\Delta r(n)=\sigma_c(n)\,|S_n|\), et les sphères exactes
-      croissent polynomialement avec la dimension homogène \(D=4\) (Bass–Guivarc'h).
-      La sommation asymptotique force une classification à trois branches ne dépendant que de
-      \((\delta_c, D)\) :
+      Pour des incréments réels obéissant à une loi de puissance ponctuelle positive, l'identité
+      exacte et la croissance polynomiale des sphères de dimension homogène \(D=4\) donnent trois
+      branches abstraites :
     </p>
     <ul>
       <li>\(\delta_c &lt; D\) : croissance polynomiale \(r(n)\sim n^{D-\delta_c}\) —
-        l'application capacité–croissance de Heisenberg est
-        \(\beta_{\mathrm{Heis}} = D-\delta_c\) sur cette branche ;</li>
+        exposant de croissance en poids réels \(D-\delta_c\) ;</li>
       <li>\(\delta_c = D\) : croissance logarithmique \(r(n)\sim \log n\) (branche
         marginale) ;</li>
       <li>\(\delta_c &gt; D\) : saturation \(r_\infty - r(n)\sim n^{-(\delta_c-D)}\),
         strictement pour \(\delta_c &gt; D\).</li>
     </ul>
-  </section>
-  <section class="card">
-    <h2>Deux corollaires analytiques</h2>
-    <ul>
-      <li><strong>Pas de proportionnalité valence–exploration.</strong> \(r/|B_n| \to 0\)
-        pour tout \(\delta_c &gt; 0\) : l'hypothèse de fermeture de l'équation de
-        croissance côté expanseurs ne se transpose pas à ce substrat.</li>
-      <li><strong>Pas de frontière racine-carrée uniforme.</strong> Puisque
-        \(r(n)\le|B_n|\), toute constante uniforme dans \(\Delta r \le c\,\sigma_c\sqrt{r}\)
-        doit dépasser \(|S_n|/\sqrt{|B_n|}\asymp n^{D/2-1}\), qui diverge pour toute dimension
-        de croissance polynomiale \(D &gt; 2\) — le \(\tfrac12\) additif de la loi d'exposant
-        de cascade \(\beta = 1/(\delta+\tfrac12)\) est propre aux expanseurs.</li>
-    </ul>
-  </section>
-  <section class="card">
-    <h2>Statut et questions ouvertes</h2>
     <p>
-      Le théorème de classification et les deux corollaires sont démontrés sous des
-      hypothèses de loi de puissance explicites ; les exposants numériques sont des
-      mesures à fenêtre finie sur les données de production (\(q \le 211\)).
+      L'observable mesurée est au contraire un rang entier. Pour elle, la version 2.0 démontre une
+      loi à fenêtre finie encadrée bilatéralement à partir de bornes explicites sur la capacité et
+      la taille des sphères, sans transformer cette loi de fenêtre en affirmation asymptotique.
+      En particulier, une loi ponctuelle positive d'incrément de rang avec
+      \(\delta_c>D-1\) devient incompatible avec l'intégralité dès que l'incrément prédit passe
+      sous un ; cela inclut la plage mesurée \(3&lt;\delta_c&lt;4\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Pourquoi le transfert échoue nativement</h2>
+    <p>Le no-go comporte trois volets indépendants, bornés au corpus :</p>
+    <ul>
+      <li><strong>La fermeture O4 ne survit pas.</strong> Ses deux réalisations natives définies
+        dans le corpus gelé échouent : la valence fixe de Cayley ne peut suivre l'exploration et le
+        rang cumulé du span n'est pas proportionnel au volume exploré. Cela n'exclut pas de futures définitions.</li>
+      <li><strong>La frontière et le porteur de rétroaction sont absents.</strong> Le couplage natif
+        porte sur la frontière polynomiale \(N^{3/4}\), pas sur \(p^{1/2}\), et le corpus ne définit
+        aucun processus de croissance de Heisenberg portant la rétroaction Born–Infeld utilisée par O4.</li>
+      <li><strong>L'objet multiplicatif est différent.</strong> L'incrément exact utilise la capacité
+        de bloc \(\sigma_c\), non le produit de paire \(\sigma_{\mathrm{pair}}\) ; aucun processus de
+        croissance natif portant cet observable de paire n'est défini ou dérivé, et les coordonnées
+        d'exposants du modèle réduit employées par le transfert sont fausses pour le BFS natif.</li>
+    </ul>
+    <p>
+      En conséquence, l'accord numérique obtenu par \(1/(\delta_{\mathrm{pair}}+\tfrac12)\) reste
+      une comparaison phénoménologique entre substrats, non une dérivation sur Heisenberg du taux
+      \(\beta^*\) du Yukawa projeté.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Corrections, statut numérique et questions ouvertes</h2>
+    <p>
+      Le facteur de coquille \(D-1\) est retrouvé additivement dans l'équation de croissance native ;
+      la couche séparée de l'estimateur inter-\(q\) reste ouverte. Ajuster contre \(\log(n+1)\) plutôt
+      que contre la définition \(\log n\) des articles gonfle \(\delta\) de 8–13 % sur les fenêtres
+      de production : conditionnellement, une valeur annoncée de \(7{,}44\) correspond à environ
+      \(6{,}6\)–\(6{,}9\). Les exposants numériques restent des mesures à fenêtre finie sur les
+      données de production (\(q \le 211\)).
       Les exposants effectifs de fenêtre entrent en contact près de \(q = 211\) et se séparent
       strictement pour \(q \ge 307\) (à \(6{,}7\)–\(14{,}5\) erreurs-types du bootstrap
       inter-paires, signe stable sur toutes les variantes de fenêtre et de knee et sous les deux
       conventions logarithmiques) : le contact est un croisement transitionnel dans les données
       accessibles, aucune indication actuelle ne force \(\delta_c = D\), et la valeur asymptotique
-      de \(\delta_c\) reste ouverte.
-      L'exposant polynomial du span est distinct du taux exponentiel par couche \(\beta^*\) de la
-      factorisation de masse du Yukawa projeté ; tout usage maintenu de la forme
-      \(1/(\delta+\tfrac12)\) avec des exposants mesurés sur Heisenberg repose sur une
-      identification à deux substrats, à énoncer comme hypothèse.
+      de \(\delta_c\) reste ouverte. Aucune limite jointe \((q,n)\) n'est fournie : elle demanderait
+      une construction explicite au-delà de l'isométrie du quotient à rayon fini.
     </p>
     <p>
       Le dépôt embarque les données bloc réellement utilisées (fenêtres figées, provenance par

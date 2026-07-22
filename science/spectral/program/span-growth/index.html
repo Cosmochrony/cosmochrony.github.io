@@ -5,18 +5,18 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs
+    Native Span Growth from Capacity Decay and the Failure of the Heisenberg Capacity-to-Rate Transfer
     | Cosmochrony
   </title>
   <meta name="description"
-    content="Three-branch classification of the cumulative fingerprint span on the Heisenberg cascade: growth, logarithmic, saturation; the square-root frontier of the cascade-exponent law is expander-specific."/>
+    content="An exact native span-growth identity, a finite-window law for integer ranks, and a three-legged no-go for the Heisenberg capacity-to-rate transfer used in the O4–O7 chain."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/span-growth/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs"/>
+    content="Native Span Growth from Capacity Decay and the Failure of the Heisenberg Capacity-to-Rate Transfer"/>
   <meta property="og:description"
-    content="The exact increment identity and the exact D=4 spheres force a three-branch span-growth law; the +1/2 cascade-exponent law is expander-specific."/>
+    content="The exact increment identity yields an abstract real-weight classification and a rigorous finite-window law for integer ranks; the published capacity-to-rate transfer has no native Heisenberg derivation for the corpus-defined objects."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/span-growth/"/>
@@ -43,17 +43,17 @@
       </a>
       <div>
         <h1>
-        Capacity Decay Determines Span-Growth Universality on Heisenberg Graphs
+        Native Span Growth from Capacity Decay and the Failure of the Heisenberg Capacity-to-Rate Transfer
       </h1>
         <p class="subtitle">
-          A three-branch classification of the cumulative fingerprint span, and the substrate
-          dependence of the cascade-exponent law.
+          An exact native growth law and a scoped no-go for the published capacity-to-rate transfer.
         </p>
         <p>
-          On a single Heisenberg BFS, the exact increment identity and the exact polynomial spheres
-          (homogeneous dimension \(D=4\)) force a complete span-growth classification depending only
-          on \((\delta_c, D)\); the square-root frontier of the cascade-exponent law is identified
-          as expander-specific.
+          On a fixed Heisenberg Cayley graph, the exact identity
+          \(\Delta r(n)=\sigma_c(n)|S_n|\) determines native span growth. Version 2.0 separates an
+          abstract theorem for real-valued weights from the rigorous finite-window law available
+          for integer ranks, and shows why the O4–O7 conversion
+          \(1/(\delta_{\mathrm{pair}}+\tfrac12)\) is not derived on this substrate.
         </p>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.21480521">Read the preprint</a>
@@ -65,47 +65,61 @@
 </header>
 <main class="wrap">
   <section class="card">
-    <h2>Core result</h2>
+    <h2>Native law and its scope</h2>
     <p>
-      On a single Heisenberg BFS, the cumulative fingerprint span \(r(n)\) obeys the exact increment
-      identity \(\Delta r(n)=\sigma_c(n)\,|S_n|\), and the exact spheres grow polynomially with
-      homogeneous dimension \(D=4\) (Bass–Guivarc'h).
-      Asymptotic summation forces a three-branch classification depending only on \((\delta_c, D)\):
+      For real-valued increments obeying a positive pointwise power law, the exact identity and
+      polynomial sphere growth of homogeneous dimension \(D=4\) give three abstract branches:
     </p>
     <ul>
       <li>\(\delta_c &lt; D\): polynomial growth \(r(n)\sim n^{D-\delta_c}\) — the Heisenberg
-        capacity-to-growth map is \(\beta_{\mathrm{Heis}} = D-\delta_c\) on this branch;</li>
+        real-weight growth exponent \(D-\delta_c\);</li>
       <li>\(\delta_c = D\): logarithmic growth \(r(n)\sim \log n\) (marginal branch);</li>
       <li>\(\delta_c &gt; D\): saturation \(r_\infty - r(n)\sim n^{-(\delta_c-D)}\), strictly for
         \(\delta_c &gt; D\).</li>
     </ul>
-  </section>
-  <section class="card">
-    <h2>Two analytic corollaries</h2>
-    <ul>
-      <li><strong>No valence–exploration proportionality.</strong> \(r/|B_n| \to 0\) for every
-        \(\delta_c &gt; 0\): the closure hypothesis of the expander-side growth equation does not
-        transpose to this substrate.</li>
-      <li><strong>No uniform square-root frontier.</strong> Since \(r(n)\le|B_n|\), any uniform
-        constant in \(\Delta r \le c\,\sigma_c\sqrt{r}\) must exceed
-        \(|S_n|/\sqrt{|B_n|}\asymp n^{D/2-1}\), which diverges for every polynomial growth dimension
-        \(D &gt; 2\) — the additive \(\tfrac12\) of the cascade-exponent law
-        \(\beta = 1/(\delta+\tfrac12)\) is expander-specific.</li>
-    </ul>
-  </section>
-  <section class="card">
-    <h2>Status and open questions</h2>
     <p>
-      The classification theorem and both corollaries are proved under explicit power-law hypotheses; the
-      numerical exponents are finite-window measurements on the production data (\(q \le 211\)).
+      The measured observable is instead an integer rank. For it, version 2.0 proves a
+      two-sided finite-window law from explicit bounds on capacity and sphere size, without
+      promoting that window law to an asymptotic statement. In particular, a pointwise positive
+      rank-increment law with \(\delta_c>D-1\) is incompatible with integrality once its predicted
+      increment falls below one; this includes the measured \(3&lt;\delta_c&lt;4\) range.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Why the transfer fails natively</h2>
+    <p>The no-go has three independent, corpus-scoped legs:</p>
+    <ul>
+      <li><strong>The O4 closure does not survive.</strong> Both native realizations defined in the
+        frozen corpus fail: the fixed Cayley valence cannot track exploration, and cumulative span
+        rank is not proportional to explored volume. This does not exclude future definitions.</li>
+      <li><strong>The frontier and feedback carrier are absent.</strong> Native coupling is to the
+        polynomial frontier \(N^{3/4}\), not to \(p^{1/2}\), and the corpus defines no Heisenberg
+        growth process carrying the Born–Infeld feedback used by O4.</li>
+      <li><strong>The multiplicative object is different.</strong> The exact increment uses block
+        capacity \(\sigma_c\), not the pair product \(\sigma_{\mathrm{pair}}\); no native growth
+        process carrying that pair observable is defined or derived, and the reduced-model exponent
+        coordinates used by the transfer are false for the native BFS.</li>
+    </ul>
+    <p>
+      Consequently, the numerical agreement obtained from
+      \(1/(\delta_{\mathrm{pair}}+\tfrac12)\) remains a cross-substrate phenomenological
+      comparison, not a Heisenberg derivation of the projected-Yukawa rate \(\beta^*\).
+    </p>
+  </section>
+  <section class="card">
+    <h2>Corrections, numerical status, and open questions</h2>
+    <p>
+      The shell factor \(D-1\) is recovered additively in the native growth equation; the separate
+      inter-\(q\) estimator layer remains open. Fitting against \(\log(n+1)\) rather than the paper
+      definition \(\log n\) inflates \(\delta\) by 8–13% on the production windows: conditionally,
+      a reported \(7.44\) corresponds to approximately \(6.6\)–\(6.9\).
+      The numerical exponents remain finite-window measurements on production data (\(q \le 211\)).
       The window-effective exponents make contact near \(q = 211\) and separate strictly for
       \(q \ge 307\) (at \(6.7\)–\(14.5\) inter-pair bootstrap standard errors, sign stable across
       all window-shift and knee-trimming variants and both logarithmic conventions): the contact is a
       transitional crossing in the accessible data, no current indication forces \(\delta_c = D\),
-      and the asymptotic value of \(\delta_c\) remains open.
-      The polynomial span exponent is distinct from the exponential per-shell rate \(\beta^*\) of the
-      projected-Yukawa mass factorisation; any continued use of the \(1/(\delta+\tfrac12)\) form with
-      Heisenberg-measured exponents rests on a two-substrate identification, to be stated as a hypothesis.
+      and the asymptotic value of \(\delta_c\) remains open. A joint \((q,n)\) limit is not supplied:
+      it would require an explicit construction beyond the finite-radius quotient isometry.
     </p>
     <p>
       The repository embeds the block-level data actually used (frozen windows, per-checkpoint

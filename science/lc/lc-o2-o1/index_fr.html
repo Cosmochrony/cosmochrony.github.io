@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Fermeture spectrale locale du pont capacité-métrique | Cosmochrony</title>
+  <title>Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local | Cosmochrony</title>
   <meta name="description"
-    content="Ferme le problème ouvert LC-O2-O1 : dérive le rayon local de capacité Born-Infeld R(x) directement à partir de l'occupance spectrale ε(x), sans importer les équations d'Einstein. L'identité R(x)² = 1-ε(x) = -2g^ττ(x) découle de la réduction SU(2)-Schur sur Sym²(V_ρ) et de l'identification symbolique principale."/>
+    content="Résultat négatif (v2.0) : la loi scalaire de fraction libre A_τ = A_τ^∞(1-ε) ne ferme pas le pont LC-O2-O1. Combinée à g^ττ = -A_τ, elle donne g_ττ/g_ττ^∞ = 1/(1-ε), qui ne coïncide avec la définition capacitaire qu'en ε = 0. La revendication de fermeture des v1.0/v1.0.1 est retirée ; LC-O2-O1 est rouvert."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Fermeture spectrale locale du pont capacité-métrique"/>
+    content="Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local"/>
   <meta property="og:description"
-    content="Ferme LC-O2-O1 : R(x)² = 1-ε(x) = -2g^ττ(x) dérivé purement des données d'admissibilité locales, sans équation d'Einstein."/>
+    content="Résultat négatif : la loi de fraction libre ne ferme le pont capacité-métrique que dans le vide homogène. LC-O2-O1 rouvert."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o2-o1/"/>
   <script type="module">
@@ -35,20 +35,22 @@
         </svg>
       </a>
       <div>
-        <h1>Fermeture spectrale locale du pont capacité-métrique</h1>
+        <h1>Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local</h1>
         <p class="subtitle">
-          Ferme le problème ouvert LC-O2-O1 de <a href="/science/lc/lc-o2/index_fr.html">LCII</a>. En définissant
-          l'occupance locale $\epsilon(x)$ comme une norme quadratique sur le secteur de rang trois
-          $\mathrm{Sym}^{2}(V_{\rho})$, l'équivariance $\mathrm{SU}(2)$ du poids d'admissibilité impose
-          $A_\tau(x) = 2\bigl(1-\epsilon(x)\bigr)$, et l'identification symbolique principale donne
-          $g^{\tau\tau}(x) = -A_\tau(x)/4$. D'où
-          $R(x)^{2} = 1-\epsilon(x) = -2g^{\tau\tau}(x)$, sans aucune équation d'Einstein importée.
+          <strong>La version 2.0 remplace la version 1.0.1 (ainsi que la version 1.0 originale).</strong>
+          La loi scalaire de fraction libre
+          $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$ ne ferme <em>pas</em> le pont LC-O2-O1
+          de <a href="/science/lc/lc-o2/index_fr.html">LCII</a>. Combinée à l'identification
+          <a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> $g^{\tau\tau} = -A_\tau$ et à un
+          bloc temporel diagonal, elle donne $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$, qui
+          ne coïncide avec la définition capacitaire $R^{2} = 1-\epsilon$ qu'en $\epsilon = 0$.
+          LC-O2-O1 est rouvert.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="#" rel="noopener">Lire la prépublication</a>
-      <span class="pill">DOI : <span class="mono">à paraître</span></span>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20332042" rel="noopener">Lire la prépublication</a>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20332042</span></span>
     </div>
   </div>
 </header>
@@ -65,18 +67,19 @@
         d'Einstein importées de la branche <a href="/science/spectral-gravity/gravity/index_fr.html">Gravité</a>.
       </p>
       <p>
-        Le présent article ferme ce pont purement spectralement, à partir des seules données
-        d'admissibilité locales. La preuve procède en deux étapes : (i) une réduction du poids
-        d'admissibilité local découlant de l'équivariance $\mathrm{SU}(2)$ via le lemme de Schur ;
-        (ii) la reconstruction locale de la métrique effective par le symbole principal. La chaîne
-        $\epsilon(x) \mapsto A_\tau(x) \mapsto g^{\tau\tau}(x)$ est fermée sans recourir à l'équation
-        d'Einstein.
+        Les versions 1.0 et 1.0.1 de cette note affirmaient fermer ce pont à partir des seules données
+        d'admissibilité locales. Cette affirmation est <strong>retirée</strong>. La présente version
+        établit à la place un résultat négatif précis : la réduction scalaire naturelle fait varier le
+        coefficient temporel dans le mauvais sens, de sorte que la chaîne
+        $\epsilon(x) \mapsto A_\tau(x) \mapsto g_{\tau\tau}(x)$ ne se ferme pas.
       </p>
       <div class="note" role="note">
-        <strong>Cadre de validité.</strong> L'identité $\epsilon(x) = 1 + 2g^{\tau\tau}(x)$ est une identité
-        d'admissibilité spectrale, et non une identification phénoménologique entre densité de matière et
-        courbure métrique. Elle dépend essentiellement du fait que $\epsilon(x)$ soit une occupance
-        quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$ -- et non une densité scalaire additive arbitraire.
+        <strong>Portée du résultat.</strong> Le résultat est délibérément étroit. Une loi scalaire
+        <em>réciproque</em> $A_\tau = A_\tau^{\infty}/(1-\epsilon)$ fermerait algébriquement le pont ;
+        elle n'est pas dérivée ici et n'existe pas dans le corpus. Ce qui échoue est donc la loi de
+        fraction libre, et <em>non</em> la fermeture scalaire en général. L'article n'affirme ni qu'une
+        donnée opératorielle est nécessaire, ni qu'une famille de sous-espaces locaux transformant
+        covariamment est impossible.
       </div>
     </div>
     <aside class="card">
@@ -100,73 +103,81 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Prouvé (ferme LC-O2-O1)</div>
+          <div class="v">Résultat négatif prouvé ; LC-O2-O1 <strong>rouvert</strong></div>
         </div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Résultat principal</h2>
+    <h2>Résultat principal (négatif)</h2>
     <p>
-      Le rayon local de capacité et le rayon métrique coïncident :
+      <strong>Théorème.</strong> Supposons la loi de fraction libre
+      $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$, l'identification par symbole principal de
+      <a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> $g^{\tau\tau} = -A_\tau$ (valeur en
+      espace plat $g^{\tau\tau,\infty} = -2$, issue de $g^{\mu\nu} = 2\eta^{\mu\nu}$), ainsi qu'un bloc
+      temporel diagonal $g^{\tau i} = 0$ -- sans lequel $g_{\tau\tau} \neq 1/g^{\tau\tau}$ en général.
+      Alors :
     </p>
     <p style="text-align:center">
-      $R(x)^{2} = 1 - \epsilon(x) = -2\,g^{\tau\tau}(x)$,
+      $R_{\mathrm{metric}}(x)^{2} = g_{\tau\tau}(x)/g_{\tau\tau}^{\infty} = 1/\bigl(1-\epsilon(x)\bigr)$,
     </p>
+    <p>
+      de sorte que l'accord avec la définition capacitaire $R_{\mathrm{capacity}}^{2} = 1-\epsilon$ exige
+      $(1-\epsilon)^{2} = 1$, donc $\epsilon = 0$ dans le domaine physique $0 \le \epsilon &lt; 1$.
+      <strong>La loi de fraction libre ne ferme que le vide homogène.</strong>
+    </p>
+    <p>
+      L'échec porte sur le <em>sens de variation</em>, non sur une normalisation : une loi de fraction
+      libre fait décroître le coefficient temporel de la co-métrique avec l'occupance, alors qu'un
+      extérieur de Schwarzschild exige qu'il croisse.
+    </p>
+    <h3>Aucune renormalisation ne le répare</h3>
+    <ul>
+      <li><strong>Une remise à l'échelle constante est inerte.</strong> Pour
+        $\widetilde g^{\mu\nu} = \kappa g^{\mu\nu}$, le facteur se simplifie dans les deux rapports
+        normalisés. Prendre $\kappa = 1/4$ reproduit la valeur $-1/2$ utilisée en v1.0 sans lever le
+        résultat négatif.</li>
+      <li><strong>Un facteur conforme local supposerait ce qu'il faut démontrer.</strong> L'accord
+        exigerait $\Omega^{2}(x) \propto (1-\epsilon(x))^{-2}$ -- une loi lue sur la réponse
+        recherchée.</li>
+      <li><strong>Aucune co-métrique densitisée n'est disponible.</strong> Q5b identifie directement le
+        symbole principal à $\sigma_{2}(L_{\mathrm{eff}}) = g^{\mu\nu}k_\mu k_\nu$, ne laissant qu'une
+        liberté d'échelle globale.</li>
+    </ul>
+    <h3>Ce qui subsiste, et ce qui reste ouvert</h3>
     <p style="text-align:center">
-      ou de manière équivalente $\epsilon(x) = 1 + 2\,g^{\tau\tau}(x)$.
+      $g^{\tau\tau}/g^{\tau\tau}_{\infty} = 1-\epsilon$ &nbsp;(ansatz admissible)&nbsp;&nbsp;&nbsp;
+      $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1-\epsilon$ &nbsp;(ne suit pas -- le pont ouvert)
     </p>
     <p>
-      La preuve procède en deux identifications indépendantes.
-    </p>
-    <h3>Étape 1 -- Réduction locale du poids d'admissibilité (Lemme)</h3>
-    <p>
-      On définit $\epsilon(x)$ comme une occupance quadratique sur le secteur de rang trois
-      $H_{\mathrm{eff}}(x) \simeq \mathrm{Sym}^{2}(V_{\rho})$, muni de sa norme quadratique
-      $\mathrm{SU}(2)$-invariante. Les parties occupée et libre se décomposent orthogonalement :
-    </p>
-    <p style="text-align:center">
-      $C_{\mathrm{max}}(x) = C_{\mathrm{occ}}(x) \oplus C_{\mathrm{free}}(x)$,
-    </p>
-    <p>
-      d'où $\|C_{\mathrm{free}}\|^{2}/\|C_{\mathrm{max}}\|^{2} = 1 - \epsilon(x)$. Comme
-      $\mathrm{Sym}^{2}(V_{\rho})$ est irréductible sous $\mathrm{SU}(2)$ et que le poids d'admissibilité
-      $\mathrm{Ad}$ est $\mathrm{SU}(2)$-équivariant, le lemme de Schur impose
-      $\mathrm{Ad} = \lambda\cdot\mathrm{Id}$, donc les traces partielles sont proportionnelles aux normes
-      des sous-espaces. D'où :
-    </p>
-    <p style="text-align:center">
-      $A_\tau(x) = A_\tau^{\infty} \cdot (1 - \epsilon(x)) = 2\,(1 - \epsilon(x))$.
-    </p>
-    <h3>Étape 2 -- Identification par symbole principal</h3>
-    <p>
-      La métrique effective est reconstruite localement à partir du symbole principal de
-      $L_{\mathrm{eff}}$. Avec la normalisation en espace plat $A_\tau^{\infty} = 2$ et
-      $g^{\tau\tau,\infty} = -\tfrac{1}{2}$ (issue de
-      <a href="/science/emergent-geometry/q11/">Q11</a>) :
-    </p>
-    <p style="text-align:center">
-      $g^{\tau\tau}(x) = -\,A_\tau(x)/4$.
-    </p>
-    <p>
-      Combinaison : $-2g^{\tau\tau}(x) = A_\tau(x)/2 = 1 - \epsilon(x) = R(x)^{2}$. Le pont est fermé.
+      L'énoncé sur la co-métrique peut être posé comme ansatz, mais il est l'<em>inverse métrique</em> du
+      lapse capacitaire et ne gouverne pas la dilatation du temps propre.
     </p>
   </section>
   <section class="card">
-    <h2>Contributions clés</h2>
+    <h2>Trois défauts indépendants de la dérivation retirée</h2>
     <ul>
-      <li><strong>Ferme LC-O2-O1 :</strong> élève la Remarque 3.2 de
-        <a href="/science/lc/lc-o2/index_fr.html">LCII</a> du statut de postulat ouvert à celui de théorème.</li>
-      <li><strong>Sans équation d'Einstein :</strong> l'identité capacité-métrique est dérivée purement
-        à partir des données d'admissibilité locales.</li>
-      <li><strong>L'occupance quadratique est essentielle :</strong> le lemme de Schur ne s'applique que
-        parce que $\epsilon(x)$ est une norme quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$, et non un
-        scalaire additif.</li>
-      <li><strong>Réinterprétation de la dilatation temporelle gravitationnelle :</strong> près d'une
-        source massive, le budget de capacité est plus occupé, le rayon résiduel
-        $R(x) = \sqrt{1-\epsilon(x)} &lt; 1$ ralentit les horloges locales, en accord avec le décalage
-        gravitationnel standard.</li>
+      <li><strong>La forme en trace est un postulat nouveau.</strong> W1 fournit des poids
+        d'admissibilité cumulatifs d'une <em>forme de Dirichlet</em> filtrée -- un coefficient
+        multipliant des incréments au carré, et non une trace partielle, sans aucune dépendance en un
+        champ d'occupance. Q11 fournit une <em>valeur propre de Casimir</em>, et non une trace
+        normalisée sur un sous-espace variable.</li>
+      <li><strong>Erreur de typage : vecteur contre sous-espace.</strong> L'occupance est définie par
+        les normes de <em>vecteurs</em>, mais la preuve les traite comme des <em>sous-espaces</em>
+        portant une trace partielle. Pour un véritable sous-espace,
+        $\mathrm{tr}_C(\lambda I) = \lambda \dim C$ est quantifié dans
+        $\{0,\tfrac13,\tfrac23,1\}$, alors que l'argument exige $\lambda\|C\|^{2}$, continu sur
+        $[0,1)$.</li>
+      <li><strong>Aucune loi de covariance locale n'est énoncée.</strong> Un sous-espace propre d'un
+        module irréductible n'est pas invariant. C'est une <em>absence</em>, non une impossibilité :
+        une famille $C_{\mathrm{free}}(x)$ peut transformer covariamment. Ce qui manquait à la v1.0
+        est une telle règle, sans laquelle l'ancrage en espace plat de Q11 ne peut être transporté
+        point par point.</li>
     </ul>
+    <p>
+      Les deux derniers défauts sont indépendants de l'inversion : ils subsisteraient même si le sens
+      de variation était correct.
+    </p>
   </section>
   <section class="card">
     <h2>Structure</h2>
@@ -174,14 +185,16 @@
       <li><strong>Introduction</strong> -- énoncé du problème ouvert issu de LCII.</li>
       <li><strong>Occupance locale quadratique</strong> -- définition de $\epsilon(x)$ comme norme
         quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$.</li>
-      <li><strong>Réduction locale du poids d'admissibilité</strong> -- Lemme :
-        $A_\tau(x) = 2(1-\epsilon(x))$ via la réduction $\mathrm{SU}(2)$-Schur.</li>
-      <li><strong>Identification par symbole principal</strong> -- identification locale
-        $g^{\tau\tau}(x) = -A_\tau(x)/4$.</li>
-      <li><strong>Fermeture spectrale du pont capacité-métrique</strong> -- Théorème et Corollaire
-        (élévation de la Remarque 3.2 de LCII).</li>
-      <li><strong>Discussion</strong> -- rôle de la définition quadratique ; vérification de
-        consistance Schwarzschild en régime de champ faible.</li>
+      <li><strong>Le résultat négatif</strong> -- Théorème : la loi de fraction libre donne
+        $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$, qui ne coïncide qu'en $\epsilon = 0$.</li>
+      <li><strong>Aucune renormalisation ne répare l'inversion</strong> -- la remise à l'échelle
+        constante est inerte ; un facteur conforme local supposerait ce qu'il faut démontrer ; aucune
+        co-métrique densitisée n'est définie.</li>
+      <li><strong>Provenance et typage de la réduction en trace</strong> -- la forme en trace partielle
+        est un postulat nouveau, et elle est mal typée.</li>
+      <li><strong>La loi de covariance locale manquante</strong> -- une absence, non une
+        impossibilité.</li>
+      <li><strong>Statut et contenu rouvert</strong> -- LC-O2-O1 rouvert ; pistes candidates.</li>
     </ol>
   </section>
   <section class="card">
@@ -189,29 +202,35 @@
     <ul>
       <li><a href="/science/lc/lc-o2/index_fr.html"><strong>LCII</strong></a> : origine du problème ouvert
         (Remarque 3.2, Section 7.3) ; cadre de la chute fibre par fibre.</li>
-      <li><strong>W1</strong> : argument de réduction du poids d'admissibilité ; version locale appliquée
-        ici.</li>
+      <li><strong>W1</strong> : poids d'admissibilité d'une forme de Dirichlet -- <em>attribution
+        corrigée</em> : W1 ne fournit pas de trace partielle.</li>
       <li><strong>Q5b</strong> : reconstruction de la métrique effective par symbole principal.</li>
-      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a> : normalisation en espace plat
-        $A_\tau^{\infty} = 2$ et $g^{\tau\tau,\infty} = -\tfrac{1}{2}$.</li>
+      <li><a href="/science/emergent-geometry/q11/index_fr.html"><strong>Q11</strong></a> : normalisation
+        de la co-métrique $g^{\mu\nu} = 2\eta^{\mu\nu}$, d'où $A_\tau^{\infty} = 2$ et
+        $g^{\tau\tau,\infty} = -2$.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
-      Jérôme Beau. <i lang="en">Local Spectral Closure of the Capacity-Metric Bridge</i>.
-      Prépublication, 2026. DOI à paraître.
+      Jérôme Beau. <i lang="en">Failure of the Scalar Free-Fraction Closure of the Local
+      Capacity-Metric Bridge</i>. Prépublication, version 2.0, 2026.
+      DOI : <a href="https://doi.org/10.5281/zenodo.20332042">10.5281/zenodo.20332042</a>.
     </p>
   </section>
   <section class="card">
     <h2>Position dans le programme Cosmochrony</h2>
     <p>
-      LCIIo1 est le quatrième article du sous-programme Capacité de Lorentz. Il ferme le pont analytique
-      laissé ouvert par <a href="/science/lc/lc-o2/index_fr.html">LCII</a>, complétant la chaîne
-      LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1. Le résultat montre que $\epsilon(x)$ et
-      $g^{\tau\tau}(x)$ ne sont pas des champs indépendants : ce sont deux lectures de la même donnée
-      d'admissibilité locale. La dilatation temporelle gravitationnelle devient ainsi une conséquence
-      dérivée de l'occupance spectrale locale, et non une structure métrique importée.
+      LCIIo1 est le quatrième article du sous-programme Capacité de Lorentz. La version 2.0
+      <em>rouvre</em> le pont analytique laissé ouvert par
+      <a href="/science/lc/lc-o2/index_fr.html">LCII</a> : la chaîne
+      LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1 ne se ferme pas à sa dernière étape.
+      Le sous-programme reste complet pour la cinématique <em>inertielle</em> ; son extension
+      non homogène ne l'est pas. Dans le langage capacitaire, la dilatation temporelle gravitationnelle
+      repose donc sur le postulat déclaré de LCII (Remarque 3.2), et non sur une dérivation à partir de
+      l'occupance spectrale locale. Le résultat négatif reste instructif : il identifie exactement
+      pourquoi la réduction scalaire la plus naturelle échoue, et ce qu'une construction alternative
+      devrait accomplir.
     </p>
   </section>
 </main>

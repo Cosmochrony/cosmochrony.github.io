@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Low-Multipole Suppression from Distinguishable-History Capacity | Cosmochrony</title>
   <meta name="description"
-    content="A parameter-free replacement of the phenomenological low-ell CMB envelope: the largest angular modes probe admissibility ranks holding only 3, 7, 17 distinguishable projective histories. A no-fit grid improves the Planck TT diagnostic chi2 from 27.4 to 17.3."/>
+    content="A conditional capacity ceiling for low-ell CMB power, evaluated as a saturation benchmark. With Planck PR3 calibration and the real m=0 correction, the active TT diagnostic changes from 27.26 to 17.70."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Low-Multipole Suppression from Distinguishable-History Capacity"/>
   <meta property="og:description"
-    content="No-fit, quadrupole-anchored capacity envelopes from the exact Pell count improve the Planck TT low-ell diagnostic chi2 from 27.4 to 17.3 in the theoretically preferred cell; staircase envelope as a discrete signature."/>
+    content="Planck-calibrated, real-m=0-corrected low-ell TT saturation benchmark from the exact Pell count: diagnostic chi2 27.26 to 17.70. This is a conditional benchmark, not a derived prediction."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/cosmology/low-l-capacity/"/>
   <script type="module">
@@ -37,8 +37,8 @@
         <h1>Low-Multipole Suppression from Distinguishable-History Capacity</h1>
         <p class="subtitle">
           The largest angular modes probe admissibility ranks holding only $3$, $7$, $17$ distinguishable
-          projective histories: a parameter-free, quadrupole-anchored capacity envelope replaces the old
-          phenomenological low-$\ell$ damping law.
+          projective histories: a quadrupole-anchored conditional capacity ceiling replaces the old
+          phenomenological low-$\ell$ damping law as a testable saturation benchmark.
         </p>
       </div>
     </div>
@@ -55,13 +55,14 @@
       <p>
         The white paper attributed the CMB large-angle power deficit to a global projective coherence
         constraint, illustrated by a two-parameter attenuation envelope. This note replaces that ansatz by a
-        mechanism with no adjustable parameter: under the rank–time dictionary, the largest angular modes probe
+        conditional mechanism with no adjustable parameter: under the rank–time dictionary, the largest angular modes probe
         the first admissibility ranks, whose number of projectively distinguishable histories is fixed exactly
         by the Pell count of the
         <a href="/science/cosmology/trajectory-branching/" class="inline-link">trajectory-branching note</a> —
         $N_{\mathrm{hist}}(n) = ((1+\sqrt2)^{n+1} + (1-\sqrt2)^{n+1})/2$, so the first ranks hold only $3$,
         $7$, $17$ histories. A mode supported by so few distinguishable histories cannot carry the full
-        ensemble variance: the large-angle deficit becomes a small-$N$ capacity effect.
+        ensemble variance if the capacity ceiling is saturated. The large-angle deficit is therefore tested here
+        as a small-$N$ saturation benchmark, not presented as a derived prediction.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -99,14 +100,14 @@
   <section class="card">
     <h2>Core results</h2>
     <ul>
-      <li><strong>No-fit grid against Planck.</strong> Two derived envelopes (Bessel $(N-1)/N$ and capacity
-        ratio $N/(N+1)$) times two angular dictionaries (H-dictionary and Pell-rate), anchored only by
-        $n=1 \leftrightarrow \ell=2$: on Planck 2018 TT ($2 \le \ell \le 30$) every cell improves on
-        $\Lambda$CDM, with the diagnostic $\chi^2$ dropping from $27.4$ to $17.3$ for the theoretically
-        preferred cell — zero adjustable parameters.</li>
-      <li><strong>Honest polarization status.</strong> TE is neutral; EE is mildly disfavoured
-        ($\Delta\chi^2 \simeq +1$), reported as an open tension of the minimal propagation (no dedicated
-        low-$\ell$ reionisation transfer treatment is included).</li>
+      <li><strong>No-fit saturation grid against Planck.</strong> Conditional capacity ceilings are crossed
+        with two angular dictionaries and anchored only by $n=1 \leftrightarrow \ell=2$. With Planck PR3
+        calibration and the real-$m=0$ correction applied to the TT Bessel cell, its diagnostic $\chi^2$
+        changes from $27.26$ for $\Lambda$CDM to $17.70$ — zero fitted parameters. This measures proximity
+        to the saturation curve of a bound; it is not a derived prediction.</li>
+      <li><strong>Honest polarization status.</strong> The minimal TE/EE propagation and the alternative
+        capacity-ratio cells remain uncorrected for real-$m=0$. A dedicated low-$\ell$ polarization transfer
+        treatment is open.</li>
       <li><strong>Discrete signature.</strong> The envelope is a staircase in $\ell$ (integer admissibility
         ranks) — a structure no smooth damping law reproduces.</li>
       <li><strong>Re-audited $8/3$ witness.</strong> The $S^3$ fibre-to-base stiffness ratio is geometric
@@ -120,12 +121,20 @@
     <p>
       <strong>Imported.</strong> The exact Pell count of distinguishable histories (trajectory-branching
       note).
-      <strong>Numerical, no fit.</strong> The grid outcome; the $\chi^2$ values are diagnostics (symmetrised
-      errors, no multipole covariance), not a likelihood analysis or a detection claim.
-      <strong>Open.</strong> The entropy-to-power step (why bounded history capacity suppresses ensemble power
-      rather than only enlarging cosmic variance), the TE/EE transfer treatment, and the
+      <strong>Conditional theorem chain.</strong> The kernel and capacity ceiling hold under their stated
+      support, independence, locking, and dictionary assumptions.
+      <strong>Numerical, no fit.</strong> The saturation-grid outcome; the $\chi^2$ values are diagnostics
+      (symmetrised errors, no multipole covariance), not a likelihood analysis or a detection claim.
+      <strong>Open.</strong> Saturation of the ceiling, the angular dictionary, the consumer-side support and
+      independence assumptions, the TE/EE transfer treatment, and the
       $\ell_2/\ell_1 \simeq 1.633$ modulation search.
     </p>
+    <div class="note" role="note">
+      <strong>Corrective version 1.5.0.</strong> Version 1.4.0 and its figures report the historical,
+      uncalibrated complex-mode diagnostic $27.39 \rightarrow 17.29$. Version 1.5.0 applies the Planck PR3
+      calibration and the real-$m=0$ correction; the active TT diagnostic is
+      $27.26 \rightarrow 17.70$. The two records therefore intentionally differ.
+    </div>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>

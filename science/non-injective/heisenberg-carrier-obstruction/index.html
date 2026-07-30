@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>A Finite Countermodel to Heisenberg Carrier Selection | Cosmochrony</title>
+  <meta name="description"
+    content="A six-element S3 countermodel proves that the admissibility properties used in the
+    published carrier-selection argument do not force a central commutator or Heisenberg group."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/non-injective/heisenberg-carrier-obstruction/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="A Finite Countermodel to Heisenberg Carrier Selection"/>
+  <meta property="og:description"
+    content="The S3 countermodel isolates the failed centrality step while preserving mathematics
+    internal to a supplied Heisenberg/Weil carrier."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/non-injective/heisenberg-carrier-obstruction/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/non-injective/heisenberg-carrier-obstruction/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>A Finite Countermodel to Heisenberg Carrier Selection</h1>
+        <p class="subtitle">
+          A proved obstruction to one identification edge, not a rejection of the downstream mathematics.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21710123" rel="noopener">
+        Read the note
+      </a>
+      <a class="btn subtle" href="/science/non-injective/">Back to the sub-programme</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>What the countermodel proves</h2>
+      <p>
+        Let \(G=S_3\), \(X=(12)\), \(Y=(23)\), and let \(\sigma\) be conjugation by
+        \((13)\). Then \(\sigma\) is an involution exchanging \(X\) and \(Y\), the pair
+        minimally generates \(S_3\), and the standard two-dimensional zero-sum
+        representation is faithful, unitary, and irreducible. Nevertheless,
+      </p>
+      <p>
+        \[
+          [X,Y]=(132)\notin Z(S_3),
+        \]
+      </p>
+      <p>
+        because \(Z(S_3)\) is trivial. The algebraic properties available before the
+        centrality step therefore do not select a Heisenberg group.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope.</strong> The note does not propose \(S_3\) as the physical carrier.
+        It refutes the published implication from the stated premises to a central
+        commutator, a finite Heisenberg group, and a Weil carrier.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Version</div><div class="v">1.0.0</div></div>
+        <div class="kv"><div class="k">Status</div><div class="v">Proved finite countermodel</div></div>
+        <div class="kv"><div class="k">Concept DOI</div><div class="v">
+          <a href="https://doi.org/10.5281/zenodo.21710123">10.5281/zenodo.21710123</a>
+        </div></div>
+        <div class="kv"><div class="k">Corrects</div><div class="v">Foundation / HeisenbergStructure</div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>What survives</h2>
+    <ul>
+      <li>The ENI no-go theorem is independent of this carrier-selection edge.</li>
+      <li>Calculations performed on a supplied Heisenberg/Weil carrier retain their internal status.</li>
+      <li>
+        If a finite Heisenberg group and a non-trivial central character are supplied,
+        the Stone–von Neumann representation-theoretic endpoint remains valid.
+      </li>
+    </ul>
+    <p>
+      What changes is the declared status: the carrier is currently a supplied realization,
+      and any result consuming its selection must be labelled conditional.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Why this matters</h2>
+    <p>
+      The failure is an identification, not a calculation. A non-trivial commutator is not
+      automatically central, and Schur's lemma constrains already-central operators rather
+      than making an arbitrary commutator central. Naming this edge keeps exploratory work
+      possible while preventing a model choice from being promoted to a theorem.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

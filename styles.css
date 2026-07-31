@@ -305,12 +305,17 @@ footer {
 
 .kv {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: minmax(0, 130px) minmax(0, 1fr);
   gap: 10px;
   padding: 10px 12px;
   border: 1px dashed rgba(255, 255, 255, 0.14);
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.10);
+}
+
+.kv .k,
+.kv .v {
+  min-width: 0;
 }
 
 .k {

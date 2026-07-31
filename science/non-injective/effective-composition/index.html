@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Support and Preparation Criteria for Independent Effective Subsystems | Cosmochrony</title>
+  <meta name="description"
+    content="Finite criteria for when independent effective subsystems exist over a substrate without a
+    supplied factorisation: independence blocks are bicliques, and preparation independence is a
+    rank-one property of the weights."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/non-injective/effective-composition/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Support and Preparation Criteria for Independent Effective Subsystems"/>
+  <meta property="og:description"
+    content="The K4 contract: what must be added, at the support and preparation levels, for
+    independently addressable and preparable subsystems to emerge."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/non-injective/effective-composition/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/non-injective/effective-composition/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Support and Preparation Criteria for Independent Effective Subsystems</h1>
+        <p class="subtitle">
+          What must be added, on a substrate without a supplied factorisation, for two systems to be
+          independently addressable and preparable.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21729274" rel="noopener">
+        Read the paper
+      </a>
+      <a class="btn subtle" href="/science/non-injective/">Back to the sub-programme</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>The composition gap, and the K4 contract</h2>
+      <p>
+        Laboratory physics is organised around independent subsystems, yet the Cosmochrony substrate is
+        not supplied with any factorisation $\Omega \simeq \Omega_A \times \Omega_B$. The paper names the
+        missing piece as a transversal contract,
+      </p>
+      <p>
+        \[
+          \mathrm{K4}\colon\quad
+          \mathsf{Admissibility}
+          \;\longrightarrow\;
+          \mathsf{Composable\ effective\ subsystems},
+        \]
+      </p>
+      <p>
+        and characterises its two prerequisite layers exactly in the finite case, from two effective
+        projections $\Pi_A$, $\Pi_B$ on one undivided substrate and cylindrical admissibility conditions
+        combined by intersection.
+      </p>
+      <div class="note" role="note">
+        <strong>Status.</strong> The theorems are exact within the contract; the contract itself is
+        proposed, not derived from the programme's axioms or from an operational theory. The
+        states-and-effects layer of K4 (effects, local tomography, any quantum tensor product) remains
+        open.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Version</div><div class="v">1.0</div></div>
+        <div class="kv"><div class="k">Status</div><div class="v">Proved within a proposed contract</div></div>
+        <div class="kv"><div class="k">Concept DOI</div><div class="v">
+          <a href="https://doi.org/10.5281/zenodo.21729274">10.5281/zenodo.21729274</a>
+        </div></div>
+        <div class="kv"><div class="k">Code</div><div class="v">
+          <a href="https://github.com/Cosmochrony/effective-composition/tree/main/code" rel="noopener">
+            exact enumeration scripts</a>
+        </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>The two layers, and their exact criteria</h2>
+    <ul>
+      <li>
+        <strong>Support layer.</strong> The pairs of local outcome sets on which joint interrogation is
+        margin-stable and jointly rectangular — the <em>independence blocks</em> — are exactly the
+        nonempty rectangles (bicliques) $S_A \times S_B \subseteq R$ of the projected support relation.
+      </li>
+      <li>
+        <strong>Benchmark.</strong> On a block, if every probability measure on the underlying support is
+        an admissible preparation, every joint law — in particular every product — lifts to the substrate.
+        The absence of a supplied factorisation alone obstructs nothing.
+      </li>
+      <li>
+        <strong>Preparation layer.</strong> For the normalised cylindrical conditionings of a strictly
+        positive weight matrix $W$, closure under products of independently locally conditioned states
+        holds if and only if $\operatorname{rank} W = 1$.
+      </li>
+      <li>
+        <strong>Separation.</strong> The counting weights $N_3 = \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 2
+        \end{pmatrix}$ give a complete rectangular support whose induced preparations are correlated:
+        support rectangularity does not imply preparation independence.
+      </li>
+      <li>
+        <strong>Type discipline.</strong> States of one side obtained by conditioning on the other are
+        steered conditional states, not local preparations; admitting them manufactures spurious
+        witnesses.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Why this matters</h2>
+    <p>
+      The absence of a supplied factorisation does not forbid independent effective subsystems — it
+      relocates their independence, from an inherited property of the substrate to an emergent property
+      of the projected support (which outcome pairs are jointly possible) and of the preparation weights
+      (which mixtures are jointly realisable). What a laboratory calls “two systems” is, in this
+      structural reading, a regime where both layers cooperate: a biclique carrying a rank-one weight
+      structure. Corpus constructions that use a bipartite composite consume a supplied composition
+      structure; this paper states exactly what that supply must provide.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

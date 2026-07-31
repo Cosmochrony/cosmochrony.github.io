@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Critères de support et de préparation pour des sous-systèmes effectifs indépendants | Cosmochronie</title>
+  <meta name="description"
+    content="Critères finis d'existence de sous-systèmes effectifs indépendants sur un substrat sans
+    factorisation fournie : les blocs d'indépendance sont des bicliques, et l'indépendance des
+    préparations est une propriété de rang un des poids."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/non-injective/effective-composition/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Critères de support et de préparation pour des sous-systèmes effectifs indépendants"/>
+  <meta property="og:description"
+    content="Le contrat K4 : ce qui doit être ajouté, aux niveaux du support et de la préparation, pour
+    que des sous-systèmes indépendamment adressables et préparables émergent."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/non-injective/effective-composition/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/non-injective/effective-composition/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Critères de support et de préparation pour des sous-systèmes effectifs indépendants</h1>
+        <p class="subtitle">
+          Ce qui doit être ajouté, sur un substrat sans factorisation fournie, pour que deux systèmes
+          soient indépendamment adressables et préparables.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21729274" rel="noopener">
+        Lire l'article
+      </a>
+      <a class="btn subtle" href="/science/non-injective/index_fr.html">Retour au sous-programme</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Le vide de composition, et le contrat K4</h2>
+      <p>
+        La physique de laboratoire est organisée autour de sous-systèmes indépendants, alors que le
+        substrat de Cosmochronie n'est muni d'aucune factorisation
+        $\Omega \simeq \Omega_A \times \Omega_B$. L'article nomme la pièce manquante sous la forme d'un
+        contrat transversal,
+      </p>
+      <p>
+        \[
+          \mathrm{K4}\colon\quad
+          \mathsf{Admissibilit\acute{e}}
+          \;\longrightarrow\;
+          \mathsf{Sous\text{-}syst\grave{e}mes\ effectifs\ composables},
+        \]
+      </p>
+      <p>
+        et caractérise exactement ses deux couches préalables dans le cas fini, à partir de deux
+        applications de projection effectives $\Pi_A$, $\Pi_B$ sur un même substrat indivis et de
+        conditions d'admissibilité cylindriques combinées par intersection.
+      </p>
+      <div class="note" role="note">
+        <strong>Statut.</strong> Les théorèmes sont exacts à l'intérieur du contrat ; le contrat lui-même
+        est proposé, non dérivé des axiomes du programme ni d'une théorie opérationnelle. La couche
+        états-effets de K4 (effets, tomographie locale, tout produit tensoriel quantique) reste ouverte.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Version</div><div class="v">1.0</div></div>
+        <div class="kv"><div class="k">Statut</div><div class="v">Prouvé dans un contrat proposé</div></div>
+        <div class="kv"><div class="k">DOI concept</div><div class="v">
+          <a href="https://doi.org/10.5281/zenodo.21729274">10.5281/zenodo.21729274</a>
+        </div></div>
+        <div class="kv"><div class="k">Code</div><div class="v">
+          <a href="https://github.com/Cosmochrony/effective-composition/tree/main/code" rel="noopener">
+            scripts d'énumération exacte</a>
+        </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Les deux couches, et leurs critères exacts</h2>
+    <ul>
+      <li>
+        <strong>Couche de support.</strong> Les paires d'ensembles d'issues locales sur lesquelles
+        l'interrogation conjointe est stable en marges et conjointement rectangulaire — les
+        <em>blocs d'indépendance</em> — sont exactement les rectangles non vides (bicliques)
+        $S_A \times S_B \subseteq R$ de la relation de support projetée.
+      </li>
+      <li>
+        <strong>Référence.</strong> Sur un bloc, si toute mesure de probabilité sur le support
+        sous-jacent est une préparation admissible, toute loi conjointe — en particulier tout produit —
+        se relève vers le substrat. L'absence de factorisation fournie n'obstrue rien à elle seule.
+      </li>
+      <li>
+        <strong>Couche de préparation.</strong> Pour les conditionnements cylindriques normalisés d'une
+        matrice de poids strictement positive $W$, la fermeture sous produits d'états localement
+        conditionnés de façon indépendante vaut si et seulement si $\operatorname{rang} W = 1$.
+      </li>
+      <li>
+        <strong>Séparation.</strong> Les poids de comptage $N_3 = \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 2
+        \end{pmatrix}$ donnent un support rectangulaire complet dont les préparations induites sont
+        néanmoins corrélées : la rectangularité du support n'implique pas l'indépendance des
+        préparations.
+      </li>
+      <li>
+        <strong>Discipline de typage.</strong> Les états d'un côté obtenus en conditionnant sur l'autre
+        sont des états conditionnels pilotés, pas des préparations locales ; les admettre fabrique des
+        témoins fallacieux.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Pourquoi c'est important</h2>
+    <p>
+      L'absence de factorisation fournie n'interdit pas les sous-systèmes effectifs indépendants — elle
+      déplace leur indépendance, d'une propriété héritée du substrat vers une propriété émergente du
+      support projeté (quelles paires d'issues sont conjointement possibles) et des poids de préparation
+      (quels mélanges sont conjointement réalisables). Ce qu'un laboratoire appelle « deux systèmes »
+      est, dans cette lecture structurale, un régime où les deux couches coopèrent : une biclique
+      portant une structure de poids de rang un. Les constructions du corpus qui utilisent un composite
+      biparti consomment une structure de composition fournie ; cet article énonce exactement ce que
+      cette fourniture doit garantir.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

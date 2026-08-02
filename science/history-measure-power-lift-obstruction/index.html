@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Refinement Consistency Obstructs Nonlinear Power Lifts | Cosmochrony</title>
+  <meta name="description"
+    content="Why taking a square root of a branching probability is not free: a general theorem shows the
+    power-lift family of a finite branching measure is Kolmogorov-consistent only at the unlifted exponent,
+    instantiated exactly on the Heisenberg trajectory-branching automaton."/>
+  <link rel="alternate" hreflang="fr"
+    href="https://cosmochrony.org/science/history-measure-power-lift-obstruction/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Refinement Consistency Obstructs Nonlinear Power Lifts of Finite History Measures"/>
+  <meta property="og:description"
+    content="Successor to Finite Criteria for Simplicial States and Local Tomography: a self-contained
+    obstruction theorem for the amplitude-modulus question, before any Born rule, complex carrier, or
+    coherent sum is proposed."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/history-measure-power-lift-obstruction/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("en", "/science/history-measure-power-lift-obstruction/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Refinement Consistency Obstructs Nonlinear Power Lifts of Finite History Measures</h1>
+        <p class="subtitle">
+          Why taking a square root of a branching probability is not free — and what a future amplitude
+          modulus must choose instead.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21761185" rel="noopener">
+        Read the paper
+      </a>
+      <a class="btn subtle" href="/science/non-injective/states-effects-tomography/">Companion note</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Successor to Finite Criteria for Simplicial States and Local Tomography</h2>
+      <p>
+        The companion paper characterises the finite, classical, simplicial layer above admissibility
+        completely, and its own conclusion names the <strong>amplitude modulus</strong> as the natural next
+        step, outside that contract. A recurring, rarely audited move at that next step is to read a
+        positive branching measure directly as an amplitude by taking some power of it — canonically a
+        square root.
+      </p>
+      <p>
+        This note asks exactly when such a power lift is compatible with the branching structure that
+        produced it, using one elementary, theory-neutral condition: Kolmogorov consistency, the ordinary
+        marginal-consistency identity a family of measures on a growing history space must satisfy.
+      </p>
+      <div class="note" role="note">
+        <strong>Status.</strong> The central theorem is general and self-contained, independent of the
+        Cosmochrony corpus. Its Heisenberg-automaton instantiation is conditional on an explicitly named,
+        non-derived postulate (H2). No Born rule, no complex-carrier selection, and no coherent-sum
+        construction is established anywhere in this note.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Version</div><div class="v">1.0</div></div>
+        <div class="kv"><div class="k">Status</div><div class="v">Proved (general theorem); conditional instantiation under H2</div></div>
+        <div class="kv"><div class="k">Concept DOI</div><div class="v">
+          <a href="https://doi.org/10.5281/zenodo.21761185">10.5281/zenodo.21761185</a>
+        </div></div>
+        <div class="kv"><div class="k">Code</div><div class="v">
+          <a href="https://github.com/Cosmochrony/history-measure-power-lift-obstruction/tree/main/code" rel="noopener">
+            exact reproduction script</a>
+        </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Six results</h2>
+    <ul>
+      <li>
+        <strong>Refinement-consistency theorem.</strong> For any finite branching system, the power-lift
+        family $\mu^\alpha$ of its induced valuation is Kolmogorov-consistent, at a branching state reached
+        with positive $\mu$-valuation, if and only if $\alpha=1$ — an elementary comparison of $x^\alpha$
+        against $x$ on $[0,1]$, strict wherever a state has at least two positive-probability successors.
+        No phase, complex numbers, or Born rule involved.
+      </li>
+      <li>
+        <strong>Escort lifts, situated relative to the literature.</strong> A row-renormalised power lift is
+        trivially Kolmogorov-consistent for every $\alpha$, but generally does not coincide with the
+        pointwise lift once path-dependent normalisation factors accumulate — the same order relation
+        underlying the classical escort-distribution/Rényi literature of nonextensive statistical mechanics,
+        cited and situated here, not claimed as new in isolation.
+      </li>
+      <li>
+        <strong>Exact instantiation under H2.</strong> Specialised, in exact $\mathbb{Q}(\sqrt2)$ arithmetic,
+        to the non-backtracking Heisenberg $b$-shadow automaton of the trajectory-branching note, under an
+        explicitly named, non-derived maximal-entropy/Parry postulate. An explicit two-parameter
+        counterfamily of primitive Markov kernels on the same support — recovering H2's own stationary law at
+        one point — shows that support, primitivity, and the Pell recurrence alone do not select a unique
+        kernel.
+      </li>
+      <li>
+        <strong>Endpoint/shadow quotient incomparability.</strong> The endpoint quotient and the $b$-shadow
+        quotient of the automaton are mutually incomparable, with explicit witnesses on words of length up
+        to 4.
+      </li>
+      <li>
+        <strong>Exact relabelling automorphism and reality corollary.</strong> Relabelling $X \leftrightarrow
+        X^{-1}$ transports the Heisenberg endpoint by the exact group automorphism $(a,b,\gamma) \mapsto
+        (-a,b,-\gamma)$, from which every uniform-probe phase sum weighted by a real shadow-only valuation,
+        over histories sharing a final $b_n$, follows to be exactly real.
+      </li>
+      <li>
+        <strong>Bounded exact cancellation search.</strong> Among all 13120 non-backtracking words of length
+        up to 8 ($q=17$), 64 classes share a final $b_n$, 62 carry genuine nontrivial relative phase, and
+        none exhibits exact destructive cancellation — a calibrated negative result on this range, not a
+        claim of non-existence at every length.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Why this matters</h2>
+    <p>
+      Within the Cosmochrony programme's search for an amplitude modulus, this obstruction means the
+      intuitive move of silently taking a square root of a branching probability is not free. Any future
+      construction must therefore either replace the pointwise power lift by a genuinely different
+      construction — escort renormalisation being one example — or decline to require classical
+      cylinder-measure consistency of the lifted modulus, with that choice justified independently. This
+      note identifies exactly where, in the H2/Parry/Pell chain, that choice becomes unavoidable, without
+      taking either option itself.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

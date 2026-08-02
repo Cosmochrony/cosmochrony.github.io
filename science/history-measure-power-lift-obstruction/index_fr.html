@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>La cohérence par raffinement fait obstacle aux relèvements en puissance | Cosmochronie</title>
+  <meta name="description"
+    content="Pourquoi prendre la racine carrée d'une probabilité de branchement n'est pas gratuit&nbsp;: un
+    théorème général montre que la famille de relèvements en puissance d'une mesure de branchement finie
+    n'est cohérente au sens de Kolmogorov qu'à l'exposant non relevé, instancié exactement sur l'automate
+    de branchement trajectoriel de Heisenberg."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/history-measure-power-lift-obstruction/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="La cohérence par raffinement fait obstacle aux relèvements non linéaires en puissance de mesures d'histoires finies"/>
+  <meta property="og:description"
+    content="Successeur de Finite Criteria for Simplicial States and Local Tomography&nbsp;: un théorème
+    d'obstruction autonome pour la question du module d'amplitude, avant toute règle de Born, tout porteur
+    complexe ou toute somme cohérente."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url"
+    content="https://cosmochrony.org/science/history-measure-power-lift-obstruction/index_fr.html"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+    redirectIfNot("fr", "/science/history-measure-power-lift-obstruction/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path
+            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
+            paint-order: stroke; stroke: currentColor;"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;"
+            cx="122.899" cy="123.911" rx="80.614" ry="80.614"
+            fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>La cohérence par raffinement fait obstacle aux relèvements non linéaires en puissance de mesures d'histoires finies</h1>
+        <p class="subtitle">
+          Pourquoi prendre la racine carrée d'une probabilité de branchement n'est pas gratuit — et ce
+          qu'un futur module d'amplitude doit choisir à la place.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.21761185" rel="noopener">
+        Lire l'article
+      </a>
+      <a class="btn subtle" href="/science/non-injective/states-effects-tomography/index_fr.html">Article compagnon</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h2>Successeur de Finite Criteria for Simplicial States and Local Tomography</h2>
+      <p>
+        L'article compagnon caractérise complètement la couche finie, classique et simpliciale au-dessus de
+        l'admissibilité, et sa propre conclusion désigne le <strong>module d'amplitude</strong> comme l'étape
+        suivante naturelle, en dehors de ce contrat. Un geste récurrent, rarement examiné pour lui-même, à
+        cette étape suivante, consiste à lire directement une mesure de branchement positive comme une
+        amplitude en en prenant une puissance — canoniquement une racine carrée.
+      </p>
+      <p>
+        Cette note demande précisément quand un tel relèvement en puissance est compatible avec la structure
+        de branchement qui l'a produit, à l'aide d'une seule condition élémentaire et neutre vis-à-vis de
+        toute théorie&nbsp;: la cohérence de Kolmogorov, l'identité ordinaire de cohérence marginale qu'une
+        famille de mesures sur un espace d'histoires croissant doit satisfaire.
+      </p>
+      <div class="note" role="note">
+        <strong>Statut.</strong> Le théorème central est général et autonome, indépendant du corpus
+        Cosmochronie. Son instanciation sur l'automate de Heisenberg est conditionnelle à un postulat
+        explicitement nommé et non dérivé (H2). Aucune règle de Born, aucune sélection de porteur complexe,
+        aucune construction de somme cohérente n'est établie nulle part dans cette note.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Repères</h2>
+      <div class="kvs">
+        <div class="kv"><div class="k">Auteur</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Version</div><div class="v">1.0</div></div>
+        <div class="kv"><div class="k">Statut</div><div class="v">Prouvé (théorème général)&nbsp;; instanciation conditionnelle sous H2</div></div>
+        <div class="kv"><div class="k">DOI concept</div><div class="v">
+          <a href="https://doi.org/10.5281/zenodo.21761185">10.5281/zenodo.21761185</a>
+        </div></div>
+        <div class="kv"><div class="k">Code</div><div class="v">
+          <a href="https://github.com/Cosmochrony/history-measure-power-lift-obstruction/tree/main/code" rel="noopener">
+            script de reproduction exacte</a>
+        </div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Six résultats</h2>
+    <ul>
+      <li>
+        <strong>Théorème de cohérence par raffinement.</strong> Pour tout système de branchement fini, la
+        famille de relèvements en puissance $\mu^\alpha$ de sa valuation induite est cohérente au sens de
+        Kolmogorov, en un état de branchement atteint avec une $\mu$-valuation positive, si et seulement si
+        $\alpha=1$ — une comparaison élémentaire de $x^\alpha$ à $x$ sur $[0,1]$, stricte dès qu'un état a au
+        moins deux successeurs de probabilité positive. Aucune phase, aucun nombre complexe, aucune règle de
+        Born.
+      </li>
+      <li>
+        <strong>Relèvements escort, situés par rapport à la littérature.</strong> Un relèvement en puissance
+        renormalisé ligne par ligne est trivialement cohérent au sens de Kolmogorov pour tout $\alpha$, mais
+        ne coïncide généralement pas avec le relèvement ponctuel une fois que des facteurs de normalisation
+        dépendant du chemin s'accumulent — la même relation d'ordre sous-jacente à la littérature classique
+        des distributions escort et de Rényi en mécanique statistique non extensive, citée et resituée ici,
+        non revendiquée comme nouvelle en elle-même.
+      </li>
+      <li>
+        <strong>Instanciation exacte sous H2.</strong> Spécialisé, en arithmétique exacte dans
+        $\mathbb{Q}(\sqrt2)$, à l'automate de shadow $b$ de Heisenberg non rebroussant de la note de
+        branchement trajectoriel, sous un postulat explicitement nommé et non dérivé d'entropie
+        maximale/Parry. Une contre-famille explicite à deux paramètres de noyaux de Markov primitifs sur le
+        même support — retrouvant la loi stationnaire propre de H2 en un point — montre que le support, la
+        primitivité et la récurrence de Pell seules ne sélectionnent pas un noyau unique.
+      </li>
+      <li>
+        <strong>Incomparabilité des quotients endpoint/shadow.</strong> Le quotient d'endpoint et le quotient
+        de shadow $b$ de l'automate sont mutuellement incomparables, avec des témoins explicites sur des mots
+        de longueur jusqu'à 4.
+      </li>
+      <li>
+        <strong>Automorphisme exact de relabeling et corollaire de réalité.</strong> Le relabeling
+        $X \leftrightarrow X^{-1}$ transporte l'endpoint de Heisenberg par l'automorphisme de groupe exact
+        $(a,b,\gamma) \mapsto (-a,b,-\gamma)$, d'où il découle que toute somme de phase à sonde uniforme
+        pondérée par une valuation réelle ne dépendant que du shadow, sur des histoires partageant un même
+        $b_n$ final, est exactement réelle.
+      </li>
+      <li>
+        <strong>Recherche exacte bornée d'annulation.</strong> Parmi les 13120 mots non rebroussants de
+        longueur jusqu'à 8 ($q=17$), 64 classes partagent un même $b_n$ final, 62 portent une phase relative
+        réellement non triviale, et aucune ne présente d'annulation destructive exacte — un résultat négatif
+        calibré sur cette plage, non une affirmation d'inexistence à toute longueur.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Pourquoi c'est important</h2>
+    <p>
+      Dans la recherche par le programme Cosmochronie d'un module d'amplitude, cette obstruction signifie
+      que le geste intuitif consistant à prendre silencieusement la racine carrée d'une probabilité de
+      branchement n'est pas gratuit. Toute construction future doit donc soit remplacer le relèvement
+      ponctuel en puissance par une construction véritablement différente — la renormalisation escort en
+      étant un exemple —, soit renoncer à exiger la cohérence classique de mesure cylindrique du module
+      relevé, ce choix devant être justifié indépendamment. Cette note identifie précisément où, dans la
+      chaîne H2/Parry/Pell, ce choix devient incontournable, sans trancher elle-même entre les deux options.
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    </p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

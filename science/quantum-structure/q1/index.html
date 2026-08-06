@@ -5,22 +5,23 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective Projection | Cosmochrony
+    Fourier-Support Rigidity in Conjugate Weil Sectors: A No-Go Result for Rank-Based Quantum Signatures | Cosmochrony
   </title>
   <meta name="description"
-    content="Q1 establishes that phase coherence of a supplied complex Weil amplitude carrier is a
-    structural consequence of projective admissibility, not a postulate. Conditional on that carrier,
-    the singlet correlator and the Tsirelson bound follow from admissibility, O18, and O23 alone."/>
+    content="Q1 v2.0 proves an exact, unconditional identity in the finite Weil representation of the
+    Heisenberg group: conjugate character sectors span identical subspaces on every complete BFS shell,
+    a no-go result for support-, rank-, and Gram-based diagnostics. This is a major correction of v1.1.2,
+    whose central theorem's published proof independent review found unsound."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/quantum-structure/q1/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective Projection"/>
+    content="Fourier-Support Rigidity in Conjugate Weil Sectors: A No-Go Result for Rank-Based Quantum Signatures"/>
   <meta property="og:description"
-    content="Q1 proves that any admissible transition preserves Born–Infeld indiscernibility of conjugate
-    Weil blocks, maintaining the metaplectic phase coherence of a complex amplitude carrier supplied by
-    O18 and O23. The singlet correlator E(â,b̂) = −â·b̂ and the Tsirelson bound then follow, conditional
-    on that carrier."/>
+    content="An exact, unconditional identity in the finite Weil representation of the Heisenberg group:
+    conjugate character sectors span identical subspaces of C^q on every complete BFS shell. Corrects an
+    earlier claim (v1.1.2) that this construction derived quantum-mechanical structure from projective
+    admissibility."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/quantum-structure/q1/"/>
@@ -48,15 +49,15 @@
       </a>
       <div>
         <h1>
-          From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective Projection
+          Fourier-Support Rigidity in Conjugate Weil Sectors: A No-Go Result for Rank-Based Quantum
+          Signatures
         </h1>
         <p class="subtitle">
-          Q1 establishes that phase coherence of a supplied complex Weil amplitude carrier is a
-          structural consequence of projective admissibility, not a postulate. Theorem 2.7 proves
-          that any admissible transition preserves the Born–Infeld indiscernibility of conjugate
-          Weil blocks, and conditional on that carrier, the singlet correlator
-          $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ together with the Tsirelson bound follow from
-          admissibility, O18, and O23 alone.
+          For every complete BFS shell of the Heisenberg Cayley graph, conjugate Weil character sectors
+          $c$ and $q-c$ span identical subspaces of $\mathbb{C}^q$ — an exact, unconditional identity,
+          together with a precisely scoped no-go corollary for support-, rank-, and Gram-based
+          diagnostics. This is a major correction (v2.0) of an earlier version whose claimed derivation
+          of quantum-mechanical structure did not hold up under independent review.
         </p>
       </div>
     </div>
@@ -69,32 +70,45 @@
 
 <main class="wrap">
 
+  <div class="note" style="margin-bottom: 1.5rem;">
+    <strong>Correction notice.</strong> This is a major revision (v2.0) of a paper originally titled
+    <em>From Admissibility to Quantum Structure: Phase Coherence and Correlations from Non-Injective
+    Projection</em> (v1.1.2). Independent review found that version's central theorem's published proof
+    unsound, and separately found its Born-rule derivation independently defective. Both are withdrawn.
+    What survives is narrower and unconditional: an exact rigidity theorem and its no-go corollaries,
+    described below.
+  </div>
+
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        A central question in the Cosmochrony programme is whether quantum mechanical structure —
-        phase coherence, Born rule, entanglement — can be derived from the projective admissibility
-        constraints, or whether they must be added as independent postulates.
+        This paper proves a rigidity theorem in finite representation theory, in the finite Weil
+        (oscillator) representation of the Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+        acting on $\mathbb{C}^q$. For every complete (inversion-symmetric) Breadth-First-Search shell of
+        the associated Cayley graph, the orbit vectors generated by conjugate character sectors $c$ and
+        $q-c$ span identical subspaces — for the special character block used by the original numerical
+        pipeline and for generic character triples alike.
       </p>
       <p>
-        Q1 answers this question for the spin-1/2 sector, for a complex Weil amplitude carrier supplied
-        by O18 and O23: phase coherence of that carrier is not assumed but proved.
-        Theorem 2.7 establishes that any admissible transition on the Heisenberg graph preserves the
-        Born–Infeld indiscernibility of the conjugate Weil blocks $\rho_c$ and $\rho_{q-c}$,
-        maintaining the metaplectic phase coherence of the fibre throughout the evolution.
-        Q1 does not derive the carrier's own complex scalar structure — only its preservation.
+        The proof reduces every orbit vector to a single pure Fourier mode and shows the reachable
+        frequency set is closed under negation whenever the generating shell is inversion-symmetric:
+        unconditional, and independent of any coherence measure. Two no-go corollaries then characterise
+        exactly which diagnostics this rigidity puts out of reach — not only Fourier support, subspace
+        rank, projectors, dimensions, and principal angles, but any quantity invariant under independent
+        rephasing and reindexing of the underlying frame, a class that includes normalised Bargmann-type
+        invariants.
       </p>
       <p>
-        Building on O18 (projective phase structure) and O23 (three isotropic neutral directions,
-        $\mathfrak{su}(2)$ structure), Q1 derives the bipartite singlet correlator and the Tsirelson
-        bound, conditional on the supplied carrier, as structural consequences of admissibility's
-        preservation of its coherence, with numerical validation for $q = 29$.
+        Independent numerical verification: 1,548 exact integer-arithmetic checks across six primes with
+        zero failures, plus a negative control confirming the criterion correctly detects failure on a
+        deliberately truncated shell.
       </p>
       <div class="note">
-        <strong>Central message.</strong> Given a supplied complex amplitude carrier, admissibility
-        preserves its phase coherence, and that alone forces the quantum correlations — no further
-        probability postulate is needed.
+        <strong>Central message.</strong> A natural class of representation-theoretic diagnostics —
+        support, rank, Gram-derived quantities — cannot distinguish conjugate Weil sectors, for a
+        structural reason (collapse to single-frequency Fourier lines), not a numerical coincidence. This
+        paper does not derive quantum-mechanical structure.
       </div>
     </div>
     <aside class="card">
@@ -106,32 +120,32 @@
         </div>
         <div class="kv">
           <div class="k">Work type</div>
-          <div class="v">Preprint</div>
+          <div class="v">Preprint (major correction, v2.0)</div>
         </div>
         <div class="kv">
           <div class="k">Focus</div>
           <div class="v">
-            Phase coherence, Weil blocks, Born–Infeld indiscernibility, singlet correlator,
-            Tsirelson bound, non-injective projection
+            Weil representation, Heisenberg Cayley graph, Fourier support, conjugate character sectors,
+            no-go theorem, frame theory
           </div>
         </div>
         <div class="kv">
           <div class="k">Key result</div>
           <div class="v">
-            $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ and Tsirelson bound from admissibility
+            $\widehat V_n^{(c)} = \widehat V_n^{(q-c)}$ exactly, for every complete shell
           </div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Proved; numerically validated for $q=29$</div>
+          <div class="v">Proved; verified across 1,548 exact checks, $q \in \{13,\ldots,61\}$</div>
         </div>
         <div class="kv">
-          <div class="k">Depends on</div>
-          <div class="v">O18, O23</div>
+          <div class="k">Withdrawn (v1.1.2)</div>
+          <div class="v">Central theorem, Gram–Schmidt rank corollary, Born rule</div>
         </div>
         <div class="kv">
-          <div class="k">Feeds into</div>
-          <div class="v">Q2, Q3</div>
+          <div class="k">Open</div>
+          <div class="v">Genuine multi-basis emergence; the abstract-object bridge</div>
         </div>
       </div>
     </aside>
@@ -141,26 +155,25 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Theorem 2.7 — Phase coherence preservation:</strong> any admissible transition
-        on the Heisenberg graph preserves the Born–Infeld indiscernibility of conjugate Weil blocks
-        $\rho_c$ and $\rho_{q-c}$, maintaining the metaplectic phase coherence of the fibre. Phase
-        coherence is thus a structural consequence of admissibility, not an input.
+        <strong>Exact conjugate-sector Fourier-support rigidity:</strong> for every complete BFS shell,
+        conjugate Weil-sector fingerprint vectors span identical subspaces of $\mathbb{C}^q$, proved by a
+        five-step argument reducing every vector to a single pure Fourier mode.
       </li>
       <li>
-        <strong>Singlet correlator, conditional on the supplied carrier:</strong> combining Theorem 2.7
-        with the isotropic $\mathfrak{su}(2)$ structure of O23, the bipartite proto-state is identified
-        as the spin-1/2 singlet, and the correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ is
-        derived without invoking any further Hilbert-space postulate beyond that carrier.
+        <strong>No-go corollaries:</strong> no diagnostic built from Fourier support, rank, projectors,
+        dimensions, or principal angles can separate the sectors; more precisely, no diagnostic invariant
+        under independent rephasing and reindexing of the underlying frame can either — proved by an
+        explicit frame-orbit construction, not asserted from Gram-matrix orbit-equality alone.
       </li>
       <li>
-        <strong>Tsirelson bound, unconditional within the carrier:</strong> the bound
-        $|E(\hat{a},\hat{b}) - E(\hat{a},\hat{b}') + E(\hat{a}',\hat{b}) + E(\hat{a}',\hat{b}')| \leq 2\sqrt{2}$
-        follows as a corollary of the projective structure acting on the supplied carrier, saturating
-        the quantum maximum without a separate Born-rule postulate.
+        <strong>Independent numerical verification:</strong> 1,548 exact integer-arithmetic checks across
+        six primes with zero failures, plus a negative control on a deliberately truncated shell.
       </li>
       <li>
-        <strong>Numerical validation:</strong> all results are explicitly verified for the prime
-        $q = 29$, confirming the analytical derivations in the concrete Weil representation setting.
+        <strong>What is withdrawn:</strong> v1.1.2's central theorem (its published proof was found
+        unsound), its Gram–Schmidt rank corollary (dimensionally impossible as stated), and its Born-rule
+        derivation (independent proof defects). The singlet correlator and Tsirelson bound survive only
+        as a standard, explicitly conditional textbook remark — not a result of this paper.
       </li>
     </ul>
   </section>
@@ -168,64 +181,40 @@
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The conventional approach to quantum mechanics introduces phase coherence and the Born rule as
-      axioms. Q1 does not remove the need for a complex amplitude carrier — that carrier is supplied by
-      the Weil representation of O18 and O23, not derived from admissibility. What Q1 shows is that,
-      once the carrier is in place, its phase coherence is not an independent assumption: it is
-      preserved by the non-injective projection constraints, and that preservation alone forces the
-      quantum correlations that follow.
-    </p>
-    <p>
-      The key mechanism is the Born–Infeld indiscernibility of conjugate Weil blocks. Because
-      $\rho_c$ and $\rho_{q-c}$ are structurally indistinguishable under any admissible operation,
-      the fibre cannot select between them — and this underdetermination is precisely what preserves
-      the metaplectic phase structure that underlies quantum superposition.
-    </p>
-    <p>
-      Admissibility governs which configurations belong to the fibre at all (support); it does not by
-      itself supply a law relating the modulus of an admitted contribution to its admissibility weight,
-      nor does it describe destructive cancellation between distinct admissible contributions to a
-      shared observable event. Coherent non-detection may result from either mechanism, and Q1
-      establishes phase-coherence preservation only.
+      Support, rank, and Gram-derived quantities are natural, representation-theoretic diagnostics, and
+      one might plausibly have expected some such diagnostic to separate conjugate Weil sectors — that is
+      exactly what v1.1.2 attempted to construct, reading a numerical near-zero residual as an
+      "admissibility-preserved phase coherence" signature. This paper shows that expectation fails for a
+      structural reason, not a numerical coincidence: the pure-Fourier-line reduction that proves the
+      rigidity identity simultaneously forecloses the richer phase geometry that would be needed to
+      separate the sectors by any rephasing/permutation-invariant frame diagnostic.
     </p>
     <div class="note">
-      <strong>Physical implication.</strong> Bell-type correlations in this framework do not require
-      non-locality or hidden variables: they arise from the projective structure of admissible
-      transitions between Weil blocks, given the supplied carrier. The Tsirelson bound marks the
-      maximal coherence compatible with admissibility, within that carrier.
+      <strong>Interpretive outlook (not a further result).</strong> Read as a methodological instance for
+      the wider spectral admissibility programme, this episode is a cautionary one: a numerical
+      near-zero-residual observation can be forced by a construction's own structural degeneracy rather
+      than signal an intended physical mechanism. This is offered as a single instance, not a general
+      claim about other diagnostics used elsewhere in the O-series or Q-series programme. The genuine open
+      question — whether a single Weil/Heisenberg source can produce multiple, phase-distinguishable
+      quantum-like frames by some other construction — remains exactly as open after this paper as
+      before it.
     </div>
   </section>
 
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Q1 opens the Q-series thematic track devoted to the emergence of quantum structure. Its position
-      in the dependency chain is central:
+      This paper no longer claims to derive quantum-mechanical structure and no longer relies on O18
+      (parity-fibre structure), O19, O21, or O22 as established pillars — an independent audit of those
+      papers found the fibre-identification and canonical-observable claims they had been cited for
+      invalid or unestablished. What remains is self-contained: a representation-theoretic rigidity
+      theorem about the pipeline's own uniform-probe construction, and its no-go corollaries.
     </p>
-    <ul>
-      <li>
-        <strong>O18:</strong> establishes the projective phase structure on Heisenberg graphs from
-        which phase coherence is inherited.
-      </li>
-      <li>
-        <strong>O23:</strong> establishes the three isotropic neutral directions and the
-        $\mathfrak{su}(2)$ structure that Q1 uses, together with O18, to identify the proto-state as a
-        singlet.
-      </li>
-      <li>
-        <strong>Q2:</strong> extends the programme to spin-3/2 on the binary icosahedral group,
-        using Q1 as its foundation.
-      </li>
-      <li>
-        <strong>Q3:</strong> completes the universal spin-$j$ extension for all admissible sectors
-        of the binary icosahedral group.
-      </li>
-    </ul>
     <p>
-      Together, Q1–Q3 constitute the quantum sector of the spectral admissibility programme:
-      conditional on the complex Weil amplitude carrier supplied by O18 and O23, phase coherence,
-      the Born rule, and singlet correlators follow from projective structure without any further
-      quantum postulate.
+      v1.1.2 had opened the Q-series thematic track on emergent quantum structure, with Q2 and Q3 stated
+      as building on its central theorem. Since that theorem is withdrawn here, whether and how Q2 and Q3
+      are affected is a separate, not-yet-completed audit — flagged for follow-up, not resolved by this
+      revision.
     </p>
   </section>
 
@@ -233,8 +222,8 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>From Admissibility to Quantum Structure: Phase Coherence and Correlations from
-      Non-Injective Projection</i>, 2026.
+      <i>Fourier-Support Rigidity in Conjugate Weil Sectors: A No-Go Result for Rank-Based Quantum
+      Signatures</i>, 2026.
       <a href="https://doi.org/10.5281/zenodo.19561060">doi:10.5281/zenodo.19561060</a>
     </p>
   </section>

@@ -5,17 +5,21 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Fibre Admissibility and Exact Pair-Exponent Doubling | Cosmochrony
+    Fibre Admissibility Hypotheses and Conditional Pair-Exponent Doubling | Cosmochrony
   </title>
   <meta name="description"
-    content="O16 identifies the correct dynamic observable in the exact Weil-block regime as a fibre-level pair observable, proves exponent doubling δ → 2δ, and resolves the δ-deficit without modifying the O7 growth law."/>
+    content="O16 examines whether conjugate Weil blocks {c,q-c} constitute the fibres of the
+    non-injective projection Π, under two independent open hypotheses, and derives a conditional
+    exponent-doubling result for a fibre-level pair observable."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o16/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Fibre Admissibility and Exponent Doubling in the Exact Weil Regime"/>
+    content="Fibre Admissibility Hypotheses and Conditional Pair-Exponent Doubling"/>
   <meta property="og:description"
-    content="O16 resolves the δ-deficit identified in O15 by introducing fibre-level observables, proving exponent doubling, and restoring consistency with the phenomenological scale."/>
+    content="O16 shows that conjugate blocks are fibres of Π only under two independent open
+    hypotheses, and that a pair-level exponent doubles conditionally on an n-independent
+    conjugate-pair ratio."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o16/"/>
@@ -42,12 +46,12 @@
       </a>
       <div>
         <h1>
-          Fibre Admissibility and Exact Pair-Exponent Doubling
+          Fibre Admissibility Hypotheses and Conditional Pair-Exponent Doubling
         </h1>
         <p class="subtitle">
-          O16 identifies the correct observable in the exact Weil-block regime after
-          <a href="../o15">O15</a>, showing that admissibility is defined at the fibre level
-          and leads to exponent doubling δ → 2δ.
+          O16 examines whether conjugate Weil blocks $\{c,q-c\}$ constitute the fibres of the
+          non-injective projection $\Pi$, and shows that a fibre-level pair exponent doubles
+          conditionally on an $n$-independent conjugate-pair ratio.
         </p>
       </div>
     </div>
@@ -65,37 +69,36 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral admissibility programme after
-        <a href="../o15">O15</a>. While O15 established that the scalar observable
-        of <a href="../o7">O7</a> does not transfer to the exact Weil-block regime
-        and localised the failure at the level of the growth equation, it left open
-        a single precise question: <strong>what is the correct dynamic observable?</strong>
+        The Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ satisfies the exact
+        conjugation identity $\rho_{q-c} = \overline{\rho_c}$, valid for every prime $q$ and every
+        central character $c$, independent of any hypothesis about the non-injective projection
+        $\Pi$. O16 examines whether conjugate blocks $\{c,\,q-c\}$ constitute the fibres of
+        $\Pi$.
       </p>
       <p>
-        O16 answers this question by identifying a structural property of the projection Π:
-        <strong>non-injectivity implies fibre-level admissibility</strong>.
-        Each observable corresponds not to a single Weil block, but to a pair of
-        conjugate blocks $(c, q-c)$.
+        That identification rests on two independent premises: that $\Pi$ carries a parity
+        involution $\Pi(x)=\Pi(-x)$, and that this involution is realised, in the Weil
+        representation, as the character map $c \mapsto q-c$. Neither follows from the
+        conjugation identity alone, and neither is derived from first principles within the
+        Cosmochrony framework &mdash; both are open, structurally motivated hypotheses.
       </p>
       <p>
-        The correct observable is therefore not the block mean
-        $\bar{\Sigma}_n$, but a <strong>pair observable</strong> defined on fibres:
-        \[
-        \sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n).
-        \]
-      </p>
-      <p>
-        This immediately leads to exponent doubling:
-        \[
-        \delta_{\mathrm{pair}} = 2\,\delta_c \approx 7.4,
-        \]
-        which resolves the δ-deficit identified in O12–O15 without modifying the
-        O6/O7 growth law.
+        Under a further, separate hypothesis &mdash; that a per-block observable $\sigma_c(n)$
+        has a conjugate-pair ratio $r(c,q) = \sigma_{q-c}(n)/\sigma_c(n)$ independent of the
+        shell index $n$ &mdash; the log-log slope of the pair-level product
+        $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n)$ is exactly double that of
+        $\sigma_c(n)$: $\delta_{\mathrm{pair}} = 2\,\delta_c$, a direct algebraic consequence of
+        differentiating a constant-ratio product. On the exact block observable of the real
+        <a href="../o12">O12</a>/<a href="../o13">O13</a> pipeline, the proved conjugate-block
+        identity forces this ratio to be exactly $1$, so the pair-level product reduces
+        definitionally to the single block squared: no separate doubling phenomenon to explain
+        there.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural result.
-        The exact symmetry of conjugate blocks, the numerical validation of exponent doubling,
-        and the epistemic status of the fibre interpretation are developed in the preprint.
+        <strong>Scope statement.</strong> This page summarises the structural result. No
+        numerical value of the pair exponent, and no O7 prescription for $\beta^*$, is asserted.
+        The exact symmetry of conjugate blocks and the full epistemic status of the fibre
+        hypotheses are developed in the preprint.
       </div>
     </div>
     <aside class="card">
@@ -108,13 +111,12 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Fibre-level admissibility, conjugate pairing, exponent doubling,
-            exact-block observable
+            Fibre admissibility hypotheses, conjugate pairing, conditional exponent doubling
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            Identification of the correct dynamic observable in the exact Weil regime
-            and resolution of the δ-deficit without modifying the growth law
+            Two independent open hypotheses for the fibre structure of Π, and a conditional
+            pair-exponent doubling result
           </div></div>
       </div>
     </aside>
@@ -123,83 +125,87 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Fibre-level observable:</strong>
-        admissibility is defined on fibres of Π, not on individual Weil blocks.
+        <strong>Two independent fibre hypotheses:</strong>
+        that $\Pi$ carries a parity involution $\Pi(x)=\Pi(-x)$, and that this involution is
+        realised in the Weil representation as $c\mapsto q-c$ &mdash; neither implied by the
+        other or by the proved conjugation identity.
       </li>
       <li>
         <strong>Conjugate symmetry:</strong>
-        $\rho_{q-c} = \overline{\rho_c}$ implies identical Gram–Schmidt dynamics and
-        $\delta_c = \delta_{q-c}$.
+        $\rho_{q-c} = \overline{\rho_c}$, exact and unconditional representation theory,
+        independent of any hypothesis about $\Pi$.
       </li>
       <li>
-        <strong>Exponent doubling:</strong>
-        $\delta_{\mathrm{pair}} = 2\,\delta_c$ arises from fibre-level admissibility.
+        <strong>Elementary bound:</strong>
+        $\langle\sigma_c^2\rangle \ge \langle\sigma_c\rangle^2$ for any non-negative sequence,
+        by Cauchy&ndash;Schwarz.
       </li>
       <li>
-        <strong>Resolution of δ-deficit:</strong>
-        the discrepancy identified in O12–O15 is a single-branch measurement artefact.
+        <strong>Conjugate-block identity on the real pipeline:</strong>
+        $\Sigma_n^{(c_1,c_2,c_3)} = \Sigma_n^{(-c_1,-c_2,-c_3)}$ holds exactly for the
+        <a href="../o12">O12</a>/<a href="../o13">O13</a> observable, forcing the conjugate-pair
+        ratio to be identically $1$ there.
       </li>
       <li>
-        <strong>Spectral lower bound:</strong>
-        $\delta_{\mathrm{pair}} \ge 7.4$ is a structural property of the representation.
-      </li>
-      <li>
-        <strong>Normalization clarified:</strong>
-        the factor $r(c,q)$ arises from pipeline normalisation and does not affect exponents.
+        <strong>Conditional exponent doubling:</strong>
+        $\delta_{\mathrm{pair}} = 2\,\delta_c$, given an $n$-independent conjugate-pair ratio
+        &mdash; an algebraic consequence, carrying no numerical content until a value of
+        $\delta_c$ is supplied for a sourced observable.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O16 does not modify the growth law derived in <a href="../o6">O6</a> and
-      reformulated in <a href="../o7">O7</a>. Instead, it shows that the observable
-      entering that law must be redefined.
+      O16 does not modify the growth law of <a href="../o6">O6</a>/<a href="../o7">O7</a>, and
+      does not modify the underlying Weil-block pipeline of
+      <a href="../o12">O12</a>&ndash;<a href="../o15">O15</a>. It examines a separate question:
+      what is the correct unit of admissibility &mdash; the individual block, or the conjugate
+      pair?
     </p>
     <ul>
-      <li><strong>O15:</strong> scalar observable invalid in exact regime</li>
-      <li><strong>O16:</strong> correct observable = fibre-level pair observable</li>
+      <li><strong>O15:</strong> the scalar block-level growth law does not transfer to the exact
+        Weil regime</li>
+      <li><strong>O16:</strong> conjugate pairs are the fibres of $\Pi$ only under two
+        independent, open hypotheses</li>
     </ul>
     <p>
-      The δ-deficit is therefore not a dynamical failure, but a misidentification
-      of admissibility. The structure of Π itself imposes the correct observable.
+      Three things are open, not one, and should not be blended together: whether $\Pi$ carries a
+      parity involution at all; whether that involution is specifically realised as
+      $c\mapsto q-c$ in the Weil representation; and, independently of both, whether any sourced,
+      reproducible observable satisfies the doubling premise for a pair-level quantity distinct
+      from the block squared.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O16 follows directly from <a href="../o15">O15</a>. It completes the transition
-      from scalar proxy observables to exact Weil-block observables.
+      O16 follows the block-level results of
+      <a href="../o12">O12</a>&ndash;<a href="../o15">O15</a> without modifying them. It proposes
+      the conjugate pair as the fibre-level unit of admissibility and derives what follows
+      conditionally from that proposal.
     </p>
     <p>
-      The programme now reads:
-      O12–O13 (exact extraction), O14 (observable mismatch),
-      O15 (derivation-level failure), O16 (correct observable identified).
-    </p>
-    <p>
-      O16 does not introduce new primes or new dynamics. Its role is to identify the
-      correct observable compatible with the structure of Π.
+      On the real <a href="../o12">O12</a>/<a href="../o13">O13</a> pipeline, sampling the
+      conjugate pair does not sample independent data: the exact conjugate-block identity means
+      it computes the same block squared. The fixed Heisenberg Cayley graph also has frontier
+      $N^{3/4}$, not the square-root frontier of O7, so no pair-capacity growth carrier connecting
+      $\delta_{\mathrm{pair}}$ to $\beta^*$ is defined by the corpus.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open problem</h2>
+    <h2>Current outcome and open directions</h2>
     <p>
-      O16 resolves the lower bound of the phenomenological range:
-      \[
-      \delta_{\mathrm{pair}} \approx 7.4.
-      \]
+      The identification of conjugate pairs with fibres of $\Pi$ remains open, resting on the two
+      independent hypotheses above. The exponent-doubling remark is conditional and algebraically
+      valid, holding trivially (with ratio $1$) on the real pipeline's own block observable, and
+      not yet tied to any other sourced observable.
     </p>
     <p>
-      However, the pair spectrum extends beyond the phenomenological range
-      ($\delta > 10.6$). The upper bound is therefore not spectral.
-    </p>
-    <p>
-      Preliminary analysis indicates that it arises from a
-      <strong>dynamical coherence constraint</strong> on the full trajectory $\sigma(n)$.
-    </p>
-    <p>
-      The remaining problem is thus:
-      which global property of the relaxation trajectory selects the admissible window?
+      A derivation, from first principles within Cosmochrony, of both fibre hypotheses would
+      strengthen the fibre interpretation, but would not by itself close the separate
+      capacity-to-rate bridge to $\beta^*$, nor supply a sourced observable satisfying the
+      doubling premise for a pair-level quantity distinct from the block squared.
     </p>
   </section>
   <section class="card">
@@ -207,7 +213,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19298427">
-        <i>Fibre Admissibility and Exponent Doubling in the Exact Weil Regime</i>.
+        <i>Fibre Admissibility Hypotheses and Conditional Pair-Exponent Doubling</i>.
       </a>
     </p>
   </section>

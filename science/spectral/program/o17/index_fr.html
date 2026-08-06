@@ -5,24 +5,31 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Admissibilité au niveau des fibres à partir des blocs de Weil conjugués :
-    dérivation structurelle de l’observable par paire | Cosmochrony
+    Indépendance exacte de blocs de la redondance brute de Gram-Schmidt dans un modèle
+    scalaire de Weil | Cosmochronie
   </title>
   <meta name="description"
-    content="O17 dérive l’observable par paire au niveau des fibres à partir de la structure des blocs de Weil conjugués, prouve l’égalité des exposants conjugués, et montre que le facteur r(c,q) est un artefact de normalisation plutôt qu’un invariant structurel."/>
+    content="O17 prouve que, au sein d'un modèle-jouet scalaire de représentation de Weil, le
+    compte de redondance brute de Gram-Schmidt est exactement indépendant du caractère et des
+    paramètres de condition initiale pour deux blocs quelconques, pas seulement les blocs
+    conjugués — un résultat circonscrit à ce modèle-jouet, non montré s'étendre au pipeline réel
+    O12/O13."/>
   <link rel="alternate" hreflang="en"
-    href="https://cosmochrony.org/science/spectral/program/o17/"/>
+    href="https://cosmochrony.org/science/spectral/program/o17/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Admissibilité au niveau des fibres à partir des blocs de Weil conjugués"/>
+    content="Indépendance exacte de blocs de la redondance brute de Gram-Schmidt dans un
+    modèle scalaire de Weil"/>
   <meta property="og:description"
-    content="O17 ferme la lacune structurelle laissée par O16 en dérivant l’observable par paire à partir de la dynamique des blocs de Weil conjugués et en montrant que r(c,q) est un artefact de normalisation."/>
+    content="Au sein d'un modèle-jouet scalaire de Weil, la redondance brute de Gram-Schmidt est
+    exactement indépendante des paramètres de bloc pour deux blocs quelconques — un fait trop
+    général pour justifier un critère de fibre spécifique aux paires conjuguées."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o17/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("fr", "/science/spectral/program/o17/index")
+    redirectIfNot("fr", "/science/spectral/program/o17/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -30,7 +37,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour vers Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -43,14 +50,13 @@
       </a>
       <div>
         <h1>
-          Admissibilité au niveau des fibres à partir des blocs de Weil conjugués :
-          dérivation structurelle de l’observable par paire
+          Indépendance exacte de blocs de la redondance brute de Gram-Schmidt dans un modèle
+          scalaire de Weil
         </h1>
         <p class="subtitle">
-          O17 prolonge <a href="../o16/index_fr">O16</a> en dérivant l’observable au niveau
-          des fibres à partir de la structure des blocs de Weil conjugués, en prouvant
-          l’égalité des exposants $\delta_{q-c}=\delta_c$, et en montrant que $r(c,q)$
-          n’est qu’un artefact de normalisation.
+          O17 prouve que, au sein d'un modèle-jouet scalaire de représentation de Weil, la
+          redondance brute de Gram&ndash;Schmidt est exactement indépendante des paramètres de
+          bloc pour deux blocs quelconques, pas seulement les blocs conjugués.
         </p>
       </div>
     </div>
@@ -58,7 +64,7 @@
       <a class="btn primary"
         href="https://doi.org/10.5281/zenodo.19299611">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
+        Retour au programme d'admissibilité spectrale
       </a>
     </div>
   </div>
@@ -66,42 +72,39 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après
-        <a href="../o16/index_fr">O16</a>. Alors que O16 identifiait l’observable correcte
-        dans le régime exact de Weil comme une observable par paire au niveau des fibres,
-        une question structurelle restait ouverte :
-        <strong>pourquoi les paires conjuguées définissent-elles la bonne classe d’observables ?</strong>
+        <a href="../o16">O16</a> propose un observable au niveau paire
+        $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n)$, construit à partir de
+        l'identité exacte de conjugaison $\rho_{q-c}=\overline{\rho_c}$, comme unité candidate
+        d'admissibilité au niveau fibre, sous condition de deux hypothèses ouvertes
+        indépendantes sur la projection non injective $\Pi$. Indépendamment de ces hypothèses,
+        O17 pose la question : pourquoi la dynamique brute de Gram&ndash;Schmidt est-elle
+        identique pour $\rho_c$ et $\rho_{q-c}$, et quelle est l'origine structurelle du facteur
+        d'amplitude $r(c,q)$ ?
       </p>
       <p>
-        O17 répond à cette question en montrant que les blocs de Weil conjugués $(c,q-c)$
-        portent la même information dynamique. Au niveau de la redondance brute de
-        Gram&ndash;Schmidt, les deux blocs sont exactement identiques lorsque les supports
-        initiaux coïncident, et structurellement équivalents dans le cas général.
+        O17 répond aux deux questions au sein d'un modèle-jouet scalaire explicitement défini.
+        Dans ce modèle, le compte de redondance brute $\tilde\sigma_c(n;b_1,b_2)$ est
+        <strong>exactement</strong> indépendant du caractère central $c$ et des deux paramètres
+        de condition initiale $(b_1,b_2)$ &mdash; non seulement égal pour les caractères
+        conjugués $c$ et $q-c$, mais identique pour deux blocs <em>quelconques</em>. La preuve
+        est purement combinatoire (invariance par translation des collisions d'étiquettes de
+        coquille sur le graphe de Cayley sous-jacent) et ne nécessite aucune identité de
+        conjugaison.
       </p>
       <p>
-        La conséquence centrale est que la seule quantité structurellement robuste est
-        l’égalité des exposants :
-        \[
-        \delta_{q-c} = \delta_c.
-        \]
-        L’observable au niveau des fibres introduite dans O16 n’est donc pas seulement
-        numériquement efficace, mais structurellement justifiée.
-      </p>
-      <p>
-        O17 montre aussi que le facteur
-        \[
-        r(c,q)=\frac{\sigma_{q-c}(n)}{\sigma_c(n)}
-        \]
-        n’est pas un invariant intrinsèque de la représentation. Il provient de la
-        normalisation interne du pipeline et n’a aucun effet sur les exposants asymptotiques.
+        Conséquence directe : pour tout observable normalisé $\sigma_c := \tilde\sigma_c/D$
+        défini au sein de ce modèle, toute sa dépendance de bloc réside entièrement dans la
+        normalisation $D$, non dans le compte brut lui-même.
       </p>
       <div class="note" role="note">
-        <strong>Portée du résultat.</strong> Cette page résume le contenu structurel de O17 :
-        identité de la dynamique conjuguée, élimination de $r(c,q)$ comme faux invariant,
-        et dérivation de l’admissibilité au niveau des fibres à partir de la structure
-        non injective de Π.
+        <strong>Note de portée.</strong> Ces résultats sont circonscrits strictement au
+        modèle-jouet propre à cet article, dont les empreintes de bloc sont de simples vecteurs
+        de base en position. Les empreintes exactes du pipeline réel
+        <a href="../o12">O12</a>/<a href="../o13">O13</a> sont des vecteurs de base en fréquence
+        indexés par un triplet générique ; aucune correspondance entre les deux modèles n'est
+        donnée ici, si bien qu'aucun de ces résultats n'est affirmé pour ce pipeline.
       </div>
     </div>
     <aside class="card">
@@ -109,119 +112,97 @@
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type de travail</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Preprint</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Sujet</div>
+        <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Admissibilité au niveau des fibres, blocs de Weil conjugués,
-            dynamique de Gram&ndash;Schmidt, artefacts de normalisation
+            Représentation de Weil, redondance de Gram&ndash;Schmidt, indépendance de bloc,
+            modèle scalaire
           </div></div>
         <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Dérivation structurelle de l’observable par paire, preuve de l’égalité
-            des exposants, et clarification du statut de $r(c,q)$
+            Indépendance exacte de bloc dans un modèle-jouet scalaire, et sa conséquence pour
+            les observables dépendant d'une normalisation
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions centrales</h2>
+    <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Identité de la dynamique conjuguée :</strong>
-        les blocs de Weil conjugués portent une dynamique brute de redondance
-        Gram&ndash;Schmidt identique sous condition d’égalité des supports, et
-        structurellement équivalente en général.
+        <strong>Identité de la dynamique brute, forme restreinte :</strong>
+        pour des blocs partageant le même support initial, $\tilde\sigma_{q-c}=\tilde\sigma_c$
+        pour toutes les coquilles, via l'identité de conjugaison $\rho_{q-c}=\overline{\rho_c}$.
       </li>
       <li>
-        <strong>Égalité des exposants :</strong>
-        $\rho_{q-c}=\overline{\rho_c}$ implique la relation structurelle exacte
-        $\delta_{q-c}=\delta_c$.
+        <strong>Indépendance de bloc, forme générale :</strong>
+        $\tilde\sigma_{c'}(n;b_1',b_2') = \tilde\sigma_c(n;b_1,b_2)$ exactement, pour
+        deux blocs <em>quelconques</em> &mdash; conjugués ou non &mdash; prouvé par un argument
+        purement combinatoire ne nécessitant aucune identité de conjugaison.
       </li>
       <li>
-        <strong>Normalisation clarifiée :</strong>
-        le facteur $r(c,q)$ dépend des paramètres de bloc et de la normalisation
-        du pipeline, non d’un invariant arithmétique intrinsèque.
+        <strong>Artefact de normalisation :</strong> toute dépendance de bloc d'un observable
+        normalisé $\sigma_c := \tilde\sigma_c/D$ provient entièrement de $D$, conséquence
+        directe de l'indépendance de bloc.
       </li>
       <li>
-        <strong>Statut quasi-jauge de $r$ :</strong>
-        $r(c,q)$ varie avec la convention de mesure mais laisse inchangés
-        les exposants asymptotiques.
-      </li>
-      <li>
-        <strong>Observable au niveau des fibres justifiée :</strong>
-        l’admissibilité se définit sur les fibres de Π, non sur les blocs individuels,
-        de sorte que les paires conjuguées constituent la bonne classe d’observables.
-      </li>
-      <li>
-        <strong>Requalification de O14&ndash;O15 :</strong>
-        les articles précédents restent corrects au niveau bloc, mais les observables
-        au niveau bloc ne capturent qu’une demi-fibre d’information.
+        <strong>Limite de portée sur la question de fibre :</strong> parce que l'indépendance de
+        bloc tient pour deux blocs <em>quelconques</em>, pas seulement conjugués, elle ne peut à
+        elle seule justifier une conclusion de même fibre spécifique aux paires conjuguées
+        &mdash; appliquée uniformément, elle placerait tout bloc dans une seule fibre.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O17 n’introduit pas une nouvelle loi de croissance. Il clarifie au contraire
-      pourquoi l’observable introduite dans <a href="../o16/index_fr">O16</a>
-      est la bonne.
+      O17 n'introduit pas de nouvelle loi de croissance, et n'établit pas que les paires
+      conjuguées sont les fibres de $\Pi$. Il répond à une question plus étroite, purement
+      mathématique, sur le modèle-jouet propre à cet article.
     </p>
     <ul>
-      <li><strong>O15 :</strong> les observables au niveau bloc ne peuvent pas retrouver l’exposant cible</li>
-      <li><strong>O16 :</strong> l’observable correcte est l’observable par paire conjuguée</li>
-      <li><strong>O17 :</strong> cette observable est imposée structurellement par Π et la dynamique conjuguée</li>
+      <li><strong>O16 :</strong> propose les paires conjuguées comme fibres, sous condition de
+        deux hypothèses ouvertes</li>
+      <li><strong>O17 :</strong> prouve que la dynamique brute sous-jacente est indépendante de
+        bloc dans un modèle-jouet scalaire &mdash; trop largement pour sélectionner
+        spécifiquement les paires conjuguées</li>
     </ul>
     <p>
-      Le déficit en $\delta$ observé auparavant se réinterprète donc comme une
-      <strong>mesure d’une demi-fibre</strong>. Le problème n’était pas une défaillance
-      de la dynamique, mais une mauvaise identification de la classe d’observables.
+      Un critère véritablement sélectif, distinguant les paires conjuguées des autres
+      appariements de blocs, n'est pas fourni ici. Si un résultat analogue d'indépendance de
+      bloc tient pour le pipeline réel, et quelle est sa normalisation réelle, reste ouvert.
     </p>
   </section>
   <section class="card">
-    <h2>Lien avec le programme Cosmochrony</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      O17 achève la transition ouverte par <a href="../o16/index_fr">O16</a>,
-      passant d’une observable par paire numériquement efficace à une observable
-      structurellement dérivée. Il stabilise ainsi la hiérarchie des observables
-      du programme d’admissibilité spectrale.
+      O17 fait suite à <a href="../o16">O16</a> sans modifier sa proposition. Il résout deux
+      questions étroites, purement mathématiques, sur la dynamique brute par bloc de Weil
+      sous-jacente à cette proposition, entièrement au sein de son propre modèle-jouet, et
+      rapporte ce que cette résolution peut et ne peut pas soutenir pour la question de fibre.
     </p>
     <p>
-      Le programme se lit désormais ainsi :
-      O12&ndash;O13 (extraction exacte des blocs), O14 (mismatch d’observable),
-      O15 (échec de dérivation au niveau bloc), O16 (observable par paire identifiée),
-      O17 (observable par paire dérivée structurellement).
-    </p>
-    <p>
-      O17 ferme ainsi la lacune logique laissée par O16 : l’observable n’est plus
-      seulement efficace, elle est désormais justifiée par la structure de la
-      représentation et de la projection.
+      Les empreintes du modèle-jouet sont de simples vecteurs de base en position ; les
+      empreintes du pipeline réel <a href="../o12">O12</a>/<a href="../o13">O13</a> sont des
+      vecteurs de base en fréquence indexés par un triplet générique. Aucun argument ici ne relie
+      les deux, si bien qu'aucun résultat d'O17 n'est affirmé pour ce pipeline.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et problème ouvert</h2>
+    <h2>Résultat actuel et directions ouvertes</h2>
     <p>
-      O17 établit que l’exposant physiquement pertinent se définit au niveau des fibres,
-      et que le seul invariant robuste pour les blocs conjugués est
-      \[
-      \delta_{q-c}=\delta_c.
-      \]
+      Au sein de son propre modèle-jouet, O17 établit l'indépendance exacte de bloc du compte de
+      redondance brute pour deux blocs quelconques, et montre que ce fait est trop général pour
+      soutenir un critère de fibre spécifique aux paires conjuguées.
     </p>
     <p>
-      Une question principale reste toutefois ouverte : pourquoi la fibre minimale de Π
-      est-elle réalisée précisément par la conjugaison
-      \[
-      c \mapsto q-c ?
-      \]
-    </p>
-    <p>
-      O17 montre que cette identification est structurellement cohérente et fortement
-      étayée, mais une dérivation à partir des premiers principes de Π reste à établir.
-    </p>
-    <p>
-      Une direction secondaire consiste à construire une normalisation canonique de
-      $\sigma$, éliminant la dépendance résiduelle aux paramètres de bloc $(b_1,b_2)$.
+      Deux directions restent ouvertes : si un résultat analogue d'indépendance de bloc tient
+      pour le compte de redondance brute du pipeline réel
+      <a href="../o12">O12</a>/<a href="../o13">O13</a>, et quelle est sa normalisation réelle ;
+      et, indépendamment, quel critère véritablement sélectif &mdash; s'il en existe un &mdash;
+      identifie spécifiquement les paires conjuguées comme les fibres de $\Pi$.
     </p>
   </section>
   <section class="card">
@@ -229,8 +210,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19299611">
-        <i>Fibre-Level Admissibility from Conjugate Weil Blocks:
-          Structural Derivation of the Pair Observable</i>.
+        <i>Exact Block-Independence of Raw Gram-Schmidt Redundancy in a Scalar Weil Model</i>.
       </a>
     </p>
   </section>

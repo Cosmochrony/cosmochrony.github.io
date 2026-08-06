@@ -5,23 +5,29 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Admissibilité fibre par fibre et doublement exact de l’exposant de paire | Cosmochrony
+    Hypothèses d'admissibilité de fibre et doublement conditionnel de l'exposant de paire
+    | Cosmochronie
   </title>
   <meta name="description"
-    content="O16 identifie l’observable dynamique correct dans le régime de Weil exact comme un observable de fibre, démontre le doublement δ → 2δ et résout le déficit δ sans modifier la loi de croissance O7."/>
+    content="O16 examine si les blocs de Weil conjugués {c,q-c} constituent les fibres de la
+    projection non injective Π, sous deux hypothèses ouvertes indépendantes, et dérive un
+    résultat conditionnel de doublement de l'exposant pour un observable de paire au niveau
+    fibre."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o16/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Admissibilité de fibre et doublement de l’exposant dans le régime de Weil exact"/>
+    content="Hypothèses d'admissibilité de fibre et doublement conditionnel de l'exposant de paire"/>
   <meta property="og:description"
-    content="O16 résout le déficit δ identifié en O15 en introduisant les observables de fibre, en démontrant le doublement de l’exposant et en rétablissant la cohérence avec l’échelle phénoménologique."/>
+    content="O16 montre que les blocs conjugués ne sont les fibres de Π que sous deux hypothèses
+    ouvertes indépendantes, et qu'un exposant de paire double conditionnellement à un rapport de
+    paire conjuguée indépendant de n."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o16/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("fr", "/science/spectral/program/o16/index")
+    redirectIfNot("fr", "/science/spectral/program/o16/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -29,7 +35,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -42,12 +48,12 @@
       </a>
       <div>
         <h1>
-          Admissibilité fibre par fibre et doublement exact de l’exposant de paire
+          Hypothèses d'admissibilité de fibre et doublement conditionnel de l'exposant de paire
         </h1>
         <p class="subtitle">
-          O16 identifie l’observable correct dans le régime de Weil exact après
-          <a href="../o15">O15</a>, en montrant que l’admissibilité est définie au niveau des fibres
-          et entraîne un doublement de l’exposant δ → 2δ.
+          O16 examine si les blocs de Weil conjugués $\{c,q-c\}$ constituent les fibres de la
+          projection non injective $\Pi$, et montre qu'un exposant de paire au niveau fibre
+          double, conditionnellement à un rapport de paire conjuguée indépendant de $n$.
         </p>
       </div>
     </div>
@@ -55,7 +61,7 @@
       <a class="btn primary"
         href="https://doi.org/10.5281/zenodo.19298427">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
+        Retour au programme d'admissibilité spectrale
       </a>
     </div>
   </div>
@@ -63,70 +69,59 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après
-        <a href="../o15">O15</a>. Alors que O15 a établi que l’observable scalaire de
-        <a href="../o7">O7</a> ne se transfère pas au régime exact des blocs de Weil
-        et a localisé l’échec au niveau de l’équation de croissance, il restait
-        une question précise :
-        <strong>quel est l’observable dynamique correct&nbsp;?</strong>
+        La représentation de Weil de $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ satisfait
+        l'identité exacte de conjugaison $\rho_{q-c} = \overline{\rho_c}$, valable pour tout
+        nombre premier $q$ et tout caractère central $c$, indépendamment de toute hypothèse sur
+        la projection non injective $\Pi$. O16 examine si les blocs conjugués $\{c,\,q-c\}$
+        constituent les fibres de $\Pi$.
       </p>
       <p>
-        O16 répond à cette question en identifiant une propriété structurelle de la projection Π :
-        <strong>la non-injectivité implique une admissibilité au niveau des fibres</strong>.
-        Chaque observable correspond non pas à un bloc de Weil isolé, mais à une paire
-        de blocs conjugués $(c, q-c)$.
+        Cette identification repose sur deux prémisses indépendantes : que $\Pi$ porte une
+        involution de parité $\Pi(x)=\Pi(-x)$, et que cette involution est réalisée, dans la
+        représentation de Weil, comme l'application de caractère $c \mapsto q-c$. Ni l'une ni
+        l'autre ne découle de l'identité de conjugaison seule, et aucune n'est dérivée de
+        principes premiers au sein du cadre Cosmochronie &mdash; toutes deux sont des hypothèses
+        ouvertes, structurellement motivées.
       </p>
       <p>
-        L’observable correct n’est donc plus la moyenne de blocs
-        $\bar{\Sigma}_n$, mais un <strong>observable de paire</strong> défini sur les fibres :
-        \[
-        \sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n).
-        \]
-      </p>
-      <p>
-        Cela entraîne immédiatement un doublement de l’exposant :
-        \[
-        \delta_{\mathrm{pair}} = 2\,\delta_c \approx 7.4,
-        \]
-        ce qui résout le déficit δ identifié en O12–O15 sans modifier la loi de croissance O6/O7.
+        Sous une hypothèse supplémentaire, distincte &mdash; qu'un observable par bloc
+        $\sigma_c(n)$ a un rapport de paire conjuguée $r(c,q) = \sigma_{q-c}(n)/\sigma_c(n)$
+        indépendant de l'indice de coquille $n$ &mdash; la pente log-log du produit au niveau
+        paire $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n)$ est exactement le
+        double de celle de $\sigma_c(n)$ : $\delta_{\mathrm{pair}} = 2\,\delta_c$, conséquence
+        algébrique directe de la dérivation d'un produit à rapport constant. Sur l'observable
+        exact par bloc du pipeline réel de <a href="../o12">O12</a>/<a href="../o13">O13</a>,
+        l'identité prouvée de bloc conjugué force ce rapport à être exactement $1$, si bien que
+        le produit au niveau paire se réduit par définition au bloc unique élevé au carré :
+        aucun phénomène de doublement distinct à y expliquer.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page donne une vue structurée du résultat.
-        La démonstration complète, la validation numérique et le statut épistémique
-        de l’interprétation en termes de fibres sont développés dans la prépublication.
+        <strong>Note de portée.</strong> Cette page résume le résultat structurel. Aucune valeur
+        numérique de l'exposant de paire, et aucune prescription O7 pour $\beta^*$, n'est
+        affirmée. La symétrie exacte des blocs conjugués et le statut épistémique complet des
+        hypothèses de fibre sont développés dans la prépublication.
       </div>
     </div>
     <aside class="card">
       <h2>Faits rapides</h2>
       <div class="kvs">
-        <div class="kv">
-          <div class="k">Auteur</div>
-          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Type</div>
-          <div class="v">Preprint</div>
-        </div>
-        <div class="kv">
-          <div class="k">Licence</div>
-          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Focus</div>
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Admissibilité de fibre, paires conjuguées, doublement de l’exposant,
-            observable exact
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Portée</div>
+            Hypothèses d'admissibilité de fibre, appariement conjugué, doublement conditionnel
+            de l'exposant
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Identification de l’observable dynamique correct dans le régime exact
-            et résolution du déficit δ sans modification de la loi de croissance
-          </div>
-        </div>
+            Deux hypothèses ouvertes indépendantes pour la structure de fibre de Π, et un
+            résultat conditionnel de doublement de l'exposant de paire
+          </div></div>
       </div>
     </aside>
   </section>
@@ -134,83 +129,90 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Observable de fibre :</strong>
-        l’admissibilité est définie sur les fibres de Π, et non sur des blocs individuels.
+        <strong>Deux hypothèses de fibre indépendantes :</strong>
+        que $\Pi$ porte une involution de parité $\Pi(x)=\Pi(-x)$, et que cette involution est
+        réalisée dans la représentation de Weil comme $c\mapsto q-c$ &mdash; ni l'une ni l'autre
+        n'étant impliquée par l'autre ou par l'identité de conjugaison prouvée.
       </li>
       <li>
-        <strong>Symétrie des blocs conjugués :</strong>
-        $\rho_{q-c} = \overline{\rho_c}$ implique une dynamique Gram–Schmidt identique
-        et $\delta_c = \delta_{q-c}$.
+        <strong>Symétrie conjuguée :</strong>
+        $\rho_{q-c} = \overline{\rho_c}$, théorie des représentations exacte et
+        inconditionnelle, indépendante de toute hypothèse sur $\Pi$.
       </li>
       <li>
-        <strong>Doublement de l’exposant :</strong>
-        $\delta_{\mathrm{pair}} = 2\,\delta_c$ découle directement de la structure de fibre.
+        <strong>Borne élémentaire :</strong>
+        $\langle\sigma_c^2\rangle \ge \langle\sigma_c\rangle^2$ pour toute suite non négative,
+        par Cauchy&ndash;Schwarz.
       </li>
       <li>
-        <strong>Résolution du déficit δ :</strong>
-        l’écart identifié en O12–O15 provient d’une mesure à une seule branche.
+        <strong>Identité de bloc conjugué sur le pipeline réel :</strong>
+        $\Sigma_n^{(c_1,c_2,c_3)} = \Sigma_n^{(-c_1,-c_2,-c_3)}$ tient exactement pour
+        l'observable de <a href="../o12">O12</a>/<a href="../o13">O13</a>, forçant le rapport de
+        paire conjuguée à être identiquement $1$ là.
       </li>
       <li>
-        <strong>Borne spectrale inférieure :</strong>
-        $\delta_{\mathrm{pair}} \ge 7.4$ est une contrainte structurelle de la représentation.
-      </li>
-      <li>
-        <strong>Clarification de la normalisation :</strong>
-        le facteur $r(c,q)$ dépend du pipeline et n’est pas un invariant structurel.
+        <strong>Doublement conditionnel de l'exposant :</strong>
+        $\delta_{\mathrm{pair}} = 2\,\delta_c$, étant donné un rapport de paire conjuguée
+        indépendant de $n$ &mdash; une conséquence algébrique, sans contenu numérique tant
+        qu'une valeur de $\delta_c$ n'est pas fournie pour un observable sourcé.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O16 ne modifie pas la loi de croissance établie en <a href="../o6">O6</a> et
-      reformulée en <a href="../o7">O7</a>. Il montre que l’observable qui y entre
-      doit être redéfini.
+      O16 ne modifie pas la loi de croissance de <a href="../o6">O6</a>/<a href="../o7">O7</a>,
+      et ne modifie pas le pipeline sous-jacent par blocs de Weil de
+      <a href="../o12">O12</a>&ndash;<a href="../o15">O15</a>. Il examine une question distincte :
+      quelle est l'unité correcte d'admissibilité &mdash; le bloc individuel, ou la paire
+      conjuguée ?
     </p>
     <ul>
-      <li><strong>O15 :</strong> observable scalaire invalide</li>
-      <li><strong>O16 :</strong> observable correct = observable de fibre</li>
+      <li><strong>O15 :</strong> la loi de croissance scalaire au niveau bloc ne se transfère
+        pas au régime de Weil exact</li>
+      <li><strong>O16 :</strong> les paires conjuguées ne sont les fibres de $\Pi$ que sous deux
+        hypothèses indépendantes et ouvertes</li>
     </ul>
     <p>
-      Le déficit δ n’est donc pas un échec dynamique, mais une erreur d’identification
-      de l’admissibilité. La structure de Π impose directement l’observable correct.
+      Trois questions sont ouvertes, non une seule, et ne doivent pas être confondues : si
+      $\Pi$ porte une involution de parité ; si cette involution est spécifiquement réalisée
+      comme $c\mapsto q-c$ dans la représentation de Weil ; et, indépendamment des deux, si un
+      observable sourcé et reproductible satisfait la prémisse de doublement pour une quantité
+      au niveau paire distincte du bloc au carré.
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochrony</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      O16 suit directement <a href="../o15">O15</a> et complète le passage des observables
-      scalaires aux observables exacts.
+      O16 fait suite aux résultats au niveau bloc de
+      <a href="../o12">O12</a>&ndash;<a href="../o15">O15</a> sans les modifier. Il propose la
+      paire conjuguée comme unité d'admissibilité au niveau fibre et dérive ce qui en découle
+      conditionnellement.
     </p>
     <p>
-      La chaîne devient :
-      O12–O13 (extraction exacte), O14 (mismatch d’observable),
-      O15 (échec de dérivation), O16 (observable correct).
-    </p>
-    <p>
-      O16 n’introduit ni nouvelle dynamique ni nouveaux domaines premiers.
-      Son rôle est structurel : identifier l’observable compatible avec Π.
+      Sur le pipeline réel <a href="../o12">O12</a>/<a href="../o13">O13</a>, échantillonner la
+      paire conjuguée ne fournit pas de données indépendantes : l'identité exacte de bloc
+      conjugué signifie qu'on calcule le même bloc au carré. Le graphe de Cayley de Heisenberg
+      fixe a également une frontière $N^{3/4}$, non la frontière en racine carrée de O7, si bien
+      qu'aucun porteur de croissance de capacité de paire reliant $\delta_{\mathrm{pair}}$ à
+      $\beta^*$ n'est défini par le corpus.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et problème ouvert</h2>
+    <h2>Résultat actuel et directions ouvertes</h2>
     <p>
-      O16 établit la borne inférieure :
-      \[
-      \delta_{\mathrm{pair}} \approx 7.4.
-      \]
+      L'identification des paires conjuguées aux fibres de $\Pi$ reste ouverte, reposant sur les
+      deux hypothèses indépendantes ci-dessus. La remarque de doublement de l'exposant est
+      conditionnelle et algébriquement valide, tenant trivialement (avec un rapport de $1$) sur
+      l'observable par bloc du pipeline réel lui-même, et non encore rattachée à un autre
+      observable sourcé.
     </p>
     <p>
-      Cependant, le spectre des paires s’étend au-delà de la plage phénoménologique
-      ($\delta > 10.6$). La borne supérieure n’est donc pas spectrale.
-    </p>
-    <p>
-      Les données indiquent qu’elle provient d’une
-      <strong>contrainte de cohérence dynamique</strong> sur la trajectoire complète $\sigma(n)$.
-    </p>
-    <p>
-      Le problème restant est donc :
-      quelle propriété globale de la relaxation sélectionne la fenêtre admissible&nbsp;?
+      Une dérivation, à partir de principes premiers au sein de Cosmochronie, des deux
+      hypothèses de fibre renforcerait l'interprétation de fibre, mais ne fermerait pas à elle
+      seule le pont distinct entre capacité et taux vers $\beta^*$, ni ne fournirait un
+      observable sourcé satisfaisant la prémisse de doublement pour une quantité au niveau paire
+      distincte du bloc au carré.
     </p>
   </section>
   <section class="card">
@@ -218,7 +220,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19298427">
-        <i>Fibre Admissibility and Resolution of the Capacity Exponent Discrepancy</i>.
+        <i>Fibre Admissibility Hypotheses and Conditional Pair-Exponent Doubling</i>.
       </a>
     </p>
   </section>
@@ -226,7 +228,7 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
       <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>

@@ -8,9 +8,10 @@
     Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension
     | Cosmochrony</title>
   <meta name="description"
-    content="O13 extends the exact Weil-block computation to larger primes, rules out the strong
-    finite-size explanation of the δ–β* tension, shows monotone decrease of the exact exponent
-    from q=61 onward, and identifies the remaining issue as structural rather than numerical."/>
+    content="O13 extends the exact Weil-block computation to q=101,151,211: the exact exponent
+    sequence does not drift toward the phenomenological target at larger primes, consistent
+    with O12's exact asymptotic value δ = 3, and measurement quality improves systematically
+    with q."/>
   <link rel="alternate" hreflang="it"
     href="https://cosmochrony.org/science/spectral/program/o13/index_it.html"/>
   <link rel="alternate" hreflang="es"
@@ -25,8 +26,8 @@
     Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension"/>
   <meta property="og:description"
     content="O13 extends the exact Weil-block computation to q=101,151,211, shows no upward drift
-    of the exact exponent toward the phenomenological target range, and reclassifies the
-    remaining δ–β* mismatch as a structural issue."/>
+    of the exact exponent toward the phenomenological target range, and confirms O12's exact
+    asymptotic value δ = 3."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o13/"/>
   <script type="module">
@@ -54,9 +55,9 @@
         <h1>Asymptotic Stability of Exact Weil-Block Capacity on Heisenberg Graphs:
           Extended Prime Range, Variance Reduction, and Requalification of the δ–β* Tension</h1>
         <p class="subtitle">
-          O13 extends the exact Weil-block computation beyond <a href="../o12">O12</a>, shows
-          that the exact exponent does not drift upward at larger primes, and reclassifies the
-          remaining δ–β* mismatch as structural rather than numerical.
+          O13 extends the exact Weil-block computation of <a href="../o12">O12</a> to
+          $q \in \{101,151,211\}$: the exact exponent does not drift upward at larger primes,
+          consistent with O12's exact asymptotic value $\delta_{\mathrm{exact}} = 3$.
         </p>
       </div>
     </div>
@@ -74,32 +75,31 @@
       <h2>Overview</h2>
       <p>
         This article continues the spectral admissibility programme after
-        <a href="../o12">O12</a>. While <a href="../o12">O12</a> established that the exact
-        Weil projection yields a larger decay exponent than the proxy observable of
-        <a href="../o11">O11</a>, it still left open the most natural interpretation of the
-        mismatch with the phenomenological target for $\beta^*$: a finite-size effect at the
-        accessible primes.
+        <a href="../o12">O12</a>, which measured the exact block-wise projective capacity
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$ at $q \in \{29,53,61\}$ and derived its
+        intrinsic asymptotic exponent exactly, $\delta_{\mathrm{exact}} = 3$, as a closed-form
+        consequence of the observable's exact dependence on a projective pair $(\alpha,\beta)$.
       </p>
       <p>
-        O13 tests that hypothesis directly by extending the exact computation to
-        $q \in \{101,151,211\}$, with the $q=211$ run treated as a robustness extension under
-        reduced BFS coverage. The observable remains the exact block-wise incremental projective
-        capacity
-        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$ measured inside generic irreducible Weil
-        blocks of dimension $q$.
+        O13 extends the exact computation to $q \in \{101,151,211\}$, with the $q=211$ run
+        treated as a robustness extension under reduced BFS coverage, and analyses both
+        convergence behaviour and variance structure of the finite-$q$ fitted slopes.
       </p>
       <p>
-        The outcome is negative in a precise and scientifically useful sense: the exact exponent
-        does <em>not</em> drift upward toward the target range. Instead, the sequence
-        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ at
-        $q \in \{29,61,101,151,211\}$ decreases monotonically from $q=61$ onward, while the
-        measurement quality improves at the same time.
+        The exponent sequence
+        $\hat\delta_{\mathrm{exact}} = 4.42, 4.80, 4.51, 4.27, 3.59$ at
+        $q \in \{29,61,101,151,211\}$ exhibits a strict monotone decrease from $q=61$ onward,
+        while measurement quality improves systematically: the fitting window lengthens from 4
+        to 11 points, the inter-block variance drops from $V_n^{\max}=5.20$ to $0.30$, and
+        $R^2 > 0.993$ throughout. No fitting strategy across this range produces
+        $\delta_\infty > 5.0$, consistent with O12's exact closed-form value
+        $\delta_\infty = \delta_{\mathrm{exact}} = 3$.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured overview. The complete
-        technical analysis, including the extended exact runs, the fit-window diagnostics, the
-        variance law $V_n^{\max}(q)$, and the requalification of the δ–β* tension, is presented
-        in the preprint linked above.
+        technical analysis &mdash; the extended exact runs, the fit-window diagnostics, the
+        variance law $V_n^{\max}(q)$, and the connection to O12's closed-form asymptotic exponent
+        &mdash; is presented in the preprint linked above.
       </div>
     </div>
     <aside class="card">
@@ -119,13 +119,12 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Exact Weil blocks, larger primes, asymptotic trend, δ–β* tension</div>
+          <div class="v">Exact Weil blocks, larger primes, asymptotic stability</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
           <div class="v">
-            Extended exact extraction, variance reduction, finite-size test, and structural
-            reclassification of the exact/proxy mismatch
+            Extended exact extraction, variance reduction, and block-by-block universality
           </div>
         </div>
       </div>
@@ -141,9 +140,8 @@
       </li>
       <li>
         <strong>Absence of upward drift:</strong> the exact exponent sequence
-        $\hat{\delta}_{\mathrm{exact}} = 4.42, 4.80, 4.52, 4.27, 3.59$ shows a strict decrease
-        from $q = 61$ onward rather than any drift toward the phenomenological range
-        $[7.4,10.6]$.
+        $\hat\delta_{\mathrm{exact}} = 4.42, 4.80, 4.51, 4.27, 3.59$ shows a strict decrease
+        from $q = 61$ onward, consistent with the exact asymptotic value derived in O12.
       </li>
       <li>
         <strong>Improving measurement quality:</strong> the fitting window grows from 4 to
@@ -161,42 +159,39 @@
         rapidly as the prime grows.
       </li>
       <li>
-        <strong>Finite-size hypothesis rejected:</strong> the strong version of the O12
-        interpretation is ruled out: larger primes do not move the exact observable toward the
-        phenomenological target.
-      </li>
-      <li>
-        <strong>Structural mismatch isolated:</strong> the remaining problem is identified as the
-        exact-block relation $\delta \mapsto \beta^*$, not as a numerical or finite-size issue.
+        <strong>Consistency with the exact asymptotic value:</strong> no fitting strategy across
+        the tested range produces $\delta_\infty > 5.0$, matching O12's independently derived
+        closed-form result $\delta_{\mathrm{exact}} = 3$.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O13 shows that the tension identified in <a href="../o12">O12</a> survives precisely in
-      the regime where the measurement becomes cleaner. This is the decisive point: as the
-      fitting windows lengthen, the variance falls, and the exact exponent does not rise toward
-      the phenomenological target. On the contrary, it decreases.
+      O13 shows that the finite-$q$ fitted slopes identified in <a href="../o12">O12</a> behave
+      exactly as crossover statistics should: as the fitting windows lengthen and the variance
+      falls, the fitted exponent does not stabilise at its largest observed value. It decreases,
+      tracking the exact asymptotic value derived independently in O12.
     </p>
     <ul>
       <li>
         <a href="../o11"><strong>O11</strong></a> established the proxy-level Weil-block
-        observable and found a decay exponent around $\hat{\delta}_{\mathrm{cap}} \approx 3.39$.
+        observable and found a decay exponent around $\hat\delta_{\mathrm{cap}} \approx 3.39$.
       </li>
       <li>
         <a href="../o12"><strong>O12</strong></a> replaced the proxy by the exact Weil
-        projection and revealed a regime shift to $\hat{\delta}_{\mathrm{exact}} \approx 4.3$--$4.8$.
+        projection, measured finite-$q$ slopes $\hat\delta_{\mathrm{exact}} \approx 4.3$&ndash;$4.8$,
+        and derived the intrinsic asymptotic exponent exactly, $\delta_{\mathrm{exact}}=3$.
       </li>
       <li>
-        <strong>O13</strong> tests whether that shift disappears at larger primes and shows that
-        it does not. The mismatch is therefore structural rather than numerical.
+        <strong>O13</strong> tests whether the finite-$q$ slopes drift toward a larger value at
+        bigger primes and finds instead that they decrease, consistent with O12's exact value.
       </li>
     </ul>
     <p>
-      In this picture, the central coordinate $\gamma$ is not a small correction to the proxy
-      dynamics. It remains dynamically active, affects the exact observable class, and forces a
-      revision of the proxy-level map from decay exponent to cascade exponent.
+      The central coordinate $\gamma$, already shown in O12 to be algebraically inert for this
+      observable, plays no role in this trend: the decrease is a direct signature of the
+      finite-$q$ crossover statistics converging to the exact closed-form asymptote.
     </p>
   </section>
   <section class="card">
@@ -217,32 +212,25 @@
       <a href="../o12">O12</a> implements the exact Weil-block observable.
     </p>
     <p>
-      The present paper is the first in the series to falsify an explicit rescue hypothesis of the
-      exact-block regime. It does not merely extend the computation: it shows that the remaining
-      discrepancy with phenomenology is intrinsic to the exact observable and must now be
-      addressed at the structural level.
+      The present paper extends O12's finite-$q$ measurement and confirms, over a wider prime
+      range and with improving measurement quality, the asymptotic value that O12 derives
+      independently in closed form. The separate question of how the block-level capacity
+      exponent relates to the cascade exponent $\beta^*$ is addressed downstream, beginning with
+      <a href="../o15">O15</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open problem</h2>
+    <h2>Current outcome</h2>
     <p>
-      Propagated through the O7 relation
-      $\beta^* = 1 / (\delta + \tfrac{1}{2})$, the present data imply values around
-      $\beta^* \approx 0.19$ at $q=151$, $\beta^* \approx 0.24$ at $q=211$, and
-      $\beta^* \approx 0.24$--$0.26$ under log-linear extrapolation, all well above the target
-      window $\beta^* \in (0.09, 0.13)$.
+      The exact exponent sequence measured across $q \in \{29,61,101,151,211\}$ decreases
+      monotonically from $q=61$ onward and does not exceed $\delta_\infty > 5.0$ under any tested
+      fitting strategy &mdash; directly consistent with O12's independently derived closed-form
+      asymptotic value $\delta_{\mathrm{exact}} = 3$.
     </p>
     <p>
-      O13 therefore closes the strong finite-size explanation and leaves a more precise open
-      problem: how must the structural relation $\delta \mapsto \beta^*$ be reformulated in the
-      exact-block setting, where the observable is normalised by $|S_n|$ and retains the central
-      phase through $\gamma$?
-    </p>
-    <p>
-      The next step of the programme is therefore not simply larger-prime numerics, but a
-      theoretical rederivation of the exact-block map from projective-capacity decay to the
-      cascade exponent. Larger primes remain useful as robustness checks, but they are no longer
-      the primary conceptual bottleneck.
+      The separate question of how this block-level capacity exponent connects to the cascade
+      exponent $\beta^*$ is not addressed by extending the prime range further; it is taken up
+      structurally starting with <a href="../o15">O15</a>.
     </p>
   </section>
   <section class="card">

@@ -5,18 +5,22 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Fibre-Level Admissibility from Conjugate Weil Blocks:
-    Structural Derivation of the Pair Observable | Cosmochrony
+    Exact Block-Independence of Raw Gram-Schmidt Redundancy in a Scalar Weil Model | Cosmochrony
   </title>
   <meta name="description"
-    content="O17 derives the fibre-level pair observable from the structure of conjugate Weil blocks, proves equality of conjugate exponents, and shows that the factor r(c,q) is a normalisation artefact rather than a structural invariant."/>
+    content="O17 proves that, within a scalar Weil-representation toy model, the raw Gram-Schmidt
+    redundancy count is exactly independent of the character and initial-condition parameters
+    for any two blocks whatsoever, not only conjugate ones — a result scoped to that toy model,
+    not shown to extend to the real O12/O13 pipeline."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o17/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Fibre-Level Admissibility from Conjugate Weil Blocks"/>
+    content="Exact Block-Independence of Raw Gram-Schmidt Redundancy in a Scalar Weil Model"/>
   <meta property="og:description"
-    content="O17 closes the structural gap left by O16 by deriving the pair observable from conjugate Weil dynamics and showing that r(c,q) is a normalisation artefact."/>
+    content="Within a scalar Weil toy model, raw Gram-Schmidt redundancy is exactly independent
+    of block parameters for any two blocks — too broad a fact to license a same-fibre criterion
+    for conjugate pairs specifically."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o17/"/>
@@ -43,13 +47,12 @@
       </a>
       <div>
         <h1>
-          Fibre-Level Admissibility from Conjugate Weil Blocks:
-          Structural Derivation of the Pair Observable
+          Exact Block-Independence of Raw Gram-Schmidt Redundancy in a Scalar Weil Model
         </h1>
         <p class="subtitle">
-          O17 follows <a href="../o16">O16</a> by deriving the fibre-level observable
-          from the structure of conjugate Weil blocks, proving exponent equality
-          $\delta_{q-c}=\delta_c$, and showing that $r(c,q)$ is only a normalisation artefact.
+          O17 proves that, within a scalar Weil-representation toy model, raw Gram&ndash;Schmidt
+          redundancy is exactly independent of block parameters for any two blocks whatsoever,
+          not only conjugate ones.
         </p>
       </div>
     </div>
@@ -67,38 +70,34 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral admissibility programme after
-        <a href="../o16">O16</a>. While O16 identified the correct observable in the
-        exact Weil regime as a fibre-level pair observable, it left open a structural
-        question: <strong>why do conjugate pairs define the correct observable class?</strong>
+        <a href="../o16">O16</a> proposes a pair-level observable
+        $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\,\sigma_{q-c}(n)$, built from the exact
+        conjugation identity $\rho_{q-c}=\overline{\rho_c}$, as a candidate fibre-level unit of
+        admissibility, conditional on two independent open hypotheses about the non-injective
+        projection $\Pi$. Independently of those hypotheses, O17 asks: why is the raw
+        Gram&ndash;Schmidt dynamics identical for $\rho_c$ and $\rho_{q-c}$, and what is the
+        structural origin of the amplitude factor $r(c,q)$?
       </p>
       <p>
-        O17 answers this by showing that conjugate Weil blocks $(c,q-c)$ carry the same
-        dynamical information. At the level of raw Gram&ndash;Schmidt redundancy, the two
-        blocks are exactly identical when the initial supports coincide, and structurally
-        equivalent in general.
+        O17 answers both questions within an explicitly defined scalar toy model. Within that
+        model, the raw redundancy count $\tilde\sigma_c(n;b_1,b_2)$ is <strong>exactly</strong>
+        independent of the central character $c$ and of both initial-condition parameters
+        $(b_1,b_2)$ &mdash; not only equal for conjugate characters $c$ and $q-c$, but identical
+        for <em>any</em> two blocks whatsoever. The proof is purely combinatorial
+        (translation-invariance of shell-label collisions on the underlying Cayley graph) and
+        needs no conjugation identity.
       </p>
       <p>
-        The central consequence is that the unique structurally robust quantity is the
-        equality of exponents:
-        \[
-        \delta_{q-c} = \delta_c.
-        \]
-        The fibre-level observable introduced in O16 is therefore not just numerically
-        successful, but structurally justified.
-      </p>
-      <p>
-        O17 also shows that the factor
-        \[
-        r(c,q)=\frac{\sigma_{q-c}(n)}{\sigma_c(n)}
-        \]
-        is not an intrinsic invariant of the representation. It comes from the internal
-        normalisation of the pipeline and has no effect on asymptotic exponents.
+        A direct consequence: for any normalised observable $\sigma_c := \tilde\sigma_c/D$
+        defined within this model, all of its block-dependence resides entirely in the
+        normalisation $D$, not in the raw count itself.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural content of O17:
-        identity of conjugate dynamics, elimination of $r(c,q)$ as a false invariant,
-        and derivation of fibre-level admissibility from the non-injective structure of Π.
+        <strong>Scope statement.</strong> These results are scoped strictly to this paper's own
+        toy model, whose block fingerprints are single position-basis vectors. The real
+        <a href="../o12">O12</a>/<a href="../o13">O13</a> pipeline's fingerprints are
+        frequency-basis vectors indexed by a generic triple; no map between the two models is
+        given here, so none of these results is asserted for that pipeline.
       </div>
     </div>
     <aside class="card">
@@ -111,13 +110,12 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Fibre-level admissibility, conjugate Weil blocks,
-            Gram&ndash;Schmidt dynamics, normalisation artefacts
+            Weil representation, Gram&ndash;Schmidt redundancy, block-independence, scalar model
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            Structural derivation of the pair observable, proof of exponent equality,
-            and clarification of the status of $r(c,q)$
+            Exact block-independence in a scalar toy model, and its consequence for
+            normalisation-dependent observables
           </div></div>
       </div>
     </aside>
@@ -126,95 +124,75 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Identity of conjugate dynamics:</strong>
-        conjugate Weil blocks carry identical raw Gram&ndash;Schmidt redundancy dynamics
-        under equal support, and structurally equivalent dynamics in general.
+        <strong>Identity of raw dynamics, restricted form:</strong>
+        for blocks sharing the same initial support, $\tilde\sigma_{q-c}=\tilde\sigma_c$ for all
+        shells, via the conjugation identity $\rho_{q-c}=\overline{\rho_c}$.
       </li>
       <li>
-        <strong>Exponent equality:</strong>
-        $\rho_{q-c}=\overline{\rho_c}$ implies the exact structural relation
-        $\delta_{q-c}=\delta_c$.
+        <strong>Block-independence, general form:</strong>
+        $\tilde\sigma_{c'}(n;b_1',b_2') = \tilde\sigma_c(n;b_1,b_2)$ exactly, for
+        <em>any</em> two blocks &mdash; conjugate or not &mdash; proved by a purely combinatorial
+        argument needing no conjugation identity.
       </li>
       <li>
-        <strong>Normalisation clarified:</strong>
-        the factor $r(c,q)$ depends on block parameters and pipeline normalisation,
-        not on an intrinsic arithmetic invariant.
+        <strong>Normalisation artefact:</strong> any block-dependence of a normalised observable
+        $\sigma_c := \tilde\sigma_c/D$ comes entirely from $D$, a direct consequence of
+        block-independence.
       </li>
       <li>
-        <strong>Gauge-like status of $r$:</strong>
-        $r(c,q)$ changes with the measurement convention but leaves
-        asymptotic exponents unchanged.
-      </li>
-      <li>
-        <strong>Fibre-level observable justified:</strong>
-        admissibility is defined on fibres of Π, not on individual blocks,
-        so conjugate pairs are the correct physical observable class.
-      </li>
-      <li>
-        <strong>Requalification of O14&ndash;O15:</strong>
-        the previous papers remain correct at block level, but block-level
-        observables capture only half-fibre information.
+        <strong>Scope limit on the fibre question:</strong> because block-independence holds for
+        <em>any</em> two blocks, not only conjugate ones, it cannot by itself license a
+        same-fibre conclusion for conjugate pairs specifically &mdash; applied uniformly, it
+        would place every block in one fibre.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O17 does not introduce a new growth law. Instead, it clarifies why the observable
-      introduced in <a href="../o16">O16</a> is the correct one.
+      O17 does not introduce a new growth law, and does not establish that conjugate pairs are
+      the fibres of $\Pi$. It answers a narrower, purely mathematical question about this
+      paper's own toy model.
     </p>
     <ul>
-      <li><strong>O15:</strong> block-level observables cannot recover the target exponent</li>
-      <li><strong>O16:</strong> the correct observable is the conjugate-pair observable</li>
-      <li><strong>O17:</strong> this observable is structurally imposed by Π and conjugate dynamics</li>
+      <li><strong>O16:</strong> proposes conjugate pairs as fibres, conditional on two open
+        hypotheses</li>
+      <li><strong>O17:</strong> proves the underlying raw dynamics is block-independent in a
+        scalar toy model &mdash; too broadly to select conjugate pairs specifically</li>
     </ul>
     <p>
-      The earlier δ-deficit is therefore reinterpreted as a
-      <strong>half-fibre measurement</strong>. The issue was not a failure of dynamics,
-      but a misidentification of the observable class.
+      A genuinely selective criterion, distinguishing conjugate pairs from other block pairings,
+      is not supplied here. Whether an analogous block-independence result holds for the real
+      pipeline, and what its normalisation actually is, is open.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O17 completes the transition opened by <a href="../o16">O16</a> from an empirically
-      successful pair observable to a structurally derived one. It stabilises the observable
-      hierarchy of the spectral admissibility programme.
+      O17 follows <a href="../o16">O16</a> without modifying its proposal. It resolves two
+      narrow, purely mathematical questions about the raw Weil-block dynamics underlying that
+      proposal, entirely within its own toy model, and reports what that resolution can and
+      cannot support for the fibre question.
     </p>
     <p>
-      The programme now reads:
-      O12&ndash;O13 (exact block extraction), O14 (observable mismatch),
-      O15 (block-level derivation failure), O16 (pair observable identified),
-      O17 (pair observable structurally derived).
-    </p>
-    <p>
-      O17 therefore closes the logical gap left by O16: the observable is now not only
-      effective, but justified by the representation-theoretic and projection structure.
+      The toy model's fingerprints are single position-basis vectors; the real
+      <a href="../o12">O12</a>/<a href="../o13">O13</a> pipeline's fingerprints are
+      frequency-basis vectors indexed by a generic triple. No argument here connects the two, so
+      none of O17's results is asserted for that pipeline.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open problem</h2>
+    <h2>Current outcome and open directions</h2>
     <p>
-      O17 establishes that the physically meaningful exponent is defined at the fibre level,
-      and that the only structurally robust conjugate-block invariant is
-      \[
-      \delta_{q-c}=\delta_c.
-      \]
+      Within its own toy model, O17 establishes exact block-independence of the raw redundancy
+      count for any two blocks, and shows that this fact is too broad to support a fibre
+      criterion specific to conjugate pairs.
     </p>
     <p>
-      However, one main open problem remains: why is the minimal fibre of Π realised
-      specifically by the conjugation
-      \[
-      c \mapsto q-c?
-      \]
-    </p>
-    <p>
-      O17 shows that this identification is structurally coherent and strongly supported,
-      but a derivation from first principles of Π remains to be established.
-    </p>
-    <p>
-      A secondary open direction is the construction of a canonical normalisation of
-      $\sigma$, eliminating the residual dependence on block parameters $(b_1,b_2)$.
+      Two directions remain open: whether a corresponding block-independence result holds for the
+      real <a href="../o12">O12</a>/<a href="../o13">O13</a> pipeline's raw redundancy count, and
+      what its normalisation actually is; and, independently, what genuinely selective criterion
+      &mdash; if any &mdash; identifies conjugate pairs specifically as the fibres of $\Pi$.
     </p>
   </section>
   <section class="card">
@@ -222,8 +200,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19299611">
-        <i>Fibre-Level Admissibility from Conjugate Weil Blocks:
-          Structural Derivation of the Pair Observable</i>.
+        <i>Exact Block-Independence of Raw Gram-Schmidt Redundancy in a Scalar Weil Model</i>.
       </a>
     </p>
   </section>

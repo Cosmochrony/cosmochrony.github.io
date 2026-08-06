@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Passage du scalaire au bloc et rupture de la loi δ→β* :
     pourquoi la loi de croissance O7 ne se transfère pas à la capacité exacte de Weil sur
-    graphes de Heisenberg | Cosmochrony</title>
+    graphes de Heisenberg | Cosmochronie</title>
   <meta name="description"
-    content="O15 audite la chaîne de dérivation O3–O7 après O14, prouve que la loi de
-    croissance scalaire proxy ne se transfère pas à l'observable exact bloc par bloc de Weil,
-    et localise l'écart résiduel δ–β* au niveau de l'équation de croissance."/>
+    content="O15 audite la chaîne de dérivation O3–O7, prouve que la loi de croissance scalaire
+    proxy ne se transfère pas à l'observable exact bloc par bloc de Weil, et établit une borne
+    d'agrégation conditionnelle sur l'exposant dynamique, vérifiée à q=151 et q=211."/>
   <link rel="alternate" hreflang="it"
     href="https://cosmochrony.org/science/spectral/program/o15/index_it.html"/>
   <link rel="alternate" hreflang="es"
@@ -26,14 +26,13 @@
     graphes de Heisenberg"/>
   <meta property="og:description"
     content="O15 prouve que la dérivation scalaire proxy de O7 ne se transfère pas
-    automatiquement à la capacité exacte de Weil bloc par bloc, établit un no-go
-    d'agrégation, et reformule l'écart résiduel δ–β* comme un problème calculable
-    d'équation de croissance."/>
+    automatiquement à la capacité exacte de Weil bloc par bloc, et établit une borne
+    d'agrégation conditionnelle et vérifiable, confirmée à deux des cinq premiers testés."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o15/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("fr", "/science/spectral/program/o15/index")
+    redirectIfNot("fr", "/science/spectral/program/o15/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -41,7 +40,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -57,15 +56,15 @@
           pourquoi la loi de croissance O7 ne se transfère pas à la capacité exacte de Weil sur
           graphes de Heisenberg</h1>
         <p class="subtitle">
-          O15 audite la chaîne de dérivation <a href="../o3">O3</a>–<a href="../o7">O7</a> après
-          <a href="../o14">O14</a>, prouve que la loi de croissance scalaire proxy ne se
-          transfère pas à l'observable exact de Weil bloc par bloc, et localise l'écart résiduel
-          au niveau de l'équation de croissance.
+          O15 audite la chaîne de dérivation <a href="../o3">O3</a>–<a href="../o7">O7</a>,
+          prouve que la loi de croissance scalaire proxy ne se transfère pas à l'observable exact
+          bloc par bloc de Weil, et établit une borne d'agrégation vérifiable, confirmée à
+          $q=151$ et $q=211$.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19226272">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19281420">
         Lire la prépublication
       </a>
       <a class="btn subtle" href="/science/spectral/program/">
@@ -79,33 +78,39 @@
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Cet article prolonge le programme d'admissibilité spectrale après
-        <a href="../o14">O14</a>. Alors que <a href="../o14">O14</a> avait identifié le
-        décalage de classe d'observable entre la capacité scalaire proxy de
-        <a href="../o7">O7</a> et la capacité exacte de Weil mesurée dans
-        <a href="../o12">O12</a> et <a href="../o13">O13</a>, il restait une question plus
-        précise : où, exactement, la dérivation de la loi $\delta \mapsto \beta^*$ échoue-t-elle ?
+        Cet article poursuit le programme d'admissibilité spectrale en auditant la chaîne de
+        dérivation <a href="../o3">O3</a>&ndash;<a href="../o7">O7</a> à la lumière des résultats
+        exacts par blocs de Weil de <a href="../o12">O12</a>&ndash;<a href="../o14">O14</a>. Le
+        résultat est précis : le mécanisme de rapport de masse de O3 reste intact, la dérivation
+        de la loi de croissance de O6 reste valide dans son domaine scalaire, mais le passage
+        d'un observable scalaire global à une moyenne sur les blocs exacts de Weil n'est pas
+        justifié. L'exposant $\hat\delta_{\mathrm{exact}}$ n'est donc pas automatiquement
+        l'exposant dynamique entrant dans l'équation de croissance de O6.
       </p>
       <p>
-        O15 répond à cette question en auditant la chaîne de dérivation de
-        <a href="../o3">O3</a> à <a href="../o7">O7</a>. Le résultat est net : le mécanisme de
-        hiérarchie de masse de O3 reste valable, la dérivation de la loi de croissance de O6
-        reste valable dans son domaine scalaire, mais le passage d'un observable global scalaire
-        à une moyenne sur blocs exacts de Weil n'est pas justifié. L'exposant exact
-        $\hat{\delta}_{\mathrm{exact}}$ n'est donc pas automatiquement l'exposant dynamique qui
-        entre dans l'équation de croissance de O6.
+        L'identité native de Heisenberg est $\Delta r_n = |S_n|\,\Sigma_n$. À partir de là, O15
+        dérive une identité exacte pour la redondance pondérée naturelle par bloc,
+        $R_n^{\mathrm{eff}} = \bar\Sigma_n \cdot (1+V_n)$, où $V_n$ est le rapport de variance
+        inter-blocs déjà rapporté par <a href="../o12">O12</a>/<a href="../o13">O13</a>. Cette
+        identité borne l'exposant d'agrégation,
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$, chaque fois que $\log(1+V_n)$ a
+        une pente OLS non négative en fonction de $\log n$ sur la fenêtre d'ajustement &mdash;
+        une condition vérifiable à partir des données existantes du pipeline.
       </p>
       <p>
-        L'article démontre aussi un no-go d'agrégation : aucune repondération non négative des
-        blocs exacts ne peut élever l'exposant dynamique au-dessus de l'exposant exact mesuré.
-        L'écart exact/proxy restant n'est donc plus un problème numérique, de taille finie, ni
-        de moyenne statistique. C'est un problème structurel de l'équation de croissance elle-même.
+        Cette condition vérifiable est désormais confirmée à deux des cinq premiers testés : à
+        $q=151$ et $q=211$, la pente OLS est positive (0,2842 et 0,0419 respectivement), donnant
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ aux deux
+        ($3{,}9824 \le 4{,}2666$ ; $3{,}5466 \le 3{,}5885$), alors que le cas particulier plus
+        fort, la monotonie ponctuelle, ne tient sur aucune des deux fenêtres &mdash; un test
+        authentique de la condition plus faible réellement requise. Elle reste ouverte à
+        $q\in\{29,61,101\}$.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page donne une vue structurée. L'audit complet de la
-        chaîne O3–O7, le théorème de non-transférabilité, le no-go d'agrégation, la hiérarchie
-        de notation et l'hypothèse sur la loi de croissance exacte bloc par bloc sont développés
-        dans la prépublication lié ci-dessus.
+        <strong>Note de portée.</strong> Cette page donne un aperçu structuré. L'audit complet
+        de la chaîne O3&ndash;O7, le théorème de non-transférabilité, l'identité d'agrégation et
+        sa borne conditionnelle, ainsi que les vérifications à premier fini, sont développés dans
+        la prépublication liée ci-dessus.
       </div>
     </div>
     <aside class="card">
@@ -117,160 +122,146 @@
         </div>
         <div class="kv">
           <div class="k">Type de travail</div>
-          <div class="v">Prépublication</div>
+          <div class="v">Preprint</div>
         </div>
         <div class="kv">
           <div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
         </div>
         <div class="kv">
-          <div class="k">Objet</div>
+          <div class="k">Focus</div>
           <div class="v">
-            Audit de dérivation, non-transférabilité scalaire-vers-bloc, no-go d'agrégation,
-            loi de croissance exacte bloc par bloc
+            Audit de dérivation, non-transférabilité scalaire-vers-bloc, borne d'agrégation
+            conditionnelle
           </div>
         </div>
         <div class="kv">
           <div class="k">Portée</div>
           <div class="v">
-            Localisation théorique de l'écart résiduel δ–β* après O14, avec hiérarchie
-            d'observables exacts bloc par bloc et programme suivant sur l'équation de croissance
+            Localisation théorique de l'écart δ&ndash;β*, avec une borne d'agrégation vérifiable
+            confirmée à deux des cinq premiers testés
           </div>
         </div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions centrales</h2>
+    <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Audit de la chaîne O3–O7 :</strong> O15 décompose la dérivation en ses étapes
-        logiques et montre que O3 reste valable, tandis que O6 ne reste valable que dans le cadre
+        <strong>Audit de la chaîne O3&ndash;O7 :</strong> O15 sépare la dérivation en ses étapes
+        logiques et montre que O3 reste valide, tandis que O6 ne reste valide que dans le cadre
         scalaire pour lequel il a été dérivé.
       </li>
       <li>
-        <strong>Théorème de non-transférabilité :</strong> l'exposant
-        $\hat{\delta}_{\mathrm{exact}}$ extrait de la moyenne exacte
-        $\bar{\Sigma}_n = (q-1)^{-1}\sum_c \Sigma_n^{(c)}$ n'est pas, en général, l'exposant
-        dynamique qui contrôle la loi de croissance de $p(n)$.
+        <strong>Théorème de non-transférabilité :</strong> l'exposant $\hat\delta_{\mathrm{exact}}$
+        extrait de la moyenne exacte par bloc
+        $\bar\Sigma_n = (q-1)^{-1}\sum_c \Sigma_n^{(c)}$ n'est pas, en général, l'exposant
+        dynamique contrôlant la loi de croissance de $p(n)$.
       </li>
       <li>
-        <strong>No-go d'agrégation :</strong> aucun choix de poids dynamiques non négatifs sur les
-        blocs exacts de Weil ne peut produire $\alpha_{\mathrm{dyn}} >
-        \hat{\delta}_{\mathrm{exact}}$. Une meilleure moyenne ou une meilleure pondération ne
-        peut donc pas restaurer le régime phénoménologique cible.
+        <strong>Identité d'agrégation exacte :</strong> la redondance pondérée naturelle par bloc
+        satisfait exactement $R_n^{\mathrm{eff}} = \bar\Sigma_n \cdot (1+V_n)$, où $V_n$ est le
+        rapport de variance inter-blocs.
       </li>
       <li>
-        <strong>Hiérarchie stricte de notation :</strong> l'article distingue
-        $\hat{\delta}_{\mathrm{exact}}$, $\alpha_{\mathrm{dyn}}$, $\delta_{\mathrm{eff}}$ et
-        $\sigma(q)$, évitant toute confusion entre exposant scalaire proxy et exposant exact bloc
-        par bloc.
+        <strong>Borne d'agrégation conditionnelle :</strong>
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ tient chaque fois que
+        $\log(1+V_n)$ a une pente OLS non négative &mdash; une condition vérifiable, non une
+        hypothèse sur des poids arbitraires.
       </li>
       <li>
-        <strong>Hypothèse de loi de croissance exacte :</strong> O15 formule une loi de
-        croissance effective sous normalisation bloc par bloc, mais marque explicitement son
-        facteur $1/q$ et la traduction associée au niveau des exposants comme conjecturaux et non
-        démontrés.
+        <strong>Vérification à premier fini :</strong> la condition vérifiable tient à $q=151$ et
+        $q=211$ (pentes OLS positives, cas monotone ponctuel échouant aux deux), donnant un test
+        authentique de la condition plus faible réellement requise ; ouverte à $q\in\{29,61,101\}$.
       </li>
       <li>
-        <strong>Conclusion structurelle :</strong> l'écart exact/proxy restant n'est plus un
-        problème de classe d'observable. Il est localisé au niveau de l'équation de croissance et
-        de l'observable dynamique exact qui doit remplacer la quantité scalaire de O7.
+        <strong>Conclusion structurelle :</strong> l'écart résiduel exact/proxy est localisé au
+        niveau de l'équation de croissance et de l'observable dynamique exact qui devrait
+        remplacer la quantité scalaire de O7, non au niveau de l'agrégation des blocs.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O15 ne rouvre ni la question de la taille finie fermée par <a href="../o13">O13</a>, ni la
-      correction de classe d'observable établie dans <a href="../o14">O14</a>. Il demande au
-      contraire si la dérivation de O7 elle-même survit lorsque l'observable scalaire proxy est
-      remplacé par la capacité exacte de Weil bloc par bloc.
+      O15 ne rouvre pas la question de taille finie close par <a href="../o13">O13</a>. Il
+      demande plutôt si la dérivation de O7 elle-même survit lorsque l'observable scalaire proxy
+      est remplacé par la capacité exacte par bloc de Weil.
     </p>
     <ul>
       <li>
-        <a href="../o12"><strong>O12</strong></a> a introduit l'observable exact de Weil bloc
-        par bloc et trouvé un exposant de décroissance plus élevé que l'exposant proxy.
+        <a href="../o12"><strong>O12</strong></a> a introduit l'observable exact par bloc de Weil
+        et dérivé exactement son exposant asymptotique intrinsèque.
       </li>
       <li>
-        <a href="../o13"><strong>O13</strong></a> a montré que cette différence persiste
-        asymptotiquement et n'est pas un artefact de taille finie.
+        <a href="../o13"><strong>O13</strong></a> a confirmé cette valeur sur une plage étendue
+        de nombres premiers.
       </li>
       <li>
-        <a href="../o14"><strong>O14</strong></a> a corrigé le décalage au niveau de
-        l'observable, mais a montré que l'exposant corrigé ne retrouvait toujours pas la fenêtre
-        phénoménologique cible.
-      </li>
-      <li>
-        <strong>O15</strong> démontre que cet échec ne peut pas être réparé par agrégation des
-        blocs et doit être traité au niveau de l'observable dynamique entrant dans la loi de
-        croissance.
+        <strong>O15</strong> prouve que la loi de croissance de O7 ne se transfère pas au cadre
+        exact par bloc sous sa forme scalaire naïve, et donne une borne vérifiable et
+        conditionnelle sur ce que l'agrégation des blocs seule peut faire varier l'exposant
+        dynamique.
       </li>
     </ul>
     <p>
-      Le basculement conceptuel majeur est donc le suivant : on passe d'une correction
-      d'observable à une correspondance dynamique. La bonne question n'est plus
-      ``quel exposant exact doit remplacer l'exposant proxy ?'' mais
-      ``quel observable exact bloc par bloc entre réellement dans l'équation de croissance de
-      $p(n)$ ?''
+      Le glissement conceptuel clé va de la correction d'observable à la correspondance
+      dynamique : la question n'est plus « quel exposant exact doit remplacer le proxy ? » mais
+      « quel observable exact par bloc entre réellement dans l'équation de croissance de
+      $p(n)$, et sous quelle condition l'agrégation le borne-t-elle ? »
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochrony</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      O15 suit directement <a href="../o14">O14</a>. L'admissibilité spectrale, la capacité, la
-      rigidité et la stratigraphie définissent l'ossature spectrale de la théorie.
-      <a href="../o1">O1</a> rétablit l'ordre via la dynamique projective,
+      O15 audite la chaîne O3&ndash;O7 à la lumière de <a href="../o12">O12</a>&ndash;<a
+      href="../o14">O14</a>. Admissibilité spectrale, capacité, rigidité et stratigraphie
+      définissent l'ossature spectrale de la théorie.
+      <a href="../o1">O1</a> restaure l'ordre via la dynamique projective,
       <a href="../o3">O3</a> amplifie la hiérarchie via la croissance de valence,
-      <a href="../o4">O4</a> contraint l'exposant de cascade à partir du flux relationnel borné,
-      <a href="../o5">O5</a> localise l'échec des mécanismes au niveau des sommets,
-      <a href="../o6">O6</a> démontre le no-go pour les empreintes de dimension finie fixe,
+      <a href="../o4">O4</a> contraint l'exposant de cascade par le flux relationnel borné,
+      <a href="../o5">O5</a> localise l'échec des mécanismes au niveau sommet,
+      <a href="../o6">O6</a> démontre le no-go pour les fingerprints de dimension finie fixe,
       <a href="../o7">O7</a> reformule l'observable en termes de capacité projective,
       <a href="../o8">O8</a> identifie la compression géométrique sur les graphes LPS,
-      <a href="../o9">O9</a> la supprime en passant à la géométrie de Heisenberg à croissance
-      polynomiale, <a href="../o10">O10</a> isole le goulet dense-sketch,
-      <a href="../o11">O11</a> rétablit l'observabilité au niveau proxy représentationnel,
-      <a href="../o12">O12</a> met en place l'observable exact de Weil bloc par bloc,
-      <a href="../o13">O13</a> clôt l'explication par taille finie, et
-      <a href="../o14">O14</a> isole le décalage de classe d'observable.
+      <a href="../o9">O9</a> supprime cette compression en passant à la géométrie de Heisenberg
+      à croissance polynomiale, <a href="../o10">O10</a> isole le goulot d'étranglement des
+      sketches denses, <a href="../o11">O11</a> restaure l'observabilité au niveau proxy de la
+      représentation, <a href="../o12">O12</a> met en œuvre l'observable exact par bloc de Weil,
+      <a href="../o13">O13</a> confirme sa valeur asymptotique, et <a href="../o14">O14</a>
+      diagnostique le décalage de classe d'observable.
     </p>
     <p>
-      Le présent article est le pont dérivationnel entre la mesure exacte et la loi de cascade.
-      Il n'ajoute pas de nouvelles plages de nombres premiers. Son but est de déterminer si la
-      loi de O7 reliant exposant de décroissance et exposant de cascade survit dans le régime
-      exact bloc par bloc. Sa réponse est négative dans sa forme scalaire naïve.
+      Le présent article constitue le pont dérivationnel entre la mesure exacte et la loi de
+      cascade. Sa réponse est négative pour la forme scalaire naïve de la relation de O7, mais il
+      fournit une voie vérifiable &mdash; la borne d'agrégation &mdash; sur laquelle s'appuient
+      les articles en aval, à commencer par <a href="../o16">O16</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et problème ouvert</h2>
+    <h2>Résultat actuel</h2>
     <p>
-      Le principal résultat négatif de O15 est structurel : avant même toute modélisation
-      détaillée de la loi de croissance exacte bloc par bloc, le no-go d'agrégation implique
-      $\alpha_{\mathrm{dyn}} \le \hat{\delta}_{\mathrm{exact}} < 5.0$ sur la plage actuellement
-      testée. Comme la cible phénoménologique exige un exposant effectif de décroissance bien
-      plus grand, aucun raffinement fondé uniquement sur la repondération des blocs ne peut
-      restaurer la loi de O7.
+      La borne d'agrégation $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ est vérifiée,
+      via sa condition de pente OLS, à $q=151$ et $q=211$ ; elle reste ouverte à
+      $q\in\{29,61,101\}$. Aux deux premiers vérifiés, la borne tient même si le cas particulier
+      plus fort, la monotonie ponctuelle, échoue &mdash; une illustration décisive que c'est la
+      condition vérifiable, et non la condition suffisante plus forte, que l'identité
+      d'agrégation exige réellement.
     </p>
     <p>
-      O15 transforme donc la tension restante en programme calculable. La prochaine étape
-      consiste à extraire directement l'observable dynamique exact $R_n^{\mathrm{eff}}$ à partir
-      des données bloc par bloc de O12/O13, à tester le scénario conservatif dans lequel la forme
-      fonctionnelle de O7 survit, puis, si ce scénario échoue, à dériver la correction
-      structurelle $\sigma(q)$ à partir de la structure même des blocs de Weil.
-    </p>
-    <p>
-      Le problème ouvert restant est ainsi localisé avec précision : qu'est-ce qui remplace
-      l'observable scalaire proxy de O7 dans l'équation de croissance exacte bloc par bloc de
-      Weil ?
+      Le problème ouvert restant est ce qui remplace l'observable scalaire proxy de O7 dans
+      l'équation de croissance exacte par bloc de Weil, et si la condition vérifiable de la borne
+      d'agrégation s'étend aux trois premiers où elle n'a pas encore été testée.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.19226272" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.19281420" rel="noopener">
         <i lang="en">Observable-Class Derivation Mismatch and the Heisenberg Transfer No-Go: From Proxy Capacity to Block-Level Span Dynamics</i>.
-        Prépublication.
+        Preprint.
       </a>
     </p>
   </section>

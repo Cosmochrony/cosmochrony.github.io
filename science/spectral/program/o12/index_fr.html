@@ -7,9 +7,10 @@
   <title>Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
     résolution de la dernière obstruction à l'extraction de δ | Cosmochronie</title>
   <meta name="description"
-    content="O12 remplace le proxy de O11 par la projection exacte de Weil sur des graphes de Cayley
-    de Heisenberg, mesure l'exposant exact de décroissance de la capacité projective, confirme
-    le décalage de régime exact/proxy et identifie la coordonnée centrale γ comme dynamiquement active."/>
+    content="O12 introduit la capacité projective exacte par bloc sur les graphes de Cayley de
+    Heisenberg et dérive exactement son exposant asymptotique intrinsèque, δ = 3, indépendant de
+    la coordonnée centrale γ ; les pentes ajustées à q fini sont des statistiques de transition
+    de la distribution de profondeur de saturation des blocs."/>
   <link rel="alternate" hreflang="it"
     href="https://cosmochrony.org/science/spectral/program/o12/index_it.html"/>
   <link rel="alternate" hreflang="es"
@@ -23,9 +24,9 @@
     content="Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
     résolution de la dernière obstruction à l'extraction de δ"/>
   <meta property="og:description"
-    content="O12 implémente la projection exacte de Weil, mesure un exposant exact de décroissance
-    autour de 4,4–4,8 aux premiers accessibles, confirme le cas B par rapport au proxy de O11,
-    et montre que la coordonnée centrale γ est dynamiquement active."/>
+    content="O12 dérive exactement l'exposant asymptotique intrinsèque, δ = 3, et montre que les
+    pentes ajustées à q fini sont des statistiques de transition, non des estimations de cet
+    exposant."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o12/index_fr.html"/>
   <script type="module">
@@ -53,10 +54,9 @@
         <h1>Capacité projective exacte par blocs de Weil sur graphes de Heisenberg :
           résolution de la dernière obstruction à l'extraction de δ</h1>
         <p class="subtitle">
-          O12 remplace la construction proxy de <a href="../o11">O11</a> par la projection exacte
-          de Weil, mesure l'exposant exact de décroissance sur les graphes de Cayley de Heisenberg
-          et montre que la coordonnée centrale $\gamma$ est dynamiquement active dans la décroissance
-          de la capacité.
+          O12 introduit la capacité projective exacte par bloc $\Sigma_n^{(c)}$ sur les graphes de
+          Cayley de Heisenberg, remplaçant la construction proxy de <a href="../o11">O11</a>, et
+          dérive exactement son exposant asymptotique intrinsèque : $\delta_{\mathrm{exact}} = 3$.
         </p>
       </div>
     </div>
@@ -74,33 +74,34 @@
       <h2>Vue d'ensemble</h2>
       <p>
         Cet article poursuit le programme d'admissibilité spectrale après l'extraction au niveau
-        proxy obtenue dans <a href="../o11">O11</a>. Alors que <a href="../o11">O11</a>
-        avait établi qu'un proxy par blocs de Weil adapté à la représentation pouvait retrouver
-        un régime de décroissance stable sur des graphes de Cayley de Heisenberg, il laissait
-        ouverte la question centrale de savoir si la projection de Weil <em>exacte</em>, conservant
-        la coordonnée centrale $\gamma$, conduirait au même exposant.
-      </p>
-      <p>
-        O12 répond à cette question en remplaçant le proxy bidimensionnel sur les coordonnées
-        abélianisées $(a,b)$ par la représentation exacte irréductible de Weil. L'observable
-        obtenu est la capacité projective incrémentale exacte par bloc
+        proxy obtenue dans <a href="../o11">O11</a>. O12 remplace le proxy bidimensionnel sur les
+        coordonnées abélianisées $(a,b)$ par la représentation exacte irréductible de Weil, en
+        conservant la coordonnée centrale $\gamma$. L'observable obtenu est la capacité
+        projective incrémentale exacte par bloc
         $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, mesurée à l'intérieur de blocs de Weil
         génériques $H_c$ de dimension $q$.
       </p>
       <p>
-        Le résultat est un décalage net de régime entre observable exact et observable proxy.
-        Aux premiers accessibles $q \in \{29,53,61\}$, l'exposant exact est systématiquement trouvé
-        dans l'intervalle $\hat{\delta}_{\mathrm{exact}} \approx 4.4$--$4.8$, bien au-dessus de la
-        valeur proxy de O11, $\hat{\delta}_{\mathrm{cap}} \approx 3.39$. L'article identifie cela
-        comme le <strong>cas B</strong> : la projection exacte de Weil produit une loi de décroissance
-        plus raide que le proxy, et cette différence est attribuée au caractère dynamiquement actif
-        de la phase centrale.
+        Une identité algébrique exacte montre que $\Sigma_n^{(c)}$ ne dépend du bloc qu'à travers
+        une paire projective $(\alpha,\beta)$ : il est donc exactement indépendant de la
+        coordonnée centrale $\gamma$ et de la coordonnée de translation $a$. Les pentes ajustées
+        à $q$ fini (trouvées à $q \in \{29,53,61\}$ dans l'intervalle
+        $\hat\delta_{\mathrm{exact}} \approx 4{,}3$&ndash;$4{,}8$) sont, par cette forme close,
+        des statistiques de transition de la distribution de profondeur de saturation des blocs
+        &mdash; pas des estimations d'un exposant asymptotique intrinsèque.
+      </p>
+      <p>
+        À partir de cette forme close, O12 dérive exactement l'exposant intrinsèque non replié,
+        valable bloc par bloc et non seulement en moyenne :
+        \[
+        \delta_{\mathrm{exact}} = 3 \qquad (q\to\infty,\ n\to\infty,\ n = o(\sqrt q)).
+        \]
       </p>
       <div class="note" role="note">
-        <strong>Note de portée.</strong> Cette page fournit un aperçu structuré. L'analyse technique
-        complète, incluant la décomposition exacte en blocs, l'algorithme de suivi du rang,
-        l'observable de cohérence $\ell_\gamma(n)$ et la tension quantitative avec la cible
-        phénoménologique sur $\beta^*$, est présentée dans la prépublication lié ci-dessus.
+        <strong>Note de portée.</strong> Cette page fournit un aperçu structuré. L'analyse
+        technique complète &mdash; la décomposition exacte en blocs, l'algorithme de suivi du
+        rang, la réduction en forme close par paire projective, et la dérivation de
+        $\delta_{\mathrm{exact}}=3$ &mdash; est présentée dans la prépublication liée ci-dessus.
       </div>
     </div>
     <aside class="card">
@@ -125,8 +126,8 @@
         <div class="kv">
           <div class="k">Portée</div>
           <div class="v">
-            Suivi exact du rang par bloc, phase métaplectique, comparaison proxy/exact
-            et conséquence pour l'exposant de cascade
+            Suivi exact du rang par bloc, réduction en forme close par paire projective, et
+            exposant asymptotique intrinsèque de la capacité
           </div>
         </div>
       </div>
@@ -137,53 +138,46 @@
     <ul>
       <li>
         <strong>Observable exact par blocs de Weil :</strong> remplacement du proxy de O11 par la
-        projection exacte irréductible de Weil, qui conserve la coordonnée centrale $\gamma$
-        et sa contribution de phase $\psi_c(\gamma + bx)$.
+        projection exacte irréductible de Weil, qui conserve la coordonnée centrale $\gamma$.
       </li>
       <li>
-        <strong>Définition exacte de la capacité incrémentale :</strong> introduction de l'observable
-        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, qui mesure les directions réellement nouvelles
+        <strong>Définition exacte de la capacité incrémentale :</strong> l'observable
+        $\Sigma_n^{(c)} = \Delta r_n^{(c)} / |S_n|$, mesurant les directions réellement nouvelles
         apportées par la coquille $S_n$ à l'intérieur d'un bloc exact de Weil $H_c$.
       </li>
       <li>
-        <strong>Première extraction exacte de l'exposant :</strong> exposants ajustés
-        $\hat{\delta}_{\mathrm{exact}} = 4.83 \pm 0.24,\ 4.40,\ 4.57$ pour
-        $q = 29,\ 53,\ 61$, avec $R^2 > 0.98$ dans tous les cas.
+        <strong>Réduction en forme close par paire projective :</strong> $\Sigma_n^{(c)}$ ne
+        dépend du bloc qu'à travers une paire projective $(\alpha,\beta)$ &mdash; une identité
+        algébrique, exactement indépendante de $\gamma$ et de la coordonnée de translation $a$.
       </li>
       <li>
-        <strong>Décalage de régime exact/proxy :</strong> confirmation systématique que
-        $\hat{\delta}_{\mathrm{exact}} > \hat{\delta}_{\mathrm{cap}}$, ce qui établit
-        le cas B de la comparaison exact/proxy.
+        <strong>Pentes à $q$ fini reclassées :</strong> les exposants de décroissance ajustés
+        $\hat\delta_{\mathrm{exact}} \approx 4{,}3$&ndash;$4{,}8$ à $q\in\{29,53,61\}$
+        ($R^2 > 0{,}98$) sont des statistiques de transition de la distribution de profondeur de
+        saturation des blocs, reproduites indépendamment par arithmétique combinatoire pure.
       </li>
       <li>
-        <strong>Mécanisme de phase centrale :</strong> introduction de l'observable de cohérence
-        $\ell_\gamma(n)$, montrant que la coordonnée centrale est dynamiquement active dans la
-        fenêtre d'ajustement et contribue à l'accélération de la saturation des blocs exacts.
+        <strong>Exposant intrinsèque dérivé exactement :</strong>
+        $\delta_{\mathrm{exact}} = 3$ quand $q\to\infty$, $n=o(\sqrt q)$, valable bloc par bloc
+        à partir de la seule croissance des coquilles de Heisenberg.
       </li>
       <li>
-        <strong>Universalité qualifiée :</strong> une loi de puissance est confirmée au niveau de
-        la moyenne, tandis qu'une universalité stricte bloc par bloc n'est pas établie, révélant
-        une hétérogénéité exacte non triviale plutôt qu'un échec du modèle.
-      </li>
-      <li>
-        <strong>Tension phénoménologique :</strong> via
-        $\beta^* = 1 / (\delta + \tfrac{1}{2})$, l'exposant exact implique
-        $\beta^* \approx 0.19$--$0.20$, en dehors de la cible de O3
-        $\beta^* \in (0.09, 0.13)$.
+        <strong>Coordonnée centrale prouvée inerte :</strong> $\gamma$ n'a aucun effet sur cet
+        observable &mdash; une conséquence algébrique de la réduction par paire projective, non
+        une coïncidence numérique.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O12 montre que la dernière ambiguïté laissée ouverte par <a href="../o11">O11</a>
-      n'est pas une correction mineure mais une différence structurelle. Les observables exact
-      et proxy ne se situent pas dans le même régime quantitatif : une fois la coordonnée centrale
-      $\gamma$ réintroduite, l'exposant de décroissance se décale vers le haut d'environ une unité.
+      O12 achève la chaîne d'extraction initiée dans <a href="../o8">O8</a>, et constitue le
+      premier article où l'exposant est mesuré dans la représentation irréductible exacte.
     </p>
     <ul>
       <li>
-        <a href="../o8"><strong>O8</strong></a> a identifié la compression géométrique sur les graphes LPS.
+        <a href="../o8"><strong>O8</strong></a> a identifié la compression géométrique sur les
+        graphes LPS.
       </li>
       <li>
         <a href="../o9"><strong>O9</strong></a> a restauré une fenêtre BFS observable en passant
@@ -198,16 +192,16 @@
         à une construction bidimensionnelle par blocs de Weil sur $(a,b)$.
       </li>
       <li>
-        <strong>O12</strong> ferme la lacune observable en mesurant la loi de décroissance dans la
-        représentation exacte irréductible et en identifiant la phase métaplectique comme mécanisme
-        derrière la divergence exact/proxy.
+        <strong>O12</strong> mesure l'observable irréductible exact et dérive son exposant
+        asymptotique intrinsèque sous forme close.
       </li>
     </ul>
     <p>
-      Dans cette image, le signal pertinent reste une loi de nouveauté décroissante, mais son taux
-      exact dépend de la structure non commutative complète du groupe de Heisenberg. La coordonnée
-      centrale n'est pas une correction passive à la dynamique proxy : elle modifie la classe de
-      décroissance observée et, par conséquent, l'exposant de cascade inféré.
+      L'écart entre les pentes ajustées à $q$ fini et la valeur proxy de O11,
+      $\hat\delta_{\mathrm{cap}} \approx 3{,}39$, est réel et reproductible, mais relève d'un
+      phénomène de transition du régime à $q$ fini plutôt que d'un décalage de l'exposant
+      asymptotique : la dépendance exacte de la capacité par bloc en $(\alpha,\beta)$ seul exclut
+      tout mécanisme de coordonnée centrale ou de cohérence comme origine.
     </p>
   </section>
   <section class="card">
@@ -224,31 +218,33 @@
       <a href="../o8">O8</a> identifie la compression géométrique sur les graphes LPS,
       <a href="../o9">O9</a> supprime cette compression en passant à la géométrie de Heisenberg
       à croissance polynomiale, <a href="../o10">O10</a> isole le goulot d'étranglement des
-      sketches denses, et <a href="../o11">O11</a> restaure l'observabilité au niveau proxy de la représentation.
+      sketches denses, et <a href="../o11">O11</a> restaure l'observabilité au niveau proxy de
+      la représentation.
     </p>
     <p>
-      Le présent article passe du niveau proxy à des données exactes au niveau représentationnel.
-      Il confirme que l'observable exact est mesurable, qu'il diffère structurellement du proxy
-      de O11, et que l'exposant obtenu produit une tension réelle lorsqu'il est propagé vers
-      l'exposant de cascade $\beta^*$. En ce sens, O12 est le premier papier de la série où
-      le programme devient quantitativement falsifiable au niveau représentationnel exact.
+      Le présent article passe du niveau proxy à des données exactes au niveau
+      représentationnel, et livre le premier exposant de capacité asymptotique exact et sous
+      forme close du programme. Son extension à une plage plus large de nombres premiers est
+      menée dans <a href="../o13">O13</a> ; la question distincte de la relation entre cet
+      exposant de niveau bloc et l'exposant de cascade $\beta^*$ est traitée en aval, à partir de
+      <a href="../o15">O15</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et problème ouvert</h2>
+    <h2>Résultat actuel</h2>
     <p>
-      La mesure exacte actuelle implique $\beta^* \approx 0.19$--$0.20$, en dehors de la plage
-      cible $\beta^* \in (0.09, 0.13)$ inférée plus tôt à partir des rapports de masse des leptons
-      chargés. Cette issue incompatible est rapportée explicitement et n'est pas supprimée par un
-      ajustement a posteriori.
+      L'exposant asymptotique intrinsèque de la capacité projective exacte par bloc est désormais
+      établi sous forme close, $\delta_{\mathrm{exact}} = 3$, indépendant de la coordonnée
+      centrale $\gamma$. Les pentes ajustées à $q$ fini rapportées ici, et étendues dans
+      <a href="../o13">O13</a>, sont comprises comme des statistiques de transition de la
+      distribution de profondeur de saturation des blocs, non comme des estimations directes de
+      cet exposant intrinsèque.
     </p>
     <p>
-      Trois interprétations restent ouvertes : les premiers accessibles sont peut-être encore trop
-      petits pour sonder le régime asymptotique ; la relation structurelle entre $\delta$ et
-      $\beta^*$ peut nécessiter une révision au niveau exact ; ou bien la cible phénoménologique
-      elle-même peut devoir être reconsidérée. La prochaine étape du programme est donc un calcul
-      exact à plus grand premier (O12-O1), destiné à trancher entre dérive de taille finie et
-      tension structurelle authentique.
+      La question restante pour le programme n'est plus l'observabilité ou la convergence
+      asymptotique de cet exposant &mdash; toutes deux désormais établies &mdash; mais quel
+      régime de l'observable au niveau bloc entre légitimement dans la dérivation O6/O7 de
+      l'exposant de cascade $\beta^*$, question abordée à partir de <a href="../o15">O15</a>.
     </p>
   </section>
   <section class="card">

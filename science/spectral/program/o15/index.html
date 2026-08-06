@@ -7,9 +7,9 @@
   <title>Observable-Class Derivation Mismatch and the Heisenberg Transfer No-Go: From Proxy Capacity to Block-Level Span Dynamics
     | Cosmochrony</title>
   <meta name="description"
-    content="O15 audits the O3–O7 derivation chain after O14, proves that the scalar proxy
-    growth law does not transfer to the exact Weil-block observable, and localises the
-    remaining δ–β* gap at the level of the growth equation rather than measurement."/>
+    content="O15 audits the O3–O7 derivation chain, proves that the scalar proxy growth law does
+    not transfer to the exact Weil-block observable, and establishes a checkable aggregation
+    bound on the dynamical exponent, verified at q=151 and q=211."/>
   <link rel="alternate" hreflang="it"
     href="https://cosmochrony.org/science/spectral/program/o15/index_it.html"/>
   <link rel="alternate" hreflang="es"
@@ -22,9 +22,9 @@
   <meta property="og:title"
     content="Observable-Class Derivation Mismatch and the Heisenberg Transfer No-Go: From Proxy Capacity to Block-Level Span Dynamics"/>
   <meta property="og:description"
-    content="O15 proves that the O7 scalar proxy derivation does not transfer automatically
-    to exact Weil-block capacity, establishes an aggregation no-go, and reframes the
-    remaining δ–β* tension as a calculable growth-equation problem."/>
+    content="O15 proves that the O7 scalar proxy derivation does not transfer automatically to
+    exact Weil-block capacity, and establishes a checkable, conditional aggregation bound on the
+    dynamical exponent, verified at two of five tested primes."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o15/"/>
   <script type="module">
@@ -51,14 +51,14 @@
       <div>
         <h1>Observable-Class Derivation Mismatch and the Heisenberg Transfer No-Go: From Proxy Capacity to Block-Level Span Dynamics</h1>
         <p class="subtitle">
-          O15 audits the <a href="../o3">O3</a>–<a href="../o7">O7</a> derivation chain after
-          <a href="../o14">O14</a>, proves that the scalar proxy growth law does not transfer to
-          the exact Weil-block observable, and localises the remaining gap at the growth equation.
+          O15 audits the <a href="../o3">O3</a>–<a href="../o7">O7</a> derivation chain, proves
+          that the scalar proxy growth law does not transfer to the exact Weil-block observable,
+          and establishes a checkable aggregation bound, verified at $q=151$ and $q=211$.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19226272">Read the preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19281420">Read the preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">
         Back to Spectral Admissibility Programme
       </a>
@@ -70,31 +70,37 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral admissibility programme after
-        <a href="../o14">O14</a>. While <a href="../o14">O14</a> identified the observable-class
-        mismatch between the scalar proxy capacity of <a href="../o7">O7</a> and the exact
-        Weil-block capacity measured in <a href="../o12">O12</a> and <a href="../o13">O13</a>,
-        it still left open a sharper question: where exactly does the derivation of the map
-        $\delta \mapsto \beta^*$ fail?
+        This article continues the spectral admissibility programme by auditing the
+        <a href="../o3">O3</a>&ndash;<a href="../o7">O7</a> derivation chain in light of the
+        exact Weil-block results of <a href="../o12">O12</a>&ndash;<a href="../o14">O14</a>.
+        The outcome is precise: the mass-ratio mechanism of O3 remains intact, the growth-law
+        derivation of O6 remains valid in its scalar domain, but the passage from a scalar
+        global observable to a mean over exact Weil blocks is not justified. The exponent
+        $\hat\delta_{\mathrm{exact}}$ is therefore not automatically the dynamic exponent
+        entering the O6 growth equation.
       </p>
       <p>
-        O15 answers that question by auditing the derivation chain from
-        <a href="../o3">O3</a> to <a href="../o7">O7</a>. The outcome is precise: the mass-ratio
-        mechanism of O3 remains intact, the growth-law derivation of O6 remains valid in its
-        scalar domain, but the passage from a scalar global observable to a mean over exact Weil
-        blocks is not justified. The exact exponent $\hat{\delta}_{\mathrm{exact}}$ is therefore
-        not automatically the dynamic exponent entering the O6 growth equation.
+        The native Heisenberg identity is $\Delta r_n = |S_n|\,\Sigma_n$. From it, O15 derives an
+        exact identity for the natural block-weighted redundancy,
+        $R_n^{\mathrm{eff}} = \bar\Sigma_n \cdot (1+V_n)$, where $V_n$ is the inter-block
+        variance ratio already reported by <a href="../o12">O12</a>/<a href="../o13">O13</a>.
+        This identity bounds the aggregation exponent,
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$, whenever $\log(1+V_n)$ has
+        non-negative OLS slope against $\log n$ over the fitting window &mdash; a condition
+        checkable from existing pipeline data.
       </p>
       <p>
-        The paper also proves an aggregation no-go: no non-negative reweighting of the exact
-        blocks can raise the dynamic exponent above the measured exact one. The remaining
-        exact/proxy gap is thus no longer a numerical, finite-size, or averaging issue. It is a
-        structural problem of the growth equation itself.
+        That checkable condition is now verified at two of the five tested primes: at $q=151$
+        and $q=211$ the OLS slope is positive (0.2842 and 0.0419 respectively), giving
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ at both
+        ($3.9824 \le 4.2666$; $3.5466 \le 3.5885$), while the stronger, pointwise-monotone
+        special case does not hold on either window &mdash; a genuine test of the weaker,
+        actually-required condition. It remains open at $q\in\{29,61,101\}$.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page gives a structured overview. The full audit of
-        the O3–O7 chain, the non-transferability theorem, the aggregation no-go, the notation
-        hierarchy, and the hypothesis on the exact-block growth law are developed in the preprint
+        the O3&ndash;O7 chain, the non-transferability theorem, the aggregation identity and its
+        conditional bound, and the finite-prime verifications are developed in the preprint
         linked above.
       </div>
     </div>
@@ -116,15 +122,14 @@
         <div class="kv">
           <div class="k">Focus</div>
           <div class="v">
-            Derivation audit, scalar-to-block non-transferability, aggregation no-go,
-            exact-block growth law
+            Derivation audit, scalar-to-block non-transferability, conditional aggregation bound
           </div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
           <div class="v">
-            Theoretical localisation of the remaining δ–β* gap after O14, with exact-block
-            observable hierarchy and next-step growth-equation programme
+            Theoretical localisation of the δ&ndash;β* gap, with a checkable aggregation bound
+            verified at two of five tested primes
           </div>
         </div>
       </div>
@@ -134,75 +139,74 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Audit of the O3–O7 chain:</strong> O15 separates the derivation into its logical
-        stages and shows that O3 remains valid, while O6 remains valid only in the scalar setting
-        for which it was derived.
+        <strong>Audit of the O3&ndash;O7 chain:</strong> O15 separates the derivation into its
+        logical stages and shows that O3 remains valid, while O6 remains valid only in the
+        scalar setting for which it was derived.
       </li>
       <li>
         <strong>Non-transferability theorem:</strong> the exponent
-        $\hat{\delta}_{\mathrm{exact}}$ extracted from the exact block mean
-        $\bar{\Sigma}_n = (q-1)^{-1}\sum_c \Sigma_n^{(c)}$ is not, in general, the dynamic
+        $\hat\delta_{\mathrm{exact}}$ extracted from the exact block mean
+        $\bar\Sigma_n = (q-1)^{-1}\sum_c \Sigma_n^{(c)}$ is not, in general, the dynamic
         exponent controlling the growth law for $p(n)$.
       </li>
       <li>
-        <strong>Aggregation no-go:</strong> no choice of non-negative dynamic weights on the exact
-        Weil blocks can produce $\alpha_{\mathrm{dyn}} > \hat{\delta}_{\mathrm{exact}}$.
-        Better averaging or reweighting cannot recover the phenomenological target regime.
+        <strong>Exact aggregation identity:</strong> the natural block-weighted redundancy
+        satisfies $R_n^{\mathrm{eff}} = \bar\Sigma_n \cdot (1+V_n)$ exactly, where $V_n$ is the
+        inter-block variance ratio.
       </li>
       <li>
-        <strong>Strict notation hierarchy:</strong> the paper distinguishes
-        $\hat{\delta}_{\mathrm{exact}}$, $\alpha_{\mathrm{dyn}}$, $\delta_{\mathrm{eff}}$, and
-        $\sigma(q)$, preventing the scalar and exact-block exponents from being conflated.
+        <strong>Conditional aggregation bound:</strong>
+        $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ holds whenever $\log(1+V_n)$ has
+        non-negative OLS slope against $\log n$ &mdash; a checkable condition, not an assumption
+        on arbitrary weights.
       </li>
       <li>
-        <strong>Exact-block growth-law hypothesis:</strong> O15 formulates an effective growth law
-        under exact-block normalisation, but explicitly marks its $1/q$ factor and associated
-        exponent-level translation as conjectural rather than proved.
+        <strong>Finite-prime verification:</strong> the checkable condition holds at $q=151$ and
+        $q=211$ (positive OLS slopes, pointwise-monotone special case failing at both), giving a
+        genuine test of the weaker, actually-required condition; open at $q\in\{29,61,101\}$.
       </li>
       <li>
-        <strong>Structural conclusion:</strong> the remaining exact/proxy gap is no longer an
-        observable-level problem. It is localised at the level of the growth equation and the
-        exact dynamic observable that should replace the O7 scalar quantity.
+        <strong>Structural conclusion:</strong> the remaining exact/proxy gap is localised at the
+        level of the growth equation and the exact dynamic observable that should replace the O7
+        scalar quantity, not at the level of block aggregation.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O15 does not reopen the finite-size question closed by <a href="../o13">O13</a>, nor the
-      observable-class correction established in <a href="../o14">O14</a>. Instead, it asks
-      whether the O7 derivation itself survives when the proxy scalar observable is replaced by
-      exact Weil-block capacity.
+      O15 does not reopen the finite-size question closed by <a href="../o13">O13</a>. Instead,
+      it asks whether the O7 derivation itself survives when the proxy scalar observable is
+      replaced by exact Weil-block capacity.
     </p>
     <ul>
       <li>
         <a href="../o12"><strong>O12</strong></a> introduced the exact Weil-block observable and
-        found a higher decay exponent than the proxy one.
+        derived its intrinsic asymptotic exponent exactly.
       </li>
       <li>
-        <a href="../o13"><strong>O13</strong></a> showed that this discrepancy persists
-        asymptotically and is not a finite-size artefact.
+        <a href="../o13"><strong>O13</strong></a> confirmed that value over an extended prime
+        range.
       </li>
       <li>
-        <a href="../o14"><strong>O14</strong></a> corrected the observable-level mismatch but
-        showed that the corrected exponent still fails to recover the phenomenological target.
-      </li>
-      <li>
-        <strong>O15</strong> proves that this failure cannot be repaired by block aggregation and
-        must instead be addressed at the level of the dynamic observable entering the growth law.
+        <strong>O15</strong> proves that the O7 growth law does not transfer to the exact-block
+        setting in its naive scalar form, and gives a checkable, conditional bound on how far
+        block aggregation alone can push the dynamic exponent.
       </li>
     </ul>
     <p>
-      The key conceptual shift is therefore from observable correction to dynamical
-      correspondence. The problem is no longer ``which exact exponent should replace the proxy
-      one?'' but ``which exact-block observable really enters the growth equation for $p(n)$?''
+      The key conceptual shift is from observable correction to dynamical correspondence: the
+      question is no longer ``which exact exponent should replace the proxy one?'' but ``which
+      exact-block observable really enters the growth equation for $p(n)$, and under what
+      condition does aggregation bound it?''
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O15 follows directly from <a href="../o14">O14</a>. Spectral admissibility, capacity,
-      rigidity, and stratigraphy define the spectral backbone of the theory.
+      O15 audits the O3&ndash;O7 chain in light of <a href="../o12">O12</a>&ndash;<a
+      href="../o14">O14</a>. Spectral admissibility, capacity, rigidity, and stratigraphy define
+      the spectral backbone of the theory.
       <a href="../o1">O1</a> restores ordering through projective dynamics,
       <a href="../o3">O3</a> amplifies the hierarchy via valence growth,
       <a href="../o4">O4</a> constrains the cascade exponent from bounded relational flux,
@@ -214,42 +218,37 @@
       geometry, <a href="../o10">O10</a> isolates the dense-sketch bottleneck,
       <a href="../o11">O11</a> restores observability at the proxy representation level,
       <a href="../o12">O12</a> implements the exact Weil-block observable,
-      <a href="../o13">O13</a> closes the finite-size explanation, and
-      <a href="../o14">O14</a> isolates the observable-class mismatch.
+      <a href="../o13">O13</a> confirms its asymptotic value, and
+      <a href="../o14">O14</a> diagnoses the observable-class mismatch.
     </p>
     <p>
       The present paper is the derivational bridge between exact measurement and the cascade law.
-      It does not add new prime ranges. Its purpose is to determine whether the O7 map from decay
-      exponent to cascade exponent survives in the exact-block regime. Its answer is negative in
-      the naive scalar form.
+      Its answer is negative for the naive scalar form of the O7 relation, but it supplies a
+      checkable route &mdash; the aggregation bound &mdash; that downstream papers, beginning with
+      <a href="../o16">O16</a>, build on.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open problem</h2>
+    <h2>Current outcome</h2>
     <p>
-      The main negative result of O15 is structural: even before any detailed modelling of the
-      exact-block growth law, the aggregation no-go implies
-      $\alpha_{\mathrm{dyn}} \le \hat{\delta}_{\mathrm{exact}} < 5.0$ over the currently tested
-      range. Since the phenomenological target requires a much larger effective decay exponent,
-      no refinement based only on block reweighting can restore the O7 relation.
+      The aggregation bound $\alpha_{\mathrm{dyn}} \le \hat\delta_{\mathrm{exact}}$ is verified,
+      via its checkable OLS-slope condition, at $q=151$ and $q=211$; it remains open at
+      $q\in\{29,61,101\}$. At both verified primes, the bound holds even though the stronger,
+      pointwise-monotone special case fails &mdash; a decisive illustration that the checkable
+      condition, not the stronger sufficient one, is what the aggregation identity actually
+      requires.
     </p>
     <p>
-      O15 therefore turns the remaining tension into a calculable programme. The next step is to
-      extract the exact dynamic observable $R_n^{\mathrm{eff}}$ directly from the O12/O13 block
-      data, test the conservative scenario in which the O7 functional form survives, and, if that
-      scenario fails, derive the structural correction $\sigma(q)$ from Weil-block structure
-      itself.
-    </p>
-    <p>
-      The remaining open problem is thus sharply localised: what replaces the scalar proxy
-      observable of O7 in the exact Weil-block growth equation?
+      The remaining open problem is what replaces the scalar proxy observable of O7 in the exact
+      Weil-block growth equation, and whether the aggregation bound's checkable condition extends
+      to the three primes where it has not yet been tested.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <a href="https://doi.org/10.5281/zenodo.19226272" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.19281420" rel="noopener">
         <i lang="en">Observable-Class Derivation Mismatch and the Heisenberg Transfer No-Go: From Proxy Capacity to Block-Level Span Dynamics</i>.
         Preprint.
       </a>

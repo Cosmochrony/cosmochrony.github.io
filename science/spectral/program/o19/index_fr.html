@@ -5,21 +5,25 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Normalisation canonique des observables de paires dans les blocs de Weil :
-    élimination de la dépendance au pipeline Gram–Schmidt | Cosmochrony
+    Normalisation canonique : les identités génériques survivent, pas l'observable
+    du pipeline réel | Cosmochronie
   </title>
   <meta name="description"
-    content="O19 explicite la normalisation du pipeline Gram–Schmidt, classe le facteur
-    d’amplitude résiduel r(c,q) et construit un observable de paire canonique indépendant
-    des conventions de calcul."/>
+    content="O19 prouve des identités génériques de Gram–Schmidt (invariance de phase,
+    égalité span-rang). Son observable canonique de paire proposé, le facteur résiduel
+    qu'il normalise, et les tests censés le classer ne sont pas établis pour le pipeline
+    réel O12/O13."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o19/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Normalisation canonique des observables de paires dans les blocs de Weil"/>
+    content="Normalisation canonique : les identités génériques survivent, pas
+    l'observable du pipeline réel"/>
   <meta property="og:description"
-    content="O19 rend explicite la normalisation du pipeline Gram–Schmidt et définit un
-    observable de paire canonique indépendant des conventions numériques."/>
+    content="Les identités génériques de Gram–Schmidt derrière O19 sont
+    correctes. Son observable canonique de paire, le facteur résiduel r(c,q) qu'il prétend
+    normaliser, et les tests de base/instance nécessaires pour le classer ne sont pas établis
+    pour le pipeline réel O12/O13."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o19/index_fr.html"/>
@@ -33,7 +37,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -46,20 +50,23 @@
       </a>
       <div>
         <h1>
-          Normalisation canonique des observables de paires dans les blocs de Weil :
-          élimination de la dépendance au pipeline Gram–Schmidt
+          Normalisation canonique : les identités génériques survivent, pas
+          l'observable du pipeline réel
         </h1>
         <p class="subtitle">
-          O19 prolonge <a href="../o18">O18</a> en rendant explicite la normalisation du pipeline
-          Gram–Schmidt, en classant le facteur d’amplitude résiduel $r(c,q)$, et en construisant
-          un observable de paire canonique indépendant des conventions de calcul.
+          O19 prouve deux identités génériques de Gram–Schmidt. Son observable
+          canonique de paire proposé &mdash; censé éliminer la dépendance au
+          pipeline de <a href="../o16">O16</a>&ndash;<a href="../o18">O18</a> &mdash; n'est pas
+          construit pour le pipeline réel O12/O13 : le facteur résiduel qu'il se
+          propose de normaliser n'y apparaît pas, et les tests nécessaires pour le classer
+          n'ont jamais été effectués.
         </p>
       </div>
     </div>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.19323720">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
+        Retour au programme d'admissibilité spectrale
       </a>
     </div>
   </div>
@@ -67,48 +74,47 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après <a href="../o18">O18</a>.
-        Alors que O18 a fixé la classe correcte d’observables au niveau des fibres, un problème
-        subsistait :
-        <strong>l’amplitude de l’observable de paire dépendait encore de la normalisation implicite
-          du pipeline Gram&ndash;Schmidt de O12/O13.</strong>
+        Cet article fait suite à <a href="../o18">O18</a> et se propose d'éliminer une
+        couche supplémentaire de dépendance à l'implémentation : l'affirmation
+        selon laquelle l'amplitude de l'observable de paire de <a href="../o16">O16</a>&ndash;<a
+        href="../o17">O17</a> dépend encore de la normalisation du pipeline Gram–Schmidt de
+        O12/O13, via un facteur entier résiduel $r(c,q)$.
       </p>
       <p>
-        O19 traite cette question sans modifier ni la classe d’observable ni l’exposant. Son rôle
-        est plus précis : supprimer la dernière dépendance aux conventions d’implémentation au
-        niveau de l’amplitude.
+        O19 prouve deux faits élémentaires et génériques sur le traceur de span de
+        Gram–Schmidt : l'incrément résiduel est invariant sous une phase globale
+        multipliant le vecteur germe, et le span cumulé est égal au rang de la matrice
+        d'orbite. Les deux tiennent pour essentiellement toute construction de Gram–Schmidt et
+        n'établissent en eux-mêmes rien sur la normalisation proposée par O19.
       </p>
       <p>
-        Le papier rend explicite le facteur de normalisation
-        \[
-        D(c,b_1,b_2,n),
-        \]
-        distingue le span cumulatif brut
-        \[
-        \Sigma^{(c)}(n)
-        \]
-        de l’observable normalisée
-        \[
-        \sigma_c(n),
-        \]
-        et identifie le facteur entier résiduel $r(c,q)$ comme un reste d’amplitude hérité du span
-        brut et propagé inchangé à l’observable.
+        La prémisse motivante échoue à l'examen : sur l'observable exact par bloc
+        de O12/O13, l'identité de triplet conjugué est exacte, si bien que le rapport que
+        l'article se propose de classer vaut identiquement $1$ &mdash; il n'y a aucun facteur
+        résiduel à normaliser sur le pipeline réel. La discussion propre de O19 sur
+        $r(c,q)$ est menée à la place sur une construction d'orbite germe à caractère
+        scalaire qui remplace le pipeline réel à ensemble de fréquences triplement
+        indexé de O12, et son facteur de normalisation $D$ est défini
+        tautologiquement par rapport à un span de référence non spécifié
+        plutôt qu'extrait de ce pipeline.
       </p>
       <p>
-        La question centrale devient alors : $r(c,q)$ est-il un artefact de base, un invariant
-        d’instance, ou une combinaison des deux ?
-      </p>
-      <p>
-        O19 introduit deux tests pour trancher cette question : une variation de base par
-        transformations unitaires de $\mathbb{C}^q$, et une variation d’instance $(b_1,b_2)$ sous
-        convention fixée. La classification obtenue détermine la forme canonique de l’observable.
+        Les deux tests de classification de l'article, faisant varier la base initiale (P2) et
+        faisant varier l'instance du bloc (P3), sont décrits et leurs résultats attendus
+        supposés, mais aucun des deux n'est effectivement réalisé : la proposition
+        d'indépendance au pipeline qui dépend de leurs résultats contient un espace
+        réservé explicite « À COMPLÉTER ». Un corollaire
+        asymptotique de loi de puissance, distinct, contredit par ailleurs le propre résultat de
+        saturation en dimension finie de l'article pour le span cumulé.
       </p>
       <div class="note" role="note">
-        <strong>Périmètre.</strong> Cette page résume O19 : normalisation explicite du pipeline,
-        distinction span/observable, classification de $r(c,q)$, et construction d’un observable
-        canonique au niveau de l’amplitude.
+        <strong>Note de portée.</strong> Cette page résume le contenu structurel de
+        O19 : deux identités génériques de Gram–Schmidt, et pourquoi
+        l'observable canonique de paire proposé par l'article, la classification par facteur
+        résiduel, et l'affirmation d'indépendance au pipeline ne sont pas établis pour le
+        pipeline réel O12/O13.
       </div>
     </div>
     <aside class="card">
@@ -116,66 +122,166 @@
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Preprint</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Normalisation canonique, observables de paires, Gram–Schmidt,
-            structure d’amplitude
+            Normalisation canonique, observables de paire, traçage de span de
+            Gram–Schmidt, structure d'amplitude
           </div></div>
         <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Classification du facteur résiduel et construction d’un observable canonique
+            Deux identités génériques d'algèbre linéaire ; l'observable
+            canonique, la classification par facteur résiduel, et l'affirmation
+            d'indépendance au pipeline restent ouvertes
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Ce qu'établit O19</h2>
     <ul>
-      <li><strong>Normalisation explicite :</strong> introduction formelle de $D(c,b_1,b_2,n)$.</li>
-      <li><strong>Distinction span/observable :</strong> séparation de $\Sigma^{(c)}(n)$ et
-        $\sigma_c(n)$.</li>
-      <li><strong>Lemme d’invariance de phase :</strong> invariance sous phase globale et dépendance
-        uniquement à l’alignement.</li>
-      <li><strong>Tests P2/P3 :</strong> séparation des dépendances de base et d’instance.</li>
-      <li><strong>Classification :</strong> artefact de base, invariant d’instance ou cas mixte.</li>
-      <li><strong>Observable canonique :</strong> construction de
-        $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$.</li>
-      <li><strong>Stabilité de l’exposant :</strong> $\delta$ inchangé dans tous les cas.</li>
+      <li>
+        <strong>Lemme d'invariance de phase :</strong>
+        l'incrément résiduel de Gram–Schmidt est invariant sous multiplication par une
+        phase globale du vecteur germe. Il s'agit d'une propriété générique de
+        l'orthogonalisation de Gram–Schmidt, non spécifique à la construction de O19.
+      </li>
+      <li>
+        <strong>Identité span&ndash;rang :</strong>
+        le span cumulé $\Sigma^{(c)}(n)$ est égal au rang de la matrice d'orbite. Là
+        encore, algèbre linéaire générique.
+      </li>
+      <li>
+        <strong>Invariance conditionnelle de la pente :</strong>
+        multiplier une véritable loi de puissance par une constante indépendante de la
+        coquille laisse inchangée sa pente log&ndash;log. Il s'agit d'une tautologie
+        algébrique ; O19 n'établit pas que ses facteurs proposés sont
+        indépendants de la coquille, ni que le pipeline réel les contient.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Ce que n'établit pas O19</h2>
+    <ul>
+      <li>
+        <strong>Le facteur résiduel motivant, sur le pipeline réel :</strong>
+        l'observable exact de O12/O13 présente l'égalité de triplet conjugué, d'où
+        un rapport $1$ ; il n'y a là rien que la discussion de O19 sur $r(c,q)$ puisse
+        normaliser. Cette discussion est menée à la place sur le modèle-jouet restreint
+        de <a href="../o17">O17</a>.
+      </li>
+      <li>
+        <strong>$D$ en tant que quantité extraite du pipeline :</strong>
+        O19 définit $D=\Sigma/\Sigma_{\mathrm{ref}}$ par rapport à un span de
+        référence non spécifié, ce qui ne met en évidence aucun facteur
+        implicite déjà présent dans O12/O13. L'article substitue également sa
+        propre construction d'orbite germe à caractère scalaire au pipeline réel à
+        ensemble de fréquences triplement indexé de O12.
+      </li>
+      <li>
+        <strong>Le corollaire asymptotique de loi de puissance :</strong>
+        la même section prouve que le span cumulé atteint $q$ et sature, puis affirme
+        séparément $\Sigma(n)\sim A\,n^{\delta}$ quand $n\to\infty$. Les deux ne
+        peuvent tenir avec un $\delta$ positif sur un groupe fini fixé.
+      </li>
+      <li>
+        <strong>Le mécanisme de phase centrale :</strong>
+        <a href="../o12">O12</a>, corrigé, prouve une insensibilité algébrique exacte
+        à la coordonnée centrale. L'explication par cohérence de phase et la
+        prescription de base métaplectique de O19 ne peuvent donc pas décrire la statistique
+        de rang de O12/O13.
+      </li>
+      <li>
+        <strong>Le test de base (P2) et le test d'instance (P3) :</strong>
+        les deux sont décrits, et leurs résultats de classification sont utilisés, mais
+        aucun n'a été réellement effectué ; ils restent étiquetés
+        comme problèmes ouverts dans le texte même de l'article. La proposition
+        d'indépendance au pipeline qui s'appuie sur eux contient une démonstration
+        explicitement marquée « À COMPLÉTER ».
+      </li>
+      <li>
+        <strong>Un observable canonique de paire indépendant des conventions de
+        pipeline :</strong>
+        puisque le facteur motivant, son extraction, et les tests de classification sont tous non
+        établis pour le pipeline réel, aucun tel observable n'est construit pour O12/O13.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O19 rend l’observable pleinement intrinsèque au niveau de l’amplitude. Le facteur $r(c,q)$
-      est isolé, classifié, et éliminé ou absorbé de manière canonique.
+      O19 ne modifie pas l'observable au niveau fibre discuté dans <a href="../o16">O16</a>,
+      <a href="../o17">O17</a> et <a href="../o18">O18</a>, et n'en élimine pas la
+      dépendance au pipeline.
     </p>
-    <p>
-      Trois niveaux sont maintenant clairement séparés :
-      $\Sigma^{(c)}(n)$, $\sigma_c(n)$ et $\delta_c$.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Rôle dans le programme</h2>
-    <p>
-      O19 complète l’étape de normalisation :
-      O16–O18 définissent l’observable, O19 le rend canonique.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Perspectives</h2>
     <ul>
-      <li><strong>O20 :</strong> sélection dynamique de la fenêtre $[7.4,10.6]$</li>
-      <li><strong>O21 :</strong> dérivation complète $\delta_{\mathrm{pair}}\to\beta^*$</li>
+      <li><strong>O16 :</strong> les blocs conjugués ne sont les fibres de $\Pi$ que sous
+        deux hypothèses indépendantes et ouvertes</li>
+      <li><strong>O17 :</strong> les blocs de Weil conjugués sont exactement indépendants
+        du bloc au sein d'un modèle-jouet scalaire, ce qui n'est pas montré pour le pipeline
+        réel</li>
+      <li><strong>O18 :</strong> l'action de Born&ndash;Infeld est paire ; cela ne
+        dérive pas la structure de fibre de $\Pi$</li>
+      <li><strong>O19 :</strong> deux identités génériques de Gram–Schmidt
+        sont prouvées ; la classification par facteur résiduel et l'observable
+        canonique ne sont pas établis pour le pipeline réel</li>
     </ul>
+    <p>
+      Le point conceptuel est que l'ensemble du programme de normalisation de O19 est motivé par
+      un facteur qui, pour commencer, n'apparaît pas sur l'observable réel de O12/O13. Son
+      analyse de $r(c,q)$ est menée sur un modèle-jouet et sur une construction d'orbite
+      germe de substitution, dont aucune n'est montrée décrire le pipeline qu'elle est
+      censée canoniser.
+    </p>
   </section>
   <section class="card">
-    <h2>Référence</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
+      O19 hérite des deux ponts ouverts laissés par <a href="../o16">O16</a> et
+      <a href="../o17">O17</a>, corrigés, et n'en ferme aucun. Il propose une construction de
+      normalisation pour un facteur résiduel dont il n'établit pas la présence sur le
+      pipeline réel.
+    </p>
+    <p>
+      Le registre du programme (voir <a href="/science/spectral/program/">programme</a>) enregistre
+      les identités génériques d'algèbre linéaire de O19 comme prouvées,
+      et son observable canonique de paire, son facteur résiduel $r(c,q)$, et son affirmation
+      d'indépendance au pipeline comme ouverts, sur le même plan que les hypothèses de
+      O16 qu'il était censé décharger.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <p>
+      Les identités génériques de Gram–Schmidt subsistent : invariance de
+      phase de l'incrément résiduel, et égalité du span cumulé avec le rang de
+      la matrice d'orbite. Le facteur résiduel, les tests de classification menés à
+      terme, et l'observable canonique indépendant du pipeline ne sont pas établis pour le
+      pipeline réel : l'algèbre linéaire générique est prouvée,
+      l'observable canonique reste ouvert.
+    </p>
+    <p>
+      Deux éléments devraient être fournis pour progresser : une extraction d'un
+      authentique facteur résiduel directement à partir du pipeline O12/O13, plutôt
+      qu'à partir d'un modèle-jouet ou d'une construction de substitution ; et une
+      réalisation effective des tests P2 et P3, plutôt qu'une classification supposée
+      de leurs résultats.
+    </p>
+    <p>
+      En aval, <a href="../o20">O20</a> et <a href="../o21">O21</a> ne doivent pas être lus
+      comme s'appuyant sur un observable canonique clos : cette étape reste ouverte,
+      exactement comme laissée par O16 et O17.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19323720">
-        Canonical Normalisation of Pair Observables in Weil Blocks
+        <i lang="en">Canonical Pair Observables in Weil Blocks: Structure of the Residual Amplitude
+          Factor and Pipeline-Independent Formulation</i>.
       </a>
     </p>
   </section>
@@ -183,7 +289,8 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

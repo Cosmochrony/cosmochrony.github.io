@@ -5,23 +5,23 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Projective Persistence and the Physical Sub-Spectrum:
-    A Dynamical Selection Criterion for the Capacity Exponent | Cosmochrony
+    A Conditional Threshold-Crossing Template: Algebra Without a Derived Window | Cosmochrony
   </title>
   <meta name="description"
-    content="O20 introduces a persistence-based admissibility criterion for the canonical pair
-    observable, selecting the physical exponent window through a threshold-crossing condition
-    tied to projective saturation."/>
+    content="O20 formulates a conditional threshold-crossing template: given a constant threshold and
+    an exact decreasing power law, crossing within a fixed shell window is algebraically equivalent to
+    an exponent interval. The map to a fibre amplitude, the inherited envelope, and the threshold
+    itself remain open; the numerical window [7.4,10.6] is not derived."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o20/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Projective Persistence and the Physical Sub-Spectrum:
-    A Dynamical Selection Criterion for the Capacity Exponent"/>
+    content="A Conditional Threshold-Crossing Template: Algebra Without a Derived Window"/>
   <meta property="og:description"
-    content="O20 formulates a persistence criterion for the canonical pair observable,
-    selecting the physical exponent window through threshold crossing and projective
-    saturation."/>
+    content="Given a constant threshold and an exact power law, crossing within a fixed window is
+    algebraically equivalent to an exponent interval. The endpoints 7.4 and 10.6 are not derived from
+    it &mdash; one is an unsupported finite-q number, the other is imported from the target it was
+    meant to explain."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o20/"/>
@@ -48,13 +48,14 @@
       </a>
       <div>
         <h1>
-          Projective Persistence and the Physical Sub-Spectrum:
-          A Dynamical Selection Criterion for the Capacity Exponent
+          A Conditional Threshold-Crossing Template: Algebra Without a Derived Window
         </h1>
         <p class="subtitle">
-          O20 follows <a href="../o19">O19</a> by introducing a persistence-based admissibility
-          criterion for the canonical pair observable, selecting the physical exponent window
-          through a threshold-crossing condition tied to projective saturation.
+          O20 follows <a href="../o19">O19</a> by formulating a threshold-crossing condition for a
+          fibre-level pair observable. Once a constant threshold and an exact power-law decay are
+          separately assumed, crossing within a fixed shell window is algebraically equivalent to an
+          exponent interval &mdash; a real, reusable template. It does not derive the threshold, the
+          amplitude map it depends on, or the endpoints $[7.4,10.6]$ themselves.
         </p>
       </div>
     </div>
@@ -71,50 +72,49 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article continues the spectral admissibility programme after
-        <a href="../o19">O19</a>. While O19 removed the last pipeline-dependent ambiguity at the
-        amplitude level, one structural problem remained open:
-        <strong>how to select the physically relevant exponent window from the canonical pair
-          observable itself.</strong>
+        This article follows <a href="../o19">O19</a> in the spectral admissibility programme. As
+        written, it inherits a canonical pair observable, a fibre pairing, and a numerical pair
+        exponent from <a href="../o16">O16</a>&ndash;<a href="../o19">O19</a>. None of these are
+        established: <a href="../o19">O19</a> does not construct a pipeline-independent canonical
+        observable, <a href="../o16">O16</a>/<a href="../o18">O18</a> leave the fibre pairing open,
+        and no sourced pair exponent near $7.44$ exists in the corrected corpus. O20's own
+        threshold-crossing analysis is nevertheless separable from that inheritance, and part of it
+        stands on its own.
       </p>
       <p>
-        O20 addresses this issue by introducing a persistence criterion. Its role is not to modify
-        the observable class, nor to change the measured exponent, but to determine which decay
-        exponents correspond to physically admissible, projectively persistent behaviour.
+        Strip the inheritance away and O20 states a conditional algebraic template. Assume, separately
+        and as hypotheses:
+      </p>
+      <ul>
+        <li>a fibre-level pair observable decaying as an exact power law,
+          $\sigma_{\mathrm{pair}}(n)=C\,n^{-\delta_{\mathrm{pair}}}$;</li>
+        <li>a constant, $n$-independent threshold $\sigma_{\mathrm{BI}}>0$;</li>
+        <li>a fixed shell window $1\lt n_0\lt n_1$;</li>
+      </ul>
+      <p>
+        then the condition that $\sigma_{\mathrm{pair}}$ crosses $\sigma_{\mathrm{BI}}$ inside
+        $[n_0,n_1]$ is algebraically equivalent to $\delta_{\mathrm{pair}}$ lying in an interval
+        determined by $C$, $\sigma_{\mathrm{BI}}$, $n_0$, and $n_1$. This equivalence is correct and is
+        the genuine content of the paper. It says nothing, by itself, about which threshold, amplitude,
+        or window are physically the right ones.
       </p>
       <p>
-        The paper starts from the canonical pair observable
-        \[
-        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)
-        \]
-        established in <a href="../o19">O19</a>, assumes a power-law decay regime
-        \[
-        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)\sim C\,n^{-\delta_{\mathrm{pair}}},
-        \]
-        and formulates a threshold-crossing condition expressing when the observable remains above
-        an effective projective saturation scale.
-      </p>
-      <p>
-        This leads to a crossing rank
-        \[
-        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}},
-        \]
-        whose admissible range defines a physical sub-spectrum of exponents.
-      </p>
-      <p>
-        The main structural outcome is that the persistence requirement selects a nontrivial window
-        of admissible decay exponents,
-        \[
-        \delta_{\mathrm{pair}}\in[7.4,10.6],
-        \]
-        thereby linking the observable-level dynamics to the phenomenological target range of the
-        programme.
+        On that question O20 supplies two further hypotheses &mdash; a map from rank increments to a
+        fibre-level Born&ndash;Infeld amplitude, and the inheritance of the Born&ndash;Infeld modal
+        envelope by that fibre observable &mdash; neither of which is derived. The threshold itself is
+        also not intrinsic as written: $A_{\max}=c_{\mathrm{BI}}/\sqrt{\lambda_n}$ depends on $n$, so
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$ is generally an $n$-dependent curve, not the constant used
+        in the crossing formula. As a result the specific numerical interval
+        $\delta_{\mathrm{pair}}\in[7.4,10.6]$ is not derived: its lower endpoint reuses the unsupported
+        finite-$q$ number $2\times3.72$, not the exact asymptotic exponent $\delta=3$ that
+        <a href="../o12">O12</a> proves, and its upper endpoint is simply imported from the
+        phenomenological $\beta$ window the construction was supposed to explain.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural content of O20:
-        persistence-based admissibility, threshold crossing for the canonical pair observable,
-        selection of the physical exponent window, and identification of the remaining external
-        ingredients of the criterion.
+        <strong>Scope statement.</strong> This page summarises the structural content of O20: a valid
+        conditional threshold-crossing template (interval inversion under stated hypotheses), and the
+        open status of the threshold, the amplitude map, the envelope-inheritance hypothesis, and the
+        numerical window $[7.4,10.6]$.
       </div>
     </div>
     <aside class="card">
@@ -127,151 +127,163 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Persistence criterion, canonical pair observable, admissible sub-spectrum,
-            projective saturation
+            Conditional threshold-crossing template, interval inversion, exponent windows
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            Threshold-crossing admissibility, exponent-window selection, and structural link to
-            the phenomenological target range
+            A valid algebraic template under stated hypotheses; the threshold, the amplitude map,
+            and the numerical window $[7.4,10.6]$ are not derived
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Core contributions</h2>
+    <h2>What O20 establishes</h2>
     <ul>
       <li>
-        <strong>Persistence criterion:</strong>
-        the paper formulates admissibility as a persistence condition for the canonical pair
-        observable, rather than as a purely descriptive fit to a decay law.
+        <strong>A conditional interval-inversion template:</strong>
+        given an exact power-law decay $\sigma_{\mathrm{pair}}(n)=C\,n^{-\delta_{\mathrm{pair}}}$, a
+        positive constant threshold $\sigma_{\mathrm{BI}}$, a fixed shell window $1\lt n_0\lt n_1$, and the
+        matching sign conditions, the statement &ldquo;$\sigma_{\mathrm{pair}}$ crosses
+        $\sigma_{\mathrm{BI}}$ within $[n_0,n_1]$&rdquo; is algebraically equivalent to
+        $\delta_{\mathrm{pair}}$ lying in an explicit interval built from $C$, $\sigma_{\mathrm{BI}}$,
+        $n_0$, $n_1$. This equivalence is correct and reusable as an abstract, explicitly hypothetical
+        ansatz &mdash; independently of whether its inputs are ever sourced.
       </li>
       <li>
-        <strong>Threshold-crossing rank:</strong>
-        it introduces a crossing rank
+        <strong>The crossing-rank form:</strong>
+        under the same hypotheses, the crossing shell is
         \[
         n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}},
         \]
-        marking the shell at which the observable reaches the effective saturation threshold.
+        an elementary and correct consequence of inverting the power law at the threshold.
       </li>
       <li>
-        <strong>Physical sub-spectrum:</strong>
-        the persistence condition selects a nontrivial admissible interval
-        \[
-        \delta_{\mathrm{pair}}\in[7.4,10.6].
-        \]
+        <strong>An explicit list of the hypotheses the template needs:</strong>
+        O20 states, rather than hides, exactly which four ingredients &mdash; the constant threshold,
+        the exact power law, and the two window endpoints &mdash; the equivalence depends on.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>What O20 does not establish</h2>
+    <ul>
+      <li>
+        <strong>Its inherited starting point:</strong>
+        there is no established canonical pair observable (<a href="../o19">O19</a>), no derived fibre
+        pairing (<a href="../o16">O16</a>/<a href="../o18">O18</a>), no sourced pair exponent near
+        $7.44$, and no unconditional aggregation no-go from <a href="../o15">O15</a>. O20 imports all
+        four as if settled.
       </li>
       <li>
-        <strong>Observable-level selection:</strong>
-        O20 is the first step in the programme where the canonical observable is used not only for
-        measurement, but also for structural selection.
+        <strong>Its own two declared hypotheses:</strong>
+        a map from rank increments to a fibre-level Born&ndash;Infeld amplitude, and the inheritance of
+        the Born&ndash;Infeld modal envelope by that fibre observable, are both stated as hypotheses and
+        neither is derived.
       </li>
       <li>
-        <strong>Projective interpretation:</strong>
-        the threshold is interpreted as an effective saturation scale associated with
-        Born&ndash;Infeld-type admissibility at the fibre level.
+        <strong>An intrinsic, constant threshold:</strong>
+        $A_{\max}=c_{\mathrm{BI}}/\sqrt{\lambda_n}$ depends on $n$, so
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$ is generally an $n$-dependent curve, not the constant
+        threshold the crossing formula requires &mdash; an internal inconsistency between the two parts
+        of the paper.
       </li>
       <li>
-        <strong>Conditional recovery of the cascade map:</strong>
-        once the exponent window is selected, the relation
-        \[
-        \beta^*=\frac{1}{\delta_{\mathrm{pair}}+\frac{1}{2}}
-        \]
-        becomes physically meaningful as a candidate fibre-level cascade law.
+        <strong>Monotonicity in $n$:</strong>
+        monotonicity of the response function $\Phi$ as a function of amplitude does not imply
+        monotonicity of $\Phi(A_n^{\mathrm{fib}})$ in $n$ unless monotonicity of the amplitude sequence
+        $A_n^{\mathrm{fib}}$ itself is separately assumed &mdash; and it is not.
       </li>
       <li>
-        <strong>Isolation of the remaining non-intrinsic ingredients:</strong>
-        O20 makes clear that the persistence criterion still depends on an external threshold
-        \(\sigma_{\mathrm{BI}}\) and on the fit amplitude \(C\).
-      </li>
-      <li>
-        <strong>Structural transition:</strong>
-        the paper shifts the programme from canonicalisation of the observable to dynamical
-        selection of the physically relevant exponent sector.
+        <strong>The numerical window $[7.4,10.6]$:</strong>
+        the lower endpoint is identified with the unsupported finite-$q$ number $2\times3.72$, not with
+        the exact asymptotic exponent $\delta=3$ that <a href="../o12">O12</a> proves; the upper
+        endpoint is imported directly from the phenomenological $\beta$ window the construction was
+        meant to explain. No value of $\sigma_{\mathrm{BI}}$, $C$, $n_0$, or $n_1$ is independently
+        derived that yields these specific endpoints.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O20 does not alter the canonical observable defined in <a href="../o19">O19</a>.
-      Instead, it assigns that observable a new role:
-      not only to represent the fibre-level dynamics canonically, but also to test which decay
-      exponents correspond to persistent physical behaviour.
+      O20 does not repair the open bridges left upstream. It adds one genuine piece of algebra on top
+      of them: a template for converting a threshold-crossing condition into an exponent interval, once
+      a threshold, a power law, and a window are all separately in hand.
     </p>
     <ul>
-      <li><strong>O16:</strong> the physically relevant observable is the conjugate-pair observable</li>
-      <li><strong>O17:</strong> conjugate Weil blocks carry identical dynamical information</li>
-      <li><strong>O18:</strong> the minimal fibre structure is derived from Born&ndash;Infeld
-        indiscernability</li>
-      <li><strong>O19:</strong> the observable is canonically normalised at the amplitude level</li>
-      <li><strong>O20:</strong> admissibility is reformulated as persistence of that canonical
-        observable</li>
+      <li><strong>O16:</strong> conjugate blocks are fibres of $\Pi$ only under two independent, open
+        hypotheses</li>
+      <li><strong>O18:</strong> the Born&ndash;Infeld action is even; this does not derive the fibre
+        structure of $\Pi$</li>
+      <li><strong>O19:</strong> no pipeline-independent canonical pair observable is constructed</li>
+      <li><strong>O20:</strong> given a constant threshold and an exact power law, crossing within a
+        fixed window is algebraically equivalent to an exponent interval &mdash; the threshold, the
+        amplitude map, and the interval's endpoints are not derived</li>
     </ul>
     <p>
-      The conceptual gain is that the exponent window is no longer introduced only as an external
-      phenomenological target. It becomes the output of a structural persistence condition applied
-      to the canonical observable itself.
-    </p>
-    <p>
-      At the same time, O20 shows precisely what remains unresolved:
-      the threshold \(\sigma_{\mathrm{BI}}\) is still external, and the crossing rank still depends
-      on the fitted amplitude \(C\). The criterion is therefore structurally meaningful, but not
-      yet intrinsic.
+      The conceptual content that survives is the shape of the argument, not its numerical output. As a
+      template, it is worth keeping on record: if a canonical pair observable, an intrinsic threshold,
+      and a sourced power law are ever independently established, this is the algebra that would turn
+      them into an exponent window. As written, none of those three inputs exist yet, so the window
+      $[7.4,10.6]$ is an illustrative instance of the template, not a physical result.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O20 occupies the transition point between observable canonicalisation and intrinsic
-      admissibility.
-      It does not revisit the fibre structure of O18 and does not modify the canonical
-      normalisation of O19. Its role is to formulate the first dynamical selection criterion for
-      the physical exponent range.
+      The programme registry records O20 as: &ldquo;Conditional threshold-crossing template. Given a
+      constant threshold and an exact decreasing power law, crossing within a fixed cascade window is
+      algebraically equivalent to an exponent interval. The map from rank increments to a fibre
+      amplitude, the inherited Born&ndash;Infeld envelope, and the threshold itself are open; the
+      numerical interval $[7.4,10.6]$ is not derived&rdquo; (structural).
     </p>
     <p>
-      The programme now reads:
-      O12&ndash;O13 (exact block extraction), O14 (observable mismatch),
-      O15 (block-level derivation failure), O16 (pair observable identified),
-      O17 (pair dynamics derived), O18 (fibre structure derived),
-      O19 (canonical amplitude normalisation), O20 (persistence criterion).
-    </p>
-    <p>
-      O20 therefore opens the admissibility step of the spectral programme.
-      After this paper, the remaining problem is no longer to define the observable correctly, but
-      to eliminate the last external ingredients of the persistence condition and derive it in a
-      fully intrinsic form.
+      O20's status stays structural rather than fully open, unlike <a href="../o21">O21</a>'s central
+      invariance claim: the interval-inversion algebra is a valid, retained abstract template, it is
+      simply not a derivation that selects $[7.4,10.6]$, or any other specific window, as physical. The
+      programme's dependency chain reads: <a href="../o12">O12</a>&ndash;<a href="../o13">O13</a>
+      (exact block extraction), <a href="../o16">O16</a> (fibre hypotheses, open),
+      <a href="../o18">O18</a> (action parity proved, fibre derivation open),
+      <a href="../o19">O19</a> (canonicalisation attempted, not constructed), O20 (conditional
+      threshold-crossing template, not a window selection).
     </p>
   </section>
   <section class="card">
     <h2>Current outcome and open directions</h2>
     <p>
-      O20 establishes that the canonical pair observable selects a physical exponent window through
-      a persistence condition. This yields a structural basis for the interval
-      \([7.4,10.6]\), and makes the \(\delta_{\mathrm{pair}}\to\beta^*\) pathway meaningful at the
-      fibre level.
+      O20 is retainable as an abstract, explicitly hypothetical threshold-crossing template, once the
+      false <a href="../o16">O16</a>&ndash;<a href="../o19">O19</a> inputs it imports are removed. It
+      does not select a physical sub-spectrum of exponents and does not establish any value near
+      $7.44$.
     </p>
     <p>
-      The result is conditional in a precise sense: the admissibility criterion still relies on an
-      externally specified saturation scale and on the fitted amplitude entering the crossing rank.
-    </p>
-    <p>
-      Two immediate follow-up directions are identified:
+      Several independent gaps would need to be closed before the template could produce a physical
+      result:
     </p>
     <ul>
       <li>
-        <strong>O21:</strong> replace the external threshold by an intrinsic crossing condition
-        defined directly from the observable
+        a canonical, pipeline-independent pair observable (open since <a href="../o16">O16</a> and
+        <a href="../o19">O19</a>)
       </li>
       <li>
-        <strong>Beyond O21:</strong> derive the persistence criterion directly from substrate
-        dynamics and Born&ndash;Infeld admissibility
+        a derived map from rank increments to a fibre-level Born&ndash;Infeld amplitude
+      </li>
+      <li>
+        a derivation that the fibre observable inherits the Born&ndash;Infeld modal envelope
+      </li>
+      <li>
+        an intrinsic, $n$-independent threshold, replacing the currently $n$-dependent
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$
+      </li>
+      <li>
+        a sourced value of the decay exponent, in place of the unsupported finite-$q$ number
+        $2\times3.72$ used for the lower endpoint
       </li>
     </ul>
     <p>
-      More broadly, an open problem is to determine whether the persistence-based selection
-      mechanism extends beyond the current Weil/Heisenberg setting and remains stable under other
-      admissible graph families.
+      Until then, $[7.4,10.6]$ should be read as an illustrative numerical instance of the template,
+      not as a derived or selected exponent window.
     </p>
   </section>
   <section class="card">

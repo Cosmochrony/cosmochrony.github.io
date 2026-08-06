@@ -5,28 +5,30 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Persistance projective et sous-spectre physique :
-    Un critère de sélection dynamique pour l’exposant de capacité | Cosmochrony
+    Un modèle conditionnel de franchissement de seuil : algèbre sans fenêtre dérivée | Cosmochronie
   </title>
   <meta name="description"
-    content="O20 introduit un critère d’admissibilité fondé sur la persistance pour l’observable paire canonique,
-    sélectionnant la fenêtre physique d’exposants via une condition de franchissement de seuil
-    liée à la saturation projective."/>
+    content="O20 formule un modèle conditionnel de franchissement de seuil : étant donné un seuil constant
+    et une loi de puissance décroissante exacte, le franchissement à l'intérieur d'une fenêtre de coquilles
+    fixe est algébriquement équivalent à un intervalle d'exposant. L'application vers une amplitude de
+    fibre, l'enveloppe héritée, et le seuil lui-même restent ouverts ; la fenêtre numérique [7.4,10.6]
+    n'est pas dérivée."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o20/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Persistance projective et sous-spectre physique :
-    Un critère de sélection dynamique pour l’exposant de capacité"/>
+    content="Un modèle conditionnel de franchissement de seuil : algèbre sans fenêtre dérivée"/>
   <meta property="og:description"
-    content="O20 formule un critère de persistance pour l’observable paire canonique,
-    sélectionnant la fenêtre physique d’exposants via une condition de franchissement de seuil."/>
+    content="Étant donné un seuil constant et une loi de puissance exacte, le franchissement à
+    l'intérieur d'une fenêtre fixe est algébriquement équivalent à un intervalle d'exposant. Les
+    extrémités 7.4 et 10.6 n'en sont pas dérivées &mdash; l'une est un nombre à q fini non étayé,
+    l'autre est importée de la cible qu'elle était censée expliquer."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o20/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-    redirectIfNot("fr", "/science/spectral/program/o20/index")
+    redirectIfNot("fr", "/science/spectral/program/o20/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -34,7 +36,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -47,20 +49,22 @@
       </a>
       <div>
         <h1>
-          Persistance projective et sous-spectre physique :
-          Un critère de sélection dynamique pour l’exposant de capacité
+          Un modèle conditionnel de franchissement de seuil : algèbre sans fenêtre dérivée
         </h1>
         <p class="subtitle">
-          O20 prolonge <a href="../o19">O19</a> en introduisant un critère d’admissibilité fondé
-          sur la persistance pour l’observable paire canonique, sélectionnant la fenêtre physique
-          des exposants via une condition de franchissement de seuil liée à la saturation projective.
+          O20 fait suite à <a href="../o19">O19</a> en formulant une condition de franchissement de
+          seuil pour un observable de paire au niveau fibre. Une fois qu'un seuil constant et une
+          décroissance exacte en loi de puissance sont supposés séparément, le franchissement à
+          l'intérieur d'une fenêtre de coquilles fixe est algébriquement équivalent à un intervalle
+          d'exposant &mdash; un modèle réel et réutilisable. Il ne dérive ni le seuil, ni l'application
+          d'amplitude dont il dépend, ni les extrémités $[7.4,10.6]$ elles-mêmes.
         </p>
       </div>
     </div>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.19339888">Lire la prépublication</a>
       <a class="btn subtle" href="/science/spectral/program/">
-        Retour au programme d’admissibilité spectrale
+        Retour au programme d'admissibilité spectrale
       </a>
     </div>
   </div>
@@ -68,50 +72,52 @@
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après
-        <a href="../o19/index_fr.html">O19</a>. Alors que O19 a supprimé la dernière ambiguïté liée au pipeline
-        au niveau de l’amplitude, un problème structurel restait ouvert :
-        <strong>comment sélectionner la fenêtre d’exposants physiquement pertinente à partir de
-          l’observable canonique elle-même.</strong>
+        Cet article fait suite à <a href="../o19">O19</a> dans le programme d'admissibilité spectrale.
+        Tel qu'il est rédigé, il hérite d'un observable de paire canonique, d'un appariement de fibre,
+        et d'un exposant de paire numérique de <a href="../o16">O16</a>&ndash;<a href="../o19">O19</a>.
+        Aucun de ces éléments n'est établi : <a href="../o19">O19</a> ne construit pas d'observable
+        canonique indépendant du pipeline, <a href="../o16">O16</a>/<a href="../o18">O18</a> laissent
+        l'appariement de fibre ouvert, et aucun exposant de paire sourcé proche de $7.44$ n'existe dans
+        le corpus corrigé. L'analyse de franchissement de seuil propre à O20 est néanmoins séparable de
+        cet héritage, et une partie de celle-ci tient par elle-même.
       </p>
       <p>
-        O20 aborde cette question en introduisant un critère de persistance. Son rôle n’est ni de
-        modifier la classe d’observables, ni de changer l’exposant mesuré, mais de déterminer quels
-        exposants correspondent à un comportement physiquement admissible et persistant.
+        Une fois cet héritage écarté, O20 énonce un modèle algébrique conditionnel. Supposons,
+        séparément et comme hypothèses :
+      </p>
+      <ul>
+        <li>un observable de paire au niveau fibre décroissant en loi de puissance exacte,
+          $\sigma_{\mathrm{pair}}(n)=C\,n^{-\delta_{\mathrm{pair}}}$ ;</li>
+        <li>un seuil constant, indépendant de $n$, $\sigma_{\mathrm{BI}}>0$ ;</li>
+        <li>une fenêtre de coquilles fixe $1\lt n_0\lt n_1$ ;</li>
+      </ul>
+      <p>
+        alors la condition selon laquelle $\sigma_{\mathrm{pair}}$ franchit $\sigma_{\mathrm{BI}}$ à
+        l'intérieur de $[n_0,n_1]$ est algébriquement équivalente au fait que $\delta_{\mathrm{pair}}$
+        appartient à un intervalle déterminé par $C$, $\sigma_{\mathrm{BI}}$, $n_0$, et $n_1$. Cette
+        équivalence est correcte et constitue le contenu véritable de l'article. Elle ne dit rien, en
+        elle-même, sur le seuil, l'amplitude, ou la fenêtre qui seraient physiquement les bons.
       </p>
       <p>
-        L’article part de l’observable paire canonique
-        \[
-        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)
-        \]
-        établie dans <a href="../o19/index_fr.html">O19</a>, suppose un régime de décroissance en loi de puissance
-        \[
-        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n)\sim C\,n^{-\delta_{\mathrm{pair}}},
-        \]
-        et formule une condition de franchissement de seuil exprimant le moment où l’observable
-        atteint une échelle effective de saturation projective.
-      </p>
-      <p>
-        Cela conduit à un rang de croisement
-        \[
-        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}},
-        \]
-        dont la variation définit un sous-spectre physique d’exposants admissibles.
-      </p>
-      <p>
-        Le résultat structurel principal est que la condition de persistance sélectionne une
-        fenêtre non triviale d’exposants,
-        \[
-        \delta_{\mathrm{pair}}\in[7.4,10.6],
-        \]
-        reliant ainsi la dynamique observable au domaine phénoménologique cible du programme.
+        Sur cette question, O20 fournit deux hypothèses supplémentaires &mdash; une application des
+        incréments de rang vers une amplitude de Born&ndash;Infeld au niveau fibre, et l'héritage de
+        l'enveloppe modale de Born&ndash;Infeld par cet observable de fibre &mdash; dont aucune n'est
+        dérivée. Le seuil lui-même n'est pas non plus intrinsèque tel qu'il est écrit :
+        $A_{\max}=c_{\mathrm{BI}}/\sqrt{\lambda_n}$ dépend de $n$, si bien que
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$ est en général une courbe dépendant de $n$, et non la
+        constante utilisée dans la formule de franchissement. En conséquence, l'intervalle numérique
+        spécifique $\delta_{\mathrm{pair}}\in[7.4,10.6]$ n'est pas dérivé : son extrémité inférieure
+        réutilise le nombre à $q$ fini non étayé $2\times3.72$, et non l'exposant asymptotique exact
+        $\delta=3$ que <a href="../o12">O12</a> démontre, et son extrémité supérieure est simplement
+        importée de la fenêtre $\beta$ phénoménologique que la construction était censée expliquer.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page résume le contenu structural de O20 :
-        critère de persistance, condition de franchissement de seuil, sélection de la fenêtre
-        d’exposants, et identification des éléments encore externes du critère.
+        <strong>Note de portée.</strong> Cette page résume le contenu structurel de O20 : un modèle
+        conditionnel valide de franchissement de seuil (inversion d'intervalle sous les hypothèses
+        énoncées), et le statut ouvert du seuil, de l'application d'amplitude, de l'hypothèse
+        d'héritage de l'enveloppe, et de la fenêtre numérique $[7.4,10.6]$.
       </div>
     </div>
     <aside class="card">
@@ -119,117 +125,189 @@
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Preprint</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Critère de persistance, observable canonique, sous-spectre admissible,
-            saturation projective
+            Modèle conditionnel de franchissement de seuil, inversion d'intervalle, fenêtres
+            d'exposant
           </div></div>
         <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Condition de franchissement de seuil, sélection d’exposants,
-            lien structurel avec la fenêtre phénoménologique
+            Un modèle algébrique valide sous les hypothèses énoncées ; le seuil, l'application
+            d'amplitude, et la fenêtre numérique $[7.4,10.6]$ ne sont pas dérivés
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Ce qu'établit O20</h2>
     <ul>
       <li>
-        <strong>Critère de persistance :</strong>
-        l’admissibilité est formulée comme une condition de persistance de l’observable paire canonique.
+        <strong>Un modèle conditionnel d'inversion d'intervalle :</strong>
+        étant donné une décroissance exacte en loi de puissance
+        $\sigma_{\mathrm{pair}}(n)=C\,n^{-\delta_{\mathrm{pair}}}$, un seuil constant positif
+        $\sigma_{\mathrm{BI}}$, une fenêtre de coquilles fixe $1\lt n_0\lt n_1$, et les conditions de signe
+        correspondantes, l'énoncé selon lequel $\sigma_{\mathrm{pair}}$ franchit $\sigma_{\mathrm{BI}}$
+        à l'intérieur de $[n_0,n_1]$ est algébriquement équivalent au fait que $\delta_{\mathrm{pair}}$
+        appartient à un intervalle explicite construit à partir de $C$, $\sigma_{\mathrm{BI}}$, $n_0$,
+        $n_1$. Cette équivalence est correcte et réutilisable comme modèle abstrait, explicitement
+        hypothétique &mdash; indépendamment du fait que ses entrées soient un jour sourcées.
       </li>
       <li>
-        <strong>Rang de franchissement :</strong>
-        introduction du rang
+        <strong>La forme en rang de franchissement :</strong>
+        sous les mêmes hypothèses, la coquille de franchissement est
         \[
-        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}}.
+        n^*=\left(\frac{C}{\sigma_{\mathrm{BI}}}\right)^{1/\delta_{\mathrm{pair}}},
         \]
+        conséquence élémentaire et correcte de l'inversion de la loi de puissance au seuil.
       </li>
       <li>
-        <strong>Sous-spectre physique :</strong>
-        sélection de la fenêtre
-        \[
-        \delta_{\mathrm{pair}}\in[7.4,10.6].
-        \]
+        <strong>Une liste explicite des hypothèses requises par le modèle :</strong>
+        O20 énonce, plutôt que de dissimuler, exactement les quatre ingrédients &mdash; le seuil
+        constant, la loi de puissance exacte, et les deux extrémités de la fenêtre &mdash; dont dépend
+        l'équivalence.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Ce que n'établit pas O20</h2>
+    <ul>
+      <li>
+        <strong>Son point de départ hérité :</strong>
+        il n'existe aucun observable de paire canonique établi (<a href="../o19">O19</a>), aucun
+        appariement de fibre dérivé (<a href="../o16">O16</a>/<a href="../o18">O18</a>), aucun exposant
+        de paire sourcé proche de $7.44$, et aucun théorème d'impossibilité d'agrégation inconditionnel
+        issu de <a href="../o15">O15</a>. O20 importe ces quatre éléments comme s'ils étaient établis.
       </li>
       <li>
-        <strong>Sélection au niveau observable :</strong>
-        première utilisation de l’observable pour sélectionner structurellement les exposants.
+        <strong>Ses deux propres hypothèses déclarées :</strong>
+        une application des incréments de rang vers une amplitude de Born&ndash;Infeld au niveau fibre,
+        et l'héritage de l'enveloppe modale de Born&ndash;Infeld par cet observable de fibre, sont
+        toutes deux énoncées comme hypothèses et aucune n'est dérivée.
       </li>
       <li>
-        <strong>Interprétation projective :</strong>
-        le seuil correspond à une saturation effective de type Born–Infeld.
+        <strong>Un seuil intrinsèque et constant :</strong>
+        $A_{\max}=c_{\mathrm{BI}}/\sqrt{\lambda_n}$ dépend de $n$, si bien que
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$ est en général une courbe dépendant de $n$, et non le
+        seuil constant qu'exige la formule de franchissement &mdash; une incohérence interne entre les
+        deux parties de l'article.
       </li>
       <li>
-        <strong>Relation de cascade :</strong>
-        \[
-        \beta^*=\frac{1}{\delta_{\mathrm{pair}}+\frac{1}{2}}.
-        \]
+        <strong>La monotonie en $n$ :</strong>
+        la monotonie de la fonction de réponse $\Phi$ en fonction de l'amplitude n'implique pas la
+        monotonie de $\Phi(A_n^{\mathrm{fib}})$ en $n$, à moins que la monotonie de la suite
+        d'amplitudes $A_n^{\mathrm{fib}}$ elle-même ne soit supposée séparément &mdash; ce qui n'est
+        pas le cas.
       </li>
       <li>
-        <strong>Identification des limites :</strong>
-        dépendance à \(\sigma_{\mathrm{BI}}\) et au paramètre \(C\).
-      </li>
-      <li>
-        <strong>Transition structurelle :</strong>
-        passage de la canonisation à la sélection dynamique.
+        <strong>La fenêtre numérique $[7.4,10.6]$ :</strong>
+        l'extrémité inférieure est identifiée au nombre à $q$ fini non étayé $2\times3.72$, et non à
+        l'exposant asymptotique exact $\delta=3$ que démontre <a href="../o12">O12</a> ; l'extrémité
+        supérieure est importée directement de la fenêtre $\beta$ phénoménologique que la construction
+        était censée expliquer. Aucune valeur de $\sigma_{\mathrm{BI}}$, $C$, $n_0$, ou $n_1$ n'est
+        dérivée indépendamment qui produise ces extrémités spécifiques.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O20 donne un rôle dynamique à l’observable canonique définie en O19.
+      O20 ne répare pas les ponts ouverts laissés en amont. Il ajoute une pièce d'algèbre authentique
+      par-dessus ceux-ci : un modèle permettant de convertir une condition de franchissement de seuil
+      en un intervalle d'exposant, une fois qu'un seuil, une loi de puissance, et une fenêtre sont tous
+      séparément en main.
     </p>
     <ul>
-      <li><strong><a href="../o19/index_fr.html">O19</a> :</strong> observable canonique</li>
-      <li><strong>O20 :</strong> admissibilité comme persistance</li>
+      <li><strong>O16 :</strong> les blocs conjugués ne sont les fibres de $\Pi$ que sous deux
+        hypothèses indépendantes et ouvertes</li>
+      <li><strong>O18 :</strong> l'action de Born&ndash;Infeld est paire ; cela ne dérive pas la
+        structure de fibre de $\Pi$</li>
+      <li><strong>O19 :</strong> aucun observable de paire canonique indépendant du pipeline n'est
+        construit</li>
+      <li><strong>O20 :</strong> étant donné un seuil constant et une loi de puissance exacte, le
+        franchissement à l'intérieur d'une fenêtre fixe est algébriquement équivalent à un intervalle
+        d'exposant &mdash; le seuil, l'application d'amplitude, et les extrémités de l'intervalle ne
+        sont pas dérivés</li>
     </ul>
     <p>
-      La fenêtre d’exposants devient le résultat d’une condition structurelle,
-      et non plus seulement une cible phénoménologique.
-    </p>
-    <p>
-      Cependant, le critère reste non intrinsèque : il dépend encore d’un seuil externe
-      et d’un paramètre d’amplitude.
+      Le contenu conceptuel qui subsiste est la forme de l'argument, non sa sortie numérique. En tant
+      que modèle, il mérite d'être conservé : si un observable de paire canonique, un seuil intrinsèque,
+      et une loi de puissance sourcée sont un jour établis indépendamment, voici l'algèbre qui les
+      transformerait en une fenêtre d'exposant. Tel qu'il est écrit, aucune de ces trois entrées
+      n'existe encore, si bien que la fenêtre $[7.4,10.6]$ est une instance illustrative du modèle, non
+      un résultat physique.
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochrony</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      O20 marque la transition vers l’admissibilité dynamique.
+      Le registre du programme consigne O20 comme suit : &laquo; Modèle conditionnel de
+      franchissement de seuil. Étant donné un seuil constant et une loi de puissance décroissante
+      exacte, le franchissement à l'intérieur d'une fenêtre de cascade fixe est algébriquement
+      équivalent à un intervalle d'exposant. L'application des incréments de rang vers une amplitude
+      de fibre, l'enveloppe héritée de Born&ndash;Infeld, et le seuil lui-même sont ouverts ;
+      l'intervalle numérique $[7.4,10.6]$ n'est pas dérivé &raquo; (structurel).
     </p>
     <p>
-      Le programme devient :
-      O16, O17, O18, O19, O20.
-    </p>
-    <p>
-      Le problème restant est désormais l’élimination des éléments externes du critère.
+      Le statut de O20 demeure structurel plutôt que totalement ouvert, contrairement à l'affirmation
+      centrale d'invariance de <a href="../o21">O21</a> : l'algèbre d'inversion d'intervalle est un
+      modèle abstrait valide et retenu, elle ne constitue simplement pas une dérivation qui sélectionne
+      $[7.4,10.6]$, ni aucune autre fenêtre spécifique, comme physique. La chaîne de dépendance du
+      programme se lit : <a href="../o12">O12</a>&ndash;<a href="../o13">O13</a> (extraction exacte de
+      bloc), <a href="../o16">O16</a> (hypothèses de fibre, ouvertes), <a href="../o18">O18</a> (parité
+      de l'action démontrée, dérivation de fibre ouverte), <a href="../o19">O19</a> (canonicalisation
+      tentée, non construite), O20 (modèle conditionnel de franchissement de seuil, non une sélection de
+      fenêtre).
     </p>
   </section>
   <section class="card">
-    <h2>Résultat et perspectives</h2>
+    <h2>Résultat actuel et directions ouvertes</h2>
     <p>
-      O20 établit une sélection structurelle de la fenêtre $[7.4,10.6]$,
-      mais de manière encore conditionnelle.
+      O20 est retenable comme modèle abstrait, explicitement hypothétique, de franchissement de seuil,
+      une fois écartées les entrées fausses héritées de <a href="../o16">O16</a>&ndash;<a
+        href="../o19">O19</a>. Il ne sélectionne pas de sous-spectre physique d'exposants et n'établit
+      aucune valeur proche de $7.44$.
+    </p>
+    <p>
+      Plusieurs lacunes indépendantes devraient être comblées avant que le modèle ne puisse produire un
+      résultat physique :
     </p>
     <ul>
-      <li>O21 : critère intrinsèque sans paramètre</li>
-      <li>Dérivation depuis la dynamique χ</li>
-      <li>Universalité</li>
+      <li>
+        un observable de paire canonique, indépendant du pipeline (ouvert depuis
+        <a href="../o16">O16</a> et <a href="../o19">O19</a>)
+      </li>
+      <li>
+        une application dérivée des incréments de rang vers une amplitude de Born&ndash;Infeld au
+        niveau fibre
+      </li>
+      <li>
+        une dérivation établissant que l'observable de fibre hérite de l'enveloppe modale de
+        Born&ndash;Infeld
+      </li>
+      <li>
+        un seuil intrinsèque, indépendant de $n$, remplaçant le
+        $\sigma_{\mathrm{BI}}=\Phi(A_{\max})$ actuellement dépendant de $n$
+      </li>
+      <li>
+        une valeur sourcée de l'exposant de décroissance, à la place du nombre à $q$ fini non étayé
+        $2\times3.72$ utilisé pour l'extrémité inférieure
+      </li>
     </ul>
+    <p>
+      D'ici là, $[7.4,10.6]$ doit être lu comme une instance numérique illustrative du modèle, non
+      comme une fenêtre d'exposant dérivée ou sélectionnée.
+    </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19339888">
-        <i>Persistance projective et sous-spectre physique :
-          Un critère de sélection dynamique pour l’exposant de capacité</i>.
+        <i lang="en">Projective Persistence and the Physical Sub-Spectrum:
+          A Dynamical Selection Criterion for the Capacity Exponent</i>.
       </a>
     </p>
   </section>
@@ -237,7 +315,7 @@
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
       <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>

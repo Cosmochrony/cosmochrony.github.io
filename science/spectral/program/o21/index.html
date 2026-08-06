@@ -5,19 +5,21 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription | Cosmochrony
+    A Local Crossing-Rank Formula That Is Not Scale-Invariant | Cosmochrony
   </title>
   <meta name="description"
-    content="O21 derives an intrinsic, parameter-free persistence criterion by defining a canonical
-    crossing rank directly from the observable, eliminating external thresholds and fit parameters."/>
+    content="O21's two-point crossing rank n3_obs is a valid extrapolated crossing under an exact power
+    law and a fixed threshold, but its own invariance claim is algebraically false: under sigma to
+    lambda*sigma it scales as lambda^(1/delta), not invariant."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription"/>
+    content="A Local Crossing-Rank Formula That Is Not Scale-Invariant"/>
   <meta property="og:description"
-    content="O21 replaces external thresholds by an intrinsic structural crossing condition,
-    yielding a fully parameter-free formulation of admissibility."/>
+    content="O21's crossing formula n3_obs is a genuine extrapolated crossing rank under a fixed
+    threshold and an exact power law. Its central claim of invariance under amplitude rescaling is
+    algebraically false: the formula scales as lambda^(1/delta), not invariant."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o21/"/>
@@ -44,12 +46,15 @@
       </a>
       <div>
         <h1>
-          Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription
+          A Local Crossing-Rank Formula That Is Not Scale-Invariant
         </h1>
         <p class="subtitle">
-          O21 follows <a href="../o20">O20</a> by removing the last external element of the
-          persistence criterion, defining an intrinsic crossing rank directly from the canonical
-          observable and eliminating all amplitude parameters.
+          O21 follows <a href="../o20">O20</a> by writing a two-point crossing rank
+          $n_3^{\mathrm{obs}}$ for a fixed threshold $9/q^2$. Under an exact power law that formula is a
+          correct extrapolated crossing between two reference shells. Its central claim &mdash; that
+          $n_3^{\mathrm{obs}}$ is invariant under an amplitude rescaling of the observable &mdash; is
+          algebraically false, and the threshold, the shell-alignment condition, and the transfer to a
+          physical rate remain open.
         </p>
       </div>
     </div>
@@ -67,33 +72,34 @@
       <h2>Overview</h2>
       <p>
         This article continues the spectral admissibility programme after
-        <a href="../o20">O20</a>. While O20 introduced a persistence criterion selecting the
-        admissible exponent window, it still relied on an external threshold and a fit parameter.
-      </p>
-      <p>
-        O21 removes this dependence entirely. Its central objective is:
-        <strong>to derive the persistence criterion intrinsically from the observable itself,
-          without introducing any external parameter.</strong>
-      </p>
-      <p>
-        The paper introduces a canonical observable crossing rank
+        <a href="../o20">O20</a>, which selected a threshold-crossing rank against an externally
+        postulated saturation threshold and a fit parameter $C$. O21 fixes the threshold at $9/q^2$ and
+        eliminates $C$ algebraically by taking the ratio of the observable
+        $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$ at two reference shells $n_0\lt n_1$, producing a closed
+        two-point expression
         \[
-        n_{3}^{\mathrm{obs}},
+        n_{3}^{\mathrm{obs}}(n_0,n_1,q)
+        \;=\;
+        n_0\left(\frac{q^2\,\sigma_{\mathrm{pair}}^{\mathrm{can}}(n_0)}{9}\right)^{%
+          \tfrac{\log(n_1/n_0)}{\log\!\left(\sigma_{\mathrm{pair}}^{\mathrm{can}}(n_0)/
+          \sigma_{\mathrm{pair}}^{\mathrm{can}}(n_1)\right)}}.
         \]
-        defined directly from the canonical pair observable
-        \[
-        \sigma_{\mathrm{pair}}^{\mathrm{can}}(n),
-        \]
-        without any amplitude normalisation or threshold input.
+        Under an exact power law $\sigma(n)=Cn^{-\delta}$ on $[n_0,n_1]$, this is a valid extrapolated
+        crossing rank, independent of which two shells in that regime are used: the amplitude $C$
+        genuinely cancels between the two evaluations of $\sigma$.
       </p>
       <p>
-        The key structural statement is that the saturation threshold is not external:
-        it is encoded in the observable through a canonical crossing condition.
+        The paper then claims a second, stronger property: invariance under a global rescaling
+        $\sigma\mapsto\lambda\sigma$ of the observable itself, which it advances as evidence that the
+        construction is intrinsic and pipeline-independent. That claim does not follow from the formula
+        above and is false as stated &mdash; see &ldquo;What O21 does not establish&rdquo; below for the
+        explicit computation.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural content of O21:
-        intrinsic crossing rank construction, elimination of external parameters,
-        scale-invariant admissibility, and geometric interpretation of saturation.
+        <strong>Scope statement.</strong> This page summarises the structural content of O21: a
+        genuine, normalisation-dependent two-point crossing formula, together with the algebra error in
+        its rescaling-invariance claim and the open status of its threshold, shell-alignment, and
+        capacity-to-rate transfer.
       </div>
     </div>
     <aside class="card">
@@ -106,132 +112,155 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Intrinsic saturation, canonical observable, scale invariance,
-            parameter-free admissibility
+            Two-point crossing rank, fixed threshold $9/q^2$, amplitude-rescaling algebra
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            Intrinsic crossing condition, elimination of thresholds,
-            structural selection of the exponent
+            A normalisation-dependent local diagnostic under an exact power law; the claimed
+            scale-invariance, shell resonance, and numerical rate prescription do not survive
           </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Core contributions</h2>
+    <h2>What O21 establishes</h2>
     <ul>
       <li>
-        <strong>Intrinsic crossing rank:</strong>
-        definition of a canonical rank
+        <strong>A correct two-point crossing formula under a fixed threshold and an exact power
+        law:</strong>
+        setting $\sigma(n_3)=9/q^2$ and eliminating the amplitude $C$ between two reference shells
+        $n_0\lt n_1$ gives $n_3^{\mathrm{obs}}(n_0,n_1,q)$ above. When $\sigma$ follows an exact power law
+        on $[n_0,n_1]$, this value is independent of which two shells in that interval are chosen, and
+        any observed dependence on $(n_0,n_1)$ correctly signals deviation from an exact power law.
+      </li>
+      <li>
+        <strong>Correct diagnosis that no native Heisenberg growth carrier exists:</strong> O21 itself
+        notes that recovering the O7 relation $\beta^*=1/(\delta_{\mathrm{pair}}+\tfrac12)$ requires an
+        externally imposed cross-substrate identification that the Heisenberg-graph pipeline does not
+        supply on its own.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>What O21 does not establish</h2>
+    <ul>
+      <li>
+        <strong>Invariance under amplitude rescaling &mdash; false, with the explicit computation:</strong>
+        write $n_3^{\mathrm{obs}}=n_0\bigl(q^2\sigma(n_0)/9\bigr)^{1/\delta_{\mathrm{local}}}$, where
+        $\delta_{\mathrm{local}}=\log(\sigma(n_0)/\sigma(n_1))/\log(n_1/n_0)$. Under
+        $\sigma\mapsto\lambda\sigma$ for a constant $\lambda>0$, the ratio $\sigma(n_0)/\sigma(n_1)$ is
+        unchanged, so $\delta_{\mathrm{local}}$ is indeed invariant &mdash; but $\sigma(n_0)$ also
+        appears, undivided, inside the base $q^2\sigma(n_0)/9$ that is raised to that power. Under the
+        same rescaling that base becomes $\lambda\cdot q^2\sigma(n_0)/9$, so
         \[
-        n_{3}^{\mathrm{obs}}
+        n_3^{\mathrm{obs}} \;\longmapsto\; \lambda^{1/\delta_{\mathrm{local}}}\,n_3^{\mathrm{obs}},
         \]
-        directly from the observable sequence, without amplitude parameters.
+        not $n_3^{\mathrm{obs}}$ unchanged. The paper's own remark on invariance reasons only about the
+        exponent and never checks the base, which is exactly where $\sigma(n_0)$ survives undivided.
+        The amplitude and pipeline normalisation are therefore not eliminated: the construction is
+        exactly as normalisation-dependent as $\sigma$ itself, up to the fractional power
+        $1/\delta_{\mathrm{local}}$.
       </li>
       <li>
-        <strong>Elimination of external thresholds:</strong>
-        the saturation threshold \(\sigma_{\mathrm{BI}}\) is no longer postulated,
-        but encoded structurally in the observable.
+        <strong>The fixed threshold $9/q^2$ as intrinsic:</strong> its proposed origin assumes
+        $\Sigma_c=\Sigma_{q-c}=3$ at saturation, a rank-three condition that O21 does not itself derive.
+        The threshold remains an external input to the construction, not a consequence of it.
       </li>
       <li>
-        <strong>Removal of fit parameter:</strong>
-        the parameter \(C\) of O20 disappears entirely from the formulation.
+        <strong>The shell-alignment condition as a quantitative test:</strong> stated as a conjecture,
+        it requires the crossing rank to lie close to a populated BFS shell. But nonempty shells occur
+        at every integer depth from $0$ to the graph diameter, so the distance from any real value to
+        the nearest populated shell is generically at most $1/2$ regardless of any representation-theoretic
+        structure. The paper's own symbol &ldquo;$\ll 1$&rdquo; supplies no threshold below this generic
+        bound, and the single reported value $0.20$ is consistent with the bound holding trivially,
+        not with a resonance.
       </li>
       <li>
-        <strong>Scale invariance:</strong>
-        the construction is invariant under
-        \[
-        \sigma(n)\mapsto \alpha\,\sigma(n),
-        \]
-        ensuring independence from pipeline normalisation.
+        <strong>The conditional O7 expression as a derivation of $\beta^*$:</strong>
+        $\beta^*=1/(\delta_{\mathrm{pair}}+\tfrac12)$ follows only if the missing cross-substrate
+        identification between the Heisenberg-graph rank statistic and a physical Born&ndash;Infeld
+        growth rate is externally imposed; O21 correctly says no such carrier exists in the pipeline,
+        but then treats its other conditions as otherwise established, which they are not.
       </li>
       <li>
-        <strong>Geometric interpretation:</strong>
-        the intrinsic rank corresponds to a distinguished BFS shell,
-        reflecting alignment between decay and admissibility.
-      </li>
-      <li>
-        <strong>Structural exponent selection:</strong>
-        the exponent \(\delta_{\mathrm{pair}}\) is determined by compatibility
-        with the intrinsic crossing condition rather than a window constraint.
-      </li>
-      <li>
-        <strong>Restoration of the cascade relation:</strong>
-        under the cascade interpretation,
-        \[
-        \beta^* = \frac{1}{\delta_{\mathrm{pair}} + \frac{1}{2}},
-        \]
-        resolving the obstruction identified in O15.
+        <strong>The numerical value $\beta^*\approx0.126$:</strong> it is obtained by substituting the
+        unsupported finite-window estimate $\delta_{\mathrm{pair}}\approx7.44$; the paper's own text
+        notes that a different, equally legitimate estimator convention gives $6.6$&ndash;$6.9$, already
+        outside the phenomenological target window the $0.126$ figure is meant to land inside.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O21 completes the transition from externally defined admissibility
-      to intrinsic structural selection.
+      O21's local crossing algebra is real: given a fixed threshold and an exact power-law regime, the
+      two-point formula correctly extrapolates the crossing rank and correctly cancels the amplitude
+      $C$ between the two evaluations used in the ratio. That is a narrower and more modest fact than
+      the paper advertises.
     </p>
     <ul>
-      <li><strong>O20:</strong> admissibility via external threshold</li>
-      <li><strong>O21:</strong> admissibility encoded in the observable itself</li>
+      <li><strong>O20:</strong> admissibility via an external threshold and a fitted amplitude</li>
+      <li><strong>O21:</strong> the fitted amplitude $C$ cancels locally between two reference shells
+        under a fixed threshold and an exact power law &mdash; but the threshold, the shell-alignment
+        condition, and invariance under rescaling of $\sigma$ itself are not established</li>
     </ul>
     <p>
-      The observable is no longer evaluated against a prescribed scale.
-      Instead, it carries within itself the signal of saturation through a
-      canonical crossing condition.
-    </p>
-    <p>
-      This yields a fully intrinsic formulation of the persistence criterion,
-      removing the last remaining ambiguity inherited from earlier stages
-      of the programme.
+      The observable is not, in fact, self-certifying against the pipeline's normalisation: rescaling
+      $\sigma$ moves $n_3^{\mathrm{obs}}$ by $\lambda^{1/\delta_{\mathrm{local}}}$, so a change of
+      amplitude convention changes the reported crossing rank. The threshold $9/q^2$, the
+      shell-alignment conjecture, and the cross-substrate transfer to a Born&ndash;Infeld rate remain
+      external inputs, exactly as in <a href="../o20">O20</a>.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O21 occupies a decisive position in the O-series.
-      It follows the canonicalisation of the observable in O19 and the
-      persistence criterion of O20, and removes their remaining external
-      dependencies.
+      O21 sits after the canonicalisation attempt of O19 and the persistence criterion of O20 in the
+      O-series. It supplies a genuine, if narrower, local algebraic fact &mdash; the two-point crossing
+      rank under a fixed threshold and an exact power law &mdash; but it does not remove the external
+      threshold, does not establish shell resonance, and does not construct an intrinsic,
+      pipeline-independent saturation rank.
     </p>
     <p>
-      The programme now reads:
-      O16 (pair observable), O17 (pair dynamics),
-      O18 (fibre structure), O19 (canonical normalisation),
-      O20 (persistence criterion), O21 (intrinsic persistence).
-    </p>
-    <p>
-      After O21, the admissibility condition is no longer defined
-      phenomenologically, but structurally.
+      The programme's registry (see <a href="/science/spectral/program/">program</a>) records O21's
+      local two-point algebra as a valid conditional diagnostic, and its threshold origin, its
+      shell-alignment conjecture, and its capacity-to-rate transfer as open, on the same footing as the
+      open premises left by <a href="../o16">O16</a>&ndash;<a href="../o20">O20</a>.
     </p>
   </section>
   <section class="card">
     <h2>Current outcome and open directions</h2>
     <p>
-      O21 establishes a parameter-free formulation of admissibility.
-      The observable, its normalisation, and the persistence criterion
-      are now fully intrinsic.
+      O21 establishes a local threshold-crossing diagnostic: under an exact power law and a fixed
+      normalisation, $n_3^{\mathrm{obs}}(n_0,n_1,q)$ is a valid extrapolated crossing rank. It does not
+      establish invariance under $\sigma\mapsto\lambda\sigma$ &mdash; the construction instead scales as
+      $\lambda^{1/\delta_{\mathrm{local}}}$ &mdash; and so does not eliminate amplitude or pipeline
+      dependence. The threshold $9/q^2$, the shell-alignment condition, and the cross-substrate carrier
+      needed to transfer a Heisenberg-graph rank statistic into a physical Born&ndash;Infeld rate all
+      remain external inputs.
     </p>
     <p>
       Remaining directions include:
     </p>
     <ul>
       <li>
-        <strong>Substrate-level derivation:</strong>
-        derive the intrinsic condition directly from χ-dynamics.
+        <strong>Deriving the threshold:</strong> either derive $9/q^2$ from a saturation condition
+        internal to the pipeline, or replace it with an explicitly external, motivated input.
       </li>
       <li>
-        <strong>Universality:</strong>
-        test the intrinsic criterion beyond Heisenberg graphs.
+        <strong>A real shell-alignment test:</strong> replace the vacuous &ldquo;$\ll1$&rdquo; criterion
+        with a quantitative bound that improves on the generic $1/2$ distance to the nearest populated
+        shell.
       </li>
       <li>
-        <strong>Asymptotics:</strong>
-        determine the scaling of \(n_{3}^{\mathrm{obs}}\) at large \(q\).
+        <strong>A native cross-substrate carrier:</strong> supply the missing map from the Heisenberg-graph
+        rank statistic to a physical Born&ndash;Infeld growth rate, without externally imposing the
+        identification the O7 formula currently assumes.
       </li>
       <li>
-        <strong>Full cascade derivation:</strong>
-        establish the \(\delta_{\mathrm{pair}}\to\beta^*\) relation
-        without additional assumptions.
+        <strong>A consistent numerical estimate:</strong> resolve the discrepancy between the
+        production-convention value $\delta_{\mathrm{pair}}\approx7.44$ and the $6.6$&ndash;$6.9$ range
+        obtained under the alternative estimator before quoting a value of $\beta^*$.
       </li>
     </ul>
   </section>

@@ -5,25 +5,30 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Saturation au niveau des coquilles et prescription conditionnelle fibre-vers-taux
-    | Cosmochrony
+    Une formule locale de rang de croisement qui n'est pas invariante d'échelle
+    | Cosmochronie
   </title>
   <meta name="description"
-    content="O21 dérive un critère de persistance intrinsèque et sans paramètre en définissant un rang de croisement canonique directement à partir de l’observable, éliminant seuils externes et paramètres d’ajustement."/>
+    content="Le rang de croisement à deux points n3_obs de O21 est un croisement extrapolé valide sous
+    une loi de puissance exacte et un seuil fixe, mais son affirmation d'invariance est
+    algébriquement fausse : sous sigma vers lambda*sigma, il varie comme lambda^(1/delta), non de
+    façon invariante."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o21/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Saturation au niveau des coquilles et prescription conditionnelle fibre-vers-taux"/>
+    content="Une formule locale de rang de croisement qui n'est pas invariante d'échelle"/>
   <meta property="og:description"
-    content="O21 remplace les seuils externes par une condition de croisement structurelle intrinsèque, aboutissant à une formulation entièrement sans paramètre de l’admissibilité."/>
+    content="La formule de croisement n3_obs de O21 est un rang de croisement extrapolé authentique
+    sous un seuil fixe et une loi de puissance exacte. Son affirmation centrale d'invariance sous
+    changement d'échelle de l'amplitude est algébriquement fausse : la formule varie comme
+    lambda^(1/delta), non de façon invariante."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-
-    redirectIfNot("fr", "/science/spectral/program/o21/index")
+    redirectIfNot("fr", "/science/spectral/program/o21/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -31,7 +36,7 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
           <path
             style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%;
@@ -44,166 +49,263 @@
       </a>
       <div>
         <h1>
-          Saturation au niveau des coquilles et prescription conditionnelle fibre-vers-taux
+          Une formule locale de rang de croisement qui n'est pas invariante d'échelle
         </h1>
         <p class="subtitle">
-          O21 prolonge <a href="../o20/index_fr.html">O20</a> en supprimant le dernier élément externe du critère de
-          persistance, en définissant un rang de croisement intrinsèque directement à partir de l’observable canonique
-          et en éliminant tous les paramètres d’amplitude.
+          O21 fait suite à <a href="../o20">O20</a> en écrivant un rang de croisement à deux points
+          $n_3^{\mathrm{obs}}$ pour un seuil fixe $9/q^2$. Sous une loi de puissance exacte, cette
+          formule est un croisement extrapolé correct entre deux coquilles de référence. Son
+          affirmation centrale &mdash; selon laquelle $n_3^{\mathrm{obs}}$ serait invariant sous un
+          changement d'échelle de l'amplitude de l'observable &mdash; est algébriquement fausse, et
+          le seuil, la condition d'alignement de coquille, et le transfert vers un taux physique
+          restent ouverts.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19358961">Lire la prépublication</a> <a class="btn subtle"
-      href="/science/spectral/program/"> Retour au programme d’admissibilité spectrale </a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19358961">Lire la prépublication</a>
+      <a class="btn subtle" href="/science/spectral/program/">
+        Retour au programme d'admissibilité spectrale
+      </a>
     </div>
   </div>
 </header>
 <main class="wrap">
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Vue d'ensemble</h2>
       <p>
-        Cet article poursuit le programme d’admissibilité spectrale après <a href="../o20/index_fr.html">O20</a>. Alors
-        que O20 introduisait un critère de persistance sélectionnant une fenêtre d’exposants admissibles, celui-ci
-        dépendait encore d’un seuil externe et d’un paramètre d’ajustement.
+        Cet article poursuit le programme d'admissibilité spectrale après <a href="../o20">O20</a>,
+        qui sélectionnait un rang de croisement de seuil par rapport à un seuil de saturation
+        postulé de façon externe et un paramètre d'ajustement $C$. O21 fixe le seuil à $9/q^2$ et
+        élimine $C$ algébriquement en prenant le rapport de l'observable
+        $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$ à deux coquilles de référence $n_0\lt n_1$,
+        produisant une expression fermée à deux points
+        \[
+        n_{3}^{\mathrm{obs}}(n_0,n_1,q)
+        \;=\;
+        n_0\left(\frac{q^2\,\sigma_{\mathrm{pair}}^{\mathrm{can}}(n_0)}{9}\right)^{%
+          \tfrac{\log(n_1/n_0)}{\log\!\left(\sigma_{\mathrm{pair}}^{\mathrm{can}}(n_0)/
+          \sigma_{\mathrm{pair}}^{\mathrm{can}}(n_1)\right)}}.
+        \]
+        Sous une loi de puissance exacte $\sigma(n)=Cn^{-\delta}$ sur $[n_0,n_1]$, il s'agit d'un
+        rang de croisement extrapolé valide, indépendant des deux coquilles choisies dans ce
+        régime : l'amplitude $C$ s'annule véritablement entre les deux évaluations de $\sigma$.
       </p>
       <p>
-        O21 supprime entièrement cette dépendance. Son objectif central est : <strong>de dériver le critère de
-        persistance intrinsèquement à partir de l’observable elle-même, sans introduire de paramètre externe.</strong>
-      </p>
-      <p>
-        L’article introduit un rang de croisement canonique \[ n_{3}^{\mathrm{obs}}, \] défini directement à partir de
-        l’observable paire canonique \[ \sigma_{\mathrm{pair}}^{\mathrm{can}}(n), \] sans normalisation d’amplitude ni
-        seuil imposé.
-      </p>
-      <p>
-        L’énoncé structural clé est que le seuil de saturation n’est pas externe : il est encodé dans l’observable via
-        une condition de croisement canonique.
+        L'article affirme ensuite une seconde propriété, plus forte : l'invariance sous un
+        changement d'échelle global $\sigma\mapsto\lambda\sigma$ de l'observable lui-même, qu'il
+        avance comme preuve que la construction est intrinsèque et indépendante du pipeline. Cette
+        affirmation ne découle pas de la formule ci-dessus et est fausse telle qu'énoncée &mdash;
+        voir « Ce que n'établit pas O21 » ci-dessous pour le calcul explicite.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page résume le contenu structural de O21 : construction du rang intrinsèque,
-        élimination des paramètres externes, admissibilité invariante d’échelle et interprétation géométrique de la
-        saturation.
+        <strong>Note de portée.</strong> Cette page résume le contenu structurel de O21 : une
+        formule de croisement à deux points authentique mais dépendante de la normalisation, ainsi
+        que l'erreur algébrique dans son affirmation d'invariance d'échelle et le statut ouvert de
+        son seuil, de son alignement de coquille, et de son transfert de capacité vers un taux.
       </div>
     </div>
     <aside class="card">
       <h2>Faits rapides</h2>
       <div class="kvs">
-        <div class="kv">
-          <div class="k">Auteur</div>
-          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Type</div>
-          <div class="v">Prépublication</div>
-        </div>
-        <div class="kv">
-          <div class="k">Licence</div>
-          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Focus</div>
+        <div class="kv"><div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type de travail</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Licence</div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Saturation intrinsèque, observable canonique, invariance d’échelle, admissibilité sans paramètre
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Portée</div>
+            Rang de croisement à deux points, seuil fixe $9/q^2$, algèbre du changement d'échelle
+            de l'amplitude
+          </div></div>
+        <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Condition de croisement intrinsèque, élimination des seuils, sélection structurelle de l’exposant
-          </div>
-        </div>
+            Un diagnostic local dépendant de la normalisation sous une loi de puissance exacte ;
+            l'invariance d'échelle, la résonance de coquille et la prescription numérique de taux
+            affirmées ne résistent pas à l'examen
+          </div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Ce qu'établit O21</h2>
     <ul>
       <li>
-        <strong>Rang de croisement intrinsèque :</strong> définition d’un rang canonique \[ n_{3}^{\mathrm{obs}} \]
-        directement à partir de la séquence observable.
+        <strong>Une formule correcte de croisement à deux points sous un seuil fixe et une loi de
+        puissance exacte :</strong>
+        en fixant $\sigma(n_3)=9/q^2$ et en éliminant l'amplitude $C$ entre deux coquilles de
+        référence $n_0\lt n_1$, on obtient $n_3^{\mathrm{obs}}(n_0,n_1,q)$ ci-dessus. Quand $\sigma$
+        suit une loi de puissance exacte sur $[n_0,n_1]$, cette valeur est indépendante des deux
+        coquilles choisies dans cet intervalle, et toute dépendance observée en $(n_0,n_1)$ signale
+        correctement un écart par rapport à une loi de puissance exacte.
       </li>
       <li>
-        <strong>Élimination des seuils externes :</strong> le seuil \(\sigma_{\mathrm{BI}}\) n’est plus postulé mais
-        encodé structurellement dans l’observable.
+        <strong>Diagnostic correct qu'aucun porteur de croissance natif de Heisenberg n'existe
+         :</strong> O21 note lui-même que retrouver la relation O7
+        $\beta^*=1/(\delta_{\mathrm{pair}}+\tfrac12)$ requiert une identification inter-substrat
+        imposée de l'extérieur, que le pipeline du graphe de Heisenberg ne fournit pas par
+        lui-même.
+      </li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Ce que n'établit pas O21</h2>
+    <ul>
+      <li>
+        <strong>Invariance sous changement d'échelle de l'amplitude &mdash; fausse, avec le calcul
+        explicite :</strong>
+        en écrivant $n_3^{\mathrm{obs}}=n_0\bigl(q^2\sigma(n_0)/9\bigr)^{1/\delta_{\mathrm{local}}}$,
+        où $\delta_{\mathrm{local}}=\log(\sigma(n_0)/\sigma(n_1))/\log(n_1/n_0)$. Sous
+        $\sigma\mapsto\lambda\sigma$ pour une constante $\lambda>0$, le rapport
+        $\sigma(n_0)/\sigma(n_1)$ est inchangé, si bien que $\delta_{\mathrm{local}}$ est
+        effectivement invariant &mdash; mais $\sigma(n_0)$ apparaît aussi, non divisé, à
+        l'intérieur de la base $q^2\sigma(n_0)/9$ qui est élevée à cette puissance. Sous le même
+        changement d'échelle, cette base devient $\lambda\cdot q^2\sigma(n_0)/9$, si bien que
+        \[
+        n_3^{\mathrm{obs}} \;\longmapsto\; \lambda^{1/\delta_{\mathrm{local}}}\,n_3^{\mathrm{obs}},
+        \]
+        et non $n_3^{\mathrm{obs}}$ inchangé. La remarque de l'article sur l'invariance ne raisonne
+        que sur l'exposant et ne vérifie jamais la base, qui est exactement l'endroit où
+        $\sigma(n_0)$ survit non divisé. L'amplitude et la normalisation du pipeline ne sont donc
+        pas éliminées : la construction est exactement aussi dépendante de la normalisation
+        que $\sigma$ elle-même, à la puissance fractionnaire $1/\delta_{\mathrm{local}}$ près.
       </li>
       <li>
-        <strong>Suppression du paramètre d’ajustement :</strong> le paramètre \(C\) disparaît complètement.
+        <strong>Le seuil fixe $9/q^2$ comme intrinsèque :</strong> son origine proposée
+        suppose $\Sigma_c=\Sigma_{q-c}=3$ à saturation, une condition de rang trois que O21 ne
+        dérive pas lui-même. Le seuil reste une donnée externe de la construction, non une
+        conséquence de celle-ci.
       </li>
       <li>
-        <strong>Invariance d’échelle :</strong> la construction est invariante sous \[ \sigma(n)\mapsto
-        \alpha\,\sigma(n). \]
+        <strong>La condition d'alignement de coquille comme test quantitatif :</strong>
+        énoncée comme une conjecture, elle exige que le rang de croisement soit proche d'une
+        coquille BFS peuplée. Mais des coquilles non vides apparaissent à chaque profondeur
+        entière, de $0$ au diamètre du graphe, si bien que la distance entre une valeur réelle
+        quelconque et la coquille peuplée la plus proche est génériquement au plus $1/2$,
+        indépendamment de toute structure de théorie des représentations. Le symbole
+        « $\ll 1$ » de l'article lui-même ne fournit aucun seuil inférieur à cette borne
+        générique, et l'unique valeur rapportée $0.20$ est compatible avec le fait que la borne
+        tienne trivialement, non avec une résonance.
       </li>
       <li>
-        <strong>Interprétation géométrique :</strong> le rang correspond à une coquille distinguée de la BFS, traduisant
-        un alignement entre décroissance et admissibilité.
+        <strong>L'expression conditionnelle de O7 comme dérivation de $\beta^*$ :</strong>
+        $\beta^*=1/(\delta_{\mathrm{pair}}+\tfrac12)$ ne suit que si l'identification
+        inter-substrat manquante entre la statistique de rang du graphe de Heisenberg et un taux
+        de croissance physique de Born&ndash;Infeld est imposée de l'extérieur ; O21 dit à
+        juste titre qu'aucun tel porteur n'existe dans le pipeline, mais traite ensuite ses autres
+        conditions comme par ailleurs établies, ce qu'elles ne sont pas.
       </li>
       <li>
-        <strong>Sélection structurelle de l’exposant :</strong> \(\delta_{\mathrm{pair}}\) est déterminé par
-        compatibilité avec la condition intrinsèque.
-      </li>
-      <li>
-        <strong>Rétablissement de la relation de cascade :</strong> \[ \beta^* = \frac{1}{\delta_{\mathrm{pair}} +
-        \frac{1}{2}}. \]
+        <strong>La valeur numérique $\beta^*\approx0.126$ :</strong> elle est obtenue en
+        substituant l'estimation à fenêtre finie non étayée $\delta_{\mathrm{pair}}\approx7.44$
+         ; le texte de l'article lui-même note qu'une convention d'estimateur différente,
+        tout aussi légitime, donne $6.6$&ndash;$6.9$, déjà en dehors de la fenêtre cible
+        phénoménologique dans laquelle le chiffre $0.126$ est censé se situer.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O21 achève la transition vers une admissibilité entièrement intrinsèque.
+      L'algèbre locale de croisement de O21 est réelle : étant donné un seuil fixe et un
+      régime de loi de puissance exacte, la formule à deux points extrapole correctement le rang
+      de croisement et annule correctement l'amplitude $C$ entre les deux évaluations utilisées
+      dans le rapport. C'est un fait plus étroit et plus modeste que ce que l'article affiche.
     </p>
     <ul>
-      <li><strong><a href="../o20/index_fr.html">O20</a> :</strong> admissibilité définie par un seuil externe</li>
-      <li><strong>O21 :</strong> admissibilité encodée dans l’observable</li>
+      <li><strong>O20 :</strong> admissibilité via un seuil externe et une amplitude ajustée
+      </li>
+      <li><strong>O21 :</strong> l'amplitude ajustée $C$ s'annule localement entre deux
+        coquilles de référence sous un seuil fixe et une loi de puissance exacte &mdash; mais le
+        seuil, la condition d'alignement de coquille, et l'invariance sous changement d'échelle de
+        $\sigma$ lui-même ne sont pas établis</li>
     </ul>
     <p>
-      L’observable contient désormais lui-même le signal de saturation, sous la forme d’une condition de croisement
-      canonique.
+      L'observable n'est donc pas, en fait, auto-certifiante par rapport à la normalisation du
+      pipeline : le changement d'échelle de $\sigma$ déplace $n_3^{\mathrm{obs}}$ d'un facteur
+      $\lambda^{1/\delta_{\mathrm{local}}}$, si bien qu'un changement de convention d'amplitude
+      modifie le rang de croisement rapporté. Le seuil $9/q^2$, la conjecture d'alignement de
+      coquille, et le transfert inter-substrat vers un taux de Born&ndash;Infeld restent des
+      données externes, exactement comme dans <a href="../o20">O20</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochrony</h2>
+    <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      O21 occupe une position décisive dans la série O. Il suit la canonisation de O19 et le critère de persistance de
-      <a href="../o20/index_fr.html">O20</a>, dont il supprime les dépendances externes.
+      O21 se situe après la tentative de canonicalisation de O19 et le critère de persistance de
+      O20 dans la série O. Il fournit un fait algébrique local authentique, quoique plus étroit
+      &mdash; le rang de croisement à deux points sous un seuil fixe et une loi de puissance exacte
+      &mdash; mais ne supprime pas le seuil externe, n'établit pas la résonance de coquille, et ne
+      construit pas un rang de saturation intrinsèque et indépendant du pipeline.
     </p>
     <p>
-      Le programme devient : <a href="../o16/index_fr.html">O16</a>, <a href="../o17/index_fr.html">O17</a>, <a
-      href="../o18/index_fr.html">O18</a>, <a href="../o19/index_fr.html">O19</a>, <a
-      href="../o20/index_fr.html">O20</a>, O21 (persistance intrinsèque).
+      Le registre du programme (voir <a href="/science/spectral/program/">programme</a>)
+      enregistre l'algèbre locale à deux points de O21 comme un diagnostic conditionnel valide, et
+      son origine de seuil, sa conjecture d'alignement de coquille, et son transfert de capacité
+      vers un taux comme ouverts, sur le même plan que les prémisses ouvertes laissées par
+      <a href="../o16">O16</a>&ndash;<a href="../o20">O20</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat et perspectives</h2>
+    <h2>Résultat actuel et directions ouvertes</h2>
     <p>
-      O21 établit une admissibilité sans paramètre, entièrement intrinsèque.
+      O21 établit un diagnostic local de croisement de seuil : sous une loi de puissance
+      exacte et une normalisation fixe, $n_3^{\mathrm{obs}}(n_0,n_1,q)$ est un rang de croisement
+      extrapolé valide. Il n'établit pas l'invariance sous $\sigma\mapsto\lambda\sigma$ &mdash; la
+      construction varie au contraire comme $\lambda^{1/\delta_{\mathrm{local}}}$ &mdash; et
+      n'élimine donc pas la dépendance à l'amplitude ou au pipeline. Le seuil $9/q^2$, la condition
+      d'alignement de coquille, et le porteur inter-substrat nécessaire pour transférer une
+      statistique de rang du graphe de Heisenberg vers un taux physique de Born&ndash;Infeld
+      restent tous des données externes.
+    </p>
+    <p>
+      Les directions restantes comprennent :
     </p>
     <ul>
-      <li>Dérivation depuis la dynamique χ</li>
-      <li>Universalité</li>
-      <li>Asymptotique en grand \(q\)</li>
-      <li>Dérivation complète de la relation de cascade</li>
+      <li>
+        <strong>Dériver le seuil :</strong> soit dériver $9/q^2$ à partir d'une condition de
+        saturation interne au pipeline, soit le remplacer par une donnée explicitement externe et
+        motivée.
+      </li>
+      <li>
+        <strong>Un véritable test d'alignement de coquille :</strong> remplacer le critère
+        vide « $\ll1$ » par une borne quantitative qui améliore la distance générique de
+        $1/2$ à la coquille peuplée la plus proche.
+      </li>
+      <li>
+        <strong>Un porteur inter-substrat natif :</strong> fournir l'application manquante de
+        la statistique de rang du graphe de Heisenberg vers un taux de croissance physique de
+        Born&ndash;Infeld, sans imposer de l'extérieur l'identification que la formule O7 suppose
+        actuellement.
+      </li>
+      <li>
+        <strong>Une estimation numérique cohérente :</strong> résoudre l'écart entre la
+        valeur de la convention de production $\delta_{\mathrm{pair}}\approx7.44$ et l'intervalle
+        $6.6$&ndash;$6.9$ obtenu sous l'estimateur alternatif, avant de citer une valeur de
+        $\beta^*$.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
-      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a
-      href="https://doi.org/10.5281/zenodo.19358961"> <i>Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription</i>. </a>
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <a href="https://doi.org/10.5281/zenodo.19358961">
+        <i lang="en">Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription</i>.
+      </a>
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>. <a
-      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>
-<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script>MathJax={tex:{inlineMath:{'[+]':[['$','$']]}},svg:{fontCache:'global'}}</script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 </body>
 </html>

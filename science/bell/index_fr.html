@@ -4,20 +4,19 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Rupture de la factorisation de Bell par projection non injective | Cosmochronie</title>
+  <title>Article Bell : statut scientifique actuel | Cosmochrony</title>
   <meta name="description"
-    content="La factorisation de Bell comme contrainte structurelle sur les descriptions effectives, et sa rupture sous projection non injective."/>
+    content="L'implication publiée de la non-injectivité vers l'échec de la factorisabilité de Bell est réfutée par un contre-modèle Bell-local fini."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/bell/index.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title"
-    content="Rupture de la factorisation de Bell par projection non injective"/>
+  <meta property="og:title" content="Article Bell : statut scientifique actuel"/>
   <meta property="og:description"
-    content="Une analyse structurelle de la non-factorisabilité de Bell à partir de descriptions effectives non injectives."/>
+    content="Affirmation centrale réfutée ; procédure post-publication demandée à Quantum Reports."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/fr/science/bell/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/bell/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
-
-    redirectIfNot("fr", "/fr/science/bell/index")
+    redirectIfNot("fr", "/science/bell/index")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -25,10 +24,9 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true">
+      <a class="logo" href="/index_fr.html" title="Retour à Cosmochrony" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
-          <path
-            style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
+          <path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;"
             transform="matrix(0.642887, 0.642887, -0.642887, 0.642887, -376.818024, -270.825104)"
             d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
           <ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899"
@@ -36,143 +34,85 @@
         </svg>
       </a>
       <div>
-        <h1>Rupture de la factorisation de Bell par projection non injective</h1>
-        <p class="subtitle">
-          La non-factorisabilité de Bell comme propriété structurelle des descriptions effectives.
-        </p>
+        <h1>Article Bell : statut scientifique actuel</h1>
+        <p class="subtitle">L'implication centrale publiée est réfutée.</p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.3390/quantum8020044" rel="noopener"> Lire l'article </a> <a
-      class="btn secondary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener"> Lire la prépublication </a>
+      <a class="btn primary" href="https://doi.org/10.3390/quantum8020044" rel="noopener">Version de record</a>
+      <a class="btn secondary" href="https://doi.org/10.5281/zenodo.18371173" rel="noopener">Dépôt du preprint</a>
     </div>
   </div>
 </header>
 <main class="wrap">
+  <section class="card">
+    <h2>Statut actuel</h2>
+    <div class="note" role="note">
+      <strong>L'article ne doit pas être cité comme démontrant que la non-injectivité interdit la
+      factorisabilité de Bell.</strong> Un contre-modèle Bell-local fini réfute cette implication.
+      L'auteur a notifié <em>Quantum Reports</em> et demandé la procédure post-publication liée appropriée.
+    </div>
+    <p>
+      L'article publié affirme qu'une application observable plusieurs-vers-un suffit à interdire
+      toute complétion factorisable au sens de Bell. Sa preuve restreint la variable cachée à une
+      fonction des données observables. La localité de Bell autorise la configuration sous-jacente
+      complète comme variable conditionnante ; cette restriction ne traite donc pas le théorème annoncé.
+    </p>
+  </section>
   <section class="grid">
     <div class="card">
-      <h2>Vue d'ensemble</h2>
+      <h2>Contre-modèle décisif</h2>
       <p>
-        Cet article étudie le statut structurel de la factorisation de type Bell. Il soutient que l'hypothèse standard
-        de factorisation de Bell n'est pas nécessairement applicable lorsque les résultats observables proviennent d'une
-        projection non injective d'un espace de configurations sous-jacent.
+        Soit $\Omega=\{-1,+1\}^4\times\{0,1\}$ muni de la mesure uniforme et
+        $\Pi_{xy}(A_0,A_1,B_0,B_1,r)=(A_x,B_y)$. Chaque $\Pi_{xy}$ possède des fibres de taille huit.
+        Pourtant, $\lambda=\omega$ donne des réponses locales déterministes, une mesure indépendante
+        des réglages et CHSH $=0$.
       </p>
       <p>
-        Le point central n'est pas que le théorème de Bell soit contredit, ni que la mécanique quantique soit modifiée.
-        Les inégalités de Bell contraignent plutôt les descriptions effectives qui admettent une complétion
-        conjointement factorisable. La projection non injective définit une classe de descriptions effectives dans
-        laquelle cette condition peut échouer.
+        Plus généralement, une étiquette indépendante effacée rend non injectif tout modèle Bell-local
+        sans modifier aucune statistique observable.
       </p>
-      <p>
-        Dans ce cadre, les corrélations de type Bell sont reliées à la perte d'information induite par la projection :
-        les résultats observables correspondent à des classes d'équivalence de configurations sous-jacentes, et non à
-        des variables locales assignables indépendamment.
-      </p>
-      <div class="note" role="note">
-        <strong>Note de portée.</strong> Cette page constitue un résumé structuré et un point d'entrée. La référence
-        technique faisant autorité est l'article ou la prépublication lié(e) ci-dessus.
-      </div>
     </div>
-    <aside class="card">
-      <h2>Informations rapides</h2>
-      <div class="kvs">
-        <div class="kv">
-          <div class="k">Auteur</div>
-          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Type</div>
-          <div class="v">Article de recherche</div>
-        </div>
-        <div class="kv">
-          <div class="k">Licence</div>
-          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
-        </div>
-        <div class="kv">
-          <div class="k">Sujet</div>
-          <div class="v">Factorisation de Bell et corrélations quantiques</div>
-        </div>
-        <div class="kv">
-          <div class="k">Approche</div>
-          <div class="v">Analyse structurelle et probabiliste</div>
-        </div>
-      </div>
-    </aside>
+    <div class="card">
+      <h2>Défaut du PR-box</h2>
+      <p>
+        L'assignation globale proposée exige
+        $a_0b_0=a_0b_1=a_1b_0=+1$ et $a_1b_1=-1$.
+        Le produit des quatre contraintes donne $+1=-1$. Le support est vide ; aucune mesure normalisée
+        ne reproduit la distribution PR-box annoncée.
+      </p>
+    </div>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
-    <ul>
-      <li>
-        <strong>Projection non injective :</strong> identification des descriptions effectives plusieurs-vers-un comme
-        source structurelle de non-factorisabilité.
-      </li>
-      <li>
-        <strong>Factorisation de Bell :</strong> clarification du fait que les inégalités de Bell contraignent les
-        descriptions admettant une complétion conjointement factorisable.
-      </li>
-      <li>
-        <strong>Absence de non-localité dynamique :</strong> le mécanisme ne requiert ni dynamique supraluminique, ni
-        rétrocausalité, ni influences causales cachées.
-      </li>
-      <li>
-        <strong>Rôle du modèle jouet :</strong> le modèle explicite isole l'origine structurelle de la violation et n'a
-        pas pour objectif de reproduire quantitativement les corrélations quantiques.
-      </li>
-      <li>
-        <strong>Limite classique :</strong> une factorisabilité approximative réapparaît lorsque la projection effective
-        devient approximativement injective.
-      </li>
-    </ul>
-  </section>
-  <section class="card">
-    <h2>Portée conceptuelle</h2>
+    <h2>Entropie et énoncé qui subsiste</h2>
     <p>
-      L'article ne propose ni modification de la mécanique quantique, ni nouveaux degrés de liberté physiques, et ne
-      prétend pas que le théorème de Bell soit faux. Son objectif est d'isoler une condition structurelle suffisante
-      sous laquelle la factorisation de type Bell échoue au niveau effectif.
+      La quantité appelée entropie de projection est l'entropie de Shannon de la loi de sortie,
+      non une mesure de non-injectivité. Une application constante, maximalement non injective,
+      donne une entropie de sortie nulle, tandis qu'une application injective peut donner une
+      entropie maximale. L'interpolation entropie–CHSH n'a donc pas de bornes dérivées.
     </p>
     <p>
-      L'analyse préserve le non-signalement opérationnel ainsi que l'indépendance statistique des réglages de mesure.
-      Elle clarifie également pourquoi la non-factorisabilité n'implique pas, à elle seule, une non-localité causale.
+      L'énoncé standard de Bell reste valide : une violation de Bell exclut une factorisation
+      Bell-locale commune sous les hypothèses usuelles. Il manque à Cosmochrony une obstruction
+      dérivée à un couplage global indépendant des réglages entre tous les contextes de mesure.
+      La non-injectivité seule ne fournit pas cette obstruction.
     </p>
   </section>
   <section class="card">
-    <h2>Position dans le programme Cosmochronie</h2>
+    <h2>Référence bibliographique</h2>
     <p>
-      Dans le programme Cosmochronie, la non-injectivité n'est pas introduite comme un simple procédé de modélisation ad
-      hoc. Elle est considérée comme une conséquence structurelle de descriptions effectives véritablement émergentes :
-      un niveau effectif qui ne constitue pas un simple renommage du niveau sous-jacent ne peut rester pleinement
-      injectif.
-    </p>
-    <p>
-      L'article sur Bell applique ce principe à la structure probabiliste des corrélations quantiques. Il montre comment
-      la perte de distinguabilité au niveau micro-état, induite par la projection, empêche la représentation factorisée
-      supposée dans les raisonnements de type Bell.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Relation avec la mécanique quantique</h2>
-    <p>
-      L'article ne dérive pas la structure quantitative complète de la mécanique quantique. Il identifie une raison
-      structurelle expliquant pourquoi la factorisation classique de Bell peut échouer pour des descriptions effectives
-      projetées. La structure quantitative quantique est abordée dans des travaux compagnons consacrés à
-      l'admissibilité, à la cohérence de phase, aux corrélations SU(2) et à la règle de Born.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Références</h2>
-    <p>
-      Beau, J. <i lang="en">Breakdown of Bell Factorization from Non-Injective Effective Descriptions</i>. Quantum Rep.
-      2026, 8, 44. <a href="https://doi.org/10.3390/quantum8020044" rel="noopener">
-      https://doi.org/10.3390/quantum8020044 </a>
+      Beau, J. <i>Breakdown of Bell Factorization from Non-Injective Effective Descriptions</i>.
+      <i>Quantum Reports</i> 2026, 8, 44.
+      <a href="https://doi.org/10.3390/quantum8020044" rel="noopener">DOI 10.3390/quantum8020044</a>.
+      Cette page consigne le statut scientifique de la publication ; elle ne remplace pas silencieusement
+      la version de record.
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
-    <p class="small">
-      © <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a
-      href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence
+      <a href="/LICENSE">CC BY 4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

@@ -8,11 +8,10 @@
     Rigidité du support de Fourier dans les secteurs de Weil conjugués : un résultat d'impossibilité pour les signatures quantiques fondées sur le rang | Cosmochrony
   </title>
   <meta name="description"
-    content="Q1 v2.0 démontre une identité exacte et inconditionnelle dans la représentation de Weil finie
+    content="Q1 démontre une identité exacte et inconditionnelle dans la représentation de Weil finie
     du groupe de Heisenberg&nbsp;: les secteurs de caractère conjugués engendrent des sous-espaces
     identiques sur toute coquille BFS complète — un résultat d'impossibilité pour les diagnostics fondés
-    sur le support, le rang ou le gramien. Correction majeure de la version 1.1.2, dont la preuve du
-    théorème central s'est révélée non fondée après relecture indépendante."/>
+    sur le support, le rang ou le gramien."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/quantum-structure/q1/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -21,8 +20,8 @@
   <meta property="og:description"
     content="Une identité exacte et inconditionnelle dans la représentation de Weil finie du groupe de
     Heisenberg&nbsp;: les secteurs de caractère conjugués engendrent des sous-espaces identiques de C^q
-    sur toute coquille BFS complète. Corrige une affirmation antérieure (v1.1.2) selon laquelle cette
-    construction dérivait la structure quantique depuis l'admissibilité projective."/>
+    sur toute coquille BFS complète. Elle ne dit rien de la cohérence de phase, du corrélateur singulet,
+    de la borne de Tsirelson ni de la règle de Born."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/quantum-structure/q1/"/>
@@ -57,9 +56,7 @@
           Sur toute coquille BFS complète du graphe de Cayley de Heisenberg, les secteurs de caractère
           conjugués $c$ et $q-c$ engendrent des sous-espaces identiques de $\mathbb{C}^q$ — une identité
           exacte et inconditionnelle, assortie d'un corollaire d'impossibilité précisément délimité pour
-          les diagnostics fondés sur le support, le rang ou le gramien. Ceci est une révision majeure
-          (v2.0) d'une version antérieure dont la dérivation annoncée de structure quantique ne résiste
-          pas à la relecture indépendante.
+          les diagnostics fondés sur le support, le rang ou le gramien.
         </p>
       </div>
     </div>
@@ -71,15 +68,6 @@
 </header>
 
 <main class="wrap">
-
-  <div class="note" style="margin-bottom: 1.5rem;">
-    <strong>Avis de correction.</strong> Ceci est une révision majeure (v2.0) d'un papier initialement
-    intitulé <em>From Admissibility to Quantum Structure: Phase Coherence and Correlations from
-    Non-Injective Projection</em> (v1.1.2). La relecture indépendante a jugé la preuve publiée du
-    théorème central de cette version non fondée, et a séparément trouvé sa dérivation de la règle de
-    Born défectueuse. Les deux sont retirées. Ce qui subsiste est plus étroit et inconditionnel&nbsp;:
-    un théorème de rigidité exact et ses corollaires d'impossibilité, décrits ci-dessous.
-  </div>
 
   <section class="grid">
     <div class="card">
@@ -124,7 +112,7 @@
         </div>
         <div class="kv">
           <div class="k">Type</div>
-          <div class="v">Preprint (révision majeure, v2.0)</div>
+          <div class="v">Preprint</div>
         </div>
         <div class="kv">
           <div class="k">Thématique</div>
@@ -144,10 +132,6 @@
           <div class="v">
             Démontré&nbsp;; vérifié sur 1&nbsp;548 contrôles exacts, $q \in \{13,\ldots,61\}$
           </div>
-        </div>
-        <div class="kv">
-          <div class="k">Retiré (v1.1.2)</div>
-          <div class="v">Théorème central, corollaire de rang de Gram–Schmidt, règle de Born</div>
         </div>
         <div class="kv">
           <div class="k">Ouvert</div>
@@ -180,11 +164,9 @@
         coquille délibérément tronquée.
       </li>
       <li>
-        <strong>Ce qui est retiré&nbsp;:</strong> le théorème central de la v1.1.2 (sa preuve publiée
-        s'est révélée non fondée), son corollaire de rang de Gram–Schmidt (dimensionnellement impossible
-        tel qu'énoncé), et sa dérivation de la règle de Born (défauts de preuve indépendants). Le
-        corrélateur singulet et la borne de Tsirelson ne subsistent que comme remarque conditionnelle
-        standard, explicitement énoncée comme telle — non comme un résultat de ce papier.
+        <strong>Portée&nbsp;:</strong> ce papier ne dérive pas de structure quantique — aucun résultat ici
+        n'établit la cohérence de phase, le corrélateur singulet, la borne de Tsirelson ou la règle de
+        Born depuis l'admissibilité.
       </li>
     </ul>
   </section>
@@ -194,10 +176,8 @@
     <p>
       Le support, le rang et les quantités dérivées du gramien sont des diagnostics naturels issus de la
       théorie des représentations, et l'on pouvait raisonnablement espérer qu'un tel diagnostic sépare
-      les secteurs de Weil conjugués — c'est précisément ce que la v1.1.2 tentait de construire, lisant un
-      résidu numérique quasi nul comme une signature de « cohérence de phase préservée par
-      l'admissibilité ». Ce papier montre que cette attente échoue pour une raison structurelle, non par
-      coïncidence numérique&nbsp;: la réduction en droites de Fourier pures qui démontre l'identité de
+      les secteurs de Weil conjugués. Ce papier montre que cette attente échoue pour une raison
+      structurelle, non par coïncidence numérique&nbsp;: la réduction en droites de Fourier pures qui démontre l'identité de
       rigidité interdit simultanément la géométrie de phase plus riche qui aurait été nécessaire pour
       séparer les secteurs par un diagnostic de trame invariant par rephasage et permutation.
     </p>
@@ -217,18 +197,17 @@
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
-      Ce papier ne prétend plus dériver de structure quantique et ne s'appuie plus sur O18 (structure de
-      fibre de parité), O19, O21 ou O22 comme piliers établis — un audit indépendant de ces papiers a
-      jugé invalides ou non établies les affirmations d'identification de fibre et d'observable canonique
-      pour lesquelles ils étaient cités. Ce qui subsiste est autonome&nbsp;: un théorème de rigidité issu
-      de la théorie des représentations portant sur la construction à sonde uniforme propre au pipeline,
-      et ses corollaires d'impossibilité.
+      Ce papier ne dérive pas de structure quantique et ne s'appuie pas sur O18 (structure de fibre de
+      parité), O19, O21 ou O22 comme piliers établis — un audit de ces papiers a jugé invalides ou non
+      établies les affirmations d'identification de fibre et d'observable canonique pour lesquelles ils
+      étaient cités. Ce qui subsiste est autonome&nbsp;: un théorème de rigidité issu de la théorie des
+      représentations portant sur la construction à sonde uniforme propre au pipeline, et ses corollaires
+      d'impossibilité.
     </p>
     <p>
-      La v1.1.2 avait ouvert la piste thématique de la série Q sur l'émergence de la structure quantique,
-      Q2 et Q3 étant présentés comme s'appuyant sur son théorème central. Ce théorème étant retiré ici, la
-      question de savoir si et comment Q2 et Q3 sont affectés fait l'objet d'un audit séparé, non encore
-      mené — signalé pour suivi, non résolu par la présente révision.
+      Q2 et Q3 énoncent des résultats s'appuyant sur un théorème central que cette construction n'établit
+      pas. La question de savoir si et comment ils sont affectés fait l'objet d'un audit séparé, non
+      encore mené, signalé pour suivi.
     </p>
   </section>
 

@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Entanglement E2 — Two Entanglement Entropies | Cosmochrony</title>
   <meta name="description"
-    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, behind Bell–Tsirelson) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
+    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, conditional on (H-rank) and (H-inv)) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair"/>
   <meta property="og:description"
-    content="Separating the admissible pair entropy log 2 from the full residual-rank entropy log r_pair(n)."/>
+    content="Separating the admissible pair entropy log 2, conditional on two explicit hypotheses, from the full residual-rank entropy log r_pair(n)."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/entanglement/e2/"/>
   <script type="module">
@@ -36,7 +36,7 @@
       <div>
         <h1>Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair</h1>
         <p class="subtitle">
-          The admissible pair sector ($\log 2$) and the full residual rank are different objects.
+          The admissible pair sector ($\log 2$, conditional) and the full residual rank are different objects.
         </p>
       </div>
     </div>
@@ -62,10 +62,10 @@
         two different projections of the pair.
       </p>
       <p>
-        Conflating them produces an apparent tension between an unconditional $\log 2$ and a
-        depth-dependent $\log r_{\mathrm{pair}}(n)$. The separation is not cosmetic: the two
-        objects live on projections of different rank, have different physical roles, and have
-        different epistemic status.
+        Conflating them produces an apparent tension between a $\log 2$ figure and a
+        depth-dependent $\log r_{\mathrm{pair}}(n)$ figure that in fact rest on different
+        hypotheses. The separation is not cosmetic: the two objects live on projections of
+        different rank, have different physical roles, and have different epistemic status.
       </p>
       <div class="note" role="note">
         <strong>Scope.</strong> This paper separates the two entropies and fixes the epistemic
@@ -89,7 +89,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Admissible pair entropy, residual rank, singlet, Tsirelson</div>
+          <div class="v">Admissible pair entropy, residual rank, singlet, diagonal invariance</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
@@ -103,11 +103,13 @@
     <h2>Two distinct objects</h2>
     <ul>
       <li>
-        <strong>Admissible pair sector.</strong> The rank-3 admissible projection $\Pi_q$ is
-        spectrally atomic (O21 Proposition 4.1):
-        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$. The mean-zero
-        lemma removes $e_0$, leaving the two-dimensional Born&ndash;Infeld parity pair
-        $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
+        <strong>Admissible pair sector.</strong> The unconditional mean-zero lemma (Q5a-O2)
+        removes $e_0$. Spectral atomicity itself &mdash; that the rank-3 admissible projection
+        $\Pi_q$ equals $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$
+        (Q5a-O2 Proposition 4.1) &mdash; is confirmed numerically at the tested primes, but its
+        general analytical proof rests on O23's own conditional rank-3 result, labelled here
+        (H-rank). Under (H-rank), the two-dimensional Born&ndash;Infeld parity pair
+        $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$ remains.
       </li>
       <li>
         <strong>Full residual fibre-level support.</strong> The full Gram&ndash;Schmidt basis is a
@@ -118,20 +120,26 @@
     </ul>
   </section>
   <section class="card">
-    <h2>Core result 1 — Admissible pair entropy</h2>
+    <h2>Core result 1 — Admissible pair entropy under (H-rank) and (H-inv)</h2>
     <p>
-      The proto-state on $\mathcal{A}_c \otimes \mathcal{A}_c$ is the spin-$\tfrac12$ singlet
+      Under two explicit, independent hypotheses &mdash; (H-rank) and (H-inv) &mdash; the
+      proto-state on $\mathcal{A}_c \otimes \mathcal{A}_c$ is the spin-$\tfrac12$ singlet
       $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
       |q-\xi_c\rangle \otimes |\xi_c\rangle \bigr), $$
       its reduced state is $\rho^{\mathrm{adm}}_c = \tfrac12 \mathbf{1}_2$, and
       $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
     </p>
     <p>
-      The proof uses spectral atomicity (O21), the mean-zero lemma, and the Born&ndash;Infeld
-      indiscernibility singlet identification of Q3 (Theorem 4.1) applied to the
-      Clebsch&ndash;Gordan decomposition $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. The
-      statement is <strong>unconditional</strong> for general canonical blocks, relative to the
-      cited upstream theorems.
+      <strong>(H-rank)</strong>, stated by O23 itself as a condition on its own admissible-rank-
+      exactly-three result, is the absence of additional effective symmetries beyond
+      Born&ndash;Infeld parity, within the scope of O18. <strong>(H-inv)</strong>, stated and left
+      open by Q3, is diagonal $2I$-invariance of the proto-state; under it, Q3's Theorem 3.2
+      identifies the unique invariant vector as the singlet via Schur's lemma applied to the
+      Clebsch&ndash;Gordan decomposition $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. Neither
+      hypothesis is derived from Born&ndash;Infeld indiscernibility, from admissibility, or from
+      any other principle in the corpus. The mean-zero lemma is unconditional throughout; the
+      $\log 2$ statement is <strong>conditional on both (H-rank) and (H-inv)</strong> for general
+      canonical blocks.
     </p>
   </section>
   <section class="card">
@@ -149,20 +157,23 @@
       </li>
       <li>
         <strong>Independently sampled canonical blocks.</strong> The literal mode-by-mode
-        identification is not automatic. O17 gives equality of residual dimensions; universal
-        admission orthogonality (E1 Theorem 4) gives orthonormal residual bases. Together they
-        do not fix the joint state or force a flat marginal.
+        identification is not automatic. O17 gives equality of residual dimensions <em>within its
+        own scalar toy model</em> &mdash; O17's own scope section states no argument connects that
+        model to the real pipeline, so this is carried as a standing gap; universal admission
+        orthogonality (E1 Theorem 4) gives orthonormal residual bases. Together they do not fix
+        the joint state or force a flat marginal.
       </li>
       <li>
         <strong>Conditional bridge $[\mathrm{H}_{\mathrm{res}}]$.</strong> Under residual
         admissibility indiscernibility — no invariant carried by the admissible generators
-        distinguishes the residual fingerprint directions — the reduced state is
+        distinguishes the residual fingerprint directions — and assuming O17's equal-dimension
+        result transfers to the real pipeline, the reduced state is
         $\rho_c^{\mathrm{res}}(n) = r_{\mathrm{pair}}(n)^{-1} \mathbf{1}_{r_{\mathrm{pair}}(n)}$
         and $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ for general canonical blocks.
       </li>
       <li>
         <strong>Metaplectic dilation excluded.</strong> The dilation
-        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ of O30 acts between blocks (relating
+        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ of O31 acts between blocks (relating
         $c$ to $\omega c$), not within the residual support of a single block. It cannot make the
         residual modes admissibility-indiscernible and is therefore not a bridge for
         $[\mathrm{H}_{\mathrm{res}}]$.
@@ -174,30 +185,13 @@
     </p>
   </section>
   <section class="card">
-    <h2>Bell&ndash;Tsirelson sector</h2>
-    <p>
-      The entanglement that CHSH experiments measure is carried by the spin-$\tfrac12$ singlet.
-      By the admissible pair entropy theorem, this is exactly the admissible pair sector with
-      $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$. The singlet correlator
-      $E(\hat a, \hat b) = -\hat a \cdot \hat b$ and the unconditional Tsirelson bound
-      $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ are derived from the same admissible structure in Q1
-      (Theorem 2.14, Corollary 2.16). The admissible pair entropy is therefore the entanglement
-      entropy of the state behind those results.
-    </p>
-    <p>
-      The full residual-rank entropy is a finer pipeline-level observable that tracks the
-      contraction of the Gram&ndash;Schmidt span toward saturation. It is <strong>not</strong> the
-      quantity measured by a Bell experiment, and it should not be identified with the singlet
-      entropy. The two coincide only in the degenerate case $r_{\mathrm{pair}}(n) = 2$.
-    </p>
-  </section>
-  <section class="card">
     <h2>Position in the programme</h2>
     <p>
       Constituent of the <a href="/science/entanglement/">entanglement sub-programme</a>. Builds
-      on E1 (orthogonality and matched-block flat spectrum), O21 (spectral atomicity + mean-zero),
-      O17 (equal residual dimensions), O30 (metaplectic dilation, excluded), Q3 (singlet
-      identification), and Q1 (Tsirelson bound).
+      on E1 (orthogonality and matched-block flat spectrum), Q5a-O2 (spectral atomicity +
+      unconditional mean-zero), O23 (rank-3, conditional on (H-rank)), O18 ((H-rank)'s scope),
+      O17 (equal residual dimensions, own toy model), O31 (metaplectic dilation, excluded), and
+      Q3 (singlet identification, conditional on (H-inv)).
     </p>
   </section>
   <section class="card">

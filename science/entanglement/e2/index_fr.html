@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Intrication E2 — Deux entropies d'intrication | Cosmochronie</title>
   <meta name="description"
-    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée&nbsp;: le secteur admissible de paire (log 2, derrière Bell–Tsirelson) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
+    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée&nbsp;: le secteur admissible de paire (log 2, conditionnel à (H-rank) et (H-inv)) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée"/>
   <meta property="og:description"
-    content="Séparer l'entropie de la paire admissible log 2 de l'entropie de rang résiduel complet log r_pair(n)."/>
+    content="Séparer l'entropie de la paire admissible log 2, conditionnelle à deux hypothèses explicites, de l'entropie de rang résiduel complet log r_pair(n)."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/entanglement/e2/"/>
   <script type="module">
@@ -37,8 +37,8 @@
       <div>
         <h1>Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée</h1>
         <p class="subtitle">
-          Le secteur admissible de paire ($\log 2$) et le rang résiduel complet sont des objets
-          différents.
+          Le secteur admissible de paire ($\log 2$, conditionnel) et le rang résiduel complet sont
+          des objets différents.
         </p>
       </div>
     </div>
@@ -64,10 +64,11 @@
         en jeu, attachées à deux projections différentes de la paire.
       </p>
       <p>
-        Les confondre produit une tension apparente entre un $\log 2$ inconditionnel et un
-        $\log r_{\mathrm{pair}}(n)$ dépendant de la profondeur. La séparation n'est pas
-        cosmétique&nbsp;: les deux objets vivent sur des projections de rang différent, ont des
-        rôles physiques différents et un statut épistémique différent.
+        Les confondre produit une tension apparente entre un $\log 2$ et un
+        $\log r_{\mathrm{pair}}(n)$ dépendant de la profondeur, qui reposent en réalité sur des
+        hypothèses différentes. La séparation n'est pas cosmétique&nbsp;: les deux objets vivent
+        sur des projections de rang différent, ont des rôles physiques différents et un statut
+        épistémique différent.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Ce papier sépare les deux entropies et fixe la stratification
@@ -91,7 +92,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Entropie de paire admissible, rang résiduel, singulet, Tsirelson</div>
+          <div class="v">Entropie de paire admissible, rang résiduel, singulet, invariance diagonale</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
@@ -105,11 +106,14 @@
     <h2>Deux objets distincts</h2>
     <ul>
       <li>
-        <strong>Secteur admissible de paire.</strong> La projection admissible de rang 3 $\Pi_q$
-        est spectralement atomique (O21 proposition 4.1)&nbsp;:
-        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$. Le lemme de
-        moyenne nulle retire $e_0$, laissant la paire de parité de Born&ndash;Infeld de dimension
-        deux $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
+        <strong>Secteur admissible de paire.</strong> Le lemme de moyenne nulle inconditionnel
+        (Q5a-O2) retire $e_0$. L'atomicité spectrale elle-même &mdash; le fait que la projection
+        admissible de rang 3 $\Pi_q$ vaille
+        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$ (Q5a-O2
+        proposition 4.1) &mdash; est confirmée numériquement aux nombres premiers testés, mais sa
+        preuve analytique générale repose sur le résultat de rang 3 conditionnel propre à O23,
+        ici étiqueté (H-rank). Sous (H-rank), il reste la paire de parité de Born&ndash;Infeld de
+        dimension deux $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
       </li>
       <li>
         <strong>Support fibre-par-fibre résiduel complet.</strong> La base complète de
@@ -121,9 +125,10 @@
     </ul>
   </section>
   <section class="card">
-    <h2>Résultat 1 — Entropie de paire admissible</h2>
+    <h2>Résultat 1 — Entropie de paire admissible sous (H-rank) et (H-inv)</h2>
     <p>
-      Le proto-état sur $\mathcal{A}_c \otimes \mathcal{A}_c$ est le singulet de
+      Sous deux hypothèses explicites et indépendantes &mdash; (H-rank) et (H-inv) &mdash;, le
+      proto-état sur $\mathcal{A}_c \otimes \mathcal{A}_c$ est le singulet de
       spin-$\tfrac12$&nbsp;:
       $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
       |q-\xi_c\rangle \otimes |\xi_c\rangle \bigr), $$
@@ -131,11 +136,17 @@
       $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
     </p>
     <p>
-      La preuve utilise l'atomicité spectrale (O21), le lemme de moyenne nulle, et
-      l'identification du singulet par indiscernabilité de Born&ndash;Infeld de Q3 (théorème 4.1)
-      appliquée à la décomposition de Clebsch&ndash;Gordan $V_{1/2} \otimes V_{1/2} = V_0 \oplus
-      V_1$. L'énoncé est <strong>inconditionnel</strong> pour les blocs canoniques généraux,
-      relativement aux théorèmes amont cités.
+      <strong>(H-rank)</strong>, énoncée par O23 lui-même comme condition sur son propre résultat
+      de rang exactement trois, est l'absence de symétries effectives additionnelles au-delà de
+      la parité de Born&ndash;Infeld, dans le cadre d'O18. <strong>(H-inv)</strong>, énoncée et
+      laissée ouverte par Q3, est l'invariance diagonale sous $2I$ du proto-état&nbsp;; sous cette
+      hypothèse, le théorème 3.2 de Q3 identifie l'unique vecteur invariant comme le singulet, via
+      le lemme de Schur appliqué à la décomposition de Clebsch&ndash;Gordan
+      $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. Aucune des deux hypothèses n'est dérivée de
+      l'indiscernabilité de Born&ndash;Infeld, de l'admissibilité, ni d'aucun autre principe du
+      corpus. Le lemme de moyenne nulle reste inconditionnel&nbsp;; l'énoncé $\log 2$ est
+      <strong>conditionnel à (H-rank) et (H-inv) conjointement</strong> pour les blocs canoniques
+      généraux.
     </p>
   </section>
   <section class="card">
@@ -153,21 +164,24 @@
       </li>
       <li>
         <strong>Blocs canoniques échantillonnés indépendamment.</strong> L'identification littérale
-        mode par mode n'est pas automatique. O17 fournit l'égalité des dimensions
-        résiduelles&nbsp;; l'orthogonalité d'admission universelle (E1 théorème 4) fournit des
-        bases résiduelles orthonormées. Ensemble, ils ne fixent pas l'état joint ni ne forcent
-        une marginale plate.
+        mode par mode n'est pas automatique. O17 fournit l'égalité des dimensions résiduelles
+        <em>dans son propre modèle-jouet</em> &mdash; la section de portée d'O17 précise
+        elle-même qu'aucun argument ne relie ce modèle au pipeline réel, ce qui est donc porté
+        ici comme une lacune ouverte&nbsp;; l'orthogonalité d'admission universelle (E1
+        théorème 4) fournit des bases résiduelles orthonormées. Ensemble, ils ne fixent pas
+        l'état joint ni ne forcent une marginale plate.
       </li>
       <li>
         <strong>Pont conditionnel $[\mathrm{H}_{\mathrm{res}}]$.</strong> Sous l'indiscernabilité
         d'admissibilité résiduelle — aucun invariant porté par les générateurs admissibles ne
-        distingue les directions d'empreintes résiduelles — l'état réduit est
+        distingue les directions d'empreintes résiduelles — et en supposant que le résultat
+        d'égalité des dimensions d'O17 se transfère au pipeline réel, l'état réduit est
         $\rho_c^{\mathrm{res}}(n) = r_{\mathrm{pair}}(n)^{-1} \mathbf{1}_{r_{\mathrm{pair}}(n)}$
         et $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ pour les blocs canoniques généraux.
       </li>
       <li>
         <strong>Dilatation métaplectique exclue.</strong> La dilatation
-        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ de O30 agit entre blocs (reliant $c$
+        $\phi_\omega(a, b, z) = (\omega a, \omega^{-1} b, z)$ de O31 agit entre blocs (reliant $c$
         à $\omega c$), pas à l'intérieur du support résiduel d'un bloc unique. Elle ne peut pas
         rendre les modes résiduels indiscernables au niveau de l'admissibilité et n'est donc pas
         un pont pour $[\mathrm{H}_{\mathrm{res}}]$.
@@ -179,31 +193,14 @@
     </p>
   </section>
   <section class="card">
-    <h2>Secteur Bell&ndash;Tsirelson</h2>
-    <p>
-      L'intrication que les expériences CHSH mesurent est portée par le singulet de
-      spin-$\tfrac12$. Par le théorème d'entropie de paire admissible, c'est exactement le
-      secteur admissible de paire avec $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$. Le corrélateur
-      du singulet $E(\hat a, \hat b) = -\hat a \cdot \hat b$ et la borne inconditionnelle de
-      Tsirelson $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ sont dérivés de la même structure admissible
-      dans Q1 (théorème 2.14, corollaire 2.16). L'entropie de paire admissible est donc
-      l'entropie d'intrication de l'état derrière ces résultats.
-    </p>
-    <p>
-      L'entropie de rang résiduel complet est une observable plus fine au niveau du pipeline qui
-      suit la contraction du sous-espace de Gram&ndash;Schmidt vers la saturation. Ce
-      <strong>n'est pas</strong> la quantité mesurée par une expérience de Bell, et elle ne
-      doit pas être identifiée à l'entropie du singulet. Les deux coïncident uniquement dans le
-      cas dégénéré $r_{\mathrm{pair}}(n) = 2$.
-    </p>
-  </section>
-  <section class="card">
     <h2>Position dans le programme</h2>
     <p>
       Constituant du <a href="../index_fr.html">sous-programme intrication</a>.
-      S'appuie sur E1 (orthogonalité et spectre plat pour blocs appariés), O21 (atomicité
-      spectrale + moyenne nulle), O17 (égalité des dimensions résiduelles), O30 (dilatation
-      métaplectique, exclue), Q3 (identification du singulet) et Q1 (borne de Tsirelson).
+      S'appuie sur E1 (orthogonalité et spectre plat pour blocs appariés), Q5a-O2 (atomicité
+      spectrale + moyenne nulle inconditionnelle), O23 (rang 3, conditionnel à (H-rank)), O18
+      (cadre de (H-rank)), O17 (égalité des dimensions résiduelles, propre modèle-jouet), O31
+      (dilatation métaplectique, exclue), et Q3 (identification du singulet, conditionnelle à
+      (H-inv)).
     </p>
   </section>
   <section class="card">

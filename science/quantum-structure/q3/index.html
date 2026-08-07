@@ -5,22 +5,24 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Universal Spin-j Singlet from Admissibility: Completion of the SU(2) Quantum Sector | Cosmochrony
+    Diagonal 2I-Invariance Selects the Universal Spin-j Singlet and Its Casimir Correlator | Cosmochrony
   </title>
   <meta name="description"
-    content="Q3 completes the SU(2) quantum sector for all admissible j within a supplied bipartite tensor-
-    product composition (a K4 crossing, not derived from A1-A4). Within that composition, Born–Infeld
-    indiscernibility forces the proto-state to be the singlet, and the universal correlator
-    E(â,b̂) = −j(j+1)/3 · (â·b̂) is derived for all 5 admissible sectors of the binary icosahedral group."/>
+    content="Q3 proves a conditional theorem: given a supplied bipartite carrier and an explicit,
+    undemonstrated hypothesis that the joint state is diagonally 2I-invariant, Schur's lemma
+    uniquely identifies the state as the SU(2) singlet, with an explicit Casimir correlator, for
+    all five admissible sectors of 2I. It does not derive the invariance hypothesis, phase
+    coherence, or the Born rule."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/quantum-structure/q3/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Universal Spin-j Singlet from Admissibility: Completion of the SU(2) Quantum Sector"/>
+    content="Diagonal 2I-Invariance Selects the Universal Spin-j Singlet and Its Casimir Correlator"/>
   <meta property="og:description"
-    content="Within a supplied bipartite composition, Q3 proves that Born–Infeld indiscernibility forces
-    the proto-state to be invariant under the diagonal 2I-action, and Schur's lemma uniquely identifies it
-    as the singlet |Ω_j⟩. Universal correlator E(â,b̂) = −j(j+1)/3 · (â·b̂) derived for all 5 sectors."/>
+    content="Given an explicit, undemonstrated hypothesis (H-inv) that a bipartite state is
+    invariant under the diagonal action of 2I, Schur's lemma on Hom_2I(V_j*,V_j) uniquely
+    identifies the state as the SU(2) singlet, for all five admissible sectors of 2I. H-inv
+    itself, phase coherence, and the Born rule are not derived."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/quantum-structure/q3/"/>
@@ -48,16 +50,13 @@
       </a>
       <div>
         <h1>
-          Universal Spin-j Singlet from Admissibility: Completion of the SU(2) Quantum Sector
+          Diagonal 2I-Invariance Selects the Universal Spin-j Singlet and Its Casimir Correlator
         </h1>
         <p class="subtitle">
-          Q3 completes the SU(2) quantum sector for all admissible $j$, within the supplied bipartite
-          tensor-product composition $V_{\chi_{2j+1}} \otimes V_{\chi_{2j+1}}$ (a K4 crossing, not
-          derived from A1&ndash;A4). Within that composition, Born–Infeld indiscernibility
-          forces the proto-state to be invariant under the diagonal 2I-action, and Schur's lemma
-          uniquely identifies it as the singlet $|\Omega_j\rangle$. The universal correlator
-          $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}\,\hat{a}\cdot\hat{b}$ is derived for all
-          5 admissible sectors of the binary icosahedral group.
+          For each of the five representations of $2I$ restricted from $\mathrm{SU}(2)$, given a
+          supplied bipartite carrier and the explicit, undemonstrated hypothesis that a state on
+          it is invariant under the diagonal action of $2I$, the state is uniquely the singlet,
+          with an explicit Casimir correlator.
         </p>
       </div>
     </div>
@@ -74,32 +73,29 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        Q2 established that the spin-3/2 sector obeys the same quantum structure as spin-1/2 via
-        co-admissibility, and identified SU(2) as the stable fixed point of the admissibility flow
-        on the binary icosahedral group. However, two steps remained open: the identification of the
-        isotropic fibre state with the proto-state for spin-3/2, and the general extension to all
-        admissible values of $j$.
+        For each of the five representations $\chi_{2j+1}$, $j \in \{\tfrac12, 1, \tfrac32, 2,
+        \tfrac52\}$, obtained by restricting the spin-$j$ representation of $\mathrm{SU}(2)$ to
+        the binary icosahedral group $2I$, this paper proves a conditional theorem. Given a
+        bipartite carrier $V_{\chi_{2j+1}} \otimes V_{\chi_{2j+1}}$ — a supplied composition
+        structure, not derived from any admissibility axiom — and the explicit hypothesis that a
+        state on that carrier is invariant under the diagonal action of $2I$, the state is
+        uniquely the $\mathrm{SU}(2)$ singlet
+        $|\Omega_j\rangle = \tfrac{1}{\sqrt{2j+1}}\sum_m(-1)^{j-m}|m\rangle|-m\rangle$, up to
+        phase.
       </p>
       <p>
-        Q3 closes both open steps, within a supplied bipartite tensor-product composition
-        $V_{\chi_{2j+1}} \otimes V_{\chi_{2j+1}}$ of the conjugate pair: this composition is a
-        construction choice (a K4 crossing), not a consequence of the admissibility axioms A1&ndash;A4.
-        The core argument uses Born–Infeld indiscernibility and Schur's lemma: within that
-        composition, the bipartite proto-state must be invariant under the diagonal 2I-action, and by
-        Schur's lemma applied to the Clebsch–Gordan decomposition, the only such invariant state is
-        the singlet $|\Omega_j\rangle$.
-      </p>
-      <p>
-        From the singlet identification, the universal correlator
-        $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}\,\hat{a}\cdot\hat{b}$ follows by direct
-        computation, valid for all 5 admissible sectors $j \in \{1/2, 1, 3/2, 2, 5/2\}$ of
-        the binary icosahedral group 2I.
+        The proof uses $(V_j \otimes V_j)^{2I} \cong \mathrm{Hom}_{2I}(V_j^*, V_j)$,
+        one-dimensional by Schur's lemma whenever the restriction of $V_j$ to $2I$ is irreducible
+        and self-dual — which holds for all five sectors, an instance of the classical McKay
+        correspondence for the binary icosahedral group. Given the singlet, the two-point
+        correlator follows by an explicit trace computation:
+        $E(\hat a,\hat b) = -\tfrac{j(j+1)}{3}(\hat a\cdot\hat b)$.
       </p>
       <div class="note">
-        <strong>Central message.</strong> Within the supplied bipartite composition, admissibility
-        and Schur's lemma uniquely determine the proto-state as the singlet $|\Omega_j\rangle$ for
-        all admissible $j$, completing the quantum sector of the spectral admissibility programme
-        within that composition.
+        <strong>Central message.</strong> The diagonal-invariance hypothesis is stated as an
+        explicit assumption throughout, not derived from admissibility or from any
+        Born–Infeld indiscernibility argument. The theorem shows exactly how much that bare
+        hypothesis buys — a unique state and its second moments — and no more.
       </div>
     </div>
     <aside class="card">
@@ -116,24 +112,27 @@
         <div class="kv">
           <div class="k">Focus</div>
           <div class="v">
-            Universal spin-$j$ singlet, Schur's lemma, Clebsch–Gordan decomposition,
-            binary icosahedral group, universal correlator
+            Binary icosahedral group, SU(2) representation theory, Schur's lemma,
+            Clebsch–Gordan decomposition, McKay correspondence
           </div>
         </div>
         <div class="kv">
           <div class="k">Key result</div>
           <div class="v">
-            $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}\,\hat{a}\cdot\hat{b}$
-            for all $j \in \{1/2, 1, 3/2, 2, 5/2\}$
+            $|\psi\rangle = |\Omega_j\rangle$ given (H-inv); $E(\hat a,\hat b) =
+            -\tfrac{j(j+1)}{3}(\hat a\cdot\hat b)$
           </div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Proved</div>
+          <div class="v">Conditional on an explicit, undemonstrated hypothesis (H-inv)</div>
         </div>
         <div class="kv">
-          <div class="k">Depends on</div>
-          <div class="v">Q2</div>
+          <div class="k">Does not establish</div>
+          <div class="v">
+            (H-inv) itself, phase coherence, Born rule, CHSH/Tsirelson-type bound, sector
+            selection
+          </div>
         </div>
       </div>
     </aside>
@@ -143,111 +142,86 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>The bipartite composition is a K4 crossing:</strong> the ambient space
-        $V_{\chi_{2j+1}} \otimes V_{\chi_{2j+1}}$ in which the conjugate pair's joint proto-state is
-        sought is a supplied composition structure, not a consequence of admissibility. What Q3
-        proves is the state's identity <em>within</em> that supplied composition, not the
-        composition itself.
+        <strong>Unique invariant singlet, all $j$:</strong> given the explicit hypothesis
+        (H-inv) that the joint state is diagonally $2I$-invariant, the state is uniquely
+        $|\Omega_j\rangle$ for each of the five admissible sectors — proved via
+        $(V_j\otimes V_j)^{2I} \cong \mathrm{Hom}_{2I}(V_j^*,V_j)$, one-dimensional by Schur's
+        lemma given irreducibility and self-duality of the restricted module.
       </li>
       <li>
-        <strong>Diagonal 2I-invariance from Born–Infeld indiscernibility:</strong> within that
-        supplied composition, Born–Infeld indiscernibility forces the bipartite proto-state to be
-        invariant under the diagonal action of 2I. This invariance
-        condition is the structural input that makes the singlet identification unique.
+        <strong>McKay correspondence for $2I$:</strong> the five irreducible restrictions
+        (dimensions 2, 3, 4, 5, 6) trace out the linear arm of the affine $E_8$ Dynkin diagram
+        generated by tensoring with the defining representation, terminating because the next
+        restriction (dimension 7) is reducible.
       </li>
       <li>
-        <strong>Singlet identification via Schur's lemma:</strong> the Clebsch–Gordan
-        decomposition of $V_{\chi_{2j+1}} \otimes V_{\chi_{2j+1}}$ contains exactly one
-        trivial (singlet) subrepresentation for each admissible $j$. By Schur's lemma, the
-        unique diagonal-2I-invariant state within that composition is the singlet $|\Omega_j\rangle$:
-        \[
-          |\Omega_j\rangle = \frac{1}{\sqrt{2j+1}}\sum_{m=-j}^{j}(-1)^{j-m}|j,m\rangle\otimes|j,-m\rangle.
-        \]
+        <strong>Casimir correlator:</strong> given the singlet, an explicit trace computation
+        gives $E(\hat a,\hat b) = -\tfrac{j(j+1)}{3}(\hat a\cdot\hat b)$ for all five sectors.
       </li>
       <li>
-        <strong>Universal correlator for all admissible $j$:</strong> from the singlet
-        $|\Omega_j\rangle$, the bipartite correlator is computed directly:
-        \[
-          E(\hat{a},\hat{b}) = \langle\Omega_j|\,(\hat{a}\cdot\mathbf{J})\otimes(\hat{b}\cdot\mathbf{J})\,|\Omega_j\rangle
-          = -\frac{j(j+1)}{3}\,\hat{a}\cdot\hat{b},
-        \]
-        holding for all 5 admissible sectors $j \in \{1/2, 1, 3/2, 2, 5/2\}$ of 2I.
-      </li>
-      <li>
-        <strong>Closure of the open step of Q2:</strong> Q2 left open the identification of
-        the isotropic fibre state with the proto-state for spin-3/2, and the general-$j$
-        extension. Q3 closes both by the Schur's lemma argument, which applies uniformly
-        across all admissible sectors.
-      </li>
-      <li>
-        <strong>Completion of the Q1–Q3 quantum programme:</strong> together with Q1 (phase
-        coherence, spin-1/2) and Q2 (co-admissibility, spin-3/2, SU(2) fixed point), Q3
-        establishes that, within the supplied bipartite composition, the quantum structure of
-        SU(2) representations follows from admissibility without any further quantum postulate.
+        <strong>Scope:</strong> this paper does not derive (H-inv) from admissibility or from
+        any Born–Infeld indiscernibility argument, does not derive phase coherence, the Born
+        rule, or a CHSH/Tsirelson-type bound, and does not select any sector as physically
+        preferred.
       </li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Interpretation</h2>
+    <h2>Interpretive remark</h2>
     <p>
-      The central insight of Q3 is the role of Schur's lemma as a uniqueness theorem, within a
-      supplied bipartite composition. Admissibility does not derive that composition itself: it is
-      a construction choice, taken as an input. Once the composition is supplied and Born–Infeld
-      indiscernibility forces diagonal 2I-invariance of the proto-state within it, the
-      algebraic structure of representation theory does the rest: the singlet is the only
-      candidate. No additional physical principle beyond the supplied composition is needed.
+      Read as a methodological point: the theorem shows exactly how much a bare
+      diagonal-invariance hypothesis buys, on a supplied bipartite carrier — a unique state, for
+      each of five sectors, forced by Schur's lemma alone once irreducibility and self-duality of
+      the underlying $2I$-module are in hand. The correlator theorem then computes that state's
+      second moments explicitly. Neither theorem derives the hypothesis it starts from, and
+      neither by itself constitutes a physical selection principle, a probability law, or a
+      Bell-type inequality; each of those would need its own, separately stated and separately
+      proved bridge.
     </p>
-    <p>
-      The universality of the correlator formula $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}\,\hat{a}\cdot\hat{b}$
-      across all admissible sectors reflects the fact that the admissibility constraints on 2I
-      select exactly those representations for which SU(2) acts transitively on the unit sphere —
-      the defining property of rotationally symmetric correlators.
-    </p>
-    <div class="note">
-      <strong>Structural significance.</strong> The binary icosahedral group 2I has precisely 5
-      admissible sectors ($j = 1/2, 1, 3/2, 2, 5/2$). These are not chosen: they are the
-      only values for which the spectral admissibility constraints are simultaneously satisfiable.
-      The quantum structure of these sectors — singlet states, Born rule, correlators — is
-      determined by this discrete spectral selection.
-    </div>
   </section>
 
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Q3 closes the quantum sector of the spectral admissibility programme opened by Q1 and
-      extended by Q2. The Q1–Q3 chain establishes:
+      This paper shares its five-sector scope with
+      <a href="/science/quantum-structure/q2/">Q2</a>'s eigenvalue-degeneracy result, which fixes
+      which sectors are in scope, but does not depend on Q2's specific eigenvalue calculation for
+      its own argument. It does not depend on <a href="/science/quantum-structure/q1/">Q1</a>,
+      whose proved content (an unconditional Fourier-support rigidity theorem) is unrelated to
+      this paper's conditional singlet theorem. The finite effective-composition contract
+      typing the bipartite carrier as a supplied "K4 crossing" is discussed in the paper's own
+      scope remark.
     </p>
+  </section>
+
+  <section class="card">
+    <h2>Open directions</h2>
     <ul>
       <li>
-        <strong>Q1:</strong> phase coherence is a structural consequence of admissibility for
-        spin-1/2; the singlet correlator and Tsirelson bound follow from O18 and O23.
+        <strong>Deriving (H-inv).</strong> Whether the diagonal $2I$-invariance hypothesis
+        follows from some further, separately stated admissibility or dynamical principle —
+        rather than being supplied as an assumption — is open.
       </li>
       <li>
-        <strong>Q2:</strong> co-admissibility on 2I extends the result to spin-3/2; SU(2) is
-        identified as the fixed point of the admissibility flow.
+        <strong>The bipartite carrier itself.</strong> Deriving $V_j \otimes V_j$, or a general
+        states-and-effects layer it would instantiate, from more primitive structure is a
+        separate, open programme direction.
       </li>
       <li>
-        <strong>Q3:</strong> Schur's lemma closes the identification for all admissible $j$;
-        the universal correlator completes the derivation.
+        <strong>Multipartite extension.</strong> The five sectors raise the question of states
+        mixing more than two sectors or more than two parties; the present single-pair
+        construction does not address this.
       </li>
     </ul>
-    <p>
-      The result has direct implications for other parts of the programme. The universal correlator
-      provides a falsifiable prediction: Bell-type correlations in the Cosmochrony framework should
-      obey $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}\,\hat{a}\cdot\hat{b}$ for all admissible $j$,
-      which differs from the standard quantum mechanics result only for $j \neq 1/2$ (where
-      $j(j+1)/3 \neq 1/4$) and could in principle be tested.
-    </p>
   </section>
 
   <section class="card">
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Universal Spin-j Singlet from Admissibility: Completion of the SU(2) Quantum Sector</i>,
-      2026.
+      <i>Diagonal 2I-Invariance Selects the Universal Spin-j Singlet and Its Casimir
+      Correlator</i>, 2026.
       <a href="https://doi.org/10.5281/zenodo.19979535">doi:10.5281/zenodo.19979535</a>
     </p>
   </section>

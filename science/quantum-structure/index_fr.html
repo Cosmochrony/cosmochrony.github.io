@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Le sous-programme de structure quantique | Cosmochrony</title>
   <meta name="description"
-    content="Étant donné le porteur d’amplitude complexe de Weil SU(2) fourni par O18/O23, la mécanique quantique
-    découle-t-elle de la seule admissibilité ? Le sous-programme de structure quantique
-    dérive la cohérence de phase, le corrélateur singulet, la borne de Tsirelson et la règle de Born à partir des
-    contraintes d’admissibilité A1–A4, sans importer aucun postulat quantique supplémentaire. Quatre articles
-    constituants, six étapes structurelles, une fonctionnelle."/>
+    content="Le sous-programme de structure quantique comprend trois articles compagnons sur le groupe
+    binaire icosaédral 2I, plus un résultat publié indépendamment. Q1 démontre un théorème de rigidité
+    du support de Fourier, inconditionnel ; Q2 démontre une dégénérescence exacte de valeur propre en
+    théorie des groupes finis ; Q3 démontre un théorème conditionnel à une hypothèse explicite, non
+    démontrée. Aucune chaîne ne relie actuellement ces résultats à la cohérence de phase, à un
+    corrélateur singulet, à une borne de Tsirelson ou à la règle de Born."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/quantum-structure/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Le sous-programme de structure quantique"/>
   <meta property="og:description"
-    content="Étant donné un porteur d’amplitude complexe fourni, la mécanique quantique n’est pas davantage
-    postulée : la cohérence de phase, le corrélateur singulet
-    $E = -\hat{a}\cdot\hat{b}$, la borne de Tsirelson $2\sqrt{2}$ et la règle de Born sont forcées par l’admissibilité
-    du secteur SU(2) sur le groupe binaire icosaédral, au sein de ce porteur. Note de présentation et hub des
-    articles du sous-programme de structure quantique."/>
+    content="Q1 : théorème de rigidité du support de Fourier, inconditionnel. Q2 : dégénérescence
+    exacte de valeur propre en théorie des groupes finis sur 2I. Q3 : théorème conditionnel à une
+    hypothèse explicite, non démontrée, d'invariance diagonale. Bell : résultat indépendant et
+    inconditionnel de non-applicabilité. Note de présentation et hub des articles du sous-programme de
+    structure quantique."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/quantum-structure/"/>
   <script type="module">
@@ -45,70 +46,47 @@
       <div>
         <h1>Le sous-programme de structure quantique</h1>
         <p class="subtitle">
-          Étant donné le porteur d’amplitude complexe de Weil SU(2), $V_\rho$, fourni par O18/O23, les structures
+          Étant donné le porteur d'amplitude complexe de Weil SU(2), $V_\rho$, fourni par O18/O23, les structures
           de la mécanique quantique construites sur lui — cohérence de phase, règle de Born, corrélateur
           singulet, corrélations de type Bell — découlent-elles de la seule admissibilité, ou doivent-elles être
-          postulées séparément ? En Cosmochronie, les axiomes d’admissibilité A1–A4 sur le groupe binaire
-          icosaédral $2I$ les <em>forcent</em>, au sein de ce porteur fourni ; la structure scalaire complexe
-          propre du porteur n’est pas dérivée de A1–A4. Cette page en est la synthèse et le hub vers tous ses
-          articles.
+          postulées séparément&nbsp;? Ce n'est actuellement pas établi. Cette page énonce clairement la portée
+          actuelle et restreinte de chacun des trois articles constituants, et en est le hub.
         </p>
       </div>
     </div>
     <div class="cta">
       <a class="btn primary" href="https://doi.org/10.5281/zenodo.20562949" rel="noopener">
         Lire la note de synthèse</a>
-      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20562949</span></span>
+      <span class="pill">DOI : <span class="mono">10.5281/zenodo.20562949</span></span>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <div class="note" role="note" style="margin-bottom: 1.5rem;">
-    <strong>Avis de correction (Q1, v2.0).</strong> Le théorème central de Q1 — cité tout au long de
-    cette page (Théorème&nbsp;2.7, Théorème&nbsp;2.15, Corollaire&nbsp;2.17, Théorème&nbsp;2.19) comme
-    fondement de la cohérence de phase, du corrélateur singulet, de la borne de Tsirelson et de la règle
-    de Born au spin&nbsp;$\tfrac12$ — a été retiré. La relecture indépendante a jugé sa preuve publiée
-    non fondée et sa dérivation séparée de la règle de Born défectueuse. Q1 v2.0 démontre à la place un
-    théorème de rigidité plus étroit et inconditionnel, et ne dérive plus de structure quantique&nbsp;;
-    voir la <a href="/science/quantum-structure/q1/index_fr.html">page Q1 mise à jour</a>. La description
-    de cette page présentant le sous-programme comme « fermé au sein du secteur $\mathrm{SU}(2)$ », ainsi
-    que son compte-rendu de ce sur quoi s'appuient Q2 et Q3, n'ont <em>pas encore</em> été réaudités à la
-    lumière de ce retrait et doivent être lus comme provisoires en attendant cette relecture.
-  </div>
   <section class="grid">
     <div class="card">
       <h2>Aperçu</h2>
       <p>
-        Les axiomes d’admissibilité A1–A4 forcent la fibre admissible $F_n \simeq V_\rho$ de structure de Heisenberg
-        (Note 5) et le fil d’admissibilité $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le secteur spin-$\tfrac{1}{2}$
+        Les axiomes d'admissibilité A1–A4 forcent la fibre admissible $F_n \simeq V_\rho$ de structure de Heisenberg
+        (Note 5) et le fil d'admissibilité $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le secteur spin-$\tfrac{1}{2}$
         identifié comme le secteur physiquement admissible (Note 1). <em>Les structures de la mécanique quantique
-        découlent-elles déjà de cet ensemble ?</em>
+        découlent-elles déjà de cet ensemble&nbsp;?</em>
       </p>
       <p>
-        Le sous-programme de structure quantique répond <strong>oui, sous condition d’un porteur fourni</strong>, en
-        six étapes structurelles. Étant donné le porteur d’amplitude complexe de Weil SU(2) fourni par O18 et O23 (non
-        dérivé de A1&ndash;A4), la cohérence de phase de ce porteur est forcée par l’indiscernabilité
-        binaire-icosaédrale des blocs de Weil conjugués (Q1). Le corrélateur
-        singulet $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ découle ensuite de quatre entrées établies
-        indépendamment : linéarité des observables $\mathfrak{su}(2)$ (O23), bilinéarité depuis la cohérence préservée
-        du porteur (Q1), invariance par rotation depuis la saturation isotrope (O23), et normalisation unitaire
-        depuis l’involution de parité (O18) — aucun postulat quantique au-delà du porteur fourni n’est invoqué à
-        aucune étape. La borne de Tsirelson $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ en est alors un corollaire
-        structurel au sein de ce porteur ; la règle de Born est l’unique affectation probabiliste compatible avec le
-        corrélateur dérivé (Q1 Théorème 2.19, sans recourir au théorème de
-        Gleason). $\mathrm{SU}(2)$ est sélectionné comme l’unique point fixe stable du flot d’admissibilité dans la
-        limite LPS (Q2 Théorème 8.6), et tous les résultats s’étendent à la généralisation universelle spin-$j$ pour
-        les cinq secteurs admissibles de $2I$ (Q3, au sein de sa propre composition bipartite fournie). La
-        factorisabilité de Bell ne s’applique <em>pas</em> dans les
-        descriptions effectives non injectives (article Bell, publié dans <em>Quantum Reports</em>).
+        <strong>Pas actuellement.</strong> Le théorème démontré de Q1 est un résultat de rigidité et
+        d'impossibilité en théorie des représentations, sans rapport avec la cohérence de phase ou la règle de
+        Born. Q2 ne démontre qu'une coïncidence finie de valeur propre entre les représentations spin-$\tfrac12$
+        et spin-$\tfrac32$ de $2I$. Q3 démontre un théorème conditionnel à une hypothèse explicite, non
+        démontrée — qu'un état bipartite sur un support fourni est invariant sous l'action diagonale de
+        $2I$ — non dérivée de l'admissibilité ni de l'indiscernabilité de Born–Infeld. Aucun résultat de ce
+        sous-programme ne dérive la cohérence de phase, un corrélateur singulet, une borne de Tsirelson, la règle
+        de Born, ou un secteur physiquement privilégié, depuis les seuls axiomes d'admissibilité.
       </p>
       <div class="note" role="note">
-        <strong>La première physique du corpus.</strong> Avant la géométrie de l’espace-temps, avant la structure de
-        jauge, avant la gravité, les contraintes d’admissibilité forcent déjà les corrélations quantiques sur le
-        porteur fourni. Le
-        sous-programme est clos dans le secteur $\mathrm{SU}(2)$, sous condition du porteur fourni ; le problème
-        ouvert principal est l’extension de la
-        règle de Born aux observables arbitraires au-delà du secteur de parité de O18.
+        <strong>Ce qui tient inconditionnellement.</strong> Le théorème de rigidité du support de Fourier et son
+        corollaire d'impossibilité (Q1), la dégénérescence de valeur propre (Q2), et le résultat de
+        non-applicabilité de l'article Bell, publié indépendamment, sont tous inconditionnels. Le théorème du
+        singulet et du corrélateur de Casimir de Q3 tient sous condition de son hypothèse énoncée (H-inv), qui
+        n'est pas elle-même dérivée.
       </div>
     </div>
     <aside class="card">
@@ -128,85 +106,53 @@
         </div>
         <div class="kv">
           <div class="k">Portée</div>
-          <div class="v">4 articles (Q1, Q2, Q3, Bell) ; cohérence de phase, corrélateur singulet, borne de Tsirelson,
-            règle de Born, corrélateur universel spin-$j$, non-applicabilité de Bell — tous dans le secteur
-            $\mathrm{SU}(2)$ de $2I$</div>
+          <div class="v">4 articles (Q1, Q2, Q3, Bell)&nbsp;: un théorème de rigidité inconditionnel (Q1), une
+            dégénérescence exacte de valeur propre (Q2), un théorème conditionnel à une hypothèse explicite (Q3),
+            et un résultat indépendant de non-applicabilité (Bell)</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Secteur $\mathrm{SU}(2)$ clos (six étapes prouvées) ; article Bell publié dans
-            <em>Quantum Reports</em> ; ouverts : règle de Born pour observables arbitraires, flot d’admissibilité au-delà
-            de $\mathrm{SU}(2)$, intrication multipartite</div>
+          <div class="v">Aucune chaîne vers la cohérence de phase, un corrélateur singulet, une borne de
+            Tsirelson ou la règle de Born n'est actuellement établie&nbsp;; article Bell publié dans
+            <em>Quantum Reports</em></div>
         </div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>La chaîne structurelle</h2>
-    <p style="text-align:center">
-      $F_n \simeq V_\rho,\;\text{indisc. BI}
-      \;\Longrightarrow\;
-      \text{cohérence de phase}
-      \;\Longrightarrow\;
-      E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}
-      \;\Longrightarrow\;
-      |S_{\mathrm{CHSH}}| \leq 2\sqrt{2}
-      \;\Longrightarrow\;
-      \text{règle de Born}
-      \;\Longrightarrow\;
-      \mathrm{SU}(2)\text{ point fixe}
-      \;\Longrightarrow\;
-      E = -\tfrac{j(j+1)}{3}\hat{a}\cdot\hat{b}.$
-    </p>
-    <p>
-      Six étapes conceptuellement distinctes couvrent trois articles constituants : cohérence de phase, corrélateur
-      singulet, borne de Tsirelson et règle de Born au spin-$\tfrac{1}{2}$ (Q1) ; co-admissibilité
-      $\lambda_{1/2} = \lambda_{3/2} = 18$ et $\mathrm{SU}(2)$ comme unique point fixe stable du flot d’admissibilité
-      (Q2) ; proto-état comme singulet, corrélateur universel et règle de Born sectorielle pour les cinq secteurs
-      admissibles $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ de $2I$ (Q3). L’article Bell établit que
-      l’hypothèse standard de factorisabilité de Bell échoue structurellement dans toute description effective non
-      injective.
-    </p>
-  </section>
-  <section class="card">
     <h2>Articles du sous-programme</h2>
-    <p><strong>Cohérence de phase, corrélateur singulet, Tsirelson, règle de Born au spin-$\tfrac{1}{2}$.</strong></p>
+    <p><strong>Q1 — rigidité du support de Fourier (prouvé, inconditionnel).</strong></p>
     <ul>
-      <li><a href="/science/quantum-structure/q1/index_fr.html"><strong>Q1</strong></a> — cohérence de phase depuis
-        l’indiscernabilité BI des blocs de Weil conjugués (Théorème 2.7, prouvé) ; signature observable
-        $\mathrm{rang}\,W^{(c)}_n = 0$ comme témoin falsifiable de cohérence (Corollaire 2.9 ; numériquement confirmé
-        pour $q = 29$ sur les quatre paires conjuguées) ; corrélateur singulet
-        $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ à partir de quatre entrées structurelles (Théorème 2.15, prouvé,
-        sous condition du porteur fourni) ; borne de Tsirelson $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$ comme corollaire
-        structurel (Corollaire 2.17, inconditionnel au sein de ce porteur) ; règle de Born comme unique affectation
-        probabiliste compatible avec le corrélateur dérivé (Théorème 2.19, prouvé au sein de ce porteur — sans
-        théorème de Gleason).</li>
+      <li><a href="/science/quantum-structure/q1/index_fr.html"><strong>Q1</strong></a> — une identité exacte et
+        inconditionnelle dans la représentation de Weil finie du groupe de Heisenberg&nbsp;: les vecteurs
+        d'empreinte des secteurs de Weil conjugués engendrent des sous-espaces identiques sur toute coquille BFS
+        complète, avec un corollaire d'impossibilité précis pour les diagnostics fondés sur le support, le rang ou
+        le gramien. Vérifié par 1&nbsp;548 contrôles exacts sur six nombres premiers, sans échec. N'établit ni
+        cohérence de phase, ni corrélateur singulet, ni borne de Tsirelson, ni règle de Born.</li>
     </ul>
-    <p><strong>Co-admissibilité et $\mathrm{SU}(2)$ comme point fixe stable.</strong></p>
+    <p><strong>Q2 — une dégénérescence exacte de valeur propre sur $2I$ (prouvé, inconditionnel).</strong></p>
     <ul>
-      <li><a href="/science/quantum-structure/q2/index_fr.html"><strong>Q2</strong></a> — co-admissibilité
-        $\lambda_{1/2} = \lambda_{3/2} = 18$ des spin-$\tfrac{1}{2}$ et spin-$\tfrac{3}{2}$ sur $2I$ (prouvée) ;
-        structure quantique répliquée pour le secteur $\chi_4$ avec corrélateur
-        $E = -\tfrac{5}{4}\hat{a}\cdot\hat{b}$ (prouvé) ; le flot d’admissibilité sélectionne $j = \tfrac{1}{2}$ comme
-        unique point fixe stable dans la limite LPS à grand $p$ (Théorème 8.6, prouvé), récupérant le corrélateur
-        standard $E = -\hat{a}\cdot\hat{b}$ et la borne de Tsirelson standard $2\sqrt{2}$ comme valeurs physiquement
-        réalisées.</li>
+      <li><a href="/science/quantum-structure/q2/index_fr.html"><strong>Q2</strong></a> — sur le groupe icosaédral
+        binaire $2I$, les représentations spin-$\tfrac{1}{2}$ et spin-$\tfrac{3}{2}$ induisent la même valeur
+        propre du Laplacien de Cayley, $\lambda_{1/2} = \lambda_{3/2} = 18$, démontré via le lemme de Schur.
+        N'établit ni cohérence de phase, ni normalisation de Casimir/isotropie, ni règle de Born, ni borne de
+        type Tsirelson, ni argument de point fixe/sélection de secteur SU(2).</li>
     </ul>
-    <p><strong>Secteur quantique spin-$j$ universel.</strong></p>
+    <p><strong>Q3 — un singulet universel conditionnel.</strong></p>
     <ul>
-      <li><a href="/science/quantum-structure/q3/index_fr.html"><strong>Q3</strong></a> — le proto-état est le singulet
-        $|\Omega_j\rangle$ pour tout $j$ admissible (Théorème 4.1, prouvé via Schur sur la décomposition de
-        Clebsch–Gordan) ; corrélateur universel
-        $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}(\hat{a}\cdot\hat{b})$ pour les cinq secteurs admissibles de $2I$
-        (Théorème 5.2, prouvé) ; règle de Born pour tout $j$ admissible (Corollaire 6.1, prouvé). Clôt le secteur
-        quantique $\mathrm{SU}(2)$ et complète la dérivation structurelle initiée par Q1.</li>
+      <li><a href="/science/quantum-structure/q3/index_fr.html"><strong>Q3</strong></a> — étant donné un support
+        bipartite fourni et une hypothèse explicite, non démontrée (H-inv), selon laquelle l'état conjoint est
+        invariant diagonalement sous $2I$, le lemme de Schur sur $\mathrm{Hom}_{2I}(V_j^*,V_j)$ identifie de façon
+        unique l'état comme le singulet $\mathrm{SU}(2)$ $|\Omega_j\rangle$, avec corrélateur de Casimir
+        $E(\hat{a},\hat{b}) = -\tfrac{j(j+1)}{3}(\hat{a}\cdot\hat{b})$, pour les cinq secteurs admissibles de $2I$.
+        Ne dérive ni (H-inv) elle-même, ni la cohérence de phase, ni la règle de Born.</li>
     </ul>
-    <p><strong>Non-applicabilité de Bell dans les cadres non injectifs.</strong></p>
+    <p><strong>Non-applicabilité de Bell dans les cadres non injectifs (prouvé, publié, indépendant de Q1–Q3).</strong></p>
     <ul>
-      <li><a href="/science/bell/index_fr.html"><strong>Article Bell</strong></a> — prouve que l’hypothèse standard de
-        factorisabilité de Bell échoue structurellement dans tout cadre où les résultats d’observables apparaissent
-        comme classes d’équivalence de configurations sous-jacentes sous une application non injective. La preuve
-        n’utilise que la non-injectivité de $\Pi$ et la complétude informationnelle (E2 d’ENI) ; aucune variable
+      <li><a href="/science/bell/index_fr.html"><strong>Article Bell</strong></a> — prouve que l'hypothèse standard de
+        factorisabilité de Bell échoue structurellement dans tout cadre où les résultats d'observables apparaissent
+        comme classes d'équivalence de configurations sous-jacentes sous une application non injective. La preuve
+        n'utilise que la non-injectivité de $\Pi$ et la complétude informationnelle (E2 d'ENI)&nbsp;; aucune variable
         cachée, aucune dynamique non locale, aucune modification de la mécanique quantique. Publié dans
         <em>Quantum Reports</em> (MDPI, 2026) — le seul article peer-reviewé du sous-programme.</li>
     </ul>
@@ -214,42 +160,39 @@
   <section class="card">
     <h2>Entrées et sorties</h2>
     <p>
-      <strong>Entrées amont.</strong> La fibre admissible $F_n \simeq V_\rho$ avec commutateur non trivial
-      $[X,Y] = Z$ depuis la note Heisenberg-structure et le foundation paper (Note 5) ; le fil d’admissibilité
-      $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le spin-$\tfrac{1}{2}$ identifié comme secteur minimal admissible
-      (Note 1, O29) ; $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ avec trois directions isotropes et saturation
-      isotrope $M \propto I$ (O23) ; involution de parité $c \leftrightarrow q-c$ et amplitudes unitaires à saturation
-      (O18, O22) ; indiscernabilité BI des blocs de Weil conjugués (BornInfeld) ; non-injectivité comme nécessité
-      structurelle ($\mathcal{S}_\Pi > 0$) pour l’argument Bell (ENI).
+      <strong>Entrées citées par les articles constituants.</strong> La fibre admissible $F_n \simeq V_\rho$ avec
+      commutateur non trivial $[X,Y] = Z$ depuis la note Heisenberg-structure et le foundation paper (Note 5) ;
+      le fil d'admissibilité $Q_8 \subset 2I \subset \mathrm{SU}(2)$ avec le spin-$\tfrac{1}{2}$ identifié comme
+      secteur minimal admissible (Note 1, O29) ; $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ et l'involution
+      de parité $c \leftrightarrow q-c$ (O18, O22, O23) — utilisés par l'argument de cohérence retiré de Q1, et
+      non porteurs pour aucun résultat actuellement prouvé ou conditionnel ; indiscernabilité BI des blocs de
+      Weil conjugués (BornInfeld) — utilisée seulement par le cadrage propre du théorème de rigidité de Q1 ;
+      non-injectivité comme nécessité structurelle ($\mathcal{S}_\Pi > 0$) pour l'argument Bell (ENI).
     </p>
     <p>
-      <strong>Sorties.</strong> Cohérence de phase et structure d’amplitudes cohérentes (consommées par la Note 6
-      fermions et la série Q) ; $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ dans le secteur spin-$\tfrac{1}{2}$ et sa
-      généralisation universelle spin-$j$ (consommées par la phénoménologie quantique et les applications) ; borne de
-      Tsirelson $2\sqrt{2}$ (applications fondationnelles) ; règle de Born dans le secteur $\mathrm{SU}(2)$ (mesures
-      quantiques) ; $\mathrm{SU}(2)$ comme point fixe stable (réinjecté dans la Note 1 et la Note 3 structure de jauge) ;
-      signature falsifiable $\mathrm{rang}\,W^{(c)}_n = 0$ (validation de la série O) ; non-applicabilité structurelle
-      de la factorisabilité de Bell (fondements de la mécanique quantique).
+      <strong>Sorties.</strong> Aucune sortie de ce sous-programme ne fournit actuellement de cohérence de phase,
+      de corrélateur, de borne de Tsirelson, d'identification de point fixe SU(2), ou de règle de Born à quelque
+      branche aval que ce soit. La dégénérescence de valeur propre de Q2 fixe les cinq secteurs concernés par
+      Q3. La non-applicabilité structurelle de la factorisabilité de Bell tient de façon indépendante et est
+      utilisée directement par les discussions de fondements quantiques ailleurs dans le corpus.
     </p>
   </section>
   <section class="card">
     <h2>Statut</h2>
     <p>
-      Le sous-programme est <strong>clos dans le secteur $\mathrm{SU}(2)$, sous condition du porteur de Weil
-      fourni</strong> : les six étapes de la chaîne structurelle sont prouvées. La cohérence de phase (Q1 Théorème
-      2.7) est inconditionnelle ; le corrélateur singulet (Q1 Théorème 2.15), la borne de Tsirelson (Q1 Corollaire
-      2.17) et la règle de Born au spin-$\tfrac{1}{2}$ (Q1 Théorème 2.19) sont inconditionnels au sein de ce porteur,
-      dont la structure scalaire complexe propre est fournie par O18/O23, non dérivée. Co-admissibilité
-      $\lambda_{1/2} = \lambda_{3/2} = 18$ et $\mathrm{SU}(2)$ comme unique point
-      fixe stable du flot d’admissibilité (Q2 Théorème 8.6) sont prouvés. L’identification du proto-état (Q3 Théorème
-      4.1), le corrélateur universel spin-$j$ (Q3 Théorème 5.2) et la règle de Born sectorielle (Q3 Corollaire 6.1)
-      étendent le programme aux cinq secteurs admissibles de $2I$, au sein de la composition bipartite propre à Q3
-      (un croisement K4). La non-applicabilité de la factorisabilité de Bell
-      est publiée dans <em>Quantum Reports</em>. Numériquement : $\mathrm{rang}\,W^{(c)}_n = 0$ confirmé pour
-      $q = 29$ sur les quatre paires conjuguées dans tout le régime admissible ; l’extension à
-      $q \in \{61, 101, 151, 211, 307, 401\}$ est identifiée comme cible de validation systématique. Deux livrables
-      opérationnels restent ouverts : la règle de Born pour les observables générales au-delà de $\mathrm{SU}(2)$, et
-      la validation numérique sur toute la plage primaire.
+      L'ambition initiale du sous-programme — dériver les structures de la mécanique quantique depuis la seule
+      admissibilité, étant donné le porteur complexe de Weil SU(2) fourni — <strong>n'est pas établie</strong>.
+      Q1 démontre un théorème de rigidité du support de Fourier exact et inconditionnel, sans rapport avec la
+      cohérence de phase ou la règle de Born. Q2 démontre une dégénérescence exacte et inconditionnelle de valeur
+      propre en théorie des groupes finis sur $2I$. Q3 démontre un théorème conditionnel à une hypothèse
+      explicite, non démontrée (H-inv)&nbsp;; ni (H-inv), ni la cohérence de phase, ni la règle de Born ne sont
+      dérivées par aucun constituant de ce sous-programme. La non-applicabilité de la factorisabilité de Bell est
+      prouvée inconditionnellement et publiée dans <em>Quantum Reports</em>, indépendamment de Q1–Q3.
+    </p>
+    <p>
+      Problèmes ouverts&nbsp;: dériver la cohérence de phase du porteur de Weil fourni depuis les axiomes
+      d'admissibilité&nbsp;; dériver l'hypothèse d'invariance de Q3 (H-inv) plutôt que de la fournir&nbsp;; et
+      dériver la règle de Born, dans le secteur $\mathrm{SU}(2)$ ou au-delà.
     </p>
   </section>
 </main>

@@ -4,12 +4,12 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Spectral Atomicity of the Admissible Sector | Cosmochrony</title>
-  <meta name="description" content="Q5a-O2 proves spectral atomicity of the admissible sector, closing [H-E1] and [C] by replacing Nash and Rellich compactness with finite-dimensional Fourier structure."/>
+  <title>Fourier Structure of the Pre-Saturation Admissible Pipeline | Cosmochrony</title>
+  <meta name="description" content="Q5a-O2 characterises the Fourier structure of the pre-saturation admissible pipeline: pure-mode fingerprints, realised frequencies of order o(q), and a three-coordinate reduction that is a truncation from which rank cannot be measured. It does not close [H-E1] or [C]."/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Spectral Atomicity of the Admissible Sector"/>
-  <meta property="og:description" content="Q5a-O2 shows that the admissible sector is spanned by three pure Fourier modes per conjugate pair, yielding scaled coercivity and Mosco compactness without Nash inequalities."/>
+  <meta property="og:title" content="Fourier Structure of the Pre-Saturation Admissible Pipeline"/>
+  <meta property="og:description" content="Q5a-O2 proves the pure-Fourier-mode structure of pre-saturation fingerprints and selected Gram–Schmidt vectors, shows the form is O(q⁻²) on normalised modes (ruling out q⁻¹ coercivity), and identifies the canonical filtration as Q5a's growing Fourier window with zero-form Mosco limit."/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index.html"/>
   <script type="module">
@@ -34,11 +34,12 @@ paint-order: stroke; stroke: currentColor;"
         </svg>
       </a>
       <div>
-        <h1>Spectral Atomicity of the Admissible Sector</h1>
+        <h1>Fourier Structure of the Pre-Saturation Admissible Pipeline</h1>
         <p class="subtitle">
-          Q5a-O2 closes the main compactness and coercivity gaps left by
-          <a href="..">Q5a</a> by showing that the admissible sector is finite,
-          atomic, and spectrally rigid.
+          Q5a-O2 characterises what the three-coordinate projection of the admissible
+          pipeline of <a href="..">Q5a</a> does and does not measure: the pre-saturation
+          fingerprints are pure Fourier modes, but the three-coordinate reduction is a
+          truncation from which rank cannot be measured.
         </p>
       </div>
     </div>
@@ -60,30 +61,27 @@ paint-order: stroke; stroke: currentColor;"
         scaled coercivity and Mosco tightness.
       </p>
       <p>
-        Q5a-O2 identifies the missing structure:
-        <strong>the admissible projection is spectrally atomic.</strong>
+        Q5a-O2 analyses the Fourier content of the pre-saturation admissible pipeline and
+        proves:
+        <strong>the pre-saturation fingerprints and the selected Gram–Schmidt vectors are
+        pure Fourier modes, with realised frequencies of order \(o(q)\).</strong>
       </p>
       <p>
-        For each conjugate pair \((c,q-c)\), the admissible sector is spanned by exactly
-        three pure Fourier modes:
+        It also proves two delimiting results: the three-coordinate reduction used in the
+        numerical pipeline is a truncation, from which the rank of the admissible sector
+        cannot be measured; and on normalised Fourier modes the energy form is
+        \(O(q^{-2})\), which rules out the \(q^{-1}\) coercivity scaling.
       </p>
       <p>
-        \[
-        \mathrm{ran}(\Pi_q^{(c)})
-        =
-        \mathrm{span}\{e_0,\ e_{\xi_c^{(q)}},\ e_{q-\xi_c^{(q)}}\}.
-        \]
-      </p>
-      <p>
-        The macroscopic frequencies satisfy
-        \[
-        \xi_c^{(q)}/q \to \omega_c \neq 0.
-        \]
+        The paper does not close the hypotheses [H-E1] or [C] of Q5a. The canonical
+        filtration of the admissible sector is Q5a's growing Fourier window, of dimension
+        \(\min(2n+1,q)\), whose Mosco limit is the zero form.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarizes Q5a-O2: spectral atomicity,
-        scaled coercivity, Mosco compactness, and the replacement of Nash inequalities by
-        finite-dimensional Fourier geometry.
+        <strong>Scope statement.</strong> This page summarizes Q5a-O2: pure-Fourier-mode
+        structure of pre-saturation fingerprints and selected Gram–Schmidt vectors,
+        realised frequencies \(o(q)\), the truncation status of the three-coordinate
+        reduction, and the \(O(q^{-2})\) bound ruling out \(q^{-1}\) coercivity.
       </div>
     </div>
     <aside class="card">
@@ -96,12 +94,13 @@ paint-order: stroke; stroke: currentColor;"
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            spectral atomicity, Mosco compactness, scaled coercivity,
-            admissible projection
+            Fourier structure of the pipeline, truncation status of the three-coordinate
+            reduction, energy-form scaling
           </div></div>
         <div class="kv"><div class="k">Core result</div>
           <div class="v">
-            \(\mathrm{ran}(\Pi_q)\) is finite-dimensional and Fourier-atomic
+            pre-saturation fingerprints are pure Fourier modes; the form is \(O(q^{-2})\)
+            on normalised modes
           </div></div>
       </div>
     </aside>
@@ -110,52 +109,54 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Main contributions</h2>
     <ul>
       <li>
-        <strong>Spectral atomicity:</strong>
-        each admissible direction is a pure Fourier mode.
+        <strong>Pure-mode structure:</strong>
+        the pre-saturation fingerprints and the selected Gram–Schmidt vectors are pure
+        Fourier modes.
       </li>
       <li>
-        <strong>Three-mode structure:</strong>
-        every conjugate pair spans \(\{e_0,e_{\xi_c},e_{q-\xi_c}\}\).
+        <strong>Realised frequencies:</strong>
+        the realised frequencies are of order \(o(q)\); no macroscopic frequency
+        convergence \(\xi_c^{(q)}/q\to\omega_c\neq0\) holds.
       </li>
       <li>
-        <strong>Macroscopic frequency selection:</strong>
-        \(\xi_c^{(q)}/q\to\omega_c\neq0\).
+        <strong>Truncation status:</strong>
+        the three-coordinate reduction is a truncation of the pipeline; the rank of the
+        admissible sector cannot be measured from it.
       </li>
       <li>
-        <strong>Scaled coercivity:</strong>
-        \(\mathcal{E}_q(f,f)\ge c q^{-1}\|f\|^2\).
+        <strong>Energy-form scaling:</strong>
+        on normalised Fourier modes the form is \(O(q^{-2})\), ruling out the \(q^{-1}\)
+        coercivity scaling.
       </li>
       <li>
-        <strong>Mosco compactness:</strong>
-        compactness follows from Bolzano-Weierstrass in \(\mathbb{C}^2\).
+        <strong>Canonical filtration:</strong>
+        the admissible sector is filtered by Q5a's growing Fourier window, of dimension
+        \(\min(2n+1,q)\), whose Mosco limit is the zero form.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Why Nash inequalities are no longer needed</h2>
+    <h2>What Q5a-O2 does not establish</h2>
     <p>
       The original Q5a strategy aimed to prove compactness through Nash inequalities,
       filtered Heisenberg graph estimates, and a discrete Rellich theorem.
     </p>
     <p>
-      Q5a-O2 shows that this route is unnecessary:
-      admissibility does not spread vectors across the Fourier spectrum.
-      It selects a finite atomic set.
+      Q5a-O2 does not replace that route. Spectral atomicity of the admissible sector,
+      the mean-zero lemma, macroscopic frequency convergence, \(q^{-1}\) coercivity, and
+      Mosco compactness are not results of this paper.
     </p>
     <p>
-      Therefore compactness is not an analytic consequence of heat-kernel estimates.
-      It is a geometric consequence of finite-dimensional spectral selection.
+      In particular, the hypotheses [H-E1] and [C] of Q5a remain open: the paper delimits
+      what the pipeline measures, it does not close the continuum-limit programme.
     </p>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The admissible projection \(\Pi_q\) acts as a spectral selector.
-      It reduces the full \(q\)-dimensional Fourier spectrum to a finite set of spectral atoms.
-    </p>
-    <p>
-      This shows that admissibility is not merely a constraint on amplitudes.
-      It is a structural mechanism selecting the effective spectral degrees of freedom.
+      The three-coordinate projection used in the numerical pipeline is a truncation, not
+      a measurement of the admissible sector's rank. What it faithfully records is the
+      pure-Fourier-mode structure of the pre-saturation fingerprints.
     </p>
     <p>
       The result clarifies the distinction between two objects in the numerical pipeline:
@@ -167,14 +168,15 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong><code>pi_c</code>:</strong>
-        rank-3 admissible projection, corresponding to the theoretical \(\Pi_q\)
+        the three-coordinate reduction, a truncation of the pipeline from which the rank
+        of \(\Pi_q\) cannot be inferred
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Numerical confirmation</h2>
     <p>
-      The confinement test confirms that the admissible directions are pure modes at
+      The confinement test confirms that the pre-saturation fingerprints are pure modes at
       machine precision.
     </p>
     <ul>
@@ -184,22 +186,21 @@ paint-order: stroke; stroke: currentColor;"
       <li>secondary mass: below \(10^{-25}\)</li>
     </ul>
     <p>
-      The representative pair \(c=1\) shows
-      \[
-      \xi_c^{(q)}/q \to \omega_c \approx 0.364.
-      \]
+      The realised frequencies are of order \(o(q)\): the observed ratios
+      \(\xi_c^{(q)}/q\) do not converge to a non-zero macroscopic frequency.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Q5a-O2 closes the compactness and coercivity side of Q5a.
-      It also connects directly with the O-series structural results:
+      Q5a-O2 delimits the pre-saturation side of Q5a's pipeline.
+      It connects with the following papers:
     </p>
     <ul>
       <li>
         <strong>O23:</strong>
-        \(\Sigma_c(n_3)=3\) from quaternionic minimality
+        conditional adjoint-dimension theorem on a supplied spinor carrier;
+        \(\Sigma_c(n_3)=3\) is a supplied selection rule
       </li>
       <li>
         <strong>O28:</strong>
@@ -207,7 +208,8 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>Q5a:</strong>
-        continuum-limit framework and Mosco programme
+        continuum-limit framework and Mosco programme, whose analytic hypotheses remain
+        open
       </li>
       <li>
         <strong>Q5b:</strong>
@@ -222,12 +224,14 @@ paint-order: stroke; stroke: currentColor;"
         <strong>[H-w]:</strong> proved in W1.
       </li>
       <li>
-        <strong>[H-E1']:</strong>
-        proved in Q5a-O2 with optimal scaling \(q^{-1}\).
+        <strong>[H-E1]:</strong>
+        open; the \(q^{-1}\) coercivity scaling is ruled out by the \(O(q^{-2})\) bound on
+        normalised modes.
       </li>
       <li>
         <strong>[C]:</strong>
-        proved in Q5a-O2 by finite-dimensional compactness.
+        open; the canonical filtration is Q5a's growing Fourier window, with zero-form
+        Mosco limit.
       </li>
       <li>
         <strong>[H2]:</strong>
@@ -240,8 +244,8 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19915951">
-        <i lang="en">Spectral Atomicity of the Admissible Sector:
-          Scaled Coercivity and Mosco Compactness without Nash Inequalities</i>.
+        <i lang="en">Fourier Structure of the Pre-Saturation Admissible Pipeline:
+          What the Three-Coordinate Projection Does and Does Not Measure</i>.
       </a>
     </p>
   </section>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Intrication E2 — Deux entropies d'intrication | Cosmochronie</title>
   <meta name="description"
-    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée&nbsp;: le secteur admissible de paire (log 2, conditionnel à (H-rank) et (H-inv)) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
+    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée&nbsp;: le secteur admissible de paire (log 2, conditionnel à (H-carrier) et (H-inv)) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée"/>
   <meta property="og:description"
@@ -106,13 +106,12 @@
     <h2>Deux objets distincts</h2>
     <ul>
       <li>
-        <strong>Secteur admissible de paire.</strong> Le lemme de moyenne nulle inconditionnel
-        (Q5a-O2) retire $e_0$. L'atomicité spectrale elle-même &mdash; le fait que la projection
-        admissible de rang 3 $\Pi_q$ vaille
-        $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$ (Q5a-O2
-        proposition 4.1) &mdash; est confirmée numériquement aux nombres premiers testés, mais sa
-        preuve analytique générale repose sur le résultat de rang 3 conditionnel propre à O23,
-        ici étiqueté (H-rank). Sous (H-rank), il reste la paire de parité de Born&ndash;Infeld de
+        <strong>Secteur admissible de paire.</strong> Le secteur est défini par l'hypothèse
+        explicite <strong>(H-carrier)</strong> : le secteur admissible de paire est porté par
+        le triplet de Fourier atomique $\mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$.
+        (H-carrier) est énoncée par E2 lui-même et n'est dérivée nulle part dans le
+        corpus ; le retrait du mode nul $e_0$ fait partie de la définition du secteur. Sous
+        (H-carrier), il reste la paire de parité de Born&ndash;Infeld de
         dimension deux $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$.
       </li>
       <li>
@@ -125,9 +124,9 @@
     </ul>
   </section>
   <section class="card">
-    <h2>Résultat 1 — Entropie de paire admissible sous (H-rank) et (H-inv)</h2>
+    <h2>Résultat 1 — Entropie de paire admissible sous (H-carrier) et (H-inv)</h2>
     <p>
-      Sous deux hypothèses explicites et indépendantes &mdash; (H-rank) et (H-inv) &mdash;, le
+      Sous deux hypothèses explicites et indépendantes &mdash; (H-carrier) et (H-inv) &mdash;, le
       proto-état sur $\mathcal{A}_c \otimes \mathcal{A}_c$ est le singulet de
       spin-$\tfrac12$&nbsp;:
       $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
@@ -136,16 +135,16 @@
       $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
     </p>
     <p>
-      <strong>(H-rank)</strong>, énoncée par O23 lui-même comme condition sur son propre résultat
-      de rang exactement trois, est l'absence de symétries effectives additionnelles au-delà de
-      la parité de Born&ndash;Infeld, dans le cadre d'O18. <strong>(H-inv)</strong>, énoncée et
+      <strong>(H-carrier)</strong>, énoncée par E2 lui-même, est l'hypothèse fournie selon
+      laquelle le secteur admissible de paire est porté par le triplet de Fourier
+      atomique&nbsp;; elle n'est dérivée nulle part dans le corpus. <strong>(H-inv)</strong>, énoncée et
       laissée ouverte par Q3, est l'invariance diagonale sous $2I$ du proto-état&nbsp;; sous cette
       hypothèse, le théorème 3.2 de Q3 identifie l'unique vecteur invariant comme le singulet, via
       le lemme de Schur appliqué à la décomposition de Clebsch&ndash;Gordan
       $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. Aucune des deux hypothèses n'est dérivée de
       l'indiscernabilité de Born&ndash;Infeld, de l'admissibilité, ni d'aucun autre principe du
-      corpus. Le lemme de moyenne nulle reste inconditionnel&nbsp;; l'énoncé $\log 2$ est
-      <strong>conditionnel à (H-rank) et (H-inv) conjointement</strong> pour les blocs canoniques
+      corpus. L'énoncé $\log 2$ est
+      <strong>conditionnel à (H-carrier) et (H-inv) conjointement</strong> pour les blocs canoniques
       généraux.
     </p>
   </section>
@@ -196,11 +195,12 @@
     <h2>Position dans le programme</h2>
     <p>
       Constituant du <a href="../index_fr.html">sous-programme intrication</a>.
-      S'appuie sur E1 (orthogonalité et spectre plat pour blocs appariés), Q5a-O2 (atomicité
-      spectrale + moyenne nulle inconditionnelle), O23 (rang 3, conditionnel à (H-rank)), O18
-      (cadre de (H-rank)), O17 (égalité des dimensions résiduelles, propre modèle-jouet), O31
+      S'appuie sur E1 (orthogonalité et spectre plat pour blocs appariés), Q5a-O2 (structure en
+      modes de Fourier purs de la chaîne de pré-saturation), O23 (théorème conditionnel de
+      dimension adjointe sur un porteur fourni), O18 (parité équivariante et no-go à sonde
+      fixée), O17 (égalité des dimensions résiduelles, propre modèle-jouet), O31
       (dilatation métaplectique, exclue), et Q3 (identification du singulet, conditionnelle à
-      (H-inv)).
+      (H-inv)) ; (H-carrier) est l'hypothèse explicite propre à E2.
     </p>
   </section>
   <section class="card">

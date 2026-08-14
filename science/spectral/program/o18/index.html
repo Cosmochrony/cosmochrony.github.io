@@ -5,20 +5,24 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Born&ndash;Infeld Action Parity: An Elementary Symmetry, Not a Fibre Derivation | Cosmochrony
+    Equivariant Born&ndash;Infeld Parity and the Fibre-Identification Problem of the
+    Non-Injective Projection | Cosmochrony
   </title>
   <meta name="description"
-    content="O18 proves the Born–Infeld action is even, S_BI[-χ]=S_BI[χ]. Its further claim that this
-    evenness derives the fibre structure of Π and identifies it with the Weil conjugation c↔q-c does
-    not hold as argued; both remain open."/>
+    content="O18 proves the Born–Infeld action is even and that parity holds as an equivariant
+    symmetry, together with a no-go: evenness does not force fixed-probe indiscernibility
+    (countermodel R(x)=x²). The fibre identification of Π is a typed classification problem and
+    remains an open bridge."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o18/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Born–Infeld Action Parity: An Elementary Symmetry, Not a Fibre Derivation"/>
+    content="Equivariant Born–Infeld Parity and the Fibre-Identification Problem of the
+    Non-Injective Projection"/>
   <meta property="og:description"
-    content="The Born–Infeld action's evenness is elementary and correct. The claim that it forces the
-    projection's fibres to be {χ,-χ}, realised as c↔q-c, does not follow from the argument given."/>
+    content="The Born–Infeld action's evenness is proved, as an equivariant symmetry transforming
+    configuration and probe together. A proved no-go shows evenness does not force fixed-probe
+    indiscernibility, so the parity orbit is not forced into the fibres of Π."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o18/"/>
@@ -45,13 +49,14 @@
       </a>
       <div>
         <h1>
-          Born&ndash;Infeld Action Parity: An Elementary Symmetry, Not a Fibre Derivation
+          Equivariant Born&ndash;Infeld Parity and the Fibre-Identification Problem of the
+          Non-Injective Projection
         </h1>
         <p class="subtitle">
-          O18 proves that the Born&ndash;Infeld action obeys $S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi]$.
-          Its further claim &mdash; that this evenness derives the fibre structure of $\Pi$ and identifies
-          it with the Weil conjugation $c\leftrightarrow q-c$ &mdash; does not follow from the argument
-          given; both remain open, as in <a href="../o16">O16</a>.
+          O18 proves that the Born&ndash;Infeld action obeys $S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi]$,
+          with parity holding as an equivariant symmetry, and proves the no-go that evenness does not
+          force fixed-probe indiscernibility. The fibre identification of $\Pi$ is a typed
+          classification problem and remains an open bridge, as in <a href="../o16">O16</a>.
         </p>
       </div>
     </div>
@@ -75,25 +80,23 @@
         symmetry of the action.
       </p>
       <p>
-        An action symmetry is not, by itself, a statement about the fibres of $\Pi$: equality of a
-        response functional for $\chi$ and $-\chi$ would define an observational equivalence relation
-        chosen by the paper, not a proof that the independently postulated map $\Pi$ has exactly those
-        equivalence classes. O18's argument for the stronger claim &mdash; that every fibre of $\Pi$
-        contains exactly $\{\chi,-\chi\}$ &mdash; compares the response of $\chi$ and $-\chi$ under
-        <em>opposite</em> perturbations $\eta$ and $-\eta$, not under the same perturbation required by
-        its own indiscernibility definition. The gap is not a technicality: the simplest even
-        functional, $S(x)=x^2$, already gives $S(x+\epsilon\eta)\ne S(-x+\epsilon\eta)$ in general, so
-        the inference does not hold as stated.
+        Parity holds as an <em>equivariant</em> symmetry: configuration and probe are transformed
+        together, $(\chi,\eta)\mapsto(-\chi,-\eta)$. O18 also proves a no-go: evenness does not
+        force <em>fixed-probe</em> indiscernibility. The countermodel is the simplest even
+        functional, $R(x)=x^2$, for which $R(x+\epsilon\eta)\ne R(-x+\epsilon\eta)$ in general.
+        Consequently the parity orbit $\{\chi,-\chi\}$ is not forced into the fibres of the
+        non-injective projection $\Pi$.
       </p>
       <p>
-        The paper's second step, identifying the abstract involution $\chi\mapsto-\chi$ with the Weil
-        conjugation $c\mapsto q-c$, supplies no map from substrate configurations $\chi$ to character
-        labels $c$. This is exactly O16's second open premise, restated rather than derived.
+        The fibre identification is a typed classification problem, of which (H-rank) is one clause.
+        At the Weil level, the conjugation $\rho_{q-c}=\overline{\rho_c}$ is an O17 theorem; the
+        identification of $\{c,q-c\}$ as a physical fibre of $\Pi$ is an open bridge. The pair
+        observable therefore stays a structurally motivated hypothesis.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarises the structural content of O18: the
-        elementary Born&ndash;Infeld parity lemma, and why the paper's further fibre-derivation and
-        Weil-identification arguments do not establish what they claim.
+        Born&ndash;Infeld parity lemma, its equivariant reading, the fixed-probe no-go, and the open
+        status of the fibre-identification bridge.
       </div>
     </div>
     <aside class="card">
@@ -110,8 +113,8 @@
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            An elementary action-parity lemma; the fibre-derivation and substrate/character
-            identification remain open
+            Action evenness and equivariant parity proved; fixed-probe no-go proved; the
+            fibre identification remains an open bridge
           </div></div>
       </div>
     </aside>
@@ -127,41 +130,45 @@
         \]
         This is elementary and correct.
       </li>
+      <li>
+        <strong>Equivariant parity:</strong>
+        parity is a symmetry when configuration and probe are transformed together,
+        $(\chi,\eta)\mapsto(-\chi,-\eta)$.
+      </li>
+      <li>
+        <strong>Fixed-probe no-go:</strong>
+        evenness does not force fixed-probe indiscernibility; the countermodel $R(x)=x^2$ shows
+        the inference fails, so the parity orbit is not forced into the fibres of $\Pi$.
+      </li>
     </ul>
   </section>
   <section class="card">
-    <h2>What O18 does not establish</h2>
+    <h2>What remains open</h2>
     <ul>
       <li>
-        <strong>The BI-indiscernibility corollary, as proved:</strong>
-        the argument compares $\chi$ under a perturbation $\eta$ with $-\chi$ under $-\eta$, not $-\chi$
-        under the same $\eta$ that the paper's own definition requires. Closure of the admissible
-        perturbation set under $\eta\mapsto-\eta$ shows the set is symmetric; it does not turn that
-        setwise pairing into pointwise equality at fixed $\eta$.
+        <strong>Fixed-probe indiscernibility:</strong>
+        by O18's own no-go, action evenness does not imply that $\chi$ and $-\chi$ respond
+        identically to the same probe $\eta$; only the equivariant comparison is a symmetry.
       </li>
       <li>
-        <strong>That action symmetry determines the fibres of $\Pi$:</strong>
-        even granting indiscernibility for every response functional considered, this defines an
-        equivalence relation chosen by the paper. It does not prove that the independently postulated
-        projection $\Pi$ has exactly those equivalence classes as fibres.
-      </li>
-      <li>
-        <strong>The stated minimality theorem:</strong>
-        its hypothesis already assumes that parity is the only effective equivalence; its conclusion
-        restates that assumption. It does not derive a property of $\Pi$.
+        <strong>The fibre identification of $\Pi$:</strong>
+        whether the fibres of the independently postulated projection $\Pi$ contain the parity
+        orbit $\{\chi,-\chi\}$ is a typed classification problem, of which (H-rank) is one
+        clause. No clause is currently derived.
       </li>
       <li>
         <strong>The Weil-level identification $c\leftrightarrow q-c$:</strong>
-        complex conjugation of $\rho_c$ reverses representation phases, but no map from substrate
-        configurations $\chi$ to character labels $c$ is supplied. Asserting that
-        $\rho_{q-c}=\overline{\rho_c}$ realises $\chi\mapsto-\chi$ restates O16's second open premise
-        rather than deriving it.
+        the conjugation $\rho_{q-c}=\overline{\rho_c}$ is an O17 theorem, but the identification
+        of $\{c,q-c\}$ as a physical fibre requires a map from substrate configurations $\chi$ to
+        character labels $c$, which is not supplied; this is an open bridge, as in
+        <a href="../o16">O16</a>.
       </li>
       <li>
         <strong>Any downstream numerical claim:</strong>
-        since the fibre and Weil identifications are open, O18 does not close the pair-observable
+        since the fibre identification is open, O18 does not close the pair-observable
         problem left by <a href="../o16">O16</a>&ndash;<a href="../o17">O17</a>, and does not
-        establish a value for $\delta_{\mathrm{pair}}$.
+        establish a value for $\delta_{\mathrm{pair}}$; the pair observable stays a structurally
+        motivated hypothesis.
       </li>
     </ul>
   </section>
@@ -177,12 +184,13 @@
         hypotheses</li>
       <li><strong>O17:</strong> conjugate Weil blocks are exactly block-independent within a scalar toy
         model, not shown for the real pipeline</li>
-      <li><strong>O18:</strong> the Born&ndash;Infeld action is even; this does not derive the fibre
-        structure of $\Pi$ or identify it with $c\leftrightarrow q-c$</li>
+      <li><strong>O18:</strong> the Born&ndash;Infeld action is even and parity is equivariant; by
+        the proved no-go, this does not force the fibre structure of $\Pi$ or identify it with
+        $c\leftrightarrow q-c$</li>
     </ul>
     <p>
       The parity/fibre and substrate/character identifications remain open exactly as in O16 &mdash;
-      restated with a Born&ndash;Infeld vocabulary, not closed by it.
+      now delimited by an equivariance theorem and a fixed-probe no-go, not closed by them.
     </p>
   </section>
   <section class="card">
@@ -195,16 +203,17 @@
     </p>
     <p>
       The programme's registry (see <a href="/science/spectral/program/">program</a>) records O18's
-      action-parity lemma as proved, and its fibre and Weil identifications as open, on the same
-      footing as O16's open premises.
+      action-parity lemma, equivariant parity, and fixed-probe no-go as proved, and the fibre
+      identification as an open bridge, on the same footing as O16's open premises.
     </p>
   </section>
   <section class="card">
     <h2>Current outcome and open directions</h2>
     <p>
-      The Born&ndash;Infeld action's parity is established. The identification of that parity with the
-      fibre structure of $\Pi$, and with the Weil conjugation $c\mapsto q-c$, is not: both remain open,
-      exactly as left by <a href="../o16">O16</a>.
+      The Born&ndash;Infeld action's parity is established, as an equivariant symmetry, and the
+      fixed-probe no-go is proved. The identification of the parity orbit with the fibre structure
+      of $\Pi$, and of $\{c,q-c\}$ as a physical fibre, is not: both remain open bridges, exactly
+      as left by <a href="../o16">O16</a>.
     </p>
     <p>
       A derivation of either identification &mdash; from first principles within Cosmochrony, or from
@@ -217,8 +226,8 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19321413">
-        <i>Minimal Fibre Structure of the Non-Injective Projection from Born&ndash;Infeld
-          Indiscernability: Derivation of the Parity Involution</i>.
+        <i>Equivariant Born&ndash;Infeld Parity and the Fibre-Identification Problem of the
+          Non-Injective Projection</i>.
       </a>
     </p>
   </section>

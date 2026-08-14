@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Entanglement E2 — Two Entanglement Entropies | Cosmochrony</title>
   <meta name="description"
-    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, conditional on (H-rank) and (H-inv)) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
+    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, conditional on (H-carrier) and (H-inv)) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair"/>
   <meta property="og:description"
@@ -103,12 +103,12 @@
     <h2>Two distinct objects</h2>
     <ul>
       <li>
-        <strong>Admissible pair sector.</strong> The unconditional mean-zero lemma (Q5a-O2)
-        removes $e_0$. Spectral atomicity itself &mdash; that the rank-3 admissible projection
-        $\Pi_q$ equals $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$
-        (Q5a-O2 Proposition 4.1) &mdash; is confirmed numerically at the tested primes, but its
-        general analytical proof rests on O23's own conditional rank-3 result, labelled here
-        (H-rank). Under (H-rank), the two-dimensional Born&ndash;Infeld parity pair
+        <strong>Admissible pair sector.</strong> The sector is defined by the explicit
+        hypothesis <strong>(H-carrier)</strong>: the admissible pair sector is carried by the
+        atomic Fourier triple $\mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$. (H-carrier) is
+        stated by E2 itself and derived nowhere in the corpus; removal of the zero mode $e_0$
+        is part of the sector definition. Under (H-carrier), the two-dimensional
+        Born&ndash;Infeld parity pair
         $\mathcal{A}_c = \mathrm{span}\{e_{\xi_c}, e_{q-\xi_c}\} \cong V_{1/2}$ remains.
       </li>
       <li>
@@ -120,9 +120,9 @@
     </ul>
   </section>
   <section class="card">
-    <h2>Core result 1 — Admissible pair entropy under (H-rank) and (H-inv)</h2>
+    <h2>Core result 1 — Admissible pair entropy under (H-carrier) and (H-inv)</h2>
     <p>
-      Under two explicit, independent hypotheses &mdash; (H-rank) and (H-inv) &mdash; the
+      Under two explicit, independent hypotheses &mdash; (H-carrier) and (H-inv) &mdash; the
       proto-state on $\mathcal{A}_c \otimes \mathcal{A}_c$ is the spin-$\tfrac12$ singlet
       $$ |\Omega_c\rangle = \frac{1}{\sqrt{2}} \bigl( |\xi_c\rangle \otimes |q-\xi_c\rangle -
       |q-\xi_c\rangle \otimes |\xi_c\rangle \bigr), $$
@@ -130,15 +130,15 @@
       $$ S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2. $$
     </p>
     <p>
-      <strong>(H-rank)</strong>, stated by O23 itself as a condition on its own admissible-rank-
-      exactly-three result, is the absence of additional effective symmetries beyond
-      Born&ndash;Infeld parity, within the scope of O18. <strong>(H-inv)</strong>, stated and left
+      <strong>(H-carrier)</strong>, stated by E2 itself, is the hypothesis that the admissible
+      pair sector is carried by the atomic Fourier triple; it is derived nowhere in the corpus.
+      <strong>(H-inv)</strong>, stated and left
       open by Q3, is diagonal $2I$-invariance of the proto-state; under it, Q3's Theorem 3.2
       identifies the unique invariant vector as the singlet via Schur's lemma applied to the
       Clebsch&ndash;Gordan decomposition $V_{1/2} \otimes V_{1/2} = V_0 \oplus V_1$. Neither
       hypothesis is derived from Born&ndash;Infeld indiscernibility, from admissibility, or from
-      any other principle in the corpus. The mean-zero lemma is unconditional throughout; the
-      $\log 2$ statement is <strong>conditional on both (H-rank) and (H-inv)</strong> for general
+      any other principle in the corpus. The
+      $\log 2$ statement is <strong>conditional on both (H-carrier) and (H-inv)</strong> for general
       canonical blocks.
     </p>
   </section>
@@ -188,10 +188,12 @@
     <h2>Position in the programme</h2>
     <p>
       Constituent of the <a href="/science/entanglement/">entanglement sub-programme</a>. Builds
-      on E1 (orthogonality and matched-block flat spectrum), Q5a-O2 (spectral atomicity +
-      unconditional mean-zero), O23 (rank-3, conditional on (H-rank)), O18 ((H-rank)'s scope),
+      on E1 (orthogonality and matched-block flat spectrum), Q5a-O2 (pure-Fourier-mode structure
+      of the pre-saturation pipeline), O23 (conditional adjoint-dimension theorem on a supplied
+      carrier), O18 (equivariant parity and fixed-probe no-go),
       O17 (equal residual dimensions, own toy model), O31 (metaplectic dilation, excluded), and
-      Q3 (singlet identification, conditional on (H-inv)).
+      Q3 (singlet identification, conditional on (H-inv)); (H-carrier) is E2's own explicit
+      hypothesis.
     </p>
   </section>
   <section class="card">

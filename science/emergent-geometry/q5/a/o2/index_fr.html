@@ -4,16 +4,16 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Atomicité spectrale du secteur admissible | Cosmochronie</title>
+  <title>Structure de Fourier de la chaîne admissible de pré-saturation | Cosmochronie</title>
   <meta name="description"
-    content="Q5a-O2 démontre l’atomicité spectrale du secteur admissible et ferme les hypothèses [H-E1] et [C] sans recourir aux inégalités de Nash."/>
+    content="Q5a-O2 caractérise la structure de Fourier de la chaîne admissible de pré-saturation : empreintes en modes purs, fréquences réalisées en o(q), et une réduction à trois coordonnées qui est une troncature dont le rang ne peut pas être mesuré. Les hypothèses [H-E1] et [C] restent ouvertes."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Atomicité spectrale du secteur admissible"/>
+    content="Structure de Fourier de la chaîne admissible de pré-saturation"/>
   <meta property="og:description"
-    content="Q5a-O2 montre que le secteur admissible est engendré par trois modes de Fourier purs par paire conjuguée, assurant coercivité et compacité sans inégalités de Nash."/>
+    content="Q5a-O2 prouve la structure en modes de Fourier purs des empreintes de pré-saturation et des vecteurs de Gram–Schmidt sélectionnés, montre que la forme est O(q⁻²) sur les modes normalisés (excluant la coercivité en q⁻¹), et identifie la filtration canonique comme la fenêtre de Fourier croissante de Q5a, de limite de Mosco nulle."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index_fr.html"/>
@@ -39,10 +39,12 @@ paint-order: stroke; stroke: currentColor;"
         </svg>
       </a>
       <div>
-        <h1>Atomicité spectrale du secteur admissible</h1>
+        <h1>Structure de Fourier de la chaîne admissible de pré-saturation</h1>
         <p class="subtitle">
-          Q5a-O2 complète <a href="..">Q5a</a> en montrant que le secteur admissible est fini,
-          atomique et spectralement rigide.
+          Q5a-O2 caractérise ce que la projection à trois coordonnées de la chaîne
+          admissible de <a href="..">Q5a</a> mesure et ne mesure pas : les empreintes de
+          pré-saturation sont des modes de Fourier purs, mais la réduction à trois
+          coordonnées est une troncature dont le rang ne peut pas être mesuré.
         </p>
       </div>
     </div>
@@ -61,29 +63,31 @@ paint-order: stroke; stroke: currentColor;"
       <p>
         Q5a établissait un cadre limite pour le secteur admissible
         \(\mathrm{ran}(\Pi_q)\), laissant ouvertes deux hypothèses analytiques
-        centrales : coercivité et compacité de Mosco.
+        centrales : coercivité et compacité de Mosco.
       </p>
       <p>
-        Q5a-O2 identifie la structure manquante :
-        <strong>la projection admissible est spectralement atomique.</strong>
+        Q5a-O2 analyse le contenu de Fourier de la chaîne de pré-saturation et prouve :
+        <strong>les empreintes de pré-saturation et les vecteurs de Gram–Schmidt
+        sélectionnés sont des modes de Fourier purs, de fréquences réalisées en
+        \(o(q)\).</strong>
       </p>
       <p>
-        Pour chaque paire conjuguée \((c,q-c)\), le secteur admissible est engendré par :
+        Deux résultats délimitants sont également prouvés : la réduction à trois
+        coordonnées de la chaîne numérique est une troncature, dont le rang du secteur
+        admissible ne peut pas être mesuré ; et sur les modes de Fourier normalisés la
+        forme d'énergie est \(O(q^{-2})\), ce qui exclut la coercivité en \(q^{-1}\).
       </p>
       <p>
-        \[
-        \mathrm{ran}(\Pi_q^{(c)}) =
-        \mathrm{span}\{e_0,\ e_{\xi_c^{(q)}},\ e_{q-\xi_c^{(q)}}\}.
-        \]
-      </p>
-      <p>
-        avec \(\xi_c^{(q)}/q \to \omega_c \neq 0\).
+        Le papier ne ferme pas les hypothèses [H-E1] et [C] de Q5a. La filtration
+        canonique du secteur admissible est la fenêtre de Fourier croissante de Q5a, de
+        dimension \(\min(2n+1,q)\), dont la limite de Mosco est la forme nulle.
       </p>
       <div class="note">
         <strong>Portée.</strong>
-        Cette page résume Q5a-O2 : atomicité spectrale, coercivité,
-        compacité de Mosco, et remplacement des arguments analytiques
-        par une structure finie.
+        Cette page résume Q5a-O2 : structure en modes de Fourier purs des empreintes de
+        pré-saturation, fréquences réalisées en \(o(q)\), statut de troncature de la
+        réduction à trois coordonnées, et borne \(O(q^{-2})\) excluant la coercivité en
+        \(q^{-1}\).
       </div>
     </div>
     <aside class="card">
@@ -96,8 +100,8 @@ paint-order: stroke; stroke: currentColor;"
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            atomicité spectrale, compacité de Mosco, coercivité,
-            projection admissible
+            structure de Fourier de la chaîne, statut de troncature de la réduction à
+            trois coordonnées, échelle de la forme d'énergie
           </div></div>
       </div>
     </aside>
@@ -105,42 +109,60 @@ paint-order: stroke; stroke: currentColor;"
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Atomicité spectrale :</strong> chaque direction admissible est un mode de Fourier pur</li>
-      <li><strong>Structure en 3 modes :</strong> \(\{e_0,e_{\xi_c},e_{q-\xi_c}\}\)</li>
-      <li><strong>Sélection de fréquence macroscopique :</strong> \(\xi_c/q \to \omega_c\)</li>
-      <li><strong>Coercivité :</strong> \(\mathcal{E}_q(f,f) \ge c q^{-1}\|f\|^2\)</li>
-      <li><strong>Compacité :</strong> obtenue par dimension finie</li>
+      <li><strong>Structure en modes purs :</strong> les empreintes de pré-saturation et
+        les vecteurs de Gram–Schmidt sélectionnés sont des modes de Fourier purs</li>
+      <li><strong>Fréquences réalisées :</strong> les fréquences réalisées sont en
+        \(o(q)\) ; aucune convergence de fréquence macroscopique
+        \(\xi_c^{(q)}/q\to\omega_c\neq0\) n'est établie</li>
+      <li><strong>Statut de troncature :</strong> la réduction à trois coordonnées est
+        une troncature ; le rang du secteur admissible ne peut pas en être mesuré</li>
+      <li><strong>Échelle de la forme :</strong> \(O(q^{-2})\) sur les modes normalisés,
+        ce qui exclut la coercivité en \(q^{-1}\)</li>
+      <li><strong>Filtration canonique :</strong> la fenêtre de Fourier croissante de
+        Q5a, de dimension \(\min(2n+1,q)\), de limite de Mosco nulle</li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>Ce que Q5a-O2 n'établit pas</h2>
+    <p>
+      L'atomicité spectrale du secteur admissible, le lemme de moyenne nulle, la
+      convergence de fréquence macroscopique, la coercivité en \(q^{-1}\) et la compacité
+      de Mosco ne sont pas des résultats de ce papier.
+    </p>
+    <p>
+      En particulier, les hypothèses [H-E1] et [C] de Q5a restent ouvertes : le papier
+      délimite ce que la chaîne mesure, il ne ferme pas le programme de limite continue.
+    </p>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      La projection admissible agit comme un filtre spectral :
-      elle réduit le spectre de Fourier complet à un ensemble fini d’atomes.
-    </p>
-    <p>
-      L’admissibilité n’est donc pas une contrainte quantitative,
-      mais un mécanisme structurel sélectionnant les degrés de liberté pertinents.
+      La projection à trois coordonnées utilisée dans la chaîne numérique est une
+      troncature, non une mesure du rang du secteur admissible. Ce qu'elle enregistre
+      fidèlement est la structure en modes de Fourier purs des empreintes de
+      pré-saturation.
     </p>
   </section>
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
-      Q5a-O2 clôt le volet analytique de Q5a et s’articule avec :
+      Q5a-O2 délimite le volet pré-saturation de la chaîne de Q5a et s’articule avec :
     </p>
     <ul>
-      <li>O23 : minimalité quaternionique (\(\Sigma=3\))</li>
-      <li>O28 : dimension effective \(=3\)</li>
-      <li>Q5a : cadre limite</li>
-      <li>Q5b : interprétation géométrique</li>
+      <li>O23 : théorème conditionnel de dimension adjointe sur un porteur spinoriel
+        fourni ; \(\Sigma_c(n_3)=3\) est une règle de sélection fournie</li>
+      <li>O28 : dimension effective \(=3\)</li>
+      <li>Q5a : cadre limite, dont les hypothèses analytiques restent ouvertes</li>
+      <li>Q5b : interprétation géométrique</li>
     </ul>
   </section>
   <section class="card">
     <h2>Conclusion</h2>
     <p>
-      Le secteur admissible possède une structure spectrale intrinsèquement
-      finie. Cette réduction suggère que la dynamique limite est gouvernée
-      par un système spectral de dimension finie.
+      La chaîne de pré-saturation possède une structure de Fourier exacte, mais la
+      réduction à trois coordonnées est une troncature : le rang du secteur admissible et
+      la limite continue de Q5a demeurent des questions ouvertes, la filtration canonique
+      étant la fenêtre de Fourier croissante de limite de Mosco nulle.
     </p>
   </section>
   <section class="card">
@@ -148,8 +170,8 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19915951">
-        <i lang="en">Spectral Atomicity of the Admissible Sector:
-          Scaled Coercivity and Mosco Compactness without Nash Inequalities</i>.
+        <i lang="en">Fourier Structure of the Pre-Saturation Admissible Pipeline:
+          What the Three-Coordinate Projection Does and Does Not Measure</i>.
       </a>
     </p>
   </section>

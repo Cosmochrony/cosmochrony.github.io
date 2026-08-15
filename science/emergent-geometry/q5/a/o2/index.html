@@ -5,11 +5,11 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Fourier Structure of the Pre-Saturation Admissible Pipeline | Cosmochrony</title>
-  <meta name="description" content="Q5a-O2 characterises the Fourier structure of the pre-saturation admissible pipeline: pure-mode fingerprints, realised frequencies of order o(q), and a three-coordinate reduction that is a truncation from which rank cannot be measured. It does not close [H-E1] or [C]."/>
+  <meta name="description" content="Q5a-O2 characterises the Fourier structure of the pre-saturation admissible pipeline: pure-mode fingerprints, o(q) displacements with macroscopic per-q frequencies under uniform block-parameter sampling, and a three-coordinate reduction that is a truncation from which rank cannot be measured. It does not close [H-E1] or [C]."/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Fourier Structure of the Pre-Saturation Admissible Pipeline"/>
-  <meta property="og:description" content="Q5a-O2 proves the pure-Fourier-mode structure of pre-saturation fingerprints and selected Gram–Schmidt vectors, shows the form is O(q⁻²) on normalised modes (ruling out q⁻¹ coercivity), and identifies the canonical filtration as Q5a's growing Fourier window with zero-form Mosco limit."/>
+  <meta property="og:description" content="Q5a-O2 proves the pure-Fourier-mode structure of pre-saturation fingerprints and selected Gram–Schmidt vectors, shows the form is O(q⁻²) for every unit vector (a normalisation-prefactor fact ruling out q⁻¹ coercivity), and identifies the canonical filtration as Q5a's growing Fourier window with zero-form Mosco limit."/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index.html"/>
   <script type="module">
@@ -64,13 +64,19 @@ paint-order: stroke; stroke: currentColor;"
         Q5a-O2 analyses the Fourier content of the pre-saturation admissible pipeline and
         proves:
         <strong>the pre-saturation fingerprints and the selected Gram–Schmidt vectors are
-        pure Fourier modes, with realised frequencies of order \(o(q)\).</strong>
+        pure Fourier modes, with displacements of order \(o(q)\).</strong>
+        Frequencies are \(o(q)\) only for block parameters held fixed independently of
+        \(q\); the implemented pipeline samples block parameters uniformly modulo \(q\),
+        so macroscopic per-\(q\) frequencies occur (e.g. \(\xi/q\) near \(1/2\)) and no
+        \(q\)-independent limit frequency exists in either regime.
       </p>
       <p>
         It also proves two delimiting results: the three-coordinate reduction used in the
         numerical pipeline is a truncation, from which the rank of the admissible sector
-        cannot be measured; and on normalised Fourier modes the energy form is
-        \(O(q^{-2})\), which rules out the \(q^{-1}\) coercivity scaling.
+        cannot be measured; and the energy form is \(O(q^{-2})\) for every unit vector
+        — a consequence of the form's \(q^{-2}\) normalisation prefactor — which rules
+        out the \(q^{-1}\) coercivity scaling. The spectral-gap question for the
+        unnormalised form is untouched and open.
       </p>
       <p>
         The paper does not close the hypotheses [H-E1] or [C] of Q5a. The canonical
@@ -80,8 +86,10 @@ paint-order: stroke; stroke: currentColor;"
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarizes Q5a-O2: pure-Fourier-mode
         structure of pre-saturation fingerprints and selected Gram–Schmidt vectors,
-        realised frequencies \(o(q)\), the truncation status of the three-coordinate
-        reduction, and the \(O(q^{-2})\) bound ruling out \(q^{-1}\) coercivity.
+        the two-regime frequency statement (\(o(q)\) displacements; macroscopic
+        per-\(q\) frequencies under uniform block-parameter sampling), the truncation
+        status of the three-coordinate reduction, and the \(O(q^{-2})\) bound for every
+        unit vector ruling out \(q^{-1}\) coercivity.
       </div>
     </div>
     <aside class="card">
@@ -100,7 +108,7 @@ paint-order: stroke; stroke: currentColor;"
         <div class="kv"><div class="k">Core result</div>
           <div class="v">
             pre-saturation fingerprints are pure Fourier modes; the form is \(O(q^{-2})\)
-            on normalised modes
+            for every unit vector
           </div></div>
       </div>
     </aside>
@@ -114,9 +122,12 @@ paint-order: stroke; stroke: currentColor;"
         Fourier modes.
       </li>
       <li>
-        <strong>Realised frequencies:</strong>
-        the realised frequencies are of order \(o(q)\); no macroscopic frequency
-        convergence \(\xi_c^{(q)}/q\to\omega_c\neq0\) holds.
+        <strong>Two-regime frequency statement:</strong>
+        displacements are \(o(q)\); frequencies are \(o(q)\) only for block parameters
+        held fixed independently of \(q\). The implemented pipeline samples block
+        parameters uniformly modulo \(q\), so macroscopic per-\(q\) frequencies occur
+        (e.g. \(\xi/q\) near \(1/2\)) and no \(q\)-independent limit frequency exists in
+        either regime.
       </li>
       <li>
         <strong>Truncation status:</strong>
@@ -125,8 +136,10 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>Energy-form scaling:</strong>
-        on normalised Fourier modes the form is \(O(q^{-2})\), ruling out the \(q^{-1}\)
-        coercivity scaling.
+        the form is \(O(q^{-2})\) for every unit vector — a consequence of the form's
+        \(q^{-2}\) normalisation prefactor — ruling out the \(q^{-1}\) coercivity
+        scaling; the spectral-gap question for the unnormalised form is untouched and
+        open.
       </li>
       <li>
         <strong>Canonical filtration:</strong>
@@ -143,8 +156,8 @@ paint-order: stroke; stroke: currentColor;"
     </p>
     <p>
       Q5a-O2 does not replace that route. Spectral atomicity of the admissible sector,
-      the mean-zero lemma, macroscopic frequency convergence, \(q^{-1}\) coercivity, and
-      Mosco compactness are not results of this paper.
+      the mean-zero lemma, a \(q\)-independent limit frequency, \(q^{-1}\) coercivity,
+      and Mosco compactness are not results of this paper.
     </p>
     <p>
       In particular, the hypotheses [H-E1] and [C] of Q5a remain open: the paper delimits
@@ -172,23 +185,6 @@ paint-order: stroke; stroke: currentColor;"
         of \(\Pi_q\) cannot be inferred
       </li>
     </ul>
-  </section>
-  <section class="card">
-    <h2>Numerical confirmation</h2>
-    <p>
-      The confinement test confirms that the pre-saturation fingerprints are pure modes at
-      machine precision.
-    </p>
-    <ul>
-      <li>tested primes: \(q=29,61,101,151\)</li>
-      <li>support size: \(K_q=1\) for all tested primes</li>
-      <li>peak spectral mass: \(1.000\) after normalization</li>
-      <li>secondary mass: below \(10^{-25}\)</li>
-    </ul>
-    <p>
-      The realised frequencies are of order \(o(q)\): the observed ratios
-      \(\xi_c^{(q)}/q\) do not converge to a non-zero macroscopic frequency.
-    </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
@@ -225,8 +221,9 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>[H-E1]:</strong>
-        open; the \(q^{-1}\) coercivity scaling is ruled out by the \(O(q^{-2})\) bound on
-        normalised modes.
+        open; the \(q^{-1}\) coercivity scaling is ruled out by the \(O(q^{-2})\) bound,
+        which holds for every unit vector; the spectral-gap question for the unnormalised
+        form is untouched.
       </li>
       <li>
         <strong>[C]:</strong>
@@ -238,6 +235,15 @@ paint-order: stroke; stroke: currentColor;"
         remains open: convergence of rescaled generators.
       </li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>Conclusion</h2>
+    <p>
+      The pre-saturation pipeline has an exact Fourier structure, but the
+      three-coordinate reduction is a truncation: the rank of the admissible sector and
+      the continuum limit of Q5a remain open questions, the canonical filtration being
+      the growing Fourier window with zero-form Mosco limit.
+    </p>
   </section>
   <section class="card">
     <h2>Reference</h2>

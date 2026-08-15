@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Structure de Fourier de la chaîne admissible de pré-saturation | Cosmochronie</title>
   <meta name="description"
-    content="Q5a-O2 caractérise la structure de Fourier de la chaîne admissible de pré-saturation : empreintes en modes purs, fréquences réalisées en o(q), et une réduction à trois coordonnées qui est une troncature dont le rang ne peut pas être mesuré. Les hypothèses [H-E1] et [C] restent ouvertes."/>
+    content="Q5a-O2 caractérise la structure de Fourier de la chaîne admissible de pré-saturation : empreintes en modes purs, déplacements en o(q) avec des fréquences macroscopiques par q sous échantillonnage uniforme des paramètres de bloc, et une réduction à trois coordonnées qui est une troncature dont le rang ne peut pas être mesuré. Les hypothèses [H-E1] et [C] restent ouvertes."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Structure de Fourier de la chaîne admissible de pré-saturation"/>
   <meta property="og:description"
-    content="Q5a-O2 prouve la structure en modes de Fourier purs des empreintes de pré-saturation et des vecteurs de Gram–Schmidt sélectionnés, montre que la forme est O(q⁻²) sur les modes normalisés (excluant la coercivité en q⁻¹), et identifie la filtration canonique comme la fenêtre de Fourier croissante de Q5a, de limite de Mosco nulle."/>
+    content="Q5a-O2 prouve la structure en modes de Fourier purs des empreintes de pré-saturation et des vecteurs de Gram–Schmidt sélectionnés, montre que la forme est O(q⁻²) pour tout vecteur unitaire (un fait de préfacteur de normalisation, excluant la coercivité en q⁻¹), et identifie la filtration canonique comme la fenêtre de Fourier croissante de Q5a, de limite de Mosco nulle."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q5/a/o2/index_fr.html"/>
@@ -68,14 +68,22 @@ paint-order: stroke; stroke: currentColor;"
       <p>
         Q5a-O2 analyse le contenu de Fourier de la chaîne de pré-saturation et prouve :
         <strong>les empreintes de pré-saturation et les vecteurs de Gram–Schmidt
-        sélectionnés sont des modes de Fourier purs, de fréquences réalisées en
+        sélectionnés sont des modes de Fourier purs, de déplacements en
         \(o(q)\).</strong>
+        Les fréquences ne sont en \(o(q)\) que pour des paramètres de bloc fixés
+        indépendamment de \(q\) ; la chaîne implémentée échantillonne les paramètres de
+        bloc uniformément modulo \(q\), de sorte que des fréquences macroscopiques
+        par \(q\) apparaissent (par exemple \(\xi/q\) proche de \(1/2\)) et qu'aucune
+        fréquence limite indépendante de \(q\) n'existe dans aucun des deux régimes.
       </p>
       <p>
         Deux résultats délimitants sont également prouvés : la réduction à trois
         coordonnées de la chaîne numérique est une troncature, dont le rang du secteur
-        admissible ne peut pas être mesuré ; et sur les modes de Fourier normalisés la
-        forme d'énergie est \(O(q^{-2})\), ce qui exclut la coercivité en \(q^{-1}\).
+        admissible ne peut pas être mesuré ; et la forme d'énergie est
+        \(O(q^{-2})\) pour tout vecteur unitaire — une conséquence du préfacteur de
+        normalisation en \(q^{-2}\) de la forme —, ce qui exclut la coercivité en
+        \(q^{-1}\). La question du trou spectral pour la forme non normalisée est
+        intacte et ouverte.
       </p>
       <p>
         Le papier ne ferme pas les hypothèses [H-E1] et [C] de Q5a. La filtration
@@ -85,8 +93,10 @@ paint-order: stroke; stroke: currentColor;"
       <div class="note">
         <strong>Portée.</strong>
         Cette page résume Q5a-O2 : structure en modes de Fourier purs des empreintes de
-        pré-saturation, fréquences réalisées en \(o(q)\), statut de troncature de la
-        réduction à trois coordonnées, et borne \(O(q^{-2})\) excluant la coercivité en
+        pré-saturation, énoncé à deux régimes des fréquences (déplacements en
+        \(o(q)\), fréquences macroscopiques par \(q\) sous échantillonnage uniforme des
+        paramètres de bloc), statut de troncature de la réduction à trois coordonnées,
+        et borne \(O(q^{-2})\) pour tout vecteur unitaire excluant la coercivité en
         \(q^{-1}\).
       </div>
     </div>
@@ -111,13 +121,19 @@ paint-order: stroke; stroke: currentColor;"
     <ul>
       <li><strong>Structure en modes purs :</strong> les empreintes de pré-saturation et
         les vecteurs de Gram–Schmidt sélectionnés sont des modes de Fourier purs</li>
-      <li><strong>Fréquences réalisées :</strong> les fréquences réalisées sont en
-        \(o(q)\) ; aucune convergence de fréquence macroscopique
-        \(\xi_c^{(q)}/q\to\omega_c\neq0\) n'est établie</li>
+      <li><strong>Énoncé à deux régimes :</strong> les déplacements sont en
+        \(o(q)\) ; les fréquences ne sont en \(o(q)\) que pour des
+        paramètres de bloc fixés indépendamment de \(q\). La chaîne implémentée
+        échantillonne les paramètres de bloc uniformément modulo \(q\), de sorte que des
+        fréquences macroscopiques par \(q\) apparaissent (par exemple \(\xi/q\) proche
+        de \(1/2\)), sans fréquence limite indépendante de \(q\) dans aucun des deux
+        régimes</li>
       <li><strong>Statut de troncature :</strong> la réduction à trois coordonnées est
         une troncature ; le rang du secteur admissible ne peut pas en être mesuré</li>
-      <li><strong>Échelle de la forme :</strong> \(O(q^{-2})\) sur les modes normalisés,
-        ce qui exclut la coercivité en \(q^{-1}\)</li>
+      <li><strong>Échelle de la forme :</strong> \(O(q^{-2})\) pour tout vecteur
+        unitaire — une conséquence du préfacteur de normalisation en \(q^{-2}\) de la
+        forme —, ce qui exclut la coercivité en \(q^{-1}\), la question du trou spectral
+        pour la forme non normalisée demeurant intacte et ouverte</li>
       <li><strong>Filtration canonique :</strong> la fenêtre de Fourier croissante de
         Q5a, de dimension \(\min(2n+1,q)\), de limite de Mosco nulle</li>
     </ul>
@@ -125,8 +141,8 @@ paint-order: stroke; stroke: currentColor;"
   <section class="card">
     <h2>Ce que Q5a-O2 n'établit pas</h2>
     <p>
-      L'atomicité spectrale du secteur admissible, le lemme de moyenne nulle, la
-      convergence de fréquence macroscopique, la coercivité en \(q^{-1}\) et la compacité
+      L'atomicité spectrale du secteur admissible, le lemme de moyenne nulle, une
+      fréquence limite indépendante de \(q\), la coercivité en \(q^{-1}\) et la compacité
       de Mosco ne sont pas des résultats de ce papier.
     </p>
     <p>
@@ -154,6 +170,19 @@ paint-order: stroke; stroke: currentColor;"
       <li>O28 : dimension effective \(=3\)</li>
       <li>Q5a : cadre limite, dont les hypothèses analytiques restent ouvertes</li>
       <li>Q5b : interprétation géométrique</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>Statut mis à jour</h2>
+    <ul>
+      <li><strong>[H-w] :</strong> prouvée dans W1</li>
+      <li><strong>[H-E1] :</strong> ouverte ; la coercivité en \(q^{-1}\) est exclue
+        par la borne \(O(q^{-2})\), valable pour tout vecteur unitaire ; la question du
+        trou spectral pour la forme non normalisée est intacte</li>
+      <li><strong>[C] :</strong> ouverte ; la filtration canonique est la fenêtre de
+        Fourier croissante de Q5a, de limite de Mosco nulle</li>
+      <li><strong>[H2] :</strong> ouverte : convergence des générateurs
+        renormalisés</li>
     </ul>
   </section>
   <section class="card">

@@ -8,10 +8,9 @@
     Dynamique de Yang–Mills depuis l'entropie spectrale projective | Cosmochrony
   </title>
   <meta name="description"
-    content="Q12 dérive la dynamique de Yang–Mills depuis la variation verticale de l'entropie
-    spectrale projective, établissant que gravité (a₂) et dynamique de jauge (a₄) sont séparées
-    par l'ordre spectral dans la hiérarchie de Seeley–DeWitt plutôt que par un groupe de symétrie
-    manquant."/>
+    content="Pour un groupe compact et une connexion admissible fournis, Q12 dérive les équations
+    locales de Yang–Mills par variation verticale de l’entropie spectrale projective. Le cadre
+    n’identifie ni le facteur couleur ni le groupe complet."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/gauge-structure/q12/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -56,7 +55,8 @@
           Q12 effectue la variation verticale de l'entropie spectrale projective
           $S_\Pi[g,\mathcal{A}]$ et dérive les équations de Yang–Mills à partir du coefficient
           de Seeley–DeWitt $a_4$, complétant la dérivation spectrale des deux types
-          d'interactions fondamentales depuis un unique fonctionnel.
+          de jauge depuis un unique fonctionnel, conditionnellement à un groupe compact et une
+          connexion admissible fournis.
         </p>
       </div>
     </div>
@@ -81,8 +81,8 @@
       <p>
         Q12 réalise la variation <em>verticale</em> complémentaire. L'opérateur $A_g$ est étendu en
         \[ A_{g,\mathcal{A}} = -(\nabla^{\mathcal{A}})^2 + E \] sur le fibré vectoriel associé à la
-        fibre principale admissible $P_{G_\Pi}(M, G_\Pi)$, et le coefficient de Seeley–DeWitt $a_4$
-        est calculé.
+        fibré vectoriel associé à un groupe compact fourni, et le coefficient de Seeley–DeWitt
+        $a_4$ est calculé. Q12 ne sélectionne pas ce groupe.
       </p>
       <p>
         Le fonctionnel étendu $S_\Pi[g,\mathcal{A}]$ contient le terme de Yang–Mills renormalisé avec
@@ -136,7 +136,7 @@
       <li>
         <strong>Extension au fibré vectoriel :</strong> l'opérateur spectral $A_g$ est relevé en
         $A_{g,\mathcal{A}}$ sur le fibré associé, incorporant la connexion de jauge admissible
-        $\mathcal{A}$ issue de Q6a/O31.
+        $\mathcal{A}$ fournie comme entrée explicite. O31 ne la détermine plus.
       </li>
       <li>
         <strong>Coefficient $a_4$ et terme de Yang–Mills :</strong> en isolant la composante de jauge
@@ -222,11 +222,9 @@
       </li>
     </ul>
     <p>
-      Le groupe de jauge $G_\Pi$ est hérité de Q6a/O31. Le secteur SU(3) est inconditionnel au
-      niveau ponctuel : $[H\text{-color}]_{\mathrm{pointwise}}$ (égalité exacte
-      $\sigma_c(n) = \sigma_{\omega c}(n) = \sigma_{\omega^2 c}(n)$ à $q$ fini) est prouvé
-      analytiquement dans O31 v1.5 (Proposition 4.23) via la structure à fréquence unique de
-      l'empreinte Born–Infeld.
+      Le groupe compact et la connexion sont des hypothèses de la construction verticale. O31
+      version 2.0 retire la co-admissibilité de couleur et l’identification de $\mathrm{SU}(3)$ ;
+      Q12 n’établit donc ni facteur couleur ni groupe de jauge complet du Modèle standard.
     </p>
     <p>
       La variation jointe — le système Einstein–Yang–Mills <em>conditionnel</em> et la
@@ -241,9 +239,9 @@
     <h2>Perspectives ouvertes</h2>
     <ul>
       <li>
-        <strong>Unicité de Yang–Mills SU(3) :</strong> montrer que la dynamique de jauge SU(3)
-        émerge uniquement de la structure de co-admissibilité des triplets de couleur, sans
-        supposer le groupe comme donnée (O31 §9.2).
+        <strong>Identification du groupe :</strong> dériver, indépendamment de la chaîne O31
+        retirée, quel groupe compact et quelle représentation agissent sur le fibré admissible.
+        D’ici là, le résultat de Yang–Mills est conditionnel à ces entrées.
       </li>
       <li>
         <strong>Secteur de matière :</strong> étendre la variation verticale pour inclure les

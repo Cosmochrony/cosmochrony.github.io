@@ -1,7 +1,193 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml"><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>O29 Veronese Collapse and the Distinction Between W_adm and Vρ | Cosmochrony</title><meta name="description" content="O29 establishes a measured 6→3 collapse in the trajectory span W_adm. Its two-dimensional PCA truncation U_c^(2) is not the spin-1/2 module Vρ and does not construct a Veronese square root."/><link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o29/index_fr.html"/><meta name="robots" content="index,follow"/><meta property="og:title" content="O29 Veronese Collapse and the Distinction Between W_adm and Vρ"/><meta property="og:description" content="The numerical rank results survive; the PCA dimension does not identify a fundamental doublet."/><meta property="og:type" content="website"/><meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o29/"/><script type="module">import {redirectIfNot} from "/script.js";redirectIfNot("en","/science/spectral/program/o29/index")</script><link rel="stylesheet" href="/styles.css"/></head><body>
-<header><div class="wrap"><div class="brand"><a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg"><path style="fill:currentColor;transform-box:fill-box;transform-origin:50% 50%;paint-order:stroke;stroke:currentColor" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/><ellipse style="paint-order:fill;stroke-width:1em;stroke:currentColor" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/></svg></a><div><h1>O29 Veronese Collapse</h1><p class="subtitle">Measured trajectory geometry without a spin-$\tfrac12$ carrier identification</p></div></div><div class="cta"><a class="btn primary" href="https://doi.org/10.5281/zenodo.19787221">Read O29</a><a class="btn subtle" href="/science/spectral/program/">Back to programme</a></div></div></header>
-<main class="wrap"><section class="grid"><div class="card"><h2>What is established</h2><p>On the stated O25/Q5a checkpoints, symmetric exterior-square data satisfy three quadratic relations and exhibit a hard $6\to3$ collapse. The measured complex trajectory span is denoted $W_{\mathrm{adm}}\subset H_{\mathrm{eff}}\cong\mathbb C^3$.</p><p>The constraint forms generate $\mathfrak{so}(3)$ and act irreducibly on this three-dimensional measured space. These are direct statements at the level of the data.</p><div class="note"><strong>Typing correction.</strong> The leading two PCA directions define an auxiliary space $U_c^{(2)}\subset H_{\mathrm{eff}}$. It is not $V_\rho$, has no canonical representation status, and does not measure $d_\rho=2$, $d_\rho^2=4$, or a Veronese square root.</div></div><aside class="card"><h2>Quick facts</h2><div class="kvs"><div class="kv"><div class="k">Measured</div><div class="v">$W_{\mathrm{adm}}$, complex dimension 3</div></div><div class="kv"><div class="k">Auxiliary</div><div class="v">$U_c^{(2)}$, PCA truncation</div></div><div class="kv"><div class="k">Not constructed</div><div class="v">Fundamental doublet $V_\rho$</div></div></div></aside></section>
-<section class="card"><h2>Numerical protocol</h2><p>The “locking-broken” stages B and D reach the maximal operator rank $4=\dim\operatorname{End}(U_c^{(2)})$ inside the auxiliary truncation. This records recovery of four operator directions there. It does not identify a spin-$\tfrac12$ representation.</p></section>
-<section class="card"><h2>Open bridge</h2><p>An identification $H_{\mathrm{eff},\mathbb C}\cong\operatorname{Sym}^2(V_\rho)$ and a choice of Veronese root are additional hypotheses. The minimality selection $d_\rho=2$ belongs to O26, not to the O29 measurements.</p></section>
-<section class="card"><h2>Reference</h2><p><a href="https://doi.org/10.5281/zenodo.19787221"><i>Carrier Identification via the Veronese Collapse: Effective Dimension of the Admissible Covariance in End(H_eff)</i>.</a></p></section></main><footer><div class="wrap"><p class="small">© <span id="y"></span> Jérôme Beau. <a href="/LICENSE">CC BY 4.0</a>.</p></div></footer><script>document.getElementById("y").textContent=new Date().getFullYear()</script><script>MathJax={tex:{inlineMath:{"[+]": [["$","$"]]}},svg:{fontCache:"global"}}</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>What the O28 Covariance Does and Does Not Identify | Cosmochrony</title>
+  <meta name="description"
+    content="O29 version 2.0 audits what the measured covariance rank identifies. Rank three is modal, not
+    invariant. The measured trajectory span, its PCA truncation and the spin-½ module are three distinct spaces,
+    and no calculation here identifies them."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o29/index.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o29/index_fr.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="What the O28 Covariance Does and Does Not Identify"/>
+  <meta property="og:description"
+    content="Rank three is modal rather than invariant: 32/50 samples at q=101, 103/105 at q=211. The collapse
+    diagnoses geometry within measured coordinates; it does not select a physical representation."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o29/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("en", "/science/spectral/program/o29/index")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path style="fill:currentColor;transform-box:fill-box;transform-origin:50% 50%;paint-order:stroke;stroke:currentColor"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order:fill;stroke-width:1em;stroke:currentColor" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>What the O28 Covariance Does and Does Not Identify</h1>
+        <p class="subtitle">
+          Veronese collapse in the measured trajectory span: a finite-data diagnostic, not a carrier
+          identification.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19787221" rel="noopener">Read O29</a>
+      <a class="btn subtle" href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Current Zenodo release:</strong> version 2.0 (2026-09-02).
+    <span lang="en">Official title: <i>Veronese Collapse in the Measured Trajectory Span: What the O28
+    Covariance Does and Does Not Identify</i>.</span>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        <a href="../o28">O28</a> reported an effective covariance rank $r_{\mathrm{eff}} = 3$ in the supplied
+        three-coordinate space $H_{\mathrm{eff}}$. O29 asks what that finite-data result actually identifies.
+      </p>
+      <p>
+        In an extended recomputation, <strong>rank three remains modal but is not invariant</strong>: it occurs
+        in $32/50$ stored samples at $q = 101$ and $103/105$ at $q = 211$.
+      </p>
+      <p>
+        The audit turns on separating three spaces that had been read as one. The measured trajectory span lies
+        in $H_{\mathrm{eff}}$; its leading two-dimensional PCA truncation $U_c^{(2)}$ is <em>data-dependent</em>;
+        and the spin-½ module $V_\rho$ is <em>supplied elsewhere</em>. No calculation in this paper identifies
+        these objects with one another.
+      </p>
+      <div class="note" role="note">
+        <strong>Scope statement.</strong> This page provides a structured overview. The complete technical
+        analysis is in the preprint linked above.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Author</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv"><div class="k">Version</div><div class="v">2.0</div></div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Numerical diagnostics; no carrier identified from the data</div>
+        </div>
+        <div class="kv"><div class="k">Measured</div><div class="v">Trajectory span in $H_{\mathrm{eff}}$</div></div>
+        <div class="kv"><div class="k">Auxiliary</div><div class="v">$U_c^{(2)}$, a PCA truncation</div></div>
+        <div class="kv"><div class="k">Not identified</div><div class="v">The spin-½ module $V_\rho$</div></div>
+        <div class="kv"><div class="k">License</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Core contributions</h2>
+    <p>Three results stand, each carrying its own epistemic label.</p>
+    <ul>
+      <li>
+        <strong>Numerical.</strong> At the declared tolerance and checkpoints, the Veronese evaluation matrix
+        has numerical rank three, the fitted constraint commutators have numerical rank three in the chosen
+        $\mathfrak{so}(3)$ basis, and the computed commutant is one-dimensional. Combined with the carrier
+        supplied conditionally by <a href="../o23">O23</a> and the factorisation statement of
+        <a href="../o27">O27</a>, these observations are <em>compatible with</em> the adjoint spin-1 carrier
+        $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$; they do not identify it from the data.
+      </li>
+      <li>
+        <strong>Mixed evidence.</strong> Under the stated parity identity the conjugate-pair outer products are
+        symmetric. The tested finite samples do not reach rank 4, and the locking-broken control recovers four
+        operator directions only inside the auxiliary space $U_c^{(2)}$.
+      </li>
+      <li>
+        <strong>Conditional.</strong> No subspace of $H_{\mathrm{eff}}$ is identified here with the spin-½
+        target $V_\rho$. Under the supplied actions it is not reachable equivariantly from the adjoint, since
+        $\operatorname{Hom}_{\mathfrak{su}(2)}(\mathbf{3}, \mathbf{2}) = 0$. Its selection rests on the
+        <a href="../o26">O26</a> minimality argument, pending an independent observable.
+      </li>
+    </ul>
+    <div class="note" role="note">
+      <strong>Corrected status of Test 4.</strong> Test 4 does not identify the spin-½ carrier. It reports a
+      numerical $6 \to 3$ collapse compatible with the supplied adjoint carrier. In particular the observed
+      value $r_{\mathrm{eff}} = 3$ <em>cannot</em> be inverted as $3 = d_\rho(d_\rho + 1)/2$ to infer
+      $d_\rho = 2$.
+    </div>
+  </section>
+  <section class="card">
+    <h2>Interpretation</h2>
+    <p>
+      The collapse diagnoses geometry <em>within measured coordinates</em>. It does not select a physical
+      representation. A genuine spin-½ test still requires an independent observable and a typed bridge to
+      $V_\rho$.
+    </p>
+    <p>
+      The distinction matters beyond this paper because it is the programme's recurrent failure mode: not an
+      incorrect calculation, but an unproved identification between a measured quantity and a representation
+      chosen elsewhere. Here the calculation stands and the identification is withdrawn.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation to the Cosmochrony program</h2>
+    <p>
+      <a href="../o25">O25</a> supplies the checkpoint trajectories, <a href="../o28">O28</a> the covariance
+      measurement, <a href="../o26">O26</a> the minimality criterion, <a href="../o23">O23</a> the conditional
+      spinor carrier, and <a href="../o27">O27</a> the separation between factorisation through the
+      admissibility quotient and equivariance, together with the open vector lift.
+    </p>
+    <p>
+      O29 revises the O26 criterion. That criterion assumed the conjugate-pair blocks were independently
+      distributed in $V_\rho$; for conjugate-pair data the blocks are anti-linearly related, so the
+      target-space prediction is replaced by a carrier test on $H_{\mathrm{eff}}$. The identification chain
+      from measured covariance to a fundamental doublet therefore remains open, and closing it is a task for an
+      independent observable rather than for more block statistics.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Reproduction</h2>
+    <p>
+      The analysis code, its declared seeds and thresholds, and the SHA-256 sums of the checkpoint archives are
+      committed in the <a href="https://github.com/Cosmochrony/o29" rel="noopener">paper's repository</a>. The
+      raw archives themselves are too large to vendor and do not yet have a public download location, so a
+      reader who does not already hold them can verify the code, seeds and hashes but cannot regenerate the
+      numbers from a fresh clone. Publishing that data record is a separate open task of the sub-programme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Reference</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19787221" rel="noopener">
+        <i lang="en">Veronese Collapse in the Measured Trajectory Span: What the O28 Covariance Does and Does
+        Not Identify</i>. Version 2.0, Preprint, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Licensed under <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

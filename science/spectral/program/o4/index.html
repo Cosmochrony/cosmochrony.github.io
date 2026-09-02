@@ -4,18 +4,19 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Subdiffusive Valence Growth under Bounded Relational Flux: Structural Derivation of the Cascade Exponent \(\beta\) | Cosmochrony</title>
+  <title>Bounded Relational Flux and Ramanujan Expansion Do Not Yet Yield a Cascade-Exponent Bound | Cosmochrony</title>
   <meta name="description"
-    content="Analysis of unified support-exit and Kesten–McKay saturation mechanisms showing how the full three-generation mass spectrum closes within the spectral programme."/>
-  <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o4/index_it.html"/>
-  <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o4/index_es.html"/>
-  <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o4/index_de.html"/>
+    content="O4 version 2.0 examines whether the Born–Infeld flux constraint and Cheeger expansion on Ramanujan–LPS
+    graphs force an upper bound on the cascade exponent β. They do not, by the argument examined: it carries three
+    independent defects and rests on a closure hypothesis that is not well-typed on this substrate."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o4/index.html"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o4/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Subdiffusive Valence Growth under Bounded Relational Flux: Structural Derivation of the Cascade Exponent \(\beta\): Unified Stabilisation Mechanism for All Generations"/>
+    content="Bounded Relational Flux and Ramanujan Expansion Do Not Yet Yield a Cascade-Exponent Bound"/>
   <meta property="og:description"
-    content="A spectral analysis showing how support exit and Kesten–McKay saturation combine into a complete structural treatment of the three-generation mass spectrum."/>
+    content="No structural upper bound on the cascade exponent β follows from bounded flux and Cheeger expansion by
+    this route. The three defects are independent, and the exponent remains a phenomenological input."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o4/"/>
   <script type="module">
@@ -40,10 +41,10 @@
         </svg>
       </a>
       <div>
-        <h1>Subdiffusive Valence Growth under Bounded Relational Flux: Structural Derivation of the Cascade Exponent \(\beta\)</h1>
+        <h1>Bounded Relational Flux and Ramanujan Expansion Do Not Yet Yield a Cascade-Exponent Bound</h1>
         <p class="subtitle">
-          How support exit and <a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a>
-          saturation combine into a unified structural treatment of all three generations.
+          Why one candidate route to a structural bound on the cascade exponent \(\beta\) does not hold, and what a
+          repair would additionally require.
         </p>
       </div>
     </div>
@@ -56,29 +57,28 @@
 <main class="wrap">
   <section class="note" role="note" data-release-version="2.0">
     <strong>Current Zenodo release:</strong> version 2.0 (2026-08-04).
-    <span lang="en">Official title: <i>Bounded Relational Flux and Ramanujan Expansion Do Not Yet Yield a Cascade-Exponent Bound</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article extends the spectral hierarchy programme by resolving the final structural limitation left open by
-        <a href="../o3">O3</a>: the incomplete treatment of the central ADE level $\lambda_2=1$ and the absence of a
-        closed mass formula for all three generations.
+        The lepton mass amplification formula of <a href="../o3">O3</a> depends on an exponent \(\beta\) governing the
+        growth \(p(n) \sim n^\beta\) of the effective relational valence along the relaxation cascade. Matching the
+        observed hierarchy selects \(\beta^* \in (0.09, 0.13)\), but leaves \(\beta\) a phenomenological input rather
+        than a derived quantity.
       </p>
       <p>
-        The central question is whether the support-exit mechanism that governs the off-central ADE levels can be
-        combined with the <a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a>
-        saturation mechanism identified in <a href="../relaxation"><i>Spectral Relaxation</i></a> into a single
-        stabilisation framework. The answer is yes: off-central modes stabilise through support exit, while the central
-        mode stabilises through spectral saturation at the midpoint of the contracting <a
-        href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a> support.
+        This note asks whether the Born–Infeld flux constraint \(|\partial_t \chi_v| \leq c_\chi\), combined with the
+        Cheeger isoperimetric inequality for Ramanujan–LPS graphs, forces a structural upper bound on \(\beta\).
+        <strong>It does not, by the argument examined here.</strong> That argument carries three independent defects,
+        each sufficient on its own to invalidate the derivation, and it rests on a closure hypothesis relating effective
+        valence to front size that is not yet a well-typed statement on this substrate.
       </p>
       <p>
-        This yields a unified structural mapping from the ADE spectrum to the complete generation triplet. O4 therefore
-        closes the mass-spectrum problem at the level of stabilisation mechanisms, while preserving the separation of
-        roles established by spectral stratigraphy, spectral relaxation, <a href="../o1">O1</a>, and <a
-        href="../o3">O3</a>.
+        This is a missing element, not a proved impossibility: no result shows that such a bound cannot exist. The note
+        itemises what a repair would additionally require, and records a conditional analysis under fixed
+        activation-utilisation and bounded-congestion hypotheses — neither of them derived — under which the natural
+        repair direction would favour fast rather than slow growth.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis is
@@ -101,14 +101,21 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
         </div>
         <div class="kv">
+          <div class="k">Version</div>
+          <div class="v">2.0</div>
+        </div>
+        <div class="kv">
+          <div class="k">Status</div>
+          <div class="v">Missing element not found: no bound established by this route, none proved impossible</div>
+        </div>
+        <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Mass closure, central-mode stabilisation, and unified hierarchy dynamics</div>
+          <div class="v">Whether bounded flux and Cheeger expansion constrain the cascade exponent \(\beta\)</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">ADE spectra, support exit, <a
-            href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a> saturation, and full
-            generation closure
+          <div class="v">Born–Infeld flux constraint, Ramanujan–LPS expansion, front-size argument, closure
+            hypothesis
           </div>
         </div>
       </div>
@@ -118,77 +125,83 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Unified stabilisation law:</strong> the paper combines support-exit dynamics for the off-central ADE
-        levels with <a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a> saturation
-        for the central level $\lambda_2=1$.
+        <strong>Three independent defects.</strong> The front-size argument for a growth bound carries three defects,
+        each sufficient on its own to invalidate the derivation. They are independent of one another and of the
+        well-typedness gap below.
       </li>
       <li>
-        <strong>Closure of the triplet:</strong> the three generations are no longer treated by partially distinct
-        arguments, but by a single structural framework assigning a finite stabilisation scale to each ADE level.
+        <strong>The closure hypothesis is not well-typed.</strong> The assumption relating the effective valence to
+        front size is not yet a well-formed statement on the LPS substrate at all, so it cannot be repaired by
+        tightening estimates alone.
       </li>
       <li>
-        <strong>Central-mode resolution:</strong> the special status of $\lambda_2=1$ is explained by its permanent
-        location at the midpoint of the <a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a>
-        support, so its mass is fixed by saturation rather than by support exit.
+        <strong>Refuted on the fixed-degree cascade.</strong> On the fixed-degree Heisenberg cascade this is not merely
+        an open closure: the native proportionality the hypothesis requires is refuted for the two realisations present
+        in the frozen corpus.
       </li>
       <li>
-        <strong>Mass-spectrum completion:</strong> O4 turns the hierarchy mechanism of <a href="../o3">O3</a> into a
-        complete spectral-to-mass pipeline, covering all three generations rather than only the off-central ratios.
+        <strong>What a repair would require.</strong> The note itemises the further structural choices a repair needs,
+        none of which is supplied by the Born–Infeld axiom or the LPS construction.
       </li>
       <li>
-        <strong>Structural minimality preserved:</strong> the paper adds no new spectral data and introduces no extra
-        dynamical sector beyond the two stabilisation mechanisms already present in the programme.
+        <strong>A conditional fast-growth concern.</strong> Under fixed activation-utilisation and bounded-congestion
+        hypotheses, neither derived, the natural repair direction would favour fast rather than slow growth. This is
+        recorded as a risk, not a result.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The article shows that the final missing piece of the spectral hierarchy programme was not a new kind of spectrum,
-      but a unified treatment of two already identified stabilisation mechanisms.
+      The finding is structural, not physical. It says nothing about whether particle-generation mass hierarchies are
+      in fact produced by a slow relaxation process; it says that one specific candidate mechanism for bounding that
+      process's rate does not hold up.
     </p>
     <ul>
       <li>
-        <strong>Representation structure</strong> still determines the three discrete ADE levels established by spectral
-        stratigraphy.
+        <strong>What is preserved.</strong> The Kesten–McKay contraction and exit-order results of
+        <a href="../o1">O1</a>, and the phenomenological exponent window of <a href="../o3">O3</a>, do not use the
+        front-size argument and are unaffected.
       </li>
       <li>
-        <strong>Support exit</strong> still governs the first and third generations, whose levels leave the <a
-        href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a> window at finite cascade
-        rank.
+        <strong>What becomes conditional.</strong> <a href="../o5">O5</a> takes the quadratic valence bound as its only
+        input from this note, so its affected conclusions retain a conditional status pending separate reassessment.
       </li>
       <li>
-        <strong><a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a>
-          saturation</strong> governs the central generation, whose level remains inside the support for all finite
-        valence.
+        <strong>How to read O1–O5.</strong> As a collection of independent spectral and phenomenological results
+        together with an open dynamical bridge, not as a closed chain of derived implications.
       </li>
     </ul>
     <p>
-      Within this perspective, O4 is the closure paper of the programme: it does not alter the hierarchy mechanism of
-      O3, but completes it by assigning the central mode its own structural stabilisation law and integrating both
-      mechanisms into a single picture.
+      The interpretive stakes are nonetheless real. If the conditional concern above were confirmed rather than merely
+      raised, it would suggest that genuinely slow, hierarchy-generating relaxation is not a generic feature of
+      bounded-flux dynamics on well-connected relational structures, and that the smallness of the observed exponent
+      would need to come from some specific resistance to expansion rather than from expansion and bounded flux alone.
+      That reading is explicitly conditional on work not done in this note, and is recorded as a direction for the
+      programme rather than a physical conclusion.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O4 follows directly from the final open problem identified in <a href="../o3">O3</a>. Spectral admissibility
-      selects the relevant sectors, spectral stratigraphy determines the discrete ADE level structure, spectral
-      relaxation introduces the <a href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a>
-      saturation mechanism, <a href="../o1">O1</a> restores the correct ordering through support contraction, and <a
-      href="../o3">O3</a> amplifies the hierarchy by dynamic valence growth.
+      Spectral admissibility selects the relevant sectors, spectral stratigraphy determines the discrete ADE level
+      structure, spectral relaxation introduces the <a
+      href="https://en.wikipedia.org/wiki/Wigner_semicircle_distribution">Kesten–McKay</a> saturation mechanism,
+      <a href="../o1">O1</a> restores the correct ordering through support contraction, and <a href="../o3">O3</a>
+      amplifies the hierarchy by dynamic valence growth while leaving the exponent \(\beta\) undetermined.
     </p>
     <p>
-      The present paper closes this chain. It shows that the same spectral programme already contains the ingredients
-      needed for a complete three-generation mass structure: support exit for the off-central modes and saturation for
-      the central one. The remaining open problem is no longer mass-spectrum closure itself, but the first-principles
-      derivation of the growth exponent $\beta$ and the extension of the same logic to other Standard Model sectors.
+      O4 addresses that gap and reports a negative result: the route through bounded flux and Cheeger expansion does not
+      close it. The derivation of \(\beta\) from the internal dynamics of the substrate therefore remains the central
+      open problem of the O-series, and the chain O1–O5 is to be read as independent results plus an open dynamical
+      bridge rather than as a closed derivation.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19101472" rel="noopener"> <i lang="en">Subdiffusive Valence Growth under Bounded Relational Flux: Structural Derivation of the Cascade Exponent \(\beta\): Unified Stabilisation Mechanism for All Generations</i>. Preprint, Zenodo. </a>
+      Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19101472" rel="noopener"> <i lang="en">Bounded Relational
+      Flux and Ramanujan Expansion Do Not Yet Yield a Cascade-Exponent Bound</i>. Version 2.0, Preprint, Zenodo. </a>
     </p>
   </section>
 </main>

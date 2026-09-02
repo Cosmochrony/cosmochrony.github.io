@@ -1,7 +1,202 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml"><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>O29 Effondrement de Veronese et distinction entre W_adm et Vρ | Cosmochronie</title><meta name="description" content="O29 établit un effondrement mesuré 6→3 dans le span de trajectoire W_adm. Sa troncature PCA bidimensionnelle U_c^(2) n’est pas le module spin-1/2 Vρ et ne construit aucune racine de Veronese."/><link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o29/"/><meta name="robots" content="index,follow"/><meta property="og:title" content="O29 Effondrement de Veronese et distinction entre W_adm et Vρ"/><meta property="og:description" content="Les résultats numériques de rang subsistent ; la dimension PCA n’identifie pas un doublet fondamental."/><meta property="og:type" content="website"/><meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o29/index_fr.html"/><script type="module">import {redirectIfNot} from "/script.js";redirectIfNot("fr","/science/spectral/program/o29/index_fr")</script><link rel="stylesheet" href="/styles.css"/></head><body>
-<header><div class="wrap"><div class="brand"><a class="logo" href="/index_fr.html" title="Retour à Cosmochronie" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg"><path style="fill:currentColor;transform-box:fill-box;transform-origin:50% 50%;paint-order:stroke;stroke:currentColor" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/><ellipse style="paint-order:fill;stroke-width:1em;stroke:currentColor" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/></svg></a><div><h1>O29 Effondrement de Veronese</h1><p class="subtitle">Géométrie de trajectoire mesurée sans identification d’un porteur spin-$\tfrac12$</p></div></div><div class="cta"><a class="btn primary" href="https://doi.org/10.5281/zenodo.19787221">Lire O29</a><a class="btn subtle" href="/science/spectral/program/index_fr.html">Retour au programme</a></div></div></header>
-<main class="wrap"><section class="grid"><div class="card"><h2>Ce qui est établi</h2><p>Sur les points de contrôle O25/Q5a déclarés, les données de carrés extérieurs symétriques satisfont trois relations quadratiques et présentent un effondrement dur $6\to3$. Le span complexe de trajectoire mesuré est noté $W_{\mathrm{adm}}\subset H_{\mathrm{eff}}\cong\mathbb C^3$.</p><p>Les formes de contrainte engendrent $\mathfrak{so}(3)$ et agissent irréductiblement sur cet espace mesuré tridimensionnel. Ces énoncés sont directs au niveau des données.</p><div class="note"><strong>Correction de typage.</strong> Les deux directions PCA principales définissent un espace auxiliaire $U_c^{(2)}\subset H_{\mathrm{eff}}$. Ce n’est pas $V_\rho$, il n’a aucun statut représentationnel canonique et ne mesure ni $d_\rho=2$, ni $d_\rho^2=4$, ni une racine de Veronese.</div></div><aside class="card"><h2>Repères</h2><div class="kvs"><div class="kv"><div class="k">Mesuré</div><div class="v">$W_{\mathrm{adm}}$, dimension complexe 3</div></div><div class="kv"><div class="k">Auxiliaire</div><div class="v">$U_c^{(2)}$, troncature PCA</div></div><div class="kv"><div class="k">Non construit</div><div class="v">Doublet fondamental $V_\rho$</div></div></div></aside></section>
-<section class="card"><h2>Protocole numérique</h2><p>Les étapes B et D à verrouillage brisé atteignent le rang opératoriel maximal $4=\dim\operatorname{End}(U_c^{(2)})$ dans la troncature auxiliaire. Cela consigne la récupération de quatre directions d’opérateurs, sans identifier une représentation spin-$\tfrac12$.</p></section>
-<section class="card"><h2>Pont ouvert</h2><p>Une identification $H_{\mathrm{eff},\mathbb C}\cong\operatorname{Sym}^2(V_\rho)$ et le choix d’une racine de Veronese sont des hypothèses supplémentaires. La sélection minimale $d_\rho=2$ appartient à O26, non aux mesures d’O29.</p></section>
-<section class="card"><h2>Référence</h2><p><a href="https://doi.org/10.5281/zenodo.19787221"><i lang="en">Carrier Identification via the Veronese Collapse: Effective Dimension of the Admissible Covariance in End(H_eff)</i>.</a></p></section></main><footer><div class="wrap"><p class="small">© <span id="y"></span> Jérôme Beau. <a href="/LICENSE">CC BY 4.0</a>.</p></div></footer><script>document.getElementById("y").textContent=new Date().getFullYear()</script><script>MathJax={tex:{inlineMath:{"[+]": [["$","$"]]}},svg:{fontCache:"global"}}</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ce que la covariance d’O28 identifie, et ce qu’elle n’identifie pas | Cosmochrony</title>
+  <meta name="description"
+    content="O29 version 2.0 audite ce que le rang de covariance mesuré identifie réellement. Le rang trois est
+    modal, non invariant. L’étendue de trajectoire mesurée, sa troncature ACP et le module de spin ½ sont trois
+    espaces distincts, qu’aucun calcul de cet article n’identifie entre eux."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o29/index_fr.html"/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o29/index.html"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="Ce que la covariance d’O28 identifie, et ce qu’elle n’identifie pas"/>
+  <meta property="og:description"
+    content="Le rang trois est modal plutôt qu’invariant : 32/50 échantillons à q=101, 103/105 à q=211.
+    L’effondrement diagnostique une géométrie dans les coordonnées mesurées ; il ne sélectionne pas de
+    représentation physique."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o29/"/>
+  <script type="module">
+    import { redirectIfNot } from "/script.js"
+
+    redirectIfNot("fr", "/science/spectral/program/o29/index_fr")
+  </script>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="/" title="Retour à Cosmochrony" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg">
+          <path style="fill:currentColor;transform-box:fill-box;transform-origin:50% 50%;paint-order:stroke;stroke:currentColor"
+            transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)"
+            d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/>
+          <ellipse style="paint-order:fill;stroke-width:1em;stroke:currentColor" cx="122.899" cy="123.911"
+            rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/>
+        </svg>
+      </a>
+      <div>
+        <h1>Ce que la covariance d’O28 identifie, et ce qu’elle n’identifie pas</h1>
+        <p class="subtitle">
+          Effondrement de Veronese dans l’étendue de trajectoire mesurée : un diagnostic sur données finies, non
+          une identification de porteur.
+        </p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19787221" rel="noopener">Lire O29</a>
+      <a class="btn subtle" href="/science/spectral/program/index_fr.html">Retour au programme d’admissibilité
+        spectrale</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-02).
+    <span>Titre officiel : <i lang="en">Veronese Collapse in the Measured Trajectory Span: What the O28
+    Covariance Does and Does Not Identify</i>.</span>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Vue d’ensemble</h2>
+      <p>
+        <a href="../o28/index_fr.html">O28</a> rapportait un rang de covariance effectif $r_{\mathrm{eff}} = 3$
+        dans l’espace à trois coordonnées fourni $H_{\mathrm{eff}}$. O29 demande ce que ce résultat sur données
+        finies identifie réellement.
+      </p>
+      <p>
+        Dans un recalcul étendu, <strong>le rang trois reste modal mais n’est pas invariant</strong> : il
+        apparaît dans $32/50$ échantillons stockés à $q = 101$ et $103/105$ à $q = 211$.
+      </p>
+      <p>
+        L’audit tient à la séparation de trois espaces qui étaient lus comme un seul. L’étendue de trajectoire
+        mesurée vit dans $H_{\mathrm{eff}}$ ; sa troncature ACP bidimensionnelle dominante $U_c^{(2)}$ dépend
+        <em>des données</em> ; et le module de spin ½ $V_\rho$ est <em>fourni ailleurs</em>. Aucun calcul de cet
+        article n’identifie ces objets entre eux.
+      </p>
+      <div class="note" role="note">
+        <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique complète
+        est présentée dans la prépublication ci-dessus.
+      </div>
+    </div>
+    <aside class="card">
+      <h2>Informations clés</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Auteur</div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div>
+        </div>
+        <div class="kv"><div class="k">Version</div><div class="v">2.0</div></div>
+        <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Diagnostics numériques ; aucun porteur identifié depuis les données</div>
+        </div>
+        <div class="kv"><div class="k">Mesuré</div><div class="v">Étendue de trajectoire dans $H_{\mathrm{eff}}$</div></div>
+        <div class="kv"><div class="k">Auxiliaire</div><div class="v">$U_c^{(2)}$, une troncature ACP</div></div>
+        <div class="kv"><div class="k">Non identifié</div><div class="v">Le module de spin ½ $V_\rho$</div></div>
+        <div class="kv"><div class="k">Licence</div><div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+      </div>
+    </aside>
+  </section>
+  <section class="card">
+    <h2>Contributions principales</h2>
+    <p>Trois résultats tiennent, chacun avec son étiquette épistémique propre.</p>
+    <ul>
+      <li>
+        <strong>Numérique.</strong> À la tolérance et aux points de contrôle déclarés, la matrice d’évaluation
+        de Veronese a un rang numérique trois, les commutateurs des contraintes ajustées ont un rang numérique
+        trois dans la base $\mathfrak{so}(3)$ choisie, et le commutant calculé est unidimensionnel. Joints au
+        porteur fourni conditionnellement par <a href="../o23/index_fr.html">O23</a> et à l’énoncé de
+        factorisation d’<a href="../o27/index_fr.html">O27</a>, ces constats sont <em>compatibles avec</em> le
+        porteur adjoint de spin 1 $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ ; ils ne l’identifient pas depuis
+        les données.
+      </li>
+      <li>
+        <strong>Faisceau mixte.</strong> Sous l’identité de parité énoncée, les produits extérieurs des paires
+        conjuguées sont symétriques. Les échantillons finis testés n’atteignent pas le rang 4, et le contrôle à
+        verrouillage rompu ne récupère quatre directions d’opérateur qu’à l’intérieur de l’espace auxiliaire
+        $U_c^{(2)}$.
+      </li>
+      <li>
+        <strong>Conditionnel.</strong> Aucun sous-espace de $H_{\mathrm{eff}}$ n’est identifié ici à la cible de
+        spin ½ $V_\rho$. Sous les actions fournies, elle n’est pas atteignable de manière équivariante depuis
+        l’adjointe, puisque $\operatorname{Hom}_{\mathfrak{su}(2)}(\mathbf{3}, \mathbf{2}) = 0$. Sa sélection
+        repose sur l’argument de minimalité d’<a href="../o26/index_fr.html">O26</a>, dans l’attente d’une
+        observable indépendante.
+      </li>
+    </ul>
+    <div class="note" role="note">
+      <strong>Statut corrigé du test 4.</strong> Le test 4 n’identifie pas le porteur de spin ½. Il rapporte un
+      effondrement numérique $6 \to 3$ compatible avec le porteur adjoint fourni. En particulier, la valeur
+      observée $r_{\mathrm{eff}} = 3$ ne <em>peut pas</em> être inversée en $3 = d_\rho(d_\rho + 1)/2$ pour en
+      déduire $d_\rho = 2$.
+    </div>
+  </section>
+  <section class="card">
+    <h2>Interprétation</h2>
+    <p>
+      L’effondrement diagnostique une géométrie <em>à l’intérieur des coordonnées mesurées</em>. Il ne
+      sélectionne pas de représentation physique. Un véritable test de spin ½ exige encore une observable
+      indépendante et un pont typé vers $V_\rho$.
+    </p>
+    <p>
+      La distinction dépasse cet article, car elle est le mode d’échec récurrent du programme : non pas un
+      calcul faux, mais une identification non démontrée entre une quantité mesurée et une représentation
+      choisie ailleurs. Ici le calcul tient et l’identification est retirée.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Relation avec le programme Cosmochrony</h2>
+    <p>
+      <a href="../o25/index_fr.html">O25</a> fournit les trajectoires de points de contrôle,
+      <a href="../o28/index_fr.html">O28</a> la mesure de covariance, <a href="../o26/index_fr.html">O26</a> le
+      critère de minimalité, <a href="../o23/index_fr.html">O23</a> le porteur spinoriel conditionnel, et
+      <a href="../o27/index_fr.html">O27</a> la séparation entre factorisation par le quotient d’admissibilité
+      et équivariance, ainsi que le relèvement vectoriel ouvert.
+    </p>
+    <p>
+      O29 révise le critère d’O26. Ce critère supposait les blocs des paires conjuguées distribués
+      indépendamment dans $V_\rho$ ; pour des données de paires conjuguées, les blocs sont liés
+      antilinéairement, de sorte que la prédiction dans l’espace cible est remplacée par un test de porteur sur
+      $H_{\mathrm{eff}}$. La chaîne d’identification allant de la covariance mesurée à un doublet fondamental
+      reste donc ouverte, et la refermer relève d’une observable indépendante plutôt que de statistiques de
+      blocs supplémentaires.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Reproduction</h2>
+    <p>
+      Le code d’analyse, ses graines et seuils déclarés, ainsi que les sommes SHA-256 des archives de points de
+      contrôle sont versionnés dans le <a href="https://github.com/Cosmochrony/o29" rel="noopener">dépôt de
+      l’article</a>. Les archives brutes elles-mêmes sont trop volumineuses pour être embarquées et n’ont pas
+      encore d’emplacement de téléchargement public : un lecteur qui ne les détient pas déjà peut vérifier le
+      code, les graines et les empreintes, mais ne peut pas régénérer les nombres depuis un clone frais. Publier
+      cet enregistrement de données est une tâche ouverte distincte du sous-programme.
+    </p>
+  </section>
+  <section class="card">
+    <h2>Références</h2>
+    <p>
+      Jérôme Beau.
+      <a href="https://doi.org/10.5281/zenodo.19787221" rel="noopener">
+        <i lang="en">Veronese Collapse in the Measured Trajectory Span: What the O28 Covariance Does and Does
+        Not Identify</i>. Version 2.0, prépublication, Zenodo.
+      </a>
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+<script>MathJax = { tex: { inlineMath: { "[+]": [["$", "$"]] } }, svg: { fontCache: "global" } }</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</body>
+</html>

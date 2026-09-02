@@ -8,18 +8,19 @@
     Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions | Cosmochrony
   </title>
   <meta name="description"
-    content="Q5b dérive une géométrie d'espace-temps lorentzienne à quatre dimensions depuis la
-    stratification en coques BFS de Heis_3(R), identifiant la direction temporelle avec la profondeur
-    BFS et les trois directions spatiales avec le secteur admissible horizontal H_eff ≃ C^3."/>
+    content="Q5b prouve la limite de Carnot et la dimension homogène quatre pour la stratification
+    en coques BFS de Heis_3(R). Sous l'hypothèse non établie [H-L], il identifie la métrique et la
+    signature lorentziennes à quatre dimensions correspondantes."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q5/b/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions"/>
   <meta property="og:description"
-    content="Q5b dérive une géométrie 4D lorentzienne depuis la stratification BFS de Heis_3(R).
-    La direction temporelle est identifiée à la profondeur BFS ; les trois directions spatiales à
-    H_eff ≃ C^3. Version 2.0 : résultats conditionnels à l'hypothèse de limite spatiale [H-L] (Q5a 3.0) ; [H-lift] prouvée par Q9."/>
+    content="Q5b 2.1 prouve la limite de Carnot et la dimension homogène quatre sur un porteur de Heisenberg fourni.
+    L'identification du secteur spatial et toutes les conclusions métriques et de signature lorentzienne restent
+    conditionnelles à l'hypothèse non établie [H-L] (Q5a 3.2). Q9 prouve seulement l'implication
+    conditionnelle [H-F] =&gt; [H-lift], avec [H-F] non établie."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q5/b/"/>
@@ -50,10 +51,9 @@
           Stratification en coques BFS et émergence d'une géométrie lorentzienne à quatre dimensions
         </h1>
         <p class="subtitle">
-          Q5b dérive une géométrie d'espace-temps lorentzienne à quatre dimensions depuis la
-          stratification en coques BFS de $\mathrm{Heis}_3(\mathbb{R})$, identifiant la direction
-          temporelle avec la profondeur BFS et les trois directions spatiales avec le secteur
-          admissible horizontal $H_\mathrm{eff} \simeq \mathbb{C}^3$.
+          Q5b prouve la limite de Carnot et la dimension homogène quatre pour la stratification
+          en coques BFS de $\mathrm{Heis}_3(\mathbb{R})$. Sous l'hypothèse non établie de limite
+          spatiale [H-L], il identifie la métrique lorentzienne correspondante.
         </p>
       </div>
     </div>
@@ -70,13 +70,15 @@
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Q5b aborde une question centrale du programme Cosmochrony : comment un espace-temps
-        lorentzien à quatre dimensions émerge-t-il du substrat relationnel ? La réponse réside dans
-        la structure combinatoire du groupe de Heisenberg lui-même.
+        Q5b aborde une question centrale du programme Cosmochrony : quelles conclusions géométriques
+        suivent de la structure BFS d'un porteur de Heisenberg fourni, et lesquelles exigent une
+        hypothèse supplémentaire de limite continue ?
       </p>
       <div class="note" role="note">
-        <strong>Révision de statut (version 2.0).</strong>
-        La version 3.0 de <a href="../a/index_fr.html">Q5a</a> retire sa dérivation de
+        <strong>Statut actuel (version 2.1).</strong>
+        Q5b travaille conditionnellement sur un porteur de Heisenberg fourni : ni le groupe de
+        Heisenberg fini ni son identification avec la fibre admissible ne sont sélectionnés par
+        les axiomes d'admissibilité. La version 3.2 de <a href="../a/index_fr.html">Q5a</a> ne dérive pas
         l'opérateur limite spatial $L_\Pi = -A\partial_x^2$. L'entrée spatiale de Q5b est
         désormais l'hypothèse explicite, non établie, <strong>[H-L]</strong>, et chaque
         résultat qui la consomme (extraction métrique, fermeture des coefficients, signature
@@ -86,18 +88,18 @@
       </div>
       <p>
         La stratification en coques BFS (Breadth-First Search) de $\mathrm{Heis}_3(\mathbb{R})$
-        induit une décomposition naturelle de la structure tangente en une direction privilégiée —
-        la profondeur BFS, identifiée comme direction temporelle — et trois directions horizontales
-        formant le secteur admissible $H_\mathrm{eff} \simeq \mathbb{C}^3$.
+        possède inconditionnellement une limite de Carnot de dimension homogène quatre. Sous [H-L],
+        cette stratification est lue comme une direction temporelle — la profondeur BFS — et trois
+        directions spatiales associées au secteur horizontal $H_\mathrm{eff} \simeq \mathbb{C}^3$.
       </p>
       <p>
-        De cette stratification, une quadri-vitesse émerge naturellement, et la co-métrique prend
+        Sous [H-L], cette stratification définit une quadri-vitesse et la co-métrique prend
         la signature lorentzienne $\mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$. Le coefficient
         de co-métrique temporel $A_\tau$ est identifié par Q11.
       </p>
       <div class="note">
         <strong>Résultat central.</strong> La stratification BFS de $\mathrm{Heis}_3(\mathbb{R})$
-        donne une géométrie lorentzienne 4D avec métrique
+        possède une limite de Carnot avec $D_{\mathrm{hom}}=4$. Sous [H-L], la co-métrique associée est
         $\mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$.
       </div>
     </div>
@@ -122,13 +124,13 @@
         <div class="kv">
           <div class="k">Résultat clé</div>
           <div class="v">
-            Stratification BFS de $\mathrm{Heis}_3(\mathbb{R})$ $\to$ métrique lorentzienne 4D
+            Limite de Carnot avec $D_{\mathrm{hom}}=4$ ; sous [H-L], co-métrique lorentzienne 4D
             $\mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$
           </div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Version 2.0 : conditionnel à l'hypothèse de limite spatiale non établie [H-L] (Q5a 3.0) ; géométrie de Carnot structurelle ; [H-lift] prouvée par Q9 ; questions auxiliaires fermées au sein du cadre</div>
+          <div class="v">Version 2.1 : porteur de Heisenberg fourni ; conditionnel à l'hypothèse de limite spatiale non établie [H-L] (Q5a 3.2) ; géométrie de Carnot structurelle ; Q9 prouve [H-F] $\Rightarrow$ [H-lift], avec [H-F] non établie</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
@@ -152,26 +154,27 @@
         combinatoire à la flèche du temps.
       </li>
       <li>
-        <strong>Secteur spatial depuis l'admissibilité horizontale :</strong> les trois directions
+        <strong>Secteur spatial sous [H-L] :</strong> sous [H-L], les trois directions
         spatiales sont identifiées avec le secteur admissible horizontal
         $H_\mathrm{eff} \simeq \mathbb{C}^3$, héritant des contraintes d'admissibilité de la
         série O (O23–O29).
       </li>
       <li>
-        <strong>Quadri-vitesse depuis la stratification :</strong> la stratification BFS génère un
+        <strong>Quadri-vitesse sous [H-L] :</strong> sous [H-L], la stratification BFS génère un
         champ de vecteurs quadri-vitesse naturel, avec la composante temporelle fixée par le gradient
         de profondeur et les composantes spatiales par la projection horizontale.
       </li>
       <li>
-        <strong>Signature lorentzienne :</strong> la co-métrique $\mathrm{diag}(-2,2,2,2)$ émerge
+        <strong>Signature lorentzienne sous [H-L] :</strong> sous [H-L], la co-métrique $\mathrm{diag}(-2,2,2,2)$ découle
         de l'asymétrie entre la direction de profondeur BFS et les trois directions admissibles
         horizontales, avec le coefficient de co-métrique temporel $A_\tau$ identifié séparément
         dans Q11.
       </li>
       <li>
-        <strong>[H-lift] fermée par Q9 :</strong> l'hypothèse de relèvement [H-lift] (Q5b-O1),
-        anciennement conditionnelle, est prouvée par Q9 via la suppression
-        du générateur de modulation, levant le statut conditionnel principal de Q5b.
+        <strong>Implication conditionnelle de Q9 :</strong> Q9 prouve [H-F] $\Rightarrow$ [H-lift].
+        Sous l'hypothèse gelée, non établie [H-F], la contribution d'énergie de position du secteur
+        de modulation satisfait $\mathcal{E}^X_q(f_q)\leq C/q$ le long des suites de récupération ;
+        [H-L] reste une hypothèse indépendante de limite spatiale non établie.
       </li>
     </ul>
   </section>
@@ -179,26 +182,26 @@
   <section class="card">
     <h2>Stratification BFS et espace-temps</h2>
     <p>
-      La stratification en coques BFS fournit un nouveau mécanisme d'émergence de la géométrie
-      lorentzienne, genuinement différent des approches existantes. Plutôt que de postuler une
-      variété d'espace-temps et d'imposer une métrique, la structure géométrique découle des
-      propriétés combinatoires du groupe de Heisenberg sous exploration BFS.
+      La stratification en coques BFS fournit inconditionnellement une limite de Carnot de dimension
+      homogène quatre. Son interprétation comme mécanisme d'espace-temps lorentzien est conditionnelle
+      à [H-L]. Sous cette hypothèse, aucune métrique d'arrière-plan n'est insérée indépendamment : la
+      structure métrique est lue depuis les propriétés combinatoires du groupe de Heisenberg.
     </p>
     <p>
-      L'idée clé est que le groupe de Heisenberg $\mathrm{Heis}_3(\mathbb{R})$ présente une
+      Sous [H-L], l'idée clé est que le groupe de Heisenberg $\mathrm{Heis}_3(\mathbb{R})$ présente une
       asymétrie intrinsèque : la direction centrale (correspondant à la profondeur BFS) se comporte
       différemment des directions horizontales sous le filtre d'admissibilité. Cette asymétrie est
       précisément l'origine de la signature lorentzienne.
     </p>
     <p>
-      Les trois directions horizontales correspondent aux coordonnées spatiales de l'espace de
+      Sous [H-L], les trois directions horizontales correspondent aux coordonnées spatiales de l'espace de
       Minkowski, tandis que la profondeur BFS fournit la coordonnée temporelle. La co-métrique
       résultante $\mathrm{diag}(-2,2,2,2)$ est proportionnelle à la métrique de Minkowski
       $\eta^{\mu\nu}$.
     </p>
     <div class="note">
-      <strong>Observation structurelle.</strong> La décomposition 1+3 des dimensions d'espace-temps
-      n'est pas imposée mais dérivée de la structure interne de $\mathrm{Heis}_3(\mathbb{R})$ :
+      <strong>Observation structurelle conditionnelle.</strong> Sous [H-L], la décomposition 1+3 des
+      dimensions d'espace-temps est lue depuis la structure interne de $\mathrm{Heis}_3(\mathbb{R})$ :
       une direction centrale (profondeur BFS) plus trois directions horizontales
       ($H_\mathrm{eff} \simeq \mathbb{C}^3$).
     </div>
@@ -216,18 +219,19 @@
         horizontaux sont reliés entre eux.
       </li>
       <li>
-        <strong>Q8 :</strong> établit $A_Z = 2$ inconditionnellement via la rigidité de Casimir,
-        en utilisant Q5b comme entrée.
+        <strong>Q8 :</strong> sous l'hypothèse gelée et non établie [H-F], la rigidité de Casimir
+        donne $A_Z = 2$ ; toute lecture co-métrique requiert en plus [H-L].
       </li>
       <li>
-        <strong>Q9 :</strong> prouve [H-lift], fermant la principale conditionnalité de Q5b.
+        <strong>Q9 :</strong> prouve [H-F] $\Rightarrow$ [H-lift], avec [H-F] non établie ;
+        l'hypothèse indépendante [H-L] reste elle aussi ouverte.
       </li>
       <li>
         <strong>Q10–Q11 :</strong> complètent la détermination des coefficients métriques.
       </li>
       <li>
-        <strong>Q12 :</strong> utilise la géométrie lorentzienne de Q5b comme variété de base pour
-        la dynamique de Yang–Mills.
+        <strong>Q12 :</strong> son théorème de Yang–Mills à base fixée ne dépend pas de Q5b ; seule
+        sa lecture sur la base émergente de Cosmochrony utilise la géométrie Q5b sous [H-L].
       </li>
     </ul>
     <p>
@@ -251,10 +255,12 @@
       </li>
     </ul>
     <div class="note">
-      <strong>Toutes les questions auxiliaires fermées.</strong> Q5b-O1 ([H-lift], Q9), Q5b-O2
-      ($A_z=2$, Q8) et Q5b-O3 ($A_H=2$ via Q10, $A_\tau=2$ via Q11) sont résolues.
+      <strong>Statut des questions auxiliaires.</strong> Q5b-O1 n'est déchargée que
+      conditionnellement par l'implication [H-F] $\Rightarrow$ [H-lift] de Q9 ; [H-F] n'est pas
+      établie. Q5b-O2 ($A_z=2$, Q8) est elle aussi placée sous [H-F], tandis que toute lecture
+      co-métrique et Q5b-O3 restent conditionnelles à leurs entrées déclarées, dont [H-L].
       Sous [H-L], la co-métrique $g^{\mu\nu}=2\,\eta^{\mu\nu}$ est déterminée de manière
-      unique, sans paramètre libre ; [H-L] elle-même n'est pas établie (Q5a 3.0), et Q5 est
+      unique, sans paramètre libre ; [H-L] elle-même n'est pas établie (Q5a 3.2), et Q5 est
       ouverte.
     </div>
   </section>

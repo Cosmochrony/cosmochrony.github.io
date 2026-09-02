@@ -8,17 +8,17 @@
     Filtration de Fourier canonique et obstruction à une limite continue spatiale | Cosmochrony
   </title>
   <meta name="description"
-    content="Q5a 3.0 identifie exactement la filtration canonique de la fibre admissible comme fenêtre de Fourier torique croissante, prouve que la forme d'admissibilité publiée converge vers la forme nulle, et prouve un no-go de normalisation : Q5 reste ouverte."/>
+    content="Q5a 3.2 identifie la filtration canonique sur un porteur de Heisenberg fourni comme une fenêtre de Fourier torique croissante, prouve la convergence vers la forme nulle et un no-go de normalisation : Q5 reste ouverte."/>
   <link rel="alternate" hreflang="en"
-    href="https://cosmochrony.org/science/emergent-geometry/q5a/index.html"/>
+    href="https://cosmochrony.org/science/emergent-geometry/q5/a/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Filtration de Fourier canonique et obstruction à une limite continue spatiale"/>
   <meta property="og:description"
-    content="Q5a 3.0 : identification exacte de la filtration canonique, théorème de forme nulle, no-go de normalisation, et limite de Dirichlet conditionnelle en fenêtre duale. La question du continuum spatial Q5 reste ouverte."/>
+    content="Q5a 3.2 : porteur de Heisenberg fourni, filtration de Fourier exacte, théorème de forme nulle, no-go de normalisation et limite de Dirichlet conditionnelle en fenêtre duale. Q5 reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
-    content="https://cosmochrony.org/science/emergent-geometry/q5a/index_fr.html"/>
+    content="https://cosmochrony.org/science/emergent-geometry/q5/a/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
     redirectIfNot("fr", "/science/emergent-geometry/q5/a/index")
@@ -45,7 +45,7 @@ paint-order: stroke; stroke: currentColor;"
           Filtration de Fourier canonique et obstruction à une limite continue spatiale
         </h1>
         <p class="subtitle">
-          Ce vers quoi la fibre admissible converge — et ne converge pas : la version 3.0 de
+          Ce vers quoi la fibre admissible converge — et ne converge pas : la version 3.2 de
           Q5a identifie exactement la filtration canonique et prouve que, sous la
           normalisation publiée, aucun opérateur de continuum spatial n'émerge. Q5 reste
           ouverte.
@@ -65,13 +65,14 @@ paint-order: stroke; stroke: currentColor;"
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        L'article Foundation établit que la fibre admissible porte la représentation de Weil
-        de \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) à caractère central non trivial fixé,
-        et définit la filtration canonique de la fibre comme les espaces engendrés par
-        l'orbite \(\Omega_n = \mathrm{span}\{\rho(g)v_0 : g \in B_n\}\) sur les boules en
-        largeur d'abord du graphe de Cayley.
-        La version 3.0 de Q5a identifie exactement cette filtration et détermine ce vers quoi
-        elle converge — et ne converge pas.
+        Q5a travaille sur un groupe de Heisenberg fini et un caractère central non trivial fournis.
+        Le porteur \(\mathcal H_c=L^2(\mathbb Z/q\mathbb Z)\) porte la représentation de
+        Heisenberg--Schrödinger \(\pi_c\) ; il n'est pas sélectionné par les axiomes
+        d'admissibilité et ne se confond pas avec l'action de Weil associée du groupe
+        d'automorphismes symplectiques.
+        Sur ce porteur fourni, la version 3.2 de Q5a identifie exactement la filtration orbitale
+        \(\Omega_n = \mathrm{span}\{\pi_c(g)v_0 : g \in B_n\}\) et détermine ce vers quoi
+        elle converge, et ne converge pas.
       </p>
       <p>
         <strong>La réponse est négative dans la direction espérée par Q5, et exacte.</strong>
@@ -83,11 +84,11 @@ paint-order: stroke; stroke: currentColor;"
         trivial.
       </p>
       <div class="note" role="note">
-        <strong>Révision de statut.</strong> La version 3.0 retire la dérivation antérieure
+        <strong>Statut actuel (version 3.2).</strong> Q5a ne dérive pas
         d'un opérateur limite \(-A\partial_x^2\) sur \(L^2(\mathbb{R})\) (versions jusqu'à
         2.1) et la résolution formelle revendiquée de Q5. L'existence d'un opérateur limite
         spatial est désormais l'hypothèse explicite, non établie, [H-L] consommée par
-        <a href="../b/index_fr.html">Q5b</a> (version 2.0). Q5 est ouverte.
+        <a href="../b/index_fr.html">Q5b</a> (version 2.1). Q5 est ouverte.
       </div>
     </div>
     <aside class="card">
@@ -95,7 +96,7 @@ paint-order: stroke; stroke: currentColor;"
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Document de travail (v3.0)</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication, version 3.2</div></div>
         <div class="kv"><div class="k">Programme</div>
           <div class="v">Série Q, programme de géométrie spectrale</div></div>
         <div class="kv"><div class="k">Sujets</div>
@@ -155,17 +156,17 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       Les versions de Q5a jusqu'à 2.1 revendiquaient, conditionnellement à un ensemble
       d'hypothèses analytiques, une limite inductive hilbertienne, une convergence
-      représentationnelle des générateurs de Weil renormalisés, et une convergence de Mosco
+      des générateurs de Heisenberg--Schrödinger renormalisés, et une convergence de Mosco
       des formes d'admissibilité vers un opérateur du second ordre
       \(L_\Pi = -A\partial_x^2\) sur \(L^2(\mathbb{R})\).
-      La version 3.0 retire ce cadre : l'identification exacte de la filtration montre que
+      La version actuelle 3.2 ne conserve pas ce cadre : l'identification exacte de la filtration montre que
       les espaces admissibles sont des fenêtres fréquentielles, et le théorème de forme nulle
       et le no-go de normalisation excluent toute voie dérivée menant de la forme publiée à un
       opérateur différentiel spatial.
     </p>
     <p>
       Les articles en aval consomment le cadre retiré sous des formes révisées :
-      <a href="../b/index_fr.html">Q5b</a> (2.0) conditionne chaque résultat métrique à
+      <a href="../b/index_fr.html">Q5b</a> (2.1) conditionne chaque résultat métrique à
       l'hypothèse explicite [H-L] ; <a href="../../q9/index_fr.html">Q9</a> (1.1) gèle le
       cadre en [H-F] et prouve l'implication [H-F] \(\Rightarrow\) [H-lift] ;
       <a href="../../q11/index_fr.html">Q11</a> (1.1) conserve son contenu algébrique avec la
@@ -247,14 +248,14 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Place dans le programme Cosmochrony</h2>
     <p>
       Q5a se situe à l'interface discret-continu du sous-programme de géométrie émergente.
-      La version 3.0 remplace l'ancien échafaudage analytique par des énoncés exacts à \(q\)
+      La version 3.2 énonce des résultats exacts à \(q\)
       fini : la filtration est connue en forme close, et l'obstruction à une limite spatiale
       est un théorème plutôt qu'une difficulté.
     </p>
     <p>
       La chaîne pertinente est désormais :
-      Foundation établit la fibre admissible et sa filtration canonique ;
-      Q5a 3.0 identifie la filtration et prouve l'obstruction ;
+      un groupe de Heisenberg fini, un caractère central non trivial et un porteur sont fournis ;
+      Q5a 3.2 identifie la filtration et prouve l'obstruction sur ce porteur ;
       l'entrée de limite spatiale de Q5b, Q6b et des articles de coefficients métriques est
       l'hypothèse explicite [H-L] ; établir ou remplacer [H-L] est le contenu ouvert de Q5.
     </p>
@@ -266,7 +267,7 @@ paint-order: stroke; stroke: currentColor;"
       <a href="https://doi.org/10.5281/zenodo.19642369">
         <i lang="en">Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit</i>.
       </a>
-      Q5a du programme de géométrie spectrale Cosmochrony, version 3.0, 2026.
+      Q5a du programme de géométrie spectrale Cosmochrony, version 3.2, 2026.
     </p>
   </section>
 </main>

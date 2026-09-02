@@ -8,19 +8,18 @@
     Effective Spacetime Geometry from Admissible Non-Injective Projection | Cosmochrony
   </title>
   <meta name="description"
-    content="Q6b derives the effective Lorentzian metric g^μν = diag(−2,2,2,2) from the admissibility
-    filter Π_q, proves the Schwarzschild metric from flux conservation, and closes the geometric
-    chain Π_q → L_eff → g^μν → G_μν. [H-lift] closed by Q9."/>
+    content="Conditional on the unestablished spatial limit hypothesis [H-L], Q6b identifies the
+    Lorentzian metric g^μν = diag(−2,2,2,2), obtains Schwarzschild from flux conservation, and
+    connects the effective operator to the Einstein tensor. Q9 proves [H-F] => [H-lift]."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/emergent-geometry/q6/b/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Effective Spacetime Geometry from Admissible Non-Injective Projection"/>
   <meta property="og:description"
-    content="Q6b derives the effective Lorentzian metric from the admissibility filter Π_q,
-    proves the Schwarzschild metric from flux conservation, establishes Einstein equations
-    as consistency conditions, and closes the chain Π_q → L_eff → g^μν → G_μν.
-    [H-lift] closed by Q9."/>
+    content="Under the unestablished hypothesis [H-L], Q6b identifies the effective Lorentzian
+    metric, obtains Schwarzschild from flux conservation, and connects L_eff to G_μν.
+    Q9 supplies the conditional implication [H-F] => [H-lift]."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q6/b/"/>
@@ -51,10 +50,10 @@
           Effective Spacetime Geometry from Admissible Non-Injective Projection
         </h1>
         <p class="subtitle">
-          Q6b derives the effective Lorentzian metric $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$
-          from the admissibility filter $\Pi_q$, proves the Schwarzschild metric from flux
-          conservation, and closes the geometric chain
-          $\Pi_q \to \mathcal{L}_\Pi \to g^{\mu\nu} \to G_{\mu\nu}$.
+          Conditional on the unestablished spatial limit hypothesis [H-L], Q6b identifies the
+          effective Lorentzian metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$, obtains the
+          Schwarzschild exterior from flux conservation, and connects the effective operator
+          to the Einstein tensor.
         </p>
       </div>
     </div>
@@ -66,30 +65,31 @@
 </header>
 
 <main class="wrap">
+  <section class="note" role="note" data-release-version="1.2.2">
+    <strong>Current Zenodo release:</strong> version 1.2.2 (2026-07-26).
+    <span lang="en">Official title: <i>Effective Spacetime Geometry from Admissible Non-Injective Projection</i>.</span>
+  </section>
 
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        Q6b is the geometric companion to Q6a. While Q6a derives the gauge group $G_\Pi$ from
-        the fibre invariants of the non-injective projection, Q6b analyses the base geometric
-        structure — the effective Lorentzian manifold on which those gauge fields propagate —
-        and closes the geometric chain from the admissibility filter to the Einstein tensor.
+        Q6b is the geometric companion to Q6a. It analyses the base geometric structure on which
+        gauge fields for a supplied compact group and representation propagate. Its metric and
+        Einstein-tensor reading is conditional on [H-L].
       </p>
       <p>
-        Starting from the Q5a–Q5b chain (Mosco convergence → effective operator
-        $\mathcal{L}_{\mathrm{eff}}$ → Lorentzian metric from principal symbol), Q6b identifies
-        the resulting metric explicitly as $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, establishes
-        the Schwarzschild metric from flux conservation, and shows that the Einstein equations
-        emerge as consistency conditions of the spectral entropy functional.
+        Under [H-L], Q6b consumes an effective spatial limit operator and Q5b's conditional metric
+        extraction. It then identifies $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$, obtains the
+        Schwarzschild exterior from flux conservation, and relates the Einstein equations to
+        consistency conditions of the spectral entropy functional.
       </p>
       <div class="note">
-        <strong>[H-lift] closed; [H-L] open.</strong> The [H-lift] hypothesis, previously
-        carried from Q5b, has been proved in Q9 via generator suppression at rate
-        $O(q^{-1/2})$; the results of Q6b are unconditional with respect to [H-lift].
-        Q5a version 3.0, however, withdraws the Mosco derivation of the spatial limit
-        operator: the residual conditionality of Q6b is the unestablished spatial limit
-        hypothesis [H-L] (Q5b 2.0), and Q5 is open.
+        <strong>Conditional status.</strong> Q9 proves [H-F] $\Rightarrow$ [H-lift]. Under the
+        frozen, unestablished hypothesis [H-F], the modulation-sector position-energy form
+        contribution $\mathcal{E}^X_q(f_q)$ is $O(q^{-1})$ along recovery sequences. The spatial
+        limit hypothesis [H-L] is independently unestablished, so every metric, Schwarzschild and
+        chain-level conclusion of Q6b that consumes the limit geometry remains conditional on [H-L].
       </div>
     </div>
     <aside class="card">
@@ -112,11 +112,11 @@
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Structurally motivated, conditional on the spatial limit hypothesis [H-L] (Q5a 3.0); [H-lift] proved (Q9)</div>
+          <div class="v">Structurally motivated, conditional on the spatial limit hypothesis [H-L] (Q5a 3.2); Q9 proves [H-F] $\Rightarrow$ [H-lift], with [H-F] unestablished</div>
         </div>
         <div class="kv">
           <div class="k">Depends on</div>
-          <div class="v">Q5a (Mosco convergence), Q5b (geometric extraction), Q6a</div>
+          <div class="v">Supplied spatial limit [H-L], Q5b (conditional geometric extraction), supplied gauge data</div>
         </div>
         <div class="kv">
           <div class="k">Feeds into</div>
@@ -130,42 +130,42 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Effective metric with Lorentzian signature:</strong> the admissibility filter
+        <strong>Effective metric under [H-L]:</strong> conditional on [H-L], the admissibility filter
         $\Pi_q$ selects degrees of freedom whose continuum limit carries a metric of Lorentzian
         signature $(-,+,+,+)$, derived from the principal symbol of
         $\mathcal{L}_{\mathrm{eff}}$ (Q5b Theorems 5.2 and 6.1).
       </li>
       <li>
-        <strong>Fully determined co-metric:</strong> combining Q6b with Q8 (Casimir rigidity:
+        <strong>Fully determined co-metric under [H-L]:</strong> conditional on [H-L], combining Q6b with Q8 (Casimir rigidity:
         $A_z = 2$), Q10 (spectral universality: $A_H = 2$), and Q11 (temporal Casimir rigidity:
         $A_\tau = 2$), the effective co-metric is fully explicit:
         $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
       </li>
       <li>
-        <strong>Schwarzschild metric from flux conservation:</strong> in the presence of a
+        <strong>Schwarzschild metric under [H-L]:</strong> conditional on [H-L], in the presence of a
         localised stationary obstruction with spherical symmetry, flux conservation through
         admissible spheres forces the unique stationary exterior solution to be the Schwarzschild
         metric. Uniqueness follows from the Born–Infeld admissibility bound, not symmetry alone.
       </li>
       <li>
-        <strong>Horizon as projection degeneracy:</strong> the Schwarzschild horizon $r = r_s$
+        <strong>Horizon under [H-L]:</strong> conditional on [H-L], the Schwarzschild horizon $r = r_s$
         is the locus where the principal symbol of $\mathcal{L}_{\mathrm{eff}}$ becomes
         degenerate. The underlying admissible structure remains regular.
       </li>
       <li>
-        <strong>Hamilton–Jacobi propagation structure:</strong> once $g^{\mu\nu}$ is
+        <strong>Hamilton–Jacobi propagation under [H-L]:</strong> once $g^{\mu\nu}$ is
         reconstructed, the eikonal equation $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$
         is the Hamilton–Jacobi equation for massless propagation in the emergent geometry
         (effective reformulation, not a primitive layer).
       </li>
       <li>
-        <strong>Einstein equations as consistency conditions:</strong> via the spectral entropy
+        <strong>Einstein equations under [H-L]:</strong> conditional on [H-L], via the spectral entropy
         functional $S_\Pi[g] = \frac{1}{2}\log\det'\mathcal{L}_\Pi$, the renormalised metric
         variation produces $G_{\mu\nu}$ at the infrared two-derivative order (Gravity paper).
         The Einstein equations emerge as consistency conditions, not microscopic laws.
       </li>
       <li>
-        <strong>Chain closure:</strong> Q6b supplies the middle link of the geometric chain
+        <strong>Conditional chain:</strong> under [H-L], Q6b supplies the middle link of the geometric chain
         $\Pi_q \xrightarrow{\text{Q5a}} \mathcal{L}_\Pi \xrightarrow{\text{Q5b}} g^{\mu\nu}
         \xrightarrow{\text{Gravity}} G_{\mu\nu}$,
         identifying the symbol-extracted metric of Q5b with the metric entering the variational
@@ -185,20 +185,20 @@
       The effective operator $\mathcal{L}_{\mathrm{eff}}$ on
       $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
       $\sigma_2(\mathcal{L}_{\mathrm{eff}}) = A^{\mu\nu}(x)\xi_\mu\xi_\nu$ whose non-degenerate
-      part defines the effective metric tensor $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
-      Q5b Theorems 5.2 and 6.1 establish the Lorentzian signature $(-,+,+,+)$ from the
+      part defines, under [H-L], the effective metric tensor $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
+      Under that same hypothesis, Q5b identifies the Lorentzian signature $(-,+,+,+)$ from the
       asymmetry between the central and horizontal directions in the Heisenberg group.
     </p>
     <p>
       Under [H-L], $\mathcal{L}_{\mathrm{eff}}$ converges in the appropriate
       functional-analytic sense as $q \to \infty$, giving a well-defined limiting geometry
-      (the former Mosco route of Q5a is withdrawn in version 3.0). Subsequent papers (Q8, Q10, Q11) pin down the coefficients to
-      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, yielding a structural determination of $G_N$
-      when combined with the Gravity paper.
+      by hypothesis. Subsequent papers (Q8, Q10, Q11) pin down the coefficients to
+      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$. Newton's constant $G_N$ remains a renormalised
+      matching datum in the Gravity paper; it is not structurally determined here.
     </p>
     <div class="note">
-      <strong>Complementarity with Q5b.</strong> Q5b derives the Lorentzian metric combinatorially
-      from BFS stratification; Q6b derives it analytically from the admissibility filter. Both
+      <strong>Complementarity with Q5b.</strong> Under [H-L], Q5b extracts the Lorentzian metric
+      from BFS stratification and Q6b reads it analytically through the admissibility filter. Both
       give the same Lorentzian signature and are mutually consistent.
     </div>
   </section>
@@ -206,7 +206,8 @@
   <section class="card">
     <h2>Schwarzschild geometry and the horizon</h2>
     <p>
-      The effective geometry of Q6b is defined in homogeneous, quasi-isotropic regimes. In the
+      Conditional on [H-L], the effective geometry of Q6b is defined in homogeneous,
+      quasi-isotropic regimes. In the
       presence of a localised stationary obstruction with spherical symmetry, the admissibility
       structure selects a specific exterior metric through a uniqueness argument based on flux
       conservation.
@@ -234,7 +235,7 @@
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
       Q6b occupies the interface between the geometric programme (Q5a, Q5b) and the dynamical
-      programme (Q7–Q13). Its role is to provide the effective geometric framework assumed by
+      programme (Q7–Q13). Under [H-L], its role is to provide the effective geometric framework assumed by
       later papers:
     </p>
     <ul>
@@ -244,12 +245,12 @@
       </li>
       <li>
         <strong>Q8–Q11:</strong> pin down the co-metric coefficients ($A_z$, $A_H$, $A_\tau$),
-        completing $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$ and yielding a structural determination
-        of Newton's constant $G_N$ via the Gravity paper.
+        completing $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$; the Gravity paper retains Newton's
+        constant $G_N$ as a renormalised matching datum.
       </li>
       <li>
-        <strong>Q12:</strong> the admissible principal bundle $P_{G_\Pi}(M, G_\Pi)$ established
-        by Q6b is the geometric setting for the vertical variation that yields Yang–Mills equations.
+        <strong>Q12:</strong> on the conditional base geometry and for supplied compact gauge data,
+        the admissible principal bundle is the setting for the vertical variation yielding Yang–Mills equations.
       </li>
       <li>
         <strong>Q13:</strong> addresses the coupled Einstein–Yang–Mills back-reaction between
@@ -257,9 +258,9 @@
       </li>
     </ul>
     <p>
-      Together Q5b and Q6b constitute the complete geometric foundation of the Q-series: Q5b
-      provides the BFS-stratification derivation, Q6b provides the admissibility-filter derivation
-      and connects to the Einstein tensor.
+      Under [H-L], Q5b and Q6b provide the geometric foundation consumed downstream: Q5b supplies
+      the BFS-stratification extraction, while Q6b connects that conditional geometry to the
+      Einstein tensor.
     </p>
   </section>
 
@@ -267,9 +268,8 @@
     <h2>Open directions</h2>
     <ul>
       <li>
-        <strong>Establishing [H-L]:</strong> the former Q5a hypotheses are closed on the
-        admissible sector, but the framework itself is withdrawn (Q5a 3.0); establishing or
-        replacing the spatial limit hypothesis [H-L] would remove the remaining conditionality
+        <strong>Establishing [H-L]:</strong> the spatial limit hypothesis is not established;
+        proving or replacing [H-L] would remove the remaining conditionality
         from the geometric results of Q6b — this is the open content of Q5.
       </li>
       <li>

@@ -8,17 +8,17 @@
     Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit | Cosmochrony
   </title>
   <meta name="description"
-    content="Q5a 3.0 identifies the canonical filtration of the admissible fibre exactly as a growing toric Fourier window, proves the published admissibility form converges to the zero form, and proves a normalisation no-go: Q5 remains open."/>
+    content="Q5a 3.2 identifies the canonical filtration on a supplied Heisenberg carrier as a growing toric Fourier window, proves the published admissibility form converges to the zero form, and proves a normalisation no-go: Q5 remains open."/>
   <link rel="alternate" hreflang="fr"
-    href="https://cosmochrony.org/science/emergent-geometry/q5a/index_fr.html"/>
+    href="https://cosmochrony.org/science/emergent-geometry/q5/a/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit"/>
   <meta property="og:description"
-    content="Q5a 3.0: exact identification of the canonical filtration, zero-form theorem, normalisation no-go, and a conditional dual-window Dirichlet limit. The spatial continuum question Q5 remains open."/>
+    content="Q5a 3.2: supplied Heisenberg carrier, exact Fourier filtration, zero-form theorem, normalisation no-go, and a conditional dual-window Dirichlet limit. Q5 remains open."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
-    content="https://cosmochrony.org/science/emergent-geometry/q5a/index.html"/>
+    content="https://cosmochrony.org/science/emergent-geometry/q5/a/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
     redirectIfNot("en", "/science/emergent-geometry/q5/a/index")
@@ -45,7 +45,7 @@ paint-order: stroke; stroke: currentColor;"
           Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit
         </h1>
         <p class="subtitle">
-          What the admissible fibre does and does not converge to: Q5a version 3.0 identifies
+          What the admissible fibre does and does not converge to: Q5a version 3.2 identifies
           the canonical filtration exactly and proves that, under the published normalisation,
           no spatial continuum operator emerges. Q5 remains open.
         </p>
@@ -64,13 +64,14 @@ paint-order: stroke; stroke: currentColor;"
     <div class="card">
       <h2>Overview</h2>
       <p>
-        The Foundation paper establishes that the admissible fibre carries the Weil
-        representation of \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\) at a fixed non-trivial
-        central character, and defines the canonical filtration of the fibre as the orbit
-        spans \(\Omega_n = \mathrm{span}\{\rho(g)v_0 : g \in B_n\}\) over breadth-first balls
-        of the Cayley graph.
-        Q5a version 3.0 identifies this filtration exactly and determines what it does and
-        does not converge to.
+        Q5a works on a supplied finite Heisenberg group and non-trivial central character.
+        The carrier \(\mathcal H_c=L^2(\mathbb Z/q\mathbb Z)\) carries the
+        Heisenberg--Schrödinger representation \(\pi_c\); it is not selected by the
+        admissibility axioms and is not the associated Weil action of the symplectic
+        automorphism group.
+        On this supplied carrier, Q5a version 3.2 identifies the canonical orbit filtration
+        \(\Omega_n = \mathrm{span}\{\pi_c(g)v_0 : g \in B_n\}\) exactly and determines what
+        it does and does not converge to.
       </p>
       <p>
         <strong>The answer is negative in the direction Q5 hoped for, and exact.</strong>
@@ -81,11 +82,11 @@ paint-order: stroke; stroke: currentColor;"
         common scalar normalisation produces a non-trivial toric differential operator.
       </p>
       <div class="note" role="note">
-        <strong>Status revision.</strong> Version 3.0 withdraws the former derivation of a
+        <strong>Current status (version 3.2).</strong> Q5a does not derive a
         limit operator \(-A\partial_x^2\) on \(L^2(\mathbb{R})\) (versions up to 2.1) and the
         claimed formal resolution of Q5. The existence of a spatial limit operator is now the
         explicit, unestablished hypothesis [H-L] consumed by
-        <a href="../b/">Q5b</a> (version 2.0). Q5 is open.
+        <a href="../b/">Q5b</a> (version 2.1). Q5 is open.
       </div>
     </div>
     <aside class="card">
@@ -93,7 +94,7 @@ paint-order: stroke; stroke: currentColor;"
       <div class="kvs">
         <div class="kv"><div class="k">Author</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Working paper (v3.0)</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint, version 3.2</div></div>
         <div class="kv"><div class="k">Programme</div>
           <div class="v">Q-series, spectral geometry programme</div></div>
         <div class="kv"><div class="k">Focus</div>
@@ -149,17 +150,17 @@ paint-order: stroke; stroke: currentColor;"
     <h2>What was withdrawn</h2>
     <p>
       Versions of Q5a up to 2.1 claimed, conditionally on a set of analytic hypotheses, a
-      Hilbert inductive limit, representational convergence of rescaled Weil generators, and
+      Hilbert inductive limit, convergence of rescaled Heisenberg--Schrödinger generators, and
       Mosco convergence of the admissibility forms to a second-order operator
       \(L_\Pi = -A\partial_x^2\) on \(L^2(\mathbb{R})\).
-      Version 3.0 withdraws this framework: the exact identification of the filtration shows
+      The current version 3.2 does not retain this framework: the exact identification of the filtration shows
       that the admissible spaces are frequency windows, and the zero-form theorem and the
       normalisation no-go rule out every derived route from the published form to a spatial
       differential operator.
     </p>
     <p>
       Downstream papers consume the withdrawn framework in revised forms:
-      <a href="../b/">Q5b</a> (2.0) conditions every metric result on the explicit hypothesis
+      <a href="../b/">Q5b</a> (2.1) conditions every metric result on the explicit hypothesis
       [H-L]; <a href="../../q9/">Q9</a> (1.1) freezes the framework as [H-F] and proves the
       implication [H-F] \(\Rightarrow\) [H-lift];
       <a href="../../q11/">Q11</a> (1.1) keeps its algebraic content with the metric reading
@@ -241,14 +242,14 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
       Q5a sits at the discrete-to-continuum interface of the emergent geometry sub-programme.
-      Version 3.0 replaces the former analytic scaffolding with exact finite-\(q\) statements:
+      Version 3.2 states exact finite-\(q\) results:
       the filtration is known in closed form, and the obstruction to a spatial limit is a
       theorem rather than a difficulty.
     </p>
     <p>
       The relevant chain is now:
-      Foundation establishes the admissible fibre and its canonical filtration;
-      Q5a 3.0 identifies the filtration and proves the obstruction;
+      a finite Heisenberg group, non-trivial central character and carrier are supplied;
+      Q5a 3.2 identifies the filtration and proves the obstruction on that carrier;
       the spatial limit input of Q5b, Q6b and the metric-coefficient papers is the explicit
       hypothesis [H-L]; establishing or replacing [H-L] is the open content of Q5.
     </p>
@@ -260,7 +261,7 @@ paint-order: stroke; stroke: currentColor;"
       <a href="https://doi.org/10.5281/zenodo.19642369">
         <i lang="en">Canonical Fourier Filtration and the Obstruction to a Spatial Continuum Limit</i>.
       </a>
-      Q5a of the Cosmochrony Spectral Geometry Programme, version 3.0, 2026.
+      Q5a of the Cosmochrony Spectral Geometry Programme, version 3.2, 2026.
     </p>
   </section>
 </main>

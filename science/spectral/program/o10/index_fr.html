@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la
+  <title>Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la
     capacité et feuille de route de la décomposition de Weil | Cosmochrony</title>
   <meta name="description"
     content="O10 réalise le premier calcul à grand q sur les graphes de Cayley de Heisenberg, confirme la croissance des boules, la déplétion projective et la loi d’état, et montre que les fingerprints TensorSketch denses constituent l’obstruction algorithmique finale à l’extraction de l’exposant de capacité."/>
@@ -18,7 +18,7 @@
     href="https://cosmochrony.org/science/spectral/program/o10/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la capacité et feuille de route de la décomposition de Weil"/>
+    content="Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la capacité et feuille de route de la décomposition de Weil"/>
   <meta property="og:description"
     content="O10 confirme à q = 101 que les graphes de Cayley de Heisenberg présentent le signal de capacité projective attendu à grande échelle, mais montre que les fingerprints TensorSketch denses nécessitent D >> q^4, rendant l’obstruction restante algorithmique plutôt que géométrique."/>
   <meta property="og:type" content="website"/>
@@ -46,7 +46,7 @@
         </svg>
       </a>
       <div>
-        <h1>Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la
+        <h1>Dynamique de capacité à croissance polynomiale pour 𝑞 q grand : croissance volumique, décroissance de la
           capacité et feuille de route de la décomposition de Weil</h1>
         <p class="subtitle">
           Le premier calcul à grand q sur les graphes de Cayley de Heisenberg confirme la déplétion projective et la loi
@@ -78,7 +78,7 @@
         chemins de permutation à trois pas avec une approximation TensorSketch dense.
       </p>
       <p>
-        Le résultat est mitigé, mais structurellement décisif. Trois signaux positifs sont confirmés à grande échelle :
+        Le résultat est mitigé, mais structurellement décisif. Trois signaux positifs sont confirmés à grande échelle :
         la croissance des boules reste cohérente avec la loi de Bass–Guivarc’h, la capacité moyenne décroît
         monotoniquement sur une fenêtre pré-saturation visible, et la loi d’état <a href="../o7/index_fr.html">O7</a>
         reste valide. Le résultat négatif est tout aussi important : l’ajustement log-log ne fournit pas encore une
@@ -112,29 +112,29 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Premier calcul à grand q :</strong> implémentation du fingerprint de capacité à chemins de permutation à
+        <strong>Premier calcul à grand q :</strong> implémentation du fingerprint de capacité à chemins de permutation à
         trois pas sur $\mathrm{Cay}(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}),S_q)$ à $q = 101$.
       </li>
       <li>
-        <strong>Confirmation de la croissance des boules :</strong> récupération numérique de l’expansion polynomiale
+        <strong>Confirmation de la croissance des boules :</strong> récupération numérique de l’expansion polynomiale
         avec un exposant mesuré $\hat{D} = 3.05$, poursuivant la convergence vers la dimension homogène
         $D_{\mathrm{hom}} = 4$.
       </li>
       <li>
-        <strong>Signal direct de déplétion projective :</strong> décroissance monotone de la capacité moyenne de
+        <strong>Signal direct de déplétion projective :</strong> décroissance monotone de la capacité moyenne de
         $23.5\%$ sur une fenêtre pré-saturation de $n^* = 13$ pas BFS.
       </li>
       <li>
-        <strong>Validation de la loi d’état à grande échelle :</strong> confirmation que $R_n^{(3)} \approx
+        <strong>Validation de la loi d’état à grande échelle :</strong> confirmation que $R_n^{(3)} \approx
         \Phi(\bar{\eta}_n)$ reste valide à $q = 101$, étendant la vérification de O9 au-delà du régime de petit q.
       </li>
       <li>
-        <strong>Diagnostic d’obstruction algorithmique :</strong> démonstration que l’extraction fiable d’une loi de
+        <strong>Diagnostic d’obstruction algorithmique :</strong> démonstration que l’extraction fiable d’une loi de
         puissance dans $|B_n| \leq q^2$ nécessiterait une dimension de sketch dense $D \gg q^4$, ce qui est
         computationnellement impraticable.
       </li>
       <li>
-        <strong>Feuille de route des blocs de Weil :</strong> identification de la décomposition de
+        <strong>Feuille de route des blocs de Weil :</strong> identification de la décomposition de
         $\rho_{\mathrm{aff}}^{\otimes 3}$ en blocs de Weil de dimension $O(q)$ comme la voie correcte vers une
         extraction tractable de $\delta$ dans l’étape suivante du programme.
       </li>
@@ -144,7 +144,7 @@
     <h2>Interprétation</h2>
     <p>
       O10 montre que le remplacement par Heisenberg introduit dans <a href="../o9">O9</a> n’est pas seulement
-      géométriquement pertinent, mais physiquement productif : à grande échelle, le signal projectif est bien présent.
+      géométriquement pertinent, mais physiquement productif : à grande échelle, le signal projectif est bien présent.
       La capacité diminue, la loi d’état subsiste, et le fond à croissance polynomiale se comporte comme attendu.
     </p>
     <ul>
@@ -162,7 +162,7 @@
         asymptotique.
       </li>
       <li>
-        <strong>Conclusion :</strong> l’obstruction restante n’est plus géométrique. Elle est représentationnelle et
+        <strong>Conclusion :</strong> l’obstruction restante n’est plus géométrique. Elle est représentationnelle et
         algorithmique.
       </li>
     </ul>

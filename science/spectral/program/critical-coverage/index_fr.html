@@ -15,7 +15,7 @@
   <meta property="og:title"
     content="Couverture critique en inverse du carré et profondeur de saturation constante"/>
   <meta property="og:description"
-    content="Théorème d’intervalle exact pour la nouveauté Weil-BFS sur les graphes de Heisenberg : la profondeur de saturation converge vers 22 et la couverture critique décroît en inverse du carré exact."/>
+    content="Théorème d’intervalle exact pour la nouveauté Weil-BFS sur les graphes de Heisenberg : la profondeur de saturation converge vers 22 et la couverture critique décroît en inverse du carré exact."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/critical-coverage/index_fr.html"/>
@@ -46,7 +46,7 @@ paint-order: stroke; stroke: currentColor;"
         </h1>
         <p class="subtitle">
           Un théorème d’intervalle exact pour la nouveauté Weil–BFS sur les graphes de
-          Heisenberg : la profondeur de saturation \(n_1(q)\) converge vers la constante
+          Heisenberg : la profondeur de saturation \(n_1(q)\) converge vers la constante
           \(22\), et la couverture critique \(x_1(q)\) décroît en inverse du carré exact.
         </p>
       </div>
@@ -90,9 +90,9 @@ paint-order: stroke; stroke: currentColor;"
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Les bornes déterministes valent pour tout premier
-        \(q\ge 311\) et toute suite de blocs admissible ; la convergence \(n_1(q)\to 22\) est
+        \(q\ge 311\) et toute suite de blocs admissible ; la convergence \(n_1(q)\to 22\) est
         probabiliste, sous échantillonnage uniforme de blocs génériques. Le résultat est
-        purement spectral : il n’implique ni mécanisme de hiérarchie de masse ni existence d’une
+        purement spectral : il n’implique ni mécanisme de hiérarchie de masse ni existence d’une
         limite spatiale.
       </div>
     </div>
@@ -121,35 +121,35 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Résultats principaux</h2>
     <ul>
       <li>
-        <strong>Théorème d’intervalle exact :</strong>
+        <strong>Théorème d’intervalle exact :</strong>
         le rang cumulé est le cardinal de somme d’ensembles \(r_c(n)=|T'_c+C\,I_{n+1}|\), pour
         tout premier \(q\), tout bloc avec \(C\ne 0\) et toute profondeur.
       </li>
       <li>
-        <strong>Plafond universel et résonances :</strong>
-        \(2\le\Delta r_c(n)\le 2|T'_c|\le 18\) avant saturation ; les résonances de bloc
+        <strong>Plafond universel et résonances :</strong>
+        \(2\le\Delta r_c(n)\le 2|T'_c|\le 18\) avant saturation ; les résonances de bloc
         \(t'-t=C\,m\) s’activent à la profondeur \(\lceil (m-1)/2\rceil\) et expliquent les blocs
         lents observés dans le pipeline d’<a href="../o25/index_fr.html">O25</a>.
       </li>
       <li>
-        <strong>Bornes déterministes :</strong>
+        <strong>Bornes déterministes :</strong>
         pour tout premier \(q\ge 311\), \(n_1(q)\le 22\) et
         \(5/q^2\le x_1(q)\le 99\,689/q^2\) — les scénarios de bord positif et logarithmique sont
         exclus sans aucun ingrédient probabiliste.
       </li>
       <li>
-        <strong>Convergence en probabilité :</strong>
+        <strong>Convergence en probabilité :</strong>
         sous échantillonnage uniforme de blocs génériques, \(n_1(q)\to 22\) et
         \(q^2 x_1(q)\to |B_{22}|=99\,689\).
       </li>
       <li>
-        <strong>Régime transitoire :</strong>
+        <strong>Régime transitoire :</strong>
         les profondeurs mesurées (\(14\) à \(q=211\), \(19\) à \(q=601\)) s’expliquent par les
-        déficits de résonance ; leur ombre est l’exposant effectif observé \(\approx -0{,}76\),
+        déficits de résonance ; leur ombre est l’exposant effectif observé \(\approx -0{,}76\),
         en route vers l’asymptote exacte \(-2\).
       </li>
       <li>
-        <strong>Fermeture de fenêtre :</strong>
+        <strong>Fermeture de fenêtre :</strong>
         la fenêtre d’ajustement auto-calibrée implémentée \([n_0,n_1]\) est déterministiquement
         vide pour \(q > 4\cdot 22^4 = 937\,024\).
       </li>
@@ -162,10 +162,10 @@ paint-order: stroke; stroke: currentColor;"
       \(r_q(n)\approx q\,\Phi(|B_n|/q^2)\) et résoudrait l’équation de front
       \(\Phi'(x_1)=\varepsilon_{\mathrm{sat}}\,q\).
       Le théorème d’intervalle montre que ce repliement est dégénéré au voisinage du front de
-      seuil : à couverture fixée le rang est \(O(\sqrt q)=o(q)\), donc \(\Phi\equiv 0\) sur ce
+      seuil : à couverture fixée le rang est \(O(\sqrt q)=o(q)\), donc \(\Phi\equiv 0\) sur ce
       régime.
       La loi de \(x_1\) est combinatoire — croissance d’intervalles contre comptages exacts de
-      sphères — et non diffusive : le trou spectral \(\lambda_2\) n’entre jamais dans la
+      sphères — et non diffusive : le trou spectral \(\lambda_2\) n’entre jamais dans la
       dynamique du rang.
     </p>
   </section>
@@ -173,7 +173,7 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Relation au programme Cosmochrony</h2>
     <p>
       La note est compagne d’<a href="../o28/index_fr.html">O28</a> au sein du sous-programme
-      d’admissibilité spectrale : elle résout l’asymptotique de la profondeur de saturation
+      d’admissibilité spectrale : elle résout l’asymptotique de la profondeur de saturation
       qu’O28 avait établie sous-linéaire, et explique les valeurs transitoires mesurées.
       Elle dépend d’<a href="../o9/index_fr.html">O9</a> (croissance de Heisenberg, \(D=4\)),
       d’<a href="../o12/index_fr.html">O12</a> (la construction des blocs de Weil) et
@@ -183,7 +183,7 @@ paint-order: stroke; stroke: currentColor;"
     <p>
       Dans la limite duale à fenêtre de la filtration de Fourier canonique
       (<a href="/science/emergent-geometry/q5/a/index_fr.html">Q5a</a>), le coefficient de
-      potentiel \(\lambda=\lim x_1/C_{\mathrm{Heis}}\) s’annule : cette limite ne porte aucun
+      potentiel \(\lambda=\lim x_1/C_{\mathrm{Heis}}\) s’annule : cette limite ne porte aucun
       potentiel d’oscillateur.
     </p>
   </section>

@@ -10,9 +10,8 @@
   </title>
   <meta name="description"
     content="O25 provides the first systematic pair-level campaign for
-    \(\delta_{\mathrm{pair}}\), shows strong inter-pair concentration,
-    explains why direct extrapolation in \(q\) is structurally unreliable,
-    and identifies \(n_1(q)/q\) as the correct asymptotic variable."/>
+    \(\delta_{\mathrm{pair}}\), shows strong inter-pair concentration, extends the raw
+    exponent to q=601, and leaves its asymptote unresolved while the O14 correction overcorrects."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o25/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
@@ -20,9 +19,8 @@
     content="Systematic Pair-Level Campaign for \(\delta_{\mathrm{pair}}\):
     Convergence, Inter-Pair Concentration, and Normalization Structure"/>
   <meta property="og:description"
-    content="O25 shows that the apparent drift of \(\delta_{\mathrm{pair}}\)
-    across primes is a finite-size normalization effect controlled by the
-    BFS window depth \(n_1(q)\), not a genuine asymptotic instability."/>
+    content="O25 1.5 finds a stable fixed-q pair statistic. The raw global exponent reaches 7.61
+    at q=601; competing asymptotic laws remain viable, and the O14 correction overcorrects at large q."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o25/index.html"/>
@@ -54,9 +52,9 @@
         </h1>
         <p class="subtitle">
           O25 extends <a href="../o24">O24</a> by providing the first full pair-level
-          numerical campaign for \(\delta_{\mathrm{pair}}\), showing that its apparent
-          variability across primes is not physical but a finite-size normalization effect
-          controlled by the BFS window depth.
+          numerical campaign for \(\delta_{\mathrm{pair}}\), extended to \(q=601\).
+          Pair-to-pair fluctuations concentrate at fixed \(q\), while the cross-prime
+          asymptote remains unresolved.
         </p>
       </div>
     </div>
@@ -74,21 +72,22 @@
       <h2>Overview</h2>
       <p>
         This paper continues the spectral admissibility programme after
-        <a href="../o24">O24</a>. O24 established the structural closure of the chain
+        <a href="../o24">O24</a>. O16–O24 established the canonical pair observable and its
+        rank stability under vertical non-injectivity. The formerly appended chain
         \[
         c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
         \]
-        with respect to the fibre structure of the non-injective projection \(\Pi\).
+        is not closed: the reciprocal map to \(\beta^*\) imports a changing-degree LPS
+        growth law into the fixed-degree Heisenberg cascade and has no native carrier there.
         What remained open was the full numerical status of \(\delta_{\mathrm{pair}}\):
         was the exponent stable across all conjugate pairs, and what controlled its
         residual variation with \(q\)?
       </p>
       <p>
         The central aim of O25 is:
-        <strong>to show that \(\delta_{\mathrm{pair}}\) is a structural invariant of the
-          Weil representation, and that its apparent drift across primes is caused by the
-          normalization structure of the observable, not by a breakdown of the admissible
-          mechanism.</strong>
+        <strong>to test the pair statistic across every conjugate pair and a substantially
+          enlarged prime range, separating fixed-\(q\) concentration from unresolved
+          cross-prime asymptotics.</strong>
       </p>
       <p>
         The key observation is that direct extrapolation in \(q\) is structurally misleading.
@@ -107,7 +106,7 @@
         \[
         n_1(q)/q
         \]
-        as the correct asymptotic variable.
+        as a candidate finite-window control variable.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarizes the numerical and structural
@@ -121,7 +120,7 @@
       <div class="kvs">
         <div class="kv"><div class="k">Author</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint, version 1.5</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
@@ -131,8 +130,8 @@
           </div></div>
         <div class="kv"><div class="k">Range</div>
           <div class="v">
-            Full pair-level campaign for \(q \in \{29,61,101,151\}\), with
-            \(M=50\) block samples per pair
+            Full pair-level campaign through \(q=211\), extended by capped BFS to
+            \(q \in \{307,401,601\}\) with reduced sampling
           </div></div>
       </div>
     </aside>
@@ -143,12 +142,13 @@
       <li>
         <strong>First full pair-level campaign:</strong>
         O25 computes \(\delta_{\mathrm{pair}}\) across all \((q-1)/2\) conjugate pairs
-        \((c,q-c)\) for each tested prime.
+        \((c,q-c)\) for every tested prime through \(q=211\). The extensions use 24
+        representative pairs at \(q=307\) and 12 at each of \(q=401,601\).
       </li>
       <li>
         <strong>Inter-pair concentration:</strong>
-        the standard deviation decreases from \(0.54\) at \(q=29\) to \(0.14\) at
-        \(q=151\), showing that \(\delta_{\mathrm{pair}}\) is not a block-level fluctuation
+        in the exhaustive campaign, the standard deviation decreases from \(0.54\) at
+        \(q=29\) to \(0.109\) at \(q=211\), showing that \(\delta_{\mathrm{pair}}\) is not a block-level fluctuation
         but a structural invariant of the representation.
       </li>
       <li>
@@ -162,13 +162,12 @@
         all describe the accessible data well, while yielding incompatible asymptotic limits.
       </li>
       <li>
-        <strong>Structural explanation:</strong>
-        the leading correction behaves as
+        <strong>Finite-window diagnostic:</strong>
+        the candidate control behaves as
         \[
         \frac{\log q}{\log n_1(q)} \approx 1,
         \]
-        because \(n_1(q)=\Theta(q)\) at the level of scaling behaviour. The obstruction to
-        extrapolation is therefore structural, not statistical.
+        over the accessible windows. This does not identify a unique asymptotic law.
       </li>
       <li>
         <strong>Normalization correction:</strong>
@@ -177,28 +176,29 @@
         \delta_{\mathrm{corr}}(q)=
         \delta_{\mathrm{pair}}(q)-\eta\frac{\log q}{\log n_1(q)}
         \]
-        with \(\eta=1/2\) brings the corrected values into the admissible window
-        \([7.4,10.6]\) for all tested primes \(q \in \{61,101,151\}\).
+        with \(\eta=1/2\) was useful at small \(q\), but the large-prime extension shows
+        that it eventually overcorrects below the admissible window. The raw exponent reaches
+        \(7.61\) at \(q=601\) without this correction.
       </li>
       <li>
-        <strong>Correct asymptotic variable:</strong>
-        O25 identifies
+        <strong>Candidate asymptotic variable:</strong>
+        O25 isolates
         \[
         n_1(q)/q
         \]
-        rather than \(q\) itself as the quantity controlling convergence.
+        as a quantity to track explicitly; it does not prove a unique asymptotic limit.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O25 changes the interpretation of the numerical drift observed in earlier stages of
-      the programme.
+      O25 separates two effects that earlier stages conflated.
     </p>
     <ul>
-      <li><strong>Before O25:</strong> \(\delta_{\mathrm{pair}}\) seemed to drift with \(q\)</li>
-      <li><strong>After O25:</strong> the drift is explained as a finite-size normalization effect</li>
+      <li><strong>At fixed \(q\):</strong> the statistic concentrates across conjugate pairs.</li>
+      <li><strong>Across primes:</strong> the raw exponent enters the admissible window, but
+        the available data do not identify a unique asymptote.</li>
     </ul>
     <p>
       The crucial point is that the measured observable depends on the BFS shell geometry
@@ -227,15 +227,15 @@
     </p>
     <p>
       The sequence now reads:
-      O16 (pair observable), O17 (pair dynamics), O18 (minimal fibre structure),
+      O16 (pair observable), O17 (pair dynamics), O18 (pair covariance, fibre identification open),
       O19 (canonical normalization), O20 (persistence criterion),
       O21 (intrinsic saturation rank), O22 (projection locking),
       O23 (threshold dimension), O24 (rank stability),
       O25 (full pair-level campaign and normalization structure).
     </p>
     <p>
-      After O25, the open problem is no longer whether \(\delta_{\mathrm{pair}}\) is stable,
-      but how the asymptotic ratio \(n_1(q)/q\) is determined analytically.
+      After O25, fixed-\(q\) pair concentration is established. The cross-prime asymptote,
+      a native Heisenberg capacity-to-rate transfer, and the role of \(n_1(q)/q\) remain open.
     </p>
   </section>
   <section class="card">
@@ -260,14 +260,12 @@
         \(\bar{\delta}_{\mathrm{pair}}(q)\) once \(n_1(q)=\alpha q+O(q^\beta)\) is known.
       </li>
       <li>
-        <strong>Validation of \(\eta=1/2\):</strong>
-        test within the exact O25 pipeline the O14
-        hypothesis used in the normalization correction.
+        <strong>O14 correction:</strong>
+        explain why the legacy \(\eta=1/2\) correction overcorrects at large \(q\).
       </li>
       <li>
         <strong>Large-\(q\) campaign:</strong>
-        extend the systematic computation to \(q=211\)
-        and beyond.
+        extend the systematic computation beyond \(q=601\).
       </li>
       <li>
         <strong>Analytical completion:</strong>

@@ -65,17 +65,17 @@
       <h2>Overview</h2>
       <p>
         The spectral admissibility sub-programme answers a single central question. The non-injective projection
-        $\Pi$ acts on the Weil representation of the Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
-        decomposed into irreducible blocks $V_c$ indexed by characters $c\in(\mathbb{Z}/q\mathbb{Z})^\times$. The
+        $\Pi$ acts in a supplied finite-Heisenberg/Weil model. A non-trivial central character selects the
+        Heisenberg–Schrödinger representation; the distinct associated Weil action uses additional symplectic data
+        and decomposes into blocks $V_c$ indexed by $c\in(\mathbb{Z}/q\mathbb{Z})^\times$. The
         Born–Infeld saturation constraint bounds the projective flux carried by each mode,
         $A_n \le A_n^{\max} = c_\chi/\sqrt{\lambda_n}$, so the question is: <em>which combinations of Weil sectors
         remain admissible, and what capacity exponent $\delta_{\mathrm{pair}}$ do they carry?</em>
       </p>
       <p>
         The sub-programme occupies a pivotal position in the Cosmochrony corpus: it is the <strong>computational
-        engine</strong>. It takes the algebraic output of the foundational branch (the Weil representation and its
-        decomposition) and produces the input the emergence branch depends on — the admissible
-        spin-$\tfrac12$ sector with its thread $Q_8\subset 2I\subset SU(2)$ — together with the measured pair
+        engine</strong>. It takes the supplied carrier and action data and studies the admissibility thread
+        $Q_8\subset 2I\subset SU(2)$ and measured pair
         capacity exponent $\delta_{\mathrm{pair}}$. The numerical agreement of $1/(\delta_{\mathrm{pair}}+\tfrac12)$
         with the charged-lepton window $\beta^*\in(0.09,0.13)$ from $m_e:m_\mu:m_\tau$ is a coincidence check
         across substrates, not a derivation: the span-growth no-go (SGN) shows the conversion has no carrier on
@@ -84,8 +84,9 @@
       <div class="note" role="note">
         <strong>This page is a structured entry point, not a summary of results.</strong> The sub-programme spans
         over thirty papers written across successive obstruction identifications and resolutions; the
-        <em>Spectral Admissibility Presentation Note</em> maps them, records the status of every result as proved,
-        structural, numerical, or open, and is synthesised here.
+        The published <em>Spectral Admissibility Presentation Note</em> is version 1.3. This live hub also reflects
+        later published constituent results and separates proved mathematics,
+        numerical measurements, conditional models, open bridges, and withdrawn claims.
       </div>
     </div>
     <aside class="card">
@@ -105,7 +106,7 @@
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">5 precursor papers + O1–O33; capacity exponent, lepton hierarchy, conditional $SU(2)$ carrier thread, open colour sector</div>
+          <div class="v">5 precursor papers + O1–O33; capacity measurements, phenomenological lepton comparison, conditional $SU(2)$ carrier thread, open colour sector</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
@@ -136,9 +137,9 @@
       \underbrace{\beta^* \approx 0.126}_{\text{cascade exponent (no native carrier)}}.$
     </p>
     <p>
-      Each solid arrow is a distinct analytical or numerical sub-problem, resolved at a different stage of the
-      sub-programme. The chain up to $\delta_{\mathrm{pair}}$ is <em>unconditional</em> with respect to the fibre
-      structure of $\Pi$ (closed in O24 via the Verticality Lemma). The final arrow is <strong>dashed</strong>: the
+      Each solid arrow is a distinct analytical or numerical sub-problem studied at a different stage of the
+      sub-programme. Weil conjugation is proved, but its identification with a Born–Infeld fibre remains open.
+      The final arrow is <strong>dashed</strong>: the
       span-growth no-go (SGN) proves that the conversion
       $\beta^*\approx 1/(\delta_{\mathrm{pair}}+\tfrac12)$ has no derived carrier on the Heisenberg measurement
       substrate — both corpus-defined closures, the square-root frontier and the pair-growth carrier, fail, as does
@@ -250,11 +251,10 @@
         a first-principles identification of the fibre structure of \(\Pi\) (open since <a href="o16">O16</a>) nor
         a native derivation of \(\delta_{\mathrm{pair}} \to \beta^*\).</li>
       <li><a href="o25"><strong>O25</strong></a>: first systematic pair-level campaign for
-        \(\delta_{\mathrm{pair}}\), showing strong inter-pair concentration across all conjugate pairs,
-        explaining the apparent drift of \(\delta_{\mathrm{pair}}(q)\) as a finite-size normalization effect
-        controlled by the BFS window depth \(n_1(q)\), identifying \(n_1(q)/q\) rather than \(q\) itself
-        as the correct asymptotic variable, and showing that the O14 normalization correction brings the
-        corrected values back into the admissible window \([7.4,10.6]\).</li>
+        \(\delta_{\mathrm{pair}}\), with exhaustive pair sampling through \(q=211\) and representative samples
+        through \(q=601\). It finds fixed-\(q\) pair concentration, but does not identify the asymptotic variable
+        or pin \(\delta_\infty\); the O14 correction overcorrects at large \(q\). The reciprocal image
+        \(0.108\text{--}0.123\) is only a phenomenological comparison.</li>
       <li><a href="projective_temporal_ordering"><strong>Temporal ordering</strong></a>: identification of the
         cumulative projected capacity \(I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)\) as the
         correct monotone observable along the admissible cascade, establishing strict stepwise monotonicity
@@ -270,14 +270,9 @@
         a three-level identification hierarchy (growth equivalence, quotient identification, and
         conditional canonical identification), and proposing concrete falsifiability tests linking
         spectral admissibility to a binary-icosahedral \(SU(2)\)-type sector.</li>
-      <li><a href="o27"><strong>O27</strong></a>: proves that every admissible morphism
-        \(\Phi_{q,\rho}\) necessarily factors through the quaternionic sector
-        \(\mathfrak{su}(2)\), by formalizing admissibility-based naturality, establishing
-        the universality of the admissible quotient, excluding non-quaternionic target
-        structures, constructing the canonical factorization
-        \(\Phi_{q,\rho} = \rho \circ \iota \circ \pi\), and thereby turning the
-        \(Q_8 \subset 2I \subset SU(2)\) thread from a structural candidate into a
-        rigidity theorem with a representation-theoretic interpretation of \(\beta^*\).</li>
+      <li><a href="o27"><strong>O27</strong></a> version 2.0: quotient factorisation does not imply
+        equivariance. Under explicit saturation, carrier, parity and equivariance inputs, the Schur-level
+        counts are proved; a canonical equivariant vector lift and any interpretation of \(\beta^*\) remain open.</li>
       <li><a href="o28"><strong>O28</strong></a>: asymptotic calibration of the BFS window
         and effective dimension of the admissible trajectory; out of sample (to \(q=601\)) the
         calibrated linear extrapolation fails (up to \(+88\%\)), the normalization analysis of the
@@ -296,8 +291,9 @@
         \(N^{3/4}\) rather than \(p^{1/2}\) with no defined BI feedback carrier, and block capacity
         is neither the pair product nor expressed in the reduced-model exponent coordinates. The
         numerical \(\beta^*\) agreement remains a cross-substrate phenomenological comparison.</li>
-      <li><a href="o29"><strong>O29</strong></a>: establishes a hard \(6\to3\) collapse directly in
-        the measured trajectory span \(W_{\mathrm{adm}}\subset H_{\mathrm{eff}}\). Its auxiliary
+      <li><a href="o29"><strong>O29</strong></a>: reports a finite-checkpoint numerical \(6\to3\) collapse in
+        the measured trajectory span \(W_{\mathrm{adm}}\subset H_{\mathrm{eff}}\), with rank three modal
+        rather than invariant. Its auxiliary
         two-dimensional PCA space \(U_c^{(2)}\) is not the fundamental doublet \(V_\rho\), does not
         construct a Veronese square root, and carries no canonical representation status.</li>
       <li><a href="o30"><strong>O30</strong></a>: a conditional \(3\times3\) model on
@@ -322,74 +318,63 @@
     </ol>
     <p>Q-series:</p>
     <ol>
-      <li><a href="/science/quantum-structure/q1/"><strong>Q1</strong></a>: phase coherence as a structural consequence of
-        projective admissibility — proves that any admissible transition preserves Born–Infeld
-        indiscernibility of conjugate Weil blocks, deriving the singlet correlator
-        \(E(\hat{a},\hat{b})=-\hat{a}\cdot\hat{b}\) and the Tsirelson bound without postulating
-        quantum mechanics, conditionally on the fibre-indiscernibility hypothesis: per O18,
-        Born–Infeld evenness does not force fixed-probe indiscernibility, so the identification of
-        conjugate Weil blocks as a physical fibre is an explicit hypothesis, not a derived
-        input.</li>
+      <li><a href="/science/quantum-structure/q1/"><strong>Q1</strong></a>: exact conjugate-sector
+        Fourier-support identity and rank/support no-go; it does not derive phase coherence, a singlet
+        correlator, the Tsirelson bound, or the Born rule.</li>
       <li><a href="/science/quantum-structure/q2/"><strong>Q2</strong></a>: quantum structure beyond spin-\(\tfrac{1}{2}\)
         — on the binary icosahedral group \(2I\), spin-\(\tfrac{1}{2}\) and spin-\(\tfrac{3}{2}\)
-        sectors share eigenvalue \(\lambda=18\) (co-admissibility); Born rule, singlet correlator,
-        and Tsirelson bound derived for spin-\(\tfrac{3}{2}\); \(\mathrm{SU}(2)\) established as
-        the stable fixed point of the admissibility flow.</li>
+        sectors share eigenvalue \(\lambda=18\). This finite-group degeneracy does not derive phase
+        coherence, the Born rule, the Tsirelson bound, or an \(\mathrm{SU}(2)\) fixed point.</li>
       <li><a href="/science/quantum-structure/q3/"><strong>Q3</strong></a>: universal spin-\(j\) singlet from admissibility
-        — under the explicit fibre-indiscernibility hypothesis (per O18, Born–Infeld evenness does
-        not force it), the bipartite proto-state is the singlet
+        — under the explicit, unestablished diagonal-\(2I\)-invariance hypothesis, the bipartite proto-state is the singlet
         \(|\Omega_j\rangle\) by Schur's lemma; universal correlator
-        \(E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})\) proved for all
-        5 admissible sectors \(j\in\{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}\) of \(2I\).</li>
-      <li></li>
+        \(E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})\) follows for the five listed
+        sectors of \(2I\); the invariance hypothesis, phase coherence, and the Born rule remain open.</li>
       <li>
-        <a href="/science/emergent-geometry/q5/a/"><strong>Q5a</strong></a>: conditional large-\(q\) Mosco convergence framework
-        for the admissibility forms \(\mathcal{E}_q\) on \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\)
-        towards the continuum limit \(L_\Pi = -A\partial_x^2\) on \(L^2(\mathbb{R})\), with analytic
-        hypotheses [H1], [H-E1], [C] open;
+        <a href="/science/emergent-geometry/q5/a/"><strong>Q5a</strong></a> version 3.2: the canonical Fourier-window
+        filtration is exact, but the published form converges to the zero form at rate \(q^{-2}\), and no common
+        scalar normalisation produces the proposed non-trivial toric differential operator under the stated inputs.
+        The former Mosco derivation is withdrawn and the spatial limit is the open hypothesis [H-L];
         <a href="/science/emergent-geometry/q5/b/"><strong>Q5b</strong></a>: BFS shell stratification of \(\mathrm{Heis}_3(\mathbb{R})\)
-        producing a four-dimensional Lorentzian spacetime with temporal direction identified with
-        BFS depth; [H-lift] proved by Q9.</li>
+        producing four-dimensional Carnot/BFS geometry. Its metric reading is conditional on [H-L], and Q9 proves
+        only the implication [H-F] ⇒ [H-lift] with [H-F] unestablished.</li>
       <li>
         <a href="/science/gauge-structure/q6a/"><strong>Q6a</strong></a>: gauge structure from admissible non-injective
         projection —
         \(\mathrm{U}(1)\) and \(\mathrm{SU}(2)\) as proposed admissibility fixed points; its former
         full-group derivation relied on the withdrawn O31 claims, so the colour factor and complete group are open;
-        <a href="/science/emergent-geometry/q6/b/"><strong>Q6b</strong></a>: effective Lorentzian geometry from the admissibility
-        filter \(\Pi_q\), inheriting Q5a hypotheses only.</li>
+        <a href="/science/emergent-geometry/q6/b/"><strong>Q6b</strong></a>: effective Lorentzian geometry whose metric
+        claims remain conditional on the independent spatial-limit hypothesis [H-L]; [H-F] belongs only to
+        Q9's separate implication toward [H-lift].</li>
       <li><a href="/science/emergent-geometry/q7/"><strong>Q7</strong></a>: structural bridge between the admissible
         three-dimensional sector \(H_{\mathrm{eff}} \simeq \mathbb{C}^3\) and the spatial
-        three-dimensional sector of the emergent Lorentzian geometry, proving that any
-        identification is uniquely constrained by representation theory (via
-        \(H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho)\) and Schur rigidity) and reducing
-        the problem to a single spectral criterion on \(\sigma_2(L_{\mathrm{eff}})\), with
+        three-dimensional sector of the proposed Lorentzian geometry. Under the supplied identification
+        \(H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho)\), Schur rigidity reduces the model to a spectral
+        criterion on \(\sigma_2(L_{\mathrm{eff}})\), with
         the absence of cross terms established analytically and the remaining condition
         \(A_H = A_z\) governing asymptotic isotropy.</li>
       <li><a href="/science/emergent-geometry/q8/"><strong>Q8</strong></a>: sub-principal symbol of the effective operator
-        forces \(A_Z = C_{\mathfrak{su}(2)} = 2\) unconditionally under Q5a via Casimir rigidity,
-        independently of the spatial bridge problem.</li>
-      <li><a href="/science/emergent-geometry/q9/"><strong>Q9</strong></a>: proof of hypothesis [H-lift] — the modulation
-        generator is suppressed at rate \(O(q^{-1/2})\), and \(A_H > 0\) follows by coercivity
-        independently of the bridge; closes the main conditionality of Q5b.</li>
+        gives \(A_Z = C_{\mathfrak{su}(2)} = 2\) within the supplied Q5a carrier model via Casimir rigidity;
+        its metric interpretation remains conditional on [H-L].</li>
+      <li><a href="/science/emergent-geometry/q9/"><strong>Q9</strong></a>: under frozen, unestablished [H-F] and along
+        recovery sequences, the modulation-sector form contribution is at most \(C/q\); this is not operator-norm
+        decay. The result is the conditional implication [H-F] ⇒ [H-lift].</li>
       <li><a href="/science/emergent-geometry/q10/"><strong>Q10</strong></a>: asymptotic \(\mathfrak{su}(2)\)-isotropy of the
         effective quadratic form — character-independence of the large-\(q\) limit forces isotropy
         under [U]; the unique isotropic form is the Casimir with value 2, giving \(A_H\to 2\).</li>
-      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a>: temporal Casimir rigidity closes Q5b open
-        problem O3 — Schur rigidity forces \(A_\tau=2\), closing the co-metric
-        \(g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}\); completes the full
-        derivation chain Q5a\(\to\)Q5b\(\to\cdots\to\)Q11.</li>
+      <li><a href="/science/emergent-geometry/q11/"><strong>Q11</strong></a>: under the frozen, unestablished [H-F],
+        temporal Casimir rigidity gives \(A_\tau=2\) within the stated algebraic model. Reading
+        \(g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}\) as an emergent metric remains conditional
+        on the independent, unestablished [H-L].</li>
       <li><a href="/science/gauge-structure/q12/"><strong>Q12</strong></a>: Yang–Mills dynamics from the vertical variation
         of the projective spectral entropy \(S_\Pi[g,\mathcal{A}]\), deriving the Yang–Mills
-        equations from the Seeley–DeWitt coefficient \(a_4\); establishes that gravity (\(a_2\))
-        and gauge dynamics (\(a_4\)) are separated by geometric direction and spectral order
-        rather than by a missing symmetry group.</li>
-      <li><a href="/science/gauge-gravity-stratification/q13/"><strong>Q13</strong></a>: gauge–gravity spectral synthesis — solves the
-        joint variational problem \(\delta_{g,\mathcal{A}} S_\Pi = 0\) and derives the coupled
-        Einstein–Yang–Mills system; computes the \(a_6\) cross-coupling
-        \(R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}\); constructs the Eddington–Born–Infeld
-        joint completion; obtains the hierarchy ratio
-        \(G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot[\log(\Lambda/\mu)]^{-1}\)
-        without fine-tuning as a structural consequence of spectral stratification.</li>
+        equations from the Seeley–DeWitt coefficient \(a_4\) at supplied fixed metric and compact gauge data;
+        only its emergent-base reading consumes [H-L].</li>
+      <li><a href="/science/gauge-gravity-stratification/q13/"><strong>Q13</strong></a> version 1.4: on supplied
+        geometric and gauge data, the joint variation gives a conditional Einstein–Yang–Mills system. The
+        \(a_6\) terms form a spanning list modulo integration by parts and Bianchi identities, with no unique
+        cross-term or nonlinear completion asserted. Couplings are matching data and no hierarchy is predicted;
+        only the emergent-base reading consumes [H-L].</li>
     </ol>
     <p>Supporting papers:</p>
     <ul>
@@ -398,24 +383,25 @@
         Lipschitz bound and BFS–Carnot–Carathéodory convergence; used by Q10, W1, O30.</li>
       <li><a href="/science/emergent-geometry/w1/"><strong>W1</strong></a>: weight stabilisation of the admissible Dirichlet
         form — proves [H-w] (convergence \(a_q(s)\to A>0\)) as a structural consequence of
-        fibre-invariance of admissible observables, made quantitative by U1; reduces open Q5a
-        hypotheses to [H1], [H-E1], [C].</li>
+        fibre-invariance of admissible observables, made quantitative by U1. This closes a hypothesis of the
+        former Q5a framework but does not establish the current spatial-limit hypothesis [H-L].</li>
       <li><a href="/science/emergent-geometry/h2/"><strong>H2</strong></a>: semiclassical consistency of the Weil representation
         — proves [H2] (strong convergence \(\hat{X}_q\to x\), \(\hat{P}_q\to -i\partial_x\)) via
-        a quantitative Poisson aliasing lemma and discrete Sobolev identity; closes Q5a
-        hypothesis [H2], while [H1], [H-E1] and [C] remain open.</li>
-      <li><a href="/science/non-injective/heisenberg-structure/"><strong>Heisenberg structure</strong></a>: non-factorisability
-        and emergence of Heisenberg structure — admissibility constraints force a non-Abelian
-        relational group structure uniquely identified as \(\mathrm{Heis}_3\) when the admissible
-        dimension is three; structural explanation for \([X,P]=i\hbar\).</li>
+        a quantitative Poisson aliasing lemma and discrete Sobolev identity. This closes [H2] in the
+        former Q5a framework but does not establish the current spatial-limit hypothesis [H-L].</li>
+      <li><a href="/science/non-injective/heisenberg-structure/"><strong>Heisenberg structure</strong></a>: version 2.1
+        gives a finite obstruction to selecting a Heisenberg carrier from the published admissibility
+        constraints. A non-trivial commutator does not force centrality or uniquely select
+        \(\mathrm{Heis}_3\); the finite Heisenberg carrier remains a supplied realisation.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Inputs and outputs</h2>
     <p>
-      <strong>Upstream inputs.</strong> The sub-programme takes from the foundational branch the fact that
-      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation are <em>theorems</em> of the axioms
-      (not postulates), the capacity axiom [A-cap] with its Born–Infeld saturation candidate and constant
+      <strong>Upstream inputs.</strong> The sub-programme takes a finite Heisenberg group and a non-trivial central
+      character as supplied carrier data. Stone–von Neumann then selects the corresponding
+      Heisenberg–Schrödinger representation; the associated Weil action requires separate symplectic data.
+      It also takes the capacity axiom [A-cap] with its Born–Infeld saturation candidate and constant
       $c_\chi$, the structural necessity of
       non-injectivity, and the no-scale principle making $c_\chi$ the only dimensionful parameter. No result from
       the emergence branch is an input.
@@ -423,10 +409,9 @@
     <p>
       <strong>Outputs.</strong> The measured pair capacity exponent $\delta_{\mathrm{pair}}$, whose reciprocal
       $1/(\delta_{\mathrm{pair}}+\tfrac12)$ is compared with the lepton-hierarchy and charge–mass papers as a
-      phenomenological check rather than transferred to them as a derived quantity; the admissibility thread
-      $Q_8\subset 2I\subset SU(2)$ and the spin-$\tfrac12$ sector
-      $V_\rho\cong\mathbb{C}^2$ (consumed by the quantum and geometric sub-programmes); the threshold
-      $\Sigma_c(n_3)=3$ with $\mathrm{Im}\,\mathbb{H}\cong\mathfrak{su}(2)$. O31 supplies no colour-group output;
+      phenomenological check rather than transferred to them as a derived quantity. The thread
+      $Q_8\subset 2I\subset SU(2)$, the spin-$\tfrac12$ carrier $V_\rho\cong\mathbb{C}^2$, and the selection
+      rule $\Sigma_c(n_3)=3$ are supplied inputs, not outputs derived by this sub-programme. O31 supplies no colour-group output;
       the colour factor and complete gauge group are open.
     </p>
   </section>

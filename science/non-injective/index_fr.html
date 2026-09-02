@@ -7,12 +7,14 @@
   <title>Le sous-programme fondations non injectives | Cosmochronie</title>
   <meta name="description"
     content="Guide audité des fondations non injectives : ENI reste démontré, tandis qu'un contre-modèle fini S3 réfute la sélection publiée du porteur de Heisenberg/Weil."/>
+  <link rel="alternate" hreflang="en"
+    href="https://cosmochrony.org/science/non-injective/"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Le sous-programme fondations non injectives"/>
   <meta property="og:description"
     content="Le contre-modèle fini S3 sépare les résultats démontrés sur la non-injectivité du porteur de Heisenberg/Weil fourni et de ses consommateurs conditionnels."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/fr/science/non-injective/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
 
@@ -63,9 +65,10 @@
           $S_\Pi > 0$ $\Leftrightarrow$ émergence authentique)&nbsp;;</li>
         <li>l'irréversibilité et la flèche du temps (à partir de A1+A2 seuls)&nbsp;;</li>
         <li>un contre-modèle fini $S_3$ montrant que les axiomes publiés ne sélectionnent pas
-          le groupe de Heisenberg discret ni sa représentation de Weil&nbsp;;</li>
-        <li>le porteur de Heisenberg/Weil comme réalisation fournie, avec des résultats aval
-          conditionnels à cette entrée&nbsp;;</li>
+          le groupe de Heisenberg discret&nbsp;;</li>
+        <li>le groupe de Heisenberg et le caractère central fournis, la représentation
+          de Heisenberg/Schrödinger qui en résulte et l'action de Weil associée mais distincte,
+          avec des résultats aval conditionnels à ces entrées&nbsp;;</li>
         <li>l'absence de tout paramètre dimensionnel indépendant au-delà de $c_\chi$.</li>
       </ul>
       <p>
@@ -74,9 +77,11 @@
         est statique&nbsp;; la contrainte d'admissibilité remplace la relaxation dans tout le corpus.
       </p>
       <div class="note" role="note">
-        <strong>Correction de statut.</strong> La version 1.3 de la note consigne la correction.
-        Les anciens PDF restent disponibles, mais leur théorème de sélection du porteur ne doit
-        pas être lu comme établi.
+        <strong>Statut publié actuel.</strong> La version 1.4 du working paper consigne l'audit
+        documentaire H-rank : la lecture fibrée de l'involution de parité est structurelle,
+        tandis que l'identité de conjugaison elle-même est prouvée. Le contre-modèle fini est
+        publié dans HeisenbergStructure version 2.1 ; l'enregistrement autonome retiré n'est plus
+        utilisé comme référence active.
       </div>
     </div>
     <aside class="card">
@@ -100,7 +105,7 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Working paper (DOI conceptuel <a
+          <div class="v">Working paper, version 1.4 (DOI conceptuel <a
             href="https://doi.org/10.5281/zenodo.20548383">10.5281/zenodo.20548383</a>)</div>
         </div>
       </div>
@@ -142,8 +147,10 @@
     </p>
     <p>
       ENI démontre la non-injectivité sous ses propres hypothèses. Si un groupe de Heisenberg
-      fini et un caractère central non trivial sont fournis, l'aboutissement de Stone–von
-      Neumann reste valide. L'arête ouverte est la sélection de ce porteur.
+      fini et un caractère central non trivial sont fournis, Stone–von Neumann identifie la
+      représentation irréductible de Heisenberg/Schrödinger $\pi_c$ sur
+      $\mathcal H_c=L^2(\mathbb Z/q\mathbb Z)$. L'action de Weil associée est une donnée
+      symplectique supplémentaire distincte. L'arête ouverte est la sélection du groupe.
     </p>
     <ul>
       <li><strong>A1 (Admissibilité projective locale)&nbsp;:</strong> il existe un ensemble non
@@ -177,16 +184,13 @@
       </li>
       <li>
         <a href="/science/non-injective/heisenberg-structure/index_fr.html" class="inline-link">HeisenbergStructure
-        — Structure de Heisenberg à partir de l'admissibilité</a>. Tentative publiée de
-        sélection du porteur. Les étapes de centralité et d'ordre premier échouent&nbsp;;
-        l'étape finale de représentation reste valide lorsque le porteur est fourni.
-      </li>
-      <li>
-        <a href="/science/non-injective/heisenberg-carrier-obstruction/index_fr.html"
-          class="inline-link">HeisenbergCarrierObstruction — contre-modèle fini à la sélection
-          du porteur</a>. La construction dans $S_3$ prouve que les propriétés algébriques
-          précédentes n'imposent pas un commutateur central. Elle ne propose pas $S_3$ comme
-          porteur physique.
+        — Une obstruction finie à la sélection du porteur de Heisenberg par les contraintes
+        d'admissibilité</a>. La version 2.1 intègre le contre-modèle à six éléments dans $S_3$&nbsp;:
+        les propriétés algébriques précédentes n'imposent pas un commutateur central, donc le
+        contrat d'admissibilité ne sélectionne pas de groupe de Heisenberg fini. Stone–von Neumann
+        identifie $\pi_c$ sur $\mathcal H_c$ uniquement lorsque le groupe et le caractère central
+        sont fournis&nbsp;; il ne fournit pas l'action de Weil distincte. $S_3$ n'est pas proposé
+        comme porteur physique.
       </li>
       <li>
         <a href="/science/non-injective/no-scale/index_fr.html" class="inline-link">noscale —
@@ -267,15 +271,17 @@
     <ul>
       <li>
         <a href="/science/spectral/index_fr.html" class="inline-link">Note&nbsp;1 (Admissibilité
-        spectrale)</a> — suppose $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, $V_\rho$, la borne
+        spectrale)</a> — suppose $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, sa représentation de
+        Schrödinger $\pi_c$ sur $\mathcal H_c$, l'action de Weil associée mais distincte, et la borne
         Born–Infeld $A_n \leq c_\chi/\sqrt{\lambda_n}$, et l'involution de parité
         $c \leftrightarrow q-c$ (une hypothèse structurelle : d'après le no-go d'O18, la
         parité de Born–Infeld ne la force pas).
       </li>
       <li>
         <a href="/science/emergent-geometry/index_fr.html" class="inline-link">Note&nbsp;2
-        (Géométrie émergente)</a> — consomme $V_\rho$ et la convergence Carnot quadridimensionnelle
-        comme point de départ de la limite de Mosco.
+        (Géométrie émergente)</a> — consomme les données spectrales fournies du porteur et de
+        l'action ainsi que la convergence Carnot quadridimensionnelle&nbsp;; l'ancienne dérivation
+        de Mosco est retirée dans Q5a version 3.2.
       </li>
       <li>
         <a href="/science/gauge-structure/index_fr.html" class="inline-link">Note&nbsp;3 (Structure
@@ -298,10 +304,13 @@
         porteur de Heisenberg/Weil comme choix de modèle déclaré.
       </li>
       <li>
-        <strong>Règle de Born pour observables généraux.</strong> La règle de Born est établie
-        dans le secteur $\mathrm{SU}(2)$ (Q3)&nbsp;; son extension à des observables quelconques,
-        à des systèmes multipartites et à des spectres continus est le principal problème
-        structurel ouvert de ce sous-programme.
+        <strong>Règle de Born.</strong> La règle de Born n'est pas établie par Q1–Q3. Le singulet
+        et le corrélateur de Q3 sont conditionnels à une hypothèse d'invariance diagonale sous $2I$
+        qui n'est pas établie&nbsp;; dériver la règle dans un secteur quelconque reste ouvert.
+      </li>
+      <li>
+        <strong>Limite hilbertienne continue.</strong> Q5a version 3.2 prouve un résultat de forme
+        nulle/no-go pour sa filtration canonique et laisse ouverte la limite spatiale non triviale [H-L].
       </li>
       <li>
         <strong>Détermination d'échelle de niveau&nbsp;2.</strong> Prouver que chaque échelle
@@ -315,7 +324,7 @@
     <h2>Références</h2>
     <p>
       Beau, J. <i lang="en">The Non-Injective Foundations Sub-Programme: Presentation Note 5</i>.
-      Working paper, 2026.
+      Working paper, version 1.4, 2026.
       <a href="https://doi.org/10.5281/zenodo.20548383" rel="noopener">
         https://doi.org/10.5281/zenodo.20548383
       </a>

@@ -68,18 +68,18 @@
       <h2>Vue d’ensemble</h2>
       <p>
         Le sous-programme d’admissibilité spectrale répond à une unique question centrale. L’application non
-        injective $\Pi$ agit sur la représentation de Weil du groupe de Heisenberg
-        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, décomposée en blocs irréductibles $V_c$ indexés par les
-        caractères $c\in(\mathbb{Z}/q\mathbb{Z})^\times$. La contrainte de saturation de Born–Infeld borne le flux
+        injective $\Pi$ agit dans un modèle fini de Heisenberg/Weil fourni. Un caractère central non trivial
+        sélectionne la représentation de Heisenberg–Schrödinger ; l'action de Weil associée, distincte, requiert
+        des données symplectiques supplémentaires et se décompose en blocs $V_c$ indexés par
+        $c\in(\mathbb{Z}/q\mathbb{Z})^\times$. La contrainte de saturation de Born–Infeld borne le flux
         projectif porté par chaque mode, $A_n \le A_n^{\max} = c_\chi/\sqrt{\lambda_n}$ ; la question est donc :
         <em>quelles combinaisons de secteurs de Weil restent admissibles, et quel exposant de capacité
         $\delta_{\mathrm{pair}}$ portent-elles ?</em>
       </p>
       <p>
         Le sous-programme occupe une position pivot dans le corpus Cosmochronie : il en est le <strong>moteur
-        calculatoire</strong>. Il prend la sortie algébrique de la branche fondationnelle (la représentation de
-        Weil et sa décomposition) et produit l’entrée dont dépend la branche d’émergence — le secteur
-        admissible de spin $\tfrac12$ avec son fil $Q_8\subset 2I\subset SU(2)$ — ainsi que l’exposant de capacité
+        calculatoire</strong>. Il prend les données fournies de porteur et d'action, étudie le fil
+        $Q_8\subset 2I\subset SU(2)$ et mesure l’exposant de capacité
         de paire mesuré $\delta_{\mathrm{pair}}$. L’accord numérique de $1/(\delta_{\mathrm{pair}}+\tfrac12)$ avec
         la fenêtre des leptons chargés $\beta^*\in(0{,}09,\,0{,}13)$ issue de $m_e:m_\mu:m_\tau$ est une
         vérification de coïncidence entre substrats, non une dérivation : le no-go de croissance de span (SGN)
@@ -88,8 +88,10 @@
       <div class="note" role="note">
         <strong>Cette page est un point d’entrée structuré, non un résumé des résultats.</strong> Le
         sous-programme couvre plus de trente articles écrits au fil d’identifications et de résolutions
-        successives d’obstructions ; la <em>note de présentation de l’admissibilité spectrale</em> les cartographie,
-        consigne le statut de chaque résultat (prouvé, structurel, numérique ou ouvert), et est synthétisée ici.
+        successives d’obstructions ; la version publiée de la <em>note de présentation de l’admissibilité
+        spectrale</em> est la 1.3. Ce portail vivant reflète aussi les résultats constituants publiés
+        ultérieurement et sépare mathématiques prouvées, mesures numériques, modèles conditionnels,
+        ponts ouverts et revendications retirées.
       </div>
     </div>
     <aside class="card">
@@ -109,7 +111,7 @@
         </div>
         <div class="kv">
           <div class="k">Portée</div>
-          <div class="v">5 articles précurseurs + O1–O33 ; exposant de capacité, hiérarchie des leptons, fil conditionnel du porteur $SU(2)$, secteur couleur ouvert</div>
+          <div class="v">5 articles précurseurs + O1–O33 ; mesures de capacité, comparaison phénoménologique aux leptons, fil conditionnel du porteur $SU(2)$, secteur couleur ouvert</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
@@ -140,9 +142,9 @@
       \underbrace{\beta^* \approx 0{,}126}_{\text{exposant de cascade (sans porteur natif)}}.$
     </p>
     <p>
-      Chaque flèche pleine est un sous-problème analytique ou numérique distinct, résolu à une étape différente du
-      sous-programme. La chaîne jusqu’à $\delta_{\mathrm{pair}}$ est <em>inconditionnelle</em> vis-à-vis de la
-      structure fibre par fibre de $\Pi$ (close dans O24 via le lemme de verticalité). La dernière flèche est
+      Chaque flèche pleine est un sous-problème analytique ou numérique distinct étudié à une étape différente du
+      sous-programme. La conjugaison de Weil est prouvée, mais son identification à une fibre Born–Infeld reste ouverte.
+      La dernière flèche est
       <strong>pointillée</strong> : le no-go de croissance de span (SGN) prouve que la conversion
       $\beta^*\approx 1/(\delta_{\mathrm{pair}}+\tfrac12)$ n’a aucun porteur dérivé sur le substrat de mesure de
       Heisenberg — les deux clôtures définies dans le corpus, la frontière en racine carrée et le porteur de
@@ -266,12 +268,10 @@
         des fibres de \(\Pi\) à partir de principes premiers (ouverte depuis <a href="o16/index_fr.html">O16</a>),
         ni une dérivation native de \(\delta_{\mathrm{pair}} \to \beta^*\).</li>
       <li><a href="o25/index_fr.html"><strong>O25</strong></a> : première campagne systématique paire-niveau pour
-        \(\delta_{\mathrm{pair}}\), montrant une forte concentration inter-paires sur l'ensemble des
-        paires conjuguées, expliquant la dérive apparente de \(\delta_{\mathrm{pair}}(q)\) comme un effet
-        de normalisation à taille finie contrôlé par la profondeur BFS \(n_1(q)\), identifiant
-        \(n_1(q)/q\) plutôt que \(q\) lui-même comme variable asymptotique correcte, et montrant que la
-        correction de normalisation de O14 ramène les valeurs corrigées dans la fenêtre admissible
-        \([7.4,10.6]\).</li>
+        \(\delta_{\mathrm{pair}}\), exhaustive jusqu’à \(q=211\) et représentative jusqu’à \(q=601\).
+        Elle trouve une concentration des paires à \(q\) fixé, mais n’identifie pas la variable asymptotique
+        et ne fixe pas \(\delta_\infty\) ; la correction O14 surcorrige à grand \(q\). L’image réciproque
+        \(0.108\text{--}0.123\) n’est qu’une comparaison phénoménologique.</li>
       <li><a href="projective_temporal_ordering/index_fr.html"><strong>Ordonnancement temporel</strong></a> : identification de la
         capacité projetée cumulative \(I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)\) comme
         observable monotone pertinent le long de la cascade admissible, établissement d’une monotonie stricte
@@ -289,14 +289,10 @@
         identification quotient, et identification canonique conditionnelle), et propose des tests
         de falsifiabilité reliant l’admissibilité spectrale à un secteur de type \(SU(2)\)
         binaire icosaédrique.</li>
-      <li><a href="o27/index_fr.html"><strong>O27</strong></a> : démontre que tout morphisme admissible
-        \(\Phi_{q,\rho}\) factorise nécessairement par le secteur quaternionique
-        \(\mathfrak{su}(2)\), en formalisant la naturalité fondée sur l’admissibilité,
-        en établissant l’universalité du quotient admissible, en excluant les structures
-        cibles non quaternioniques, en construisant la factorisation canonique
-        \(\Phi_{q,\rho} = \rho \circ \iota \circ \pi\), et en transformant ainsi le fil
-        \(Q_8 \subset 2I \subset SU(2)\) d’un candidat structurel en théorème de rigidité
-        doté d’une interprétation représentationnelle de \(\beta^*\).</li>
+      <li><a href="o27/index_fr.html"><strong>O27</strong></a> version 2.0 : la factorisation par le quotient
+        n’implique pas l’équivariance. Sous des entrées explicites de saturation, porteur, parité et équivariance,
+        les comptages de Schur sont prouvés ; un relèvement vectoriel équivariant canonique et toute interprétation
+        de \(\beta^*\) restent ouverts.</li>
       <li><a href="o28/index_fr.html"><strong>O28</strong></a> : calibration asymptotique de la
         fenêtre BFS et dimension effective de la trajectoire admissible ; hors-échantillon (jusqu’à
         \(q=601\)) l’extrapolation linéaire calibrée échoue (jusqu’à \(+88\,\%\)), l’analyse de
@@ -317,17 +313,14 @@
         est \(N^{3/4}\) plutôt que \(p^{1/2}\) sans porteur de rétroaction BI défini, et la capacité de
         bloc n'est ni le produit de paire ni exprimée dans les coordonnées d'exposants du modèle réduit.
         L'accord numérique sur \(\beta^*\) reste une comparaison phénoménologique entre substrats.</li>
-      <li><a href="o29/index_fr.html"><strong>O29</strong></a> : identification du porteur via
-        l’effondrement de Veronese — la parité anti-linéaire de Born–Infeld rend la cible
-        \(d_\rho^2 = 4\) inaccessible, et \(r_{\mathrm{eff}} = 3\) est l’invariant du porteur adjoint
-        irréductible (spin-\(1\)) \(H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho)\) ; l’espace
-        spin-\(\tfrac{1}{2}\) \(V_\rho\) (\(d_\rho = 2\)) est la coordonnée racine carrée de Veronese,
-        confirmée pour \(q\in\{61,101,151,211\}\).</li>
-      <li><a href="o30/index_fr.html"><strong>O30</strong></a> : dérivation analytique du rapport
-        des valeurs propres \([1:\tfrac{1}{2}:\tfrac{1}{2}]\) dans \(\mathrm{Sym}^2(V_\rho)\) —
-        l’anti-linéarité de parité Born–Infeld force la contrainte équatoriale \(|\alpha_j|=|\beta_j|\),
-        la covariance se diagonalise sous décorrélation de phase monoharmonique, et le facteur 2 est
-        le coefficient de normalisation du tenseur symétrique ; correction \(O(q^{-1/2})\) de U1.</li>
+      <li><a href="o29/index_fr.html"><strong>O29</strong></a> : diagnostics numériques de Veronese et de porteur
+        à rang fini — le rang 3 est modal et non invariant (32/50 paires testées à \(q=101\), 103/105 à
+        \(q=211\)) ; les commutateurs ajustés et le commutant sont compatibles avec un porteur adjoint fourni,
+        mais n’identifient ni ce porteur, ni \(V_\rho\), ni une racine carrée de Veronese.</li>
+      <li><a href="o30/index_fr.html"><strong>O30</strong></a> : modèle conditionnel \(3\times3\) sur
+        \(\mathrm{Sym}^2(V_\rho)\), distinct de la covariance \(9\times9\) mesurée par O28 — (H0)–(H3)
+        donnent la forme équatoriale avec signe ; le rapport diagonal \([1:\tfrac{1}{2}:\tfrac{1}{2}]\)
+        exige en plus deux annulations pondérées qui ne sont ni dérivées ni établies empiriquement.</li>
       <li><a href="o31/index_fr.html"><strong>O31</strong></a> : la version 2.0 est une notice de
         retrait. Elle retire la co-admissibilité alléguée des profils de couleur, les étapes
         arithmétique et métaplectique, le test de rang, l’unicité de \(\mathrm{SU}(3)\) et toute
@@ -349,77 +342,70 @@
     </ol>
     <p>Série Q :</p>
     <ol>
-      <li><a href="/science/quantum-structure/q1/index_fr.html"><strong>Q1</strong></a> : cohérence de phase comme conséquence
-        structurelle de l’admissibilité projective — démontre que toute transition admissible
-        préserve l’indiscernabilité Born–Infeld des blocs de Weil conjugués, dérivant le corrélateur
-        singulet \(E(\hat{a},\hat{b})=-\hat{a}\cdot\hat{b}\) et la borne de Tsirelson sans postuler
-        la mécanique quantique, conditionnellement à l’hypothèse d’indiscernabilité des fibres : d’après O18,
-        la parité de Born–Infeld ne force pas l’indiscernabilité à sonde fixée, si bien que l’identification
-        des blocs de Weil conjugués comme fibre physique est une hypothèse explicite, non une entrée
-        dérivée.</li>
+      <li><a href="/science/quantum-structure/q1/index_fr.html"><strong>Q1</strong></a> : identité exacte de support
+        de Fourier des secteurs conjugués et no-go de rang/support ; ne dérive ni cohérence de phase,
+        ni corrélateur singulet, ni borne de Tsirelson, ni règle de Born.</li>
       <li><a href="/science/quantum-structure/q2/index_fr.html"><strong>Q2</strong></a> : structure quantique au-delà du
         spin-\(\tfrac{1}{2}\) — sur le groupe icosaédrique binaire \(2I\), les secteurs
-        spin-\(\tfrac{1}{2}\) et spin-\(\tfrac{3}{2}\) partagent la valeur propre \(\lambda=18\)
-        (co-admissibilité) ; règle de Born, corrélateur singulet et borne de Tsirelson dérivés
-        pour spin-\(\tfrac{3}{2}\) ; \(\mathrm{SU}(2)\) établi comme point fixe stable.</li>
+        spin-\(\tfrac{1}{2}\) et spin-\(\tfrac{3}{2}\) partagent la valeur propre \(\lambda=18\).
+        Cette dégénérescence de groupe fini ne dérive ni cohérence de phase, ni règle de Born,
+        ni borne de Tsirelson, ni point fixe \(\mathrm{SU}(2)\).</li>
       <li><a href="/science/quantum-structure/q3/index_fr.html"><strong>Q3</strong></a> : singulet spin-\(j\) universel depuis
-        l’admissibilité — sous l’hypothèse explicite d’indiscernabilité des fibres (d’après O18, la parité
-        de Born–Infeld ne la force pas), le proto-état bipartite est le
+        l’admissibilité — sous l’hypothèse explicite et non établie d’invariance diagonale sous \(2I\),
+        le proto-état bipartite est le
         singulet \(|\Omega_j\rangle\) par le lemme de Schur ; corrélateur universel
-        \(E(\hat{a},\hat{b})=-j(j+1)/3\cdot(\hat{a}\cdot\hat{b})\) démontré pour les
-        5 secteurs admissibles \(j\in\{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}\).</li>
-      <li></li>
+        \(E(\hat{a},\hat{b})=-j(j+1)/3\cdot(\hat{a}\cdot\hat{b})\) en découle pour les cinq secteurs listés ;
+        l’hypothèse d’invariance, la cohérence de phase et la règle de Born restent ouvertes.</li>
       <li>
-        <a href="/science/emergent-geometry/q5/a/index_fr.html"><strong>Q5a</strong></a> : cadre conditionnel de convergence
-        Mosco à grand \(q\) pour les formes d’admissibilité \(\mathcal{E}_q\) sur
-        \(\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})\)
-        vers la limite continue \(L_\Pi=-A\partial_x^2\) sur \(L^2(\mathbb{R})\), avec les hypothèses
-        analytiques [H1], [H-E1], [C] ouvertes ;
+        <a href="/science/emergent-geometry/q5/a/index_fr.html"><strong>Q5a</strong></a> version 3.2 : la filtration
+        canonique par fenêtres de Fourier est exacte, mais la forme publiée converge vers la forme nulle au taux
+        \(q^{-2}\), et aucune normalisation scalaire commune ne produit l’opérateur différentiel torique non trivial
+        proposé sous les entrées déclarées. L’ancienne dérivation de Mosco est retirée et la limite spatiale devient
+        l’hypothèse ouverte [H-L] ;
         <a href="/science/emergent-geometry/q5/b/index_fr.html"><strong>Q5b</strong></a> : stratification BFS de
-        \(\mathrm{Heis}_3(\mathbb{R})\) produisant une géométrie lorentzienne à quatre dimensions
-        avec la direction temporelle identifiée à la profondeur BFS ; [H-lift] démontré par Q9.</li>
+        \(\mathrm{Heis}_3(\mathbb{R})\) produisant une géométrie Carnot/BFS quadridimensionnelle. Sa lecture
+        métrique est conditionnelle à [H-L], et Q9 ne démontre que l’implication [H-F] ⇒ [H-lift],
+        avec [H-F] non établie.</li>
       <li>
         <a href="/science/gauge-structure/q6a/index_fr.html"><strong>Q6a</strong></a> : structure de jauge depuis la
         projection non injective admissible —
         fixes d’admissibilité proposés pour \(\mathrm{U}(1)\) et \(\mathrm{SU}(2)\) ; son ancienne
         dérivation du groupe complet dépendait d’O31, de sorte que le facteur couleur et le groupe complet sont ouverts ;
         <a href="/science/emergent-geometry/q6/b/index_fr.html"><strong>Q6b</strong></a> : géométrie lorentzienne effective
-        depuis le filtre d’admissibilité \(\Pi_q\), héritant les hypothèses de Q5a uniquement.</li>
+        dont les affirmations métriques restent conditionnelles à l’hypothèse indépendante [H-L] ; [H-F]
+        n’intervient que dans l’implication séparée de Q9 vers [H-lift].</li>
       <li><a href="/science/emergent-geometry/q7/index_fr.html"><strong>Q7</strong></a> : pont structurel entre le secteur
         admissible tridimensionnel \(H_{\mathrm{eff}} \simeq \mathbb{C}^3\) et le secteur
-        spatial tridimensionnel de la géométrie lorentzienne émergente, montrant que toute
-        identification est entièrement contrainte par la théorie des représentations (via
-        \(H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho)\) et la rigidité de Schur) et se
-        réduit à un unique critère spectral sur \(\sigma_2(L_{\mathrm{eff}})\), avec
+        spatial tridimensionnel de la géométrie lorentzienne proposée. Sur l’identification fournie,
+        \(H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho)\), la rigidité de Schur réduit le modèle à un
+        critère spectral sur \(\sigma_2(L_{\mathrm{eff}})\), avec
         l’absence de termes croisés démontrée analytiquement et la condition restante
         \(A_H = A_z\) gouvernant l’isotropie asymptotique.</li>
       <li><a href="/science/emergent-geometry/q8/index_fr.html"><strong>Q8</strong></a> : le symbole sous-principal de
-        l’opérateur effectif force \(A_Z=C_{\mathfrak{su}(2)}=2\) inconditionnellement sous Q5a
-        par rigidité du Casimir, indépendamment du problème de pont spatial.</li>
-      <li><a href="/science/emergent-geometry/q9/index_fr.html"><strong>Q9</strong></a> : démonstration de l’hypothèse
-        [H-lift] — le générateur de modulation est supprimé à taux \(O(q^{-1/2})\), et
-        \(A_H>0\) suit par coercivité indépendamment du pont ; clôture la conditionnalité
-        principale de Q5b.</li>
+        l’opérateur effectif donne \(A_Z=C_{\mathfrak{su}(2)}=2\) dans le modèle de porteur Q5a fourni
+        par rigidité du Casimir ; son interprétation métrique reste conditionnelle à [H-L].</li>
+      <li><a href="/science/emergent-geometry/q9/index_fr.html"><strong>Q9</strong></a> : sous [H-F] gelée mais non
+        établie et le long de suites de récupération, la contribution de forme du secteur de modulation est au plus
+        \(C/q\) ; il ne s’agit pas d’une décroissance en norme d’opérateur. Le résultat est l’implication
+        conditionnelle [H-F] ⇒ [H-lift].</li>
       <li><a href="/science/emergent-geometry/q10/index_fr.html"><strong>Q10</strong></a> : isotropie \(\mathfrak{su}(2)\)
         asymptotique de la forme quadratique effective — l’indépendance aux caractères de la
         limite \(q\to\infty\) force l’isotropie sous [U] ; la forme isotrope unique est le
         Casimir de valeur 2, donnant \(A_H\to 2\).</li>
-      <li><a href="/science/emergent-geometry/q11/index_fr.html"><strong>Q11</strong></a> : rigidité temporelle du Casimir
-        clôt le problème ouvert O3 de Q5b — la rigidité de Schur force \(A_\tau=2\), fermant
-        la co-métrique \(g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}\) ; complète la
-        chaîne Q5a\(\to\)Q5b\(\to\cdots\to\)Q11.</li>
+      <li><a href="/science/emergent-geometry/q11/index_fr.html"><strong>Q11</strong></a> : sous [H-F] gelée mais non
+        établie, la rigidité temporelle du Casimir donne \(A_\tau=2\) dans le modèle algébrique déclaré. La lecture de
+        \(g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}\) comme métrique émergente reste conditionnelle
+        à l’hypothèse indépendante et non établie [H-L].</li>
       <li><a href="/science/gauge-structure/q12/index_fr.html"><strong>Q12</strong></a> : dynamique de Yang–Mills depuis
         la variation verticale de l’entropie spectrale projective \(S_\Pi[g,\mathcal{A}]\),
-        dérivant les équations de Yang–Mills depuis le coefficient de Seeley–DeWitt \(a_4\) ;
-        établit que gravité (\(a_2\)) et dynamique de jauge (\(a_4\)) sont séparées par la
-        direction géométrique et l’ordre spectral plutôt que par un groupe de symétrie manquant.</li>
-      <li><a href="/science/gauge-gravity-stratification/q13/index_fr.html"><strong>Q13</strong></a> : synthèse spectrale jauge–gravité —
-        résout le problème variationnel joint \(\delta_{g,\mathcal{A}} S_\Pi = 0\) et dérive
-        le système Einstein–Yang–Mills couplé ; calcule le couplage croisé \(a_6\)
-        \(R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}\) ; construit la complétion jointe
-        Eddington–Born–Infeld ; obtient le ratio de hiérarchie
-        \(G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot[\log(\Lambda/\mu)]^{-1}\)
-        sans ajustement fin comme conséquence structurelle de la stratification spectrale.</li>
+        dérivant les équations de Yang–Mills depuis le coefficient de Seeley–DeWitt \(a_4\) à métrique fixe
+        et données de jauge compactes fournies ; seule sa lecture sur base émergente consomme [H-L].</li>
+      <li><a href="/science/gauge-gravity-stratification/q13/index_fr.html"><strong>Q13</strong></a> version 1.4 : sur
+        des données géométriques et de jauge fournies, la variation jointe donne un système
+        Einstein–Yang–Mills conditionnel. Les termes \(a_6\) forment une liste génératrice modulo intégration par
+        parties et identités de Bianchi, sans terme croisé unique ni complétion non linéaire affirmée. Les couplages
+        sont des données d’appariement et aucune hiérarchie n’est prédite ; seule la lecture sur base émergente
+        consomme [H-L].</li>
     </ol>
     <p>Articles de soutien :</p>
     <ul>
@@ -429,26 +415,25 @@
         utilisé par Q10, W1, O30.</li>
       <li><a href="/science/emergent-geometry/w1/index_fr.html"><strong>W1</strong></a> : stabilisation des poids de la
         forme de Dirichlet admissible — démontre [H-w] (convergence \(a_q(s)\to A>0\)) comme
-        conséquence structurelle de l’invariance fibrée des observables admissibles, rendu
-        quantitatif par U1 ; réduit les hypothèses ouvertes de Q5a à [H1], [H-E1], [C].</li>
+        conséquence structurelle de l’invariance fibrée des observables admissibles, rendue
+        quantitative par U1. Ceci clôt une hypothèse de l’ancien cadre Q5a, mais n’établit pas [H-L].</li>
       <li><a href="/science/emergent-geometry/h2/index_fr.html"><strong>H2</strong></a> : cohérence semiclassique de la
         représentation de Weil — démontre [H2] (convergence forte \(\hat{X}_q\to x\),
         \(\hat{P}_q\to -i\partial_x\)) via un lemme d’aliasing de Poisson quantitatif et une
-        identité de Sobolev discrète ; clôt l’hypothèse [H2] de Q5a, tandis que [H1], [H-E1] et [C]
-        restent ouvertes.</li>
-      <li><a href="/science/non-injective/heisenberg-structure/index_fr.html"><strong>Structure de Heisenberg</strong></a> :
-        non-factorisabilité et émergence de la structure de Heisenberg — les contraintes
-        d’admissibilité forcent une structure de groupe relationnel non abélien uniquement
-        identifiée à \(\mathrm{Heis}_3\) quand la dimension admissible est trois ; explication
-        structurelle de \([X,P]=i\hbar\).</li>
+        identité de Sobolev discrète. Ceci clôt [H2] dans l’ancien cadre Q5a, mais n’établit pas [H-L].</li>
+      <li><a href="/science/non-injective/heisenberg-structure/index_fr.html"><strong>Structure de Heisenberg</strong></a> :
+        la version 2.1 établit une obstruction finie à la sélection d’un porteur de Heisenberg depuis les
+        contraintes d’admissibilité publiées. Un commutateur non trivial ne force ni la centralité ni
+        l’unique sélection de \(\mathrm{Heis}_3\) ; le porteur de Heisenberg fini reste une réalisation fournie.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Entrées et sorties</h2>
     <p>
-      <strong>Entrées amont.</strong> Le sous-programme prend de la branche fondationnelle le fait que
-      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ et sa représentation de Weil sont des <em>théorèmes</em> des
-      axiomes (et non des postulats), l’axiome de capacité [A-cap] avec son candidat de saturation de
+      <strong>Entrées amont.</strong> Le sous-programme prend comme données fournies un groupe de Heisenberg fini et
+      un caractère central non trivial. Stone–von Neumann sélectionne alors la représentation de
+      Heisenberg–Schrödinger correspondante ; l’action de Weil associée requiert des données symplectiques
+      distinctes. Il prend aussi l’axiome de capacité [A-cap] avec son candidat de saturation de
       Born–Infeld et sa constante $c_\chi$, la
       nécessité structurelle de la non-injectivité, et le principe sans-échelle faisant de $c_\chi$ le seul
       paramètre dimensionné. Aucun résultat de la branche d’émergence n’est une entrée.
@@ -456,10 +441,10 @@
     <p>
       <strong>Sorties.</strong> L’exposant de capacité de paire mesuré $\delta_{\mathrm{pair}}$, dont l’inverse
       $1/(\delta_{\mathrm{pair}}+\tfrac12)$ est comparé aux articles sur la hiérarchie des leptons et la
-      charge–masse à titre de vérification phénoménologique, et non transféré vers eux comme grandeur dérivée ;
-      le fil d’admissibilité $Q_8\subset 2I\subset SU(2)$ et le
-      secteur de spin $\tfrac12$ $V_\rho\cong\mathbb{C}^2$ (consommés par les sous-programmes quantique et
-      géométrique) ; et le seuil $\Sigma_c(n_3)=3$ avec $\mathrm{Im}\,\mathbb{H}\cong\mathfrak{su}(2)$.
+      charge–masse à titre de vérification phénoménologique, et non transféré vers eux comme grandeur dérivée.
+      Le fil $Q_8\subset 2I\subset SU(2)$, le porteur de spin $\tfrac12$
+      $V_\rho\cong\mathbb{C}^2$ et la règle de sélection $\Sigma_c(n_3)=3$ sont des entrées fournies,
+      pas des sorties dérivées par ce sous-programme.
       O31 ne fournit plus de sortie de groupe couleur ; le facteur couleur et le groupe complet sont ouverts.
     </p>
   </section>

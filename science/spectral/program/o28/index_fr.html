@@ -8,14 +8,14 @@
     Calibration asymptotique de la fenêtre BFS et dimension effective de la trajectoire admissible | Cosmochronie
   </title>
   <meta name="description"
-    content="O28 calibre l’échelle asymptotique de la fenêtre BFS n1(q)/q et mesure la dimension effective de la trajectoire admissible, établissant une structure de rang 3 et identifiant l’écart représentationnel traité dans O29."/>
+    content="O28 calibre l’échelle asymptotique de la fenêtre BFS n1(q)/q et mesure la dimension effective de la trajectoire admissible, rapportant une structure de covariance de rang 3 en données finies et laissant ouvert l’écart représentationnel."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o28/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Calibration asymptotique de la fenêtre BFS et dimension effective de la trajectoire admissible"/>
   <meta property="og:description"
-    content="O28 établit l’échelle asymptotique de la fenêtre BFS et mesure la dimension effective de la trajectoire admissible, révélant une structure de covariance de rang 3 et un écart représentationnel."/>
+    content="O28 teste l’échelle asymptotique de la fenêtre BFS et mesure la dimension effective de la trajectoire admissible, rapportant une structure de covariance de rang 3 en données finies et un écart représentationnel ouvert."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o28/index_fr.html"/>
@@ -47,7 +47,7 @@ paint-order: stroke; stroke: currentColor;"
         <p class="subtitle">
           O28 prolonge <a href="../o27">O27</a> en calibrant l’échelle asymptotique de la fenêtre BFS
           et en mesurant la dimension effective de la trajectoire admissible,
-          établissant la structure de rang qui prépare le test représentationnel de <a href="../o29">O29</a>.
+          fournissant la mesure de rang auditée dans <a href="../o29">O29</a>.
         </p>
       </div>
     </div>
@@ -60,6 +60,11 @@ paint-order: stroke; stroke: currentColor;"
   </div>
 </header>
 <main class="wrap">
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-04).
+    <span lang="en">Titre officiel : <i>Asymptotic Calibration of the BFS Window and Effective
+      Dimension of the Admissible Trajectory</i>.</span>
+  </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d’ensemble</h2>
@@ -132,12 +137,15 @@ paint-order: stroke; stroke: currentColor;"
         opérateur de covariance évalué dans \(H_{\mathrm{eff}}\).
       </li>
       <li>
-        <strong>Universalité du rang 3 :</strong>
-        \(r_{\mathrm{eff}} = 3\) pour tous les premiers et toutes les paires conjuguées.
+        <strong>Mesure de rang 3 :</strong>
+        \(r_{\mathrm{eff}} = 3\) pour chaque paire conjuguée à \(q \in \{61, 101, 151\}\) dans les
+        échantillons du périmètre de l’article. C’est une valeur en données finies du protocole
+        énoncé, et non un invariant : le recalcul étendu d’<a href="../o29">O29</a> trouve le rang
+        trois modal, à \(32/50\) paires pour \(q = 101\) et \(103/105\) pour \(q = 211\).
       </li>
       <li>
-        <strong>Structure spectrale invariante :</strong>
-        \([1 : 1/2 : 1/2]\) pour tous les jeux de données.
+        <strong>Structure spectrale résolue :</strong>
+        \([1 : 1/2 : 1/2]\) sur les paires mesurées, sans dérivation analytique.
       </li>
     </ul>
   </section>
@@ -162,15 +170,17 @@ paint-order: stroke; stroke: currentColor;"
       \(V_\rho\).
     </p>
     <p>
-      O28 n’invalide donc pas la structure SU(2), mais identifie l’étape manquante :
-      l’inclusion \(V_\rho \subset H_{\mathrm{eff}}\).
+      O28 n’invalide donc pas la structure SU(2), mais identifie ce qui manque. Aucun sous-espace de
+      \(H_{\mathrm{eff}}\) sélectionné à partir de ces données ne peut être identifié à
+      \(V_\rho\), qui est fourni ailleurs : l’étape manquante est un pont typé vers \(V_\rho\),
+      accompagné d’un observable indépendant.
     </p>
   </section>
   <section class="card">
     <h2>Position dans le programme Cosmochronie</h2>
     <p>
-      O28 suit <a href="../o27">O27</a> en passant de la rigidité représentationnelle
-      à la structure mesurée.
+      O28 suit <a href="../o27">O27</a> en passant de la factorisation par le quotient des morphismes
+      admissibles à la structure mesurée.
     </p>
     <p>
       La séquence devient :
@@ -179,7 +189,7 @@ paint-order: stroke; stroke: currentColor;"
       O24 (stabilité du rang),
       O25 (campagne numérique),
       O26 (complétion quadratique),
-      O27 (rigidité),
+      O27 (factorisation par le quotient, relèvement vectoriel ouvert),
       O28 (calibration asymptotique et dimension effective).
     </p>
     <p>
@@ -191,16 +201,18 @@ paint-order: stroke; stroke: currentColor;"
     <ul>
       <li>
         <strong>Établi :</strong>
-        échelle asymptotique de \(n_1(q)\) et structure de covariance de rang 3 universelle.
+        échec hors-échantillon de l’extrapolation linéaire calibrée de \(n_1(q)\), et mesure de
+        covariance de rang 3 sur le périmètre de l’article.
       </li>
       <li>
-        <strong>Écart identifié :</strong>
-        \(H_{\mathrm{eff}} \neq V_\rho\).
+        <strong>Écart ouvert :</strong>
+        \(H_{\mathrm{eff}} \neq V_\rho\), et la lecture adjointe de \(H_{\mathrm{eff}}\) est
+        fournie plutôt que dérivée.
       </li>
       <li>
         <strong>Étape suivante :</strong>
-        restreindre l’opérateur de covariance à \(V_\rho\) et tester
-        \(r_{\mathrm{eff}} = d_\rho^2\).
+        un observable indépendant et un pont typé vers \(V_\rho\), que la covariance des paires
+        conjuguées n’atteint pas.
       </li>
     </ul>
   </section>

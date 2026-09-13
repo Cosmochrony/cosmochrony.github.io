@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Generator | Cosmochrony</title>
+  <title>The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Defect-Rate Identity | Cosmochrony</title>
   <meta name="description"
-    content="Constrains the eliminated-block jet 1-P(s) of the Schur reduction and identifies the chiral generator as the infinitesimal transported chiral equivariance defect rate, reducing the generation-split value to a single normalisation target."/>
+    content="Constrains the eliminated-block jet 1-P(s) of the Schur reduction, shows that antiunitary parity removes every odd-order generation-mixing coefficient, realises a non-zero first-order split rate in an explicit moving-Schur family, and gives the chiral defect-rate identity of the tangent without a unique generator."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Generator"/>
+  <meta property="og:title" content="The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Defect-Rate Identity"/>
   <meta property="og:description"
-    content="The projector jet of the eliminated block forces a chiral Grassmann tangent; the chiral generator is identified as the transported equivariance defect rate, leaving only the normalisation of its s-derivative."/>
+    content="A moving-Schur existence theorem for the generation split: the projector jet of the eliminated block is constrained, first-order mixing vanishes by antiunitary parity, and a covariant family realises a non-zero split rate."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/eliminated-block-jet/"/>
   <script type="module">
@@ -34,10 +34,9 @@
         </svg>
       </a>
       <div>
-        <h1>The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Generator</h1>
+        <h1>The Constrained Jet of the Lorentzian Eliminated Block and the Chiral Defect-Rate Identity</h1>
         <p class="subtitle">
-          Freezing the structural form of the eliminated block $1 - P(s)$ and identifying the chiral
-          generator as the infinitesimal transported chiral equivariance defect rate.
+          A moving-Schur existence theorem for the generation split.
         </p>
       </div>
     </div>
@@ -60,11 +59,13 @@
         mass spectrum are kept downstream.
       </p>
       <p>
-        Writing the self-adjoint projector family as a jet
-        $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$ along the $J_\Pi$-odd modulus $s$, the projector
-        constraints force a constrained form, and the chiral generator is identified — not as a new
-        selector, but as the infinitesimal transported equivariance defect. The split $u \neq 0$ is
-        admissible with $|u|$ left entirely free.
+        Writing the self-adjoint projector family as a jet $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$,
+        the projector constraints alone fix the first-order coefficient as an off-diagonal Grassmann
+        tangent for every smooth family. The parity grading holds for families equivariant under the
+        antiunitary Born–Infeld parity, the residue jet must move with the spinorial embedding, and an
+        explicit covariant family shows that a non-zero first-order split rate is realisable. This is an
+        existence statement under explicit hypotheses: it does not select the family, identify a unique
+        generator, or fix the magnitude $|u|$.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -88,12 +89,18 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Constrained jet of $1 - P(s)$, chiral Grassmann tangent, identification of the chiral generator</div>
+          <div class="v">Constrained jet of $1 - P(s)$, antiunitary parity grading, moving-Schur realisation,
+            chiral defect-rate identity</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Working paper (concept DOI <a
+          <div class="v">Working paper, version 2.0 (concept DOI <a
             href="https://doi.org/10.5281/zenodo.20763532">10.5281/zenodo.20763532</a>)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Code</div>
+          <div class="v"><a href="https://github.com/Cosmochrony/eliminated-block-jet/tree/main/code"
+            rel="noopener">Exact reproduction scripts</a></div>
         </div>
       </div>
     </aside>
@@ -101,66 +108,80 @@
   <section class="card">
     <h2>Core results</h2>
     <ul>
-      <li><strong>Constrained jet.</strong> For the self-adjoint projector family, the projector
-        constraints force the first-order coefficient to be a purely off-diagonal Grassmann tangent,
-        $Q_1 = [A, Q_0]$ with $Q_0 Q_1 Q_0 = 0 = (1 - Q_0) Q_1 (1 - Q_0)$, and pin the diagonal blocks
-        of $Q_2$ to $Q_1^2$ with opposite signs.</li>
-      <li><strong>Chiral source.</strong> Splitting the generator by parity, $A = A_+ + A_-$, the
-        split-sourcing part is $\Pi_{J_\Pi\text{-odd}} Q_1 = [A_-, Q_0]$. The split is dead if and only
-        if $[A_-, Q_0] = 0$, not merely if $Q_1 = 0$: a purely $J_\Pi$-even generator sources nothing.</li>
-      <li><strong>Split source.</strong> Parity propagation grades the residue jet $E_0$ even, $E_1$
-        odd, $E_2$ even, so $u(s) = s\,\langle J_3, \{E_0, E_1\}\rangle / \langle J_3, J_3\rangle +
-        O(s^3)$. With phase-free data the mixing coefficient $v$ vanishes identically; a non-zero $v$
-        requires a complex metaplectic phase.</li>
-      <li><strong>Identification of the chiral generator.</strong> Because the antiunitary Born–Infeld
-        parity exchanges chiralities, the $J_\Pi$-odd part of the eliminated block has chiral-diagonal
-        component equal to the transported equivariance defect:
-        $[\Pi_{J_\Pi\text{-odd}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ and, along the modulus,
-        $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. The generator
-        $A_-$ is therefore the infinitesimal transported chiral defect rate, not a new selector.</li>
-      <li><strong>Single remaining target.</strong> The value question is reduced to one object: the
-        admissible normalisation of $\partial_s\Delta_\chi(P)|_0$. The magnitude $|u|$ remains
-        dictionary-bound; no value-dictionary object enters the construction.</li>
+      <li><strong>Constrained jet.</strong> For every smooth self-adjoint projector family and every smooth
+        unitary transport $U(s) = 1 + sA + \tfrac{s^2}{2}(A^2 + B) + O(s^3)$, the projector constraints force
+        $Q_1 = [A, Q_0]$ with $Q_0 Q_1 Q_0 = 0 = (1 - Q_0) Q_1 (1 - Q_0)$, and pin the diagonal blocks of
+        $Q_2 = \tfrac12[B, Q_0] + \tfrac12[A,[A,Q_0]]$ to $Q_1^2$ with opposite signs.</li>
+      <li><strong>Parity under equivariance.</strong> A family equivariant under the antiunitary parity,
+        $J_\Pi Q(s) J_\Pi^{-1} = Q(-s)$, has alternating jet parities, and its odd tangent is the chiral
+        commutator $[A_-, Q_0]$. With a moving embedding, a vanishing odd tangent does not by itself kill the
+        first-order split.</li>
+      <li><strong>Moving embedding.</strong> Since $P(s) = \Pi_S(s)^{*}\Pi_S(s)$, the residue jet carries the
+        derivatives of the embedding, $E_1 = -(G_1 Q_0 G_0^{*} + G_0 Q_1 G_0^{*} + G_0 Q_0 G_1^{*})$ with
+        $G = \Pi_S D$. For a $J_\Pi$-even Dirac operator and a covariant embedding, $E_0$ is even, $E_1$ is
+        odd, and the first-order odd part of $E_\Pi^2$ is $\{E_0, E_1\}$. Freezing the embedding gives a
+        different rate.</li>
+      <li><strong>Mixing.</strong> A Hermitian operator odd under the antiunitary parity has zero $(+,-)$
+        entry on the generation triplet. The first-order mixing coefficient therefore vanishes in every
+        covariant family, with or without complex phases, and more generally every odd-order coefficient
+        vanishes. Mixing at even orders is not excluded, and it is non-zero at second order in the explicit
+        family. In the normal form $E_0 = -\mathrm{diag}(1, 2^{-1/2}, 2^{-1/2})$ the split rate is
+        $u'(0) = -\sqrt{2}\,(E_1)_{++}$.</li>
+      <li><strong>Moving-Schur existence theorem.</strong> An explicit covariant family on
+        $\mathbb{C}^3 \oplus \mathbb{C}^3$ has $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$,
+        $u'(0) = 11 \cdot 2^{1/4}/9 \neq 0$, and neither mixing nor singlet leakage at first order; the
+        frozen-embedding model gives $79 \cdot 2^{1/4}/90$ instead.</li>
+      <li><strong>Chiral defect-rate identity.</strong> In the chiral frame,
+        $[\Pi_{J_\Pi\text{-odd}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ and
+        $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. This determines one
+        block of the odd tangent, not a unique generator: $A$ is defined only modulo the centraliser of
+        $Q_0$.</li>
     </ul>
   </section>
   <section class="card">
     <h2>The constrained jet</h2>
     <p>
-      For each value of the $J_\Pi$-odd modulus $s$ opened by Lorentzian complexification, the eliminated
-      block $1 - P(s)$ is a self-adjoint projector. Generating the family by conjugation,
-      $1 - P(s) = U(s) Q_0 U(s)^{\dagger}$ with $U = \exp(sA)$, the order-by-order content of $(1-P)^2 =
-      1-P$ forces $Q_1 = [A, Q_0]$ to be purely off-diagonal with respect to $Q_0$ and pins the diagonal
-      blocks of $Q_2 = \tfrac12[A,[A,Q_0]]$ to $Q_1^2$ with opposite signs. The finite base point $Q_0$
-      is $J_\Pi$-even, so $u(0) = 0$: the split is a Lorentzian, not a finite-fibre, datum.
+      For each value of the modulus $s$ opened by Lorentzian complexification, the eliminated block
+      $1 - P(s)$ is a self-adjoint projector, unitarily transported from its base point. The order-by-order
+      content of $(1-P)^2 = 1-P$ fixes the off-diagonal tangent and the diagonal blocks of the second-order
+      coefficient for every smooth family; a constant-generator orbit $U(s) = \exp(sA)$ is only a special
+      case. The alternating parity of the jet is not a consequence of these constraints: it holds when the
+      family is equivariant under the antiunitary parity. For a covariant family the finite base point is
+      even, so $u(0) = 0$: the split is a Lorentzian, not a finite-fibre, datum.
     </p>
   </section>
   <section class="card">
-    <h2>The chiral generator</h2>
+    <h2>The chiral defect-rate identity</h2>
     <p>
       In the chiral splitting $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$, the Born–Infeld
-      parity $J_\Pi$ exchanges the chiralities. Consequently the $J_\Pi$-odd part of the eliminated
-      block has left-handed diagonal block equal to half the transported equivariance defect
-      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$ of the Schur reduction. The
-      first-order coefficient therefore carries $\tfrac12\partial_s\Delta_\chi(P)|_0$, identifying the
-      chiral generator $A_-$ with the infinitesimal transported defect rate. Through the split-source
-      formula, the carrier of $u$ is exactly $\partial_s\Delta_\chi(P)|_0$, dressed by the
-      $\mathcal{D}^{\pm}$ transport and projected to the generation triplet as in the localisation of the
-      Schur reduction.
+      parity exchanges the chiralities through the intertwiner $\tau$. In a chiral frame where it acts as
+      $J_\Pi = \Sigma_\tau \circ \mathrm{conj}$, the $J_\Pi$-odd part of the eliminated block has
+      $LL$ block equal to half the transported equivariance defect
+      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$ of the Schur reduction, and the
+      first-order tangent carries $\tfrac12\partial_s\Delta_\chi(P)|_0$ in that block.
+    </p>
+    <p>
+      The identity has three boundaries. It determines one block of the odd tangent, not the generator,
+      which is defined only up to the centraliser of $Q_0$. The $LL$ block does not recover the full odd
+      tangent, so no injective localisation onto $\partial_s\Delta_\chi(P)|_0$ is claimed. And the
+      passage from the tangent to $u'(0)$ goes through the transport, the moving embedding, and the
+      projection to the generation triplet.
     </p>
   </section>
   <section class="card">
-    <h2>Status and open deliverable</h2>
+    <h2>Status and open questions</h2>
     <p>
-      <strong>Established.</strong> The constrained form of the eliminated-block jet, the off-diagonal
-      Grassmann character of $Q_1$, the opposite-sign $Q_2$ diagonal blocks, the phase-free vanishing of
-      mixing, and the identification of the chiral generator as the transported equivariance defect rate.
-      All identities are verified by exact symbolic and exact-rational computation.
+      <strong>Established.</strong> The constrained jet for every smooth family; the parity grading under
+      equivariance; the moving-embedding propagation to the residue; the vanishing of every odd-order
+      generation-mixing coefficient in covariant families; the moving-Schur existence theorem; and the chiral
+      defect-rate identity. The identities are checked on exact instances, and the realisation and the
+      counterexamples exactly; the general statements rest on the proofs in the note.
     </p>
     <p>
-      <strong>Open.</strong> The magnitude $|u|$ is now reduced to a single target: the admissible
-      normalisation of $\partial_s\Delta_\chi(P)|_0$ (the A4-level chiral defect rate that carries the
-      magnitude of the split). The defect rate is the unique structural carrier; its absolute value is
-      not normalised here and remains dictionary-bound.
+      <strong>Open.</strong> The selection, by the programme, of a covariant family among those the Schur
+      contract admits; the uniqueness of the split carrier and the injective localisation of the odd tangent
+      onto its $LL$ block; the normalisation of $\partial_s\Delta_\chi(P)|_0$, hence the magnitude $|u|$,
+      which remains dictionary-bound; and generation mixing at even orders.
     </p>
   </section>
   <section class="card">
@@ -169,18 +190,19 @@
       This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
       matter sub-programme</a>. It takes up the first open deliverable of the
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Projective
-      Residue Schur reduction</a> — the explicit Lorentzian eliminated block $1 - P(s)$ — and identifies
-      the chiral generator using the transported equivariance defect of that reduction and the electric
-      genus sign $\mu_\chi^2 < 0$ established in the <a href="/science/fermionic-matter/a4-note/"
-      class="inline-link">Born–Infeld saturation margin note</a>. The absolute value $|u|$, the Yukawa
-      sector, and the mass spectrum remain downstream, dictionary-bound questions.
+      Residue Schur reduction</a>, the explicit Lorentzian eliminated block $1 - P(s)$, and relates its odd
+      tangent to the transported equivariance defect of that reduction. The electric genus sign
+      $\mu_\chi^2 < 0$ of the <a href="/science/fermionic-matter/a4-note/" class="inline-link">Born–Infeld
+      saturation margin note</a> orients the physical reading but is not used in the proofs. The absolute
+      value $|u|$, the Yukawa sector, and the mass spectrum remain downstream, dictionary-bound questions.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       Jérôme Beau. <i lang="en">The Constrained Jet of the Lorentzian Eliminated Block and the Chiral
-      Generator</i>. Working paper, 2026.
+      Defect-Rate Identity: A Moving-Schur Existence Theorem for the Generation Split</i>. Working paper,
+      2026.
       <a href="https://doi.org/10.5281/zenodo.20763532" rel="noopener">10.5281/zenodo.20763532</a>
     </p>
   </section>

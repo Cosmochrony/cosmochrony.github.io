@@ -4,13 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Le jet contraint du bloc éliminé lorentzien et le générateur chiral | Cosmochronie</title>
+  <title>Le jet contraint du bloc éliminé lorentzien et l'identité chirale du taux de défaut | Cosmochronie</title>
   <meta name="description"
-    content="Contraint le jet du bloc éliminé 1-P(s) de la réduction de Schur et identifie le générateur chiral comme le taux infinitésimal du défaut d'équivariance chirale transporté, réduisant la valeur du splitting générationnel à une cible de normalisation unique."/>
+    content="Contraint le jet du bloc éliminé 1-P(s) de la réduction de Schur, montre que la parité antiunitaire annule tous les coefficients d'ordre impair du mélange des générations, réalise un taux de splitting non nul au premier ordre dans une famille de Schur mobile explicite, et donne l'identité chirale du taux de défaut de la tangente sans générateur unique."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Le jet contraint du bloc éliminé lorentzien et le générateur chiral"/>
+  <meta property="og:title" content="Le jet contraint du bloc éliminé lorentzien et l'identité chirale du taux de défaut"/>
   <meta property="og:description"
-    content="Le jet projecteur du bloc éliminé force une tangente de Grassmann chirale ; le générateur chiral est identifié au taux du défaut d'équivariance transporté, ne laissant que la normalisation de sa dérivée en s."/>
+    content="Un théorème d'existence de Schur mobile pour le splitting générationnel : le jet projecteur du bloc éliminé est contraint, le mélange au premier ordre s'annule par parité antiunitaire, et une famille covariante réalise un taux de splitting non nul."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/eliminated-block-jet/"/>
   <script type="module">
@@ -35,10 +35,9 @@
         </svg>
       </a>
       <div>
-        <h1>Le jet contraint du bloc éliminé lorentzien et le générateur chiral</h1>
+        <h1>Le jet contraint du bloc éliminé lorentzien et l'identité chirale du taux de défaut</h1>
         <p class="subtitle">
-          Fixer la forme structurelle du bloc éliminé $1 - P(s)$ et identifier le générateur chiral
-          comme le taux infinitésimal du défaut d'équivariance chirale transporté.
+          Un théorème d'existence de Schur mobile pour le splitting générationnel.
         </p>
       </div>
     </div>
@@ -53,7 +52,7 @@
     <div class="card">
       <h2>Aperçu</h2>
       <p>
-        Cette note compagne se place logiquement entre la <a href="/science/fermionic-matter/projective-residue-schur/"
+        Cette note compagne se place logiquement entre la <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
         class="inline-link">réduction de Schur</a> du résidu projectif et l'identification physique du
         générateur chiral. La réduction de Schur écrit l'endomorphisme projectif sous la forme
         $E_\Pi = -\Pi_S\,D\,(1 - P)\,D\,\Pi_S^{*}$, de sorte que le bloc éliminé $1 - P$ contrôle le
@@ -62,10 +61,13 @@
       </p>
       <p>
         En écrivant la famille de projecteurs auto-adjoints comme un jet
-        $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$ le long du module $J_\Pi$-impair $s$, les contraintes
-        de projecteur imposent une forme contrainte, et le générateur chiral est identifié — non comme un
-        nouveau sélecteur, mais comme le défaut d'équivariance transporté infinitésimal. Le splitting
-        $u \neq 0$ est admissible avec $|u|$ laissé entièrement libre.
+        $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$, les seules contraintes de projecteur fixent le coefficient
+        du premier ordre comme une tangente de Grassmann hors-diagonale pour toute famille lisse. La
+        graduation de parité vaut pour les familles équivariantes sous la parité de Born–Infeld antiunitaire,
+        le jet du résidu doit suivre le plongement spinoriel, et une famille covariante explicite montre qu'un
+        taux de splitting non nul au premier ordre est réalisable. C'est un énoncé d'existence sous des
+        hypothèses explicites : il ne sélectionne pas la famille, n'identifie pas de générateur unique et ne
+        fixe pas la magnitude $|u|$.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page fournit un résumé structuré.
@@ -89,12 +91,18 @@
         </div>
         <div class="kv">
           <div class="k">Sujet</div>
-          <div class="v">Jet contraint de $1 - P(s)$, tangente de Grassmann chirale, identification du générateur chiral</div>
+          <div class="v">Jet contraint de $1 - P(s)$, graduation de parité antiunitaire, réalisation de Schur
+            mobile, identité chirale du taux de défaut</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Document de travail (DOI de concept <a
+          <div class="v">Document de travail, version 2.0 (DOI de concept <a
             href="https://doi.org/10.5281/zenodo.20763532">10.5281/zenodo.20763532</a>)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Code</div>
+          <div class="v"><a href="https://github.com/Cosmochrony/eliminated-block-jet/tree/main/code"
+            rel="noopener">Scripts de reproduction exacte</a></div>
         </div>
       </div>
     </aside>
@@ -102,88 +110,105 @@
   <section class="card">
     <h2>Résultats principaux</h2>
     <ul>
-      <li><strong>Jet contraint.</strong> Pour la famille de projecteurs auto-adjoints, les contraintes
-        de projecteur forcent le coefficient du premier ordre à être une tangente de Grassmann purement
-        hors-diagonale, $Q_1 = [A, Q_0]$ avec $Q_0 Q_1 Q_0 = 0 = (1 - Q_0) Q_1 (1 - Q_0)$, et fixent les
-        blocs diagonaux de $Q_2$ à $Q_1^2$ avec des signes opposés.</li>
-      <li><strong>Source chirale.</strong> En décomposant le générateur par parité, $A = A_+ + A_-$, la
-        partie qui source le splitting est $\Pi_{J_\Pi\text{-impair}} Q_1 = [A_-, Q_0]$. Le splitting est
-        mort si et seulement si $[A_-, Q_0] = 0$, et non simplement si $Q_1 = 0$ : un générateur purement
-        $J_\Pi$-pair ne source rien.</li>
-      <li><strong>Source du splitting.</strong> La propagation de parité gradue le jet du résidu $E_0$
-        pair, $E_1$ impair, $E_2$ pair, donc $u(s) = s\,\langle J_3, \{E_0, E_1\}\rangle /
-        \langle J_3, J_3\rangle + O(s^3)$. Pour des données sans phase, le coefficient de mélange $v$
-        s'annule identiquement ; un $v$ non nul exige une phase métaplectique complexe.</li>
-      <li><strong>Identification du générateur chiral.</strong> Comme la parité de Born–Infeld
-        antiunitaire échange les chiralités, la partie $J_\Pi$-impaire du bloc éliminé a une composante
-        chirale-diagonale égale au défaut d'équivariance transporté :
-        $[\Pi_{J_\Pi\text{-impair}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ et, le long du module,
-        $[\Pi_{J_\Pi\text{-impair}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. Le générateur
-        $A_-$ est donc le taux infinitésimal du défaut chiral transporté, pas un nouveau sélecteur.</li>
-      <li><strong>Cible unique restante.</strong> La question de la valeur est réduite à un seul objet :
-        la normalisation admissible de $\partial_s\Delta_\chi(P)|_0$. La magnitude $|u|$ reste liée au
-        dictionnaire ; aucun objet du dictionnaire de valeur n'entre dans la construction.</li>
+      <li><strong>Jet contraint.</strong> Pour toute famille lisse de projecteurs auto-adjoints et tout
+        transport unitaire lisse $U(s) = 1 + sA + \tfrac{s^2}{2}(A^2 + B) + O(s^3)$, les contraintes de
+        projecteur imposent $Q_1 = [A, Q_0]$ avec $Q_0 Q_1 Q_0 = 0 = (1 - Q_0) Q_1 (1 - Q_0)$, et fixent les
+        blocs diagonaux de $Q_2 = \tfrac12[B, Q_0] + \tfrac12[A,[A,Q_0]]$ à $Q_1^2$ avec des signes
+        opposés.</li>
+      <li><strong>Parité sous équivariance.</strong> Une famille équivariante sous la parité antiunitaire,
+        $J_\Pi Q(s) J_\Pi^{-1} = Q(-s)$, a des parités de jet alternées, et sa tangente impaire est le
+        commutateur chiral $[A_-, Q_0]$. Avec un plongement mobile, l'annulation de la tangente impaire ne
+        suffit pas à éteindre le splitting au premier ordre.</li>
+      <li><strong>Plongement mobile.</strong> Comme $P(s) = \Pi_S(s)^{*}\Pi_S(s)$, le jet du résidu porte les
+        dérivées du plongement, $E_1 = -(G_1 Q_0 G_0^{*} + G_0 Q_1 G_0^{*} + G_0 Q_0 G_1^{*})$ avec
+        $G = \Pi_S D$. Pour un opérateur de Dirac $J_\Pi$-pair et un plongement covariant, $E_0$ est pair,
+        $E_1$ est impair, et la partie impaire du premier ordre de $E_\Pi^2$ est $\{E_0, E_1\}$. Figer le
+        plongement donne un autre taux.</li>
+      <li><strong>Mélange.</strong> Un opérateur hermitien impair sous la parité antiunitaire a une entrée
+        $(+,-)$ nulle sur le triplet de générations. Le coefficient de mélange du premier ordre s'annule donc
+        dans toute famille covariante, avec ou sans phases complexes, et plus généralement tout coefficient
+        d'ordre impair s'annule. Le mélange aux ordres pairs n'est pas exclu, et il est non nul au second
+        ordre dans la famille explicite. Dans la forme normale $E_0 = -\mathrm{diag}(1, 2^{-1/2}, 2^{-1/2})$,
+        le taux de splitting est $u'(0) = -\sqrt{2}\,(E_1)_{++}$.</li>
+      <li><strong>Théorème d'existence de Schur mobile.</strong> Une famille covariante explicite sur
+        $\mathbb{C}^3 \oplus \mathbb{C}^3$ a $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$,
+        $u'(0) = 11 \cdot 2^{1/4}/9 \neq 0$, et ni mélange ni fuite vers le singlet au premier ordre ; le
+        modèle à plongement figé donne $79 \cdot 2^{1/4}/90$.</li>
+      <li><strong>Identité chirale du taux de défaut.</strong> Dans le repère chiral,
+        $[\Pi_{J_\Pi\text{-impair}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ et
+        $[\Pi_{J_\Pi\text{-impair}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. Cela détermine un
+        bloc de la tangente impaire, non un générateur unique : $A$ n'est défini qu'au centralisateur de
+        $Q_0$ près.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Le jet contraint</h2>
     <p>
-      Pour chaque valeur du module $J_\Pi$-impair $s$ ouvert par la complexification lorentzienne, le bloc
-      éliminé $1 - P(s)$ est un projecteur auto-adjoint. En engendrant la famille par conjugaison,
-      $1 - P(s) = U(s) Q_0 U(s)^{\dagger}$ avec $U = \exp(sA)$, le contenu ordre par ordre de
-      $(1-P)^2 = 1-P$ force $Q_1 = [A, Q_0]$ à être purement hors-diagonale par rapport à $Q_0$ et fixe les
-      blocs diagonaux de $Q_2 = \tfrac12[A,[A,Q_0]]$ à $Q_1^2$ avec des signes opposés. Le point de base
-      fini $Q_0$ est $J_\Pi$-pair, donc $u(0) = 0$ : le splitting est une donnée lorentzienne, pas une
-      donnée de fibre finie.
+      Pour chaque valeur du module $s$ ouvert par la complexification lorentzienne, le bloc éliminé
+      $1 - P(s)$ est un projecteur auto-adjoint, transporté unitairement depuis son point de base. Le contenu
+      ordre par ordre de $(1-P)^2 = 1-P$ fixe la tangente hors-diagonale et les blocs diagonaux du
+      coefficient du second ordre pour toute famille lisse ; une orbite à générateur constant
+      $U(s) = \exp(sA)$ n'en est qu'un cas particulier. L'alternance des parités du jet ne découle pas de
+      ces contraintes : elle vaut lorsque la famille est équivariante sous la parité antiunitaire. Pour une
+      famille covariante, le point de base fini est pair, donc $u(0) = 0$ : le splitting est une donnée
+      lorentzienne, pas une donnée de fibre finie.
     </p>
   </section>
   <section class="card">
-    <h2>Le générateur chiral</h2>
+    <h2>L'identité chirale du taux de défaut</h2>
     <p>
       Dans la décomposition chirale $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$, la parité de
-      Born–Infeld $J_\Pi$ échange les chiralités. Par conséquent la partie $J_\Pi$-impaire du bloc éliminé
-      a un bloc diagonal gauche égal à la moitié du défaut d'équivariance transporté
-      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$ de la réduction de Schur. Le
-      coefficient du premier ordre porte donc $\tfrac12\partial_s\Delta_\chi(P)|_0$, identifiant le
-      générateur chiral $A_-$ au taux infinitésimal du défaut transporté. Via la formule de la source du
-      splitting, le porteur de $u$ est exactement $\partial_s\Delta_\chi(P)|_0$, habillé par le transport
-      $\mathcal{D}^{\pm}$ et projeté sur le triplet de générations comme dans la localisation de la
-      réduction de Schur.
+      Born–Infeld échange les chiralités par l'entrelaceur $\tau$. Dans un repère chiral où elle agit comme
+      $J_\Pi = \Sigma_\tau \circ \mathrm{conj}$, la partie $J_\Pi$-impaire du bloc éliminé a un bloc $LL$
+      égal à la moitié du défaut d'équivariance transporté
+      $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$ de la réduction de Schur, et la
+      tangente du premier ordre porte $\tfrac12\partial_s\Delta_\chi(P)|_0$ dans ce bloc.
+    </p>
+    <p>
+      L'identité a trois limites. Elle détermine un bloc de la tangente impaire, non le générateur, qui n'est
+      défini qu'au centralisateur de $Q_0$ près. Le bloc $LL$ ne restitue pas toute la tangente impaire,
+      aucune localisation injective sur $\partial_s\Delta_\chi(P)|_0$ n'est donc revendiquée. Enfin, le
+      passage de la tangente à $u'(0)$ passe par le transport, le plongement mobile et la projection sur le
+      triplet de générations.
     </p>
   </section>
   <section class="card">
-    <h2>Statut et livrable ouvert</h2>
+    <h2>Statut et questions ouvertes</h2>
     <p>
-      <strong>Établi.</strong> La forme contrainte du jet du bloc éliminé, le caractère de Grassmann
-      hors-diagonal de $Q_1$, les blocs diagonaux de $Q_2$ de signes opposés, l'annulation du mélange sans
-      phase, et l'identification du générateur chiral au taux du défaut d'équivariance transporté. Toutes
-      les identités sont vérifiées par calcul symbolique et rationnel exact.
+      <strong>Établi.</strong> Le jet contraint pour toute famille lisse ; la graduation de parité sous
+      équivariance ; la propagation au résidu avec plongement mobile ; l'annulation de tout coefficient
+      d'ordre impair du mélange des générations dans les familles covariantes ; le théorème d'existence de
+      Schur mobile ; et l'identité chirale du taux de défaut. Les identités sont vérifiées sur des instances
+      exactes, la réalisation et les contre-exemples exactement ; les énoncés généraux reposent sur les
+      preuves de la note.
     </p>
     <p>
-      <strong>Ouvert.</strong> La magnitude $|u|$ est maintenant réduite à une cible unique : la
-      normalisation admissible de $\partial_s\Delta_\chi(P)|_0$ (le taux de défaut chiral de niveau A4 qui
-      porte la magnitude du splitting). Le taux de défaut est le porteur structurel unique ; sa valeur
-      absolue n'est pas normalisée ici et reste liée au dictionnaire.
+      <strong>Ouvert.</strong> La sélection, par le programme, d'une famille covariante parmi celles
+      qu'admet le contrat de Schur ; l'unicité du porteur du splitting et la localisation injective de la
+      tangente impaire sur son bloc $LL$ ; la normalisation de $\partial_s\Delta_\chi(P)|_0$, donc la
+      magnitude $|u|$, qui reste liée au dictionnaire ; et le mélange des générations aux ordres pairs.
     </p>
   </section>
   <section class="card">
     <h2>Relation au programme Cosmochronie</h2>
     <p>
-      Cette note appartient au <a href="/science/fermionic-matter/" class="inline-link">sous-programme
+      Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
       matière fermionique</a>. Elle prend en charge le premier livrable ouvert de la
-      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">réduction de Schur
-      du résidu projectif</a> — le bloc éliminé lorentzien explicite $1 - P(s)$ — et identifie le
-      générateur chiral au moyen du défaut d'équivariance transporté de cette réduction et du signe de
-      genre électrique $\mu_\chi^2 < 0$ établi dans la <a href="/science/fermionic-matter/a4-note/"
-      class="inline-link">note sur la marge de saturation de Born–Infeld</a>. La valeur absolue $|u|$, le
-      secteur de Yukawa et le spectre de masse restent des questions en aval, liées au dictionnaire.
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction de
+      Schur du résidu projectif</a>, le bloc éliminé lorentzien explicite $1 - P(s)$, et relie sa tangente
+      impaire au défaut d'équivariance transporté de cette réduction. Le signe de genre électrique
+      $\mu_\chi^2 < 0$ de la <a href="/science/fermionic-matter/a4-note/index_fr.html"
+      class="inline-link">note sur la marge de saturation de Born–Infeld</a> oriente la lecture physique mais
+      n'intervient pas dans les preuves. La valeur absolue $|u|$, le secteur de Yukawa et le spectre de masse
+      restent des questions en aval, liées au dictionnaire.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       Jérôme Beau. <i lang="en">The Constrained Jet of the Lorentzian Eliminated Block and the Chiral
-      Generator</i>. Document de travail, 2026.
+      Defect-Rate Identity: A Moving-Schur Existence Theorem for the Generation Split</i>. Document de
+      travail, 2026.
       <a href="https://doi.org/10.5281/zenodo.20763532" rel="noopener">10.5281/zenodo.20763532</a>
     </p>
   </section>

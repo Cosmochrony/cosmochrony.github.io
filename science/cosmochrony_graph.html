@@ -25,6 +25,8 @@
       --num-bg: #1f1235;
       --cond: #f0883e;
       --cond-bg: #2b1608;
+      --synth: #9aa4b2;
+      --synth-bg: #1c2128;
       --accent: #bc8cff;
       --edge-base: #2a3040;
       --edge-spine: #3a4560;
@@ -75,6 +77,8 @@
         --num: #8250df;
         --cond-bg: #fff1e5;
         --cond: #bc4c00;
+        --synth-bg: #eef1f4;
+        --synth: #57606a;
         --accent: #8250df;
         --edge-base: #c8d0da;
         --edge-spine: #9eaab8;
@@ -620,7 +624,7 @@
 <body>
 <header>
   <h1>Cosmochrony &mdash; Paper Graph</h1>
-  <span class="ctrl-label" id="graph-count">114 papers</span>
+  <span class="ctrl-label" id="graph-count">116 papers</span>
 
   <div class="legend">
     <div class="li" id="li-proved" style="color:var(--proved)" onclick="filterStatus('proved')">
@@ -631,6 +635,14 @@
       <div class="dot" style="background:var(--struct-bg);border:1.5px solid var(--struct)"></div>
       structural
     </div>
+    <div class="li" id="li-numerical" style="color:var(--num)" onclick="filterStatus('numerical')">
+      <div class="dot" style="background:var(--num-bg);border:1.5px solid var(--num)"></div>
+      numerical
+    </div>
+    <div class="li" id="li-conditional" style="color:var(--cond)" onclick="filterStatus('conditional')">
+      <div class="dot" style="background:var(--cond-bg);border:1.5px solid var(--cond)"></div>
+      conditional
+    </div>
     <div class="li" id="li-heur" style="color:var(--heur)" onclick="filterStatus('heuristic')">
       <div class="dot" style="background:var(--heur-bg);border:1.5px solid var(--heur)"></div>
       heuristic
@@ -639,13 +651,9 @@
       <div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>
       open
     </div>
-    <div class="li" id="li-numerical" style="color:var(--num)" onclick="filterStatus('numerical')">
-      <div class="dot" style="background:var(--num-bg);border:1.5px solid var(--num)"></div>
-      numerical
-    </div>
-    <div class="li" id="li-conditional" style="color:var(--cond)" onclick="filterStatus('conditional')">
-      <div class="dot" style="background:var(--cond-bg);border:1.5px solid var(--cond)"></div>
-      conditional
+    <div class="li" id="li-synthesis" style="color:var(--synth)" onclick="filterStatus('synthesis')">
+      <div class="dot" style="background:var(--synth-bg);border:1.5px solid var(--synth)"></div>
+      synthesis
     </div>
   </div>
 
@@ -727,7 +735,8 @@
     heuristic: { fill: "var(--heur-bg)", stroke: "var(--heur)" },
     open: { fill: "var(--open-bg)", stroke: "var(--open)" },
     numerical: { fill: "var(--num-bg)", stroke: "var(--num)" },
-    conditional: { fill: "var(--cond-bg)", stroke: "var(--cond)" }
+    conditional: { fill: "var(--cond-bg)", stroke: "var(--cond)" },
+    synthesis: { fill: "var(--synth-bg)", stroke: "var(--synth)" }
   }
   const EDGE_TYPES = {
     proved: { label: "proved", color: "var(--edge-proved)" },
@@ -770,7 +779,7 @@
       desc: "Four-axiom admissibility architecture. The published Heisenberg/Weil selection theorem is not established: the S₃ countermodel shows that the extracted inputs do not force centrality. Carrier selection is postulated; continuum passages remain conditional on [H-L]."
     },
     {
-      id: "Heis", lbl: "HeisStr", s: "structural", b: "I", key: "Beau2026HeisenbergStructure",
+      id: "Heis", lbl: "HeisStr", s: "proved", b: "I", key: "Beau2026HeisenbergStructure",
       url: ZEN + "19635395",
       tags: ["QM", "emer"],
       title: "A Finite Obstruction to Heisenberg Carrier Selection",
@@ -805,7 +814,7 @@
       desc: "Takes up STEFT's open phase/modulus question without deriving it. For any finite branching system, the power-lift family μ^α of its induced valuation is Kolmogorov-consistent, at a branching state reached with positive μ-valuation, iff α = 1 — a self-contained, elementary comparison of x^α against x on [0,1], independent of the corpus. A row-renormalised escort lift restores consistency trivially for every α but generally departs from the pointwise lift once path-dependent normalisation accumulates, situating the result relative to the escort-distribution/Rényi literature. Specialised, conditional on a named, non-derived maximal-entropy/Parry postulate H2, to the TrajectoryBranching automaton: exact Q(√2) instantiation; endpoint/shadow quotients exactly incomparable (explicit witnesses); X↔X⁻¹ relabelling transports the Heisenberg endpoint by an exact group automorphism, forcing every uniform-probe phase sum weighted by a real shadow-only valuation, over co-b_n histories, to be exactly real; bounded exact search over all 13120 words of length ≤8 finds no destructive cancellation among 62 nontrivial-phase classes of 64. No Born rule, complex carrier, or coherent sum established."
     },
     {
-      id: "NIFNote", lbl: "NIF-Note", s: "structural", b: "I", key: "Beau2026ninote",
+      id: "NIFNote", lbl: "NIF-Note", s: "synthesis", b: "I", key: "Beau2026ninote",
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
       title: "Non-Injective Foundations Sub-Programme (Presentation Note 5)",
@@ -847,11 +856,11 @@
       desc: "Three-generation structure from ADE stratigraphic levels of binary Cayley graphs."
     },
     {
-      id: "SpR", lbl: "SpRel", s: "proved", b: "II", key: "Beau2026a5",
+      id: "SpR", lbl: "SpRel", s: "conditional", b: "II", key: "Beau2026a5",
       url: BASE + "spectral/program/relaxation",
       tags: ["spt"],
       title: "Spectral Relaxation",
-      desc: "Λ_proj ≍ λ₂ for LPS expander families. Entry point for the O-series dynamics on LPS graphs."
+      desc: "Λ_proj ≍ λ₂ for LPS expander families, conditional on the capacity–isoperimetry closure and spectral-isoperimetric saturation hypotheses. Entry point for the O-series dynamics on LPS graphs."
     },
     {
       id: "O1", lbl: "O1", s: "proved", b: "II", key: "Beau2026a6",
@@ -868,11 +877,11 @@
       desc: "First quantitative SM connection: β* ∈ (0.09, 0.13) from charged-lepton mass ratios m_e:m_μ:m_τ."
     },
     {
-      id: "O4", lbl: "O4", s: "proved", b: "II", key: "Beau2026a8",
+      id: "O4", lbl: "O4", s: "open", b: "II", key: "Beau2026a8",
       url: BASE + "spectral/program/o4",
       tags: ["mass", "BI"],
       title: "O4 — Upper Bound β ≤ 1",
-      desc: "BI flux + Cheeger isoperimetric inequality ⇒ β ≤ 1."
+      desc: "Bounded relational flux and Ramanujan expansion do not yield a cascade-exponent bound: the former β ≤ 1 derivation does not follow from the stated argument, and any structural upper bound on β by this route is open."
     },
     {
       id: "O5", lbl: "O5", s: "proved", b: "II", key: "Beau2026a9",
@@ -886,7 +895,7 @@
       url: BASE + "spectral/program/o6",
       tags: ["mass"],
       title: "O6 — Matrix Redundancy",
-      desc: "Matrix-level dynamic redundancy; structural confinement of cascade exponent β."
+      desc: "Matrix-level dynamic redundancy, R_n → 0 for the Steinberg fingerprint (proved); the confinement of the cascade exponent is a corollary conditional on a power-law Ansatz the paper's own fingerprint does not satisfy, so a genuine power-law regime remains open."
     },
     {
       id: "O7", lbl: "O7", s: "structural", b: "II", key: "Beau2026a11",
@@ -896,11 +905,11 @@
       desc: "Target reformulated as capacity exponent δ ∈ [7.4, 10.6] on 3-step path fingerprints."
     },
     {
-      id: "O8", lbl: "O8", s: "proved", b: "II", key: "Beau2026a12",
+      id: "O8", lbl: "O8", s: "structural", b: "II", key: "Beau2026a12",
       url: BASE + "spectral/program/o8",
       tags: ["mass"],
       title: "O8 — LPS Geometric Obstruction",
-      desc: "Exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps. Forces Heisenberg transition."
+      desc: "Exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps, on a shell-growth premise the paper records as an empirical observation for its family. Motivates the Heisenberg transition."
     },
     {
       id: "O9", lbl: "O9", s: "proved", b: "II", key: "Beau2026a13",
@@ -910,14 +919,14 @@
       desc: "Key structural shift: Heis₃(ℤ/qℤ) with |B_n| ∼ n⁴ replaces LPS. Θ(q) usable BFS steps."
     },
     {
-      id: "O10", lbl: "O10", s: "proved", b: "II", key: "Beau2026a14",
+      id: "O10", lbl: "O10", s: "numerical", b: "II", key: "Beau2026a14",
       url: BASE + "spectral/program/o10",
       tags: ["mass"],
       title: "O10 — Large-q Computation",
-      desc: "First computation at q=101. Confirms n⁴ growth; identifies TensorSketch representation obstruction."
+      desc: "First computation at q=101. Ball growth exponent 3.05, continuing the convergence toward D_hom = 4; identifies the TensorSketch representation obstruction."
     },
     {
-      id: "O11", lbl: "O11", s: "structural", b: "II", key: "Beau2026a15",
+      id: "O11", lbl: "O11", s: "numerical", b: "II", key: "Beau2026a15",
       url: BASE + "spectral/program/o11",
       tags: ["mass"],
       title: "O11 — Fourier-Character Proxy",
@@ -928,14 +937,14 @@
       url: BASE + "spectral/program/o12",
       tags: ["mass"],
       title: "O12 — Exact Weil Blocks",
-      desc: "Exact Weil-block fingerprints. δ̂_exact ≈ 4.3–4.8 for q ∈ {29,…,211}."
+      desc: "Exact Weil-block fingerprints. The unfolded intrinsic exponent is δ_exact = 3 exactly; the finite-q fitted slopes δ̂ ≈ 4.3–4.8 for q ∈ {29,53,61} are crossover statistics of the block saturation-depth distribution."
     },
     {
-      id: "O13", lbl: "O13", s: "proved", b: "II", key: "Beau2026a17",
+      id: "O13", lbl: "O13", s: "numerical", b: "II", key: "Beau2026a17",
       url: BASE + "spectral/program/o13",
       tags: ["mass"],
       title: "O13 — Extended Prime Range",
-      desc: "δ̂(q): 4.80 → 3.59 as q grows. Finite-size hypothesis definitively refuted."
+      desc: "δ̂(q): 4.80 → 3.59 as q grows, with no upward drift toward the target range over the five measured primes."
     },
     {
       id: "O14", lbl: "O14", s: "structural", b: "II", key: "Beau2026a18",
@@ -952,11 +961,11 @@
       desc: "Native identity Δr=|S_n|Σ_n; block reweighting supplies no LPS growth carrier. Former reciprocal outputs are phenomenological diagnostics."
     },
     {
-      id: "O16", lbl: "O16", s: "structural", b: "II", key: "Beau2026a20",
+      id: "O16", lbl: "O16", s: "conditional", b: "II", key: "Beau2026a20",
       url: BASE + "spectral/program/o16",
       tags: ["mass"],
       title: "O16 — Exact Pair-Exponent Doubling",
-      desc: "σ_pair = σ_c·σ_{q−c} on conjugate pairs {c, q−c}. The exact identity δ_pair = 2δ_c does not itself derive a rate exponent."
+      desc: "σ_pair = σ_c·σ_{q−c} on conjugate pairs {c, q−c}, the fibre reading resting on the parity and realisation hypotheses, neither derived. The exact identity δ_pair = 2δ_c does not itself derive a rate exponent."
     },
     {
       id: "O17", lbl: "O17", s: "proved", b: "II", key: "Beau2026a21",
@@ -966,56 +975,56 @@
       desc: "ρ_{q−c} = ρ̄_c and exact block-independence of the GS count, within O17's scalar toy model. The pair fibre reading remains a structurally motivated hypothesis."
     },
     {
-      id: "O18", lbl: "O18", s: "structural", b: "II", key: "Beau2026a22",
+      id: "O18", lbl: "O18", s: "proved", b: "II", key: "Beau2026a22",
       url: BASE + "spectral/program/o18",
       tags: ["mass", "BI", "QM"],
       title: "O18 — Equivariant BI Parity",
       desc: "BI action parity and response covariance (even-order responses preserved, odd-order reversed; proved); fixed-probe indiscernibility refuted by an even countermodel. The fibre identification is a typed open classification problem (Problem 2.8); the Weil bridge c ↔ q−c is open."
     },
     {
-      id: "O19", lbl: "O19", s: "proved", b: "II", key: "Beau2026a23",
+      id: "O19", lbl: "O19", s: "open", b: "II", key: "Beau2026a23",
       url: BASE + "spectral/program/o19",
       tags: ["mass"],
       title: "O19 — Canonical Normalisation",
-      desc: "r(c,q) ∈ {1,2,3,4} does not affect δ_pair. Observable is pipeline-independent."
+      desc: "r(c,q) ∈ {1,2,3,4} does not affect δ_pair. The pipeline-independent observable is not established for the real pipeline, where O16's conjugate-block identity forces r(c,q) ≡ 1 exactly."
     },
     {
-      id: "O20", lbl: "O20", s: "structural", b: "II", key: "Beau2026a24",
+      id: "O20", lbl: "O20", s: "conditional", b: "II", key: "Beau2026a24",
       url: BASE + "spectral/program/o20",
       tags: ["mass"],
       title: "O20 — Persistence Criterion",
-      desc: "Dynamical selection of admissible modes via projective persistence."
+      desc: "Threshold-crossing algebra for projective persistence under two explicit hypotheses; no intrinsic threshold and no selected exponent window is obtained."
     },
     {
-      id: "O21", lbl: "O21", s: "structural", b: "II", key: "Beau2026a25",
+      id: "O21", lbl: "O21", s: "conditional", b: "II", key: "Beau2026a25",
       url: BASE + "spectral/program/o21",
       tags: ["mass"],
       title: "O21 — Shell Saturation",
-      desc: "Observable rank n₃^obs via Σ_c(n₃) = 3. The former δ_pair → β* continuation is a conditional cross-substrate prescription with no native Heisenberg carrier."
+      desc: "Observable rank n₃^obs via Σ_c(n₃) = 3, under a fixed normalisation it does not eliminate, since it scales under amplitude rescaling. The former δ_pair → β* continuation is a conditional cross-substrate prescription with no native Heisenberg carrier."
     },
     {
-      id: "O22", lbl: "O22", s: "proved", b: "II", key: "Beau2026a26",
+      id: "O22", lbl: "O22", s: "structural", b: "II", key: "Beau2026a26",
       url: BASE + "spectral/program/o22",
       tags: ["mass", "BI"],
       title: "O22 — Projection Locking",
-      desc: "Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell."
+      desc: "Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell within the stated model, on a sketch-level continuous decay law; this does not make that rank amplitude-invariant."
     },
     {
-      id: "O23", lbl: "O23", s: "structural", b: "II", key: "Beau2026a27",
+      id: "O23", lbl: "O23", s: "conditional", b: "II", key: "Beau2026a27",
       url: BASE + "spectral/program/o23",
       tags: ["mass", "QM"],
       title: "O23 — Conditional Adjoint Dimension",
       desc: "For a supplied irreducible C² carrier, the traceless neutral sector is su(2) ≅ Im H, dimension 3 (Thm 3.1); Q8's two-axis neutral generating set rules out generator-axis counting. Carrier selection and the Σ_c identification are open: Σ_c(n₃) = 3 is a supplied selection rule."
     },
     {
-      id: "O24", lbl: "O24", s: "proved", b: "II", key: "Beau2026a28",
+      id: "O24", lbl: "O24", s: "conditional", b: "II", key: "Beau2026a28",
       url: BASE + "spectral/program/o24",
       tags: ["mass"],
       title: "O24 — Observable Rank Rigidity",
       desc: "Verticality Lemma develops the c_BI → δ_pair segment under the stated fibre hypotheses (fibre identification open). It does not derive the Heisenberg capacity-to-rate continuation."
     },
     {
-      id: "O25", lbl: "O25", s: "structural", b: "II", key: "Beau2026a29",
+      id: "O25", lbl: "O25", s: "numerical", b: "II", key: "Beau2026a29",
       url: BASE + "spectral/program/o25",
       tags: ["mass"],
       title: "O25 — Numerical Campaign",
@@ -1029,14 +1038,14 @@
       desc: "Dictionary: Weil blocks ↔ rank-1 matrices in M₂(ℂ). Connects Heis₃ fibre to 2I ⊂ SU(2). Version 2.0: the Level I growth-exponent identification of σ_pair with a Hilbert–Schmidt trajectory norm is proved; Level II is a conjecture (n-independence of the proportionality open) and Level III is conditional on the admissible embedding Φ_{q,ρ}, falsifiable through r_eff on O25 data; no rate equation follows."
     },
     {
-      id: "O27", lbl: "O27", s: "structural", b: "II", key: "Beau2026a31",
+      id: "O27", lbl: "O27", s: "proved", b: "II", key: "Beau2026a31",
       url: BASE + "spectral/program/o27",
       tags: ["mass", "QM"],
       title: "O27 — Admissible Morphisms and the Open Vector Lift",
       desc: "Separates linear factorisation through the admissible quotient from equivariance. Under the supplied O23 carrier, admissible saturation and parity transport, the canonical action su(2)→End(V_ρ) has an equivariant intertwiner unique only up to a scalar. No non-zero su(2)-equivariant map 3_ad→2_fund exists; the vector lift required by O26 Hypothesis 4.4 remains open."
     },
     {
-      id: "O28", lbl: "O28", s: "structural", b: "II", key: "Beau2026a32",
+      id: "O28", lbl: "O28", s: "numerical", b: "II", key: "Beau2026a32",
       url: BASE + "spectral/program/o28",
       tags: ["mass", "QM"],
       title: "O28 — Window Calibration & r_eff",
@@ -1078,7 +1087,7 @@
       desc: "Version 2.0 withdraws the proposed individual-profile co-admissibility, q≡1 (mod 3) arithmetic criterion, metaplectic step, Δ(27) proposition, rank-eight test, SU(3) uniqueness and every gauge-group derivation. Counterexamples: SO(3)⊂SU(3) refutes uniqueness; the diagonal torus T² satisfies the stated constraints reducibly; {1,2,q−3} is admissible for every prime q≥7. Remaining scalar, arithmetic and discrete-group material is under re-audit. O31 supplies no positive gauge-group result."
     },
     {
-      id: "O32", lbl: "O32", s: "open", b: "II", key: "Beau2026a36",
+      id: "O32", lbl: "O32", s: "numerical", b: "II", key: "Beau2026a36",
       url: ZEN + "20145607",
       tags: ["SM", "emer"],
       title: "O32 — Colour-Triplet Numerical Measurements, Interpretation Open",
@@ -1092,7 +1101,7 @@
       desc: "Exact closed sumset for the O12 three-character Fourier filtration; cyclic-spacing porosity theorem; full stabiliser through A_K; orbit-divisibility sieve, uniform exact C₄ and C₆ families, and an additive rigidity theorem A_K={±1} outside a degenerate boundary regime, plus a third near-saturation C₄ family; the degenerate regime: infinite Gaussian-box C₄ family, all 75 exceptional sets through q=151 in three mechanisms, no C₈ at q=193, 241, 257; a fourth-moment argument proves exact stabiliser C₄ for every proper Gaussian box, direct or wrapped, and for every free four-point complement orbit, leaving completeness and the Eisenstein top autocorrelation level open; porous depths of a uniform block converge to an explicit point process with count law (3/20,7/24,9/40,5/24,1/8), mean 28/15, and piecewise affine intensity; internal Mackey–Hecke M₂(C) doublets; universal Harper split 1±q⁻¹ᐟ²; boundary mixing reduced to the character sum C_θ(K) by a Galois separation theorem, with its zeros completely classified into antipodal-pair, cube-triple, and double-pair mechanisms on at most four hole pairs; odd Weyl-symbol sector protected by parity closure. Mathematics-first paper; no Dirac-mass or Standard-Model identification."
     },
     {
-      id: "SpANote", lbl: "SpAdm-Note", s: "structural", b: "II", key: "Beau2026a1note",
+      id: "SpANote", lbl: "SpAdm-Note", s: "synthesis", b: "II", key: "Beau2026a1note",
       url: BASE + "spectral/program",
       tags: ["QM", "BI", "SM"],
       title: "Spectral Admissibility Sub-Programme (Presentation Note)",
@@ -1102,14 +1111,14 @@
         "O25 reports samples through q=601. O31 withdraws the pointwise and rank levels of [H-color] and every gauge-group interpretation; O32's averaged and effective levels stand as its own results."
     },
     {
-      id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
+      id: "PTO", lbl: "PTO", s: "numerical", b: "II", key: "Beau2026pto",
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
       title: "Projective Temporal Ordering",
-      desc: "I(n) = σ_pair(0)−σ_pair(n) is strictly non-decreasing: first clean numerical result on the notion of time. Confirmed for q∈{29,61,101,151}."
+      desc: "I(n) = σ_pair(0)−σ_pair(n) is a non-decreasing temporal proxy, confirmed for q∈{29,61,101,151,211}; the ordering is established numerically along the tested trajectories, not proved."
     },
     {
-      id: "FibreErase", lbl: "FibreErase", s: "structural", b: "II", key: "Beau2026fe",
+      id: "FibreErase", lbl: "FibreErase", s: "conditional", b: "II", key: "Beau2026fe",
       url: BASE + "fibre-erasure/",
       tags: ["emer", "time"],
       title: "Projective Information Loss and Fibre Erasure",
@@ -1134,14 +1143,14 @@
       desc: "Exact finite-group fact: the spin-1/2 and spin-3/2 representations of 2I induce the same Cayley-graph Laplacian eigenvalue (18). Does not derive phase coherence, a Casimir/isotropy normalisation, the Born rule, a Tsirelson-type bound, or an SU(2) fixed-point/sector-selection argument."
     },
     {
-      id: "Q3", lbl: "Q3", s: "structural", b: "III", key: "Beau2026q3",
+      id: "Q3", lbl: "Q3", s: "conditional", b: "III", key: "Beau2026q3",
       url: ZEN + "19979535",
       tags: ["QM"],
       title: "Q3 — Conditional Universal Singlet",
       desc: "Conditional theorem: given an explicit, undemonstrated hypothesis that the joint state is invariant under the diagonal 2I-action (not derived from admissibility or BI indiscernibility), Schur's lemma on Hom_2I(V_j*,V_j) uniquely identifies the state as the singlet |Ω_j⟩, with Casimir correlator E(â,b̂)=−j(j+1)/3·(â·b̂), for all j∈{½,1,3/2,2,5/2}. Does not derive the invariance hypothesis, phase coherence, or the Born rule."
     },
     {
-      id: "Q5a", lbl: "Q5a", s: "structural", b: "III", key: "Beau2026q5a",
+      id: "Q5a", lbl: "Q5a", s: "proved", b: "III", key: "Beau2026q5a",
       url: BASE + "emergent-geometry/q5/a",
       tags: ["spt", "QM"],
       title: "Q5a — Canonical Fourier Filtration (v3.2)",
@@ -1162,32 +1171,32 @@
         "[H-E1] and [C] are not closed by a finite-rank route (zero-form Mosco limit on the canonical filtration, Q5a v3.2)."
     },
     {
-      id: "Q5b", lbl: "Q5b", s: "structural", b: "III", key: "Beau2026q5b",
+      id: "Q5b", lbl: "Q5b", s: "conditional", b: "III", key: "Beau2026q5b",
       url: ZEN + "19686700",
       tags: ["spt", "time"],
       title: "Q5b — 4D Lorentzian Geometry",
       desc: "BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime. v2.1: supplied Heisenberg carrier; metric results conditional on the unestablished spatial limit hypothesis [H-L] (Q5a 3.2); Carnot geometry structural. Q9 proves only [H-F] ⇒ [H-lift], with the frozen hypothesis [H-F] unestablished."
     },
     {
-      id: "Q6a", lbl: "Q6a", s: "structural", b: "III", key: "Beau2026q6a",
+      id: "Q6a", lbl: "Q6a", s: "open", b: "III", key: "Beau2026q6a",
       url: ZEN + "19655294",
       tags: ["SM", "spt"],
       title: "Q6a — Gauge Structure",
       desc: "Gauge charges as projection-fibre invariants. Its former SU(3) and complete-group derivation relied on results withdrawn by O31 version 2.0; the colour factor and complete gauge group are open."
     },
     {
-      id: "Q6b", lbl: "Q6b", s: "structural", b: "III", key: "Beau2026q6b",
+      id: "Q6b", lbl: "Q6b", s: "conditional", b: "III", key: "Beau2026q6b",
       url: ZEN + "20257944",
       tags: ["spt"],
       title: "Q6b — Effective Spacetime",
-      desc: "Conditional on the unestablished spatial limit hypothesis [H-L], Q6b identifies g^μν = diag(−2,2,2,2), obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 proves [H-F] ⇒ [H-lift]; under the frozen, unestablished [H-F], the modulation-sector position-energy form contribution E_q^X(f_q) is O(q⁻¹) along recovery sequences. Supplied compact gauge data are independent inputs."
+      desc: "Conditional on the Q5a Mosco hypotheses ([H1], [H-w], [H-E1], Conjecture C) and on the unestablished spatial limit hypothesis [H-L], Q6b identifies g^μν = diag(−2,2,2,2), obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 proves [H-F] ⇒ [H-lift]; under the frozen, unestablished [H-F], the modulation-sector position-energy form contribution E_q^X(f_q) is O(q⁻¹) along recovery sequences. Supplied compact gauge data are independent inputs."
     },
     {
       id: "Q7", lbl: "Q7", s: "structural", b: "III", key: "Beau2026q7",
       tags: ["spt", "spec"],
       title: "Q7 — Dimensional Bridge",
       desc: "Bridge candidate between the supplied admissible dimension dim H_eff=3 (O23 selection rule, HEFF_DIM=3 in O25–O29) and three spatial dimensions (Q5b). " +
-        "Proves su(2)≇heis₃; identifies H_eff≅Sym²(V_ρ) (spin-1). " +
+        "Proves su(2)≇heis₃. Under the supplied identification H_eff≅Sym²(V_ρ), which O29 version 2.0 does not supply, the bridge reduces to isotropy; the typed bridge and its uniqueness are conditional on that identification. " +
         "Proves [F_c,L_Weil]=0, forcing k_X·k_Z=k_Y·k_Z=0 structurally. " +
         "The typed bridge and its claimed uniqueness remain under audit. " +
         "Q8 is scoped to frozen, unestablished [H-F]; any co-metric reading also requires [H-L]."
@@ -1201,7 +1210,7 @@
         "Any co-metric reading additionally requires the independent, unestablished [H-L]."
     },
     {
-      id: "Q9", lbl: "Q9", s: "proved", b: "III", key: "Beau2026q9",
+      id: "Q9", lbl: "Q9", s: "conditional", b: "III", key: "Beau2026q9",
       tags: ["spt"],
       title: "Q9 — Conditional [H-F] ⇒ [H-lift]",
       desc: "Under [H-F] and along recovery sequences, the modulation-sector position energy satisfies E_q^X(f_q) ≤ C/q → 0; this is a form-contribution bound, not decay of the modulation operator norm. " +
@@ -1210,7 +1219,7 @@
         "Under [H-F], coercivity gives A_H>0; no unconditional bridge conclusion follows."
     },
     {
-      id: "Q10", lbl: "Q10", s: "structural", b: "III", key: "Beau2026q10",
+      id: "Q10", lbl: "Q10", s: "conditional", b: "III", key: "Beau2026q10",
       tags: ["spt", "spec"],
       title: "Q10 — Asymptotic Isotropy A_H→2",
       desc: "Universality [U] ⇒ su(2)-isotropy ⇒ A_H→2 (Casimir). " +
@@ -1218,7 +1227,7 @@
         "Bridge conjecture resolved (isotropic case) under [U]+Q5a."
     },
     {
-      id: "U1", lbl: "U1", s: "proved", b: "III", key: "Beau2026u1",
+      id: "U1", lbl: "U1", s: "conditional", b: "III", key: "Beau2026u1",
       tags: ["spt", "spec"],
       title: "U1 — Spectral Universality [U] Proved",
       desc: "Weil-generator Lipschitz bound: |σ_c(n)−σ_{c′}(n)| ≤ 8π|c−c′|/q. " +
@@ -1227,11 +1236,11 @@
         "Closes [U] under Q5a hypotheses. No BI input for small-θ regime."
     },
     {
-      id: "W1", lbl: "W1", s: "proved", b: "III", key: "Beau2026w1",
+      id: "W1", lbl: "W1", s: "conditional", b: "III", key: "Beau2026w1",
       url: ZEN + "19886319",
       tags: ["spt", "emer"],
       title: "W1 — Hypothesis [H-w] Proved",
-      desc: "a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
+      desc: "a_q(s) → A > 0 uniformly in s, under [H1]. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
         "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
         "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
         "After W1, open former-Q5a hypotheses: [H1], [H-E1], [C] (not closed by Q5a-O2's finite-rank route), and [H2] — the last proved by the H2 paper."
@@ -1260,7 +1269,7 @@
         "Under [H-L], the effective co-metric reads g^{μν} = 2η^{μν}, with no free parameter."
     },
     {
-      id: "EGNote", lbl: "EG-Note", s: "structural", b: "III", key: "Beau2026egnote",
+      id: "EGNote", lbl: "EG-Note", s: "synthesis", b: "III", key: "Beau2026egnote",
       url: BASE + "emergent-geometry",
       tags: ["spt", "emer"],
       title: "Emergent Geometry Sub-Programme (Presentation Note)",
@@ -1270,7 +1279,7 @@
         "The former Q5a Mosco framework is withdrawn; its historical hypotheses do not replace the current open [H-L]. The finite-q equivariant bridge also remains open."
     },
     {
-      id: "GSNote", lbl: "GS-Note", s: "structural", b: "III", key: "Beau2026gsnote",
+      id: "GSNote", lbl: "GS-Note", s: "synthesis", b: "III", key: "Beau2026gsnote",
       url: BASE + "gauge-structure",
       tags: ["SM", "QM"],
       title: "The Gauge Structure Sub-Programme",
@@ -1280,7 +1289,7 @@
         "Gauge dynamics for a supplied compact group belongs to the gauge–gravity stratification sub-programme."
     },
     {
-      id: "Q12", lbl: "Q12", s: "structural", b: "III", key: "Beau2026q12",
+      id: "Q12", lbl: "Q12", s: "proved", b: "III", key: "Beau2026q12",
       url: ZEN + "20189137",
       tags: ["grav", "SM"],
       title: "Q12 — Yang–Mills from Projective Spectral Entropy (a₄)",
@@ -1294,7 +1303,7 @@
         "The compact gauge group G_Π is a supplied input; O31 version 2.0 no longer identifies it."
     },
     {
-      id: "Q13", lbl: "Q13", s: "structural", b: "III", key: "Beau2026q13",
+      id: "Q13", lbl: "Q13", s: "conditional", b: "III", key: "Beau2026q13",
       url: ZEN + "20209859",
       tags: ["grav", "SM"],
       title: "Q13 — Gauge–Gravity Spectral Synthesis",
@@ -1316,11 +1325,11 @@
         "The three-generation factor ℂ³_gen is conditional on a supplied rank-three carrier."
     },
     {
-      id: "CHO", lbl: "CHO", s: "structural", b: "III", key: "Beau2026cho",
+      id: "CHO", lbl: "CHO", s: "conditional", b: "III", key: "Beau2026cho",
       url: ZEN + "20735907",
       tags: ["SM"],
       title: "CHO — Chiral Orientation of the Directed Heisenberg Frontier",
-      desc: "Resolves the chiral weight σ_L left deferred by the oriented-frontier diagnostic. " +
+      desc: "Resolves, within the inherited Heisenberg central-phase lift, the chiral weight σ_L left deferred by the oriented-frontier diagnostic. " +
         "σ_L is not a function of the cascade generator T(e) (edge inversion and the residual reflection φ both " +
         "send T→−T, forcing equal arrow/φ parity), but the Weyl representation type 2 vs 2̄: group inversion " +
         "preserves it, complex conjugation exchanges it. In the inherited Heisenberg central-phase lift the edge " +
@@ -1359,7 +1368,7 @@
       desc: "Defines the Lorentzian BI saturation functional along the J_Π-odd generation modulus. Antisymmetry forces a chiral two-form; the electric Lorentzian genus selects u≠0. Version 2.1: the saturation contact is the unique chart-independent A4 lock, s*=β/|E_P| in the affine gauge; the contact factorisation is conditional on a localisation hypothesis; |u| remains dictionary-bound."
     },
     {
-      id: "EBJ", lbl: "EBJ", s: "structural", b: "III", key: "Beau2026ebj",
+      id: "EBJ", lbl: "EBJ", s: "proved", b: "III", key: "Beau2026ebj",
       url: BASE + "fermionic-matter/eliminated-block-jet",
       tags: ["SM", "mass", "grav"],
       title: "Constrained Jet of the Lorentzian Eliminated Block and the Chiral Defect-Rate Identity",
@@ -1380,14 +1389,14 @@
       desc: "The residue fixes H_Π=Y_Π†Y_Π and its three squared levels, not Y_Π. Polar decomposition leaves a rephasing class [U_Π] with mixing angles and a CP phase; the derived real cascade gives [U_Π]=[I], hence no mixing at this stratum."
     },
     {
-      id: "KUD", lbl: "KUD", s: "structural", b: "III", key: "Beau2026kud",
+      id: "KUD", lbl: "KUD", s: "proved", b: "III", key: "Beau2026kud",
       url: BASE + "fermionic-matter/koide-unit-dispersion",
       tags: ["SM", "mass"],
       title: "Charged-Lepton Koide Relation as a Unit-Dispersion Constraint",
       desc: "Rewrites Koide exactly as CV(√m)=1 and separates this dispersion target from hierarchy placement. The derived cascade ladder under-disperses, CV≤1/√2, so it cannot by itself reach Koide; no mass formula is claimed."
     },
     {
-      id: "TPC", lbl: "TPC", s: "structural", b: "III", key: "Beau2026tpc",
+      id: "TPC", lbl: "TPC", s: "open", b: "III", key: "Beau2026tpc",
       url: BASE + "fermionic-matter/ternary-phase-carrier",
       tags: ["SM", "mass"],
       title: "Ternary Phase Carrier",
@@ -1415,14 +1424,14 @@
       desc: "Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving construction; the same rigidity closes the residual chiral-lift obstruction. R=3/2 is forced only after order-five selection."
     },
     {
-      id: "SRN", lbl: "SRN", s: "structural", b: "III", key: "Beau2026srn",
+      id: "SRN", lbl: "SRN", s: "proved", b: "III", key: "Beau2026srn",
       url: BASE + "fermionic-matter/spin-rotation-note",
       tags: ["SM", "QM", "spt"],
       title: "Spin as a Transformation Class of Rotating Wave Modes",
       desc: "Clarifies that spin is fixed by the transformation law under spatial rotations, not by rotation alone. The admissible carrier fixes complex univalence but not the spatial real form, rotation action, or normalisation; it also corrects the Q7 weight-state interpretation."
     },
     {
-      id: "FMNote", lbl: "FM-Note", s: "structural", b: "III", key: "Beau2026fmnote",
+      id: "FMNote", lbl: "FM-Note", s: "synthesis", b: "III", key: "Beau2026fmnote",
       url: BASE + "fermionic-matter",
       tags: ["SM", "mass", "QM", "grav"],
       title: "Fermionic Matter Sub-Programme (Presentation Note 6)",
@@ -1435,56 +1444,56 @@
       desc: "Operational metric distances from graph Laplacians, without background manifold."
     },
     {
-      id: "Grav", lbl: "Gravity", s: "open", b: "III", key: "Beau2026h",
+      id: "Grav", lbl: "Gravity", s: "conditional", b: "III", key: "Beau2026h",
       url: BASE + "gravity",
       tags: ["grav", "spt"],
       title: "Gravity — Conditions for an IR Einstein Sector",
       desc: "Separates the proper-time cutoff sector (a₀Λ⁴, a₂Λ²) from the zeta sector (a₄ = ζ_A(0)). One minimal scalar gives Δc_EH = −Λ²/[12(4π)²], which is negative: the finite renormalised coefficient, its sign and G_N > 0 are matching data, not predicted by the determinant. BI determinantal UV completion under coherence-extensivity."
     },
     {
-      id: "Thm", lbl: "Thermo", s: "structural", b: "III", key: "Beau2026Thermodynamics",
+      id: "Thm", lbl: "Thermo", s: "conditional", b: "III", key: "Beau2026Thermodynamics",
       url: BASE + "thermodynamics",
       tags: ["grav", "spt", "time"],
       title: "Thermodynamics — Conditional Einstein–Matter Coupling",
       desc: "A conditional variational core, and no thermodynamics. Given supplied coefficients, stationarity of Γ_Π = S_Π^ren − W_Π yields G_μν + Λ_ren g_μν = 8πG_N T^(Π)_μν. The heat-kernel quantity u ~ L⁻² is an eigenvalue scale, not a temperature: no local first law follows from the determinant alone. The Carathéodory–Jauch–Roberts integrability bridge is open."
     },
     {
-      id: "Lor", lbl: "Lorentz", s: "open", b: "III", key: "Beau2026i",
+      id: "Lor", lbl: "Lorentz", s: "proved", b: "III", key: "Beau2026i",
       url: BASE + "lorentz",
       tags: ["grav", "spt"],
       title: "Lorentz — No Quartic Graviton Dispersion",
       desc: "A negative result about a posited kernel. The local four-derivative TT kernel O_TT = □(c_EH + β□) is posited, not derived: a Lorentzian counterpart of S_Π needs a closed-time-path in-in construction, which is open. For c_EH ≠ 0 the kernel is the direct sum ker□ ⊕ ker(c_EH+β□); the massless branch obeys ω² = |k|² exactly, with no correction at any order. Hence A_4 = 0, no A_4 ↔ ℓ_χ mapping, and no interferometric bound on ℓ_χ. The helicity-2 ghost pole sits at a matching-datum mass; the spin-2 multiplet and the R² scalar are not settled."
     },
     {
-      id: "SGNote", lbl: "SG-Note", s: "structural", b: "III", key: "Beau2026sgnote",
+      id: "SGNote", lbl: "SG-Note", s: "synthesis", b: "III", key: "Beau2026sgnote",
       url: BASE + "spectral-gravity",
       tags: ["grav", "spt", "BI"],
       title: "Spectral Gravity Sub-Programme (Presentation Note 4)",
       desc: "Synthesis of Gravity, Thermodynamics, Lorentz, and Born–Infeld: the conditions under which the effective metric supports an Einstein sector, its variational restatement, the Lorentzian truncation, and the determinantal completion. Consolidates constituent results and adds no new theorem."
     },
     {
-      id: "LorCap", lbl: "LorCap", s: "structural", b: "III", key: "Beau2026n",
+      id: "LorCap", lbl: "LorCap", s: "conditional", b: "III", key: "Beau2026n",
       url: BASE + "lc/lorentz-capacity",
       tags: ["grav", "spt", "O7"],
       title: "Lorentz Factor from Projective Capacity",
-      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj."
+      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj. The budget itself is a hypothesis of the paper, so the Lorentz-factor limit is conditional on it."
     },
     {
-      id: "TempProj", lbl: "TempProj", s: "proved", b: "III", key: "Beau2026tp",
+      id: "TempProj", lbl: "TempProj", s: "conditional", b: "III", key: "Beau2026tp",
       url: BASE + "lc/temporal-projection",
       tags: ["grav", "spt", "O7"],
       title: "Temporal Residual Map",
-      desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²). Closes LorCap open problem."
+      desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²), conditional on [U] and the Born–Infeld lift. Closes the LorCap open construction under those inputs."
     },
     {
-      id: "LCII", lbl: "LCII", s: "structural", b: "III", key: "Beau2026lco2",
+      id: "LCII", lbl: "LCII", s: "conditional", b: "III", key: "Beau2026lco2",
       url: BASE + "lc/lc-o2",
       tags: ["grav", "spt"],
       title: "Fibrewise Capacity Lapse and Gravitational Time Dilation",
-      desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x). Gravitational time dilation dτ/dn|_x = R(x)/γ."
+      desc: "Extends TempProj to non-homogeneous regimes. Fibrewise capacity lapse R(x) with gravitational time dilation dτ/dn|_x = R(x)/γ, conditional on the imported occupancy–lapse identification."
     },
     {
-      id: "LCIIo1", lbl: "LCIIo1", s: "open", b: "III", key: "Beau2026lco2o1",
+      id: "LCIIo1", lbl: "LCIIo1", s: "proved", b: "III", key: "Beau2026lco2o1",
       url: BASE + "lc/lc-o2-o1",
       tags: ["grav", "spt"],
       title: "Failure of the Scalar Free-Fraction Closure of the Local Capacity-Metric Bridge",
@@ -1505,7 +1514,7 @@
       desc: "Closes LC-O3: with R := (q-1)/2 and n = R+m, the parabolic Carnot formula deviates from the exact torus capacity by Δ_q(n) = 4m²/q². The quadratic identity B_n² + (F_n^τ)² = 1 is exact; Carnot identification holds for n ≤ R."
     },
     {
-      id: "LCsyn", lbl: "LC", s: "proved", b: "III", key: "Beau2026lcsyn",
+      id: "LCsyn", lbl: "LC", s: "synthesis", b: "III", key: "Beau2026lcsyn",
       url: BASE + "lc",
       tags: ["grav", "spt", "kin"],
       title: "Lorentz-Capacity Sub-Programme (Synthesis)",
@@ -1516,7 +1525,7 @@
       url: BASE + "gauge-structure/topological-invariants",
       tags: ["SM", "BI"],
       title: "Topological Invariants",
-      desc: "Charge quantisation (π₁≅ℤ), no monopoles, chirality from Hopf fibration S¹↪S³→S². π₂(C_eff)=0: open."
+      desc: "Charge quantisation (π₁≅ℤ) and no monopoles on the canonical model; projective chirality from the Hopf fibration S¹↪S³→S², established at the framework level and qualitatively. π₂(C_eff)=0 and the extension to the full effective configuration space: open."
     },
     {
       id: "SMcm", lbl: "SMcm", s: "structural", b: "III", key: "Beau2026e",
@@ -1547,11 +1556,11 @@
       desc: "Fine-structure constant α as projective invariant. Lamb shift and Schwinger g−2 in pre-geometric framework."
     },
     {
-      id: "Cosm", lbl: "Cosmol", s: "structural", b: "III", key: "Beau2026d",
+      id: "Cosm", lbl: "Cosmol", s: "heuristic", b: "III", key: "Beau2026d",
       url: BASE + "cosmology",
       tags: ["spt", "SM"],
       title: "Cosmology — Rotation Curves & Hubble",
-      desc: "Flat rotation curves and Hubble tension from a common effective mechanism. No dark matter or modified gravity."
+      desc: "Flat rotation curves and Hubble tension from a common effective mechanism, phenomenological and not derived here; the expansion sector is conditional on the rank–time dictionary hypothesis. No dark matter or modified gravity."
     },
     {
       id: "TrajBr", lbl: "TrajBr", s: "proved", b: "III", key: "Beau2026tb",
@@ -1568,7 +1577,7 @@
       desc: "Under graded hypotheses, identifies the amplitude-level non-injective projection with conditional expectation onto the distinguishable-record algebra. Total variance gives strict ensemble-power suppression and the parameter-free ceiling (N−1)/N."
     },
     {
-      id: "LowLCap", lbl: "LowLCap", s: "structural", b: "III", key: "Beau2026dhc",
+      id: "LowLCap", lbl: "LowLCap", s: "numerical", b: "III", key: "Beau2026dhc",
       url: BASE + "cosmology/low-l-capacity",
       tags: ["grav", "time", "emer"],
       title: "Low-Multipole Suppression from Distinguishable-History Capacity",
@@ -1593,7 +1602,7 @@
         "Regime derived; the value (Born–Infeld softening) is numerically supported with the asymptotic exponent open."
     },
     {
-      id: "QSNote", lbl: "QS-Note", s: "structural", b: "III", key: "Beau2026qsnote",
+      id: "QSNote", lbl: "QS-Note", s: "synthesis", b: "III", key: "Beau2026qsnote",
       url: BASE + "quantum-structure",
       tags: ["QM"],
       title: "Quantum Structure Sub-Programme (Presentation Note 7)",
@@ -1604,7 +1613,7 @@
         "Open: the Born rule; phase coherence beyond Q1's narrow rigidity statement; a derivation (rather than a supplied hypothesis) of Q3's diagonal-invariance premise."
     },
     {
-      id: "GGSNote", lbl: "GGS-Note", s: "structural", b: "III", key: "Beau2026ggsnote",
+      id: "GGSNote", lbl: "GGS-Note", s: "synthesis", b: "III", key: "Beau2026ggsnote",
       url: BASE + "gauge-gravity-stratification",
       tags: ["grav", "SM"],
       title: "Gauge–Gravity Stratification Sub-Programme (Presentation Note 8)",
@@ -1615,7 +1624,7 @@
         "GGS-Note 2.0 records fixed-metric isolation rather than full horizontal–vertical decoupling; its theorem-level calculations use supplied geometric data, while their reading on the Cosmochrony emergent base is conditional on [H-L]. It treats a_6 only as a representative spanning list of dimension-six invariants and asserts neither a non-linear completion nor a numerical coupling hierarchy. The proper-time scheme dependence and Euclidean-signature limitation are explicit."
     },
     {
-      id: "ENTNote", lbl: "ENT-Note", s: "structural", b: "III", key: "Beau2026entnote",
+      id: "ENTNote", lbl: "ENT-Note", s: "synthesis", b: "III", key: "Beau2026entnote",
       url: BASE + "entanglement",
       tags: ["QM", "emer"],
       title: "Entanglement Sub-Programme (Presentation Note)",
@@ -1638,7 +1647,7 @@
         "Open: literal Schmidt-partner pairing for independently sampled canonical O25 blocks (equal rank by O17 counting; literal pairing requires canonical block-parameter identification)."
     },
     {
-      id: "ENTe2", lbl: "ENT-E2", s: "structural", b: "III", key: "Beau2026ent2",
+      id: "ENTe2", lbl: "ENT-E2", s: "conditional", b: "III", key: "Beau2026ent2",
       url: BASE + "entanglement/e2",
       tags: ["QM", "emer"],
       title: "Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair",
@@ -2037,7 +2046,7 @@
     papers.forEach(p => {
       const pos = L[p.id]
       if (!pos) return
-      const c = SC[p.s] || SC.structural
+      const c = SC[p.s] || (console.warn("unknown status", p.id, p.s), SC.structural)
       const g2 = document.createElementNS(ns, "g")
       g2.setAttribute("class", "node")
       g2.setAttribute("data-id", p.id)
@@ -2069,7 +2078,7 @@
     /* hide legend items for statuses absent from the data */
     (function pruneLegend() {
       const usedStatuses = new Set(papers.map(p => p.s))
-      const statusToLi = { proved: "li-proved", structural: "li-struct", heuristic: "li-heur", open: "li-open", numerical: "li-numerical", conditional: "li-conditional" }
+      const statusToLi = { proved: "li-proved", structural: "li-struct", heuristic: "li-heur", open: "li-open", numerical: "li-numerical", conditional: "li-conditional", synthesis: "li-synthesis" }
       Object.entries(statusToLi).forEach(([status, liId]) => {
         const el = document.getElementById(liId)
         if (el && !usedStatuses.has(status)) el.style.display = "none"
@@ -2136,7 +2145,7 @@
     fitNodes([...rel].filter(id => L[id]))
 
     /* sidebar */
-    const c = SC[p.s] || SC.structural
+    const c = SC[p.s] || (console.warn("unknown status", p.id, p.s), SC.structural)
     const tagsHtml = (p.tags || []).map(tid => {
       const t = TOPICS.find(x => x.id === tid)
       return t ? `<span class="ptag" style="color:${t.color};border-color:${t.color}60;background:color-mix(in srgb,${t.color} 10%,transparent)">${t.label}</span>` : ""
@@ -2205,7 +2214,7 @@
     hideSidebar()
   }
 
-  const STATUS_LI = { proved: "li-proved", structural: "li-struct", heuristic: "li-heur", open: "li-open", numerical: "li-numerical", conditional: "li-conditional" }
+  const STATUS_LI = { proved: "li-proved", structural: "li-struct", heuristic: "li-heur", open: "li-open", numerical: "li-numerical", conditional: "li-conditional", synthesis: "li-synthesis" }
   let activeStatus = null
 
   function filterStatus(s) {

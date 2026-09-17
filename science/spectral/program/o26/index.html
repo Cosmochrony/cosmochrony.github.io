@@ -9,8 +9,7 @@
   </title>
   <meta name="description"
     content="O26 establishes a representation-theoretic interpretation of the pair observable
-σ_pair via Hilbert–Schmidt norms, introduces a three-level identification hierarchy,
-and proposes falsifiable tests linking spectral admissibility to SU(2) sectors."/>
+σ_pair via Hilbert–Schmidt norms, separates three identification levels and proves a symmetric-square rank bound under the embedding hypothesis."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o26/"/>
   <link rel="alternate" hreflang="fr"
@@ -20,7 +19,7 @@ and proposes falsifiable tests linking spectral admissibility to SU(2) sectors."
     content="Quadratic Completion of Admissible Spectral Pairs via Binary-Icosahedral Representation"/>
   <meta property="og:description"
     content="O26 relates σ_pair to a quadratic form in a representation space, connecting
-Weil blocks to SU(2)-type sectors and introducing falsifiable structural tests; the canonical
+Weil blocks to conditional SU(2)-type sectors and distinguishing diagnostics from implementation checks; the canonical
 identification remains conditional."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
@@ -66,8 +65,8 @@ paint-order: stroke; stroke: currentColor;"
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="2.0">
-    <strong>Current Zenodo release:</strong> version 2.0 (2026-09-03).
+  <section class="note" role="note" data-release-version="2.1">
+    <strong>Current Zenodo release:</strong> version 2.1 (2026-09-17).
     <span lang="en">Official title: <i>Quadratic Completion of Admissible Spectral Pairs via Binary-Icosahedral Representation</i>.</span>
   </section>
   <section class="grid">
@@ -96,20 +95,19 @@ paint-order: stroke; stroke: currentColor;"
       </p>
       <ul>
         <li>Level I (proved): growth equivalence</li>
-        <li>Level II: quotient identification modulo normalization</li>
+        <li>Level II (conjectural): quotient identification, with depth-independent normalization open</li>
         <li>Level III (conditional): canonical identification in a binary-icosahedral sector</li>
       </ul>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarizes the structural contribution
         of O26: the representation-theoretic dictionary, the three-level identification
-        hierarchy, and the falsifiability framework linking spectral admissibility to
-        SU(2)-type sectors.
+        hierarchy, and the scope of diagnostics on supplied or conjectured carriers.
       </div>
 
       <div class="note" role="note">
         <strong>Status of the embedding hypothesis.</strong> Hypothesis 4.4, the canonical
         admissible embedding of the pair vectors into \(V_\rho\), remains open. O27 supplies the
-        canonical representation action under the carrier that O23 provides conditionally; it does
+        conditional adjoint-sector reading under O23's supplied carrier and O27's admissible-saturation hypothesis; it does
         not furnish the required vector lift. An equivariant adjoint-factorising realisation is
         excluded, since \(\mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3},\mathbf{2}) = 0\); a
         quotient-factorising linear lift that is not equivariant is not excluded. The final arrow of
@@ -128,7 +126,7 @@ paint-order: stroke; stroke: currentColor;"
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
             Representation theory, Hilbert–Schmidt norm, SU(2) sectors,
-            pair observable structure, falsifiability
+            pair observable structure, conditional rank bound
           </div></div>
         <div class="kv"><div class="k">Core object</div>
           <div class="v">
@@ -156,12 +154,21 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>Admissible SU(2) sector:</strong>
-        identification of the candidate sector along the chain
+        conditional reading of the candidate sector along the chain
         \(Q_8 \subset 2I \subset SU(2)\).
       </li>
       <li>
-        <strong>Falsifiability framework:</strong>
-        five concrete tests, including effective dimension and universality across pairs.
+        <strong>Diagnostic scope:</strong>
+        Tests 1 and 2 are implementation checks; Test 1 holds by construction for arbitrary vectors.
+        Test 4 on existing data measures a covariance in \(\mathrm{End}(H_{\mathrm{eff}})\),
+        not in \(\mathrm{End}(V_\rho)\). The embedded decision table requires the open embedding;
+        existing O28/O29 measurements occupy no row of that table.
+      </li>
+      <li>
+        <strong>Symmetric-square bound (Proposition 4.7):</strong>
+        under Hypothesis 4.4(a), with conjugation in a fixed basis, the Level III products are
+        \(uu^{\mathsf T}\). Their span has dimension at most \(d(d+1)/2\), hence at most 3 for
+        \(d=2\). The rank-four target is excluded under this contract; other embeddings remain open.
       </li>
     </ul>
   </section>
@@ -208,7 +215,10 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>Effective dimension:</strong>
-        measure trajectory dimension in \(\mathrm{End}(V_\rho)\).
+        construct the missing embedding before measuring its covariance in \(\mathrm{End}(V_\rho)\).
+        Existing ranks are measured in \(\mathrm{End}(H_{\mathrm{eff}})\): three is modal,
+        with seed-sensitive exceptions of 4–9 at \(q=101\) and 5 at \(q=211\).
+        They do not identify \(V_\rho\); \(d_\rho=2\) is a minimality selection.
       </li>
       <li>
         <strong>Universality:</strong>

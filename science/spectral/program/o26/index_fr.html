@@ -9,8 +9,7 @@
   </title>
   <meta name="description"
     content="O26 établit une interprétation représentationnelle de l'observable de paire
-σ_pair, introduit une hiérarchie d’identification en trois niveaux et propose
-des tests falsifiables reliant l’admissibilité spectrale aux secteurs SU(2)."/>
+σ_pair, distingue trois niveaux d’identification et prouve une borne de rang du carré symétrique sous l’hypothèse de plongement."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o26/"/>
   <link rel="alternate" hreflang="fr"
@@ -20,7 +19,7 @@ des tests falsifiables reliant l’admissibilité spectrale aux secteurs SU(2)."
     content="Complétion quadratique des paires spectrales admissibles via la représentation binaire icosaédrique"/>
   <meta property="og:description"
     content="O26 rattache σ_pair à une forme quadratique dans un espace de représentation et
-introduit un cadre falsifiable entre blocs de Weil et secteurs SU(2) ; l’identification canonique reste conditionnelle."/>
+sépare diagnostics et contrôles d’implémentation entre blocs de Weil et secteurs SU(2) conditionnels ; l’identification canonique reste conditionnelle."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o26/index_fr.html"/>
@@ -66,8 +65,8 @@ paint-order: stroke; stroke: currentColor;"
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="2.0">
-    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-03).
+  <section class="note" role="note" data-release-version="2.1">
+    <strong>Publication Zenodo actuelle :</strong> version 2.1 (2026-09-17).
     <span lang="en">Titre officiel : <i>Quadratic Completion of Admissible Spectral Pairs via Binary-Icosahedral Representation</i>.</span>
   </section>
   <section class="grid">
@@ -90,19 +89,19 @@ paint-order: stroke; stroke: currentColor;"
       </p>
       <ul>
         <li>Niveau I (prouvé) : équivalence de croissance</li>
-        <li>Niveau II : identification quotient</li>
+        <li>Niveau II (conjectural) : identification quotient, normalisation indépendante de la profondeur ouverte</li>
         <li>Niveau III : identification canonique (conditionnelle)</li>
       </ul>
       <div class="note" role="note">
         <strong>Portée.</strong> Interprétation représentationnelle, hiérarchie d’identification
-        et cadre de falsifiabilité reliant admissibilité et SU(2).
+        et portée des diagnostics sur des porteurs fournis ou conjecturés.
       </div>
 
       <div class="note" role="note">
         <strong>Statut de l’hypothèse de plongement.</strong> L’hypothèse 4.4, le plongement
         admissible canonique des vecteurs de paire dans \(V_\rho\), reste ouverte. O27 fournit
-        l’action canonique de représentation une fois fourni le porteur qu’O23 ne donne que
-        conditionnellement ; il ne fournit pas le relèvement vectoriel requis. Une réalisation
+        une lecture conditionnelle du secteur adjoint sous le porteur fourni d’O23 et l’hypothèse
+        de saturation admissible d’O27 ; il ne fournit pas le relèvement vectoriel requis. Une réalisation
         équivariante se factorisant par la représentation adjointe est exclue, puisque
         \(\mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3},\mathbf{2}) = 0\) ; un
         relèvement linéaire non équivariant se factorisant par le quotient ne l’est pas. La dernière
@@ -132,8 +131,15 @@ paint-order: stroke; stroke: currentColor;"
       <li>Dictionnaire représentationnel explicite</li>
       <li>Identification via norme de Hilbert–Schmidt</li>
       <li>Hiérarchie en trois niveaux</li>
-      <li>Sélection d’un secteur SU(2) admissible</li>
-      <li>Tests falsifiables concrets</li>
+      <li>Lecture conditionnelle d’un secteur SU(2) admissible</li>
+      <li><strong>Portée des diagnostics :</strong> les Tests 1 et 2 sont des contrôles d’implémentation ;
+        Test 1 vaut par construction pour des vecteurs quelconques. Test 4 sur les données existantes
+        mesure une covariance dans \(\mathrm{End}(H_{\mathrm{eff}})\), pas dans \(\mathrm{End}(V_\rho)\).
+        Le tableau de décision plongé exige le plongement ouvert ; les mesures O28/O29 n’en occupent aucune ligne.</li>
+      <li><strong>Borne du carré symétrique (proposition 4.7) :</strong> sous l’hypothèse 4.4(a),
+        avec conjugaison dans une base fixe, les produits du niveau III valent \(uu^{\mathsf T}\).
+        Leur espace engendré a une dimension au plus \(d(d+1)/2\), donc 3 pour \(d=2\).
+        La cible de rang 4 est exclue sous ce contrat ; les autres plongements restent ouverts.</li>
     </ul>
   </section>
   <section class="card">
@@ -146,6 +152,20 @@ paint-order: stroke; stroke: currentColor;"
       O26 suggère que $\beta^*$ possède une interprétation intrinsèque
       en théorie des représentations.
     </p>
+  </section>
+  <section class="card">
+    <h2>Résultat actuel et directions ouvertes</h2>
+    <ul>
+      <li><strong>Validation du niveau III :</strong> construire ou tester le plongement admissible
+        \(\Phi_{q,\rho}\), qui reste ouvert.</li>
+      <li><strong>Dimension effective :</strong> construire le plongement avant de mesurer sa covariance
+        dans \(\mathrm{End}(V_\rho)\). Les rangs existants sont mesurés dans
+        \(\mathrm{End}(H_{\mathrm{eff}})\) : trois est modal, avec des exceptions sensibles à la graine
+        de 4 à 9 à \(q=101\) et de 5 à \(q=211\). Ces rangs n’identifient pas \(V_\rho\) ;
+        \(d_\rho=2\) est une sélection par minimalité.</li>
+      <li><strong>Universalité :</strong> vérifier la cohérence entre nombres premiers et paires.</li>
+      <li><strong>Lien analytique :</strong> dériver \(\beta^*\) à partir de la structure des représentations.</li>
+    </ul>
   </section>
   <section class="card">
     <h2>Référence</h2>

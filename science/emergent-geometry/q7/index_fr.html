@@ -5,28 +5,29 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Trois directions admissibles et trois dimensions spatiales : Un candidat de pont structurel | Cosmochrony
+    Vers trois directions spatiales depuis un porteur de spin un fourni | Cosmochrony
   </title>
   <meta name="description"
-    content="Q7 formule et contraint l’identification possible entre les trois directions admissibles
-    de H_eff ≃ C^3 et les trois directions spatiales de la géométrie émergente, en réduisant
-    le problème à un unique critère spectral."/>
+    content="Q7 énonce ce qu’exigerait un pont équivariant entre les trois directions
+    admissibles et les trois directions spatiales, démontre les exigences qui découlent de la
+    théorie des représentations sur un porteur fourni, et laisse l’identification ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q7/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Three Admissible Directions and Three Spatial Dimensions:
-    A Structural Bridge Candidate"/>
+    content="Vers trois directions spatiales depuis un porteur de spin un fourni :
+    exigences pour un pont équivariant"/>
   <meta property="og:description"
-    content="Q7 shows that the identification between the admissible 3 and the spatial 3 is
-    uniquely constrained and reduces to a single computable spectral condition."/>
+    content="Q7 donne les exigences auxquelles un pont équivariant devrait satisfaire, sur un
+    porteur fourni, et montre que les nombres lus jusqu’ici comme des coefficients de symbole
+    sont des quotients de Rayleigh d’ondes planes."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q7/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
 
-    redirectIfNot("en", "/science/emergent-geometry/q7/index")
+    redirectIfNot("fr", "/science/emergent-geometry/q7/index_fr")
   </script>
   <link rel="stylesheet" href="/styles.css"/>
 </head>
@@ -47,17 +48,19 @@
       </a>
       <div>
         <h1>
-          Trois directions admissibles et trois dimensions spatiales : Un candidat de pont structurel
+          Vers trois directions spatiales depuis un porteur de spin un fourni : exigences pour un
+          pont équivariant
         </h1>
         <p class="subtitle">
-          Q7 étudie si les trois directions admissibles issues de la série O coïncident avec les trois directions
-          spatiales de la géométrie émergente de Q5b, et montre que le problème se réduit à une unique condition
-          spectrale.
+          Q7 demande si les trois directions admissibles de la série O coïncident avec les trois directions
+          spatiales de la géométrie émergente de Q5b. L’article énonce ce qu’exigerait une identification,
+          démontre les exigences qui découlent de la théorie des représentations sur un porteur fourni, et
+          laisse l’identification elle-même ouverte.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19802123">Lire le preprint</a> <a class="btn subtle"
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19802123">Fiche Zenodo</a> <a class="btn subtle"
       href="/science/spectral/program/">Retour au programme d’admissibilité spectrale</a>
     </div>
   </div>
@@ -67,33 +70,39 @@
 
   <section class="grid">
     <div class="card">
-      <h2>Vue d’ensemble</h2>
+      <h2>Présentation</h2>
       <p>
-        Q7 traite une question structurelle centrale du programme Cosmochrony : la coïncidence entre deux structures
-        tridimensionnelles obtenues indépendamment.
+        Q7 traite une question structurelle du programme Cosmochrony : la coïncidence entre deux
+        structures tridimensionnelles obtenues indépendamment.
       </p>
       <p>
-        D’une part, Q5b dérive une géométrie lorentzienne à quatre dimensions, dont trois directions spatiales, à partir
-        de la structure de Carnot de \[ \mathrm{Heis}_3(\mathbb{R}). \]
+        D’un côté, Q5b dérive une géométrie lorentzienne à trois directions spatiales depuis la structure de
+        Carnot de \[ \mathrm{Heis}_3(\mathbb{R}), \] sous ses hypothèses, dont celle, non établie, d’existence
+        de l’opérateur limite spatial ; à l’ordre du symbole principal, la case centrale de sa co-métrique
+        est dégénérée.
       </p>
       <p>
-        D’autre part, O23–O29 donnent à l’espace de projection admissible la structure \[ H_{\mathrm{eff}} \simeq
-        \mathbb{C}^3, \] correspondant à trois directions admissibles stables — conditionnellement à un
-        porteur spinoriel fourni : le théorème de dimension adjointe d'O23 suppose que le secteur neutre
-        est porté par une représentation unitaire irréductible de dimension deux, une entrée que le cadre
-        ne dérive pas encore.
+        De l’autre, O28 travaille avec un espace de projection admissible \[ H_{\mathrm{eff}} = \mathbb{C}^3, \]
+        fourni comme paramètre de son protocole, dont la covariance par paire est de rang trois — une valeur
+        à données finies, qu’O28 se refuse lui-même à qualifier d’invariant. Le théorème de dimension adjointe
+        d’O23 donne alors trois directions indépendantes, conditionnellement à un porteur spinoriel fourni :
+        il suppose que le secteur neutre est porté par une représentation unitaire irréductible de dimension
+        deux, entrée que le cadre ne dérive pas. La valeur \( d_\rho = 2 \) est la sélection de minimalité
+        d’O26, et O29 énonce qu’aucun calcul qui y figure n’identifie ces objets.
       </p>
       <p>
-        L’objectif central de Q7 est : <strong>déterminer si ces deux “3” correspondent à une même structure, et sous
-        quelles contraintes.</strong>
+        L’objectif de Q7 est : <strong>énoncer ce qu’exigerait une identification entre ces deux « 3 »,
+        et démontrer les exigences qui découlent de la théorie des représentations sur un porteur
+        fourni.</strong>
       </p>
       <div class="note">
-        <strong>Portée.</strong> Q7 ne suppose pas l’identification. Il dérive les contraintes structurelles que toute
-        identification doit satisfaire et réduit le problème à un critère spectral unique et calculable.
+        <strong>Portée.</strong> Q7 ne suppose pas l’identification et ne l’établit pas. Que l’espace mesuré
+        porte la structure du module de spin un est une hypothèse explicite de l’article, fournie par aucune
+        source. Le pont requis est une <em>identification manquante</em>, non une obstruction démontrée.
       </div>
     </div>
     <aside class="card">
-      <h2>Informations clés</h2>
+      <h2>Repères</h2>
       <div class="kvs">
         <div class="kv">
           <div class="k">Auteur</div>
@@ -101,108 +110,155 @@
         </div>
         <div class="kv">
           <div class="k">Type</div>
-          <div class="v">Preprint</div>
+          <div class="v">Préprint</div>
         </div>
         <div class="kv">
-          <div class="k">Thématique</div>
+          <div class="k">Domaine</div>
           <div class="v">
-            Dimension spatiale, su(2), géométrie de Heisenberg, pont spectral
+            Dimensionnalité spatiale, su(2), géométrie de Heisenberg, quotients de Rayleigh
           </div>
         </div>
         <div class="kv">
-          <div class="k">Résultat clé</div>
+          <div class="k">Statut du pont</div>
           <div class="v">
-            Réduction à une condition scalaire unique
+            Identification manquante, ni dérivée ni exclue
           </div>
         </div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Ce que l’article démontre</h2>
     <ul>
       <li>
-        <strong>Obstacle algébrique :</strong> montre que $\mathfrak{su}(2)$ et $\mathfrak{heis}_3$ ne sont pas
-        isomorphes, interdisant toute identification directe.
+        <strong>Obstruction algébrique :</strong> \( \mathfrak{su}(2) \) et \( \mathfrak{heis}_3 \) ne sont
+        pas isomorphes — semi-simple contre nilpotente — donc aucune identification n’est disponible au
+        niveau des algèbres de Lie. Ce résultat est inconditionnel.
       </li>
       <li>
-        <strong>Identification représentationnelle :</strong> établit \[ H_{\mathrm{eff}} \simeq \mathrm{Sym}^2(V_\rho),
-        \] la représentation irréductible de spin 1.
+        <strong>Unicité du module de spin un :</strong> à isomorphisme près, \( \mathrm{Sym}^2(V_\rho) \) est
+        l’unique module complexe irréductible de dimension trois de \( \mathfrak{su}(2) \), isomorphe à
+        l’adjointe complexifiée. Sous l’hypothèse d’identification, l’espace mesuré hérite de cette structure.
       </li>
       <li>
-        <strong>Rigidité du pont :</strong> par le lemme de Schur, toute identification équivariante est unique à un
-        facteur près.
+        <strong>Rigidité, avec ses deux réserves :</strong> par le lemme de Schur, une application
+        équivariante est soit nulle, soit un isomorphisme, et dans ce cas unique à un scalaire
+        <em>complexe</em> non nul près. La non-annulation n’est pas garantie, et une normalisation réelle
+        positive est une convention supplémentaire, non une conséquence.
       </li>
       <li>
-        <strong>Contrainte quadratique :</strong> le Casimir de $\mathfrak{su}(2)$ induit une forme quadratique
-        compatible avec la métrique spatiale.
+        <strong>Forme graduée :</strong> le Casimir agit sur le module comme deux fois l’identité, et le
+        tiré-en-arrière de la forme spatiale hermitienne est gradué. L’invariance sous le générateur de Cartan
+        force l’isotropie <em>dans le plan horizontal</em> ; elle ne force pas l’égalité avec le coefficient
+        central.
       </li>
       <li>
-        <strong>Symétrie métaplectique :</strong> démontre que \[ [F_c, L_{\mathrm{Weil}}] = 0, \] impliquant l’absence
-        structurelle de termes croisés.
-      </li>
-      <li>
-        <strong>Réduction finale :</strong> l’identification est équivalente à \[ A_H = A_z. \]
+        <strong>Symétrie métaplectique :</strong> la transformée de Fourier discrète chirpée commute avec le
+        laplacien de Weil discret, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] pour tout caractère admissible. C’est un
+        énoncé sur l’opérateur discret, et il ne se transporte pas au symbole de l’opérateur continu.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Interprétation</h2>
+    <h2>Ce que mesurent les points de contrôle</h2>
     <p>
-      Q7 transforme le statut du problème de dimension spatiale dans le programme.
+      La version 2.0 retype la section numérique de l’article. Les trois lignes de base stockées dans les points
+      de contrôle O25 sont des <strong>modes de Fourier purs</strong> d’indices \( \{0, -k, +k\} \), de pureté
+      spectrale 1,000000 aux douze paires testées. Toute entrée de la compression est donc un quotient de
+      Rayleigh en forme fermée :
+    </p>
+    <p>
+      \[ \langle e_m, L_{\mathrm{Weil}}\, e_m \rangle = 4 - 2\cos(2\pi m / q). \]
     </p>
     <ul>
-      <li><strong>Avant Q7 :</strong> deux “3” indépendants coexistent</li>
-      <li><strong>Après Q7 :</strong> leur relation est entièrement contrainte</li>
+      <li>
+        La valeur centrale vaut exactement \( 4 - 2 - 0 = 2 \), pour tout premier et tout caractère : le terme
+        additif \( 4I \) du laplacien moins la valeur propre du décalage au mode plat. Elle coïncide
+        numériquement avec la valeur propre du Casimir de \( \mathfrak{su}(2) \), mais cette coïncidence n’est
+        pas invariante par normalisation — diviser le laplacien par deux donne 1 alors que la valeur propre du
+        Casimir ne change pas — et elle ne porte donc aucun poids probant.
+      </li>
+      <li>
+        La valeur horizontale vaut \( 4 - 2\cos(2\pi k/q) \) pour l’indice sélectionné, de sorte que l’écart est
+        l’identité \[ A_H - 2 = 4\sin^2(\pi k / q). \] Son annulation à la limite des grands \( q \) équivaut à
+        \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), propriété de la règle de sélection de modes du pipeline
+        qu’aucun article du corpus ne dérive.
+      </li>
+      <li>
+        Une entrée hors diagonale apparaît exactement quand deux indices stockés diffèrent de
+        \( \pm c \bmod q \), ce qui rend compte des deux paires jusqu’ici présentées comme des anomalies de
+        taille finie ou de secteur.
+      </li>
     </ul>
     <p>
-      Le problème devient purement spectral :
+      Un diagnostic livré avec l’article reproduit tout cela depuis un paquet d’entrées de 37 ko muni d’une
+      empreinte SHA-256 publiée, et imprime pour chaque paire le spectre de la covariance, la matrice après
+      rotation et le spectre invariant.
     </p>
-    <ul>
-      <li>soit les deux structures coïncident via un pont unique</li>
-      <li>soit elles sont définitivement distinctes</li>
-    </ul>
   </section>
   <section class="card">
-    <h2>Position dans le programme</h2>
+    <h2>Conclusions retirées en version 2.0</h2>
     <p>
-      Q7 relie deux branches majeures :
+      La version 2.0 retire ce qui suit, comme résultats et comme appuis. Elle ne prend pas position sur le
+      statut éditorial des articles concernés, dont les affirmations leur appartiennent.
     </p>
     <ul>
-      <li>Série O : structure admissible et dimension adjointe conditionnelle (O23)</li>
-      <li>Série Q : géométrie émergente</li>
+      <li>la lecture de la valeur centrale comme signature spectrale du Casimir ;</li>
+      <li>l’ajustement en loi de puissance de l’écart d’isotropie comme preuve d’une isotropie asymptotique ;</li>
+      <li>
+        le transport de la structure bloc-diagonale d’une compression discrète vers les termes croisés du
+        symbole continu ;
+      </li>
+      <li>
+        les attributions à O29 (l’identification du module et \( d_\rho = 2 \)), à O27 (une factorisation
+        inconditionnelle par \( \mathfrak{su}(2) \)) et à Q5b (une co-métrique portant un coefficient central
+        positif, et un taux de convergence en \( q \)) ;
+      </li>
+      <li>les appuis aval invoqués jusqu’ici pour les deux coefficients.</li>
     </ul>
     <p>
-      Il fournit le pont manquant entre représentation et géométrie, en réduisant leur compatibilité à un test unique.
+      L’affirmation antérieure selon laquelle l’ambiguïté était levée, soit par un pont unique, soit par une
+      séparation définitive, n’est pas retenue : rien dans le corpus n’exclut un pont.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et perspectives</h2>
+    <h2>Relation au programme Cosmochrony</h2>
     <p>
-      Q7 établit que l’identification se réduit à : \[ A_H = A_z. \]
+      Q7 se situe entre deux branches : la série O, qui fournit le porteur et l’espace de projection
+      admissible, et la série Q, qui dérive une géométrie émergente de limites spectrales. Il type l’arête entre
+      elles plutôt qu’il ne la ferme.
     </p>
     <p>
-      Les résultats actuels montrent :
+      Une obstruction conditionnelle existe dans le corpus, sur une autre route : sous les hypothèses de
+      profondeur et de poids de Q5a, aucune normalisation scalaire commune de la forme d’admissibilité publiée
+      ne produit de limite différentielle torique, de sorte que cette route ne fournit aucun opérateur spatial
+      du second ordre. Elle laisse ouvert un pont sur une autre filtration, sous renormalisation anisotrope ou
+      non scalaire, ou sur une cible non torique.
     </p>
+  </section>
+  <section class="card">
+    <h2>Directions ouvertes</h2>
     <ul>
-      <li>absence de termes croisés (démontrée analytiquement)</li>
-      <li>\(A_z \approx 2\), égal au Casimir</li>
-      <li>\(|A_H - A_z|\) décroissant avec \(q\)</li>
-    </ul>
-    <p>
-      Pistes ouvertes :
-    </p>
-    <ul>
-      <li><strong>Asymptotique :</strong> vérifier la convergence pour grands \(q\)</li>
-      <li><strong>Analyse :</strong> calcul du symbole sous-principal en Z</li>
-      <li><strong>Géométrie :</strong> déterminer si l’isotropie est exacte ou émergente</li>
+      <li>
+        <strong>La règle de sélection de modes :</strong> dériver \( q \mapsto k(q,c) \) du parcours en largeur
+        et de l’étape de Gram–Schmidt, ce qui rendrait la question de l’isotropie testable.
+      </li>
+      <li>
+        <strong>Le calcul du symbole :</strong> calculer le symbole sous-principal de l’opérateur effectif sur le
+        secteur admissible, ce que teste réellement le critère de l’article et qu’aucun article du corpus n’a
+        effectué.
+      </li>
+      <li>
+        <strong>Une source pour l’hypothèse d’identification :</strong> exhiber une construction fournissant la
+        structure de module sur l’espace mesuré, ou un argument l’excluant.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau, <i>Three Admissible Directions and Three Spatial Dimensions: A Structural Bridge Candidate</i>,
-      2026.
+      Jérôme Beau, <i>Toward Three Spatial Directions from a Supplied Spin-One Carrier: Requirements for an
+      Equivariant Bridge</i>, 2026.
     </p>
   </section>
 </main>

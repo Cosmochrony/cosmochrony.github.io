@@ -5,21 +5,22 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Three Admissible Directions and Three Spatial Dimensions: A Structural Bridge Candidate | Cosmochrony
+    Toward Three Spatial Directions from a Supplied Spin-One Carrier | Cosmochrony
   </title>
   <meta name="description"
-    content="Q7 formulates and constrains the possible identification between the three admissible
-    directions of H_eff ≃ C^3 and the three spatial directions of the emergent Lorentzian geometry,
-    reducing the problem to a single spectral criterion."/>
+    content="Q7 states what an equivariant bridge between the admissible three directions and the
+    three spatial directions would require, proves the requirements that follow from representation
+    theory on a supplied carrier, and leaves the identification open."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/emergent-geometry/q7/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Three Admissible Directions and Three Spatial Dimensions:
-    A Structural Bridge Candidate"/>
+    content="Toward Three Spatial Directions from a Supplied Spin-One Carrier:
+    Requirements for an Equivariant Bridge"/>
   <meta property="og:description"
-    content="Q7 shows that the identification between the admissible 3 and the spatial 3 is
-    uniquely constrained and reduces to a single computable spectral condition."/>
+    content="Q7 gives the requirements an equivariant bridge would have to meet, on a supplied
+    carrier, and shows that the numbers previously read as symbol coefficients are Rayleigh
+    quotients of plane waves."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q7/"/>
@@ -47,17 +48,17 @@
       </a>
       <div>
         <h1>
-          Three Admissible Directions and Three Spatial Dimensions: A Structural Bridge Candidate
+          Toward Three Spatial Directions from a Supplied Spin-One Carrier: Requirements for an Equivariant Bridge
         </h1>
         <p class="subtitle">
-          Q7 investigates whether the three admissible directions derived in the O-series coincide with the three
-          spatial directions of the emergent geometry in Q5b, and shows that the problem reduces to a single spectral
-          condition.
+          Q7 asks whether the three admissible directions of the O-series coincide with the three spatial directions of
+          the emergent geometry of Q5b. It states what an identification would require, proves the requirements that
+          follow from representation theory on a supplied carrier, and leaves the identification itself open.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19802123">Read the preprint</a> <a class="btn subtle"
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19802123">Zenodo record</a> <a class="btn subtle"
       href="/science/spectral/program/">Back to Spectral Admissibility Programme</a>
     </div>
   </div>
@@ -77,18 +78,22 @@
         Carnot structure of \[ \mathrm{Heis}_3(\mathbb{R}). \]
       </p>
       <p>
-        On the other hand, O23–O29 give the admissible projection space the structure \[ H_{\mathrm{eff}} \simeq
-        \mathbb{C}^3, \] corresponding to three stable admissible directions — conditionally on a supplied
-        spinor carrier: O23's adjoint-dimension theorem assumes the neutral sector is carried by an
-        irreducible two-dimensional unitary representation, an input the framework does not yet derive.
+        On the other hand, O28 works with an admissible projection space \[ H_{\mathrm{eff}} = \mathbb{C}^3, \]
+        supplied as a parameter of its protocol, whose per-pair covariance has rank three — a finite-data value,
+        which O28 itself declines to call an invariant. O23's adjoint-dimension theorem then gives three independent
+        directions, conditionally on a supplied spinor carrier: it assumes the neutral sector is carried by an
+        irreducible two-dimensional unitary representation, an input the framework does not derive. The value
+        \( d_\rho = 2 \) is O26's minimality selection, and O29 states that no calculation there identifies these
+        objects.
       </p>
       <p>
-        The central objective of Q7 is: <strong>to determine whether these two “3”s are the same structure, and if so,
-        under which constraints.</strong>
+        The objective of Q7 is: <strong>to state what an identification between these two “3”s would require, and to
+        prove the requirements that follow from representation theory on a supplied carrier.</strong>
       </p>
       <div class="note">
-        <strong>Scope statement.</strong> Q7 does not assume the identification. It derives the structural constraints
-        any identification must satisfy and reduces the problem to a single computable spectral criterion.
+        <strong>Scope statement.</strong> Q7 does not assume the identification and does not establish it. That the
+        measured space carries the spin-one module structure is an explicit hypothesis of the paper, supplied by no
+        source. The required bridge is a <em>missing identification</em>, not a proved obstruction.
       </div>
     </div>
     <aside class="card">
@@ -105,105 +110,132 @@
         <div class="kv">
           <div class="k">Focus</div>
           <div class="v">
-            Spatial dimensionality, su(2), Heisenberg geometry, spectral bridge
+            Spatial dimensionality, su(2), Heisenberg geometry, Rayleigh quotients
           </div>
         </div>
         <div class="kv">
-          <div class="k">Key result</div>
+          <div class="k">Status of the bridge</div>
           <div class="v">
-            Reduction to a single scalar spectral condition
+            Missing identification, neither derived nor ruled out
           </div>
         </div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Core contributions</h2>
+    <h2>What the paper proves</h2>
     <ul>
       <li>
-        <strong>Algebraic obstruction:</strong> proves that $\mathfrak{su}(2)$ and $\mathfrak{heis}_3$ are
-        non-isomorphic, forbidding any direct identification at the Lie algebra level.
+        <strong>Algebraic obstruction:</strong> \( \mathfrak{su}(2) \) and \( \mathfrak{heis}_3 \) are
+        non-isomorphic — semisimple against nilpotent — so no identification is available at the Lie algebra level.
+        This is unconditional.
       </li>
       <li>
-        <strong>Representation-theoretic identification:</strong> establishes \[ H_{\mathrm{eff}} \simeq
-        \mathrm{Sym}^2(V_\rho), \] the spin-1 irreducible representation.
+        <strong>Uniqueness of the spin-one module:</strong> up to isomorphism, \( \mathrm{Sym}^2(V_\rho) \) is the
+        unique irreducible three-dimensional complex module of \( \mathfrak{su}(2) \), isomorphic to the
+        complexified adjoint. Under the identification hypothesis, the measured space inherits that structure.
       </li>
       <li>
-        <strong>Rigidity of the bridge:</strong> by Schur’s lemma, any equivariant identification is unique up to
-        scalar.
+        <strong>Rigidity, with its two caveats:</strong> by Schur's lemma an equivariant map is either zero or an
+        isomorphism, and in the latter case unique up to one non-zero <em>complex</em> scalar. Non-vanishing is not
+        guaranteed, and a real positive normalisation is a further convention, not a consequence.
       </li>
       <li>
-        <strong>Quadratic form constraint:</strong> the $\mathfrak{su}(2)$ Casimir induces a positive-definite quadratic
-        form matching the spatial metric structure.
+        <strong>Graded form:</strong> the Casimir acts on the module as twice the identity, and the pullback of the
+        Hermitian spatial form is graded. Invariance under the Cartan generator forces isotropy
+        <em>within the horizontal plane</em>; it does not force equality with the central coefficient.
       </li>
       <li>
-        <strong>Metaplectic symmetry result:</strong> proves that \[ [F_c, L_{\mathrm{Weil}}] = 0, \] implying
-        structural absence of cross terms.
-      </li>
-      <li>
-        <strong>Reduction to a single condition:</strong> the identification holds if and only if \[ A_H = A_z. \]
+        <strong>Metaplectic symmetry:</strong> the chirped discrete Fourier transform commutes with the discrete Weil
+        Laplacian, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] for every admissible character. This is a statement about the
+        discrete operator, and it does not transfer to the symbol of the continuum operator.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Interpretation</h2>
+    <h2>What the checkpoints measure</h2>
     <p>
-      Q7 transforms the status of the spatial dimensionality problem within the programme.
+      Version 2.0 re-types the paper's numerical section. The three stored basis rows of the O25 checkpoints are
+      <strong>pure Fourier modes</strong> of indices \( \{0, -k, +k\} \), with spectral purity 1.000000 on all twelve
+      tested pairs. Every entry of the compression is therefore a Rayleigh quotient in closed form:
+    </p>
+    <p>
+      \[ \langle e_m, L_{\mathrm{Weil}}\, e_m \rangle = 4 - 2\cos(2\pi m / q). \]
     </p>
     <ul>
-      <li><strong>Before Q7:</strong> two independent “3”s coexist</li>
-      <li><strong>After Q7:</strong> their relation is fully constrained</li>
+      <li>
+        The central value is \( 4 - 2 - 0 = 2 \) exactly, for every prime and every character: the additive
+        \( 4I \) term of the Laplacian less the shift eigenvalue at the flat mode. It agrees numerically with the
+        \( \mathfrak{su}(2) \) Casimir eigenvalue, but the agreement is not normalisation-invariant — halving the
+        Laplacian gives 1 while the Casimir eigenvalue is unchanged — so it carries no evidential weight.
+      </li>
+      <li>
+        The horizontal value is \( 4 - 2\cos(2\pi k/q) \) for the selected index, so the gap is the identity
+        \[ A_H - 2 = 4\sin^2(\pi k / q). \] Its vanishing in the large-\( q \) limit is equivalent to
+        \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), a property of the pipeline's mode-selection rule that no paper
+        of the corpus derives.
+      </li>
+      <li>
+        An off-diagonal entry appears exactly when two stored indices differ by \( \pm c \bmod q \), which accounts
+        for the two pairs previously reported as finite-size and sector anomalies.
+      </li>
     </ul>
     <p>
-      The problem is no longer conceptual but spectral:
-    </p>
-    <ul>
-      <li>either the two structures coincide via a unique bridge</li>
-      <li>or they are definitively distinct</li>
-    </ul>
-    <p>
-      In both cases, the ambiguity is removed.
+      A diagnostic shipped with the paper reproduces all of this from a 37 kB bundle of inputs with a published
+      SHA-256 digest, and prints the covariance spectrum, the rotated matrix and the invariant spectrum for each pair.
     </p>
   </section>
   <section class="card">
-    <h2>Relation to the Cosmochrony program</h2>
+    <h2>Conclusions withdrawn in version 2.0</h2>
     <p>
-      Q7 connects two major branches of the programme:
+      Version 2.0 withdraws the following, as results and as supports. It takes no position on the editorial status of
+      the papers concerned, whose claims are matters for those papers.
     </p>
     <ul>
-      <li>O-series: admissible structure and conditional adjoint dimension (O23)</li>
-      <li>Q-series: emergent geometry from spectral limits</li>
+      <li>the reading of the central value as a spectral signature of the Casimir;</li>
+      <li>the power-law fit of the isotropy gap as evidence for asymptotic isotropy;</li>
+      <li>the transfer of the block-diagonality of a discrete compression to cross terms of the continuum symbol;</li>
+      <li>
+        the attributions to O29 (the module identification and \( d_\rho = 2 \)), to O27 (an unconditional
+        factorisation through \( \mathfrak{su}(2) \)), and to Q5b (a co-metric carrying a positive central
+        coefficient, and a convergence rate in \( q \));
+      </li>
+      <li>the downstream supports previously invoked for the two coefficients.</li>
     </ul>
     <p>
-      It provides the missing bridge between representation theory and geometry, reducing their compatibility to a
-      single testable condition.
+      The earlier claim that the ambiguity was removed, either by a unique bridge or by a definitive separation, is not
+      retained: nothing in the corpus rules a bridge out.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open directions</h2>
+    <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Q7 establishes that the identification problem reduces to: \[ A_H = A_z. \]
+      Q7 sits between two branches: the O-series, which supplies the carrier and the admissible projection space, and
+      the Q-series, which derives an emergent geometry from spectral limits. It types the edge between them rather than
+      closing it.
     </p>
     <p>
-      Numerical evidence shows:
+      One conditional obstruction exists in the corpus, on a different route: under Q5a's depth and weight hypotheses,
+      no common scalar normalisation of the published admissibility form yields a toric differential limit, so that
+      route supplies no spatial second-order operator. It leaves open a bridge on a different filtration, under an
+      anisotropic or non-scalar renormalisation, or on a non-toric target.
     </p>
-    <ul>
-      <li>vanishing cross terms (proved analytically)</li>
-      <li>\(A_z \approx 2\), matching the Casimir</li>
-      <li>\(|A_H - A_z|\) decreasing with \(q\)</li>
-    </ul>
-    <p>
-      Remaining directions include:
-    </p>
+  </section>
+  <section class="card">
+    <h2>Open directions</h2>
     <ul>
       <li>
-        <strong>Asymptotic verification:</strong> test convergence for larger primes.
+        <strong>The mode-selection rule:</strong> derive \( q \mapsto k(q,c) \) from the breadth-first traversal and
+        the Gram–Schmidt step, which is what would make the isotropy question testable.
       </li>
       <li>
-        <strong>Analytical closure:</strong> compute the sub-principal symbol in the Z-direction.
+        <strong>The symbol computation:</strong> compute the sub-principal symbol of the effective operator on the
+        admissible sector, which is what the paper's criterion actually tests and which no paper of the corpus has
+        performed.
       </li>
       <li>
-        <strong>Geometric implications:</strong> determine whether spatial isotropy is exact or emergent.
+        <strong>A source for the identification hypothesis:</strong> exhibit a construction supplying the module
+        structure on the measured space, or an argument excluding it.
       </li>
     </ul>
   </section>
@@ -211,7 +243,8 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Three Admissible Directions and Three Spatial Dimensions: A Structural Bridge Candidate</i>, 2026.
+      <i>Toward Three Spatial Directions from a Supplied Spin-One Carrier: Requirements for an Equivariant
+      Bridge</i>, 2026.
     </p>
   </section>
 </main>

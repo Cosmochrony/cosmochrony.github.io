@@ -83,7 +83,8 @@
       </p>
       <p>
         On the other hand, O28 works with an admissible projection space \[ H_{\mathrm{eff}} = \mathbb{C}^3, \]
-        supplied as a parameter of its protocol, whose per-pair covariance has rank three — a finite-data value,
+        supplied as a parameter of its protocol, whose per-pair covariance has threshold rank
+        \( r_{\mathrm{eff}}^{1\%} = 3 \) — a finite-data value,
         which O28 itself declines to call an invariant. O23's adjoint-dimension theorem then gives three independent
         directions, conditionally on a supplied spinor carrier: it assumes the neutral sector is carried by an
         irreducible two-dimensional unitary representation, an input the framework does not derive. The value
@@ -149,7 +150,8 @@
         Casimir acts on the module as twice the identity. The further statement that the pullback of the Hermitian
         spatial form is graded holds only <em>if an equivariant bridge exists</em>, and under three more premises:
         the existence of the effective co-metric, the invariance of the admissible regime under the Cartan
-        generator, and the positivity of both coefficients, for one of which no source supplies a value. Under that
+        generator, and the positivity of both coefficients, for one of which the paper derives no value and declines to
+        use the value asserted downstream. Under that
         invariance, isotropy is forced <em>within the horizontal plane</em> only; equality with the central
         coefficient is not.
       </li>
@@ -192,10 +194,11 @@
       </li>
     </ul>
     <p>
-      What the pipeline reports is not that compression but its conjugate by the covariance eigenbasis. The two
-      differ at two pairs: at \( (101,3) \) the flat mode is ordered last, which is the origin of the published
-      values 2.096 and 2.048; and at \( (151,5) \), the one pair where an undetermined rotation meets a non-scalar
-      block, the reported split and off-diagonal entry are solver-dependent. The invariant content is the spectrum of
+      What the pipeline reports is not that compression but its conjugate by the covariance eigenbasis. As matrices the
+      two coincide at nine of the twelve pairs; at \( (61,3) \) they agree entry by entry in modulus but not in
+      phase; and they differ outright at two. At \( (101,3) \) the flat mode is ordered last, which is the origin
+      of the published values 2.096 and 2.048; at \( (151,5) \), the one pair where an undetermined rotation meets
+      a block that is not scalar, the reported split and off-diagonal entry are solver-dependent. The invariant content is the spectrum of
       the compression.
     </p>
     <p>

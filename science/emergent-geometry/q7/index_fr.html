@@ -76,10 +76,13 @@
         structures tridimensionnelles obtenues indépendamment.
       </p>
       <p>
-        D’un côté, Q5b dérive une géométrie lorentzienne à trois directions spatiales depuis la structure de
-        Carnot de \[ \mathrm{Heis}_3(\mathbb{R}), \] sous ses hypothèses, dont celle, non établie, d’existence
-        de l’opérateur limite spatial ; à l’ordre du symbole principal, la case centrale de sa co-métrique
-        est dégénérée.
+        D’un côté, Q5b extrait une co-métrique effective sur la structure de Carnot de
+        \[ \mathrm{Heis}_3(\mathbb{R}), \] dont le secteur spatial compte trois directions. Cette extraction est
+        son théorème 5.2, conditionnel à une hypothèse non établie d’existence de l’opérateur limite spatial et
+        à une hypothèse de relèvement ; à l’ordre du symbole principal, la case centrale est dégénérée ; et
+        la lecture lorentzienne de la signature porte une hypothèse d’hyperbolicité supplémentaire. La part
+        inconditionnelle est la dimension homogène quatre de la structure de Carnot, qui fixe la croissance des
+        volumes et la dimension spectrale, non une métrique non dégénérée.
       </p>
       <p>
         De l’autre, O28 travaille avec un espace de projection admissible \[ H_{\mathrm{eff}} = \mathbb{C}^3, \]
@@ -110,7 +113,7 @@
         </div>
         <div class="kv">
           <div class="k">Type</div>
-          <div class="v">Préprint</div>
+          <div class="v">Prépublication</div>
         </div>
         <div class="kv">
           <div class="k">Domaine</div>
@@ -147,14 +150,19 @@
         positive est une convention supplémentaire, non une conséquence.
       </li>
       <li>
-        <strong>Forme graduée :</strong> le Casimir agit sur le module comme deux fois l’identité, et le
-        tiré-en-arrière de la forme spatiale hermitienne est gradué. L’invariance sous le générateur de Cartan
-        force l’isotropie <em>dans le plan horizontal</em> ; elle ne force pas l’égalité avec le coefficient
-        central.
+        <strong>Valeur du Casimir, et forme graduée conditionnelle :</strong> sous l’hypothèse
+        d’identification, le Casimir agit sur le module comme deux fois l’identité. L’énoncé supplémentaire
+        selon lequel le tiré-en-arrière de la forme spatiale hermitienne est gradué ne vaut que
+        <em>si un pont équivariant existe</em>, et sous trois prémisses de plus : l’existence de la
+        co-métrique effective, l’invariance du régime admissible sous le générateur de Cartan, et la positivité
+        des deux coefficients, dont l’un ne reçoit de valeur d’aucune source. Sous cette invariance,
+        l’isotropie n’est forcée que <em>dans le plan horizontal</em> ; l’égalité avec le coefficient central
+        ne l’est pas.
       </li>
       <li>
         <strong>Symétrie métaplectique :</strong> la transformée de Fourier discrète chirpée commute avec le
-        laplacien de Weil discret, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] pour tout caractère admissible. C’est un
+        laplacien de Weil discret, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] pour tout premier impair et tout
+        caractère premier avec lui. C’est un
         énoncé sur l’opérateur discret, et il ne se transporte pas au symbole de l’opérateur continu.
       </li>
     </ul>
@@ -162,10 +170,11 @@
   <section class="card">
     <h2>Ce que mesurent les points de contrôle</h2>
     <p>
-      La version 2.0 retype la section numérique de l’article. Les trois lignes de base stockées dans les points
+      La version 2.0 requalifie la section numérique de l’article. Les trois lignes de base stockées dans les points
       de contrôle O25 sont des <strong>modes de Fourier purs</strong> d’indices \( \{0, -k, +k\} \), de pureté
-      spectrale 1,000000 aux douze paires testées. Toute entrée de la compression est donc un quotient de
-      Rayleigh en forme fermée :
+      spectrale 1,000000 aux douze paires testées. Toute entrée diagonale de la compression
+      <strong>dans la base stockée</strong> est donc un quotient de Rayleigh en forme fermée, les entrées hors
+      diagonale suivant la règle d’indices énoncée plus bas :
     </p>
     <p>
       \[ \langle e_m, L_{\mathrm{Weil}}\, e_m \rangle = 4 - 2\cos(2\pi m / q). \]
@@ -182,7 +191,9 @@
         La valeur horizontale vaut \( 4 - 2\cos(2\pi k/q) \) pour l’indice sélectionné, de sorte que l’écart est
         l’identité \[ A_H - 2 = 4\sin^2(\pi k / q). \] Son annulation à la limite des grands \( q \) équivaut à
         \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), propriété de la règle de sélection de modes du pipeline
-        qu’aucun article du corpus ne dérive.
+        qu’aucun article du corpus ne dérive. Ici \( A_H \) et la valeur centrale désignent des entrées diagonales
+        de cette compression discrète ; ce sont les grandeurs que les lectures antérieures identifiaient à des
+        coefficients du symbole continu, et l’article tient les deux séparées.
       </li>
       <li>
         Une entrée hors diagonale apparaît exactement quand deux indices stockés diffèrent de
@@ -191,9 +202,19 @@
       </li>
     </ul>
     <p>
+      Ce que rapporte le pipeline n’est pas cette compression mais sa conjuguée par la base propre de la
+      covariance. Les deux diffèrent à deux paires : à \( (101,3) \) le mode plat est classé en dernier, ce
+      qui explique les valeurs publiées 2,096 et 2,048 ; et à \( (151,5) \), seule paire où une rotation
+      indéterminée rencontre un bloc non scalaire, la scission et l’entrée hors diagonale rapportées dépendent
+      du solveur. Le contenu invariant est le spectre de la compression.
+    </p>
+    <p>
       Un diagnostic livré avec l’article reproduit tout cela depuis un paquet d’entrées de 37 ko muni d’une
-      empreinte SHA-256 publiée, et imprime pour chaque paire le spectre de la covariance, la matrice après
-      rotation et le spectre invariant.
+      empreinte SHA-256 publiée, et imprime, par paire : les indices de Fourier et les puretés, les valeurs
+      mesurées et analytiques avec leurs résidus, la vérification des termes croisés, le spectre de la
+      covariance avec l’écart dans le plan horizontal, la matrice conjuguée et le spectre de la compression. Le
+      paquet est un extrait dérivé : reproduire l’extraction elle-même exige les points de contrôle de la
+      campagne O25, qui ne sont pas redistribués avec l’article.
     </p>
   </section>
   <section class="card">
@@ -257,15 +278,17 @@
   <section class="card">
     <h2>Référence</h2>
     <p>
-      Jérôme Beau, <i>Toward Three Spatial Directions from a Supplied Spin-One Carrier: Requirements for an
-      Equivariant Bridge</i>, 2026.
+      <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
+      <i>Toward Three Spatial Directions from a Supplied Spin-One Carrier: Requirements for an Equivariant
+      Bridge</i>, 2026.
     </p>
   </section>
 </main>
 <footer>
   <div class="wrap">
     <p class="small">
-      © <span id="y"></span> Jérôme Beau. Licence CC BY 4.0.
+      © <span id="y"></span> Jérôme Beau. Licence <a href="/LICENSE">CC BY 4.0</a>.
+      <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a>
     </p>
   </div>
 </footer>

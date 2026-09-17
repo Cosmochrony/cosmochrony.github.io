@@ -74,8 +74,12 @@
         independently derived three-dimensional structures.
       </p>
       <p>
-        On the one hand, Q5b derives a four-dimensional Lorentzian geometry with three spatial directions from the
-        Carnot structure of \[ \mathrm{Heis}_3(\mathbb{R}). \]
+        On the one hand, Q5b extracts an effective co-metric on the Carnot structure of
+        \[ \mathrm{Heis}_3(\mathbb{R}), \] whose spatial sector has three directions. That extraction is its
+        Theorem 5.2, conditional on an unestablished spatial-limit hypothesis and on a lifting hypothesis; at
+        principal-symbol order the central slot is degenerate; and the Lorentzian reading of the signature carries a
+        further hyperbolicity hypothesis. The unconditional part is the homogeneous dimension four of the Carnot
+        structure, which fixes the volume growth and the spectral dimension, not a non-degenerate metric.
       </p>
       <p>
         On the other hand, O28 works with an admissible projection space \[ H_{\mathrm{eff}} = \mathbb{C}^3, \]
@@ -141,13 +145,17 @@
         guaranteed, and a real positive normalisation is a further convention, not a consequence.
       </li>
       <li>
-        <strong>Graded form:</strong> the Casimir acts on the module as twice the identity, and the pullback of the
-        Hermitian spatial form is graded. Invariance under the Cartan generator forces isotropy
-        <em>within the horizontal plane</em>; it does not force equality with the central coefficient.
+        <strong>Casimir value, and a conditional graded form:</strong> under the identification hypothesis the
+        Casimir acts on the module as twice the identity. The further statement that the pullback of the Hermitian
+        spatial form is graded holds only <em>if an equivariant bridge exists</em>, and under three more premises:
+        the existence of the effective co-metric, the invariance of the admissible regime under the Cartan
+        generator, and the positivity of both coefficients, for one of which no source supplies a value. Under that
+        invariance, isotropy is forced <em>within the horizontal plane</em> only; equality with the central
+        coefficient is not.
       </li>
       <li>
         <strong>Metaplectic symmetry:</strong> the chirped discrete Fourier transform commutes with the discrete Weil
-        Laplacian, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] for every admissible character. This is a statement about the
+        Laplacian, \[ [F_c, L_{\mathrm{Weil}}] = 0, \] for every odd prime and every character coprime to it. This is a statement about the
         discrete operator, and it does not transfer to the symbol of the continuum operator.
       </li>
     </ul>
@@ -157,7 +165,8 @@
     <p>
       Version 2.0 re-types the paper's numerical section. The three stored basis rows of the O25 checkpoints are
       <strong>pure Fourier modes</strong> of indices \( \{0, -k, +k\} \), with spectral purity 1.000000 on all twelve
-      tested pairs. Every entry of the compression is therefore a Rayleigh quotient in closed form:
+      tested pairs. Every diagonal entry of the compression <strong>in the stored basis</strong> is therefore a
+      Rayleigh quotient in closed form, the off-diagonal entries following the index rule stated below:
     </p>
     <p>
       \[ \langle e_m, L_{\mathrm{Weil}}\, e_m \rangle = 4 - 2\cos(2\pi m / q). \]
@@ -173,7 +182,9 @@
         The horizontal value is \( 4 - 2\cos(2\pi k/q) \) for the selected index, so the gap is the identity
         \[ A_H - 2 = 4\sin^2(\pi k / q). \] Its vanishing in the large-\( q \) limit is equivalent to
         \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), a property of the pipeline's mode-selection rule that no paper
-        of the corpus derives.
+        of the corpus derives. Here \( A_H \) and the central value name diagonal entries of this discrete
+        compression; they are the quantities earlier readings identified with coefficients of the continuum symbol,
+        and the paper keeps the two apart.
       </li>
       <li>
         An off-diagonal entry appears exactly when two stored indices differ by \( \pm c \bmod q \), which accounts
@@ -181,8 +192,18 @@
       </li>
     </ul>
     <p>
+      What the pipeline reports is not that compression but its conjugate by the covariance eigenbasis. The two
+      differ at two pairs: at \( (101,3) \) the flat mode is ordered last, which is the origin of the published
+      values 2.096 and 2.048; and at \( (151,5) \), the one pair where an undetermined rotation meets a non-scalar
+      block, the reported split and off-diagonal entry are solver-dependent. The invariant content is the spectrum of
+      the compression.
+    </p>
+    <p>
       A diagnostic shipped with the paper reproduces all of this from a 37 kB bundle of inputs with a published
-      SHA-256 digest, and prints the covariance spectrum, the rotated matrix and the invariant spectrum for each pair.
+      SHA-256 digest, and prints, per pair, the Fourier indices and purities, the measured and analytic values with
+      their residuals, the cross-term check, the covariance spectrum with the gap inside the horizontal plane, the
+      conjugated matrix, and the spectrum of the compression. The bundle is a derived extract: reproducing the
+      extraction itself needs the O25 campaign checkpoints, which are not redistributed with the paper.
     </p>
   </section>
   <section class="card">

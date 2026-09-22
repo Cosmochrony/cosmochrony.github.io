@@ -4,22 +4,13 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>
-    Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur | Cosmochrony
-  </title>
-  <meta name="description"
-    content="Q9 prouve l'implication conditionnelle [H-F] => [H-lift]. Sous l'hypothèse gelée,
-    non établie [H-F], sa contribution d'énergie de position E_q^X(f_q) est en O(q^{-1}) et A_H > 0
-    suit par coercivité. L'hypothèse indépendante [H-L] reste ouverte."/>
+  <title>Vers une limite cinétique sur une fibre de Schrödinger fournie : conditions de suppression du générateur | Cosmochrony</title>
+  <meta name="description" content="Q9 2.0 démontre une limite cinétique de Mosco conditionnelle sous [K] et [R]. La forme libre ne sélectionne ni caractère central ni métrique ; [H-lift] reste ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q9/index.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title"
-    content="Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur"/>
-  <meta property="og:description"
-    content="Q9 prouve [H-F] => [H-lift] : sous l'hypothèse gelée, non établie [H-F], la
-    contribution d'énergie de position du secteur de modulation E_q^X(f_q) est en O(q^{-1}) et A_H > 0 suit par coercivité.
-    L'hypothèse indépendante de limite spatiale [H-L] reste ouverte."/>
+  <meta property="og:title" content="Vers une limite cinétique sur une fibre de Schrödinger fournie : conditions de suppression du générateur"/>
+  <meta property="og:description" content="Q9 2.0 démontre une limite cinétique de Mosco conditionnelle sous [K] et [R]. La forme libre ne sélectionne ni caractère central ni métrique ; [H-lift] reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q9/"/>
@@ -46,15 +37,8 @@
         </svg>
       </a>
       <div>
-        <h1>
-          Preuve de l'hypothèse de relèvement [H-lift] : identification du secteur cinétique par suppression du générateur
-        </h1>
-        <p class="subtitle">
-          Q9 prouve l'implication [H-F] $\Rightarrow$ [H-lift]. Sous l'hypothèse gelée,
-          non établie [H-F], l'énergie de position du secteur de modulation
-          $\mathcal{E}^X_q(f_q)$ est en $\mathcal{O}(q^{-1})$ le long des suites de récupération,
-          et $A_H>0$ suit par coercivité. [H-L] reste ouverte.
-        </p>
+        <h1>Vers une limite cinétique sur une fibre de Schrödinger fournie : conditions de suppression du générateur</h1>
+        <p class="subtitle">Q9 donne une limite cinétique libre sous [K] et récupération compatible [R]. La borne de modulation garde son échelle d'énergie ; [H-lift] reste ouverte.</p>
       </div>
     </div>
     <div class="cta">
@@ -65,199 +49,50 @@
 </header>
 
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.2">
-    <strong>Publication Zenodo actuelle :</strong> version 1.2 (2026-08-15).
-    <span lang="en">Titre officiel : <i>Proof of the Lifting Hypothesis [H-lift]: Kinetic-Sector Identification via Generator Suppression</i>.</span>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-22).
+    <span lang="en">Titre officiel : <i>Toward a Kinetic Limit on a Supplied Schrödinger Fibre: Conditions for Generator Suppression</i>.</span>
   </section>
-
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
-      <p>
-        L'Hypothèse [H-lift] a été introduite dans Q5b comme hypothèse conditionnelle : que le
-        secteur cinétique horizontal de l'opérateur effectif $L_\mathrm{eff}$ peut être relevé
-        pour produire une contribution définie positive $A_H > 0$ à la co-métrique. La dérivation
-        de la géométrie lorentzienne 4D de Q5b était conditionnelle à cette hypothèse.
-      </p>
-      <p>
-        Q9 retire [H-lift] comme hypothèse supplémentaire indépendante en prouvant l'implication
-        [H-F] $\Rightarrow$ [H-lift]. Sous l'hypothèse gelée, non établie [H-F], la contribution
-        d'énergie de position du secteur de modulation $\mathcal{E}^X_q(f_q)$ est en
-        $\mathcal{O}(q^{-1})$ le long des suites de récupération, et la coercivité implique $A_H > 0$.
-      </p>
-      <p>
-        L'implication est indépendante du problème du pont spatial étudié dans Q7. Sous [H-F],
-        Q9 établit $A_H > 0$ ; la version 2.0 de Q7 ne détermine aucune
-        valeur de coefficient, l’identification dont son pont aurait besoin n’étant fournie par aucune source.
-      </p>
-      <div class="note">
-        <strong>Résultat central.</strong> [H-F] $\Rightarrow$ [H-lift] ; sous [H-F], la contribution
-        d'énergie de position du secteur de modulation est en $\mathcal{O}(q^{-1})$ le long des
-        suites de récupération, et $A_H > 0$ suit par coercivité.
-      </div>
+      <p>Q9 donne une condition suffisante pour qu'un terme de modulation positif laisse inchangée une limite cinétique de Mosco : convergence cinétique dans une comparaison d'espaces précisée [K], et même suite de récupération cinétique [R] où l'énergie de modulation s'annule pour chaque vecteur limite d'énergie finie.</p>
+      <p>La forme obtenue est $A\|f'\|^2$. C'est la partie cinétique libre sur chaque fibre de Schrödinger fournie de caractère central non nul. Elle n'est pas la forme complète de l'oscillateur et ne sélectionne aucun de ces caractères.</p>
+      <div class="note"><strong>Statut.</strong> [K] et [R] sont des prémisses fournies. Q9 ne les déduit ni du cadre Q5a retiré [H-F] ni d'une enveloppe de Born–Infeld. [H-lift] de Q5b reste ouverte.</div>
     </div>
     <aside class="card">
       <h2>Informations clés</h2>
       <div class="kvs">
-        <div class="kv">
-          <div class="k">Auteur</div>
-          <div class="v">Jérôme Beau</div>
-        </div>
-        <div class="kv">
-          <div class="k">Type</div>
-          <div class="v">Preprint</div>
-        </div>
-        <div class="kv">
-          <div class="k">Thématique</div>
-          <div class="v">
-            Preuve de [H-lift], suppression du générateur de modulation, coercivité, secteur cinétique
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Résultat clé</div>
-          <div class="v">
-            [H-F] $\Rightarrow$ [H-lift] ; $\mathcal{E}^X_q(f_q)=\mathcal{O}(q^{-1})$ le long des suites de récupération
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Statut</div>
-          <div class="v">Prouvé, comme l'implication [H-F] $\Rightarrow$ [H-lift] (v1.1 ; le cadre Q5a est retiré et consommé comme hypothèse gelée [H-F])</div>
-        </div>
-        <div class="kv">
-          <div class="k">Dépend de</div>
-          <div class="v">Q5a, Q5b</div>
-        </div>
-        <div class="kv">
-          <div class="k">Alimente</div>
-          <div class="v">Q10</div>
-        </div>
+        <div class="kv"><div class="k">Auteur</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Sujet</div><div class="v">Limite cinétique de Mosco, récupération compatible, borne de modulation</div></div>
+        <div class="kv"><div class="k">Résultat clé</div><div class="v">[K] et [R] donnent une limite cinétique libre pour la somme</div></div>
+        <div class="kv"><div class="k">Statut</div><div class="v">Théorème conditionnel ; relèvement géométrique ouvert</div></div>
+        <div class="kv"><div class="k">Articles liés</div><div class="v">Q5a, Q5b, Q7</div></div>
       </div>
     </aside>
   </section>
-
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Ce que démontre le théorème</h2>
     <ul>
-      <li>
-        <strong>Théorème de suppression du secteur de modulation :</strong> sous [H-F] et le long
-        des suites de récupération pertinentes, la contribution d'énergie de position satisfait
-        $\mathcal{E}^X_q(f_q)\leq C/q\to0$. Cette borne porte sur la contribution à la forme,
-        non sur la norme d'opérateur du générateur de modulation de module un.
-      </li>
-      <li>
-        <strong>Coercivité de la forme effective sous [H-F] :</strong> une fois la contribution du
-        secteur de modulation montrée nulle à la limite, la forme quadratique effective $\langle L_\mathrm{eff} u, u \rangle$ est
-        coercive dans les directions horizontales. La coercivité implique immédiatement $A_H > 0$.
-      </li>
-      <li>
-        <strong>[H-lift] comme théorème :</strong> la combinaison de la suppression du générateur
-        et de la coercivité constitue une preuve de [H-lift]. L'hypothèse est maintenant un
-        théorème dans le cadre des versions de Q5a jusqu'à 2.1 — cadre retiré par Q5a 3.2 et
-        consommé ici comme hypothèse gelée, non établie, [H-F] (version 1.1) : le résultat est
-        l'implication [H-F] $\Rightarrow$ [H-lift].
-      </li>
-      <li>
-        <strong>Indépendance du pont spatial :</strong> sous [H-F], Q9 prouve $A_H > 0$ sans déterminer les
-        valeurs individuelles $A_{H_1}$, $A_{H_2}$, $A_{H_3}$. La positivité du secteur horizontal
-        est établie séparément de la question d'égalité des coefficients traitée dans Q7.
-      </li>
-      <li>
-        <strong>Réduction des hypothèses de Q5b :</strong> sous [H-F], [H-lift] suit et n'a plus
-        à être supposée indépendamment.
-        La conditionnalité restante est l'hypothèse de limite spatiale [H-L] (Q5b 2.1), dont
-        Q5a 3.2 montre qu'elle échoue pour la normalisation publiée.
-      </li>
+      <li><strong>Un critère suffisant de Mosco :</strong> la positivité donne la borne inférieure faible ; la même suite de récupération donne la borne supérieure forte pour les deux termes. La convergence de leur somme n'implique pas celle de chacun.</li>
+      <li><strong>Une borne conservant l'échelle :</strong> $\mathcal V_q(f_q)\leq8\pi^2 r_q a_q(X)\|k f_q\|_{\mathcal C_q}^2/q^2$. La suppression exige que son membre de droite tende vers zéro sur une suite de récupération cinétique.</li>
+      <li><strong>Une inégalité par vecteur :</strong> pour $\|xf\|^2\leq M\|f\|^2$, on a $A\|f'\|^2\geq A\|f\|_{H^1}^2/(1+4M)$. La classe à moment borné est un cône, pas un domaine linéaire de forme dérivé.</li>
     </ul>
   </section>
-
   <section class="card">
-    <h2>Suppression du générateur de modulation</h2>
-    <p>
-      Le générateur de modulation $M_q$ appartient à l’action de Heisenberg–Schrödinger finie fournie ;
-      il est distinct de l’action de Weil associée. Il apparaît dans la
-      décomposition de $L_\mathrm{eff}$ et pourrait potentiellement contribuer un terme négatif
-      à la forme quadratique, entravant la coercivité.
-    </p>
-    <p>
-      Sous [H-F], le long de toute suite de récupération pertinente, le résultat quantitatif est
-      $\mathcal{E}^X_q(f_q)\leq C/q\to0$. Le facteur d'oscillation de phase en $q^{-2}$ est
-      partiellement compensé par l'étalement de position discret en $O(q)$ contrôlé par la borne
-      Born–Infeld, laissant une décroissance nette en $q^{-1}$ de l'énergie de position.
-    </p>
-    <p>
-      Quand $q \to \infty$ (la limite continue pertinente pour la géométrie effective), la
-      contribution d'énergie de position s'annule, et la forme effective est coercive dans
-      les directions horizontales. C'est le mécanisme qui prouve [H-lift].
-    </p>
-    <div class="note">
-      <strong>Borne quantitative.</strong> Sous [H-F], le taux est $\mathcal{O}(q^{-1})$, et non
-      $\mathcal{O}(q^{-2})$. Cette suppression suffit à l'implication de coercivité.
-    </div>
+    <h2>Portée géométrique</h2>
+    <p>Sélectionner une fibre, un domaine linéaire admissible et un relèvement spatial demande d'autres constructions. [H-L] et [H-lift] de Q5b restent des prémisses distinctes, tandis que [H-hyp] appartient à son énoncé de signature. La positivité cinétique horizontale ne donne ni coefficient central $A_Z$ ni non-obstruction du pont.</p>
+    <p>Q7 version 2.0 distingue le symbole principal spatial de rang deux de Q5b d'une cible positive de rang trois proposée. Q8, Q10 et Q11 citent encore des résultats que Q7 et Q9 ont retypés ; leurs lectures des coefficients et de la métrique attendent leurs corrections propres.</p>
   </section>
-
   <section class="card">
-    <h2>Position dans le programme</h2>
-    <p>
-      Q9 est un papier pivot dans la série Q parce qu'il transforme [H-lift] d'hypothèse indépendante
-      en conséquence de [H-F]. Il n'établit ni [H-F] ni [H-L] :
-    </p>
-    <ul>
-      <li>
-        <strong>Q5b :</strong> sous [H-F], [H-lift] n'est pas une hypothèse indépendante ; la
-        géométrie reste conditionnelle à l'hypothèse de limite spatiale [H-L].
-      </li>
-      <li>
-        <strong>Q6b :</strong> [H-lift] n'est plus indépendante une fois [H-F] supposée ; sa lecture
-        géométrique reste conditionnelle à [H-L].
-      </li>
-      <li>
-        <strong>Q8 :</strong> sous l'hypothèse gelée et non établie [H-F], Q8 donne
-        $A_Z = 2$, à réviser dans la cascade ouverte par la version 2.0 de Q7, et Q9 donne
-        $A_H > 0$.
-      </li>
-      <li>
-        <strong>Q10 :</strong> utilise l'implication conditionnelle $A_H > 0$ de Q9 comme entrée pour la
-        détermination complète de la métrique.
-      </li>
-    </ul>
-    <p>
-      Q5a 3.2 ne fournit pas la convergence de Mosco requise. La chaîne actuelle conserve
-      l'hypothèse gelée [H-F] pour l'implication de Q9 et l'hypothèse indépendante [H-L]
-      pour l'extraction métrique.
-    </p>
+    <h2>Constructions ouvertes</h2>
+    <p>Une route concrète doit préciser les espaces discrets, les plongements isométriques, le pas et l'échelle d'énergie ; démontrer [K] ; puis construire les suites de récupération communes satisfaisant [R]. La lecture géométrique demande aussi d'identifier le porteur fourni avec l'objet spatial mesuré.</p>
   </section>
-
-  <section class="card">
-    <h2>Perspectives ouvertes</h2>
-    <ul>
-      <li>
-        <strong>Valeurs exactes de $A_H$ :</strong> sous [H-F], Q9 établit $A_H > 0$ ; les valeurs
-        exactes $A_{H_1} = A_{H_2} = A_{H_3} = 2$ restent ouvertes. La version 2.0 de Q7 ne fournit aucune valeur
-        de coefficient, et les valeurs affirmées par Q10 et Q11 restent à réviser dans la même cascade.
-      </li>
-      <li>
-        <strong>Suppression de l'énergie de position à $q$ fini :</strong> la borne $\mathcal{O}(q^{-1})$
-        est un énoncé limite ; les corrections précises à $q$ fini sont pertinentes pour la
-        vérification numérique.
-      </li>
-      <li>
-        <strong>Extension à d'autres représentations :</strong> si une suppression analogue du
-        générateur vaut pour des représentations de Weil de spin supérieur ou autres est une
-        question ouverte avec des implications potentielles pour le secteur de matière.
-      </li>
-    </ul>
-  </section>
-
   <section class="card">
     <h2>Référence</h2>
-    <p>
-      Jérôme Beau.
-      <i>Proof of the Lifting Hypothesis [H-lift]: Kinetic-Sector Identification via Generator
-      Suppression</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.19880574">doi:10.5281/zenodo.19880574</a>
-    </p>
+    <p>Jérôme Beau. <i lang="en">Toward a Kinetic Limit on a Supplied Schrödinger Fibre: Conditions for Generator Suppression</i>, version 2.0, 2026. <a href="https://doi.org/10.5281/zenodo.19880574">doi:10.5281/zenodo.19880574</a> (<a href="https://zenodo.org/records/22903870">notice de version</a>).</p>
   </section>
-
 </main>
 <footer>
   <div class="wrap">

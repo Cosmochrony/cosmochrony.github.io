@@ -5,20 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Universalité spectrale uniforme pour les énergies d'empreinte de Weil : démonstration de [U] avec taux O(q^{-1/2}) | Cosmochrony
+    Conditions d'universalité des énergies d'empreinte de Weil : obstruction à la route de Lipschitz | Cosmochrony
   </title>
   <meta name="description"
-    content="U1 démontre l'hypothèse [U] (universalité spectrale uniforme des énergies d'empreinte
-    de Weil) avec taux de convergence explicite ε(q) = O(q^{-1/2}), via une borne de Lipschitz sur
-    les générateurs de Weil combinée à la convergence BFS–Carnot–Carathéodory."/>
+    content="U1 2.0 démontre une obstruction sur les générateurs de Heisenberg finis et retire l'ancienne preuve de [U] et son taux O(q^-1/2) ; [U] reste ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/u1/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Universalité spectrale uniforme pour les énergies d'empreinte de Weil : démonstration de [U] avec taux O(q^{-1/2})"/>
+    content="Conditions d'universalité des énergies d'empreinte de Weil : obstruction à la route de Lipschitz"/>
   <meta property="og:description"
-    content="U1 démontre [U] avec taux ε(q) = O(q^{-1/2}) via une borne de Lipschitz sur les
-    générateurs de Weil et la convergence BFS–Carnot–Carathéodory. Ce résultat fondateur active Q10, W1 et O30."/>
+    content="U1 2.0 démontre une obstruction sur les générateurs de Heisenberg finis et retire l'ancienne preuve de [U] et son taux O(q^-1/2) ; [U] reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/u1/"/>
@@ -46,13 +43,10 @@
       </a>
       <div>
         <h1>
-          Universalité spectrale uniforme pour les énergies d'empreinte de Weil : démonstration de [U] avec taux O(q^{-1/2})
+          Conditions d'universalité des énergies d'empreinte de Weil : obstruction à la route de Lipschitz
         </h1>
         <p class="subtitle">
-          U1 démontre l'hypothèse [U] — universalité spectrale uniforme des énergies d'empreinte
-          de Weil — avec taux de convergence explicite $\varepsilon(q) = O(q^{-1/2})$, via une
-          borne de Lipschitz sur les générateurs de Weil combinée à la convergence
-          BFS–Carnot–Carathéodory.
+          U1 2.0 démontre une obstruction sur les générateurs de Heisenberg finis et retire l'ancienne preuve de [U] et son taux. L'hypothèse reste ouverte.
         </p>
       </div>
     </div>
@@ -64,77 +58,42 @@
 </header>
 
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.1">
-    <strong>Publication Zenodo actuelle :</strong> version 1.1 (2026-08-15).
-    <span lang="en">Titre officiel : <i>Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^-1/2)</i>.</span>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-22).
+    <span lang="en">Titre officiel : <i>Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]</i>.</span>
   </section>
 
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        L'hypothèse [U] — universalité spectrale uniforme des énergies d'empreinte de Weil —
-        est une hypothèse fondatrice pour plusieurs résultats du cluster d'émergence géométrique.
-        Elle affirme que, lorsque le premier $q$ croît, les énergies d'empreinte de la
-        représentation de Weil sur les graphes de Heisenberg convergent uniformément,
-        indépendamment du caractère.
+        L'hypothèse [U] demande une borne relative, uniforme en caractère, pour les
+        énergies d'empreinte de Weil sur les graphes de Heisenberg. La version 1 de U1
+        prétendait la démontrer avec un taux $O(q^{-1/2})$. La version 2.0 retire cette
+        preuve et ce taux ; [U] demeure ouverte.
       </p>
       <p>
-        U1 élève [U] du statut d'hypothèse de travail à celui de théorème démontré. La preuve
-        combine deux ingrédients :
-      </p>
-      <ul>
-        <li>
-          Une <strong>borne de Lipschitz sur les générateurs de Weil</strong> : les générateurs
-          de Weil agissent avec une constante de Lipschitz bornée sur l'espace des énergies
-          d'empreinte, contrôlant la vitesse de variation d'un caractère à l'autre.
-        </li>
-        <li>
-          La <strong>convergence BFS–Carnot–Carathéodory</strong> : la distance BFS sur le
-          graphe de Heisenberg converge vers la métrique de Carnot–Carathéodory sous-riemannienne,
-          fournissant le substrat géométrique de l'argument d'uniformité.
-        </li>
-      </ul>
-      <p>
-        Le résultat est un taux quantitatif $\varepsilon(q) = O(q^{-1/2})$ pour l'écart
-        à l'universalité.
+        U1 démontre à la place une obstruction exacte pour les représentations finies de
+        Heisenberg–Schrödinger : les générateurs de multiplication associés à deux
+        caractères centraux distincts sont à la distance opératorielle
+        $2\cos(\pi/2q)$, qui tend vers $2$. Cela concerne les générateurs individuels.
+        Un exemple distinct, sur des caractères voisins, montre que leur somme ne possède
+        pas non plus le module uniforme invoqué par l'ancien argument.
       </p>
       <div class="note">
-        <strong>Statut.</strong> Démontré.
+        <strong>Statut.</strong> L'obstruction est prouvée sans hypothèse Q5a–Q5b ;
+        [U] et son taux proposé restent ouverts. U1 ne démontre pas que [U] est fausse.
       </div>
     </div>
     <aside class="card">
       <h2>Informations clés</h2>
       <div class="kvs">
-        <div class="kv">
-          <div class="k">Auteur</div>
-          <div class="v">Jérôme Beau</div>
-        </div>
-        <div class="kv">
-          <div class="k">Type</div>
-          <div class="v">Preprint</div>
-        </div>
-        <div class="kv">
-          <div class="k">Thématique</div>
-          <div class="v">
-            Universalité spectrale, énergies d'empreinte de Weil, borne de Lipschitz,
-            convergence BFS–Carnot–Carathéodory
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Résultat clé</div>
-          <div class="v">
-            $\varepsilon(q) = O(q^{-1/2})$ pour l'universalité des énergies d'empreinte de Weil ; [U] démontré
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Dépend de</div>
-          <div class="v">Q5a</div>
-        </div>
-        <div class="kv">
-          <div class="k">Alimente</div>
-          <div class="v">Q10, W1, O30</div>
-        </div>
+        <div class="kv"><div class="k">Auteur</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Thématique</div><div class="v">Générateurs de Heisenberg finis ; empreintes de Weil ; [U]</div></div>
+        <div class="kv"><div class="k">Résultat clé</div><div class="v">Équidistance exacte ; ancienne route vers [U] retirée</div></div>
+        <div class="kv"><div class="k">Hypothèses</div><div class="v">Aucune hypothèse Q5a–Q5b pour l'obstruction</div></div>
+        <div class="kv"><div class="k">Aval</div><div class="v">W1, Q10 et Q11 demandent un audit distinct de leurs imports</div></div>
       </div>
     </aside>
   </section>
@@ -142,71 +101,45 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li>
-        <strong>Démonstration de [U] :</strong> l'hypothèse [U] est prouvée rigoureusement,
-        convertissant une hypothèse de travail en théorème avec contrôle quantitatif explicite.
-      </li>
-      <li>
-        <strong>Borne de Lipschitz sur les générateurs de Weil :</strong> les générateurs de
-        Weil satisfont une condition de Lipschitz sur l'espace des énergies d'empreinte,
-        bornant la variation d'un caractère à l'autre.
-      </li>
-      <li>
-        <strong>Convergence BFS–Carnot–Carathéodory :</strong> lorsque $q \to \infty$, la
-        métrique de graphe BFS sur le groupe de Heisenberg converge vers la distance
-        sous-riemannienne de Carnot–Carathéodory, fournissant le squelette géométrique de la
-        preuve d'universalité.
-      </li>
-      <li>
-        <strong>Taux explicite $O(q^{-1/2})$ :</strong> le taux de convergence n'est pas
-        seulement qualitatif mais quantifié, permettant aux applications aval (Q10, W1) de
-        borner les termes d'erreur explicitement.
-      </li>
+      <li><strong>Générateurs individuels :</strong> pour $c,c'$ distincts et $q$ premier,
+        $\|\rho_{q,c}(X)-\rho_{q,c'}(X)\|=2\cos(\pi/2q)$, indépendamment de la paire.</li>
+      <li><strong>Somme des opérateurs :</strong> une annulation survient pour $c'=-c$.
+        Séparément, pour $c=1,c'=2$, sa distance vaut au moins
+        $2\cos(\pi/q)+2\cos(2\pi/q)\to4$ alors que $|c-c'|/q\to0$.</li>
+      <li><strong>Observable distincte :</strong> O25 mesure un incrément de rang de
+        Gram–Schmidt sur des blocs échantillonnés à trois composantes, sans identification
+        à une norme d'opérateur comprimé.</li>
+      <li><strong>Taux non fourni :</strong> la convergence citée de Q5b est qualitative ;
+        elle ne fournit ni taux de Gromov–Hausdorff $O(q^{-1/2})$, ni transfert vers
+        le décompte de O25.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Rôle fondateur dans le cluster d'émergence géométrique</h2>
+    <h2>Conséquences pour l'émergence géométrique</h2>
     <p>
-      U1 est un papier carrefour : sa démonstration de [U] avec taux explicite débloque
-      simultanément trois résultats aval :
+      U1 retire sa prétention à clore Q10 et le pont Q7. L'étape de coefficient proposée
+      par Q10 dépend toujours de [U], ouverte, et attend son propre audit. W1 importe
+      le taux quantitatif retiré par U1 ; sa prétention à stabiliser les poids attend
+      donc aussi son audit. Les autres papiers qui utilisent ce taux doivent être
+      examinés à leur propre étape.
     </p>
-    <ul>
-      <li>
-        <strong>Q10 (isotropie su(2)) :</strong> utilise [U] pour forcer l'indépendance aux
-        caractères de la forme quadratique effective grand-$q$, affirmant $A_H = 2$ ; la version 2.0 de Q7 retire son
-        usage de cette valeur, et cette entrée reste à réviser dans la même cascade.
-      </li>
-      <li>
-        <strong>W1 (stabilisation de la forme de Dirichlet) :</strong> utilise [U] pour
-        démontrer l'hypothèse [H-w], montrant que les poids d'admissibilité $a_q(s)$
-        convergent vers une limite positive.
-      </li>
-      <li>
-        <strong>O30 (correction équatoriale) :</strong> utilise le taux $O(q^{-1/2})$ pour
-        borner la correction équatoriale à la contrainte d'admissibilité spectrale.
-      </li>
-    </ul>
     <div class="note">
-      <strong>Avant U1.</strong> [U] était une hypothèse permanente. Après U1, c'est un
-      théorème, et tous les résultats conditionnels à [U] deviennent inconditionnels (sous
-      les seules hypothèses de Q5a).
+      <strong>Lecture interprétative.</strong> L'obstruction concerne cette route par norme
+      d'opérateur, pas l'universalité spectrale elle-même. Une preuve de [U] devrait
+      relier l'analyse au véritable incrément de rang sur blocs échantillonnés et
+      fournir une borne quantitative relative.
     </div>
   </section>
 
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
-      U1 résout l'une des hypothèses ouvertes clés du cadre d'admissibilité Q5a. Avant U1,
-      plusieurs étapes de la chaîne d'émergence métrique (Q10, W1) étaient conditionnelles à [U].
-      Après U1, ces étapes sont pleinement justifiées.
-    </p>
-    <p>
-      La méthode de preuve — bornes de Lipschitz sur les générateurs de Weil combinées à la
-      convergence géométrique vers une limite sous-riemannienne — est caractéristique de
-      l'approche Cosmochrony : les propriétés structurelles du groupe de Heisenberg fournissent
-      le contrôle analytique nécessaire pour passer des données spectrales discrètes aux
-      structures géométriques continues.
+      Le résultat distingue un énoncé prouvé sur les générateurs de Heisenberg finis
+      de l'uniformité encore ouverte des énergies d'empreinte de Weil. L'action de Weil
+      associée est distincte de la représentation de Heisenberg par multiplication
+      et translation utilisée dans l'obstruction. Le registre consigne cette distinction
+      et laisse en attente les identifications de coefficients et de métrique en aval.
     </p>
   </section>
 
@@ -214,11 +147,10 @@
     <h2>Référence</h2>
     <p>
       Jérôme Beau.
-      <i>Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})</i>, 2026.
+      <i>Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]</i>, version 2.0, 2026.
       <a href="https://doi.org/10.5281/zenodo.19881146">doi:10.5281/zenodo.19881146</a>
     </p>
   </section>
-
 </main>
 <footer>
   <div class="wrap">

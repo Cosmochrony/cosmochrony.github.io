@@ -5,20 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2}) | Cosmochrony
+    Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U] | Cosmochrony
   </title>
   <meta name="description"
-    content="U1 proves Hypothesis [U] (uniform spectral universality of Weil fingerprint energies)
-    with explicit convergence rate ε(q) = O(q^{-1/2}), using a Weil-generator Lipschitz bound
-    combined with BFS–Carnot–Carathéodory convergence."/>
+    content="U1 2.0 proves an exact finite Heisenberg generator obstruction and withdraws its former proof of [U] and its O(q^-1/2) rate; [U] remains open."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/emergent-geometry/u1/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})"/>
+    content="Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]"/>
   <meta property="og:description"
-    content="U1 proves [U] with rate ε(q) = O(q^{-1/2}) via Weil-generator Lipschitz bound and
-    BFS–Carnot–Carathéodory convergence. This foundational result enables Q10, W1, and O30."/>
+    content="U1 2.0 proves an exact finite Heisenberg generator obstruction and withdraws its former proof of [U] and its O(q^-1/2) rate; [U] remains open."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/u1/"/>
@@ -46,12 +43,10 @@
       </a>
       <div>
         <h1>
-          Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})
+          Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]
         </h1>
         <p class="subtitle">
-          U1 proves Hypothesis [U] — uniform spectral universality of Weil fingerprint energies
-          — with explicit convergence rate $\varepsilon(q) = O(q^{-1/2})$, using a
-          Weil-generator Lipschitz bound combined with BFS–Carnot–Carathéodory convergence.
+          U1 2.0 proves a finite Heisenberg generator obstruction and withdraws its former proof of [U] and rate. The hypothesis remains open.
         </p>
       </div>
     </div>
@@ -63,76 +58,41 @@
 </header>
 
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.1">
-    <strong>Current Zenodo release:</strong> version 1.1 (2026-08-15).
-    <span lang="en">Official title: <i>Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^-1/2)</i>.</span>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Current Zenodo release:</strong> version 2.0 (2026-09-22).
+    <span lang="en">Official title: <i>Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]</i>.</span>
   </section>
 
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        Hypothesis [U] — the uniform spectral universality of Weil fingerprint energies — is a
-        foundational assumption for several results in the geometric emergence cluster. It
-        asserts that, as the prime $q$ grows, the fingerprint energies of the Weil representation
-        on Heisenberg graphs converge uniformly, independently of the character.
+        Hypothesis [U] asks for a relative, uniform character-independence estimate for
+        Weil fingerprint energies on Heisenberg graphs. Version 1 of U1 claimed to prove
+        it with rate $O(q^{-1/2})$. Version 2.0 withdraws that proof and the rate;
+        [U] remains open.
       </p>
       <p>
-        U1 upgrades [U] from a working hypothesis to a proved theorem. The proof combines two
-        ingredients:
-      </p>
-      <ul>
-        <li>
-          A <strong>Weil-generator Lipschitz bound</strong>: the Weil generators act with
-          bounded Lipschitz constant on the space of fingerprint energies, controlling how
-          fast energies can vary as the character changes.
-        </li>
-        <li>
-          <strong>BFS–Carnot–Carathéodory convergence</strong>: BFS distance on the Heisenberg
-          graph converges to the Carnot–Carathéodory metric, providing the geometric substrate
-          for the uniformity argument.
-        </li>
-      </ul>
-      <p>
-        The result is a quantitative rate $\varepsilon(q) = O(q^{-1/2})$ for the deviation
-        from universality.
+        U1 instead proves an exact obstruction for the finite Heisenberg–Schrödinger
+        representations: multiplication generators at any two distinct central characters
+        have operator distance $2\cos(\pi/2q)$, tending to $2$. This concerns individual
+        generators. A separate adjacent-character example shows that their summed operator
+        also lacks the uniform modulus claimed by the former argument.
       </p>
       <div class="note">
-        <strong>Status.</strong> Proved.
+        <strong>Status.</strong> The generator obstruction is proved without Q5a–Q5b
+        hypotheses; [U] and its proposed rate are open. U1 does not show [U] to be false.
       </div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
-        <div class="kv">
-          <div class="k">Author</div>
-          <div class="v">Jérôme Beau</div>
-        </div>
-        <div class="kv">
-          <div class="k">Work type</div>
-          <div class="v">Preprint</div>
-        </div>
-        <div class="kv">
-          <div class="k">Focus</div>
-          <div class="v">
-            Spectral universality, Weil fingerprint energies, Lipschitz bound,
-            BFS–Carnot–Carathéodory convergence
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Key result</div>
-          <div class="v">
-            $\varepsilon(q) = O(q^{-1/2})$ for Weil fingerprint energy universality; [U] proved
-          </div>
-        </div>
-        <div class="kv">
-          <div class="k">Depends on</div>
-          <div class="v">Q5a</div>
-        </div>
-        <div class="kv">
-          <div class="k">Feeds into</div>
-          <div class="v">Q10, W1, O30</div>
-        </div>
+        <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
+        <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
+        <div class="kv"><div class="k">Focus</div><div class="v">Finite Heisenberg generators; Weil fingerprint energies; [U]</div></div>
+        <div class="kv"><div class="k">Key result</div><div class="v">Exact generator equidistance; the former route to [U] is withdrawn</div></div>
+        <div class="kv"><div class="k">Inputs</div><div class="v">No Q5a–Q5b hypothesis for the obstruction</div></div>
+        <div class="kv"><div class="k">Downstream</div><div class="v">W1, Q10 and Q11 require separate audits of their imported claims</div></div>
       </div>
     </aside>
   </section>
@@ -140,66 +100,41 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li>
-        <strong>Proof of [U]:</strong> hypothesis [U] is proved rigorously, converting a
-        working assumption into a theorem with explicit quantitative control.
-      </li>
-      <li>
-        <strong>Weil-generator Lipschitz bound:</strong> the Weil generators satisfy a Lipschitz
-        condition on fingerprint energy space, bounding character-to-character variation.
-      </li>
-      <li>
-        <strong>BFS–Carnot–Carathéodory convergence:</strong> as $q \to \infty$, the BFS
-        graph metric on the Heisenberg group converges to the sub-Riemannian
-        Carnot–Carathéodory distance, providing the geometric backbone of the universality proof.
-      </li>
-      <li>
-        <strong>Explicit rate $O(q^{-1/2})$:</strong> the convergence rate is not merely
-        qualitative but quantified, enabling downstream applications (Q10, W1) to bound
-        error terms explicitly.
-      </li>
+      <li><strong>Individual generators:</strong> for distinct $c,c'$ at prime $q$,
+        $\|\rho_{q,c}(X)-\rho_{q,c'}(X)\|=2\cos(\pi/2q)$, independently of the pair.</li>
+      <li><strong>Summed operator:</strong> cancellation can occur for $c'=-c$.
+        Separately, for $c=1,c'=2$, its distance is at least
+        $2\cos(\pi/q)+2\cos(2\pi/q)\to4$ while $|c-c'|/q\to0$.</li>
+      <li><strong>Observable mismatch:</strong> O25 measures a Gram–Schmidt rank increment
+        on sampled three-component blocks, not an identified compressed operator norm.</li>
+      <li><strong>Unsupported rate:</strong> the cited Q5b convergence result is qualitative;
+        it supplies no $O(q^{-1/2})$ Gromov–Hausdorff rate or transfer to the O25 count.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Foundational role in the geometric emergence cluster</h2>
+    <h2>Consequences for the geometric emergence cluster</h2>
     <p>
-      U1 is a hub paper: its proof of [U] with explicit rate unlocks three downstream results
-      simultaneously:
+      U1 withdraws its claim to close Q10 and the Q7 bridge. Q10's proposed coefficient
+      step still depends on open [U] and awaits its own audit. W1 imports U1's withdrawn
+      quantitative rate, so its weight-stabilisation claim also awaits audit. Any other
+      paper using that rate needs its dependence checked at its own stage.
     </p>
-    <ul>
-      <li>
-        <strong>Q10 (su(2)-isotropy):</strong> uses [U] to force character-independence of the
-        large-$q$ effective quadratic form, asserting $A_H = 2$; Q7 version 2.0 withdraws its use of that
-        value, and this entry is pending revision in the same cascade.
-      </li>
-      <li>
-        <strong>W1 (Dirichlet form stabilisation):</strong> uses [U] to prove hypothesis [H-w],
-        showing that admissibility weights $a_q(s)$ converge to a positive limit.
-      </li>
-      <li>
-        <strong>O30 (equatorial correction):</strong> uses the rate $O(q^{-1/2})$ to bound
-        the equatorial correction to the spectral admissibility constraint.
-      </li>
-    </ul>
     <div class="note">
-      <strong>Before U1.</strong> [U] was a standing hypothesis. After U1, it is a theorem,
-      and all results conditional on [U] become unconditional (subject only to Q5a hypotheses).
+      <strong>Interpretive outlook.</strong> The obstruction concerns this operator-norm
+      route, not spectral universality itself. A proof of [U] would need a comparison to
+      the actual sampled-block rank increment and a quantitative relative estimate.
     </div>
   </section>
 
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      U1 resolves one of the key open hypotheses in the Q5a admissibility framework. Before U1,
-      several steps in the metric emergence chain (Q10, W1) were conditional on [U]. After U1,
-      those steps are fully justified.
-    </p>
-    <p>
-      The proof method — Lipschitz bounds on Weil generators combined with geometric convergence
-      to a sub-Riemannian limit — is characteristic of the Cosmochrony approach: structural
-      properties of the Heisenberg group provide the analytic control needed to pass from
-      discrete spectral data to continuous geometric structures.
+      The result separates a proved statement about finite Heisenberg generators from
+      the still-open uniformity of Weil fingerprint energies. The associated Weil action
+      is distinct from the Heisenberg multiplication and shift representation used in
+      the obstruction. The programme registry records this distinction and leaves the
+      downstream coefficient and metric identifications pending.
     </p>
   </section>
 
@@ -207,11 +142,10 @@
     <h2>References</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Uniform Spectral Universality for Weil Fingerprint Energies: Proof of [U] with Rate O(q^{-1/2})</i>, 2026.
+      <i>Uniformity Requirements for Weil Fingerprint Energies: Obstructions to the Lipschitz Route to [U]</i>, version 2.0, 2026.
       <a href="https://doi.org/10.5281/zenodo.19881146">doi:10.5281/zenodo.19881146</a>
     </p>
   </section>
-
 </main>
 <footer>
   <div class="wrap">

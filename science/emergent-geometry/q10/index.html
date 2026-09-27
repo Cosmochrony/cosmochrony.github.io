@@ -5,17 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Asymptotic su(2)-Isotropy of the Effective Quadratic Form and the Identification A_H = 2 | Cosmochrony
+    Toward Coefficient Isotropy from Character Uniformity | Cosmochrony
   </title>
   <meta name="description"
-    content="Q10 proposes A_H to 2 under spectral universality [U], which U1 2.0 leaves open; its coefficient and geometric identifications await audit."/>
+    content="Q10 proves a sharp stability lemma for ratios of positive averages and a conditional isotropy theorem: under the uniformity hypothesis [U] and three named geometric inputs, the ratio of horizontal to central coefficients is within 2e/(1-e) of one. An absolute value needs an independent scale; no coefficient value is derived."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/emergent-geometry/q10/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Asymptotic su(2)-Isotropy of the Effective Quadratic Form and the Identification A_H = 2"/>
+    content="Toward Coefficient Isotropy from Character Uniformity: A Stability Lemma and Its Missing Geometric Inputs"/>
   <meta property="og:description"
-    content="Q10 proposes A_H to 2 under spectral universality [U], which U1 2.0 leaves open; its coefficient and geometric identifications await audit."/>
+    content="Character uniformity controls the ratio of coefficients only through named geometric inputs; the absolute scale is an independent datum."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q10/"/>
@@ -43,10 +43,10 @@
       </a>
       <div>
         <h1>
-          Asymptotic su(2)-Isotropy of the Effective Quadratic Form and the Identification A_H = 2
+          Toward Coefficient Isotropy from Character Uniformity
         </h1>
         <p class="subtitle">
-          Q10 proposes an isotropy route under [U]. U1 2.0 withdraws the claimed proof of that input; Q10 awaits audit.
+          What uniformity of the fingerprint observable across characters can contribute to the isotropy of emergent space, and which geometric inputs it still needs.
         </p>
       </div>
     </div>
@@ -58,70 +58,82 @@
 </header>
 
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.1">
-    <strong>Current Zenodo release:</strong> version 1.1 (2026-08-15).
-    <span lang="en">Official title: <i>Asymptotic su(2)-Isotropy of the Effective Quadratic Form and the Identification AH = 2</i>.</span>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Current Zenodo release:</strong> version 2.0 (2026-09-27).
+    <span lang="en">Official title: <i>Toward Coefficient Isotropy from Character Uniformity: A Stability Lemma and Its Missing Geometric Inputs</i>.</span>
   </section>
 
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        Q10's deposited version proposes a route from spectral universality [U] to
-        $\mathfrak{su}(2)$-isotropy and $A_H\to2$. This is its published claim, not a
-        coefficient established by the current cascade. U1 version 2.0 withdraws its
-        claimed proof of [U] and its $O(q^{-1/2})$ rate, so Q10 cannot use either as
-        a proved input.
+        An isotropic spatial geometry reconstructed from the admissible fibre would need the horizontal coefficient
+        $A_H$ and the central coefficient $A_Z$ of a positive three-dimensional spatial form to agree, and would need
+        their common value. Q10 isolates what uniformity of the O-series fingerprint observable across characters can
+        contribute to that question.
       </p>
       <p>
-        Q7 version 2.0 separately records the identification of the measured admissible
-        space with the supplied spin-one carrier as open. Reading a Casimir value on that
-        carrier as a measured horizontal coefficient requires this missing step. Q10's
-        own coefficient argument, including its parity attribution, awaits a separate audit.
+        The observable is a Gram–Schmidt rank increment per breadth-first shell. The hypothesis [U] asks that, on a
+        specified block family and depth window, it stay within a relative distance $\varepsilon$ of a common positive
+        profile. [U] is open.
       </p>
-      <div class="note"><strong>Status.</strong> The proposed coefficient identification
-        remains conditional on open [U] and further geometric inputs; Q10 is pending revision.</div>
+      <div class="note"><strong>Result.</strong> Under [U] and three further named inputs, the ratio $A_H/A_Z$ is
+        within $2\varepsilon/(1-\varepsilon)$ of one. The absolute value follows only from an independently supplied
+        scale. No coefficient value is derived.</div>
     </div>
     <aside class="card">
       <h2>Quick facts</h2>
       <div class="kvs">
         <div class="kv"><div class="k">Author</div><div class="v">Jérôme Beau</div></div>
         <div class="kv"><div class="k">Work type</div><div class="v">Preprint</div></div>
-        <div class="kv"><div class="k">Published claim</div><div class="v">$A_H\to2$ under [U]</div></div>
-        <div class="kv"><div class="k">Open input</div><div class="v">[U]; no longer proved by U1</div></div>
-        <div class="kv"><div class="k">Next step</div><div class="v">Audit Q10's own coefficient and parity arguments</div></div>
+        <div class="kv"><div class="k">Key result</div><div class="v">Sharp ratio lemma; conditional
+          $|A_H/A_Z - 1| \le 2\varepsilon/(1-\varepsilon)$</div></div>
+        <div class="kv"><div class="k">Status</div><div class="v">Proved for the lemmas; conditional on [U], [W],
+          [R], [T] for the ratio and on [S] for a value; none of these inputs is established</div></div>
+        <div class="kv"><div class="k">Depends on</div><div class="v">O17, O25, Q7, U1</div></div>
       </div>
     </aside>
   </section>
 
   <section class="card">
-    <h2>Dependencies under review</h2>
+    <h2>Main results</h2>
     <ul>
-      <li><strong>Uniformity:</strong> Q10 assumes [U]; U1 version 2.0 does not prove it.</li>
-      <li><strong>Absolute scale:</strong> the claimed value $A_H=2$ requires more than
-        representation-theoretic uniqueness of an isotropic form.</li>
-      <li><strong>Geometric bridge:</strong> Q7 version 2.0 leaves the measured-space
-        identification and a compatible positive spatial target open.</li>
-      <li><strong>Parity:</strong> the attribution of equality of the O25 observable
-        under $c\leftrightarrow q-c$ to O22 needs direct source review.</li>
+      <li><strong>Ratio stability:</strong> if data $x_{i,n}$ satisfy $|x_{i,n} - s(n)| \le \varepsilon\,s(n)$ with
+        $s > 0$ and $\varepsilon < 1$, any two averages with a common depth weighting have a ratio within
+        $2\varepsilon/(1-\varepsilon)$ of one. The bound is sharp, and the common depth weighting is essential.</li>
+      <li><strong>Conditional isotropy:</strong> under [U], a sector assignment of blocks to spin weights [W], a
+        linear response law identifying the coefficient ratio with a ratio of fingerprint averages [R], and a supplied
+        positive rank-three target [T], $A_H/A_Z$ obeys the same bound. An absolute value needs an independent scale
+        [S].</li>
+      <li><strong>Invariance fixes no coefficient:</strong> invariant Hermitian forms on the spin-one module form one
+        ray; the Casimir eigenvalue $2$ singles out a normalisation, not a coefficient.</li>
+      <li><strong>Exact parity, with its conditions:</strong> conjugation parity of the observable holds for
+        conjugately matched fingerprint data with an identical normalisation. The O25 campaign samples its paired
+        blocks independently and does not select them to meet this condition.</li>
+      <li><strong>No implication:</strong> exact parity and identical pair exponents are compatible with the failure of
+        [U] for every $\varepsilon &lt; 1/3$; a three-dimensional neutral sector and rank stability constrain none of
+        the amplitudes that [U] bounds.</li>
+      <li><strong>Numbers:</strong> the available compression entries $2 + 4\sin^2(\pi k/q)$ are Rayleigh-quotient
+        identities of the discrete Weil Laplacian, not metric coefficients.</li>
     </ul>
   </section>
 
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Q10 is part of a proposed chain toward effective geometry. U1's withdrawn
-      universality proof cannot close it; Q7's missing identification remains separate.
-      Q8, Q11 and the other consumers of the numerical coefficients await their own
-      correction stages. The registry records these dependencies without treating the
-      chain as complete.
+      Q10 separates two questions. Relative isotropy could be inherited from the uniformity of the admissible fibre
+      across characters, if geometric coefficients respond linearly to fingerprint data. The absolute scale is of a
+      different kind: representation theory leaves it free, and Q8 shows that isotropy between horizontal and central
+      directions selects a length scale. Neither the response law nor the extended spatial operator it presupposes is
+      constructed yet. Q5b records [H-lift] and the coefficient values as open; Q6b, Q11 and the other pages that
+      still quote $A_H = 2$ are pending revision.
     </p>
   </section>
 
   <section class="card">
     <h2>References</h2>
     <p><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Asymptotic su(2)-Isotropy of the Effective Quadratic Form and the Identification A_H = 2</i>, 2026.
+      <i>Toward Coefficient Isotropy from Character Uniformity: A Stability Lemma and Its Missing Geometric Inputs</i>, 2026.
       <a href="https://doi.org/10.5281/zenodo.19880900">doi:10.5281/zenodo.19880900</a></p>
   </section>
 </main>

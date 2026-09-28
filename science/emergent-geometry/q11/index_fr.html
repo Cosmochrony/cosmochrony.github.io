@@ -5,22 +5,22 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Rigidité du Casimir temporel et fermeture de la métrique effective : identification de A_τ = 2 | Cosmochrony
+    Vers une échelle temporelle pour l'espace-temps émergent : l'invariance SU(2) spatiale laisse libre le coefficient temporel | Cosmochrony
   </title>
   <meta name="description"
-    content="Sous l'hypothèse gelée, non établie [H-F], Q11 affirme A_τ = 2 avec une normalisation à réviser et la rigidité de
-    Schur. Sa lecture comme co-métrique de Minkowski complète g^{μν} ∝ η^{μν} est conditionnelle
-    à l'hypothèse indépendante de limite spatiale [H-L] et à l'identification que la version 2.0
-    de Q7 enregistre comme fournie par aucune source ; ses entrées spatiales restent à réviser."/>
+    content="Q11 démontre que l'invariance sous une action SU(2) spatiale laisse libre le coefficient temporel A_τ d'une
+    co-métrique lorentzienne émergente : toute forme invariante sur la fibre cotangente est α k_τ² + β Q_sp avec
+    α et β indépendants, de sorte qu'une normalisation spatiale A_H = 2λ ne donne aucune valeur de A_τ. Il manque
+    une donnée couplant les normalisations temporelle et spatiale."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q11/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Rigidité du Casimir temporel et fermeture de la métrique effective : identification de A_τ = 2"/>
+    content="Vers une échelle temporelle pour l'espace-temps émergent : l'invariance SU(2) spatiale laisse libre le coefficient temporel"/>
   <meta property="og:description"
-    content="Sous [H-F], Q11 affirme A_τ = 2 avec la normalisation de Q8 ; cette valeur reste à réviser. Sous [H-L], ce résultat fournit
-    l'entrée temporelle de g^{μν} = diag(-2, 2, 2, 2) ∝ η^{μν}, dont les entrées spatiales restent
-    à réviser depuis la version 2.0 de Q7. [H-F] et [H-L] sont toutes deux non établies."/>
+    content="L'invariance SU(2) spatiale interdit les termes mixtes temporels–spatiaux mais ne relie les scalaires
+    temporel et spatial par aucune équation. Aucune condition d'invariance SU(2) ne fixe une co-métrique
+    lorentzienne à un facteur global près. Q11 ferme une voie de dérivation, non la possibilité A_τ = 2."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q11/"/>
@@ -48,13 +48,12 @@
       </a>
       <div>
         <h1>
-          Rigidité du Casimir temporel et fermeture de la métrique effective : identification de A_τ = 2
+          Vers une échelle temporelle pour l'espace-temps émergent
         </h1>
         <p class="subtitle">
-          Sous l'hypothèse gelée, non établie [H-F], Q11 affirme $A_\tau=2$ avec une normalisation à réviser et la rigidité de
-          Schur. Sous l'hypothèse indépendante de limite spatiale [H-L], ce résultat fournit
-          l'entrée temporelle de $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}$, dont les
-          trois entrées spatiales ne sont pas établies : les versions 2.0 de Q8 et 2.0.1 de Q10 ne dérivent aucune valeur de coefficient.
+          L'invariance SU(2) spatiale laisse libre le coefficient temporel : elle interdit les termes mixtes
+          temporels–spatiaux mais ne relie les scalaires temporel et spatial par aucune équation, de sorte qu'une
+          normalisation spatiale $A_H = 2\lambda$ ne donne aucune valeur de $A_\tau$.
         </p>
       </div>
     </div>
@@ -66,42 +65,33 @@
 </header>
 
 <main class="wrap">
-  <div class="note"><strong>Lecture de cette page.</strong> L’exposé ci-dessous rapporte l’argument
-    publié de Q11, en attente de correction. Sa normalisation scalaire dépend de Q8 ; elle n’est pas une dérivation
-    indépendante protégée par l’hypothèse gelée [H-F]. U1 version 2.0 retire aussi sa preuve de [U]
-    et son taux : cette entrée amont reste ouverte. Le titre historique de l’article est conservé.</div>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-09-28).
+    <span lang="en">Titre officiel : <i>Toward a Temporal Scale for Emergent Spacetime: Spatial SU(2) Invariance Leaves the Temporal Coefficient Free</i>.</span>
+  </section>
 
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Le papier Q5b laissait ouvert le problème O3 : l'identification du coefficient temporel
-        $A_\tau$ entrant dans la co-métrique lorentzienne effective. Les coefficients spatiaux
-        $A_H = A_Z = 2$ avaient été affirmés par Q8 et Q10 avant leur version 2.0, qui ne dérive aucune valeur de coefficient. Q11 affirme fournir l’identification
-        temporelle manquante en utilisant la normalisation de Q8 ; cette affirmation reste à réviser.
+        Une co-métrique lorentzienne émergente sur le produit $\mathbb{R}_\tau\times\mathrm{Heis}_3(\mathbb{R})$
+        d'une droite d'ordre et d'un facteur spatial de Heisenberg porte un coefficient temporel $A_\tau$ et des
+        coefficients spatiaux. Un espace-temps à quatre dimensions exige leur normalisation relative. Sous [H-L] et
+        [H-lift], Q5b donne la co-métrique de rang trois $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ et laisse ouvertes
+        les valeurs de $A_\tau$ et $A_H$ (problème ouvert Q5b-O3). Pour une extension de rang plein fournie,
+        invariante sous l'action de spin un, Q8 démontre que les trois coefficients spatiaux coïncident, de valeur
+        commune $2\lambda$ avec $\lambda &gt; 0$ indéterminé.
       </p>
       <p>
-        L’argument publié de Q11 invoque [H-F] pour transférer l’équivariance au secteur temporel.
-        Même si ce transfert vaut, Schur ne fixe une forme qu’à un scalaire près.
-        Q11 fixe ce scalaire par Q8 : cet argument n’établit donc pas indépendamment la valeur $A_\tau=2$.
+        Q11 détermine ce que l'invariance sous une action $\mathrm{SU}(2)$ spatiale peut apporter au coefficient
+        temporel. La réponse est structurelle : la droite d'ordre porte la représentation triviale, et le lemme de
+        Schur laisse un scalaire libre par composante isotypique.
       </p>
-      <p>
-        Q11 affirme donc, sous l’hypothèse métrique supplémentaire [H-L],
-        \[
-          g^{\mu\nu} = \mathrm{diag}(-2,\; 2,\; 2,\; 2) \propto \eta^{\mu\nu},
-        \]
-        donnant la lecture métrique conditionnelle de Minkowski. Les trois entrées spatiales sont les
-        valeurs que Q8 et Q10 affirmaient avant leur version 2.0 ; la version 2.0 de Q8 montre que l'invariance ne fixe
-        aucun coefficient, et la version 2.0.1 de Q10 ne dérive aucune valeur. Q11 importe aussi de Q8 la normalisation scalaire de $A_\tau$ ;
-        la valeur temporelle reste donc également à réviser.
-      </p>
-      <div class="note">
-        <strong>Révision en attente.</strong> Les affirmations résumées sur cette page sont celles de Q11
-        déposé, non des valeurs de coefficients validées indépendamment. Le résumé et la preuve de Q11 importent
-        explicitement la normalisation de Q8 pour fixer le scalaire temporel. [H-F] ne supprime pas cette
-        dépendance : la valeur temporelle absolue et les valeurs spatiales restent à réviser.
-        Schur seul laisse un scalaire libre.
-      </div>
+      <div class="note"><strong>Résultat.</strong> Toute forme symétrique invariante sur la fibre cotangente
+        $\mathbb{R}_\tau\oplus W$ s'écrit $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$ avec $\alpha$ et $\beta$
+        indépendants. L'invariance exclut les termes mixtes temporels–spatiaux mais ne relie les deux scalaires par
+        aucune équation : $A_H = 2\lambda$ ne donne aucune valeur de $A_\tau$, en particulier pas $A_\tau = 2$.
+        Q11 ferme une voie de dérivation, non la possibilité $A_\tau = 2$.</div>
     </div>
     <aside class="card">
       <h2>Informations clés</h2>
@@ -117,101 +107,124 @@
         <div class="kv">
           <div class="k">Thématique</div>
           <div class="v">
-            Casimir temporel, rigidité de Schur, co-métrique effective, émergence de Minkowski
+            Normalisation temporelle, lemme de Schur, formes quadratiques invariantes, module de spin un, co-métrique
+            effective
           </div>
         </div>
         <div class="kv">
           <div class="k">Résultat clé</div>
           <div class="v">
-            Affirme $A_\tau=2$ avec la normalisation de Q8 ; valeurs temporelle et spatiales à réviser
+            L'invariance $\mathrm{SU}(2)$ spatiale laisse $A_\tau$ indépendant des coefficients spatiaux ; aucune
+            valeur de coefficient n'est dérivée
           </div>
         </div>
         <div class="kv">
+          <div class="k">Statut</div>
+          <div class="v">Démontré sous l'action fournie [ACT$_\tau$] ; la co-métrique à deux échelles
+            indépendantes est conditionnelle à [H-L], [H-lift], [T] et [INV$^+$] ; la donnée de couplage est
+            ouverte</div>
+        </div>
+        <div class="kv">
           <div class="k">Dépend de</div>
-          <div class="v">[H-F] gelée ; Q5b, Q8, Q10 ; [U] reste ouverte après U1 2.0 ; [H-L] pour la lecture métrique</div>
+          <div class="v">Q5b ([H-L], [H-lift]) ; Q7 ([ACT], fournie : aucune source ne la fournit) ; Q8 ([T], [INV$^+$])</div>
         </div>
         <div class="kv">
           <div class="k">Alimente</div>
-          <div class="v">Q12 seulement pour sa lecture sur la base émergente sous [H-L] ; le théorème de Yang–Mills à base fixée est indépendant de Q11</div>
+          <div class="v">Q12 uniquement pour son interprétation sur la base émergente sous [H-L] ; le théorème de Yang–Mills à base fixe est indépendant de Q11</div>
         </div>
       </div>
     </aside>
   </section>
 
   <section class="card">
-    <h2>Argument publié, en attente de révision</h2>
+    <h2>Résultats principaux</h2>
     <ul>
-      <li>Q11 propose un transfert d’équivariance du secteur spatial au secteur temporel sous le cadre
-        gelé [H-F]. Sa validité relève de la revue du papier encore à mener.</li>
-      <li>Sa preuve fixe le scalaire temporel par la normalisation de Q8. La valeur absolue
-        $A_\tau=2$ n’est donc pas une conséquence indépendante de Schur ou de [H-F].</li>
-      <li>La co-métrique de Minkowski et la fermeture de Q5b-O3 revendiquées dépendent de ces valeurs
-        temporelle et spatiales. Leur justification reste à réviser.</li>
+      <li><strong>Théorème 1.1 (démontré).</strong> Lorsque $\mathrm{SU}(2)$ agit trivialement sur la droite d'ordre
+        et par la représentation réelle de spin un sur le secteur spatial $W$ (hypothèse fournie [ACT$_\tau$]), toute
+        forme bilinéaire symétrique invariante sur $\mathbb{R}_\tau\oplus W$ s'écrit
+        $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$ avec $\alpha$ et $\beta$ indépendants. Il n'y a pas de terme mixte
+        temporel–spatial, de sorte que l'hypothèse du corollaire 6.1 de Q8 est dérivée pour un symbole
+        invariant ; fixer $A_H = 2\lambda$ n'impose aucune condition à $A_\tau$.</li>
+      <li><strong>Proposition 5.2 (démontrée).</strong> Pour toute action linéaire de $\mathrm{SU}(2)$ sur un espace
+        réel de dimension quatre, les formes invariantes sont soit les multiples d'une forme définie (le cas du
+        spin $\tfrac12$ réalifié), soit une famille de dimension au moins deux. Aucune condition d'invariance
+        $\mathrm{SU}(2)$ ne fixe une co-métrique lorentzienne à un facteur global près.</li>
+      <li><strong>Identification de modélisation 3.1 (entrée de modélisation).</strong> La coordonnée d'ordre est
+        $\tau = n\,\Delta\tau$, profondeur de parcours en largeur multipliée par un pas libre $\Delta\tau$ ; la
+        dérivée d'ordre est définie relativement à ce pas. C'est une entrée de modélisation, non un lemme.</li>
+      <li><strong>Proposition 4.1 (démontrée).</strong> Les dilatations temporelles commutent avec toute action
+        triviale sur la droite d'ordre et multiplient $A_\tau$ ; pour des données d'ordre discrètes fixées,
+        $A_\tau = a\,\Delta\tau^2$. Aucune condition d'équivariance ne fixe le pas.</li>
+      <li><strong>Corollaire 6.1 (conditionnel).</strong> Sous [H-L] et [H-lift] de Q5b, [T] et [INV$^+$] de Q8, un
+        symbole quadridimensionnel invariant et un terme d'ordre négatif, la co-métrique est
+        $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ avec deux échelles indépendantes. Un choix d'unité
+        temporelle la ramène à $2\lambda\,\eta^{\mu\nu}$.</li>
+      <li><strong>Remarque 6.3 (ouvert).</strong> La moitié temporelle de Q5b-O3 se ramène à une donnée couplant les
+        normalisations temporelle et spatiale, par exemple le pas $\Delta\tau$ exprimé en unités spatiales. Aucune
+        source ne la fournit.</li>
+    </ul>
+    <div class="note">
+      <strong>Portée.</strong> Q11 ne montre pas que $A_\tau = 2$ est faux. Il montre que l'invariance
+      $\mathrm{SU}(2)$ spatiale ne le dérive pas : la valeur propre $2$ du Casimir se rapporte à une normalisation
+      des générateurs et ne détermine aucun coefficient. Des sources candidates de la donnée de couplage (une borne de
+      capacité saturée, l'avancée unitaire du front de parcours en largeur) sont listées dans l'article comme
+      propositions exploratoires, non comme résultats.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Problèmes ouverts</h2>
+    <ul>
+      <li><strong>Q11-O1 (donnée de couplage).</strong> Fournir, à partir de la structure de la cascade, une donnée
+        couplant les normalisations temporelle et spatiale : le pas $\Delta\tau$ en unités spatiales pour des
+        données d'ordre discrètes fixées, ou directement le rapport $A_\tau/A_H$.</li>
+      <li><strong>Q11-O2 (signe du terme d'ordre).</strong> L'invariance ne fixe ni le rapport ni le signe de
+        $\alpha$ relativement à $\beta$ ; Q5b stipule le signe lorentzien. Le dériver de la structure
+        d'ordre.</li>
+      <li><strong>Q11-O3 (vitesse du front et symbole).</strong> Relier l'avancée unitaire du front de parcours en
+        largeur, en longueur de mot, au symbole principal d'un opérateur limite, en tenant compte de ce que la limite
+        de Carnot du facteur spatial est sous-finslérienne ; décider si cela fournit la donnée de couplage ou
+        seulement une borne.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>La chaîne de dérivation et Q5b-O3</h2>
+    <h2>Perspective interprétative</h2>
     <p>
-      Q11 se situe à la fin d'une longue chaîne de dérivation reliant le programme d'admissibilité
-      spectrale à la géométrie émergente :
+      <em>Statut : interprétation, non résultat.</em> Dans la lecture où $\tau$ est le paramètre de l'ordre
+      projectif et où le facteur de Heisenberg porte l'espace relationnel, l'isotropie spatiale et l'unité de temps
+      sont des informations distinctes. L'isotropie spatiale fixe l'allure de la forme spatiale et interdit tout
+      mélange privilégié du temps avec l'espace, mais le rythme auquel l'ordre avance relativement à la distance
+      relationnelle spatiale, qu'une lecture cinématique appellerait la vitesse invariante, est une donnée
+      indépendante que la seule théorie des représentations de l'espace ne fournit pas.
     </p>
-    <p>
-      La séquence publiée était Q5a → Q5b → Q7 → Q8 → Q9 → Q10 → U1 → W1 → H2 → Q11.
-      U1 ne fournit plus [U] ni son taux : cette séquence n’est pas une chaîne de dérivation close. La conclusion algébrique
-      $A_\tau=2$ invoque [H-F] et la normalisation scalaire de Q8 ; elle reste à réviser avec les valeurs
-      spatiales. La lecture métrique exige en outre [H-L].
-    </p>
-    <p>
-      Chaque étape apporte un argument structurel spécifique :
-    </p>
-    <ul>
-      <li><strong>Q5a/Q5b :</strong> formulent les hypothèses d'admissibilité et les problèmes ouverts.</li>
-      <li><strong>Q7 :</strong> exigences pour un pont équivariant ; la version 2.0 ne fournit aucune
-      équation de coefficient.</li>
-      <li><strong>Q8/Q10 :</strong> la version 2.0 de Q8 et la version 2.0.1 de Q10 ne dérivent aucune valeur de coefficient : le commutateur ne
-      fournit aucun coefficient central, l'invariance laisse l'échelle libre, et le rapport $A_H/A_Z$ n'est contrôlé
-      que sous des entrées nommées.</li>
-      <li><strong>U1/W1/H2 :</strong> sont invoqués en amont par Q11 ; U1 retire sa preuve de [U] et son taux ; la version 2.0.1 de W1 retire sa preuve revendiquée de [H-w], et le résultat distinct de H2 ne comble aucune de ces deux lacunes.</li>
-      <li><strong>Q11 :</strong> affirme $A_\tau=2$ avec la normalisation de Q8 ; la fermeture revendiquée reste à réviser.</li>
-    </ul>
-    <div class="note">
-      <strong>Signification.</strong> Une dérivation indépendante du coefficient temporel ferait
-      avancer le programme. La normalisation importée par Q11 ne fournit pas actuellement ce résultat indépendant.
-    </div>
   </section>
 
   <section class="card">
     <h2>Position dans le programme</h2>
     <p>
-      Sous [H-L], l'identification $g^{\mu\nu} \propto \eta^{\mu\nu}$ affirmée par la chaîne Q11, dont
-      les valeurs de coefficients temporel et spatiaux restent à réviser dans la cascade ouverte par la version 2.0
-      de Q7, est un
-      prérequis pour les papiers qui construisent la théorie dynamique sur la géométrie émergente :
+      Q11 répond négativement à la moitié temporelle de Q5b-O3 le long de la voie de la théorie des représentations
+      et nomme ce qui manque. Il n'établit aucune valeur de $A_\tau$, de $A_H$ ni de leur rapport.
     </p>
     <ul>
       <li>
-        <strong>Q12 :</strong> son théorème de variation verticale vaut à une métrique de base
-        fixée arbitraire fournie et ne dépend pas de Q11. Seule sa lecture sur la base émergente
-        de Cosmochrony utilise la co-métrique de Q11 sous [H-L].
+        <strong>Q12 :</strong> son théorème de variation verticale vaut pour une métrique de base fixe
+        arbitraire fournie et ne dépend pas de Q11. Seule son interprétation sur la base émergente de
+        Cosmochrony utilise la co-métrique de Q11 sous [H-L].
       </li>
       <li>
-        <strong>Papier Gravité :</strong> utilise la métrique pour la variation horizontale,
-        retrouvant les équations d'Einstein.
+        <strong>Articles qui utilisent $g = 2\eta$ :</strong> la série sur la capacité de Lorentz et l'article sur la
+        projection temporelle prennent cette co-métrique de Q11. Q11 (version 2.0) laisse $A_\tau$ libre, de sorte
+        qu'aucune valeur de coefficient n'est établie pour eux ; ils sont en attente de révision.
       </li>
     </ul>
-    <p>
-      Sous [H-L], le signe temporel (l'entrée $-2$ dans $g^{\mu\nu}$) encode la signature lorentzienne et
-      se rattache à l'orientation opposée des couches BFS temporelles par rapport aux couches
-      spatiales — conséquence de la structure non commutative du groupe de Heisenberg.
-    </p>
   </section>
 
   <section class="card">
     <h2>Référence</h2>
     <p>
       Jérôme Beau.
-      <i>Temporal Casimir Rigidity and Closure of the Effective Metric: Identification of A_τ = 2</i>, 2026.
+      <i>Toward a Temporal Scale for Emergent Spacetime: Spatial SU(2) Invariance Leaves the Temporal Coefficient Free</i>, 2026.
       <a href="https://doi.org/10.5281/zenodo.20098387">doi:10.5281/zenodo.20098387</a>
     </p>
   </section>

@@ -100,7 +100,7 @@
         </div>
         <div class="kv">
           <div class="k">Portée</div>
-          <div class="v">Algèbre démontrée sur des données de modèle fournies ; lectures physiques conditionnelles à [H-Spin] et [H-Weak] ; porteur de Heisenberg, module couleur et porteur de rang trois fournis</div>
+          <div class="v">Algèbre démontrée sur des données de modèle fournies ; lectures physiques conditionnelles à [H-Spin] et [H-Weak] ; porteur de Heisenberg, module couleur et règle de sélection de rang trois fournis</div>
         </div>
       </div>
     </aside>
@@ -115,8 +115,8 @@
         spinoriel est un secteur de Lorentz et son carré extérieur ne porte aucune hypercharge ; les données
         $\operatorname{SU}(2)_L \times U(1)_Y$ viennent du facteur faible $U(2)$ distinct de [H-Weak].</li>
       <li><strong>Chiralité de Lorentz :</strong> sous [H-Spin] et la donnée de Born–Infeld fournie,
-        l'opérateur de Dirac projeté $\mathcal{D}_{\Pi,g,A}$ porte un endomorphisme canonique d'ordre zéro
-        $E_\Pi$, le relèvement spinoriel de la parité est unique à une phase près et renverse la chiralité, et,
+        l'opérateur de Dirac projeté $\mathcal{D}_{\Pi,g,A}$ porte, pour un relèvement compatible avec le
+        symbole, un endomorphisme canonique d'ordre zéro $E_\Pi$, le relèvement spinoriel de la parité est unique à une phase près et renverse la chiralité, et,
         sur une branche d'orientation prise comme donnée d'entrée, $E_\Pi$ est admissible à gauche ; un
         $E_\Pi \preceq 0$ non nul admissible à gauche brise cette parité.</li>
       <li><strong>Sélection chirale électrofaible :</strong> la structure $V-A$ des couplages faibles est le
@@ -124,18 +124,21 @@
         sélectionne pas.</li>
       <li><strong>Hypercharge :</strong> sous les deux hypothèses, les termes de courbure de jauge du
         coefficient $a_4$ pondéré par $\gamma_5$ imposent des contraintes d'anomalie qui sélectionnent les
-        torsions d'hypercharge au signe, à l'échelle et à l'échange de $u_R$ et $d_R$ près, par la
-        classification connue ; les traces dépendant de $E_\Pi$ ne sont pas analysées.</li>
+        puissances de $L_Y$ laissées libres par [H-Weak], au signe, à un facteur d'échelle et à l'échange de
+        $u_R$ et $d_R$ près, avec un module couleur de dimension trois fourni, sur le contenu du Modèle
+        standard sans $\nu_R$ et avec la normalisation entière minimale de $L_Y$, par la classification
+        connue ; les traces dépendant de $E_\Pi$ ne sont pas analysées.</li>
       <li><strong>Trois générations :</strong> la règle de sélection fournie $\sigma_c(n_3) = 3$ donne un
         facteur singulet de jauge $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\operatorname{SU}(2)} \oplus Y)$,
-        conditionnellement à un porteur de rang trois fourni et aux deux hypothèses.</li>
+        conditionnellement à cette règle de sélection fournie et aux deux hypothèses.</li>
       <li><strong>Secteur de couleur :</strong> un secteur de quarks couplé à la couleur s'écrit par produit
         tensoriel avec un module fourni $V_{\mathrm{color}}$ ; O31 version 2.0 retire la construction et
         l'identification de groupe annoncées.</li>
       <li><strong>Séparation des générations (modèle) :</strong> sur un doublet de génération distinct fourni,
         un opérateur de modèle statique $J_\Pi$-réel préservant les poids a une paire extérieure dégénérée ;
         le générateur $\mathcal{G}_g = \log g$ d'un pas métaplectique ordonné porte la composante $J_3$ exacte
-        $\alpha = ts\,\theta/\sinh\theta$, $\cosh\theta = 1 + ts/2$, et aucune composante de mélange.</li>
+        $\alpha = ts\,\theta/\sinh\theta$, $\cosh\theta = 1 + ts/2$, non nulle pour $ts > 0$, et aucune
+        composante de mélange.</li>
     </ul>
   </section>
   <section class="card">
@@ -145,7 +148,7 @@
       à caractère central non trivial fixé ; les axiomes ne sélectionnent pas ce porteur.
       Sur le porteur fini, les symétries agissent par le groupe fini $\operatorname{SL}(2,\mathbb{Z}/q\mathbb{Z})$,
       tandis que le groupe métaplectique du modèle réel agit sur une représentation de dimension infinie sans
-      sous-espace de dimension deux.
+      sous-espace invariant de dimension finie.
       Le passage à un doublet portant $\mathfrak{sl}_2(\mathbb{C})$ est donc une étape de modélisation, et le
       doublet est une donnée de modèle fournie.
       Les identités tensorielles sur ce doublet sont démontrées.
@@ -156,13 +159,13 @@
     <p>
       La même algèbre $\mathfrak{sl}_2(\mathbb{C})$ est celle du spin de Lorentz et l'algèbre complexifiée de
       l'isospin faible, mais une seule copie du doublet ne peut pas porter les deux.
-      Sur une fibre de Weyl irréductible, toute application qui commute avec les transformations de Lorentz
+      Sur une fibre de Weyl irréductible, toute application $\mathbb{C}$-linéaire qui commute avec les transformations de Lorentz
       est un scalaire (lemme de Schur) : une action faible non triviale exige un second facteur, et le champ
       porte un indice spinoriel et un indice faible séparé, comme dans le Modèle standard.
-      Sous [H-Spin], une forme réelle compacte de l'algèbre de Lorentz est le groupe des rotations d'une
-      direction de genre temps choisie, non une symétrie interne.
+      Sous [H-Spin], une forme réelle compacte de l'algèbre de Lorentz est le stabilisateur d'une direction de
+      genre temps et engendre les rotations spatiales dans ce repère ; ce n'est pas une symétrie interne.
       Q14 énonce donc la lecture lorentzienne comme [H-Spin] et la lecture électrofaible comme [H-Weak], et ne
-      construit le lien d'aucun des deux facteurs avec la fibre.
+      construit ni la soudure ni le facteur faible.
     </p>
   </section>
   <section class="card">
@@ -171,8 +174,8 @@
       Sous [H-Spin], l'endomorphisme $E_\Pi$ qui entre dans l'opérateur de Dirac projeté est la part de son
       carré que la métrique effective et le champ de jauge ne résolvent pas : le résidu spectral de la
       projection non injective.
-      Avec la donnée de parité de Born–Infeld fournie par les hypothèses d'O30, son relèvement spinoriel est
-      unique à une phase près et échange les deux chiralités.
+      Avec la donnée de parité de Born–Infeld fournie par les hypothèses d'O30, le relèvement spinoriel de la
+      parité est unique à une phase près et échange les deux chiralités.
       Sur une branche d'orientation prise comme donnée d'entrée, $E_\Pi$ n'a pas d'auto-couplage droit, et un
       tel résidu non nul brise nécessairement la parité.
     </p>
@@ -187,8 +190,9 @@
     <p>
       Sous les deux hypothèses, l'invariance de jauge de la fonctionnelle spectrale projetée impose des
       contraintes d'anomalie par la partie de courbure de jauge du coefficient $a_4$ pondéré par $\gamma_5$.
-      Les torsions d'hypercharge laissées libres par [H-Weak] sont alors sélectionnées au signe, à l'échelle et
-      à l'échange de $u_R$ et $d_R$ près, avec un module couleur de dimension trois fourni ; l'article utilise
+      Les puissances de $L_Y$ laissées libres par [H-Weak] sont alors sélectionnées au signe, à un facteur
+      d'échelle et à l'échange de $u_R$ et $d_R$ près, avec un module couleur de dimension trois fourni, sur le
+      contenu du Modèle standard sans $\nu_R$ et avec la normalisation entière minimale de $L_Y$ ; l'article utilise
       la classification connue des solutions à une génération sans la redémontrer.
       Les termes de $a_4$ qui dépendent de $E_\Pi$ ne sont pas analysés.
     </p>
@@ -196,11 +200,11 @@
   <section class="card">
     <h2>Trois générations à partir de $\sigma_c = 3$</h2>
     <p>
-      Conditionnellement à un porteur de rang trois fourni, la règle de sélection $\sigma_c(n_3) = 3$ admet une
-      lecture spinorielle comme multiplicité d'un sous-espace singulet de jauge, qui donne le facteur
+      La règle de sélection fournie $\sigma_c(n_3) = 3$ admet une lecture spinorielle comme multiplicité d'un
+      sous-espace singulet de jauge, qui donne, conditionnellement à cette règle, le facteur
       $\mathbb{C}^3_{\mathrm{gen}}$.
       O23 démontre la dimension trois seulement pour le secteur neutre d'un porteur spinoriel fourni ; la
-      sélection du porteur et son identification observable restent ouvertes, et aucune source ne lit cette
+      sélection du porteur et l'identification de $\Sigma_c$ à cette dimension restent ouvertes, et aucune source ne lit cette
       règle comme trois directions spatiales.
     </p>
   </section>
@@ -217,8 +221,8 @@
     </p>
     <p>
       La lecture de ces opérateurs comme restrictions de $E_\Pi^2$ n'est pas fournie, pas plus que
-      l'identification de $\log g$ à une dérivée d'ordre émergente : Q11 ne définit cette dérivée que sur les
-      fonctions du paramètre d'ordre.
+      l'identification de $\log g$ à une dérivée par rapport au paramètre d'ordre émergent : Q11 ne définit
+      cette dérivée que sur les fonctions de ce paramètre.
       La valeur $\varepsilon = 1/10$ est une valeur d'ajustement, et l'amplitude reste ouverte.
     </p>
   </section>
@@ -229,8 +233,10 @@
       la dynamique de Yang–Mills comme réponses de Seeley–DeWitt d'une même fonctionnelle spectrale admissible.
       Son résultat est de situer ce dont le secteur fermionique a besoin au-delà de la fibre de Weil admissible :
       une soudure spinorielle lorentzienne et un facteur faible distinct.
-      La branche géométrique ne fournit une co-métrique lorentzienne que conditionnellement, et Q11 ne fournit
-      aucune structure lorentzienne à Q14.
+      La branche géométrique ne fournit une co-métrique lorentzienne que conditionnellement : Q11 (corollaire
+      6.1) donne, sous ses hypothèses, une signature lorentzienne, et c'est tout ce que Q14 utilise ; Q11 ne
+      fournit ni valeurs de coefficients, ni soudure spinorielle lorentzienne, ni générateur d'ordre, si bien
+      que [H-Spin] reste une hypothèse supplémentaire.
     </p>
     <p>
       Plusieurs articles consommateurs du sous-programme de la matière fermionique ont été écrits avant cette

@@ -98,7 +98,7 @@
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">Algebra proved on supplied model data; physical readings conditional on [H-Spin] and [H-Weak]; Heisenberg carrier, colour module and rank-three carrier supplied</div>
+          <div class="v">Algebra proved on supplied model data; physical readings conditional on [H-Spin] and [H-Weak]; Heisenberg carrier, colour module and rank-three selection rule supplied</div>
         </div>
       </div>
     </aside>
@@ -113,23 +113,27 @@
         factor is a Lorentz sector and its exterior square carries no hypercharge; the
         $\operatorname{SU}(2)_L \times U(1)_Y$ data come from the distinct $U(2)$ weak factor of [H-Weak].</li>
       <li><strong>Lorentz chirality:</strong> under [H-Spin] and the supplied Born–Infeld datum, the projected
-        Dirac operator $\mathcal{D}_{\Pi,g,A}$ carries a canonical zero-order endomorphism $E_\Pi$, the spinorial
+        Dirac operator $\mathcal{D}_{\Pi,g,A}$ carries, for a symbol-compatible lift, a canonical zero-order
+        endomorphism $E_\Pi$, the spinorial
         lift of the parity is unique up to a phase and reverses chirality, and on an orientation branch taken
         as an input $E_\Pi$ is left-admissible; a non-zero left-admissible $E_\Pi \preceq 0$ breaks that parity.</li>
       <li><strong>Electroweak chiral selection:</strong> the $V-A$ structure of weak couplings is the
         representation content of [H-Weak]; left-admissibility is compatible with it but does not select it.</li>
       <li><strong>Hypercharge:</strong> under both hypotheses, the gauge-curvature $\gamma_5$-weighted $a_4$
         terms impose anomaly constraints that select the hypercharge twists up to sign, rescaling and the
-        exchange of $u_R$ and $d_R$, using the known classification; the $E_\Pi$-dependent traces are not analysed.</li>
+        exchange of $u_R$ and $d_R$, with a supplied three-dimensional colour module, on the Standard Model
+        content without $\nu_R$ and with the minimal integral normalisation of $L_Y$, using the known
+        classification; the $E_\Pi$-dependent traces are not analysed.</li>
       <li><strong>Three generations:</strong> the supplied selection rule $\sigma_c(n_3) = 3$ gives a
         gauge-singlet factor $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\operatorname{SU}(2)} \oplus Y)$,
-        conditional on a supplied rank-three carrier and on the two hypotheses.</li>
+        conditional on that supplied selection rule and on the two hypotheses.</li>
       <li><strong>Colour sector:</strong> a colour-coupled quark sector is written by tensoring with a supplied
         module $V_{\mathrm{color}}$; O31 version 2.0 withdraws the purported construction and group identification.</li>
       <li><strong>Generation splitting (model):</strong> on a distinct supplied generation doublet, a static
         $J_\Pi$-real, weight-preserving model operator has a degenerate outer pair; the step generator
         $\mathcal{G}_g = \log g$ of an ordered metaplectic step carries the exact $J_3$ component
-        $\alpha = ts\,\theta/\sinh\theta$, $\cosh\theta = 1 + ts/2$, and no mixing component.</li>
+        $\alpha = ts\,\theta/\sinh\theta$, $\cosh\theta = 1 + ts/2$, non-zero for $ts > 0$, and no mixing
+        component.</li>
     </ul>
   </section>
   <section class="card">
@@ -139,7 +143,7 @@
       and fixed non-trivial central character; the axioms do not select that carrier.
       On the finite carrier the symmetries act through the finite group
       $\operatorname{SL}(2,\mathbb{Z}/q\mathbb{Z})$, while the metaplectic group of the real model acts on an
-      infinite-dimensional representation with no two-dimensional piece.
+      infinite-dimensional representation with no finite-dimensional invariant subspace.
       The passage to a doublet carrying $\mathfrak{sl}_2(\mathbb{C})$ is therefore a modelling step, and the
       doublet is supplied model data.
       The tensor identities on that doublet are proved.
@@ -150,13 +154,13 @@
     <p>
       The same algebra $\mathfrak{sl}_2(\mathbb{C})$ is the algebra of Lorentz spin and the complexified algebra of
       weak isospin, but one copy of the doublet cannot carry both.
-      On an irreducible Weyl fibre, every map commuting with Lorentz transformations is a scalar (Schur's
+      On an irreducible Weyl fibre, every complex-linear map commuting with Lorentz transformations is a scalar (Schur's
       lemma), so a non-trivial weak action needs a second factor: the field carries a spinor index and a
       separate weak index, as in the Standard Model.
-      Under [H-Spin], a compact real form of the Lorentz algebra is the rotation group of a chosen time-like
-      direction, not an internal symmetry.
+      Under [H-Spin], a compact real form of the Lorentz algebra is the stabiliser of a time-like direction and
+      generates spatial rotations in that frame, not an internal symmetry.
       Q14 therefore states the Lorentz reading as [H-Spin] and the electroweak reading as [H-Weak], and
-      constructs neither factor's link to the fibre.
+      constructs neither the solder nor the weak factor.
     </p>
   </section>
   <section class="card">
@@ -164,8 +168,8 @@
     <p>
       Under [H-Spin], the endomorphism $E_\Pi$ entering the projected Dirac operator is the part of its square
       not resolved by the effective metric and gauge field: the spectral residue of non-injective projection.
-      With the Born–Infeld parity datum supplied by O30's hypotheses, its spinorial lift is unique up to a
-      phase and exchanges the two chiralities.
+      With the Born–Infeld parity datum supplied by O30's hypotheses, the spinorial lift of the parity is
+      unique up to a phase and exchanges the two chiralities.
       On an orientation branch taken as an input, $E_\Pi$ has no right-handed self-coupling, and a non-zero
       such residue must break the parity.
     </p>
@@ -181,7 +185,8 @@
       Under both hypotheses, gauge invariance of the projected spectral functional imposes anomaly constraints
       through the gauge-curvature part of the $\gamma_5$-weighted $a_4$ coefficient.
       The hypercharge twists left free by [H-Weak] are then selected up to sign, rescaling and the exchange of
-      $u_R$ and $d_R$, with a supplied three-dimensional colour module; the paper uses the known
+      $u_R$ and $d_R$, with a supplied three-dimensional colour module, on the Standard Model content
+      without $\nu_R$ and with the minimal integral normalisation of $L_Y$; the paper uses the known
       classification of one-generation solutions and does not reprove it.
       Terms of $a_4$ that depend on $E_\Pi$ are not analysed.
     </p>
@@ -189,10 +194,10 @@
   <section class="card">
     <h2>Three generations from $\sigma_c = 3$</h2>
     <p>
-      Conditional on a supplied rank-three carrier, the selection rule $\sigma_c(n_3) = 3$ admits a spinorial
-      reading as the multiplicity of a gauge-singlet subspace, giving the factor $\mathbb{C}^3_{\mathrm{gen}}$.
-      O23 proves three-dimensionality only for the neutral sector of a supplied spinor carrier; carrier
-      selection and its observable identification remain open, and no source reads this rule as three
+      The supplied selection rule $\sigma_c(n_3) = 3$ admits a spinorial reading as the multiplicity of a
+      gauge-singlet subspace, giving, conditionally on that rule, the factor $\mathbb{C}^3_{\mathrm{gen}}$.
+      O23 proves three-dimensionality only for the neutral sector of a supplied spinor carrier; the carrier
+      selection and the identification of $\Sigma_c$ with that dimension remain open, and no source reads this rule as three
       spatial directions.
     </p>
   </section>
@@ -221,8 +226,10 @@
       conditionally, as Seeley–DeWitt responses of one admissible spectral functional.
       Its result is to locate what the fermionic sector needs beyond the admissible Weil fibre: a Lorentzian
       spin solder and a distinct weak factor.
-      The geometric branch supplies a Lorentzian co-metric only conditionally, and Q11 supplies no
-      Lorentzian structure to Q14.
+      The geometric branch supplies a Lorentzian co-metric only conditionally: Q11 (Corollary 6.1) gives,
+      under its stated hypotheses, a Lorentzian signature, which is all Q14 uses; Q11 supplies neither
+      coefficient values, nor a Lorentzian spin soldering, nor an order generator, so [H-Spin] remains an
+      additional hypothesis.
     </p>
     <p>
       Several consumer papers of the fermionic matter sub-programme were written before this version and are

@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Opérateur de Yukawa projeté et facteur polaire chiral | Cosmochronie</title>
   <meta name="description"
-    content="Deuxième étape du secteur de masse : l'observable carrée de Yukawa H_Pi = Y_Pi^dag Y_Pi est fixée par E_Pi^2|gen, mais le morphisme de Yukawa n'est déterminé qu'à un facteur polaire chiral U_Pi près. Un no-go partiel, pas un résultat de masse."/>
+    content="L'observable carrée de Yukawa H_Pi est fixée par E_Pi^2 sur le triplet de génération, mais le morphisme de Yukawa n'est déterminé qu'à un facteur polaire chiral U_Pi près. Le générateur polaire n'est pas la projection A_Pi^odd, qui s'annule ; la classe polaire physique est ouverte. Un no-go partiel, pas un résultat de masse."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Opérateur de Yukawa projeté et facteur polaire chiral"/>
   <meta property="og:description"
-    content="E_Pi^2 fixe les niveaux carrés de Yukawa, pas le morphisme : Y_Pi = U_Pi H_Pi^{1/2}. Le Front 3c caractérise U_Pi comme une classe de rephasage (3 angles de mélange + 1 phase de Jarlskog), triviale sur la cascade réelle dérivée ; le mélange exige une phase métaplectique complexe."/>
+    content="E_Pi^2 fixe les niveaux carrés de Yukawa, pas le morphisme : Y = U_Pi H_Pi^{1/2}. Le générateur polaire n'est pas la projection A_Pi^odd, qui s'annule par définition ; un contre-exemple exact et la classe polaire physique ouverte sont énoncés."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/projected-yukawa-operator/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
 
@@ -49,8 +50,8 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.10.1">
-    <strong>Publication Zenodo actuelle :</strong> version 1.10.1 (2026-09-15).
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (2026-10-02).
   </section>
   <section class="grid">
     <div class="card">
@@ -58,26 +59,29 @@
       <p>
         Cette note compagnonne prend la deuxième étape du front du secteur de masse du
         <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme matière
-        fermionique</a>, et tire une conclusion négative nette dès son entrée. La
+        fermionique</a>. La
         <a href="/science/fermionic-matter/projected-yukawa-line/index_fr.html" class="inline-link">note de
-        ligne</a> a fixé la ligne déterminantielle $L_Y = \wedge^2(\mathcal{S}_\Pi)$ comme ligne de couplage
-        de Yukawa et les niveaux générationnels depuis
-        $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$. Ici, on demande si le résidu
-        carré détermine le morphisme de Yukawa lui-même, et on montre que non.
+        ligne</a> type la ligne de couplage de façon conditionnelle, comme la ligne déterminantielle
+        $L_Y = \wedge^2(E_{\mathrm{weak}})$ du facteur faible distinct de Q14 sous [H-Weak], et lit les niveaux
+        générationnels sur l'opérateur modèle $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ de
+        $C^3_{\mathrm{gen}}$. Ici, on demande si le résidu projectif carré détermine le morphisme de Yukawa
+        lui-même, et on montre que non.
       </p>
       <p>
-        Le résidu carré est hermitien sur une seule chiralité, tandis que $Y_\Pi$ relie les deux
-        chiralités ; la donnée chirale de liaison est donc invisible à $E_\Pi^2$. Ce qui survit est le carré
-        hermitien $H_\Pi = Y_\Pi^\dagger Y_\Pi$ ; le morphisme reste alors libre à un facteur polaire chiral
-        unitaire près.
+        Le résidu carré est hermitien sur une seule chiralité de Lorentz, tandis que le bloc de génération
+        $Y^{\mathrm{gen}}_\Pi$ relie les deux chiralités ; la donnée chirale de liaison est donc invisible à
+        $E_\Pi^2$. Ce qui survit est le carré hermitien
+        $H_\Pi = (Y^{\mathrm{gen}}_\Pi)^\dagger Y^{\mathrm{gen}}_\Pi$ ; le morphisme reste alors libre à un facteur
+        polaire chiral unitaire $U_\Pi$ près. Chaque énoncé est étiqueté par les prémisses qu'il utilise, et aucune
+        valeur de masse n'est revendiquée.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page fournit un résumé structuré.
-        La référence technique faisant foi est le preprint lié ci-dessus.
+        La référence technique faisant autorité est le preprint lié ci-dessus.
       </div>
     </div>
     <aside class="card">
-      <h2>Faits en bref</h2>
+      <h2>Faits clés</h2>
       <div class="kvs">
         <div class="kv">
           <div class="k">Auteur</div>
@@ -93,171 +97,169 @@
         </div>
         <div class="kv">
           <div class="k">Objet</div>
-          <div class="v">Observable carrée $H_\Pi = Y_\Pi^\dagger Y_\Pi$, ambiguïté polaire chirale $Y_\Pi = U_\Pi H_\Pi^{1/2}$</div>
+          <div class="v">Observable carrée de Yukawa $H_\Pi$, facteur polaire chiral $U_\Pi$, générateur polaire face à la projection $A_\Pi^{\mathrm{odd}}$</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
           <div class="v">Document de travail (DOI de concept <a
             href="https://doi.org/10.5281/zenodo.20767498">10.5281/zenodo.20767498</a>)</div>
         </div>
+        <div class="kv">
+          <div class="k">Code</div>
+          <div class="v"><a href="https://github.com/Cosmochrony/projected-yukawa-operator/tree/main/code"
+            rel="noopener">projected-yukawa-operator/code</a> (vérifications en arithmétique exacte)</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
+    <h2>Prémisses, aucune fournie par une source</h2>
+    <p>
+      Quatre prémisses sont nommées, et chaque énoncé de l'article est étiqueté par celles qu'il utilise.
+      <strong>[H-Res]</strong> : l'opérateur modèle $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ est la restriction de
+      $E_\Pi^2$ à $C^3_{\mathrm{gen}}$. <strong>[H-Sq]</strong> : le carré de Yukawa est le carré du résidu,
+      $H_\Pi = \lambda_Y^2\,E_\Pi^2|_{C^3_{\mathrm{gen}}}$. <strong>[H-Fac]</strong> : il existe un porteur de
+      liaison faible $K$ dont l'espace des couplages invariants est non nul (F1) et de dimension au plus un (F2) ;
+      les deux conditions sont indépendantes, et ensemble elles permettent aux résultats sur le bloc de génération
+      d'atteindre le morphisme complet $Y_\Pi$. <strong>[H-Grad]</strong> : chaque porteur de génération a sa
+      propre graduation $J_3$. Les chiralités de l'article sont des chiralités de Lorentz du facteur spinoriel sous
+      [H-Spin] ; ce ne sont pas la sélection $V-A$, qui est le contenu en représentations de [H-Weak].
+    </p>
+  </section>
+  <section class="card">
     <h2>Résultats principaux</h2>
     <ul>
-      <li><strong>Observable carrée de Yukawa.</strong> L'observable de niveau générationnel du secteur
-        Schur-résidu est le carré hermitien positif $H_\Pi := Y_\Pi^\dagger Y_\Pi$, avec
-        $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\,\{1, \tfrac12+u, \tfrac12-u\}$. Ainsi
-        $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ détermine les niveaux carrés de Yukawa, pas le morphisme lui-même.</li>
-      <li><strong>Ambiguïté polaire chirale (no-go partiel).</strong> Par décomposition polaire $Y_\Pi = U_\Pi
-        H_\Pi^{1/2}$, où $U_\Pi$ est une application chirale unitaire sur le support de $H_\Pi$. Puisque
-        $H_\Pi$ est aveugle à tout unitaire côté droit ($Y_\Pi \mapsto V Y_\Pi$ laisse $Y_\Pi^\dagger Y_\Pi$
-        inchangé), le résidu carré ne fixe pas $Y_\Pi$.</li>
-      <li><strong>Ce qui vit dans $U_\Pi$.</strong> L'orientation chirale et la phase de mélange complexe
-        résident dans $U_\Pi$. La norme positive de Yukawa $\lambda_Y$ est une échelle <em>séparée</em> de
-        $H_\Pi$ — un unitaire ne peut pas la porter — et est elle aussi invisible à l'opérateur de niveau
-        sans dimension $E_\Pi^2$.</li>
-      <li><strong>Signe de $u$.</strong> Dans une base orientée $J_3$-labellisée $(e_0, e_+, e_-)$ l'opérateur
-        de niveau voit déjà le signe relatif de $u$ ; sans ce choix d'orientation, l'échange
-        $e_+ \leftrightarrow e_-$ envoie $u \mapsto -u$ et laisse le spectre carré non ordonné inchangé. La
-        donnée ouverte est la branche d'orientation physique, pas un scalaire visible à $E_\Pi^2$ seul.</li>
+      <li><strong>Le carré fixe les niveaux, pas le morphisme.</strong> Sous [H-Res] et [H-Sq], $H_\Pi$ est
+        hermitien positif de spectre
+        $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$. La décomposition
+        polaire $Y^{\mathrm{gen}}_\Pi = U_\Pi H_\Pi^{1/2}$ est de l'algèbre linéaire et n'utilise aucune
+        prémisse : un carré hermitien ne détermine le morphisme qu'à un facteur polaire unitaire près.</li>
+      <li><strong>Ce que contient $U_\Pi$.</strong> L'orientation chirale et la phase de mélange complexe résident
+        dans $U_\Pi$. La norme positive $\lambda_Y$ est une échelle séparée de $H_\Pi$, qu'un unitaire ne peut
+        porter et que $E_\Pi^2$ ne voit pas non plus.</li>
+      <li><strong>Classe de rephasage (sous [H-Grad]).</strong> Le facteur polaire n'est pas canonique mais une
+        classe $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$, les deux groupes étant les commutants des
+        graduations $J_3$ des deux porteurs. Pour $0 &lt; u &lt; \tfrac12$, l'espace des classes est de dimension
+        $9 - 5 = 4$ : trois angles de mélange et une phase de Jarlskog $\mathcal{J}_{\mathrm{CP}}$.</li>
+      <li><strong>Critère au premier ordre.</strong> Pour une famille de morphismes, $[U_\Pi] \neq [I]$ au premier
+        ordre si et seulement si le générateur polaire $\Omega$ a une partie transverse (hors diagonale) non
+        nulle ; l'invariant de Jarlskog a pour ordre dominant $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. Une
+        tangente nulle n'exclut pas une sortie à un ordre supérieur.</li>
+      <li><strong>Signe de $u$.</strong> Dans une base orientée étiquetée par $J_3$, $(e_0, e_+, e_-)$, l'opérateur
+        de niveaux voit le signe relatif de $u$ ; sans ce choix d'orientation, l'échange $e_+ \leftrightarrow e_-$
+        envoie $u \mapsto -u$ et laisse inchangé le spectre carré non ordonné.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Branche CP-réelle diagonale</h2>
+    <h2>Le générateur polaire face à $A_\Pi^{\mathrm{odd}}$</h2>
     <p>
-      La réduction CP-paire réelle impose $v = 0$ (pas de mélange hors-diagonale pour des données sans phase).
-      Dans le présent langage c'est la branche $U_\Pi = \mathbf{1}$, où l'opérateur de Yukawa est la racine
-      positive elle-même, $Y_\Pi = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$, réel et
-      diagonal sans mélange. C'est un choix de branche, non un fait dérivé : un $U_\Pi$ non trivial injecte
-      une structure hors-diagonale et complexe que $E_\Pi^2$ ne peut enregistrer, et son origine de premiers
-      principes est la phase métaplectique complexe de la complétion lorentzienne.
+      La note sépare deux objets qui ne doivent pas être identifiés. Le <strong>générateur polaire</strong> d'une
+      famille à paramètre réel de morphismes inversibles $Y(\gamma) = U P$ entre repères orthonormés fixes, avec
+      $P &gt; 0$, est l'opérateur anti-hermitien $\Omega = U^\dagger\,\mathrm{d}U/\mathrm{d}\gamma$. C'est
+      l'unique solution de l'équation de Sylvester
+      $\Omega P + P\Omega = U^\dagger\,\mathrm{d}Y - (\mathrm{d}Y)^\dagger U$. Les supports singuliers et les
+      repères mobiles ne sont pas couverts. À l'identité, pour $\mathrm{d}Y$ égal au relèvement $\mathrm{Sym}^2$
+      $L(M)$ de $M = pE + qF + rH \in \mathfrak{sl}_2(\mathbb{C})$, on a $\Omega(0) = $ la partie anti-hermitienne
+      de $L(M)$ : elle est $J_\Pi$-paire et en général non nulle, d'entrée interne
+      $\tfrac{\sqrt2}{2}(q - \bar p)$, non nulle pour $p \neq q$ réels.
+    </p>
+    <p>
+      La <strong>projection $A_\Pi^{\mathrm{odd}}$</strong> est définie dans l'article comme la partie
+      anti-hermitienne de la partie $J_\Pi$-impaire de ce relèvement, pour la parité antilinéaire interne $J_\Pi$ de
+      la copie de génération. Elle s'annule identiquement pour tout coefficient complexe, car avec un $J_\Pi$
+      antilinéaire la partie $J_\Pi$-impaire du relèvement est sa partie hermitienne ; les opérateurs
+      anti-hermitiens $J_\Pi$-impairs se situent dans les composantes de spin zéro et de spin deux, hors de l'image
+      de $\mathfrak{sl}_2$. C'est un énoncé sur $A_\Pi^{\mathrm{odd}}$ tel que défini : ce n'est pas le générateur
+      polaire, elle ne détermine pas le facteur polaire, et aucun énoncé sur $[U_\Pi]$ ne découle de
+      $A_\Pi^{\mathrm{odd}} = 0$.
+    </p>
+    <p>
+      <strong>Contre-exemple exact.</strong> Pour le pas de cascade réel $g = e^{tE}e^{sF}$, le facteur polaire de
+      $\mathrm{Sym}^2 g$ a pour entrée externe $(e_+, e_-)$
+      $(t-s)^2/\big((2+ts)^2 + (t-s)^2\big)$, égale à $1/5$ en $(t, s) = (1, 0)$ et à $1/17$ en $(2, 1)$, bien que
+      la tangente externe à l'identité soit nulle : un générateur infinitésimal sans entrée externe n'exclut pas
+      qu'il y en ait une dans le facteur fini. Le facteur est réel, donc son invariant de Jarlskog est nul ; des
+      modules de mélange non nuls avec des données réelles n'établissent pas une violation de CP.
+      $\mathrm{Sym}^2 g$ n'est pas un morphisme de Yukawa, et le carré $H_\Pi$ ne détermine pas les données
+      polaires : $Y_0 = D$ et $Y_1 = VD$ ont le même carré pour tout unitaire $V$.
     </p>
   </section>
   <section class="card">
-    <h2>Classe polaire (Front 3c)</h2>
+    <h2>Branche diagonale CP-réelle</h2>
     <p>
-      Le facteur polaire $U_\Pi$ n'est pas une observable canonique mais une <em>classe de rephasage</em>, le
-      double quotient $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$ : les niveaux de génération distincts
-      épinglent chaque porteur chiral à sa base propre de niveau à une phase diagonale près, de sorte que les
-      changements de base chiraux admissibles sont des rephasages diagonaux $U_\Pi \mapsto V_R U_\Pi V_L^{-1}$.
-      Ses invariants de rephasage sont les modules $|(U_\Pi)_{ij}|$ et une phase de Jarlskog — trois angles de
-      mélange et une phase CP.
-    </p>
-    <p>
-      <strong>Non-trivialité.</strong> La classe quitte l'identité si et seulement si le générateur métaplectique
-      a une composante transverse (hors-diagonale) non nulle ; les détecteurs sont les modules hors-diagonaux
-      et l'invariant de Jarlskog, d'ordre dominant $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. Sur la cascade
-      réelle dérivée cette composante transverse est absente ($v = 0$), donc $[U_\Pi] = [I]$ et <em>aucun mélange
-      physique</em> n'est produit à ce strate. Une classe non triviale exige une vraie phase métaplectique
-      complexe, non dérivée ici, et ne devient une matrice de mélange physique que relativement à un second
-      secteur fermionique. Toutes les identités sont vérifiées par calcul symbolique exact.
-    </p>
-    <p>
-      <strong>Deux blocs transverses (pont vers le programme de rigidité).</strong> La donnée transverse se
-      scinde en un bloc interne $e_0 \leftrightarrow e_\pm$ et un bloc externe $e_+ \leftrightarrow e_-$
-      ($R_{\mathrm{mix}}$). Le générateur chiral correct est la partie anti-hermitienne de la composante
-      $J_\Pi$-impaire ; il s'annule sur données réelles. Un coefficient $\mathfrak{sl}_2$ génuinement complexe
-      <em>non central</em> source le bloc interne, tandis que le bloc externe n'est jamais dans l'image du
-      relèvement $\mathrm{Sym}^2(\mathfrak{sl}_2)$ et exigerait un nouveau strate de tour. Ainsi l'aire orientée
-      $N_A$ (le canal Cartan réel) peut fixer la normalisation du split diagonal <em>sans</em> prédire la classe
-      de mélange polaire : les données $N_A/\varepsilon$ et CKM/PMNS se séparent.
-    </p>
-    <p>
-      <strong>Structure réelle (Front 3e) : fermeture négative au strate présent.</strong> Le générateur
-      polaire chiral ne dépend que des coefficients non centraux imaginaires : $[U_\Pi] = [I]$ si et seulement
-      si $\Im p = \Im q = 0$, la partie Cartan imaginaire étant un rephasage $J_3$ trivial dans la classe, et un
-      repère spinoriel complexe laisse la classe inchangée (la complexité des matrices n'est pas la complexité des
-      coefficients). Au strate présent ces coefficients sont <em>forcés réels</em> — le pas de cascade est réel et
-      le relèvement hérité ne porte que la phase cyclotomique centrale $\zeta_q$ (pas de phase de Gauss
-      métaplectique) — donc $[U_\Pi] = [I]$ : le corpus dérive le split diagonal de génération mais <em>pas</em>
-      le mélange. Une classe non triviale exige une phase métaplectique complexe non centrale, disponible seulement
-      via un nouveau strate de tour (la même porte de rigidité que $\varepsilon=1/10$).
+      La branche diagonale CP-réelle est définie par $U_\Pi = \mathbf{1}$. Le bloc de Yukawa y est la racine
+      positive elle-même, $Y^{\mathrm{gen}}_\Pi = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$,
+      réelle et diagonale, sans mélange. C'est un choix de branche, pas un fait dérivé : elle n'est pas impliquée par
+      l'annulation du canal hors diagonale $R_{\mathrm{mix}}$ de $E_\Pi^2$ ($v = 0$), qui concerne $E_\Pi^2$ et
+      non la classe polaire. Le bloc externe $R_{\mathrm{mix}}$ n'a aucun élément de matrice dans l'image de
+      $\mathfrak{sl}_2(\mathbb{C})$ dans le modèle de pas de Q14 (Remarque 6.4, un énoncé sur les éléments de
+      matrice du relèvement, pas sur les entrées d'un facteur polaire) ; Q14 n'exclut le bloc interne
+      $e_0 \leftrightarrow e_\pm$ que par hypothèse (Proposition 6.3), et aucune exclusion physique du bloc interne
+      ni du mélange n'est revendiquée.
     </p>
   </section>
   <section class="card">
     <h2>Statut et livrable ouvert</h2>
     <p>
-      <strong>Établi.</strong> L'observable carrée $H_\Pi = Y_\Pi^\dagger Y_\Pi$ avec
-      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, la
-      décomposition polaire $Y_\Pi = U_\Pi H_\Pi^{1/2}$, et la caractérisation en classe polaire
-      $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$ avec son critère de non-trivialité par composante
-      transverse. Tous sont structurels et inconditionnels étant données les identifications du porteur de la
-      réduction de Schur, la clôture du secteur pair Born–Infeld, et la note de ligne, et sont vérifiés par
-      calcul symbolique exact.
+      <strong>Établi</strong> (pour le bloc de génération, avec les prémisses que chaque énoncé nomme) :
+      l'ambiguïté polaire ; le spectre de $H_\Pi$ sous [H-Res] et [H-Sq] ; la classe de rephasage et ses quatre
+      paramètres sous [H-Grad] ; le critère de non-trivialité au premier ordre ; la caractérisation de Sylvester du
+      générateur polaire ; l'annulation de $A_\Pi^{\mathrm{odd}}$ telle que définie et sa distinction d'avec le
+      générateur polaire ; le contre-exemple exact ; la lecture en théorie des représentations de [H-Fac]. Les
+      identités sont vérifiées en arithmétique exacte par les scripts du dépôt.
     </p>
     <p>
-      <strong>Conditionnel.</strong> Sur la cascade réelle dérivée le canal transverse est absent ($v = 0$),
-      donc $[U_\Pi] = [I]$ et aucun mélange n'est produit à ce strate.
+      <strong>Ouvert.</strong> Le corpus ne fournit aucune famille de morphismes de Yukawa dont le facteur polaire
+      soit $U_\Pi$, de sorte que la <em>classe polaire physique $[U_\Pi]$ est ouverte</em>, ainsi que le pont d'un
+      pas métaplectique vers un morphisme de Yukawa (normalisation, identification des porteurs, métriques
+      hermitiennes, transport du paramètre et des repères, données relatives des deux secteurs). Définir un
+      générateur par la partie $J_\Pi$-impaire, comme le fait $A_\Pi^{\mathrm{odd}}$, est un <em>choix de
+      modélisation qu'aucune source ne justifie</em>. La norme positive $\lambda_Y$, les quatre prémisses (y compris
+      le porteur de liaison faible $K$ et la construction de $E_{\mathrm{weak}}$), la matrice de mélange, observable
+      seulement relativement à un second secteur fermionique, et donc les masses absolues, le mélange des
+      générations et la structure CP restent ouverts.
     </p>
     <p>
-      <strong>Ouvert.</strong> La norme positive séparée $\lambda_Y$ et une classe polaire non triviale
-      $[U_\Pi] \neq [I]$ — qui exige une phase métaplectique complexe non centrale, disponible seulement via un
-      nouveau strate de tour — et donc les masses absolues, le mélange générationnel et la structure CP. Le Front 3b
-      est clos comme résultat de niveaux carrés et le Front 3c caractérise la classe polaire : $E_\Pi^2$ peut
-      clore $H_\Pi = Y_\Pi^\dagger Y_\Pi$ mais ne peut pas clore $Y_\Pi$ tant que la classe $[U_\Pi]$ n'est pas
-      fixée.
+      <strong>Verrou arithmétique du split diagonal.</strong> Avec $R_\Pi = (\tfrac12+u)/(\tfrac12-u)$ et
+      $\varepsilon(R) = (R-1)/(2(R+1))$, on a identiquement $\varepsilon(R_\Pi) = u$. Le split
+      $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ commute avec $J_3$ pour tout $u$, de sorte que
+      $\mathrm{Sym}^2(\mathbb{C}^2)$ laisse $u$ libre : l'égalité $u = \varepsilon = 1/10$ est exactement le verrou
+      de dictionnaire $R_\Pi = R_{\mathrm{ADE}} = 3/2$, non produit par la récursion qui préserve le porteur.
     </p>
     <p>
-      <strong>Porte arithmétique du split diagonal.</strong> Le paramètre de split $u$ et le datum angulaire
-      $\varepsilon$ ne sont pas des invariants indépendants : avec $R_\Pi = (\tfrac12+u)/(\tfrac12-u)$ et
-      $\varepsilon(R) = (R-1)/(2(R+1))$, on a $\varepsilon(R_\Pi) = u$ identiquement. Le split diagonal
-      $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ commute avec $J_3$ pour tout $u$, donc $\mathrm{Sym}^2(\mathbb{C}^2)$
-      laisse la valeur de $u$ libre. L'égalité $u = \varepsilon = 1/10$ est donc exactement la porte de dictionnaire
-      $R_\Pi = R_{\mathrm{ADE}} = 3/2$ (le ratio de Cayley d'ordre cinq), non produite par la récursion préservant le
-      support. Statut : $u \sim_{\mathrm{dict}} \varepsilon$ — même fonctionnel, porteurs distincts.
-    </p>
-    <p>
-      <strong>Le split n'est pas la hiérarchie de masse.</strong> Même en admettant la porte, les niveaux de Yukawa
-      carrés $\lambda_Y^2\{1, \tfrac35, \tfrac25\}$ sont des ratios d'ordre un et ne peuvent pas être la hiérarchie
-      fermionique observée par assignation directe ; le facteur de cascade single-level est lui-même d'ordre un.
-      La hiérarchie est donc portée, si tant est qu'elle le soit, par des profondeurs de cascade dépendant de la
-      génération $n_g$ dans la loi d'amplification projective $\Lambda_{\mathrm{proj}}(n)$ (régime de croissance
-      exponentiel) : l'exposant de cascade fixe le taux d'amplification, tandis que les profondeurs de
-      stabilisation par génération restent le prochain datum structurel — $\lambda_Y$ étant exclu comme porteur de
-      hiérarchie. La route en croissance linéaire vers ces profondeurs est désormais fermée : toute profondeur
-      lue sur la loi de croissance $N(\lambda;n)\sim F_{\mathrm{KM}}(\lambda)\,n$ — profondeur de croisement, rang de
-      saturation, ou toute fraction intermédiaire — est une fonction des mêmes coefficients de Kesten–McKay $c_g(p)$,
-      héritant de la divergence de bord de bande et de l'épinglage de symétrie $c_2=\tfrac12$, et ne peut donc être à
-      la fois stable en cascade et correctement ordonnée. La route positive restante — un profil décroissant
-      contrôlé par la capacité, résolu par niveau, $\sigma_{\lambda_g}(n)$, transporté sur la cascade — est
-      désormais elle aussi fermée comme route statique : quantifier la densité de résolution par niveau
-      supprime l'obstruction de bord de bande au dénominateur (l'écart de profondeur devient indépendant de
-      $c_g(p)$), mais un audit exact montre que le transport de Weil–Schur est invariant d'échelle, de sorte que
-      la fenêtre de stabilisation requise n'est atteinte qu'en réintroduisant la valence du Laplacien $|S|$ — la
-      normalisation du compte — ce qui ramène à la loi déjà fermée $n_g=\Delta I_g/c_g(p)$. Le spectre
-      d'admissibilité statique fixe donc la structure des générations et le split de niveau d'ordre un, mais pas
-      la hiérarchie des fermions chargés. La route dynamique restante — lire les profondeurs sur la trajectoire de
-      relaxation plutôt que sur le spectre statique — a désormais elle aussi été testée au premier ordre et
-      reproduit la même obstruction : une lecture à seuils parallèles rend l'écart de profondeur indépendant
-      du coefficient de bord de bande mais le laisse à l'échelle d'ordre un du croisement de niveaux, tandis que
-      les lectures séquentielle de Born–Infeld et à plancher renouvelé n'atteignent l'échelle de la hiérarchie que
-      par l'amplification de cascade elle-même ou par un rapport plafond-plancher non fixé, deux normalisations
-      libres. La hiérarchie n'est donc portée par aucune quantité forcée, statique ou dynamique au premier ordre,
-      de la cascade projective, qui fixe la structure des générations, le split d'ordre un et un écart de
-      profondeur d'ordre un indépendant du bord de bande, mais pas la hiérarchie des fermions chargés à ce stratum.
+      <strong>Le split n'est pas la hiérarchie de masse.</strong> Au verrou, les niveaux carrés
+      $\lambda_Y^2\{1, \tfrac35, \tfrac25\}$ sont des rapports d'ordre un et ne peuvent être la hiérarchie
+      observée des fermions chargés par assignation directe ; le facteur de cascade à un niveau est lui-même d'ordre
+      un. La hiérarchie devrait être portée par des profondeurs de cascade dépendant de la génération, qui ne sont
+      pas dérivées : les profondeurs de croisement de niveaux, celles de la loi de croissance linéaire, la voie de la
+      densité de résolution quantifiée et la voie multicycle à plancher renouvelé sont exclues dans les familles
+      testées, chacune réintroduisant une normalisation libre ou un écart d'ordre un. La hiérarchie des profondeurs
+      reste donc une donnée ouverte, et la cible des leptons chargés est consignée séparément comme la
+      <a href="/science/fermionic-matter/koide-unit-dispersion/index_fr.html" class="inline-link">contrainte de
+      dispersion unité de Koide</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochronie</h2>
+    <h2>Relation au programme Cosmochrony</h2>
     <p>
       Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
-      matière fermionique</a>. Elle fait suite à la <a href="/science/fermionic-matter/projected-yukawa-line/index_fr.html"
-      class="inline-link">note de ligne de Yukawa projetée</a>, en utilisant la forme normale du résidu carré de
-      la <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction
-      de Schur</a> ($E_\Pi = -M^\dagger M$ négatif semi-défini) et la clôture du secteur pair Born–Infeld. Le
-      facteur polaire chiral $U_\Pi$ est désormais caractérisé comme une classe de rephasage dont la
-      non-trivialité est la donnée métaplectique transverse, s'effondrant sur l'identité sur la cascade réelle
-      dérivée ; une matrice de mélange physique reste le prochain front en aval, exigeant une vraie phase
-      métaplectique complexe et un second secteur.
+      matière fermionique</a>. Elle fait suite à la <a
+      href="/science/fermionic-matter/projected-yukawa-line/index_fr.html" class="inline-link">note sur la ligne
+      de Yukawa projetée</a>, et utilise la forme normale du résidu carré de la
+      <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction de
+      Schur</a> ($E_\Pi = -M^\dagger M$ semi-définie négative) ainsi que le typage de
+      <a href="/science/fermionic-matter/q14/index_fr.html" class="inline-link">Q14</a> ([H-Spin], [H-Weak]). Une
+      matrice de mélange physique ne serait observable que comme classe polaire relative entre deux secteurs
+      fermioniques partageant un porteur de génération, et reste le front ouvert en aval.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       Jérôme Beau. <i lang="en">Projected Yukawa Operator and Chiral Polar Factor</i>. Document de travail, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">10.5281/zenodo.20767498</a>
+      <a href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">10.5281/zenodo.20767498</a>.
+      Code : <a href="https://github.com/Cosmochrony/projected-yukawa-operator/tree/main/code"
+      rel="noopener">github.com/Cosmochrony/projected-yukawa-operator</a>.
     </p>
   </section>
 </main>

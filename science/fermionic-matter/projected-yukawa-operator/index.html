@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Projected Yukawa Operator and Chiral Polar Factor | Cosmochrony</title>
   <meta name="description"
-    content="The second mass-sector step: the squared Yukawa observable H_Pi = Y_Pi^dag Y_Pi is fixed by E_Pi^2|gen, but the Yukawa morphism is determined only up to a chiral polar factor U_Pi. A partial no-go, not a mass result."/>
+    content="The squared Yukawa observable H_Pi is fixed by E_Pi^2 on the generation triplet, but the Yukawa morphism is determined only up to a chiral polar factor U_Pi. The polar generator is not the vanishing projection A_Pi^odd; the physical polar class is open. A partial no-go, not a mass result."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Projected Yukawa Operator and Chiral Polar Factor"/>
   <meta property="og:description"
-    content="E_Pi^2 fixes the squared Yukawa levels, not the morphism: Y_Pi = U_Pi H_Pi^{1/2}. Front 3c characterises U_Pi as a rephasing class (3 mixing angles + 1 Jarlskog phase), trivial on the derived real cascade; mixing needs a complex metaplectic phase."/>
+    content="E_Pi^2 fixes the squared Yukawa levels, not the morphism: Y = U_Pi H_Pi^{1/2}. The polar generator is not the projection A_Pi^odd, which vanishes by definition; an exact counterexample and the open physical polar class are stated."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-operator/"/>
   <script type="module">
@@ -48,25 +49,27 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.10.1">
-    <strong>Current Zenodo release:</strong> version 1.10.1 (2026-09-15).
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Current Zenodo release:</strong> version 2.0 (2026-10-02).
   </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
         This companion note takes the second step of the mass-sector frontier of the
-        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a>, and draws
-        a sharp negative conclusion at its entry. The
-        <a href="/science/fermionic-matter/projected-yukawa-line/" class="inline-link">line note</a> fixed the
-        determinant line $L_Y = \wedge^2(\mathcal{S}_\Pi)$ as the Yukawa coupling line and the generation
-        levels from $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$. Here we ask
-        whether the squared residue determines the Yukawa morphism itself, and show that it does not.
+        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a>. The
+        <a href="/science/fermionic-matter/projected-yukawa-line/" class="inline-link">line note</a> types the
+        coupling line conditionally, as the determinant line $L_Y = \wedge^2(E_{\mathrm{weak}})$ of the distinct
+        weak factor of Q14 under [H-Weak], and reads the generation levels on the model operator
+        $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ of $C^3_{\mathrm{gen}}$. Here we ask whether the squared
+        projective residue determines the Yukawa morphism itself, and show that it does not.
       </p>
       <p>
-        The squared residue is hermitian on a single chirality, while $Y_\Pi$ ties the two chiralities; the
-        chiral connecting datum is therefore invisible to $E_\Pi^2$. What survives is the hermitian square
-        $H_\Pi = Y_\Pi^\dagger Y_\Pi$; the morphism is then free up to a unitary chiral polar factor.
+        The squared residue is hermitian on a single Lorentz chirality, while the generation block
+        $Y^{\mathrm{gen}}_\Pi$ ties the two chiralities; the chiral connecting datum is therefore invisible to
+        $E_\Pi^2$. What survives is the hermitian square $H_\Pi = (Y^{\mathrm{gen}}_\Pi)^\dagger Y^{\mathrm{gen}}_\Pi$;
+        the morphism is then free up to a unitary chiral polar factor $U_\Pi$. Every statement is tagged by the
+        premises it uses, and no mass value is claimed.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -90,142 +93,142 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Squared Yukawa observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$, chiral polar ambiguity $Y_\Pi = U_\Pi H_\Pi^{1/2}$</div>
+          <div class="v">Squared Yukawa observable $H_\Pi$, chiral polar factor $U_\Pi$, polar generator versus the projection $A_\Pi^{\mathrm{odd}}$</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
           <div class="v">Working paper (concept DOI <a
             href="https://doi.org/10.5281/zenodo.20767498">10.5281/zenodo.20767498</a>)</div>
         </div>
+        <div class="kv">
+          <div class="k">Code</div>
+          <div class="v"><a href="https://github.com/Cosmochrony/projected-yukawa-operator/tree/main/code"
+            rel="noopener">projected-yukawa-operator/code</a> (exact-arithmetic checks)</div>
+        </div>
       </div>
     </aside>
   </section>
   <section class="card">
+    <h2>Premises, none supplied by a source</h2>
+    <p>
+      Four premises are named, and each statement of the paper is tagged by the ones it uses.
+      <strong>[H-Res]</strong>: the model operator $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ is the restriction of
+      $E_\Pi^2$ to $C^3_{\mathrm{gen}}$. <strong>[H-Sq]</strong>: the Yukawa square is the residue square,
+      $H_\Pi = \lambda_Y^2\,E_\Pi^2|_{C^3_{\mathrm{gen}}}$. <strong>[H-Fac]</strong>: a weak linking carrier $K$ with
+      a non-zero space of invariant couplings exists (F1) and that space has dimension at most one (F2); the two
+      conditions are independent, and together they let the results on the generation block reach the full
+      morphism $Y_\Pi$. <strong>[H-Grad]</strong>: each generation carrier has its own $J_3$ grading.
+      The chiralities of the paper are Lorentz chiralities of the spinor factor under [H-Spin]; they are not the
+      $V-A$ selection, which is the representation content of [H-Weak].
+    </p>
+  </section>
+  <section class="card">
     <h2>Core results</h2>
     <ul>
-      <li><strong>Squared Yukawa observable.</strong> The generation-level observable of the Schur-residue
-        sector is the positive hermitian square $H_\Pi := Y_\Pi^\dagger Y_\Pi$, with
-        $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\,\{1, \tfrac12+u, \tfrac12-u\}$. Thus
-        $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ determines the squared Yukawa levels, not the morphism itself.</li>
-      <li><strong>Chiral polar ambiguity (partial no-go).</strong> By polar decomposition $Y_\Pi = U_\Pi
-        H_\Pi^{1/2}$, where $U_\Pi$ is a unitary chiral map on the support of $H_\Pi$. Since $H_\Pi$ is blind
-        to any right-carrier unitary ($Y_\Pi \mapsto V Y_\Pi$ leaves $Y_\Pi^\dagger Y_\Pi$ unchanged), the
-        squared residue does not fix $Y_\Pi$.</li>
-      <li><strong>What lives in $U_\Pi$.</strong> The chiral orientation and the complex mixing phase reside
-        in $U_\Pi$. The positive Yukawa norm $\lambda_Y$ is a <em>separate</em> scale of $H_\Pi$ — a unitary
-        cannot carry it — and is also invisible to the dimensionless level operator $E_\Pi^2$.</li>
-      <li><strong>Sign of $u$.</strong> In an oriented $J_3$-labelled basis $(e_0, e_+, e_-)$ the level
-        operator already sees the relative sign of $u$; without that orientation choice the exchange
-        $e_+ \leftrightarrow e_-$ sends $u \mapsto -u$ and leaves the unordered squared spectrum unchanged.
-        The open datum is the physical orientation branch, not a scalar visible to $E_\Pi^2$ alone.</li>
+      <li><strong>The square fixes the levels, not the morphism.</strong> Under [H-Res] and [H-Sq], $H_\Pi$ is
+        positive hermitian with
+        $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$. The polar
+        decomposition $Y^{\mathrm{gen}}_\Pi = U_\Pi H_\Pi^{1/2}$ is linear algebra and uses no premise: a
+        hermitian square determines the morphism only up to a unitary polar factor.</li>
+      <li><strong>What lives in $U_\Pi$.</strong> The chiral orientation and the complex mixing phase reside in
+        $U_\Pi$. The positive norm $\lambda_Y$ is a separate scale of $H_\Pi$, which a unitary cannot carry and
+        which $E_\Pi^2$ does not see either.</li>
+      <li><strong>Rephasing class (under [H-Grad]).</strong> The polar factor is not canonical but a class
+        $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$, the two groups being the commutants of the $J_3$
+        gradings of the two carriers. For $0 &lt; u &lt; \tfrac12$ the class space has dimension $9 - 5 = 4$: three
+        mixing angles and one Jarlskog phase $\mathcal{J}_{\mathrm{CP}}$.</li>
+      <li><strong>First-order criterion.</strong> For a family of morphisms, $[U_\Pi] \neq [I]$ at first order if
+        and only if the polar generator $\Omega$ has a non-zero transverse (off-diagonal) part; the Jarlskog
+        invariant has leading order $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. A vanishing tangent does not
+        exclude an exit at higher order.</li>
+      <li><strong>Sign of $u$.</strong> In an oriented $J_3$-labelled basis $(e_0, e_+, e_-)$ the level operator
+        sees the relative sign of $u$; without that orientation choice the exchange $e_+ \leftrightarrow e_-$ sends
+        $u \mapsto -u$ and leaves the unordered squared spectrum unchanged.</li>
     </ul>
+  </section>
+  <section class="card">
+    <h2>The polar generator versus $A_\Pi^{\mathrm{odd}}$</h2>
+    <p>
+      The note separates two objects that must not be identified. The <strong>polar generator</strong> of a
+      real-parameter family of invertible morphisms $Y(\gamma) = U P$ between fixed orthonormal frames, with
+      $P &gt; 0$, is the anti-hermitian operator $\Omega = U^\dagger\,\mathrm{d}U/\mathrm{d}\gamma$. It is the unique
+      solution of the Sylvester equation
+      $\Omega P + P\Omega = U^\dagger\,\mathrm{d}Y - (\mathrm{d}Y)^\dagger U$. Singular supports and moving frames
+      are not covered. At the identity, for $\mathrm{d}Y$ the $\mathrm{Sym}^2$ lift $L(M)$ of
+      $M = pE + qF + rH \in \mathfrak{sl}_2(\mathbb{C})$, one has $\Omega(0) = $ the anti-hermitian part of
+      $L(M)$: it is $J_\Pi$-even and generally non-zero, with internal entry $\tfrac{\sqrt2}{2}(q - \bar p)$, non-zero
+      for real $p \neq q$.
+    </p>
+    <p>
+      The <strong>projection $A_\Pi^{\mathrm{odd}}$</strong> is defined in the paper as the anti-hermitian part of the
+      $J_\Pi$-odd part of that lift, for the internal antilinear parity $J_\Pi$ of the generation copy. It vanishes
+      identically for every complex coefficient, because with an antilinear $J_\Pi$ the $J_\Pi$-odd part of the lift
+      is its hermitian part; the $J_\Pi$-odd anti-hermitian operators lie in the spin-zero and spin-two components,
+      outside the image of $\mathfrak{sl}_2$. This is a statement about $A_\Pi^{\mathrm{odd}}$ as defined: it is
+      not the polar generator, it does not determine the polar factor, and no statement on $[U_\Pi]$ follows from
+      $A_\Pi^{\mathrm{odd}} = 0$.
+    </p>
+    <p>
+      <strong>Exact counterexample.</strong> For the real cascade step $g = e^{tE}e^{sF}$, the polar factor of
+      $\mathrm{Sym}^2 g$ has external $(e_+, e_-)$ entry
+      $(t-s)^2/\big((2+ts)^2 + (t-s)^2\big)$, equal to $1/5$ at $(t, s) = (1, 0)$ and to $1/17$ at $(2, 1)$,
+      although the external tangent at the identity vanishes: an infinitesimal generator without external entry
+      does not exclude one in the finite factor. The factor is real, so its Jarlskog invariant is zero; non-zero
+      mixing moduli with real data do not establish CP violation. $\mathrm{Sym}^2 g$ is not a Yukawa morphism, and
+      the square $H_\Pi$ does not determine the polar data: $Y_0 = D$ and $Y_1 = VD$ have the same square for every
+      unitary $V$.
+    </p>
   </section>
   <section class="card">
     <h2>Diagonal CP-real branch</h2>
     <p>
-      The CP-even real reduction imposes $v = 0$ (no off-diagonal mixing for phase-free data). In the present
-      language this is the branch $U_\Pi = \mathbf{1}$, where the Yukawa operator is the positive root itself,
-      $Y_\Pi = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$, real and diagonal with no
-      mixing. This is a choice of branch, not a derived fact: a non-trivial $U_\Pi$ injects off-diagonal and
-      complex structure that $E_\Pi^2$ cannot register, and its first-principles origin is the complex
-      metaplectic phase of the Lorentzian completion.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Polar class (Front 3c)</h2>
-    <p>
-      The polar factor $U_\Pi$ is not a canonical observable but a <em>rephasing class</em>, the double
-      quotient $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$: the distinct generation levels pin each chiral
-      carrier to its level eigenbasis up to a diagonal phase, so the admissible chiral basis changes are
-      diagonal rephasings $U_\Pi \mapsto V_R U_\Pi V_L^{-1}$. Its rephasing invariants are the moduli
-      $|(U_\Pi)_{ij}|$ and a Jarlskog phase — three mixing angles and one CP phase.
-    </p>
-    <p>
-      <strong>Non-triviality.</strong> The class moves off the identity iff the metaplectic generator has a
-      non-zero transverse (off-diagonal) component; the detectors are the off-diagonal moduli and the Jarlskog
-      invariant, whose leading order is $\gamma^3 \propto \Im(A_{12}A_{23}A_{31})$. On the derived real cascade
-      that transverse component is absent ($v = 0$), so $[U_\Pi] = [I]$ and <em>no physical mixing</em> is
-      produced at this stratum. A non-trivial class needs a genuine complex metaplectic phase, not derived
-      here, and becomes a physical mixing matrix only relative to a second fermionic sector. All identities are
-      verified by exact symbolic computation.
-    </p>
-    <p>
-      <strong>Two transverse blocks (bridge to the rigidity programme).</strong> The transverse datum splits
-      into an internal block $e_0 \leftrightarrow e_\pm$ and an external block $e_+ \leftrightarrow e_-$
-      ($R_{\mathrm{mix}}$). The correct chiral generator is the anti-hermitian part of the $J_\Pi$-odd component;
-      it vanishes on real data. A genuinely complex <em>non-central</em> $\mathfrak{sl}_2$ coefficient sources
-      the internal block, whereas the external block is never in the image of the $\mathrm{Sym}^2(\mathfrak{sl}_2)$
-      lift and would need a new tower stratum. Hence the oriented area $N_A$ (the real Cartan channel) can fix the
-      diagonal split normalisation <em>without</em> predicting the polar mixing class: the $N_A/\varepsilon$ and
-      CKM/PMNS data separate.
-    </p>
-    <p>
-      <strong>Reality structure (Front 3e): negative closure at the present stratum.</strong> The chiral polar
-      generator depends only on the imaginary non-central coefficients: $[U_\Pi] = [I]$ iff $\Im p = \Im q = 0$,
-      the imaginary Cartan part being a class-trivial $J_3$ rephasing, and a complex spinorial frame leaves the
-      class unchanged (matrix complexity is not coefficient complexity). At the present stratum these coefficients
-      are <em>forced real</em> — the cascade step is real and the inherited lift carries only the central
-      cyclotomic phase $\zeta_q$ (no metaplectic Gauss phase) — so $[U_\Pi] = [I]$: the corpus derives the diagonal
-      generation split but <em>not</em> the mixing. A non-trivial class needs a genuinely complex non-central
-      metaplectic phase, available only through a new tower stratum (the same rigidity gate as $\varepsilon=1/10$).
+      The diagonal CP-real branch is defined by $U_\Pi = \mathbf{1}$. There the Yukawa block is the positive root
+      itself, $Y^{\mathrm{gen}}_\Pi = \lambda_Y\,\mathrm{diag}(1, \sqrt{\tfrac12+u}, \sqrt{\tfrac12-u})$, real and
+      diagonal, with no mixing. This is a choice of branch, not a derived fact: it is not implied by the vanishing of
+      the off-diagonal channel $R_{\mathrm{mix}}$ of $E_\Pi^2$ ($v = 0$), which concerns $E_\Pi^2$ and not the polar
+      class. The external block $R_{\mathrm{mix}}$ has no matrix element in the image of
+      $\mathfrak{sl}_2(\mathbb{C})$ in the step model of Q14 (Remark 6.4, a statement on matrix elements of the
+      lift, not on the entries of a polar factor); Q14 excludes the internal block $e_0 \leftrightarrow e_\pm$
+      only by hypothesis (Proposition 6.3), and no physical exclusion of the internal block or of mixing is claimed.
     </p>
   </section>
   <section class="card">
     <h2>Status and open deliverable</h2>
     <p>
-      <strong>Established.</strong> The squared observable $H_\Pi = Y_\Pi^\dagger Y_\Pi$ with
-      $\mathrm{Spec}(H_\Pi)|_{C^3_{\mathrm{gen}}} = \lambda_Y^2\{1, \tfrac12+u, \tfrac12-u\}$, the polar
-      decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$, and the polar-class characterisation
-      $[U_\Pi] \in U(1)^3_R \backslash U(3) / U(1)^3_L$ with its transverse-component non-triviality criterion.
-      All are structural and unconditional given the carrier identifications of the Schur reduction, the
-      Born–Infeld even-sector closure, and the line note, and are verified by exact symbolic computation.
+      <strong>Established</strong> (for the generation block, with the premises each statement names): the polar
+      ambiguity; the spectrum of $H_\Pi$ under [H-Res] and [H-Sq]; the rephasing class and its four parameters under
+      [H-Grad]; the first-order non-triviality criterion; the Sylvester characterisation of the polar generator; the
+      vanishing of $A_\Pi^{\mathrm{odd}}$ as defined and its distinction from the polar generator; the exact
+      counterexample; the representation-theoretic reading of [H-Fac]. The identities are checked in exact
+      arithmetic in the repository scripts.
     </p>
     <p>
-      <strong>Conditional.</strong> On the derived real cascade the transverse channel is absent ($v = 0$), so
-      $[U_\Pi] = [I]$ and no mixing is produced at this stratum.
+      <strong>Open.</strong> The corpus supplies no family of Yukawa morphisms whose polar factor is
+      $U_\Pi$, so the <em>physical polar class $[U_\Pi]$ is open</em>, together with the bridge from a metaplectic
+      step to a Yukawa morphism (normalisation, carrier identification, hermitian metrics, parameter and frame
+      transport, relative data of the two sectors). Defining a generator through the $J_\Pi$-odd part, as
+      $A_\Pi^{\mathrm{odd}}$ does, is a <em>modelling choice that no source justifies</em>. The positive norm
+      $\lambda_Y$, the four premises (including the weak linking carrier $K$ and the construction of
+      $E_{\mathrm{weak}}$), the mixing matrix, which is observable only relative to a second fermionic sector, and
+      hence the absolute masses, the generation mixing and the CP structure remain open.
     </p>
     <p>
-      <strong>Open.</strong> The separate positive norm $\lambda_Y$ and a non-trivial polar class
-      $[U_\Pi] \neq [I]$ — which requires a genuinely complex non-central metaplectic phase, available only
-      through a new tower stratum — and hence the absolute masses, the generation mixing, and the CP structure. Front 3b
-      is closed as a squared-Yukawa-levels result and Front 3c characterises the polar class; $E_\Pi^2$ can
-      close $H_\Pi = Y_\Pi^\dagger Y_\Pi$ but cannot close $Y_\Pi$ unless the class $[U_\Pi]$ is fixed.
+      <strong>Arithmetic gate for the diagonal split.</strong> With $R_\Pi = (\tfrac12+u)/(\tfrac12-u)$ and
+      $\varepsilon(R) = (R-1)/(2(R+1))$, one has $\varepsilon(R_\Pi) = u$ identically. The split
+      $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ commutes with $J_3$ for every $u$, so
+      $\mathrm{Sym}^2(\mathbb{C}^2)$ leaves $u$ free: the equality $u = \varepsilon = 1/10$ is exactly the
+      dictionary gate $R_\Pi = R_{\mathrm{ADE}} = 3/2$, not produced by the carrier-preserving recursion.
     </p>
     <p>
-      <strong>Arithmetic gate for the diagonal split.</strong> The split parameter $u$ and the angular datum
-      $\varepsilon$ are not independent invariants: with $R_\Pi = (\tfrac12+u)/(\tfrac12-u)$ and
-      $\varepsilon(R) = (R-1)/(2(R+1))$, one has $\varepsilon(R_\Pi) = u$ identically. The diagonal split
-      $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ commutes with $J_3$ for every $u$, so $\mathrm{Sym}^2(\mathbb{C}^2)$
-      leaves the value of $u$ free. The equality $u = \varepsilon = 1/10$ is therefore exactly the dictionary gate
-      $R_\Pi = R_{\mathrm{ADE}} = 3/2$ (the order-five Cayley ratio), not produced by the carrier-preserving
-      recursion. Status: $u \sim_{\mathrm{dict}} \varepsilon$ — same functional, distinct carriers.
-    </p>
-    <p>
-      <strong>The split is not the mass hierarchy.</strong> Even granting the gate, the squared Yukawa levels
-      $\lambda_Y^2\{1, \tfrac35, \tfrac25\}$ are order-one ratios and cannot be the observed charged-fermion hierarchy
-      by direct assignment; the single-level cascade factor is itself order one. The hierarchy is therefore carried, if
-      at all, by generation-dependent cascade depths $n_g$ in the projective amplification law
-      $\Lambda_{\mathrm{proj}}(n)$ (exponential growth regime): the cascade exponent fixes the amplification rate,
-      while the generation stabilisation depths remain the next structural datum — with $\lambda_Y$ excluded as a
-      hierarchy carrier. The linear-growth route to these depths is now closed: every depth read off the growth law
-      $N(\lambda;n)\sim F_{\mathrm{KM}}(\lambda)\,n$ — crossing depth, saturation rank, or any intermediate fraction —
-      is a function of the same Kesten–McKay coefficients $c_g(p)$, inheriting the band-edge divergence and the
-      symmetry pin $c_2=\tfrac12$, so it cannot be both cascade-stable and correctly ordered. The remaining
-      positive route — a decaying capacity-controlled per-level profile $\sigma_{\lambda_g}(n)$ transported onto
-      the cascade — has now also been closed as a static route: quantising the per-level resolution density
-      removes the band-edge denominator obstruction (the depth gap becomes independent of $c_g(p)$), but an exact
-      audit shows the Weil–Schur transport is scale-free, so the required stabilisation window is reached only by
-      re-inserting the Laplacian valency $|S|$ — the count normalisation — which returns to the already closed law
-      $n_g=\Delta I_g/c_g(p)$. The static admissibility spectrum therefore fixes the generation structure and the
-      order-one level split, but not the charged-fermion hierarchy. The remaining dynamical route — reading the
-      depths off the relaxation trajectory rather than the static spectrum — has now also been tested at first
-      order and reproduces the same obstruction: a parallel-threshold reading makes the depth gap independent of
-      the band-edge coefficient but stays on the order-one level-crossing scale, while the sequential Born–Infeld
-      and renewed-floor readings reach the hierarchy scale only through the cascade amplification itself or an
-      unpinned ceiling-to-floor ratio, both free normalisations. The hierarchy is thus carried by no forced static
-      or first-order dynamical quantity of the projective cascade, which fixes the generation structure, the
-      order-one splitting, and a band-edge-independent order-one depth gap, but not the charged-fermion hierarchy
-      at this stratum.
+      <strong>The split is not the mass hierarchy.</strong> At the gate, the squared levels
+      $\lambda_Y^2\{1, \tfrac35, \tfrac25\}$ are order-one ratios and cannot be the observed charged-fermion
+      hierarchy by direct assignment; the single-level cascade factor is itself of order one. The hierarchy would
+      have to be carried by generation-dependent cascade depths, which are not derived: the level-crossing depths,
+      the depths of the linear growth law, the quantised resolution-density route and the renewed-floor multi-cycle
+      route are excluded within the families tested, each reintroducing a free normalisation or an order-one gap.
+      The depth hierarchy therefore remains an open datum, and the charged-lepton target is recorded separately as the
+      <a href="/science/fermionic-matter/koide-unit-dispersion/" class="inline-link">unit-dispersion Koide
+      constraint</a>.
     </p>
   </section>
   <section class="card">
@@ -235,17 +238,19 @@
       sub-programme</a>. It follows the <a href="/science/fermionic-matter/projected-yukawa-line/"
       class="inline-link">projected Yukawa line note</a>, using the squared-residue normal form of the
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Schur reduction</a>
-      ($E_\Pi = -M^\dagger M$ negative semi-definite) and the Born–Infeld even-sector closure. The chiral
-      polar factor $U_\Pi$ is now characterised as a rephasing class whose non-triviality is the transverse
-      metaplectic datum, collapsing to the identity on the derived real cascade; a physical mixing matrix
-      remains the next downstream frontier, requiring a genuine complex metaplectic phase and a second sector.
+      ($E_\Pi = -M^\dagger M$ negative semi-definite) and the typing of
+      <a href="/science/fermionic-matter/q14/" class="inline-link">Q14</a> ([H-Spin], [H-Weak]). A physical mixing
+      matrix would be observable only as a relative polar class between two fermionic sectors sharing a generation
+      carrier, and remains the downstream open frontier.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       Jérôme Beau. <i lang="en">Projected Yukawa Operator and Chiral Polar Factor</i>. Working paper, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">10.5281/zenodo.20767498</a>
+      <a href="https://doi.org/10.5281/zenodo.20767498" rel="noopener">10.5281/zenodo.20767498</a>.
+      Code: <a href="https://github.com/Cosmochrony/projected-yukawa-operator/tree/main/code"
+      rel="noopener">github.com/Cosmochrony/projected-yukawa-operator</a>.
     </p>
   </section>
 </main>

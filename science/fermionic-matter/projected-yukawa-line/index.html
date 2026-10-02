@@ -4,13 +4,14 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Projected Yukawa Line and Generation-Level Assignment | Cosmochrony</title>
+  <title>Toward Projected Yukawa Couplings: A Conditional Weak Determinant Line and Generation-Level Ordering | Cosmochrony</title>
   <meta name="description"
-    content="Closes the first stage of the Yukawa sector: the functorial determinant line L_Y = wedge^2(S_Pi) and the generation-level assignment from E_Pi^2|gen = diag(1, 1/2+u, 1/2-u), without deriving mass values."/>
+    content="Algebra on supplied model data: the determinant line is the unique one-dimensional functor and is trivial for the spin factor under [H-Spin]; under [H-Weak] the line wedge^2(E_weak) carries the abelian weight. The generation levels diag(1, 1/2+u, 1/2-u) are ordered; reading them as levels of E_Pi^2 is the hypothesis [H-Res]. No mass value."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-line/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Projected Yukawa Line and Generation-Level Assignment"/>
+  <meta property="og:title" content="Toward Projected Yukawa Couplings: A Conditional Weak Determinant Line and Generation-Level Ordering"/>
   <meta property="og:description"
-    content="The determinant line wedge^2(S_Pi) is the functorial Yukawa coupling line, invisible to SU(2)_L and carrying the U(1)_Y weight; E_Pi^2|gen orders the three generation levels. The mass comes after."/>
+    content="A conditional weak determinant line (under [H-Weak], not a line of the spinor bundle) and the ordering of three generation levels (under [H-Res]). The Yukawa operator needs a weak linking carrier supplied by no source; no mass is derived."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/projected-yukawa-line/"/>
   <script type="module">
@@ -34,10 +35,9 @@
         </svg>
       </a>
       <div>
-        <h1>Projected Yukawa Line and Generation-Level Assignment</h1>
+        <h1>Toward Projected Yukawa Couplings: A Conditional Weak Determinant Line and Generation-Level Ordering</h1>
         <p class="subtitle">
-          Functorial closure of the determinant line $L_Y = \wedge^2(\mathcal{S}_\Pi)$ and spectral ordering
-          on the generation triplet $C^3_{\mathrm{gen}}$ — the Yukawa line and the levels, not the masses.
+          The determinant line $L_Y = \wedge^2(E_{\mathrm{weak}})$ under [H-Weak] and the ordering of the generation levels of the model operator under [H-Res] — hypotheses and levels, no mass value.
         </p>
       </div>
     </div>
@@ -48,24 +48,23 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="2.0">
-    <strong>Current Zenodo release:</strong> version 2.0 (2026-09-12).
-    <span lang="en">Official title: <i>Projected Yukawa Line and Generation-Level Assignment: Functorial Closure of $L_Y = \wedge^2(\mathcal{S}_\Pi)$ and Spectral Ordering on $C^3_{\mathrm{gen}}$</i>.</span>
+  <section class="note" role="note" data-release-version="3.0">
+    <strong>Current Zenodo release:</strong> version 3.0 (2026-10-02).
   </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
         This companion note opens the mass-sector frontier of the
-        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a> and closes
-        only its first stage. It does not derive the three-generation masses, the Yukawa couplings, or the
-        mixing. It isolates two structural results that the admissible spinor carrier already determines, and
-        separates them sharply from the mass normalisation that does not yet follow.
+        <a href="/science/fermionic-matter/" class="inline-link">fermionic matter sub-programme</a>. It derives no
+        mass, Yukawa coupling or mixing. It records two statements, each with the hypothesis it needs, and
+        separates them sharply from the Yukawa operator, which needs more than the corpus supplies.
       </p>
       <p>
-        The method lock is stated once and held throughout: the determinant line $L_Y$ fixes the coupling
-        line, the squared projective residue $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ fixes the generation levels, and
-        the mass comes after.
+        The method is stated once and held throughout: under [H-Weak] the determinant line $L_Y$ supplies the line
+        from which the weights of the coupling are built; the model operator on $C^3_{\mathrm{gen}}$, read as the
+        squared residue $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ under the named hypothesis [H-Res], carries the generation
+        levels; and the mass comes after.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -89,12 +88,17 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Functorial Yukawa line $L_Y = \wedge^2(\mathcal{S}_\Pi)$, generation-level assignment from $E_\Pi^2|_{C^3_{\mathrm{gen}}}$</div>
+          <div class="v">Conditional weak determinant line $L_Y = \wedge^2(E_{\mathrm{weak}})$, generation-level ordering of the model operator on $C^3_{\mathrm{gen}}$</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
           <div class="v">Working paper (concept DOI <a
             href="https://doi.org/10.5281/zenodo.20767265">10.5281/zenodo.20767265</a>)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Code</div>
+          <div class="v"><a href="https://github.com/Cosmochrony/projected-yukawa-line/tree/main/code"
+            rel="noopener">projected-yukawa-line/code</a> (exact symbolic checks)</div>
         </div>
       </div>
     </aside>
@@ -102,72 +106,105 @@
   <section class="card">
     <h2>Core results</h2>
     <ul>
-      <li><strong>Projected Yukawa line.</strong> On the rank-two admissible spinor bundle $\mathcal{S}_\Pi$,
-        the determinant line $L_Y = \wedge^2(\mathcal{S}_\Pi)$ is the unique functorial line of the carrier.
-        For any $g \in \mathrm{SL}(2,\mathbb{C})$ its induced action on the line is $\det(g) = 1$, so $L_Y$ is
-        invisible to the $\mathrm{SU}(2)_L$ adjoint sector $\mathrm{Sym}^2(\mathcal{S}_\Pi)$; a diagonal
-        abelian generator acts by the trace, so $L_Y$ carries the $\mathrm{U}(1)_Y$ weight.</li>
-      <li><strong>Intrinsic Yukawa sector.</strong> The projected Yukawa sector is therefore not an external
-        matter bundle, but the determinant-line sector of the admissible spinor functorial closure — the
-        abelian half of the same closure whose symmetric half is the non-abelian gauge sector.</li>
-      <li><strong>Generation-level assignment.</strong> On the gauge-singlet triplet
-        $C^3_{\mathrm{gen}} = \mathrm{span}(e_0, e_+, e_-)$ the squared residue takes the closed normal form
-        $E_\Pi^2|_{C^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, whose exit deficits
-        $\{0, \tfrac12 - u, \tfrac12 + u\}$ order the three generation levels: $e_0$ lightest (central,
-        non-exiting), $e_-$ heaviest for $u > 0$.</li>
-      <li><strong>Levels, not masses.</strong> The level ratio $(\tfrac12 + u)/(\tfrac12 - u)$ is
-        scale-invariant, so the dimensionless level structure is fixed by the single split coefficient $u$;
-        the absolute scale is not. The assignment map $e_0, e_+, e_- \mapsto$ three ordered levels is fixed
-        prior to any identification with the physical $e, \mu, \tau$.</li>
+      <li><strong>Determinant line (algebra proved on supplied model data).</strong> On a rank-two bundle with
+        structure group in $\mathrm{GL}(2,\mathbb{C})$, $\wedge^2$ is the unique one-dimensional functor among the
+        symmetric and exterior powers $\mathrm{Sym}^k$, $\wedge^k$ ($k \geq 1$; the powers $\det^b$ are also
+        one-dimensional and lie outside this family). If the structure group lies in $\mathrm{SL}(2,\mathbb{C})$ it
+        is a trivial line, invisible to the adjoint sector $\mathrm{Sym}^2$. Under the spin solder [H-Spin] of Q14,
+        $\wedge^2(S_L)$ is therefore trivial and carries no abelian weight of the spin group.</li>
+      <li><strong>A conditional weak determinant line.</strong> Under the distinct weak factor [H-Weak] of Q14, which
+        is supplied by no source and is not constructed here, the line $L_Y := \wedge^2(E_{\mathrm{weak}})$ with
+        structure group $\mathrm{U}(2)$ carries the abelian weight, through the determinant character, while
+        being trivial on $\mathrm{SU}(2)$. Within this functor route it is a conditional weak determinant line, not
+        a line of the spinor bundle. The exponents of the twists of the fermion sectors are not fixed by [H-Weak]
+        alone; Q14 selects them conditionally.</li>
+      <li><strong>Generation-level ordering.</strong> On the gauge-singlet triplet
+        $C^3_{\mathrm{gen}} = \mathrm{span}(e_0, e_+, e_-)$, the model operator
+        $\mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ has exit deficits $\{0, \tfrac12-u, \tfrac12+u\}$ that order three
+        levels exactly for $0 &lt; u &lt; \tfrac12$, with a level ratio invariant under the spectral scale. This is
+        algebra on the model operator and uses no hypothesis on $E_\Pi^2$.</li>
+      <li><strong>[H-Res].</strong> Reading the model operator as the restriction of the squared projective residue
+        $E_\Pi^2$ to $C^3_{\mathrm{gen}}$ is a named hypothesis, [H-Res], which is not supplied. The map from
+        levels to generations is not established.</li>
+      <li><strong>No mass value.</strong> The levels are a dimensionless pattern fixed by one number $u$; whether
+        that pattern is a mass hierarchy depends on identifications that are missing. No mass, Yukawa coupling or
+        mixing is claimed.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Separation from the Yukawa operator</h2>
     <p>
-      The line $L_Y$ is the weight datum of the Yukawa coupling, not the mass matrix. The mass matrix is a
-      distinct object, a projected morphism
-      $Y_\Pi : \mathcal{S}_{L,\Pi} \otimes L_Y \to \mathcal{S}_{R,\Pi}$, or its spectral avatar after
-      compression by $E_\Pi$. Closing the coupling line does not close the operator: the norm of $Y_\Pi$, the
-      orientation (sign) of the split coefficient $u$, and the complex metaplectic mixing phase are
-      downstream open data, and none of them is supplied here.
+      The line $L_Y$ is one ingredient of the abelian weight of the coupling, not the mass matrix. Under [H-Spin]
+      and [H-Weak] the left fermions lie in $P_L\mathcal{S}_\Pi \otimes E_{\mathrm{weak}} \otimes L_Y^k$ and the
+      right fermions in $P_R\mathcal{S}_\Pi \otimes L_Y^m$, the right fermion being a weak singlet that carries the
+      hypercharge twist $L_Y^m$. The Yukawa operator is a distinct object, a projected morphism between these
+      sectors, whose typing has one missing element and one ruled-out reading.
+    </p>
+    <ul>
+      <li><strong>Missing element.</strong> A weak linking carrier $K$, a finite-dimensional
+        $\mathrm{U}(2)$-module with a doublet component, supplied by no source; without it an invariant coupling
+        between the two sectors does not exist as typed. The Lorentz part is not the missing element: the
+        sesquilinear pairing of the chiral factors contains the Lorentz scalar exactly once.</li>
+      <li><strong>Ruled-out reading.</strong> A linear Lorentz-equivariant map $P_L\mathcal{S}_\Pi \to
+        P_R\mathcal{S}_\Pi$: under [H-Spin] the two chiral factors are inequivalent $\mathrm{SL}(2,\mathbb{C})$-modules,
+        so no non-zero such map exists, by Schur's lemma.</li>
+    </ul>
+    <p>
+      The norm of the Yukawa operator, the orientation (sign) of $u$ and the mixing are downstream open data, and none
+      is supplied here. Lorentz chirality, the left-admissibility of $E_\Pi$, is an input of Q14 on its
+      orientation-compatible branch; it is distinct from the $V-A$ structure, which is the representation content of
+      [H-Weak], and the note does not use it beyond that separation. The polar factor and the mixing are treated in the
+      <a href="/science/fermionic-matter/projected-yukawa-operator/" class="inline-link">companion operator
+      note</a>, where the polar generator of a morphism family is shown to differ from the vanishing projection
+      $A_\Pi^{\mathrm{odd}}$, and the physical polar class is open.
     </p>
   </section>
   <section class="card">
     <h2>Status and open deliverable</h2>
     <p>
-      <strong>Established.</strong> The functorial Yukawa line $L_Y = \wedge^2(\mathcal{S}_\Pi)$, invisible to
-      the $\mathrm{SU}(2)_L$ adjoint and carrying the abelian weight, and the generation-level assignment
-      from $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ through the exit deficits. Both are structural given the carrier
-      identifications of Q14 and PRS and the algebraic normal form: the even sector
-      $\mathrm{diag}(1, \tfrac12, \tfrac12)$ is the value of $(C_2 - J_3^2)/C_2$ at $C_2 = 2$, and no step
-      invokes the conditional $3 \times 3$ model of O30. All
-      representation-theoretic and spectral identities are verified by exact symbolic computation.
+      <strong>Proved (algebra on supplied model data).</strong> The uniqueness and triviality of the determinant
+      line within the functor family, the exit deficits, the ordering for $0 &lt; u &lt; \tfrac12$ and the scale
+      invariance of the level ratio. These are checked by exact symbolic computation (23 checks).
     </p>
     <p>
-      <strong>Open.</strong> The projected Yukawa operator $Y_\Pi$, its norm, the sign of $u$, and the
-      complex mixing phase — hence the absolute masses, the mass ratios beyond the dimensionless level
-      structure, and the generation mixing. Front 3a is closed as a structural result: the Yukawa line and
-      the generation ordering, not the mass values.
+      <strong>Conditional.</strong> The triviality of $\wedge^2(S_L)$ under [H-Spin]; the abelian weight of
+      $L_Y = \wedge^2(E_{\mathrm{weak}})$ under [H-Weak]; the reading of the levels as levels of
+      $E_\Pi^2|_{C^3_{\mathrm{gen}}}$ under [H-Res]. Neither [H-Spin] nor [H-Weak] is supplied by a source, and
+      $E_{\mathrm{weak}}$ is not constructed.
+    </p>
+    <p>
+      <strong>Open (missing elements).</strong> The factor $E_{\mathrm{weak}}$ and the spin solder; the
+      identification [H-Res]; the weak linking carrier $K$; the exponents of the twists beyond their conditional
+      selection by Q14; the map from levels to generations; the Yukawa operator, its norm, the sign of $u$ and the
+      mixing, including the polar class treated in the companion note. Hence the absolute masses, the mass ratios
+      beyond the dimensionless level structure and the generation mixing remain open.
+    </p>
+    <p>
+      <em>Interpretive outlook (a reading, not a result).</em> Where the Yukawa coupling attaches to hypercharge
+      becomes the question of where a distinct weak factor comes from, and the levels are a dimensionless pattern whose
+      reading as a hierarchy awaits the missing identifications.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
       This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic matter
-      sub-programme</a>. It consolidates the $\wedge^2$ half of Theorem A of
-      <a href="/science/fermionic-matter/q14/" class="inline-link">Q14</a> as the Yukawa coupling line, and
-      the exit-deficit ordering of the same paper, together with the squared-residue normal form of the
-      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Schur reduction</a>
-      and the radial factor of the
-      <a href="/science/fermionic-matter/a4-note/" class="inline-link">saturation margin note</a>. The
-      projected Yukawa operator, the mass normalisation, and the mixing remain the downstream open frontier.
+      sub-programme</a>. It uses the tensor sectors and the two hypotheses [H-Spin] and [H-Weak] of
+      <a href="/science/fermionic-matter/q14/" class="inline-link">Q14</a>, the squared-residue normal form of the
+      <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Schur reduction</a>, and the
+      no-go of the <a href="/science/fermionic-matter/no-sequential-reentry/" class="inline-link">NSR note</a> on the
+      deposited candidates for an independent weak multiplicity. The Yukawa operator, the mass normalisation and the
+      mixing remain the downstream open frontier.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <i lang="en">Projected Yukawa Line and Generation-Level Assignment</i>. Working paper, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20767265" rel="noopener">10.5281/zenodo.20767265</a>
+      Jérôme Beau. <i lang="en">Toward Projected Yukawa Couplings: A Conditional Weak Determinant Line and
+      Generation-Level Ordering</i>. Working paper, 2026.
+      <a href="https://doi.org/10.5281/zenodo.20767265" rel="noopener">10.5281/zenodo.20767265</a>.
+      Code: <a href="https://github.com/Cosmochrony/projected-yukawa-line/tree/main/code"
+      rel="noopener">github.com/Cosmochrony/projected-yukawa-line</a>.
     </p>
   </section>
 </main>

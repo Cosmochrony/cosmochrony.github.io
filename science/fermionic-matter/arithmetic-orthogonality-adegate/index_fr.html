@@ -68,8 +68,9 @@
         <strong>obstruction concernant l'automorphisme de Galois</strong>
         $\sigma : \sqrt{5} \mapsto -\sqrt{5}$, non un résultat sur la porte. Dans le composé
         $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$, la parité de Born–Infeld $c \mapsto q - c$, restriction de la
-        conjugaison complexe $\zeta_q \mapsto \zeta_q^{-1}$, fixe $\sqrt{5}$ et se place dans un facteur direct du
-        groupe de Galois distinct de celui de $\sigma$. Un audit de la table de caractères du groupe icosaédral
+        conjugaison complexe $\zeta_q \mapsto \zeta_q^{-1}$, fixe $\sqrt{5}$ (démontré) et se place dans un facteur direct du
+        groupe de Galois distinct de celui de $\sigma$ ; son statut d'involution de la fibre de base est celui d'une
+        hypothèse candidate des fondations, que la note prend comme prémisse. Un audit de la table de caractères du groupe icosaédral
         binaire $2I \cong \mathrm{SL}(2,5)$, calculée à partir du groupe, démontre que les conjugaisons
         intérieures, l'élément central $-I$ et l'involution projective $J_\Pi$ agissent trivialement sur
         $\mathrm{Irr}(2I)$, alors que $\sigma$ induit la permutation $(2\,2')(3\,3')$.
@@ -79,8 +80,8 @@
         centrale $R_b$ agit comme $-I$ sous [H-WS] (le scalaire $-1$ sur le porteur chiral, fourni par aucune
         source) ; le verrouillage A4 ne contribue qu'un signe impair en parité sous les hypothèses de A4 ; les
         clauses des foncteurs tensoriels et de la projection de Schur sont des assertions de modélisation, non
-        auditées. La complétude de cette liste de générateurs est elle-même une prémisse de modélisation [M].
-        Modulo ces clauses et cette prémisse, aucune opération listée de la strate de spin ne réalise $\sigma$.
+        auditées. La complétude de cette liste de générateurs est elle-même une prémisse de modélisation [M], qui implique que toute opération admissible préserve le
+        porteur. Modulo ces clauses et cette prémisse, aucune opération listée de la strate de spin ne réalise $\sigma$.
       </p>
       <p>
         <strong>Aucun lien entre la porte et $\sigma$ n'est établi.</strong> L'automorphisme extérieur fixe la
@@ -104,7 +105,8 @@
         $u$ via $R_\Pi = (\tfrac12+u)/(\tfrac12-u)$, de sorte que $\varepsilon(R_\Pi) = u$ identiquement.
         L'égalité $u = \varepsilon = 1/10$ est exactement l'identification de dictionnaire
         $R_\Pi = R_{\mathrm{ADE}}$ : la représentation $\mathrm{Sym}^2(\mathbb{C}^2)$ laisse $u$ libre, et la
-        récursion préservant le porteur ne fournit pas $\sigma$, aucun lien entre $\sigma$ et la sélection de la
+        récursion des opérations admissibles (qui préservent le porteur par [M], et sous [H-WS] pour $R_b$) ne fournit pas
+        $\sigma$, aucun lien entre $\sigma$ et la sélection de la
         valeur d'ordre cinq n'étant établi.
       </p>
       <div class="note" role="note">
@@ -149,7 +151,8 @@
         premiers principes réside dans la sélection amont du cas.</li>
       <li><strong>Lemme organisateur arithmétique (démontré).</strong> Dans le composé
         $K_q = \mathbb{Q}(\zeta_q, \sqrt{5})$, la parité de Born–Infeld (restriction de la conjugaison complexe)
-        fixe $\sqrt{5}$ et se place dans un facteur direct du groupe de Galois distinct de celui de $\sigma$.</li>
+        fixe $\sqrt{5}$ (démontré) et se place dans un facteur direct du groupe de Galois distinct de celui de $\sigma$ ;
+        que cette parité soit l'involution de la fibre de base est une hypothèse candidate des fondations, prise comme prémisse.</li>
       <li><strong>Audit de la table de caractères (démontré).</strong> Calculées à partir du groupe, les
         conjugaisons intérieures, $-I$ et $J_\Pi$ induisent la permutation identité de $\mathrm{Irr}(2I)$, alors
         que $\sigma$ induit $(2\,2')(3\,3')$.</li>
@@ -158,11 +161,13 @@
         signe impair en parité sous les hypothèses de A4 ([H-Gen], $J_\Pi$-covariance, forme diagonale, une paire
         verrouillée) ; (d) les foncteurs tensoriels et la projection de Schur fixent $\mathbb{Q}(\sqrt{5})$ comme
         assertions de modélisation, non auditées. Relativement à la prémisse de modélisation [M] que la liste des
-        générateurs est complète, aucune opération listée ne réalise $\sigma$.</li>
+        générateurs est complète (ce qui implique que toute opération admissible préserve le porteur), aucune opération
+        listée ne réalise $\sigma$.</li>
       <li><strong>Aucun lien entre la porte et $\sigma$ (non établi).</strong> L'automorphisme extérieur fixe la
         classe d'ordre quatre et préserve chaque lieu d'ordre cinq et d'ordre dix ; la porte reste ouverte.</li>
-      <li><strong>Énoncé de la tour complète (relatif à [M]).</strong> Si toute opération de fibre admissible
-        préserve le porteur, une tour récursive finie multiplie le type de parité vertical et ne peut fournir
+      <li><strong>Énoncé de la tour complète (relatif à [M] et [H-WS]).</strong> Sous [M], toute opération de fibre
+        admissible préserve le porteur ; comme $R_b$ appartient à la liste que [M] rend complète, l'énoncé hérite de
+        [H-WS]. Une tour récursive finie multiplie le type de parité vertical et ne peut fournir
         $\sigma$. La prémisse [M] n'est pas démontrée, et l'énoncé n'est pas inconditionnel.</li>
       <li><strong>Conséquences pour le relèvement chiral (conditionnelles).</strong> Le relèvement chiral
         lorentzien ($S_L \oplus S_R$, $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}} \simeq \mathfrak{sl}_2(\mathbb{C})$)
@@ -190,8 +195,9 @@
     <p>
       <strong>Conditionnel.</strong> Aucune opération listée de la strate de spin ne réalise $\sigma$, sous [H-WS]
       pour $R_b$, les hypothèses de A4 pour le verrouillage, des assertions de modélisation pour les foncteurs
-      tensoriels et la projection de Schur, et la prémisse de modélisation [M] que la liste des générateurs est
-      complète. L'extension à une tour récursive est relative à la même prémisse.
+      tensoriels et la projection de Schur, la prémisse de modélisation [M] que la liste des générateurs est
+      complète, et la parité de Born–Infeld de la fibre de base, hypothèse candidate prise comme prémisse. L'extension à une
+      tour récursive est relative à [M] et, pour $R_b$, à [H-WS].
     </p>
     <p>
       <strong>Conditionnel (relèvement chiral).</strong> En prenant le relèvement chiral lorentzien comme une entrée

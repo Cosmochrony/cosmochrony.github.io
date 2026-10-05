@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Angular Amplitude Reduction | Cosmochrony</title>
   <meta name="description"
-    content="Identifies, before any Weil–BFS computation, the observable for the absolute normalisation of the Q14 §6 angular generation split: the accumulated oriented J3-odd symplectic area along the Weil–BFS cascade."/>
+    content="Internal note fixing, before any Weil–BFS computation, the observable for the absolute normalisation of the Q14 §6 angular generation split: the per-step J3 component is the oriented shear product of the sl(2) step, produced by the commutator [E,F]=H, and the proposed observable is the accumulated oriented central-phase increment of the Heisenberg lift (an input, not a consequence of the reduction)."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Reduction of the Angular Amplitude Observable"/>
+  <meta property="og:title" content="Angular Amplitude Reduction"/>
   <meta property="og:description"
-    content="Per-step J_Π-odd J3 component of the metaplectic cascade generator = oriented symplectic area swept per step (Carnot-degree-2 increment of Heis_3); observable normalised by the projected capacity, compared to dictionary ε = 1/10 without fitting."/>
+    content="Per-step J_Π-odd J3 component of the metaplectic cascade generator = oriented shear product ts of the sl(2) step, from the commutator [E,F]=H; central-phase observable normalised by the projected capacity, compared to the dictionary ε = 1/10 without fitting."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/angular-amplitude-reduction/"/>
   <script type="module">
@@ -34,10 +34,10 @@
         </svg>
       </a>
       <div>
-        <h1>Reduction of the Angular Amplitude Observable</h1>
+        <h1>Angular Amplitude Reduction</h1>
         <p class="subtitle">
-          The $J_3$ split as accumulated oriented symplectic area — fixing the observable before
-          the Weil–BFS computation.
+          The oriented shear product of the $\mathfrak{sl}(2)$ step and the central-phase observable of the Weil
+          cascade — fixing the observable before the Weil–BFS computation.
         </p>
       </div>
     </div>
@@ -52,17 +52,22 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This working note fixes the numerical observable for the absolute normalisation of the
+        This internal note fixes the numerical observable for the absolute normalisation of the
         angular generation split of <a href="/science/fermionic-matter/q14/" class="inline-link">Q14
         §6</a>, before any Weil–BFS computation is written. A short Baker–Campbell–Hausdorff
-        reduction identifies the per-step $J_\Pi$-odd $J_3$ component of the metaplectic cascade
-        generator with the oriented symplectic area swept per step — the central
-        Carnot-degree-2 increment of $\mathrm{Heis}_3$ — and not with a free shear parameter.
+        reduction in $\mathfrak{sl}_2$ identifies the per-step $J_\Pi$-odd $J_3$ component of the metaplectic
+        cascade generator with the oriented product $ts$ of the two shear parameters, produced by the
+        $\mathfrak{sl}_2$ commutator $[E,F]=H$ (Q14, Proposition 6.5), and not with a free shear parameter. In the
+        $\mathrm{SL}(2)$-on-$V$ model of Q14 the computation uses only the $\mathfrak{sl}_2$ relations and no
+        Heisenberg bracket; in the oscillator (Weil) realisation the $\mathfrak{sl}_2$ generators are quadratic in
+        the Heisenberg generators, and no map between the two brackets is supplied here.
       </p>
       <p>
-        The quantity to be measured is the accumulated oriented $J_3$-odd area along the Weil–BFS
-        cascade, normalised by the projected capacity $\widehat{I}(n)$; at the intrinsic
-        saturation rank $n_3^{\mathrm{obs}}$ this equals
+        The observable proposed for the Weil–BFS cascade is the accumulated oriented central-phase increment $A_c$
+        of the Heisenberg lift, normalised by the projected capacity $\widehat{I}(n)$. That $A_c$ carries the $J_3$
+        signal is an input of this note, not a consequence of the reduction: the increment $ts$ and the Heisenberg
+        cocycle have the same form, which is an analogy and not an identification. Under this input, at the intrinsic
+        saturation rank $n_3^{\mathrm{obs}}$ the normalised increment equals
         $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$, to be compared with the dictionary
         value $\varepsilon = 1/10$ <em>without fitting</em>.
       </p>
@@ -88,7 +93,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">BCH reduction; oriented symplectic area; O12 fingerprint sectors; symmetric BFS null result</div>
+          <div class="v">$\mathfrak{sl}_2$ reduction; oriented shear product; central-phase observable (an input); O12 fingerprint sectors; symmetric BFS null result</div>
         </div>
         <div class="kv">
           <div class="k">Status</div>
@@ -101,16 +106,18 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>BCH reduction.</strong> The per-step $J_\Pi$-odd $J_3$ component of the
-        metaplectic cascade generator equals the oriented symplectic area swept per step (central
-        Carnot-degree-2 increment of $\mathrm{Heis}_3$), not a free shear parameter.</li>
-      <li><strong>The observable.</strong> Accumulated oriented $J_3$-odd area along the
-        Weil–BFS cascade, normalised by the projected capacity $\widehat{I}(n)$; at
-        $n_3^{\mathrm{obs}}$ this equals $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ and is
-        to be compared to the dictionary $\varepsilon = 1/10$ without fitting.</li>
+      <li><strong>$\mathfrak{sl}_2$ reduction.</strong> The per-step $J_\Pi$-odd $J_3$ component of the
+        metaplectic cascade generator is the oriented product $ts$ of the two shear parameters, produced by the
+        $\mathfrak{sl}_2$ commutator $[E,F]=H$ (Q14, Proposition 6.5), not a free shear parameter; the computation in
+        the $\mathrm{SL}(2)$-on-$V$ model uses no Heisenberg bracket.</li>
+      <li><strong>The observable.</strong> Accumulated oriented central-phase increment $A_c$ of the Heisenberg lift,
+        normalised by the projected capacity $\widehat{I}(n)$; at $n_3^{\mathrm{obs}}$ it equals
+        $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ and is to be compared to the dictionary $\varepsilon = 1/10$
+        without fitting. That $A_c$ carries the $J_3$ signal is an input of the note, its resemblance to the shear
+        product being an analogy and not an identification.</li>
       <li><strong>O12 fingerprint factorisation.</strong> The two sectors are the two terms of
         the fingerprint exponent: the frequency $B_c$ carries the radial capacity $\sigma_c$, the
-        central phase $A_c$ carries the angular split.</li>
+        central phase $A_c$ is, under that input, the carrier of the angular split.</li>
       <li><strong>Symmetric BFS null result.</strong> Direct evaluation on symmetric BFS shells
         returns $\Theta_{\mathrm{raw}} = 0$ identically: the symmetric capacity data fix the
         radial sector but cannot select an oriented angular branch. The orientation prescription
@@ -130,7 +137,7 @@
       This note belongs to the <a href="/science/fermionic-matter/" class="inline-link">fermionic
       matter sub-programme</a> (Presentation Note 6). Together with the
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
-      note (operator-side Schur form, finite/Lorentzian separation) and the
+      note (operator-side Schur form of the compression remainder, conditional localisation of $u$) and the
       <a href="/science/fermionic-matter/q11-oriented-frontier/" class="inline-link">Q11OF</a>
       note (frontier diagnostic), it sets up the locked frame in which the remaining
       quantitative step of the fermionic sector — the cascade normalisation
@@ -140,8 +147,7 @@
   <section class="card">
     <h2>References</h2>
     <p>
-      Jérôme Beau. <i lang="en">Reduction of the Angular Amplitude Observable: the $J_3$ Split
-      as Accumulated Oriented Symplectic Area</i>. Working paper, 2026.
+      Jérôme Beau. <i lang="en">Angular Amplitude Reduction: the Oriented Shear Product of the $\mathfrak{sl}(2)$ Step and the Central-Phase Observable of the Weil Cascade</i>. Working paper, 2026. <!-- TODO-RELEASE: version 1.3 and title at deposit; concept DOI unchanged -->
       <a href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">10.5281/zenodo.20601228</a>
     </p>
   </section>

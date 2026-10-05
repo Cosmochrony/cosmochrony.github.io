@@ -53,10 +53,12 @@
       <p>
         This companion note sits logically between the <a href="/science/fermionic-matter/projective-residue-schur/"
         class="inline-link">Schur reduction</a> of the projective residue and the physical identification
-        of the chiral generator. The Schur reduction writes the projective endomorphism as
+        of the chiral generator. The Schur form of the projective residue writes the residue of a locking operator as
         $E_\Pi = -\Pi_S\,D\,(1 - P)\,D\,\Pi_S^{*}$, so the eliminated block $1 - P$ controls the
-        three-generation split coefficient $u$; the absolute value $|u|$, the Yukawa sector, and the
-        mass spectrum are kept downstream.
+        three-generation split coefficient $u$. The companion notes do not settle the two upstream questions: the Schur
+        transversality of the locking is stated there as a dichotomy under explicit hypotheses, with the branch open,
+        and the Lorentzian genus is not determined; neither is used here, and the absolute value $|u|$, the Yukawa
+        sector, and the mass spectrum are kept downstream.
       </p>
       <p>
         Writing the self-adjoint projector family as a jet $1 - P(s) = Q_0 + s Q_1 + s^2 Q_2 + O(s^3)$,
@@ -65,7 +67,9 @@
         antiunitary Born–Infeld parity, the residue jet must move with the spinorial embedding, and an
         explicit covariant family shows that a non-zero first-order split rate is realisable. This is an
         existence statement under explicit hypotheses: it does not select the family, identify a unique
-        generator, or fix the magnitude $|u|$.
+        generator, or fix the magnitude $|u|$. The explicit family is a finite witness with $J^2 = +1$, outside
+        hypothesis [H-Gen](i) of the Schur note: it illustrates a moving-embedding family without being an instance of
+        [H-Gen].
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary.
@@ -94,7 +98,7 @@
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Working paper, version 2.0 (concept DOI <a
+          <div class="v">Working paper, version 2.1 <!-- TODO-RELEASE: version 2.1 not yet deposited --> (concept DOI <a
             href="https://doi.org/10.5281/zenodo.20763532">10.5281/zenodo.20763532</a>)</div>
         </div>
         <div class="kv">
@@ -130,7 +134,11 @@
       <li><strong>Moving-Schur existence theorem.</strong> An explicit covariant family on
         $\mathbb{C}^3 \oplus \mathbb{C}^3$ has $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$,
         $u'(0) = 11 \cdot 2^{1/4}/9 \neq 0$, and neither mixing nor singlet leakage at first order; the
-        frozen-embedding model gives $79 \cdot 2^{1/4}/90$ instead.</li>
+        frozen-embedding model gives $79 \cdot 2^{1/4}/90$ instead. This finite witness has $J^2 = +1$ and lies outside hypothesis [H-Gen](i) of the Schur note: it meets
+        the identity-reading clauses of its separate hypothesis [H-Mult] and conditions (ii)–(iii) of [H-Gen]
+        (reading $J_\Pi$ as $J$ on its finite space), and illustrates a moving-embedding family without being an
+        instance of [H-Gen]. The value $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$ is an initial condition of
+        the family, not a derived value.</li>
       <li><strong>Chiral defect-rate identity.</strong> In the chiral frame,
         $[\Pi_{J_\Pi\text{-odd}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ and
         $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. This determines one
@@ -173,8 +181,8 @@
     <p>
       <strong>Established.</strong> The constrained jet for every smooth family; the parity grading under
       equivariance; the moving-embedding propagation to the residue; the vanishing of every odd-order
-      generation-mixing coefficient in covariant families; the moving-Schur existence theorem; and the chiral
-      defect-rate identity. The identities are checked on exact instances, and the realisation and the
+      generation-mixing coefficient in covariant families; the moving-Schur existence theorem (a finite witness outside [H-Gen](i), not an instance of that hypothesis);
+      and the chiral defect-rate identity. The identities are checked on exact instances, and the realisation and the
       counterexamples exactly; the general statements rest on the proofs in the note.
     </p>
     <p>
@@ -191,9 +199,9 @@
       matter sub-programme</a>. It takes up the first open deliverable of the
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">Projective
       Residue Schur reduction</a>, the explicit Lorentzian eliminated block $1 - P(s)$, and relates its odd
-      tangent to the transported equivariance defect of that reduction. The electric genus sign
-      $\mu_\chi^2 < 0$ of the <a href="/science/fermionic-matter/a4-note/" class="inline-link">Born–Infeld
-      saturation margin note</a> orients the physical reading but is not used in the proofs. The absolute
+      tangent to the transported equivariance defect of that reduction. The <a href="/science/fermionic-matter/a4-note/" class="inline-link">Born–Infeld
+      saturation margin note</a> states the genus of a supplied two-form and does not determine it; the genus is
+      not used in the proofs. The absolute
       value $|u|$, the Yukawa sector, and the mass spectrum remain downstream, dictionary-bound questions.
     </p>
   </section>

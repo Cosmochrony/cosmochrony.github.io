@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Chiral Orientation of the Directed Heisenberg Frontier | Cosmochrony</title>
   <meta name="description"
-    content="Companion note resolving the chiral weight σ_L deferred by Q11OF: a parity argument closes the false route σ_L = f(T(e)) — arrow inversion and the residual reflection φ both send T → −T, so every function of T has equal arrow- and φ-parity, whereas the admissible weight is arrow-even and φ-odd. The resolution: σ_L is the Weyl representation type 2 vs 2̄ (group inversion preserves it, complex conjugation exchanges it). In the inherited Heisenberg central-phase lift the edge phase is the linear cyclotomic character ζ_q^{ΔA_c}, giving ρ_χ = 1 and N_A = θ_max ≠ 0 in that lift. The residual obstruction — an additional spin-Galois phase outside the central character — is now discharged by the chiral-lift corollary of AOG-Note: the lift induces no action on √5, so [H-orient] holds and N_A ≠ 0 unconditionally within the present spin stratum."/>
+    content="Companion note resolving the chiral weight σ_L deferred by Q11OF. Under [H-WS] (the residual reflection R_b acts as the scalar −1 on the chiral carrier; supplied by no source), σ_L cannot be a function of the cascade generator T(e) and is the Weyl representation type 2 vs 2̄. In the inherited Heisenberg central-phase lift the edge phase is the linear cyclotomic character ζ_q^{ΔA_c}, giving ρ_χ = 1 and N_A = θ_max ≠ 0 in that lift and under [H-WS], not unconditionally; an additional spin-Galois phase is the remaining obstruction. The note does not derive u ≠ 0."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Chiral Orientation of the Directed Heisenberg Frontier"/>
   <meta property="og:description"
-    content="σ_L is the Weyl representation type, not a function of the cascade generator T(e); inherited central-phase lift gives N_A = θ_max ≠ 0; the residual Galois-spin phase orthogonal to ζ_q is discharged by AOG-Note's chiral-lift corollary, closing [H-orient] unconditionally within the present spin stratum."/>
+    content="Under [H-WS], σ_L is the Weyl representation type, not a function of the cascade generator T(e); the inherited central-phase lift gives N_A = θ_max ≠ 0 under [H-WS]; an additional spin-Galois phase orthogonal to ζ_q remains the residual obstruction. u ≠ 0 is not derived."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fermionic-matter/chiral-orientation-frontier/"/>
   <script type="module">
@@ -57,14 +57,17 @@
         $\theta_{\max} = \langle (2\pi/q)\,|\Delta A_c| \rangle_{\partial^+}$ — and one missing
         datum: the chiral weight $\sigma_L \in \{\pm 1\}$ that turns the bound into an amplitude
         through $\Theta_\chi = \langle \sigma_L\,(2\pi/q)\,\Delta A_c \rangle_{\partial^+}$, with
-        $|\Theta_\chi| \le \theta_{\max}$.
+        $|\Theta_\chi| \le \theta_{\max}$. This signal is a discrete counterpart of the orientation datum
+        of the Q11 oriented-frontier note; it is not the $J_3$ coefficient of the metaplectic step, which in the
+        $\mathrm{SL}(2)$ model of Q14 is produced by the $\mathfrak{sl}_2$ commutator $[E,F] = H$ (Q14, Proposition 6.5).
       </p>
       <p>
         The frontier backend does not supply $\sigma_L$: it is the surviving stub of the
-        Lorentzian chiral lift. This note proves $\sigma_L$ <em>cannot</em> be any function of
+        Lorentzian chiral lift. This note proves, under the hypothesis [H-WS] (the residual reflection $R_b$ acts on the chiral carrier as the
+        scalar $-1$, so $[\gamma_5, R_b] = 0$; supplied by no source), that $\sigma_L$ <em>cannot</em> be any function of
         the real cascade generator $T(e)$ — edge inversion and the residual reflection $\varphi$
         both act as $T \mapsto -T$, so every $f(T)$ has equal arrow- and $\varphi$-parity, whereas
-        $\sigma_L$ must be arrow-even and $\varphi$-odd. The resolution is that $\sigma_L$ is
+        $\sigma_L$ must be arrow-even and $\varphi$-odd. The resolution, under [H-WS], is that $\sigma_L$ is
         the <strong>Weyl representation type</strong>, $\mathbf{2}$ versus $\bar{\mathbf{2}}$:
         group inversion preserves the representation (arrow-even) while complex conjugation
         exchanges it ($\varphi$-odd).
@@ -76,7 +79,7 @@
         $\sigma_L(e) = \operatorname{sign} \Im\,\zeta_q^{\Delta A_c(e)} = \operatorname{sign}
         \Delta A_c(e)$, giving outgoing-frontier overlap $\rho_\chi = 1$ and promoting the bound
         to $\mathcal{N}_A = \theta_{\max} \neq 0$. This establishes $[\mathrm{H\text{-}orient}]$
-        in the inherited central-phase lift, not unconditionally.
+        in the inherited central-phase lift and under [H-WS], not unconditionally.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured summary. The
@@ -113,14 +116,14 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Parity obstruction: $\sigma_L \neq f(T(e))$.</strong> Edge inversion
+      <li><strong>Parity obstruction, under [H-WS]: $\sigma_L \neq f(T(e))$.</strong> Edge inversion
         $U(e^{-1}) = U(e)^{-1}$ and the residual reflection $\varphi = R_b \circ J_\Pi$ both send
         the $J_\Pi$-odd cascade generator $T(e) \mapsto -T(e)$, so every function of $T$ has
         equal arrow- and $\varphi$-parity; the admissible $\sigma_L$ is arrow-even and $\varphi$-odd.
         The global identification $\sigma_L = \operatorname{sign} \Delta A_c$ on all directed
         edges is therefore excluded — it makes $\sigma_L$ arrow-odd and breaks the reversal
         control $\Theta_\chi^{(\partial^+)^{-1}} = -\Theta_\chi^{\partial^+}$.</li>
-      <li><strong>Resolution: Weyl representation type.</strong> The chiral weight $\sigma_L$ is
+      <li><strong>Resolution under [H-WS]: Weyl representation type.</strong> The chiral weight $\sigma_L$ is
         the representation label $\mathbf{2}$ versus $\bar{\mathbf{2}}$. Group inversion
         preserves the representation (arrow-even) and complex conjugation exchanges it
         ($\varphi$-odd) — the unique label distinguished by the conjugation that separates
@@ -133,15 +136,14 @@
         $\sigma_L$ being the representation label that survives the arrow/$\varphi$ parity
         constraints. Outgoing-frontier overlap $\rho_\chi = 1$;
         $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-invariant on $q \in \{61, 101, 151\}$.</li>
-      <li><strong>$[\mathrm{H\text{-}orient}]$ closed in the inherited lift, residual obstruction
-        now discharged.</strong> The result establishes the frontier amplitude datum in the
-        inherited Heisenberg central-phase lift. The only remaining obstruction — an additional
-        spin-Galois phase outside the central character, in particular a $\sqrt{5}$ or ADE-spin
-        factor orthogonal to $\zeta_q$ — is discharged by the chiral-lift corollary of
+      <li><strong>$[\mathrm{H\text{-}orient}]$ in the inherited lift, under [H-WS]; residual obstruction.</strong> The
+        result establishes the frontier amplitude datum in the inherited Heisenberg central-phase lift and under
+        [H-WS], not unconditionally. The only remaining obstruction besides [H-WS] — an additional spin-Galois phase
+        outside the central character, in particular a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$ — is open
+        in this note. The
         <a href="/science/fermionic-matter/arithmetic-orthogonality-adegate/"
-        class="inline-link">AOG-Note</a>: the same spin-stratum type-rigidity shows the Lorentzian
-        chiral lift induces no action on $\sqrt{5}$, so $[\mathrm{H\text{-}orient}]$ holds and
-        $\mathcal{N}_A \neq 0$ unconditionally within the present spin stratum.</li>
+        class="inline-link">AOG-Note</a> establishes, within its present spin stratum and under [H-WS], that the
+        Lorentzian chiral lift induces no action on $\sqrt{5}$.</li>
       <li><strong>Numerical validation of the backend.</strong> Raw average exactly zero,
         symmetrised anti-bias control exactly zero, $\theta_{\max} \cdot q$ stable on
         $q \in \{61, 101, 151\}$. Backend and bound validated; $\sigma_L$ itself is supplied
@@ -151,24 +153,22 @@
   <section class="card">
     <h2>What this note settles, and what it does not</h2>
     <p>
-      <strong>Settled.</strong> The chiral weight $\sigma_L$ cannot be a function of $T(e)$; it
+      <strong>Proved under [H-WS].</strong> The chiral weight $\sigma_L$ cannot be a function of $T(e)$; it
       is the Weyl representation type. In the inherited central-phase lift the frontier
       amplitude datum $\mathcal{N}_A = \theta_{\max}$ is non-zero and $q$-invariant.
     </p>
     <p>
-      <strong>Closed within the present spin stratum.</strong> The result holds in the inherited
-      Heisenberg central-phase lift. The single caveat — an additional spin-Galois phase outside
-      this central character, a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$ — is
-      discharged by the chiral-lift corollary of AOG-Note: the Lorentzian chiral lift induces no
-      action on $\sqrt{5}$, so $[\mathrm{H\text{-}orient}]$ holds unconditionally within the present
-      spin stratum, the chiral closure and the ADE-gate no-go being opposite cuts of one
-      spin-stratum type-rigidity.
+      <strong>Open.</strong> Whether the chiral spin-lift carries only the inherited central character, or an
+      additional spin-Galois phase (a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$), is the single remaining
+      obstruction besides [H-WS]. The AOG-Note establishes, within its present spin stratum and under [H-WS], that the
+      Lorentzian chiral lift induces no action on $\sqrt{5}$.
     </p>
     <p>
-      <strong>Not derived here.</strong> The split $u \neq 0$ itself. That conclusion still
-      requires the Schur transport of the polarisation onto the $J_\Pi$-odd generation sector
-      (cf. PRS, A4-Note). CHO supplies the frontier amplitude datum; it does not bypass the
-      operator step.
+      <strong>Not derived here.</strong> The split $u \neq 0$ itself. That conclusion would further require a
+      transport of the oriented signal to the $J_\Pi$-odd generation sector. The only transport stated in PRS is the
+      hypothesis [H-Tr] for the $\mathfrak{sl}_2$ opening, supplied by no source, and the identification of the frontier
+      signal with that opening is a further input. CHO supplies the frontier amplitude datum, conditionally; it does not
+      bypass the operator step.
     </p>
   </section>
   <section class="card">
@@ -182,10 +182,10 @@
       <a href="/science/fermionic-matter/projective-residue-schur/" class="inline-link">PRS</a>
       reduction (Schur transport), the
       <a href="/science/fermionic-matter/a4-note/" class="inline-link">A4-Note</a> (Born–Infeld
-      saturation mechanism for the amplitude), and the
+      saturation margin of a supplied two-form; no amplitude mechanism is selected), and the
       <a href="/science/fermionic-matter/arithmetic-orthogonality-adegate/" class="inline-link">AOG-Note</a>
-      (spin-stratum type-rigidity — its chiral-lift corollary discharges the residual obstruction
-      of CHO and closes $[\mathrm{H\text{-}orient}]$ unconditionally within the present spin stratum).
+      (spin-stratum type-rigidity — within its present spin stratum and under [H-WS], its chiral-lift
+      corollary shows that the Lorentzian chiral lift induces no action on $\sqrt{5}$).
     </p>
   </section>
   <section class="card">

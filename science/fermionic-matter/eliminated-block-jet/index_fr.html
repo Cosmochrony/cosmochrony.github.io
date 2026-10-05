@@ -54,10 +54,12 @@
       <p>
         Cette note compagne se place logiquement entre la <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
         class="inline-link">réduction de Schur</a> du résidu projectif et l'identification physique du
-        générateur chiral. La réduction de Schur écrit l'endomorphisme projectif sous la forme
+        générateur chiral. La forme de Schur du résidu projectif écrit le résidu d'un opérateur de locking sous la forme
         $E_\Pi = -\Pi_S\,D\,(1 - P)\,D\,\Pi_S^{*}$, de sorte que le bloc éliminé $1 - P$ contrôle le
-        coefficient de splitting à trois générations $u$ ; la valeur absolue $|u|$, le secteur de Yukawa
-        et le spectre de masse restent en aval.
+        coefficient de splitting à trois générations $u$. Les notes compagnonnes ne tranchent pas les deux questions
+        amont : la transversalité de Schur du locking y est énoncée comme une dichotomie sous hypothèses explicites, la
+        branche restant ouverte, et le genre lorentzien n'est pas déterminé ; ni l'une ni l'autre n'est utilisée ici, et
+        la valeur absolue $|u|$, le secteur de Yukawa et le spectre de masse restent en aval.
       </p>
       <p>
         En écrivant la famille de projecteurs auto-adjoints comme un jet
@@ -67,7 +69,9 @@
         le jet du résidu doit suivre le plongement spinoriel, et une famille covariante explicite montre qu'un
         taux de splitting non nul au premier ordre est réalisable. C'est un énoncé d'existence sous des
         hypothèses explicites : il ne sélectionne pas la famille, n'identifie pas de générateur unique et ne
-        fixe pas la magnitude $|u|$.
+        fixe pas la magnitude $|u|$. La famille explicite est un témoin fini avec $J^2 = +1$, extérieur à l'hypothèse
+        [H-Gen](i) de la note de Schur : elle illustre une famille à plongement mobile sans être une instance de
+        [H-Gen].
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page fournit un résumé structuré.
@@ -96,7 +100,7 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Document de travail, version 2.0 (DOI de concept <a
+          <div class="v">Document de travail, version 2.1 <!-- TODO-RELEASE: version 2.1 pas encore déposée --> (DOI de concept <a
             href="https://doi.org/10.5281/zenodo.20763532">10.5281/zenodo.20763532</a>)</div>
         </div>
         <div class="kv">
@@ -133,7 +137,11 @@
       <li><strong>Théorème d'existence de Schur mobile.</strong> Une famille covariante explicite sur
         $\mathbb{C}^3 \oplus \mathbb{C}^3$ a $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$,
         $u'(0) = 11 \cdot 2^{1/4}/9 \neq 0$, et ni mélange ni fuite vers le singlet au premier ordre ; le
-        modèle à plongement figé donne $79 \cdot 2^{1/4}/90$.</li>
+        modèle à plongement figé donne $79 \cdot 2^{1/4}/90$. Ce témoin fini a $J^2 = +1$ et se situe hors de l'hypothèse [H-Gen](i) de la note de Schur : il satisfait les
+        clauses de lecture identité de son hypothèse distincte [H-Mult] et les conditions (ii)–(iii) de [H-Gen]
+        (en lisant $J_\Pi$ comme $J$ sur son espace fini), et illustre une famille à plongement mobile sans être une
+        instance de [H-Gen]. La valeur $E_0^2 = \mathrm{diag}(1, \tfrac12, \tfrac12)$ est une condition initiale de la
+        famille, non une valeur dérivée.</li>
       <li><strong>Identité chirale du taux de défaut.</strong> Dans le repère chiral,
         $[\Pi_{J_\Pi\text{-impair}}(1 - P)]_{LL} = \tfrac12\Delta_\chi(P)$ et
         $[\Pi_{J_\Pi\text{-impair}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$. Cela détermine un
@@ -178,7 +186,7 @@
       <strong>Établi.</strong> Le jet contraint pour toute famille lisse ; la graduation de parité sous
       équivariance ; la propagation au résidu avec plongement mobile ; l'annulation de tout coefficient
       d'ordre impair du mélange des générations dans les familles covariantes ; le théorème d'existence de
-      Schur mobile ; et l'identité chirale du taux de défaut. Les identités sont vérifiées sur des instances
+      Schur mobile (un témoin fini hors de [H-Gen](i), non une instance de cette hypothèse) ; et l'identité chirale du taux de défaut. Les identités sont vérifiées sur des instances
       exactes, la réalisation et les contre-exemples exactement ; les énoncés généraux reposent sur les
       preuves de la note.
     </p>
@@ -196,10 +204,9 @@
       matière fermionique</a>. Elle prend en charge le premier livrable ouvert de la
       <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">réduction de
       Schur du résidu projectif</a>, le bloc éliminé lorentzien explicite $1 - P(s)$, et relie sa tangente
-      impaire au défaut d'équivariance transporté de cette réduction. Le signe de genre électrique
-      $\mu_\chi^2 < 0$ de la <a href="/science/fermionic-matter/a4-note/index_fr.html"
-      class="inline-link">note sur la marge de saturation de Born–Infeld</a> oriente la lecture physique mais
-      n'intervient pas dans les preuves. La valeur absolue $|u|$, le secteur de Yukawa et le spectre de masse
+      impaire au défaut d'équivariance transporté de cette réduction. La <a href="/science/fermionic-matter/a4-note/index_fr.html"
+      class="inline-link">note sur la marge de saturation de Born–Infeld</a> énonce le genre d'une 2-forme fournie et
+      ne le détermine pas ; le genre n'intervient pas dans les preuves. La valeur absolue $|u|$, le secteur de Yukawa et le spectre de masse
       restent des questions en aval, liées au dictionnaire.
     </p>
   </section>

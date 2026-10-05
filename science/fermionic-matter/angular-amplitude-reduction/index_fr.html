@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Réduction de l'amplitude angulaire | Cosmochronie</title>
   <meta name="description"
-    content="Identifie, avant tout calcul Weil–BFS, l'observable mesurant la normalisation absolue du splitting générationnel angulaire de Q14 §6 : l'aire symplectique J3-impaire orientée accumulée le long de la cascade Weil–BFS."/>
+    content="Note interne fixant, avant tout calcul Weil–BFS, l'observable de la normalisation absolue du splitting générationnel angulaire de Q14 §6 : la composante J3 par pas est le produit de cisaillement orienté du pas sl(2), produit par le commutateur [E,F]=H, et l'observable proposée est l'incrément de phase centrale orienté accumulé du relèvement de Heisenberg (une entrée, non une conséquence de la réduction)."/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Réduction de l'observable d'amplitude angulaire"/>
+  <meta property="og:title" content="Réduction de l'amplitude angulaire"/>
   <meta property="og:description"
-    content="La composante J_Π-impaire J3 par pas du générateur de cascade métaplectique = l'aire symplectique orientée balayée par pas (incrément central de degré-2 Carnot de Heis_3) ; observable normalisée par la capacité projetée, comparée au dictionnaire ε = 1/10 sans ajustement."/>
+    content="Composante J_Π-impaire J3 par pas du générateur de cascade métaplectique = produit de cisaillement orienté ts du pas sl(2), issu du commutateur [E,F]=H ; observable de phase centrale normalisée par la capacité projetée, comparée au dictionnaire ε = 1/10 sans ajustement."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/angular-amplitude-reduction/"/>
   <script type="module">
@@ -35,10 +35,10 @@
         </svg>
       </a>
       <div>
-        <h1>Réduction de l'observable d'amplitude angulaire</h1>
+        <h1>Réduction de l'amplitude angulaire</h1>
         <p class="subtitle">
-          Le splitting $J_3$ comme aire symplectique orientée accumulée — fixer l'observable
-          avant le calcul Weil–BFS.
+          Le produit de cisaillement orienté du pas $\mathfrak{sl}(2)$ et l'observable de phase centrale de la cascade
+          de Weil — fixer l'observable avant le calcul Weil–BFS.
         </p>
       </div>
     </div>
@@ -53,18 +53,23 @@
     <div class="card">
       <h2>Aperçu</h2>
       <p>
-        Cette note de travail fixe l'observable numérique pour la normalisation absolue du
+        Cette note interne fixe l'observable numérique pour la normalisation absolue du
         splitting générationnel angulaire de <a href="/science/fermionic-matter/q14/index_fr.html"
         class="inline-link">Q14 §6</a>, avant tout calcul Weil–BFS. Une courte réduction
-        Baker–Campbell–Hausdorff identifie la composante $J_\Pi$-impaire $J_3$ par pas du
-        générateur de cascade métaplectique à l'aire symplectique orientée balayée par pas — l'
-        incrément central de degré-2 Carnot de $\mathrm{Heis}_3$ — et non à un paramètre de
-        cisaillement libre.
+        Baker–Campbell–Hausdorff dans $\mathfrak{sl}_2$ identifie la composante $J_\Pi$-impaire $J_3$ par pas du
+        générateur de cascade métaplectique au produit orienté $ts$ des deux paramètres de cisaillement, produit par le
+        commutateur $\mathfrak{sl}_2$ $[E,F]=H$ (Q14, Proposition 6.5), et non à un paramètre de cisaillement libre.
+        Dans le modèle $\mathrm{SL}(2)$-sur-$V$ de Q14, le calcul n'utilise que les relations $\mathfrak{sl}_2$ et
+        aucun crochet de Heisenberg ; dans la réalisation oscillatrice (de Weil), les générateurs $\mathfrak{sl}_2$
+        sont quadratiques en les générateurs de Heisenberg, et aucune application entre les deux crochets n'est
+        fournie ici.
       </p>
       <p>
-        La quantité à mesurer est l'aire $J_3$-impaire orientée accumulée le long de la cascade
-        Weil–BFS, normalisée par la capacité projetée $\widehat{I}(n)$ ; au rang de
-        saturation intrinsèque $n_3^{\mathrm{obs}}$ ceci égale
+        L'observable proposée pour la cascade Weil–BFS est l'incrément de phase centrale orienté accumulé $A_c$ du
+        relèvement de Heisenberg, normalisé par la capacité projetée $\widehat{I}(n)$. Que $A_c$ porte le signal $J_3$
+        est une entrée de cette note, non une conséquence de la réduction : l'incrément $ts$ et le cocycle de Heisenberg
+        ont la même forme, ce qui est une analogie et non une identification. Sous cette entrée, au rang de saturation
+        intrinsèque $n_3^{\mathrm{obs}}$ l'incrément normalisé égale
         $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$, à comparer à la valeur du dictionnaire
         $\varepsilon = 1/10$ <em>sans ajustement</em>.
       </p>
@@ -90,7 +95,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Réduction BCH ; aire symplectique orientée ; secteurs de l'empreinte O12 ; résultat nul BFS symétrique</div>
+          <div class="v">Réduction $\mathfrak{sl}_2$ ; produit de cisaillement orienté ; observable de phase centrale (une entrée) ; secteurs de l'empreinte O12 ; résultat nul BFS symétrique</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
@@ -103,17 +108,18 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Réduction BCH.</strong> La composante $J_\Pi$-impaire $J_3$ par pas du
-        générateur de cascade métaplectique égale l'aire symplectique orientée balayée par pas
-        (incrément central de degré-2 Carnot de $\mathrm{Heis}_3$), non un paramètre de
-        cisaillement libre.</li>
-      <li><strong>L'observable.</strong> Aire $J_3$-impaire orientée accumulée le long de la
-        cascade Weil–BFS, normalisée par la capacité projetée $\widehat{I}(n)$ ; au
-        $n_3^{\mathrm{obs}}$ ceci égale $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ et est
-        à comparer au dictionnaire $\varepsilon = 1/10$ sans ajustement.</li>
+      <li><strong>Réduction $\mathfrak{sl}_2$.</strong> La composante $J_\Pi$-impaire $J_3$ par pas du générateur de
+        cascade métaplectique est le produit orienté $ts$ des deux paramètres de cisaillement, produit par le
+        commutateur $\mathfrak{sl}_2$ $[E,F]=H$ (Q14, Proposition 6.5), non un paramètre de cisaillement libre ; le
+        calcul dans le modèle $\mathrm{SL}(2)$-sur-$V$ n'utilise aucun crochet de Heisenberg.</li>
+      <li><strong>L'observable.</strong> Incrément de phase centrale orienté accumulé $A_c$ du relèvement de
+        Heisenberg, normalisé par la capacité projetée $\widehat{I}(n)$ ; au rang $n_3^{\mathrm{obs}}$ il égale
+        $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ et est à comparer au dictionnaire $\varepsilon = 1/10$ sans
+        ajustement. Que $A_c$ porte le signal $J_3$ est une entrée de la note, sa ressemblance avec le produit de
+        cisaillement étant une analogie et non une identification.</li>
       <li><strong>Factorisation par l'empreinte O12.</strong> Les deux secteurs sont les deux
         termes de l'exposant d'empreinte : la fréquence $B_c$ porte la capacité radiale
-        $\sigma_c$, la phase centrale $A_c$ porte le splitting angulaire.</li>
+        $\sigma_c$, la phase centrale $A_c$ est, sous cette entrée, le porteur du splitting angulaire.</li>
       <li><strong>Résultat nul BFS symétrique.</strong> Une évaluation directe sur les couches
         BFS symétriques renvoie $\Theta_{\mathrm{raw}} = 0$ identiquement : les données de
         capacité symétrique fixent le secteur radial mais ne peuvent sélectionner une branche
@@ -134,7 +140,7 @@
       Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
       matière fermionique</a> (Note de présentation 6). Avec la note
       <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html" class="inline-link">PRS</a>
-      (forme de Schur côté opérateur, séparation fini/lorentzien) et la note
+      (forme de Schur côté opérateur du reste de compression, localisation conditionnelle de $u$) et la note
       <a href="/science/fermionic-matter/q11-oriented-frontier/index_fr.html" class="inline-link">Q11OF</a>
       (diagnostic frontière), elle établit le cadre verrouillé dans lequel l'étape quantitative
       restante du secteur fermionique — la normalisation de cascade
@@ -144,8 +150,7 @@
   <section class="card">
     <h2>Références</h2>
     <p>
-      Jérôme Beau. <i lang="en">Reduction of the Angular Amplitude Observable: the $J_3$ Split
-      as Accumulated Oriented Symplectic Area</i>. Working paper, 2026.
+      Jérôme Beau. <i lang="en">Angular Amplitude Reduction: the Oriented Shear Product of the $\mathfrak{sl}(2)$ Step and the Central-Phase Observable of the Weil Cascade</i>. Working paper, 2026. <!-- TODO-RELEASE: version 1.3 and title at deposit; concept DOI unchanged -->
       <a href="https://doi.org/10.5281/zenodo.20601228" rel="noopener">10.5281/zenodo.20601228</a>
     </p>
   </section>

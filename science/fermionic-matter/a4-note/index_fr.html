@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>La marge de saturation Born–Infeld du module chiral | Cosmochronie</title>
   <meta name="description"
-    content="Compagnonne de PRS : définit la fonctionnelle lorentzienne de saturation Born–Infeld le long du module J_Π-impair, signe verrouillé par A4 ; détermine le genre électrique (μ_χ² < 0, u ≠ 0) ; réduit l'amplitude à la rétroaction cubique de la trajectoire de la 2-forme chirale et résout la dichotomie bord-vs-intérieur sur la cascade réelle dérivée du corpus — saturation invariante par chemin, obstruction de spin 2 à la calibration par le genre, verrouillage intérieur doublement conditionnel, magnitude |u| liée au dictionnaire via la normalisation de frontière chirale N_A."/>
+    content="Compagnonne de PRS : définit la marge de saturation déterminantale Born–Infeld B_sat(s) d'une 2-forme chirale antisymétrique fournie et sa seconde variation mu_chi^2 = 1/2 P_{mu nu} P^{mu nu}, le genre lorentzien de la polarisation chirale. Le genre n'est pas déterminé ; le coefficient quartique du radicande dépend de la carte et ne sélectionne aucun verrou ; le premier contact est indépendant de la carte lorsqu'il existe ; la factorisation du Front D est formelle et conditionnelle ; la magnitude |u| n'est pas prédite."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="La marge de saturation Born–Infeld du module chiral"/>
   <meta property="og:description"
-    content="Antisymétrie ; B_sat(s) à signe verrouillé ; genre électrique ; radicand quartique ; saturation Born–Infeld invariante par chemin sur la cascade réelle dérivée ; obstruction de spin 2 ; statut de dictionnaire de N_A."/>
+    content="Porteur antisymétrique par hypothèse ; marge de saturation Born–Infeld d'une 2-forme fournie ; genre lorentzien non déterminé ; coefficient quartique dépendant de la carte ; premier contact indépendant de la carte ; factorisation formelle conditionnelle du Front D ; |u| non prédite."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/a4-note/"/>
   <script type="module">
@@ -37,8 +37,7 @@
       <div>
         <h1>La marge de saturation Born–Infeld du module chiral</h1>
         <p class="subtitle">
-          Structure antisymétrique, genre lorentzien et détermination électrique du splitting
-          générationnel.
+          Structure antisymétrique et genre lorentzien du splitting générationnel.
         </p>
       </div>
     </div>
@@ -49,9 +48,9 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="2.1">
-    <strong>Publication Zenodo actuelle :</strong> version 2.1 (2026-09-15).
-    <span lang="en">Titre officiel: <i>The Born–Infeld Saturation Margin of the Chiral Modulus: Antisymmetric Structure, Lorentzian Genus, and Electric Determination of the Generation Split</i>.</span>
+  <section class="note" role="note" data-release-version="3.0"> <!-- TODO-RELEASE: data-release-version, version et date -->
+    <strong>Publication Zenodo actuelle :</strong> version 3.0 <!-- TODO-RELEASE: date de publication à fixer au dépôt (aucune version Zenodo ni date n'existe encore) -->.
+    <span lang="en">Titre officiel : <i>The Born–Infeld Saturation Margin of the Chiral Modulus: Antisymmetric Structure and Lorentzian Genus of the Generation Split</i>.</span> <!-- TODO-RELEASE: the Zenodo record title changes with the 3.0 deposit (bibliographic key and concept DOI unchanged) -->
   </section>
   <section class="grid">
     <div class="card">
@@ -60,15 +59,17 @@
         Cette note est la compagnonne de la
         <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
         class="inline-link">réduction par complément de Schur du résidu projectif</a> (PRS) et
-        traite son livrable ouvert sur la fonctionnelle lorentzienne de saturation : la définition
-        de $\mathcal{B}_{\mathrm{sat}}(s)$ le long du module $J_\Pi$-impair qui contrôle le
-        coefficient de splitting à trois générations $u$.
+        examine la fonctionnelle lorentzienne de saturation $\mathcal{B}_{\mathrm{sat}}(s)$ le long du module
+        $J_\Pi$-impair qui contrôle le coefficient de splitting à trois générations $u$.
       </p>
       <p>
-        Trois résultats sont établis : un lemme d'antisymétrie forçant la variable de
-        module à être une 2-forme chirale antisymétrique, une définition à signe verrouillé de
-        $\mathcal{B}_{\mathrm{sat}}(s)$, et une réduction au genre de la seconde variation à un
-        invariant lorentzien de la polarisation chirale.
+        Le carré symétrique du module $J_\Pi$-impair est $J_\Pi$-pair et ne peut porter le signe d'orientation ; le
+        porteur est pris, par hypothèse, comme une 2-forme chirale antisymétrique impaire $F_{\chi,\mu\nu}(s)$.
+        $\mathcal{B}_{\mathrm{sat}}(s)$ est définie comme la marge de saturation déterminantale Born–Infeld d'une
+        telle 2-forme fournie, et sa seconde variation est le genre lorentzien de la polarisation chirale. Les
+        hypothèses qu'aucune source ne fournit sont énoncées là où elles servent. Le genre n'est pas déterminé, le
+        coefficient quartique du radicande dépend de la paramétrisation et ne sélectionne aucun verrou, et la magnitude
+        $|u|$ n'est pas prédite.
       </p>
       <div class="note" role="note">
         <strong>Énoncé de portée.</strong> Cette page fournit un résumé structuré.
@@ -92,7 +93,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Lemme d'antisymétrie ; marge de saturation Born–Infeld ; signe verrouillé par admissibilité A4 ; réduction au genre ; détermination électrique ; radicand quartique et frontière de l'amplitude</div>
+          <div class="v">Porteur antisymétrique par hypothèse ; marge de saturation Born–Infeld ; signe fixé par le rôle d'admissibilité de A4 ; réduction au genre (genre non déterminé) ; radicande quartique ; contact indépendant de la carte ; factorisation formelle du Front D</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
@@ -105,83 +106,66 @@
   <section class="card">
     <h2>Contributions principales</h2>
     <ul>
-      <li><strong>Lemme d'antisymétrie.</strong> Le module générationnel est $J_\Pi$-impair, et
-        le carré symétrique $M = F_\chi F_\chi$ est $J_\Pi$-pair dès sa naissance, donc il ne
-        peut porter ni le module orienté ni le choix spontané de branche $V-A$. La variable de
-        module primaire doit par conséquent être une 2-forme chirale antisymétrique
-        $F_{\chi,\mu\nu}(s)$.</li>
-      <li><strong>Fonctionnelle de saturation à signe verrouillé.</strong>
-        $\mathcal{B}_{\mathrm{sat}}(s)$ est définie comme la marge de saturation déterminantale
-        de Born–Infeld de cette 2-forme, le signe global étant fixé par le rôle d'admissibilité
-        de $\mathcal{B}_{\mathrm{sat}}$ (verrouillage de projection ; l'axiome A4
-        sélectionne les minima saturés), <em>et non</em> par appariement à un développement
-        Maxwell en champ faible. Ceci neutralise le piège de convention sur le signe qui ferait
-        sinon du signe du splitting un choix libre.</li>
+      <li><strong>Porteur antisymétrique.</strong> Le module générationnel est $J_\Pi$-impair, et le carré symétrique
+        $M = F_\chi F_\chi$ est $J_\Pi$-pair dès l'origine, donc il ne peut porter le signe d'orientation. Le porteur
+        est pris, par hypothèse ([H-F]), comme une 2-forme chirale antisymétrique impaire $F_{\chi,\mu\nu}(s)$ ; qu'elle
+        soit le seul porteur impair n'est pas démontré.</li>
+      <li><strong>Marge de saturation.</strong> $\mathcal{B}_{\mathrm{sat}}(s)$ est définie comme la marge de
+        saturation déterminantale Born–Infeld d'une telle 2-forme fournie, avec le signe global fixé une fois pour toutes
+        par son rôle d'admissibilité (verrouillage de projection), avant et indépendamment du signe de sa seconde
+        variation, et non par un appariement avec un développement de Maxwell en champ faible ; elle vérifie
+        $\mathcal{B}_{\mathrm{sat}}(s) = \mathcal{B}_{\mathrm{sat}}(-s)$.</li>
       <li><strong>Réduction au genre.</strong> La seconde variation se réduit à
-        $\mu_\chi := \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2}\,P_{\chi,\mu\nu} P_\chi^{\mu\nu}$,
-        donc l'existence et la stabilité du splitting sont gouvernées entièrement par le genre
-        lorentzien de la polarisation chirale $P_\chi$ dans une métrique effective lorentzienne prise comme
-        entrée (la normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ affirmée dans la note d'émergence géométrique n'est pas
-        établie).</li>
-      <li><strong>Transversalité de Schur close dans PRS.</strong> L'identification du
-        décalage du projecteur de Schur avec le module de saturation Born–Infeld sur le lieu A4
-        repose sur une condition de transversalité de Schur, que PRS prouve dans le stratum de
-        spin lorentzien considéré : le commutateur projeté
-        $[\partial_s P|_0,\, J_\Pi]\big|_{\mathrm{span}(e_+, e_-)}$ a l'ouverture métaplectique
-        exacte $\alpha(t, s) = ts\, r/\sinh r \not\equiv 0$ avec symbole de Clifford de type temps
-        hors du lieu des modes nuls, ce qui sélectionne la branche Schur-transverse.</li>
-      <li><strong>Détermination électrique du genre.</strong> Une assignation d'indices sur le
-        relèvement extérieur $J_\Pi$-impair confirme que la polarisation chirale est électrique
-        dans la branche Schur-transverse, donc $\mu_\chi^2 < 0$ et le splitting générationnel
-        s'ouvre spontanément ($u \neq 0$).</li>
-      <li><strong>Radicand quartique et frontière de l'amplitude.</strong> Le radicand
-        $\mathcal{D}_\chi(s)$ est étendu à l'ordre quartique : la contribution pseudoscalaire
-        Born–Infeld est non positive et s'annule sur le lieu électrique, de sorte que le
-        quartique est entièrement porté par la rétroaction cubique
-        $P_\chi \cdot \mathcal{R}_\chi$ de la trajectoire de la 2-forme chirale. Une dichotomie
-        bord-vs-intérieur au niveau coordonné réduit l'amplitude verrouillée $|u|$ au signe de
-        cette rétroaction modulo reparamétrage impair.</li>
-      <li><strong>Saturation invariante par chemin sur la cascade dérivée.</strong> Sous la
-        décomposition $\mathrm{su}(2)$
-        $\mathrm{End}(C^3_{\mathrm{gen}}) = \mathbf{1} \oplus \mathbf{3} \oplus \mathbf{5}$,
-        la rétroaction cubique transverse est de spin 2 pur, et un transport de Schur
-        $\mathrm{su}(2)$-équivariant la laisse indépendante de la calibration spin 1 (genre).
-        Sur la cascade symplectique réelle dérivée du corpus ($\gamma = 0$) le canal spin 2
-        s'annule de manière invariante par chemin pour tout ordonnancement et toute référence,
-        donc le mécanisme d'amplitude est la saturation Born–Infeld et le splitting persiste
-        ($u \neq 0$). Le verrouillage intérieur d'ordre six est doublement conditionnel —
-        sur une phase métaplectique complexe $\gamma \neq 0$ absente de la cascade dérivée et
-        sur un placement non prescrit de cette phase — enregistré comme candidat, non comme
-        valeur calculée.</li>
-      <li><strong>Statut de dictionnaire de la magnitude.</strong> Ce qui reste est la
-        magnitude $|u|$, fixée via la normalisation de frontière chirale $\mathcal{N}_A$,
-        analogue angulaire de l'échelle radiale $\kappa = 5/12$ du dictionnaire de déficit de
-        sortie. Le front de premiers principes dérivé est structurel et en amont — sélection
-        du cas ADE, application niveau-génération, croissance de la résolution projective et
-        exposant de cascade $\beta$, constante de transfert $N_{\mathrm{casc}}$ — non une
-        amplitude numérique.</li>
+        $\mu_\chi^2 := \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2}\,P_{\chi,\mu\nu} P_\chi^{\mu\nu}$,
+        le genre lorentzien de la polarisation chirale $P_\chi$, dans une co-métrique effective lorentzienne fournie
+        comme entrée ([H-Lor]) ; seule sa signature intervient.</li>
+      <li><strong>Le genre n'est pas déterminé.</strong> Le commutateur central ne fournit aucune assignation
+        électrique : la direction centrale n'est temporelle dans aucune des co-métriques du corpus (la co-métrique de
+        rang trois de Q5b a une entrée centrale nulle, la complétion de Q8 est conditionnelle, et le coefficient
+        temporel de Q11 est libre), le coefficient du signal $J_3$ provient du commutateur $\mathfrak{sl}_2$
+        $[E,F] = H$ et non du crochet de Heisenberg, et aucune application de l'opérateur générationnel vers une
+        2-forme n'est fournie. Que la 2-forme fournie soit électrique ou magnétique n'est pas tranché.</li>
+      <li><strong>Hypothèses portées.</strong> Une co-métrique lorentzienne, la construction de la 2-forme, une
+        lecture de A4 comme minimum local ([H-Min]), l'existence et la non-dégénérescence d'une paire verrouillée
+        ([H-Nd]), l'hypothèse de coïncidence [H-Coin] (seulement pour lire le verrou le long du module Born–Infeld), la
+        $J_\Pi$-covariance de la famille de locking et, issues de PRS, ses hypothèses de lecture générationnelle et de
+        transport au premier ordre. Aucune source n'en fournit aucune. La portée est celle de PRS : aucun mécanisme de
+        splitting non nul n'est dérivé.</li>
+      <li><strong>Radicande quartique.</strong> Le coefficient quartique du radicande dépend de la paramétrisation du
+        module (un décalage de la forme $\omega\, P \cdot P/\beta^2$) et ne sélectionne aucun verrou. Pour un rayon
+        purement électrique exactement colinéaire sous [H-F], la borne est atteinte en
+        $t_* = \beta/|\mathbf{E}_{F_0}|$.</li>
+      <li><strong>Covariance de carte et premier contact.</strong> Le taux de défaut est covariant par
+        reparamétrisation, et le premier contact, premier zéro du radicande, est indépendant de la carte lorsqu'il
+        existe (sa valeur de paramètre se transforme). Aucune sélection entre un contact de bord et un point stationnaire
+        intérieur n'est établie.</li>
+      <li><strong>Front D, conditionnel et formel.</strong> Une factorisation du splitting au contact au premier ordre
+        en $s_*$ est donnée sous [H-Gen], [H-Mult], [H-Tr], [H-F], [H-Nd] et les prémisses de $J_\Pi$-covariance et de
+        forme diagonale, avec une hypothèse de localisation qui échoue dans les témoins disponibles de la note du bloc
+        éliminé. Aucun repère satisfaisant toutes ces hypothèses ensemble n'est exhibé, donc la factorisation est
+        formelle et ne fixe aucune magnitude. La magnitude $|u|$ n'est pas prédite.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>Pourquoi l'antisymétrie est forcée</h2>
+    <h2>Pourquoi un porteur antisymétrique</h2>
     <p>
       Le module générationnel $s$ paramètre la déformation $J_\Pi$-impaire du bloc éliminé
       verrouillé. Tout carré symétrique tel que $F_\chi F_\chi$ est automatiquement
-      $J_\Pi$-pair, donc aveugle à l'orientation qui distingue les deux branches saturées
-      $\pm s_*$. Le module doit donc entrer par la partie antisymétrique — une 2-forme
-      $F_{\chi,\mu\nu}(s)$ — pour que le choix spontané de branche $V-A$ soit représentable.
+      $J_\Pi$-pair, donc aveugle à l'orientation qui distingue les deux branches
+      $\pm s_*$. Un porteur impair doit donc entrer par une partie antisymétrique, et la note prend une 2-forme
+      $F_{\chi,\mu\nu}(s)$, impaire et exactement colinéaire le long de la trajectoire, comme porteur par hypothèse.
     </p>
   </section>
   <section class="card">
-    <h2>Verrouiller le signe de $\mathcal{B}_{\mathrm{sat}}$</h2>
+    <h2>Fixer le signe de $\mathcal{B}_{\mathrm{sat}}$</h2>
     <p>
-      Un appariement Maxwell en champ faible ne fixerait que la magnitude relative de
-      $\mathcal{B}_{\mathrm{sat}}$ et laisserait son signe global indéterminé — or le signe de
-      $\mu_\chi$ contrôle si A4 sélectionne la branche symétrique ($u = 0$) ou la paire
-      $J_\Pi$-conjuguée ($u \neq 0$). La note fixe le signe structurellement : il est
-      dicté par le rôle d'admissibilité de $\mathcal{B}_{\mathrm{sat}}$ comme fonctionnelle de
-      verrouillage de projection dont les minima saturés sont la sélection A4, non par un
-      appariement externe. Ceci retire la dernière liberté de convention du livrable PRS.
+      Le scalaire déterminantal admet une ambiguïté de signe global selon l'objet qu'il désigne : lu comme densité
+      d'action Born–Infeld il redonne un développement de type Maxwell en champ faible, lu comme marge de saturation il
+      est minimisé à l'événement de verrouillage de A4. Les deux lectures diffèrent par un signe global, qui se propage
+      dans $\partial_s^2 \mathcal{B}_{\mathrm{sat}}(0)$. La note fixe le signe une fois pour toutes, par le rôle
+      d'admissibilité de $\mathcal{B}_{\mathrm{sat}}$, avant et indépendamment du signe de la seconde variation. Avec
+      cette fixation, le signe du splitting n'est pas déduit de la convention : il est porté uniquement par le genre
+      lorentzien de $P_\chi$ pour une 2-forme fournie, qui n'est pas déterminé.
     </p>
   </section>
   <section class="card">
@@ -191,24 +175,19 @@
       class="inline-link">sous-programme matière fermionique</a> (Note de présentation 6). Elle
       est la compagnonne directe de
       <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
-      class="inline-link">PRS</a> et décharge son livrable ouvert sur la fonctionnelle lorentzienne
-      de saturation. La question du genre lorentzien est close électrique ($\mu_\chi^2 < 0$,
-      $u \neq 0$) ; le mécanisme
-      d'amplitude est réglé sur la cascade réelle dérivée du corpus — saturation Born–Infeld,
-      sans verrouillage intérieur atteignable sans phase métaplectique complexe externe ni
-      placement non prescrit. Le front quantitatif restant est la magnitude $|u|$, liée au
-      dictionnaire via la normalisation de frontière chirale $\mathcal{N}_A$ ; le véritable
-      travail de premiers principes est structurel et en amont (sélection du cas ADE,
-      application niveau-génération, exposant de cascade $\beta$, constante de transfert
-      $N_{\mathrm{casc}}$).
+      class="inline-link">PRS</a> et examine la fonctionnelle lorentzienne de saturation de son livrable ouvert. Le
+      genre lorentzien de la polarisation chirale n'est pas déterminé ; aucun mécanisme d'amplitude ni aucune sélection
+      du verrou n'est établi ; la magnitude $|u|$ n'est pas prédite et reste liée au dictionnaire via la normalisation de
+      frontière chirale $\mathcal{N}_A$, dont l'appariement avec $\mu_\chi^2$ est ouvert. Born–Infeld intervient comme
+      complétion conditionnelle, non comme complétion dérivée ou unique. Le travail de premiers principes est structurel
+      et en amont (sélection du cas ADE, application niveau-génération, exposant de cascade $\beta$, constante de
+      transfert $N_{\mathrm{casc}}$).
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
-      Jérôme Beau. <i lang="en">The Born–Infeld Saturation Margin of the Chiral Modulus:
-      Antisymmetric Structure, Lorentzian Genus, and Electric Determination of the Generation
-      Split</i>. Working paper, 2026.
+      Jérôme Beau. <i lang="en">The Born–Infeld Saturation Margin of the Chiral Modulus: Antisymmetric Structure and Lorentzian Genus of the Generation Split</i>. Working paper, 2026. <!-- TODO-RELEASE: version/title at deposit; concept DOI unchanged -->
       <a href="https://doi.org/10.5281/zenodo.20633931" rel="noopener">10.5281/zenodo.20633931</a>
     </p>
   </section>

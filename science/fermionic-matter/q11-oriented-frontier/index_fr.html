@@ -62,10 +62,13 @@
       <p>
         Cette note définit le remplacement honnête : une <strong>observable de transfert
         frontière</strong> attachée aux arêtes sortantes orientées $g \to gs$ de la cascade, dont
-        l'incrément central est le cocycle de Heisenberg $a(g)\, s_b$ — le pendant discret du
-        terme de Baker–Campbell–Hausdorff $\tfrac{1}{2}[X, Y]$ et donc du $J_3$ dynamique.
-        L'orientation est la flèche récursive $\partial_\tau = \log g$ de l'origine de projection
-        vers la profondeur BFS croissante, non un poids extrait.
+        l'incrément central est le cocycle de Heisenberg $a(g)\, s_b$ — l'incrément orienté
+        discret de la cascade. C'est un pendant de la donnée d'orientation, et non le coefficient $J_3$ du pas
+        métaplectique, qui dans le modèle $\mathrm{SL}(2)$ de Q14 provient du commutateur $\mathfrak{sl}_2$
+        $[E,F] = H$ (Q14, Proposition 6.5). L'orientation est la flèche du graphe de Cayley de l'origine de projection
+        vers la profondeur BFS croissante, non un poids extrait ; aucune identification de cette flèche avec une
+        dérivée d'ordre $\partial_\tau$ n'est faite ici (Q14 énonce, pour le générateur $\log g$ du pas métaplectique,
+        qu'une telle identification est une hypothèse distincte qu'aucune source ne fournit).
       </p>
       <div class="note" role="note">
         <strong>Énoncé de portée.</strong> Cette note teste seulement si la récursion produit un
@@ -109,11 +112,16 @@
         identiquement.</li>
       <li><strong>L'observable de transfert frontière.</strong> Attachée aux arêtes sortantes
         orientées $g \to gs$ de la cascade, avec incrément central donné par le cocycle de
-        Heisenberg $a(g)\, s_b$ — le pendant discret du terme BCH $\tfrac{1}{2}[X, Y]$ et donc
-        du $J_3$ dynamique.</li>
-      <li><strong>Orientation récursive.</strong> L'orientation est la flèche récursive
-        $\partial_\tau = \log g$ de l'origine de projection vers la profondeur BFS croissante,
-        non un poids extrait.</li>
+        Heisenberg $a(g)\, s_b$ — l'incrément orienté discret de la cascade ; un pendant de la
+        donnée d'orientation, non le coefficient $J_3$ du pas métaplectique, qui provient du commutateur
+        $\mathfrak{sl}_2$ $[E,F] = H$.</li>
+      <li><strong>Orientation.</strong> L'orientation est la flèche du graphe de Cayley de l'origine de projection
+        vers la profondeur BFS croissante, non un poids extrait. Aucune identification de cette flèche avec une dérivée
+        d'ordre $\partial_\tau$ n'est faite ; pour le générateur $\log g$ du pas métaplectique, Q14 énonce qu'une telle
+        identification est une hypothèse distincte qu'aucune source ne fournit.</li>
+      <li><strong>Relèvement chiral de la réflexion résiduelle.</strong> Réduit à une hypothèse nommée, [H-WS] : $R_b$
+        agit comme le scalaire $-1$ sur le porteur chiral, de sorte que $[\gamma_5, R_b] = 0$ ; fournie par aucune
+        source.</li>
       <li><strong>Test d'existence avant amplitude.</strong> Le premier test est
         $\langle \Delta A_c \rangle_{\partial^+ S_m} \neq 0$, qui peut échouer sous ré-appariement
         de frontière résiduel. Le contrôle anti-biais discriminant est l'annulation
@@ -121,14 +129,14 @@
         $\langle \Delta A_c \rangle_{\partial^+ S_m \cup \partial^- S_m} = 0$.</li>
       <li><strong>Poids chiral identifié (compagnonne CHO).</strong> La note compagnonne
         <a href="/science/fermionic-matter/chiral-orientation-frontier/index_fr.html"
-        class="inline-link">CHO</a> démontre que le poids chiral $\gamma_5$ ne peut être une
+        class="inline-link">CHO</a> démontre, sous [H-WS], que le poids chiral $\sigma_L$ ne peut être une
         fonction quelconque du générateur de cascade $T(e)$ — l'inversion d'arête et la
         réflexion résiduelle agissent identiquement dessus — et l'identifie comme le type de
         représentation de Weyl $\mathbf{2}$ vs $\bar{\mathbf{2}}$. Dans le relèvement Heisenberg
         à phase centrale hérité, la phase d'arête est le caractère cyclotomique linéaire
         $\zeta_q^{\Delta A_c}$, donnant un recouvrement de frontière sortante
         $\rho_\chi = 1$ et promouvant la borne à $\mathcal{N}_A = \theta_{\max} \neq 0$ dans ce
-        relèvement.</li>
+        relèvement, sous [H-WS].</li>
     </ul>
   </section>
   <section class="card">
@@ -141,9 +149,9 @@
       <a href="/science/fermionic-matter/q14/index_fr.html" class="inline-link">Q14 §6</a>. Avec
       la note
       <a href="/science/fermionic-matter/angular-amplitude-reduction/index_fr.html"
-      class="inline-link">AAR</a> (réduction BCH ; observable à mesurer) et la note
+      class="inline-link">AAR</a> (réduction $\mathfrak{sl}_2$ ; observable à mesurer) et la note
       <a href="/science/fermionic-matter/projective-residue-schur/index_fr.html"
-      class="inline-link">PRS</a> (forme de Schur côté opérateur), elle complète le cadre
+      class="inline-link">PRS</a> (forme de Schur côté opérateur du reste de compression), elle complète le cadre
       diagnostique dans lequel l'étape quantitative restante du secteur fermionique peut être
       menée.
     </p>

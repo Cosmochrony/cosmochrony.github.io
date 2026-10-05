@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Le résidu projectif comme complément de Schur | Cosmochronie</title>
   <meta name="description"
-    content="Met le résidu projectif E_Pi sous la forme du complément de Schur des directions spinorielles éliminées par la projection non injective ; réduit le coefficient de splitting générationnel u au défaut d'équivariance chirale antiunitaire du locking A4."/>
+    content="Forme de Schur E[P] = -N^dagger N du reste de compression du carré de Dirac projeté, qui est l'endomorphisme projectif de Q14 seulement sous une identité de symbole ; localisation du splitting générationnel u sous l'hypothèse de lecture générationnelle [H-Gen] ; lieux Schur-nul et Schur-transverse sous hypothèses explicites, la branche restant ouverte. Aucun mécanisme de splitting non nul n'est dérivé."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Le résidu projectif comme complément de Schur"/>
   <meta property="og:description"
-    content="Forme de Schur du résidu projectif ; localisation du splitting générationnel u dans le défaut d'équivariance chirale antiunitaire ; séparation fini/lorentzien ; verrouillage des conventions Seeley–DeWitt."/>
+    content="Forme de Schur du reste de compression du carré de Dirac projeté ; localisation conditionnelle du splitting générationnel u ; lieux Schur-nul et Schur-transverse (branche ouverte) ; aucun mécanisme de splitting non nul."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/fr/science/fermionic-matter/projective-residue-schur/"/>
   <script type="module">
@@ -49,8 +49,8 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="2.1">
-    <strong>Publication Zenodo actuelle :</strong> version 2.1 (2026-09-15).
+  <section class="note" role="note" data-release-version="3.0"> <!-- TODO-RELEASE: data-release-version, version et date -->
+    <strong>Publication Zenodo actuelle :</strong> version 3.0 <!-- TODO-RELEASE: version 3.0 et date de publication à fixer au dépôt (aucune version Zenodo ni date n'existe encore) -->.
     <span lang="en">Titre officiel: <i>The Projective Residue as a Schur Complement: Reduction of the Generation Split to the Chiral Asymmetry of Projection Locking</i>.</span>
   </section>
   <section class="grid">
@@ -69,10 +69,11 @@
       </p>
       <p>
         Cette note fixe le statut structurel de $u$ avant toute construction explicite de
-        $E_\Pi$. Trois résultats précis sont obtenus : une forme universelle Feshbach/Schur
-        pour $E_\Pi$, une réduction en blocs chiraux qui localise $u$ dans un défaut
-        d'équivariance antiunitaire, et un théorème de séparation fini/lorentzien isolant $u$
-        comme donnée lorentzienne.
+        $E_\Pi$. Elle procède dans deux cadres. Pour l'opérateur de locking de référence $P = \Pi_S^{*}\Pi_S$, le reste de
+        compression du carré de Dirac projeté a une forme de Schur, et sous l'hypothèse de lecture générationnelle
+        [H-Gen] il donne $u = 0$. Pour un opérateur de locking général $0 \preceq P \preceq 1$, seules l'expression de
+        Schur et son signe sont inconditionnels, et les conséquences pour un splitting non nul sont conditionnelles. Des
+        conditions nécessaires sont localisées ; aucun mécanisme de splitting non nul n'est dérivé.
       </p>
       <div class="note" role="note">
         <strong>Énoncé de portée.</strong> Cette page fournit un résumé structuré.
@@ -96,7 +97,7 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Forme de Schur de $E_\Pi$, localisation de $u$, séparation fini/lorentzien, stratification A4</div>
+          <div class="v">Forme de Schur du reste de compression, localisation conditionnelle de $u$, lieux Schur-nul et Schur-transverse (branche ouverte)</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
@@ -109,56 +110,67 @@
   <section class="card">
     <h2>Résultats principaux</h2>
     <ul>
-      <li><strong>Forme de Schur du résidu projectif.</strong> Sous compatibilité de symbole,
-        $E_\Pi = -\Pi_S \, D_{g,A}\,(1 - P)\,D_{g,A}\,\Pi_S^{*} = -M^{\dagger} M$ avec
-        $P = \Pi_S^{*}\Pi_S$. Ainsi $E_\Pi$ est semi-défini négatif, d'ordre zéro, et s'annule
-        dans la limite injective $P = 1$.</li>
-      <li><strong>Réduction en blocs chiraux.</strong> Décomposer $D_{g,A}$ et $1 - P$ dans le
-        splitting chiral $\mathcal{S}_\Pi = \mathcal{S}_L \oplus \mathcal{S}_R$ donne les blocs
-        diagonaux $E_{LL} = -\Pi_S \mathcal{D}^{-}\pi_{RR}\mathcal{D}^{+}\Pi_S^{*}$ et
-        $E_{RR} = -\Pi_S \mathcal{D}^{+}\pi_{LL}\mathcal{D}^{-}\Pi_S^{*}$. L'admissibilité à
-        gauche $P_R E_\Pi P_R = 0$ de Q14 est équivalente à $\pi_{LL} = 0$.</li>
-      <li><strong>Localisation de $u$.</strong> Le splitting $u$ est contrôlé par la composante
-        $\mathcal{D}^{\pm}$-transportée et projetée sur les générations du défaut
-        d'équivariance chirale antiunitaire
-        $\Delta_\chi(P) = \pi_{LL} - \tau\,\overline{\pi_{RR}}\,\tau^{-1}$, non par une
-        différence naïve de blocs.</li>
-      <li><strong>Stratification axiomatique.</strong> La non-injectivité minimale
-        $c \leftrightarrow q - c$ est chiralement symétrique, donc $u = 0$ au niveau des
-        axiomes A1–A3. Un $u$ non nul requiert une brisure de symétrie chirale qui ne peut
-        prendre origine que dans l'axiome de locking de projection A4.</li>
-      <li><strong>Verrouillage des conventions Seeley–DeWitt.</strong> Sur le gauge-singlet
-        $C^3_{\mathrm{gen}}$ et la métrique effective plate, la définition opérateur de $u$
-        égale le coefficient spectral entrant dans l'amplitude effective ; le facteur de
-        normalisation commun $a_4$ s'annule dans le rapport $(\tfrac12 + u)/(\tfrac12 - u)$.</li>
-      <li><strong>Pas de label chiral fini.</strong> La chiralité $\gamma_5$ existe parce que la
-        métrique effective est lorentzienne, signature prise comme entrée (la valeur $g^{\mu\nu} = 2\eta^{\mu\nu}$
-        affirmée dans la note d'émergence géométrique n'est pas établie). Une arête de cascade est une
-        translation de Heisenberg, non un élément symplectique, donc elle ne porte aucun
-        relèvement métaplectique canonique ; $u$ ne peut être extrait d'aucune observable
-        front finie.</li>
-      <li><strong>Séparation fini/lorentzien.</strong> Le locking de projection fini est
-        $J_\Pi$-équivariant pour $q$ premier impair, donc $u_{\mathrm{fin}} = 0$. Un splitting
-        générationnel non nul ne peut surgir que dans la complétion lorentzienne de la
-        saturation Born–Infeld.</li>
+      <li><strong>Forme de Schur.</strong> Pour tout opérateur de locking $0 \preceq P \preceq 1$,
+        $E_\Pi[P] = -\Pi_S\, D\,(1 - P)\,D\,\Pi_S^{*} = -N_P^{\dagger} N_P \preceq 0$ comme forme quadratique, avec
+        $N_P = (1-P)^{1/2} D\,\Pi_S^{*}$. Pour $P_{\mathrm{ref}} = \Pi_S^{*}\Pi_S$, sous une hypothèse de
+        contraction, c'est le reste de compression $D_\Pi^2 - \Pi_S D^2 \Pi_S^{*}$ du carré de Dirac projeté. Il est
+        d'ordre zéro sous une condition de symbole, qui force $E_\Pi = 0$ sur les fibres de Clifford
+        irréductibles.</li>
+      <li><strong>Relation avec l'endomorphisme projectif de Q14.</strong> Le reste de compression est
+        l'endomorphisme $E_\Pi$ de Q14 seulement lorsque $\Pi_S D^2 \Pi_S^{*}$ est l'opérateur de Lichnerowicz, identité
+        qu'aucune source n'énonce ; sinon rien n'est affirmé sur l'endomorphisme de Q14, dont le signe est une
+        hypothèse explicite de Q14.</li>
+      <li><strong>Réduction en blocs chiraux.</strong> Dans le splitting chiral, $E_{LL} = -\Pi_S
+        \mathcal{D}^{-}\pi_{RR}\mathcal{D}^{+}\Pi_S^{*}$ et $E_{RR} = -\Pi_S
+        \mathcal{D}^{+}\pi_{LL}\mathcal{D}^{-}\Pi_S^{*}$ ; $\pi_{LL} = 0$ implique l'admissibilité à gauche
+        $P_R E_\Pi P_R = 0$ (la réciproque vaut sous une hypothèse de fidélité), lorsque $E_\Pi$ est l'endomorphisme
+        de Q14.</li>
+      <li><strong>Localisation conditionnelle de $u$.</strong> Sous [H-Gen] ($J_\Pi$ antiunitaire, compatible avec
+        $D$ et $\Pi_S$ ; une application de lecture $\Phi$ réelle-linéaire, préservant $*$, $J_\Pi$-covariante,
+        appliquée aux endomorphismes d'ordre zéro), $u$ est lu dans la partie $J_\Pi$-impaire de $\Phi(E_\Pi^2)$. Si
+        $J_\Pi P J_\Pi^{-1} = P$ alors $u[P] = 0$, ce qui vaut pour l'opérateur de référence ; un $u$ non nul
+        requiert $J_\Pi P J_\Pi^{-1} \neq P$. La lecture multiplicative de $\tfrac12 \pm u$ comme valeurs propres est
+        une hypothèse distincte [H-Mult], qui, avec un secteur pair non singulier, donne $u \equiv 0$ ou n'admet aucune
+        $\Phi$ dans le repère chiral de rang deux admissible à gauche ; rien d'autre dans la note ne l'utilise.</li>
+      <li><strong>Stratification interprétative.</strong> Dans une lecture interprétative des axiomes, un $u$
+        non nul ne peut provenir que de l'axiome A4. C'est une lecture, non une dérivation.</li>
+      <li><strong>Branche admissible à gauche de Q14.</strong> Sous le splitting chiral et [H-Gen](i), un opérateur de
+        locking commutant avec $J_\Pi$ a $E_\Pi[P] = 0$ sur la branche admissible à gauche ; un résidu non nul admissible
+        à gauche brise la compatibilité avec $J_\Pi$ et n'est pas le résidu de référence. Ce ne sont que des conditions
+        nécessaires.</li>
+      <li><strong>La chiralité n'est pas une étiquette de fibre finie.</strong> Une arête de cascade est une translation
+        de Heisenberg, non un élément symplectique, donc elle ne porte aucun relèvement métaplectique canonique ; $u$ ne
+        peut être extrait d'une observable front finie.</li>
+      <li><strong>Secteur fini, conditionnel.</strong> Les données de locking finies sont invariantes sous la parité
+        $c \leftrightarrow q - c$, dont l'identification avec $J_\Pi$ est ouverte ; sous cette identification, une
+        construction équivariante de l'opérateur de locking fini et une lecture finie, $u_{\mathrm{fin}} = 0$.</li>
+      <li><strong>Lieux Schur-nul et Schur-transverse.</strong> L'inclinaison $J_\Pi$-impaire de premier ordre transportée
+        de l'opérateur de locking définit les lieux Schur-nul et Schur-transverse ; une dichotomie est prouvée sous
+        hypothèses explicites, et le lieu qui est réalisé reste ouvert.</li>
+      <li><strong>Ouverture $\mathfrak{sl}_2$ exacte.</strong> Le pas métaplectique orienté a l'ouverture exacte
+        $\alpha(x,y) = xy\, r/\sinh r$, $\cosh r = 1 + \tfrac{xy}{2}$, produite par le commutateur
+        $\mathfrak{sl}_2$ $[E,F] = H$ (Q14, Proposition 6.5) ; le crochet de Heisenberg n'intervient pas. Que
+        l'inclinaison transportée lui soit égale à un facteur non nul près est l'hypothèse de transport [H-Tr], fournie
+        par aucune source.</li>
     </ul>
   </section>
   <section class="card">
-    <h2>La forme de complément de Schur</h2>
+    <h2>La forme de Schur</h2>
     <p>
       Le carré projeté de Dirac $D^2_{\Pi,g,A} = \Pi_S D_{g,A} P D_{g,A} \Pi_S^{*}$ est la
       réduction de Feshbach du carré relevé le long du secteur éliminé $1 - P$. Soustraire le
-      bloc de Lichnerowicz reproduit par $\Pi_S D_{g,A}^2 \Pi_S^{*}$ laisse
-      $E_\Pi = -\Pi_S D_{g,A}(1 - P)D_{g,A}\Pi_S^{*}$, le complément de Schur des directions
-      éliminées. Ceci rend précis l'énoncé de Q14 selon lequel $E_\Pi$ n'est pas une donnée
-      Dirac finie postulée mais est induit par la projection non injective elle-même.
+      bloc $\Pi_S D_{g,A}^2 \Pi_S^{*}$ laisse le reste de compression
+      $-\Pi_S D_{g,A}(1 - P)D_{g,A}\Pi_S^{*}$, le complément de Schur des directions
+      éliminées. C'est l'endomorphisme projectif $E_\Pi$ de Q14 lorsque $\Pi_S D_{g,A}^2 \Pi_S^{*}$ est l'opérateur de
+      Lichnerowicz ; cette identité force $\Pi_S \Pi_S^{*} = \mathrm{id}$ au niveau du symbole, sa réciproque n'est pas
+      affirmée, et aucune source ne l'énonce.
     </p>
   </section>
   <section class="card">
     <h2>Le défaut d'équivariance antiunitaire</h2>
     <p>
       Le relèvement spinoriel Born–Infeld $J_\Pi$ échange les sous-fibrés chiraux via
-      $J_\Pi P_L = P_R J_\Pi$. L'équivariance du projecteur de locking $[P, J_\Pi] = 0$ impose
+      $J_\Pi P_L = P_R J_\Pi$. Sous [H-Gen](i), l'équivariance de l'opérateur de locking $[P, J_\Pi] = 0$ impose
       sur les blocs chiraux diagonaux non pas l'égalité naïve mais l'équivalence transportée et
       complexe-conjuguée $\pi_{LL} = \tau\,\overline{\pi_{RR}}\,\tau^{-1}$. L'obstruction
       pertinente à $u = 0$ est donc le défaut antiunitaire
@@ -170,49 +182,46 @@
       L'échec de l'équivariance $J_\Pi$ au locking de projection est une condition nécessaire
       mais non suffisante pour $u \neq 0$ : le commutateur peut être supporté en dehors du
       triplet des générations, ou dans des composantes qui ne survivent pas au transport Dirac
-      ni à la projection finale sur $C^3_{\mathrm{gen}}$.
+      ni à la projection finale sur $C^3_{\mathrm{gen}}$. Le défaut n'est relié à $u$ que comme lecture structurelle.
     </p>
   </section>
   <section class="card">
-    <h2>Séparation fini/lorentzien</h2>
+    <h2>Secteur fini et module de Born–Infeld</h2>
     <p>
-      Les deux constituants de l'axiome A4 sont $J_\Pi$-invariants à $q$ fini : la condition
-      de saturation Born–Infeld continue est la parité elle-même, et le support de couche
-      discret est une union d'orbites de la parité sans point fixe $c = 0$ pour $q$ premier
-      impair. La branche locked finie est donc $J_\Pi$-équivariante et $u_{\mathrm{fin}} = 0$.
+      Les données de locking finies sont invariantes sous la parité $c \leftrightarrow q - c$, dont l'identification
+      avec $J_\Pi$ est ouverte. Sous cette identification, une construction équivariante de l'opérateur de locking fini
+      et une lecture finie, le locking de projection fini n'engendre pas $u$. Un splitting non nul serait alors une
+      donnée $J_\Pi$-impaire extérieure à cette construction, située dans la complétion lorentzienne à titre
+      d'hypothèse.
     </p>
     <p>
-      En paramétrisant la déformation $J_\Pi$-impaire par $s$ (ouverte seulement par la
-      complexification lorentzienne), la symétrie $J_\Pi$ de la fonctionnelle de saturation
-      lorentzienne $\mathcal{B}$ donne $\mathcal{B}(s) = \mathcal{B}(-s)$, donc $s = 0$ est
-      automatiquement stationnaire. Le caractère du locking est alors fixé par la courbure
-      chirale $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$ : positive stabilise la branche
-      $J_\Pi$-équivariante ($u = 0$) ; négative entraîne une paire saturée
-      $J_\Pi$-conjuguée $\pm s_*$ et $u \neq 0$. Le cas marginal $\mu_\chi^2 = 0$ est décidé par
-      le premier coefficient pair non nul de $\mathcal{B}(s)$.
+      En paramétrisant la déformation $J_\Pi$-impaire par $s$, la $J_\Pi$-symétrie de la fonctionnelle de saturation
+      $\mathcal{B}$ de la note compagnonne A4 donne $\mathcal{B}(s) = \mathcal{B}(-s)$, donc $s = 0$ est stationnaire et
+      le caractère local du locking est lu dans la courbure chirale $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$ d'une
+      deux-forme fournie. Le genre de cette deux-forme n'est pas déterminé, et le fait qu'un minimiseur brisant la
+      symétrie porte $u \neq 0$ n'est pas démontré.
     </p>
   </section>
   <section class="card">
     <h2>Statut et livrable ouvert</h2>
     <p>
-      <strong>Établi.</strong> La forme de Schur de $E_\Pi$, la réduction en blocs chiraux, la
-      stratification sur les axiomes Cosmochronie, le verrouillage des conventions
-      Seeley–DeWitt, le résultat no-go d'accès fini à la chiralité, la séparation
-      fini/lorentzien, et la transversalité de Schur du défaut de locking A4 dans le stratum de
-      spin lorentzien présent : le commutateur A4 projeté a la forme fermée
-      $\alpha(t, s) = ts\,(r/\sinh r) \not\equiv 0$, qui exclut la branche exactement nulle, et
-      sous compatibilité de symbole et identification temporelle $Z = [X, Y] \simeq \partial_\tau$
-      la branche du mode nul transporté est exclue aussi, de sorte que la dichotomie exhaustive
-      transverse/nulle sélectionne le cas Schur-transverse.
+      <strong>Prouvé ou structurel.</strong> La forme de Schur du reste de compression et son signe ; son caractère
+      d'ordre zéro sous la condition de symbole ; les blocs chiraux diagonaux ; $u[P] = 0$ pour un $P$ commutant avec
+      $J_\Pi$ sous [H-Gen] ; l'ouverture $\mathfrak{sl}_2$ exacte $\alpha(x,y) = xy\, r/\sinh r$ du pas orienté,
+      produite par $[E,F] = H$ ; et les lieux Schur-nul et Schur-transverse avec une dichotomie prouvée sous hypothèses
+      explicites.
     </p>
     <p>
-      <strong>Ouvert.</strong> La transversalité de Schur étant prouvée, le genre Born–Infeld de la
-      note compagnonne A4 sélectionne la branche électrique, $\mu_\chi^2 < 0$, et le splitting
-      générationnel s'ouvre spontanément, $u \neq 0$. Ce qui reste ouvert n'est pas l'existence du
-      splitting mais le bloc éliminé lorentzien explicite $1 - P(s)$ entrant dans le complément de
-      Schur, la normalisation absolue $|u|$ (réduite par la note compagnonne du jet contraint à la
-      normalisation admissible de $\partial_s \Delta_\chi(P)|_0$, $|u|$ restant lié au
-      dictionnaire), et le secteur de Yukawa projeté avec ses matrices de masse.
+      <strong>Conditionnel.</strong> L'identification du reste de compression avec l'endomorphisme de Q14 (identité de
+      symbole) ; la localisation de $u$ ([H-Gen]) ; la lecture multiplicative ([H-Mult]) ; le secteur fini
+      ($u_{\mathrm{fin}} = 0$) ; la lecture interprétative selon laquelle seul A4 peut briser l'équivariance
+      $J_\Pi$ ; le lieu Schur-transverse, qui vaut sous l'hypothèse de transport [H-Tr].
+    </p>
+    <p>
+      <strong>Ouvert.</strong> Le lieu qui est réalisé, l'hypothèse de transport [H-Tr], le bloc éliminé lorentzien
+      explicite $1 - P(s)$, le signe du genre Born–Infeld, la non-annulation de $u$ (aucun mécanisme de splitting non nul
+      n'est dérivé), sa grandeur $|u|$ (liée au dictionnaire par la normalisation de la frontière chirale), et le
+      secteur de Yukawa projeté avec ses matrices de masse.
     </p>
   </section>
   <section class="card">
@@ -220,8 +229,8 @@
     <p>
       Cette note appartient au <a href="/science/fermionic-matter/index_fr.html" class="inline-link">sous-programme
       matière fermionique</a> (Note de présentation 6). Elle raffine le livrable ouvert de Q14
-      sur le splitting inter-générationnel en localisant $u$ dans le défaut d'équivariance chirale
-      antiunitaire et en prouvant la transversalité de Schur de la direction A4, et identifie les
+      sur le splitting inter-générationnel en localisant $u$, conditionnellement, dans le défaut d'équivariance chirale
+      antiunitaire et en définissant les lieux Schur-nul et Schur-transverse de la direction A4, et identifie les
       observables front des notes compagnonnes oriented-frontier et angular-amplitude comme
       contrôles nuls plutôt que porteurs de $u$.
     </p>

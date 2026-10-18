@@ -5,23 +5,17 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Géométrie d'espace-temps effective depuis la projection non-injective admissible | Cosmochrony
+    Vers une géométrie d'espace-temps effective depuis la projection non-injective admissible | Cosmochrony
   </title>
   <meta name="description"
-    content="Sous l'hypothèse non établie [H-L], et l'identification que la version 2.0 de Q7
-    enregistre comme fournie par aucune source, Q6b lit la métrique lorentzienne
-    g^μν = diag(−2,2,2,2) (à réviser : aucune valeur de coefficient n'est établie), obtient Schwarzschild par conservation du flux et relie l'opérateur
-    effectif au tenseur d'Einstein. Q9 2.0 laisse [H-lift] ouverte."/>
+    content="Q6b assemble, sous conditions, la géométrie d'espace-temps effective du cadre d'admissibilité : une co-métrique de rang trois de bloc (−,+,+), un extérieur newtonien pour une extension fournie asymptotiquement plate, et une forme de Schwarzschild seulement avec un apport dynamique externe. [H-L] n'est pas établie et [H-lift] reste ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/q6/b/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Géométrie d'espace-temps effective depuis la projection non-injective admissible"/>
+    content="Vers une géométrie d'espace-temps effective depuis la projection non-injective admissible"/>
   <meta property="og:description"
-    content="Sous l'hypothèse non établie [H-L], et l'identification que la version 2.0 de Q7
-    enregistre comme fournie par aucune source, Q6b lit une métrique lorentzienne effective dont les valeurs de coefficients restent à réviser,
-    obtient Schwarzschild par conservation du flux et relie L_eff à G_μν.
-    Q9 2.0 laisse [H-lift] ouverte."/>
+    content="Q6b assemble, sous conditions, la géométrie d'espace-temps effective du cadre d'admissibilité : une co-métrique de rang trois de bloc (−,+,+), un extérieur newtonien pour une extension fournie asymptotiquement plate, et une forme de Schwarzschild seulement avec un apport dynamique externe. [H-L] n'est pas établie et [H-lift] reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q6/b/"/>
@@ -49,264 +43,153 @@
       </a>
       <div>
         <h1>
-          Géométrie d'espace-temps effective depuis la projection non-injective admissible
+          Vers une géométrie d'espace-temps effective depuis la projection non-injective admissible
         </h1>
         <p class="subtitle">
-          Sous l'hypothèse non établie de limite spatiale [H-L], et sous l'identification que la
-          version 2.0 de Q7 enregistre comme fournie par aucune source, Q6b lit la métrique
-          lorentzienne effective $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ (à réviser : aucune valeur de coefficient n'est
-          établie), obtient l'extérieur de
-          Schwarzschild par conservation du flux et relie l'opérateur effectif au tenseur d'Einstein.
+          Sous l'hypothèse de limite spatiale non établie [H-L] et l'hypothèse de relèvement ouverte [H-lift], Q6b assemble une co-métrique effective de rang trois, un extérieur newtonien pour une extension fournie, et une forme de Schwarzschild qui requiert un apport dynamique externe.
         </p>
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20257944">Lire le preprint</a>
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19744005">Lire le preprint</a>
       <a class="btn subtle" href="/science/spectral/program/">Retour au programme d'admissibilité spectrale</a>
     </div>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.2.2">
-    <strong>Publication Zenodo actuelle :</strong> version 1.2.2 (2026-07-26).
-    <span lang="en">Titre officiel : <i>Effective Spacetime Geometry from Admissible Non-Injective Projection</i>.</span>
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Publication Zenodo actuelle :</strong> version 2.0 (RELEASE-DATE).
+    <span lang="en">Titre officiel : <i>Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior</i>.</span>
   </section>
 
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Q6b est le pendant géométrique de Q6a. Il analyse la structure géométrique de base sur
-        laquelle se propagent les champs d'un groupe compact et d'une représentation fournis.
-        Sa lecture métrique et son lien au tenseur d'Einstein sont conditionnels à [H-L].
+        Q6b assemble la géométrie d'espace-temps effective que le cadre d'admissibilité de Foundation M fournit sous
+        conditions, sur un porteur de Heisenberg fourni. Chaque étape de la chaîne
+        $\Pi_q \to \mathcal{L}_\Pi \to g^{\mu\nu}_{(3)} \to g^{\mu\nu} \to G_{\mu\nu}$ porte sa propre condition.
       </p>
       <p>
-        Sous [H-L], Q6b consomme un opérateur limite spatial effectif et l'extraction métrique
-        conditionnelle de Q5b. Sous la même identification, il identifie alors
-        $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$, dont les valeurs de coefficients restent à réviser, obtient
-        l'extérieur de Schwarzschild par conservation du flux et relie les équations d'Einstein
-        aux conditions de cohérence de la fonctionnelle d'entropie spectrale.
+        Q5a montre que les formes d'admissibilité publiées ne fournissent aucun opérateur limite spatial : pour des
+        poids uniformément bornés, elles convergent vers la forme nulle, et sous [H-depth] et [H-w′] aucune
+        normalisation scalaire commune ne donne d'opérateur différentiel torique non trivial. L'opérateur
+        $-A\partial_x^2$ n'intervient donc que comme hypothèse [H-L] de Q5b.
       </p>
       <div class="note">
-        <strong>Statut conditionnel.</strong> Q9 2.0 donne une limite cinétique libre sous [K] et
-        récupération compatible [R] ; sa borne de modulation conserve l'échelle d'énergie.
-        [H-lift] reste ouverte. L'hypothèse de limite spatiale [H-L] est indépendamment non
-        établie : toute conclusion métrique, de Schwarzschild ou de chaîne qui consomme cette
-        géométrie reste conditionnelle à [H-L] et [H-lift].
+        <strong>Statut conditionnel.</strong> [H-L] n'est pas établie. [H-lift] reste ouverte : Q9 2.0 donne des
+        conditions suffisantes [K] et [R] pour une limite de Mosco cinétique et ne la décharge pas. L'énoncé de
+        signature requiert en outre [H-hyp<sub>red</sub>], et tout énoncé quadridimensionnel requiert une extension de
+        rang quatre fournie.
       </div>
     </div>
     <aside class="card">
-      <h2>Informations clés</h2>
+      <h2>En bref</h2>
       <div class="kvs">
         <div class="kv">
           <div class="k">Auteur</div>
           <div class="v">Jérôme Beau</div>
         </div>
         <div class="kv">
-          <div class="k">Type</div>
+          <div class="k">Type de travail</div>
           <div class="v">Preprint</div>
         </div>
         <div class="kv">
-          <div class="k">Thématique</div>
+          <div class="k">Thèmes</div>
           <div class="v">
-            Géométrie lorentzienne effective, Schwarzschild par conservation du flux, équations
-            d'Einstein comme conditions de cohérence, complétion de co-métrique, propagation
-            Hamilton–Jacobi
+            Co-métrique effective de rang trois, signature de son bloc non dégénéré, extérieur newtonien et forme de
+            Schwarzschild conditionnelle, relation aux équations d'Einstein
           </div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Motivé structurellement, conditionnel à l'hypothèse de limite spatiale [H-L] (Q5a 3.2) ; Q9 2.0 laisse [H-lift] ouverte</div>
+          <div class="v">Conditionnel à [H-L] (non établie), [H-lift] (ouverte), [H-hyp<sub>red</sub>] et à une
+            extension de rang quatre fournie</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
-          <div class="v">Limite spatiale fournie [H-L], Q5b (extraction conditionnelle), données de jauge fournies</div>
+          <div class="v">Q5a, Q5b, Q9, Foundation M, les articles Born–Infeld, Gravity et de stationnarité spectrale</div>
         </div>
         <div class="kv">
           <div class="k">Alimente</div>
-          <div class="v">Q7, Q8–Q11 (co-métrique), Q12, Q13</div>
+          <div class="v">Note de géométrie émergente ; Q12, Q13 (géométrie de base conditionnelle)</div>
         </div>
       </div>
     </aside>
   </section>
 
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Résultats</h2>
     <ul>
       <li>
-        <strong>Métrique effective sous [H-L] :</strong> sous [H-L], le filtre d'admissibilité
-        $\Pi_q$ sélectionne des degrés de liberté dont la limite continue porte, dans la lecture de Q6b, une métrique
-        de signature $(-,+,+,+)$ ; la version 2.2.1 de Q5b (théorèmes 5.2 et 6.1) ne dérive qu'une co-métrique de rang
-        trois dont le bloc non dégénéré a la signature $(-,+,+)$ sous [H-L], [H-lift] et [H-hyp], donc cette lecture
-        reste à réviser.
+        <strong>Co-métrique de rang trois.</strong> Sous [H-L] et [H-lift], Q5b donne, dans le repère invariant à
+        gauche, $g^{\mu\nu} = \mathrm{diag}(-A_\tau, A_H, A_H, 0)$, le terme temporel étant stipulé. Aucun terme
+        d'ordre inférieur ne remplit la case centrale ; une co-métrique de rang plein requiert un nouvel opérateur avec
+        un terme central de degré homogène quatre et l'échelle de longueur qu'il porte (problème ouvert Q5b-O2). Aucune
+        valeur de $A_\tau$, $A_H$ ou $A_z$ n'est établie.
       </li>
       <li>
-        <strong>Coefficients de la co-métrique sous [H-L] et l’identification manquante :</strong> sous [H-L], en combinant Q6b avec les valeurs
-        $A_z = 2$ et $A_H = 2$, que les versions 2.0 de Q8 et 2.0.1 de Q10 n'établissent pas, et la valeur $A_\tau = 2$ que Q6b reprend de Q11, que la version 2.0 de Q11 laisse libre
-        (l'invariance $\mathrm{SU}(2)$ spatiale laisse $A_\tau$ indépendant des coefficients spatiaux), la
-        co-métrique effective s’écrit
-        $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$. Depuis la version 2.0 de Q7, ces valeurs de
-        coefficients reposent en outre sur une identification de l’espace admissible mesuré au module de spin 1
-        que nul article ne fournit, et les entrées qui les affirment restent à réviser.
+        <strong>Signature.</strong> Sous [H-hyp<sub>red</sub>], le bloc non dégénéré $(-A_\tau, A_H, A_H)$ a la
+        signature $(-,+,+)$, $\tau$ étant de genre temps ; les signes sont stipulés, non dérivés. La signature
+        $(-,+,+,+)$ ne vaut que pour une extension fournie, par exemple $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$ avec
+        $A_z > 0$.
       </li>
       <li>
-        <strong>Métrique de Schwarzschild sous [H-L] :</strong> sous [H-L], en présence d'un
-        obstacle stationnaire localisé à symétrie sphérique, la conservation du flux à travers
-        les sphères admissibles force la solution extérieure stationnaire unique à être la
-        métrique de Schwarzschild. L'unicité suit de la borne d'admissibilité Born–Infeld, et
-        non de la seule symétrie.
+        <strong>Extérieur newtonien et forme de Schwarzschild conditionnelle.</strong> Pour une extension de rang
+        quatre fournie, à symétrie sphérique et asymptotiquement plate à l'extérieur d'une obstruction localisée, la
+        conservation du flux donne le profil newtonien $\Phi = \Phi_0 - C/r$. La forme de Schwarzschild, avec
+        $r_s = 2C$, n'en découle qu'avec l'homogénéité extérieure $A_r \equiv 1$ et, comme apport dynamique externe, la
+        fermeture $f_t f_r = 1$ et l'identification temporelle exacte $f_t = 1 + 2\Phi$, $\Phi_0 = 0$. Aucune unicité
+        n'est revendiquée.
       </li>
       <li>
-        <strong>Horizon sous [H-L] :</strong> sous [H-L], l'horizon de Schwarzschild
-        $r = r_s$ est le lieu où le symbole principal $\sigma_2(\mathcal{L}_{\mathrm{eff}})$
-        devient dégénéré. La structure admissible sous-jacente reste régulière.
+        <strong>L'extension requise.</strong> Aucune extension diagonale dans le repère invariant à gauche ne convient,
+        et un extérieur asymptotiquement plat (croissance du volume en $r^3$) ne préserverait pas la structure de Carnot
+        à grande échelle (croissance en $r^4$). Des extensions plates existent, par exemple la métrique plate de la
+        carte exponentielle ; savoir si la structure d'admissibilité en fournit une reste ouvert.
       </li>
       <li>
-        <strong>Propagation Hamilton–Jacobi sous [H-L] :</strong> une fois $g^{\mu\nu}$
-        reconstruit, l'équation eikonale $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$
-        est l'équation de Hamilton–Jacobi pour la propagation sans masse dans la géométrie
-        effective (reformulation effective, pas une couche primitive).
+        <strong>Horizon (interprétation).</strong> Dans l'extérieur conditionnel, la dégénérescence en $r = r_s$ est
+        relative à la carte ; ce n'est pas une rupture invariante de l'opérateur effectif.
       </li>
       <li>
-        <strong>Équations d'Einstein sous [H-L] :</strong> sous [H-L], via la fonctionnelle
-        d'entropie spectrale $S_\Pi[g] = \frac{1}{2}\log\det'\mathcal{L}_\Pi$, la variation
-        métrique renormalisée produit $G_{\mu\nu}$ à l'ordre infrarouge à deux dérivées
-        (papier Gravité). Les équations d'Einstein émergent comme conditions de cohérence,
-        pas comme lois microscopiques.
+        <strong>Équations d'Einstein (conditionnel).</strong> L'article Gravity travaille avec $A_g = -\nabla_g^2$
+        sur des fonds riemanniens ; son coefficient d'Einstein, son signe et la constante de Newton sont des données
+        d'ajustement. L'article de stationnarité spectrale donne
+        $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ sous une réponse infrarouge et
+        une fonctionnelle de matière supposées. Les appliquer à la géométrie effective requiert l'extension fournie et
+        une formulation lorentzienne.
       </li>
+    </ul>
+    <p>
+      <strong>Perspective interprétative.</strong> Les résultats conditionnels sont compatibles avec une lecture de la
+      géométrie d'espace-temps comme structure de propagation effective plutôt que comme donnée primitive du
+      substrat ; ils ne montrent pas que l'admissibilité la sélectionne.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Directions ouvertes</h2>
+    <ul>
+      <li><strong>[H-L] :</strong> établir ou remplacer l'apport de limite spatiale, contenu ouvert de Q5.</li>
+      <li><strong>Q5b-O1 :</strong> l'hypothèse de relèvement [H-lift].</li>
       <li>
-        <strong>Chaîne conditionnelle :</strong> sous [H-L], Q6b fournit le maillon central de la chaîne
-        géométrique
-        $\Pi_q \xrightarrow{\text{Q5a}} \mathcal{L}_\Pi \xrightarrow{\text{Q5b}} g^{\mu\nu}
-        \xrightarrow{\text{Gravité}} G_{\mu\nu}$,
-        identifiant la métrique extraite du symbole de Q5b avec celle entrant dans l'argument
-        variationnel du papier Gravité.
+        <strong>Q5b-O2 :</strong> une extension de rang plein dérivée de la structure d'admissibilité, avec les
+        propriétés extérieures que requièrent les énoncés newtonien et de Schwarzschild.
       </li>
+      <li><strong>Q5b-O3 :</strong> les valeurs des coefficients de la co-métrique.</li>
+      <li><strong>Échelles additionnelles :</strong> savoir si d'autres données dimensionnelles interviennent dans le
+        problème extérieur.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Géométrie depuis le filtre d'admissibilité</h2>
-    <p>
-      Le filtre d'admissibilité $\Pi_q$ agit comme un mécanisme de sélection projectif sur le
-      substrat relationnel, retenant uniquement les configurations compatibles avec les contraintes
-      d'admissibilité spectrale. Q6b analyse la structure géométrique de l'image de ce filtre.
-    </p>
-    <p>
-      L'opérateur effectif $\mathcal{L}_{\mathrm{eff}}$ sur
-      $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ possède un symbole principal
-      $\sigma_2(\mathcal{L}_{\mathrm{eff}}) = A^{\mu\nu}(x)\xi_\mu\xi_\nu$ dont la partie
-      non dégénérée définit, sous [H-L], le tenseur métrique effectif $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
-      La version 2.2.1 de Q5b obtient, sous [H-L], [H-lift] et [H-hyp], une co-métrique de rang trois dont le bloc
-      non dégénéré a la signature $(-,+,+)$ ; sa case centrale est vide, donc la signature quadridimensionnelle
-      citée ici reste à réviser.
-    </p>
-    <p>
-      Sous [H-L], $\mathcal{L}_{\mathrm{eff}}$ converge dans le sens d'analyse fonctionnelle
-      approprié quand $q \to \infty$, donnant par hypothèse une géométrie limite bien définie.
-      Q6b utilise les coefficients
-      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, en reprenant l'entrée temporelle de Q11 ; la version 2.0 de Q11
-      laisse $A_\tau$ libre, et les versions 2.0 de Q8 et 2.0.1 de Q10 n'établissent pas les entrées spatiales ; ces valeurs dépendent d'une identification que la
-      version 2.0 de Q7 enregistre comme fournie par aucune source, et restent à réviser. La constante de Newton $G_N$ reste une donnée
-      d’appariement renormalisée dans le papier Gravité ; elle n’est pas déterminée structurellement ici.
-    </p>
-    <div class="note">
-      <strong>Relation avec Q5b.</strong> La version 2.2.1 de Q5b extrait une co-métrique de rang trois sous [H-L] et
-      [H-lift], avec une case centrale vide ; la lecture lorentzienne quadridimensionnelle de Q6b va au-delà et
-      reste à réviser.
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Géométrie de Schwarzschild et horizon</h2>
-    <p>
-      Sous [H-L], la géométrie effective de Q6b est définie dans des régimes homogènes et quasi-isotropes.
-      En présence d'un obstacle stationnaire localisé à symétrie sphérique, la structure
-      d'admissibilité sélectionne une métrique extérieure spécifique via un argument d'unicité
-      fondé sur la conservation du flux.
-    </p>
-    <p>
-      L'équation de conservation du flux
-      $\frac{1}{r^2}\frac{d}{dr}\!\left(r^2 A^r(r)\frac{d\Phi}{dr}\right) = 0$
-      force $\Phi(r) = \Phi_0 - C/r$, ce qui se traduit via la correspondance opérateur–métrique
-      en les coefficients de la métrique de Schwarzschild $g_{tt} = -f(r)$, $g_{rr} = f(r)^{-1}$
-      avec $f(r) = 1 - r_s/r$.
-    </p>
-    <p>
-      L'unicité suit des contraintes combinées de conservation du flux et de la borne
-      d'admissibilité Born–Infeld, qui exclut toute échelle dimensionnelle additionnelle (pas de
-      constante cosmologique, pas de charge) dans le cadre de la présente construction.
-    </p>
-    <p>
-      L'horizon de Schwarzschild en $r = r_s$ est interprété comme le lieu où le symbole
-      principal $\sigma_2(\mathcal{L}_{\mathrm{eff}})$ devient dégénéré. Le substrat admissible
-      sous-jacent reste régulier ; seule la géométrie effective projetée rencontre une dégénérescence.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Position dans le programme</h2>
-    <p>
-      Q6b occupe l'interface entre le programme géométrique (Q5a, Q5b) et le programme dynamique
-      (Q7–Q13). Sous [H-L], son rôle est de fournir le cadre géométrique effectif que supposent les papiers
-      ultérieurs :
-    </p>
-    <ul>
-      <li>
-        <strong>Q7 :</strong> utilise la géométrie effective de Q6b pour étudier le problème du
-        pont spatial entre $H_{\mathrm{eff}}$ et le secteur spatial tridimensionnel ; la distribution
-        horizontale de $\mathrm{Heis}_3$ est bidimensionnelle et reste distincte de ce secteur.
-      </li>
-      <li>
-        <strong>Q8–Q11 :</strong> les versions 2.0 de Q8 et 2.0.1 de Q10 n'établissent aucun coefficient de co-métrique ;
-        la version 2.0 de Q11 démontre que l'invariance $\mathrm{SU}(2)$ spatiale laisse $A_\tau$
-        libre, de sorte que la lecture $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$ qu'utilise Q6b reste à réviser ; le papier Gravité conserve la constante
-        de Newton $G_N$ comme donnée d’appariement renormalisée.
-      </li>
-      <li>
-        <strong>Q12 :</strong> sur la géométrie de base conditionnelle et pour des données de jauge
-        compactes fournies, le fibré principal est le cadre de la variation verticale donnant Yang–Mills.
-      </li>
-      <li>
-        <strong>Q13 :</strong> traite la rétroaction couplée Einstein–Yang–Mills entre les champs
-        de jauge de Q6a et la géométrie effective de Q6b.
-      </li>
-    </ul>
-    <p>
-      Sous [H-L], Q5b et Q6b fournissent le fondement géométrique consommé en aval : Q5b fournit
-      l'extraction par stratification BFS et Q6b relie cette géométrie conditionnelle au tenseur d'Einstein.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Perspectives ouvertes</h2>
-    <ul>
-      <li>
-        <strong>Établir [H-L] :</strong> l'hypothèse de limite spatiale n'est pas établie ;
-        prouver ou remplacer [H-L] supprimerait la conditionnalité restante des
-        résultats géométriques de Q6b — c'est le contenu ouvert de Q5.
-      </li>
-      <li>
-        <strong>Rigidité sans échelle :</strong> l'exclusion des échelles dimensionnelles
-        additionnelles dans l'argument d'unicité de Schwarzschild (Remarque 3.3) repose sur une
-        affirmation structurelle concernant la borne Born–Infeld $c_\chi$. La rendre rigoureuse
-        requiert de montrer qu'aucun paramètre dimensionnel indépendant violant la fermeture A3–A4
-        ne peut apparaître dans la structure d'admissibilité.
-      </li>
-      <li>
-        <strong>Couplage à la matière :</strong> l'extension du cadre de géométrie effective pour
-        inclure les champs de matière projetée est reportée à des travaux futurs.
-      </li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h2>Référence</h2>
+    <h2>Références</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
-      <i>Effective Spacetime Geometry from Admissible Non-Injective Projection</i>, 2026.
-      <a href="https://doi.org/10.5281/zenodo.20257944">doi:10.5281/zenodo.20257944</a>
+      <i>Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior</i>, 2026.
+      <a href="https://doi.org/10.5281/zenodo.19744005">doi:10.5281/zenodo.19744005</a>
     </p>
   </section>
 

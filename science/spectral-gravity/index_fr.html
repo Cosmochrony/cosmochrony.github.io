@@ -13,7 +13,7 @@
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Le sous-programme de gravité spectrale"/>
   <meta property="og:description"
-    content="Pour une métrique riemannienne fournie, les conditions auxquelles la fonctionnelle d’entropie spectrale
+    content="Pour une métrique riemannienne fournie, les conditions sous lesquelles la fonctionnelle d’entropie spectrale
     projective S_Π[g] = (1/2) log det' A_g porte un secteur d’Einstein. Note de présentation et hub des articles du
     sous-programme de gravité spectrale."/>
   <meta property="og:type" content="website"/>
@@ -63,8 +63,9 @@
       <h2>Vue d’ensemble</h2>
       <p>
         Ce sous-programme travaille sur une métrique riemannienne fournie. Sa lecture comme métrique émergente du
-        sous-programme de géométrie émergente (Note de présentation 2) est conditionnelle à l’hypothèse de limite spatiale non établie [H-L], l’hypothèse de relèvement ouverte [H-lift], une extension de rang quatre fournie et une continuation depuis la signature riemannienne qui n’est pas effectuée, et
-        aucune valeur de coefficient métrique n’est établie. <em>À quelles conditions la dynamique d’une telle
+        sous-programme de géométrie émergente (Note de présentation 2) est conditionnelle à l’hypothèse de limite spatiale non établie [H-L], à l’hypothèse de relèvement ouverte
+        [H-lift], à une extension de rang quatre fournie et à une continuation depuis la signature riemannienne qui n’est
+        pas effectuée, et aucune valeur de coefficient métrique n’est établie. <em>À quelles conditions la dynamique d’une telle
         métrique prend-elle la forme d’Einstein ?</em>
       </p>
       <p>
@@ -178,7 +179,8 @@
         renormalisés, $R\,L_4^2 \ll 1$ avec $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ ; un
         régime conditionnel $G_N = O(\ell_{\mathrm{sp}}^2)$ ne subsiste que si le coefficient ajusté est dominé par le
         cutoff <em>et</em> positif ; théorème tensoriel BI sous (C1)–(C5), conditionnel à [H-ext] et à un terme
-        d’Einstein fourni ; nécessité structurelle de la projection non injective pour $\mathcal{S}_\Pi > 0$.
+        d’Einstein fourni ; la non-injectivité comme nécessité structurelle des descriptions véritablement émergentes
+        (ENI), l’identification de $\mathcal{S}_\Pi$ avec l’entropie de projection restant ouverte.
         La complétion de Born–Infeld n’est pas uniquement sélectionnée, même sous [H-ext] — les completers
         admissibles forment une famille explicitement paramétrée — et aucune relation algébrique ne fixe
         $G_N$ à partir de $\ell_{\mathrm{sp}}$ seul.</li>
@@ -224,8 +226,8 @@
         l’axiome de capacité [A-cap], bornant le taux de relaxation par nœud par $c_{\mathrm{BI}}$, et présente
         l’action de Born–Infeld comme le candidat de saturation compatible avec lui ; le critère de sélection
         établi dans la littérature (la propagation exceptionnelle) n’est pas dérivé de la structure de projection,
-        ce qui est énoncé comme problème ouvert. L’action candidate est paire, la parité agissant de manière covariante sur la famille des
-        réponses (ordres pairs préservés, ordres impairs renversés) ; d’après le no-go d’O18, cette parité ne force pas la condition de fibre
+        ce qui est énoncé comme problème ouvert. La structure de parité de l’action candidate est une covariance de la famille des réponses établie dans le cadre
+        de Weil par O18 ; d’après le no-go d’O18, elle ne force pas la condition de fibre
         $\Pi^{-1}(y) \supseteq \{\chi, -\chi\}$, qui est portée comme hypothèse structurelle (la
         conjugaison au niveau de Weil est un théorème d’O17, l’identification comme fibre physique un pont
         ouvert).</li>
@@ -239,11 +241,14 @@
       est une réalisation sœur, son identification avec l’entropie de projection restant ouverte) ; une métrique
       riemannienne quadridimensionnelle fournie, sur laquelle l’opérateur de type Laplace minimal
       $A_g = -\nabla_g^2$ est elliptique, dont la lecture comme métrique émergente du sous-programme de géométrie
-      émergente (Note de présentation 2) est conditionnelle à l’hypothèse de limite spatiale non établie [H-L], l’hypothèse de relèvement ouverte [H-lift], une extension de rang quatre fournie et une continuation depuis la signature riemannienne qui n’est pas effectuée, aucune valeur de coefficient
+      émergente (Note de présentation 2) est conditionnelle à l’hypothèse de limite spatiale non établie [H-L], à l’hypothèse de relèvement ouverte
+      [H-lift], à une extension de rang quatre fournie et à une continuation depuis la signature riemannienne qui n’est
+      pas effectuée, aucune valeur de coefficient
       métrique n’étant établie ; l’échelle spectrale $\ell_{\mathrm{sp}}$ de la branche I et la constante de
-      saturation de Born–Infeld $c_{\mathrm{BI}}$ de la dynamique de projection ; la parité de l’action BI et la covariance
-      de parité issues de BornInfeld et O18, l’involution de fibre étant portée comme hypothèse
-      structurelle (non forcée par la parité, d’après le no-go d’O18).
+      saturation de Born–Infeld $c_{\mathrm{BI}}$ de la dynamique de projection ; l’axiome de capacité [A-cap] issu de BornInfeld ; la
+      structure de parité de l’action candidate de Born–Infeld comme covariance de la famille des réponses, issue
+      d’O18, l’involution de fibre étant portée comme hypothèse structurelle (non forcée par elle, d’après le no-go
+      d’O18).
     </p>
     <p>
       <strong>Sorties.</strong> Les équations d’Einstein $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N
@@ -268,11 +273,12 @@
       fournis</strong>, à l’ordre infrarouge local dominant (Thermodynamics). Le secteur lorentzien est <strong>ouvert</strong> : son noyau
       transverse-sans-trace est posé plutôt que dérivé et, sous ce postulat, la branche sans masse est non
       déformée ; le sous-programme ne fournit donc ni prédiction d’ondes gravitationnelles ni prise
-      observationnelle sur $\ell_{\mathrm{sp}}$ (Lorentz). L’unicité BI scalaire et
-      la parité de l’action (covariance de parité sur la famille des réponses) sont <strong>prouvées inconditionnellement</strong>
-      (BornInfeld), de même que
-      l’identification du porteur spectral et la réduction BI scalaire (Gravity Lemmes 2–3) ;
-      l’involution de fibre elle-même est une hypothèse structurelle, non forcée par la parité (no-go
+      observationnelle sur $\ell_{\mathrm{sp}}$ (Lorentz). L’identification du porteur spectral et
+      les contraintes sur la fonction de secteur sont <strong>prouvées inconditionnellement</strong> (Gravity
+      Lemmes 2–3), ces dernières montrant que le membre de Born–Infeld n’est pas sélectionné ; [A-cap] est un axiome et
+      l’action de Born–Infeld un candidat de saturation, non une complétion dérivée ou unique (BornInfeld) ; la
+      structure de parité de l’action candidate est une covariance de la famille des réponses établie dans le cadre
+      de Weil par O18, et l’involution de fibre elle-même est une hypothèse structurelle, non forcée par elle (no-go
       d’O18). Le théorème
       tensoriel BI (Gravity Théorème 1) est <strong>conditionnel à l’hypothèse [H-ext]</strong> (extensivité de la
       cohérence admissible, Lemme 1 seul) <strong>et à un terme d’Einstein fourni</strong>. Des éléments restent

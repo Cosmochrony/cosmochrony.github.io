@@ -49,8 +49,8 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="3.4">
-    <strong>Pubblicazione Zenodo attuale:</strong> version 3.4 (2026-07-18).
+  <section class="note" role="note" data-release-version="3.5">
+    <strong>Pubblicazione Zenodo attuale:</strong> version 3.5 (RELEASE-DATE).
     <span lang="en">Titolo ufficiale: <i>Conditions for an Infrared Einstein Sector from Spectral Geometry</i>.</span>
   </section>
   <section class="grid">
@@ -116,16 +116,18 @@
         da $a_4=\zeta_A(0)$. I due rispondono a domande diverse e non vanno fusi.</li>
       <li><strong>Variazione metrica rinormalizzata:</strong> una volta forniti i coefficienti, la variazione si
         decompone nei settori di Einstein, cosmologico, a derivate superiori e non locale.</li>
-      <li><strong>Dominanza infrarossa:</strong> il termine locale di Einstein a due derivate domina quando
+      <li><strong>Dominanza infrarossa:</strong> per un coefficiente di Einstein raccordato non nullo, il termine locale di Einstein a due derivate domina quando
         $R\,L_4^2\ll 1$, con $L_4^2=|\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$ fissato dal rapporto dei
-        coefficienti rinormalizzati — non da $\ell_{\mathrm{sp}}$ da solo.</li>
+        coefficienti rinormalizzati — non da $\ell_{\mathrm{sp}}$ da solo. È un enunciato di conteggio degli ordini; non fornisce in generale un limite sui termini non locali.</li>
       <li><strong>L'accoppiamento newtoniano è un dato di raccordo:</strong> il cutoff fissa l'ordine di grandezza del
         contributo di un singolo operatore, che è negativo. Il segno e il valore finito di
         $c_{\mathrm{EH}}^{\mathrm{ren}}$ dipendono dal contenuto completo di operatori e da una condizione di
         rinormalizzazione; il $G_N$ osservato non viene qui derivato.</li>
       <li><strong>Completamento Born–Infeld ultravioletto:</strong> sotto la separata ipotesi di coerenza estensiva,
-        il completamento tensoriale di un termine di Einstein infrarosso <em>fornito</em> resta di forma Born–Infeld
-        determinantale.</li>
+        il completamento tensoriale di un termine di Einstein infrarosso <em>fornito</em> ammette la forma Born–Infeld
+        determinantale, che non è selezionata in modo unico: i completamenti ammissibili formano una famiglia in una
+        funzione di settore e nel parametro di traccia del portatore spettrale, che lascia invariato il termine lineare e
+        sposta il bordo di saturazione.</li>
     </ul>
   </section>
   <section class="card">
@@ -158,7 +160,7 @@
     <h2>Completamento Born–Infeld ultravioletto</h2>
     <p>
       Sotto una separata ipotesi di coerenza estensiva, il completamento tensoriale di un termine di Einstein
-      infrarosso <em>fornito</em> resta di forma Born–Infeld determinantale
+      infrarosso <em>fornito</em> ammette la forma Born–Infeld determinantale
     </p>
     <p style="text-align: center;">
       $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$,
@@ -167,6 +169,9 @@
       una struttura ispirata a Eddington in cui la gravità di Einstein appare come il settore infrarosso a due
       derivate. L'enunciato è condizionato all'ipotesi e al termine di Einstein fornito; non dipende da un modello
       microscopico specifico.
+      Questa forma è un membro ammissibile, non una selezione unica: la funzione di settore è vincolata solo
+      nell'origine e al bordo di saturazione, e il portatore spettrale è fissato solo a meno di un parametro di traccia,
+      che lascia invariato il termine lineare e sposta il bordo di saturazione.
     </p>
     <p>
       Se il coefficiente raccordato completo risulta dominato dai contributi del cutoff <em>ed</em> è positivo, lo
@@ -187,8 +192,8 @@
     </p>
     <p>
       Nel contesto covariante, questo comportamento appare come manifestazione statica di campo debole
-      dello stesso quadro spettrale la cui variazione metrica rinormalizzata produce la risposta di Einstein dominante
-      in regime infrarosso e il completamento Born–Infeld ultravioletto.
+      dello stesso quadro spettrale la cui variazione metrica rinormalizzata contiene il termine di Einstein
+      infrarosso, dominante sotto condizioni, e ammette un completamento Born–Infeld ultravioletto.
     </p>
   </section>
   <section class="card">
@@ -198,6 +203,12 @@
       È compatibile con motivazioni più ampie del programma Cosmochrony,
       ma è concepito per essere leggibile e valutabile in modo indipendente,
       senza richiedere l’intero quadro pre-geometrico.
+    </p>
+    <p>
+      La metrica è fornita. Leggerla come la metrica emergente del programma richiede l'ipotesi di limite spaziale
+      [H-L], l'ipotesi di sollevamento aperta [H-lift], un'estensione di rango quattro fornita della co-metrica di rango
+      tre e una continuazione alla segnatura lorentziana che non viene eseguita; nessun valore di coefficiente metrico è
+      stabilito.
     </p>
   </section>
   <section class="card">

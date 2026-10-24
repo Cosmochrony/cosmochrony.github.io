@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Transformations de Lorentz depuis l'ordre temporel projectif | Cosmochrony</title>
   <meta name="description"
-    content="Reconstruit les transformations de Lorentz effectives entre observateurs inertiels : l'unique isométrie propre orthochrone de η entre deux séparations temporelles unitaires est le boost standard, avec la contraction des longueurs ℓ = ℓ₀/γ. Sa lecture à la charge de capacité projective β est conditionnelle à une co-métrique fournie et à l'hypothèse [H-cone]."/>
+    content="Reconstruit les transformations de Lorentz effectives entre observateurs inertiels : l'unique isométrie propre orthochrone de η entre deux séparations temporelles unitaires qui fixe les directions transverses est le boost standard, avec la contraction des longueurs ℓ = ℓ₀/γ. Sa lecture à la charge de capacité projective β est conditionnelle à une co-métrique fournie et à l'hypothèse [H-cone]."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Transformations de Lorentz depuis l'ordre temporel projectif"/>
@@ -37,7 +37,7 @@
       <div>
         <h1>Transformations de Lorentz depuis l'ordre temporel projectif</h1>
         <p class="subtitle">
-          Traite le problème LC-O1 (Section 7.2 de <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a>) : l'unique isométrie propre orthochrone de $\eta$ entre deux séparations temporelles unitaires est le boost de Lorentz standard, et la contraction des longueurs $\ell = \ell_0/\gamma$ s'en déduit. Lire le boost à la charge de capacité projective $\beta$ est conditionnel à une co-métrique fournie et à l'hypothèse nommée [H-cone].
+          Traite le problème LC-O1 (Section 7.2 de <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a>) : l'unique isométrie propre orthochrone de $\eta$ entre deux séparations temporelles unitaires qui fixe les directions transverses est le boost de Lorentz standard, et la contraction des longueurs $\ell = \ell_0/\gamma$ s'en déduit. Lire le boost à la charge de capacité projective $\beta$ est conditionnel à une co-métrique fournie et à l'hypothèse nommée [H-cone].
         </p>
       </div>
     </div>
@@ -94,7 +94,7 @@
   <section class="card">
     <h2>Résultat principal</h2>
     <p>
-      Supposons une co-métrique fournie de la forme du Corollaire 6.1 de Q11, écrite dans la coordonnée $\tau$ remise à l'échelle, et [H-cone]. Étant donnés deux observateurs inertiels de charge de capacité relative $\beta$, l'unique isométrie propre orthochrone de l'intervalle effectif plat envoyant un axe temporel sur l'autre est le boost de Lorentz standard :
+      Supposons une co-métrique fournie de la forme du Corollaire 6.1 de Q11, écrite dans la coordonnée $\tau$ remise à l'échelle, et [H-cone]. Étant donnés deux observateurs inertiels de charge de capacité relative $\beta$, l'unique isométrie propre orthochrone de l'intervalle tangent envoyant un axe temporel sur l'autre et fixant les directions transverses est le boost de Lorentz standard, énoncé sur l'espace tangent :
     </p>
     <p style="text-align:center">
       $\tau' = \gamma(\tau - \beta x), \qquad x' = \gamma(x - \beta\tau), \qquad y' = y, \qquad z' = z,$
@@ -123,7 +123,7 @@
     <ul>
       <li><strong>LorentzCapacity</strong> (<code>Beau2026n</code>) : facteur de Lorentz à partir de la saturation de capacité projective, sous l'hypothèse de budget quadratique.</li>
       <li><strong>TempProj</strong> (<code>Beau2026tp</code>) : application résiduelle temporelle ; énoncé de LC-O1 (Section 7.2).</li>
-      <li><strong>PTO</strong> (<code>Beau2026pto</code>) : observable d'ordre temporel projectif ; facteur d'horloge scalaire $d\tau/dn$.</li>
+      <li><strong>PTO</strong> (<code>Beau2026pto</code>) : observable d'ordre temporel projectif ; un proxy d'ordre monotone, sans pas ni coefficient.</li>
       <li><strong>Q5b</strong> (<code>Beau2026q5b</code>) : une co-métrique de rang trois sous [H-L] et [H-lift] ; son extension de rang quatre est ouverte.</li>
       <li><strong>Q8</strong> (<code>BeauQ8</code>) : $A_H = A_Z = 2\lambda$ avec $\lambda$ libre pour une forme invariante fournie.</li>
       <li><strong>Q10</strong> (<code>Beau2026q10</code>) : aucune valeur de coefficient n'est dérivée.</li>

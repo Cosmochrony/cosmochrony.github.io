@@ -79,10 +79,12 @@
         sans aucune régression physiquement significative.
       </p>
       <p>
-        L'article interprète ce comportement comme un <strong>ordre temporel
-        projectif</strong> : le temps n'est pas une évolution du substrat $\chi$, mais un ordre
+        L'article propose de lire ce comportement comme un <strong>ordre temporel
+        projectif</strong> : le temps ne serait pas une évolution du substrat $\chi$, mais un ordre
         induit par l'accumulation de structure spectrale admissible sous une projection non injective
-        fixe $\Pi$.
+        fixe $\Pi$. La croissance monotone de $I(n)$ est une observation numérique le long de la cascade
+        BFS ; un ordre sur les états admissibles exige en outre l'hypothèse d'acyclicité [H-acyc], et une
+        accumulation monotone n'établit à elle seule ni l'acyclicité ni l'irréversibilité.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page donne une vue structurée de l'article. Les définitions
@@ -126,13 +128,15 @@
         $\sigma_{\mathrm{pair}}(n)$.
       </li>
       <li>
-        <strong>One-way activation :</strong> une fois qu'une structure spectrale a été projetée
-        de manière stable, elle n'est pas perdue aux profondeurs BFS ultérieures. Cela induit une
-        forme structurelle d'irréversibilité.
+        <strong>One-way activation :</strong> dans les cas testés, une fois qu'une structure spectrale a
+        été projetée de manière stable, elle n'est pas perdue aux profondeurs BFS ultérieures. C'est la
+        conjecture énoncée plus bas, étayée numériquement ; elle donnerait une forme d'irréversibilité le
+        long de la cascade, et non à elle seule un ordre sur les états.
       </li>
       <li>
-        <strong>Ordre projectif :</strong> la succession temporelle est définie comme un ordre sur
-        les projections admissibles, et non comme une dynamique fondamentale sur $\chi$.
+        <strong>Ordre projectif :</strong> la succession temporelle est proposée comme un ordre sur
+        les projections admissibles, et non comme une dynamique fondamentale sur $\chi$ ; cet ordre n'est
+        strict que sous [H-acyc].
       </li>
       <li>
         <strong>Compatibilité avec O24 :</strong> l'ordre n'élargit pas le rang observable.
@@ -178,8 +182,9 @@
     <h2>Interprétation</h2>
     <p>
       L'article ne dérive pas le temps à partir de l'entropie, d'une métrique de fond, ni d'un flot
-      hamiltonien fondamental. Il montre au contraire que l'ordre temporel peut être lu dans
-      l'accumulation monotone de structure spectrale projetée.
+      hamiltonien fondamental. Il montre au contraire, numériquement, que l'accumulation de structure
+      spectrale projetée croît de façon monotone le long de la cascade ; lire cette croissance comme un
+      ordre temporel sur les états exige [H-acyc].
     </p>
     <ul>
       <li>
@@ -207,13 +212,13 @@
     <p>
       Le programme d'admissibilité spectrale avait déjà identifié un observable au niveau des
       fibres, stabilisé le rang observable et clarifié la chaîne de transfert admissible à travers
-      O23, O24 et O25. Cet article ajoute la couche temporelle qui manquait.
+      O23, O24 et O25. Cet article propose une couche temporelle.
     </p>
     <p>
       Il montre que la même structure projective qui gouverne l'admissibilité et la saturation
       supporte aussi un candidat pour l'ordre temporel. En ce sens, l'article n'ajoute pas
       seulement un nouveau diagnostic numérique. Il étend le programme de la sélection spectrale
-      à l'émergence même de la succession ordonnée.
+      vers l'émergence de la succession ordonnée, sous l'hypothèse [H-acyc].
     </p>
   </section>
   <section class="card">

@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Lorentz Transformations from Projective Temporal Ordering | Cosmochrony</title>
   <meta name="description"
-    content="Closes the open problem LC-O1 (Section 7.2 of TempProj): the unique proper orthochronous isometry of the effective Minkowski interval between two inertial splittings at relative capacity load β is the standard Lorentz boost. Length contraction ℓ = ℓ₀/γ follows as a corollary."/>
+    content="Reconstructs effective Lorentz transformations between inertial observers: the unique proper orthochronous isometry of η between two unit timelike splittings is the standard boost, with length contraction ℓ = ℓ₀/γ. Its reading at the projective capacity load β is conditional on a supplied co-metric and on the hypothesis [H-cone]."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Lorentz Transformations from Projective Temporal Ordering"/>
   <meta property="og:description"
-    content="Closes LC-O1: effective Lorentz boost from projective temporal ordering data; length contraction as a corollary."/>
+    content="LC-O1: effective Lorentz boost and length contraction, conditional on a supplied co-metric and on the cone–capacity identification [H-cone]."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o1/"/>
   <script type="module">
@@ -37,10 +37,7 @@
       <div>
         <h1>Lorentz Transformations from Projective Temporal Ordering</h1>
         <p class="subtitle">
-          Closes the open problem LC-O1 (Section 7.2 of <a href="/science/lc/temporal-projection/">TempProj</a>):
-          given two inertial observers with relative normalised capacity load $\beta$, the unique proper
-          orthochronous isometry of the reconstructed flat effective interval is the standard Lorentz boost.
-          Length contraction $\ell = \ell_0/\gamma$ follows as a corollary.
+          Addresses the problem LC-O1 (Section 7.2 of <a href="/science/lc/temporal-projection/">TempProj</a>): the unique proper orthochronous isometry of $\eta$ between two unit timelike splittings is the standard Lorentz boost, and length contraction $\ell = \ell_0/\gamma$ follows. Reading the boost at the projective capacity load $\beta$ is conditional on a supplied co-metric and on the named hypothesis [H-cone].
         </p>
       </div>
     </div>
@@ -51,32 +48,21 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="note" role="note" data-release-version="1.1">
+    <strong>Current Zenodo release:</strong> version 1.1 (__LC2ETA_CYCLE_DATE__).
+    <span lang="en">Official title: <i>Lorentz Transformations from Projective Temporal Ordering</i>.</span>
+  </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        The Lorentz-capacity programme derives relativistic kinematics from the bounded Born-Infeld
-        capacity budget of admissible projection on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
-        The technical note <a href="/science/lc/lorentz-capacity/">N</a> and the temporal residual paper
-        <a href="/science/lc/temporal-projection/">TempProj</a> established that the projective temporal
-        capacity satisfies $F^\tau = \sqrt{1-\beta^2} = 1/\gamma$, closing time dilation
-        ($d\tau/dn = 1/\gamma$) and the light cone ($\beta = 1 \Rightarrow F^\tau = 0$).
+        The Lorentz-capacity programme studies relativistic kinematics from the bounded Born–Infeld capacity budget of admissible projection on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. <a href="/science/lc/lorentz-capacity/">LorentzCapacity</a> and <a href="/science/lc/temporal-projection/">TempProj</a> give, under a quadratic budget hypothesis and the identifications stated there, the projective temporal capacity $F^\tau = \sqrt{1-\beta^2} = 1/\gamma$.
       </p>
       <p>
-        The remaining open problem, stated in Section 7.2 of TempProj, was the reconstruction of the
-        full effective observer transformation between inertial observers, including length contraction.
-        The present paper closes this problem.
+        The problem LC-O1, stated in Section 7.2 of TempProj, is the reconstruction of the full effective observer transformation between inertial observers, including length contraction. No source constructs the Lorentzian co-metric needed for it: the paper takes a supplied rank-four co-metric of the conditional form of <a href="/science/emergent-geometry/q11/">Q11</a>, $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, whose two coefficients are independent and fixed by no source. After a rescaling of $\tau$ it is proportional to $\eta$, whose isometry group is $\mathrm{SO}(3,1)$; the normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ is a choice of units.
       </p>
       <div class="note" role="note">
-        <strong>Layer separation.</strong> The argument rests on a strict separation of three
-        structural layers: (i) the Born-Infeld capacity sphere $(F^\tau)^2 + \beta^2 = 1$ (not a
-        Minkowski interval); (ii) the effective Lorentzian co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$
-        taken from <a href="/science/emergent-geometry/q11/">Q11</a>, not established
-        (Q11 version 2.0 leaves $A_\tau$ free, and <a href="/science/emergent-geometry/q5/b/">Q5b</a> version 2.2.1
-        derives a rank-three co-metric and no coefficient value) and pending revision; (iii) the identification of an inertial
-        observer with a future-directed unit timelike splitting of $\eta$. The BI sphere selects
-        which splittings are admissible; the Lorentz group acts as the isometry group of $\eta$
-        and determines how to pass between them.
+        <strong>Layer separation.</strong> The argument separates three layers: (i) the Born–Infeld capacity sphere $(F^\tau)^2 + \beta^2 = 1$, which is not a Minkowski interval; (ii) the supplied co-metric, proportional to $\eta$ after rescaling $\tau$; (iii) the identification of an inertial observer with a future-directed unit timelike splitting of $\eta$. Layers (i) and (ii) are linked by one named hypothesis, [H-cone]: the light-cone speed of the co-metric equals the Born–Infeld bound per ordering step, so that the capacity load is the velocity of a splitting. This is the coupling datum that Q11 leaves open (Q11-O1), and no source derives it.
       </div>
     </div>
     <aside class="card">
@@ -100,7 +86,7 @@
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Proved (closes LC-O1)</div>
+          <div class="v">Boost and contraction proved for η; observer reading conditional on a supplied co-metric and [H-cone]</div>
         </div>
       </div>
     </aside>
@@ -108,59 +94,41 @@
   <section class="card">
     <h2>Main result</h2>
     <p>
-      Given two inertial observers with relative normalised capacity load $\beta$, the unique proper
-      orthochronous isometry of the reconstructed flat effective interval mapping one temporal axis to
-      the other is the standard Lorentz boost:
+      Assume a supplied co-metric of the form of Q11 Corollary 6.1, written in the rescaled coordinate $\tau$, and [H-cone]. Given two inertial observers with relative capacity load $\beta$, the unique proper orthochronous isometry of the flat effective interval mapping one temporal axis to the other is the standard Lorentz boost:
     </p>
     <p style="text-align:center">
       $\tau' = \gamma(\tau - \beta x), \qquad x' = \gamma(x - \beta\tau), \qquad y' = y, \qquad z' = z,$
     </p>
     <p>
-      with $\gamma = (1-\beta^2)^{-1/2}$. Length contraction follows directly:
+      with $\gamma = (1-\beta^2)^{-1/2}$. Length contraction follows:
     </p>
     <p style="text-align:center">
       $\ell = \ell_0/\gamma.$
     </p>
     <p>
-      The rapidity of the boost is fixed by the capacity load via $\xi = \mathrm{arctanh}\,\beta$;
-      the Lorentz boost is the unique proper orthochronous isometry of $\eta$ mapping one admissible
-      timelike splitting to another at that rapidity class.
+      The uniqueness of the boost is a statement about $\eta$ and holds whatever the values of $A_\tau$ and $\lambda$; [H-cone] is what fixes its rapidity at $\xi = \mathrm{arctanh}\,\beta$ from the capacity data.
     </p>
   </section>
   <section class="card">
     <h2>Key features</h2>
     <ul>
-      <li><strong>No new spectral or projective hypothesis.</strong> All inputs are previously closed
-        results; LC-O1 only identifies inertial observers with unit timelike splittings and applies
-        the standard uniqueness of $\eta$-isometries in each rapidity class.</li>
-      <li><strong>Strict layer separation.</strong> The Born-Infeld capacity sphere is not a
-        Lorentzian structure. The Lorentz group acts as the isometry group of $\eta$, not of the BI
-        sphere.</li>
-      <li><strong>Length contraction as derived corollary.</strong> Consequence of the boost and the
-        simultaneity hyperplane geometry, not an independent capacity law.</li>
-      <li><strong>Closure of LC-O1.</strong> Full effective observer transformation, including
-        length contraction, reconstructed from projective temporal ordering data and the effective
-        metric normalisation.</li>
+      <li><strong>One named kinematic hypothesis.</strong> The inputs are conditional (supplied co-metric, quadratic budget, identifications of TempProj); LC-O1 identifies inertial observers with unit timelike splittings, names [H-cone], and applies the standard uniqueness of $\eta$-isometries in each rapidity class.</li>
+      <li><strong>Strict layer separation.</strong> The Born–Infeld capacity sphere is not a Lorentzian structure. The Lorentz group acts as the isometry group of $\eta$, not of the BI sphere.</li>
+      <li><strong>Length contraction as a corollary.</strong> Consequence of the boost and the simultaneity hyperplane geometry, not an independent capacity law.</li>
+      <li><strong>Conditional closure of LC-O1.</strong> The full effective observer transformation, including length contraction, is reconstructed from projective temporal ordering data, a supplied co-metric and [H-cone].</li>
     </ul>
   </section>
   <section class="card">
     <h2>Dependencies</h2>
     <ul>
-      <li><strong>N</strong> (<code>Beau2026n</code>): Lorentz factor from projective capacity
-        saturation.</li>
-      <li><strong>TempProj</strong> (<code>Beau2026tp</code>): temporal residual map; statement
-        of LC-O1 (Section 7.2).</li>
-      <li><strong>PTO</strong> (<code>Beau2026pto</code>): projective temporal ordering observable;
-        scalar clock factor $d\tau/dn$.</li>
-      <li><strong>Q5b</strong> (<code>Beau2026q5b</code>): BFS shell stratification; Carnot
-        geometry and, under [H-L], [H-lift] and [H-hyp], a rank-three co-metric whose non-degenerate block is
-        Lorentzian.</li>
-      <li><strong>Q11</strong> (<code>Beau2026q11</code>): source of the effective
-        co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ used here. Pending revision: Q11 (version 2.0) leaves $A_\tau$ free,
-        so no coefficient value is established.</li>
-      <li><strong>C</strong> (<code>Beau2026c</code>): Born-Infeld admissibility budget (Layer 1).</li>
-      <li><strong>M</strong> (<code>Beau2026m</code>): admissible non-injective transitions as the
-        primitive of physical description.</li>
+      <li><strong>LorentzCapacity</strong> (<code>Beau2026n</code>): Lorentz factor from projective capacity saturation, under the quadratic budget hypothesis.</li>
+      <li><strong>TempProj</strong> (<code>Beau2026tp</code>): temporal residual map; statement of LC-O1 (Section 7.2).</li>
+      <li><strong>PTO</strong> (<code>Beau2026pto</code>): projective temporal ordering observable; scalar clock factor $d\tau/dn$.</li>
+      <li><strong>Q5b</strong> (<code>Beau2026q5b</code>): a co-metric of rank three under [H-L] and [H-lift]; its rank-four extension is open.</li>
+      <li><strong>Q8</strong> (<code>BeauQ8</code>): $A_H = A_Z = 2\lambda$ with $\lambda$ free for a supplied invariant form.</li>
+      <li><strong>Q10</strong> (<code>Beau2026q10</code>): no coefficient value is derived.</li>
+      <li><strong>Q11</strong> (<code>Beau2026q11</code>): the conditional form $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ (Corollary 6.1), with $A_\tau$ free; the coupling datum is open (Q11-O1).</li>
+      <li><strong>C</strong> (<code>Beau2026c</code>): the capacity bound [A-cap] (Layer 1).</li>
     </ul>
   </section>
   <section class="card">
@@ -174,13 +142,7 @@
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      LCo1 is one of the three closure papers of the Lorentz Capacity sub-programme, alongside
-      <a href="/science/lc/lc-o2-o1/">LCIIo1</a> (LC-O2-O1, capacity-metric bridge) and
-      <a href="/science/lc/lc-o3/">LCo3</a> (LC-O3, finite-$q$ corrections at saturation). With these
-      three closures, the chain LorentzCapacity &rarr; TempProj &rarr; LCII reaches a complete
-      sub-programme: kinematic time dilation, gravitational time dilation, full Lorentz
-      transformations, and finite-$q$ corrections are all derived from the projective capacity
-      framework.
+      LCo1 is one of three papers that address the open problems of the Lorentz Capacity sub-programme, alongside <a href="/science/lc/lc-o2-o1/">LCIIo1</a> (LC-O2-O1, capacity–metric bridge) and <a href="/science/lc/lc-o3/">LCo3</a> (LC-O3, finite-$q$ corrections at saturation). The inertial chain LorentzCapacity &rarr; TempProj &rarr; LCo1 gives time dilation, Lorentz transformations and length contraction, conditionally on a supplied co-metric and on [H-cone]. The non-homogeneous bridge LC-O2-O1 is open: LCIIo1 proves that the scalar free-fraction law does not close it.
     </p>
   </section>
 </main>

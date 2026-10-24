@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local | Cosmochrony</title>
   <meta name="description"
-    content="Résultat négatif (v2.0) : la loi scalaire de fraction libre A_τ = A_τ^∞(1-ε) ne ferme pas le pont LC-O2-O1. Combinée à g^ττ = -A_τ, elle donne g_ττ/g_ττ^∞ = 1/(1-ε), qui ne coïncide avec la définition capacitaire qu'en ε = 0. La revendication de fermeture des v1.0/v1.0.1 est retirée ; LC-O2-O1 est rouvert."/>
+    content="Résultat négatif : la loi scalaire de fraction libre A_τ = A_τ^∞(1-ε) ne ferme pas le pont LC-O2-O1. Avec g^ττ = -A_τ, toute valeur plate postulée A_τ^∞ et un bloc temporel diagonal, elle donne g_ττ/g_ττ^∞ = 1/(1-ε), qui ne coïncide avec la définition capacitaire qu'en ε = 0. LC-O2-O1 est ouvert."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local"/>
   <meta property="og:description"
-    content="Résultat négatif : la loi de fraction libre ne ferme le pont capacité-métrique que dans le vide homogène. LC-O2-O1 rouvert."/>
+    content="Résultat négatif : la loi de fraction libre ne ferme le pont capacité-métrique que dans le vide homogène, pour toute valeur plate postulée. LC-O2-O1 est ouvert."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o2-o1/"/>
   <script type="module">
@@ -37,14 +37,7 @@
       <div>
         <h1>Échec de la fermeture scalaire par fraction libre du pont capacité-métrique local</h1>
         <p class="subtitle">
-          <strong>La version 2.0 remplace la version 1.0.1 (ainsi que la version 1.0 originale).</strong>
-          La loi scalaire de fraction libre
-          $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$ ne ferme <em>pas</em> le pont LC-O2-O1
-          de <a href="/science/lc/lc-o2/index_fr.html">LCII</a>. Combinée à l'identification
-          <a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> $g^{\tau\tau} = -A_\tau$ et à un
-          bloc temporel diagonal, elle donne $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$, qui
-          ne coïncide avec la définition capacitaire $R^{2} = 1-\epsilon$ qu'en $\epsilon = 0$.
-          LC-O2-O1 est rouvert.
+          La loi scalaire de fraction libre $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$ ne ferme <em>pas</em> le pont LC-O2-O1 de <a href="/science/lc/lc-o2/index_fr.html">LCII</a>. Combinée à l'identification par symbole principal $g^{\tau\tau} = -A_\tau$ et à un bloc temporel diagonal, elle donne $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$ pour toute valeur plate postulée $A_\tau^{\infty}$, ce qui ne coïncide avec la définition capacitaire $R^{2} = 1-\epsilon$ qu'en $\epsilon = 0$. LC-O2-O1 est ouvert.
         </p>
       </div>
     </div>
@@ -55,35 +48,25 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="note" role="note" data-release-version="2.1">
+    <strong>Publication Zenodo actuelle :</strong> version 2.1 (__LC2ETA_CYCLE_DATE__).
+    <span lang="en">Titre officiel : <i>Failure of the Scalar Free-Fraction Closure of the Local Capacity-Metric Bridge</i>.</span>
+  </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        L'article <a href="/science/lc/lc-o2/index_fr.html">LCII</a> a introduit le rayon local de capacité
-        Born-Infeld $R(x)$ sur deux versants : côté capacité, $R(x)^{2} = 1 - \epsilon(x)$ à partir d'un
-        champ local d'occupance spectrale ; côté métrique, $R(x)^{2} = -2g^{\tau\tau}(x)$ via la composante
-        temporelle de la co-métrique. Leur équivalence a été énoncée dans LCII (Remarque 3.2, Section 7.3)
-        comme un pont analytique ouvert : elle ne pouvait être vérifiée qu'en passant par les équations
-        d'Einstein importées de la branche <a href="/science/spectral-gravity/gravity/index_fr.html">Gravité</a>.
+        L'article <a href="/science/lc/lc-o2/index_fr.html">LCII</a> définit le rayon de capacité Born–Infeld local $R(x)$ de deux côtés : côté capacité, $R(x)^{2} = 1 - \epsilon(x)$ à partir d'un champ d'occupance spectrale locale ; côté métrique, $R(x)^{2} = g_{\tau\tau}(x)/g_{\tau\tau}^{\infty}$ à partir de la composante temporelle d'une co-métrique fournie, dont la référence en espace plat est postulée. Leur équivalence est un postulat déclaré de LCII (Remarque 3.2) ; sa dérivation à partir des seules données d'admissibilité est le problème ouvert LC-O2-O1.
       </p>
       <p>
-        Les versions 1.0 et 1.0.1 de cette note affirmaient fermer ce pont à partir des seules données
-        d'admissibilité locales. Cette affirmation est <strong>retirée</strong>. La présente version
-        établit à la place un résultat négatif précis : la réduction scalaire naturelle fait varier le
-        coefficient temporel dans le mauvais sens, de sorte que la chaîne
-        $\epsilon(x) \mapsto A_\tau(x) \mapsto g_{\tau\tau}(x)$ ne se ferme pas.
+        Cette note montre que la réduction scalaire naturelle fait varier le coefficient temporel dans le mauvais sens, de sorte que la chaîne $\epsilon(x) \mapsto A_\tau(x) \mapsto g_{\tau\tau}(x)$ ne se ferme pas. La valeur en espace plat $A_\tau^{\infty}$ est postulée : <a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> montre que l'invariance spatiale $\mathrm{SU}(2)$ laisse le coefficient temporel libre, et la normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$, où $A_\tau^{\infty} = 2$, est un choix d'unités. Le résultat négatif ne dépend pas de cette valeur.
       </p>
       <div class="note" role="note">
-        <strong>Portée du résultat.</strong> Le résultat est délibérément étroit. Une loi scalaire
-        <em>réciproque</em> $A_\tau = A_\tau^{\infty}/(1-\epsilon)$ fermerait algébriquement le pont ;
-        elle n'est pas dérivée ici et n'existe pas dans le corpus. Ce qui échoue est donc la loi de
-        fraction libre, et <em>non</em> la fermeture scalaire en général. L'article n'affirme ni qu'une
-        donnée opératorielle est nécessaire, ni qu'une famille de sous-espaces locaux transformant
-        covariamment est impossible.
+        <strong>Portée.</strong> Le résultat est délibérément étroit. Une loi scalaire <em>réciproque</em> $A_\tau = A_\tau^{\infty}/(1-\epsilon)$ fermerait le pont algébriquement ; elle n'est pas dérivée ici, et aucune n'est disponible dans le corpus. Ce qui échoue est donc la loi de fraction libre, <em>non</em> la fermeture scalaire en général. L'article ne prétend pas qu'une donnée à valeur opérateur soit nécessaire, ni qu'une famille de sous-espaces locaux se transformant de façon covariante soit impossible.
       </div>
     </div>
     <aside class="card">
-      <h2>Points clés</h2>
+      <h2>Informations clés</h2>
       <div class="kvs">
         <div class="kv">
           <div class="k">Auteur</div>
@@ -98,12 +81,12 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div>
         </div>
         <div class="kv">
-          <div class="k">Thème</div>
-          <div class="v">pont capacité-métrique, admissibilité spectrale, dilatation temporelle gravitationnelle</div>
+          <div class="k">Thèmes</div>
+          <div class="v">pont capacité-métrique, admissibilité spectrale, dilatation gravitationnelle du temps</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Résultat négatif prouvé ; LC-O2-O1 <strong>rouvert</strong></div>
+          <div class="v">Résultat négatif prouvé pour toute valeur plate postulée ; LC-O2-O1 <strong>ouvert</strong></div>
         </div>
       </div>
     </aside>
@@ -112,127 +95,103 @@
     <h2>Résultat principal (négatif)</h2>
     <p>
       <strong>Théorème.</strong> Supposons la loi de fraction libre
-      $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$, l'identification par symbole principal de
-      <a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> $g^{\tau\tau} = -A_\tau$ (valeur en
-      espace plat $g^{\tau\tau,\infty} = -2$ sous la normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ que cet article reprend de Q11 ; Q11
-      (version 2.0) laisse $A_\tau$ libre, de sorte que cette valeur reste à réviser), ainsi qu'un bloc
-      temporel diagonal $g^{\tau i} = 0$ -- sans lequel $g_{\tau\tau} \neq 1/g^{\tau\tau}$ en général.
-      Alors :
+      $A_\tau(x) = A_\tau^{\infty}\bigl(1-\epsilon(x)\bigr)$ avec une valeur postulée quelconque $A_\tau^{\infty} > 0$,
+      l'identification par symbole principal $g^{\tau\tau} = -A_\tau$ (valeur en espace plat
+      $g^{\tau\tau,\infty} = -A_\tau^{\infty}$), et un bloc temporel diagonal $g^{\tau i} = 0$, sans lequel
+      $g_{\tau\tau} \neq 1/g^{\tau\tau}$ en général. Alors :
     </p>
     <p style="text-align:center">
       $R_{\mathrm{metric}}(x)^{2} = g_{\tau\tau}(x)/g_{\tau\tau}^{\infty} = 1/\bigl(1-\epsilon(x)\bigr)$,
     </p>
     <p>
-      de sorte que l'accord avec la définition capacitaire $R_{\mathrm{capacity}}^{2} = 1-\epsilon$ exige
-      $(1-\epsilon)^{2} = 1$, donc $\epsilon = 0$ dans le domaine physique $0 \le \epsilon &lt; 1$.
-      <strong>La loi de fraction libre ne ferme que le vide homogène.</strong>
+      la valeur de $A_\tau^{\infty}$ se simplifiant. L'accord avec la définition capacitaire
+      $R_{\mathrm{capacity}}^{2} = 1-\epsilon$ exige $(1-\epsilon)^{2} = 1$, donc $\epsilon = 0$ dans le domaine
+      physique $0 \le \epsilon &lt; 1$.
+      <strong>La loi de fraction libre ferme le vide homogène et rien d'autre.</strong>
     </p>
     <p>
-      L'échec porte sur le <em>sens de variation</em>, non sur une normalisation : une loi de fraction
-      libre fait décroître le coefficient temporel de la co-métrique avec l'occupance, alors qu'un
-      extérieur de Schwarzschild exige qu'il croisse.
+      L'échec est un échec de <em>sens</em>, non de normalisation : une loi de fraction libre fait décroître le
+      coefficient temporel de la co-métrique avec l'occupance, alors qu'un extérieur de Schwarzschild exige qu'il
+      croisse.
     </p>
     <h3>Aucune renormalisation ne le répare</h3>
     <ul>
-      <li><strong>Une remise à l'échelle constante est inerte.</strong> Pour
-        $\widetilde g^{\mu\nu} = \kappa g^{\mu\nu}$, le facteur se simplifie dans les deux rapports
-        normalisés. Prendre $\kappa = 1/4$ reproduit la valeur $-1/2$ utilisée en v1.0 sans lever le
-        résultat négatif.</li>
-      <li><strong>Un facteur conforme local supposerait ce qu'il faut démontrer.</strong> L'accord
-        exigerait $\Omega^{2}(x) \propto (1-\epsilon(x))^{-2}$ -- une loi lue sur la réponse
-        recherchée.</li>
-      <li><strong>Aucune co-métrique densitisée n'est disponible.</strong> Q5b identifie directement le
-        symbole principal à $\sigma_{2}(L_{\mathrm{eff}}) = g^{\mu\nu}k_\mu k_\nu$, ne laissant qu'une
-        liberté d'échelle globale.</li>
+      <li><strong>Un changement d'échelle constant est inerte.</strong> Pour $\widetilde g^{\mu\nu} = \kappa g^{\mu\nu}$,
+        le facteur se simplifie dans les deux rapports normalisés. À partir de $A_\tau^{\infty} = 2$, prendre
+        $\kappa = 1/4$ reproduit la valeur $-1/2$ utilisée dans la dérivation proposée sans lever le résultat
+        négatif.</li>
+      <li><strong>Un facteur conforme local serait une pétition de principe.</strong> L'accord exigerait
+        $\Omega^{2}(x) \propto (1-\epsilon(x))^{-2}$, une loi lue sur la réponse voulue.</li>
+      <li><strong>Aucune co-métrique densitisée n'est disponible.</strong> Q5b identifie directement le symbole
+        principal comme $\sigma_{2}(L_{\mathrm{eff}}) = g^{\mu\nu}k_\mu k_\nu$, ne laissant qu'une liberté d'échelle
+        globale.</li>
     </ul>
     <h3>Ce qui subsiste, et ce qui reste ouvert</h3>
     <p style="text-align:center">
       $g^{\tau\tau}/g^{\tau\tau}_{\infty} = 1-\epsilon$ &nbsp;(ansatz admissible)&nbsp;&nbsp;&nbsp;
-      $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1-\epsilon$ &nbsp;(ne suit pas -- le pont ouvert)
+      $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1-\epsilon$ &nbsp;(ne suit pas : le pont ouvert)
     </p>
     <p>
-      L'énoncé sur la co-métrique peut être posé comme ansatz, mais il est l'<em>inverse métrique</em> du
-      lapse capacitaire et ne gouverne pas la dilatation du temps propre.
+      L'énoncé co-métrique peut être posé comme ansatz, mais il est l'<em>inverse métrique</em> du laps
+      capacitaire et ne gouverne pas la dilatation du temps propre.
     </p>
   </section>
   <section class="card">
-    <h2>Trois défauts indépendants de la dérivation retirée</h2>
+    <h2>Trois défauts de la dérivation par fraction libre</h2>
     <ul>
       <li><strong>La forme en trace est un postulat nouveau.</strong> La version 2.0.1 de W1 conserve
-        un proxy conditionnel de sommes partielles pour les poids d’admissibilité d’une <em>forme de Dirichlet</em>
-        filtrée ; elle n’établit ni les véritables poids de Q5a ni une trace partielle et ne dépend
-        d’aucun champ d’occupance. L'ancrage en espace plat repris de Q11 repose sur une
-        <em>valeur propre de Casimir</em>, et non sur une trace normalisée sur un sous-espace variable, et Q11
-        (version 2.0) montre que cette valeur propre ne fixe aucun coefficient.</li>
-      <li><strong>Erreur de typage : vecteur contre sous-espace.</strong> L'occupance est définie par
-        les normes de <em>vecteurs</em>, mais la preuve les traite comme des <em>sous-espaces</em>
-        portant une trace partielle. Pour un véritable sous-espace,
-        $\mathrm{tr}_C(\lambda I) = \lambda \dim C$ est quantifié dans
-        $\{0,\tfrac13,\tfrac23,1\}$, alors que l'argument exige $\lambda\|C\|^{2}$, continu sur
-        $[0,1)$.</li>
-      <li><strong>Aucune loi de covariance locale n'est énoncée.</strong> Un sous-espace propre d'un
-        module irréductible n'est pas invariant. C'est une <em>absence</em>, non une impossibilité :
-        une famille $C_{\mathrm{free}}(x)$ peut transformer covariamment. Ce qui manquait à la v1.0
-        est une telle règle, sans laquelle l'ancrage en espace plat repris de Q11 ne peut être transporté
-        point par point.</li>
+        un proxy conditionnel par sommes partielles pour les poids d'admissibilité d'une <em>forme de Dirichlet</em>
+        filtrée ; elle n'établit pas les poids effectifs de Q5a, ne fournit pas de trace partielle, et ne dépend
+        d'aucun champ d'occupance. Q11 ne fixe aucune valeur de $A_\tau$ : l'invariance spatiale $\mathrm{SU}(2)$ le
+        laisse libre, et sa valeur de Casimir $2$ est un choix d'unités, non une trace normalisée sur un sous-espace
+        variable.</li>
+      <li><strong>Inadéquation de type : vecteur contre sous-espace.</strong> L'occupance est définie par les normes
+        de <em>vecteurs</em>, mais la preuve les traite comme des <em>sous-espaces</em> porteurs d'une trace partielle.
+        Pour un véritable sous-espace, $\mathrm{tr}_C(\lambda I) = \lambda \dim C$ est quantifié dans
+        $\{0,\tfrac13,\tfrac23,1\}$, alors que l'argument requiert $\lambda\|C\|^{2}$, continu sur $[0,1)$.</li>
+      <li><strong>Aucune loi de covariance locale n'est énoncée.</strong> Un sous-espace propre d'un module irréductible
+        n'est pas invariant. C'est une <em>absence</em>, non une impossibilité : une famille $C_{\mathrm{free}}(x)$ peut
+        se transformer de façon covariante. Ce qui manque est une telle règle, sans laquelle la forme homogène de Q11
+        ne peut être transportée point par point.</li>
     </ul>
     <p>
-      Les deux derniers défauts sont indépendants de l'inversion : ils subsisteraient même si le sens
-      de variation était correct.
+      Les deux derniers défauts sont indépendants de l'inversion : ils persisteraient même si la monotonie était
+      correcte.
     </p>
   </section>
   <section class="card">
     <h2>Structure</h2>
     <ol>
-      <li><strong>Introduction</strong> -- énoncé du problème ouvert issu de LCII.</li>
-      <li><strong>Occupance locale quadratique</strong> -- définition de $\epsilon(x)$ comme norme
-        quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$.</li>
-      <li><strong>Le résultat négatif</strong> -- Théorème : la loi de fraction libre donne
-        $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$, qui ne coïncide qu'en $\epsilon = 0$.</li>
-      <li><strong>Aucune renormalisation ne répare l'inversion</strong> -- la remise à l'échelle
-        constante est inerte ; un facteur conforme local supposerait ce qu'il faut démontrer ; aucune
-        co-métrique densitisée n'est définie.</li>
-      <li><strong>Provenance et typage de la réduction en trace</strong> -- la forme en trace partielle
-        est un postulat nouveau, et elle est mal typée.</li>
-      <li><strong>La loi de covariance locale manquante</strong> -- une absence, non une
-        impossibilité.</li>
-      <li><strong>Statut et contenu rouvert</strong> -- LC-O2-O1 rouvert ; pistes candidates.</li>
+      <li><strong>Introduction</strong> : énoncé du problème ouvert issu de LCII.</li>
+      <li><strong>Occupance locale quadratique</strong> : définition de $\epsilon(x)$ comme norme quadratique sur $\mathrm{Sym}^{2}(V_{\rho})$.</li>
+      <li><strong>Le résultat négatif</strong> : la loi de fraction libre donne $g_{\tau\tau}/g_{\tau\tau}^{\infty} = 1/(1-\epsilon)$ pour toute valeur plate postulée, avec accord seulement en $\epsilon = 0$.</li>
+      <li><strong>Aucune renormalisation ne répare l'inversion</strong> : le changement d'échelle constant est inerte ; les facteurs conformes locaux sont des pétitions de principe ; aucune co-métrique densitisée n'est définie.</li>
+      <li><strong>Provenance et typage de la réduction en trace</strong> : la forme en trace partielle est un postulat nouveau, et elle est mal typée.</li>
+      <li><strong>La loi de covariance locale manquante</strong> : une absence, non une impossibilité.</li>
+      <li><strong>Statut et contenu ouvert</strong> : LC-O2-O1 est ouvert ; pistes candidates.</li>
     </ol>
   </section>
   <section class="card">
     <h2>Dépendances</h2>
     <ul>
-      <li><a href="/science/lc/lc-o2/index_fr.html"><strong>LCII</strong></a> : origine du problème ouvert
-        (Remarque 3.2, Section 7.3) ; cadre de la chute fibre par fibre.</li>
-      <li><strong>W1</strong> : proxy conditionnel de sommes partielles pour les poids d’admissibilité d’une forme de Dirichlet -- <em>attribution corrigée</em> : W1 ne fournit ni limite des véritables poids de Q5a ni trace partielle.</li>
-      <li><strong>Q5b</strong> : reconstruction de la métrique effective par symbole principal.</li>
-      <li><a href="/science/emergent-geometry/q11/index_fr.html"><strong>Q11</strong></a> : source de la normalisation
-        de la co-métrique $g^{\mu\nu} = 2\eta^{\mu\nu}$ utilisée ici, d'où $A_\tau^{\infty} = 2$ et
-        $g^{\tau\tau,\infty} = -2$. À réviser : Q11 (version 2.0) laisse $A_\tau$ libre, de sorte qu'aucune
-        valeur de coefficient n'est établie.</li>
+      <li><a href="/science/lc/lc-o2/index_fr.html">LCII</a> : source du problème ouvert (Remarque 3.2, Section 7.3) ; cadre du laps de capacité fibre par fibre.</li>
+      <li><strong>W1</strong> : un proxy conditionnel par sommes partielles pour les poids d'admissibilité d'une forme de Dirichlet ; W1 ne fournit ni la limite effective des poids de Q5a ni une trace partielle.</li>
+      <li><strong>Q5b</strong> : symbole principal $\sigma_{2}(L_{\mathrm{eff}}) = g^{\mu\nu}k_\mu k_\nu$, sous [H-L] et [H-lift].</li>
+      <li><a href="/science/emergent-geometry/q11/index_fr.html">Q11</a> : la forme homogène conditionnelle (Corollaire 6.1) ; $A_\tau$ est libre, de sorte que la valeur en espace plat $A_\tau^{\infty}$ est postulée.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       Jérôme Beau. <i lang="en">Failure of the Scalar Free-Fraction Closure of the Local
-      Capacity-Metric Bridge</i>. Prépublication, version 2.0, 2026.
+      Capacity-Metric Bridge</i>. Prépublication, 2026.
       DOI : <a href="https://doi.org/10.5281/zenodo.20332042">10.5281/zenodo.20332042</a>.
     </p>
   </section>
   <section class="card">
-    <h2>Position dans le programme Cosmochrony</h2>
+    <h2>Lien avec le programme Cosmochrony</h2>
     <p>
-      LCIIo1 est le quatrième article du sous-programme Capacité de Lorentz. La version 2.0
-      <em>rouvre</em> le pont analytique laissé ouvert par
-      <a href="/science/lc/lc-o2/index_fr.html">LCII</a> : la chaîne
-      LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1 ne se ferme pas à sa dernière étape.
-      Le sous-programme reste complet pour la cinématique <em>inertielle</em> ; son extension
-      non homogène ne l'est pas. Dans le langage capacitaire, la dilatation temporelle gravitationnelle
-      repose donc sur le postulat déclaré de LCII (Remarque 3.2), et non sur une dérivation à partir de
-      l'occupance spectrale locale. Le résultat négatif reste instructif : il identifie exactement
-      pourquoi la réduction scalaire la plus naturelle échoue, et ce qu'une construction alternative
-      devrait accomplir.
+      LCIIo1 est le quatrième article du sous-programme Capacité de Lorentz. Il montre que le pont analytique de <a href="/science/lc/lc-o2/index_fr.html">LCII</a> n'est pas fermé par la loi de fraction libre : la chaîne LorentzCapacity &rarr; TempProj &rarr; LCII &rarr; LCIIo1 ne se ferme pas à sa dernière étape. Le sous-programme est complet pour la cinématique <em>inertielle</em>, conditionnellement à une co-métrique fournie et à l'identification cône–capacité [H-cone] ; son extension non homogène ne l'est pas. La dilatation gravitationnelle du temps dans le langage de la capacité repose donc sur le postulat déclaré de LCII (Remarque 3.2), non sur une dérivation à partir de l'occupance spectrale locale. Le résultat négatif reste informatif : il identifie exactement pourquoi la réduction scalaire la plus naturelle échoue, et ce qu'une construction alternative devrait accomplir.
     </p>
   </section>
 </main>

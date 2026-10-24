@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Temporal Residual Map from the Completed Principal Symbol: Construction, Uniqueness, and the Lorentz Identification | Cosmochrony</title>
   <meta name="description"
-    content="Constructs the temporal residual map P_tau^Q5b as the unique function compatible with the temporal splitting from Q5b (conditional on [H-L], [H-lift] and [H-hyp]), the Born-Infeld capacity sphere, and the Weil filling law. Closes the open problem of LorentzCapacity."/>
+    content="Constructs the temporal residual map P_tau^Q5b as the unique function compatible with the Lorentzian splitting of a supplied co-metric of the conditional form of Q11, the Born-Infeld capacity sphere, and the Weil filling law. No co-metric coefficient value is used; the time-dilation reading requires the hypothesis [H-cone]."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Temporal Residual Map from the Completed Principal Symbol: Construction, Uniqueness, and the Lorentz Identification"/>
   <meta property="og:description"
-    content="Constructs the temporal residual map P_tau^Q5b as the unique function compatible with the temporal splitting from Q5b (conditional on [H-L], [H-lift] and [H-hyp]), the Born-Infeld capacity sphere, and the Weil filling law. Closes the open problem of LorentzCapacity."/>
+    content="Constructs the temporal residual map P_tau^Q5b as the unique function compatible with the Lorentzian splitting of a supplied co-metric of the conditional form of Q11, the Born-Infeld capacity sphere, and the Weil filling law. No co-metric coefficient value is used; the time-dilation reading requires the hypothesis [H-cone]."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/temporal-projection/"/>
   <script type="module">
@@ -37,10 +37,10 @@
       <div>
         <h1>Temporal Residual Map from the Completed Principal Symbol: Construction, Uniqueness, and the Lorentz Identification</h1>
         <p class="subtitle">
-          Closes the open problem of LorentzCapacity by constructing $\mathcal{P}_\tau^{\mathrm{Q5b}}$ explicitly.
-          The map is the unique positive function simultaneously compatible with the Lorentzian temporal splitting,
-          the Born–Infeld unit capacity-flow sphere, and the Weil filling law. Consequence:
-          $\Phi(\eta_n^\tau) \to 1/\gamma$ unconditionally (under [U]).
+          Constructs the temporal residual map $\mathcal{P}_\tau^{\mathrm{Q5b}}$ left open by LorentzCapacity: the unique
+          positive function compatible with the Lorentzian splitting of a supplied co-metric, the Born–Infeld unit
+          capacity-flow sphere and the Weil filling law. Its reading as time dilation, $\Phi(\eta_n^\tau) \to 1/\gamma$,
+          requires the named hypothesis [H-cone].
         </p>
       </div>
     </div>
@@ -51,30 +51,34 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.3">
-    <strong>Current Zenodo release:</strong> version 1.3 (2026-07-26).
+  <section class="note" role="note" data-release-version="1.4">
+    <strong>Current Zenodo release:</strong> version 1.4 (__LC2ETA_CYCLE_DATE__).
     <span lang="en">Official title: <i>Temporal Residual Map from the Completed Principal Symbol: Construction, Uniqueness, and the Lorentz Identification</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        The paper LorentzCapacity established that the Lorentz factor emerges from the O7 saturation parameter
-        $\eta_n^\tau$ under the Born–Infeld admissibility budget, but left the explicit construction of the temporal
-        projection operator $\mathcal{P}_\tau^{\mathrm{Q5b}}$ as an open problem (Lemma 1). The present paper closes
-        this gap.
+        LorentzCapacity reduces the Lorentz-factor limit of the O7 saturation parameter, under a quadratic
+        Born–Infeld budget hypothesis, to the construction of a temporal projection $\mathcal{P}_\tau^{\mathrm{Q5b}}$
+        (its Lemma 1). The present paper constructs it.
       </p>
       <p>
-        The key observation is that three structural inputs — the temporal splitting from Q5b (conditional on [H-L], [H-lift] and [H-hyp]), the
-        Born–Infeld unit capacity-flow sphere, and the Weil filling law — together uniquely determine the map.
-        The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}} = \sqrt{1 - B_n^2}$ is
-        proved, and the uniqueness result shows that each of the three inputs is individually necessary: removing
-        any one leaves the formula undetermined.
+        Three inputs determine the map: the Lorentzian splitting of a supplied rank-four co-metric of the conditional
+        form of Q11, $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ with $A_\tau$ and $\lambda$
+        independent and fixed by no source; the Born–Infeld unit capacity-flow sphere; and the Weil filling law. The
+        splitting uses only the signature and the decoupled temporal block, so no coefficient value enters; the
+        normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ is a choice of units. The explicit formula
+        $\mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}} = \sqrt{1 - B_n^2}$ is proved, and each of the three
+        inputs is individually necessary: removing any one leaves the formula undetermined.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> The main construction and uniqueness theorem are proved unconditionally
-        under hypothesis [U]. This closes Lemma 1 of LorentzCapacity and completes the flat-space Lorentz
-        identification chain.
+        <strong>Scope statement.</strong> The construction and the uniqueness theorem are proved under a supplied
+        co-metric (the hypotheses of Q11 Corollary 6.1), the identification of $B_n$ with the spatial capacity flow,
+        which is a hypothesis of the paper, and the Born–Infeld lift; hypothesis [U] enters no step. Reading the
+        normalised load as the velocity of an observer requires [H-cone]: the light-cone speed of the co-metric
+        equals the Born–Infeld bound per ordering step. This is the coupling datum that Q11 leaves open, and no
+        source derives it.
       </div>
     </div>
     <aside class="card">
@@ -98,7 +102,7 @@
         </div>
         <div class="kv">
           <div class="k">Status</div>
-          <div class="v">Proved (conditional on [U])</div>
+          <div class="v">Proved under stated hypotheses; time-dilation reading conditional on [H-cone]</div>
         </div>
       </div>
     </aside>
@@ -113,42 +117,45 @@
     </p>
     <p>
       Consequence: $\eta_n^\tau = B_n/\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} \to \beta\gamma$
-      and $\Phi(\eta_n^\tau) \to 1/\gamma$.
+      and $\Phi(\eta_n^\tau) \to 1/\gamma$. Under [H-cone], $\beta$ is the velocity of the observer in units of the
+      light-cone speed, and this is time dilation.
     </p>
   </section>
   <section class="card">
     <h2>Key contributions</h2>
     <ul>
-      <li><strong>Explicit formula:</strong> $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ (proved).</li>
+      <li><strong>Explicit formula:</strong> $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ (proved under the stated hypotheses).</li>
       <li><strong>Uniqueness:</strong> the three inputs (Lorentzian splitting, BI sphere, Weil filling law) are individually
-        necessary — removing any one leaves the formula undetermined (proved).</li>
+        necessary; removing any one leaves the formula undetermined (proved).</li>
       <li><strong>Failure analysis:</strong> explains the numerical failure of all three candidates tested in LorentzCapacity.</li>
-      <li><strong>Lemma 1 closed:</strong> Lemma 1 of LorentzCapacity proved unconditionally (under [U]).</li>
+      <li><strong>Lemma 1 of LorentzCapacity:</strong> established under the same hypotheses.</li>
+      <li><strong>[H-cone] named:</strong> the identification of the light-cone speed with the Born–Infeld bound, on which
+        the kinematic reading rests.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Structure</h2>
     <ol>
-      <li><strong>Setup and the open problem</strong> — recap of the LorentzCapacity framework and the precise statement of Lemma 1.</li>
-      <li><strong>The three structural inputs</strong> — temporal splitting (Q5b, conditional), BI capacity sphere, and Weil filling law.</li>
-      <li><strong>Construction of the map</strong> — derivation of the explicit formula from the intersection of the three constraints.</li>
-      <li><strong>Uniqueness theorem</strong> — proof that each input is individually necessary.</li>
-      <li><strong>Failure of the three prior candidates</strong> — retrospective analysis of the numerical tests in LorentzCapacity.</li>
-      <li><strong>Consequences</strong> — Lemma 1 closed; $\Phi(\eta_n^\tau) \to 1/\gamma$ unconditionally; flat-space baseline for LCII.</li>
+      <li><strong>Introduction</strong> — the open construction of LorentzCapacity and the scope of each input.</li>
+      <li><strong>Setup</strong> — the supplied co-metric of the form of Q11 Corollary 6.1 with two independent
+        coefficients, the quadratic budget hypothesis, and [H-cone].</li>
+      <li><strong>Capacity-flow bundle</strong> — the unit Born–Infeld sphere and the identification of $B_n$.</li>
+      <li><strong>Construction and uniqueness</strong> — the explicit formula from the three constraints.</li>
+      <li><strong>Necessity</strong> — each input is necessary; failure of the LorentzCapacity candidates.</li>
+      <li><strong>Lorentz identification</strong> — $\Phi(\eta_n^\tau) \to 1/\gamma$, read as time dilation under [H-cone].</li>
+      <li><strong>Logical status</strong> — status of every input, and of LC-O1 to LC-O3.</li>
     </ol>
   </section>
   <section class="card">
     <h2>Dependencies</h2>
     <ul>
-      <li><strong>O7</strong>: definition of $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n^{\mathrm{tot}}$, and the reduced filling model.</li>
-      <li><strong>Q5b</strong>: BFS-to-Carnot–Carathéodory convergence; a temporal splitting whose signature $(-,+,+)$ on the non-degenerate block holds only under [H-L], [H-lift] and [H-hyp] (Q5b 2.2.1).</li>
-      <li><strong>Q11</strong>: the co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ giving the Lorentzian signature is taken from Q11. Pending revision: Q11 (version 2.0) leaves $A_\tau$ free, so no coefficient value is established.</li>
-      <li><strong>Q10</strong>: this paper imports $A_H = 2$ from it; Q10 version 2.0.1 derives no coefficient value, so that import is pending revision.</li>
-      <li><strong>Q8</strong>: this paper imports $A_z = 2$ from it; Q8 version 2.0 shows that the commutator supplies no central coefficient and that invariance fixes no value, so that import is pending revision.</li>
-      <li><strong>U1</strong>: hypothesis [U] (universality of the filling law).</li>
-      <li><strong>Born–Infeld paper</strong>: mobility budget $c_{\mathrm{BI}}$ and the unit capacity-flow sphere.</li>
-      <li><strong>LorentzCapacity</strong>: open problem (Lemma 1) closed by this paper.</li>
-      <li><strong>PTO</strong>: principal symbol operator formalism used in the construction.</li>
+      <li><strong>LorentzCapacity</strong>: the open construction (Lemma 1), the Weil filling law, and the O7 observables $B_n$ and $\Sigma_n^{\mathrm{tot}}$.</li>
+      <li><strong>Q5b</strong>: a co-metric of rank three under [H-L] and [H-lift]; its rank-four extension is open (Q5b-O2).</li>
+      <li><strong>Q8</strong>: $A_H = A_Z = 2\lambda$ with $\lambda$ free for a supplied invariant form; no value of $A_Z$.</li>
+      <li><strong>Q10</strong>: no coefficient value is derived.</li>
+      <li><strong>Q11</strong>: the conditional rank-four form $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ (Corollary 6.1), with $A_\tau$ and $\lambda$ independent; the modelling identification $\tau = n\,\Delta\tau$ with a free step; the coupling datum is open (Q11-O1).</li>
+      <li><strong>U1</strong>: hypothesis [U] is open; it is not used.</li>
+      <li><strong>Born–Infeld paper</strong>: the capacity bound [A-cap]; the quadratic budget is a hypothesis of LorentzCapacity.</li>
     </ul>
   </section>
   <section class="card">
@@ -162,11 +169,11 @@
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      TempProj is the second paper of the Lorentz Capacity sub-programme. It closes the open construction identified
-      in LorentzCapacity and provides the flat-space baseline for the non-homogeneous extension LCII. Together with
-      LorentzCapacity, it completes the derivation of the Lorentz factor from the projective capacity framework,
-      showing that special-relativistic kinematics is not an external postulate but a structural consequence of the
-      spectral admissibility programme.
+      TempProj is the second paper of the Lorentz Capacity sub-programme. It constructs the map left open in
+      LorentzCapacity and provides the flat-space baseline for the non-homogeneous extension LCII. Together with
+      LorentzCapacity, it gives a conditional account of the Lorentz factor as the temporal residual of a bounded
+      capacity budget: conditional on a supplied co-metric, on the identification of $B_n$ and, for the kinematic
+      reading, on [H-cone].
     </p>
   </section>
 </main>

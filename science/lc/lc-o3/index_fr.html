@@ -52,23 +52,28 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="note" role="note" data-release-version="1.1">
+    <strong>Publication Zenodo actuelle :</strong> version 1.1 (__LC2ETA_CYCLE_DATE__).
+    <span lang="en">Titre officiel : <i>Finite-$q$ Corrections to the Carnot Capacity Identification</i>.</span>
+  </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Le sous-programme Lorentz-capacité dérive le résidu temporel
+        Le sous-programme Lorentz-capacité étudie le résidu temporel
         $F^\tau_n = \sqrt{1 - B_n^2}$ du budget borné de capacité Born-Infeld de la cascade
         d'admissibilité sur $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$. La note
         <a href="/science/lc/lorentz-capacity/index_fr.html">N</a> et le papier du résidu temporel
-        <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a> ont établi l'identité
-        quadratique $B_n^2 + (F^\tau_n)^2 = 1$, fermant la dilatation temporelle et l'identification
-        du facteur de Lorentz.
+        <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a> donnent, sous les hypothèses qui y sont
+        énoncées, l'identité quadratique $B_n^2 + (F^\tau_n)^2 = 1$ ; sa lecture en dilatation temporelle requiert en
+        outre l'hypothèse [H-cone] de TempProj, qui identifie la vitesse du cône de lumière d'une co-métrique fournie
+        à la borne Born–Infeld et n'est pas dérivée.
       </p>
       <p>
-        Le problème ouvert restant, énoncé en Section 7.2 de TempProj, était le statut de la loi
+        Le problème ouvert LC-O3, énoncé en Section 7.2 de TempProj, est le statut de la loi
         quadratique et de l'identification parabolique de Carnot-Carathéodory près de la frontière
         de saturation à $q$ fini $n \simeq q/2$. Le présent article ferme ce problème en séparant
-        deux énoncés que la formulation initiale confondait.
+        deux énoncés que la formulation du problème confondait.
       </p>
       <div class="note" role="note">
         <strong>Capacité vs identification de Carnot.</strong> LC-O3 est une correction à
@@ -147,10 +152,9 @@
       <li><strong>Correction en régime replié finie et explicite.</strong>
         $\Delta_q(n) = 4m^2/q^2$ est sous forme close, et la formule parabolique dépasse même $1$
         (devient non physique) pour $m$ suffisamment grand à $q$ fixé.</li>
-      <li><strong>Fermeture du sous-programme Lorentz-capacité.</strong> Avec LC-O1, LC-O2-O1 et
-        LC-O3 maintenant résolus, dilatation temporelle, cône de lumière, transformations de
-        Lorentz et contraction des longueurs, pont gravitationnel capacité-métrique et domaine de
-        validité de la saturation à $q$ fini sont tous établis.</li>
+      <li><strong>Portée.</strong> Le domaine à $q$ fini ne concerne que la charge spatiale et n'utilise aucun
+        coefficient de la co-métrique. Les énoncés cinématiques du sous-programme restent conditionnels à une
+        co-métrique fournie et à [H-cone], et le pont gravitationnel capacité-métrique LC-O2-O1 est ouvert.</li>
     </ul>
   </section>
   <section class="card">
@@ -173,11 +177,12 @@
   <section class="card">
     <h2>Position dans le programme Cosmochrony</h2>
     <p>
-      LCo3 est l'un des trois articles de fermeture du sous-programme Capacité de Lorentz, avec
+      LCo3 est l'un des trois articles qui traitent les problèmes ouverts du sous-programme Capacité de Lorentz, avec
       <a href="/science/lc/lc-o1/index_fr.html">LCo1</a> (LC-O1, transformations de Lorentz et
       contraction des longueurs) et <a href="/science/lc/lc-o2-o1/index_fr.html">LCIIo1</a>
-      (LC-O2-O1, pont capacité-métrique). Avec ces trois fermetures, la chaîne LorentzCapacity
-      &rarr; TempProj &rarr; LCII atteint un sous-programme complet.
+      (LC-O2-O1, pont capacité-métrique). LCo3 ferme LC-O3 ; LC-O1 est fermé conditionnellement à une co-métrique
+      fournie et à [H-cone] ; LC-O2-O1 est ouvert, LCIIo1 prouvant que la loi scalaire de fraction libre ne le ferme
+      pas.
     </p>
   </section>
 </main>

@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Application résiduelle temporelle à partir du symbole principal complété : construction, unicité et identification de Lorentz | Cosmochrony</title>
   <meta name="description"
-    content="Construit l'application résiduelle temporelle P_tau^Q5b comme unique fonction compatible avec le découpage temporel de Q5b (conditionnel à [H-L], [H-lift] et [H-hyp]), la sphère de capacité Born–Infeld et la loi de remplissage de Weil. Ferme le problème ouvert de LorentzCapacity."/>
+    content="Construit l'application résiduelle temporelle P_tau^Q5b comme unique fonction compatible avec le découpage lorentzien d'une co-métrique fournie, de la forme conditionnelle de Q11, la sphère de capacité Born–Infeld et la loi de remplissage de Weil. Aucune valeur de coefficient de la co-métrique n'est utilisée ; la lecture en dilatation du temps requiert l'hypothèse [H-cone]."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Application résiduelle temporelle à partir du symbole principal complété : construction, unicité et identification de Lorentz"/>
   <meta property="og:description"
-    content="Construit l'application résiduelle temporelle P_tau^Q5b comme unique fonction compatible avec le découpage temporel de Q5b (conditionnel à [H-L], [H-lift] et [H-hyp]), la sphère de capacité Born–Infeld et la loi de remplissage de Weil. Ferme le problème ouvert de LorentzCapacity."/>
+    content="Construit l'application résiduelle temporelle P_tau^Q5b comme unique fonction compatible avec le découpage lorentzien d'une co-métrique fournie, de la forme conditionnelle de Q11, la sphère de capacité Born–Infeld et la loi de remplissage de Weil. Aucune valeur de coefficient de la co-métrique n'est utilisée ; la lecture en dilatation du temps requiert l'hypothèse [H-cone]."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/temporal-projection/"/>
   <script type="module">
@@ -37,10 +37,10 @@
       <div>
         <h1>Application résiduelle temporelle à partir du symbole principal complété : construction, unicité et identification de Lorentz</h1>
         <p class="subtitle">
-          Ferme le problème ouvert de LorentzCapacity en construisant $\mathcal{P}_\tau^{\mathrm{Q5b}}$
-          explicitement. L'application est l'unique fonction positive compatible simultanément avec le découpage
-          temporel lorentzien, la sphère unité Born–Infeld et la loi de remplissage de Weil. Conséquence :
-          $\Phi(\eta_n^\tau) \to 1/\gamma$ inconditionnellement (sous [U]).
+          Construit l'application résiduelle temporelle $\mathcal{P}_\tau^{\mathrm{Q5b}}$ laissée ouverte par
+          LorentzCapacity : l'unique fonction positive compatible avec le découpage lorentzien d'une co-métrique
+          fournie, la sphère unité Born–Infeld de flux de capacité et la loi de remplissage de Weil. Sa lecture en
+          dilatation du temps, $\Phi(\eta_n^\tau) \to 1/\gamma$, requiert l'hypothèse nommée [H-cone].
         </p>
       </div>
     </div>
@@ -51,31 +51,35 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.3">
-    <strong>Publication Zenodo actuelle :</strong> version 1.3 (2026-07-26).
+  <section class="note" role="note" data-release-version="1.4">
+    <strong>Publication Zenodo actuelle :</strong> version 1.4 (__LC2ETA_CYCLE_DATE__).
     <span lang="en">Titre officiel : <i>Temporal Residual Map from the Completed Principal Symbol: Construction, Uniqueness, and the Lorentz Identification</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        L'article LorentzCapacity a établi que le facteur de Lorentz émerge du paramètre de saturation O7
-        $\eta_n^\tau$ sous le budget d'admissibilité Born–Infeld, mais a laissé la construction explicite de
-        l'opérateur de projection temporelle $\mathcal{P}_\tau^{\mathrm{Q5b}}$ comme problème ouvert (Lemme 1).
-        Le présent article ferme cette lacune.
+        LorentzCapacity ramène la limite en facteur de Lorentz du paramètre de saturation O7, sous une hypothèse de
+        budget Born–Infeld quadratique, à la construction d'une projection temporelle
+        $\mathcal{P}_\tau^{\mathrm{Q5b}}$ (son Lemme 1). Le présent article la construit.
       </p>
       <p>
-        L'observation clé est que trois entrées structurelles — le découpage temporel issu de Q5b (conditionnel à [H-L], [H-lift] et [H-hyp]), la
-        sphère unité Born–Infeld de flux de capacité, et la loi de remplissage de Weil — déterminent conjointement
-        l'application de façon unique. La formule explicite
-        $\mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}} = \sqrt{1 - B_n^2}$ est prouvée, et le résultat
-        d'unicité montre que chacune des trois entrées est individuellement nécessaire : en supprimer une seule
-        laisse la formule indéterminée.
+        Trois entrées déterminent l'application : le découpage lorentzien d'une co-métrique de rang quatre fournie, de
+        la forme conditionnelle de Q11, $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ avec
+        $A_\tau$ et $\lambda$ indépendants et fixés par aucune source ; la sphère unité Born–Infeld de flux de
+        capacité ; et la loi de remplissage de Weil. Le découpage n'utilise que la signature et le bloc temporel
+        découplé, de sorte qu'aucune valeur de coefficient n'intervient ; la normalisation
+        $g^{\mu\nu} = 2\eta^{\mu\nu}$ est un choix d'unités. La formule explicite
+        $\mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}} = \sqrt{1 - B_n^2}$ est prouvée, et chacune des trois
+        entrées est individuellement nécessaire : en supprimer une seule laisse la formule indéterminée.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> La construction principale et le théorème d'unicité sont prouvés
-        inconditionnellement sous l'hypothèse [U]. Cela ferme le Lemme 1 de LorentzCapacity et complète la
-        chaîne d'identification de Lorentz en espace plat.
+        <strong>Portée.</strong> La construction et le théorème d'unicité sont prouvés sous une co-métrique fournie
+        (les hypothèses du Corollaire 6.1 de Q11), l'identification de $B_n$ au flux de capacité spatial, qui est une
+        hypothèse de l'article, et le relèvement Born–Infeld ; l'hypothèse [U] n'intervient à aucune étape. Lire la
+        charge normalisée comme la vitesse d'un observateur requiert [H-cone] : la vitesse du cône de lumière de la
+        co-métrique égale la borne Born–Infeld par pas d'ordre. C'est la donnée de couplage que Q11 laisse ouverte, et
+        aucune source ne la dérive.
       </div>
     </div>
     <aside class="card">
@@ -99,7 +103,7 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Prouvé (conditionnel à [U])</div>
+          <div class="v">Prouvé sous les hypothèses énoncées ; lecture en dilatation du temps conditionnelle à [H-cone]</div>
         </div>
       </div>
     </aside>
@@ -114,42 +118,45 @@
     </p>
     <p>
       Conséquence : $\eta_n^\tau = B_n/\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} \to \beta\gamma$
-      et $\Phi(\eta_n^\tau) \to 1/\gamma$.
+      et $\Phi(\eta_n^\tau) \to 1/\gamma$. Sous [H-cone], $\beta$ est la vitesse de l'observateur en unités de la
+      vitesse du cône de lumière, et c'est la dilatation du temps.
     </p>
   </section>
   <section class="card">
     <h2>Contributions clés</h2>
     <ul>
-      <li><strong>Formule explicite :</strong> $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ (prouvé).</li>
+      <li><strong>Formule explicite :</strong> $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ (prouvé sous les hypothèses énoncées).</li>
       <li><strong>Unicité :</strong> les trois entrées (découpage lorentzien, sphère BI, loi de remplissage de Weil) sont
-        individuellement nécessaires — en supprimer une laisse la formule indéterminée (prouvé).</li>
+        individuellement nécessaires ; en supprimer une laisse la formule indéterminée (prouvé).</li>
       <li><strong>Analyse des échecs :</strong> explique l'échec numérique des trois candidats testés dans LorentzCapacity.</li>
-      <li><strong>Lemme 1 fermé :</strong> le Lemme 1 de LorentzCapacity prouvé inconditionnellement (sous [U]).</li>
+      <li><strong>Lemme 1 de LorentzCapacity :</strong> établi sous les mêmes hypothèses.</li>
+      <li><strong>[H-cone] nommée :</strong> l'identification de la vitesse du cône de lumière à la borne Born–Infeld, sur
+        laquelle repose la lecture cinématique.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Structure</h2>
     <ol>
-      <li><strong>Configuration et problème ouvert</strong> — rappel du cadre LorentzCapacity et énoncé précis du Lemme 1.</li>
-      <li><strong>Les trois entrées structurelles</strong> — découpage temporel (Q5b, conditionnel), sphère de capacité BI et loi de remplissage de Weil.</li>
-      <li><strong>Construction de l'application</strong> — dérivation de la formule explicite à partir de l'intersection des trois contraintes.</li>
-      <li><strong>Théorème d'unicité</strong> — preuve que chaque entrée est individuellement nécessaire.</li>
-      <li><strong>Échec des trois candidats antérieurs</strong> — analyse rétrospective des tests numériques de LorentzCapacity.</li>
-      <li><strong>Conséquences</strong> — Lemme 1 fermé ; $\Phi(\eta_n^\tau) \to 1/\gamma$ inconditionnellement ; base en espace plat pour LCII.</li>
+      <li><strong>Introduction</strong> — la construction laissée ouverte par LorentzCapacity et la portée de chaque entrée.</li>
+      <li><strong>Cadre</strong> — la co-métrique fournie de la forme du Corollaire 6.1 de Q11, à deux coefficients
+        indépendants, l'hypothèse de budget quadratique et [H-cone].</li>
+      <li><strong>Fibré de flux de capacité</strong> — la sphère unité Born–Infeld et l'identification de $B_n$.</li>
+      <li><strong>Construction et unicité</strong> — la formule explicite à partir des trois contraintes.</li>
+      <li><strong>Nécessité</strong> — chaque entrée est nécessaire ; échec des candidats de LorentzCapacity.</li>
+      <li><strong>Identification de Lorentz</strong> — $\Phi(\eta_n^\tau) \to 1/\gamma$, lue comme dilatation du temps sous [H-cone].</li>
+      <li><strong>Statut logique</strong> — statut de chaque entrée, et de LC-O1 à LC-O3.</li>
     </ol>
   </section>
   <section class="card">
     <h2>Dépendances</h2>
     <ul>
-      <li><strong>O7</strong> : définition de $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n^{\mathrm{tot}}$ et le modèle de remplissage réduit.</li>
-      <li><strong>Q5b</strong> : convergence BFS vers Carnot–Carathéodory ; un découpage temporel dont la signature $(-,+,+)$ sur le bloc non dégénéré ne vaut que sous [H-L], [H-lift] et [H-hyp] (Q5b 2.2.1).</li>
-      <li><strong>Q11</strong> : la co-métrique $g^{\mu\nu} = 2\eta^{\mu\nu}$ donnant la signature lorentzienne est reprise de Q11. À réviser : Q11 (version 2.0) laisse $A_\tau$ libre, de sorte qu'aucune valeur de coefficient n'est établie.</li>
-      <li><strong>Q10</strong> : ce papier en importe $A_H = 2$ ; la version 2.0.1 de Q10 ne dérive aucune valeur de coefficient, donc cet import reste à réviser.</li>
-      <li><strong>Q8</strong> : ce papier en importe $A_z = 2$ ; la version 2.0 de Q8 montre que le commutateur ne fournit aucun coefficient central et que l'invariance ne fixe aucune valeur, donc cet import reste à réviser.</li>
-      <li><strong>U1</strong> : hypothèse [U] (universalité de la loi de remplissage).</li>
-      <li><strong>Article Born–Infeld</strong> : budget de mobilité $c_{\mathrm{BI}}$ et sphère unité de flux de capacité.</li>
-      <li><strong>LorentzCapacity</strong> : problème ouvert (Lemme 1) fermé par cet article.</li>
-      <li><strong>PTO</strong> : formalisme de l'opérateur de symbole principal utilisé dans la construction.</li>
+      <li><strong>LorentzCapacity</strong> : la construction ouverte (Lemme 1), la loi de remplissage de Weil et les observables O7 $B_n$ et $\Sigma_n^{\mathrm{tot}}$.</li>
+      <li><strong>Q5b</strong> : une co-métrique de rang trois sous [H-L] et [H-lift] ; son extension de rang quatre est ouverte (Q5b-O2).</li>
+      <li><strong>Q8</strong> : $A_H = A_Z = 2\lambda$ avec $\lambda$ libre pour une forme invariante fournie ; aucune valeur de $A_Z$.</li>
+      <li><strong>Q10</strong> : aucune valeur de coefficient n'est dérivée.</li>
+      <li><strong>Q11</strong> : la forme conditionnelle de rang quatre $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ (Corollaire 6.1), avec $A_\tau$ et $\lambda$ indépendants ; l'identification de modélisation $\tau = n\,\Delta\tau$ à pas libre ; la donnée de couplage est ouverte (Q11-O1).</li>
+      <li><strong>U1</strong> : l'hypothèse [U] est ouverte ; elle n'est pas utilisée.</li>
+      <li><strong>Article Born–Infeld</strong> : la borne de capacité [A-cap] ; le budget quadratique est une hypothèse de LorentzCapacity.</li>
     </ul>
   </section>
   <section class="card">
@@ -163,11 +170,11 @@
   <section class="card">
     <h2>Lien avec le programme Cosmochrony</h2>
     <p>
-      TempProj est le deuxième article du sous-programme Lorentz Capacity. Il ferme la construction ouverte
-      identifiée dans LorentzCapacity et fournit la base en espace plat pour l'extension non homogène LCII.
-      Conjointement avec LorentzCapacity, il complète la dérivation du facteur de Lorentz à partir du cadre de
-      capacité projective, montrant que la cinématique relativiste restreinte n'est pas un postulat externe mais
-      une conséquence structurelle du programme d'admissibilité spectrale.
+      TempProj est le deuxième article du sous-programme Lorentz Capacity. Il construit l'application laissée ouverte
+      dans LorentzCapacity et fournit la base en espace plat pour l'extension non homogène LCII. Conjointement avec
+      LorentzCapacity, il donne une lecture conditionnelle du facteur de Lorentz comme résidu temporel d'un budget de
+      capacité borné : conditionnelle à une co-métrique fournie, à l'identification de $B_n$ et, pour la lecture
+      cinématique, à [H-cone].
     </p>
   </section>
 </main>

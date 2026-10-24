@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Mobilité spectrale et facteur de Lorentz par saturation de capacité projective | Cosmochrony</title>
   <meta name="description"
-    content="Le paramètre de saturation O7 converge vers la mobilité relativiste βγ sous le budget d'admissibilité Born–Infeld. Le facteur de Lorentz inverse émerge comme le profil de capacité résiduelle de la cascade spectrale admissible."/>
+    content="Le résidu O7 total obéit à une loi de remplissage linéaire exacte. Sous une hypothèse de budget Born–Infeld quadratique et une projection temporelle induite par une co-métrique fournie, le rapport de saturation projeté donne η_n^τ → βγ et Φ(η_n^τ) → 1/γ ; la lecture cinématique requiert l'hypothèse [H-cone]."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Mobilité spectrale et facteur de Lorentz par saturation de capacité projective"/>
   <meta property="og:description"
-    content="η_n^τ → βγ et Φ(η_n^τ) → 1/γ sous le budget Born–Infeld et la normalisation quadratique des observables O7."/>
+    content="Le résidu O7 total obéit à une loi de remplissage linéaire exacte. Sous une hypothèse de budget Born–Infeld quadratique et une projection temporelle induite par une co-métrique fournie, le rapport de saturation projeté donne η_n^τ → βγ et Φ(η_n^τ) → 1/γ ; la lecture cinématique requiert l'hypothèse [H-cone]."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/lorentz-capacity/"/>
   <script type="module">
@@ -37,10 +37,7 @@
       <div>
         <h1>Mobilité spectrale et facteur de Lorentz par saturation de capacité projective</h1>
         <p class="subtitle">
-          Dérivation de la mobilité relativiste $\beta\gamma$ et du facteur de Lorentz inverse $1/\gamma$ à partir
-          du paramètre de saturation O7 $\eta_n^{\mathrm{O7}}$ sous le budget d'admissibilité Born–Infeld. Le
-          facteur de Lorentz n'est pas un postulat cinématique externe : il émerge du rapport
-          capacité-occupée-sur-résiduelle de la cascade spectrale admissible.
+          Montre que le résidu O7 total obéit à une loi de remplissage linéaire exacte, et identifie le mécanisme conditionnel par lequel un résidu projeté temporellement donne la mobilité relativiste $\beta\gamma$ et le facteur de Lorentz inverse $1/\gamma$ : une hypothèse de budget Born–Infeld quadratique et une projection induite par une co-métrique fournie. Lire $\beta$ comme une vitesse requiert l'hypothèse nommée [H-cone].
         </p>
       </div>
     </div>
@@ -51,31 +48,21 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.3">
-    <strong>Publication Zenodo actuelle :</strong> version 1.3 (2026-07-26).
+  <section class="note" role="note" data-release-version="1.4">
+    <strong>Publication Zenodo actuelle :</strong> version 1.4 (__LC2ETA_CYCLE_DATE__).
     <span lang="en">Titre officiel : <i>Spectral Mobility and the Lorentz Factor from Projective Capacity Saturation</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Le paramètre de saturation O7 $\eta_n^{\mathrm{O7}}$ est défini dans O7 comme le rapport de la capacité
-        projective occupée cumulée à la nouveauté de frontière résiduelle. Une factorisation analytique clé montre
-        que la coordonnée centrale $c$ du groupe de Heisenberg ne contribue qu'une phase globale aux représentations
-        de Weil et est invisible pour l'empreinte spectrale. Cela force le résidu total O7
-        $\Sigma_n^{\mathrm{tot}}$ à satisfaire une loi de remplissage linéaire $B_n + \Sigma_n^{\mathrm{tot}} = 1$,
-        confirmée numériquement pour $q \in \{7, 11, 13\}$ avec des déviations moyennes de $0{,}02$–$0{,}04$.
+        Le paramètre de saturation $\eta_n^{\mathrm{O7}}$ de la série O est défini dans O7 comme le rapport de la capacité projective occupée cumulée à la nouveauté résiduelle du front. Une factorisation analytique clé montre que la coordonnée centrale $c$ du groupe de Heisenberg ne contribue qu'une phase globale aux représentations de Weil et reste invisible au span d'empreinte. Le résidu O7 total $\Sigma_n^{\mathrm{tot}}$ satisfait donc la loi de remplissage linéaire exacte $B_n + \Sigma_n^{\mathrm{tot}} = 1$, confirmée numériquement pour $q \in \{7, 11, 13\}$ avec des écarts moyens de $0.02$–$0.04$.
       </p>
       <p>
-        La loi linéaire ne produit pas en elle-même le facteur de Lorentz. Sous le budget Born–Infeld
-        $dI_\tau^2 + dI_{\mathrm{space}}^2 = c_{\mathrm{BI}}^2\,dn^2$, la structure requise est un résidu
-        projeté temporellement $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$
-        satisfaisant la normalisation quadratique $B_n^2 + (\Sigma_n^\tau)^2 \to 1$. Sous cette condition,
-        $\eta_n^\tau := B_n/\Sigma_n^\tau \to \beta\gamma$ et $\Phi(\eta_n^\tau) \to 1/\gamma$.
+        La loi linéaire ne donne pas à elle seule le facteur de Lorentz. Sous le budget de mobilité Born–Infeld quadratique $dI_\tau^2 + dI_{\mathrm{space}}^2 = c_{\mathrm{BI}}^2\,dn^2$, hypothèse de la note exprimant la borne de capacité [A-cap], la structure requise est un résidu projeté temporellement $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$ satisfaisant la normalisation quadratique $B_n^2 + (\Sigma_n^\tau)^2 \to 1$ ; alors $\eta_n^\tau := B_n/\Sigma_n^\tau \to \beta\gamma$ et $\Phi(\eta_n^\tau) \to 1/\gamma$. La projection est induite par une co-métrique fournie de la forme conditionnelle de Q11, $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, dont les deux coefficients sont indépendants et fixés par aucune source. Elle n'utilise que la signature et le bloc temporel découplé ; la direction temporelle est le facteur d'ordre, non la direction centrale du groupe de Heisenberg, qui est spatiale.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Les sections 1–3 et 5 sont entièrement établies. La section 4 (construction
-        de $\mathcal{P}_\tau^{\mathrm{Q5b}}$) est fermée dans <a href="/science/lc/temporal-projection/">TempProj</a>.
+        <strong>Portée.</strong> La factorisation de phase centrale et la loi de remplissage linéaire sont prouvées. La limite en facteur de Lorentz est conditionnelle à l'hypothèse de budget quadratique et au lemme de convergence (Lemme 1), que <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a> établit sous ses propres hypothèses. Lire $\beta$ comme une vitesse relative au cône de lumière de la co-métrique requiert [H-cone] : la vitesse du cône de lumière égale la borne Born–Infeld par pas d'ordre. C'est la donnée de couplage que Q11 laisse ouverte, et aucune source ne la dérive.
       </div>
     </div>
     <aside class="card">
@@ -87,7 +74,7 @@
         </div>
         <div class="kv">
           <div class="k">Type</div>
-          <div class="v">Note technique (en préparation)</div>
+          <div class="v">Note technique</div>
         </div>
         <div class="kv">
           <div class="k">Licence</div>
@@ -95,11 +82,11 @@
         </div>
         <div class="kv">
           <div class="k">Thèmes</div>
-          <div class="v">Saturation O7, facteur de Lorentz, budget Born–Infeld, projection temporelle</div>
+          <div class="v">saturation O7, facteur de Lorentz, budget Born–Infeld, projection temporelle</div>
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Sous-programme Lorentz-capacité fermé (P_τ^Q5b construit dans TempProj)</div>
+          <div class="v">Loi de remplissage linéaire prouvée ; limite en facteur de Lorentz conditionnelle ; lecture cinématique conditionnelle à [H-cone]</div>
         </div>
       </div>
     </aside>
@@ -107,7 +94,7 @@
   <section class="card">
     <h2>Résultat principal</h2>
     <p>
-      Sous le budget d'admissibilité Born–Infeld et une normalisation quadratique des observables O7 :
+      Sous l'hypothèse de budget Born–Infeld quadratique et le lemme de convergence,
     </p>
     <p style="text-align:center">
       $\eta_n^{\tau} \longrightarrow \beta\gamma, \qquad
@@ -115,48 +102,42 @@
       \longrightarrow \dfrac{1}{\gamma}.$
     </p>
     <p>
-      Le facteur de Lorentz inverse est le profil de capacité résiduelle de la cascade spectrale admissible.
-      Le facteur de Lorentz n'est pas un postulat cinématique externe ; il émerge du rapport
-      capacité-occupée-sur-résiduelle sous un budget projectif borné.
+      Le facteur de Lorentz inverse est alors le profil de capacité résiduelle de la cascade spectrale admissible.
+      Sous [H-cone], cela se lit comme la dilatation du temps, le cône de lumière étant en $\beta = 1$.
     </p>
   </section>
   <section class="card">
     <h2>Contributions clés</h2>
     <ul>
-      <li><strong>Factorisation de phase centrale :</strong> $\omega_q(a,b,c) = e^{2\pi ic/q}\omega_q(a,b,0)$,
-        donc $c$ ne contribue qu'une phase globale ; le résidu total O7 satisfait $B_n + \Sigma_n^{\mathrm{tot}} = 1$
-        (loi linéaire, prouvée analytiquement et confirmée numériquement).</li>
-      <li><strong>Cible BI algébrique :</strong> dérivation purement algébrique que si $\eta = dI_{\mathrm{space}}/dI_\tau$
-        sous le budget BI, alors $\Phi(\eta) = 1/\gamma$ (prouvé).</li>
-      <li><strong>Insuffisance de la loi linéaire :</strong> $\Sigma_n^{\mathrm{tot}}$ est trop grand d'un facteur
-        $1/\sqrt{1-B_n^2}$ pour être le résidu temporel lorentzien ; la mise à niveau requise est la normalisation
-        quadratique (prouvé).</li>
-      <li><strong>Convergence de Lorentz :</strong> si l'opérateur de projection temporelle Q5b
-        $\mathcal{P}_\tau^{\mathrm{Q5b}}$ existe et satisfait
-        $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} \to \sqrt{1-B_n^2}$, alors
-        $\eta_n^\tau \to \beta\gamma$ (prouvé conditionnellement ; construction de $\mathcal{P}_\tau^{\mathrm{Q5b}}$ fermée dans <a href="/science/lc/temporal-projection/">TempProj</a>).</li>
+      <li><strong>Factorisation de phase centrale :</strong> $\omega_q(a,b,c) = e^{2\pi ic/q}\omega_q(a,b,0)$, de sorte que la coordonnée centrale $c$ ne contribue qu'une phase globale ; le résidu O7 total satisfait $B_n + \Sigma_n^{\mathrm{tot}} = 1$ (prouvé analytiquement et confirmé numériquement).</li>
+      <li><strong>Cible BI algébrique :</strong> si $\eta = dI_{\mathrm{space}}/dI_\tau$ sous le budget quadratique, alors $\Phi(\eta) = 1/\gamma$ (prouvé).</li>
+      <li><strong>Insuffisance de la loi linéaire :</strong> $\Sigma_n^{\mathrm{tot}} = 1 - B_n$ est plus petit que le résidu temporel lorentzien $\sqrt{1-B_n^2}$ ; la mise à niveau requise est la normalisation quadratique.</li>
+      <li><strong>Convergence de Lorentz :</strong> si $\mathcal{P}_\tau^{\mathrm{Q5b}}$ satisfait $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} \to \sqrt{1-B_n^2}$, alors $\eta_n^\tau \to \beta\gamma$ (conditionnel ; la projection est construite dans <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a> sous ses hypothèses).</li>
+      <li><strong>[H-cone] nommée :</strong> l'identification de la vitesse du cône de lumière de la co-métrique à la borne Born–Infeld, sur laquelle repose la lecture cinématique.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Structure</h2>
     <ol>
-      <li><strong>Occupation O7 et nouveauté résiduelle</strong> — définitions de $B_n$ et $\Sigma_n$ et leur rapport.</li>
-      <li><strong>Cible Born–Infeld algébrique</strong> — dérivation purement algébrique montrant $\Phi(\eta) = 1/\gamma$.</li>
-      <li><strong>Pourquoi le modèle de remplissage réduit est insuffisant</strong> — la loi résiduelle linéaire ne produit
-        pas la racine carrée lorentzienne ; confirmation numérique pour $q \in \{7, 11, 13\}$.</li>
-      <li><strong>Du remplissage linéaire à la normalisation quadratique via Q5b</strong> — la mise à niveau géométrique
-        Q5b/Q11 et le Lemme 1 (fermé dans <a href="/science/lc/temporal-projection/">TempProj</a>).</li>
-      <li><strong>Conséquence pour le facteur de Lorentz</strong> — Théorème : le profil O7 converge vers $1/\gamma$,
-        donnant la dilatation temporelle et le cône de lumière comme corollaires.</li>
+      <li><strong>Occupation O7 et nouveauté résiduelle</strong> — définitions de $B_n$ et $\Sigma_n$ et de leur rapport.</li>
+      <li><strong>Cible Born–Infeld algébrique</strong> — dérivation algébrique de $\Phi(\eta) = 1/\gamma$ sous le budget quadratique.</li>
+      <li><strong>Pourquoi le modèle de remplissage réduit est insuffisant</strong> — la loi linéaire ne produit pas la racine lorentzienne ; confirmation numérique pour $q \in \{7, 11, 13\}$.</li>
+      <li><strong>Du remplissage linéaire à la normalisation quadratique</strong> — la projection induite par une co-métrique fournie et le Lemme 1, établi dans <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a>.</li>
+      <li><strong>Factorisation de Weil</strong> — la coordonnée centrale est invisible au span d'empreinte ; la loi linéaire est exacte.</li>
+      <li><strong>Tests numériques</strong> — trois observables candidates échouent à la loi quadratique.</li>
+      <li><strong>Conséquence pour le facteur de Lorentz</strong> — théorème conditionnel : le profil projeté converge vers $1/\gamma$ ; dilatation du temps et cône de lumière sous [H-cone].</li>
     </ol>
   </section>
   <section class="card">
     <h2>Dépendances</h2>
     <ul>
-      <li><strong>O7</strong> : définition de $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n$ et le modèle de remplissage réduit.</li>
-      <li><strong>Article Born–Infeld</strong> : budget de mobilité $c_{\mathrm{BI}}$ et profondeur de cascade ordinale.</li>
-      <li><strong>Q5b</strong> : convergence BFS vers Carnot–Carathéodory dans le régime pré-saturation grand-$q$.</li>
-      <li><strong>Q11</strong> : la co-métrique $g^{\mu\nu} = 2\eta^{\mu\nu}$ donnant la signature lorentzienne est reprise de Q11. À réviser : Q11 (version 2.0) laisse $A_\tau$ libre, de sorte qu'aucune valeur de coefficient n'est établie.</li>
+      <li><strong>O7</strong> : définition de $\eta_n^{\mathrm{O7}}$, $B_n$, $\Sigma_n$ et du modèle de remplissage réduit.</li>
+      <li><strong>Article Born–Infeld</strong> : la borne de capacité [A-cap] de constante $c_{\mathrm{BI}}$ ; le budget quadratique est une hypothèse de cette note.</li>
+      <li><strong>Q5b</strong> : convergence BFS vers Carnot–Carathéodory ; une co-métrique de rang trois sous [H-L] et [H-lift].</li>
+      <li><strong>Q8</strong> : $A_H = A_Z = 2\lambda$ avec $\lambda$ libre pour une forme invariante fournie ; aucune valeur de $A_Z$.</li>
+      <li><strong>Q10</strong> : aucune valeur de coefficient n'est dérivée.</li>
+      <li><strong>Q11</strong> : la forme conditionnelle de rang quatre $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ (Corollaire 6.1), avec $A_\tau$ libre ; la donnée de couplage est ouverte (Q11-O1).</li>
+      <li><strong>TempProj</strong> : construction de $\mathcal{P}_\tau^{\mathrm{Q5b}}$ sous les hypothèses qui y sont énoncées.</li>
     </ul>
   </section>
   <section class="card">
@@ -169,12 +150,7 @@
   <section class="card">
     <h2>Lien avec le programme Cosmochrony</h2>
     <p>
-      Cette note technique fournit le pont manquant entre le programme d'admissibilité spectrale de la série O et
-      l'émergence de la cinématique relativiste restreinte. Elle établit que le facteur de Lorentz n'est pas un
-      postulat indépendant mais suit structurellement du même cadre de capacité projective qui gouverne la mécanique
-      quantique et la géométrie de l'espace-temps. L'opérateur de projection temporelle $\mathcal{P}_\tau^{\mathrm{Q5b}}$
-      est construit explicitement dans <a href="/science/lc/temporal-projection/">TempProj</a>, fermant le sous-programme
-      Lorentz-capacité.
+      Cette note technique relie le programme d'admissibilité spectrale de la série O à la cinématique relativiste restreinte : sous l'hypothèse de budget quadratique, une co-métrique fournie et [H-cone], le facteur de Lorentz se lit comme le résidu temporel du même cadre de capacité projective plutôt que comme un postulat indépendant. La projection temporelle $\mathcal{P}_\tau^{\mathrm{Q5b}}$ est construite dans <a href="/science/lc/temporal-projection/index_fr.html">TempProj</a>.
     </p>
   </section>
 </main>

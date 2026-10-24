@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Chute de capacité Born–Infeld fibre par fibre et dilatation temporelle gravitationnelle | Cosmochrony</title>
   <meta name="description"
-    content="Étend l'application résiduelle temporelle aux régimes non homogènes. Établit une arbitration de capacité unifiée : dilatation temporelle relativiste et gravitationnelle sont deux facettes du même échange Born–Infeld, séparées dans le produit R(x)/γ."/>
+    content="Étend l'application résiduelle temporelle aux régimes non homogènes. Sous l'identification cône–capacité [H-cone], dilatation temporelle relativiste et gravitationnelle sont deux facettes du même échange Born–Infeld : le résidu de capacité par pas d'ordre est R(x)/γ."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Chute de capacité Born–Infeld fibre par fibre et dilatation temporelle gravitationnelle"/>
   <meta property="og:description"
-    content="Étend l'application résiduelle temporelle aux régimes non homogènes. Établit une arbitration de capacité unifiée : dilatation temporelle relativiste et gravitationnelle sont deux facettes du même échange Born–Infeld, séparées dans le produit R(x)/γ."/>
+    content="Étend l'application résiduelle temporelle aux régimes non homogènes. Sous l'identification cône–capacité [H-cone], dilatation temporelle relativiste et gravitationnelle sont deux facettes du même échange Born–Infeld : le résidu de capacité par pas d'ordre est R(x)/γ."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/lc/lc-o2/"/>
   <script type="module">
@@ -39,8 +39,9 @@
         <p class="subtitle">
           Étend TempProj aux régimes fibre par fibre non homogènes. Une occupance spectrale localisée $\epsilon(x)$
           réduit le rayon de capacité Born–Infeld local à $R(x)^2 = 1-\epsilon(x)$. L'application résiduelle
-          temporelle fibre par fibre factorise en $R(x)\sqrt{f(x,n)(2-f(x,n))}$. La dilatation temporelle
-          gravitationnelle $d\tau/dn|_x = R(x)/\gamma$ émerge du budget de capacité local.
+          temporelle fibre par fibre factorise en $R(x)\sqrt{f(x,n)(2-f(x,n))}$. Le résidu de capacité par pas
+          d'ordre, $|F^\tau(x,n)| = R(x)/\gamma$, se lit comme dilatation temporelle gravitationnelle, un taux de temps
+          propre, sous [H-cone].
         </p>
       </div>
     </div>
@@ -51,6 +52,10 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="note" role="note" data-release-version="1.4">
+    <strong>Publication Zenodo actuelle :</strong> version 1.4 (__LC2ETA_CYCLE_DATE__).
+    <span lang="en">Titre officiel : <i>Fibrewise Born–Infeld Capacity Lapse and Gravitational Time Dilation</i>.</span>
+  </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d'ensemble</h2>
@@ -64,9 +69,11 @@
         Le résultat structurel clé est qu'une occupance spectrale localisée réduit le rayon de capacité BI local
         à $R(x)^2 = 1 - \epsilon(x)$. L'application résiduelle temporelle fibre par fibre se factorise proprement
         en $R(x)\sqrt{f(x,n)(2-f(x,n))}$, où $R(x)$ porte toute la physique locale et le second facteur est la
-        structure lorentzienne universelle issue de TempProj. La dilatation temporelle gravitationnelle
-        $d\tau/dn|_x = R(x)/\gamma$ découle du budget de capacité local, et l'identification métrique postulée
-        $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ la relie à une métrique lorentzienne fournie, dont la
+        structure lorentzienne universelle issue de TempProj. Le résidu de capacité par pas d'ordre,
+        $|F^\tau(x,n)| = R(x)/\gamma$, découle du budget de capacité local ; c'est un incrément de capacité, distinct du
+        pas d'ordre constant $d\tau/dn = \Delta\tau$, et sa lecture comme dilatation temporelle gravitationnelle, le
+        taux de temps propre d'un observateur en $x$, requiert [H-cone], qu'aucune source ne dérive. Enfin, l'identification métrique postulée
+        $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ relie ce résidu à une métrique lorentzienne fournie, dont la
         référence temporelle plate est postulée.
       </p>
       <div class="note" role="note">
@@ -99,7 +106,7 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Structurel, sur une métrique lorentzienne fournie (version 1.3)</div>
+          <div class="v">Structurel, sur une métrique lorentzienne fournie (version 1.4)</div>
         </div>
       </div>
     </aside>
@@ -142,7 +149,7 @@
       $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n) = R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)}$
     </p>
     <p>
-      avec $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ (postulé). Dilatation temporelle gravitationnelle : $d\tau/dn|_x = R(x)/\gamma$.
+      avec $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ (postulé). Résidu par pas d'ordre : $|F^\tau(x,n)| = R(x)/\gamma$, lu comme dilatation temporelle gravitationnelle sous [H-cone].
       Pour une métrique de champ faible fournie : $R(x) \approx 1 + \Phi_N(x)/c^2$.
     </p>
   </section>
@@ -162,7 +169,7 @@
       <li><strong>Occupance spectrale fibre par fibre</strong> — définition de $\epsilon(x)$ et réduction du rayon BI local.</li>
       <li><strong>Construction de l'application fibre par fibre</strong> — dérivation de $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}$ à partir du budget de capacité local.</li>
       <li><strong>Théorème de factorisation</strong> — preuve que l'application se factorise en $R(x) \times$ (facteur lorentzien universel).</li>
-      <li><strong>Dilatation temporelle gravitationnelle</strong> — émergence de $d\tau/dn|_x = R(x)/\gamma$ à partir du budget local.</li>
+      <li><strong>Dilatation temporelle gravitationnelle</strong> — le résidu $|F^\tau(x,n)| = R(x)/\gamma$ issu du budget local, lu comme taux de temps propre sous [H-cone].</li>
       <li><strong>Identification métrique et limite de champ faible</strong> — le rapport de laps d'une métrique fournie et sa forme newtonienne de champ faible, reprise de la relativité générale.</li>
     </ol>
   </section>

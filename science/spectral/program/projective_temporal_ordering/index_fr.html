@@ -7,7 +7,7 @@
   <title>Ordonnancement temporel projectif | Cosmochrony</title>
   <meta name="description"
     content="Page de présentation de l'article de Cosmochrony sur l'ordre temporel projectif,
-    la capacité projetée cumulative et la propriété de one-way activation dans la cascade
+    la capacité projetée cumulative et la conjecture de one-way activation dans la cascade
     d'admissibilité spectrale."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/temporal-ordering/"/>
   <meta name="robots" content="index,follow"/>
@@ -41,8 +41,8 @@
       <div>
         <h1>Ordonnancement temporel projectif</h1>
         <p class="subtitle">
-          Comment l'ordre temporel peut émerger d'une capacité projetée cumulative plutôt que
-          d'un paramètre de temps fondamental.
+          Comment l'ordre temporel pourrait émerger d'une capacité projetée cumulative plutôt que
+          d'un paramètre de temps fondamental, sous l'hypothèse d'acyclicité [H-acyc].
         </p>
       </div>
     </div>
@@ -130,8 +130,8 @@
       <li>
         <strong>One-way activation :</strong> dans les cas testés, une fois qu'une structure spectrale a
         été projetée de manière stable, elle n'est pas perdue aux profondeurs BFS ultérieures. C'est la
-        conjecture énoncée plus bas, étayée numériquement ; elle donnerait une forme d'irréversibilité le
-        long de la cascade, et non à elle seule un ordre sur les états.
+        conjecture énoncée plus bas, étayée numériquement. Elle donnerait la non-régression de $I(n)$ le
+        long de la trajectoire testée, et non l'irréversibilité des transitions ni un ordre sur les états.
       </li>
       <li>
         <strong>Ordre projectif :</strong> la succession temporelle est proposée comme un ordre sur
@@ -150,11 +150,11 @@
       </li>
       <li>
         <strong>Structure de machine à états (Remarque) :</strong> la cascade admissible porte la
-        structure d'une machine à états orientée — les nœuds sont des projections admissibles, les
-        arêtes sont des transitions admissibles, et les poids de branchement jouent le rôle des
-        probabilités quantiques. L'indice $n$ acquiert son sens temporel de l'orientation du graphe
-        d'admissibilité, sans paramètre de fond ; un ordre temporel strict exige l'hypothèse d'acyclicité
-        [H-acyc], qui n'est pas dérivée (Foundation, Théorème 4.4).
+        structure d'une machine à états dirigée — les nœuds sont des projections admissibles, les
+        arêtes sont des transitions admissibles, et les poids de branchement sont les analogues projectifs
+        des probabilités quantiques. Sous l'hypothèse d'acyclicité [H-acyc], qui n'est pas dérivée
+        (Foundation, Théorème 4.4), l'indice $n$ acquiert son sens temporel de l'orientation du graphe
+        d'admissibilité, sans paramètre de fond.
       </li>
       <li>
         <strong>Transition initiale non garantie :</strong> l'incomplétude projective (Foundation,

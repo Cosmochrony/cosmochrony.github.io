@@ -7,13 +7,13 @@
   <title>Projective Temporal Ordering | Cosmochrony</title>
   <meta name="description"
     content="Presentation page for the Cosmochrony article on projective temporal ordering, cumulative projected capacity, and the one-way activation conjecture in the spectral admissibility cascade."/>
-  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/temporal-ordering/index_fr.html"/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/projective_temporal_ordering/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Projective Temporal Ordering and Cumulative Projected Capacity"/>
   <meta property="og:description"
     content="A structural proposal for emergent temporal ordering based on the monotone accumulation of projected spectral capacity under non-injective projection."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/temporal-ordering/"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/projective_temporal_ordering/"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
     redirectIfNot("en", "/science/spectral/program/projective_temporal_ordering/index")
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.20236498/" rel="noopener">
+      <a class="btn primary" href="https://doi.org/10.5281/zenodo.19474639/" rel="noopener">
         Read the preprint
       </a>
       <a class="btn subtle" href="/science/spectral/program/">
@@ -64,21 +64,22 @@
       <p>
         This article proposes a structural notion of temporal ordering within the Cosmochrony
         framework. Its central claim is that the relevant observable along the admissibility
-        cascade is not the residual capacity $\sigma_{\mathrm{pair}}(n)$, which decays by
-        construction, but its complement
+        cascade is not the residual capacity $\sigma_{\mathrm{pair}}(n)$, which decreases in every
+        tested case, but its complement
         $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$, interpreted as cumulative
         projected capacity.
       </p>
       <p>
-        The key numerical result is that $I(n)$ is strictly non-decreasing for every tested
-        conjugate pair and every tested prime $q \in \{29,61,101,151,211\}$. This monotonicity is
-        observed step by step along the BFS cascade, with no physically meaningful regression.
+        The key numerical result is that, for every tested conjugate pair and every tested prime
+        $q \in \{29,61,101,151,211\}$, no decrease of $I(n)$ larger than $10^{-6}$ of its plateau value
+        $I_{\max}$ occurs after burn-in: $I(n+1)-I(n)\geq -10^{-6}I_{\max}$ for $n\geq 2$. Exact stepwise
+        monotonicity is the paper's conjecture; it is not a consequence of the construction.
       </p>
       <p>
         The paper proposes to read this behaviour as a <strong>projective temporal ordering</strong>:
         time would not be an evolution of the substrate $\chi$, but an ordering induced by the
-        accumulation of admissible spectral structure under a fixed non-injective projection
-        $\Pi$. The monotone growth of $I(n)$ is a numerical observation along the BFS cascade; an order on
+        accumulation of admissible spectral structure under a non-injective projection
+        $\Pi$. The growth of $I(n)$, monotone within that tolerance, is a numerical observation along the BFS cascade; an order on
         admissible states requires in addition the acyclicity hypothesis [H-acyc], and monotone accumulation
         alone establishes neither acyclicity nor irreversibility.
       </p>
@@ -123,10 +124,12 @@
         variable, rather than the decreasing residual observable $\sigma_{\mathrm{pair}}(n)$.
       </li>
       <li>
-        <strong>One-way activation:</strong> in the tested cases, once spectral structure has been stably
-        projected, it is not lost at later BFS depths. This is the conjecture stated below, supported
-        numerically. It would give non-regression of $I(n)$ along the tested trajectory, not irreversibility of
-        transitions or an order on states.
+        <strong>Mode retention and one-way activation:</strong> once a spectral mode has been projected, it
+        stays in the cumulative span, $V_n \subseteq V_{n+1}$; this retention is immediate from the definition
+        of the span. One-way activation is a different statement: the non-increase of
+        $\sigma_{\mathrm{pair}}(n)$, equivalently the non-regression of $I(n)$. It is the conjecture stated
+        below, supported numerically within tolerance, and it does not follow from retention, which does not
+        control the shellwise ratio. Neither gives irreversibility of transitions or an order on states.
       </li>
       <li>
         <strong>Projective ordering:</strong> temporal succession is proposed as an ordering on
@@ -179,7 +182,7 @@
     <p>
       The article does not derive time from entropy, from a background metric, or from a
       fundamental Hamiltonian flow. Instead, it shows numerically that the accumulation of projected
-      spectral structure grows monotonically along the cascade; reading that growth as a temporal ordering
+      spectral structure grows monotonically, within tolerance, along the tested trajectories; reading that growth as a temporal ordering
       of states requires [H-acyc].
     </p>
     <ul>
@@ -193,8 +196,8 @@
         Theorem 4.4).
       </li>
       <li>
-        <strong>Cumulative projected capacity</strong> is a monotone proxy for this ordering, supported
-        numerically.
+        <strong>Cumulative projected capacity</strong> is a candidate monotone proxy along a trajectory,
+        supported numerically within tolerance; it is not shown to be a function of the state.
       </li>
     </ul>
     <p>
@@ -221,7 +224,7 @@
     <h2>References</h2>
     <p>
       Jérôme Beau.
-      <a href="https://doi.org/10.5281/zenodo.20236498" rel="noopener">
+      <a href="https://doi.org/10.5281/zenodo.19474639" rel="noopener">
         <i lang="en">Projective Temporal Ordering and Cumulative Projected Capacity:
           Numerical Evidence from the Spectral Admissibility Cascade</i>. Preprint.
       </a>

@@ -7,14 +7,14 @@
   <title>Ordonnancement temporel projectif | Cosmochrony</title>
   <meta name="description"
     content="Page de présentation de l'article de Cosmochrony sur l'ordre temporel projectif,
-    la capacité projetée cumulative et la conjecture de one-way activation dans la cascade
+    la capacité projetée cumulative et la conjecture d'activation à sens unique (one-way activation) dans la cascade
     d'admissibilité spectrale."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/projective_temporal_ordering/"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Ordonnancement temporel projectif et capacité projetée cumulative"/>
   <meta property="og:description"
     content="Une proposition structurelle pour l'émergence de l'ordre temporel à partir de l'accumulation
-    monotone de capacité spectrale projetée sous projection non injective."/>
+    de capacité spectrale projetée, monotone à la tolérance près le long des trajectoires testées, sous projection non injective."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/projective_temporal_ordering/index_fr.html"/>
   <script type="module">
@@ -66,7 +66,7 @@
       <h2>Vue d'ensemble</h2>
       <p>
         Cet article propose une notion structurelle d'ordre temporel dans le cadre de
-        Cosmochrony. Son idée centrale est que l'observable pertinent le long de la cascade
+        Cosmochrony. Son idée centrale est que l'observable pertinente le long de la cascade
         d'admissibilité n'est pas la capacité résiduelle $\sigma_{\mathrm{pair}}(n)$, qui décroît
         dans tous les cas testés, mais son complément
         $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$, interprété comme capacité
@@ -102,7 +102,7 @@
         </div>
         <div class="kv">
           <div class="k">Type de travail</div>
-          <div class="v">Preprint</div>
+          <div class="v">Prépublication</div>
         </div>
         <div class="kv">
           <div class="k">Licence</div>
@@ -110,7 +110,7 @@
         </div>
         <div class="kv">
           <div class="k">Sujet</div>
-          <div class="v">Temps émergent, capacité cumulative et one-way activation</div>
+          <div class="v">Temps émergent, capacité cumulative et activation à sens unique</div>
         </div>
         <div class="kv">
           <div class="k">Portée numérique</div>
@@ -123,15 +123,15 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Bon observable temporel :</strong> l'article identifie
+        <strong>Bonne observable temporelle :</strong> l'article identifie
         $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$ comme variable cumulative
-        pertinente, plutôt que l'observable résiduel décroissant
+        pertinente, plutôt que l'observable résiduelle décroissante
         $\sigma_{\mathrm{pair}}(n)$.
       </li>
       <li>
-        <strong>Rétention des modes et one-way activation :</strong> un mode spectral une fois projeté reste
+        <strong>Rétention des modes et activation à sens unique :</strong> un mode spectral une fois projeté reste
         dans le sous-espace engendré cumulatif, $V_n \subseteq V_{n+1}$ ; cette rétention découle immédiatement de la
-        définition de ce sous-espace. La one-way activation est un énoncé différent : la non-croissance de
+        définition de ce sous-espace. L'activation à sens unique (one-way activation) est un énoncé différent : la non-croissance de
         $\sigma_{\mathrm{pair}}(n)$, c'est-à-dire la non-régression de $I(n)$. C'est la conjecture énoncée
         plus bas, étayée numériquement à la tolérance près, et elle ne découle pas de la rétention, qui ne
         contrôle pas le rapport par couche. Ni l'une ni l'autre ne donne l'irréversibilité des transitions
@@ -144,11 +144,12 @@
       </li>
       <li>
         <strong>Compatibilité avec O24 :</strong> l'ordre n'élargit pas le rang observable.
-        Il réordonne les sélections admissibles dans les fibres à l'intérieur de la structure
-        observable fixée par les résultats antérieurs de la série O.
+        Il réordonne les sélections admissibles dans les fibres à l'intérieur du rang
+        observable fourni comme règle de sélection par O23, dont l'identification observable reste ouverte,
+        et stabilisé dans O24.
       </li>
       <li>
-        <strong>Conjecture formelle :</strong> l'article énonce la conjecture de one-way activation
+        <strong>Conjecture formelle :</strong> l'article énonce la conjecture d'activation à sens unique
         $\sigma_{\mathrm{pair}}(n)\leq\sigma_{\mathrm{pair}}(n-1)$ et précise exactement ce qu'il
         reste à démontrer analytiquement.
       </li>
@@ -163,7 +164,7 @@
       <li>
         <strong>Transition initiale non garantie :</strong> l'incomplétude projective (Foundation,
         Corollaire 4.9) ne s'applique à une transition que là où elle est non injective ;
-        elle ne prouve pas l'existence d'un successeur admissible de \(\Pi_0\) et n'amorce pas la première
+        elle ne prouve pas l'existence d'un successeur admissible de $U_0$ et n'amorce pas la première
         transition $U_0 \to U_1$. A1 pose des directions admissibles, mais l'existence d'un successeur
         satisfaisant les quatre axiomes est une condition distincte (Foundation, Remarque 4.11).
       </li>
@@ -172,7 +173,7 @@
   <section class="card">
     <h2>Question ouverte</h2>
     <p>
-      Si l'enveloppe caractéristique $n^*(q)$ — à laquelle $\sigma_{\mathrm{pair}}$ change de
+      Si la couche caractéristique $n^*(q)$ — à laquelle $\sigma_{\mathrm{pair}}$ change de
       régime — coïncide avec la profondeur de verrouillage $n_c(q)$ à laquelle la structure
       d'admissibilité BFS passe d'un régime localement dominé à un régime universellement dominé.
       Une réponse positive connecterait l'ordre spectral de ce papier aux résultats de
@@ -215,8 +216,8 @@
   <section class="card">
     <h2>Place dans le programme Cosmochrony</h2>
     <p>
-      Le programme d'admissibilité spectrale avait déjà identifié un observable au niveau des
-      fibres, stabilisé le rang observable et clarifié la chaîne de transfert admissible à travers
+      Le programme d'admissibilité spectrale avait déjà identifié une observable au niveau des
+      fibres, stabilisé le rang observable fourni par la règle de sélection d'O23 et clarifié la chaîne de transfert admissible à travers
       O23, O24 et O25. Cet article propose une couche temporelle.
     </p>
     <p>

@@ -76,8 +76,11 @@
         Le résultat numérique principal est que, pour chaque paire conjuguée testée et pour chaque nombre
         premier testé $q \in \{29,61,101,151,211\}$, aucune baisse de $I(n)$ supérieure à $10^{-6}$ de sa
         valeur de plateau $I_{\max}$ n'apparaît après la phase initiale : $I(n+1)-I(n)\geq -10^{-6}I_{\max}$
-        pour $n\geq 2$. La monotonie exacte pas à pas est la conjecture de l'article ; elle ne découle pas
-        de la construction.
+        pour $n\geq 2$. Les traces sont exactement non décroissantes pour $q\leq 101$ ; pour $q=151$ et $211$,
+        des baisses de l'ordre de $10^{-10}$ apparaissent sur le plateau, et la monotonie n'y vaut qu'à la
+        tolérance près. La monotonie exacte pas à pas est la conjecture de l'article ; elle ne découle pas
+        de la construction. La version 1.5 recalcule le tableau de stabilité à partir des sorties archivées du
+        pipeline, en présentant côte à côte le test exact et le test à tolérance.
       </p>
       <p>
         L'article propose de lire ce comportement comme un <strong>ordre temporel

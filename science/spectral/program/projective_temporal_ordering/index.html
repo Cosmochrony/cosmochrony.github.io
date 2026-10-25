@@ -72,8 +72,11 @@
       <p>
         The key numerical result is that, for every tested conjugate pair and every tested prime
         $q \in \{29,61,101,151,211\}$, no decrease of $I(n)$ larger than $10^{-6}$ of its plateau value
-        $I_{\max}$ occurs after burn-in: $I(n+1)-I(n)\geq -10^{-6}I_{\max}$ for $n\geq 2$. Exact stepwise
-        monotonicity is the paper's conjecture; it is not a consequence of the construction.
+        $I_{\max}$ occurs after burn-in: $I(n+1)-I(n)\geq -10^{-6}I_{\max}$ for $n\geq 2$. The traces are exactly
+        non-decreasing for $q\leq 101$; for $q=151$ and $211$, plateau decreases of order $10^{-10}$ occur, so
+        monotonicity holds there only within the tolerance. Exact stepwise monotonicity is the paper's
+        conjecture; it is not a consequence of the construction. Version 1.5 recomputes the stability table
+        from archived pipeline outputs, with the exact and tolerance tests side by side.
       </p>
       <p>
         The paper proposes to read this behaviour as a <strong>projective temporal ordering</strong>:

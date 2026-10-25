@@ -64,26 +64,31 @@
       <p>
         This article proposes a structural notion of temporal ordering within the Cosmochrony
         framework. Its central claim is that the relevant observable along the admissibility
-        cascade is not the residual capacity $\sigma_{\mathrm{pair}}(n)$, which decays by
-        construction, but its complement
+        cascade is not the residual capacity $\sigma_{\mathrm{pair}}(n)$, which is observed to decrease within the stated tolerance after burn-in, but its complement
         $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$, interpreted as cumulative
         projected capacity.
       </p>
       <p>
-        The key numerical result is that $I(n)$ is strictly non-decreasing for every tested
-        conjugate pair and every tested prime $q \in \{29,61,101,151,211\}$. This monotonicity is
-        observed step by step along the BFS cascade, with no physically meaningful regression.
+        The reported numerical bound is $I(n+1)-I(n)\geq-10^{-6}I_{\max}$ for every tested
+        conjugate pair and $q \in \{29,61,101,151,211\}$ after burn-in ($n\geq2$), where
+        $I_{\max}$ is the pair's plateau value. This covers 274 pairs and 360 post-burn-in steps;
+        exact stepwise monotonicity remains conjectural.
       </p>
       <p>
         The paper proposes to read this behaviour as a <strong>projective temporal ordering</strong>:
         time would not be an evolution of the substrate $\chi$, but an ordering induced by the
         accumulation of admissible spectral structure under a fixed non-injective projection
-        $\Pi$. The monotone growth of $I(n)$ is a numerical observation along the BFS cascade; an order on
+        $\Pi$. The numerical bound concerns $I(n)$ along a BFS trajectory; it is not established as
+        a function of the effective state alone. An order on
         admissible states requires in addition the acyclicity hypothesis [H-acyc], and monotone accumulation
         alone establishes neither acyclicity nor irreversibility.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page presents the conceptual structure of the paper.
+        <strong>Scope statement.</strong> This working page is aligned with the reviewed PTO 1.5 sources;
+        the published version remains the release identified above. Numerical reproducibility is incomplete:
+        the raw output for the exact pair-mean test is not archived, and the tolerance filter used for
+        regression counts and monotone fractions is not implemented in the diagnostic code.
+        This page presents the conceptual structure of the paper.
         The complete technical definitions, numerical protocol, conjecture, and discussion are
         given in the preprint.
       </div>
@@ -123,10 +128,10 @@
         variable, rather than the decreasing residual observable $\sigma_{\mathrm{pair}}(n)$.
       </li>
       <li>
-        <strong>One-way activation:</strong> in the tested cases, once spectral structure has been stably
-        projected, it is not lost at later BFS depths. This is the conjecture stated below, supported
-        numerically. It would give non-regression of $I(n)$ along the tested trajectory, not irreversibility of
-        transitions or an order on states.
+        <strong>Mode retention and one-way activation:</strong> $V_n\subseteq V_{n+1}$ holds by the
+        cumulative definition of the span. It does not imply the exact non-increase of
+        $\sigma_{\mathrm{pair}}$, which is the conjecture stated below. The numerical bound supports
+        that conjecture within tolerance, and establishes neither transition irreversibility nor an order on states.
       </li>
       <li>
         <strong>Projective ordering:</strong> temporal succession is proposed as an ordering on
@@ -179,7 +184,8 @@
     <p>
       The article does not derive time from entropy, from a background metric, or from a
       fundamental Hamiltonian flow. Instead, it shows numerically that the accumulation of projected
-      spectral structure grows monotonically along the cascade; reading that growth as a temporal ordering
+      spectral structure grows within the stated tolerance after burn-in along the tested BFS trajectories;
+      reading that growth as a temporal ordering
       of states requires [H-acyc].
     </p>
     <ul>
@@ -193,8 +199,8 @@
         Theorem 4.4).
       </li>
       <li>
-        <strong>Cumulative projected capacity</strong> is a monotone proxy for this ordering, supported
-        numerically.
+        <strong>Cumulative projected capacity</strong> is a candidate proxy along a trajectory,
+        supported numerically within tolerance; its state-level interpretation is not established.
       </li>
     </ul>
     <p>

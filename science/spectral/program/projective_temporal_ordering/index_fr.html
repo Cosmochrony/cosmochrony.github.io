@@ -67,27 +67,31 @@
       <p>
         Cet article propose une notion structurelle d'ordre temporel dans le cadre de
         Cosmochrony. Son idée centrale est que l'observable pertinent le long de la cascade
-        d'admissibilité n'est pas la capacité résiduelle $\sigma_{\mathrm{pair}}(n)$, qui décroît
-        par construction, mais son complément
+        d'admissibilité n'est pas la capacité résiduelle $\sigma_{\mathrm{pair}}(n)$, dont la décroissance est observée à la tolérance indiquée après burn-in, mais son complément
         $I(n)=\sigma_{\mathrm{pair}}(0)-\sigma_{\mathrm{pair}}(n)$, interprété comme capacité
         projetée cumulative.
       </p>
       <p>
-        Le résultat numérique principal est que $I(n)$ est strictement non décroissante pour chaque
-        paire conjuguée testée et pour chaque nombre premier testé
-        $q \in \{29,61,101,151,211\}$. Cette monotonie est observée pas à pas le long de la cascade BFS,
-        sans aucune régression physiquement significative.
+        La borne numérique rapportée est $I(n+1)-I(n)\geq-10^{-6}I_{\max}$ pour chaque paire
+        conjuguée testée et $q \in \{29,61,101,151,211\}$ après burn-in ($n\geq2$), où
+        $I_{\max}$ est la valeur du plateau de la paire. Elle couvre 274 paires et 360 pas après burn-in ;
+        la monotonie exacte pas à pas reste conjecturale.
       </p>
       <p>
         L'article propose de lire ce comportement comme un <strong>ordre temporel
         projectif</strong> : le temps ne serait pas une évolution du substrat $\chi$, mais un ordre
         induit par l'accumulation de structure spectrale admissible sous une projection non injective
-        fixe $\Pi$. La croissance monotone de $I(n)$ est une observation numérique le long de la cascade
-        BFS ; un ordre sur les états admissibles exige en outre l'hypothèse d'acyclicité [H-acyc], et une
+        fixe $\Pi$. La borne numérique porte sur $I(n)$ le long d'une trajectoire BFS ; il n'est pas établi
+        que $I$ soit une fonction du seul état effectif. Un ordre sur les états admissibles exige en outre
+        l'hypothèse d'acyclicité [H-acyc], et une
         accumulation monotone n'établit à elle seule ni l'acyclicité ni l'irréversibilité.
       </p>
       <div class="note" role="note">
-        <strong>Portée.</strong> Cette page donne une vue structurée de l'article. Les définitions
+        <strong>Portée.</strong> Cette page de travail est alignée sur les sources revues de PTO 1.5 ;
+        la version publiée reste celle indiquée ci-dessus. La reproductibilité numérique est incomplète :
+        la sortie brute du test exact de la moyenne des paires n'est pas archivée, et le filtre de tolérance
+        utilisé pour les comptes de régressions et les fractions monotones n'est pas implémenté dans le code de diagnostic.
+        Cette page donne une vue structurée de l'article. Les définitions
         techniques complètes, le protocole numérique, la conjecture et la discussion détaillée
         figurent dans la prépublication.
       </div>
@@ -128,10 +132,10 @@
         $\sigma_{\mathrm{pair}}(n)$.
       </li>
       <li>
-        <strong>One-way activation :</strong> dans les cas testés, une fois qu'une structure spectrale a
-        été projetée de manière stable, elle n'est pas perdue aux profondeurs BFS ultérieures. C'est la
-        conjecture énoncée plus bas, étayée numériquement. Elle donnerait la non-régression de $I(n)$ le
-        long de la trajectoire testée, et non l'irréversibilité des transitions ni un ordre sur les états.
+        <strong>Conservation des modes et one-way activation :</strong> $V_n\subseteq V_{n+1}$ découle de
+        la définition cumulative du sous-espace. Elle n'implique pas la non-croissance exacte de
+        $\sigma_{\mathrm{pair}}$, qui est la conjecture énoncée ci-dessous. La borne numérique étaye
+        cette conjecture à la tolérance indiquée, sans établir l'irréversibilité des transitions ni un ordre sur les états.
       </li>
       <li>
         <strong>Ordre projectif :</strong> la succession temporelle est proposée comme un ordre sur
@@ -183,7 +187,8 @@
     <p>
       L'article ne dérive pas le temps à partir de l'entropie, d'une métrique de fond, ni d'un flot
       hamiltonien fondamental. Il montre au contraire, numériquement, que l'accumulation de structure
-      spectrale projetée croît de façon monotone le long de la cascade ; lire cette croissance comme un
+      spectrale projetée croît à la tolérance indiquée après burn-in le long des trajectoires BFS testées ;
+      lire cette croissance comme un
       ordre temporel sur les états exige [H-acyc].
     </p>
     <ul>
@@ -197,8 +202,8 @@
         (Foundation, Définition 4.3 ; Théorème 4.4).
       </li>
       <li>
-        <strong>La capacité projetée cumulative</strong> est un indicateur monotone de cet ordre, étayé
-        numériquement.
+        <strong>La capacité projetée cumulative</strong> est un indicateur candidat le long d'une trajectoire,
+        étayé numériquement à la tolérance indiquée ; son interprétation sur les états n'est pas établie.
       </li>
     </ul>
     <p>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Intrication E2 — Deux entropies d'intrication | Cosmochronie</title>
   <meta name="description"
-    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée : le secteur admissible de paire (log 2, conditionnel à (H-carrier) et (H-inv)) et le rang résiduel complet (dépend de la profondeur, conditionnel à [H_res] pour les blocs généraux)."/>
+    content="Deux entropies d'intrication distinctes de la paire de Weil conjuguée : le secteur admissible de paire (log 2, conditionnel à (H-carrier) et (H-inv)) et le rang résiduel complet (dépend de la profondeur, prouvé pour les blocs appariés sous une pureté fournie de l'état conjoint, conditionnel à cette pureté et à [H_res] pour les blocs généraux)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Intrication E2 — Deux entropies d'intrication de la paire de Weil conjuguée"/>
   <meta property="og:description"
@@ -159,10 +159,13 @@
     </p>
     <ul>
       <li>
-        <strong>Blocs à caractère unique appariés.</strong> Prouvé inconditionnellement par E1
-        (théorème 7) : les supports de Fourier à signes inversés
-        $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ identifient canoniquement les modes
-        résiduels et produisent un état résiduel maximalement intriqué.
+        <strong>Blocs à caractère unique appariés.</strong> Prouvé par E1 (théorème 7) sous une
+        pureté fournie de l'état conjoint, qu'E1 ne dérive pas : les supports de Fourier à signes
+        inversés $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ identifient canoniquement
+        les modes résiduels et, cette pureté supposée, l'identité de conjugaison sélectionne
+        l'appariement de Schmidt diagonal, et E1 exhibe l'état résiduel maximalement intriqué comme la
+        construction naturelle. C'est un
+        théorème conditionnel, non inconditionnel.
       </li>
       <li>
         <strong>Blocs canoniques échantillonnés indépendamment.</strong> L'identification littérale
@@ -174,7 +177,8 @@
         l'état joint ni ne forcent une marginale plate.
       </li>
       <li>
-        <strong>Pont conditionnel $[\mathrm{H}_{\mathrm{res}}]$.</strong> Sous l'indiscernabilité
+        <strong>Pont conditionnel $[\mathrm{H}_{\mathrm{res}}]$.</strong> Avec la même pureté
+        fournie de l'état conjoint, sous l'indiscernabilité
         d'admissibilité résiduelle — aucun invariant porté par les générateurs admissibles ne
         distingue les directions d'empreintes résiduelles — et en supposant que le résultat
         d'égalité des dimensions d'O17 se transfère au pipeline réel, l'état réduit est

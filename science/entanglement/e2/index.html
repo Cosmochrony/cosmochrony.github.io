@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Entanglement E2 — Two Entanglement Entropies | Cosmochrony</title>
   <meta name="description"
-    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, conditional on (H-carrier) and (H-inv)) and the full residual rank (depth-dependent, conditional on [H_res] for general blocks)."/>
+    content="Two distinct entanglement entropies of the conjugate Weil pair: the admissible pair sector (log 2, conditional on (H-carrier) and (H-inv)) and the full residual rank (depth-dependent, proved for matched blocks under a supplied purity of the joint state, conditional on that purity and [H_res] for general blocks)."/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair"/>
   <meta property="og:description"
@@ -152,10 +152,12 @@
     </p>
     <ul>
       <li>
-        <strong>Matched single-character blocks.</strong> Proved unconditionally by E1
-        (Theorem 7): the sign-reflected Fourier supports
-        $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ canonically identify the residual
-        modes and yield a maximally entangled residual state.
+        <strong>Matched single-character blocks.</strong> Proved by E1 (Theorem 7) under a
+        supplied purity of the joint state, which E1 does not derive: the sign-reflected Fourier
+        supports $S_{q-c}^{\mathrm{res}}(n) = -S_c^{\mathrm{res}}(n)$ canonically identify the
+        residual modes, and, given purity, the conjugation identity selects the diagonal Schmidt
+        pairing, and E1 exhibits the maximally entangled residual state as the natural construction. This is a conditional theorem, not an
+        unconditional one.
       </li>
       <li>
         <strong>Independently sampled canonical blocks.</strong> The literal mode-by-mode
@@ -166,7 +168,8 @@
         the joint state or force a flat marginal.
       </li>
       <li>
-        <strong>Conditional bridge $[\mathrm{H}_{\mathrm{res}}]$.</strong> Under residual
+        <strong>Conditional bridge $[\mathrm{H}_{\mathrm{res}}]$.</strong> Given the same supplied
+        purity of the joint state, under residual
         admissibility indiscernibility — no invariant carried by the admissible generators
         distinguishes the residual fingerprint directions — and assuming O17's equal-dimension
         result transfers to the real pipeline, the reduced state is

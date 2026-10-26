@@ -20,8 +20,8 @@
     exigences pour un pont équivariant"/>
   <meta property="og:description"
     content="Q7 donne les exigences auxquelles un pont équivariant devrait satisfaire, sur un
-    porteur fourni, et montre que les nombres lus jusqu’ici comme des coefficients de symbole
-    sont des quotients de Rayleigh d’ondes planes."/>
+    porteur fourni, et montre que les nombres que rapporte le pipeline sont des quotients de
+    Rayleigh d’ondes planes, non des coefficients de symbole."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q7/"/>
@@ -173,7 +173,7 @@
   <section class="card">
     <h2>Ce que mesurent les points de contrôle</h2>
     <p>
-      La version 2.0 requalifie la section numérique de l’article. Les trois lignes de base stockées dans les points
+      Les trois lignes de base stockées dans les points
       de contrôle O25 sont des <strong>modes de Fourier purs</strong> d’indices \( \{0, -k, +k\} \), de pureté
       spectrale 1,000000 aux douze paires testées. Toute entrée diagonale de la compression
       <strong>dans la base stockée</strong> est donc un quotient de Rayleigh en forme fermée, les entrées hors
@@ -195,21 +195,21 @@
         l’identité \[ A_H - 2 = 4\sin^2(\pi k / q). \] Son annulation à la limite des grands \( q \) équivaut à
         \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), propriété de la règle de sélection de modes du pipeline
         qu’aucun article du corpus ne dérive. Ici \( A_H \) et la valeur centrale désignent des entrées diagonales
-        de cette compression discrète ; ce sont les grandeurs que les lectures antérieures identifiaient à des
-        coefficients du symbole continu, et l’article tient les deux séparées.
+        de cette compression discrète ; ce ne sont pas des coefficients du symbole continu, et l’article tient
+        les deux séparées.
       </li>
       <li>
         Une entrée hors diagonale apparaît exactement quand deux indices stockés diffèrent de
-        \( \pm c \bmod q \), ce qui rend compte des deux paires jusqu’ici présentées comme des anomalies de
-        taille finie ou de secteur.
+        \( \pm c \bmod q \), ce qui rend compte des deux paires dont la sortie du pipeline paraît anormale ;
+        aucune ne relève d’un effet de taille finie ou de secteur.
       </li>
     </ul>
     <p>
       Ce que rapporte le pipeline n’est pas cette compression mais sa conjuguée par la base propre de la
       covariance. En tant que matrices, les deux coïncident à neuf des douze paires ; à \( (61,3) \) elles
       s’accordent entrée par entrée en module mais non en phase ; et elles diffèrent franchement à deux. À
-      \( (101,3) \) le mode plat est classé en dernier, ce qui explique les valeurs publiées 2,096 et
-      2,048 ; à \( (151,5) \), seule paire où une rotation indéterminée rencontre un bloc non scalaire, la
+      \( (101,3) \) le mode plat est classé en dernier, ce qui produit à lui seul les valeurs 2,096 et
+      2,048 du pipeline ; à \( (151,5) \), seule paire où une rotation indéterminée rencontre un bloc non scalaire, la
       scission et l’entrée hors diagonale rapportées dépendent du solveur. Le contenu invariant est le spectre de la compression.
     </p>
     <p>
@@ -222,28 +222,31 @@
     </p>
   </section>
   <section class="card">
-    <h2>Conclusions retirées en version 2.0</h2>
+    <h2>Ce que les sources citées et les calculs ne fournissent pas</h2>
     <p>
-      La version 2.0 retire ce qui suit, comme résultats et comme appuis. Elle ne prend pas position sur le
-      statut éditorial des articles concernés, dont les affirmations leur appartiennent.
+      L’article énonce ce sur quoi il peut s’appuyer, sans prendre position sur le statut éditorial des articles
+      cités.
     </p>
     <ul>
-      <li>la lecture de la valeur centrale comme signature spectrale du Casimir ;</li>
-      <li>l’ajustement en loi de puissance de l’écart d’isotropie comme preuve d’une isotropie asymptotique ;</li>
+      <li>La valeur centrale n’est pas une signature spectrale du Casimir, et l’ajustement en loi de puissance de
+        l’écart d’isotropie n’est pas une preuve d’isotropie asymptotique.</li>
+      <li>La structure bloc-diagonale d’une compression discrète ne dit rien des termes croisés du symbole
+        continu.</li>
       <li>
-        le transport de la structure bloc-diagonale d’une compression discrète vers les termes croisés du
-        symbole continu ;
+        O29 n’identifie pas la structure de module et n’établit pas \( d_\rho = 2 \) (sélection par minimalité
+        d’O26) ; O27 ne donne aucune factorisation inconditionnelle par \( \mathfrak{su}(2) \) ; Q5b ne fournit ni
+        coefficient central ni taux de convergence en \( q \).
       </li>
       <li>
-        les attributions à O29 (l’identification du module et \( d_\rho = 2 \)), à O27 (une factorisation
-        inconditionnelle par \( \mathfrak{su}(2) \)) et à Q5b (une co-métrique portant un coefficient central
-        positif, et un taux de convergence en \( q \)) ;
+        Sur des entrées établies, Q8, Q10, U1 et Q11 ne fournissent aucune valeur de coefficient : Q8 laisse libre
+        la valeur commune d’une forme invariante, Q10 borne le rapport \( A_H/A_z \) sous des entrées nommées et ne
+        donne une valeur absolue que sous son entrée d’échelle [S], aucune n’étant établie, U1 laisse [U] ouverte,
+        et Q11 laisse le coefficient temporel indépendant des coefficients spatiaux.
       </li>
-      <li>les appuis aval invoqués jusqu’ici pour les deux coefficients.</li>
     </ul>
     <p>
-      L’affirmation antérieure selon laquelle l’ambiguïté était levée, soit par un pont unique, soit par une
-      séparation définitive, n’est pas retenue pour la construction générale : une nouvelle cible reste ouverte, tandis que le symbole exact de Q5b est exclu par le rang.
+      Ni un pont unique ni une séparation définitive ne lève l’ambiguïté pour la construction générale : une
+      nouvelle cible compatible reste ouverte, tandis que le symbole exact de Q5b est exclu par le rang.
     </p>
   </section>
   <section class="card">

@@ -7,9 +7,9 @@
   <title>Semiclassical Consistency of the Weil Representation on Heis₃(Z/qZ): Quantitative
     Sinc Embedding, Generator Convergence, and Aliasing Control | Cosmochrony</title>
   <meta name="description"
-    content="H2 proves hypothesis [H2] of the Q5a Mosco convergence framework: strong
-    operator convergence X̂_q → x and P̂_q → −i∂_x on L²(R). The remaining Q5a hypotheses
-    [H1], [H-E1] and [C] stay open."/>
+    content="H2 proves the strong convergence X̂_q → x and P̂_q → −i∂_x on L²(R), the statement
+    formulated as hypothesis [H2] in Q5a version 2.0. It discharges no hypothesis of the current Q5a
+    and supplies no spatial limit operator."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/emergent-geometry/h2/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
@@ -17,9 +17,9 @@
     content="Semiclassical Consistency of the Weil Representation on Heis₃(Z/qZ): Quantitative
     Sinc Embedding, Generator Convergence, and Aliasing Control"/>
   <meta property="og:description"
-    content="H2 proves [H2]: X̂_q → x and P̂_q → −i∂_x in strong operator topology on L²(R),
-    via a quantitative Poisson aliasing lemma and discrete Sobolev identity. The remaining
-    Q5a hypotheses [H1], [H-E1] and [C] stay open."/>
+    content="Strong convergence X̂_q → x and P̂_q → −i∂_x on L²(R), via a quantitative Poisson
+    aliasing lemma and a discrete Sobolev identity: the statement of [H2] of Q5a version 2.0. No
+    hypothesis of the current Q5a is discharged."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/emergent-geometry/h2/"/>
   <script type="module">
@@ -47,9 +47,10 @@
         <h1>Semiclassical Consistency of the Weil Representation on Heis₃(Z/qZ): Quantitative
           Sinc Embedding, Generator Convergence, and Aliasing Control</h1>
         <p class="subtitle">
-          H2 proves hypothesis [H2] of the Q5a Mosco convergence framework: the strong
-          operator convergence $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$ on $L^2(\mathbb{R})$,
-          via a quantitative Poisson aliasing lemma and a discrete Sobolev identity.
+          H2 proves the strong operator convergence $\hat{X}_q \to x$ and
+          $\hat{P}_q \to -i\partial_x$ on $L^2(\mathbb{R})$, via a quantitative Poisson aliasing lemma
+          and a discrete Sobolev identity: the statement formulated as hypothesis [H2] in Q5a
+          version 2.0.
         </p>
       </div>
     </div>
@@ -70,29 +71,26 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        The Q5a Mosco convergence framework is a conditional theorem: under its analytic
-        hypotheses, the Weil representations
-        $\rho_c^{(q)}$ on the finite Heisenberg group $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
-        converge to the standard Schrödinger representation of the continuous Heisenberg group
-        as $q \to \infty$, in the Mosco sense on $L^2(\mathbb{R})$.
+        Version 2.0 of Q5a (Zenodo record 19897055) formulated a large-$q$ limit theorem, its
+        Theorem 7.1, under the hypotheses [H-$\Pi$1], [H-$\Pi$2], [H2], [H-w] and [H-E1], with a
+        spectral tightness statement [C] for its form-convergence part. [H2] is its Hypothesis 4.3:
+        the rescaled Weil generators $\hat{X}_q$ and $\hat{P}_q$ of
+        $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, transported by the sinc embedding, converge
+        strongly to $x$ and $-i\partial_x$ on $L^2(\mathbb{R})$.
       </p>
       <p>
-        H2 closes one of these hypotheses. Hypothesis [H2] asserts strong
-        operator convergence of the rescaled Weil generators: the discrete position and momentum
-        operators $\hat{X}_q$ and $\hat{P}_q$ converge to their continuous counterparts
-        $x$ and $-i\partial_x$ in the strong operator topology on $L^2(\mathbb{R})$.
-      </p>
-      <p>
-        The proof combines two main ingredients: a quantitative Poisson aliasing lemma
-        controlling the $L^2$ error introduced by periodic aliasing in the discrete Fourier
-        embedding, and a discrete Sobolev identity that relates the action of $\hat{P}_q$ to
-        a finite-difference derivative whose strong limit is $-i\partial_x$.
+        H2 proves that statement, for the isometric sinc embedding. The proof combines a
+        quantitative Poisson aliasing lemma, controlling the $L^2$ error of periodic aliasing with an
+        explicit rate $O(q^{-1})$ on Schwartz data, and a discrete Sobolev identity relating
+        $\hat{P}_q$ to a finite difference whose strong limit is $-i\partial_x$.
       </p>
       <div class="note" role="note">
-        <strong>Key consequence.</strong> H2 closes hypothesis [H2] of the Q5a large-$q$
-        Mosco convergence framework. The remaining analytic hypotheses [H1], [H-E1] and [C]
-        stay open, so the convergence of the Weil representation to Schrödinger mechanics
-        remains conditional on them.
+        <strong>Scope.</strong> The framework of Q5a version 2.0 is not that of the current Q5a,
+        which proves that, for uniformly bounded weights, the published admissibility form has
+        zero-form Mosco limit on the canonical Fourier filtration. H2 discharges no hypothesis of
+        the current Q5a and supplies no spatial limit operator. In the version-2.0 framework,
+        [H-w] is open (W1 establishes no proof of it), and the Q5a-O2 Fourier analysis rules out
+        [H-E1] at the $q^{-1}$ scale and supersedes [C].
       </div>
     </div>
     <aside class="card">
@@ -116,16 +114,16 @@
         </div>
         <div class="kv">
           <div class="k">Key result</div>
-          <div class="v">$\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$ unconditionally;
-            Q5a hypothesis [H2] closed, [H1], [H-E1], [C] open</div>
+          <div class="v">$\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$ strongly on $L^2(\mathbb{R})$;
+            the statement of [H2] of Q5a version 2.0</div>
         </div>
         <div class="kv">
           <div class="k">Depends on</div>
-          <div class="v">Q5a, W1</div>
+          <div class="v">Q5a version 2.0 (definitions)</div>
         </div>
         <div class="kv">
-          <div class="k">Feeds into</div>
-          <div class="v">Closes Q5a hypothesis [H2]</div>
+          <div class="k">Not established</div>
+          <div class="v">Any hypothesis of the current Q5a; [H-w], [H-E1], [C]; a spatial limit operator</div>
         </div>
       </div>
     </aside>
@@ -134,79 +132,38 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>Proof of [H2]:</strong> strong operator convergence $\hat{X}_q \to x$ and
-        $\hat{P}_q \to -i\partial_x$ in the strong operator topology on $L^2(\mathbb{R})$,
-        unconditionally on the admissible sector.
+        <strong>Strong convergence of the rescaled generators:</strong> $\hat{X}_q \to x$ and
+        $\hat{P}_q \to -i\partial_x$ in the strong operator topology on $L^2(\mathbb{R})$, uniformly
+        on bounded subsets of Schwartz space and by density on $L^2(\mathbb{R})$.
       </li>
       <li>
-        <strong>Quantitative Poisson aliasing lemma:</strong> explicit $L^2$ error bound for
-        the periodic aliasing introduced by embedding discrete functions into $L^2(\mathbb{R})$
-        via sinc interpolation. The error is controlled uniformly in the $q \to \infty$ limit.
+        <strong>Quantitative Poisson aliasing lemma:</strong> explicit $L^2$ error bound for the
+        periodic aliasing introduced by embedding discrete functions into $L^2(\mathbb{R})$ via sinc
+        interpolation.
       </li>
       <li>
-        <strong>Discrete Sobolev identity:</strong> algebraic identity relating the action of
-        the discrete momentum operator $\hat{P}_q$ to a finite-difference derivative, enabling
-        the strong limit to be identified as $-i\partial_x$.
+        <strong>Discrete Sobolev identity:</strong> an exact identity relating the discrete momentum
+        operator to a finite-difference derivative.
       </li>
       <li>
-        <strong>Quantitative sinc embedding:</strong> precise control of the sinc interpolation
-        embedding $\ell^2(\mathbb{Z}/q\mathbb{Z}) \hookrightarrow L^2(\mathbb{R})$ with
-        explicit convergence rates.
-      </li>
-      <li>
-        <strong>Contribution to Q5a:</strong> H2 closes hypothesis [H2] of the Q5a
-        Mosco convergence framework; the discrete-to-continuous convergence
-        of the Weil representation remains conditional on the open hypotheses [H1], [H-E1]
-        and [C].
+        <strong>Quasi-isometry of the sinc embedding:</strong> the norm defect is $O(q^{-1})$. An
+        identification of an effective metric constant $A$ in terms of the Born–Infeld constant
+        would use such a bound as one ingredient, together with a supplied power-law profile that is
+        not established (W1, Section 4.2); H2 supplies the bound, not the identification.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>The Q5a Mosco convergence programme</h2>
-    <p>
-      The Q5a Mosco convergence framework is the central conditional result connecting the
-      discrete Weil
-      representation on the finite Heisenberg group to the continuous Schrödinger representation.
-      Under its hypotheses, as the prime $q \to \infty$, the discrete quantum mechanics on
-      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges to standard quantum mechanics on
-      $L^2(\mathbb{R})$.
-    </p>
-    <p>
-      This convergence is the mathematical foundation for the claim that quantum mechanics
-      is not postulated in the Cosmochrony framework but emerges as the large-scale limit of
-      the admissible projection on the Heisenberg substrate.
-    </p>
-    <p>
-      Hypothesis [H2] is the condition H2 addresses. The proof given in H2 uses the
-      sinc interpolation embedding — which maps finite discrete functions to band-limited
-      functions in $L^2(\mathbb{R})$ — and shows that under this embedding, the discrete
-      generators converge strongly to their continuous counterparts.
-    </p>
-    <p>
-      The Poisson aliasing lemma is the key technical tool: it provides quantitative control
-      over the aliasing error that arises when a periodic discrete signal is embedded into
-      the non-periodic $L^2(\mathbb{R})$. The discrete Sobolev identity then translates
-      strong convergence of the difference quotient into strong convergence of the derivative.
-    </p>
-  </section>
-  <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      H2 settles the semiclassical consistency component of the programme for the Weil
-      representation. The Q5a framework, conditional on its open weight hypotheses [H-w′] and [H-w] and on [H1], [H-E1] and [C], is one of the central structural threads of the
-      Cosmochrony framework: under those hypotheses, the finite Heisenberg substrate gives
-      rise to continuous quantum mechanics in the admissible large-scale limit.
+      H2 belongs to the emergent-geometry sub-programme as a paper of the former Q5a framework.
+      Its result is a statement about generators: it does not make the large-$q$ limit of
+      the admissible structure a continuum quantum mechanics or a spatial geometry. The current
+      Q5a leaves the spatial limit as the hypothesis that Q5b names [H-L].
     </p>
     <p>
-      W1 version 2.0.1 withdraws its claimed closure of [H-w]. Its retained conditional result concerns a partial-sum proxy, with no established bridge to Q5a response weights. Q5a formulated the Mosco convergence framework; its canonical filtration is the growing Fourier window, with zero-form Mosco limit. The weight hypotheses [H-w′] and [H-w], and [H1], [H-E1] and [C], remain open.
-      H2 contributes the [H2] clause.
-    </p>
-    <p>
-      The result supports the foundational claim of the programme: the Heisenberg algebra
-      $[\hat{X}, \hat{P}] = i\hbar$ is not postulated but would emerge from the admissibility
-      constraints on the discrete substrate, as the large-$q$ limit of the structural
-      generators $\hat{X}_q$ and $\hat{P}_q$, once the remaining Q5a hypotheses are
-      established.
+      W1 version 2.0.1 establishes no proof of [H-w]; its retained conditional result concerns a
+      partial-sum proxy, with no established bridge to Q5a response weights.
     </p>
   </section>
   <section class="card">

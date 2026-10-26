@@ -20,8 +20,8 @@
     Requirements for an Equivariant Bridge"/>
   <meta property="og:description"
     content="Q7 gives the requirements an equivariant bridge would have to meet, on a supplied
-    carrier, and shows that the numbers previously read as symbol coefficients are Rayleigh
-    quotients of plane waves."/>
+    carrier, and shows that the numbers the pipeline reports are Rayleigh quotients of plane waves,
+    not symbol coefficients."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/emergent-geometry/q7/"/>
@@ -168,7 +168,7 @@
   <section class="card">
     <h2>What the checkpoints measure</h2>
     <p>
-      Version 2.0 re-types the paper's numerical section. The three stored basis rows of the O25 checkpoints are
+      The three stored basis rows of the O25 checkpoints are
       <strong>pure Fourier modes</strong> of indices \( \{0, -k, +k\} \), with spectral purity 1.000000 on all twelve
       tested pairs. Every diagonal entry of the compression <strong>in the stored basis</strong> is therefore a
       Rayleigh quotient in closed form, the off-diagonal entries following the index rule stated below:
@@ -188,19 +188,18 @@
         \[ A_H - 2 = 4\sin^2(\pi k / q). \] Its vanishing in the large-\( q \) limit is equivalent to
         \( \mathrm{dist}(k/q, \mathbb{Z}) \to 0 \), a property of the pipeline's mode-selection rule that no paper
         of the corpus derives. Here \( A_H \) and the central value name diagonal entries of this discrete
-        compression; they are the quantities earlier readings identified with coefficients of the continuum symbol,
-        and the paper keeps the two apart.
+        compression; they are not coefficients of the continuum symbol, and the paper keeps the two apart.
       </li>
       <li>
         An off-diagonal entry appears exactly when two stored indices differ by \( \pm c \bmod q \), which accounts
-        for the two pairs previously reported as finite-size and sector anomalies.
+        for the two pairs whose pipeline output looks anomalous; neither is a finite-size or sector effect.
       </li>
     </ul>
     <p>
       What the pipeline reports is not that compression but its conjugate by the covariance eigenbasis. As matrices the
       two coincide at nine of the twelve pairs; at \( (61,3) \) they agree entry by entry in modulus but not in
-      phase; and they differ outright at two. At \( (101,3) \) the flat mode is ordered last, which is the origin
-      of the published values 2.096 and 2.048; at \( (151,5) \), the one pair where an undetermined rotation meets
+      phase; and they differ outright at two. At \( (101,3) \) the flat mode is ordered last, which alone produces
+      the pipeline values 2.096 and 2.048; at \( (151,5) \), the one pair where an undetermined rotation meets
       a block that is not scalar, the reported split and off-diagonal entry are solver-dependent. The invariant content is the spectrum of
       the compression.
     </p>
@@ -213,25 +212,30 @@
     </p>
   </section>
   <section class="card">
-    <h2>Conclusions withdrawn in version 2.0</h2>
+    <h2>What the cited sources and computations do not supply</h2>
     <p>
-      Version 2.0 withdraws the following, as results and as supports. It takes no position on the editorial status of
-      the papers concerned, whose claims are matters for those papers.
+      The paper states what it may rely on, without taking a position on the editorial status of the papers cited.
     </p>
     <ul>
-      <li>the reading of the central value as a spectral signature of the Casimir;</li>
-      <li>the power-law fit of the isotropy gap as evidence for asymptotic isotropy;</li>
-      <li>the transfer of the block-diagonality of a discrete compression to cross terms of the continuum symbol;</li>
+      <li>The central value is not a spectral signature of the Casimir, and the power-law fit of the isotropy gap is
+        no evidence for asymptotic isotropy.</li>
+      <li>The block-diagonality of a discrete compression says nothing about cross terms of the continuum
+        symbol.</li>
       <li>
-        the attributions to O29 (the module identification and \( d_\rho = 2 \)), to O27 (an unconditional
-        factorisation through \( \mathfrak{su}(2) \)), and to Q5b (a co-metric carrying a positive central
-        coefficient, and a convergence rate in \( q \));
+        O29 does not identify the module structure or establish \( d_\rho = 2 \) (O26's minimality selection);
+        O27 gives no unconditional factorisation through \( \mathfrak{su}(2) \); Q5b supplies no central coefficient
+        and no convergence rate in \( q \).
       </li>
-      <li>the downstream supports previously invoked for the two coefficients.</li>
+      <li>
+        On established inputs, Q8, Q10, U1 and Q11 supply no coefficient value: Q8 leaves the common value of an
+        invariant form free, Q10 bounds the ratio \( A_H/A_z \) under named inputs and gives an absolute value only
+        under its scale input [S], none of which is established, U1 leaves [U] open, and Q11 leaves the temporal
+        coefficient independent of the spatial ones.
+      </li>
     </ul>
     <p>
-      The earlier claim that the ambiguity was removed, either by a unique bridge or by a definitive separation, is not
-      retained for the broader construction: a new compatible target remains open, while the exact Q5b symbol is excluded by rank.
+      Neither a unique bridge nor a definitive separation removes the ambiguity for the broader construction: a new
+      compatible target remains open, while the exact Q5b symbol is excluded by rank.
     </p>
   </section>
   <section class="card">

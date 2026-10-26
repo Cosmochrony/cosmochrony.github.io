@@ -7,9 +7,9 @@
   <title>Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
     sinc quantitatif, convergence des générateurs et contrôle de l'aliasing | Cosmochronie</title>
   <meta name="description"
-    content="H2 prouve l'hypothèse [H2] du cadre de convergence de Mosco de Q5a :
-    la convergence en opérateur fort X̂_q → x et P̂_q → −i∂_x sur L²(R). Les hypothèses
-    restantes de Q5a, [H1], [H-E1] et [C], demeurent ouvertes."/>
+    content="H2 démontre la convergence forte X̂_q → x et P̂_q → −i∂_x sur L²(R), énoncé formulé
+    comme hypothèse [H2] dans la version 2.0 de Q5a. H2 ne lève aucune hypothèse de la Q5a actuelle
+    et ne fournit aucun opérateur limite spatial."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/emergent-geometry/h2/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -17,9 +17,9 @@
     content="Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
     sinc quantitatif, convergence des générateurs et contrôle de l'aliasing"/>
   <meta property="og:description"
-    content="H2 prouve [H2] : X̂_q → x et P̂_q → −i∂_x en topologie d'opérateur forte sur L²(R),
-    via un lemme d'aliasing de Poisson quantitatif et une identité de Sobolev discrète. Les
-    hypothèses restantes de Q5a, [H1], [H-E1] et [C], demeurent ouvertes."/>
+    content="Convergence forte X̂_q → x et P̂_q → −i∂_x sur L²(R), via un lemme d'aliasing de Poisson
+    quantitatif et une identité de Sobolev discrète : l'énoncé de [H2] de la version 2.0 de Q5a.
+    Aucune hypothèse de la Q5a actuelle n'est levée."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/emergent-geometry/h2/index_fr.html"/>
   <script type="module">
@@ -47,10 +47,10 @@
         <h1>Cohérence semiclassique de la représentation de Weil sur Heis₃(Z/qZ) : plongement
           sinc quantitatif, convergence des générateurs et contrôle de l'aliasing</h1>
         <p class="subtitle">
-          H2 prouve l'hypothèse [H2] du cadre de convergence de Mosco de Q5a :
-          la convergence en opérateur fort $\hat{X}_q \to x$ et $\hat{P}_q \to -i\partial_x$
-          sur $L^2(\mathbb{R})$, via un lemme d'aliasing de Poisson quantitatif et une identité
-          de Sobolev discrète.
+          H2 démontre la convergence en opérateur fort $\hat{X}_q \to x$ et
+          $\hat{P}_q \to -i\partial_x$ sur $L^2(\mathbb{R})$, via un lemme d'aliasing de Poisson
+          quantitatif et une identité de Sobolev discrète : l'énoncé formulé comme hypothèse [H2]
+          dans la version 2.0 de Q5a.
         </p>
       </div>
     </div>
@@ -71,31 +71,26 @@
     <div class="card">
       <h2>Vue d'ensemble</h2>
       <p>
-        Le cadre de convergence de Mosco de Q5a est un théorème conditionnel : sous ses
-        hypothèses analytiques, les représentations de Weil
-        $\rho_c^{(q)}$ sur le groupe de Heisenberg fini $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
-        convergeraient vers la représentation de Schrödinger standard du groupe de Heisenberg
-        continu lorsque $q \to \infty$, au sens de Mosco sur $L^2(\mathbb{R})$.
+        La version 2.0 de Q5a (enregistrement Zenodo 19897055) formulait un théorème de limite en
+        grand $q$, son théorème 7.1, sous les hypothèses [H-$\Pi$1], [H-$\Pi$2], [H2], [H-w] et
+        [H-E1], avec un énoncé d'étanchéité spectrale [C] pour sa partie de convergence des formes.
+        [H2] est son hypothèse 4.3 : les générateurs de Weil redimensionnés $\hat{X}_q$ et
+        $\hat{P}_q$ de $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, transportés par le plongement sinc,
+        convergent fortement vers $x$ et $-i\partial_x$ sur $L^2(\mathbb{R})$.
       </p>
       <p>
-        H2 clôt l'une de ces hypothèses. L'hypothèse [H2] affirme la
-        convergence en opérateur fort des générateurs de Weil redimensionnés : les opérateurs
-        de position et d'impulsion discrets $\hat{X}_q$ et $\hat{P}_q$ convergent vers leurs
-        homologues continus $x$ et $-i\partial_x$ en topologie d'opérateur forte sur
-        $L^2(\mathbb{R})$.
-      </p>
-      <p>
-        La preuve combine deux ingrédients principaux : un lemme d'aliasing de Poisson
-        quantitatif contrôlant l'erreur $L^2$ introduite par l'aliasing périodique dans
-        le plongement de Fourier discret, et une identité de Sobolev discrète qui relie
-        l'action de $\hat{P}_q$ à une dérivée aux différences finies dont la limite forte
-        est $-i\partial_x$.
+        H2 démontre cet énoncé, pour le plongement sinc isométrique. La preuve combine un lemme
+        d'aliasing de Poisson quantitatif, qui contrôle l'erreur $L^2$ de l'aliasing périodique avec
+        un taux explicite $O(q^{-1})$ sur les données de Schwartz, et une identité de Sobolev
+        discrète reliant $\hat{P}_q$ à une différence finie dont la limite forte est $-i\partial_x$.
       </p>
       <div class="note" role="note">
-        <strong>Conséquence clé.</strong> H2 clôt l'hypothèse [H2] du cadre de convergence de
-        Mosco à grand $q$ de Q5a. Les hypothèses analytiques restantes [H1], [H-E1] et [C]
-        demeurent ouvertes ; la convergence de la représentation de Weil vers la mécanique
-        de Schrödinger reste donc conditionnelle à celles-ci.
+        <strong>Portée.</strong> Le cadre de la version 2.0 de Q5a n'est pas celui de la Q5a
+        actuelle, qui démontre que, pour des poids uniformément bornés, la forme d'admissibilité
+        publiée a une limite de Mosco nulle sur la filtration de Fourier canonique. H2 ne lève aucune
+        hypothèse de la Q5a actuelle et ne fournit aucun opérateur limite spatial. Dans le cadre de la
+        version 2.0, [H-w] est ouverte (W1 n'en établit aucune preuve), et l'analyse de Fourier de
+        Q5a-O2 exclut [H-E1] à l'échelle $q^{-1}$ et rend [C] caduque.
       </div>
     </div>
     <aside class="card">
@@ -107,7 +102,7 @@
         </div>
         <div class="kv">
           <div class="k">Type de travail</div>
-          <div class="v">Preprint</div>
+          <div class="v">Prépublication</div>
         </div>
         <div class="kv">
           <div class="k">Licence</div>
@@ -115,20 +110,20 @@
         </div>
         <div class="kv">
           <div class="k">Statut</div>
-          <div class="v">Prouvé</div>
+          <div class="v">Démontré</div>
         </div>
         <div class="kv">
           <div class="k">Résultat clé</div>
-          <div class="v">$\hat{X}_q \to x$ et $\hat{P}_q \to -i\partial_x$ inconditionnellement ;
-            hypothèse [H2] de Q5a close, [H1], [H-E1], [C] ouvertes</div>
+          <div class="v">$\hat{X}_q \to x$ et $\hat{P}_q \to -i\partial_x$ fortement sur $L^2(\mathbb{R})$ ;
+            l'énoncé de [H2] de la version 2.0 de Q5a</div>
         </div>
         <div class="kv">
           <div class="k">Dépend de</div>
-          <div class="v">Q5a, W1</div>
+          <div class="v">Q5a version 2.0 (définitions)</div>
         </div>
         <div class="kv">
-          <div class="k">Alimente</div>
-          <div class="v">Clôt l'hypothèse [H2] de Q5a</div>
+          <div class="k">Non établi</div>
+          <div class="v">Toute hypothèse de la Q5a actuelle ; [H-w], [H-E1], [C] ; un opérateur limite spatial</div>
         </div>
       </div>
     </aside>
@@ -137,78 +132,39 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Preuve de [H2] :</strong> convergence en opérateur fort $\hat{X}_q \to x$ et
-        $\hat{P}_q \to -i\partial_x$ en topologie d'opérateur forte sur $L^2(\mathbb{R})$,
-        inconditionnellement sur le secteur admissible.
+        <strong>Convergence forte des générateurs redimensionnés :</strong> $\hat{X}_q \to x$ et
+        $\hat{P}_q \to -i\partial_x$ en topologie d'opérateur forte sur $L^2(\mathbb{R})$, uniformément
+        sur les parties bornées de l'espace de Schwartz et, par densité, sur $L^2(\mathbb{R})$.
       </li>
       <li>
-        <strong>Lemme d'aliasing de Poisson quantitatif :</strong> borne d'erreur $L^2$
-        explicite pour l'aliasing périodique introduit par le plongement de fonctions
-        discrètes dans $L^2(\mathbb{R})$ via interpolation sinc. L'erreur est contrôlée
-        uniformément dans la limite $q \to \infty$.
+        <strong>Lemme d'aliasing de Poisson quantitatif :</strong> borne explicite de l'erreur $L^2$
+        due à l'aliasing périodique introduit par le plongement des fonctions discrètes dans
+        $L^2(\mathbb{R})$ par interpolation sinc.
       </li>
       <li>
-        <strong>Identité de Sobolev discrète :</strong> identité algébrique reliant l'action
-        de l'opérateur d'impulsion discret $\hat{P}_q$ à une dérivée aux différences finies,
-        permettant d'identifier la limite forte comme $-i\partial_x$.
+        <strong>Identité de Sobolev discrète :</strong> identité exacte reliant l'opérateur
+        d'impulsion discret à une dérivée par différence finie.
       </li>
       <li>
-        <strong>Plongement sinc quantitatif :</strong> contrôle précis du plongement par
-        interpolation sinc $\ell^2(\mathbb{Z}/q\mathbb{Z}) \hookrightarrow L^2(\mathbb{R})$
-        avec des taux de convergence explicites.
-      </li>
-      <li>
-        <strong>Contribution à Q5a :</strong> H2 clôt l'hypothèse [H2] du cadre de
-        convergence de Mosco de Q5a ; la convergence discret-vers-continu de la
-        représentation de Weil reste conditionnelle aux hypothèses ouvertes [H1], [H-E1]
-        et [C].
+        <strong>Quasi-isométrie du plongement sinc :</strong> le défaut de norme est $O(q^{-1})$. Une
+        identification d'une constante métrique effective $A$ en fonction de la constante de
+        Born–Infeld utiliserait une telle borne comme l'un de ses ingrédients, avec un profil en loi
+        de puissance fourni et non établi (W1, section 4.2) ; H2 fournit la borne, non
+        l'identification.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Le programme de convergence de Mosco de Q5a</h2>
-    <p>
-      Le cadre de convergence de Mosco de Q5a est le résultat conditionnel central connectant la
-      représentation de Weil discrète sur le groupe de Heisenberg fini à la représentation
-      de Schrödinger continue. Sous ses hypothèses, quand le premier $q \to \infty$, la mécanique
-      quantique discrète sur $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converge vers la
-      mécanique quantique standard sur $L^2(\mathbb{R})$.
-    </p>
-    <p>
-      Cette convergence est le fondement mathématique de la claim que la mécanique quantique
-      n'est pas postulée dans le cadre Cosmochronie mais émerge comme la limite à grande
-      échelle de la projection admissible sur le substrat de Heisenberg.
-    </p>
-    <p>
-      L'hypothèse [H2] est la condition que H2 traite. La preuve fournie dans
-      H2 utilise le plongement par interpolation sinc — qui associe des fonctions discrètes
-      finies à des fonctions à bande limitée dans $L^2(\mathbb{R})$ — et montre que sous
-      ce plongement, les générateurs discrets convergent fortement vers leurs homologues continus.
-    </p>
-    <p>
-      Le lemme d'aliasing de Poisson est l'outil technique clé : il fournit un contrôle
-      quantitatif de l'erreur d'aliasing qui apparaît quand un signal discret périodique est
-      plongé dans le $L^2(\mathbb{R})$ non périodique. L'identité de Sobolev discrète traduit
-      ensuite la convergence forte du quotient différentiel en convergence forte de la dérivée.
-    </p>
-  </section>
-  <section class="card">
     <h2>Relation avec le programme Cosmochronie</h2>
     <p>
-      H2 règle le volet de cohérence semiclassique du programme pour la représentation de
-      Weil. Le cadre Q5a, conditionnel aux hypothèses de poids ouvertes [H-w′] et [H-w], ainsi qu’à [H1], [H-E1] et [C], est l'un des fils structurels centraux du cadre Cosmochronie : sous ces
-      hypothèses, le substrat de Heisenberg fini donne naissance à la mécanique quantique
-      continue dans la limite admissible à grande échelle.
+      H2 appartient au sous-programme de géométrie émergente comme article de l'ancien cadre de Q5a.
+      Son résultat porte sur des générateurs : il ne fait de la limite en grand $q$ de la structure
+      admissible ni une mécanique quantique du continu ni une géométrie spatiale. La Q5a actuelle
+      laisse la limite spatiale comme l'hypothèse que Q5b nomme [H-L].
     </p>
     <p>
-      La version 2.0.1 de W1 retire sa clôture revendiquée de [H-w]. Son résultat conditionnel conservé concerne un proxy de sommes partielles, sans pont établi vers les poids de réponse de Q5a. Q5a a formulé le cadre de convergence de Mosco ; sa filtration canonique est la fenêtre de Fourier croissante, de limite de Mosco nulle. Les hypothèses de poids [H-w′] et [H-w], ainsi que [H1], [H-E1] et [C], restent ouvertes. H2 apporte la clause [H2].
-    </p>
-    <p>
-      Le résultat soutient la thèse fondatrice du programme : l'algèbre de Heisenberg
-      $[\hat{X}, \hat{P}] = i\hbar$ n'est pas postulée mais émergerait des contraintes
-      d'admissibilité sur le substrat discret, comme la limite à grand $q$ des générateurs
-      structurels $\hat{X}_q$ et $\hat{P}_q$, une fois établies les hypothèses restantes
-      de Q5a.
+      La version 2.0.1 de W1 n'établit aucune preuve de [H-w] ; son résultat conditionnel conservé
+      concerne un proxy de sommes partielles, sans pont établi vers les poids de réponse de Q5a.
     </p>
   </section>
   <section class="card">

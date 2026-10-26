@@ -65,10 +65,14 @@
       <p>
         The presentation note locates entanglement <em>inside</em> the spectral admissibility cascade.
         For a closed conjugate Weil pair $\{c, q-c\}$ on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
-        the reduced entropy on the residual fibre-level support of the Gram&ndash;Schmidt span of
+        under the note's closure hypothesis (a supplied purity of the joint state, which neither the
+        note nor E1 derives, with the diagonal Schmidt pairing, which E1 proves for matched blocks
+        given that purity), the reduced entropy on the residual fibre-level support of the Gram&ndash;Schmidt span of
         Weil fingerprints is exactly
         $$ S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n), $$
         the logarithm of the residual Gram&ndash;Schmidt rank, with no surviving spectral weighting.
+        For independently sampled blocks, E2 adds a residual indiscernibility hypothesis and an O17
+        transfer gap.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page is an entry point to the sub-programme. The
@@ -139,18 +143,18 @@
     <p>
       The reduction $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$ is <em>derived</em>,
       conditional on the orthogonality of admitted Weil fingerprints — now
-      <em>proved analytically</em> for matched single-character blocks by
+      <em>proved analytically</em> for every block by
       <a href="/science/entanglement/e1/">E1</a> (Theorem 1: every $k=3$ Weil fingerprint is a
-      discrete Fourier mode, and distinct Fourier modes are orthogonal), and on a supplied purity of
-      the joint state, which E1 does not derive. The monotonicity of
+      discrete Fourier mode, and distinct Fourier modes are orthogonal), and on the closure hypothesis
+      (a supplied purity of the joint state, which E1 does not derive, with the diagonal pairing). The monotonicity of
       $S_{\mathrm{ent}}$ is <em>structural</em> (Gram&ndash;Schmidt). The capacity-level one-way
       activation $\Delta I(n) \geq 0$ is a <em>conjecture</em> of the projective temporal ordering
       analysis, supported numerically only within a tolerance ($\Delta I(n) \geq -10^{-6} I_{\max}$ after
       burn-in); exact non-negativity and its analytic proof remain <em>open</em>. The purity of
-      the conjugate pair is a <em>supplied composition structure</em> (a K4 crossing): E1 claims it
-      as a theorem for matched blocks, by exhibiting the maximally entangled state as the natural
-      choice on the identified residual subspaces rather than deriving purity from a more primitive
-      input; the general (or mismatched-block) case used for the independently sampled canonical
+      the conjugate pair is a <em>supplied composition structure</em> (a K4 crossing): E1 does not
+      derive it: for matched blocks, E1 proves the diagonal pairing given that purity and exhibits the
+      maximally entangled state as the natural choice on the identified residual subspaces, rather
+      than deriving purity from a more primitive input; the general (or mismatched-block) case used for the independently sampled canonical
       O25 pair observable remains <em>open</em>, and the literal Schmidt-partner pairing there is
       not fixed.
     </p>

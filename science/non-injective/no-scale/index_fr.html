@@ -74,6 +74,14 @@ paint-order: stroke; stroke: currentColor;"
           scaling spectral compatible BFS, soit la non-injectivité structurelle, soit la clôture
           bornée de l’admissibilité.</strong>
       </p>
+      <p>
+        Q6b affirme qu’une rigidité à échelle unique, la prémisse selon laquelle aucune échelle au-delà de
+        la constante de Born–Infeld n’entre dans la structure d’admissibilité de Foundation M (et, pour
+        Reissner-Nordström, qu’aucune charge \(U(1)\) indépendante n’est attachée à l’obstruction
+        stationnaire), n’est pas établie et n’est pas disponible comme prémisse, et il ne revendique aucune
+        unicité de l’extérieur de Schwarzschild. Savoir si la présente note fournit cette rigidité fait
+        l’objet d’un audit séparé.
+      </p>
       <div class="note">
         <strong>Portée.</strong> Le résultat est un théorème de rigidité négatif. Il n’affirme pas que
         toutes les échelles émergentes sont entièrement déterminées comme fonctions de \(c_\chi\).
@@ -106,17 +114,41 @@ paint-order: stroke; stroke: currentColor;"
   </section>
   <section class="card">
     <h2>Mécanisme de rigidité</h2>
+    <p>
+      La preuve distingue trois déformations possibles de la borne d’admissibilité.
+    </p>
     <ul>
-      <li><strong>Déformation globale :</strong> incohérence dimensionnelle ou trivialité</li>
-      <li><strong>Déformation dépendant de n :</strong> rupture du scaling spectral</li>
-      <li><strong>Déformation dépendant de la configuration :</strong> injectivisation partielle</li>
+      <li>
+        <strong>Déformation globale :</strong>
+        si le nouveau paramètre est dimensionné, la borne d’admissibilité devient mal typée ;
+        s’il est sans dimension, il est absorbé dans \(c_\chi\).
+      </li>
+      <li>
+        <strong>Déformation dépendant de la profondeur :</strong>
+        un facteur \(\Phi(\lambda,n)\) modifie l’observable de paire effective
+        \(\sigma_{\mathrm{pair}}(n)\) et brise le scaling en loi de puissance nécessaire à la
+        limite de Mosco de Q5a.
+      </li>
+      <li>
+        <strong>Déformation dépendant de la configuration :</strong>
+        un facteur \(\Phi(\lambda,\omega)\) discrimine à l’intérieur des fibres de projection et
+        induit une injectivisation partielle, en contradiction avec la non-injectivité structurelle.
+      </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      Le résultat interdit les échelles fondamentales supplémentaires mais autorise les échelles
-      émergentes issues de la cascade spectrale.
+      Le résultat doit être lu comme un théorème de rigidité de niveau 1.
+    </p>
+    <p>
+      Il n’interdit pas les échelles émergentes. Il interdit d’insérer des échelles dimensionnelles
+      indépendantes dans les axiomes d’admissibilité.
+    </p>
+    <p>
+      Des quantités dérivées comme \(\delta_{\mathrm{pair}}\), \(\beta^*\), des rapports de masse ou des
+      seuils spectraux restent admissibles exactement dans la mesure où elles apparaissent comme des
+      sorties de la cascade d’admissibilité spectrale plutôt que comme des entrées supplémentaires.
     </p>
   </section>
   <section class="card">

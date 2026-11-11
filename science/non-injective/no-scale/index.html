@@ -103,13 +103,11 @@ paint-order: stroke; stroke: currentColor;"
     <ul>
       <li>
         <strong>Axioms:</strong> the bound and a unique primitive scale were attributed to Foundation's A3 and A4.
-        In Foundation, A3 is non-premature selection and A4 is projection locking; neither contains the bound or
-        excludes a dimensional parameter, and no paper states that \(c_{\mathrm{BI}}\) is the unique primitive
-        scale.
+        In Foundation, A3 is non-premature selection and A4 is projection locking; both refer to the capacity saturation threshold, but neither states the amplitude bound or a single-scale condition, or excludes a dimensional parameter, and no source cited by version 1 states that \(c_{\mathrm{BI}}\) is the unique primitive scale.
       </li>
       <li>
         <strong>Depth-dependent deformations:</strong> the argument used a power law for the pair capacity
-        \(\sigma_{\mathrm{pair}}\), which O24 does not state, and a continuum limit, whereas Q5a proves that the
+        \(\sigma_{\mathrm{pair}}\) determined by the admissibility structure, which O24 does not state (it reports a finite-window fitted exponent), and a continuum limit, whereas Q5a proves that the
         admissibility form converges to the zero form and leaves the spatial limit open. Even granting a power law,
         an unbounded factor such as \(\log n\) keeps the exponent.
       </li>
@@ -120,7 +118,7 @@ paint-order: stroke; stroke: currentColor;"
       </li>
       <li>
         <strong>Reissner–Nordström / Schwarzschild–de Sitter:</strong> the application was internally
-        inconsistent. If \(c_{\mathrm{BI}}\) had the dimension of a power of length, \(\Lambda\) would not be
+        inconsistent. If \(c_{\mathrm{BI}}\) had the dimension of a non-zero power of length, \(\Lambda\) would not be
         independent; if not, the Schwarzschild radius would be excluded on the same ground.
       </li>
     </ul>
@@ -129,20 +127,14 @@ paint-order: stroke; stroke: currentColor;"
     <h2>What the note keeps</h2>
     <ul>
       <li>
-        <strong>The dimension of \(c_{\mathrm{BI}}\) is not fixed by the model.</strong> In the capacity axiom
-        \(|\partial_\tau\phi_v|\le c_{\mathrm{BI}}\), neither the relational configuration nor the ordering
-        parameter carries a physical dimension; in the bound \(A_n \le c_{\mathrm{BI}}/\sqrt{\lambda_n}\),
-        \(\lambda_n\) is a graph-Laplacian eigenvalue. The note records this gap and does not choose a dimension.
+        <strong>The dimension of \(c_{\mathrm{BI}}\) is not fixed by the model.</strong> The capacity axiom \(|\partial_\tau\phi_v|\le c_{\mathrm{BI}}\) gives \([c_{\mathrm{BI}}]=[\phi][\tau]^{-1}\), and O20's derivation of the bound \(A_n \le c_{\mathrm{BI}}/\sqrt{\lambda_n}\) gives \([A_n]=[\phi]\) and \([\lambda_n]=[\tau]^{-2}\), but neither \([\phi]\) nor \([\tau]\) is assigned. The white paper reads \(c_{\mathrm{BI}}\) as a speed, which the current axiom does not import. The note records this gap and does not choose a dimension.
       </li>
       <li>
         <strong>Independent dimensional parameters, relative to an assignment:</strong> a parameter is
-        independent if its dimension is not a rational multiple of \([c_{\mathrm{BI}}]\) under a supplied
-        dimensional assignment. Under any such assignment, \(G\), \(\hbar\) and mass scales cannot all be
-        reduced to \(c_{\mathrm{BI}}\).
+        independent if its dimension is not a rational multiple of \([c_{\mathrm{BI}}]\) under a supplied dimensional assignment; this is adequate only when the spectral data are dimensionless. With independent base dimensions of length, time and mass, at most one of \(G\), \(\hbar\) and a mass scale has a dimension that is a multiple of \([c_{\mathrm{BI}}]\).
       </li>
       <li>
-        <strong>Homogeneity observation:</strong> a constant factor in the bound depending only on a parameter
-        whose dimension lies outside the span of the bound's ingredients is constant, and a dimensionless factor
+        <strong>Homogeneity observation:</strong> if the bound's right-hand side is a quantity of the amplitude's dimension, a constant factor depending only on a parameter whose dimension lies outside the span of the bound's ingredients cannot make the bound depend on that parameter, and a dimensionless factor
         rescales \(c_{\mathrm{BI}} \mapsto c_{\mathrm{BI}} f(\lambda)\). Parameters entering through
         depth-dependent combinations are not excluded.
       </li>
@@ -166,8 +158,7 @@ paint-order: stroke; stroke: currentColor;"
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
       This note belongs to the non-injective foundations track, alongside Foundation M and the ENI no-go theorem.
-      It no longer restricts downstream constructions: no result of the programme currently excludes an
-      independent dimensional parameter from the admissibility constraints.
+      It no longer restricts downstream constructions: the programme currently has no result available that excludes an independent dimensional parameter from the admissibility constraints.
     </p>
   </section>
   <section class="card">

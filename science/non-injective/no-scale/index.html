@@ -6,17 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>No External Dimensional Scale at the Level of Admissibility | Cosmochrony</title>
   <meta name="description"
-    content="This paper proves a Level-1 scale-rigidity result: no independent dimensional scale can be
-introduced into the admissibility structure without breaking spectral scaling, structural
-non-injectivity, or bounded admissibility closure."/>
-  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/non-injective/foundation/no-scale/index_fr.html"/>
+    content="Version 2.0 withdraws the Level 1 scale-rigidity theorem of version 1: its proof rested on premises absent from the cited papers. The question is open. The note keeps dimensional observations: the model does not fix the dimension of the Born–Infeld constant, and a homogeneity observation holds under a supplied dimensional assignment."/>
+  <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/non-injective/no-scale/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="No External Dimensional Scale at the Level of Admissibility"/>
   <meta property="og:description"
-    content="A Level-1 no-scale rigidity theorem for admissibility: independent dimensional scales are
-excluded by A3-A4, BFS-consistent spectral scaling, and structural non-injectivity."/>
+    content="A status correction: the Level 1 no-scale theorem is withdrawn and open; dimensional observations on the admissibility bound are kept under a supplied dimensional assignment."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/foundation/no-scale/index.html"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/no-scale/index.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
     redirectIfNot("en", "/science/non-injective/no-scale/index")
@@ -41,9 +38,9 @@ paint-order: stroke; stroke: currentColor;"
       <div>
         <h1>No External Dimensional Scale at the Level of Admissibility</h1>
         <p class="subtitle">
-          This note proves a Level-1 scale-rigidity theorem: the admissibility structure of
-          Foundation M cannot be deformed by an independent dimensional scale without
-          breaking spectral scaling, structural non-injectivity, or bounded admissibility closure.
+          This note claimed in version 1 that no independent dimensional scale can enter the admissibility
+          constraints. Version 2.0 withdraws that theorem, records the question as open, and keeps the dimensional
+          observations that hold.
         </p>
       </div>
     </div>
@@ -54,39 +51,34 @@ paint-order: stroke; stroke: currentColor;"
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.0.1">
-    <strong>Current Zenodo release:</strong> version 1.0.1 (2026-07-11).
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Current Zenodo release:</strong> version 2.0 (2026-11-11).
     <span lang="en">Official title: <i>No External Dimensional Scale at the Level of Admissibility</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Overview</h2>
       <p>
-        The admissibility structure of Foundation M is built from a single primitive dimensional
-        scale, the Born-Infeld saturation scale \(c_\chi\), entering the admissibility bound
-        \(A_n \le c_\chi / \sqrt{\lambda_n}\).
+        Version 1 stated a Level 1 theorem: any deformation of the admissibility constraints that introduces a
+        dimensional parameter independent of the Born–Infeld constant \(c_{\mathrm{BI}}\) (written \(c_\chi\)
+        elsewhere on this site) breaks spectral scaling, structural non-injectivity or bounded admissibility
+        closure. A corollary excluded Reissner–Nordström and Schwarzschild–de Sitter exteriors.
       </p>
       <p>
-        The central question of this note is whether one can consistently deform this structure
-        by adding another dimensional parameter.
+        <strong>Version 2.0 withdraws that theorem, its corollary and that application.</strong>
+        Three things are kept apart:
       </p>
-      <p>
-        The answer is negative at Level 1:
-        <strong>any deformation that introduces an independent dimensional parameter breaks at
-          least one of BFS-consistent spectral scaling, structural non-injectivity, or bounded
-          admissibility closure.</strong>
-      </p>
-      <p>
-        Q6b states that a single-scale rigidity, the premise that no scale beyond the Born–Infeld constant enters the
-        admissibility structure of Foundation M (and, for Reissner-Nordström, that no independent \(U(1)\) charge is
-        attached to the stationary obstruction), is not established and not available as a premise, and it makes no
-        uniqueness claim for the Schwarzschild exterior. Whether this note supplies that rigidity is under separate
-        audit.
-      </p>
+      <ul>
+        <li><strong>The proof is invalid:</strong> its premises are not in the cited papers, and each of its cases
+          has internal gaps.</li>
+        <li><strong>The claim is withdrawn.</strong></li>
+        <li><strong>The question is open:</strong> an invalid proof does not show that every Level 1 property is
+          false.</li>
+      </ul>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> The paper proves a negative rigidity result. It does not
-        claim that all emergent scales are already fully determined as functionals of
-        \(c_\chi\); that stronger Level-2 statement remains open.
+        <strong>Scope statement.</strong> The note proves no rigidity theorem. It keeps dimensional observations
+        under explicit premises. Level 1 and the stronger Level 2 (every scale determined by
+        \(c_{\mathrm{BI}}\) and the cascade) are both open.
       </div>
     </div>
     <aside class="card">
@@ -99,136 +91,102 @@ paint-order: stroke; stroke: currentColor;"
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            admissibility, dimensional analysis, scale rigidity, non-injective projection
+            admissibility, dimensional analysis, dimensional homogeneity, status correction
           </div></div>
-        <div class="kv"><div class="k">Core scale</div>
-          <div class="v">\(c_\chi\)</div></div>
+        <div class="kv"><div class="k">Status</div>
+          <div class="v">Level 1 open; observation proved under its premises</div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Main contributions</h2>
+    <h2>Why the proof fails</h2>
     <ul>
       <li>
-        <strong>Independent dimensional parameter defined:</strong>
-        a parameter is independent if its dimensions are not expressible as a rational
-        power of \([c_\chi]\).
+        <strong>Axioms:</strong> the bound and a unique primitive scale were attributed to Foundation's A3 and A4.
+        In Foundation, A3 is non-premature selection and A4 is projection locking; neither contains the bound or
+        excludes a dimensional parameter, and no paper states that \(c_{\mathrm{BI}}\) is the unique primitive
+        scale.
       </li>
       <li>
-        <strong>Dimensionless parameters separated:</strong>
-        finite resolution parameters such as \(q\), and parameters entering only through
-        dimensionless ratios, are explicitly excluded from the no-scale obstruction.
+        <strong>Depth-dependent deformations:</strong> the argument used a power law for the pair capacity
+        \(\sigma_{\mathrm{pair}}\), which O24 does not state, and a continuum limit, whereas Q5a proves that the
+        admissibility form converges to the zero form and leaves the spatial limit open. Even granting a power law,
+        an unbounded factor such as \(\log n\) keeps the exponent.
       </li>
       <li>
-        <strong>Three-case rigidity proof:</strong>
-        global multiplicative, depth-dependent, and configuration-dependent deformations
-        are shown to be either trivial or inadmissible.
+        <strong>Configuration-dependent deformations:</strong> a weight on configurations does not make the
+        projection injective; excluding it needs a premise that weights are constant on fibres, which ENI does not
+        state.
       </li>
       <li>
-        <strong>No additional dimensional field coupling:</strong>
-        any additional dynamical field carrying an independent dimensional coupling
-        introduces a forbidden scale into A3-A4.
-      </li>
-      <li>
-        <strong>Relation to Q6b:</strong>
-        this note proposes backing for the single-scale premise (with a no-charge premise for the \(Q\)-type case)
-        that would exclude \(Q\)- and \(\Lambda\)-type deformations; Q6b treats that premise as not established,
-        and the proposed backing is under separate audit.
+        <strong>Reissner–Nordström / Schwarzschild–de Sitter:</strong> the application was internally
+        inconsistent. If \(c_{\mathrm{BI}}\) had the dimension of a power of length, \(\Lambda\) would not be
+        independent; if not, the Schwarzschild radius would be excluded on the same ground.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>The rigidity mechanism</h2>
-    <p>
-      The proof distinguishes three possible deformations of the admissibility bound.
-    </p>
+    <h2>What the note keeps</h2>
     <ul>
       <li>
-        <strong>Global deformation:</strong>
-        if the new parameter is dimensional, the admissibility bound becomes ill-typed;
-        if it is dimensionless, it is absorbed into \(c_\chi\).
+        <strong>The dimension of \(c_{\mathrm{BI}}\) is not fixed by the model.</strong> In the capacity axiom
+        \(|\partial_\tau\phi_v|\le c_{\mathrm{BI}}\), neither the relational configuration nor the ordering
+        parameter carries a physical dimension; in the bound \(A_n \le c_{\mathrm{BI}}/\sqrt{\lambda_n}\),
+        \(\lambda_n\) is a graph-Laplacian eigenvalue. The note records this gap and does not choose a dimension.
       </li>
       <li>
-        <strong>Depth-dependent deformation:</strong>
-        a factor \(\Phi(\lambda,n)\) changes the effective pair observable
-        \(\sigma_{\mathrm{pair}}(n)\), breaking the power-law scaling needed for the
-        Q5a Mosco limit.
+        <strong>Independent dimensional parameters, relative to an assignment:</strong> a parameter is
+        independent if its dimension is not a rational multiple of \([c_{\mathrm{BI}}]\) under a supplied
+        dimensional assignment. Under any such assignment, \(G\), \(\hbar\) and mass scales cannot all be
+        reduced to \(c_{\mathrm{BI}}\).
       </li>
       <li>
-        <strong>Configuration-dependent deformation:</strong>
-        a factor \(\Phi(\lambda,\omega)\) discriminates within projection fibres and
-        induces a partial injectivisation, contradicting structural non-injectivity.
+        <strong>Homogeneity observation:</strong> a constant factor in the bound depending only on a parameter
+        whose dimension lies outside the span of the bound's ingredients is constant, and a dimensionless factor
+        rescales \(c_{\mathrm{BI}} \mapsto c_{\mathrm{BI}} f(\lambda)\). Parameters entering through
+        depth-dependent combinations are not excluded.
+      </li>
+      <li>
+        <strong>Gram rigidity:</strong> that classification is character-theoretic and scale-free; the earlier
+        statement that it is derived under the Born–Infeld bound is withdrawn.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The result should be read as a Level-1 rigidity theorem.
-    </p>
-    <p>
-      It does not forbid emergent scales. It forbids independent dimensional scales being
-      inserted into the admissibility axioms.
-    </p>
-    <p>
-      Derived quantities such as \(\delta_{\mathrm{pair}}\), \(\beta^*\), mass ratios, or spectral
-      thresholds remain admissible precisely insofar as they arise as outputs of the spectral
-      admissibility cascade rather than as additional inputs.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Relation to Q6b</h2>
-    <p>
-      Q6b obtains, for a supplied spherically symmetric and asymptotically flat
-      extension with an asymptotically homogeneous exterior, a leading Newtonian exterior from flux conservation,
-      and the Schwarzschild form only with external dynamical input; it makes no uniqueness claim.
-    </p>
-    <p>
-      Reissner-Nordström and Schwarzschild-de Sitter geometries require, respectively,
-      an independent electromagnetic charge scale \(Q\) or an independent cosmological
-      scale \(\Lambda\).
-    </p>
-    <p>
-      Q6b does not use the single-scale premise above (nor, for the \(Q\)-type deformation, the absence of an
-      independent \(U(1)\) charge on the obstruction): that premise is not established and not available, and within
-      its Proposition 3.2(ii) these deformations are excluded only by the supplied inputs. Whether the no-scale
-      theorem supports such an exclusion is part of its separate audit.
+      <em>This is a reading, not a result.</em> The programme's working reading is that physical scales should
+      arise as outputs of the projection and of the spectral structure rather than as primitive inputs. The note
+      does not establish that reading, and the geometric sector already carries scales not derived from
+      \(c_{\mathrm{BI}}\): Q6b lists a full-rank extension's length scale, the free temporal step of Q11, and the
+      Einstein and cosmological coefficients as matching data.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      This note belongs to the foundation track. It complements the axiomatic paper
-      Foundation M, the structural non-injectivity theorem ENI, and the Q-series papers
-      deriving gauge and spacetime structure from admissible non-injective projection.
-    </p>
-    <p>
-      Its role is not to add new physics, but to restrict the admissible space of extensions:
-      any downstream construction must respect the absence of independent dimensional
-      scales at the admissibility level.
+      This note belongs to the non-injective foundations track, alongside Foundation M and the ENI no-go theorem.
+      It no longer restricts downstream constructions: no result of the programme currently excludes an
+      independent dimensional parameter from the admissibility constraints.
     </p>
   </section>
   <section class="card">
     <h2>Open directions</h2>
     <ul>
       <li>
-        <strong>Level 2:</strong>
-        determine whether all emergent scales are functionals of \(c_\chi\) and of the
-        spectral cascade without free parameters or unfixed initial conditions.
+        <strong>A dimensional assignment:</strong> state the physical dimensions of the objects of the model, without
+        which no statement on independent parameters can be applied.
       </li>
       <li>
-        <strong>Effective scales:</strong>
-        classify which observed scales arise as cascade outputs rather than primitive inputs.
+        <strong>Depth-dependent deformations:</strong> which deformations of the filter change the large-depth
+        behaviour of \(\sigma_{\mathrm{pair}}\), and by what law.
       </li>
       <li>
-        <strong>Gauge and matter sectors:</strong>
-        analyse how dimensionless couplings and effective masses fit into the no-scale
-        classification.
+        <strong>Fibre-constant weights:</strong> whether any principle of the programme imposes them.
       </li>
       <li>
-        <strong>Cosmology:</strong>
-        clarify the status of effective cosmological parameters as derived quantities or
-        forbidden independent inputs.
+        <strong>Level 2:</strong> whether every emergent scale is a functional of \(c_{\mathrm{BI}}\) and the
+        spectral cascade.
       </li>
     </ul>
   </section>

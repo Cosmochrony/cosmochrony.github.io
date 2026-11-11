@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Aucune échelle dimensionnelle externe au niveau de l’admissibilité | Cosmochronie</title>
   <meta name="description"
-    content="Ce papier établit un résultat de rigidité d’échelle de niveau 1 : aucune échelle dimensionnelle indépendante ne peut être introduite dans la structure d’admissibilité sans briser le scaling spectral, la non-injectivité structurelle ou la clôture bornée de l’admissibilité."/>
-  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/non-injective/foundation/no-scale/index.html"/>
+    content="La version 2.0 retire le théorème de rigidité d’échelle de niveau 1 de la version 1 : sa preuve reposait sur des prémisses absentes des articles cités. La question est ouverte. La note conserve des observations dimensionnelles : le modèle ne fixe pas la dimension de la constante de Born–Infeld, et une observation d’homogénéité vaut sous une attribution dimensionnelle fournie."/>
+  <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/non-injective/no-scale/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title" content="Aucune échelle dimensionnelle externe au niveau de l’admissibilité"/>
   <meta property="og:description"
-    content="Théorème de rigidité d’échelle de niveau 1 : les échelles dimensionnelles indépendantes sont exclues par A3-A4, le scaling spectral et la non-injectivité structurelle."/>
+    content="Une correction de statut : le théorème de niveau 1 est retiré et la question est ouverte ; des observations dimensionnelles sur la borne d’admissibilité sont conservées sous une attribution dimensionnelle fournie."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/foundation/no-scale/index_fr.html"/>
+  <meta property="og:url" content="https://cosmochrony.org/science/non-injective/no-scale/index_fr.html"/>
   <script type="module">
     import { redirectIfNot } from "/script.js"
     redirectIfNot("fr", "/science/non-injective/no-scale/index")
@@ -38,10 +38,9 @@ paint-order: stroke; stroke: currentColor;"
       <div>
         <h1>Aucune échelle dimensionnelle externe au niveau de l’admissibilité</h1>
         <p class="subtitle">
-          Cette note démontre un théorème de rigidité d’échelle de niveau 1 : la structure
-          d’admissibilité de Foundation M ne peut être déformée par une échelle dimensionnelle
-          indépendante sans briser le scaling spectral, la non-injectivité structurelle ou la
-          clôture bornée de l’admissibilité.
+          Cette note affirmait dans sa version 1 qu’aucune échelle dimensionnelle indépendante ne peut entrer
+          dans les contraintes d’admissibilité. La version 2.0 retire ce théorème, enregistre la question comme
+          ouverte et conserve les observations dimensionnelles qui tiennent.
         </p>
       </div>
     </div>
@@ -52,175 +51,150 @@ paint-order: stroke; stroke: currentColor;"
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.0.1">
-    <strong>Publication Zenodo actuelle :</strong> version 1.0.1 (2026-07-11).
+  <section class="note" role="note" data-release-version="2.0">
+    <strong>Version Zenodo actuelle :</strong> version 2.0 (2026-11-11).
     <span lang="en">Titre officiel : <i>No External Dimensional Scale at the Level of Admissibility</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        La structure d’admissibilité de Foundation M repose sur une unique échelle dimensionnelle
-        primitive, la constante de saturation de Born–Infeld \(c_\chi\), intervenant dans la borne
-        \(A_n \le c_\chi / \sqrt{\lambda_n}\).
+        La version 1 énonçait un théorème de niveau 1 : toute déformation des contraintes d’admissibilité
+        introduisant un paramètre dimensionnel indépendant de la constante de Born–Infeld \(c_{\mathrm{BI}}\)
+        (notée \(c_\chi\) ailleurs sur ce site) brise le scaling spectral, la non-injectivité structurelle ou la
+        clôture bornée de l’admissibilité. Un corollaire excluait les extérieurs de Reissner–Nordström et de
+        Schwarzschild–de Sitter.
       </p>
       <p>
-        La question centrale est de savoir si cette structure peut être déformée en introduisant
-        un second paramètre dimensionnel.
+        <strong>La version 2.0 retire ce théorème, son corollaire et cette application.</strong>
+        Trois choses sont distinguées :
       </p>
-      <p>
-        La réponse est négative au niveau 1 :
-        <strong>toute déformation introduisant un paramètre dimensionnel indépendant brise soit le
-          scaling spectral compatible BFS, soit la non-injectivité structurelle, soit la clôture
-          bornée de l’admissibilité.</strong>
-      </p>
-      <p>
-        Q6b affirme qu’une rigidité à échelle unique, la prémisse selon laquelle aucune échelle au-delà de
-        la constante de Born–Infeld n’entre dans la structure d’admissibilité de Foundation M (et, pour
-        Reissner-Nordström, qu’aucune charge \(U(1)\) indépendante n’est attachée à l’obstruction
-        stationnaire), n’est pas établie et n’est pas disponible comme prémisse, et il ne revendique aucune
-        unicité de l’extérieur de Schwarzschild. Savoir si la présente note fournit cette rigidité fait
-        l’objet d’un audit séparé.
-      </p>
-      <div class="note">
-        <strong>Portée.</strong> Le résultat est un théorème de rigidité négatif. Il n’affirme pas que
-        toutes les échelles émergentes sont déjà entièrement déterminées comme fonctionnelles de
-        \(c_\chi\) ; cet énoncé plus fort de niveau 2 reste ouvert.
+      <ul>
+        <li><strong>La preuve est invalide :</strong> ses prémisses ne figurent pas dans les articles cités, et
+          chacun de ses cas présente des lacunes internes.</li>
+        <li><strong>L’énoncé est retiré.</strong></li>
+        <li><strong>La question est ouverte :</strong> une preuve invalide ne montre pas que toute propriété de
+          niveau 1 est fausse.</li>
+      </ul>
+      <div class="note" role="note">
+        <strong>Portée.</strong> La note ne démontre aucun théorème de rigidité. Elle conserve des observations
+        dimensionnelles sous des prémisses explicites. Le niveau 1 et le niveau 2, plus fort (toute échelle
+        déterminée par \(c_{\mathrm{BI}}\) et la cascade), sont tous deux ouverts.
       </div>
     </div>
     <aside class="card">
-      <h2>Informations rapides</h2>
+      <h2>En bref</h2>
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
-          <div class="v">Jérôme Beau</div></div>
-        <div class="kv"><div class="k">Type</div><div class="v">Preprint</div></div>
+          <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
         <div class="kv"><div class="k">Licence</div>
-          <div class="v">CC BY 4.0</div></div>
-        <div class="kv"><div class="k">Focus</div>
-          <div class="v">admissibilité, analyse dimensionnelle, rigidité d’échelle</div></div>
-        <div class="kv"><div class="k">Échelle centrale</div>
-          <div class="v">\(c_\chi\)</div></div>
+          <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
+        <div class="kv"><div class="k">Thèmes</div>
+          <div class="v">
+            admissibilité, analyse dimensionnelle, homogénéité dimensionnelle, correction de statut
+          </div></div>
+        <div class="kv"><div class="k">Statut</div>
+          <div class="v">niveau 1 ouvert ; observation démontrée sous ses prémisses</div></div>
       </div>
     </aside>
   </section>
   <section class="card">
-    <h2>Contributions principales</h2>
+    <h2>Pourquoi la preuve échoue</h2>
     <ul>
       <li>
-        <strong>Paramètre dimensionnel indépendant défini :</strong>
-        un paramètre est indépendant si ses dimensions ne s’expriment pas comme une puissance
-        rationnelle de \([c_\chi]\).
+        <strong>Axiomes :</strong> la borne et une échelle primitive unique étaient attribuées aux axiomes A3 et A4
+        de Foundation. Dans Foundation, A3 est la sélection non prématurée et A4 le verrouillage de projection ;
+        aucun ne contient la borne ni n’exclut un paramètre dimensionnel, et aucun article n’affirme que
+        \(c_{\mathrm{BI}}\) est l’unique échelle primitive.
       </li>
       <li>
-        <strong>Paramètres sans dimension séparés :</strong>
-        les paramètres de résolution finie comme \(q\), et les paramètres qui n’interviennent que
-        par des rapports sans dimension, sont explicitement exclus de l’obstruction d’absence d’échelle.
+        <strong>Déformations dépendant de la profondeur :</strong> l’argument utilisait une loi de puissance pour la
+        capacité de paire \(\sigma_{\mathrm{pair}}\), que O24 n’énonce pas, et une limite continue, alors que Q5a
+        démontre que la forme d’admissibilité converge vers la forme nulle et laisse ouverte la limite spatiale.
+        Même en admettant une loi de puissance, un facteur non borné comme \(\log n\) conserve l’exposant.
       </li>
       <li>
-        <strong>Preuve de rigidité en trois cas :</strong>
-        les déformations multiplicatives globales, dépendant de la profondeur et dépendant de la
-        configuration sont soit triviales, soit inadmissibles.
+        <strong>Déformations dépendant de la configuration :</strong> un poids sur les configurations ne rend pas
+        la projection injective ; l’exclure suppose que les poids sont constants sur les fibres, ce que ENI
+        n’énonce pas.
       </li>
       <li>
-        <strong>Aucun couplage de champ dimensionné supplémentaire :</strong>
-        tout champ dynamique supplémentaire portant un couplage dimensionnel indépendant introduit
-        une échelle interdite dans A3-A4.
-      </li>
-      <li>
-        <strong>Relation à Q6b :</strong>
-        cette note propose un appui à la prémisse d’échelle unique (avec une prémisse d’absence de
-        charge pour le cas de type \(Q\)) qui exclurait les déformations de type \(Q\) et
-        \(\Lambda\) ; Q6b tient cette prémisse pour non établie, et l’appui proposé fait l’objet
-        d’un audit séparé.
+        <strong>Reissner–Nordström / Schwarzschild–de Sitter :</strong> l’application était incohérente. Si
+        \(c_{\mathrm{BI}}\) avait la dimension d’une puissance de longueur, \(\Lambda\) ne serait pas
+        indépendant ; sinon, le rayon de Schwarzschild serait exclu au même titre.
       </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Mécanisme de rigidité</h2>
-    <p>
-      La preuve distingue trois déformations possibles de la borne d’admissibilité.
-    </p>
+    <h2>Ce que la note conserve</h2>
     <ul>
       <li>
-        <strong>Déformation globale :</strong>
-        si le nouveau paramètre est dimensionné, la borne d’admissibilité devient mal typée ;
-        s’il est sans dimension, il est absorbé dans \(c_\chi\).
+        <strong>La dimension de \(c_{\mathrm{BI}}\) n’est pas fixée par le modèle.</strong> Dans l’axiome de
+        capacité \(|\partial_\tau\phi_v|\le c_{\mathrm{BI}}\), ni la configuration relationnelle ni le
+        paramètre d’ordre ne portent de dimension physique ; dans la borne
+        \(A_n \le c_{\mathrm{BI}}/\sqrt{\lambda_n}\), \(\lambda_n\) est une valeur propre d’un laplacien de
+        graphe. La note enregistre cette lacune et ne choisit pas de dimension.
       </li>
       <li>
-        <strong>Déformation dépendant de la profondeur :</strong>
-        un facteur \(\Phi(\lambda,n)\) modifie l’observable de paire effective
-        \(\sigma_{\mathrm{pair}}(n)\) et brise le scaling en loi de puissance nécessaire à la
-        limite de Mosco de Q5a.
+        <strong>Paramètres dimensionnels indépendants, relativement à une attribution :</strong> un paramètre est
+        indépendant si sa dimension n’est pas un multiple rationnel de \([c_{\mathrm{BI}}]\) sous une attribution
+        dimensionnelle fournie. Sous toute attribution de ce type, \(G\), \(\hbar\) et les échelles de masse ne
+        peuvent pas toutes se ramener à \(c_{\mathrm{BI}}\).
       </li>
       <li>
-        <strong>Déformation dépendant de la configuration :</strong>
-        un facteur \(\Phi(\lambda,\omega)\) discrimine à l’intérieur des fibres de projection et
-        induit une injectivisation partielle, en contradiction avec la non-injectivité structurelle.
+        <strong>Observation d’homogénéité :</strong> un facteur constant dans la borne, ne dépendant que d’un
+        paramètre dont la dimension sort de l’espace engendré par celles des ingrédients de la borne, est
+        constant, et un facteur sans dimension redéfinit \(c_{\mathrm{BI}} \mapsto c_{\mathrm{BI}} f(\lambda)\).
+        Les paramètres entrant par des combinaisons dépendant de la profondeur ne sont pas exclus.
+      </li>
+      <li>
+        <strong>Rigidité de Gram :</strong> cette classification relève de la théorie des caractères et ne dépend
+        d’aucune échelle ; l’affirmation antérieure selon laquelle elle découle de la borne de Born–Infeld est
+        retirée.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      Le résultat doit être lu comme un théorème de rigidité de niveau 1.
-    </p>
-    <p>
-      Il n’interdit pas les échelles émergentes. Il interdit d’insérer des échelles dimensionnelles
-      indépendantes dans les axiomes d’admissibilité.
-    </p>
-    <p>
-      Des quantités dérivées comme \(\delta_{\mathrm{pair}}\), \(\beta^*\), des rapports de masse ou des
-      seuils spectraux restent admissibles exactement dans la mesure où elles apparaissent comme des
-      sorties de la cascade d’admissibilité spectrale plutôt que comme des entrées supplémentaires.
+      <em>Il s’agit d’une lecture, non d’un résultat.</em> La lecture de travail du programme est que les échelles
+      physiques devraient être des sorties de la projection et de la structure spectrale plutôt que des entrées
+      primitives. La note n’établit pas cette lecture, et le secteur géométrique porte déjà des échelles qui ne
+      dérivent pas de \(c_{\mathrm{BI}}\) : Q6b recense l’échelle de longueur d’une extension de rang plein, le
+      pas temporel libre de Q11, et les coefficients d’Einstein et cosmologique comme données d’ajustement.
     </p>
   </section>
   <section class="card">
-    <h2>Relation à Q6b</h2>
+    <h2>Place dans le programme Cosmochronie</h2>
     <p>
-      Q6b obtient, pour une extension fournie à symétrie sphérique et
-      asymptotiquement plate, d’extérieur asymptotiquement homogène, un extérieur newtonien au premier ordre par
-      conservation du flux, et la forme de Schwarzschild
-      seulement avec un apport dynamique externe ; il ne revendique aucune unicité.
-    </p>
-    <p>
-      Les géométries de Reissner-Nordström et de Schwarzschild-de Sitter exigent,
-      respectivement, une échelle de charge électromagnétique indépendante \(Q\) ou une
-      échelle cosmologique indépendante \(\Lambda\).
-    </p>
-    <p>
-      Q6b n’utilise pas la prémisse selon laquelle aucune échelle au-delà de la constante de Born–Infeld n’entre
-      dans la structure d’admissibilité de Foundation M (ni, pour Reissner-Nordström, celle selon laquelle aucune
-      charge \(U(1)\) indépendante n’est attachée à l’obstruction stationnaire) : il tient cette rigidité à échelle
-      unique pour non établie et non disponible comme prémisse ; dans sa proposition 3.2(ii), ces
-      déformations ne sont exclues que par les apports fournis. Savoir si le théorème d’absence d’échelle étaye une telle
-      exclusion relève de son audit séparé.
+      Cette note appartient à la branche des fondations non injectives, aux côtés de Foundation M et du théorème
+      d’impossibilité ENI. Elle ne restreint plus les constructions en aval : aucun résultat du programme n’exclut
+      actuellement un paramètre dimensionnel indépendant des contraintes d’admissibilité.
     </p>
   </section>
   <section class="card">
-    <h2>Position dans le programme</h2>
-    <p>
-      Cette note appartient au volet fondation. Elle complète l’article axiomatique
-      Foundation M, le théorème structurel de non-injectivité ENI et les articles de la
-      série Q qui dérivent la structure de jauge et d’espace-temps à partir de la
-      projection non injective admissible.
-    </p>
-    <p>
-      Son rôle n’est pas d’ajouter de la physique nouvelle, mais de restreindre
-      l’espace admissible des extensions : toute construction en aval doit respecter
-      l’absence d’échelles dimensionnelles indépendantes au niveau de l’admissibilité.
-    </p>
-  </section>
-  <section class="card">
-    <h2>Perspectives</h2>
+    <h2>Pistes ouvertes</h2>
     <ul>
-      <li>Niveau 2 : dérivation complète des échelles émergentes</li>
-      <li>Classification des échelles physiques</li>
-      <li>Extensions aux secteurs de jauge et matière</li>
-      <li>Implications cosmologiques</li>
+      <li>
+        <strong>Une attribution dimensionnelle :</strong> énoncer les dimensions physiques des objets du modèle,
+        sans lesquelles aucun énoncé sur les paramètres indépendants ne peut s’appliquer.
+      </li>
+      <li>
+        <strong>Déformations dépendant de la profondeur :</strong> quelles déformations du filtre modifient le
+        comportement de \(\sigma_{\mathrm{pair}}\) à grande profondeur, et selon quelle loi.
+      </li>
+      <li>
+        <strong>Poids constants sur les fibres :</strong> un principe du programme les impose-t-il ?
+      </li>
+      <li>
+        <strong>Niveau 2 :</strong> toute échelle émergente est-elle une fonctionnelle de \(c_{\mathrm{BI}}\) et de
+        la cascade spectrale ?
+      </li>
     </ul>
   </section>
   <section class="card">
-    <h2>Reference</h2>
+    <h2>Référence</h2>
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19744767">

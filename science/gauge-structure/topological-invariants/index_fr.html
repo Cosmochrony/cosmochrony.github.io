@@ -5,25 +5,25 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Invariants topologiques des configurations admissibles :
-    quantification de la charge, absence de monopôles magnétiques,
+    quantification de la charge, la question ouverte des monopôles,
     et chiralité projective en Cosmochronie | Cosmochrony</title>
   <meta name="description"
     content="Cet article établit la couche topologique de la Cosmochronie :
-    quantification de la charge via π₁, exclusion structurelle des monopôles
-    magnétiques sur le modèle admissible canonique via π₂ = 0, et violation
-    de la parité comme chiralité projective."/>
+    quantification de la charge via π₁, π₂ = 0 sur un domaine choisi de la base de Hopf
+    sans exclusion dérivée des monopôles magnétiques, et violation de la parité comme
+    chiralité projective."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/gauge-structure/topological-invariants/"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Invariants topologiques des configurations admissibles :
-    quantification de la charge, absence de monopôles magnétiques,
+    quantification de la charge, la question ouverte des monopôles,
     et chiralité projective en Cosmochronie"/>
   <meta property="og:description"
     content="Cet article identifie les invariants topologiques admissibles de la fibre
-    de projection, dérive la quantification de la charge à partir de π₁, exclut les
-    monopôles magnétiques isolés sur le modèle admissible canonique via π₂ = 0,
-    et interprète la violation de la parité comme une chiralité projective."/>
+    de projection, dérive la quantification de la charge à partir de π₁, calcule π₂ = 0
+    sur un domaine choisi de la base de Hopf sans en dériver d’exclusion des monopôles
+    magnétiques, et interprète la violation de la parité comme une chiralité projective."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/gauge-structure/topological-invariants/"/>
   <script type="module">
@@ -49,12 +49,12 @@
       </a>
       <div>
         <h1>Invariants topologiques des configurations admissibles :
-          quantification de la charge, absence de monopôles magnétiques,
+          quantification de la charge, la question ouverte des monopôles,
           et chiralité projective en Cosmochronie</h1>
         <p class="subtitle">
           Cet article établit la couche topologique de la Cosmochronie : quantification de la
-          charge via l’enroulement de la fibre U(1), exclusion structurelle des monopôles
-          magnétiques isolés sur le modèle admissible canonique, et interprétation de la
+          charge via l’enroulement de la fibre U(1), $\pi_2 = 0$ sur un domaine choisi de la base
+          de Hopf sans exclusion dérivée des monopôles magnétiques, et interprétation de la
           violation de la parité comme une chiralité projective sous projection non injective.
         </p>
       </div>
@@ -68,44 +68,46 @@
   </div>
 </header>
 <main class="wrap">
-  <section class="note" role="note" data-release-version="1.0.2">
-    <strong>Publication Zenodo actuelle:</strong> version 1.0.2 (2026-07-11).
-    <span lang="en">Titre officiel: <i>Topological Invariants of Admissible Configurations: Charge Quantisation, Absence of Magnetic Monopoles, and Projective Chirality in Cosmochrony</i>.</span>
+  <section class="note" role="note" data-release-version="1.1">
+    <strong>Publication Zenodo actuelle:</strong> version 1.1 (2026-11-15).
+    <span lang="en">Titre officiel: <i>Topological Invariants of Admissible Configurations: Charge Quantisation, the Open Monopole Question, and Projective Chirality in Cosmochrony</i>.</span>
   </section>
   <section class="grid">
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
         Les travaux précédents en Cosmochronie ont établi la fibre de projection
-        $\Pi \cong S^3$, l’émergence de la structure de jauge U(1), la contrainte
-        d’admissibilité à flux borné, ainsi que le mécanisme dynamique reliant masse et
-        charge. Le présent article aborde une question différente : quels invariants
-        topologiques restent admissibles sous cette contrainte de projection, et quelles
-        conséquences physiques en découlent ?
+        $\Pi \cong S^3$, l’émergence de la structure de jauge U(1), l’axiome de capacité qui
+        borne le taux de relaxation discret par nœud, ainsi que le mécanisme dynamique reliant
+        masse et charge. Le présent article aborde une question différente : quels invariants
+        topologiques restent admissibles sous la projection, et quelles conséquences physiques
+        en découlent ?
       </p>
       <p>
-        La réponse est triple. Premièrement, la charge électrique est identifiée au nombre
-        d’enroulement de la fibre U(1), de sorte que la quantification de la charge découle
-        de $\pi_1(S^1)\cong\mathbb{Z}$. Deuxièmement, sur un modèle admissible canonique où
-        le flux borné élimine les régions polaires de la base de Hopf, la base devient
-        équivalente topologiquement à un anneau avec $\pi_2=0$, ce qui exclut les monopôles
-        magnétiques isolés comme excitations topologiques admissibles. Troisièmement, la
-        violation de la parité est interprétée comme une chiralité projective : la projection
-        non injective peut sélectionner une orientation d’une classe topologique plutôt que
-        sa conjuguée.
+        La réponse comporte trois volets. Premièrement, la charge électrique est identifiée au
+        nombre d’enroulement de la fibre U(1), de sorte que la quantification de la charge
+        découle de $\pi_1(S^1)\cong\mathbb{Z}$. Deuxièmement, sur un domaine choisi de la base de
+        Hopf privée de deux disques disjoints, la base est topologiquement un anneau avec
+        $\pi_2=0$. Cela n’exclut pas les monopôles magnétiques : l’axiome de capacité ne borne
+        aucun champ continu, la borne sur le gradient de la phase de fibre est une hypothèse, la
+        base de Hopf n’a pas de point distingué, et la lecture de $\pi_2$ de cette base interne
+        comme classification des défauts magnétiques n’est pas dérivée. L’absence de monopôles
+        magnétiques reste donc ouverte. Troisièmement, la violation de la parité est interprétée
+        comme une chiralité projective : la projection non injective peut sélectionner une
+        orientation d’une classe topologique plutôt que sa conjuguée.
       </p>
       <p>
-        L’article précise explicitement son domaine de validité. Les résultats sur la charge
-        et sur l’absence de monopôles sont établis pour le modèle admissible canonique. Leur
-        extension à l’espace de configuration effectif complet $C_{\mathrm{eff}}$ reste une
-        question ouverte. De même, l’interprétation en termes d’interaction faible est
-        structurellement motivée, mais la dérivation complète du schéma V$-$A n’est pas encore
-        achevée.
+        L’article précise explicitement son domaine de validité. Le résultat sur la charge
+        repose sur l’identification fournie de la fibre de projection, et $\pi_2=0$ est un calcul
+        sur le domaine choisi. La dérivation de la base admissible et l’extension à l’espace de
+        configuration effectif complet $C_{\mathrm{eff}}$ restent ouvertes. De même,
+        l’interprétation en termes d’interaction faible est structurellement motivée, mais la
+        dérivation complète du schéma V$-$A n’est pas encore achevée.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page propose un aperçu structuré. Les définitions
-        précises de l’espace de configuration admissible, la réduction par flux borné de la
-        base de Hopf, l’exclusion topologique des monopôles, la notion de chiralité projective
+        précises de l’espace de configuration admissible, le domaine choisi de la base de Hopf,
+        ce que la topologie ne donne pas pour les monopôles, la notion de chiralité projective
         et la distinction entre résultats démontrés et questions ouvertes sont détaillées dans
         la prépublication.
       </div>
@@ -151,18 +153,22 @@
         topologiquement nécessaire.
       </li>
       <li>
-        <strong>Modèle admissible canonique :</strong> la contrainte de flux borné transforme la
-        base de Hopf en un espace à $\pi_2=0$, éliminant les classes topologiques de type
-        monopôle.
+        <strong>Un domaine choisi de la base :</strong> retirer deux disques disjoints de la
+        base de Hopf $S^2$ donne $S^2_{\mathrm{adm}} \simeq S^1 \times (0,1)$, dont le second
+        groupe d’homotopie est trivial. Ce domaine est un choix, non une conséquence de l’axiome
+        de capacité.
       </li>
       <li>
-        <strong>Exclusion des monopôles :</strong> aucun monopôle magnétique isolé n’est
-        admissible topologiquement dans ce cadre.
+        <strong>Ce que la topologie ne donne pas :</strong> $\pi_2(S^2_{\mathrm{adm}})=0$
+        n’exclut pas les monopôles magnétiques. Une exclusion exigerait de dériver la base
+        admissible de la structure de projection et de montrer que $\pi_2$ de cette base interne
+        classe les défauts magnétiques de la description projetée ; supposer les deux
+        inscrirait l’exclusion dans les hypothèses.
       </li>
       <li>
-        <strong>Contraste avec le cadre standard :</strong> contrairement au modèle de Dirac et
-        de 't Hooft–Polyakov, où les monopôles sont permis topologiquement, leur absence est ici
-        structurelle.
+        <strong>Contraste avec le cadre standard :</strong> dans le cadre de Dirac et de
+        't Hooft–Polyakov, les monopôles sont permis topologiquement et leur absence doit être
+        expliquée dynamiquement. L’article ne fournit pas d’alternative topologique.
       </li>
       <li>
         <strong>Chiralité projective :</strong> la projection non injective introduit une
@@ -179,12 +185,11 @@
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      Le geste conceptuel central consiste à traiter trois faits familiers de la physique sous un
+      Le geste conceptuel central consiste à traiter deux faits familiers de la physique sous un
       même principe structurel. La quantification de la charge provient du groupe fondamental
-      admissible de la fibre de projection. L’absence de monopôles magnétiques isolés provient de la
-      perte des classes \(\pi_2\) non triviales sous l’admissibilité à flux borné. La violation de
-      la parité est interprétée comme l’orientation que la projection sélectionne parmi ces classes
-      topologiques admissibles.
+      admissible de la fibre de projection. La violation de la parité est interprétée comme
+      l’orientation que la projection sélectionne parmi ces classes topologiques admissibles. La
+      topologie seule ne décide pas de l’existence des monopôles magnétiques.
     </p>
     <ul>
       <li>
@@ -192,9 +197,8 @@
         charge étant identifiée à un invariant d’enroulement.
       </li>
       <li>
-        <strong>Monopôles magnétiques :</strong> admissibles sur la base de Hopf \(S^2\) complète
-        non contrainte, mais exclus sur la base admissible canonique obtenue après réduction par
-        flux borné.
+        <strong>Monopôles magnétiques :</strong> leur absence reste ouverte ; \(\pi_2=0\) sur
+        un domaine choisi de la base de Hopf ne les exclut pas.
       </li>
       <li>
         <strong>Violation de la parité faible :</strong> interprétée comme une dépendance de
@@ -203,9 +207,8 @@
       </li>
     </ul>
     <p>
-      L’article ne traite donc pas la charge, les monopôles et la violation de la parité comme des
-      entrées séparées : il les présente comme trois aspects d’une même structure topologique
-      admissible.
+      L’article présente donc la charge et la violation de la parité comme deux aspects d’une
+      même structure topologique admissible, et consigne la question des monopôles comme ouverte.
     </p>
   </section>
   <section class="card">
@@ -221,8 +224,8 @@
     </p>
     <p>
       Le présent article ajoute la couche topologique manquante. Il classe les invariants
-      d’homotopie admissibles eux-mêmes, dérive le résultat canonique d’absence de monopôles et
-      formule la chiralité projective d’une manière compatible avec cette sélection spectrale conditionnelle, mais distincte d’elle. Le programme dispose ainsi de :
+      d’homotopie admissibles eux-mêmes, précise ce que la topologie ne donne pas pour les
+      monopôles et formule la chiralité projective d’une manière compatible avec cette sélection spectrale conditionnelle, mais distincte d’elle. Le programme dispose ainsi de :
     </p>
     <ul>
       <li>la <strong>classification</strong> des secteurs admissibles par la topologie,</li>
@@ -233,19 +236,19 @@
   <section class="card">
     <h2>Résultats et questions ouvertes</h2>
     <p>
-      Les résultats démontrés les plus forts de l’article sont localisés au modèle admissible
-      canonique : la quantification de la charge par \(\pi_1(S^1)\cong\mathbb{Z}\) et l’exclusion
-      des monopôles isolés par \(\pi_2=0\) sur la base réduite par flux borné. L’article établit
-      aussi la chiralité projective comme mécanisme structurel au niveau du cadre.
+      Les résultats démontrés de l’article sont la quantification de la charge par
+      \(\pi_1(S^1)\cong\mathbb{Z}\), sur l’identification fournie de la fibre, et \(\pi_2=0\)
+      sur le domaine choisi de la base de Hopf, sans conséquence physique dérivée. L’article
+      établit aussi la chiralité projective comme mécanisme structurel au niveau du cadre.
     </p>
     <p>
       Trois questions principales restent ouvertes :
     </p>
     <ul>
       <li>
-        <strong>Extension globale du résultat d’absence de monopôles :</strong> démontrer que
-        \(\pi_2(C_{\mathrm{eff}})=0\) pour l’espace de configurations effectif complet, et non
-        seulement pour le modèle admissible canonique.
+        <strong>Base admissible et monopôles :</strong> dériver la base admissible de la
+        structure de projection, déterminer si \(\pi_2\) de la base de Hopf porte sur les
+        défauts magnétiques, et décider ainsi si les monopôles magnétiques sont exclus.
       </li>
       <li>
         <strong>Dérivation de la chiralité maximale :</strong> aller au-delà d’une lecture
@@ -269,7 +272,7 @@
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19282962">
         <i>Invariants topologiques des configurations admissibles :
-          quantification de la charge, absence de monopôles magnétiques,
+          quantification de la charge, la question ouverte des monopôles,
           et chiralité projective en Cosmochronie</i>.
       </a>
     </p>

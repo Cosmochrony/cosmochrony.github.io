@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Projective Information Loss and Fibre Erasure | Cosmochrony</title>
   <meta name="description"
-    content="A fibre-erasure theorem connecting the ENI no-go result with the BFS spectral hierarchy: under a structural sufficiency hypothesis, residual fibre information is monotone non-increasing under admissible coarse-graining."/>
+    content="A conditional fibre-erasure theorem for the BFS coarse-graining hierarchy. Version 2.0 corrects the rank-level proposition and shows that, for the O12 capacity, the label carries no information at any depth, so the erasure bound is trivial."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/fibre-erasure/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Projective Information Loss and Fibre Erasure in Admissible Non-Injective Projection"/>
   <meta property="og:description"
-    content="A monotone information functional for the BFS coarse-graining hierarchy, connecting ENI to the spectral admissibility programme via the data-processing inequality."/>
+    content="Under a structural sufficiency hypothesis, residual fibre information cannot increase under admissible coarse-graining; for the O12 capacity it is zero at every depth."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/fibre-erasure/"/>
   <script type="module">
@@ -39,7 +39,7 @@
       <div>
         <h1>Projective Information Loss and Fibre Erasure</h1>
         <p class="subtitle">
-          A monotone information hierarchy connecting the ENI no-go result to the BFS spectral cascade.
+          A conditional information monotone; for the O12 capacity the label is absent from the observable, and no erasure is shown.
         </p>
       </div>
     </div>
@@ -55,26 +55,26 @@
     <div class="card">
       <h2>Overview</h2>
       <p>
-        This article establishes a <em>fibre-erasure theorem</em> for the admissible coarse-graining
+        This article proves a conditional <em>fibre-erasure theorem</em> for the admissible coarse-graining
         hierarchy of the Cosmochrony spectral programme. The non-injective projection
         \(\Pi : \Omega \to \mathcal{O}\) defines a residual fibre-information functional
         \(I(c;\sigma(\ell))\), where \(c\) is a Weil-block fibre label and \(\sigma_c(\ell)\) is
         the BFS capacity profile at coarse-graining depth \(\ell\). Conditional on a structural
         sufficiency hypothesis [H-suff], the data-processing inequality implies that this
-        functional is non-increasing in \(\ell\): fibre information is erased, not created,
-        under admissible coarse-graining.
+        functional is non-increasing in \(\ell\).
       </p>
       <p>
-        The result is a quantitative realisation of the ENI no-go theorem. Non-injectivity of
-        \(\Pi\) forces projective information loss, and the data-processing inequality makes this
-        loss monotone and measurable along the BFS resolution axis. The inter-sector variance
-        \(\mathrm{Var}_c(\sigma_c(\ell))\) serves as a computable proxy; its restriction to
-        candidate triplets formerly labelled as colour data connects to a numerical O-series
-        campaign whose \(\mathrm{SU}(3)\) and pointwise [H-color] interpretation is withdrawn.
+        Version 2.0 applies the theorem exactly to the O12 capacity. O32 proves that this profile is
+        invariant under scaling of the whole character block by any unit, so, under the sampling law of the
+        campaigns, its distribution does not depend on the label. Hence \(I(c;\sigma(\ell)) = 0\) at every
+        depth, [H-suff] holds for that observable, and the erasure bound reads \(0 \le 0\). This is
+        independence in law, not equality of the profiles for each draw of the auxiliary characters. It shows
+        that the label is absent from the observable; it demonstrates no erasure mechanism.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page provides a structured summary. The authoritative technical
-        reference is the preprint linked above.
+        <strong>Version 2.0.</strong> The rank-level proposition is corrected (for the uniform O12 seed the rank
+        is \(\min(2\ell+1,q)\), not the number of horizontal cosets), attributions to the withdrawn O31 results
+        are removed, and the reading of the O32 colour-triplet campaign as support for [H-color] is withdrawn.
       </div>
     </div>
     <aside class="card">
@@ -98,7 +98,7 @@
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">Conditional theorem (rank-level proof + capacity-level numerical evidence)</div>
+          <div class="v">Conditional theorem; trivial for the O12 capacity, where the label is absent</div>
         </div>
       </div>
     </aside>
@@ -106,57 +106,49 @@
   <section class="card">
     <h2>Core contributions</h2>
     <ul>
-      <li><strong>Monotone information functional.</strong> A residual fibre-information functional
-        \(I(c;\sigma(\ell))\) is defined for the BFS coarse-graining hierarchy and shown,
-        conditional on [H-suff] and [H-sg], to be non-increasing in \(\ell\) (Theorem 4.1).</li>
-      <li><strong>Rank-level unconditional result.</strong> At the BFS rank observable, the fibre
-        label is erased identically by Schur's lemma (Proposition 3.6). The semigroup property
-        [H-sg] is moreover redundant at this level (Corollary 3.7).</li>
-      <li><strong>Capacity-level numerical evidence.</strong> Permutation-based Spearman tests on
-        BFS capacity data for \(q \in \{61, 151, 211\}\) detect no significant fibre-label
-        dependence in step-by-step residuals, providing direct numerical support for [H-suff].</li>
-      <li><strong>Fibre-erasure equilibrium.</strong> The condition \(I(c;\sigma(\ell)) = 0\)
-        identifies a fixed-point profile \(\sigma^*\) approached in the thermodynamic limit
-        \(q \to \infty\) with \(\mathrm{O}(q^{-1/2})\) corrections.</li>
-      <li><strong>Three-axis disambiguation.</strong> The coarse-graining axis \(\ell\), the
-        thermodynamic axis \(q \to \infty\), and the temporal cascade axis \(n\) (PTO) are
-        structurally orthogonal and each carry their own information functional.</li>
+      <li><strong>Conditional monotone.</strong> The functional \(I(c;\sigma(\ell))\) is non-increasing in
+        \(\ell\) under [H-suff] and [H-sg].</li>
+      <li><strong>Rank level.</strong> For the uniform seed of the O12 pipeline the BFS rank is
+        \(\min(2\ell+1,q)\), the number of distinct second coordinates in the ball, independent of the label.
+        [H-sg] is redundant at this level.</li>
+      <li><strong>O12 capacity.</strong> Under the campaign sampling law the label is independent of the whole
+        profile, which settles [O-1a\('\)] in law for general labels; the bound is \(0 \le 0\).</li>
+      <li><strong>Numerical checks.</strong> Permutation-based Spearman tests for \(q \in \{61, 151, 211\}\)
+        find no label dependence in step-by-step residuals, as the exact result requires. The leave-triplet-out
+        \(\eta^2\) scores are unexplained measurements and carry no colour content.</li>
+      <li><strong>Three axes.</strong> The coarse-graining axis \(\ell\), the large-\(q\) axis and the temporal
+        cascade axis \(n\) (PTO) are kept distinct.</li>
     </ul>
   </section>
   <section class="card">
     <h2>Strict disclaimer</h2>
     <p>
-      This result is <strong>not</strong> a \(c\)-theorem. It does not count effective degrees of
-      freedom. It is a quantitative information-loss statement attached to the Weil-fibre label
-      under coarse-graining. A \(c\)-theorem-type statement would require an additional counting
-      principle for effective degrees of freedom, which is not established here and is listed as
-      open problem [O-2].
+      This result is <strong>not</strong> a \(c\)-theorem. It does not count effective degrees of freedom, and
+      for the O12 capacity it exhibits no depth at which information is lost, because none is present at depth
+      zero. A non-trivial application requires an observable in which the label is present.
     </p>
   </section>
   <section class="card">
     <h2>What the theorem does and does not establish</h2>
     <p>
-      Establishes, conditional on [H-suff] and [H-sg]: a monotone information functional for the
-      BFS coarse-graining hierarchy; its non-increase under depth-increment; the identification of
-      \(I(c;\sigma(\ell)) = 0\) as the fibre-erasure equilibrium.
+      Establishes, conditional on [H-suff] and [H-sg]: a monotone information functional for the BFS
+      coarse-graining hierarchy; the identification of \(I(c;\sigma(\ell)) = 0\) as the fibre-erasure
+      equilibrium; and, for the O12 capacity under the campaign sampling law, \(I(c;\sigma(\ell)) = 0\) at
+      every depth.
     </p>
     <p>
-      Does not establish: a \(c\)-theorem; the full capacity-level form of [H-suff] (proved at the
-      rank level; pointwise Born–Infeld residue open as [O-1a\('\)]); the full capacity-level form
-      of [H-sg] (proved at the rank level and there redundant; capacity-level residue open as
-      [O-1b]).
+      Does not establish: a \(c\)-theorem; [H-suff] for other observables, seeds or sampling laws; the
+      capacity-level composability [O-1b]; any non-trivial erasure or erasure mechanism for the O12 observable;
+      any statement about colour.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony programme</h2>
     <p>
-      Fibre Erasure occupies a hub position in the programme. It takes as input the ENI no-go
-      theorem (which establishes \(S_\Pi > 0\) but does not order information loss across
-      resolutions) and the spectral admissibility programme (which provides the operational
-      hierarchy \(\sigma_c(\ell)\)), and connects them by translating the ENI projection entropy
-      into the operational information functional \(I(c;\sigma(\ell))\). Together with the PTO
-      paper, which handles the orthogonal temporal axis \(n\), it constitutes the
-      information-theoretic architecture of the admissibility cascade.
+      Fibre Erasure takes as input the ENI no-go theorem (which establishes \(S_\Pi > 0\) but does not order
+      information loss across resolutions) and the BFS capacity profiles of the spectral admissibility
+      programme. Together with the PTO paper, which handles the orthogonal temporal axis \(n\), it provides the
+      information-theoretic frame of the admissibility cascade.
     </p>
   </section>
   <section class="card">

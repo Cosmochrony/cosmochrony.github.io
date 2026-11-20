@@ -4,12 +4,12 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Mesures numériques O32 sur les triplets de couleur et interprétation ouverte | Cosmochronie</title>
-  <meta name="description" content="O32 rapporte des mesures numériques à q fini autrefois interprétées comme co-admissibilité de triplets de couleur. Les valeurs subsistent, mais O31 version 2.0 retire leur interprétation ponctuelle et de groupe de jauge."/>
+  <title>O32 : limites d’un diagnostic de capacité sur les triplets de couleur | Cosmochronie</title>
+  <meta name="description" content="La version 2.0 d’O32 démontre que le profil de capacité O12 est invariant par multiplication du bloc de caractères entier par toute unité ; son diagnostic sur les triplets de couleur ne peut donc pas tester [H-color]. Elle remplace la version 1.5 et en invalide l’interprétation."/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o32/"/>
   <meta name="robots" content="index,follow"/>
-  <meta property="og:title" content="Mesures numériques O32 sur les triplets de couleur et interprétation ouverte"/>
-  <meta property="og:description" content="Les mesures à q fini restent consignées ; elles ne prouvent ni co-admissibilité ponctuelle ni identification de SU(3)."/>
+  <meta property="og:title" content="O32 : limites d’un diagnostic de capacité sur les triplets de couleur"/>
+  <meta property="og:description" content="Le profil de capacité O12 ne distingue pas les caractères à une unité commune près ; les triplets de couleur sont indiscernables de tout autre ensemble de caractères."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o32/index_fr.html"/>
   <script type="module">import { redirectIfNot } from "/script.js"; redirectIfNot("fr", "/science/spectral/program/o32/index_fr")</script>
@@ -18,25 +18,35 @@
 <body>
 <header><div class="wrap"><div class="brand">
   <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg"><path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/><ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/></svg></a>
-  <div><h1>Mesures numériques O32 sur les triplets de couleur</h1><p class="subtitle">Les mesures subsistent ; leur ancienne interprétation ponctuelle et de groupe de jauge est retirée</p></div>
+  <div><h1>O32 : limites d’un diagnostic de capacité sur les triplets de couleur</h1><p class="subtitle">L’invariance exacte par toute unité explique pourquoi le test de la version 1.5 ne pouvait pas tester [H-color]</p></div>
 </div><div class="cta"><a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Lire O32</a><a class="btn subtle" href="../o31/index_fr.html">Lire la notice de retrait O31</a></div></div></header>
 <main class="wrap">
   <section class="grid"><div class="card"><h2>Statut actuel</h2>
-    <p>O32 a mesuré un jeu de test à quatre premiers $q\in\{61,151,211,307\}$ et des contrôles $q\in\{29,101\}$. Les ratios, exposants de décroissance et rangs de covariance rapportés restent des observations numériques issues du protocole déclaré.</p>
-    <div class="note" role="note"><strong>Interprétation retirée.</strong> O31 version 2.0 retire la revendication analytique ponctuelle $[\mathrm{H\text{-}color}]$ et toutes les conclusions de groupe. O32 ne confirme donc pas une co-admissibilité de couleur et ne soutient pas une identification de $\mathrm{SU}(3)$.</div>
+    <p>La version 2.0 est un rapport sur les limites d’un diagnostic. Elle remplace la version 1.5 et en invalide l’interprétation : la campagne qui y était présentée comme un test numérique de $[\mathrm{H\text{-}color}]$ ne pouvait pas le tester.</p>
+    <div class="note" role="note"><strong>Aucun test de $[\mathrm{H\text{-}color}]$.</strong> Triplets de couleur, paires conjuguées et ensembles quelconques de caractères sont indiscernables par les observables de la campagne. L’hypothèse n’est ni confirmée ni réfutée ; elle n’est pas testable avec cette observable.</div>
   </div><aside class="card"><h2>Repères</h2><div class="kvs">
-    <div class="kv"><div class="k">Type</div><div class="v">Étude numérique à $q$ fini</div></div>
-    <div class="kv"><div class="k">Statut</div><div class="v">Mesures conservées ; interprétation ouverte</div></div>
-    <div class="kv"><div class="k">Ancienne dépendance</div><div class="v"><a href="../o31/index_fr.html">Revendications O31 retirées en version 2.0</a></div></div>
+    <div class="kv"><div class="k">Type</div><div class="v">Théorème d’invariance exacte et contrôles nuls</div></div>
+    <div class="kv"><div class="k">Statut</div><div class="v">Invariance démontrée ; $[\mathrm{H\text{-}color}]$ ouverte et non testée</div></div>
+    <div class="kv"><div class="k">Version 1.5</div><div class="v">Verdict et interprétation physique retirés</div></div>
+    <div class="kv"><div class="k">Ancienne dépendance</div><div class="v"><a href="../o31/index_fr.html">O31, désormais un avis de retrait</a></div></div>
   </div></aside></section>
-  <section class="card"><h2>Mesures consignées</h2><ul>
-    <li>$q=61$ : $R=2{,}1$, avec un triplet testé sur quatre sous le seuil déclaré.</li>
-    <li>$q=151$ : $R=0{,}4$ ; $q=211$ : $R=1{,}0$ ; $q=307$ : $R=0{,}7$.</li>
-    <li>La décroissance mesurée du triplet était proche de trois fois celle d’un secteur individuel dans les échantillons testés.</li>
-    <li>La matrice notée $C_{\mathrm{color}}$ avait un rang numérique égal à un dans les exécutions rapportées.</li>
-  </ul><p>Ces faits décrivent la sortie de la construction numérique. Le franchissement d’un seuil, un ajustement par un facteur trois ou un rang un n’établissent à eux seuls ni co-admissibilité ponctuelle, ni représentation de couleur, ni groupe de jauge.</p></section>
-  <section class="card"><h2>Travail ouvert</h2><p>Les observables, la loi d’échantillonnage, les contrôles de taille finie et leur sens représentationnel exigent un nouvel audit indépendant de la chaîne O31 retirée. Toute future lecture en termes de couleur devra fournir un porteur valide et un théorème d’identification de groupe.</p></section>
-  <section class="card"><h2>Référence</h2><p><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener"><i lang="en">Colour Triplet Co-admissibility on Heis₃(Z/qZ): Numerical Test of Hypothesis [H-color]</i>.</a> Prépublication.</p></section>
+  <section class="card"><h2>Résultat central</h2>
+    <p>Chaque vecteur d’empreinte O12 est un caractère de Fourier unique $e_B$, de fréquence $B=c_1b_1+c_2b_2+c_3b_3$, et les incréments de rang qui définissent le profil de capacité comptent les fréquences distinctes. Multiplier le bloc de caractères entier par une unité $\lambda$ multiplie chaque fréquence par $\lambda$, bijection de $\mathbb{Z}/q\mathbb{Z}$ : le profil ne change pas.</p>
+    <p>Sous la loi de tirage de la campagne, le profil associé à un caractère a donc la même distribution pour tous les caractères, sans correction en $O(q^{-1})$ ni rôle des racines cubiques de l’unité. Le rapport de variance de la version 1.5, la relation $\delta_{\mathrm{tri}}\approx3\delta_c$ (une identité de l’ajustement par moindres carrés) et le rang de $C_{\mathrm{color}}$ ont tous des lois indépendantes des caractères comparés.</p>
+  </section>
+  <section class="card"><h2>Contrôles nuls</h2><ul>
+    <li>$q=61$ : rapport de variance moyen $1{,}28\times10^{-2}$ pour les quatre triplets de couleur, $1{,}32\times10^{-2}$ pour vingt triplets quelconques.</li>
+    <li>$q=151$ : $3{,}74\times10^{-3}$ pour les triplets de couleur, $3{,}51\times10^{-3}$ pour les triplets quelconques.</li>
+    <li>La campagne stockée de la version 1.5 est reproduite exactement, et son étalonnage reconstruit sur les couches que la saturation du rang n’affecte pas.</li>
+  </ul></section>
+  <section class="card"><h2>Retiré de la version 1.5</h2><ul>
+    <li>La prétention de tester $[\mathrm{H\text{-}color}]$ et le verdict attaché à $R\leq3$.</li>
+    <li>La proposition 1 et les niveaux moyenné et effectif ; les niveaux attribués à O31.</li>
+    <li>Les planchers de bruit et les rapports $R$, qui mêlaient deux conventions de moyenne.</li>
+    <li>Les lectures en termes de $\mathrm{SU}(3)$, de quarks, de baryons, de confinement et de $\beta^*$.</li>
+  </ul></section>
+  <section class="card"><h2>Travail ouvert</h2><p>Tester une orbite de couleur exige une observable qui ne soit pas invariante par toutes les unités. Aucune n’est proposée ici.</p></section>
+  <section class="card"><h2>Référence</h2><p><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener"><i>Limits of a Colour-Triplet Capacity Diagnostic on Heis₃(Z/qZ): Exact Unit-Scaling Invariance of the O12 Profile</i>.</a> Document de travail, version 2.0.</p></section>
 </main>
 <footer><div class="wrap"><p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p></div></footer>
 <script>document.getElementById("y").textContent = new Date().getFullYear()</script>

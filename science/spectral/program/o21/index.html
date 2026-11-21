@@ -9,8 +9,8 @@
   </title>
   <meta name="description"
     content="O21's two-point crossing rank n3_obs is a valid extrapolated crossing under an exact power
-    law and a fixed threshold, but its own invariance claim is algebraically false: under sigma to
-    lambda*sigma it scales as lambda^(1/delta), not invariant."/>
+    law and a fixed threshold. Version 1.3 withdraws its former invariance claim, which was
+    algebraically false: under sigma to lambda*sigma it scales as lambda^(1/delta), not invariant."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
@@ -18,8 +18,8 @@
     content="A Local Crossing-Rank Formula That Is Not Scale-Invariant"/>
   <meta property="og:description"
     content="O21's crossing formula n3_obs is a genuine extrapolated crossing rank under a fixed
-    threshold and an exact power law. Its central claim of invariance under amplitude rescaling is
-    algebraically false: the formula scales as lambda^(1/delta), not invariant."/>
+    threshold and an exact power law. Its former claim of invariance under amplitude rescaling was
+    algebraically false and is withdrawn in version 1.3: the formula scales as lambda^(1/delta)."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o21/"/>
@@ -51,9 +51,9 @@
         <p class="subtitle">
           O21 follows <a href="../o20">O20</a> by writing a two-point crossing rank
           $n_3^{\mathrm{obs}}$ for a fixed threshold $9/q^2$. Under an exact power law that formula is a
-          correct extrapolated crossing between two reference shells. Its central claim &mdash; that
-          $n_3^{\mathrm{obs}}$ is invariant under an amplitude rescaling of the observable &mdash; is
-          algebraically false, and the threshold, the shell-alignment condition, and the transfer to a
+          correct extrapolated crossing between two reference shells. Its former central claim &mdash; that
+          $n_3^{\mathrm{obs}}$ is invariant under an amplitude rescaling of the observable &mdash; was
+          algebraically false and is withdrawn in version 1.3; the threshold, the shell-alignment condition, and the transfer to a
           physical rate remain open.
         </p>
       </div>
@@ -67,6 +67,20 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="card" id="o21-o22-correction">
+    <h2>Normalisation and mass-link correction</h2>
+    <p><strong>Version 1.3.</strong> The rank $n_3^{\mathrm{obs}}$ is not invariant under
+      $\sigma\mapsto\lambda\sigma$: its exponent is ratio-invariant, but the threshold base is not, so it
+      scales as $\lambda^{1/\delta}$ (Remark 3.3). It is defined for the canonical normalisation of
+      <a href="../o19">O19</a>, and the former invariance claim is withdrawn. The abstract no longer states
+      that the programme has identified the pair observable as the relevant quantity for the lepton mass
+      hierarchy: no O-series result establishes that link, which remains a research motivation. The
+      threshold $\Sigma_c(n_3)=3$ is a supplied selection rule (<a href="../o24">O24</a>). The
+      shell-alignment conjecture remains open: <a href="../o22">O22</a> places the Born&ndash;Infeld
+      saturation depth on a shell within its model but does not identify it with $n_3^{\mathrm{obs}}$.
+    </p>
+  </section>
+
   <section class="card" id="alpha1-correction">
     <h2>Reciprocal-rate correction</h2>
     <p><strong>Version 1.2.</strong> O6 proves only $\beta_{\mathrm{eff}}\leq1/(\alpha+1/2)$ under its effective growth hypothesis
@@ -77,8 +91,8 @@
     </p>
   </section>
 
-  <section class="note" role="note" data-release-version="1.2">
-    <strong>Current Zenodo release:</strong> version 1.2.
+  <section class="note" role="note" data-release-version="1.3">
+    <strong>Current Zenodo release:</strong> version 1.3.
     <span lang="en">Official title: <i>Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription</i>.</span>
   </section>
   <section class="grid">
@@ -103,16 +117,16 @@
         genuinely cancels between the two evaluations of $\sigma$.
       </p>
       <p>
-        The paper then claims a second, stronger property: invariance under a global rescaling
-        $\sigma\mapsto\lambda\sigma$ of the observable itself, which it advances as evidence that the
+        Versions up to 1.2 claimed a second, stronger property: invariance under a global rescaling
+        $\sigma\mapsto\lambda\sigma$ of the observable itself, advanced as evidence that the
         construction is intrinsic and pipeline-independent. That claim does not follow from the formula
-        above and is false as stated &mdash; see &ldquo;What O21 does not establish&rdquo; below for the
+        above, was false as stated, and is withdrawn in version 1.3 &mdash; see &ldquo;What O21 does not establish&rdquo; below for the
         explicit computation.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarises the structural content of O21: a
-        genuine, normalisation-dependent two-point crossing formula, together with the algebra error in
-        its rescaling-invariance claim and the open status of its threshold, shell-alignment, and
+        genuine, normalisation-dependent two-point crossing formula, together with its withdrawn
+        rescaling-invariance claim and the open status of its threshold, shell-alignment, and
         capacity-to-rate transfer.
       </div>
     </div>
@@ -168,8 +182,9 @@
         \[
         n_3^{\mathrm{obs}} \;\longmapsto\; \lambda^{1/\delta_{\mathrm{local}}}\,n_3^{\mathrm{obs}},
         \]
-        not $n_3^{\mathrm{obs}}$ unchanged. The paper's own remark on invariance reasons only about the
-        exponent and never checks the base, which is exactly where $\sigma(n_0)$ survives undivided.
+        not $n_3^{\mathrm{obs}}$ unchanged. The invariance remark of versions up to 1.2 reasoned only
+        about the exponent and never checked the base, which is exactly where $\sigma(n_0)$ survives
+        undivided; version 1.3 states the scaling in Remark 3.3.
         The amplitude and pipeline normalisation are therefore not eliminated: the construction is
         exactly as normalisation-dependent as $\sigma$ itself, up to the fractional power
         $1/\delta_{\mathrm{local}}$.
@@ -208,7 +223,7 @@
       O21's local crossing algebra is real: given a fixed threshold and an exact power-law regime, the
       two-point formula correctly extrapolates the crossing rank and correctly cancels the amplitude
       $C$ between the two evaluations used in the ratio. That is a narrower and more modest fact than
-      the paper advertises.
+      versions up to 1.2 advertised.
     </p>
     <ul>
       <li><strong>O20:</strong> admissibility via an external threshold and a fitted amplitude</li>

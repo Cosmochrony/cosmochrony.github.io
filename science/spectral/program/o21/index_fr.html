@@ -10,9 +10,9 @@
   </title>
   <meta name="description"
     content="Le rang de croisement à deux points n3_obs de O21 est un croisement extrapolé valide sous
-    une loi de puissance exacte et un seuil fixe, mais son affirmation d'invariance est
-    algébriquement fausse : sous sigma vers lambda*sigma, il varie comme lambda^(1/delta), non de
-    façon invariante."/>
+    une loi de puissance exacte et un seuil fixe. La version 1.3 retire son ancienne affirmation
+    d'invariance, qui était algébriquement fausse : sous sigma vers lambda*sigma, il varie comme
+    lambda^(1/delta), non de façon invariante."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o21/index.html"/>
   <meta name="robots" content="index,follow"/>
@@ -20,9 +20,9 @@
     content="Une formule locale de rang de croisement qui n'est pas invariante d'échelle"/>
   <meta property="og:description"
     content="La formule de croisement n3_obs de O21 est un rang de croisement extrapolé authentique
-    sous un seuil fixe et une loi de puissance exacte. Son affirmation centrale d'invariance sous
-    changement d'échelle de l'amplitude est algébriquement fausse : la formule varie comme
-    lambda^(1/delta), non de façon invariante."/>
+    sous un seuil fixe et une loi de puissance exacte. Son ancienne affirmation d'invariance sous
+    changement d'échelle de l'amplitude était algébriquement fausse et est retirée dans la version
+    1.3 : la formule varie comme lambda^(1/delta)."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o21/index_fr.html"/>
@@ -55,9 +55,9 @@
           O21 fait suite à <a href="../o20">O20</a> en écrivant un rang de croisement à deux points
           $n_3^{\mathrm{obs}}$ pour un seuil fixe $9/q^2$. Sous une loi de puissance exacte, cette
           formule est un croisement extrapolé correct entre deux coquilles de référence. Son
-          affirmation centrale &mdash; selon laquelle $n_3^{\mathrm{obs}}$ serait invariant sous un
-          changement d'échelle de l'amplitude de l'observable &mdash; est algébriquement fausse, et
-          le seuil, la condition d'alignement de coquille, et le transfert vers un taux physique
+          ancienne affirmation centrale &mdash; selon laquelle $n_3^{\mathrm{obs}}$ serait invariant sous
+          un changement d'échelle de l'amplitude de l'observable &mdash; était algébriquement fausse et
+          est retirée dans la version 1.3 ; le seuil, la condition d'alignement de coquille, et le transfert vers un taux physique
           restent ouverts.
         </p>
       </div>
@@ -71,6 +71,22 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="card" id="o21-o22-correction">
+    <h2>Correction de la normalisation et du lien aux masses</h2>
+    <p><strong>Version 1.3.</strong> Le rang $n_3^{\mathrm{obs}}$ n'est pas invariant sous
+      $\sigma\mapsto\lambda\sigma$ : son exposant est invariant par rapport, mais la base du seuil ne
+      l'est pas, de sorte qu'il varie comme $\lambda^{1/\delta}$ (remarque 3.3). Il est défini pour la
+      normalisation canonique de <a href="../o19/index_fr.html">O19</a>, et l'ancienne affirmation
+      d'invariance est retirée. Le résumé n'affirme plus que le programme a identifié l'observable de
+      paire comme la grandeur pertinente pour la hiérarchie des masses des leptons : aucun résultat de
+      la série O n'établit ce lien, qui reste une motivation de recherche. Le seuil
+      $\Sigma_c(n_3)=3$ est une règle de sélection fournie (<a href="../o24/index_fr.html">O24</a>). La
+      conjecture d'alignement de coquille reste ouverte : <a href="../o22/index_fr.html">O22</a> place
+      la profondeur de saturation de Born&ndash;Infeld sur une coquille dans son modèle, mais ne
+      l'identifie pas à $n_3^{\mathrm{obs}}$.
+    </p>
+  </section>
+
   <section class="card" id="alpha1-correction">
     <h2>Correction du taux réciproque</h2>
     <p><strong>Version 1.2.</strong> O6 démontre seulement $\beta_{\mathrm{eff}}\leq1/(\alpha+1/2)$ sous son hypothèse de croissance
@@ -81,8 +97,8 @@
     </p>
   </section>
 
-  <section class="note" role="note" data-release-version="1.2">
-    <strong>Publication Zenodo actuelle:</strong> version 1.2.
+  <section class="note" role="note" data-release-version="1.3">
+    <strong>Publication Zenodo actuelle:</strong> version 1.3.
     <span lang="en">Titre officiel: <i>Shell-Level Saturation and the Conditional Fibre-to-Rate Prescription</i>.</span>
   </section>
   <section class="grid">
@@ -107,16 +123,17 @@
         régime : l'amplitude $C$ s'annule véritablement entre les deux évaluations de $\sigma$.
       </p>
       <p>
-        L'article affirme ensuite une seconde propriété, plus forte : l'invariance sous un
-        changement d'échelle global $\sigma\mapsto\lambda\sigma$ de l'observable lui-même, qu'il
-        avance comme preuve que la construction est intrinsèque et indépendante du pipeline. Cette
-        affirmation ne découle pas de la formule ci-dessus et est fausse telle qu'énoncée &mdash;
+        Les versions jusqu'à la 1.2 affirmaient une seconde propriété, plus forte : l'invariance
+        sous un changement d'échelle global $\sigma\mapsto\lambda\sigma$ de l'observable lui-même,
+        avancée comme preuve que la construction est intrinsèque et indépendante du pipeline. Cette
+        affirmation ne découle pas de la formule ci-dessus, était fausse telle qu'énoncée, et est
+        retirée dans la version 1.3 &mdash;
         voir « Ce que n'établit pas O21 » ci-dessous pour le calcul explicite.
       </p>
       <div class="note" role="note">
         <strong>Note de portée.</strong> Cette page résume le contenu structurel de O21 : une
         formule de croisement à deux points authentique mais dépendante de la normalisation, ainsi
-        que l'erreur algébrique dans son affirmation d'invariance d'échelle et le statut ouvert de
+        que son affirmation d'invariance d'échelle retirée et le statut ouvert de
         son seuil, de son alignement de coquille, et de son transfert de capacité vers un taux.
       </div>
     </div>
@@ -178,9 +195,10 @@
         \[
         n_3^{\mathrm{obs}} \;\longmapsto\; \lambda^{1/\delta_{\mathrm{local}}}\,n_3^{\mathrm{obs}},
         \]
-        et non $n_3^{\mathrm{obs}}$ inchangé. La remarque de l'article sur l'invariance ne raisonne
-        que sur l'exposant et ne vérifie jamais la base, qui est exactement l'endroit où
-        $\sigma(n_0)$ survit non divisé. L'amplitude et la normalisation du pipeline ne sont donc
+        et non $n_3^{\mathrm{obs}}$ inchangé. La remarque sur l'invariance des versions jusqu'à la
+        1.2 ne raisonnait que sur l'exposant et ne vérifiait jamais la base, qui est exactement
+        l'endroit où $\sigma(n_0)$ survit non divisé ; la version 1.3 énonce ce comportement dans sa
+        remarque 3.3. L'amplitude et la normalisation du pipeline ne sont donc
         pas éliminées : la construction est exactement aussi dépendante de la normalisation
         que $\sigma$ elle-même, à la puissance fractionnaire $1/\delta_{\mathrm{local}}$ près.
       </li>
@@ -222,7 +240,8 @@
       L'algèbre locale de croisement de O21 est réelle : étant donné un seuil fixe et un
       régime de loi de puissance exacte, la formule à deux points extrapole correctement le rang
       de croisement et annule correctement l'amplitude $C$ entre les deux évaluations utilisées
-      dans le rapport. C'est un fait plus étroit et plus modeste que ce que l'article affiche.
+      dans le rapport. C'est un fait plus étroit et plus modeste que ce qu'affichaient les versions
+      jusqu'à la 1.2.
     </p>
     <ul>
       <li><strong>O20 :</strong> admissibilité via un seuil externe et une amplitude ajustée

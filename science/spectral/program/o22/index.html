@@ -5,23 +5,23 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Shell-Alignment from Projection Locking:
+    Projection Locking of the Saturation Depth:
     A Discrete Admissibility Theorem under Born–Infeld Saturation | Cosmochrony
   </title>
   <meta name="description"
-    content="O22 proves that shell-alignment is not an external geometric hypothesis but a derived
-    consequence of projection locking between the continuous Born–Infeld saturation locus and
-    the discrete admissible shell support."/>
+    content="O22 proves that, under its definition of physical realisability, a realisable Born–Infeld
+    saturation depth lies on a BFS shell. Version 1.19 withdraws the former corollary that placed the
+    O21 rank on a shell; the O21 shell-alignment conjecture remains open."/>
   <link rel="alternate" hreflang="fr"
     href="https://cosmochrony.org/science/spectral/program/o22/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Shell-Alignment from Projection Locking:
+    content="Projection Locking of the Saturation Depth:
     A Discrete Admissibility Theorem under Born–Infeld Saturation"/>
   <meta property="og:description"
-    content="O22 derives shell-alignment from projection locking, showing that admissible
-    saturation occurs only where the continuous Born–Infeld locus meets the discrete shell
-    support."/>
+    content="Under its definition of physical realisability, O22 places the Born–Infeld saturation
+    depth on a BFS shell. It does not identify that depth with the O21 rank; the shell-alignment
+    conjecture remains open."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o22/"/>
@@ -48,14 +48,13 @@
       </a>
       <div>
         <h1>
-          Shell-Alignment from Projection Locking:
+          Projection Locking of the Saturation Depth:
           A Discrete Admissibility Theorem under Born–Infeld Saturation
         </h1>
         <p class="subtitle">
-          O22 follows <a href="../o21">O21</a> by proving that shell-alignment is not an
-          independent hypothesis, but a derived consequence of the interaction between the
-          continuous Born–Infeld saturation locus and the discrete support of admissible
-          realisation under the non-injective projection.
+          O22 follows <a href="../o21">O21</a> by proving that, within its stated model, a realisable
+          Born–Infeld saturation depth lies on a BFS shell. It does not establish the O21
+          shell-alignment conjecture, which concerns the observable rank and remains open.
         </p>
       </div>
     </div>
@@ -73,35 +72,38 @@
       <h2>Overview</h2>
       <p>
         This article continues the spectral admissibility programme after
-        <a href="../o21">O21</a>. While O21 removed external thresholds and fit parameters from
-        the persistence criterion, it still relied on a structural shell-alignment condition.
+        <a href="../o21">O21</a>. O21 built a two-point crossing rank
+        \(n_3^{\mathrm{obs}}\), free of fitted parameters for a fixed normalisation of the
+        observable, and conjectured that physical admissibility requires this rank to lie close to
+        a BFS shell.
       </p>
       <p>
-        O22 resolves this remaining gap. Its central objective is:
-        <strong>to prove that shell-alignment follows necessarily from the Born–Infeld
-          admissibility structure and the discrete observable support induced by the
-          non-injective projection \(\Pi\).</strong>
-      </p>
-      <p>
-        The paper introduces the notion of projectively admissible shell support
+        O22 proves a statement about a different object, the Born–Infeld saturation depth
+        \(n_{\mathrm{sat}}\). It introduces the projectively admissible shell support
         \[
         \mathbb{N}_q,
         \]
-        and shows that the continuous Born–Infeld saturation locus
+        and shows that, under its definition of physical realisability, the continuous
+        Born–Infeld saturation locus
         \[
         L_{\mathrm{BI}}
         \]
-        can be physically realised only where it meets this discrete support.
+        can be realised only where it meets this discrete support.
       </p>
       <p>
-        The key structural statement is that saturation is not merely a continuous threshold
-        crossing: it is an admissible realisation event, and admissible realisation is discrete.
+        The integer value of \(n_{\mathrm{sat}}\) follows from that definition, which requires a
+        saturation event to be encoded on a BFS shell, together with a shell decomposition of the
+        observable space. The paper does not establish the existence of such a depth.
       </p>
       <div class="note" role="note">
-        <strong>Scope statement.</strong> This page summarises the structural content of O22:
-        discrete admissibility support, continuous saturation locus, projection locking,
-        derivation of shell-alignment, and separation from the shell-selection problem left
-        for O23.
+        <strong>Version 1.19.</strong> The former Corollary 5.1, which recovered the O21
+        shell-alignment conjecture, is withdrawn. Its proof identified \(n_3^{\mathrm{obs}}\) with
+        \(n_{\mathrm{sat}}\) by citing an O21 proposition that only shows independence from the
+        choice of reference shells. Nothing relates the O21 threshold \(9/q^2\) to the Born–Infeld
+        saturation value, and \(n_3^{\mathrm{obs}}\) depends on the normalisation of the
+        observable. The conjecture remains open. The abstract no longer states that the pair
+        observable governs the charged-lepton mass hierarchy: that comparison is a research
+        motivation, not a result.
       </div>
     </div>
     <aside class="card">
@@ -114,13 +116,12 @@
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
         <div class="kv"><div class="k">Focus</div>
           <div class="v">
-            Projection locking, shell-alignment, discrete admissibility,
-            Born–Infeld saturation
+            Projection locking, discrete admissibility, Born–Infeld saturation depth
           </div></div>
         <div class="kv"><div class="k">Scope</div>
           <div class="v">
-            Continuous/discrete matching, admissible shell support,
-            theorem-level derivation of shell-alignment
+            Continuous/discrete matching for the saturation depth, within the stated model;
+            the O21 shell-alignment conjecture is open
           </div></div>
       </div>
     </aside>
@@ -134,7 +135,7 @@
         \[
         \mathbb{N}_q,
         \]
-        with observable space decomposed as
+        with observable space taken to decompose as
         \[
         O = \bigsqcup_{n \in \mathbb{N}_q} O_n.
         \]
@@ -148,23 +149,12 @@
         so the Born–Infeld condition defines a continuous candidate saturation depth.
       </li>
       <li>
-        <strong>Projection locking theorem:</strong>
-        admissible saturation can occur only when the continuous locus
-        \[
-        L_{\mathrm{BI}}
-        \]
-        meets the discrete admissible shell support
-        \[
-        \mathbb{N}_q.
-        \]
+        <strong>Projection locking theorem (Theorem 4.8):</strong>
+        under the definition of physical realisability, a realisable saturation depth lies in
+        \(L_{\mathrm{BI}} \cap \mathbb{N}_q\), hence on a BFS shell.
       </li>
       <li>
-        <strong>Derived shell-alignment:</strong>
-        the shell condition of O21 is no longer postulated, but recovered as a corollary of
-        projection locking.
-      </li>
-      <li>
-        <strong>Internal derivation chain:</strong>
+        <strong>Internal chain:</strong>
         the result is conditional on a supplied saturation scale, whose value [A-cap] does not determine,
         \[
         c_\chi \to A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
@@ -173,77 +163,57 @@
         \]
       </li>
       <li>
-        <strong>Logical clarification:</strong>
-        O22 proves that saturation must occur on a shell, but does not yet derive which shell
-        is selected.
-      </li>
-      <li>
-        <strong>Foundational closure:</strong>
-        this is the first theorem-level closure of the shell-alignment problem in the O-series.
+        <strong>Withdrawn corollary:</strong>
+        the former recovery of the O21 shell-alignment conjecture is withdrawn; the logarithmic
+        commensurability condition of O21 is not recovered either.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      O22 changes the logical status of shell-alignment.
-    </p>
-    <ul>
-      <li><strong>O21:</strong> shell-alignment is required</li>
-      <li><strong>O22:</strong> shell-alignment is explained</li>
-    </ul>
-    <p>
-      The apparent resonance between continuous decay and discrete BFS geometry is therefore no
-      longer a primitive principle. It is the observable signature of projection locking.
+      O22 separates two objects that earlier versions conflated: the Born–Infeld saturation depth
+      \(n_{\mathrm{sat}}\), which the paper places on a shell within its model, and the observable
+      rank \(n_3^{\mathrm{obs}}\) of O21, whose alignment with a shell remains conjectural.
     </p>
     <p>
-      The central insight is that physical saturation is not just a value crossing. It is an
-      admissible realisation event constrained by the discrete support of \(\Pi\).
+      Within the model, saturation is an admissible realisation event constrained by the discrete
+      support of \(\Pi\), not merely a value crossing. How far this goes beyond the definition of
+      realisability itself is an open audit question.
     </p>
   </section>
   <section class="card">
     <h2>Relation to the Cosmochrony program</h2>
     <p>
-      O22 occupies a decisive position in the O-series. It follows the intrinsic crossing
-      construction of O21 and removes the remaining structural hypothesis on shell-alignment.
-    </p>
-    <p>
-      The programme now reads:
+      The sequence reads:
       O16 (pair observable), O17 (pair dynamics),
-      O18 (fibre structure), O19 (canonical normalisation),
-      O20 (persistence criterion), O21 (intrinsic saturation rank),
-      O22 (projection locking and shell-alignment).
+      O18 (parity covariance; fibre identification open), O19 (canonical normalisation),
+      O20 (persistence criterion), O21 (crossing rank free of fitted parameters, for a fixed
+      normalisation), O22 (projection locking of the saturation depth).
     </p>
     <p>
-      After O22, the shell condition is no longer conjectural, but derived from the internal
-      interaction between continuous saturation and discrete admissible support.
+      The shell-alignment conjecture of O21 is not closed by O22.
     </p>
   </section>
   <section class="card">
-    <h2>Current outcome and open directions</h2>
-    <p>
-      O22 establishes that admissible saturation must occur on a shell. The shell-level
-      condition is now structurally internal and theorem-level established.
-    </p>
-    <p>
-      Remaining directions include:
-    </p>
+    <h2>Open directions</h2>
     <ul>
       <li>
         <strong>Shell selection:</strong>
-        derive which shell is selected, not merely that saturation must occur on one.
+        derive which shell the saturation depth selects, not merely that it lies on one.
       </li>
       <li>
-        <strong>Threshold derivation:</strong>
-        explain the emergence of
+        <strong>Shell alignment of the O21 rank:</strong>
+        any relation between \(n_3^{\mathrm{obs}}\) and \(n_{\mathrm{sat}}\); a large-\(q\)
+        campaign over many conjugate pairs would test the O21 conjecture, not Theorem 4.8.
+      </li>
+      <li>
+        <strong>Threshold:</strong>
         \[
         \Sigma_c(n_3)=3
         \]
-        and the privileged role of the three-dimensional stable sector.
-      </li>
-      <li>
-        <strong>Large-\(q\) asymptotics:</strong>
-        determine how the locking residual behaves as \(q\) increases.
+        remains a supplied selection rule; reading it as three physically stable directions is an
+        interpretive hypothesis.
       </li>
       <li>
         <strong>Universality:</strong>
@@ -266,7 +236,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19367375">
-        <i>Shell-Alignment from Projection Locking:
+        <i>Projection Locking of the Saturation Depth:
           A Discrete Admissibility Theorem under Born–Infeld Saturation</i>.
       </a>
     </p>

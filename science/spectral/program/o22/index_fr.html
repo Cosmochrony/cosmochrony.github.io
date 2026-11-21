@@ -5,23 +5,24 @@
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>
-    Alignement de coquille par verrouillage de projection :
+    Verrouillage de projection de la profondeur de saturation :
     un théorème d’admissibilité discrète sous saturation de Born–Infeld | Cosmochrony
   </title>
   <meta name="description"
-    content="O22 démontre que l’alignement de coquille n’est pas une hypothèse géométrique externe,
-    mais une conséquence dérivée du verrouillage de projection entre le lieu continu de
-    saturation de Born–Infeld et le support discret des coquilles admissibles."/>
+    content="O22 démontre que, selon sa définition de la réalisabilité physique, une profondeur de
+    saturation de Born–Infeld réalisable se trouve sur une coquille BFS. La version 1.19 retire
+    l’ancien corollaire qui plaçait le rang de O21 sur une coquille ; la conjecture d’alignement de
+    coquille de O21 reste ouverte."/>
   <link rel="alternate" hreflang="en"
     href="https://cosmochrony.org/science/spectral/program/o22/"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Alignement de coquille par verrouillage de projection :
+    content="Verrouillage de projection de la profondeur de saturation :
     un théorème d’admissibilité discrète sous saturation de Born–Infeld"/>
   <meta property="og:description"
-    content="O22 dérive l’alignement de coquille à partir du verrouillage de projection, en
-    montrant que la saturation admissible n’a lieu que là où le lieu continu de Born–Infeld
-    rencontre le support discret des coquilles."/>
+    content="Selon sa définition de la réalisabilité physique, O22 place la profondeur de saturation
+    de Born–Infeld sur une coquille BFS. Il n’identifie pas cette profondeur au rang de O21 ; la
+    conjecture d’alignement de coquille reste ouverte."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url"
     content="https://cosmochrony.org/science/spectral/program/o22/index_fr.html"/>
@@ -48,14 +49,14 @@
       </a>
       <div>
         <h1>
-          Alignement de coquille par verrouillage de projection :
+          Verrouillage de projection de la profondeur de saturation :
           un théorème d’admissibilité discrète sous saturation de Born–Infeld
         </h1>
         <p class="subtitle">
-          O22 suit <a href="../o21/index_fr.html">O21</a> en démontrant que l’alignement de
-          coquille n’est pas une hypothèse indépendante, mais une conséquence dérivée de
-          l’interaction entre le lieu continu de saturation de Born–Infeld et le support
-          discret de réalisation admissible sous la projection non injective.
+          O22 suit <a href="../o21/index_fr.html">O21</a> en démontrant que, dans son modèle, une
+          profondeur de saturation de Born–Infeld réalisable se trouve sur une coquille BFS. Il
+          n’établit pas la conjecture d’alignement de coquille de O21, qui porte sur le rang
+          observable et reste ouverte.
         </p>
       </div>
     </div>
@@ -72,57 +73,56 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article prolonge le programme d’admissibilité spectrale après
-        <a href="../o21/index_fr.html">O21</a>. Alors que O21 supprimait les seuils externes et
-        les paramètres d’ajustement du critère de persistance, il reposait encore sur une
-        condition structurelle d’alignement de coquille.
+        Cet article poursuit le programme d’admissibilité spectrale après
+        <a href="../o21/index_fr.html">O21</a>. O21 a construit un rang de croisement à deux points
+        \(n_3^{\mathrm{obs}}\), sans paramètre ajusté pour une normalisation fixée de l’observable,
+        et a conjecturé que l’admissibilité physique exige que ce rang soit proche d’une coquille BFS.
       </p>
       <p>
-        O22 résout cette lacune restante. Son objectif central est le suivant :
-        <strong>démontrer que l’alignement de coquille découle nécessairement de la structure
-          d’admissibilité de Born–Infeld et du support observable discret induit par la
-          projection non injective \(\Pi\).</strong>
-      </p>
-      <p>
-        L’article introduit la notion de support des coquilles projectivement admissibles
+        O22 démontre un énoncé portant sur un autre objet, la profondeur de saturation de Born–Infeld
+        \(n_{\mathrm{sat}}\). Il introduit le support admissible de coquilles
         \[
         \mathbb{N}_q,
         \]
-        et montre que le lieu continu de saturation de Born–Infeld
+        et montre que, selon sa définition de la réalisabilité physique, le lieu continu de
+        saturation de Born–Infeld
         \[
         L_{\mathrm{BI}}
         \]
-        ne peut être physiquement réalisé qu’aux points où il rencontre ce support discret.
+        ne peut être réalisé que là où il rencontre ce support discret.
       </p>
       <p>
-        L’énoncé structurel clef est que la saturation n’est pas simplement un franchissement
-        continu de seuil : c’est un événement de réalisation admissible, et la réalisation
-        admissible est discrète.
+        La valeur entière de \(n_{\mathrm{sat}}\) découle de cette définition, qui exige qu’un
+        événement de saturation soit encodé sur une coquille BFS, et d’une décomposition en coquilles
+        de l’espace des observables. L’article n’établit pas l’existence d’une telle profondeur.
       </p>
       <div class="note" role="note">
-        <strong>Déclaration de portée.</strong> Cette page résume le contenu structurel de O22 :
-        support discret d’admissibilité, lieu continu de saturation, verrouillage de
-        projection, dérivation de l’alignement de coquille, et séparation d’avec le problème
-        du choix de la coquille laissé à O23.
+        <strong>Version 1.19.</strong> L’ancien corollaire 5.1, qui retrouvait la conjecture
+        d’alignement de coquille de O21, est retiré. Sa preuve identifiait \(n_3^{\mathrm{obs}}\) à
+        \(n_{\mathrm{sat}}\) en citant une proposition de O21 qui établit seulement l’indépendance
+        vis-à-vis du choix des coquilles de référence. Rien ne relie le seuil \(9/q^2\) de O21 à la
+        valeur de saturation de Born–Infeld, et \(n_3^{\mathrm{obs}}\) dépend de la normalisation de
+        l’observable. La conjecture reste ouverte. Le résumé n’affirme plus que l’observable de paire
+        gouverne la hiérarchie des masses des leptons chargés : cette comparaison est une motivation
+        de recherche, non un résultat.
       </div>
     </div>
     <aside class="card">
-      <h2>Informations rapides</h2>
+      <h2>En bref</h2>
       <div class="kvs">
         <div class="kv"><div class="k">Auteur</div>
           <div class="v"><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a></div></div>
-        <div class="kv"><div class="k">Type de travail</div><div class="v">Prépublication</div></div>
+        <div class="kv"><div class="k">Type</div><div class="v">Prépublication</div></div>
         <div class="kv"><div class="k">Licence</div>
           <div class="v"><a href="/LICENSE">CC BY 4.0</a></div></div>
-        <div class="kv"><div class="k">Focus</div>
+        <div class="kv"><div class="k">Thème</div>
           <div class="v">
-            Verrouillage de projection, alignement de coquille,
-            admissibilité discrète, saturation de Born–Infeld
+            Verrouillage de projection, admissibilité discrète, profondeur de saturation de Born–Infeld
           </div></div>
         <div class="kv"><div class="k">Portée</div>
           <div class="v">
-            Appariement continu/discret, support des coquilles admissibles,
-            dérivation théorématique de l’alignement de coquille
+            Accord continu/discret pour la profondeur de saturation, dans le modèle énoncé ;
+            la conjecture d’alignement de coquille de O21 est ouverte
           </div></div>
       </div>
     </aside>
@@ -131,44 +131,31 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Support discret d’admissibilité :</strong>
+        <strong>Support admissible discret :</strong>
         définition de l’ensemble des coquilles projectivement admissibles
         \[
         \mathbb{N}_q,
         \]
-        avec une décomposition de l’espace observable
+        l’espace des observables étant supposé se décomposer en
         \[
         O = \bigsqcup_{n \in \mathbb{N}_q} O_n.
         \]
       </li>
       <li>
-        <strong>Lieu continu de saturation :</strong>
-        l’observable est traitée comme un échantillonnage discret d’une loi de décroissance
-        effective
+        <strong>Lieu de saturation continu :</strong>
+        l’observable est traitée comme un échantillonnage discret d’une loi de décroissance effective
         \[
         \tilde{\sigma}(t) \sim C\, t^{-\delta_{\mathrm{pair}}},
         \]
-        de sorte que la condition de Born–Infeld définit une profondeur de saturation
-        candidate continue.
+        de sorte que la condition de Born–Infeld définit une profondeur de saturation candidate continue.
       </li>
       <li>
-        <strong>Théorème de verrouillage de projection :</strong>
-        la saturation admissible ne peut se produire que lorsque le lieu continu
-        \[
-        L_{\mathrm{BI}}
-        \]
-        rencontre le support discret des coquilles admissibles
-        \[
-        \mathbb{N}_q.
-        \]
+        <strong>Théorème de verrouillage de projection (théorème 4.8) :</strong>
+        selon la définition de la réalisabilité physique, une profondeur de saturation réalisable
+        appartient à \(L_{\mathrm{BI}} \cap \mathbb{N}_q\), donc à une coquille BFS.
       </li>
       <li>
-        <strong>Alignement de coquille dérivé :</strong>
-        la condition de coquille de O21 n’est plus postulée, mais retrouvée comme corollaire
-        du verrouillage de projection.
-      </li>
-      <li>
-        <strong>Chaîne de dérivation interne :</strong>
+        <strong>Chaîne interne :</strong>
         le résultat est conditionnel à une échelle de saturation fournie, dont [A-cap] ne détermine pas la valeur,
         \[
         c_\chi \to A_n^{\max} = \frac{c_\chi}{\sqrt{\lambda_n}}
@@ -177,83 +164,61 @@
         \]
       </li>
       <li>
-        <strong>Clarification logique :</strong>
-        O22 prouve que la saturation doit se produire sur une coquille, mais ne dérive pas
-        encore quelle coquille est sélectionnée.
-      </li>
-      <li>
-        <strong>Clôture fondatrice :</strong>
-        il s’agit de la première clôture au niveau théorématique du problème de l’alignement
-        de coquille dans la série O.
+        <strong>Corollaire retiré :</strong>
+        l’ancienne dérivation de la conjecture d’alignement de coquille de O21 est retirée ; la
+        condition de commensurabilité logarithmique de O21 n’est pas non plus retrouvée.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      O22 modifie le statut logique de l’alignement de coquille.
-    </p>
-    <ul>
-      <li><strong>O21 :</strong> l’alignement de coquille est requis</li>
-      <li><strong>O22 :</strong> l’alignement de coquille est expliqué</li>
-    </ul>
-    <p>
-      L’apparente résonance entre la décroissance continue et la géométrie discrète BFS n’est
-      donc plus un principe primitif. Elle devient la signature observable du verrouillage de
-      projection.
+      O22 sépare deux objets que les versions antérieures confondaient : la profondeur de saturation
+      de Born–Infeld \(n_{\mathrm{sat}}\), que l’article place sur une coquille dans son modèle, et
+      le rang observable \(n_3^{\mathrm{obs}}\) de O21, dont l’alignement sur une coquille reste
+      conjectural.
     </p>
     <p>
-      L’idée centrale est que la saturation physique n’est pas seulement un franchissement de
-      valeur. C’est un événement de réalisation admissible contraint par le support discret de
-      \(\Pi\).
+      Dans le modèle, la saturation est un événement de réalisation admissible contraint par le
+      support discret de \(\Pi\), et non un simple franchissement de valeur. La question de savoir
+      ce que cet énoncé apporte au-delà de la définition de la réalisabilité reste un point d’audit
+      ouvert.
     </p>
   </section>
   <section class="card">
-    <h2>Relation au programme Cosmochrony</h2>
+    <h2>Place dans le programme Cosmochrony</h2>
     <p>
-      O22 occupe une position décisive dans la série O. Il suit la construction intrinsèque du
-      rang de croisement de O21 et supprime l’hypothèse structurelle restante sur
-      l’alignement de coquille.
-    </p>
-    <p>
-      Le programme se lit désormais ainsi :
+      La séquence se lit ainsi :
       O16 (observable de paire), O17 (dynamique de paire),
-      O18 (structure de fibre), O19 (normalisation canonique),
-      O20 (critère de persistance), O21 (rang intrinsèque de saturation),
-      O22 (verrouillage de projection et alignement de coquille).
+      O18 (covariance de parité ; identification de fibre ouverte), O19 (normalisation canonique),
+      O20 (critère de persistance), O21 (rang de croisement sans paramètre ajusté, pour une
+      normalisation fixée), O22 (verrouillage de projection de la profondeur de saturation).
     </p>
     <p>
-      Après O22, la condition de coquille n’est plus conjecturale, mais dérivée de
-      l’interaction interne entre la saturation continue et le support admissible discret.
+      La conjecture d’alignement de coquille de O21 n’est pas refermée par O22.
     </p>
   </section>
   <section class="card">
-    <h2>Résultat actuel et directions ouvertes</h2>
-    <p>
-      O22 établit que la saturation admissible doit avoir lieu sur une coquille. La condition
-      au niveau des coquilles est désormais structurellement interne et établie au niveau
-      théorématique.
-    </p>
-    <p>
-      Les directions restantes comprennent :
-    </p>
+    <h2>Directions ouvertes</h2>
     <ul>
       <li>
-        <strong>Sélection de la coquille :</strong>
-        dériver quelle coquille est sélectionnée, et non seulement que la saturation doit en
-        rencontrer une.
+        <strong>Sélection de coquille :</strong>
+        déterminer quelle coquille la profondeur de saturation sélectionne, et non seulement
+        qu’elle se trouve sur l’une d’elles.
       </li>
       <li>
-        <strong>Dérivation du seuil :</strong>
-        expliquer l’émergence de
+        <strong>Alignement du rang de O21 :</strong>
+        toute relation entre \(n_3^{\mathrm{obs}}\) et \(n_{\mathrm{sat}}\) ; une campagne à
+        grand \(q\) sur de nombreuses paires conjuguées testerait la conjecture de O21, non le
+        théorème 4.8.
+      </li>
+      <li>
+        <strong>Seuil :</strong>
         \[
         \Sigma_c(n_3)=3
         \]
-        et le rôle privilégié du secteur stable tridimensionnel.
-      </li>
-      <li>
-        <strong>Asymptotiques en grand \(q\) :</strong>
-        déterminer comment le résidu de verrouillage se comporte lorsque \(q\) augmente.
+        reste une règle de sélection fournie ; y lire trois directions physiquement stables est une
+        hypothèse interprétative.
       </li>
       <li>
         <strong>Universalité :</strong>
@@ -277,7 +242,7 @@
     <p>
       <a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>.
       <a href="https://doi.org/10.5281/zenodo.19367375">
-        <i>Shell-Alignment from Projection Locking:
+        <i>Projection Locking of the Saturation Depth:
           A Discrete Admissibility Theorem under Born–Infeld Saturation</i>.
       </a>
     </p>

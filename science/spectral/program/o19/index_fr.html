@@ -74,14 +74,17 @@
 <main class="wrap">
   <section class="card" id="version-1-3">
     <h2>Version 1.3</h2>
-    <p>L'article énonce désormais ce que cette page consigne : les tests P2 et P3 sont des problèmes
-      ouverts qui ne sont pas effectués, de sorte que le cas de la classification n'est pas identifié, et
-      l'ancienne proposition 7.2 (indépendance vis-à-vis du pipeline), dont l'esquisse de preuve dépendait
-      de ces tests, est retirée comme résultat et conservée comme problème ouvert 7.2. Le quatrième cas,
-      $r(c,q)$ invariant de $(c,q)$, y compris $r\equiv1$, n'est pas exclu par le calcul à $q=29$ de O17, qui
-      vérifie l'identité d'indépendance des blocs. Les valeurs $r(c,q)\in\{1,2,3,4\}$ sont une hypothèse
-      historique ; sur le vrai pipeline O12/O13, l'identité des blocs conjugués de
-      <a href="../o16/index_fr.html">O16</a> impose $r\equiv1$ dans son cadre, et l'énoncé de normalisation de
+    <p>Pour le facteur résiduel tel que l'article le définit, une limite asymptotique, le lemme 2.4
+      corrigé montre que les spans cumulés atteignent $q$ sur le graphe de Cayley fini pour toute graine
+      non nulle, de sorte que $r(c,q)\equiv1$ pour toute graine et toute instance de bloc : le quatrième cas
+      est réalisé, les cas A&ndash;C ne peuvent pas se produire et l'observable canonique coïncide avec
+      l'observable de paire. Les tests P2 et P3, qui ne sont pas effectués, ne gardent de sens que pour
+      un facteur pré-saturation que l'article ne définit pas. L'ancien corollaire 2.5 (une loi de
+      puissance asymptotique pour le span cumulé) et l'ancienne proposition 7.2 (indépendance vis-à-vis du
+      pipeline, désormais problème ouvert 7.2) sont retirés, de même que l'exclusion du quatrième cas par
+      le calcul à $q=29$ de O17. Les valeurs $r(c,q)\in\{1,2,3,4\}$ sont une hypothèse historique ; sur le
+      vrai pipeline O12/O13, l'identité des blocs conjugués de <a href="../o16/index_fr.html">O16</a> donne
+      aussi $r\equiv1$ sur l'observable de bloc exacte, et l'énoncé de normalisation de
       <a href="../o17/index_fr.html">O17</a> est interne à son modèle jouet.</p>
   </section>
 
@@ -122,9 +125,10 @@
         faisant varier l'instance du bloc (P3), sont décrits mais ne sont pas réalisés. Jusqu'à la
         version 1.2, leurs résultats attendus étaient supposés et la proposition d'indépendance au
         pipeline qui en dépend contenait un espace réservé explicite « À COMPLÉTER » ; la version
-        1.3 énonce les tests comme ouverts et conserve cette proposition comme problème ouvert 7.2. Un corollaire
-        asymptotique de loi de puissance, distinct, contredit par ailleurs le propre résultat de
-        saturation en dimension finie de l'article pour le span cumulé.
+        1.3 conserve cette proposition comme problème ouvert 7.2 et montre que, pour sa propre définition,
+        le facteur résiduel est trivial. Jusqu'à la version 1.2, un corollaire asymptotique de loi de
+        puissance, distinct, contredisait par ailleurs le propre résultat de saturation en dimension finie
+        de l'article pour le span cumulé ; la version 1.3 le retire.
       </p>
       <div class="note" role="note">
         <strong>Note de portée.</strong> Cette page résume le contenu structurel de
@@ -199,9 +203,10 @@
       </li>
       <li>
         <strong>Le corollaire asymptotique de loi de puissance :</strong>
-        la même section prouve que le span cumulé atteint $q$ et sature, puis affirme
-        séparément $\Sigma(n)\sim A\,n^{\delta}$ quand $n\to\infty$. Les deux ne
-        peuvent tenir avec un $\delta$ positif sur un groupe fini fixé.
+        jusqu'à la version 1.2, la même section prouvait que le span cumulé atteint $q$ et sature, puis
+        affirmait séparément $\Sigma(n)\sim A\,n^{\delta}$ quand $n\to\infty$. Les deux ne peuvent tenir
+        avec un $\delta$ positif sur un groupe fini fixé ; la version 1.3 retire le corollaire et en tire
+        la conséquence $r(c,q)\equiv1$ pour sa propre définition.
       </li>
       <li>
         <strong>Le mécanisme de phase centrale :</strong>

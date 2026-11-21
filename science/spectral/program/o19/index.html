@@ -67,14 +67,17 @@
 <main class="wrap">
   <section class="card" id="version-1-3">
     <h2>Version 1.3</h2>
-    <p>The paper now states what this page records: Tests P2 and P3 are open problems that are not
-      carried out, so the case of the classification is not identified, and the former
-      Proposition 7.2 (pipeline independence), whose proof sketch depended on those tests, is withdrawn
-      as a result and kept as Open Problem 7.2. The fourth case, $r(c,q)$ an invariant of $(c,q)$
-      including $r\equiv1$, is not excluded by O17's $q=29$ computation, which checks the
-      block-independence identity. The values $r(c,q)\in\{1,2,3,4\}$ are a historical hypothesis; on the
-      real O12/O13 pipeline <a href="../o16">O16</a>'s conjugate-block identity forces $r\equiv1$ within its
-      contract, and <a href="../o17">O17</a>'s normalisation statement is internal to its toy model.</p>
+    <p>For the residual factor as the paper defines it, an asymptotic limit, the corrected Lemma 2.4
+      shows that the cumulative spans reach $q$ on the finite Cayley graph for every non-zero seed, so
+      $r(c,q)\equiv1$ for every seed and block instance: the fourth case holds, Cases A&ndash;C cannot occur
+      and the canonical observable equals the pair observable. Tests P2 and P3, which are not carried out,
+      remain meaningful only for a pre-saturation factor that the paper does not define. The former
+      Corollary 2.5 (an asymptotic power law for the cumulative span) and the former Proposition 7.2
+      (pipeline independence, now Open Problem 7.2) are withdrawn, as is the exclusion of the fourth case
+      by O17's $q=29$ computation. The values $r(c,q)\in\{1,2,3,4\}$ are a historical hypothesis; on the
+      real O12/O13 pipeline <a href="../o16">O16</a>'s conjugate-block identity also gives $r\equiv1$ on the
+      exact block observable, and <a href="../o17">O17</a>'s normalisation statement is internal to its
+      toy model.</p>
   </section>
 
   <section class="note" role="note" data-release-version="1.2">
@@ -110,10 +113,10 @@
         The paper's two classification tests, varying the initial basis (P2) and varying the block
         instance (P3), are described but not carried out. Up to version 1.2 their expected outcomes
         were assumed and the pipeline-independence proposition that depends on them contained an
-        explicit &ldquo;TO BE COMPLETED&rdquo; placeholder; version 1.3 states the tests as open and
-        keeps that proposition as Open Problem 7.2. A separate asymptotic
-        power-law corollary also contradicts the paper's own finite-dimensional saturation result
-        for the cumulative span.
+        explicit &ldquo;TO BE COMPLETED&rdquo; placeholder; version 1.3 keeps that proposition as Open Problem 7.2 and
+        shows that, for its own definition, the residual factor is trivial. Up to version 1.2 a
+        separate asymptotic power-law corollary also contradicted the paper's own finite-dimensional
+        saturation result for the cumulative span; version 1.3 withdraws it.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page summarises the structural content of O19: two
@@ -183,9 +186,10 @@
       </li>
       <li>
         <strong>The asymptotic power-law corollary:</strong>
-        the same section proves the cumulative span reaches $q$ and saturates, then separately
-        asserts $\Sigma(n)\sim A\,n^{\delta}$ as $n\to\infty$. Both cannot hold with positive
-        $\delta$ on a fixed finite group.
+        up to version 1.2 the same section proved that the cumulative span reaches $q$ and
+        saturates, then separately asserted $\Sigma(n)\sim A\,n^{\delta}$ as $n\to\infty$. Both cannot
+        hold with positive $\delta$ on a fixed finite group; version 1.3 withdraws the corollary and
+        draws the consequence $r(c,q)\equiv1$ for its own definition.
       </li>
       <li>
         <strong>The central-phase mechanism:</strong>

@@ -64,9 +64,10 @@
         croissante en \(\ell\).
       </p>
       <p>
-        La version 2.0 applique exactement le théorème à la capacité O12. O32 démontre que ce profil est
-        invariant par multiplication du bloc de caractères entier par toute unité ; sous la loi de tirage des
-        campagnes, sa distribution ne dépend donc pas de l’étiquette. Ainsi \(I(c;\sigma(\ell)) = 0\) à toute
+        La version 2.0 applique exactement le théorème à la capacité O12. Ce profil est invariant par
+        multiplication du bloc de caractères entier par toute unité (formule exacte du rang d’O12, redémontrée
+        dans O32 2.0), et O32 en déduit que, sous la loi de tirage des campagnes, sa distribution ne dépend pas de
+        l’étiquette. Ainsi \(I(c;\sigma(\ell)) = 0\) à toute
         profondeur, [H-suff] vaut pour cette observable, et la borne d’effacement s’écrit \(0 \le 0\). Il
         s’agit d’une indépendance en loi, non d’une égalité des profils pour chaque tirage des caractères
         auxiliaires. Elle montre que l’étiquette est absente de l’observable ; elle ne démontre aucun
@@ -118,8 +119,8 @@
         \(0 \le 0\).</li>
       <li><strong>Vérifications numériques.</strong> Les tests de Spearman par permutation pour
         \(q \in \{61, 151, 211\}\) ne détectent aucune dépendance en l’étiquette des résidus pas à pas, comme
-        l’exige le résultat exact. Les scores \(\eta^2\) par exclusion de triplet sont des mesures inexpliquées
-        et ne portent aucun contenu de couleur.</li>
+        l’exige le résultat exact. Les scores \(\eta^2\) par exclusion de triplet sont des mesures : compatibles
+        avec l’hypothèse nulle à \(q = 211\), inexpliquées à \(q = 151\) ; ils ne portent aucun contenu de couleur.</li>
       <li><strong>Trois axes.</strong> L’axe de coarse-graining \(\ell\), l’axe des grands \(q\) et l’axe
         temporel de cascade \(n\) (PTO) restent distincts.</li>
     </ul>
@@ -128,8 +129,8 @@
     <h2>Avertissement strict</h2>
     <p>
       Ce résultat n’est <strong>pas</strong> un \(c\)-théorème. Il ne compte pas de degrés de liberté
-      effectifs, et pour la capacité O12 il n’exhibe aucune profondeur où de l’information serait perdue,
-      puisqu’aucune n’est présente à la profondeur zéro. Une application non triviale exige une observable
+      effectifs, et pour la capacité O12 il n’exhibe aucune profondeur où de l’information serait perdue : l’observable
+      ne porte d’information sur l’étiquette à aucune profondeur, profondeur zéro comprise. Une application non triviale exige une observable
       dans laquelle l’étiquette est présente.
     </p>
   </section>
@@ -137,8 +138,8 @@
     <h2>Ce que le théorème établit et n’établit pas</h2>
     <p>
       Établit, sous [H-suff] et [H-sg] : une fonctionnelle d’information monotone pour la hiérarchie de
-      coarse-graining BFS ; l’identification de \(I(c;\sigma(\ell)) = 0\) comme équilibre d’effacement de
-      fibre ; et, pour la capacité O12 sous la loi de tirage des campagnes, \(I(c;\sigma(\ell)) = 0\) à toute
+      coarse-graining BFS ; la caractérisation de \(I(c;\sigma(\ell)) = 0\) comme indépendance de
+      l’observable vis-à-vis de l’étiquette ; et, pour la capacité O12 sous la loi de tirage des campagnes, \(I(c;\sigma(\ell)) = 0\) à toute
       profondeur.
     </p>
     <p>

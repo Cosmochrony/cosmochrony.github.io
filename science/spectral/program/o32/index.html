@@ -18,7 +18,7 @@
 <body>
 <header><div class="wrap"><div class="brand">
   <a class="logo" href="/" title="Back to Cosmochrony" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg"><path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/><ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/></svg></a>
-  <div><h1>O32: Limits of a Colour-Triplet Capacity Diagnostic</h1><p class="subtitle">Exact unit-scaling invariance explains why the version-1.5 test could not test [H-color]</p></div>
+  <div><h1>O32: Limits of a Colour-Triplet Capacity Diagnostic</h1><p class="subtitle">Exact unit-scaling invariance explains why the version-1.5 campaign could not test [H-color]</p></div>
 </div><div class="cta"><a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Read O32</a><a class="btn subtle" href="../o31">Read the O31 withdrawal notice</a></div></div></header>
 <main class="wrap">
   <section class="grid"><div class="card"><h2>Current status</h2>
@@ -31,18 +31,19 @@
     <div class="kv"><div class="k">Former dependency</div><div class="v"><a href="../o31">O31, now a withdrawal notice</a></div></div>
   </div></aside></section>
   <section class="card"><h2>Central result</h2>
-    <p>Each O12 fingerprint vector is a single Fourier character $e_B$ with frequency $B=c_1b_1+c_2b_2+c_3b_3$, and the rank increments that define the capacity profile count distinct frequencies. Multiplying the whole character block by any unit $\lambda$ multiplies every frequency by $\lambda$, a bijection of $\mathbb{Z}/q\mathbb{Z}$, so the profile does not change.</p>
-    <p>Under the sampling law of the campaign, the profile attached to a character therefore has the same distribution for every character: no $O(q^{-1})$ correction and no role for cube roots of unity. The version-1.5 variance ratio, the relation $\delta_{\mathrm{tri}}\approx3\delta_c$ (an identity of least-squares fitting) and the rank of $C_{\mathrm{color}}$ all have laws that do not depend on which characters are compared.</p>
+    <p>Each O12 fingerprint vector is a single Fourier character $e_B$ with frequency $B=c_1b_1+c_2b_2+c_3b_3$, and the rank increments that define the capacity profile count distinct frequencies. Multiplying the whole character block by any unit $\lambda$ multiplies every frequency by $\lambda$, a bijection of $\mathbb{Z}/q\mathbb{Z}$, so the profile does not change. The invariance, already stated in O12's exact rank formula, holds block by block and needs no sampling hypothesis; the colour orbit is the case $\lambda=\omega$, so the full-block equality across a colour orbit is proved but is not specific to cube roots of unity.</p>
+    <p>Under the sampling law of the campaign (auxiliary characters drawn independently and uniformly, blocks with zero total rejected), the profile attached to a character therefore has the same distribution for every character: no $O(q^{-1})$ correction and no role for cube roots of unity. The version-1.5 variance ratio, the relation $\delta_{\mathrm{tri}}\approx3\delta_c$ (an identity of least-squares fitting) and the rank of $C_{\mathrm{color}}$ all have laws that do not depend on which characters are compared. These are statements in law: individual mean profiles still differ by sampling noise, and no statistic of the campaign can separate colour triplets from other sets of characters.</p>
   </section>
   <section class="card"><h2>Null controls</h2><ul>
     <li>$q=61$: mean variance ratio $1.28\times10^{-2}$ for the four colour triplets, $1.32\times10^{-2}$ for twenty arbitrary triples.</li>
     <li>$q=151$: $3.74\times10^{-3}$ for the colour triplets, $3.51\times10^{-3}$ for the arbitrary triples.</li>
+    <li>These window averages include shells at which some blocks have saturated; on usable shells only, the rebuilt calibration of the paper reaches the same conclusion.</li>
     <li>The stored version-1.5 campaign is reproduced exactly, and its calibration is rebuilt on shells unaffected by rank saturation.</li>
   </ul></section>
   <section class="card"><h2>Withdrawn from version 1.5</h2><ul>
     <li>The claim to test $[\mathrm{H\text{-}color}]$ and the verdict attached to $R\leq3$.</li>
-    <li>Proposition 1 and the averaged and effective levels; the levels attributed to O31.</li>
-    <li>The noise floors and ratios $R$, which mixed two averaging conventions.</li>
+    <li>Proposition 1, and the reading of the pointwise, averaged and effective equalities as levels of $[\mathrm{H\text{-}color}]$: they hold for every unit or every pair of characters; the rank level and the attribution to O31.</li>
+    <li>The noise floors and ratios $R$: the three floors correspond to three averaging conventions.</li>
     <li>The $\mathrm{SU}(3)$, quark, baryon, confinement and $\beta^*$ readings.</li>
   </ul></section>
   <section class="card"><h2>Open work</h2><p>A test of a colour orbit needs an observable that is not invariant under all units. No such observable is proposed here.</p></section>

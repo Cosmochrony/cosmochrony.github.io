@@ -64,9 +64,9 @@
         functional is non-increasing in \(\ell\).
       </p>
       <p>
-        Version 2.0 applies the theorem exactly to the O12 capacity. O32 proves that this profile is
-        invariant under scaling of the whole character block by any unit, so, under the sampling law of the
-        campaigns, its distribution does not depend on the label. Hence \(I(c;\sigma(\ell)) = 0\) at every
+        Version 2.0 applies the theorem exactly to the O12 capacity. This profile is invariant under
+        scaling of the whole character block by any unit (O12's exact rank formula, proved anew in O32 2.0), and
+        O32 deduces that, under the sampling law of the campaigns, its distribution does not depend on the label. Hence \(I(c;\sigma(\ell)) = 0\) at every
         depth, [H-suff] holds for that observable, and the erasure bound reads \(0 \le 0\). This is
         independence in law, not equality of the profiles for each draw of the auxiliary characters. It shows
         that the label is absent from the observable; it demonstrates no erasure mechanism.
@@ -115,7 +115,8 @@
         profile, which settles [O-1a\('\)] in law for general labels; the bound is \(0 \le 0\).</li>
       <li><strong>Numerical checks.</strong> Permutation-based Spearman tests for \(q \in \{61, 151, 211\}\)
         find no label dependence in step-by-step residuals, as the exact result requires. The leave-triplet-out
-        \(\eta^2\) scores are unexplained measurements and carry no colour content.</li>
+        \(\eta^2\) scores are measurements: consistent with the null at \(q = 211\), unexplained at
+        \(q = 151\); they carry no colour content.</li>
       <li><strong>Three axes.</strong> The coarse-graining axis \(\ell\), the large-\(q\) axis and the temporal
         cascade axis \(n\) (PTO) are kept distinct.</li>
     </ul>
@@ -124,16 +125,16 @@
     <h2>Strict disclaimer</h2>
     <p>
       This result is <strong>not</strong> a \(c\)-theorem. It does not count effective degrees of freedom, and
-      for the O12 capacity it exhibits no depth at which information is lost, because none is present at depth
-      zero. A non-trivial application requires an observable in which the label is present.
+      for the O12 capacity it exhibits no depth at which information is lost: the observable carries no label
+      information at any depth, depth zero included. A non-trivial application requires an observable in which the label is present.
     </p>
   </section>
   <section class="card">
     <h2>What the theorem does and does not establish</h2>
     <p>
       Establishes, conditional on [H-suff] and [H-sg]: a monotone information functional for the BFS
-      coarse-graining hierarchy; the identification of \(I(c;\sigma(\ell)) = 0\) as the fibre-erasure
-      equilibrium; and, for the O12 capacity under the campaign sampling law, \(I(c;\sigma(\ell)) = 0\) at
+      coarse-graining hierarchy; the characterisation of \(I(c;\sigma(\ell)) = 0\) as label independence of
+      the observable; and, for the O12 capacity under the campaign sampling law, \(I(c;\sigma(\ell)) = 0\) at
       every depth.
     </p>
     <p>

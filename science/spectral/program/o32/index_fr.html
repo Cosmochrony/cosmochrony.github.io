@@ -18,7 +18,7 @@
 <body>
 <header><div class="wrap"><div class="brand">
   <a class="logo" href="/" title="Retour à Cosmochronie" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 249" class="logo-svg"><path style="fill: currentColor; transform-box: fill-box; transform-origin: 50% 50%; paint-order: stroke; stroke: currentColor;" transform="matrix(0.642887,0.642887,-0.642887,0.642887,-376.818024,-270.825104)" d="M 637.098 395.203 A 136.402 136.402 0 1 1 500.695 258.801 L 500.695 395.203 Z"/><ellipse style="paint-order: fill; stroke-width: 1em; stroke: currentColor;" cx="122.899" cy="123.911" rx="80.614" ry="80.614" fill="var(--comp)" opacity="0.647"/></svg></a>
-  <div><h1>O32 : limites d’un diagnostic de capacité sur les triplets de couleur</h1><p class="subtitle">L’invariance exacte par toute unité explique pourquoi le test de la version 1.5 ne pouvait pas tester [H-color]</p></div>
+  <div><h1>O32 : limites d’un diagnostic de capacité sur les triplets de couleur</h1><p class="subtitle">L’invariance exacte par toute unité explique pourquoi la campagne de la version 1.5 ne pouvait pas tester [H-color]</p></div>
 </div><div class="cta"><a class="btn primary" href="https://doi.org/10.5281/zenodo.20145607">Lire O32</a><a class="btn subtle" href="../o31/index_fr.html">Lire la notice de retrait O31</a></div></div></header>
 <main class="wrap">
   <section class="grid"><div class="card"><h2>Statut actuel</h2>
@@ -31,22 +31,23 @@
     <div class="kv"><div class="k">Ancienne dépendance</div><div class="v"><a href="../o31/index_fr.html">O31, désormais un avis de retrait</a></div></div>
   </div></aside></section>
   <section class="card"><h2>Résultat central</h2>
-    <p>Chaque vecteur d’empreinte O12 est un caractère de Fourier unique $e_B$, de fréquence $B=c_1b_1+c_2b_2+c_3b_3$, et les incréments de rang qui définissent le profil de capacité comptent les fréquences distinctes. Multiplier le bloc de caractères entier par une unité $\lambda$ multiplie chaque fréquence par $\lambda$, bijection de $\mathbb{Z}/q\mathbb{Z}$ : le profil ne change pas.</p>
-    <p>Sous la loi de tirage de la campagne, le profil associé à un caractère a donc la même distribution pour tous les caractères, sans correction en $O(q^{-1})$ ni rôle des racines cubiques de l’unité. Le rapport de variance de la version 1.5, la relation $\delta_{\mathrm{tri}}\approx3\delta_c$ (une identité de l’ajustement par moindres carrés) et le rang de $C_{\mathrm{color}}$ ont tous des lois indépendantes des caractères comparés.</p>
+    <p>Chaque vecteur d’empreinte O12 est un caractère de Fourier unique $e_B$, de fréquence $B=c_1b_1+c_2b_2+c_3b_3$, et les incréments de rang qui définissent le profil de capacité comptent les fréquences distinctes. Multiplier le bloc de caractères entier par une unité $\lambda$ multiplie chaque fréquence par $\lambda$, bijection de $\mathbb{Z}/q\mathbb{Z}$ : le profil ne change pas. Cette invariance, déjà énoncée par la formule exacte du rang d’O12, vaut bloc par bloc et ne demande aucune hypothèse de tirage ; l’orbite de couleur en est le cas $\lambda=\omega$, si bien que l’égalité de bloc entier le long d’une orbite de couleur est démontrée, mais n’est pas propre aux racines cubiques de l’unité.</p>
+    <p>Sous la loi de tirage de la campagne (caractères auxiliaires tirés indépendamment et uniformément, blocs de total nul rejetés), le profil associé à un caractère a donc la même distribution pour tous les caractères, sans correction en $O(q^{-1})$ ni rôle des racines cubiques de l’unité. Le rapport de variance de la version 1.5, la relation $\delta_{\mathrm{tri}}\approx3\delta_c$ (une identité de l’ajustement par moindres carrés) et le rang de $C_{\mathrm{color}}$ ont tous des lois indépendantes des caractères comparés. Ce sont des énoncés en loi : les profils moyens individuels diffèrent encore par le bruit d’échantillonnage, et aucune statistique de la campagne ne peut séparer les triplets de couleur des autres ensembles de caractères.</p>
   </section>
   <section class="card"><h2>Contrôles nuls</h2><ul>
     <li>$q=61$ : rapport de variance moyen $1{,}28\times10^{-2}$ pour les quatre triplets de couleur, $1{,}32\times10^{-2}$ pour vingt triplets quelconques.</li>
     <li>$q=151$ : $3{,}74\times10^{-3}$ pour les triplets de couleur, $3{,}51\times10^{-3}$ pour les triplets quelconques.</li>
+    <li>Ces moyennes sur fenêtre incluent des couches où certains blocs ont saturé ; sur les seules couches exploitables, l’étalonnage reconstruit de l’article conduit à la même conclusion.</li>
     <li>La campagne stockée de la version 1.5 est reproduite exactement, et son étalonnage reconstruit sur les couches que la saturation du rang n’affecte pas.</li>
   </ul></section>
   <section class="card"><h2>Retiré de la version 1.5</h2><ul>
     <li>La prétention de tester $[\mathrm{H\text{-}color}]$ et le verdict attaché à $R\leq3$.</li>
-    <li>La proposition 1 et les niveaux moyenné et effectif ; les niveaux attribués à O31.</li>
-    <li>Les planchers de bruit et les rapports $R$, qui mêlaient deux conventions de moyenne.</li>
+    <li>La proposition 1, et la lecture des égalités ponctuelle, moyennée et effective comme niveaux de $[\mathrm{H\text{-}color}]$ : elles valent pour toute unité ou pour toute paire de caractères ; le niveau de rang et l’attribution à O31.</li>
+    <li>Les planchers de bruit et les rapports $R$ : les trois planchers correspondent à trois conventions de moyenne.</li>
     <li>Les lectures en termes de $\mathrm{SU}(3)$, de quarks, de baryons, de confinement et de $\beta^*$.</li>
   </ul></section>
   <section class="card"><h2>Travail ouvert</h2><p>Tester une orbite de couleur exige une observable qui ne soit pas invariante par toutes les unités. Aucune n’est proposée ici.</p></section>
-  <section class="card"><h2>Référence</h2><p><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener"><i>Limits of a Colour-Triplet Capacity Diagnostic on Heis₃(Z/qZ): Exact Unit-Scaling Invariance of the O12 Profile</i>.</a> Document de travail, version 2.0.</p></section>
+  <section class="card"><h2>Référence</h2><p><a href="https://orcid.org/0009-0001-7697-7868">Jérôme Beau</a>. <a href="https://doi.org/10.5281/zenodo.20145607" rel="noopener"><i lang="en">Limits of a Colour-Triplet Capacity Diagnostic on Heis₃(Z/qZ): Exact Unit-Scaling Invariance of the O12 Profile</i>.</a> Document de travail, version 2.0.</p></section>
 </main>
 <footer><div class="wrap"><p class="small">© <span id="y"></span> Jérôme Beau. Sous licence <a href="/LICENSE">CC BY 4.0</a>. <a href="mailto:contact@cosmochrony.org">contact@cosmochrony.org</a></p></div></footer>
 <script>document.getElementById("y").textContent = new Date().getFullYear()</script>

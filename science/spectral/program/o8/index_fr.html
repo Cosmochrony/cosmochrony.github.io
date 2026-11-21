@@ -7,8 +7,8 @@
   <title>Empreintes de chemins à trois pas sur graphes LPS et exposant de croissance de capacité | Cosmochrony</title>
   <meta name="description"
     content="Une empreinte de chemins à trois pas sur graphes de Ramanujan LPS montrant la première fenêtre
-    de pré-saturation croissant avec q, échappant à l’obstruction O6 tout en révélant une compression
-    géométrique due à la croissance exponentielle des couches BFS."/>
+    de pré-saturation croissant avec q en nombre de sommets, au-delà de l’espace engendré de dimension q² de
+    l’empreinte O6, et une compression géométrique due à la croissance exponentielle des couches BFS."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o8/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o8/index_es.html"/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o8/index_de.html"/>
@@ -16,10 +16,10 @@
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
     content="Empreintes de chemins à trois pas sur graphes LPS et exposant de croissance de capacité :
-    compression géométrique au-delà du no-go O6"/>
+    compression géométrique sur les graphes LPS"/>
   <meta property="og:description"
-    content="La première empreinte de chemins croissant avec q dans la série O, montrant que même après
-    l’obstruction algébrique de O6, la croissance exponentielle des couches sur les graphes LPS
+    content="La première empreinte de chemins croissant avec q dans la série O, montrant que même avec un
+    espace engendré plus grand que celui de O6, la croissance exponentielle des couches sur les graphes LPS
     comprime la fenêtre observable en O(log q) pas BFS."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o8/"/>
@@ -48,7 +48,7 @@
       <div>
         <h1>Empreintes de chemins à trois pas sur graphes LPS et exposant de croissance de capacité</h1>
         <p class="subtitle">
-          Pourquoi la première empreinte de chemins croissant avec q échappe à l’obstruction O6, mais échoue encore à
+          Pourquoi la première empreinte de chemins croissant avec q, dont l’espace engendré dépasse celui de O6, échoue encore à
           extraire l’exposant de capacité sur les graphes LPS en raison d’une compression géométrique induite par la
           croissance exponentielle des couches.
         </p>
@@ -66,8 +66,8 @@
       <h2>Vue d’ensemble</h2>
       <p>
         Cet article prolonge le programme d’admissibilité spectrale après la reformulation introduite dans <a
-        href="../o7/index_fr.html">O7</a>. Alors que <a href="../o6/index_fr.html">O6</a> a démontré qu’aucune empreinte
-        de dimension finie ne peut soutenir un régime en loi de puissance sur une fenêtre croissante,
+        href="../o7/index_fr.html">O7</a>. Alors que <a href="../o6/index_fr.html">O6</a> a constaté que son empreinte
+        matricielle de Steinberg remplit son espace engendré de dimension $q^2$ en quelques rayons BFS,
         <a href="../o7/index_fr.html">O7</a> a identifié l’observable pertinente comme étant la capacité projective
         discrète $\Sigma_n$.
       </p>
@@ -77,8 +77,8 @@
         permet d’obtenir une fenêtre de pré-saturation suffisamment longue pour mesurer l’exposant $\delta$.
       </p>
       <p>
-        Le résultat est structurellement net. Cette nouvelle empreinte échappe effectivement à l’obstruction algébrique
-        de <a href="../o6/index_fr.html">O6</a> et ouvre la première fenêtre de pré-saturation croissant comme $O(q^2)$
+        Le résultat est structurellement net. Cette nouvelle empreinte continue d’engendrer des directions au-delà de
+        l’espace de dimension $q^2$ de l’empreinte de <a href="../o6/index_fr.html">O6</a> et ouvre la première fenêtre de pré-saturation croissant comme $O(q^2)$
         en nombre de sommets. Mais sur les graphes LPS, cette fenêtre est comprimée en seulement $O(\log q)$ pas BFS par
         la croissance exponentielle des couches, ce qui empêche toute extraction fiable de l’exposant.
       </p>
@@ -129,29 +129,30 @@
         $O(q^2)$ en nombre de sommets.
       </li>
       <li>
-        <strong>Échappement au no-go <a href="../o6/index_fr.html">O6</a> :</strong> démonstration qu’un espace d’état
-        admissible croissant peut dépasser la saturation à profondeur bornée.
+        <strong>Croissance du rang sur plusieurs pas BFS :</strong> l’espace engendré esquissé continue de croître
+        jusqu’à $O(q^2)$ sommets ; <a href="../o6/index_fr.html">O6</a> 2.0 ne démontre aucun rayon de saturation
+        indépendant de $q$ qui l’exclurait.
       </li>
       <li>
         <strong>Mécanisme de compression géométrique :</strong> identification du rôle de la croissance exponentielle
         des couches BFS dans la réduction de la fenêtre observable.
       </li>
       <li>
-        <strong>Nouvelle classe d’obstruction :</strong> mise en évidence d’une limite géométrique indépendante des
-        contraintes de représentation.
+        <strong>Obstruction géométrique :</strong> mise en évidence d’une limite géométrique, qui borne aussi le rayon de
+        saturation de l’empreinte de O6 par le diamètre du graphe.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’article montre que lever l’obstruction de <a href="../o6/index_fr.html">O6</a> ne suffit pas. Une croissance de
-      l’espace d’états admissibles est nécessaire, mais pas suffisante. Une fois cette condition remplie, la limitation
+      L’article montre qu’un espace engendré plus grand que celui de <a href="../o6/index_fr.html">O6</a> ne suffit pas :
+      une croissance de l’espace d’états admissibles n’est pas suffisante. Une fois cette condition remplie, la limitation
       devient géométrique.
     </p>
     <ul>
       <li>
-        <strong>Les empreintes de dimension fixe</strong> échouent par saturation rapide.
+        <strong>Les empreintes fixes de O5 et O6</strong> échouent par saturation rapide.
       </li>
       <li>
         <strong>Les empreintes de chemins</strong> évitent cette saturation.
@@ -177,13 +178,13 @@
       <a href="../o3/index_fr.html">O3</a> amplifie la hiérarchie par la croissance de la valence,
       <a href="../o4/index_fr.html">O4</a> montre que le flux borné et l’expansion de Cheeger ne bornent pas, par l’argument examiné, l’exposant de cascade,
       <a href="../o5/index_fr.html">O5</a> localise l’échec des mécanismes au niveau des sommets,
-      <a href="../o6/index_fr.html">O6</a> démontre le résultat d’impossibilité pour les empreintes fixes de
-      dimension finie, et <a href="../o7/index_fr.html">O7</a> reformule l’observable pertinente en termes
+      <a href="../o6/index_fr.html">O6</a> constate que son empreinte matricielle de Steinberg remplit son espace
+      engendré de dimension $q^2$ en quelques rayons BFS, et <a href="../o7/index_fr.html">O7</a> reformule l’observable pertinente en termes
       de capacité projective.
     </p>
     <p>
-      Le présent article effectue le premier test explicite au-delà de ce résultat d’impossibilité. Il
-      montre que l’obstruction restante n’est pas algébrique mais géométrique : sur les expanseurs LPS, la
+      Le présent article teste une empreinte de plus grande dimension. Il montre que l’obstruction restante est
+      géométrique : sur les expanseurs LPS, la
       croissance exponentielle des couches comprime la fenêtre observable avant que le régime asymptotique
       de croissance de la capacité puisse être résolu. La prochaine étape ne consiste donc plus seulement à
       enrichir les empreintes, mais à repenser la géométrie des graphes utilisés.

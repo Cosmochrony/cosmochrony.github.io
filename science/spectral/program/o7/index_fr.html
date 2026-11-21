@@ -44,7 +44,7 @@
       <div>
         <h1>Capacité projective et limite continue de la redondance admissible</h1>
         <p class="subtitle">
-          Pourquoi les mécanismes de redondance de dimension finie doivent être reformulés en termes de capacité
+          Pourquoi les décomptes de redondance exacte d’empreintes qui saturent sont reformulés en termes de capacité
           projective gros-grain, et comment cela établit le premier pont entre saturation admissible discrète et
           dynamique projetée non linéaire.
         </p>
@@ -65,9 +65,10 @@
     <div class="card">
       <h2>Vue d’ensemble</h2>
       <p>
-        Cet article prolonge le programme spectral après l’obstruction démontrée dans <a
-        href="../o6/index_fr.html">O6</a> : aucune empreinte basée sur une représentation de dimension finie ne peut
-        soutenir un régime en loi de puissance sur une fenêtre croissante.
+        Cet article prolonge le programme spectral après <a href="../o6/index_fr.html">O6</a>, dont l’empreinte
+        matricielle de Steinberg remplit son espace engendré de dimension $q^2$ en quelques rayons BFS, sans laisser
+        de fenêtre pour une décroissance en loi de puissance. O6 n’établit pas d’impossibilité pour toute
+        représentation fixe de dimension finie.
       </p>
       <p>
         O7 ne cherche pas à contourner ce résultat en introduisant un nouvel encodage statique. Il change l’observable
@@ -129,8 +130,8 @@
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’obstruction de <a href="../o6/index_fr.html">O6</a> indique que la redondance exacte n’est pas le bon
-      observable. La capacité projective coarse-grainée capture la quantité de nouveauté encore disponible localement.
+      La saturation constatée dans <a href="../o6/index_fr.html">O6</a> est lue comme un signe que la redondance
+      exacte n’est pas le bon observable. La capacité projective coarse-grainée capture la quantité de nouveauté encore disponible localement.
     </p>
     <ul>
       <li>Les empreintes fixes saturent trop vite</li>
@@ -145,17 +146,18 @@
   <section class="card">
     <h2>Relation au programme</h2>
     <p>
-      O7 fait suite à l’obstruction démontrée dans <a href="../o6/index_fr.html">O6</a>. L’admissibilité
+      O7 fait suite aux résultats de saturation de <a href="../o5/index_fr.html">O5</a> et de
+      <a href="../o6/index_fr.html">O6</a>. L’admissibilité
       spectrale, la capacité, la rigidité et la stratigraphie définissent l’ossature spectrale de la théorie.
       <a href="../o1/index_fr.html">O1</a> rétablit l’ordre par la dynamique projective,
       <a href="../o3/index_fr.html">O3</a> amplifie la hiérarchie par la croissance de la valence,
       <a href="../o5/index_fr.html">O5</a> isole structurellement la redondance admissible, et
-      <a href="../o6/index_fr.html">O6</a> démontre qu’aucune représentation fixe de dimension finie ne peut
-      engendrer un régime en loi de puissance sur une fenêtre croissante.
+      <a href="../o6/index_fr.html">O6</a> constate que son empreinte matricielle de Steinberg sature en quelques
+      rayons BFS.
     </p>
     <p>
-      Le présent article accomplit l’étape suivante nécessaire : il réinterprète cette obstruction comme la
-      signature microscopique de l’épuisement de la capacité projective et identifie le premier pont
+      Le présent article franchit une étape suivante : il lit cette saturation, à titre d’interprétation, comme
+      une signature microscopique de l’épuisement de la capacité projective et identifie le premier pont
       cohérent du discret au continu vers la dynamique projetée non linéaire du white paper. Il prépare
       ainsi <a href="../o8/index_fr.html">O8</a>.
     </p>

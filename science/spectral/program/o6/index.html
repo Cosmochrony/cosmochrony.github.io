@@ -4,19 +4,18 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent \(\beta\) | Cosmochrony</title>
+  <title>Matrix-Level Dynamic Redundancy and a Conditional Upper Bound on the Cascade Exponent \(\beta\) | Cosmochrony</title>
   <meta name="description"
-    content="Matrix-level analysis showing that no fixed finite-dimensional representation can explain the cascade exponent, establishing a structural obstruction and identifying depth-growing dynamical redundancy as necessary."/>
+    content="Steinberg-matrix fingerprint on LPS graphs: a span of dimension q² that saturates within the graph diameter and cannot grow again after a plateau, certified ranks for three primes, and a conditional upper bound on the cascade exponent."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o6/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o6/index_es.html"/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o6/index_de.html"/>
   <link rel="alternate" hreflang="fr" href="https://cosmochrony.org/science/spectral/program/o6/index_fr.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent \(\beta\):
-    A Representation-Theoretic Obstruction"/>
+    content="Matrix-Level Dynamic Redundancy and a Conditional Upper Bound on the Cascade Exponent \(\beta\)"/>
   <meta property="og:description"
-    content="A spectral and matrix-level analysis proving that bounded-depth saturation prevents any fixed-dimensional encoding from generating the cascade exponent, pointing to dynamically growing redundancy mechanisms."/>
+    content="A Steinberg-matrix fingerprint whose span of dimension q² saturates within a few BFS radii on LPS graphs, with ranks certified by exact arithmetic; under explicit premises only an upper bound on the cascade exponent follows."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o6/"/>
   <script type="module">
@@ -42,10 +41,10 @@
         </svg>
       </a>
       <div>
-        <h1>Matrix-Level Dynamic Redundancy and the Structural Confinement of the Cascade Exponent \(\beta\)</h1>
+        <h1>Matrix-Level Dynamic Redundancy and a Conditional Upper Bound on the Cascade Exponent \(\beta\)</h1>
         <p class="subtitle">
-          Why no fixed finite-dimensional representation can produce the cascade exponent and why the missing mechanism
-          must involve depth-growing dynamical redundancy.
+          What one operator-level fingerprint supplies on LPS graphs: a span of dimension $q^2$ that saturates within
+          the graph diameter, and only a conditional upper bound on the cascade exponent.
         </p>
       </div>
     </div>
@@ -65,15 +64,18 @@
         exponent.
       </p>
       <p>
-        The key question is whether a sufficiently refined transition-level encoding can produce a long pre-saturation
-        regime in which the admissible frontier decays as a power law. O6 provides the first explicit construction of
-        such a matrix-level fingerprint and tests it on LPS graphs.
+        The key question is whether a sufficiently refined matrix-level encoding can produce a long pre-saturation
+        regime in which the admissible frontier decays as a power law. O6 constructs the Steinberg-matrix fingerprint,
+        the centred permutation matrix of a group element acting on $\mathbb{P}^1(\mathbb{F}_q)$, and tests it on LPS
+        graphs.
       </p>
       <p>
-        The main result is negative but decisive. While matrix-level fingerprints can produce $q$-dependent saturation
-        scales, they still exhibit a bounded exploration depth that prevents any genuine power-law regime from emerging.
-        This reveals a structural obstruction: the cascade exponent cannot arise from any fixed finite-dimensional
-        representation.
+        The result is negative for this fingerprint. Its span has dimension $q^2$ (the Steinberg module has dimension
+        $q$), and along breadth-first balls the span grows strictly until it is full, then never grows again. On
+        $X_{5,q}$ for $q \in \{29, 41, 61\}$, ranks certified by exact arithmetic reach $q^2$ at radius 4, 5 and 5:
+        too few radii for any exponent fit. Version 2.0 replaces the floating-point table of version 1.2, which
+        reported impossible ranks, and withdraws its readings of a saturation depth common to all $q$ and of a general
+        no-go for fixed representations.
       </p>
       <div class="note" role="note">
         <strong>Scope statement.</strong> This page provides a structured overview. The complete technical analysis is
@@ -97,12 +99,12 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Cascade exponent, matrix-level redundancy, and representation-theoretic obstruction</div>
+          <div class="v">Cascade exponent, matrix-level redundancy, and the saturation of a Steinberg-matrix fingerprint</div>
         </div>
         <div class="kv">
           <div class="k">Scope</div>
-          <div class="v">LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, matrix fingerprints, redundancy dynamics, and
-            bounded-depth saturation
+          <div class="v">LPS graphs, $\mathrm{PSL}(2,\mathbb{F}_q)$, matrix fingerprints, certified span ranks, and a
+            conditional growth bound
           </div>
         </div>
       </div>
@@ -112,52 +114,53 @@
     <h2>Core contributions</h2>
     <ul>
       <li>
-        <strong>First matrix-level admissible fingerprint:</strong> introduction of a Steinberg-based transition
-        fingerprint acting on $\mathbb{P}^1(\mathbb{F}_q)$ with ambient dimension $O(q^2)$.
+        <strong>Matrix-level fingerprint:</strong> the Steinberg-matrix fingerprint
+        $\mathrm{vec}(P_v - J/(q+1))$, in an ambient space of dimension $(q+1)^2$, whose span over the group is the
+        endomorphism algebra of the $q$-dimensional Steinberg module, of dimension $q^2$.
       </li>
       <li>
-        <strong>$q$-structural saturation:</strong> the admissible saturation scale grows with $q$, with $|S^*|/|G| \to
-        0$, identifying the correct class of candidate mechanisms.
+        <strong>Saturation without regrowth (proved):</strong> along breadth-first balls the span grows strictly until
+        it is full and cannot grow again after a plateau, so the saturation radius is at most $q^2 - 1$ and at most the
+        graph diameter, which is $O(\log q)$ on LPS graphs. Neither bound is uniform in $q$.
       </li>
       <li>
-        <strong>Bounded-depth saturation:</strong> despite increasing dimension, saturation occurs at a fixed BFS depth
-        independent of $q$, preventing any extended pre-saturation regime.
+        <strong>Certified numerics:</strong> on $X_{5,q}$, $q \in \{29, 41, 61\}$, full rank at radius 4, 5, 5 and
+        first radius without novelty 5, 6, 6, checked by exact arithmetic modulo two primes. These are results for the
+        three computed primes, not a law in $q$.
       </li>
       <li>
-        <strong>No-go theorem:</strong> any fingerprint based on a fixed finite-dimensional representation exhibits
-        bounded-depth saturation and cannot generate a power-law decay of the admissible frontier.
+        <strong>Conditional bound:</strong> under the unestablished effective growth hypothesis (G<sub>R</sub>) and a
+        power-law Ansatz that this fingerprint does not satisfy, only $\beta_{\mathrm{eff}} \le 1/(1/2+\alpha)$ follows.
       </li>
       <li>
-        <strong>Separation of mechanisms:</strong> distinction between representation-theoretic saturation
-        (dimension-driven) and genuinely dynamical saturation (depth-driven).
+        <strong>Withdrawn in version 2.0:</strong> the depth-6 saturation common to all $q$, the monotone decrease of
+        $|S^*|/|G|$, the $O(q^2)$ and $O(1/q)$ bounds on the saturation cardinality, and the no-go for every fixed
+        finite-dimensional representation.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interpretation</h2>
     <p>
-      The article shows that increasing the dimension of the representation is not sufficient to explain the cascade
-      exponent. Even at the matrix level, a fixed-dimensional encoding explores only a bounded number of independent
-      admissible directions.
+      The article delimits what one fixed-representation fingerprint supplies on one family of expanders. Its span is
+      capped by a dimension count, and any breadth-first filtration of an LPS graph ends at the diameter, so the
+      window it leaves is too short for exponent extraction.
     </p>
     <ul>
       <li>
-        <strong>Vertex-level mechanisms</strong> fail due to early representation-theoretic saturation.
+        <strong>Vertex-level encodings</strong> (<a href="../o5">O5</a>) are capped at $O(q)$ directions.
       </li>
       <li>
-        <strong>Matrix-level fingerprints</strong> improve structural resolution but still saturate at bounded depth.
+        <strong>The Steinberg-matrix fingerprint</strong> reaches $q^2$ directions within a few radii.
       </li>
       <li>
-        <strong>Fixed-dimensional encodings</strong> cannot sustain a long enough regime to produce $R_n \sim
-        p(n)^{-\alpha}$.
-      </li>
-      <li>
-        <strong>Depth, not dimension</strong> is the key missing ingredient.
+        <strong>A longer window</strong> can only be sought in the explored cardinality, or on graphs with slower
+        growth (<a href="../o8">O8</a>, <a href="../o9">O9</a>).
       </li>
     </ul>
     <p>
-      The cascade exponent $\beta$ therefore cannot be interpreted as a static representation-theoretic quantity. It
-      must arise from a dynamical process in which the effective space of admissible directions grows along the cascade.
+      These results do not show that the cascade exponent, or the mass hierarchy, cannot arise from a fixed
+      representation; that broader reading of version 1.2 is withdrawn.
     </p>
   </section>
   <section class="card">
@@ -169,16 +172,17 @@
       href="../o5">O5</a> isolates matrix-level redundancy as the relevant mechanism.
     </p>
     <p>
-      The present paper performs the next necessary step: it proves that even matrix-level mechanisms fail if they
-      remain finite-dimensional. This establishes a general obstruction and forces the next stage of the programme
-      toward dynamically growing constructions.
+      The present paper tests the next level: an operator-level fingerprint of span dimension $q^2$. It finds that this
+      fingerprint saturates too quickly as well, and records why: a dimension count and the graph diameter. It does not
+      establish a general obstruction for fixed representations; the next stage of the programme examines larger
+      fingerprints (<a href="../o7">O7</a>, <a href="../o8">O8</a>) and graphs with polynomial growth.
     </p>
   </section>
   <section class="card">
     <h2>References</h2>
     <p>
       Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> <i lang="en">Matrix-Level Dynamic
-      Redundancy and the Structural Confinement of the Cascade Exponent β</i>. Preprint. </a>
+      Redundancy and a Conditional Upper Bound on the Cascade Exponent β</i>. Preprint. </a>
     </p>
   </section>
 </main>

@@ -4,19 +4,18 @@
   <meta charset="utf-8"/>
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Redondance dynamique au niveau matriciel et confinement structurel de l’exposant de cascade \(\beta\) | Cosmochrony</title>
+  <title>Redondance dynamique au niveau matriciel et borne supérieure conditionnelle sur l’exposant de cascade \(\beta\) | Cosmochrony</title>
   <meta name="description"
-    content="Analyse au niveau matriciel montrant qu’aucune représentation finie de dimension fixe ne peut expliquer l’exposant de cascade, établissant une obstruction structurelle et identifiant comme nécessaire une redondance dynamique croissant avec la profondeur."/>
+    content="Empreinte matricielle de Steinberg sur les graphes LPS : un espace engendré de dimension q² qui sature dans le diamètre du graphe et ne peut plus croître après un plateau, des rangs certifiés pour trois premiers et une borne supérieure conditionnelle sur l’exposant de cascade."/>
   <link rel="alternate" hreflang="it" href="https://cosmochrony.org/science/spectral/program/o6/index_it.html"/>
   <link rel="alternate" hreflang="es" href="https://cosmochrony.org/science/spectral/program/o6/index_es.html"/>
   <link rel="alternate" hreflang="de" href="https://cosmochrony.org/science/spectral/program/o6/index_de.html"/>
   <link rel="alternate" hreflang="en" href="https://cosmochrony.org/science/spectral/program/o6/index.html"/>
   <meta name="robots" content="index,follow"/>
   <meta property="og:title"
-    content="Redondance dynamique au niveau matriciel et confinement structurel de l’exposant de cascade \(\beta\) :
-    une obstruction de théorie des représentations"/>
+    content="Redondance dynamique au niveau matriciel et borne supérieure conditionnelle sur l’exposant de cascade \(\beta\)"/>
   <meta property="og:description"
-    content="Une analyse spectrale et matricielle démontrant que la saturation à profondeur bornée empêche tout encodage de dimension fixe de générer l’exposant de cascade, ce qui pointe vers des mécanismes de redondance à croissance dynamique."/>
+    content="Une empreinte matricielle de Steinberg dont l’espace engendré, de dimension q², sature en quelques rayons BFS sur les graphes LPS, avec des rangs certifiés par arithmétique exacte ; sous des prémisses explicites, seule une borne supérieure sur l’exposant de cascade s’ensuit."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://cosmochrony.org/science/spectral/program/o6/"/>
   <script type="module">
@@ -42,10 +41,11 @@
         </svg>
       </a>
       <div>
-        <h1>Redondance dynamique au niveau matriciel et confinement structurel de l’exposant de cascade \(\beta\)</h1>
+        <h1>Redondance dynamique au niveau matriciel et borne supérieure conditionnelle sur l’exposant de cascade \(\beta\)</h1>
         <p class="subtitle">
-          Pourquoi aucune représentation finie de dimension fixe ne peut produire l’exposant de cascade et pourquoi le
-          mécanisme manquant doit impliquer une redondance dynamique croissant avec la profondeur.
+          Ce qu’une empreinte de niveau opératoriel fournit sur les graphes LPS : un espace engendré de dimension $q^2$
+          qui sature dans le diamètre du graphe, et seulement une borne supérieure conditionnelle sur l’exposant de
+          cascade.
         </p>
       </div>
     </div>
@@ -65,15 +65,18 @@
         du petit exposant de cascade.
       </p>
       <p>
-        La question clé est de savoir si un encodage suffisamment raffiné au niveau des transitions peut produire un
-        long régime de pré-saturation dans lequel la frontière admissible décroît comme une loi de puissance. O6 fournit
-        la première construction explicite d’une telle empreinte au niveau matriciel et la teste sur des graphes LPS.
+        La question clé est de savoir si un encodage matriciel suffisamment raffiné peut produire un long régime de
+        pré-saturation dans lequel la frontière admissible décroît comme une loi de puissance. O6 construit l’empreinte
+        matricielle de Steinberg, la matrice de permutation centrée d’un élément du groupe agissant sur
+        $\mathbb{P}^1(\mathbb{F}_q)$, et la teste sur des graphes LPS.
       </p>
       <p>
-        Le résultat principal est négatif, mais décisif. Bien que des empreintes matricielles puissent produire des
-        échelles de saturation dépendant de $q$, elles exhibent encore une profondeur d’exploration bornée qui empêche
-        l’émergence de tout véritable régime en loi de puissance. Cela révèle une obstruction structurelle : l’exposant
-        de cascade ne peut provenir d’aucune représentation finie de dimension fixe.
+        Le résultat est négatif pour cette empreinte. Son espace engendré est de dimension $q^2$ (le module de Steinberg
+        est de dimension $q$) et, le long des boules en largeur, il croît strictement jusqu’à être plein, puis ne croît
+        plus jamais. Sur $X_{5,q}$ pour $q \in \{29, 41, 61\}$, des rangs certifiés par arithmétique exacte atteignent
+        $q^2$ aux rayons 4, 5 et 5 : trop peu de rayons pour ajuster un exposant. La version 2.0 remplace le tableau en
+        virgule flottante de la version 1.2, qui donnait des rangs impossibles, et retire ses lectures d’une profondeur de
+        saturation commune à tous les $q$ et d’une impossibilité générale pour les représentations fixes.
       </p>
       <div class="note" role="note">
         <strong>Portée.</strong> Cette page fournit une vue d’ensemble structurée. L’analyse technique complète est
@@ -97,12 +100,12 @@
         </div>
         <div class="kv">
           <div class="k">Focus</div>
-          <div class="v">Exposant de cascade, redondance au niveau matriciel et obstruction représentationnelle</div>
+          <div class="v">Exposant de cascade, redondance au niveau matriciel et saturation d’une empreinte matricielle de Steinberg</div>
         </div>
         <div class="kv">
           <div class="k">Périmètre</div>
-          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes matricielles, dynamique de redondance
-            et saturation à profondeur bornée
+          <div class="v">Graphes LPS, $\mathrm{PSL}(2,\mathbb{F}_q)$, empreintes matricielles, rangs certifiés et borne
+            de croissance conditionnelle
           </div>
         </div>
       </div>
@@ -112,56 +115,56 @@
     <h2>Contributions principales</h2>
     <ul>
       <li>
-        <strong>Première empreinte admissible au niveau matriciel :</strong> introduction d’une empreinte de transition
-        fondée sur Steinberg agissant sur $\mathbb{P}^1(\mathbb{F}_q)$ avec une dimension ambiante en $O(q^2)$.
+        <strong>Empreinte au niveau matriciel :</strong> l’empreinte matricielle de Steinberg
+        $\mathrm{vec}(P_v - J/(q+1))$, dans un espace ambiant de dimension $(q+1)^2$, dont l’espace engendré sur le
+        groupe est l’algèbre des endomorphismes du module de Steinberg de dimension $q$, de dimension $q^2$.
       </li>
       <li>
-        <strong>Saturation structurelle en $q$ :</strong> l’échelle de saturation admissible croît avec $q$, avec
-        $|S^*|/|G| \to 0$, ce qui identifie la bonne classe de mécanismes candidats.
+        <strong>Saturation sans reprise (démontré) :</strong> le long des boules en largeur, l’espace engendré croît
+        strictement jusqu’à être plein et ne peut plus croître après un plateau ; le rayon de saturation est donc au plus
+        $q^2 - 1$ et au plus le diamètre du graphe, qui est en $O(\log q)$ sur les graphes LPS. Aucune de ces bornes
+        n’est uniforme en $q$.
       </li>
       <li>
-        <strong>Saturation à profondeur bornée :</strong> malgré la dimension croissante, la saturation se produit à une
-        profondeur BFS fixe indépendante de $q$, empêchant tout régime étendu de pré-saturation.
+        <strong>Calculs certifiés :</strong> sur $X_{5,q}$, $q \in \{29, 41, 61\}$, rang plein aux rayons 4, 5, 5 et
+        premier rayon sans nouveauté 5, 6, 6, vérifiés par arithmétique exacte modulo deux nombres premiers. Ce sont des
+        résultats pour les trois premiers calculés, non une loi en $q$.
       </li>
       <li>
-        <strong>Théorème d’impossibilité :</strong> toute empreinte fondée sur une représentation finie de dimension
-        fixe présente une saturation à profondeur bornée et ne peut générer une décroissance en loi de puissance de la
-        frontière admissible.
+        <strong>Borne conditionnelle :</strong> sous l’hypothèse non établie de croissance effective (G<sub>R</sub>) et
+        une hypothèse de loi de puissance que cette empreinte ne satisfait pas, seule
+        $\beta_{\mathrm{eff}} \le 1/(1/2+\alpha)$ s’ensuit.
       </li>
       <li>
-        <strong>Séparation des mécanismes :</strong> distinction entre saturation représentationnelle (pilotée par la
-        dimension) et saturation véritablement dynamique (pilotée par la profondeur).
+        <strong>Retiré dans la version 2.0 :</strong> la saturation à la profondeur 6 commune à tous les $q$, la
+        décroissance monotone de $|S^*|/|G|$, les bornes en $O(q^2)$ et $O(1/q)$ sur le cardinal à saturation, et
+        l’impossibilité pour toute représentation fixe de dimension finie.
       </li>
     </ul>
   </section>
   <section class="card">
     <h2>Interprétation</h2>
     <p>
-      L’article montre qu’augmenter la dimension de la représentation ne suffit pas à expliquer l’exposant de cascade.
-      Même au niveau matriciel, un encodage de dimension fixe n’explore qu’un nombre borné de directions admissibles
-      indépendantes.
+      L’article délimite ce qu’une empreinte de représentation fixe fournit sur une famille d’expanseurs. Son espace
+      engendré est plafonné par un décompte de dimension, et toute filtration en largeur d’un graphe LPS s’arrête au
+      diamètre : la fenêtre qu’elle laisse est trop courte pour extraire un exposant.
     </p>
     <ul>
       <li>
-        <strong>Les mécanismes au niveau des sommets</strong> échouent à cause d’une saturation représentationnelle trop
-        précoce.
+        <strong>Les encodages au niveau des sommets</strong> (<a href="../o5/index_fr.html">O5</a>) sont plafonnés à
+        $O(q)$ directions.
       </li>
       <li>
-        <strong>Les empreintes au niveau matriciel</strong> améliorent la résolution structurelle, mais saturent encore à
-        profondeur bornée.
+        <strong>L’empreinte matricielle de Steinberg</strong> atteint $q^2$ directions en quelques rayons.
       </li>
       <li>
-        <strong>Les encodages de dimension fixe</strong> ne peuvent soutenir un régime assez long pour produire $R_n
-        \sim p(n)^{-\alpha}$.
-      </li>
-      <li>
-        <strong>La profondeur, et non la dimension</strong>, est l’ingrédient manquant essentiel.
+        <strong>Une fenêtre plus longue</strong> ne peut être cherchée que dans le cardinal exploré, ou sur des graphes à
+        croissance plus lente (<a href="../o8/index_fr.html">O8</a>, <a href="../o9/index_fr.html">O9</a>).
       </li>
     </ul>
     <p>
-      L’exposant de cascade $\beta$ ne peut donc pas être interprété comme une quantité statique de théorie des
-      représentations. Il doit résulter d’un processus dynamique dans lequel l’espace effectif des directions
-      admissibles croît le long de la cascade.
+      Ces résultats ne montrent pas que l’exposant de cascade, ou la hiérarchie des masses, ne peut provenir d’une
+      représentation fixe ; cette lecture plus large de la version 1.2 est retirée.
     </p>
   </section>
   <section class="card">
@@ -174,16 +177,18 @@
       href="../o5/index_fr.html">O5</a> isole la redondance au niveau matriciel comme mécanisme pertinent.
     </p>
     <p>
-      Le présent article accomplit l’étape nécessaire suivante : il démontre que même les mécanismes au niveau matriciel
-      échouent s’ils restent de dimension finie. Cela établit une obstruction générale et force l’étape suivante du
-      programme vers des constructions à croissance dynamique.
+      Le présent article teste le niveau suivant : une empreinte de niveau opératoriel dont l’espace engendré est de
+      dimension $q^2$. Il constate que cette empreinte sature elle aussi trop vite et en donne la raison : un décompte de
+      dimension et le diamètre du graphe. Il n’établit pas d’obstruction générale pour les représentations fixes ;
+      l’étape suivante du programme examine des empreintes plus grandes (<a href="../o7/index_fr.html">O7</a>,
+      <a href="../o8/index_fr.html">O8</a>) et des graphes à croissance polynomiale.
     </p>
   </section>
   <section class="card">
     <h2>Références</h2>
     <p>
       Jérôme Beau. <a href="https://doi.org/10.5281/zenodo.19140624" rel="noopener"> <i lang="en">Matrix-Level Dynamic
-      Redundancy and the Structural Confinement of the Cascade Exponent β</i>. Prépublication. </a>
+      Redundancy and a Conditional Upper Bound on the Cascade Exponent β</i>. Prépublication. </a>
     </p>
   </section>
 </main>
